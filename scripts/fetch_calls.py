@@ -1,4 +1,11 @@
-"""오늘 뽑힌 종목의 컨퍼런스 콜 흐름을 정리한다.
+"""오늘 뽑힌 종목의 실적 흐름을 분기별로 정리한다.
+
+요약 근거는 두 갈래를 합친다.
+  1. EDGAR 8-K 보도자료 원문 — 분기마다 수만 자. 주된 근거.
+  2. Equibles 브리프·톤·주제 — 컨콜 Q&A 쟁점을 덧붙이는 용도.
+
+1번만 있어도 요약이 나오고, 2번만 있어도 나온다. 둘 다 없을 때만 건너뛴다.
+
 
 Equibles 무료 API(하루 100회)에서 분기별 브리프와 톤·주제를 받아,
 3년치(최대 12분기)를 시간순으로 놓고 '말이 어떻게 바뀌었는지'를 본다.
@@ -117,16 +124,36 @@ def evidence(payload, limit=9000):
     return text[:limit]
 
 
+PER_FILING_CHARS = 5000    # 보도자료 한 건에서 요약 근거로 쓸 앞부분
+MAX_FILINGS_IN_PROMPT = 8
+
+
+def edgar_source(ticker):
+    """EDGAR 보도자료 원문에서 분기별 근거를 만든다."""
+    d = read_json(DATA_DIR / "edgar" / f"{ticker}.json")
+    if not d or not d.get("filings"):
+        return "", []
+    parts, quarters = [], []
+    for f in d["filings"][:MAX_FILINGS_IN_PROMPT]:
+        body = (f.get("text") or "")[:PER_FILING_CHARS]
+        if not body:
+            continue
+        parts.append(f"### {f['date']} · {f.get('title', '')}\n{body}")
+        quarters.append({"date": f["date"], "url": f.get("url", "")})
+    return "\n\n".join(parts), quarters
+
+
 def summarize(ticker, name, rows, source_text, api_key):
     """분기별 쟁점과 3년 흐름을 함께 뽑는다.
 
     Q&A 원문은 저작물이라 옮길 수 없다. 대신 '애널리스트가 무엇을 캐물었는가'를
     쟁점으로 정리한다. 컨콜에서 정보량이 가장 높은 부분이기도 하다.
     """
-    span = ", ".join(f"FY{r['fy']}Q{r['fq']}" for r in rows[:8])
+    span = ", ".join(f"FY{r['fy']}Q{r['fq']}" for r in rows[:8]) or "최근 분기"
     prompt = (
-        f"{name}({ticker})의 실적발표 컨퍼런스 콜 자료다.\n"
-        f"다룬 분기: {span}\n\n"
+        f"{name}({ticker})의 분기 실적 발표 자료다. "
+        "각 분기 보도자료 원문과 컨콜 브리프가 섞여 있다.\n"
+        f"확인된 분기: {span}\n\n"
         f"--- 참고 자료 ---\n{source_text}\n\n"
         "아래 JSON 형식으로만 답해라. 설명이나 코드블록 표시 없이 JSON만.\n"
         "{\n"
@@ -138,10 +165,13 @@ def summarize(ticker, name, rows, source_text, api_key):
         '     "shift": "직전 분기 대비 달라진 표현이나 태도 (없으면 빈 문자열)"}\n'
         "  ]\n"
         "}\n\n"
-        "규칙: 한국어로 쓰고 각 항목 50자 이내. "
-        "원문 문장을 그대로 옮기지 말고 네 말로 다시 써라. "
-        "자료에 없으면 빈 배열로 두고 지어내지 마라. "
-        "매수·매도 의견은 쓰지 마라. 최근 분기부터 최대 8개까지."
+        "규칙:\n"
+        "- 한국어로 쓰고 각 항목 60자 이내.\n"
+        "- 매출·마진·가이던스처럼 숫자가 있으면 반드시 숫자를 넣어라.\n"
+        "- q 값은 자료에 적힌 분기 표기나 발표일(YYYY-MM-DD)을 써라.\n"
+        "- 원문 문장을 그대로 옮기지 말고 네 말로 다시 써라.\n"
+        "- 자료에 없으면 빈 배열로 두고 지어내지 마라.\n"
+        "- 매수·매도 의견은 쓰지 마라. 최근 분기부터 최대 8개까지."
     )
     text = ask_gemini(prompt, api_key, timeout=90)
     if not text:
@@ -199,11 +229,11 @@ def main():
             insights = None
 
         rows = quarters_from(briefs) or quarters_from(insights)
-        if not rows:
-            print(f"  {t}: 컨콜 자료 없음")
+        if not rows and not (DATA_DIR / "edgar" / f"{t}.json").exists():
+            print(f"  {t}: 컨콜·공시 자료 모두 없음")
             continue
 
-        latest = f"{rows[0]['fy']}Q{rows[0]['fq']}"
+        latest = f"{rows[0]['fy']}Q{rows[0]['fq']}" if rows else "공시 기준"
         old = prev.get(t)
         if old and old.get("latest") == latest and old.get("summary"):
             # 새 분기가 없으면 예전 요약을 그대로 쓴다 (호출 절약)
@@ -211,9 +241,13 @@ def main():
             print(f"  {t}: {latest} (요약 재사용)")
             continue
 
-        source = "\n".join(x for x in (evidence(briefs), evidence(insights)) if x)
+        edgar_text, edgar_q = edgar_source(t)
+        call_text = "\n".join(x for x in (evidence(briefs), evidence(insights)) if x)
+        source = "\n\n".join(x for x in (edgar_text, call_text) if x)
         summary = summarize(t, p.get("name") or t, rows, source, gemini) \
             if source else {}
+        print(f"    근거: 공시 {len(edgar_q)}건, 컨콜 {len(call_text)}자, "
+              f"요약 분기 {len(summary.get('quarters', []))}개")
         out.append({
             "ticker": t,
             "name": p.get("name") or t,

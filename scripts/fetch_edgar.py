@@ -92,22 +92,26 @@ def earnings_filings(cik):
     forms = recent.get("form") or []
     cutoff = date.today().replace(year=date.today().year - YEARS_BACK).isoformat()
 
-    out = []
+    strict, loose = [], []
     for i, form in enumerate(forms):
         if form != "8-K":
             continue
         filed = (recent.get("filingDate") or [""] * len(forms))[i]
         if filed < cutoff:
             continue
-        items = (recent.get("items") or [""] * len(forms))[i] or ""
-        if "2.02" not in items:
-            continue
         acc = (recent.get("accessionNumber") or [""] * len(forms))[i]
-        out.append({"accession": acc, "date": filed,
-                    "folder": acc.replace("-", "")})
-        if len(out) >= MAX_FILINGS:
-            break
-    return out
+        row = {"accession": acc, "date": filed, "folder": acc.replace("-", "")}
+        items = (recent.get("items") or [""] * len(forms))[i] or ""
+        if "2.02" in items:
+            strict.append(row)
+        else:
+            # items 칸을 비워 내는 제출인이 있다. 나중에 본문으로 걸러낸다.
+            loose.append(row)
+
+    if strict:
+        return strict[:MAX_FILINGS]
+    print("    (item 2.02 표기 없음 — 본문으로 판별합니다)")
+    return loose[:MAX_FILINGS * 2]
 
 
 def press_release(cik, folder):
@@ -138,6 +142,16 @@ def press_release(cik, folder):
     if len(text) < 400:
         return None, None
     return text[:MAX_CHARS], url
+
+
+EARNINGS_WORDS = ("quarter", "fiscal", "full year", "results", "earnings",
+                  "revenue", "eps")
+
+
+def looks_like_earnings(text):
+    low = text[:4000].lower()
+    hits = sum(1 for w in EARNINGS_WORDS if w in low)
+    return hits >= 3
 
 
 def headline(text):
@@ -177,7 +191,7 @@ def main():
             if f["accession"] in have:
                 continue
             text, url = press_release(cik, f["folder"])
-            if not text:
+            if not text or not looks_like_earnings(text):
                 continue
             store["filings"].append({
                 "accession": f["accession"],
