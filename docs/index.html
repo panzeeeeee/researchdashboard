@@ -18,7 +18,26 @@
 body{margin:0;background:var(--paper);color:var(--ink);
   font-family:Pretendard,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
-.wrap{max-width:880px;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+.wrap{max-width:1180px;margin:0 auto;padding:2rem 1.25rem 4rem}
+.layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:2rem;align-items:start}
+nav{position:sticky;top:2rem}
+nav a{display:block;font-size:.84rem;color:var(--ink-2);text-decoration:none;
+  padding:.4rem .6rem;border-radius:7px;border-left:2px solid transparent}
+nav a:hover{background:var(--card);color:var(--ink)}
+nav a.on{color:var(--accent);border-left-color:var(--accent);
+  background:var(--tintA);font-weight:600}
+nav .count{float:right;color:var(--ink-3);font-size:.74rem;font-weight:400}
+nav .divider{height:1px;background:var(--rule);margin:.6rem .6rem}
+main section{scroll-margin-top:1.5rem}
+@media (max-width:760px){
+  .layout{grid-template-columns:1fr;gap:1rem}
+  nav{position:static;display:flex;gap:.3rem;overflow-x:auto;
+    padding-bottom:.4rem;border-bottom:1px solid var(--rule)}
+  nav a{white-space:nowrap;border-left:none;border-bottom:2px solid transparent;
+    border-radius:0;padding:.35rem .5rem}
+  nav a.on{border-left:none;border-bottom-color:var(--accent);background:none}
+  nav .count,nav .divider{display:none}
+}
 header{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;
   flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:.9rem;margin-bottom:2rem}
 h1{font-size:1.25rem;font-weight:600;margin:0;letter-spacing:-.01em}
@@ -80,17 +99,34 @@ tr:last-child td{border-bottom:none}
   <span class="meta" id="stamp">불러오는 중</span>
 </header>
 
-<section>
+<div class="layout">
+
+<nav id="nav">
+  <a href="#picks" class="on">오늘의 종목 <span class="count" id="c-picks"></span></a>
+  <a href="#screener">스크리너 결과</a>
+  <a href="#news">섹터 뉴스 <span class="count" id="c-news"></span></a>
+  <div class="divider"></div>
+  <a href="#soon">준비 중</a>
+</nav>
+
+<main>
+
+<section id="picks">
   <h2>오늘의 종목</h2>
   <div id="stocks"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
-<section>
+<section id="screener">
   <h2>스크리너 결과</h2>
   <div id="tables"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
-<section>
+<section id="news">
+  <h2>섹터 뉴스</h2>
+  <div id="sectors"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="soon">
   <h2>준비 중인 패널</h2>
   <div class="grid">
     <div class="slot"><h3>포트폴리오 · 룰 트리거</h3><p>보유 종목과 SPY 낙폭 기준선</p></div>
@@ -99,11 +135,8 @@ tr:last-child td{border-bottom:none}
   </div>
 </section>
 
-<section>
-  <h2>섹터 뉴스</h2>
-  <div id="sectors"><p class="note">불러오는 중입니다.</p></div>
-</section>
-
+</main>
+</div>
 </div>
 
 <script>
@@ -163,7 +196,7 @@ function renderTables(t) {
       <td>${esc((r.name || "").slice(0, 22))}</td>
       <td class="n">${nz(r.score)}</td>
       <td class="n">${r.gates >= 3 ? `<span class="hit">${r.gates}</span>` : nz(r.gates)}</td>
-      <td class="n">${nz(r.drawdown)}%</td>
+      <td class="n">${r.drawdown ? r.drawdown + "%" : '<span class="miss">해당없음</span>'}</td>
       <td class="miss">${esc(r.missing || "—")}</td>
     </tr>`).join("");
 
@@ -259,13 +292,40 @@ Promise.all([
     </div>`).join("")
     : '<p class="note">최근 기사가 없습니다. 검색어를 넓혀 보세요.</p>';
 
+  const cp = document.getElementById("c-picks");
+  const cn = document.getElementById("c-news");
+  if (cp) cp.textContent = stocks.length || "";
+  if (cn) cn.textContent = news.total || "";
+
   bindMore(document);
+  setupNav();
 }).catch(() => {
   document.getElementById("stamp").textContent = "데이터 없음";
   document.getElementById("stocks").innerHTML =
     '<p class="note">data/news.json 을 찾지 못했습니다. Actions 탭에서 수집을 실행하세요.</p>';
   document.getElementById("sectors").innerHTML = "";
 });
+
+// 스크롤 위치에 따라 사이드바 항목을 강조한다
+function setupNav() {
+  const links = [...document.querySelectorAll("nav a")];
+  const map = new Map();
+  links.forEach(a => {
+    const el = document.querySelector(a.getAttribute("href"));
+    if (el) map.set(el, a);
+  });
+  if (!map.size) return;
+
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(a => a.classList.remove("on"));
+      map.get(e.target)?.classList.add("on");
+    });
+  }, { rootMargin: "-10% 0px -75% 0px", threshold: 0 });
+
+  map.forEach((_, el) => spy.observe(el));
+}
 </script>
 </body>
 </html>
