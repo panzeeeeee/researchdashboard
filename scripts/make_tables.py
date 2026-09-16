@@ -132,8 +132,11 @@ def deepvalue_table():
     return rows[:TOP_ROWS], rejects
 
 
-def add_diagnosis(rows, api_key, limit=8):
-    """상위 종목에 '왜 죽어 있는가' 한 줄을 붙인다."""
+def add_diagnosis(rows, api_key, limit=TOP_ROWS):
+    """표에 실리는 종목 전부에 '왜 죽어 있는가' 한 줄을 붙인다.
+
+    한 번의 호출로 전부 처리하므로 종목 수가 늘어도 API 사용량은 그대로다.
+    """
     if not api_key or not rows:
         return rows
     target = rows[:limit]
