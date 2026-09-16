@@ -329,8 +329,21 @@ Promise.all([
     : '<p class="note">picks.json 이 비어 있습니다. Actions 에서 수집을 한 번 실행하세요.</p>';
 
   const sectorBox = document.getElementById("sectors");
+  const auto = (news.auto_sectors || []).filter(s => s.items.length);
   const live = (news.sectors || []).filter(s => s.items.length);
-  sectorBox.innerHTML = live.length ? live.map(s => `
+
+  const autoHtml = auto.map(s => `
+    <div class="group">
+      <div class="ghead">
+        <span class="tag">${esc(s.name)}</span>
+        <span class="pill on">${s.count}종목</span>
+        <span class="miss">${esc((s.tickers || []).join(", "))}</span>
+      </div>
+      ${s.items.map(newsItem).join("")}
+      ${moreBtn(s.items.length)}
+    </div>`).join("");
+
+  const fixedHtml = live.map(s => `
     <div class="group">
       <div class="ghead">
         <span class="tag">${esc(s.name)}</span>
@@ -338,8 +351,14 @@ Promise.all([
       </div>
       ${s.items.map(newsItem).join("")}
       ${moreBtn(s.items.length)}
-    </div>`).join("")
-    : '<p class="note">최근 기사가 없습니다. 검색어를 넓혀 보세요.</p>';
+    </div>`).join("");
+
+  sectorBox.innerHTML =
+    (auto.length
+      ? `<p class="sub">오늘 걸린 업종 <span class="miss">스크리너 결과에 따라 매일 바뀝니다</span></p>${autoHtml}`
+      : `<p class="note">오늘 몰린 업종이 없습니다.</p>`) +
+    (live.length
+      ? `<p class="sub">고정 관심 업종</p>${fixedHtml}` : "");
 
   const cp = document.getElementById("c-picks");
   const cn = document.getElementById("c-news");
