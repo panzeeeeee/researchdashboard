@@ -95,6 +95,21 @@ tr:last-child td{border-bottom:none}
   font-variant-numeric:tabular-nums}
 .slot .big.hit{color:var(--accent)}
 .slot .miss{margin:0}
+.adder{background:var(--card);border:1px solid var(--rule);border-radius:10px;
+  padding:.9rem 1rem;margin-top:1.4rem}
+.adder .row{display:flex;gap:.5rem;flex-wrap:wrap}
+.adder input{flex:1;min-width:140px;font:inherit;font-size:.86rem;
+  padding:.4rem .6rem;border:1px solid var(--rule);border-radius:7px;
+  background:var(--paper);color:var(--ink);text-transform:uppercase}
+.adder input:focus{outline:none;border-color:var(--accent)}
+.adder button{font:inherit;font-size:.82rem;padding:.4rem .9rem;cursor:pointer;
+  border-radius:7px;border:1px solid var(--accent);background:var(--accent);
+  color:#fff}
+.adder button.ghost{background:none;color:var(--accent)}
+.adder pre{background:var(--paper);border:1px solid var(--rule);border-radius:7px;
+  padding:.6rem .7rem;margin:.7rem 0 .5rem;font-size:.8rem;overflow-x:auto;
+  white-space:pre;font-family:var(--font-mono,ui-monospace,monospace)}
+.adder a{color:var(--accent);font-size:.82rem}
 .chips{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.5rem}
 .chip{font-size:.72rem;color:var(--ink-2);background:var(--card);
   border:1px solid var(--rule);border-radius:999px;padding:.12rem .55rem}
@@ -113,7 +128,8 @@ tr:last-child td{border-bottom:none}
 <nav id="nav">
   <a href="#picks" class="on">오늘의 종목 <span class="count" id="c-picks"></span></a>
   <a href="#portfolio">포트폴리오</a>
-  <a href="#screener">스크리너 결과</a>
+  <a href="#breakout">신고가 · 물극필반</a>
+  <a href="#deepvalue">딥밸류</a>
   <a href="#news">섹터 뉴스 <span class="count" id="c-news"></span></a>
   <div class="divider"></div>
   <a href="#soon">준비 중</a>
@@ -131,9 +147,14 @@ tr:last-child td{border-bottom:none}
   <div id="pf"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
-<section id="screener">
-  <h2>스크리너 결과</h2>
-  <div id="tables"><p class="note">불러오는 중입니다.</p></div>
+<section id="breakout">
+  <h2>신고가 · 물극필반</h2>
+  <div id="t-breakout"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="deepvalue">
+  <h2>딥밸류</h2>
+  <div id="t-deepvalue"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="news">
@@ -201,23 +222,49 @@ function bindMore(root) {
 const nz = v => (v === null || v === undefined || v === "") ? "—" : v;
 
 function renderTables(t) {
-  const box = document.getElementById("tables");
-  if (!t) { box.innerHTML = '<p class="note">tables.json 이 아직 없습니다.</p>'; return; }
+  const bBox = document.getElementById("t-breakout");
+  const dBox = document.getElementById("t-deepvalue");
+  if (!t) {
+    const msg = '<p class="note">tables.json 이 아직 없습니다.</p>';
+    bBox.innerHTML = msg; dBox.innerHTML = msg; return;
+  }
 
   const bo = (t.breakout || []).map(r => `
     <tr>
       <td class="tick">${esc(r.code)}</td>
-      <td>${esc((r.name || "").slice(0, 22))}</td>
+      <td>${esc((r.name || "").slice(0, 24))}</td>
+      <td>${esc(r.universe || "")}</td>
       <td class="n">${nz(r.score)}</td>
       <td class="n">${r.gates >= 3 ? `<span class="hit">${r.gates}</span>` : nz(r.gates)}</td>
       <td class="n">${r.drawdown ? r.drawdown + "%" : '<span class="miss">해당없음</span>'}</td>
       <td class="miss">${esc(r.missing || "—")}</td>
     </tr>`).join("");
 
+  const hist = (t.history || []).slice(-12);
+
+  bBox.innerHTML = `
+    <p class="sub">오늘 신고가 <span class="miss">게이트 3개 이상이 후보</span></p>
+    <div class="scroll"><table>
+      <tr><th>티커</th><th>종목</th><th>지수</th><th class="n">점수</th>
+          <th class="n">게이트</th><th class="n">낙폭</th><th>못 넘은 항목</th></tr>
+      ${bo || '<tr><td colspan="7" class="note">해당 없음</td></tr>'}
+    </table></div>
+
+    <p class="sub">통과 추이</p>
+    <div class="scroll"><table>
+      <tr><th>날짜</th><th class="n">신고가</th><th class="n">게이트3+</th>
+          <th class="n">매수가능</th></tr>
+      ${hist.map(x => `<tr><td>${esc(x.date.slice(5))}</td>
+        <td class="n">${x.highs}</td><td class="n">${x.gate3}</td>
+        <td class="n">${x.buyable}</td></tr>`).join("")
+        || '<tr><td colspan="4" class="note">기록 없음</td></tr>'}
+    </table></div>`;
+
   const dv = (t.deepvalue || []).map(r => `
     <tr>
       <td class="tick">${esc(r.code)}${r.triggered ? ' <span class="hit">•</span>' : ""}</td>
-      <td>${esc((r.name || "").slice(0, 22))}</td>
+      <td>${esc((r.name || "").slice(0, 24))}</td>
+      <td>${esc(r.universe || "")}</td>
       <td class="n">${nz(r.score)}</td>
       <td class="n">${nz(r.fscore)}</td>
       <td class="n">${nz(r.drawdown)}%</td>
@@ -225,38 +272,24 @@ function renderTables(t) {
       <td class="miss">${esc(r.why || "—")}</td>
     </tr>`).join("");
 
-  const hist = (t.history || []).slice(-10).map(h => `
-    <tr>
-      <td>${esc(h.date.slice(5))}</td>
-      <td class="n">${h.highs}</td>
-      <td class="n">${h.gate3}</td>
-      <td class="n">${h.buyable}</td>
-      <td class="n">${h.dv_triggered}</td>
-    </tr>`).join("");
-
-  const chips = (t.rejects || []).slice(0, 6)
+  const chips = (t.rejects || []).slice(0, 8)
     .map(([k, v]) => `<span class="chip">${esc(k)} ${v}</span>`).join("");
 
-  box.innerHTML = `
-    <p class="sub">신고가 · 물극필반 <span class="miss">게이트 3개 이상이 후보</span></p>
+  dBox.innerHTML = `
+    <p class="sub">후보 <span class="miss">• 는 오늘 트리거 발생</span></p>
     <div class="scroll"><table>
-      <tr><th>티커</th><th>종목</th><th class="n">점수</th><th class="n">게이트</th>
-          <th class="n">낙폭</th><th>못 넘은 항목</th></tr>
-      ${bo || '<tr><td colspan="6" class="note">해당 없음</td></tr>'}
-    </table></div>
-
-    <p class="sub">딥밸류 <span class="miss">• 는 오늘 트리거 발생</span></p>
-    <div class="scroll"><table>
-      <tr><th>티커</th><th>종목</th><th class="n">점수</th><th class="n">F</th>
+      <tr><th>티커</th><th>종목</th><th>지수</th><th class="n">점수</th><th class="n">F</th>
           <th class="n">낙폭</th><th class="n">200일선아래</th><th>왜 싼가</th></tr>
-      ${dv || '<tr><td colspan="7" class="note">해당 없음</td></tr>'}
+      ${dv || '<tr><td colspan="8" class="note">해당 없음</td></tr>'}
     </table></div>
 
-    <p class="sub">통과 추이</p>
+    <p class="sub">트리거 추이</p>
     <div class="scroll"><table>
-      <tr><th>날짜</th><th class="n">신고가</th><th class="n">게이트3+</th>
-          <th class="n">매수가능</th><th class="n">딥밸류트리거</th></tr>
-      ${hist || '<tr><td colspan="5" class="note">기록 없음</td></tr>'}
+      <tr><th>날짜</th><th class="n">후보</th><th class="n">트리거</th></tr>
+      ${hist.map(x => `<tr><td>${esc(x.date.slice(5))}</td>
+        <td class="n">${x.dv_candidates}</td>
+        <td class="n">${x.dv_triggered}</td></tr>`).join("")
+        || '<tr><td colspan="3" class="note">기록 없음</td></tr>'}
     </table></div>
 
     <p class="sub">다 걸러낸 조건</p>
@@ -377,6 +410,8 @@ function renderPortfolio(p) {
       <td class="n">${r.pos52 === null ? "—" : r.pos52 + "%"}</td>
     </tr>`).join("");
 
+  const have = new Set((p.holdings || []).map(r => r.ticker));
+
   box.innerHTML = `
     <p class="sub">${esc(p.benchmark)} 고점 대비 ${signed(dd)}</p>
     <div class="grid">${ladder || '<p class="note">트리거 설정 없음</p>'}</div>
@@ -385,7 +420,91 @@ function renderPortfolio(p) {
       <tr><th>종목</th><th class="n">종가</th><th class="n">1일</th>
           <th class="n">1개월</th><th class="n">고점대비</th><th class="n">52주위치</th></tr>
       ${rows || '<tr><td colspan="6" class="note">자료 없음</td></tr>'}
-    </table></div>`;
+    </table></div>
+
+    <div class="adder">
+      <p class="cap">종목 추가</p>
+      <div class="row">
+        <input id="add-in" placeholder="티커 입력 (예: TSLA)" autocomplete="off">
+        <button id="add-go">줄 만들기</button>
+        <button id="add-clear" class="ghost">비우기</button>
+      </div>
+      <div id="add-out"></div>
+    </div>`;
+
+  setupAdder(have);
+}
+
+// 입력한 티커를 portfolio.yaml 에 붙여넣을 형태로 만들어 준다.
+// 페이지가 저장소에 직접 쓸 수는 없으므로, 붙여넣기 한 번은 남는다.
+function setupAdder(have) {
+  const input = document.getElementById("add-in");
+  const out = document.getElementById("add-out");
+  if (!input || !out) return;
+
+  const KEY = "pf-pending";
+  const load = () => {
+    try { return JSON.parse(localStorage.getItem(KEY) || "[]"); }
+    catch { return []; }
+  };
+  const save = list => {
+    try { localStorage.setItem(KEY, JSON.stringify(list)); } catch {}
+  };
+
+  // 페이지 주소에서 저장소 위치를 알아낸다 (USER.github.io/REPO/)
+  const owner = location.hostname.split(".")[0];
+  const repo = location.pathname.split("/").filter(Boolean)[0] || "";
+  const editUrl = owner && repo
+    ? `https://github.com/${owner}/${repo}/edit/main/config/portfolio.yaml`
+    : null;
+
+  const draw = () => {
+    const list = load();
+    if (!list.length) { out.innerHTML = ""; return; }
+    const lines = list.map(t => `  - { ticker: "${t}" }`).join("\n");
+    out.innerHTML = `
+      <pre id="add-pre">${esc(lines)}</pre>
+      <div class="row">
+        <button id="add-copy" class="ghost">복사</button>
+        ${editUrl ? `<a href="${editUrl}" target="_blank" rel="noopener"
+           style="align-self:center">portfolio.yaml 편집 화면 열기 ↗</a>` : ""}
+      </div>
+      <p class="miss" style="margin-top:.5rem">
+        holdings 목록 맨 아래에 붙여넣고 Commit 하세요. 다음 실행부터 반영됩니다.</p>`;
+
+    document.getElementById("add-copy").addEventListener("click", e => {
+      navigator.clipboard?.writeText(lines).then(() => {
+        e.target.textContent = "복사됨";
+        setTimeout(() => (e.target.textContent = "복사"), 1500);
+      });
+    });
+  };
+
+  const add = () => {
+    const t = (input.value || "").trim().toUpperCase();
+    if (!t) return;
+    if (!/^[A-Z0-9.\-]{1,10}$/.test(t)) {
+      out.innerHTML = '<p class="miss">티커 형식이 아닙니다.</p>';
+      return;
+    }
+    if (have.has(t)) {
+      out.innerHTML = `<p class="miss">${esc(t)} 는 이미 보유 목록에 있습니다.</p>`;
+      input.value = "";
+      return;
+    }
+    const list = load();
+    if (!list.includes(t)) list.push(t);
+    save(list);
+    input.value = "";
+    draw();
+  };
+
+  document.getElementById("add-go").addEventListener("click", add);
+  input.addEventListener("keydown", e => { if (e.key === "Enter") add(); });
+  document.getElementById("add-clear").addEventListener("click", () => {
+    save([]); draw();
+  });
+  draw();
 }
 </script>
 </body>
