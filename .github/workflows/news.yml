@@ -45,9 +45,20 @@ jobs:
           key: dv-cache-${{ github.run_id }}
           restore-keys: dv-cache-
 
+      - name: 종목 목록 넘겨주기
+        # 딥밸류가 러셀2000 목록을 직접 못 읽는 문제가 있어,
+        # 신고가 스크리너가 이미 받아둔 목록을 재활용합니다.
+        run: python scripts/bridge_universe.py
+        continue-on-error: true
+
       - name: 딥밸류 스크리너
-        # ndx + spx + r2k 전체. 재무 캐시가 7일이라 첫 실행만 오래 걸립니다.
-        run: python scripts/deepvalue/dv_run.py --universe all --out screener/outputs
+        # 지수별로 따로 돌립니다. 하나가 실패해도 나머지는 진행됩니다.
+        run: |
+          DV="python scripts/deepvalue/dv_run.py --out screener/outputs"
+          $DV --universe ndx || echo "NDX 실패"
+          $DV --universe spx || echo "SPX 실패"
+          $DV --universe r2k \
+            --universe-file screener/universe_cache/dv_r2k.csv || echo "R2K 실패"
         continue-on-error: true
 
       - name: 오늘의 종목 선정
