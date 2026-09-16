@@ -114,34 +114,59 @@ def earnings_filings(cik):
     return loose[:MAX_FILINGS * 2]
 
 
-def press_release(cik, folder):
-    """제출 폴더에서 EX-99 보도자료 본문을 찾아 평문으로 돌려준다."""
+EX_PAT = re.compile(r"ex[\W_]*99|exhibit[\W_]*99|press[\W_]*release|earnings")
+
+
+def candidate_files(files):
+    """보도자료일 법한 첨부를 우선순위대로 고른다.
+
+    회사마다 파일 이름 방식이 제각각이라(ex-99.1, ex991, exhibit99, 회사명xex991…)
+    이름으로 한 번 거르고, 못 찾으면 덩치 큰 문서부터 본문으로 판별한다.
+    """
+    docs = []
+    for f in files:
+        name = str(f.get("name", ""))
+        low = name.lower()
+        if not low.endswith((".htm", ".html", ".txt")):
+            continue
+        size = int(f.get("size") or 0)
+        if size < 1500:
+            continue
+        docs.append((name, low, size))
+
+    named = [d for d in docs if EX_PAT.search(d[1])]
+    named.sort(key=lambda d: -d[2])
+    rest = [d for d in docs if d not in named]
+    rest.sort(key=lambda d: -d[2])
+    return [d[0] for d in named] + [d[0] for d in rest[:3]]
+
+
+def press_release(cik, folder, label=""):
+    """제출 폴더에서 실적 보도자료 본문을 찾아 평문으로 돌려준다."""
     base = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{folder}"
     listing = sec_get(f"{base}/index.json", as_json=True)
     if not listing:
         return None, None
 
     files = ((listing.get("directory") or {}).get("item")) or []
-    best = None
-    for f in files:
-        name = str(f.get("name", "")).lower()
-        if not name.endswith((".htm", ".html", ".txt")):
-            continue
-        if "ex-99" in name or "ex99" in name or name.startswith("ex99"):
-            size = int(f.get("size") or 0)
-            if best is None or size > best[1]:
-                best = (f["name"], size)
-    if not best:
+    names = candidate_files(files)
+    if not names:
+        print(f"    {label}: 첨부 문서 없음", file=sys.stderr)
         return None, None
 
-    url = f"{base}/{best[0]}"
-    raw = sec_get(url)
-    if not raw:
-        return None, None
-    text = to_text(raw)
-    if len(text) < 400:
-        return None, None
-    return text[:MAX_CHARS], url
+    tried = []
+    for name in names[:4]:
+        raw = sec_get(f"{base}/{name}")
+        if not raw:
+            continue
+        text = to_text(raw)
+        tried.append(f"{name}({len(text)}자)")
+        if len(text) >= 400 and looks_like_earnings(text):
+            return text[:MAX_CHARS], f"{base}/{name}"
+
+    print(f"    {label}: 실적 본문 못 찾음 — 검토 {', '.join(tried) or '없음'}",
+          file=sys.stderr)
+    return None, None
 
 
 EARNINGS_WORDS = ("quarter", "fiscal", "full year", "results", "earnings",
@@ -186,12 +211,15 @@ def main():
                                     "filings": []}
         have = {f["accession"] for f in store["filings"]}
 
+        filings = earnings_filings(cik)
+        print(f"  {t}: CIK {cik}, 최근 3년 8-K {len(filings)}건")
+
         added = 0
-        for f in earnings_filings(cik):
+        for f in filings:
             if f["accession"] in have:
                 continue
-            text, url = press_release(cik, f["folder"])
-            if not text or not looks_like_earnings(text):
+            text, url = press_release(cik, f["folder"], f"{t} {f['date']}")
+            if not text:
                 continue
             store["filings"].append({
                 "accession": f["accession"],
