@@ -71,6 +71,19 @@ jobs:
           python scripts/fetch_portfolio.py
         continue-on-error: true
 
+      - name: 8-K 실적 공시 수집
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python scripts/fetch_edgar.py
+        continue-on-error: true
+
+      - name: 컨콜 흐름 수집
+        env:
+          EQUIBLES_API_KEY: ${{ secrets.EQUIBLES_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_calls.py
+        continue-on-error: true
+
       - name: 결과 표 생성
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
