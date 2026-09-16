@@ -65,7 +65,10 @@ jobs:
         run: python scripts/make_picks.py
 
       - name: 포트폴리오 갱신
-        run: python scripts/fetch_portfolio.py
+        # 스크리너가 수천 종목을 긁은 직후라 야후가 막을 수 있어 잠시 쉰다
+        run: |
+          sleep 45
+          python scripts/fetch_portfolio.py
         continue-on-error: true
 
       - name: 결과 표 생성
