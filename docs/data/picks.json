@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-16T16:20:15.714301+09:00",
+ "updated_at": "2026-09-16T16:40:45.920802+09:00",
  "picks": [
   {
    "code": "NEO",
@@ -57,6 +57,17 @@
    "source": "딥밸류"
   },
   {
+   "code": "CPRT",
+   "name": "Copart, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "NDX",
+   "sector": "Industrials",
+   "score": 0.712,
+   "note": "F7",
+   "source": "딥밸류"
+  },
+  {
    "code": "ZTS",
    "name": "Zoetis Inc.",
    "market": "us",
@@ -65,17 +76,6 @@
    "sector": "Healthcare",
    "score": 0.689,
    "note": "F8",
-   "source": "딥밸류"
-  },
-  {
-   "code": "PNR",
-   "name": "Pentair plc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "SPX",
-   "sector": "Industrials",
-   "score": 0.672,
-   "note": "F9",
    "source": "딥밸류"
   }
  ],
@@ -422,6 +422,17 @@
    "rank": 1
   },
   {
+   "code": "CPRT",
+   "name": "Copart, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "NDX",
+   "sector": "Industrials",
+   "score": 0.712,
+   "note": "F7",
+   "rank": 2
+  },
+  {
    "code": "ZTS",
    "name": "Zoetis Inc.",
    "market": "us",
@@ -430,7 +441,7 @@
    "sector": "Healthcare",
    "score": 0.689,
    "note": "F8",
-   "rank": 2
+   "rank": 3
   },
   {
    "code": "PNR",
@@ -441,7 +452,18 @@
    "sector": "Industrials",
    "score": 0.672,
    "note": "F9",
-   "rank": 3
+   "rank": 4
+  },
+  {
+   "code": "INTU",
+   "name": "Intuit Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "NDX",
+   "sector": "Technology",
+   "score": 0.645,
+   "note": "F7",
+   "rank": 5
   },
   {
    "code": "NKE",
@@ -452,7 +474,7 @@
    "sector": "Consumer Cyclical",
    "score": 0.638,
    "note": "F7",
-   "rank": 4
+   "rank": 6
   },
   {
    "code": "FISV",
@@ -463,7 +485,18 @@
    "sector": "Unknown",
    "score": 0.623,
    "note": "F6",
-   "rank": 5
+   "rank": 7
+  },
+  {
+   "code": "APP",
+   "name": "Applovin Corporation",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "NDX",
+   "sector": "Communication Services",
+   "score": 0.618,
+   "note": "F9",
+   "rank": 8
   },
   {
    "code": "CPRT",
@@ -474,7 +507,7 @@
    "sector": "Industrials",
    "score": 0.553,
    "note": "F7",
-   "rank": 6
+   "rank": 9
   },
   {
    "code": "STZ",
@@ -485,7 +518,7 @@
    "sector": "Consumer Defensive",
    "score": 0.538,
    "note": "F7",
-   "rank": 7
+   "rank": 10
   },
   {
    "code": "INTU",
@@ -496,7 +529,7 @@
    "sector": "Technology",
    "score": 0.512,
    "note": "F7",
-   "rank": 8
+   "rank": 11
   },
   {
    "code": "BF-B",
@@ -507,7 +540,7 @@
    "sector": "Consumer Defensive",
    "score": 0.509,
    "note": "F6",
-   "rank": 9
+   "rank": 12
   },
   {
    "code": "PODD",
@@ -518,7 +551,7 @@
    "sector": "Healthcare",
    "score": 0.496,
    "note": "F7",
-   "rank": 10
+   "rank": 13
   },
   {
    "code": "TYL",
@@ -529,7 +562,7 @@
    "sector": "Technology",
    "score": 0.481,
    "note": "F7",
-   "rank": 11
+   "rank": 14
   },
   {
    "code": "BSX",
@@ -540,7 +573,7 @@
    "sector": "Healthcare",
    "score": 0.47,
    "note": "F8",
-   "rank": 12
+   "rank": 15
   },
   {
    "code": "APP",
@@ -551,7 +584,7 @@
    "sector": "Communication Services",
    "score": 0.459,
    "note": "F9",
-   "rank": 13
+   "rank": 16
   },
   {
    "code": "TSCO",
@@ -562,7 +595,7 @@
    "sector": "Consumer Cyclical",
    "score": 0.423,
    "note": "F6",
-   "rank": 14
+   "rank": 17
   },
   {
    "code": "ORCL",
@@ -573,7 +606,7 @@
    "sector": "Technology",
    "score": 0.354,
    "note": "F6",
-   "rank": 15
+   "rank": 18
   }
  ]
 }
