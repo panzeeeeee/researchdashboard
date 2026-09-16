@@ -8,13 +8,36 @@ import sys
 from common import DATA_DIR, load_config, now_kst, write_json
 
 
-def series(ticker, period="1y"):
+def download_all(tickers, period="1y", tries=3):
+    """보유 종목 전체를 한 번에 받는다.
+
+    종목마다 따로 요청하면 야후가 429(요청 과다)로 막는다.
+    바로 앞 단계에서 스크리너가 수천 종목을 이미 긁은 뒤라 더 그렇다.
+    """
+    import time
     import yfinance as yf
+
+    for i in range(tries):
+        try:
+            df = yf.download(tickers, period=period, auto_adjust=False,
+                             progress=False, group_by="column", threads=False)
+            if df is not None and not df.empty:
+                return df
+        except Exception as e:
+            print(f"  내려받기 실패 ({i+1}/{tries}): {e}", file=sys.stderr)
+        if i < tries - 1:
+            wait = 20 * (i + 1)
+            print(f"  {wait}초 쉬었다 다시 시도합니다.")
+            time.sleep(wait)
+    return None
+
+
+def close_series(df, ticker, single):
+    """한 번에 받은 표에서 종목 하나의 종가를 꺼낸다."""
     try:
-        df = yf.Ticker(ticker).history(period=period, auto_adjust=False)
-        return df["Close"].dropna() if not df.empty else None
-    except Exception as e:
-        print(f"  {ticker} 실패: {e}", file=sys.stderr)
+        col = df["Close"] if single else df["Close"][ticker]
+        return col.dropna()
+    except Exception:
         return None
 
 
@@ -24,8 +47,7 @@ def pct(a, b):
     return round((a / b - 1) * 100, 2)
 
 
-def snapshot(ticker):
-    s = series(ticker)
+def snapshot(s, ticker):
     if s is None or len(s) < 30:
         return None
     last = float(s.iloc[-1])
@@ -50,18 +72,28 @@ def main():
     bench = trig.get("benchmark", "SPY")
     levels = trig.get("levels") or [-10]
 
+    tickers = [h["ticker"] for h in (cfg.get("holdings") or []) if h.get("ticker")]
+    if bench not in tickers:
+        tickers.append(bench)
+
+    df = download_all(tickers)
+    if df is None:
+        print("가격을 받지 못했습니다. 기존 자료를 그대로 둡니다.", file=sys.stderr)
+        return
+
+    single = len(tickers) == 1
     rows = []
-    for h in cfg.get("holdings") or []:
-        t = h.get("ticker")
-        if not t:
-            continue
-        snap = snapshot(t)
+    for t in tickers:
+        snap = snapshot(close_series(df, t, single), t)
         if snap:
             rows.append(snap)
             print(f"  {t}: {snap['price']} ({snap['d1']}%)")
+        else:
+            print(f"  {t}: 자료 없음", file=sys.stderr)
 
-    bench_row = next((r for r in rows if r["ticker"] == bench), None) \
-        or snapshot(bench)
+    bench_row = next((r for r in rows if r["ticker"] == bench), None)
+    rows = [r for r in rows if r["ticker"] in
+            {h["ticker"] for h in (cfg.get("holdings") or []) if h.get("ticker")}]
 
     ladder = []
     if bench_row and bench_row["from_high"] is not None:
