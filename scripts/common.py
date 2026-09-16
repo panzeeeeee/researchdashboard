@@ -8,6 +8,8 @@ from datetime import datetime, timezone, timedelta
 from difflib import SequenceMatcher
 from pathlib import Path
 
+import sys
+
 import requests
 import yaml
 
@@ -116,3 +118,41 @@ def dedupe(items, threshold=0.82):
 def env(name, default=None):
     v = os.environ.get(name, "")
     return v.strip() or default
+
+
+GEMINI_MODELS = [
+    # 앞에서부터 시도하고, 404(모델 종료)면 다음으로 넘어간다.
+    # 구글이 모델을 자주 갈아치우므로 한 이름에 고정하지 않는다.
+    "gemini-flash-latest",
+    "gemini-3.1-flash-lite",
+    "gemini-3-flash",
+    "gemini-2.5-flash",
+]
+GEMINI_URL = ("https://generativelanguage.googleapis.com/v1beta/models/"
+              "{model}:generateContent")
+_WORKING = {"model": None}
+
+
+def ask_gemini(prompt, api_key, timeout=60):
+    """살아 있는 모델을 찾아 한 번 물어본다. 실패하면 None."""
+    if not api_key:
+        return None
+    order = ([_WORKING["model"]] if _WORKING["model"] else []) + [
+        m for m in GEMINI_MODELS if m != _WORKING["model"]]
+    last = None
+    for model in order:
+        try:
+            r = requests.post(GEMINI_URL.format(model=model),
+                              params={"key": api_key}, timeout=timeout,
+                              json={"contents": [{"parts": [{"text": prompt}]}]})
+            if r.status_code == 404:
+                last = f"{model}: 없는 모델"
+                continue
+            r.raise_for_status()
+            _WORKING["model"] = model
+            return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+        except Exception as e:
+            last = f"{model}: {e}"
+            continue
+    print(f"  Gemini 실패 ({last})", file=sys.stderr)
+    return None

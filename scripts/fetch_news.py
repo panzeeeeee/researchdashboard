@@ -19,16 +19,12 @@ from datetime import timedelta
 from email.utils import parsedate_to_datetime
 from urllib.parse import quote
 
-import requests
-
-from common import (DATA_DIR, KST, clean_text, dedupe, echoes_title, env, get,
-                    load_config, now_kst, read_json, write_json)
+from common import (DATA_DIR, KST, ask_gemini, clean_text, dedupe, echoes_title,
+                    env, get, load_config, now_kst, read_json, write_json)
 
 LOOKBACK_HOURS = 48
 PER_QUERY = 30          # 한 검색어에서 가져올 최대 건수
 DEFAULT_MAX = 20        # 한 묶음에 남길 최대 건수 (화면은 5개만 먼저 보여준다)
-GEMINI_URL = ("https://generativelanguage.googleapis.com/v1beta/models/"
-              "gemini-2.0-flash:generateContent")
 
 
 def parse_date(value):
@@ -131,13 +127,8 @@ def summarize(items, api_key):
     prompt = ("다음 뉴스들을 각각 한 문장으로 요약해라. "
               "숫자와 고유명사는 살리고 40자 이내로. 제목을 그대로 반복하지 말고 "
               "핵심 내용만. 설명 없이 '번호. 요약' 형식으로만 출력.\n\n" + numbered)
-    try:
-        r = requests.post(GEMINI_URL, params={"key": api_key}, timeout=60,
-                          json={"contents": [{"parts": [{"text": prompt}]}]})
-        r.raise_for_status()
-        text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-    except Exception as e:
-        print(f"  요약 폴백 ({e})", file=sys.stderr)
+    text = ask_gemini(prompt, api_key)
+    if not text:
         return items
 
     for line in text.splitlines():

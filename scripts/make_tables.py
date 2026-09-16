@@ -13,15 +13,12 @@
 import re
 import sys
 
-import requests
-
-from common import DATA_DIR, ROOT, env, now_kst, read_json, write_json
+from common import (DATA_DIR, ROOT, ask_gemini, env, now_kst, read_json,
+                    write_json)
 
 SCREENER_DIR = ROOT / "screener"
 TOP_ROWS = 20
 HISTORY_DAYS = 60
-GEMINI_URL = ("https://generativelanguage.googleapis.com/v1beta/models/"
-              "gemini-2.0-flash:generateContent")
 DATE_RE = re.compile(r"(20\d{6})")
 
 
@@ -151,13 +148,8 @@ def add_diagnosis(rows, api_key, limit=8):
         "35자 이내, 단정적 투자 의견은 쓰지 말고 통상 알려진 업황·구조 요인만. "
         "확실하지 않으면 '확인 필요'라고 써라. "
         "설명 없이 '번호. 내용' 형식으로만 출력.\n\n" + lines)
-    try:
-        r = requests.post(GEMINI_URL, params={"key": api_key}, timeout=60,
-                          json={"contents": [{"parts": [{"text": prompt}]}]})
-        r.raise_for_status()
-        text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-    except Exception as e:
-        print(f"  진단 생략 ({e})", file=sys.stderr)
+    text = ask_gemini(prompt, api_key)
+    if not text:
         return rows
 
     for line in text.splitlines():
