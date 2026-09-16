@@ -1,8 +1,9 @@
 """뉴스 수집기.
 
-두 갈래로 모은다.
+세 갈래로 모은다.
   1. 종목 뉴스 — picks.json 에 오늘 올라온 종목별로
-  2. 섹터 뉴스 — sectors.yaml 의 고정 관심 섹터별로
+  2. 자동 섹터 — 오늘 걸린 종목이 몰린 업종 (매일 바뀜)
+  3. 고정 섹터 — sectors.yaml 에 직접 적어둔 관심 업종
 
 수집원 우선순위
   네이버 뉴스 API (키가 있으면) → 구글 뉴스 RSS (폴백)
@@ -194,6 +195,17 @@ def main():
         total += len(items)
         stocks.append({**p, "items": items})
 
+    # 2) 오늘 걸린 종목이 몰린 섹터 — 매일 바뀐다
+    auto = []
+    for a in (read_json(DATA_DIR / "picks.json") or {}).get("sectors", []):
+        print(f"자동 섹터: {a['name']} ({a['count']}종목)")
+        items = gather([f"{a['name']} sector outlook",
+                        f"{a['name']} stocks"],
+                       creds, limit=DEFAULT_MAX, market="us")
+        total += len(items)
+        auto.append({**a, "items": items})
+
+    # 3) 고정 관심 섹터 — sectors.yaml 에 적어둔 것
     sectors = []
     for s in load_config("sectors.yaml")["sectors"]:
         print(f"섹터 뉴스: {s['name']}")
@@ -209,6 +221,7 @@ def main():
         "lookback_hours": LOOKBACK_HOURS,
         "total": total,
         "stocks": stocks,
+        "auto_sectors": auto,
         "sectors": sectors,
     })
     print(f"저장 완료 ({total}건)")

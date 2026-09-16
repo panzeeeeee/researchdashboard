@@ -114,6 +114,36 @@ def rank(rows):
     return sorted(rows, key=lambda r: r["score"], reverse=True)
 
 
+MAX_SECTORS = 5
+MIN_NAMES = 2      # 한 종목만 걸린 섹터는 우연일 수 있어 제외
+
+
+def collect_sectors(breakout, deepvalue):
+    """오늘 걸린 종목들이 몰려 있는 섹터를 센다.
+
+    고정 관심 섹터와 달리, 이건 스크리너 결과에 따라 매일 바뀐다.
+    어느 업종에 부실이나 바닥 신호가 쌓이고 있는지 보기 위한 것.
+    """
+    buckets = {}
+    for row in breakout + deepvalue:
+        name = (row.get("sector") or "").strip()
+        if not name:
+            continue
+        b = buckets.setdefault(name, {
+            "name": name, "count": 0, "tickers": [], "strategies": set(),
+        })
+        b["count"] += 1
+        if len(b["tickers"]) < 6:
+            b["tickers"].append(row["code"])
+        b["strategies"].add(row["strategy"])
+
+    out = [b for b in buckets.values() if b["count"] >= MIN_NAMES]
+    out.sort(key=lambda b: b["count"], reverse=True)
+    for b in out:
+        b["strategies"] = sorted(b["strategies"])
+    return out[:MAX_SECTORS]
+
+
 def main():
     if not SCREENER_DIR.exists():
         print("screener 폴더가 없습니다. 엑셀을 올려주세요.", file=sys.stderr)
@@ -137,10 +167,16 @@ def main():
         for i, row in enumerate(group[:TABLE_ROWS], 1):
             table.append({**row, "rank": i})
 
+    sectors = collect_sectors(breakout, deepvalue)
+    if sectors:
+        print("오늘의 섹터: " + ", ".join(
+            f"{s['name']}({s['count']})" for s in sectors))
+
     write_json(DATA_DIR / "picks.json", {
         "updated_at": now_kst().isoformat(),
         "picks": picks,
         "table": table,
+        "sectors": sectors,
     })
     if picks:
         print("오늘의 종목: " + ", ".join(f"{p['name']}({p['score']})" for p in picks))
