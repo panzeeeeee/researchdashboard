@@ -120,39 +120,88 @@ def env(name, default=None):
     return v.strip() or default
 
 
-GEMINI_MODELS = [
-    # 앞에서부터 시도하고, 404(모델 종료)면 다음으로 넘어간다.
-    # 구글이 모델을 자주 갈아치우므로 한 이름에 고정하지 않는다.
-    "gemini-flash-latest",
-    "gemini-3.1-flash-lite",
-    "gemini-3-flash",
-    "gemini-2.5-flash",
-]
-GEMINI_URL = ("https://generativelanguage.googleapis.com/v1beta/models/"
-              "{model}:generateContent")
-_WORKING = {"model": None}
+GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta"
+
+# 구글이 모델을 자주 갈아치우므로 이름을 박아두지 않는다.
+# 계정에서 실제로 쓸 수 있는 목록을 물어보고 그중에서 고른다.
+_STATE = {"model": None, "listed": False}
+
+
+def _list_models(api_key):
+    """generateContent 를 지원하는 모델 이름들을 새 것부터 정렬해 돌려준다."""
+    try:
+        r = requests.get(f"{GEMINI_BASE}/models", params={"key": api_key},
+                         timeout=30)
+        r.raise_for_status()
+        rows = r.json().get("models", [])
+    except Exception as e:
+        print(f"  Gemini 모델 목록 조회 실패: {e}", file=sys.stderr)
+        return []
+
+    names = []
+    for m in rows:
+        if "generateContent" not in (m.get("supportedGenerationMethods") or []):
+            continue
+        name = str(m.get("name", "")).split("/")[-1]
+        if not name:
+            continue
+        names.append(name)
+
+    def score(n):
+        low = n.lower()
+        s = 0
+        if "flash" in low:
+            s += 100          # 무료 등급은 사실상 flash 계열
+        if "lite" in low:
+            s += 1            # 같은 세대면 한도가 넉넉한 lite 를 먼저
+        if any(w in low for w in ("preview", "exp", "thinking", "tts",
+                                  "audio", "image", "embedding")):
+            s -= 60           # 실험판과 특수 목적 모델은 뒤로
+        nums = re.findall(r"\d+(?:\.\d+)?", n)
+        if nums:
+            try:
+                s += min(float(nums[0]), 20) * 5   # 최신 세대를 확실히 앞으로
+            except ValueError:
+                pass
+        return -s
+
+    names.sort(key=score)
+    return names
 
 
 def ask_gemini(prompt, api_key, timeout=60):
     """살아 있는 모델을 찾아 한 번 물어본다. 실패하면 None."""
     if not api_key:
         return None
-    order = ([_WORKING["model"]] if _WORKING["model"] else []) + [
-        m for m in GEMINI_MODELS if m != _WORKING["model"]]
+
+    order = []
+    if _STATE["model"]:
+        order.append(_STATE["model"])
+    if not _STATE["listed"]:
+        _STATE["listed"] = True
+        _STATE["available"] = _list_models(api_key)
+    order += [m for m in _STATE.get("available", []) if m != _STATE["model"]]
+
+    if not order:
+        print("  Gemini: 쓸 수 있는 모델이 없습니다.", file=sys.stderr)
+        return None
+
     last = None
-    for model in order:
+    for model in order[:5]:
         try:
-            r = requests.post(GEMINI_URL.format(model=model),
+            r = requests.post(f"{GEMINI_BASE}/models/{model}:generateContent",
                               params={"key": api_key}, timeout=timeout,
                               json={"contents": [{"parts": [{"text": prompt}]}]})
-            if r.status_code == 404:
-                last = f"{model}: 없는 모델"
+            if r.status_code in (404, 400):
+                last = f"{model}: {r.status_code}"
                 continue
             r.raise_for_status()
-            _WORKING["model"] = model
+            if _STATE["model"] != model:
+                print(f"  Gemini 모델: {model}")
+            _STATE["model"] = model
             return r.json()["candidates"][0]["content"]["parts"][0]["text"]
         except Exception as e:
             last = f"{model}: {e}"
             continue
-    print(f"  Gemini 실패 ({last})", file=sys.stderr)
+    print(f"  Gemini 실패 (마지막 시도 {last})", file=sys.stderr)
     return None
