@@ -61,7 +61,7 @@ article a{color:var(--ink);text-decoration:none;font-size:.92rem;
   border-bottom:1px solid transparent}
 article a:hover,article a:focus-visible{border-bottom-color:var(--accent);color:var(--accent)}
 .sum{font-size:.82rem;color:var(--ink-2);margin:.12rem 0 0}
-.src{font-size:.72rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.src{font-size:.78rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
 .more{margin-top:.5rem;background:none;border:1px solid var(--rule);color:var(--ink-2);
   border-radius:999px;padding:.22rem .8rem;font-size:.76rem;cursor:pointer;font-family:inherit}
 .more:hover{border-color:var(--accent);color:var(--accent)}
@@ -98,22 +98,22 @@ tr:last-child td{border-bottom:none}
 .chip{font-size:.72rem;color:var(--ink-2);background:var(--card);
   border:1px solid var(--rule);border-radius:999px;padding:.12rem .55rem}
 .lines{margin:.2rem 0 .8rem;padding-left:1.1rem}
-.lines li{font-size:.87rem;color:var(--ink-2);margin:.15rem 0}
+.lines li{font-size:.95rem;color:var(--ink-2);margin:.28rem 0;line-height:1.6}
 .src a{color:var(--accent)}
-.qlbl{font-size:.74rem;font-weight:600;color:var(--ink-3);margin:.6rem 0 .1rem}
-.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.7rem;
+.qlbl{font-size:.82rem;font-weight:600;color:var(--ink-3);margin:.7rem 0 .2rem}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:.8rem;
   margin-top:.8rem}
 .qcard{background:var(--card);border:1px solid var(--rule);border-radius:9px;
-  padding:.75rem .9rem}
+  padding:.95rem 1.1rem}
 .qhead{display:flex;gap:.55rem;align-items:baseline;flex-wrap:wrap;
   border-bottom:1px solid var(--rule);padding-bottom:.35rem}
-.qshift{font-size:.78rem;color:var(--accent);margin:.4rem 0 0}
+.qshift{font-size:.88rem;color:var(--accent);margin:.5rem 0 0;line-height:1.55}
 .qcard .lines{margin:.1rem 0 .3rem;padding-left:1rem}
-.qcard .lines li{font-size:.82rem}
+.qcard .lines li{font-size:.92rem;line-height:1.65}
 .filing{border-top:1px solid var(--rule);padding:.5rem 0}
-.filing summary{cursor:pointer;font-size:.86rem;font-weight:600}
-.doc{white-space:pre-wrap;font-size:.8rem;line-height:1.7;color:var(--ink-2);
-  max-height:420px;overflow-y:auto;background:var(--paper);
+.filing summary{cursor:pointer;font-size:.94rem;font-weight:600;padding:.2rem 0}
+.doc{white-space:pre-wrap;font-size:.9rem;line-height:1.8;color:var(--ink);
+  max-height:560px;overflow-y:auto;background:var(--paper);
   border:1px solid var(--rule);border-radius:7px;padding:.7rem .8rem;margin:.4rem 0 0}
 .edgar-box{margin-top:.6rem}
 </style>
@@ -308,12 +308,19 @@ function renderCalls(c, edgar) {
 
   box.innerHTML = list.map(s => {
     const sm = s.summary || {};
+    // 요약의 분기 표기가 FY형식일 수도, 날짜일 수도 있어 둘 다 받아준다
     const qmap = {};
-    (sm.quarters || []).forEach(q => { qmap[(q.q || "").toUpperCase()] = q; });
+    (sm.quarters || []).forEach(q => {
+      const k = String(q.q || "").toUpperCase().replace(/[\s-]/g, "");
+      if (k) qmap[k] = q;
+    });
+    const findQ = (fy, fq, date) =>
+      qmap[`FY${fy}Q${fq}`] || qmap[`${fy}Q${fq}`] ||
+      qmap[String(date || "").slice(0, 10).replace(/-/g, "")] ||
+      qmap[String(date || "").slice(0, 10)] || {};
 
     const rows = (s.quarters || []).map(q => {
-      const key = `FY${q.fy}Q${q.fq}`;
-      const d = qmap[key] || {};
+      const d = findQ(q.fy, q.fq, q.date);
       const has = (d.mgmt || []).length || (d.qna || []).length;
       return `
         <div class="qcard">
