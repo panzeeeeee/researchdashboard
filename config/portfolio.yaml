@@ -1,0 +1,21 @@
+# 보유 종목과 규칙 트리거 설정.
+# 금액은 적지 않습니다. 종목과 비중(선택)만 있으면 화면이 나옵니다.
+
+holdings:
+  - { ticker: "GOOGL" }
+  - { ticker: "MSFT" }
+  - { ticker: "META" }
+  - { ticker: "AMZN" }
+  - { ticker: "CRM" }
+  - { ticker: "SPY" }
+  - { ticker: "NKE" }
+  - { ticker: "DEA" }
+  - { ticker: "PFE" }
+  - { ticker: "CPNG" }
+  - { ticker: "ENPH" }
+
+# 기준 지수가 고점 대비 얼마나 빠지면 현금을 넣을지.
+# 단계별로 여러 개 둘 수 있습니다.
+triggers:
+  benchmark: "SPY"
+  levels: [-10, -15, -20]
