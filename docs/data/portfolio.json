@@ -1,7 +1,112 @@
 {
- "updated_at": "2026-09-16T17:18:07.604226+09:00",
+ "updated_at": "2026-09-16T18:17:50.601851+09:00",
  "benchmark": "SPY",
- "benchmark_dd": null,
- "ladder": [],
- "holdings": []
+ "benchmark_dd": -2.63,
+ "ladder": [
+  {
+   "level": -10,
+   "hit": false,
+   "gap": 7.37
+  },
+  {
+   "level": -15,
+   "hit": false,
+   "gap": 12.37
+  },
+  {
+   "level": -20,
+   "hit": false,
+   "gap": 17.37
+  }
+ ],
+ "holdings": [
+  {
+   "ticker": "CPNG",
+   "price": 14.68,
+   "d1": -2.85,
+   "m1": -8.93,
+   "from_high": -56.22,
+   "pos52": 0
+  },
+  {
+   "ticker": "NKE",
+   "price": 36.22,
+   "d1": -2.24,
+   "m1": -11.07,
+   "from_high": -51.43,
+   "pos52": 0
+  },
+  {
+   "ticker": "ENPH",
+   "price": 36.72,
+   "d1": 0.16,
+   "m1": -9.29,
+   "from_high": -49.23,
+   "pos52": 23
+  },
+  {
+   "ticker": "GOOGL",
+   "price": 344.98,
+   "d1": -1.26,
+   "m1": -0.27,
+   "from_high": -14.32,
+   "pos52": 65
+  },
+  {
+   "ticker": "META",
+   "price": 670.24,
+   "d1": 0.7,
+   "m1": 13.63,
+   "from_high": -14.1,
+   "pos52": 57
+  },
+  {
+   "ticker": "AMZN",
+   "price": 248.42,
+   "d1": -2.02,
+   "m1": -5.42,
+   "from_high": -12.53,
+   "pos52": 58
+  },
+  {
+   "ticker": "MSFT",
+   "price": 497.12,
+   "d1": -1.64,
+   "m1": 0.35,
+   "from_high": -8.29,
+   "pos52": 76
+  },
+  {
+   "ticker": "DEA",
+   "price": 23.72,
+   "d1": -0.5,
+   "m1": -4.32,
+   "from_high": -7.45,
+   "pos52": 62
+  },
+  {
+   "ticker": "PFE",
+   "price": 27.55,
+   "d1": -0.61,
+   "m1": 2.84,
+   "from_high": -5.07,
+   "pos52": 73
+  },
+  {
+   "ticker": "CRM",
+   "price": 255.65,
+   "d1": -1.46,
+   "m1": 30.29,
+   "from_high": -3.97,
+   "pos52": 91
+  },
+  {
+   "ticker": "SPY",
+   "price": 757.39,
+   "d1": -0.46,
+   "m1": -2.44,
+   "from_high": -2.63,
+   "pos52": 86
+  }
+ ]
 }
