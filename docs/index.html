@@ -97,6 +97,25 @@ tr:last-child td{border-bottom:none}
 .chips{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.5rem}
 .chip{font-size:.72rem;color:var(--ink-2);background:var(--card);
   border:1px solid var(--rule);border-radius:999px;padding:.12rem .55rem}
+.lines{margin:.2rem 0 .8rem;padding-left:1.1rem}
+.lines li{font-size:.87rem;color:var(--ink-2);margin:.15rem 0}
+.src a{color:var(--accent)}
+.qlbl{font-size:.74rem;font-weight:600;color:var(--ink-3);margin:.6rem 0 .1rem}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.7rem;
+  margin-top:.8rem}
+.qcard{background:var(--card);border:1px solid var(--rule);border-radius:9px;
+  padding:.75rem .9rem}
+.qhead{display:flex;gap:.55rem;align-items:baseline;flex-wrap:wrap;
+  border-bottom:1px solid var(--rule);padding-bottom:.35rem}
+.qshift{font-size:.78rem;color:var(--accent);margin:.4rem 0 0}
+.qcard .lines{margin:.1rem 0 .3rem;padding-left:1rem}
+.qcard .lines li{font-size:.82rem}
+.filing{border-top:1px solid var(--rule);padding:.5rem 0}
+.filing summary{cursor:pointer;font-size:.86rem;font-weight:600}
+.doc{white-space:pre-wrap;font-size:.8rem;line-height:1.7;color:var(--ink-2);
+  max-height:420px;overflow-y:auto;background:var(--paper);
+  border:1px solid var(--rule);border-radius:7px;padding:.7rem .8rem;margin:.4rem 0 0}
+.edgar-box{margin-top:.6rem}
 </style>
 </head>
 <body>
@@ -114,6 +133,7 @@ tr:last-child td{border-bottom:none}
   <a href="#portfolio">포트폴리오</a>
   <a href="#breakout">긴 조정 후<br>52주 신고가</a>
   <a href="#deepvalue">딥밸류</a>
+  <a href="#calls">컨콜 흐름</a>
   <a href="#news">섹터 뉴스 <span class="count" id="c-news"></span></a>
   <div class="divider"></div>
   <a href="#soon">준비 중</a>
@@ -139,6 +159,11 @@ tr:last-child td{border-bottom:none}
 <section id="deepvalue">
   <h2>딥밸류</h2>
   <div id="t-deepvalue"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="calls">
+  <h2>컨콜 흐름<span class="tagline">최근 3년</span></h2>
+  <div id="calls-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="news">
@@ -264,6 +289,102 @@ function renderPortfolio(p) {
     </table></div>`;
 }
 
+const toneMark = v => {
+  if (v === null || v === undefined || v === "") return "";
+  const n = Number(v);
+  if (Number.isNaN(n)) return esc(String(v));
+  const cls = n > 0.05 ? "up" : n < -0.05 ? "down" : "";
+  return `<span class="${cls}">${n > 0 ? "+" : ""}${n.toFixed(2)}</span>`;
+};
+
+function renderCalls(c, edgar) {
+  const box = document.getElementById("calls-box");
+  const have = new Set((edgar?.stocks || []).map(s => s.ticker));
+  const list = c?.stocks || [];
+  if (!list.length && !have.size) {
+    box.innerHTML = '<p class="note">컨콜 자료가 아직 없습니다.</p>';
+    return;
+  }
+
+  box.innerHTML = list.map(s => {
+    const sm = s.summary || {};
+    const qmap = {};
+    (sm.quarters || []).forEach(q => { qmap[(q.q || "").toUpperCase()] = q; });
+
+    const rows = (s.quarters || []).map(q => {
+      const key = `FY${q.fy}Q${q.fq}`;
+      const d = qmap[key] || {};
+      const has = (d.mgmt || []).length || (d.qna || []).length;
+      return `
+        <div class="qcard">
+          <div class="qhead">
+            <span class="tick">FY${q.fy} Q${q.fq}</span>
+            <span class="src">${esc(String(q.date || "").slice(0, 10))}</span>
+            ${q.tone !== undefined ? `<span class="src">톤 ${toneMark(q.tone)}</span>` : ""}
+          </div>
+          ${has ? `
+            ${(d.mgmt || []).length ? `<p class="qlbl">경영진 강조</p>
+              <ul class="lines">${d.mgmt.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+            ${(d.qna || []).length ? `<p class="qlbl">애널리스트 질문</p>
+              <ul class="lines">${d.qna.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+            ${d.shift ? `<p class="qshift">달라진 점 · ${esc(d.shift)}</p>` : ""}
+          ` : '<p class="note">요약 없음</p>'}
+          ${(q.themes || []).length
+            ? `<p class="miss">${esc(q.themes.join(", "))}</p>` : ""}
+        </div>`;
+    }).join("");
+
+    return `
+      <div class="group">
+        <div class="ghead">
+          <span class="gname">${esc(s.name)}</span>
+          <span class="pill">${esc(s.ticker)}</span>
+          <span class="pill on">최근 ${esc(s.latest || "")}</span>
+          ${have.has(s.ticker)
+            ? `<button class="more" data-edgar="${esc(s.ticker)}">8-K 원문</button>` : ""}
+        </div>
+        ${(sm.arc || []).length ? `
+          <p class="qlbl">3년 흐름</p>
+          <ul class="lines">${sm.arc.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+        <div class="qgrid">${rows}</div>
+        <div class="edgar-box" id="edgar-${esc(s.ticker)}"></div>
+        <p class="src" style="margin-top:.5rem">
+          요약은 자동 생성입니다 ·
+          <a href="${esc(s.source_url)}" target="_blank" rel="noopener">컨콜 원문 ↗</a></p>
+      </div>`;
+  }).join("");
+
+  box.querySelectorAll("[data-edgar]").forEach(btn => {
+    btn.addEventListener("click", () => loadEdgar(btn.dataset.edgar, btn));
+  });
+}
+
+// 8-K 실적 보도자료는 미국 공시 문서라 원문을 그대로 보관한다.
+async function loadEdgar(ticker, btn) {
+  const host = document.getElementById("edgar-" + ticker);
+  if (!host) return;
+  if (host.dataset.open === "1") {
+    host.innerHTML = ""; host.dataset.open = "0";
+    btn.textContent = "8-K 원문"; return;
+  }
+  host.innerHTML = '<p class="note">불러오는 중…</p>';
+  try {
+    const r = await fetch(`data/edgar/${ticker}.json?t=` + Date.now());
+    const d = await r.json();
+    host.dataset.open = "1";
+    btn.textContent = "접기";
+    host.innerHTML = (d.filings || []).map((f, i) => `
+      <details class="filing" ${i === 0 ? "open" : ""}>
+        <summary>${esc(f.date)} · ${esc((f.title || "").slice(0, 70))}</summary>
+        <p class="src"><a href="${esc(f.url)}" target="_blank" rel="noopener">
+          SEC 원문 ↗</a></p>
+        <pre class="doc">${esc(f.text || "")}</pre>
+      </details>`).join("") || '<p class="note">보관된 공시가 없습니다.</p>';
+  } catch {
+    host.innerHTML = '<p class="note">공시를 불러오지 못했습니다.</p>';
+  }
+}
+
 function renderTables(t) {
   const bBox = document.getElementById("t-breakout");
   const dBox = document.getElementById("t-deepvalue");
@@ -339,7 +460,9 @@ Promise.all([
   fetch("data/research.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/tables.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/portfolio.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
-]).then(([news, research, tables, pf]) => {
+  fetch("data/calls.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+  fetch("data/edgar.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+]).then(([news, research, tables, pf, calls, edgar]) => {
   document.getElementById("stamp").textContent =
     new Date(news.updated_at).toLocaleString("ko-KR",
       { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
@@ -347,6 +470,7 @@ Promise.all([
 
   renderTables(tables);
   renderPortfolio(pf);
+  renderCalls(calls, edgar);
 
   const byCode = {};
   (research?.stocks || []).forEach(s => { byCode[s.code] = s.items; });
