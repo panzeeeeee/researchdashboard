@@ -1,6 +1,39 @@
 {
- "updated_at": "2026-09-17T09:59:38.384619+09:00",
+ "updated_at": "2026-09-17T23:32:30.131027+09:00",
  "picks": [
+  {
+   "code": "RVTY",
+   "name": "Revvity",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.8,
+   "note": "G3",
+   "source": "신고가·물극필반"
+  },
+  {
+   "code": "IQV",
+   "name": "IQVIA",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.769,
+   "note": "G2",
+   "source": "신고가·물극필반"
+  },
+  {
+   "code": "SDGR",
+   "name": "SCHRODINGER INC",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.751,
+   "note": "G2",
+   "source": "신고가·물극필반"
+  },
   {
    "code": "CDNA",
    "name": "CAREDX",
@@ -8,42 +41,20 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.763,
+   "score": 0.742,
    "note": "G2",
    "source": "신고가·물극필반"
   },
   {
-   "code": "NEO",
-   "name": "NEOGENOMICS",
+   "code": "NRDS",
+   "name": "NerdWallet, Inc.",
    "market": "us",
-   "strategy": "신고가·물극필반",
+   "strategy": "딥밸류",
    "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.76,
-   "note": "G2",
-   "source": "신고가·물극필반"
-  },
-  {
-   "code": "ADPT",
-   "name": "ADAPTIVE BIOTECHNOLOGIES",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.696,
-   "note": "G2",
-   "source": "신고가·물극필반"
-  },
-  {
-   "code": "NUTX",
-   "name": "NUTEX HEALTH INC",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.616,
-   "note": "G2",
-   "source": "신고가·물극필반"
+   "sector": "Communication Services",
+   "score": 0.799,
+   "note": "F8",
+   "source": "딥밸류"
   },
   {
    "code": "APTV",
@@ -66,20 +77,42 @@
    "score": 0.712,
    "note": "F7",
    "source": "딥밸류"
-  },
-  {
-   "code": "ZTS",
-   "name": "Zoetis Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "SPX",
-   "sector": "Healthcare",
-   "score": 0.689,
-   "note": "F8",
-   "source": "딥밸류"
   }
  ],
  "table": [
+  {
+   "code": "RVTY",
+   "name": "Revvity",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.8,
+   "note": "G3",
+   "rank": 1
+  },
+  {
+   "code": "IQV",
+   "name": "IQVIA",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.769,
+   "note": "G2",
+   "rank": 2
+  },
+  {
+   "code": "SDGR",
+   "name": "SCHRODINGER INC",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.751,
+   "note": "G2",
+   "rank": 3
+  },
   {
    "code": "CDNA",
    "name": "CAREDX",
@@ -87,9 +120,9 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.763,
+   "score": 0.742,
    "note": "G2",
-   "rank": 1
+   "rank": 4
   },
   {
    "code": "NEO",
@@ -98,9 +131,31 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.76,
+   "score": 0.713,
    "note": "G2",
-   "rank": 2
+   "rank": 5
+  },
+  {
+   "code": "FIVN",
+   "name": "FIVE9",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.699,
+   "note": "G1",
+   "rank": 6
+  },
+  {
+   "code": "TXG",
+   "name": "10X GENOMICS CLASS A",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.69,
+   "note": "G2",
+   "rank": 7
   },
   {
    "code": "ADPT",
@@ -109,53 +164,9 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.696,
-   "note": "G2",
-   "rank": 3
-  },
-  {
-   "code": "NUTX",
-   "name": "NUTEX HEALTH INC",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.616,
-   "note": "G2",
-   "rank": 4
-  },
-  {
-   "code": "ZD",
-   "name": "ZIFF DAVIS INC",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Communication Services",
-   "score": 0.6,
+   "score": 0.656,
    "note": "G1",
-   "rank": 5
-  },
-  {
-   "code": "RVTY",
-   "name": "Revvity",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Healthcare",
-   "score": 0.577,
-   "note": "G3",
-   "rank": 6
-  },
-  {
-   "code": "IOVA",
-   "name": "IOVANCE BIOTHERAPEUTICS INC",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.568,
-   "note": "G1",
-   "rank": 7
+   "rank": 8
   },
   {
    "code": "ATRC",
@@ -164,9 +175,53 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.552,
+   "score": 0.614,
    "note": "G2",
-   "rank": 8
+   "rank": 9
+  },
+  {
+   "code": "STLN",
+   "name": "STARLING ONCOLOGY",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.599,
+   "note": "G2",
+   "rank": 10
+  },
+  {
+   "code": "NUTX",
+   "name": "NUTEX HEALTH INC",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.555,
+   "note": "G2",
+   "rank": 11
+  },
+  {
+   "code": "CRWD",
+   "name": "CrowdStrike",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Technology",
+   "score": 0.549,
+   "note": "G1",
+   "rank": 12
+  },
+  {
+   "code": "MTW",
+   "name": "MANITOWOC INC",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.546,
+   "note": "G1",
+   "rank": 13
   },
   {
    "code": "DELL",
@@ -175,196 +230,42 @@
    "strategy": "신고가·물극필반",
    "universe": "SPX",
    "sector": "Technology",
-   "score": 0.55,
+   "score": 0.536,
    "note": "G1",
-   "rank": 9
+   "rank": 14
   },
   {
-   "code": "SMTI",
-   "name": "SANARA MEDTECH INC",
+   "code": "IOVA",
+   "name": "IOVANCE BIOTHERAPEUTICS INC",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.503,
-   "note": "G1",
-   "rank": 10
-  },
-  {
-   "code": "LPG",
-   "name": "DORIAN LPG",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Energy",
-   "score": 0.473,
-   "note": "G1",
-   "rank": 11
-  },
-  {
-   "code": "CVI",
-   "name": "CVR ENERGY INC",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Energy",
-   "score": 0.473,
-   "note": "G1",
-   "rank": 12
-  },
-  {
-   "code": "NAT",
-   "name": "NORDIC AMERICAN TANKERS LTD",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Energy",
-   "score": 0.469,
-   "note": "G1",
-   "rank": 13
-  },
-  {
-   "code": "ATKR",
-   "name": "ATKORE",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.467,
-   "note": "G2",
-   "rank": 14
-  },
-  {
-   "code": "RDVT",
-   "name": "RED VIOLET INC",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.453,
+   "score": 0.532,
    "note": "G1",
    "rank": 15
   },
   {
-   "code": "SFL",
-   "name": "SFL",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.446,
-   "note": "G1",
-   "rank": 16
-  },
-  {
-   "code": "DHT",
-   "name": "DHT HOLDINGS",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Energy",
-   "score": 0.443,
-   "note": "G1",
-   "rank": 17
-  },
-  {
-   "code": "INSW",
-   "name": "INTERNATIONAL SEAWAYS",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Energy",
-   "score": 0.439,
-   "note": "G1",
-   "rank": 18
-  },
-  {
-   "code": "AVAH",
-   "name": "AVEANNA HEALTHCARE HOLDINGS INC",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.435,
-   "note": "G1",
-   "rank": 19
-  },
-  {
-   "code": "FTNT",
-   "name": "Fortinet",
+   "code": "TMO",
+   "name": "Thermo Fisher Scientific",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "SPX",
-   "sector": "Technology",
-   "score": 0.418,
-   "note": "G1",
-   "rank": 20
-  },
-  {
-   "code": "TNK",
-   "name": "TEEKAY TANKERS LTD CLASS A",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Energy",
-   "score": 0.412,
-   "note": "G1",
-   "rank": 21
-  },
-  {
-   "code": "OSPN",
-   "name": "ONESPAN",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.407,
-   "note": "G1",
-   "rank": 22
-  },
-  {
-   "code": "CXW",
-   "name": "CORECIVIC REIT",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.406,
-   "note": "G1",
-   "rank": 23
-  },
-  {
-   "code": "ASC",
-   "name": "ARDMORE SHIPPING CORP",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.4,
+   "sector": "Healthcare",
+   "score": 0.524,
    "note": "G2",
-   "rank": 24
+   "rank": 16
   },
   {
-   "code": "NEOG",
-   "name": "NEOGEN",
+   "code": "TWST",
+   "name": "TWIST BIOSCIENCE",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.39,
+   "score": 0.515,
    "note": "G1",
-   "rank": 25
-  },
-  {
-   "code": "RUSHB",
-   "name": "RUSH ENTERPRISES CLASS B",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Consumer Cyclical",
-   "score": 0.384,
-   "note": "G1",
-   "rank": 26
+   "rank": 17
   },
   {
    "code": "ACVA",
@@ -373,42 +274,152 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.375,
+   "score": 0.501,
+   "note": "G1",
+   "rank": 18
+  },
+  {
+   "code": "NSIT",
+   "name": "INSIGHT ENTERPRISES INC",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.494,
+   "note": "G1",
+   "rank": 19
+  },
+  {
+   "code": "CNXN",
+   "name": "PC CONNECTION INC",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.49,
+   "note": "G1",
+   "rank": 20
+  },
+  {
+   "code": "FTNT",
+   "name": "Fortinet",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Technology",
+   "score": 0.48,
+   "note": "G1",
+   "rank": 21
+  },
+  {
+   "code": "WST",
+   "name": "West Pharmaceutical Services",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.477,
+   "note": "G2",
+   "rank": 22
+  },
+  {
+   "code": "CRWD",
+   "name": "CrowdStrike Holdings, Inc. Class A Common Stock",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "NDX",
+   "sector": "Technology",
+   "score": 0.45,
+   "note": "G1",
+   "rank": 23
+  },
+  {
+   "code": "RDVT",
+   "name": "RED VIOLET INC",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.446,
+   "note": "G1",
+   "rank": 24
+  },
+  {
+   "code": "OSPN",
+   "name": "ONESPAN",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.439,
+   "note": "G1",
+   "rank": 25
+  },
+  {
+   "code": "WAT",
+   "name": "Waters Corporation",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.434,
+   "note": "G1",
+   "rank": 26
+  },
+  {
+   "code": "PGEN",
+   "name": "PRECIGEN",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.428,
    "note": "G1",
    "rank": 27
   },
   {
-   "code": "STNG",
-   "name": "SCORPIO TANKERS",
+   "code": "LPG",
+   "name": "DORIAN LPG",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Energy",
-   "score": 0.368,
+   "score": 0.418,
    "note": "G1",
    "rank": 28
   },
   {
-   "code": "FLNG",
-   "name": "FLEX LNG",
+   "code": "CVI",
+   "name": "CVR ENERGY INC",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Energy",
-   "score": 0.359,
+   "score": 0.409,
    "note": "G1",
    "rank": 29
   },
   {
-   "code": "NVGS",
-   "name": "NAVIGATOR HOLDINGS",
+   "code": "CLMT",
+   "name": "CALUMET",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
-   "sector": "Energy",
-   "score": 0.359,
+   "sector": "Basic Materials",
+   "score": 0.409,
    "note": "G1",
    "rank": 30
+  },
+  {
+   "code": "NRDS",
+   "name": "NerdWallet, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Communication Services",
+   "score": 0.799,
+   "note": "F8",
+   "rank": 1
   },
   {
    "code": "APTV",
@@ -419,7 +430,7 @@
    "sector": "Consumer Cyclical",
    "score": 0.794,
    "note": "F8",
-   "rank": 1
+   "rank": 2
   },
   {
    "code": "CPRT",
@@ -430,7 +441,7 @@
    "sector": "Industrials",
    "score": 0.712,
    "note": "F7",
-   "rank": 2
+   "rank": 3
   },
   {
    "code": "ZTS",
@@ -441,7 +452,7 @@
    "sector": "Healthcare",
    "score": 0.689,
    "note": "F8",
-   "rank": 3
+   "rank": 4
   },
   {
    "code": "PNR",
@@ -452,7 +463,7 @@
    "sector": "Industrials",
    "score": 0.672,
    "note": "F9",
-   "rank": 4
+   "rank": 5
   },
   {
    "code": "COLL",
@@ -461,42 +472,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.671,
-   "note": "F6",
-   "rank": 5
-  },
-  {
-   "code": "APOG",
-   "name": "Apogee Enterprises, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.656,
+   "score": 0.67,
    "note": "F6",
    "rank": 6
-  },
-  {
-   "code": "AMPH",
-   "name": "Amphastar Pharmaceuticals, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.653,
-   "note": "F6",
-   "rank": 7
-  },
-  {
-   "code": "JBI",
-   "name": "Janus International Group, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.653,
-   "note": "F6",
-   "rank": 8
   },
   {
    "code": "DXC",
@@ -507,7 +485,18 @@
    "sector": "Technology",
    "score": 0.646,
    "note": "F6",
-   "rank": 9
+   "rank": 7
+  },
+  {
+   "code": "JBI",
+   "name": "Janus International Group, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.646,
+   "note": "F6",
+   "rank": 8
   },
   {
    "code": "INTU",
@@ -518,7 +507,29 @@
    "sector": "Technology",
    "score": 0.645,
    "note": "F7",
+   "rank": 9
+  },
+  {
+   "code": "APOG",
+   "name": "Apogee Enterprises, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.645,
+   "note": "F6",
    "rank": 10
+  },
+  {
+   "code": "AMPH",
+   "name": "Amphastar Pharmaceuticals, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.642,
+   "note": "F6",
+   "rank": 11
   },
   {
    "code": "NKE",
@@ -529,7 +540,7 @@
    "sector": "Consumer Cyclical",
    "score": 0.638,
    "note": "F7",
-   "rank": 11
+   "rank": 12
   },
   {
    "code": "ARDT",
@@ -538,31 +549,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.633,
+   "score": 0.626,
    "note": "F8",
-   "rank": 12
-  },
-  {
-   "code": "LRN",
-   "name": "Stride, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.632,
-   "note": "F6",
    "rank": 13
-  },
-  {
-   "code": "ICFI",
-   "name": "ICF International, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.628,
-   "note": "F7",
-   "rank": 14
   },
   {
    "code": "FISV",
@@ -573,7 +562,7 @@
    "sector": "Unknown",
    "score": 0.623,
    "note": "F6",
-   "rank": 15
+   "rank": 14
   },
   {
    "code": "APP",
@@ -584,7 +573,29 @@
    "sector": "Communication Services",
    "score": 0.618,
    "note": "F9",
+   "rank": 15
+  },
+  {
+   "code": "LRN",
+   "name": "Stride, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Consumer Defensive",
+   "score": 0.617,
+   "note": "F6",
    "rank": 16
+  },
+  {
+   "code": "ICFI",
+   "name": "ICF International, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.612,
+   "note": "F7",
+   "rank": 17
   },
   {
    "code": "ARHS",
@@ -593,9 +604,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.615,
+   "score": 0.611,
    "note": "F6",
-   "rank": 17
+   "rank": 18
   },
   {
    "code": "BBW",
@@ -604,9 +615,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.614,
+   "score": 0.604,
    "note": "F6",
-   "rank": 18
+   "rank": 19
   },
   {
    "code": "ODD",
@@ -615,31 +626,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.608,
+   "score": 0.593,
    "note": "F6",
-   "rank": 19
-  },
-  {
-   "code": "MNTN",
-   "name": "MNTN, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.564,
-   "note": "F7",
    "rank": 20
-  },
-  {
-   "code": "BL",
-   "name": "BlackLine, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.556,
-   "note": "F7",
-   "rank": 21
   },
   {
    "code": "CPRT",
@@ -650,16 +639,27 @@
    "sector": "Industrials",
    "score": 0.553,
    "note": "F7",
-   "rank": 22
+   "rank": 21
   },
   {
-   "code": "FRSH",
-   "name": "Freshworks Inc.",
+   "code": "MNTN",
+   "name": "MNTN, Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.543,
+   "score": 0.544,
+   "note": "F7",
+   "rank": 22
+  },
+  {
+   "code": "BL",
+   "name": "BlackLine, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.542,
    "note": "F7",
    "rank": 23
   },
@@ -675,15 +675,26 @@
    "rank": 24
   },
   {
+   "code": "AVNW",
+   "name": "Aviat Networks, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.524,
+   "note": "F6",
+   "rank": 25
+  },
+  {
    "code": "NGVC",
    "name": "Natural Grocers by Vitamin Cott",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.532,
+   "score": 0.523,
    "note": "F9",
-   "rank": 25
+   "rank": 26
   },
   {
    "code": "CLB",
@@ -692,31 +703,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Energy",
-   "score": 0.531,
+   "score": 0.518,
    "note": "F7",
-   "rank": 26
-  },
-  {
-   "code": "AVNW",
-   "name": "Aviat Networks, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.53,
-   "note": "F6",
    "rank": 27
-  },
-  {
-   "code": "CXM",
-   "name": "Sprinklr, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.516,
-   "note": "F6",
-   "rank": 28
   },
   {
    "code": "INTU",
@@ -727,6 +716,17 @@
    "sector": "Technology",
    "score": 0.512,
    "note": "F7",
+   "rank": 28
+  },
+  {
+   "code": "BF-B",
+   "name": "Brown Forman Inc",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "SPX",
+   "sector": "Consumer Defensive",
+   "score": 0.509,
+   "note": "F6",
    "rank": 29
   },
   {
@@ -736,7 +736,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.511,
+   "score": 0.505,
    "note": "F6",
    "rank": 30
   }
@@ -744,14 +744,14 @@
  "sectors": [
   {
    "name": "Healthcare",
-   "count": 20,
+   "count": 29,
    "tickers": [
+    "RVTY",
+    "IQV",
+    "SDGR",
     "CDNA",
     "NEO",
-    "ADPT",
-    "NUTX",
-    "RVTY",
-    "IOVA"
+    "TXG"
    ],
    "strategies": [
     "딥밸류",
@@ -760,14 +760,14 @@
   },
   {
    "name": "Technology",
-   "count": 18,
+   "count": 24,
    "tickers": [
+    "FIVN",
+    "CRWD",
     "DELL",
-    "RDVT",
-    "FTNT",
-    "OSPN",
-    "FTNT",
-    "DXC"
+    "NSIT",
+    "CNXN",
+    "FTNT"
    ],
    "strategies": [
     "딥밸류",
@@ -778,12 +778,12 @@
    "name": "Industrials",
    "count": 13,
    "tickers": [
-    "ATKR",
+    "MTW",
     "SFL",
+    "MATX",
+    "ATKR",
     "CXW",
-    "ASC",
-    "ABM",
-    "MATX"
+    "ACA"
    ],
    "strategies": [
     "딥밸류",
@@ -797,9 +797,9 @@
     "LPG",
     "CVI",
     "NAT",
-    "DHT",
+    "PSX",
     "INSW",
-    "TNK"
+    "DK"
    ],
    "strategies": [
     "딥밸류",
@@ -807,15 +807,15 @@
    ]
   },
   {
-   "name": "Consumer Cyclical",
+   "name": "Consumer Defensive",
    "count": 9,
    "tickers": [
-    "RUSHB",
-    "ACVA",
-    "KRT",
-    "LQDT",
-    "APTV",
-    "NKE"
+    "UTZ",
+    "ADM",
+    "LRN",
+    "ODD",
+    "STZ",
+    "NGVC"
    ],
    "strategies": [
     "딥밸류",
