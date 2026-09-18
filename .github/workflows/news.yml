@@ -38,6 +38,11 @@ jobs:
       - name: 신고가 스크리너
         run: python scripts/us_breakout.py -w screener -u SPX NDX R2K
 
+      - name: US 섹터 브레드스
+        # 신고가 스크리너가 만든 가격 캐시를 아직 디스크에 있을 때 읽는다
+        run: python scripts/fetch_sector_breadth.py
+        continue-on-error: true
+
       - name: 재무 캐시 복원
         uses: actions/cache@v4
         with:
