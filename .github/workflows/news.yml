@@ -87,6 +87,15 @@ jobs:
         run: python scripts/fetch_money_market.py
         continue-on-error: true
 
+      - name: 유동성 해설
+        # 위 두 단계가 만든 파일을 읽는다 — 반드시 이 순서 뒤에 와야 한다
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_liquidity_notes.py
+        continue-on-error: true
+
       - name: 8-K 실적 공시 수집
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
