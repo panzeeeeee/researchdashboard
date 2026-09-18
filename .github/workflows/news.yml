@@ -83,6 +83,10 @@ jobs:
         run: python scripts/fetch_liquidity.py
         continue-on-error: true
 
+      - name: 자금시장 상세
+        run: python scripts/fetch_money_market.py
+        continue-on-error: true
+
       - name: 8-K 실적 공시 수집
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
