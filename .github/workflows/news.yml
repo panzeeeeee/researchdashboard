@@ -40,6 +40,8 @@ jobs:
 
       - name: US 섹터 브레드스
         # 신고가 스크리너가 만든 가격 캐시를 아직 디스크에 있을 때 읽는다
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/fetch_sector_breadth.py
         continue-on-error: true
 
