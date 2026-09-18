@@ -178,6 +178,7 @@ tr:last-child td{border-bottom:none}
 <section id="liquidity">
   <h2>글로벌 유동성</h2>
   <div id="liquidity-box"><p class="note">불러오는 중입니다.</p></div>
+  <div id="liquidity-notes"></div>
 </section>
 
 <section id="moneymarket">
@@ -449,6 +450,31 @@ function renderLiquidity(m) {
     <div class="grid">${rateSlots || '<p class="note">자료 없음</p>'}</div>`;
 }
 
+// 유동성 해설 + 관련 뉴스 — 글로벌 유동성 화면 밑에 덧붙는다
+function renderLiquidityNotes(n) {
+  const box = document.getElementById("liquidity-notes");
+  if (!box) return;
+  if (!n) { box.innerHTML = ""; return; }
+
+  const notes = n.notes || {};
+  const news = n.news || [];
+  const hasNotes = notes.regime || notes.history || notes.sectors;
+
+  const block = (title, text) => !text ? "" : `
+    <p class="sub">${esc(title)}</p>
+    <p class="sum">${esc(text)}</p>`;
+
+  box.innerHTML = `
+    ${block("지금 국면", notes.regime)}
+    ${block("과거 유사 사례", notes.history)}
+    ${block("과거 섹터 흐름", notes.sectors)}
+    ${hasNotes ? '<p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>' : ""}
+    ${news.length ? `
+      <p class="sub">관련 뉴스</p>
+      ${news.map(newsItem).join("")}
+      ${moreBtn(news.length)}` : ""}`;
+}
+
 // 자금시장 상세 — 단기금리 5개·SOFR 분포·SOFR 스프레드·스와프 잔액
 function renderMoneyMarket(m) {
   const box = document.getElementById("moneymarket-box");
@@ -679,7 +705,8 @@ Promise.all([
   fetch("data/market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
-]).then(([news, research, tables, pf, calls, edgar, market, liquidity, moneyMarket]) => {
+  fetch("data/liquidity_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+]).then(([news, research, tables, pf, calls, edgar, market, liquidity, moneyMarket, liquidityNotes]) => {
   document.getElementById("stamp").textContent =
     new Date(news.updated_at).toLocaleString("ko-KR",
       { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
@@ -691,6 +718,7 @@ Promise.all([
   renderMarket(market);
   renderLiquidity(liquidity);
   renderMoneyMarket(moneyMarket);
+  renderLiquidityNotes(liquidityNotes);
 
   const byCode = {};
   (research?.stocks || []).forEach(s => { byCode[s.code] = s.items; });
