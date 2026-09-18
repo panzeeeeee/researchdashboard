@@ -71,6 +71,13 @@ jobs:
           python scripts/fetch_portfolio.py
         continue-on-error: true
 
+      - name: 미국 시장 현황
+        # 포트폴리오 직후라 야후 쪽에 한 번 더 여유를 둔다
+        run: |
+          sleep 20
+          python scripts/fetch_market.py
+        continue-on-error: true
+
       - name: 8-K 실적 공시 수집
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
