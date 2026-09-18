@@ -451,9 +451,17 @@ function renderSectorBreadth(s, marketSectors) {
       </div>`;
   }).join("");
 
+  const newsBlocks = rows.filter(r => (r.news || []).length).map(r => `
+    <div class="group">
+      <div class="ghead"><span class="tag">${esc(r.name)}</span></div>
+      ${r.news.map(newsItem).join("")}
+      ${moreBtn(r.news.length)}
+    </div>`).join("");
+
   box.innerHTML = `
     <p class="sub">${esc(s.universe || "S&P500")} 구성종목 기준<span class="miss"> 등락률 순</span></p>
-    <div class="grid">${cards || '<p class="note">자료 없음</p>'}</div>`;
+    <div class="grid">${cards || '<p class="note">자료 없음</p>'}</div>
+    ${newsBlocks ? `<p class="sub">섹터별 뉴스</p>${newsBlocks}` : ""}`;
 }
 
 // 글로벌 유동성 — 순유동성·구성요소·SOFR/IORB·ECB/BOJ 자산
