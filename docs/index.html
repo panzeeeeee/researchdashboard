@@ -152,6 +152,7 @@ tr:last-child td{border-bottom:none}
 <nav id="nav">
   <a href="#picks" class="on">오늘의 종목 <span class="count" id="c-picks"></span></a>
   <a href="#market">미국 시황</a>
+  <a href="#liquidity">글로벌 유동성</a>
   <a href="#portfolio">포트폴리오</a>
   <a href="#breakout">긴 조정 후<br>52주 신고가</a>
   <a href="#deepvalue">딥밸류</a>
@@ -171,6 +172,11 @@ tr:last-child td{border-bottom:none}
 <section id="market">
   <h2>미국 시황</h2>
   <div id="market-box"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="liquidity">
+  <h2>글로벌 유동성</h2>
+  <div id="liquidity-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="portfolio">
@@ -231,6 +237,16 @@ const signed = v => {
   const cls = v > 0 ? "up" : v < 0 ? "down" : "";
   return `<span class="${cls}">${v > 0 ? "+" : ""}${v}%</span>`;
 };
+
+// signed()의 %없는 버전 — 유동성처럼 억/조 단위 절대값 변화에 쓴다
+const signedNum = v => {
+  if (v === null || v === undefined) return '<span class="miss">—</span>';
+  const cls = v > 0 ? "up" : v < 0 ? "down" : "";
+  return `<span class="${cls}">${v > 0 ? "+" : ""}${fmtNum(v)}</span>`;
+};
+
+const fmtNum = v => (v === null || v === undefined)
+  ? "—" : Number(v).toLocaleString("ko-KR", { maximumFractionDigits: 1 });
 
 const newsItem = (it, i) => `
   <article class="${i < SHOW ? "" : "extra hidden"}">
@@ -385,6 +401,46 @@ function renderMarket(m) {
       <tr><th>자산</th><th class="n">가격</th><th class="n">등락률</th></tr>
       ${otherRows || '<tr><td colspan="3" class="note">자료 없음</td></tr>'}
     </table></div>`;
+}
+
+// 글로벌 유동성 — 순유동성·구성요소·SOFR/IORB·ECB/BOJ 자산
+function renderLiquidity(m) {
+  const box = document.getElementById("liquidity-box");
+  if (!m) { box.innerHTML = '<p class="note">liquidity.json 이 아직 없습니다.</p>'; return; }
+
+  const nl = m.net_liquidity || {};
+
+  const compRows = (m.components || []).map(c => `
+    <tr>
+      <td>${esc(c.label)}</td>
+      <td class="n">${fmtNum(c.value)}</td>
+      <td class="n">${signedNum(c.wow)}</td>
+    </tr>`).join("");
+
+  const rateSlots = [...(m.money_market || []), ...(m.global || [])].map(r => `
+    <div class="slot">
+      <p class="cap">${esc(r.label)}</p>
+      <p class="big">${fmtNum(r.value)}${esc(r.unit || "")}</p>
+      <p class="miss">${esc(r.date || "")}</p>
+    </div>`).join("");
+
+  box.innerHTML = `
+    <div class="grid">
+      <div class="slot">
+        <p class="cap">미국 순유동성 <span class="miss">Fed 자산 − TGA − ON RRP</span></p>
+        <p class="big">${fmtNum(nl.value)} 십억$</p>
+        <p class="miss">1주 변화 ${signedNum(nl.wow)} · ${esc(nl.date || "")}</p>
+      </div>
+    </div>
+
+    <p class="sub">유동성 구성요소<span class="miss"> 잔액·1주 변화 · 십억 달러</span></p>
+    <div class="scroll"><table>
+      <tr><th>항목</th><th class="n">잔액</th><th class="n">1주 변화</th></tr>
+      ${compRows || '<tr><td colspan="3" class="note">자료 없음</td></tr>'}
+    </table></div>
+
+    <p class="sub">자금시장 · 해외 중앙은행 자산</p>
+    <div class="grid">${rateSlots || '<p class="note">자료 없음</p>'}</div>`;
 }
 
 const toneMark = v => {
@@ -568,7 +624,8 @@ Promise.all([
   fetch("data/calls.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/edgar.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
-]).then(([news, research, tables, pf, calls, edgar, market]) => {
+  fetch("data/liquidity.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+]).then(([news, research, tables, pf, calls, edgar, market, liquidity]) => {
   document.getElementById("stamp").textContent =
     new Date(news.updated_at).toLocaleString("ko-KR",
       { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
@@ -578,6 +635,7 @@ Promise.all([
   renderPortfolio(pf);
   renderCalls(calls, edgar);
   renderMarket(market);
+  renderLiquidity(liquidity);
 
   const byCode = {};
   (research?.stocks || []).forEach(s => { byCode[s.code] = s.items; });
