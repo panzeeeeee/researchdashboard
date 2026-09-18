@@ -153,6 +153,7 @@ tr:last-child td{border-bottom:none}
   <a href="#picks" class="on">오늘의 종목 <span class="count" id="c-picks"></span></a>
   <a href="#market">미국 시황</a>
   <a href="#liquidity">글로벌 유동성</a>
+  <a href="#moneymarket">자금시장 상세</a>
   <a href="#portfolio">포트폴리오</a>
   <a href="#breakout">긴 조정 후<br>52주 신고가</a>
   <a href="#deepvalue">딥밸류</a>
@@ -177,6 +178,11 @@ tr:last-child td{border-bottom:none}
 <section id="liquidity">
   <h2>글로벌 유동성</h2>
   <div id="liquidity-box"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="moneymarket">
+  <h2>자금시장 상세</h2>
+  <div id="moneymarket-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="portfolio">
@@ -443,6 +449,53 @@ function renderLiquidity(m) {
     <div class="grid">${rateSlots || '<p class="note">자료 없음</p>'}</div>`;
 }
 
+// 자금시장 상세 — 단기금리 5개·SOFR 분포·SOFR 스프레드·스와프 잔액
+function renderMoneyMarket(m) {
+  const box = document.getElementById("moneymarket-box");
+  if (!m) { box.innerHTML = '<p class="note">money_market.json 이 아직 없습니다.</p>'; return; }
+
+  const rateSlots = (m.rates || []).map(r => `
+    <div class="slot">
+      <p class="cap">${esc(r.label)}</p>
+      <p class="big">${fmtNum(r.value)}${esc(r.unit || "")}</p>
+      <p class="miss">${esc(r.date || "")}</p>
+    </div>`).join("");
+
+  const distSlots = (m.sofr_distribution || []).map(r => `
+    <div class="slot">
+      <p class="cap">${esc(r.label)}</p>
+      <p class="big">${fmtNum(r.value)}${esc(r.unit || "")}</p>
+      <p class="miss">${esc(r.date || "")}</p>
+    </div>`).join("");
+
+  const byLabel = {};
+  (m.rates || []).forEach(r => { byLabel[r.label] = r.value; });
+  const spread = (a, b) => (byLabel[a] == null || byLabel[b] == null)
+    ? null : Math.round((byLabel[a] - byLabel[b]) * 100) / 100;
+
+  const swap = m.swap || {};
+
+  const extraRows = [
+    { label: "SOFR − IORB", value: spread("SOFR", "IORB") },
+    { label: "SOFR − EFFR", value: spread("SOFR", "EFFR") },
+  ].map(r => `<tr><td>${esc(r.label)}</td><td class="n">${signedNum(r.value)}</td></tr>`).join("");
+
+  box.innerHTML = `
+    <p class="sub">단기 자금시장 금리</p>
+    <div class="grid">${rateSlots || '<p class="note">자료 없음</p>'}</div>
+
+    <p class="sub">SOFR 거래금리 분포<span class="miss"> 백분위·거래량</span></p>
+    <div class="grid">${distSlots || '<p class="note">자료 없음</p>'}</div>
+
+    <p class="sub">추가 관찰 지표</p>
+    <div class="scroll"><table>
+      <tr><th>지표</th><th class="n">값</th></tr>
+      ${extraRows}
+      <tr><td>${esc(swap.label || "중앙은행 달러 스와프 잔액")}</td>
+          <td class="n">${fmtNum(swap.value)}${esc(swap.unit || "")}</td></tr>
+    </table></div>`;
+}
+
 const toneMark = v => {
   if (v === null || v === undefined || v === "") return "";
   const n = Number(v);
@@ -625,7 +678,8 @@ Promise.all([
   fetch("data/edgar.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
-]).then(([news, research, tables, pf, calls, edgar, market, liquidity]) => {
+  fetch("data/money_market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+]).then(([news, research, tables, pf, calls, edgar, market, liquidity, moneyMarket]) => {
   document.getElementById("stamp").textContent =
     new Date(news.updated_at).toLocaleString("ko-KR",
       { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
@@ -636,6 +690,7 @@ Promise.all([
   renderCalls(calls, edgar);
   renderMarket(market);
   renderLiquidity(liquidity);
+  renderMoneyMarket(moneyMarket);
 
   const byCode = {};
   (research?.stocks || []).forEach(s => { byCode[s.code] = s.items; });
