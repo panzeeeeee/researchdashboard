@@ -423,10 +423,13 @@ function renderSectorBreadth(s, marketSectors) {
   const box = document.getElementById("breadth-box");
   if (!s) { box.innerHTML = '<p class="note">sector_breadth.json 이 아직 없습니다.</p>'; return; }
 
-  const chgByName = {};
-  (marketSectors || []).forEach(r => { chgByName[r.name] = r.chg; });
+  const byName = {};
+  (marketSectors || []).forEach(r => { byName[r.name] = r; });
 
-  const rows = (s.sectors || []).map(r => ({ ...r, chg: chgByName[r.name] }));
+  const rows = (s.sectors || []).map(r => {
+    const m = byName[r.name] || {};
+    return { ...r, chg: m.chg, ticker: m.ticker };
+  });
   rows.sort((a, b) => (b.chg ?? -999) - (a.chg ?? -999));
 
   const cards = rows.map(r => {
@@ -442,6 +445,9 @@ function renderSectorBreadth(s, marketSectors) {
         </span>
         <p class="miss" style="margin-top:.35rem">▲${r.up} ▼${r.down} · 20일 거래량 ${
           r.vol_mult != null ? r.vol_mult + "x" : "—"}</p>
+        ${r.ticker ? `<p class="src" style="margin-top:.4rem">
+          <a href="https://finance.yahoo.com/quote/${esc(r.ticker)}"
+             target="_blank" rel="noopener">섹터 스터디 (${esc(r.ticker)}) ↗</a></p>` : ""}
       </div>`;
   }).join("");
 
