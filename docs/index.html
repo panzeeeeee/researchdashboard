@@ -7,45 +7,53 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --paper:#fbfbf9; --card:#fff; --ink:#16191c; --ink-2:#5b6269; --ink-3:#8d949b;
-  --rule:#e3e4e0; --accent:#0f6e56; --tintA:#eef4f1; --up:#1d7a4a; --down:#b3332e;
+  --paper:#f6f5f0; --card:#fff; --ink:#12151a; --ink-2:#565d64; --ink-3:#8b929a;
+  --rule:#e2e2dd; --accent:#0f6e56; --tintA:#eef4f1; --up:#1d7a4a; --down:#b3332e;
+  --navy:#0e1a2b; --navy-2:#16283f; --navy-ink:#f4f6f8; --navy-ink-2:#9fb0c2;
 }
 @media (prefers-color-scheme: dark){
-  :root{ --paper:#14161a; --card:#1b1e23; --ink:#e8e9e6; --ink-2:#a2a8ae; --ink-3:#767c83;
-         --rule:#2a2e34; --accent:#5dcaa5; --tintA:#1d2a26; --up:#5dc48a; --down:#e78078; }
+  :root{ --paper:#121417; --card:#1a1d22; --ink:#e9eae6; --ink-2:#a3a9af; --ink-3:#767c83;
+         --rule:#2a2e34; --accent:#5dcaa5; --tintA:#1c2a26; --up:#5dc48a; --down:#e78078;
+         --navy:#0a1420; --navy-2:#122032; --navy-ink:#f4f6f8; --navy-ink-2:#8fa2b6; }
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);
   font-family:Pretendard,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1180px;margin:0 auto;padding:2rem 1.25rem 4rem}
-header{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;
-  flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:.9rem;margin-bottom:2rem}
-h1{font-size:1.25rem;font-weight:600;margin:0;letter-spacing:-.01em}
-.meta{font-size:.8rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
-h2{font-size:.95rem;font-weight:600;margin:0 0 1.1rem;letter-spacing:-.005em}
+
+header{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  background:var(--navy);color:var(--navy-ink);border-radius:14px;
+  padding:1.5rem 1.75rem;margin-bottom:2rem}
+.eyebrow{font-size:.7rem;font-weight:700;letter-spacing:.14em;color:var(--navy-ink-2);margin:0 0 .35rem}
+h1{font-size:1.55rem;font-weight:700;margin:0;letter-spacing:-.01em;color:var(--navy-ink)}
+.meta{font-size:.82rem;color:var(--navy-ink-2);font-variant-numeric:tabular-nums;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;padding:.35rem .85rem}
+h2{font-size:1.15rem;font-weight:700;margin:0 0 1.2rem;letter-spacing:-.01em}
 .tagline{font-size:.74rem;font-weight:400;color:var(--ink-3);margin-left:.55rem}
 
 .layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:2rem;align-items:start}
 nav{position:sticky;top:2rem}
-nav a{display:block;font-size:.84rem;color:var(--ink-2);text-decoration:none;
-  padding:.4rem .6rem;border-radius:7px;border-left:2px solid transparent;line-height:1.35}
+nav a{display:block;font-size:.86rem;color:var(--ink-2);text-decoration:none;
+  padding:.55rem .75rem;border-radius:8px;margin-bottom:.15rem;line-height:1.35;font-weight:500}
 nav a:hover{background:var(--card);color:var(--ink)}
-nav a.on{color:var(--accent);border-left-color:var(--accent);
-  background:var(--tintA);font-weight:600}
+nav a.on{color:#fff;background:var(--accent);font-weight:700}
+nav a.on .count{color:rgba(255,255,255,.8)}
 nav .count{float:right;color:var(--ink-3);font-size:.74rem;font-weight:400}
 nav .divider{height:1px;background:var(--rule);margin:.6rem}
 main section{display:none}
 main section.on{display:block}
 @media (max-width:760px){
   .layout{grid-template-columns:1fr;gap:1rem}
-  nav{position:static;display:flex;gap:.3rem;overflow-x:auto;
-    padding-bottom:.4rem;border-bottom:1px solid var(--rule)}
-  nav a{white-space:nowrap;border-left:none;border-bottom:2px solid transparent;
-    border-radius:0;padding:.35rem .5rem}
-  nav a.on{border-left:none;border-bottom-color:var(--accent);background:none}
+  header{border-radius:10px;padding:1.15rem 1.25rem}
+  nav{position:static;display:flex;gap:.35rem;overflow-x:auto;
+    padding-bottom:.5rem;border-bottom:1px solid var(--rule)}
+  nav a{white-space:nowrap;border-radius:999px;padding:.4rem .75rem;margin-bottom:0}
+  nav a.on{background:var(--accent);color:#fff}
   nav a br{display:none}
   nav .count,nav .divider{display:none}
+  .brow{grid-template-columns:76px 1fr 54px !important;gap:.4rem !important}
 }
 
 .group{border-top:1px solid var(--rule);padding:1.15rem 0}
@@ -72,18 +80,19 @@ article a:hover,article a:focus-visible{border-bottom-color:var(--accent);color:
 .reports article{padding:.28rem 0}
 .reports a{font-size:.86rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.75rem}
-.slot{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:1rem}
+.slot{background:var(--card);border:1px solid var(--rule);border-radius:12px;
+  padding:1.15rem 1.25rem;box-shadow:0 1px 2px rgba(0,0,0,.03)}
 .slot h3{font-size:.85rem;font-weight:600;margin:0 0 .3rem}
 .slot p{font-size:.78rem;color:var(--ink-3);margin:0}
-.slot .cap{font-size:.74rem;color:var(--ink-3);margin:0 0 .25rem}
-.slot .big{font-size:1.35rem;font-weight:600;margin:0 0 .2rem;
-  font-variant-numeric:tabular-nums;color:var(--ink)}
+.slot .cap{font-size:.76rem;color:var(--ink-3);margin:0 0 .35rem;font-weight:500}
+.slot .big{font-size:1.85rem;font-weight:700;margin:0 0 .2rem;
+  font-variant-numeric:tabular-nums;color:var(--ink);letter-spacing:-.01em}
 .slot .big.hit{color:var(--accent)}
 .note{font-size:.82rem;color:var(--ink-3)}
-table{width:100%;border-collapse:collapse;font-size:.82rem;font-variant-numeric:tabular-nums}
-th{text-align:left;font-weight:500;color:var(--ink-3);font-size:.72rem;
-  padding:.3rem .4rem;border-bottom:1px solid var(--rule);white-space:nowrap}
-td{padding:.34rem .4rem;border-bottom:1px solid var(--rule)}
+table{width:100%;border-collapse:collapse;font-size:.85rem;font-variant-numeric:tabular-nums}
+th{text-align:left;font-weight:600;color:var(--ink-3);font-size:.72rem;letter-spacing:.02em;
+  padding:.45rem .5rem;border-bottom:2px solid var(--rule);white-space:nowrap}
+td{padding:.5rem .5rem;border-bottom:1px solid var(--rule)}
 td.n,th.n{text-align:right}
 tr:last-child td{border-bottom:none}
 .tick{font-weight:600}
@@ -116,13 +125,25 @@ tr:last-child td{border-bottom:none}
   max-height:560px;overflow-y:auto;background:var(--paper);
   border:1px solid var(--rule);border-radius:7px;padding:.7rem .8rem;margin:.4rem 0 0}
 .edgar-box{margin-top:.6rem}
+
+.breadth{display:flex;flex-direction:column;gap:.55rem}
+.brow{display:grid;grid-template-columns:100px 1fr 60px;align-items:center;gap:.65rem}
+.brow .bname{font-size:.86rem;color:var(--ink)}
+.brow .btrack{position:relative;height:9px;background:var(--rule);border-radius:999px;overflow:hidden}
+.brow .bfill{position:absolute;top:0;bottom:0;border-radius:999px}
+.brow .bfill.up{background:var(--up)}
+.brow .bfill.down{background:var(--down)}
+.brow .bval{font-size:.86rem;text-align:right;font-variant-numeric:tabular-nums}
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <header>
-  <h1>리서치 콘솔</h1>
+  <div>
+    <p class="eyebrow">RESEARCH CONSOLE</p>
+    <h1>리서치 콘솔</h1>
+  </div>
   <span class="meta" id="stamp">불러오는 중</span>
 </header>
 
@@ -295,6 +316,25 @@ function renderPortfolio(p) {
     </table></div>`;
 }
 
+// 등락률을 가운데 기준 좌우로 뻗는 막대바로 그린다. 양수/음수 둘 다 크기 비교가 되게.
+function breadthBars(rows) {
+  const vals = (rows || []).map(r => Math.abs(r.chg || 0));
+  const max = Math.max(1e-6, ...vals);
+  return (rows || []).map(r => {
+    const v = r.chg;
+    const pct = (v === null || v === undefined) ? 0 : Math.min(50, Math.abs(v) / max * 50);
+    const cls = v > 0 ? "up" : v < 0 ? "down" : "";
+    const style = (v === null || v === undefined) ? "left:50%;width:0"
+      : v >= 0 ? `left:50%;width:${pct}%` : `right:50%;width:${pct}%`;
+    return `
+      <div class="brow">
+        <span class="bname">${esc(r.name)}</span>
+        <span class="btrack"><span class="bfill ${cls}" style="${style}"></span></span>
+        <span class="bval">${signed(r.chg)}</span>
+      </div>`;
+  }).join("");
+}
+
 // 미국 시황 — 지수·섹터ETF·금리/달러/VIX·대형주·환율/원자재/코인
 function renderMarket(m) {
   const box = document.getElementById("market-box");
@@ -314,9 +354,6 @@ function renderMarket(m) {
       <p class="miss">${esc(r.date || "")}</p>
     </div>`).join("");
 
-  const sectorRows = (m.sectors || []).map(r => `
-    <tr><td>${esc(r.name)}</td><td class="n">${signed(r.chg)}</td></tr>`).join("");
-
   const megaRows = (m.megacap || []).map(r => `
     <tr><td class="tick">${esc(r.name)}</td><td class="n">${nz(r.price)}</td>
         <td class="n">${signed(r.chg)}</td></tr>`).join("");
@@ -332,10 +369,7 @@ function renderMarket(m) {
       · 양수면 동일가중 우위, 전체 종목 상승/하락 비율은 아님</p>
 
     <p class="sub">11개 섹터 ETF</p>
-    <div class="scroll"><table>
-      <tr><th>섹터</th><th class="n">등락률</th></tr>
-      ${sectorRows || '<tr><td colspan="2" class="note">자료 없음</td></tr>'}
-    </table></div>
+    <div class="breadth">${breadthBars(m.sectors) || '<p class="note">자료 없음</p>'}</div>
 
     <p class="sub">금리 · 달러 · 변동성</p>
     <div class="grid">${risk || '<p class="note">자료 없음</p>'}</div>
@@ -608,8 +642,5 @@ Promise.all([
   setupNav();
 });
 </script>
-</body>
-</html>
-
 </body>
 </html>
