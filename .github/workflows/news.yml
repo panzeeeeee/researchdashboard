@@ -78,6 +78,11 @@ jobs:
           python scripts/fetch_market.py
         continue-on-error: true
 
+      - name: 글로벌 유동성
+        # FRED 공개 데이터라 야후 딜레이는 필요 없다
+        run: python scripts/fetch_liquidity.py
+        continue-on-error: true
+
       - name: 8-K 실적 공시 수집
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
