@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-17T23:32:30.131027+09:00",
+ "updated_at": "2026-09-18T09:56:48.470424+09:00",
  "picks": [
   {
    "code": "RVTY",
@@ -46,17 +46,6 @@
    "source": "신고가·물극필반"
   },
   {
-   "code": "NRDS",
-   "name": "NerdWallet, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Communication Services",
-   "score": 0.799,
-   "note": "F8",
-   "source": "딥밸류"
-  },
-  {
    "code": "APTV",
    "name": "Aptiv PLC",
    "market": "us",
@@ -76,6 +65,17 @@
    "sector": "Industrials",
    "score": 0.712,
    "note": "F7",
+   "source": "딥밸류"
+  },
+  {
+   "code": "ZTS",
+   "name": "Zoetis Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.689,
+   "note": "F8",
    "source": "딥밸류"
   }
  ],
@@ -411,17 +411,6 @@
    "rank": 30
   },
   {
-   "code": "NRDS",
-   "name": "NerdWallet, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Communication Services",
-   "score": 0.799,
-   "note": "F8",
-   "rank": 1
-  },
-  {
    "code": "APTV",
    "name": "Aptiv PLC",
    "market": "us",
@@ -430,7 +419,7 @@
    "sector": "Consumer Cyclical",
    "score": 0.794,
    "note": "F8",
-   "rank": 2
+   "rank": 1
   },
   {
    "code": "CPRT",
@@ -441,7 +430,7 @@
    "sector": "Industrials",
    "score": 0.712,
    "note": "F7",
-   "rank": 3
+   "rank": 2
   },
   {
    "code": "ZTS",
@@ -452,7 +441,7 @@
    "sector": "Healthcare",
    "score": 0.689,
    "note": "F8",
-   "rank": 4
+   "rank": 3
   },
   {
    "code": "PNR",
@@ -463,7 +452,7 @@
    "sector": "Industrials",
    "score": 0.672,
    "note": "F9",
-   "rank": 5
+   "rank": 4
   },
   {
    "code": "COLL",
@@ -472,18 +461,29 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.67,
+   "score": 0.671,
+   "note": "F6",
+   "rank": 5
+  },
+  {
+   "code": "APOG",
+   "name": "Apogee Enterprises, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.656,
    "note": "F6",
    "rank": 6
   },
   {
-   "code": "DXC",
-   "name": "DXC Technology Company",
+   "code": "AMPH",
+   "name": "Amphastar Pharmaceuticals, Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.646,
+   "sector": "Healthcare",
+   "score": 0.653,
    "note": "F6",
    "rank": 7
   },
@@ -494,9 +494,20 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.646,
+   "score": 0.653,
    "note": "F6",
    "rank": 8
+  },
+  {
+   "code": "DXC",
+   "name": "DXC Technology Company",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.646,
+   "note": "F6",
+   "rank": 9
   },
   {
    "code": "INTU",
@@ -507,29 +518,7 @@
    "sector": "Technology",
    "score": 0.645,
    "note": "F7",
-   "rank": 9
-  },
-  {
-   "code": "APOG",
-   "name": "Apogee Enterprises, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.645,
-   "note": "F6",
    "rank": 10
-  },
-  {
-   "code": "AMPH",
-   "name": "Amphastar Pharmaceuticals, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.642,
-   "note": "F6",
-   "rank": 11
   },
   {
    "code": "NKE",
@@ -540,7 +529,7 @@
    "sector": "Consumer Cyclical",
    "score": 0.638,
    "note": "F7",
-   "rank": 12
+   "rank": 11
   },
   {
    "code": "ARDT",
@@ -549,9 +538,31 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.626,
+   "score": 0.633,
    "note": "F8",
+   "rank": 12
+  },
+  {
+   "code": "LRN",
+   "name": "Stride, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Consumer Defensive",
+   "score": 0.632,
+   "note": "F6",
    "rank": 13
+  },
+  {
+   "code": "ICFI",
+   "name": "ICF International, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.628,
+   "note": "F7",
+   "rank": 14
   },
   {
    "code": "FISV",
@@ -562,7 +573,7 @@
    "sector": "Unknown",
    "score": 0.623,
    "note": "F6",
-   "rank": 14
+   "rank": 15
   },
   {
    "code": "APP",
@@ -573,29 +584,7 @@
    "sector": "Communication Services",
    "score": 0.618,
    "note": "F9",
-   "rank": 15
-  },
-  {
-   "code": "LRN",
-   "name": "Stride, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.617,
-   "note": "F6",
    "rank": 16
-  },
-  {
-   "code": "ICFI",
-   "name": "ICF International, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.612,
-   "note": "F7",
-   "rank": 17
   },
   {
    "code": "ARHS",
@@ -604,9 +593,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.611,
+   "score": 0.615,
    "note": "F6",
-   "rank": 18
+   "rank": 17
   },
   {
    "code": "BBW",
@@ -615,9 +604,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.604,
+   "score": 0.614,
    "note": "F6",
-   "rank": 19
+   "rank": 18
   },
   {
    "code": "ODD",
@@ -626,9 +615,31 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.593,
+   "score": 0.608,
    "note": "F6",
+   "rank": 19
+  },
+  {
+   "code": "MNTN",
+   "name": "MNTN, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.564,
+   "note": "F7",
    "rank": 20
+  },
+  {
+   "code": "BL",
+   "name": "BlackLine, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.556,
+   "note": "F7",
+   "rank": 21
   },
   {
    "code": "CPRT",
@@ -639,27 +650,16 @@
    "sector": "Industrials",
    "score": 0.553,
    "note": "F7",
-   "rank": 21
-  },
-  {
-   "code": "MNTN",
-   "name": "MNTN, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.544,
-   "note": "F7",
    "rank": 22
   },
   {
-   "code": "BL",
-   "name": "BlackLine, Inc.",
+   "code": "FRSH",
+   "name": "Freshworks Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.542,
+   "score": 0.543,
    "note": "F7",
    "rank": 23
   },
@@ -675,26 +675,15 @@
    "rank": 24
   },
   {
-   "code": "AVNW",
-   "name": "Aviat Networks, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.524,
-   "note": "F6",
-   "rank": 25
-  },
-  {
    "code": "NGVC",
    "name": "Natural Grocers by Vitamin Cott",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.523,
+   "score": 0.532,
    "note": "F9",
-   "rank": 26
+   "rank": 25
   },
   {
    "code": "CLB",
@@ -703,9 +692,31 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Energy",
-   "score": 0.518,
+   "score": 0.531,
    "note": "F7",
+   "rank": 26
+  },
+  {
+   "code": "AVNW",
+   "name": "Aviat Networks, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.53,
+   "note": "F6",
    "rank": 27
+  },
+  {
+   "code": "CXM",
+   "name": "Sprinklr, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.516,
+   "note": "F6",
+   "rank": 28
   },
   {
    "code": "INTU",
@@ -716,17 +727,6 @@
    "sector": "Technology",
    "score": 0.512,
    "note": "F7",
-   "rank": 28
-  },
-  {
-   "code": "BF-B",
-   "name": "Brown Forman Inc",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "SPX",
-   "sector": "Consumer Defensive",
-   "score": 0.509,
-   "note": "F6",
    "rank": 29
   },
   {
@@ -736,7 +736,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.505,
+   "score": 0.511,
    "note": "F6",
    "rank": 30
   }
@@ -760,7 +760,7 @@
   },
   {
    "name": "Technology",
-   "count": 24,
+   "count": 25,
    "tickers": [
     "FIVN",
     "CRWD",
