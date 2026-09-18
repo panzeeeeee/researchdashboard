@@ -15,14 +15,19 @@ FRED_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={}"
 
 
 def fred_rows(series_id, n=30):
-    """최근 n개 관측치를 (날짜, 값) 리스트로, 최신순으로 돌려준다."""
+    """최근 n개 관측치를 (날짜, 값) 리스트로, 최신순으로 돌려준다.
+
+    첫 줄(헤더)은 위치로 건너뛴다 — FRED가 파일 앞에 보이지 않는 BOM을
+    붙여 보낼 때가 있어서, "DATE" 문자열과 직접 비교하면 못 걸러진다.
+    """
     url = FRED_URL.format(series_id)
     try:
         with urllib.request.urlopen(url, timeout=20) as r:
-            text = r.read().decode("utf-8")
+            text = r.read().decode("utf-8-sig")
+        reader = list(csv.reader(io.StringIO(text)))
         rows = []
-        for d, v in csv.reader(io.StringIO(text)):
-            if d == "DATE" or v in ("", "."):
+        for d, v in reader[1:]:
+            if v in ("", "."):
                 continue
             rows.append((d, float(v)))
         rows.sort(key=lambda x: x[0])
