@@ -12,6 +12,9 @@ S&P500 구성종목만 커버한다. 나스닥100·러셀2000 전용 종목(S&P5
 
 반드시 "신고가 스크리너" 다음, 워크플로우가 가격 캐시를 다시 저장하기 전에
 돌아야 한다 (아래 CACHE_PATH가 아직 디스크에 있어야 함).
+
+섹터별 뉴스는 fetch_news.py 의 gather() 를 그대로 재사용한다. GEMINI_API_KEY 가
+있으면 한 줄 요약도 같이 붙는다 — 워크플로우에서 이 단계에 그 키를 넘겨줘야 한다.
 """
 
 import io
@@ -20,7 +23,8 @@ import sys
 import pandas as pd
 import requests
 
-from common import DATA_DIR, now_kst, write_json
+from common import DATA_DIR, env, now_kst, write_json
+from fetch_news import gather
 
 CACHE_PATH = "screener/us_px_cache.pkl.gz"
 _HDRS = {"User-Agent": "Mozilla/5.0 (screener; personal research)"}
@@ -89,18 +93,22 @@ def main():
         return
 
     df = pd.DataFrame(rows)
+    creds = {"naver_id": None, "naver_secret": None, "gemini": env("GEMINI_API_KEY")}
+
     out = []
-    for label in GICS_TO_LABEL.values():
+    for gics_en, label in GICS_TO_LABEL.items():
         sub = df[df["sector"] == label]
         if sub.empty:
             continue
         vol = sub["vol_mult"].dropna()
+        news = gather([f"{gics_en} sector stocks"], creds, limit=4, market="us")
         out.append({
             "name": label,
             "count": int(len(sub)),
             "up": int((sub["chg"] > 0).sum()),
             "down": int((sub["chg"] < 0).sum()),
             "vol_mult": round(float(vol.median()), 2) if len(vol) else None,
+            "news": news,
         })
     out.sort(key=lambda r: -(r["up"] - r["down"]))
 
