@@ -1,92 +1,92 @@
 {
- "updated_at": "2026-09-21T09:42:08.788525+09:00",
+ "updated_at": "2026-09-22T01:12:22.594527+09:00",
  "indexes": [
   {
    "ticker": "^GSPC",
    "name": "S&P 500",
-   "price": 7650.5,
-   "chg": 0.17
+   "price": 7746.79,
+   "chg": 1.26
   },
   {
    "ticker": "^IXIC",
    "name": "나스닥 종합",
-   "price": 26522.54,
-   "chg": 0.39
+   "price": 27014.34,
+   "chg": 1.85
   },
   {
    "ticker": "^RUT",
    "name": "러셀 2000",
-   "price": 2860.4,
-   "chg": -0.5
+   "price": 2879.7,
+   "chg": 0.67
   }
  ],
- "breadth_spread": -0.36,
+ "breadth_spread": -0.95,
  "sectors": [
+  {
+   "ticker": "XLC",
+   "name": "통신서비스",
+   "price": 114.53,
+   "chg": 3.35
+  },
   {
    "ticker": "XLK",
    "name": "기술",
-   "price": 189.6,
-   "chg": 0.82
-  },
-  {
-   "ticker": "XLI",
-   "name": "산업재",
-   "price": 169.75,
-   "chg": 0.44
-  },
-  {
-   "ticker": "XLF",
-   "name": "금융",
-   "price": 55.86,
-   "chg": -0.04
-  },
-  {
-   "ticker": "XLV",
-   "name": "헬스케어",
-   "price": 168.39,
-   "chg": -0.25
-  },
-  {
-   "ticker": "XLE",
-   "name": "에너지",
-   "price": 64.31,
-   "chg": -0.26
+   "price": 193.65,
+   "chg": 2.13
   },
   {
    "ticker": "XLY",
    "name": "경기소비재",
-   "price": 111.03,
-   "chg": -0.32
+   "price": 112.11,
+   "chg": 0.97
   },
   {
-   "ticker": "XLP",
-   "name": "필수소비재",
-   "price": 82.8,
-   "chg": -0.83
+   "ticker": "XLI",
+   "name": "산업재",
+   "price": 170.49,
+   "chg": 0.44
+  },
+  {
+   "ticker": "XLV",
+   "name": "헬스케어",
+   "price": 168.88,
+   "chg": 0.29
+  },
+  {
+   "ticker": "XLF",
+   "name": "금융",
+   "price": 55.94,
+   "chg": 0.13
   },
   {
    "ticker": "XLRE",
    "name": "부동산",
-   "price": 42.53,
-   "chg": -0.95
-  },
-  {
-   "ticker": "XLC",
-   "name": "통신서비스",
-   "price": 110.81,
-   "chg": -1.37
-  },
-  {
-   "ticker": "XLU",
-   "name": "유틸리티",
-   "price": 41.1,
-   "chg": -1.42
+   "price": 42.56,
+   "chg": 0.07
   },
   {
    "ticker": "XLB",
    "name": "소재",
-   "price": 49.99,
-   "chg": -1.42
+   "price": 49.94,
+   "chg": -0.11
+  },
+  {
+   "ticker": "XLU",
+   "name": "유틸리티",
+   "price": 40.86,
+   "chg": -0.58
+  },
+  {
+   "ticker": "XLP",
+   "name": "필수소비재",
+   "price": 82.21,
+   "chg": -0.71
+  },
+  {
+   "ticker": "XLE",
+   "name": "에너지",
+   "price": 62.6,
+   "chg": -2.67
   }
  ],
  "risk": [
@@ -104,113 +104,113 @@
   },
   {
    "label": "달러지수",
-   "value": 100.25,
+   "value": 100.42,
    "unit": "",
    "date": null
   },
   {
    "label": "VIX",
-   "value": 14.81,
+   "value": 14.9,
    "unit": "",
    "date": null
   }
  ],
  "megacap": [
   {
-   "ticker": "AVGO",
-   "name": "Broadcom",
-   "price": 357.61,
-   "chg": 2.97
-  },
-  {
-   "ticker": "NVDA",
-   "name": "NVIDIA",
-   "price": 222.27,
-   "chg": 1.34
-  },
-  {
-   "ticker": "AMZN",
-   "name": "Amazon",
-   "price": 253.71,
-   "chg": 1.0
-  },
-  {
-   "ticker": "GOOGL",
-   "name": "Alphabet",
-   "price": 349.54,
-   "chg": 0.64
-  },
-  {
-   "ticker": "AAPL",
-   "name": "Apple",
-   "price": 336.13,
-   "chg": -0.26
+   "ticker": "META",
+   "name": "Meta",
+   "price": 724.91,
+   "chg": 8.89
   },
   {
    "ticker": "TSLA",
    "name": "Tesla",
-   "price": 364.27,
-   "chg": -0.53
+   "price": 375.34,
+   "chg": 3.04
+  },
+  {
+   "ticker": "GOOGL",
+   "name": "Alphabet",
+   "price": 356.65,
+   "chg": 2.03
+  },
+  {
+   "ticker": "NVDA",
+   "name": "NVIDIA",
+   "price": 225.3,
+   "chg": 1.36
+  },
+  {
+   "ticker": "AMZN",
+   "name": "Amazon",
+   "price": 256.61,
+   "chg": 1.15
+  },
+  {
+   "ticker": "AAPL",
+   "name": "Apple",
+   "price": 338.54,
+   "chg": 0.72
+  },
+  {
+   "ticker": "AVGO",
+   "name": "Broadcom",
+   "price": 359.94,
+   "chg": 0.65
   },
   {
    "ticker": "MSFT",
    "name": "Microsoft",
-   "price": 493.78,
-   "chg": -0.8
-  },
-  {
-   "ticker": "META",
-   "name": "Meta",
-   "price": 665.75,
-   "chg": -2.43
+   "price": 494.2,
+   "chg": 0.09
   }
  ],
  "fx": [
   {
    "ticker": "KRW=X",
    "name": "달러/원",
-   "price": 1383.38,
-   "chg": 0.28
+   "price": 1374.27,
+   "chg": -0.38
   },
   {
    "ticker": "JPY=X",
    "name": "달러/엔",
-   "price": 156.76,
-   "chg": 0.4
+   "price": 157.37,
+   "chg": 0.8
   },
   {
    "ticker": "EURUSD=X",
    "name": "유로/달러",
    "price": 1.15,
-   "chg": 0.1
+   "chg": -0.03
   }
  ],
  "commodities": [
   {
    "ticker": "CL=F",
    "name": "WTI 선물",
-   "price": 95.29,
-   "chg": -5.0
+   "price": 92.09,
+   "chg": -8.19
   },
   {
    "ticker": "GC=F",
    "name": "금 선물",
-   "price": 4405.2,
-   "chg": -0.45
+   "price": 4384.8,
+   "chg": -0.91
   },
   {
    "ticker": "HG=F",
    "name": "구리 선물",
-   "price": 6.72,
-   "chg": 1.57
+   "price": 6.77,
+   "chg": 2.34
   }
  ],
  "crypto": [
   {
    "ticker": "BTC-USD",
    "name": "비트코인",
-   "price": 81555.52,
-   "chg": 0.4
+   "price": 85743.01,
+   "chg": 5.67
   }
  ]
 }
