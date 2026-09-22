@@ -630,20 +630,22 @@ function renderHotNews(news, breadth, hotNews, market, marketNotes) {
   const box = document.getElementById("hotnews-box");
   if (!box) return;
 
-  // 오늘 마켓 총평 + 주요 지표 -- 미국 시황 데이터를 그대로 재사용 (새로 안 받음)
+  // 오늘 마켓 총평 -- 미국 시황 재활용이 아니라, 모아온 뉴스+섹터 등락을 엮은 인과관계 해설
   const recapBox = document.getElementById("hotnews-recap");
   if (recapBox) {
-    const situation = marketNotes?.notes?.situation;
+    const en = hotNews?.event_notes || {};
     const idx = (market?.indexes || []).map(r => `
       <div class="slot">
         <p class="cap">${esc(r.name)}</p>
         <p class="big">${signed(r.chg)}</p>
       </div>`).join("");
-    recapBox.innerHTML = (situation || idx) ? `
+    const hasNotes = en.why || en.watch;
+    recapBox.innerHTML = (hasNotes || idx) ? `
       <div class="callout">
-        <p class="sub" style="margin-top:0">오늘 마켓 총평</p>
-        <p class="sum">${situation ? esc(situation) : '<span class="note">해설 준비 중</span>'}</p>
-        ${idx ? `<div class="grid" style="margin-top:.6rem">${idx}</div>` : ""}
+        ${idx ? `<div class="grid">${idx}</div>` : ""}
+        ${en.why ? `<p class="sub">오늘 왜 이렇게 움직였나</p><p class="sum">${esc(en.why)}</p>` : ""}
+        ${en.watch ? `<p class="sub">앞으로 지켜볼 것</p><p class="sum">${esc(en.watch)}</p>` : ""}
+        ${hasNotes ? '<p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>' : ""}
       </div>` : "";
   }
 
@@ -670,8 +672,9 @@ function renderHotNews(news, breadth, hotNews, market, marketNotes) {
 
   const top = [...broad, ...rest].slice(0, 35);
 
+  // .group 으로 감싸야 더보기 버튼(bindMore)이 이 안에서 .extra 를 찾아 펼친다
   box.innerHTML = top.length
-    ? top.map(newsItem).join("") + moreBtn(top.length)
+    ? `<div class="group">${top.map(newsItem).join("")}${moreBtn(top.length)}</div>`
     : '<p class="note">모을 뉴스가 아직 없습니다.</p>';
 }
 
