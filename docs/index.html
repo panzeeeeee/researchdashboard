@@ -7,13 +7,13 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --paper:#f6f5f0; --card:#fff; --ink:#12151a; --ink-2:#565d64; --ink-3:#8b929a;
-  --rule:#e2e2dd; --accent:#0f6e56; --tintA:#eef4f1; --up:#1d7a4a; --down:#b3332e;
+  --paper:#f6f5f0; --card:#fff; --ink:#12151a; --ink-2:#4a5057; --ink-3:#686e75;
+  --rule:#dcdcd6; --accent:#0f6e56; --tintA:#eef4f1; --up:#1d7a4a; --down:#b3332e;
   --navy:#0e1a2b; --navy-2:#16283f; --navy-ink:#f4f6f8; --navy-ink-2:#9fb0c2;
 }
 @media (prefers-color-scheme: dark){
-  :root{ --paper:#121417; --card:#1a1d22; --ink:#e9eae6; --ink-2:#a3a9af; --ink-3:#767c83;
-         --rule:#2a2e34; --accent:#5dcaa5; --tintA:#1c2a26; --up:#5dc48a; --down:#e78078;
+  :root{ --paper:#121417; --card:#1a1d22; --ink:#e9eae6; --ink-2:#b6bbc1; --ink-3:#9098a1;
+         --rule:#343841; --accent:#5dcaa5; --tintA:#1c2a26; --up:#5dc48a; --down:#e78078;
          --navy:#0a1420; --navy-2:#122032; --navy-ink:#f4f6f8; --navy-ink-2:#8fa2b6; }
 }
 *{box-sizing:border-box}
@@ -56,8 +56,8 @@ main section.on{display:block}
   .brow{grid-template-columns:76px 1fr 54px !important;gap:.4rem !important}
 }
 
-.group{border-top:1px solid var(--rule);padding:1.15rem 0}
-.group:first-of-type{border-top:none;padding-top:0}
+.group{background:var(--card);border:1px solid var(--rule);border-radius:10px;
+  padding:1.1rem 1.25rem;margin-bottom:1rem}
 .ghead{display:flex;align-items:center;gap:.5rem;margin-bottom:.7rem;flex-wrap:wrap}
 .gname{font-size:.95rem;font-weight:600}
 .tag{font-size:.78rem;font-weight:600;color:var(--accent)}
@@ -76,6 +76,9 @@ article a:hover,article a:focus-visible{border-bottom-color:var(--accent);color:
 .hidden{display:none}
 .reports{background:var(--card);border:1px solid var(--rule);border-radius:9px;
   padding:.7rem .9rem;margin-top:.7rem}
+.callout{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--accent);
+  border-radius:10px;padding:1.15rem 1.3rem;margin-bottom:1rem}
+.callout .sub:first-child{margin-top:0}
 .reports .cap{font-size:.72rem;color:var(--ink-3);margin:0 0 .35rem}
 .reports article{padding:.28rem 0}
 .reports a{font-size:.86rem}
@@ -101,8 +104,10 @@ tr:last-child td{border-bottom:none}
 .up{color:var(--up)}
 .down{color:var(--down)}
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-.sub{font-size:.8rem;font-weight:600;margin:1.3rem 0 .5rem}
+.sub{font-size:.82rem;font-weight:700;margin:1.9rem 0 .6rem;color:var(--accent);
+  letter-spacing:.01em}
 .sub:first-child{margin-top:0}
+.sub .miss{color:var(--ink-3);font-weight:400}
 .chips{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.5rem}
 .chip{font-size:.72rem;color:var(--ink-2);background:var(--card);
   border:1px solid var(--rule);border-radius:999px;padding:.12rem .55rem}
@@ -664,12 +669,17 @@ function renderLiquidityNotes(n) {
     <p class="sub">${esc(title)}</p>
     <p class="sum">${esc(text)}</p>`;
 
+  const notesHtml = hasNotes ? `
+    <div class="callout">
+      ${block("이게 뭔가요", notes.terms)}
+      ${block("지금 상황", notes.situation)}
+      ${block("왜 중요한가요", notes.why)}
+      ${block("과거엔 이랬어요", notes.history)}
+      <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>
+    </div>` : "";
+
   box.innerHTML = `
-    ${block("이게 뭔가요", notes.terms)}
-    ${block("지금 상황", notes.situation)}
-    ${block("왜 중요한가요", notes.why)}
-    ${block("과거엔 이랬어요", notes.history)}
-    ${hasNotes ? '<p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>' : ""}
+    ${notesHtml}
     ${news.length ? `
       <p class="sub">관련 뉴스</p>
       ${news.map(newsItem).join("")}
@@ -741,11 +751,13 @@ function renderMoneyMarketNotes(n) {
     <p class="sum">${esc(text)}</p>`;
 
   box.innerHTML = `
-    ${block("이게 뭔가요", notes.terms)}
-    ${block("지금 상황", notes.situation)}
-    ${block("왜 중요한가요", notes.why)}
-    ${block("과거엔 이랬어요", notes.history)}
-    <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>`;
+    <div class="callout">
+      ${block("이게 뭔가요", notes.terms)}
+      ${block("지금 상황", notes.situation)}
+      ${block("왜 중요한가요", notes.why)}
+      ${block("과거엔 이랬어요", notes.history)}
+      <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>
+    </div>`;
 }
 
 const toneMark = v => {
@@ -768,10 +780,12 @@ function renderMarketNotes(n) {
     <p class="sub">${esc(title)}</p>
     <p class="sum">${esc(text)}</p>`;
   box.innerHTML = `
-    ${block("오늘 시황", notes.situation)}
-    ${block("왜 중요한가요", notes.why)}
-    ${block("과거엔 이랬어요", notes.history)}
-    <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>`;
+    <div class="callout">
+      ${block("오늘 시황", notes.situation)}
+      ${block("왜 중요한가요", notes.why)}
+      ${block("과거엔 이랬어요", notes.history)}
+      <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>
+    </div>`;
 }
 
 // 커뮤니티 언급 종목 -- 레딧(ApeWisdom) 멘션수 막대 (fetch_community_buzz.py)
