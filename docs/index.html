@@ -762,14 +762,13 @@ function renderMarketNotes(n) {
   if (!box) return;
   if (!n) { box.innerHTML = ""; return; }
   const notes = n.notes || {};
-  const hasNotes = notes.terms || notes.situation || notes.why || notes.history;
+  const hasNotes = notes.situation || notes.why || notes.history;
   if (!hasNotes) { box.innerHTML = ""; return; }
   const block = (title, text) => !text ? "" : `
     <p class="sub">${esc(title)}</p>
     <p class="sum">${esc(text)}</p>`;
   box.innerHTML = `
-    ${block("이게 뭔가요", notes.terms)}
-    ${block("지금 상황", notes.situation)}
+    ${block("오늘 시황", notes.situation)}
     ${block("왜 중요한가요", notes.why)}
     ${block("과거엔 이랬어요", notes.history)}
     <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>`;
