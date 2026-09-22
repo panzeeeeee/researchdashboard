@@ -85,6 +85,10 @@ jobs:
           python scripts/fetch_portfolio.py
         continue-on-error: true
 
+      - name: 포트폴리오 종목 수급
+        run: python scripts/fetch_holdings_flow.py
+        continue-on-error: true
+
       - name: 미국 시장 현황
         # 포트폴리오 직후라 야후 쪽에 한 번 더 여유를 둔다
         run: |
@@ -142,6 +146,18 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/make_tables.py
+
+      - name: 긴 조정 후 52주 신고가 카드
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_breakout_cards.py
+        continue-on-error: true
+
+      - name: 딥밸류 카드
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_deepvalue_cards.py
+        continue-on-error: true
 
       - name: 뉴스 수집
         env:
