@@ -195,6 +195,8 @@ tr:last-child td{border-bottom:none}
 <section id="market">
   <h2>미국 시황</h2>
   <div id="market-box"><p class="note">불러오는 중입니다.</p></div>
+  <div id="market-notes"></div>
+  <div id="buzz-box"></div>
 </section>
 
 <section id="breadth">
@@ -754,6 +756,48 @@ const toneMark = v => {
   return `<span class="${cls}">${n > 0 ? "+" : ""}${n.toFixed(2)}</span>`;
 };
 
+// 미국 시황 해설 -- 초보자용 4단락 (fetch_market_notes.py)
+function renderMarketNotes(n) {
+  const box = document.getElementById("market-notes");
+  if (!box) return;
+  if (!n) { box.innerHTML = ""; return; }
+  const notes = n.notes || {};
+  const hasNotes = notes.terms || notes.situation || notes.why || notes.history;
+  if (!hasNotes) { box.innerHTML = ""; return; }
+  const block = (title, text) => !text ? "" : `
+    <p class="sub">${esc(title)}</p>
+    <p class="sum">${esc(text)}</p>`;
+  box.innerHTML = `
+    ${block("이게 뭔가요", notes.terms)}
+    ${block("지금 상황", notes.situation)}
+    ${block("왜 중요한가요", notes.why)}
+    ${block("과거엔 이랬어요", notes.history)}
+    <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>`;
+}
+
+// 커뮤니티 언급 종목 -- 레딧(ApeWisdom) 멘션수 막대 (fetch_community_buzz.py)
+function renderCommunityBuzz(b) {
+  const box = document.getElementById("buzz-box");
+  if (!box) return;
+  const stocks = b?.stocks || [];
+  if (!stocks.length) { box.innerHTML = ""; return; }
+
+  const max = Math.max(...stocks.map(s => s.mentions || 0), 1);
+  const rows = stocks.map(s => {
+    const pct = Math.round((s.mentions || 0) / max * 100);
+    return `
+      <div class="brow">
+        <span class="bname">${esc(s.ticker)}</span>
+        <span class="btrack"><span class="bfill" style="left:0;width:${pct}%;background:var(--accent)"></span></span>
+        <span class="bval">${nz(s.mentions)}${s.chg != null ? ` (${signed(s.chg)})` : ""}</span>
+      </div>`;
+  }).join("");
+
+  box.innerHTML = `
+    <p class="sub">커뮤니티 언급 종목<span class="miss"> 출처: ${esc(b.source || "Reddit")} · 언급수(괄호는 전일比 변화)</span></p>
+    <div class="breadth">${rows}</div>`;
+}
+
 function renderCalls(c, edgar) {
   const box = document.getElementById("calls-box");
   const have = new Set((edgar?.stocks || []).map(s => s.ticker));
@@ -927,12 +971,14 @@ Promise.all([
   fetch("data/calls.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/edgar.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+  fetch("data/market_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+  fetch("data/community_buzz.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/sector_breadth.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
-]).then(([news, research, tables, pf, calls, edgar, market, breadth, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
+]).then(([news, research, tables, pf, calls, edgar, market, marketNotes, buzz, breadth, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
   document.getElementById("stamp").textContent =
     new Date(news.updated_at).toLocaleString("ko-KR",
       { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
@@ -943,6 +989,8 @@ Promise.all([
   renderHotNews(news, breadth);
   renderCalls(calls, edgar);
   renderMarket(market);
+  renderMarketNotes(marketNotes);
+  renderCommunityBuzz(buzz);
   renderSectorBreadth(breadth, market ? market.sectors : null);
   renderLiquidity(liquidity);
   renderTrendChart("liquidity-chart", liquidity ? liquidity.history : null);
