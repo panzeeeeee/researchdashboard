@@ -178,6 +178,7 @@ tr:last-child td{border-bottom:none}
   <a href="#moneymarket">자금시장 상세</a>
   <a href="#portfolio">포트폴리오</a>
   <a href="#breakout">긴 조정 후<br>52주 신고가</a>
+  <a href="#extremes">신고가·신저가<br>카드</a>
   <a href="#deepvalue">딥밸류</a>
   <a href="#calls">컨콜 흐름</a>
   <a href="#news">섹터 뉴스 <span class="count" id="c-news"></span></a>
@@ -229,6 +230,11 @@ tr:last-child td{border-bottom:none}
 <section id="breakout">
   <h2>긴 조정 후 52주 신고가<span class="tagline">물극필반</span></h2>
   <div id="t-breakout"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="extremes">
+  <h2>52주 신고가·신저가<span class="tagline">오늘 종가 기준 · 카드로 하나씩</span></h2>
+  <div id="extremes-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="deepvalue">
@@ -564,6 +570,81 @@ function renderHotNews(news, breadth) {
   box.innerHTML = top.length
     ? top.map(newsItem).join("") + moreBtn(top.length)
     : '<p class="note">모을 뉴스가 아직 없습니다.</p>';
+}
+
+// 조원/조달러 단위 큰 숫자 표기
+function fmtMoney(v) {
+  if (v === null || v === undefined) return "—";
+  const n = Number(v);
+  if (n >= 1e12) return (n / 1e12).toFixed(2) + "조$";
+  if (n >= 1e9) return (n / 1e9).toFixed(1) + "십억$";
+  if (n >= 1e6) return (n / 1e6).toFixed(0) + "백만$";
+  return fmtNum(n);
+}
+
+// 52주 신고가·신저가 카드 하나
+function renderExtremeCard(card) {
+  if (!card) return '<p class="note">카드가 없습니다.</p>';
+  const bullets = (card.overview || []).length
+    ? `<ul class="lines">${card.overview.map(b => `<li>${esc(b)}</li>`).join("")}</ul>`
+    : '<p class="note">기업개요 없음</p>';
+  return `
+    <div class="callout">
+      <div class="ghead">
+        <span class="gname">${esc(card.name)}</span>
+        <span class="pill">${esc(card.ticker)}</span>
+        <span class="pill on">${card.kind === "high" ? "신고가" : "신저가"}</span>
+      </div>
+      <p class="big" style="margin-top:.3rem">${fmtNum(card.price)}
+        <span style="font-size:1rem">${signed(card.chg)}</span></p>
+      <p class="miss">${esc(card.sector || "섹터 미상")} · ${esc(card.industry || "산업 미상")}</p>
+      ${lineChart(card.chart)}
+      <p class="sub">기업 정보</p>
+      <p class="miss">시가총액 ${fmtMoney(card.marketCap)} · 거래대금 ${fmtMoney(card.tradingValue)}</p>
+      ${bullets}
+    </div>`;
+}
+
+// 52주 신고가·신저가 -- 신고가/신저가 토글 + 카드 넘기기
+function renderExtremes(data) {
+  const box = document.getElementById("extremes-box");
+  if (!box) return;
+  if (!data) { box.innerHTML = '<p class="note">extremes.json 이 아직 없습니다.</p>'; return; }
+
+  let kind = "high";
+  let idx = 0;
+
+  const draw = () => {
+    const list = data[kind] || [];
+    if (idx >= list.length) idx = 0;
+
+    box.innerHTML = `
+      <div class="rangebtns">
+        <button data-k="high" class="${kind === "high" ? "on" : ""}">신고가 (${(data.high || []).length})</button>
+        <button data-k="low" class="${kind === "low" ? "on" : ""}">신저가 (${(data.low || []).length})</button>
+      </div>
+      ${list.length ? `
+        <div class="ghead" style="margin-bottom:.6rem">
+          <button class="more" data-nav="prev">← 이전</button>
+          <span class="miss">${idx + 1} / ${list.length}</span>
+          <button class="more" data-nav="next">다음 →</button>
+        </div>
+        ${renderExtremeCard(list[idx])}`
+        : '<p class="note">오늘은 해당하는 종목이 없습니다.</p>'}`;
+
+    box.querySelectorAll("[data-k]").forEach(b => b.addEventListener("click", () => {
+      kind = b.dataset.k; idx = 0; draw();
+    }));
+    box.querySelectorAll("[data-nav]").forEach(b => b.addEventListener("click", () => {
+      const cur = data[kind] || [];
+      if (!cur.length) return;
+      idx = b.dataset.nav === "prev"
+        ? (idx - 1 + cur.length) % cur.length
+        : (idx + 1) % cur.length;
+      draw();
+    }));
+  };
+  draw();
 }
 
 // 섹터 온도 — S&P500 11개 섹터 등락률(미국 시황 데이터 재사용) + 상승/하락 종목 비율 + 거래량 배수
@@ -987,17 +1068,19 @@ Promise.all([
   fetch("data/market_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/community_buzz.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/sector_breadth.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+  fetch("data/extremes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
-]).then(([news, research, tables, pf, calls, edgar, market, marketNotes, buzz, breadth, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
+]).then(([news, research, tables, pf, calls, edgar, market, marketNotes, buzz, breadth, extremes, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
   document.getElementById("stamp").textContent =
     new Date(news.updated_at).toLocaleString("ko-KR",
       { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
     + " · " + news.total + "건";
 
   renderTables(tables);
+  renderExtremes(extremes);
   renderPortfolio(pf);
   renderHotNews(news, breadth);
   renderCalls(calls, edgar);
