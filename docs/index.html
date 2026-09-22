@@ -598,22 +598,26 @@ function renderMarket(m) {
 function renderCalendar(cal) {
   const box = document.getElementById("calendar-box");
   if (!box) return;
-  const fomc = cal?.fomc || [];
+  const macro = cal?.macro || [];
   const earnings = cal?.earnings || [];
-  if (!fomc.length && !earnings.length) { box.innerHTML = ""; return; }
+  if (!macro.length && !earnings.length) { box.innerHTML = ""; return; }
 
-  const rows = [
-    ...fomc.map(f => ({ date: f.start, label: f.label, tag: "FOMC" })),
-    ...earnings.map(e => ({ date: e.date, label: `${esc(e.ticker)} 실적 발표`, tag: "실적" })),
-  ].filter(r => r.date).sort((a, b) => (a.date > b.date ? 1 : -1));
+  const macroRows = macro.map(r =>
+    `<tr><td>${esc(r.date)}</td><td>${esc(r.label)}</td></tr>`).join("");
+  const earningsRows = earnings.map(r =>
+    `<tr><td>${esc(r.date)}</td><td class="tick">${esc(r.ticker)}</td></tr>`).join("");
 
   box.innerHTML = `
-    <p class="sub" style="margin-top:0">주요 일정</p>
+    <p class="sub" style="margin-top:0">주요 거시경제 지표 및 회의 일정</p>
     <div class="scroll"><table>
-      <tr><th>날짜</th><th>구분</th><th>일정</th></tr>
-      ${rows.map(r => `<tr><td>${esc(r.date)}</td><td class="miss">${esc(r.tag)}</td>
-        <td>${r.label}</td></tr>`).join("")
-        || '<tr><td colspan="3" class="note">예정된 일정 없음</td></tr>'}
+      <tr><th>날짜</th><th>일정</th></tr>
+      ${macroRows || '<tr><td colspan="2" class="note">예정된 일정 없음</td></tr>'}
+    </table></div>
+
+    <p class="sub">포트폴리오 기업 일정<span class="miss"> 다음 실적 발표일</span></p>
+    <div class="scroll"><table>
+      <tr><th>날짜</th><th>종목</th></tr>
+      ${earningsRows || '<tr><td colspan="2" class="note">예정된 일정 없음</td></tr>'}
     </table></div>`;
 }
 
