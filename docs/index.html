@@ -229,7 +229,12 @@ tr:last-child td{border-bottom:none}
 
 <section id="breakout">
   <h2>긴 조정 후 52주 신고가<span class="tagline">물극필반</span></h2>
+  <div class="rangebtns" id="breakout-tabs">
+    <button data-v="table" class="on">표</button>
+    <button data-v="cards">카드</button>
+  </div>
   <div id="t-breakout"><p class="note">불러오는 중입니다.</p></div>
+  <div id="breakout-cards-box" class="hidden"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="extremes">
@@ -239,7 +244,12 @@ tr:last-child td{border-bottom:none}
 
 <section id="deepvalue">
   <h2>딥밸류</h2>
+  <div class="rangebtns" id="deepvalue-tabs">
+    <button data-v="table" class="on">표</button>
+    <button data-v="cards">카드</button>
+  </div>
   <div id="t-deepvalue"><p class="note">불러오는 중입니다.</p></div>
+  <div id="deepvalue-cards-box" class="hidden"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="calls">
@@ -588,19 +598,106 @@ function renderExtremeCard(card) {
   const bullets = (card.overview || []).length
     ? `<ul class="lines">${card.overview.map(b => `<li>${esc(b)}</li>`).join("")}</ul>`
     : '<p class="note">기업개요 없음</p>';
+  const headline = card.kind === "high" ? "❗ 52주 신고가 돌파" : "🔻 52주 신저가 근접";
+
+  const fmtUsdShort = v => {
+    if (v === null || v === undefined) return "—";
+    if (v >= 1e9) return "$" + (v / 1e9).toFixed(1) + "B";
+    if (v >= 1e6) return "$" + (v / 1e6).toFixed(1) + "mil";
+    return "$" + fmtNum(v);
+  };
+  const fmtKrw = v => {
+    if (v === null || v === undefined) return "";
+    if (v >= 1e12) return (v / 1e12).toFixed(1) + "조원";
+    if (v >= 1e8) return (v / 1e8).toFixed(0) + "억원";
+    return fmtNum(v) + "원";
+  };
+
   return `
     <div class="callout">
-      <div class="ghead">
-        <span class="gname">${esc(card.name)}</span>
-        <span class="pill">${esc(card.ticker)}</span>
-        <span class="pill on">${card.kind === "high" ? "신고가" : "신저가"}</span>
-      </div>
-      <p class="big" style="margin-top:.3rem">${fmtNum(card.price)}
-        <span style="font-size:1rem">${signed(card.chg)}</span></p>
-      <p class="miss">${esc(card.sector || "섹터 미상")} · ${esc(card.industry || "산업 미상")}</p>
+      <p class="gname">🇺🇸 ${esc(card.name)} <span>(${signed(card.chg)})</span></p>
+      <p class="sub" style="margin-top:.2rem">${headline}</p>
+      <p class="miss">가격 $${fmtNum(card.price)} · Sector: ${esc(card.sector || "—")} ·
+        Industry: ${esc(card.industry || "—")}</p>
+
       ${lineChart(card.chart)}
-      <p class="sub">기업 정보</p>
-      <p class="miss">시가총액 ${fmtMoney(card.marketCap)} · 거래대금 ${fmtMoney(card.tradingValue)}</p>
+
+      <p class="sub">종목 정보</p>
+      <p class="miss">
+        종목코드 : ${esc(card.ticker)}<br>
+        시가총액 : ${fmtUsdShort(card.marketCap)}${card.marketCapKrw ? ` (${fmtKrw(card.marketCapKrw)})` : ""}<br>
+        거래대금 : ${fmtUsdShort(card.tradingValue)}${card.tradingValueKrw ? ` (${fmtKrw(card.tradingValueKrw)})` : ""}<br>
+        ${card.capRank ? `시총순위 : 전체 ${card.capRank}위` : ""}
+      </p>
+
+      <p class="sub">기업개요</p>
+      ${bullets}
+    </div>`;
+}
+
+// 한 섹션 안에서 표/카드 탭을 전환한다 (버튼 그룹 id + {값: 컨테이너id})
+function setupTabToggle(tabsId, mapping) {
+  const tabs = document.getElementById(tabsId);
+  if (!tabs) return;
+  tabs.querySelectorAll("button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      tabs.querySelectorAll("button").forEach(b => b.classList.toggle("on", b === btn));
+      Object.entries(mapping).forEach(([v, id]) => {
+        const el = document.getElementById(id);
+        if (el) el.classList.toggle("hidden", v !== btn.dataset.v);
+      });
+    });
+  });
+}
+
+// 카드 목록 하나를 이전/다음으로 넘겨보는 공통 틀 (신고가·신저가 카드와 같은 방식)
+function renderCardList(containerId, cards, cardHtmlFn) {
+  const box = document.getElementById(containerId);
+  if (!box) return;
+  if (!cards || !cards.length) { box.innerHTML = '<p class="note">해당하는 종목이 없습니다.</p>'; return; }
+
+  let idx = 0;
+  const draw = () => {
+    box.innerHTML = `
+      <div class="ghead" style="margin-bottom:.6rem">
+        <button class="more" data-nav="prev">← 이전</button>
+        <span class="miss">${idx + 1} / ${cards.length}</span>
+        <button class="more" data-nav="next">다음 →</button>
+      </div>
+      ${cardHtmlFn(cards[idx])}`;
+    box.querySelectorAll("[data-nav]").forEach(b => b.addEventListener("click", () => {
+      idx = b.dataset.nav === "prev" ? (idx - 1 + cards.length) % cards.length
+                                      : (idx + 1) % cards.length;
+      draw();
+    }));
+  };
+  draw();
+}
+
+// 긴 조정 후 52주 신고가 / 딥밸류 카드 한 장 -- 신고가·신저가 카드와 같은 틀 +
+// 스크리너 고유 지표(점수·게이트 or 점수·F스코어·왜 싼가)
+function renderScreenerCard(card, kind) {
+  if (!card) return '<p class="note">카드가 없습니다.</p>';
+  const bullets = (card.overview || []).length
+    ? `<ul class="lines">${card.overview.map(b => `<li>${esc(b)}</li>`).join("")}</ul>`
+    : '<p class="note">기업개요 없음</p>';
+  const m = card.meta || {};
+  const metaLines = kind === "breakout"
+    ? `점수 ${nz(m.score)} · 게이트 ${nz(m.gates)} · 낙폭 ${m.drawdown ? m.drawdown + "%" : "—"}
+       ${m.missing ? `<br>못 넘은 항목: ${esc(m.missing)}` : ""}`
+    : `점수 ${nz(m.score)} · F스코어 ${nz(m.fscore)} · 낙폭 ${nz(m.drawdown)}%
+       · 200일선아래 ${nz(m.below200)}${m.triggered ? ' · <span class="hit">트리거 발생</span>' : ""}
+       ${m.why ? `<br>왜 싼가: ${esc(m.why)}` : ""}`;
+
+  return `
+    <div class="callout">
+      <p class="gname">🇺🇸 ${esc(card.name)} <span>(${signed(card.chg)})</span></p>
+      <p class="miss">가격 $${fmtNum(card.price)} · Sector: ${esc(card.sector || "—")} ·
+        Industry: ${esc(card.industry || "—")}</p>
+      ${lineChart(card.chart)}
+      <p class="sub">스크리너 지표</p>
+      <p class="miss">${metaLines}</p>
+      <p class="sub">기업개요</p>
       ${bullets}
     </div>`;
 }
@@ -1069,11 +1166,13 @@ Promise.all([
   fetch("data/community_buzz.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/sector_breadth.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/extremes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+  fetch("data/breakout_cards.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+  fetch("data/deepvalue_cards.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
-]).then(([news, research, tables, pf, calls, edgar, market, marketNotes, buzz, breadth, extremes, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
+]).then(([news, research, tables, pf, calls, edgar, market, marketNotes, buzz, breadth, extremes, breakoutCards, deepvalueCards, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
   document.getElementById("stamp").textContent =
     new Date(news.updated_at).toLocaleString("ko-KR",
       { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
@@ -1081,6 +1180,12 @@ Promise.all([
 
   renderTables(tables);
   renderExtremes(extremes);
+  renderCardList("breakout-cards-box", breakoutCards ? breakoutCards.cards : null,
+    c => renderScreenerCard(c, "breakout"));
+  renderCardList("deepvalue-cards-box", deepvalueCards ? deepvalueCards.cards : null,
+    c => renderScreenerCard(c, "deepvalue"));
+  setupTabToggle("breakout-tabs", {table: "t-breakout", cards: "breakout-cards-box"});
+  setupTabToggle("deepvalue-tabs", {table: "t-deepvalue", cards: "deepvalue-cards-box"});
   renderPortfolio(pf);
   renderHotNews(news, breadth);
   renderCalls(calls, edgar);
