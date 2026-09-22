@@ -553,29 +553,34 @@ function renderMarket(m) {
 // 주요뉴스 -- 오늘의 종목·섹터 뉴스·섹터 온도에 이미 있는 뉴스를 모아
 // 여러 매체가 동시에 다룬(dup_count) 순으로 보여준다. 새 데이터를 안 받고
 // 이미 불러온 news/breadth 를 그대로 재사용한다.
-function renderHotNews(news, breadth) {
+function renderHotNews(news, breadth, hotNews) {
   const box = document.getElementById("hotnews-box");
   if (!box) return;
 
-  const pool = [];
-  (news?.stocks || []).forEach(s => pool.push(...(s.items || [])));
-  (news?.auto_sectors || []).forEach(s => pool.push(...(s.items || [])));
-  (news?.sectors || []).forEach(s => pool.push(...(s.items || [])));
-  (breadth?.sectors || []).forEach(s => pool.push(...(s.news || [])));
-
   const seen = new Set();
-  const unique = pool.filter(it => {
+  const dedupe = arr => arr.filter(it => {
     if (!it.url || seen.has(it.url)) return false;
     seen.add(it.url);
     return true;
   });
 
-  unique.sort((a, b) => {
+  // 1) 시장 전체를 겨냥한 넓은 검색 결과(hot_news.json)를 먼저 — 이게 진짜 "주요"에 가깝다
+  const broad = dedupe((hotNews?.items || []));
+
+  // 2) 종목·섹터·섹터온도 뉴스 중 여러 매체가 동시에 다룬(dup_count) 것들을 그 다음에
+  const pool = [];
+  (news?.stocks || []).forEach(s => pool.push(...(s.items || [])));
+  (news?.auto_sectors || []).forEach(s => pool.push(...(s.items || [])));
+  (news?.sectors || []).forEach(s => pool.push(...(s.items || [])));
+  (breadth?.sectors || []).forEach(s => pool.push(...(s.news || [])));
+  pool.sort((a, b) => {
     const d = (b.dup_count || 0) - (a.dup_count || 0);
     if (d !== 0) return d;
     return new Date(b.published || 0) - new Date(a.published || 0);
   });
-  const top = unique.slice(0, 12);
+  const rest = dedupe(pool);
+
+  const top = [...broad, ...rest].slice(0, 20);
 
   box.innerHTML = top.length
     ? top.map(newsItem).join("") + moreBtn(top.length)
@@ -1157,6 +1162,7 @@ function renderTables(t) {
 Promise.all([
   fetch("data/news.json?t=" + Date.now()).then(r => r.json()),
   fetch("data/research.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+  fetch("data/hot_news.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/tables.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/portfolio.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/calls.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
@@ -1172,7 +1178,7 @@ Promise.all([
   fetch("data/money_market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
-]).then(([news, research, tables, pf, calls, edgar, market, marketNotes, buzz, breadth, extremes, breakoutCards, deepvalueCards, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
+]).then(([news, research, hotNews, tables, pf, calls, edgar, market, marketNotes, buzz, breadth, extremes, breakoutCards, deepvalueCards, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
   document.getElementById("stamp").textContent =
     new Date(news.updated_at).toLocaleString("ko-KR",
       { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
@@ -1187,7 +1193,7 @@ Promise.all([
   setupTabToggle("breakout-tabs", {table: "t-breakout", cards: "breakout-cards-box"});
   setupTabToggle("deepvalue-tabs", {table: "t-deepvalue", cards: "deepvalue-cards-box"});
   renderPortfolio(pf);
-  renderHotNews(news, breadth);
+  renderHotNews(news, breadth, hotNews);
   renderCalls(calls, edgar);
   renderMarket(market);
   renderMarketNotes(marketNotes);
