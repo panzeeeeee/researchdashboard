@@ -225,6 +225,7 @@ tr:last-child td{border-bottom:none}
 <section id="portfolio">
   <h2>포트폴리오 · 룰 트리거</h2>
   <div id="pf"><p class="note">불러오는 중입니다.</p></div>
+  <div id="holdings-flow-box"></div>
 </section>
 
 <section id="breakout">
@@ -477,6 +478,44 @@ function renderPortfolio(p) {
           <th class="n">1개월</th><th class="n">고점대비</th><th class="n">52주위치</th></tr>
       ${rows || '<tr><td colspan="6" class="note">자료 없음</td></tr>'}
     </table></div>`;
+}
+
+// 포트폴리오 종목 수급 -- 기관 보유·공매도·내부자 매매 (fetch_holdings_flow.py)
+function renderHoldingsFlow(hf) {
+  const box = document.getElementById("holdings-flow-box");
+  if (!box) return;
+  const stocks = hf?.stocks || [];
+  if (!stocks.length) { box.innerHTML = ""; return; }
+
+  const cards = stocks.map(s => {
+    const rows = (s.insider_recent || []).slice(0, 5).map(r => `
+      <tr>
+        <td>${esc(r.insider)}</td>
+        <td class="miss">${esc(r.text || r.position || "—")}</td>
+        <td class="n">${nz(r.shares)}</td>
+        <td class="miss">${esc((r.date || "").slice(0, 10))}</td>
+      </tr>`).join("");
+
+    return `
+      <div class="qcard">
+        <div class="qhead">
+          <span class="tick">${esc(s.ticker)}</span>
+          <span class="src">기관 보유 ${s.inst_pct != null ? s.inst_pct + "%" : "—"}</span>
+          <span class="src">공매도 ${s.short_pct_float != null ? s.short_pct_float + "%" : "—"}
+            (${signedNum(s.short_chg)}%)</span>
+        </div>
+        ${rows ? `
+          <div class="scroll"><table>
+            <tr><th>내부자</th><th>내용</th><th class="n">주식수</th><th>날짜</th></tr>
+            ${rows}
+          </table></div>` : '<p class="note">최근 내부자 매매 없음</p>'}
+      </div>`;
+  }).join("");
+
+  box.innerHTML = `
+    <p class="sub">포트폴리오 종목 수급<span class="miss"> 기관 보유·공매도(전월比)·내부자 매매</span></p>
+    <div class="qgrid">${cards}</div>
+    <p class="miss">ETF(SPY 등)는 기관 보유·공매도 자료가 없을 수 있습니다 · 출처: Yahoo Finance</p>`;
 }
 
 // 등락률을 가운데 기준 좌우로 뻗는 막대바로 그린다. 양수/음수 둘 다 크기 비교가 되게.
@@ -1165,6 +1204,7 @@ Promise.all([
   fetch("data/hot_news.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/tables.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/portfolio.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+  fetch("data/holdings_flow.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/calls.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/edgar.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
@@ -1178,7 +1218,7 @@ Promise.all([
   fetch("data/money_market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
-]).then(([news, research, hotNews, tables, pf, calls, edgar, market, marketNotes, buzz, breadth, extremes, breakoutCards, deepvalueCards, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
+]).then(([news, research, hotNews, tables, pf, holdingsFlow, calls, edgar, market, marketNotes, buzz, breadth, extremes, breakoutCards, deepvalueCards, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
   document.getElementById("stamp").textContent =
     new Date(news.updated_at).toLocaleString("ko-KR",
       { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
@@ -1193,6 +1233,7 @@ Promise.all([
   setupTabToggle("breakout-tabs", {table: "t-breakout", cards: "breakout-cards-box"});
   setupTabToggle("deepvalue-tabs", {table: "t-deepvalue", cards: "deepvalue-cards-box"});
   renderPortfolio(pf);
+  renderHoldingsFlow(holdingsFlow);
   renderHotNews(news, breadth, hotNews);
   renderCalls(calls, edgar);
   renderMarket(market);
