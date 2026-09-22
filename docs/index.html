@@ -64,9 +64,13 @@ main section.on{display:block}
 .pill{font-size:.68rem;color:var(--ink-3);border:1px solid var(--rule);
   border-radius:999px;padding:.05rem .45rem}
 .pill.on{color:var(--accent);border-color:var(--accent);background:var(--tintA)}
-article{padding:.42rem 0}
-article a{color:var(--ink);text-decoration:none;font-size:.92rem;
-  border-bottom:1px solid transparent}
+article{padding:.6rem 0;border-top:1px solid var(--rule)}
+article:first-child{border-top:none;padding-top:0}
+article a{color:var(--ink);text-decoration:none;font-size:.95rem;font-weight:600;
+  border-bottom:1px solid transparent;line-height:1.4}
+.badge-hot{display:inline-block;background:var(--accent);color:#fff;font-size:.66rem;
+  font-weight:700;border-radius:4px;padding:.08rem .4rem;margin-right:.4rem;
+  vertical-align:middle;letter-spacing:.02em}
 article a:hover,article a:focus-visible{border-bottom-color:var(--accent);color:var(--accent)}
 .sum{font-size:.82rem;color:var(--ink-2);margin:.12rem 0 0}
 .src{font-size:.78rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
@@ -406,7 +410,9 @@ function renderTrendChart(containerId, history) {
 
 const newsItem = (it, i) => `
   <article class="${i < SHOW ? "" : "extra hidden"}">
-    <a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
+    <a href="${esc(it.url)}" target="_blank" rel="noopener">${
+      (it.dup_count || 0) >= 2 ? '<span class="badge-hot">주요</span>' : ""
+    }${esc(it.title)}</a>
     ${it.summary ? `<p class="sum">${esc(it.summary)}</p>` : ""}
     <span class="src">${esc(it.source)} · ${ago(it.published)}${
       it.dup_count ? " · 유사 " + it.dup_count : ""}</span>
