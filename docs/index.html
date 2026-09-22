@@ -136,6 +136,13 @@ tr:last-child td{border-bottom:none}
 .brow .bval{font-size:.86rem;text-align:right;font-variant-numeric:tabular-nums}
 .btrack.split{display:flex;height:9px;background:var(--rule);border-radius:999px;overflow:hidden;margin-top:.6rem}
 .btrack.split span{display:block;height:100%}
+.rangebtns{display:flex;gap:.4rem;margin:0 0 .6rem}
+.rangebtns button{background:none;border:1px solid var(--rule);color:var(--ink-2);
+  border-radius:999px;padding:.2rem .75rem;font-size:.76rem;cursor:pointer;font-family:inherit}
+.rangebtns button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.chart{width:100%;height:130px;display:block}
+.chart-labels{display:flex;justify-content:space-between;font-size:.72rem;
+  color:var(--ink-3);margin-top:.2rem}
 </style>
 </head>
 <body>
@@ -262,6 +269,62 @@ const signedNum = v => {
 
 const fmtNum = v => (v === null || v === undefined)
   ? "—" : Number(v).toLocaleString("ko-KR", { maximumFractionDigits: 1 });
+
+// 순수 SVG 라인차트 — 외부 라이브러리 없이 직접 그린다
+function lineChart(points) {
+  const w = 640, h = 130, pad = 6;
+  if (!points || points.length < 2) return '<p class="note">자료가 부족합니다.</p>';
+  const vals = points.map(p => p.value);
+  const min = Math.min(...vals), max = Math.max(...vals);
+  const span = (max - min) || 1;
+  const stepX = (w - pad * 2) / (points.length - 1);
+  const y = v => h - pad - ((v - min) / span) * (h - pad * 2);
+  const path = points.map((p, i) =>
+    `${i === 0 ? "M" : "L"}${(pad + i * stepX).toFixed(1)},${y(p.value).toFixed(1)}`).join(" ");
+  const rising = points[points.length - 1].value >= points[0].value;
+  const color = rising ? "var(--up)" : "var(--down)";
+  const lastY = y(points[points.length - 1].value).toFixed(1);
+  return `
+    <svg viewBox="0 0 ${w} ${h}" class="chart" preserveAspectRatio="none">
+      <path d="${path}" fill="none" stroke="${color}" stroke-width="1.6"
+            vector-effect="non-scaling-stroke" />
+      <circle cx="${(w - pad).toFixed(1)}" cy="${lastY}" r="2.6" fill="${color}" />
+    </svg>
+    <div class="chart-labels">
+      <span>${esc(points[0].date)} · ${fmtNum(points[0].value)}</span>
+      <span>${esc(points[points.length - 1].date)} · ${fmtNum(points[points.length - 1].value)}</span>
+    </div>`;
+}
+
+// 날짜 기준 최근 1년만 자른다 — 일간/주간 어느 쪽이든 그대로 동작
+function sliceRange(history, range) {
+  if (range !== "1y") return history;
+  const cutoff = new Date();
+  cutoff.setFullYear(cutoff.getFullYear() - 1);
+  return (history || []).filter(p => new Date(p.date) >= cutoff);
+}
+
+// 1년/10년 토글 버튼 + 차트를 컨테이너 하나에 그린다
+function renderTrendChart(containerId, history) {
+  const box = document.getElementById(containerId);
+  if (!box) return;
+  if (!history || history.length < 2) {
+    box.innerHTML = '<p class="note">추이 자료가 아직 없습니다.</p>';
+    return;
+  }
+  let range = "10y";
+  const draw = () => {
+    box.innerHTML = `
+      <div class="rangebtns">
+        <button data-r="1y" class="${range === "1y" ? "on" : ""}">1년</button>
+        <button data-r="10y" class="${range === "10y" ? "on" : ""}">10년</button>
+      </div>
+      ${lineChart(sliceRange(history, range))}`;
+    box.querySelectorAll("[data-r]").forEach(b =>
+      b.addEventListener("click", () => { range = b.dataset.r; draw(); }));
+  };
+  draw();
+}
 
 const newsItem = (it, i) => `
   <article class="${i < SHOW ? "" : "extra hidden"}">
@@ -494,6 +557,9 @@ function renderLiquidity(m) {
       </div>
     </div>
 
+    <p class="sub">순유동성 추이<span class="miss"> 십억 달러 · 주간</span></p>
+    <div id="liquidity-chart"></div>
+
     <p class="sub">유동성 구성요소<span class="miss"> 잔액·1주 변화 · 십억 달러</span></p>
     <div class="scroll"><table>
       <tr><th>항목</th><th class="n">잔액</th><th class="n">1주 변화</th></tr>
@@ -563,6 +629,9 @@ function renderMoneyMarket(m) {
   box.innerHTML = `
     <p class="sub">단기 자금시장 금리</p>
     <div class="grid">${rateSlots || '<p class="note">자료 없음</p>'}</div>
+
+    <p class="sub">SOFR 추이<span class="miss"> % · 일간</span></p>
+    <div id="sofr-chart"></div>
 
     <p class="sub">SOFR 거래금리 분포<span class="miss"> 백분위·거래량</span></p>
     <div class="grid">${distSlots || '<p class="note">자료 없음</p>'}</div>
@@ -773,7 +842,9 @@ Promise.all([
   renderMarket(market);
   renderSectorBreadth(breadth, market ? market.sectors : null);
   renderLiquidity(liquidity);
+  renderTrendChart("liquidity-chart", liquidity ? liquidity.history : null);
   renderMoneyMarket(moneyMarket);
+  renderTrendChart("sofr-chart", moneyMarket ? moneyMarket.sofr_history : null);
   renderLiquidityNotes(liquidityNotes);
 
   const byCode = {};
