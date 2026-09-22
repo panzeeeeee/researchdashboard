@@ -166,6 +166,7 @@ tr:last-child td{border-bottom:none}
 
 <nav id="nav">
   <a href="#picks" class="on">오늘의 종목 <span class="count" id="c-picks"></span></a>
+  <a href="#hotnews">주요뉴스</a>
   <a href="#market">미국 시황</a>
   <a href="#breadth">섹터 온도</a>
   <a href="#liquidity">글로벌 유동성</a>
@@ -184,6 +185,11 @@ tr:last-child td{border-bottom:none}
 <section id="picks" class="on">
   <h2>오늘의 종목</h2>
   <div id="stocks"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="hotnews">
+  <h2>주요뉴스<span class="tagline">여러 매체가 동시에 다룬 뉴스</span></h2>
+  <div id="hotnews-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="market">
@@ -519,6 +525,38 @@ function renderMarket(m) {
       <tr><th>자산</th><th class="n">가격</th><th class="n">등락률</th></tr>
       ${otherRows || '<tr><td colspan="3" class="note">자료 없음</td></tr>'}
     </table></div>`;
+}
+
+// 주요뉴스 -- 오늘의 종목·섹터 뉴스·섹터 온도에 이미 있는 뉴스를 모아
+// 여러 매체가 동시에 다룬(dup_count) 순으로 보여준다. 새 데이터를 안 받고
+// 이미 불러온 news/breadth 를 그대로 재사용한다.
+function renderHotNews(news, breadth) {
+  const box = document.getElementById("hotnews-box");
+  if (!box) return;
+
+  const pool = [];
+  (news?.stocks || []).forEach(s => pool.push(...(s.items || [])));
+  (news?.auto_sectors || []).forEach(s => pool.push(...(s.items || [])));
+  (news?.sectors || []).forEach(s => pool.push(...(s.items || [])));
+  (breadth?.sectors || []).forEach(s => pool.push(...(s.news || [])));
+
+  const seen = new Set();
+  const unique = pool.filter(it => {
+    if (!it.url || seen.has(it.url)) return false;
+    seen.add(it.url);
+    return true;
+  });
+
+  unique.sort((a, b) => {
+    const d = (b.dup_count || 0) - (a.dup_count || 0);
+    if (d !== 0) return d;
+    return new Date(b.published || 0) - new Date(a.published || 0);
+  });
+  const top = unique.slice(0, 12);
+
+  box.innerHTML = top.length
+    ? top.map(newsItem).join("") + moreBtn(top.length)
+    : '<p class="note">모을 뉴스가 아직 없습니다.</p>';
 }
 
 // 섹터 온도 — S&P500 11개 섹터 등락률(미국 시황 데이터 재사용) + 상승/하락 종목 비율 + 거래량 배수
@@ -902,6 +940,7 @@ Promise.all([
 
   renderTables(tables);
   renderPortfolio(pf);
+  renderHotNews(news, breadth);
   renderCalls(calls, edgar);
   renderMarket(market);
   renderSectorBreadth(breadth, market ? market.sectors : null);
