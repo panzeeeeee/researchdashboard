@@ -1,11 +1,11 @@
-"""유동성 해석 — 숫자만 있으면 뭘 봐야 할지 모르니, 맥락과 과거 사례를 붙인다.
+"""유동성·자금시장 해설 — 초보자도 알아듣게, 용어부터 설명한다.
 
 liquidity.json · money_market.json 이 이미 있어야 돈다.
-워크플로우에서 "글로벌 유동성"·"자금시장 상세" 다음 순서로 돌려야 한다.
+글로벌 유동성용 해설(liquidity_notes.json)과 자금시장 상세용 해설
+(money_market_notes.json)을 둘 다 만든다. 둘 다 같은 4단락 구조:
+[용어] [지금 상황] [왜 중요한지] [과거엔 이랬다]
 
-Gemini로 "왜 이런지 / 과거 비슷한 국면엔 어땠는지"를 설명체로 만들고,
-정책 관련 뉴스 몇 건을 같이 붙인다. fetch_news.py 의 검색·요약 로직을
-그대로 재사용한다 — 새 방식을 하나 더 만들지 않는다.
+정책 관련 뉴스는 글로벌 유동성 쪽에만 붙인다 (fetch_news.py 재사용).
 
 투자 전략 제안은 하지 않는다. PROJECT.md 원칙: AI 요약은 검증되지 않은
 것으로 취급하고, 판단 근거가 아니라 실마리로만 쓴다.
@@ -22,85 +22,112 @@ NEWS_QUERIES = [
     "Fed balance sheet QT taper",
 ]
 
+SECTION_TAGS = ["[용어]", "[지금 상황]", "[왜 중요한지]", "[과거엔 이랬다]"]
+SECTION_KEYS = ["terms", "situation", "why", "history"]
 
-def build_prompt(liq, mm):
+COMMON_RULES = (
+    "다음 4개 항목을 순서대로, 다른 말 없이 딱 이 형식으로만 출력해라:\n"
+    "[용어]\n"
+    "방금 나온 지표들이 각각 뭔지 금융을 잘 모르는 사람도 알아듣게 한두 문장씩, "
+    "전문용어가 나오면 바로 쉬운 말로 풀어서 설명해라.\n"
+    "[지금 상황]\n"
+    "오늘 숫자가 정확히 뭘 뜻하는지 쉬운 말로 2문장 이내.\n"
+    "[왜 중요한지]\n"
+    "이게 왜 신경 쓸 일인지 1~2문장.\n"
+    "[과거엔 이랬다]\n"
+    "역사적으로 비슷한 상황이 있었을 때 일반적으로 어땠는지 2~3문장. "
+    "구체적인 날짜나 정확한 수치를 지어내지 말고, 확실히 아는 범위에서만 "
+    "일반적인 패턴으로 말해라.\n"
+    "투자 조언이나 '사라/팔아라' 식 제안은 절대 쓰지 마라 — 설명만 해라. "
+    "특정 종목명도 쓰지 마라."
+)
+
+
+def build_liquidity_prompt(liq):
     comp = {c["label"]: c for c in (liq.get("components") or [])}
     nl = liq.get("net_liquidity") or {}
-    rates = {r["label"]: r for r in (mm.get("rates") or [])}
-
     lines = [f"미국 순유동성(Fed자산-TGA-RRP): {nl.get('value')}십억$ "
              f"(1주 변화 {nl.get('wow')})"]
     for label in ("Fed 총자산", "TGA · 재무부 일반계정", "ON RRP", "은행 준비금 · 주간 평균"):
         c = comp.get(label)
         if c and c.get("value") is not None:
             lines.append(f"{label}: {c['value']}십억$ (1주 변화 {c.get('wow')})")
-    for label in ("SOFR", "IORB"):
+    data_block = "\n".join(lines)
+
+    return (
+        "아래는 오늘 자 미국 연준 유동성 지표다. 금융 초보자가 이해할 해설을 써라.\n\n"
+        f"{data_block}\n\n" + COMMON_RULES
+    )
+
+
+def build_money_market_prompt(mm):
+    rates = {r["label"]: r for r in (mm.get("rates") or [])}
+    lines = []
+    for label in ("SOFR", "EFFR", "IORB", "OBFR", "TGCR"):
         r = rates.get(label)
         if r and r.get("value") is not None:
             lines.append(f"{label}: {r['value']}%")
     data_block = "\n".join(lines)
 
     return (
-        "아래는 오늘 자 미국 유동성 지표다. 개인 투자자가 참고할 해설을 써라.\n\n"
-        f"{data_block}\n\n"
-        "다음 형식으로, 다른 말 없이 딱 이 구조로만 출력해라:\n"
-        "[국면]\n"
-        "지금 상태를 2문장 이내로 — 왜 이런 숫자가 나왔는지, 무엇이 눈에 띄는지.\n"
-        "[과거 사례]\n"
-        "역사적으로 이런 조합(지준금 급감, RRP 소진, TGA 재충전 등)이 나타났을 때 "
-        "일반적으로 어떤 흐름이 있었는지 2~3문장. 구체적인 날짜나 정확한 수치를 "
-        "지어내지 말고, 확실히 아는 범위에서만 일반적인 패턴으로 말해라.\n"
-        "[과거 섹터 흐름]\n"
-        "이런 유동성 국면에서 상대적으로 강했던/약했던 섹터 유형을 한 문장으로 "
-        "(예: 방어주 대 경기민감주, 성장주 대 가치주). 특정 종목명은 쓰지 마라.\n"
-        "투자 조언이나 '사라/팔아라' 식 제안은 절대 쓰지 마라 — 설명만 해라."
+        "아래는 오늘 자 미국 단기 자금시장 금리다. 금융 초보자가 이해할 해설을 써라. "
+        "SOFR·EFFR·IORB·OBFR·TGCR가 서로 뭐가 다른 금리인지도 짚어줘라.\n\n"
+        f"{data_block}\n\n" + COMMON_RULES
     )
 
 
 def parse_sections(text):
-    sections = {"regime": "", "history": "", "sectors": ""}
+    sections = {k: "" for k in SECTION_KEYS}
     key = None
     for line in (text or "").splitlines():
         line = line.strip()
-        if line.startswith("[국면]"):
-            key = "regime"; continue
-        if line.startswith("[과거 사례]"):
-            key = "history"; continue
-        if line.startswith("[과거 섹터 흐름]"):
-            key = "sectors"; continue
+        matched_tag = None
+        for tag, k in zip(SECTION_TAGS, SECTION_KEYS):
+            if line.startswith(tag):
+                matched_tag = k
+                break
+        if matched_tag:
+            key = matched_tag
+            continue
         if key and line:
             sections[key] = (sections[key] + " " + line).strip()
     return sections
 
 
+def run_notes(prompt, api_key):
+    if not api_key:
+        return {k: "" for k in SECTION_KEYS}
+    text = ask_gemini(prompt, api_key)
+    return parse_sections(text) if text else {k: "" for k in SECTION_KEYS}
+
+
 def main():
     liq = read_json(DATA_DIR / "liquidity.json")
     mm = read_json(DATA_DIR / "money_market.json")
-    if not liq or not mm:
-        print("liquidity.json / money_market.json 이 아직 없습니다. 건너뜁니다.",
-              file=sys.stderr)
-        return
-
     api_key = env("GEMINI_API_KEY")
-    notes = {"regime": "", "history": "", "sectors": ""}
-    if api_key:
-        text = ask_gemini(build_prompt(liq, mm), api_key)
-        if text:
-            notes = parse_sections(text)
-    else:
+    if not api_key:
         print("GEMINI_API_KEY 없음 — 해설은 생략합니다.", file=sys.stderr)
 
-    creds = {"naver_id": env("NAVER_CLIENT_ID"),
-             "naver_secret": env("NAVER_CLIENT_SECRET"),
-             "gemini": api_key}
-    news = gather(NEWS_QUERIES, creds, limit=6, market="us")
+    if liq:
+        notes = run_notes(build_liquidity_prompt(liq), api_key)
+        creds = {"naver_id": env("NAVER_CLIENT_ID"),
+                 "naver_secret": env("NAVER_CLIENT_SECRET"), "gemini": api_key}
+        news = gather(NEWS_QUERIES, creds, limit=6, market="us")
+        write_json(DATA_DIR / "liquidity_notes.json", {
+            "updated_at": now_kst().isoformat(), "notes": notes, "news": news,
+        })
+        print(f"글로벌 유동성 해설 저장 완료 (뉴스 {len(news)}건)")
+    else:
+        print("liquidity.json 이 아직 없습니다. 유동성 해설을 건너뜁니다.", file=sys.stderr)
 
-    write_json(DATA_DIR / "liquidity_notes.json", {
-        "updated_at": now_kst().isoformat(),
-        "notes": notes,
-        "news": news,
-    })
-    print(f"저장 완료 (뉴스 {len(news)}건)")
+    if mm:
+        notes = run_notes(build_money_market_prompt(mm), api_key)
+        write_json(DATA_DIR / "money_market_notes.json", {
+            "updated_at": now_kst().isoformat(), "notes": notes,
+        })
+        print("자금시장 해설 저장 완료")
+    else:
+        print("money_market.json 이 아직 없습니다. 자금시장 해설을 건너뜁니다.", file=sys.stderr)
 
 
 if __name__ == "__main__":
