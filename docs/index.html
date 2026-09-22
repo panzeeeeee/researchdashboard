@@ -141,7 +141,7 @@ tr:last-child td{border-bottom:none}
 .brow .bval{font-size:.86rem;text-align:right;font-variant-numeric:tabular-nums}
 .btrack.split{display:flex;height:9px;background:var(--rule);border-radius:999px;overflow:hidden;margin-top:.6rem}
 .btrack.split span{display:block;height:100%}
-.rangebtns{display:flex;gap:.4rem;margin:0 0 .6rem}
+.rangebtns{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .6rem}
 .rangebtns button{background:none;border:1px solid var(--rule);color:var(--ink-2);
   border-radius:999px;padding:.2rem .75rem;font-size:.76rem;cursor:pointer;font-family:inherit}
 .rangebtns button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
@@ -215,6 +215,7 @@ tr:last-child td{border-bottom:none}
 <section id="breadth">
   <h2>섹터 온도<span class="tagline">S&P500 · 상승 종목이 많고 등락률이 클수록 진하게</span></h2>
   <div id="breadth-box"><p class="note">불러오는 중입니다.</p></div>
+  <div id="sector-trend-box"></div>
 </section>
 
 <section id="liquidity">
@@ -840,6 +841,42 @@ function renderExtremes(data) {
   draw();
 }
 
+// 섹터별 3/5년 추이 -- 섹터를 골라서 하나씩 본다 (라인차트는 유동성 때 만든 것 재사용)
+function renderSectorTrend(sectors) {
+  const box = document.getElementById("sector-trend-box");
+  if (!box) return;
+  const withHist = (sectors || []).filter(s => (s.history || []).length > 1);
+  if (!withHist.length) { box.innerHTML = ""; return; }
+
+  let current = withHist[0].name;
+  let range = "5y";
+
+  const draw = () => {
+    const sec = withHist.find(s => s.name === current) || withHist[0];
+    const years = range === "3y" ? 3 : 5;
+    const cutoff = new Date();
+    cutoff.setFullYear(cutoff.getFullYear() - years);
+    const pts = sec.history.filter(p => new Date(p.date) >= cutoff);
+
+    box.innerHTML = `
+      <p class="sub">섹터별 추이</p>
+      <div class="rangebtns">
+        ${withHist.map(s => `<button data-s="${esc(s.name)}" class="${s.name === current ? "on" : ""}">${esc(s.name)}</button>`).join("")}
+      </div>
+      <div class="rangebtns">
+        <button data-r="3y" class="${range === "3y" ? "on" : ""}">3년</button>
+        <button data-r="5y" class="${range === "5y" ? "on" : ""}">5년</button>
+      </div>
+      ${lineChart(pts)}`;
+
+    box.querySelectorAll("[data-s]").forEach(b =>
+      b.addEventListener("click", () => { current = b.dataset.s; draw(); }));
+    box.querySelectorAll("[data-r]").forEach(b =>
+      b.addEventListener("click", () => { range = b.dataset.r; draw(); }));
+  };
+  draw();
+}
+
 // 섹터 온도 — S&P500 11개 섹터 등락률(미국 시황 데이터 재사용) + 상승/하락 종목 비율 + 거래량 배수
 function renderSectorBreadth(s, marketSectors) {
   const box = document.getElementById("breadth-box");
@@ -1294,6 +1331,7 @@ Promise.all([
   renderMarketNotes(marketNotes);
   renderCommunityBuzz(buzz);
   renderSectorBreadth(breadth, market ? market.sectors : null);
+  renderSectorTrend(market ? market.sectors : null);
   renderLiquidity(liquidity);
   renderTrendChart("liquidity-chart", liquidity ? liquidity.history : null);
   renderMoneyMarket(moneyMarket);
