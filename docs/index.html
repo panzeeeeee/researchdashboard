@@ -140,9 +140,15 @@ tr:last-child td{border-bottom:none}
 .rangebtns button{background:none;border:1px solid var(--rule);color:var(--ink-2);
   border-radius:999px;padding:.2rem .75rem;font-size:.76rem;cursor:pointer;font-family:inherit}
 .rangebtns button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.chart-wrap{position:relative;margin-left:40px}
 .chart{width:100%;height:130px;display:block}
-.chart-labels{display:flex;justify-content:space-between;font-size:.72rem;
-  color:var(--ink-3);margin-top:.2rem}
+.chart-yaxis{position:absolute;left:-40px;top:0;width:36px;height:130px}
+.chart-yaxis span{position:absolute;right:4px;transform:translateY(-50%);
+  font-size:.68rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.chart-xaxis{position:relative;height:16px;margin-top:2px}
+.chart-xaxis span{position:absolute;transform:translateX(-50%);
+  font-size:.68rem;color:var(--ink-3)}
+.chart-grid{stroke:var(--rule);stroke-width:1;vector-effect:non-scaling-stroke}
 </style>
 </head>
 <body>
@@ -199,6 +205,7 @@ tr:last-child td{border-bottom:none}
 <section id="moneymarket">
   <h2>자금시장 상세</h2>
   <div id="moneymarket-box"><p class="note">불러오는 중입니다.</p></div>
+  <div id="moneymarket-notes"></div>
 </section>
 
 <section id="portfolio">
@@ -274,26 +281,59 @@ const fmtNum = v => (v === null || v === undefined)
 function lineChart(points) {
   const w = 640, h = 130, pad = 6;
   if (!points || points.length < 2) return '<p class="note">자료가 부족합니다.</p>';
+
   const vals = points.map(p => p.value);
   const min = Math.min(...vals), max = Math.max(...vals);
   const span = (max - min) || 1;
   const stepX = (w - pad * 2) / (points.length - 1);
+  const x = i => pad + i * stepX;
   const y = v => h - pad - ((v - min) / span) * (h - pad * 2);
+
+  // Y축 -- 4줄 그리드 + 값 라벨 (라벨은 SVG 밖에 픽셀로 맞춰 그린다. SVG 안에
+  // 텍스트를 넣으면 가로폭에 맞춰 늘어나면서 글자가 찌그러진다)
+  const ySteps = 4;
+  const yGrid = [], yLabels = [];
+  for (let i = 0; i < ySteps; i++) {
+    const v = min + span * i / (ySteps - 1);
+    const yy = y(v);
+    yGrid.push(`<line x1="${pad}" y1="${yy.toFixed(1)}" x2="${w - pad}" y2="${yy.toFixed(1)}" class="chart-grid" />`);
+    yLabels.push(`<span style="top:${yy.toFixed(1)}px">${fmtNum(Math.round(v * 10) / 10)}</span>`);
+  }
+
+  // X축 -- 연도가 바뀌는 지점마다 표시하되, 너무 촘촘하면 몇 개씩 건너뛴다
+  const years = [];
+  let lastYear = null;
+  points.forEach((p, i) => {
+    const yr = p.date.slice(0, 4);
+    if (yr !== lastYear) { years.push({ i, yr }); lastYear = yr; }
+  });
+  const maxLabels = 7;
+  const stride = Math.max(1, Math.ceil(years.length / maxLabels));
+  const xMarks = years.filter((_, idx) => idx % stride === 0);
+  const xGrid = xMarks.map(({ i }) =>
+    `<line x1="${x(i).toFixed(1)}" y1="${pad}" x2="${x(i).toFixed(1)}" y2="${h - pad}" class="chart-grid" />`).join("");
+  const xLabels = xMarks.map(({ i, yr }) =>
+    `<span style="left:${(x(i) / w * 100).toFixed(1)}%">${esc(yr)}</span>`).join("");
+
   const path = points.map((p, i) =>
-    `${i === 0 ? "M" : "L"}${(pad + i * stepX).toFixed(1)},${y(p.value).toFixed(1)}`).join(" ");
+    `${i === 0 ? "M" : "L"}${x(i).toFixed(1)},${y(p.value).toFixed(1)}`).join(" ");
   const rising = points[points.length - 1].value >= points[0].value;
   const color = rising ? "var(--up)" : "var(--down)";
-  const lastY = y(points[points.length - 1].value).toFixed(1);
+  const last = points[points.length - 1];
+
   return `
-    <svg viewBox="0 0 ${w} ${h}" class="chart" preserveAspectRatio="none">
-      <path d="${path}" fill="none" stroke="${color}" stroke-width="1.6"
-            vector-effect="non-scaling-stroke" />
-      <circle cx="${(w - pad).toFixed(1)}" cy="${lastY}" r="2.6" fill="${color}" />
-    </svg>
-    <div class="chart-labels">
-      <span>${esc(points[0].date)} · ${fmtNum(points[0].value)}</span>
-      <span>${esc(points[points.length - 1].date)} · ${fmtNum(points[points.length - 1].value)}</span>
-    </div>`;
+    <div class="chart-wrap">
+      <div class="chart-yaxis">${yLabels.join("")}</div>
+      <svg viewBox="0 0 ${w} ${h}" class="chart" preserveAspectRatio="none">
+        ${yGrid.join("")}${xGrid}
+        <path d="${path}" fill="none" stroke="${color}" stroke-width="1.6"
+              vector-effect="non-scaling-stroke" />
+        <circle cx="${x(points.length - 1).toFixed(1)}" cy="${y(last.value).toFixed(1)}"
+                r="2.6" fill="${color}" />
+      </svg>
+      <div class="chart-xaxis">${xLabels}</div>
+    </div>
+    <p class="miss" style="margin-top:.3rem">최근값 ${fmtNum(last.value)} · ${esc(last.date)}</p>`;
 }
 
 // 날짜 기준 최근 1년만 자른다 — 일간/주간 어느 쪽이든 그대로 동작
@@ -578,16 +618,17 @@ function renderLiquidityNotes(n) {
 
   const notes = n.notes || {};
   const news = n.news || [];
-  const hasNotes = notes.regime || notes.history || notes.sectors;
+  const hasNotes = notes.terms || notes.situation || notes.why || notes.history;
 
   const block = (title, text) => !text ? "" : `
     <p class="sub">${esc(title)}</p>
     <p class="sum">${esc(text)}</p>`;
 
   box.innerHTML = `
-    ${block("지금 국면", notes.regime)}
-    ${block("과거 유사 사례", notes.history)}
-    ${block("과거 섹터 흐름", notes.sectors)}
+    ${block("이게 뭔가요", notes.terms)}
+    ${block("지금 상황", notes.situation)}
+    ${block("왜 중요한가요", notes.why)}
+    ${block("과거엔 이랬어요", notes.history)}
     ${hasNotes ? '<p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>' : ""}
     ${news.length ? `
       <p class="sub">관련 뉴스</p>
@@ -643,6 +684,28 @@ function renderMoneyMarket(m) {
       <tr><td>${esc(swap.label || "중앙은행 달러 스와프 잔액")}</td>
           <td class="n">${fmtNum(swap.value)}${esc(swap.unit || "")}</td></tr>
     </table></div>`;
+}
+
+// 자금시장 해설 — 초보자용 4단락 (용어/지금 상황/왜 중요한지/과거엔 이랬다)
+function renderMoneyMarketNotes(n) {
+  const box = document.getElementById("moneymarket-notes");
+  if (!box) return;
+  if (!n) { box.innerHTML = ""; return; }
+
+  const notes = n.notes || {};
+  const hasNotes = notes.terms || notes.situation || notes.why || notes.history;
+  if (!hasNotes) { box.innerHTML = ""; return; }
+
+  const block = (title, text) => !text ? "" : `
+    <p class="sub">${esc(title)}</p>
+    <p class="sum">${esc(text)}</p>`;
+
+  box.innerHTML = `
+    ${block("이게 뭔가요", notes.terms)}
+    ${block("지금 상황", notes.situation)}
+    ${block("왜 중요한가요", notes.why)}
+    ${block("과거엔 이랬어요", notes.history)}
+    <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>`;
 }
 
 const toneMark = v => {
@@ -830,7 +893,8 @@ Promise.all([
   fetch("data/liquidity.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
-]).then(([news, research, tables, pf, calls, edgar, market, breadth, liquidity, moneyMarket, liquidityNotes]) => {
+  fetch("data/money_market_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+]).then(([news, research, tables, pf, calls, edgar, market, breadth, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
   document.getElementById("stamp").textContent =
     new Date(news.updated_at).toLocaleString("ko-KR",
       { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
@@ -845,6 +909,7 @@ Promise.all([
   renderTrendChart("liquidity-chart", liquidity ? liquidity.history : null);
   renderMoneyMarket(moneyMarket);
   renderTrendChart("sofr-chart", moneyMarket ? moneyMarket.sofr_history : null);
+  renderMoneyMarketNotes(moneyMarketNotes);
   renderLiquidityNotes(liquidityNotes);
 
   const byCode = {};
