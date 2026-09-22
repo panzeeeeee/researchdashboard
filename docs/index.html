@@ -172,6 +172,7 @@ tr:last-child td{border-bottom:none}
 <nav id="nav">
   <a href="#picks" class="on">오늘의 종목 <span class="count" id="c-picks"></span></a>
   <a href="#hotnews">주요뉴스</a>
+  <a href="#calendar">주요 일정</a>
   <a href="#market">미국 시황</a>
   <a href="#breadth">섹터 온도</a>
   <a href="#liquidity">글로벌 유동성</a>
@@ -196,8 +197,12 @@ tr:last-child td{border-bottom:none}
 <section id="hotnews">
   <h2>주요뉴스<span class="tagline">여러 매체가 동시에 다룬 뉴스</span></h2>
   <div id="hotnews-recap"></div>
-  <div id="calendar-box"></div>
   <div id="hotnews-box"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="calendar">
+  <h2>주요 일정</h2>
+  <div id="calendar-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="market">
@@ -663,7 +668,7 @@ function renderHotNews(news, breadth, hotNews, market, marketNotes) {
   });
   const rest = dedupe(pool);
 
-  const top = [...broad, ...rest].slice(0, 20);
+  const top = [...broad, ...rest].slice(0, 35);
 
   box.innerHTML = top.length
     ? top.map(newsItem).join("") + moreBtn(top.length)
