@@ -66,6 +66,71 @@ def parse_event_notes(text):
     return notes
 
 
+def cluster_by_event(items, api_key):
+    """헤드라인을 같은 사건끼리 묶는다. Gemini에게 번호를 그룹으로 나누게 한다.
+
+    실패하거나 키가 없으면 빈 리스트를 돌려준다 -- 화면이 원본 목록으로 폴백한다.
+    각 클러스터: {title(대표 제목), items(그 사건 기사들)}.
+    """
+    if not api_key or len(items) < 2:
+        return []
+
+    numbered = "\n".join(f"{i+1}. {it['title']}" for i, it in enumerate(items))
+    prompt = (
+        "다음은 미국 시장 뉴스 헤드라인 목록이다. 같은 사건·주제를 다루는 것끼리 "
+        "묶어라. 서로 다른 사건은 절대 한 그룹에 넣지 마라 (억지로 묶는 것보다 "
+        "따로 두는 게 낫다). 각 그룹을 한 줄에, 다른 말 없이 이 형식으로만 출력해라:\n"
+        "그룹대표제목 | 1,4,9\n"
+        "'그룹대표제목'은 그 사건을 한국어로 가장 잘 나타내는 짧은 제목, "
+        "뒤의 숫자는 그 그룹에 속한 헤드라인 번호들(쉼표 구분)이다. "
+        "모든 번호가 정확히 한 그룹에만 들어가야 한다.\n\n" + numbered
+    )
+    text = ask_gemini(prompt, api_key)
+    if not text:
+        return []
+
+    clusters = []
+    used = set()
+    for line in text.splitlines():
+        line = line.strip()
+        if "|" not in line:
+            continue
+        title, _, nums = line.rpartition("|")
+        title = title.strip()
+        idxs = []
+        for tok in nums.split(","):
+            tok = tok.strip()
+            if tok.isdigit():
+                j = int(tok) - 1
+                if 0 <= j < len(items) and j not in used:
+                    idxs.append(j)
+                    used.add(j)
+        if title and idxs:
+            group = [items[j] for j in idxs]
+            # 대표 기사는 여러 매체가 묶인 그룹을 우선(=중요), 아니면 첫 번째
+            group.sort(key=lambda it: -(it.get("dup_count") or 0))
+            clusters.append({
+                "title": title,
+                "sources": sorted({it["source"] for it in group if it.get("source")}),
+                "count": len(group),
+                "items": group,
+            })
+
+    # Gemini가 빠뜨린 기사는 각자 단독 클러스터로
+    for j, it in enumerate(items):
+        if j not in used:
+            clusters.append({
+                "title": it["title"],
+                "sources": [it["source"]] if it.get("source") else [],
+                "count": 1,
+                "items": [it],
+            })
+
+    # 여러 매체가 묶인(=큰 사건) 클러스터를 위로
+    clusters.sort(key=lambda c: -c["count"])
+    return clusters
+
+
 def main():
     creds = {
         "naver_id": env("NAVER_CLIENT_ID"),
@@ -76,20 +141,23 @@ def main():
 
     api_key = creds["gemini"]
     event_notes = {"why": "", "watch": ""}
+    market = read_json(DATA_DIR / "market.json") if api_key else None
     if api_key and news:
-        market = read_json(DATA_DIR / "market.json")
         text = ask_gemini(build_event_prompt(news, market), api_key)
         if text:
             event_notes = parse_event_notes(text)
     elif not api_key:
         print("GEMINI_API_KEY 없음 -- 이벤트 해설은 생략합니다.", file=sys.stderr)
 
+    clusters = cluster_by_event(news, api_key)
+
     write_json(DATA_DIR / "hot_news.json", {
         "updated_at": now_kst().isoformat(),
         "event_notes": event_notes,
-        "items": news,
+        "clusters": clusters,
+        "items": news,   # 클러스터가 비면 화면이 이걸로 폴백한다
     })
-    print(f"저장 완료 ({len(news)}건)")
+    print(f"저장 완료 (기사 {len(news)}건 -> 사건 {len(clusters)}개)")
 
 
 if __name__ == "__main__":
