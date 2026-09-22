@@ -73,6 +73,31 @@ def level(series_id, label, unit, scale=1, decimals=2):
     return {"label": label, "value": round(v0 * scale, decimals), "unit": unit, "date": d0}
 
 
+def net_liquidity_history(walcl_rows, wtregen_rows, rrp_rows):
+    """WALCL·WTREGEN(주간) 날짜에 RRP(일간)를 맞춰 순유동성 시계열을 만든다.
+
+    RRP는 그 날짜 이하 중 가장 가까운 값을 쓴다 — 주간 계열과 만나는 지점이
+    항상 있는 건 아니라서.
+    """
+    wtregen_by_date = dict(wtregen_rows)
+    rrp_sorted = sorted(rrp_rows)  # (날짜, 값) 오름차순
+    out = []
+    for d, walcl_v in sorted(walcl_rows):
+        tga_v = wtregen_by_date.get(d)
+        if tga_v is None:
+            continue
+        rrp_v = None
+        for rd, rv in reversed(rrp_sorted):
+            if rd <= d:
+                rrp_v = rv
+                break
+        if rrp_v is None:
+            continue
+        net = round((walcl_v - tga_v) / 1000 - rrp_v, 1)
+        out.append({"date": d, "value": net})
+    return out
+
+
 def main():
     fed = component("WALCL", "Fed 총자산")
     tga = component("WTREGEN", "TGA · 재무부 일반계정")
@@ -81,6 +106,13 @@ def main():
     ust = component("TREAST", "Fed 국채 보유")
     mbs = component("WSHOMCB", "Fed MBS 보유")
     components = [fed, tga, rrp, resv, ust, mbs]
+
+    # 1년/10년 토글용 — 화면에서 날짜로 잘라 쓴다. n을 넉넉히 잡는다
+    # (WALCL·WTREGEN은 주간이라 10년 커버에 600개면 충분, RRP는 일간이라 더 필요)
+    walcl_hist = fred_rows("WALCL", n=600)
+    wtregen_hist = fred_rows("WTREGEN", n=600)
+    rrp_hist = fred_rows("RRPONTSYD", n=3700)
+    history = net_liquidity_history(walcl_hist, wtregen_hist, rrp_hist)
 
     net_now, net_wow = None, None
     if all(c["value"] is not None for c in (fed, tga, rrp)):
@@ -101,6 +133,7 @@ def main():
     write_json(DATA_DIR / "liquidity.json", {
         "updated_at": now_kst().isoformat(),
         "net_liquidity": {"value": net_now, "wow": net_wow, "date": fed["date"]},
+        "history": history,
         "components": components,
         "money_market": money_market,
         "global": glob,

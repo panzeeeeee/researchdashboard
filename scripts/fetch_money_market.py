@@ -56,6 +56,9 @@ def main():
         latest("TGCRRATE", "TGCR"),
     ]
 
+    # 1년/10년 토글용 SOFR 추이 — 일간이라 10년이면 3,700개면 넉넉하다
+    sofr_history = [{"date": d, "value": v} for d, v in reversed(fred_rows("SOFR", n=3700))]
+
     distribution = [
         latest("SOFR25", "25백분위"),
         latest("SOFR75", "75백분위"),
@@ -68,6 +71,7 @@ def main():
     write_json(DATA_DIR / "money_market.json", {
         "updated_at": now_kst().isoformat(),
         "rates": rates,
+        "sofr_history": sofr_history,
         "sofr_distribution": distribution,
         "swap": swap,
     })
