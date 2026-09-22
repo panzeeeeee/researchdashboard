@@ -85,6 +85,18 @@ jobs:
           python scripts/fetch_market.py
         continue-on-error: true
 
+      - name: 미국 시황 해설
+        # market.json 을 읽는다 — 바로 위 단계 다음이어야 함
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_market_notes.py
+        continue-on-error: true
+
+      - name: 커뮤니티 언급 종목
+        # 다른 데이터에 의존하지 않는다 (독립 실행)
+        run: python scripts/fetch_community_buzz.py
+        continue-on-error: true
+
       - name: 글로벌 유동성
         # FRED 공개 데이터라 야후 딜레이는 필요 없다
         run: python scripts/fetch_liquidity.py
