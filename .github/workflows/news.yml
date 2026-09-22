@@ -110,6 +110,9 @@ jobs:
         continue-on-error: true
 
       - name: 컨콜 흐름 수집
+        # 테스트 중 수동 실행을 너무 많이 돌려서 EQUIBLES 쪽 한도에 걸림.
+        # 잠시 꺼둠 — 재개하려면 이 if 줄만 지우면 됨.
+        if: false
         env:
           EQUIBLES_API_KEY: ${{ secrets.EQUIBLES_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
