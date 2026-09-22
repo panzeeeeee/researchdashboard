@@ -25,13 +25,26 @@ from common import DATA_DIR, load_config, now_kst, write_json
 
 
 def pick(row, *keys):
+    """빈 문자열/NaN도 "못 찾음"으로 치고 다음 후보로 넘어간다."""
     for k in keys:
-        if k in row and row[k] is not None:
-            return row[k]
+        if k not in row:
+            continue
+        v = row[k]
+        if v is None:
+            continue
+        if isinstance(v, float) and v != v:  # NaN
+            continue
+        if isinstance(v, str) and not v.strip():
+            continue
+        return v
     return None
 
 
+_COLUMNS_LOGGED = False
+
+
 def insider_rows(tk, limit=8):
+    global _COLUMNS_LOGGED
     try:
         df = tk.insider_transactions
     except Exception as e:
@@ -40,6 +53,11 @@ def insider_rows(tk, limit=8):
     if df is None or df.empty:
         return []
 
+    if not _COLUMNS_LOGGED:
+        # 정확한 컬럼 이름을 한 번만 로그에 남긴다 -- 다음에 이걸 보고 바로 맞춘다
+        print(f"    [내부자 매매 컬럼] {list(df.columns)}", file=sys.stderr)
+        _COLUMNS_LOGGED = True
+
     out = []
     for _, row in df.head(limit).iterrows():
         d = row.to_dict()
@@ -47,7 +65,8 @@ def insider_rows(tk, limit=8):
             out.append({
                 "insider": str(pick(d, "Insider", "Filer", "Name") or ""),
                 "position": str(pick(d, "Position", "Relation") or ""),
-                "text": str(pick(d, "Transaction", "Text", "Type") or ""),
+                "text": str(pick(d, "Text", "Transaction", "Type",
+                                 "Transaction Description") or ""),
                 "shares": pick(d, "Shares"),
                 "value": pick(d, "Value"),
                 "date": str(pick(d, "Start Date", "Date") or ""),
