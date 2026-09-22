@@ -18,6 +18,7 @@ import sys
 import time
 
 import pandas as pd
+import requests
 import yfinance as yf
 
 from common import DATA_DIR, ask_gemini, env, now_kst, write_json
@@ -26,6 +27,60 @@ CACHE_PATH = "screener/us_px_cache.pkl.gz"
 LOOKBACK = 252     # 거래일 기준 약 1년
 # 상한을 두지 않는다 -- 후보가 많은 날은 그만큼 이 단계가 오래 걸린다
 # (종목당 개별 조회 0.15초+API 시간). continue-on-error라 전체 실행은 안 막는다.
+
+
+def usd_krw_rate():
+    try:
+        h = yf.Ticker("KRW=X").history(period="5d")
+        return float(h["Close"].dropna().iloc[-1])
+    except Exception as e:
+        print(f"환율 조회 실패: {e}", file=sys.stderr)
+        return None
+
+
+def fetch_universe_market_caps():
+    """나스닥 공개 스크리너 -- 미국 상장 전종목 시총을 한 번에 받는다.
+
+    필드 이름이 정확히 확인된 건 아니라 방어적으로 몇 가지 후보를 시도한다.
+    """
+    url = "https://api.nasdaq.com/api/screener/stocks"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; research-dashboard/1.0)",
+        "Referer": "https://www.nasdaq.com/",
+        "Accept-Language": "en-US,en;q=0.9",
+    }
+    caps = {}
+    try:
+        r = requests.get(url, headers=headers,
+                          params={"tableonly": "true", "limit": 10000, "offset": 0},
+                          timeout=30)
+        r.raise_for_status()
+        rows = r.json()["data"]["table"]["rows"]
+    except Exception as e:
+        print(f"나스닥 스크리너 실패: {e} -- 시총순위는 건너뜁니다.", file=sys.stderr)
+        return caps
+
+    for row in rows:
+        try:
+            symbol = str(row.get("symbol", "")).split(" ")[0].strip()
+            raw = row.get("marketCap") or row.get("marketcap")
+            if not symbol or raw in (None, "", "NA", "N/A"):
+                continue
+            caps[symbol] = float(str(raw).replace(",", "").replace("$", ""))
+        except Exception:
+            continue
+    print(f"나스닥 스크리너: {len(caps)}종목 시총 확보")
+    return caps
+
+
+def market_cap_rank(caps, ticker, market_cap):
+    """전체 유니버스 중 이 종목의 시총 순위 (1위가 제일 큼)."""
+    if not caps:
+        return None
+    val = market_cap if market_cap is not None else caps.get(ticker)
+    if val is None:
+        return None
+    return sum(1 for v in caps.values() if v > val) + 1
 
 
 def find_extremes(px):
@@ -107,7 +162,7 @@ def batch_overviews(items, api_key):
     return result
 
 
-def build_cards(tickers, px, kind, api_key):
+def build_cards(tickers, px, kind, api_key, krw_rate, caps):
     extras = []
     for t in tickers:
         extras.append(get_extra(t))
@@ -126,6 +181,9 @@ def build_cards(tickers, px, kind, api_key):
         chg = round((price / prev - 1) * 100, 2) if prev else None
         last_vol = float(v.iloc[-1]) if len(v) else None
 
+        market_cap = extra.get("marketCap")
+        trading_value = round(price * last_vol, 0) if last_vol else None
+
         cards.append({
             "ticker": t,
             "name": extra.get("name") or t,
@@ -134,8 +192,11 @@ def build_cards(tickers, px, kind, api_key):
             "chg": chg,
             "sector": extra.get("sector"),
             "industry": extra.get("industry"),
-            "marketCap": extra.get("marketCap"),
-            "tradingValue": round(price * last_vol, 0) if last_vol else None,
+            "marketCap": market_cap,
+            "marketCapKrw": round(market_cap * krw_rate, 0) if market_cap and krw_rate else None,
+            "tradingValue": trading_value,
+            "tradingValueKrw": round(trading_value * krw_rate, 0) if trading_value and krw_rate else None,
+            "capRank": market_cap_rank(caps, t, market_cap),
             "overview": overview,
             "chart": chart,
         })
@@ -155,8 +216,10 @@ def main():
     lows = rank_by_dollar_volume(lows, px)
 
     api_key = env("GEMINI_API_KEY")
-    high_cards = build_cards(highs, px, "high", api_key)
-    low_cards = build_cards(lows, px, "low", api_key)
+    krw_rate = usd_krw_rate()
+    caps = fetch_universe_market_caps()
+    high_cards = build_cards(highs, px, "high", api_key, krw_rate, caps)
+    low_cards = build_cards(lows, px, "low", api_key, krw_rate, caps)
 
     write_json(DATA_DIR / "extremes.json", {
         "updated_at": now_kst().isoformat(),
