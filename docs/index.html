@@ -695,6 +695,36 @@ function renderHotNews(news, breadth, hotNews, market, marketNotes) {
       </div>` : "";
   }
 
+  const clusters = hotNews?.clusters || [];
+
+  if (clusters.length) {
+    // 사건 단위로 묶어서: 대표 제목 + 출처 여러 곳, 접었다 펴기
+    const top = clusters.slice(0, 15);
+    box.innerHTML = `<div class="group">${top.map((c, i) => {
+      const rep = c.items[0];
+      const srcs = (c.sources || []).join(", ");
+      const others = c.items.slice(1);
+      const isHeadline = i === 0;
+      const badge = c.count >= 2 ? `<span class="badge-hot">${c.count}곳</span>` : "";
+
+      if (isHeadline) {
+        return `
+          <div class="headline">
+            <a href="${esc(rep.url)}" target="_blank" rel="noopener">${badge}${esc(c.title)}</a>
+            ${rep.summary ? `<p class="sum">${esc(rep.summary)}</p>` : ""}
+            <span class="src">${esc(srcs)} · ${ago(rep.published)}</span>
+          </div>`;
+      }
+      return `
+        <div class="newsrow ${i < SHOW ? "" : "extra hidden"}">
+          <a href="${esc(rep.url)}" target="_blank" rel="noopener">${badge}${esc(c.title)}</a>
+          <span class="src">${esc(srcs)}${others.length ? "" : " · " + ago(rep.published)}</span>
+        </div>`;
+    }).join("")}${moreBtn(top.length)}</div>`;
+    return;
+  }
+
+  // 폴백: 클러스터가 없으면 기존 방식(개별 기사 dedupe)
   const seen = new Set();
   const dedupe = arr => arr.filter(it => {
     if (!it.url || seen.has(it.url)) return false;
@@ -718,7 +748,6 @@ function renderHotNews(news, breadth, hotNews, market, marketNotes) {
 
   const top = [...broad, ...rest].slice(0, 35);
 
-  // .group 으로 감싸야 더보기 버튼(bindMore)이 이 안에서 .extra 를 찾아 펼친다
   box.innerHTML = top.length
     ? `<div class="group">${newsList(top)}</div>`
     : '<p class="note">모을 뉴스가 아직 없습니다.</p>';
