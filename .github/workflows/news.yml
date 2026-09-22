@@ -45,6 +45,13 @@ jobs:
         run: python scripts/fetch_sector_breadth.py
         continue-on-error: true
 
+      - name: 52주 신고가·신저가 카드
+        # 같은 이유로 가격 캐시가 아직 있을 때 읽는다. 후보가 많은 날은 오래 걸릴 수 있음
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_extremes.py
+        continue-on-error: true
+
       - name: 재무 캐시 복원
         uses: actions/cache@v4
         with:
