@@ -195,6 +195,8 @@ tr:last-child td{border-bottom:none}
 
 <section id="hotnews">
   <h2>주요뉴스<span class="tagline">여러 매체가 동시에 다룬 뉴스</span></h2>
+  <div id="hotnews-recap"></div>
+  <div id="calendar-box"></div>
   <div id="hotnews-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
@@ -592,9 +594,49 @@ function renderMarket(m) {
 // 주요뉴스 -- 오늘의 종목·섹터 뉴스·섹터 온도에 이미 있는 뉴스를 모아
 // 여러 매체가 동시에 다룬(dup_count) 순으로 보여준다. 새 데이터를 안 받고
 // 이미 불러온 news/breadth 를 그대로 재사용한다.
-function renderHotNews(news, breadth, hotNews) {
+// 주요 일정 캘린더 -- FOMC 회의 + 포트폴리오 종목 실적 발표일 (fetch_calendar.py)
+function renderCalendar(cal) {
+  const box = document.getElementById("calendar-box");
+  if (!box) return;
+  const fomc = cal?.fomc || [];
+  const earnings = cal?.earnings || [];
+  if (!fomc.length && !earnings.length) { box.innerHTML = ""; return; }
+
+  const rows = [
+    ...fomc.map(f => ({ date: f.start, label: f.label, tag: "FOMC" })),
+    ...earnings.map(e => ({ date: e.date, label: `${esc(e.ticker)} 실적 발표`, tag: "실적" })),
+  ].filter(r => r.date).sort((a, b) => (a.date > b.date ? 1 : -1));
+
+  box.innerHTML = `
+    <p class="sub" style="margin-top:0">주요 일정</p>
+    <div class="scroll"><table>
+      <tr><th>날짜</th><th>구분</th><th>일정</th></tr>
+      ${rows.map(r => `<tr><td>${esc(r.date)}</td><td class="miss">${esc(r.tag)}</td>
+        <td>${r.label}</td></tr>`).join("")
+        || '<tr><td colspan="3" class="note">예정된 일정 없음</td></tr>'}
+    </table></div>`;
+}
+
+function renderHotNews(news, breadth, hotNews, market, marketNotes) {
   const box = document.getElementById("hotnews-box");
   if (!box) return;
+
+  // 오늘 마켓 총평 + 주요 지표 -- 미국 시황 데이터를 그대로 재사용 (새로 안 받음)
+  const recapBox = document.getElementById("hotnews-recap");
+  if (recapBox) {
+    const situation = marketNotes?.notes?.situation;
+    const idx = (market?.indexes || []).map(r => `
+      <div class="slot">
+        <p class="cap">${esc(r.name)}</p>
+        <p class="big">${signed(r.chg)}</p>
+      </div>`).join("");
+    recapBox.innerHTML = (situation || idx) ? `
+      <div class="callout">
+        <p class="sub" style="margin-top:0">오늘 마켓 총평</p>
+        <p class="sum">${situation ? esc(situation) : '<span class="note">해설 준비 중</span>'}</p>
+        ${idx ? `<div class="grid" style="margin-top:.6rem">${idx}</div>` : ""}
+      </div>` : "";
+  }
 
   const seen = new Set();
   const dedupe = arr => arr.filter(it => {
@@ -603,10 +645,8 @@ function renderHotNews(news, breadth, hotNews) {
     return true;
   });
 
-  // 1) 시장 전체를 겨냥한 넓은 검색 결과(hot_news.json)를 먼저 — 이게 진짜 "주요"에 가깝다
   const broad = dedupe((hotNews?.items || []));
 
-  // 2) 종목·섹터·섹터온도 뉴스 중 여러 매체가 동시에 다룬(dup_count) 것들을 그 다음에
   const pool = [];
   (news?.stocks || []).forEach(s => pool.push(...(s.items || [])));
   (news?.auto_sectors || []).forEach(s => pool.push(...(s.items || [])));
@@ -1205,6 +1245,7 @@ Promise.all([
   fetch("data/tables.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/portfolio.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/holdings_flow.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+  fetch("data/calendar.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/calls.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/edgar.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
@@ -1218,7 +1259,7 @@ Promise.all([
   fetch("data/money_market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
-]).then(([news, research, hotNews, tables, pf, holdingsFlow, calls, edgar, market, marketNotes, buzz, breadth, extremes, breakoutCards, deepvalueCards, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
+]).then(([news, research, hotNews, tables, pf, holdingsFlow, calendar, calls, edgar, market, marketNotes, buzz, breadth, extremes, breakoutCards, deepvalueCards, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
   document.getElementById("stamp").textContent =
     new Date(news.updated_at).toLocaleString("ko-KR",
       { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
@@ -1234,7 +1275,8 @@ Promise.all([
   setupTabToggle("deepvalue-tabs", {table: "t-deepvalue", cards: "deepvalue-cards-box"});
   renderPortfolio(pf);
   renderHoldingsFlow(holdingsFlow);
-  renderHotNews(news, breadth, hotNews);
+  renderCalendar(calendar);
+  renderHotNews(news, breadth, hotNews, market, marketNotes);
   renderCalls(calls, edgar);
   renderMarket(market);
   renderMarketNotes(marketNotes);
