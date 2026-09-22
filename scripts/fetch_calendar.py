@@ -1,14 +1,12 @@
-"""주요 일정 캘린더 -- FOMC 회의 일정 + 포트폴리오 종목 실적 발표일.
+"""주요 일정 캘린더 -- 두 갈래로 나눈다.
 
-FOMC 날짜는 연준이 몇 달 전에 미리 공식 발표하는 고정 일정이라 하드코딩한다
-(federalreserve.gov 기준, 2026-09-22 확인). 연말에 다음 해 일정 나오면
-갱신해야 한다.
-
-실적 발표일은 종목마다 yfinance 에서 받는다 -- 버전마다 .calendar 반환
-형태가 달라서 방어적으로 처리한다.
-
-CPI·고용지표 같은 매크로 지표 캘린더는 이번엔 뺐다 -- 발표기관(BLS 등)별로
-정확한 날짜를 다 확인해야 해서 범위 밖으로 뒀다. 필요하면 나중에 따로.
+  1. 거시경제 지표 및 회의 일정 (macro) -- FOMC 회의, CPI, 고용지표(비농업
+     고용지수). 전부 연준(federalreserve.gov)·노동통계청(bls.gov)이 미리
+     공식 발표하는 고정 일정이라 하드코딩한다 (2026-09-22 확인 기준).
+     연말에 다음 해 일정이 나오면 갱신해야 한다.
+  2. 포트폴리오 기업 일정 (earnings) -- 보유 종목별 다음 실적 발표일.
+     종목마다 yfinance 에서 받는다 -- 버전마다 .calendar 반환 형태가 달라서
+     방어적으로 처리한다.
 """
 
 import sys
@@ -30,15 +28,24 @@ FOMC_2026 = [
     ("2026-12-08", "2026-12-09"),
 ]
 
+# 노동통계청(BLS) 공식 발표 일정 (bls.gov/schedule, 2026-09-22 확인)
+# 매달 비농업고용지수(Employment Situation)가 먼저, CPI가 그 뒤에 나온다.
+CPI_2026 = ["2026-10-14", "2026-11-10", "2026-12-10"]           # 각각 9,10,11월분
+EMPLOYMENT_2026 = ["2026-10-02", "2026-11-06", "2026-12-04"]    # 각각 9,10,11월분
 
-def upcoming_fomc(today):
+
+def upcoming_macro(today):
     out = []
     for start, end in FOMC_2026:
         if end >= today:
-            out.append({
-                "start": start, "end": end,
-                "label": f"FOMC 회의 ({start[5:7]}/{start[8:10]}~{end[8:10]})",
-            })
+            out.append({"date": start, "label": f"FOMC 회의 ({start[5:7]}/{start[8:10]}~{end[8:10]})"})
+    for d in EMPLOYMENT_2026:
+        if d >= today:
+            out.append({"date": d, "label": "고용지표 (비농업고용지수)"})
+    for d in CPI_2026:
+        if d >= today:
+            out.append({"date": d, "label": "소비자물가지수(CPI)"})
+    out.sort(key=lambda r: r["date"])
     return out
 
 
@@ -73,15 +80,15 @@ def earnings_dates():
 
 def main():
     today = now_kst().date().isoformat()
-    fomc = upcoming_fomc(today)
+    macro = upcoming_macro(today)
     earnings = earnings_dates()
 
     write_json(DATA_DIR / "calendar.json", {
         "updated_at": now_kst().isoformat(),
-        "fomc": fomc,
+        "macro": macro,
         "earnings": earnings,
     })
-    print(f"저장 완료 (FOMC {len(fomc)}건, 실적 {len(earnings)}건)")
+    print(f"저장 완료 (거시일정 {len(macro)}건, 실적 {len(earnings)}건)")
 
 
 if __name__ == "__main__":
