@@ -122,6 +122,8 @@ def build_cards(tickers, px, kind, api_key):
         v = px[t]["Volume"].dropna().tail(LOOKBACK)
         chart = [{"date": str(d.date()), "value": round(float(val), 2)} for d, val in c.items()]
         price = float(c.iloc[-1])
+        prev = float(c.iloc[-2]) if len(c) > 1 else None
+        chg = round((price / prev - 1) * 100, 2) if prev else None
         last_vol = float(v.iloc[-1]) if len(v) else None
 
         cards.append({
@@ -129,6 +131,7 @@ def build_cards(tickers, px, kind, api_key):
             "name": extra.get("name") or t,
             "kind": kind,
             "price": round(price, 2),
+            "chg": chg,
             "sector": extra.get("sector"),
             "industry": extra.get("industry"),
             "marketCap": extra.get("marketCap"),
