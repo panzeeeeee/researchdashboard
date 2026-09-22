@@ -12,12 +12,14 @@ import sys
 from common import DATA_DIR, env, now_kst, write_json
 from fetch_news import gather
 
+# 주요 매체로 좁힌다 -- 범용 검색어만 쓰면 인도 Sensex, 일본 개별종목처럼
+# 미국 시장과 관련 적은 국제 뉴스가 섞여 들어온다.
+_SITES = "(site:reuters.com OR site:cnbc.com OR site:bloomberg.com OR site:wsj.com)"
 QUERIES = [
-    "stock market today",
-    "Wall Street rally sell-off",
-    "S&P 500 Nasdaq today",
-    "Fed interest rate stocks",
-    "earnings today stocks",
+    f"{_SITES} stock market today",
+    f"{_SITES} S&P 500 Nasdaq",
+    f"{_SITES} Fed interest rate",
+    f"{_SITES} earnings today",
 ]
 
 
