@@ -708,7 +708,7 @@ function renderMacro(m) {
     <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>
   </div>` : "";
 
-  box.innerHTML = groupsHtml + '<div id="macro-chart"></div>' + notesHtml;
+  box.innerHTML = '<div id="macro-chart"></div>' + groupsHtml + notesHtml;
 
   // 지표 골라 보는 장기 차트
   const withHist = items.filter(e => (e.history || []).length > 1);
