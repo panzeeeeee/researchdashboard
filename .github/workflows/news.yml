@@ -93,6 +93,12 @@ jobs:
         run: python scripts/fetch_calendar.py
         continue-on-error: true
 
+      - name: 경제 지표
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_macro.py
+        continue-on-error: true
+
       - name: 미국 시장 현황
         # 포트폴리오 직후라 야후 쪽에 한 번 더 여유를 둔다
         run: |
