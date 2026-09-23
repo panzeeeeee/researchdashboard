@@ -193,6 +193,7 @@ tr:last-child td{border-bottom:none}
   <a href="#breadth">섹터 온도</a>
   <a href="#commodities">원자재·귀금속</a>
   <a href="#liquidity">글로벌 유동성</a>
+  <a href="#credit">크레딧 스프레드</a>
   <a href="#moneymarket">자금시장 상세</a>
   <a href="#portfolio">포트폴리오</a>
   <a href="#deepvalue">딥밸류</a>
@@ -244,6 +245,11 @@ tr:last-child td{border-bottom:none}
   <h2>글로벌 유동성</h2>
   <div id="liquidity-box"><p class="note">불러오는 중입니다.</p></div>
   <div id="liquidity-notes"></div>
+</section>
+
+<section id="credit">
+  <h2>크레딧 스프레드<span class="tagline">회사채가 국채 대비 얹어주는 금리 · 신용 위험의 온도계</span></h2>
+  <div id="credit-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="moneymarket">
@@ -1268,6 +1274,80 @@ const toneMark = v => {
   return `<span class="${cls}">${n > 0 ? "+" : ""}${n.toFixed(2)}</span>`;
 };
 
+// 크레딧 스프레드 -- HY/IG 스프레드 + 등급별 + 장기 차트 + 해설
+function renderCredit(c) {
+  const box = document.getElementById("credit-box");
+  if (!box) { return; }
+  if (!c) { box.innerHTML = '<p class="note">credit.json 이 아직 없습니다.</p>'; return; }
+
+  const hy = c.high_yield || {};
+  const ig = c.investment_grade || {};
+
+  const kpi = (e, warn) => `
+    <div class="slot">
+      <p class="cap">${esc(e.label || "")}</p>
+      <p class="big ${warn ? "" : ""}">${e.value != null ? e.value + "%p" : "—"}</p>
+      <p class="miss">1주 변화 ${signedNum(e.wow)} · ${esc(e.date || "")}</p>
+    </div>`;
+
+  const ratingRows = (c.by_rating || []).map(r => `
+    <tr><td>${esc(r.label)}</td><td class="n">${r.value != null ? r.value + "%p" : "—"}</td>
+        <td class="n">${signedNum(r.wow)}</td></tr>`).join("");
+
+  const n = c.notes || {};
+  const hasNotes = n.terms || n.situation || n.why || n.history;
+  const block = (t, x) => !x ? "" : `<p class="sub">${esc(t)}</p><p class="sum">${esc(x)}</p>`;
+
+  // 차트 컨테이너 (HY/IG 토글 + 1/10년)
+  box.innerHTML = `
+    <div class="grid">${kpi(hy)}${kpi(ig)}</div>
+    <div id="credit-chart"></div>
+    <p class="sub">등급별 스프레드<span class="miss"> 낮을수록 안전, 높을수록 위험</span></p>
+    <div class="scroll"><table>
+      <tr><th>등급</th><th class="n">스프레드</th><th class="n">1주 변화</th></tr>
+      ${ratingRows || '<tr><td colspan="3" class="note">자료 없음</td></tr>'}
+    </table></div>
+    ${hasNotes ? `<div class="callout">
+      ${block("이게 뭔가요", n.terms)}
+      ${block("지금 상황", n.situation)}
+      ${block("왜 중요한가요", n.why)}
+      ${block("과거엔 이랬어요", n.history)}
+      <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p>
+    </div>` : ""}`;
+
+  // HY/IG 장기 추이 토글 차트
+  const chartBox = document.getElementById("credit-chart");
+  const series = [
+    { name: "하이일드 (HY)", history: hy.history || [] },
+    { name: "투자등급 (IG)", history: ig.history || [] },
+  ].filter(s => s.history.length > 1);
+  if (chartBox && series.length) {
+    let cur = 0, range = "1y";
+    const draw = () => {
+      const s = series[cur];
+      const years = range === "1y" ? 1 : 10;
+      const cutoff = new Date();
+      cutoff.setFullYear(cutoff.getFullYear() - years);
+      const pts = s.history.filter(p => new Date(p.date) >= cutoff);
+      chartBox.innerHTML = `
+        <p class="sub">추이<span class="miss"> %p</span></p>
+        <div class="rangebtns">
+          ${series.map((x, i) => `<button data-i="${i}" class="${i === cur ? "on" : ""}">${esc(x.name)}</button>`).join("")}
+        </div>
+        <div class="rangebtns">
+          <button data-r="1y" class="${range === "1y" ? "on" : ""}">1년</button>
+          <button data-r="10y" class="${range === "10y" ? "on" : ""}">10년</button>
+        </div>
+        ${lineChart(pts)}`;
+      chartBox.querySelectorAll("[data-i]").forEach(b =>
+        b.addEventListener("click", () => { cur = +b.dataset.i; draw(); }));
+      chartBox.querySelectorAll("[data-r]").forEach(b =>
+        b.addEventListener("click", () => { range = b.dataset.r; draw(); }));
+    };
+    draw();
+  }
+}
+
 // 미국 시황 해설 -- 초보자용 4단락 (fetch_market_notes.py)
 function renderMarketNotes(n) {
   const box = document.getElementById("market-notes");
@@ -1497,9 +1577,10 @@ Promise.all([
   fetch("data/deepvalue_cards.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
+  fetch("data/credit.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/liquidity_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
   fetch("data/money_market_notes.json?t=" + Date.now()).then(r => r.json()).catch(() => null),
-]).then(([news, research, hotNews, tables, pf, holdingsFlow, calendar, calls, edgar, market, marketNotes, buzz, breadth, extremes, breakoutCards, deepvalueCards, liquidity, moneyMarket, liquidityNotes, moneyMarketNotes]) => {
+]).then(([news, research, hotNews, tables, pf, holdingsFlow, calendar, calls, edgar, market, marketNotes, buzz, breadth, extremes, breakoutCards, deepvalueCards, liquidity, moneyMarket, credit, liquidityNotes, moneyMarketNotes]) => {
   document.getElementById("stamp").textContent =
     new Date(news.updated_at).toLocaleString("ko-KR",
       { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
@@ -1529,6 +1610,7 @@ Promise.all([
   renderLiquidity(liquidity);
   renderTrendChart("liquidity-chart", liquidity ? liquidity.history : null);
   renderMoneyMarket(moneyMarket);
+  renderCredit(credit);
   renderTrendChart("sofr-chart", moneyMarket ? moneyMarket.sofr_history : null);
   renderMoneyMarketNotes(moneyMarketNotes);
   renderLiquidityNotes(liquidityNotes);
