@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-23T13:15:20.954219+09:00",
+ "updated_at": "2026-09-23T13:25:24.021390+09:00",
  "indexes": [
   {
    "ticker": "^GSPC",
@@ -55258,7 +55258,7 @@
   },
   {
    "label": "달러지수",
-   "value": 100.73,
+   "value": 100.72,
    "unit": "",
    "date": null
   },
@@ -55323,56 +55323,56 @@
   {
    "ticker": "KRW=X",
    "name": "달러/원",
-   "price": 1352.19,
-   "chg": -1.56
+   "price": 1351.38,
+   "chg": -1.62
   },
   {
    "ticker": "JPY=X",
    "name": "달러/엔",
-   "price": 157.6,
-   "chg": 0.15
+   "price": 157.58,
+   "chg": 0.13
   },
   {
    "ticker": "EURUSD=X",
    "name": "유로/달러",
    "price": 1.14,
-   "chg": -0.3
+   "chg": -0.29
   }
  ],
  "commodities": [
   {
    "ticker": "CL=F",
    "name": "WTI 선물",
-   "price": 89.09,
-   "chg": -5.81
+   "price": 89.0,
+   "chg": -5.91
   },
   {
    "ticker": "GC=F",
    "name": "금 선물",
-   "price": 4381.2,
-   "chg": 0.11
+   "price": 4383.0,
+   "chg": 0.15
   },
   {
    "ticker": "HG=F",
    "name": "구리 선물",
    "price": 6.83,
-   "chg": 1.01
+   "chg": 1.07
   }
  ],
  "crypto": [
   {
    "ticker": "BTC-USD",
    "name": "비트코인",
-   "price": 86855.28,
-   "chg": 0.29
+   "price": 87175.44,
+   "chg": 0.66
   }
  ],
  "commodities_full": [
   {
    "ticker": "GC=F",
    "name": "금",
-   "price": 4381.2,
-   "chg": 0.11,
+   "price": 4383.0,
+   "chg": 0.15,
    "group": "귀금속",
    "history": [
     {
@@ -60405,15 +60405,15 @@
     },
     {
      "date": "2026-09-23",
-     "value": 4381.2
+     "value": 4382.6
     }
    ]
   },
   {
    "ticker": "SI=F",
    "name": "은",
-   "price": 67.13,
-   "chg": 1.82,
+   "price": 67.14,
+   "chg": 1.84,
    "group": "귀금속",
    "history": [
     {
@@ -65442,15 +65442,15 @@
     },
     {
      "date": "2026-09-23",
-     "value": 67.13
+     "value": 67.14
     }
    ]
   },
   {
    "ticker": "PL=F",
    "name": "백금",
-   "price": 1819.6,
-   "chg": -0.16,
+   "price": 1821.2,
+   "chg": -0.08,
    "group": "귀금속",
    "history": [
     {
@@ -70479,15 +70479,15 @@
     },
     {
      "date": "2026-09-23",
-     "value": 1819.6
+     "value": 1821.2
     }
    ]
   },
   {
    "ticker": "PA=F",
    "name": "팔라듐",
-   "price": 1292.9,
-   "chg": -0.77,
+   "price": 1309.5,
+   "chg": 1.28,
    "group": "귀금속",
    "history": [
     {
@@ -75509,14 +75509,18 @@
     {
      "date": "2026-09-22",
      "value": 1292.9
+    },
+    {
+     "date": "2026-09-23",
+     "value": 1309.5
     }
    ]
   },
   {
    "ticker": "CL=F",
    "name": "WTI 원유",
-   "price": 89.09,
-   "chg": -5.81,
+   "price": 89.0,
+   "chg": -5.91,
    "group": "에너지",
    "history": [
     {
@@ -80545,15 +80549,15 @@
     },
     {
      "date": "2026-09-23",
-     "value": 89.09
+     "value": 89.0
     }
    ]
   },
   {
    "ticker": "BZ=F",
    "name": "브렌트유",
-   "price": 98.2,
-   "chg": -1.06,
+   "price": 98.16,
+   "chg": -1.1,
    "group": "에너지",
    "history": [
     {
@@ -85586,7 +85590,7 @@
     },
     {
      "date": "2026-09-23",
-     "value": 98.2
+     "value": 98.16
     }
    ]
   },
@@ -85594,7 +85598,7 @@
    "ticker": "NG=F",
    "name": "천연가스",
    "price": 3.17,
-   "chg": 6.91,
+   "chg": 7.02,
    "group": "에너지",
    "history": [
     {
@@ -90635,7 +90639,7 @@
    "ticker": "HG=F",
    "name": "구리",
    "price": 6.83,
-   "chg": 1.01,
+   "chg": 1.07,
    "group": "산업금속",
    "history": [
     {
@@ -100708,8 +100712,8 @@
   {
    "ticker": "ZS=F",
    "name": "대두",
-   "price": 1320.25,
-   "chg": -0.4,
+   "price": 1320.5,
+   "chg": -0.38,
    "group": "농산물",
    "history": [
     {
@@ -105734,15 +105738,15 @@
     },
     {
      "date": "2026-09-23",
-     "value": 1320.25
+     "value": 1320.5
     }
    ]
   },
   {
    "ticker": "ZW=F",
    "name": "밀",
-   "price": 708.25,
-   "chg": -1.25,
+   "price": 708.5,
+   "chg": -1.22,
    "group": "농산물",
    "history": [
     {
@@ -110767,15 +110771,15 @@
     },
     {
      "date": "2026-09-23",
-     "value": 708.25
+     "value": 708.5
     }
    ]
   },
   {
    "ticker": "BTC-USD",
    "name": "비트코인",
-   "price": 86855.28,
-   "chg": 0.29,
+   "price": 87175.44,
+   "chg": 0.66,
    "group": "가상자산",
    "history": [
     {
@@ -118080,15 +118084,15 @@
     },
     {
      "date": "2026-09-23",
-     "value": 86855.28
+     "value": 87175.44
     }
    ]
   },
   {
    "ticker": "ETH-USD",
    "name": "이더리움",
-   "price": 2776.74,
-   "chg": 0.01,
+   "price": 2787.0,
+   "chg": 0.38,
    "group": "가상자산",
    "history": [
     {
@@ -125393,7 +125397,7 @@
     },
     {
      "date": "2026-09-23",
-     "value": 2776.74
+     "value": 2787.0
     }
    ]
   }
