@@ -32,9 +32,25 @@ MEGACAP = [
 FX = [("KRW=X", "달러/원"), ("JPY=X", "달러/엔"), ("EURUSD=X", "유로/달러")]
 COMMOD = [("CL=F", "WTI 선물"), ("GC=F", "금 선물"), ("HG=F", "구리 선물")]
 CRYPTO = [("BTC-USD", "비트코인")]
+
+# 원자재·귀금속 전용 메뉴용 (미국 시황의 COMMOD와 별개로 더 넓게).
+# 비트코인은 동료 의견 반영해 이 메뉴에 한 줄만 같이 둔다 (잡코는 제외).
+COMMODITIES_FULL = [
+    ("GC=F", "금", "귀금속"), ("SI=F", "은", "귀금속"),
+    ("PL=F", "백금", "귀금속"), ("PA=F", "팔라듐", "귀금속"),
+    ("CL=F", "WTI 원유", "에너지"), ("BZ=F", "브렌트유", "에너지"),
+    ("NG=F", "천연가스", "에너지"),
+    ("HG=F", "구리", "산업금속"),
+    ("ZC=F", "옥수수", "농산물"), ("ZS=F", "대두", "농산물"), ("ZW=F", "밀", "농산물"),
+    ("BTC-USD", "비트코인", "가상자산"), ("ETH-USD", "이더리움", "가상자산"),
+]
 LEVELS = [("DX-Y.NYB", "달러지수"), ("^VIX", "VIX")]
 
-ALL_TICKERS = (INDEXES + BREADTH + SECTORS + MEGACAP + FX + COMMOD + CRYPTO + LEVELS)
+# 원자재 풀 중 기존 목록에 없는 티커만 추가로 받는다 (중복 제거)
+_BASE = INDEXES + BREADTH + SECTORS + MEGACAP + FX + COMMOD + CRYPTO + LEVELS
+_have = {t for t, _ in _BASE}
+_EXTRA = [(t, n) for t, n, _ in COMMODITIES_FULL if t not in _have]
+ALL_TICKERS = _BASE + _EXTRA
 
 
 def download_all(tickers, period="5d", tries=3):
@@ -55,6 +71,53 @@ def download_all(tickers, period="5d", tries=3):
             print(f"  {wait}초 쉬었다 다시 시도합니다.")
             time.sleep(wait)
     return None
+
+
+def sector_histories(years=5):
+    """섹터 ETF 11개의 장기 종가 히스토리 -- 섹터 온도 화면의 3/5년 차트용."""
+    tickers = [t for t, _ in SECTORS]
+    try:
+        df = yf.download(tickers, period=f"{years}y", auto_adjust=False,
+                          progress=False, group_by="column", threads=False)
+    except Exception as e:
+        print(f"  섹터 히스토리 실패: {e}", file=sys.stderr)
+        return {}
+    if df is None or df.empty:
+        return {}
+
+    out = {}
+    for t in tickers:
+        try:
+            c = df["Close"][t].dropna()
+            out[t] = [{"date": str(d.date()), "value": round(float(v), 2)} for d, v in c.items()]
+        except Exception:
+            continue
+    return out
+
+
+def commodity_histories(years=5):
+    """원자재·귀금속·비트코인 장기 종가 -- 원자재 메뉴의 1/10년 차트용.
+
+    귀금속·비트코인은 10년이 의미 있지만 일부 선물은 연속계약 특성상
+    과거가 짧을 수 있다. 받는 만큼만 저장하고 화면에서 잘라 쓴다.
+    """
+    tickers = [t for t, _, _ in COMMODITIES_FULL]
+    try:
+        df = yf.download(tickers, period=f"{years}y", auto_adjust=False,
+                          progress=False, group_by="column", threads=False)
+    except Exception as e:
+        print(f"  원자재 히스토리 실패: {e}", file=sys.stderr)
+        return {}
+    if df is None or df.empty:
+        return {}
+    out = {}
+    for t in tickers:
+        try:
+            c = df["Close"][t].dropna()
+            out[t] = [{"date": str(d.date()), "value": round(float(v), 2)} for d, v in c.items()]
+        except Exception:
+            continue
+    return out
 
 
 def close_series(df, ticker, single):
@@ -110,11 +173,19 @@ def main():
     if b_rsp["chg"] is not None and b_spy["chg"] is not None:
         breadth_spread = round(b_rsp["chg"] - b_spy["chg"], 2)
 
-    sectors = by_chg_desc([row(t, n) for t, n in SECTORS])
+    sector_hist = sector_histories()
+    sectors = by_chg_desc([{**row(t, n), "history": sector_hist.get(t, [])} for t, n in SECTORS])
     megacap = by_chg_desc([row(t, n) for t, n in MEGACAP])
     fx = [row(t, n) for t, n in FX]
     commod = [row(t, n) for t, n in COMMOD]
     crypto = [row(t, n) for t, n in CRYPTO]
+
+    # 원자재 전용 메뉴 데이터 (품목별 현재가·등락률 + 분류 + 5년 히스토리)
+    commod_hist = commodity_histories()
+    commodities_full = []
+    for t, name, group in COMMODITIES_FULL:
+        r = row(t, name)
+        commodities_full.append({**r, "group": group, "history": commod_hist.get(t, [])})
 
     dxy = row("DX-Y.NYB", "달러지수")
     vix = row("^VIX", "VIX")
@@ -138,6 +209,7 @@ def main():
         "fx": fx,
         "commodities": commod,
         "crypto": crypto,
+        "commodities_full": commodities_full,
     })
     print("저장 완료")
 
