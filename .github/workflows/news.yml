@@ -121,6 +121,12 @@ jobs:
         run: python scripts/fetch_money_market.py
         continue-on-error: true
 
+      - name: 크레딧 스프레드
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_credit.py
+        continue-on-error: true
+
       - name: 유동성 해설
         # 위 두 단계가 만든 파일을 읽는다 — 반드시 이 순서 뒤에 와야 한다
         env:
