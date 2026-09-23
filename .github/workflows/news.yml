@@ -199,6 +199,15 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/push_telegram.py
 
+      - name: 텔레그램 요약 발송
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_DIGEST_BOT_TOKEN: ${{ secrets.TELEGRAM_DIGEST_BOT_TOKEN }}
+          TELEGRAM_DIGEST_CHAT_ID: ${{ secrets.TELEGRAM_DIGEST_CHAT_ID }}
+        run: python scripts/push_digest.py
+        continue-on-error: true
+
       - name: 백테스팅 기록 적재
         # 모든 수집이 끝난 뒤, 그날 값을 history/*.csv 에 append-only 로 쌓는다
         run: python scripts/append_history.py
