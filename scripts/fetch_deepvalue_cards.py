@@ -18,12 +18,58 @@ import sys
 import time
 
 import pandas as pd
+import requests
 import yfinance as yf
 
 from common import DATA_DIR, ask_gemini, env, now_kst, read_json, write_json
 
 CACHE_PATH = "screener/us_px_cache.pkl.gz"
 LOOKBACK = 252
+
+
+def usd_krw_rate():
+    try:
+        h = yf.Ticker("KRW=X").history(period="5d")
+        return float(h["Close"].dropna().iloc[-1])
+    except Exception as e:
+        print(f"환율 조회 실패: {e}", file=sys.stderr)
+        return None
+
+
+def fetch_universe_market_caps():
+    """나스닥 공개 스크리너 -- 미국 상장 전종목 시총을 한 번에."""
+    url = "https://api.nasdaq.com/api/screener/stocks"
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; research-dashboard/1.0)",
+               "Referer": "https://www.nasdaq.com/", "Accept-Language": "en-US,en;q=0.9"}
+    caps = {}
+    try:
+        r = requests.get(url, headers=headers,
+                         params={"tableonly": "true", "limit": 10000, "offset": 0}, timeout=30)
+        r.raise_for_status()
+        rows = r.json()["data"]["table"]["rows"]
+    except Exception as e:
+        print(f"나스닥 스크리너 실패: {e} -- 시총순위는 건너뜁니다.", file=sys.stderr)
+        return caps
+    for row in rows:
+        try:
+            symbol = str(row.get("symbol", "")).split(" ")[0].strip()
+            raw = row.get("marketCap") or row.get("marketcap")
+            if not symbol or raw in (None, "", "NA", "N/A"):
+                continue
+            caps[symbol] = float(str(raw).replace(",", "").replace("$", ""))
+        except Exception:
+            continue
+    print(f"나스닥 스크리너: {len(caps)}종목 시총 확보")
+    return caps
+
+
+def market_cap_rank(caps, ticker, market_cap):
+    if not caps:
+        return None
+    val = market_cap if market_cap is not None else caps.get(ticker)
+    if val is None:
+        return None
+    return sum(1 for v in caps.values() if v > val) + 1
 
 
 def get_extra(ticker):
@@ -69,7 +115,7 @@ def batch_overviews(items, api_key):
     return result
 
 
-def build_card(t, fallback_name, extra, overview, px, meta):
+def build_card(t, fallback_name, extra, overview, px, meta, krw_rate, caps):
     if t not in px:
         return None
     c = px[t]["Close"].dropna().tail(LOOKBACK)
@@ -82,6 +128,8 @@ def build_card(t, fallback_name, extra, overview, px, meta):
     chg = round((price / prev - 1) * 100, 2) if prev else None
     last_vol = float(v.iloc[-1]) if len(v) else None
 
+    market_cap = extra.get("marketCap")
+    trading_value = round(price * last_vol, 0) if last_vol else None
     return {
         "ticker": t,
         "name": extra.get("name") or fallback_name or t,
@@ -89,8 +137,11 @@ def build_card(t, fallback_name, extra, overview, px, meta):
         "chg": chg,
         "sector": extra.get("sector"),
         "industry": extra.get("industry"),
-        "marketCap": extra.get("marketCap"),
-        "tradingValue": round(price * last_vol, 0) if last_vol else None,
+        "marketCap": market_cap,
+        "marketCapKrw": round(market_cap * krw_rate, 0) if market_cap and krw_rate else None,
+        "tradingValue": trading_value,
+        "tradingValueKrw": round(trading_value * krw_rate, 0) if trading_value and krw_rate else None,
+        "capRank": market_cap_rank(caps, t, market_cap),
         "overview": overview,
         "chart": chart,
         "meta": meta,
@@ -123,6 +174,8 @@ def main():
         time.sleep(0.15)
 
     api_key = env("GEMINI_API_KEY")
+    krw_rate = usd_krw_rate()
+    caps = fetch_universe_market_caps()
     overviews = batch_overviews(
         [(e.get("name") or t, e.get("summary")) for t, e in zip(tickers, extras)], api_key)
 
@@ -133,7 +186,7 @@ def main():
         meta = {"score": c.get("score"), "fscore": c.get("fscore"),
                 "drawdown": c.get("drawdown"), "below200": c.get("below200"),
                 "why": c.get("why"), "triggered": c.get("triggered")}
-        card = build_card(t, c.get("name"), extra, overview, px, meta)
+        card = build_card(t, c.get("name"), extra, overview, px, meta, krw_rate, caps)
         if card:
             cards.append(card)
 
