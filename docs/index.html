@@ -189,6 +189,7 @@ tr:last-child td{border-bottom:none}
   <a href="#calendar">주요 일정</a>
   <a href="#market">미국 시황</a>
   <a href="#breadth">섹터 온도</a>
+  <a href="#commodities">원자재·귀금속</a>
   <a href="#liquidity">글로벌 유동성</a>
   <a href="#moneymarket">자금시장 상세</a>
   <a href="#portfolio">포트폴리오</a>
@@ -230,6 +231,11 @@ tr:last-child td{border-bottom:none}
   <h2>섹터 온도<span class="tagline">S&P500 · 상승 종목이 많고 등락률이 클수록 진하게</span></h2>
   <div id="breadth-box"><p class="note">불러오는 중입니다.</p></div>
   <div id="sector-trend-box"></div>
+</section>
+
+<section id="commodities">
+  <h2>원자재·귀금속<span class="tagline">금·은·유가·비트코인 등</span></h2>
+  <div id="commodities-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="liquidity">
@@ -915,6 +921,63 @@ function renderExtremes(data) {
   draw();
 }
 
+// 원자재·귀금속 -- 분류별 카드 + 품목 골라 1/10년 차트
+function renderCommodities(items) {
+  const box = document.getElementById("commodities-box");
+  if (!box) return;
+  const list = items || [];
+  if (!list.length) { box.innerHTML = '<p class="note">원자재 자료가 아직 없습니다.</p>'; return; }
+
+  // 분류별로 카드 묶기
+  const groups = {};
+  list.forEach(r => { (groups[r.group] = groups[r.group] || []).push(r); });
+  const order = ["귀금속", "에너지", "산업금속", "농산물", "가상자산"];
+  const groupsHtml = order.filter(g => groups[g]).map(g => {
+    const cards = groups[g].map(r => `
+      <div class="slot">
+        <p class="cap">${esc(r.name)}</p>
+        <p class="big">${signed(r.chg)}</p>
+        <p class="miss">${nz(r.price)}</p>
+      </div>`).join("");
+    return `<p class="sub">${esc(g)}</p><div class="grid">${cards}</div>`;
+  }).join("");
+
+  // 품목 골라 보는 장기 차트
+  const withHist = list.filter(r => (r.history || []).length > 1);
+  let current = withHist.length ? withHist[0].name : null;
+  let range = "1y";
+
+  const chartArea = document.createElement("div");
+
+  const drawChart = () => {
+    if (!current) { chartArea.innerHTML = ""; return; }
+    const item = withHist.find(r => r.name === current) || withHist[0];
+    const years = range === "1y" ? 1 : 10;
+    const cutoff = new Date();
+    cutoff.setFullYear(cutoff.getFullYear() - years);
+    const pts = item.history.filter(p => new Date(p.date) >= cutoff);
+
+    chartArea.innerHTML = `
+      <p class="sub">품목별 추이</p>
+      <div class="rangebtns">
+        ${withHist.map(r => `<button data-i="${esc(r.name)}" class="${r.name === current ? "on" : ""}">${esc(r.name)}</button>`).join("")}
+      </div>
+      <div class="rangebtns">
+        <button data-r="1y" class="${range === "1y" ? "on" : ""}">1년</button>
+        <button data-r="10y" class="${range === "10y" ? "on" : ""}">10년</button>
+      </div>
+      ${lineChart(pts)}`;
+    chartArea.querySelectorAll("[data-i]").forEach(b =>
+      b.addEventListener("click", () => { current = b.dataset.i; drawChart(); }));
+    chartArea.querySelectorAll("[data-r]").forEach(b =>
+      b.addEventListener("click", () => { range = b.dataset.r; drawChart(); }));
+  };
+
+  box.innerHTML = groupsHtml;
+  box.appendChild(chartArea);
+  drawChart();
+}
+
 // 섹터별 3/5년 추이 -- 섹터를 골라서 하나씩 본다 (라인차트는 유동성 때 만든 것 재사용)
 function renderSectorTrend(sectors) {
   const box = document.getElementById("sector-trend-box");
@@ -1406,6 +1469,7 @@ Promise.all([
   renderCommunityBuzz(buzz);
   renderSectorBreadth(breadth, market ? market.sectors : null);
   renderSectorTrend(market ? market.sectors : null);
+  renderCommodities(market ? market.commodities_full : null);
   renderLiquidity(liquidity);
   renderTrendChart("liquidity-chart", liquidity ? liquidity.history : null);
   renderMoneyMarket(moneyMarket);
