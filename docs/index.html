@@ -1028,9 +1028,16 @@ function renderSectorBreadth(s, marketSectors) {
   });
   rows.sort((a, b) => (b.chg ?? -999) - (a.chg ?? -999));
 
+  const nameChg = x => `<a href="https://finance.yahoo.com/quote/${esc(x.ticker)}"
+      target="_blank" rel="noopener" style="display:flex;justify-content:space-between;
+      gap:.5rem;text-decoration:none;color:var(--ink);font-size:.8rem;padding:.12rem 0">
+      <span>${esc(x.ticker)}</span>${signed(x.chg)}</a>`;
+
   const cards = rows.map(r => {
     const total = r.up + r.down;
     const upPct = total ? Math.round(r.up / total * 100) : 50;
+    const tops = (r.top || []).map(nameChg).join("");
+    const bottoms = (r.bottom || []).map(nameChg).join("");
     return `
       <div class="slot">
         <p class="cap">${esc(r.name)} <span class="miss">${r.count}종목</span></p>
@@ -1041,9 +1048,8 @@ function renderSectorBreadth(s, marketSectors) {
         </span>
         <p class="miss" style="margin-top:.35rem">▲${r.up} ▼${r.down} · 20일 거래량 ${
           r.vol_mult != null ? r.vol_mult + "x" : "—"}</p>
-        ${r.ticker ? `<p class="src" style="margin-top:.4rem">
-          <a href="https://finance.yahoo.com/quote/${esc(r.ticker)}"
-             target="_blank" rel="noopener">섹터 스터디 (${esc(r.ticker)}) ↗</a></p>` : ""}
+        ${tops ? `<p class="src" style="margin:.5rem 0 .15rem">상승 TOP</p>${tops}` : ""}
+        ${bottoms ? `<p class="src" style="margin:.4rem 0 .15rem">하락 TOP</p>${bottoms}` : ""}
       </div>`;
   }).join("");
 
