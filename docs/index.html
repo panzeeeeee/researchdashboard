@@ -90,9 +90,11 @@ article a:hover,article a:focus-visible{border-bottom-color:var(--accent);color:
 .hidden{display:none}
 .reports{background:var(--card);border:1px solid var(--rule);border-radius:9px;
   padding:.7rem .9rem;margin-top:.7rem}
-.callout{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--accent);
-  border-radius:10px;padding:1.15rem 1.3rem;margin-bottom:1rem}
+.callout{background:var(--card);border:1.5px solid var(--rule);border-left:4px solid var(--accent);
+  border-radius:12px;padding:1.4rem 1.5rem;margin:1.5rem 0;
+  box-shadow:0 1px 3px rgba(0,0,0,.04)}
 .callout .sub:first-child{margin-top:0}
+.callout .sum{line-height:1.75}
 .reports .cap{font-size:.72rem;color:var(--ink-3);margin:0 0 .35rem}
 .reports article{padding:.28rem 0}
 .reports a{font-size:.86rem}
@@ -223,8 +225,8 @@ tr:last-child td{border-bottom:none}
 <section id="market">
   <h2>미국 시황</h2>
   <div id="market-box"><p class="note">불러오는 중입니다.</p></div>
-  <div id="market-notes"></div>
-  <div id="buzz-box"></div>
+  <div id="market-notes" style="margin-top:1.5rem"></div>
+  <div id="buzz-box" style="margin-top:1.5rem"></div>
 </section>
 
 <section id="breadth">
@@ -1305,8 +1307,10 @@ function renderCommunityBuzz(b) {
   }).join("");
 
   box.innerHTML = `
-    <p class="sub">커뮤니티 언급 종목<span class="miss"> 출처: ${esc(b.source || "Reddit")} · 언급수(괄호는 전일比 변화)</span></p>
-    <div class="breadth">${rows}</div>`;
+    <div class="callout">
+      <p class="sub" style="margin-top:0">커뮤니티 언급 종목<span class="miss"> 출처: ${esc(b.source || "Reddit")} · 언급수(괄호는 전일比 변화)</span></p>
+      <div class="breadth">${rows}</div>
+    </div>`;
 }
 
 function renderCalls(c, edgar) {
