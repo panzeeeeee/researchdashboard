@@ -84,7 +84,8 @@ def main():
             chg = float(c.iloc[-1] / c.iloc[-2] - 1)
             vol_avg20 = float(v.iloc[-21:-1].mean())
             vol_mult = float(v.iloc[-1]) / vol_avg20 if vol_avg20 else None
-            rows.append({"sector": label, "chg": chg, "vol_mult": vol_mult})
+            rows.append({"sector": label, "ticker": t,
+                         "chg": round(chg * 100, 2), "vol_mult": vol_mult})
         except Exception:
             continue
 
@@ -102,12 +103,21 @@ def main():
             continue
         vol = sub["vol_mult"].dropna()
         news = gather([f"{gics_en} sector stocks"], creds, limit=4, market="us")
+
+        srt = sub.sort_values("chg", ascending=False)
+        top = [{"ticker": r["ticker"], "chg": r["chg"]}
+               for _, r in srt.head(3).iterrows()]
+        bottom = [{"ticker": r["ticker"], "chg": r["chg"]}
+                  for _, r in srt.tail(3).iloc[::-1].iterrows()]
+
         out.append({
             "name": label,
             "count": int(len(sub)),
             "up": int((sub["chg"] > 0).sum()),
             "down": int((sub["chg"] < 0).sum()),
             "vol_mult": round(float(vol.median()), 2) if len(vol) else None,
+            "top": top,
+            "bottom": bottom,
             "news": news,
         })
     out.sort(key=lambda r: -(r["up"] - r["down"]))
