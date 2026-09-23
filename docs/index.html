@@ -193,9 +193,9 @@ tr:last-child td{border-bottom:none}
   <a href="#liquidity">글로벌 유동성</a>
   <a href="#moneymarket">자금시장 상세</a>
   <a href="#portfolio">포트폴리오</a>
+  <a href="#deepvalue">딥밸류</a>
   <a href="#breakout">긴 조정 후<br>52주 신고가</a>
   <a href="#extremes">신고가·신저가<br>카드</a>
-  <a href="#deepvalue">딥밸류</a>
   <a href="#calls">컨콜 흐름</a>
   <a href="#news">섹터 뉴스 <span class="count" id="c-news"></span></a>
   <div class="divider"></div>
@@ -256,29 +256,34 @@ tr:last-child td{border-bottom:none}
   <div id="holdings-flow-box"></div>
 </section>
 
-<section id="breakout">
-  <h2>긴 조정 후 52주 신고가<span class="tagline">물극필반</span></h2>
-  <div class="rangebtns" id="breakout-tabs">
-    <button data-v="table" class="on">표</button>
-    <button data-v="cards">카드</button>
-  </div>
-  <div id="t-breakout"><p class="note">불러오는 중입니다.</p></div>
-  <div id="breakout-cards-box" class="hidden"><p class="note">불러오는 중입니다.</p></div>
-</section>
-
-<section id="extremes">
-  <h2>52주 신고가·신저가<span class="tagline">오늘 종가 기준 · 카드로 하나씩</span></h2>
-  <div id="extremes-box"><p class="note">불러오는 중입니다.</p></div>
-</section>
-
 <section id="deepvalue">
   <h2>딥밸류</h2>
   <div class="rangebtns" id="deepvalue-tabs">
-    <button data-v="table" class="on">표</button>
-    <button data-v="cards">카드</button>
+    <button data-v="cards" class="on">카드</button>
+    <button data-v="table">표</button>
   </div>
-  <div id="t-deepvalue"><p class="note">불러오는 중입니다.</p></div>
-  <div id="deepvalue-cards-box" class="hidden"><p class="note">불러오는 중입니다.</p></div>
+  <div id="deepvalue-cards-box"><p class="note">불러오는 중입니다.</p></div>
+  <div id="t-deepvalue" class="hidden"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="breakout">
+  <h2>긴 조정 후 52주 신고가<span class="tagline">물극필반</span></h2>
+  <div class="rangebtns" id="breakout-tabs">
+    <button data-v="cards" class="on">카드</button>
+    <button data-v="table">표</button>
+  </div>
+  <div id="breakout-cards-box"><p class="note">불러오는 중입니다.</p></div>
+  <div id="t-breakout" class="hidden"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="extremes">
+  <h2>52주 신고가·신저가<span class="tagline">오늘 종가 기준</span></h2>
+  <div class="rangebtns" id="extremes-tabs">
+    <button data-v="cards" class="on">카드</button>
+    <button data-v="table">표</button>
+  </div>
+  <div id="extremes-box"><p class="note">불러오는 중입니다.</p></div>
+  <div id="extremes-table-box" class="hidden"></div>
 </section>
 
 <section id="calls">
@@ -973,8 +978,12 @@ function renderCommodities(items) {
       b.addEventListener("click", () => { range = b.dataset.r; drawChart(); }));
   };
 
-  box.innerHTML = groupsHtml;
+  // 품목별 추이 차트를 맨 위에, 분류별 카드를 그 아래에
+  box.innerHTML = "";
   box.appendChild(chartArea);
+  const groupsWrap = document.createElement("div");
+  groupsWrap.innerHTML = groupsHtml;
+  box.appendChild(groupsWrap);
   drawChart();
 }
 
@@ -1010,6 +1019,41 @@ function renderSectorTrend(sectors) {
       b.addEventListener("click", () => { current = b.dataset.s; draw(); }));
     box.querySelectorAll("[data-r]").forEach(b =>
       b.addEventListener("click", () => { range = b.dataset.r; draw(); }));
+  };
+  draw();
+}
+
+// 신고가·신저가 표 -- 카드와 같은 데이터를 표로 (신고가/신저가 토글)
+function renderExtremesTable(data) {
+  const box = document.getElementById("extremes-table-box");
+  if (!box) return;
+  if (!data) { box.innerHTML = '<p class="note">extremes.json 이 아직 없습니다.</p>'; return; }
+
+  let kind = "high";
+  const draw = () => {
+    const list = data[kind] || [];
+    const rows = list.map(c => `
+      <tr>
+        <td class="tick">${esc(c.ticker)}</td>
+        <td>${esc((c.name || "").slice(0, 24))}</td>
+        <td class="n">${nz(c.price)}</td>
+        <td class="n">${signed(c.chg)}</td>
+        <td>${esc(c.sector || "—")}</td>
+        <td class="n">${c.capRank ? c.capRank + "위" : "—"}</td>
+      </tr>`).join("");
+    box.innerHTML = `
+      <div class="rangebtns">
+        <button data-k="high" class="${kind === "high" ? "on" : ""}">신고가 (${(data.high || []).length})</button>
+        <button data-k="low" class="${kind === "low" ? "on" : ""}">신저가 (${(data.low || []).length})</button>
+      </div>
+      <div class="scroll"><table>
+        <tr><th>티커</th><th>종목</th><th class="n">가격</th><th class="n">등락률</th>
+            <th>섹터</th><th class="n">시총순위</th></tr>
+        ${rows || '<tr><td colspan="6" class="note">해당 종목 없음</td></tr>'}
+      </table></div>`;
+    box.querySelectorAll("[data-k]").forEach(b => b.addEventListener("click", () => {
+      kind = b.dataset.k; draw();
+    }));
   };
   draw();
 }
@@ -1459,12 +1503,14 @@ Promise.all([
 
   renderTables(tables);
   renderExtremes(extremes);
+  renderExtremesTable(extremes);
   renderCardList("breakout-cards-box", breakoutCards ? breakoutCards.cards : null,
     c => renderScreenerCard(c, "breakout"));
   renderCardList("deepvalue-cards-box", deepvalueCards ? deepvalueCards.cards : null,
     c => renderScreenerCard(c, "deepvalue"));
   setupTabToggle("breakout-tabs", {table: "t-breakout", cards: "breakout-cards-box"});
   setupTabToggle("deepvalue-tabs", {table: "t-deepvalue", cards: "deepvalue-cards-box"});
+  setupTabToggle("extremes-tabs", {cards: "extremes-box", table: "extremes-table-box"});
   renderPortfolio(pf);
   renderHoldingsFlow(holdingsFlow);
   renderCalendar(calendar);
