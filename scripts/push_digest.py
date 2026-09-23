@@ -11,6 +11,7 @@ extremes.json 을 읽는다 -- 그 앞 단계들이 다 끝난 뒤(=push_telegra
 
 import html
 import sys
+import time
 
 import requests
 
@@ -30,14 +31,9 @@ def send(token, chat_id, text):
     return r.ok
 
 
+
 def fmt(v, suffix=""):
     return f"{v}{suffix}" if v is not None else "—"
-
-
-def signed(v, suffix=""):
-    if v is None:
-        return "—"
-    return f"{'+' if v > 0 else ''}{v}{suffix}"
 
 
 def build_market_msg():
@@ -74,34 +70,103 @@ def build_market_msg():
     return "\n".join(lines)
 
 
-def build_screener_msg():
-    tb = read_json(DATA_DIR / "tables.json") or {}
-    ex = read_json(DATA_DIR / "extremes.json") or {}
+def esc(x):
+    return html.escape(str(x)) if x is not None else ""
 
-    breakout = tb.get("breakout") or []
-    deepvalue = tb.get("deepvalue") or []
+
+def signed(v, suffix=""):
+    if v is None:
+        return "—"
+    return f"{'+' if v > 0 else ''}{v}{suffix}"
+
+
+def breakout_lines(cards):
+    """긴 조정 후 신고가 -- 종목마다 이름·티커·등락률·섹터·점수·게이트."""
+    out = []
+    for c in cards:
+        m = c.get("meta") or {}
+        out.append(
+            f'· <b>{esc(c.get("name"))}</b> ({esc(c.get("ticker"))}) '
+            f'{signed(c.get("chg"), "%")}')
+        detail = []
+        if c.get("sector"):
+            detail.append(esc(c["sector"]))
+        if m.get("score") is not None:
+            detail.append(f"점수 {m['score']}")
+        if m.get("gates") is not None:
+            detail.append(f"게이트 {m['gates']}")
+        if m.get("drawdown") is not None:
+            detail.append(f"낙폭 {m['drawdown']}%")
+        if detail:
+            out.append(f"  <i>{' · '.join(detail)}</i>")
+    return out
+
+
+def deepvalue_lines(cards):
+    """딥밸류 -- 이름·티커·등락률·섹터·점수·F스코어·왜 싼가."""
+    out = []
+    for c in cards:
+        m = c.get("meta") or {}
+        trig = " 🔥트리거" if m.get("triggered") else ""
+        out.append(
+            f'· <b>{esc(c.get("name"))}</b> ({esc(c.get("ticker"))}) '
+            f'{signed(c.get("chg"), "%")}{trig}')
+        detail = []
+        if c.get("sector"):
+            detail.append(esc(c["sector"]))
+        if m.get("score") is not None:
+            detail.append(f"점수 {m['score']}")
+        if m.get("fscore") is not None:
+            detail.append(f"F {m['fscore']}")
+        if m.get("drawdown") is not None:
+            detail.append(f"낙폭 {m['drawdown']}%")
+        if detail:
+            out.append(f"  <i>{' · '.join(detail)}</i>")
+        if m.get("why"):
+            out.append(f"  <i>왜 싼가: {esc(m['why'])}</i>")
+    return out
+
+
+def extreme_lines(cards):
+    """신고가·신저가 -- 이름·티커·가격·등락률·섹터."""
+    out = []
+    for c in cards:
+        out.append(
+            f'· <b>{esc(c.get("name"))}</b> ({esc(c.get("ticker"))}) '
+            f'${esc(c.get("price"))} {signed(c.get("chg"), "%")}')
+        if c.get("sector"):
+            out.append(f"  <i>{esc(c['sector'])}</i>")
+    return out
+
+
+def build_screener_messages():
+    """스크리너 결과를 '메시지 목록'으로 만든다.
+    맨 앞은 섹션별 건수 요약 1개, 그다음 종목마다 개별 메시지 1개씩.
+    main 에서 종목당 하나씩 간격을 두고 보낸다."""
+    bo = (read_json(DATA_DIR / "breakout_cards.json") or {}).get("cards") or []
+    dv = (read_json(DATA_DIR / "deepvalue_cards.json") or {}).get("cards") or []
+    ex = read_json(DATA_DIR / "extremes.json") or {}
     highs = ex.get("high") or []
     lows = ex.get("low") or []
 
-    lines = [f"<b>🔎 스크리너 결과</b>  <i>{now_kst().strftime('%m/%d')}</i>", ""]
+    messages = []
+    # 1) 요약 헤더 한 장
+    messages.append(
+        f"<b>🔎 스크리너 결과</b>  <i>{now_kst().strftime('%m/%d')}</i>\n"
+        f"· 긴 조정 후 신고가 {len(bo)}건\n"
+        f"· 딥밸류 {len(dv)}건\n"
+        f"· 52주 신고가 {len(highs)}건 · 신저가 {len(lows)}건")
 
-    def top_tickers(rows, key="code", n=8):
-        out = [str(r.get(key) or r.get("ticker") or "") for r in rows[:n]]
-        out = [x for x in out if x]
-        tail = " 외" if len(rows) > n else ""
-        return (", ".join(out) + tail) if out else "없음"
-
-    lines.append(f"<b>긴 조정 후 신고가</b> {len(breakout)}건")
-    lines.append(top_tickers(breakout))
-    lines.append("")
-    lines.append(f"<b>딥밸류</b> {len(deepvalue)}건")
-    lines.append(top_tickers(deepvalue))
-    lines.append("")
-    lines.append(f"<b>52주 신고가</b> {len(highs)}건 · <b>신저가</b> {len(lows)}건")
-    lines.append("신고가: " + top_tickers(highs, key="ticker"))
-    lines.append("신저가: " + top_tickers(lows, key="ticker"))
-
-    return "\n".join(lines)
+    # 2) 종목마다 개별 메시지 (섹션 태그를 앞에 붙여 구분)
+    for c in bo:
+        messages.append("🟢 <b>[신고가]</b>\n" + "\n".join(breakout_lines([c])))
+    for c in dv:
+        messages.append("🔵 <b>[딥밸류]</b>\n" + "\n".join(deepvalue_lines([c])))
+    for c in highs:
+        messages.append("🔺 <b>[52주 신고가]</b>\n" + "\n".join(extreme_lines([c])))
+    for c in lows:
+        messages.append("🔻 <b>[52주 신저가]</b>\n" + "\n".join(extreme_lines([c])))
+    return messages
 
 
 def main():
@@ -116,8 +181,14 @@ def main():
     ok = 0
     if send(token, chat_id, build_market_msg()):
         ok += 1
-    if send(token, chat_id, build_screener_msg()):
-        ok += 1
+
+    # 스크리너는 종목당 하나씩. 텔레그램 제한을 피해 1.5초 간격.
+    messages = build_screener_messages()
+    for i, msg in enumerate(messages):
+        if send(token, chat_id, msg):
+            ok += 1
+        if i < len(messages) - 1:
+            time.sleep(1.5)
     print(f"발송 {ok}건")
 
 
