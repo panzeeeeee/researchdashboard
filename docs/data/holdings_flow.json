@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-09-25T10:05:17.367726+09:00",
+ "updated_at": "2026-09-25T23:52:13.816508+09:00",
  "stocks": [
   {
    "ticker": "GOOGL",
    "inst_pct": 81.0,
-   "shares_short": 77698668,
-   "short_pct_float": 1.32,
-   "short_chg": 10.2,
+   "shares_short": 87393404,
+   "short_pct_float": 1.49,
+   "short_chg": 20.2,
    "insider_recent": [
     {
      "insider": "SERGEY BRIN",
@@ -77,9 +77,9 @@
   {
    "ticker": "MSFT",
    "inst_pct": 75.8,
-   "shares_short": 74451155,
-   "short_pct_float": 1.0,
-   "short_chg": -8.4,
+   "shares_short": 67346414,
+   "short_pct_float": 0.91,
+   "short_chg": -1.7,
    "insider_recent": [
     {
      "insider": "HOOD AMY E",
@@ -150,9 +150,9 @@
   {
    "ticker": "META",
    "inst_pct": 79.0,
-   "shares_short": 28807174,
-   "short_pct_float": 1.31,
-   "short_chg": -8.4,
+   "shares_short": 30990107,
+   "short_pct_float": 1.41,
+   "short_chg": 10.5,
    "insider_recent": [
     {
      "insider": "OLIVAN JAVIER",
@@ -211,11 +211,11 @@
      "date": "2026-09-03 00:00:00"
     },
     {
-     "insider": "MAHONEY CURTIS J",
-     "position": "Officer",
-     "text": "Sale at price 543.67 per share.",
-     "shares": 1559,
-     "value": 847581.0,
+     "insider": "LI SUSAN J.",
+     "position": "Chief Financial Officer",
+     "text": "Sale at price 547.51 - 560.63 per share.",
+     "shares": 9196,
+     "value": 5063389.0,
      "date": "2026-08-18 00:00:00"
     }
    ]
@@ -223,9 +223,9 @@
   {
    "ticker": "AMZN",
    "inst_pct": 68.7,
-   "shares_short": 92067423,
-   "short_pct_float": 0.94,
-   "short_chg": -6.5,
+   "shares_short": 81440414,
+   "short_pct_float": 0.83,
+   "short_chg": -14.5,
    "insider_recent": [
     {
      "insider": "HERRINGTON DOUGLAS J",
@@ -296,9 +296,9 @@
   {
    "ticker": "CRM",
    "inst_pct": 87.5,
-   "shares_short": 29211825,
-   "short_pct_float": 4.1,
-   "short_chg": -0.7,
+   "shares_short": 32348247,
+   "short_pct_float": 4.54,
+   "short_chg": 22.1,
    "insider_recent": [
     {
      "insider": "HARRIS G PARKER",
@@ -321,6 +321,14 @@
      "position": "President",
      "text": "",
      "shares": 2032,
+     "value": null,
+     "date": "2026-09-22 00:00:00"
+    },
+    {
+     "insider": "WASHINGTON ROBIN L",
+     "position": "President",
+     "text": "",
+     "shares": 1831,
      "value": null,
      "date": "2026-09-22 00:00:00"
     },
@@ -355,14 +363,6 @@
      "shares": 441,
      "value": null,
      "date": "2026-08-21 00:00:00"
-    },
-    {
-     "insider": "DONALD ARNOLD WAYNE",
-     "position": "Director",
-     "text": "",
-     "shares": 441,
-     "value": null,
-     "date": "2026-08-21 00:00:00"
     }
    ]
   },
@@ -376,43 +376,368 @@
   },
   {
    "ticker": "NKE",
-   "inst_pct": null,
-   "shares_short": null,
-   "short_pct_float": null,
-   "short_chg": null,
-   "insider_recent": []
+   "inst_pct": 82.6,
+   "shares_short": 85698150,
+   "short_pct_float": 8.98,
+   "short_chg": 24.5,
+   "insider_recent": [
+    {
+     "insider": "ARNAULT ALEXANDRE",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5171,
+     "value": 0.0,
+     "date": "2026-09-15 00:00:00"
+    },
+    {
+     "insider": "LEINWAND ROBERT",
+     "position": "Officer",
+     "text": "Sale at price 37.59 per share.",
+     "shares": 3646,
+     "value": 137053.0,
+     "date": "2026-09-09 00:00:00"
+    },
+    {
+     "insider": "MCCARTNEY PHILIP",
+     "position": "Officer",
+     "text": "Sale at price 37.59 per share.",
+     "shares": 2559,
+     "value": 96193.0,
+     "date": "2026-09-09 00:00:00"
+    },
+    {
+     "insider": "ALAGIRISAMY VENKATESH",
+     "position": "Chief Operating Officer",
+     "text": "Sale at price 37.59 per share.",
+     "shares": 3671,
+     "value": 137993.0,
+     "date": "2026-09-09 00:00:00"
+    },
+    {
+     "insider": "COOK TIMOTHY D",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5047,
+     "value": 0.0,
+     "date": "2026-09-08 00:00:00"
+    },
+    {
+     "insider": "HENRY PETER B",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5047,
+     "value": 0.0,
+     "date": "2026-09-08 00:00:00"
+    },
+    {
+     "insider": "SWAN ROBERT HOLMES",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5047,
+     "value": 0.0,
+     "date": "2026-09-08 00:00:00"
+    },
+    {
+     "insider": "KNUDSTORP JORGEN VIG",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5047,
+     "value": 0.0,
+     "date": "2026-09-08 00:00:00"
+    }
+   ]
   },
   {
    "ticker": "DEA",
-   "inst_pct": null,
-   "shares_short": null,
-   "short_pct_float": null,
-   "short_chg": null,
-   "insider_recent": []
+   "inst_pct": 79.9,
+   "shares_short": 2061964,
+   "short_pct_float": 6.29,
+   "short_chg": 8.4,
+   "insider_recent": [
+    {
+     "insider": "FISHER CYNTHIA A",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5265,
+     "value": 0.0,
+     "date": "2026-04-29 00:00:00"
+    },
+    {
+     "insider": "HENRY EMIL W JR",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5265,
+     "value": 0.0,
+     "date": "2026-04-29 00:00:00"
+    },
+    {
+     "insider": "INNES TARA S",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5265,
+     "value": 0.0,
+     "date": "2026-04-29 00:00:00"
+    },
+    {
+     "insider": "FREEMAN SCOTT D",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5265,
+     "value": 0.0,
+     "date": "2026-04-29 00:00:00"
+    },
+    {
+     "insider": "CRATE DARRELL W",
+     "position": "Chief Executive Officer",
+     "text": "",
+     "shares": 31488,
+     "value": null,
+     "date": "2026-02-24 00:00:00"
+    },
+    {
+     "insider": "BINNIE WILLIAM H",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5499,
+     "value": 0.0,
+     "date": "2025-06-18 00:00:00"
+    },
+    {
+     "insider": "FISHER CYNTHIA A",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5499,
+     "value": 0.0,
+     "date": "2025-06-18 00:00:00"
+    },
+    {
+     "insider": "HENRY EMIL W JR",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5499,
+     "value": 0.0,
+     "date": "2025-06-18 00:00:00"
+    }
+   ]
   },
   {
    "ticker": "PFE",
-   "inst_pct": null,
-   "shares_short": null,
-   "short_pct_float": null,
-   "short_chg": null,
-   "insider_recent": []
+   "inst_pct": 69.1,
+   "shares_short": 155202257,
+   "short_pct_float": 2.72,
+   "short_chg": 4.0,
+   "insider_recent": [
+    {
+     "insider": "BOURLA ALBERT",
+     "position": "Chief Executive Officer",
+     "text": "Purchase at price 26.34 per share.",
+     "shares": 38000,
+     "value": 1000920,
+     "date": "2026-08-12 00:00:00"
+    },
+    {
+     "insider": "DAMICO JENNIFER B.",
+     "position": "Officer",
+     "text": "Sale at price 25.40 per share.",
+     "shares": 3278,
+     "value": 83261,
+     "date": "2026-08-05 00:00:00"
+    },
+    {
+     "insider": "BUCKLEY MORTIMER J.",
+     "position": "Director",
+     "text": "Purchase at price 25.52 per share.",
+     "shares": 37632,
+     "value": 960369,
+     "date": "2026-08-05 00:00:00"
+    },
+    {
+     "insider": "BLAYLOCK RONALD E",
+     "position": "Director",
+     "text": "Purchase at price 25.46 per share.",
+     "shares": 39231,
+     "value": 998821,
+     "date": "2026-08-05 00:00:00"
+    },
+    {
+     "insider": "DAMICO JENNIFER B.",
+     "position": "Officer",
+     "text": "Sale at price 25.70 per share.",
+     "shares": 2000,
+     "value": 51400,
+     "date": "2026-06-09 00:00:00"
+    },
+    {
+     "insider": "DAMICO JENNIFER B.",
+     "position": "Officer",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 21719,
+     "value": 0,
+     "date": "2026-03-03 00:00:00"
+    },
+    {
+     "insider": "BOSHOFF CHRISTOFFEL",
+     "position": "Officer",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 13383,
+     "value": 0,
+     "date": "2026-02-25 00:00:00"
+    },
+    {
+     "insider": "BOURLA ALBERT",
+     "position": "Chief Executive Officer",
+     "text": "Conversion of Exercise of derivative security at price 33.82 per share.",
+     "shares": 491626,
+     "value": 16626791,
+     "date": "2026-02-25 00:00:00"
+    }
+   ]
   },
   {
    "ticker": "CPNG",
-   "inst_pct": null,
-   "shares_short": null,
-   "short_pct_float": null,
-   "short_chg": null,
-   "insider_recent": []
+   "inst_pct": 83.7,
+   "shares_short": 79155595,
+   "short_pct_float": 6.16,
+   "short_chg": 14.7,
+   "insider_recent": [
+    {
+     "insider": "ROGERS HAROLD",
+     "position": "General Counsel",
+     "text": "Sale at price 16.18 per share.",
+     "shares": 192110,
+     "value": 3107975.0,
+     "date": "2026-08-10 00:00:00"
+    },
+    {
+     "insider": "LEE JONATHAN D",
+     "position": "Officer",
+     "text": "Sale at price 16.10 per share.",
+     "shares": 5519,
+     "value": 88867.0,
+     "date": "2026-08-10 00:00:00"
+    },
+    {
+     "insider": "CHILD JASON E",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 21304,
+     "value": 0.0,
+     "date": "2026-06-11 00:00:00"
+    },
+    {
+     "insider": "SHARMA ASHA RANI",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 17971,
+     "value": 0.0,
+     "date": "2026-06-11 00:00:00"
+    },
+    {
+     "insider": "SUN BENJAMIN",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 19275,
+     "value": 0.0,
+     "date": "2026-06-11 00:00:00"
+    },
+    {
+     "insider": "FRANCESCHI PEDRO",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 17971,
+     "value": 0.0,
+     "date": "2026-06-11 00:00:00"
+    },
+    {
+     "insider": "MEHTA NEIL",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 17391,
+     "value": 0.0,
+     "date": "2026-06-11 00:00:00"
+    },
+    {
+     "insider": "TOUBASSY AMBEREEN",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 19565,
+     "value": 0.0,
+     "date": "2026-06-11 00:00:00"
+    }
+   ]
   },
   {
    "ticker": "ENPH",
-   "inst_pct": null,
-   "shares_short": null,
-   "short_pct_float": null,
-   "short_chg": null,
-   "insider_recent": []
+   "inst_pct": 96.6,
+   "shares_short": 23876212,
+   "short_pct_float": 21.74,
+   "short_chg": 10.7,
+   "insider_recent": [
+    {
+     "insider": "MORA RICHARD",
+     "position": "Director",
+     "text": "Sale at price 40.36 per share.",
+     "shares": 1500,
+     "value": 60547,
+     "date": "2026-08-14 00:00:00"
+    },
+    {
+     "insider": "MORA RICHARD",
+     "position": "Director",
+     "text": "Sale at price 36.76 per share.",
+     "shares": 2000,
+     "value": 73520,
+     "date": "2026-07-30 00:00:00"
+    },
+    {
+     "insider": "TRIVEDI SHANKER S",
+     "position": "Director",
+     "text": "Purchase at price 53.91 per share.",
+     "shares": 1000,
+     "value": 53910,
+     "date": "2026-06-12 00:00:00"
+    },
+    {
+     "insider": "TRIVEDI SHANKER S",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 54.93 per share.",
+     "shares": 4551,
+     "value": 249986,
+     "date": "2026-06-11 00:00:00"
+    },
+    {
+     "insider": "MORA RICHARD",
+     "position": "Director",
+     "text": "Sale at price 64.20 per share.",
+     "shares": 700,
+     "value": 44940,
+     "date": "2026-06-01 00:00:00"
+    },
+    {
+     "insider": "KOTHANDARAMAN BADRINARAYANAN",
+     "position": "Chief Executive Officer",
+     "text": "Purchase at price 67.37 - 68.39 per share.",
+     "shares": 5000,
+     "value": 337482,
+     "date": "2026-05-26 00:00:00"
+    },
+    {
+     "insider": "MORA RICHARD",
+     "position": "Director",
+     "text": "Sale at price 46.39 per share.",
+     "shares": 700,
+     "value": 32473,
+     "date": "2026-05-19 00:00:00"
+    },
+    {
+     "insider": "MALCHOW JOSEPH IAN",
+     "position": "Director",
+     "text": "Stock Award(Grant) at price 0.00 per share.",
+     "shares": 5952,
+     "value": 0,
+     "date": "2026-05-13 00:00:00"
+    }
+   ]
   }
  ]
 }
