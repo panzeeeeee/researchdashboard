@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-25T00:04:27.746265+09:00",
+ "updated_at": "2026-09-25T10:06:14.238431+09:00",
  "breakout": [
   {
    "code": "CDNA",
@@ -268,60 +268,45 @@
    "name": "NerdWallet, Inc.",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.82,
+   "score": 0.819,
    "value": 0.686,
-   "turn": 0.984,
+   "turn": 0.981,
    "fscore": 8,
-   "drawdown": 51.9,
-   "below200": 179,
+   "drawdown": 52.3,
+   "below200": 178,
    "earn_yld": 1.9,
    "triggered": true,
-   "why": "고금리로 인한 금융 상품 수요 감소"
+   "why": "고금리에 따른 대출 및 금융상품 광고 수요 둔화"
   },
   {
    "code": "APTV",
    "name": "Aptiv PLC",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.793,
-   "value": 0.928,
-   "turn": 0.628,
+   "score": 0.788,
+   "value": 0.926,
+   "turn": 0.62,
    "fscore": 8,
-   "drawdown": 57.7,
-   "below200": 145,
+   "drawdown": 56.0,
+   "below200": 144,
    "earn_yld": 9.8,
    "triggered": true,
-   "why": "전기차 수요 둔화와 완성차 업황 부진"
+   "why": "전기차 전환 지연 및 완성차 업황 부진 영향"
   },
   {
    "code": "ZTS",
    "name": "Zoetis Inc.",
    "universe": "SPX",
    "sector": "Healthcare",
-   "score": 0.706,
-   "value": 0.732,
-   "turn": 0.675,
+   "score": 0.701,
+   "value": 0.727,
+   "turn": 0.67,
    "fscore": 8,
-   "drawdown": 63.2,
+   "drawdown": 62.9,
    "below200": 252,
    "earn_yld": 9.6,
    "triggered": true,
-   "why": "동물약품 재고 조정 및 경쟁 심화 우려"
-  },
-  {
-   "code": "MMS",
-   "name": "Maximus, Inc.",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.705,
-   "value": 0.752,
-   "turn": 0.647,
-   "fscore": 7,
-   "drawdown": 45.3,
-   "below200": 159,
-   "earn_yld": 11.0,
-   "triggered": true,
-   "why": "미국 메디케이드 재심사 종료에 따른 역기저"
+   "why": "반려동물 의약품 경쟁 심화 및 성장세 둔화 우려"
   },
   {
    "code": "NFLX",
@@ -332,11 +317,11 @@
    "value": 0.6,
    "turn": 0.812,
    "fscore": 7,
-   "drawdown": 46.5,
-   "below200": 225,
+   "drawdown": 46.7,
+   "below200": 224,
    "earn_yld": 3.6,
    "triggered": true,
-   "why": "스트리밍 경쟁 심화 및 가입자 성장 정체"
+   "why": "확인 필요"
   },
   {
    "code": "CPRT",
@@ -347,101 +332,116 @@
    "value": 0.762,
    "turn": 0.594,
    "fscore": 7,
-   "drawdown": 55.7,
+   "drawdown": 54.8,
    "below200": 252,
    "earn_yld": 7.5,
    "triggered": true,
-   "why": "중고차 가격 하락 및 차량 폐차율 감소"
+   "why": "중고차 가격 하락과 보험사 전손 처리 건수 감소"
   },
   {
    "code": "APOG",
    "name": "Apogee Enterprises, Inc.",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.671,
-   "value": 0.715,
+   "score": 0.67,
+   "value": 0.714,
    "turn": 0.617,
    "fscore": 6,
-   "drawdown": 56.3,
+   "drawdown": 55.9,
    "below200": 166,
    "earn_yld": 11.8,
    "triggered": true,
-   "why": "상업용 부동산 시장 및 건설 경기 침체"
-  },
-  {
-   "code": "PNR",
-   "name": "Pentair plc.",
-   "universe": "SPX",
-   "sector": "Industrials",
-   "score": 0.659,
-   "value": 0.69,
-   "turn": 0.622,
-   "fscore": 9,
-   "drawdown": 52.0,
-   "below200": 162,
-   "earn_yld": 7.3,
-   "triggered": true,
-   "why": "코로나 특수 종료 후 수영장 수요 정상화"
+   "why": "건설 경기 둔화에 따른 상업용 유리 수요 감소"
   },
   {
    "code": "COLL",
    "name": "Collegium Pharmaceutical, Inc.",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.658,
-   "value": 0.87,
-   "turn": 0.398,
+   "score": 0.659,
+   "value": 0.871,
+   "turn": 0.4,
    "fscore": 6,
    "drawdown": 55.0,
-   "below200": 140,
+   "below200": 139,
    "earn_yld": 17.1,
    "triggered": true,
-   "why": "마약성 진통제 규제 및 특허 만료 우려"
+   "why": "주력 의약품 특허 만료 및 제네릭 경쟁 우려"
   },
   {
-   "code": "LRN",
-   "name": "Stride, Inc.",
-   "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.64,
-   "value": 0.765,
-   "turn": 0.486,
-   "fscore": 6,
-   "drawdown": 52.8,
-   "below200": 194,
-   "earn_yld": 13.2,
+   "code": "PNR",
+   "name": "Pentair plc.",
+   "universe": "SPX",
+   "sector": "Industrials",
+   "score": 0.658,
+   "value": 0.692,
+   "turn": 0.617,
+   "fscore": 9,
+   "drawdown": 50.3,
+   "below200": 161,
+   "earn_yld": 7.3,
    "triggered": true,
-   "why": "비대면 교육 수요 감소 및 등록생 수 하락"
+   "why": "확인 필요"
   },
   {
    "code": "ICFI",
    "name": "ICF International, Inc.",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.639,
-   "value": 0.502,
-   "turn": 0.806,
+   "score": 0.646,
+   "value": 0.518,
+   "turn": 0.803,
    "fscore": 7,
-   "drawdown": 52.4,
-   "below200": 179,
+   "drawdown": 51.8,
+   "below200": 180,
    "earn_yld": 6.6,
    "triggered": true,
-   "why": "확인 필요"
+   "why": "연방정부 예산 집행 지연 및 컨설팅 수요 감소"
   },
   {
    "code": "DXC",
    "name": "DXC Technology Company",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.637,
-   "value": 0.858,
+   "score": 0.64,
+   "value": 0.863,
    "turn": 0.366,
    "fscore": 6,
-   "drawdown": 57.4,
+   "drawdown": 56.5,
    "below200": 214,
    "earn_yld": 10.7,
    "triggered": true,
-   "why": "기존 IT 서비스 수요 감소 및 실적 부진"
+   "why": "IT 서비스 지출 둔화와 구조조정 비용 발생"
+  },
+  {
+   "code": "JBI",
+   "name": "Janus International Group, Inc.",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.637,
+   "value": 0.833,
+   "turn": 0.398,
+   "fscore": 6,
+   "drawdown": 72.4,
+   "below200": 219,
+   "earn_yld": 15.5,
+   "triggered": true,
+   "why": "자가용 창고 및 철제 보관시설 수요 둔화"
+  },
+  {
+   "code": "LRN",
+   "name": "Stride, Inc.",
+   "universe": "R2K",
+   "sector": "Consumer Defensive",
+   "score": 0.637,
+   "value": 0.764,
+   "turn": 0.481,
+   "fscore": 6,
+   "drawdown": 53.8,
+   "below200": 193,
+   "earn_yld": 13.2,
+   "triggered": true,
+   "why": "확인 필요"
   },
   {
    "code": "INTU",
@@ -453,38 +453,8 @@
    "turn": 0.512,
    "fscore": 7,
    "drawdown": 64.1,
-   "below200": 234,
+   "below200": 233,
    "earn_yld": 6.6,
-   "triggered": true,
-   "why": "미국 국세청 자체 신고 시스템 도입 우려"
-  },
-  {
-   "code": "JBI",
-   "name": "Janus International Group, Inc.",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.636,
-   "value": 0.828,
-   "turn": 0.402,
-   "fscore": 6,
-   "drawdown": 72.9,
-   "below200": 220,
-   "earn_yld": 15.5,
-   "triggered": true,
-   "why": "상업용 창고 및 건설 경기 둔화 우려"
-  },
-  {
-   "code": "ARDT",
-   "name": "Ardent Health, Inc.",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.633,
-   "value": 0.645,
-   "turn": 0.619,
-   "fscore": 8,
-   "drawdown": 47.8,
-   "below200": 171,
-   "earn_yld": 12.6,
    "triggered": true,
    "why": "확인 필요"
   },
@@ -493,15 +463,30 @@
    "name": "Amphastar Pharmaceuticals, Inc.",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.633,
-   "value": 0.651,
+   "score": 0.634,
+   "value": 0.653,
    "turn": 0.611,
    "fscore": 6,
-   "drawdown": 60.1,
-   "below200": 173,
+   "drawdown": 60.7,
+   "below200": 174,
    "earn_yld": 13.7,
    "triggered": true,
-   "why": "특허 의약품 경쟁 심화 및 판가 하락"
+   "why": "제네릭 경쟁 심화 및 규제 리스크 부각"
+  },
+  {
+   "code": "ARDT",
+   "name": "Ardent Health, Inc.",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.632,
+   "value": 0.65,
+   "turn": 0.61,
+   "fscore": 8,
+   "drawdown": 47.3,
+   "below200": 172,
+   "earn_yld": 12.6,
+   "triggered": true,
+   "why": "확인 필요"
   },
   {
    "code": "FISV",
@@ -509,44 +494,44 @@
    "universe": "SPX",
    "sector": "Unknown",
    "score": 0.629,
-   "value": 0.925,
-   "turn": 0.268,
+   "value": 0.931,
+   "turn": 0.259,
    "fscore": 6,
-   "drawdown": 80.8,
+   "drawdown": 80.7,
    "below200": 252,
    "earn_yld": 10.6,
    "triggered": true,
-   "why": "핀테크 시장 경쟁 심화 및 마진 압박"
+   "why": "확인 필요"
   },
   {
    "code": "NKE",
    "name": "Nike, Inc.",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.621,
-   "value": 0.755,
-   "turn": 0.458,
+   "score": 0.617,
+   "value": 0.761,
+   "turn": 0.442,
    "fscore": 7,
-   "drawdown": 68.9,
-   "below200": 235,
+   "drawdown": 68.6,
+   "below200": 234,
    "earn_yld": 8.2,
    "triggered": true,
-   "why": "중국 수요 둔화 및 혁신 부재 우려"
+   "why": "중국 시장 부진 및 글로벌 운동화 수요 둔화"
   },
   {
    "code": "BBW",
    "name": "Build-A-Bear Workshop, Inc.",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.604,
-   "value": 0.833,
-   "turn": 0.323,
+   "score": 0.606,
+   "value": 0.834,
+   "turn": 0.327,
    "fscore": 6,
-   "drawdown": 66.1,
-   "below200": 165,
+   "drawdown": 65.1,
+   "below200": 164,
    "earn_yld": 16.6,
    "triggered": true,
-   "why": "소비 위축에 따른 완구 수요 둔화 우려"
+   "why": "오프라인 소비 둔화 및 재고 비용 증가"
   },
   {
    "code": "VRSK",
@@ -554,14 +539,29 @@
    "universe": "SPX",
    "sector": "Industrials",
    "score": 0.603,
-   "value": 0.363,
-   "turn": 0.896,
+   "value": 0.367,
+   "turn": 0.891,
    "fscore": 8,
-   "drawdown": 45.6,
+   "drawdown": 45.8,
    "below200": 244,
    "earn_yld": 5.5,
    "triggered": true,
-   "why": "보험 업계의 보수적 지출 및 성장 둔화"
+   "why": "확인 필요"
+  },
+  {
+   "code": "ODD",
+   "name": "ODDITY Tech Ltd.",
+   "universe": "R2K",
+   "sector": "Consumer Defensive",
+   "score": 0.6,
+   "value": 0.648,
+   "turn": 0.542,
+   "fscore": 6,
+   "drawdown": 77.0,
+   "below200": 239,
+   "earn_yld": 11.2,
+   "triggered": true,
+   "why": "신규 브랜드 마케팅 비용 증가와 성장 둔화 우려"
   }
  ],
  "funnel": {
@@ -629,63 +629,59 @@
  "rejects": [
   [
    "not_drawn_down_enough",
-   1632
+   1652
   ],
   [
    "illiquid",
-   210
+   201
   ],
   [
    "price_too_low",
-   140
+   133
   ],
   [
    "not_neglected_long_enough",
-   119
+   109
   ],
   [
    "no_price_history",
-   85
+   88
   ],
   [
    "fundamentals_unavailable",
-   62
+   63
   ],
   [
    "dilution",
-   55
+   57
   ],
   [
    "already_recovered",
-   25
-  ],
-  [
-   "interest_coverage|dilution",
-   16
+   27
   ],
   [
    "structural_decline",
-   14
+   16
   ],
   [
-   "leverage",
-   14
+   "interest_coverage|dilution",
+   15
   ],
   [
    "liquidity",
    12
   ],
   [
+   "leverage",
+   12
+  ],
+  [
    "interest_coverage",
-   11
+   12
   ],
   [
    "leverage|liquidity",
    11
-  ],
-  [
-   "interest_coverage|leverage",
-   8
   ],
   [
    "mcap_too_small",
@@ -696,12 +692,16 @@
    7
   ],
   [
-   "interest_coverage|leverage|structural_decline",
+   "interest_coverage|leverage",
    7
   ],
   [
+   "interest_coverage|leverage|structural_decline",
+   6
+  ],
+  [
    "interest_coverage|leverage|dilution",
-   5
+   6
   ],
   [
    "interest_coverage|leverage|liquidity",
@@ -712,12 +712,12 @@
    4
   ],
   [
-   "negative_equity",
+   "interest_coverage|leverage|negative_equity",
    4
   ],
   [
-   "interest_coverage|liquidity",
-   3
+   "negative_equity",
+   4
   ],
   [
    "leverage|structural_decline",
@@ -728,23 +728,27 @@
    3
   ],
   [
-   "interest_coverage|structural_decline",
-   3
-  ],
-  [
    "interest_coverage|liquidity|dilution",
    3
   ],
   [
-   "interest_coverage|leverage|negative_equity",
-   2
+   "interest_coverage|liquidity",
+   3
+  ],
+  [
+   "interest_coverage|structural_decline",
+   3
+  ],
+  [
+   "interest_coverage|dilution|structural_decline",
+   1
   ],
   [
    "interest_coverage|leverage|liquidity|dilution|structural_decline",
    1
   ],
   [
-   "interest_coverage|dilution|structural_decline",
+   "interest_coverage|leverage|liquidity|negative_equity",
    1
   ],
   [
@@ -752,7 +756,7 @@
    1
   ],
   [
-   "interest_coverage|leverage|liquidity|negative_equity",
+   "interest_coverage|leverage|dilution|structural_decline",
    1
   ],
   [
@@ -773,10 +777,6 @@
   ],
   [
    "liquidity|structural_decline",
-   1
-  ],
-  [
-   "liquidity|dilution",
    1
   ],
   [
