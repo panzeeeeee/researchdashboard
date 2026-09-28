@@ -200,12 +200,18 @@ jobs:
         run: python scripts/push_telegram.py
 
       - name: 텔레그램 요약 발송
+        # 요약은 아침 실행 때만 보낸다(시간 판단은 push_digest.py 안에서).
+        # Actions 탭에서 손으로 돌린 경우엔 시간과 상관없이 보낸다(DIGEST_FORCE).
+        # 종목별 차트를 직접 그리려고 matplotlib 을 이 단계에서 설치한다.
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_DIGEST_BOT_TOKEN: ${{ secrets.TELEGRAM_DIGEST_BOT_TOKEN }}
           TELEGRAM_DIGEST_CHAT_ID: ${{ secrets.TELEGRAM_DIGEST_CHAT_ID }}
-        run: python scripts/push_digest.py
+          DIGEST_FORCE: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
+        run: |
+          pip install matplotlib
+          python scripts/push_digest.py
         continue-on-error: true
 
       - name: 백테스팅 기록 적재
