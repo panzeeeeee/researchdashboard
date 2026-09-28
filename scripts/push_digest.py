@@ -1,15 +1,22 @@
 """시장 요약 + 스크리너 결과를 텔레그램으로 보낸다.
 
-기존 push_telegram.py(새 뉴스만 보냄)와 목적이 다르다 -- 이건 매 실행마다
-그날 스냅샷을 한 방에 보낸다. 중복 방지 기록(sent.json) 없이 그냥 현재 상태를
-발송한다. send() 방식과 토큰·챗ID는 push_telegram.py 와 동일하게 쓴다.
+기존 push_telegram.py(새 뉴스만 보냄)와 목적이 다르다 -- 이건 그날
+스냅샷을 한 방에 보낸다. 중복 방지 기록(sent.json) 없이 현재 상태를 발송한다.
 
-market.json / credit.json / liquidity.json / market_notes.json / tables.json /
-extremes.json 을 읽는다 -- 그 앞 단계들이 다 끝난 뒤(=push_telegram 근처)에
-돌아야 한다.
+- 아침 실행(한국시간 오후 1시 이전)에만 보낸다. 저녁 실행은 대시보드
+  데이터만 갱신하고 이 스크립트는 그냥 넘어간다.
+  손으로 돌릴 때 시간과 상관없이 보내려면 DIGEST_FORCE=1.
+- 종목마다 1년치 종가(chart 배열)로 matplotlib 차트 PNG를 직접 그려
+  sendPhoto 로 첨부한다. 외부 차트 URL(Finviz 등)은 403으로 막혀서 안 쓴다.
+- matplotlib 이 없거나 차트 데이터가 없으면 텍스트로만 보낸다.
+
+market.json / credit.json / liquidity.json / market_notes.json /
+breakout_cards.json / deepvalue_cards.json / extremes.json 을 읽는다
+-- 그 앞 단계들이 다 끝난 뒤에 돌아야 한다.
 """
 
 import html
+import io
 import sys
 import time
 
@@ -20,10 +27,16 @@ from common import DATA_DIR, env, now_kst, read_json
 API = "https://api.telegram.org/bot{token}/sendMessage"
 API_PHOTO = "https://api.telegram.org/bot{token}/sendPhoto"
 
+MORNING_CUTOFF_HOUR = 13   # 한국시간 이 시각 전에 돈 실행만 '아침'으로 본다
 
-def finviz_chart(ticker):
-    """Finviz 일봉 차트 이미지 URL. 티커만 넣으면 됨(키 불필요, 미국 종목)."""
-    return f"https://charts.finviz.com/chart.ashx?t={ticker}&ty=c&ta=1&p=d"
+
+# ---------------------------------------------------------------- 발송
+
+def _retry_after(r):
+    try:
+        return r.json().get("parameters", {}).get("retry_after", 5)
+    except Exception:
+        return 5
 
 
 def send(token, chat_id, text, tries=4):
@@ -37,11 +50,7 @@ def send(token, chat_id, text, tries=4):
         if r.ok:
             return True
         if r.status_code == 429:
-            # 응답의 retry_after 만큼 대기 후 재시도
-            try:
-                wait = r.json().get("parameters", {}).get("retry_after", 5)
-            except Exception:
-                wait = 5
+            wait = _retry_after(r)
             print(f"  429 -- {wait}초 대기 후 재시도", file=sys.stderr)
             time.sleep(wait + 1)
             continue
@@ -50,38 +59,191 @@ def send(token, chat_id, text, tries=4):
     return False
 
 
-def send_photo(token, chat_id, photo_url, caption, tries=4):
-    """차트 이미지(URL)를 캡션과 함께 보낸다. 429면 대기 후 재시도.
-    캡션은 1024자 제한이 있어 넘으면 잘라 뒤에 텍스트로 따로 보낸다."""
-    cap = caption if len(caption) <= 1024 else caption[:1000] + "…"
+def send_photo_bytes(token, chat_id, png, caption, tries=4):
+    """직접 그린 차트 PNG(바이트)를 캡션과 함께 보낸다.
+    캡션은 1024자 제한 -- 넘으면 사진엔 첫 줄만 달고 전체 내용은 텍스트로 이어 보낸다.
+    사진 발송이 실패하면 텍스트라도 보낸다."""
+    long_cap = len(caption) > 1024
+    cap = caption.split("\n", 1)[0] if long_cap else caption
     for attempt in range(tries):
         r = requests.post(
-            API_PHOTO.format(token=token), timeout=30,
-            json={"chat_id": chat_id, "photo": photo_url, "caption": cap,
-                  "parse_mode": "HTML"},
+            API_PHOTO.format(token=token), timeout=60,
+            data={"chat_id": chat_id, "caption": cap, "parse_mode": "HTML"},
+            files={"photo": ("chart.png", png, "image/png")},
         )
         if r.ok:
-            # 캡션이 잘렸으면 나머지를 텍스트로 이어 보냄
-            if len(caption) > 1024:
-                send(token, chat_id, caption[1000:])
+            if long_cap:
+                send(token, chat_id, caption)
             return True
         if r.status_code == 429:
-            try:
-                wait = r.json().get("parameters", {}).get("retry_after", 5)
-            except Exception:
-                wait = 5
+            wait = _retry_after(r)
             print(f"  사진 429 -- {wait}초 대기 후 재시도", file=sys.stderr)
             time.sleep(wait + 1)
             continue
-        # 사진 실패 시 텍스트라도 보낸다
         print(f"사진 실패: {r.status_code} {r.text[:150]} -- 텍스트로 대체", file=sys.stderr)
         return send(token, chat_id, caption)
     return send(token, chat_id, caption)
 
 
+# ---------------------------------------------------------------- 차트
+
+def _num(x):
+    try:
+        v = float(x)
+        return v if v == v else None   # NaN 제외
+    except (TypeError, ValueError):
+        return None
+
+
+def extract_series(raw):
+    """카드의 chart 값에서 (날짜목록 or None, 종가목록)을 뽑는다.
+    형식이 [숫자...], [[날짜, 종가]...], [{date, close}...] 어느 쪽이어도 받는다."""
+    if isinstance(raw, dict):
+        # {"dates": [...], "close": [...]} 같은 형태
+        closes = None
+        for k in ("close", "closes", "c", "values", "y", "prices"):
+            if isinstance(raw.get(k), list):
+                closes = raw[k]
+                break
+        dates = None
+        for k in ("dates", "date", "d", "t", "x"):
+            if isinstance(raw.get(k), list):
+                dates = raw[k]
+                break
+        if closes is None:
+            return None, []
+        raw = [[d, c] for d, c in zip(dates, closes)] if dates else closes
+
+    if not isinstance(raw, list):
+        return None, []
+
+    dates, closes = [], []
+    for p in raw:
+        d, c = None, None
+        if isinstance(p, (int, float, str)) and not isinstance(p, bool):
+            c = _num(p)
+        elif isinstance(p, (list, tuple)) and p:
+            c = _num(p[-1]) if len(p) >= 2 else _num(p[0])
+            d = p[0] if len(p) >= 2 else None
+        elif isinstance(p, dict):
+            for k in ("close", "c", "y", "v", "value", "price"):
+                if k in p:
+                    c = _num(p[k])
+                    break
+            for k in ("date", "d", "t", "x", "time"):
+                if k in p:
+                    d = p[k]
+                    break
+        if c is not None:
+            closes.append(c)
+            dates.append(d)
+    if not any(isinstance(d, str) and len(d) >= 7 for d in dates):
+        dates = None
+    return dates, closes
+
+
+def _ma(vals, n):
+    out, s = [], 0.0
+    for i, v in enumerate(vals):
+        s += v
+        if i >= n:
+            s -= vals[i - n]
+        out.append(s / n if i >= n - 1 else None)
+    return out
+
+
+def draw_chart(ticker, label, raw, color):
+    """1년 종가 라인 + 50/200일선 + 52주 고가/저가 표시. PNG 바이트를 돌려준다.
+    그릴 수 없으면 None. (러너에 한글 폰트가 없어 차트 안 글자는 영어만 쓴다)"""
+    try:
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+    except Exception:
+        print("  matplotlib 없음 -- 텍스트로만 보냄", file=sys.stderr)
+        return None
+
+    dates, closes = extract_series(raw)
+    if len(closes) < 20:
+        return None
+
+    x = list(range(len(closes)))
+    hi, lo, last = max(closes), min(closes), closes[-1]
+    first = closes[0]
+    chg_1y = (last / first - 1) * 100 if first else 0
+
+    fig, ax = plt.subplots(figsize=(8, 4.2), dpi=110)
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("white")
+
+    ax.fill_between(x, closes, lo * 0.98, color=color, alpha=0.08, linewidth=0)
+    ax.plot(x, closes, color=color, linewidth=1.8, label="Close")
+
+    for n, c, name in ((50, "#f59e0b", "MA50"), (200, "#6b7280", "MA200")):
+        if len(closes) >= n:
+            m = _ma(closes, n)
+            xs = [i for i, v in enumerate(m) if v is not None]
+            ax.plot(xs, [m[i] for i in xs], color=c, linewidth=1.1,
+                    linestyle="--" if n == 200 else "-", label=name)
+
+    ax.axhline(hi, color="#16a34a", linewidth=0.8, linestyle=":")
+    ax.axhline(lo, color="#dc2626", linewidth=0.8, linestyle=":")
+    ax.text(0, hi, f" 52W H {hi:,.2f}", color="#16a34a", fontsize=8, va="bottom")
+    ax.text(0, lo, f" 52W L {lo:,.2f}", color="#dc2626", fontsize=8, va="top")
+
+    ax.scatter([x[-1]], [last], color=color, s=22, zorder=5)
+    ax.annotate(f"{last:,.2f}", (x[-1], last), textcoords="offset points",
+                xytext=(6, 0), fontsize=9, color=color, fontweight="bold", va="center")
+
+    # x축: 날짜가 있으면 월 표시, 없으면 눈금 숨김
+    if dates:
+        ticks, labels, prev = [], [], None
+        for i, d in enumerate(dates):
+            ym = str(d)[:7] if d else None
+            if ym and ym != prev:
+                ticks.append(i)
+                labels.append(str(d)[2:7].replace("-", "."))
+                prev = ym
+        # 첫 달이 며칠만 걸쳐 있으면 라벨이 겹치니 뺀다
+        if len(ticks) >= 2 and ticks[1] - ticks[0] < 12:
+            ticks, labels = ticks[1:], labels[1:]
+        step = max(1, len(ticks) // 7)
+        ax.set_xticks(ticks[::step])
+        ax.set_xticklabels(labels[::step], fontsize=8)
+    else:
+        ax.set_xticks([])
+
+    ax.tick_params(axis="y", labelsize=8)
+    ax.set_xlim(0, len(closes) - 1 + len(closes) * 0.06)
+    for s in ("top", "right"):
+        ax.spines[s].set_visible(False)
+    ax.grid(axis="y", alpha=0.2)
+    ax.legend(loc="lower right", bbox_to_anchor=(1.0, 1.0), fontsize=7,
+              frameon=False, ncol=3, borderaxespad=0.2)
+    ax.set_title(f"{ticker}   {label}   1Y {chg_1y:+.1f}%",
+                 loc="left", fontsize=11, fontweight="bold", pad=8)
+
+    buf = io.BytesIO()
+    fig.tight_layout()
+    fig.savefig(buf, format="png")
+    plt.close(fig)
+    return buf.getvalue()
+
+
+# ---------------------------------------------------------------- 문구
 
 def fmt(v, suffix=""):
     return f"{v}{suffix}" if v is not None else "—"
+
+
+def signed(v, suffix=""):
+    if v is None:
+        return "—"
+    return f"{'+' if v > 0 else ''}{v}{suffix}"
+
+
+def esc(x):
+    return html.escape(str(x)) if x is not None else ""
 
 
 def build_market_msg():
@@ -92,16 +254,13 @@ def build_market_msg():
 
     lines = [f"<b>📊 시장 요약</b>  <i>{now_kst().strftime('%m/%d %H:%M')}</i>", ""]
 
-    # 지수
     for r in (m.get("indexes") or []):
         lines.append(f"· {html.escape(r.get('name',''))}: {signed(r.get('chg'), '%')}")
 
-    # VIX
     vix = next((r for r in (m.get("risk") or []) if r.get("label") == "VIX"), None)
     if vix:
         lines.append(f"· VIX: {fmt(vix.get('value'))}")
 
-    # 크레딧 / 순유동성
     hy = (cr.get("high_yield") or {}).get("value")
     if hy is not None:
         lines.append(f"· 하이일드 스프레드: {fmt(hy, '%p')}")
@@ -109,17 +268,12 @@ def build_market_msg():
     if nl is not None:
         lines.append(f"· 순유동성: {fmt(nl)}십억$")
 
-    # 오늘 마켓 총평
     situation = (notes.get("notes") or {}).get("situation")
     if situation:
-        lines += ["", f"<b>오늘 총평</b>", html.escape(situation)]
+        lines += ["", "<b>오늘 총평</b>", html.escape(situation)]
         lines.append("<i>자동 생성 · 참고용</i>")
 
     return "\n".join(lines)
-
-
-def esc(x):
-    return html.escape(str(x)) if x is not None else ""
 
 
 def usd_short(v):
@@ -145,10 +299,8 @@ def krw_short(v):
 def info_lines(c):
     """시총(원화)·거래대금(원화)·시총순위·기업개요 -- 카드에 있는 걸 텔레에도."""
     out = []
-    mc = c.get("marketCap")
-    tv = c.get("tradingValue")
-    parts = [f"시총 {usd_short(mc)}{krw_short(c.get('marketCapKrw'))}",
-             f"거래대금 {usd_short(tv)}{krw_short(c.get('tradingValueKrw'))}"]
+    parts = [f"시총 {usd_short(c.get('marketCap'))}{krw_short(c.get('marketCapKrw'))}",
+             f"거래대금 {usd_short(c.get('tradingValue'))}{krw_short(c.get('tradingValueKrw'))}"]
     if c.get("capRank"):
         parts.append(f"시총순위 {c['capRank']}위")
     out.append("  <i>" + " · ".join(parts) + "</i>")
@@ -157,20 +309,12 @@ def info_lines(c):
     return out
 
 
-def signed(v, suffix=""):
-    if v is None:
-        return "—"
-    return f"{'+' if v > 0 else ''}{v}{suffix}"
-
-
 def breakout_lines(cards):
-    """긴 조정 후 신고가 -- 종목마다 이름·티커·등락률·섹터·점수·게이트."""
     out = []
     for c in cards:
         m = c.get("meta") or {}
-        out.append(
-            f'· <b>{esc(c.get("name"))}</b> ({esc(c.get("ticker"))}) '
-            f'{signed(c.get("chg"), "%")}')
+        out.append(f'· <b>{esc(c.get("name"))}</b> ({esc(c.get("ticker"))}) '
+                   f'{signed(c.get("chg"), "%")}')
         detail = []
         if c.get("sector"):
             detail.append(esc(c["sector"]))
@@ -187,14 +331,12 @@ def breakout_lines(cards):
 
 
 def deepvalue_lines(cards):
-    """딥밸류 -- 이름·티커·등락률·섹터·점수·F스코어·왜 싼가."""
     out = []
     for c in cards:
         m = c.get("meta") or {}
         trig = " 🔥트리거" if m.get("triggered") else ""
-        out.append(
-            f'· <b>{esc(c.get("name"))}</b> ({esc(c.get("ticker"))}) '
-            f'{signed(c.get("chg"), "%")}{trig}')
+        out.append(f'· <b>{esc(c.get("name"))}</b> ({esc(c.get("ticker"))}) '
+                   f'{signed(c.get("chg"), "%")}{trig}')
         detail = []
         if c.get("sector"):
             detail.append(esc(c["sector"]))
@@ -213,74 +355,93 @@ def deepvalue_lines(cards):
 
 
 def extreme_lines(cards):
-    """신고가·신저가 -- 이름·티커·가격·등락률·섹터 + 시총·순위·기업개요."""
     out = []
     for c in cards:
-        out.append(
-            f'· <b>{esc(c.get("name"))}</b> ({esc(c.get("ticker"))}) '
-            f'${esc(c.get("price"))} {signed(c.get("chg"), "%")}')
+        out.append(f'· <b>{esc(c.get("name"))}</b> ({esc(c.get("ticker"))}) '
+                   f'${esc(c.get("price"))} {signed(c.get("chg"), "%")}')
         if c.get("sector"):
             out.append(f"  <i>{esc(c['sector'])}</i>")
         out += info_lines(c)
     return out
 
 
+# 섹션별: (차트 제목 영문, 차트 색)
+SECTIONS = {
+    "breakout":  ("NEW HIGH AFTER BASE", "#16a34a"),
+    "deepvalue": ("DEEP VALUE",          "#2563eb"),
+    "high":      ("52W HIGH",            "#059669"),
+    "low":       ("52W LOW",             "#dc2626"),
+}
+
+
 def build_screener_messages():
-    """스크리너 결과를 '메시지 목록'으로 만든다.
-    맨 앞은 섹션별 건수 요약 1개, 그다음 종목마다 개별 메시지 1개씩.
-    main 에서 종목당 하나씩 간격을 두고 보낸다."""
+    """(card or None, section or None, caption) 목록.
+    맨 앞은 건수 요약 1개, 그다음 종목마다 1개씩."""
     bo = (read_json(DATA_DIR / "breakout_cards.json") or {}).get("cards") or []
     dv = (read_json(DATA_DIR / "deepvalue_cards.json") or {}).get("cards") or []
     ex = read_json(DATA_DIR / "extremes.json") or {}
     highs = ex.get("high") or []
     lows = ex.get("low") or []
 
-    # (ticker or None, caption) 목록. ticker 가 있으면 차트 사진으로 보낸다.
-    messages = []
-    # 1) 요약 헤더 (사진 없음)
-    messages.append((None,
+    messages = [(None, None,
         f"<b>🔎 스크리너 결과</b>  <i>{now_kst().strftime('%m/%d')}</i>\n"
         f"· 긴 조정 후 신고가 {len(bo)}건\n"
         f"· 딥밸류 {len(dv)}건\n"
-        f"· 52주 신고가 {len(highs)}건 · 신저가 {len(lows)}건"))
+        f"· 52주 신고가 {len(highs)}건 · 신저가 {len(lows)}건")]
 
-    # 2) 종목마다 (차트 사진 + 상세 캡션)
     for c in bo:
-        messages.append((c.get("ticker"), "🟢 <b>[신고가]</b>\n" + "\n".join(breakout_lines([c]))))
+        messages.append((c, "breakout", "🟢 <b>[신고가]</b>\n" + "\n".join(breakout_lines([c]))))
     for c in dv:
-        messages.append((c.get("ticker"), "🔵 <b>[딥밸류]</b>\n" + "\n".join(deepvalue_lines([c]))))
+        messages.append((c, "deepvalue", "🔵 <b>[딥밸류]</b>\n" + "\n".join(deepvalue_lines([c]))))
     for c in highs:
-        messages.append((c.get("ticker"), "🔺 <b>[52주 신고가]</b>\n" + "\n".join(extreme_lines([c]))))
+        messages.append((c, "high", "🔺 <b>[52주 신고가]</b>\n" + "\n".join(extreme_lines([c]))))
     for c in lows:
-        messages.append((c.get("ticker"), "🔻 <b>[52주 신저가]</b>\n" + "\n".join(extreme_lines([c]))))
+        messages.append((c, "low", "🔻 <b>[52주 신저가]</b>\n" + "\n".join(extreme_lines([c]))))
     return messages
 
 
+# ---------------------------------------------------------------- 실행
+
+def is_morning_run():
+    if env("DIGEST_FORCE"):
+        return True
+    return now_kst().hour < MORNING_CUTOFF_HOUR
+
+
 def main():
-    # 요약은 전용 봇+전용 채널로 보낸다. 전용 값이 있으면 그걸,
-    # 없으면 기존 봇/채널로 폴백한다.
+    if not is_morning_run():
+        print(f"저녁 실행({now_kst().strftime('%H:%M')} KST) -- 요약 발송은 아침에만. 건너뜁니다.")
+        return
+
     token = env("TELEGRAM_DIGEST_BOT_TOKEN") or env("TELEGRAM_BOT_TOKEN")
     chat_id = env("TELEGRAM_DIGEST_CHAT_ID") or env("TELEGRAM_CHAT_ID")
     if not token or not chat_id:
         print("텔레그램 설정이 없어 발송을 건너뜁니다.")
         return
 
-    ok = 0
+    ok, charts = 0, 0
     if send(token, chat_id, build_market_msg()):
         ok += 1
 
-    # 스크리너는 종목당 하나씩. 차트 사진 + 상세 캡션. 텔레 제한 피해 3초 간격.
     messages = build_screener_messages()
-    for i, (ticker, caption) in enumerate(messages):
-        if ticker:
-            done = send_photo(token, chat_id, finviz_chart(ticker), caption)
+    for i, (card, section, caption) in enumerate(messages):
+        png = None
+        if card is not None:
+            label, color = SECTIONS[section]
+            try:
+                png = draw_chart(card.get("ticker") or "", label, card.get("chart"), color)
+            except Exception as e:
+                print(f"  {card.get('ticker')} 차트 실패: {e}", file=sys.stderr)
+        if png:
+            done = send_photo_bytes(token, chat_id, png, caption)
+            charts += 1
         else:
             done = send(token, chat_id, caption)
         if done:
             ok += 1
         if i < len(messages) - 1:
             time.sleep(3)
-    print(f"발송 {ok}건")
+    print(f"발송 {ok}건 (차트 {charts}장)")
 
 
 if __name__ == "__main__":
