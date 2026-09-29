@@ -1,10 +1,11 @@
-name: 센텔리안24 아마존
+name: 아마존·수출입·배너
 
 on:
   schedule:
-    # UTC 기준입니다. 한국시간 매일 아침 7시 반, 하루 한 번.
-    # 아마존 시트 + 수출입 통계를 받습니다. 새 자료가 없으면 그대로 둡니다.
+    # UTC 기준입니다. 한국시간 아침 7시 반, 저녁 6시.
+    # 배너(금리·유가·환율)는 두 번 다 갱신. 아마존·수출입은 새 자료가 없으면 그대로 둡니다.
     - cron: "30 22 * * *"
+    - cron: "0 9 * * *"
   workflow_dispatch:        # 저장소 Actions 탭에서 손으로도 돌릴 수 있습니다
 
 permissions:
@@ -28,13 +29,16 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: 머리말 배너 (금리·유가·환율)
+        run: python scripts/fetch_banner.py
+        continue-on-error: true
+
       - name: 시트 읽기 → 패널 데이터·이력 갱신
         run: python scripts/fetch_amazon.py
         continue-on-error: true
 
       - name: 수출입 통계 (관세청)
-        # 처음 한 번은 2023년부터 전부 받아서 10~20분 걸릴 수 있다.
-        # 이후엔 새 달이 없으면 금방 끝난다.
+        # 새 달이 없으면 금방 끝난다. 새 달·7일 경과·빠진 나라가 있을 때만 다시 받는다.
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: |
@@ -46,10 +50,10 @@ jobs:
         run: |
           git config user.name "dashboard-bot"
           git config user.email "bot@users.noreply.github.com"
-          for f in docs/data/amazon.json docs/data/trade.json history; do
+          for f in docs/data/banner.json docs/data/amazon.json docs/data/trade.json history; do
             if [ -e "$f" ]; then git add "$f"; fi
           done
           git diff --staged --quiet && exit 0
-          git commit -m "아마존·수출입 갱신 $(date -u +%Y-%m-%dT%H:%MZ)"
+          git commit -m "배너·아마존·수출입 갱신 $(date -u +%Y-%m-%dT%H:%MZ)"
           git pull --rebase
           git push
