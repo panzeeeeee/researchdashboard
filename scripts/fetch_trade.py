@@ -97,19 +97,25 @@ def parse(xml_text, hs):
     return out
 
 
-def call(url, params):
-    for attempt in range(3):
+TRANSIENT = ("01 ", "04 ", "05 ", "23 ", "HTTP 5", "접속 실패")
+
+
+def call_parse(url, params, hs, tries=5):
+    """한 번 요청해서 해석까지. 중계 서버의 일시 오류는 쉬었다가 다시 시도한다."""
+    for attempt in range(tries):
         try:
-            r = requests.get(url, params=params, timeout=40)
+            try:
+                r = requests.get(url, params=params, timeout=40)
+            except Exception as ex:
+                raise ApiRefused(f"접속 실패: {ex}")
             if r.status_code != 200:
                 raise ApiRefused(f"HTTP {r.status_code} {r.text[:150]}")
-            return r.text
-        except ApiRefused:
+            return parse(r.text, hs)
+        except ApiRefused as ex:
+            if attempt < tries - 1 and str(ex).startswith(TRANSIENT):
+                time.sleep(5 * (attempt + 1))
+                continue
             raise
-        except Exception as ex:
-            if attempt == 2:
-                raise ApiRefused(f"접속 실패: {ex}")
-            time.sleep(3)
 
 
 def fetch(url, key, hs, start, end, cntyCd=None):
@@ -119,7 +125,7 @@ def fetch(url, key, hs, start, end, cntyCd=None):
              "endYymm": e.replace("-", ""), "hsSgn": hs}
         if cntyCd:
             p["cntyCd"] = cntyCd
-        got.update(parse(call(url, p), hs))
+        got.update(call_parse(url, p, hs))
         time.sleep(0.25)
     return got
 
@@ -234,14 +240,17 @@ def main():
     stale = (not last_full or
              (today.date() - datetime.date.fromisoformat(last_full)).days >= REFRESH_DAYS)
     new_month = newest and newest > (prev.get("latest_month") or "")
+    missing = False
     for t in themes_cfg:
         if t["key"] not in old or old[t["key"]].get("hs") != str(t["hs"]):
             need_all.add(t["key"])            # 처음 보는 테마·코드가 바뀐 테마는 전부
-    if not (stale or new_month or need_all):
+        elif prev.get("retry_countries", {}).get(t["key"]):
+            missing = True                    # 지난번에 실패한 나라가 있으면 다시
+    if not (stale or new_month or need_all or missing):
         print(f"새 달 없음(최신 {prev.get('latest_month')}) · 마지막 전체 갱신 {last_full} -- 그대로 둡니다.")
         return
 
-    out_themes, failed = [], []
+    out_themes, failed, retry = [], [], {}
     for t in themes_cfg:
         hs = str(t["hs"])
         full = t["key"] in need_all
@@ -255,11 +264,13 @@ def main():
             print(f"  {t['name']} 전체 실패: {ex}", file=sys.stderr)
             failed.append(t["key"])
         for cc in countries:
+            c_start = start if (cc in by_c and by_c[cc]) else START
             try:
-                got = fetch(API_CNTY, key, hs, start, end, cc)
+                got = fetch(API_CNTY, key, hs, c_start, end, cc)
                 by_c.setdefault(cc, {}).update({k: tuple(v) for k, v in got.items()})
             except ApiRefused as ex:
-                print(f"  {t['name']}·{cc} 실패: {ex}", file=sys.stderr)
+                print(f"  {t['name']}·{cc} 실패: {ex}", file=sys.stderr, flush=True)
+                retry.setdefault(t["key"], []).append(cc)
         rec = {
             "key": t["key"], "name": t["name"], "group": t.get("group", ""), "hs": hs,
             "world": [[ym, round(v[0]), round(v[1])] for ym, v in sorted(world.items())],
@@ -268,7 +279,7 @@ def main():
         }
         rec["stats"] = theme_stats(rec, countries)
         out_themes.append(rec)
-        print(f"  {t['name']}: {len(rec['world'])}개월 · 나라 {len(rec['by_country'])}곳")
+        print(f"  {t['name']}: {len(rec['world'])}개월 · 나라 {len(rec['by_country'])}곳", flush=True)
 
     months = sorted({s[0] for t in out_themes for s in t["world"]})
     if not months:
@@ -284,20 +295,30 @@ def main():
         "themes": out_themes,
         "signals": make_signals(out_themes),
         "failed": failed,
+        "retry_countries": retry,
     }
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
+    # 이력: 기존 기록에 합친다. 같은 (월, 테마, HS, 나라)는 최신 값으로 바꾸고,
+    # 목록에서 빠진 테마나 나라의 옛 기록은 그대로 남긴다.
     HISTORY.parent.mkdir(parents=True, exist_ok=True)
+    hist = {}
+    if HISTORY.exists():
+        with HISTORY.open(encoding="utf-8", newline="") as f:
+            for r in csv.DictReader(f):
+                hist[(r["month"], r["theme"], r["hs"], r["country"])] = (r["export_usd"], r["export_kg"])
+    for t in out_themes:
+        for ym, usd, kg in t["world"]:
+            hist[(ym, t["name"], t["hs"], "전체")] = (usd, kg)
+        for cc, ser in t["by_country"].items():
+            for ym, usd, kg in ser:
+                hist[(ym, t["name"], t["hs"], countries.get(cc, cc))] = (usd, kg)
     with HISTORY.open("w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(["month", "theme", "hs", "country", "export_usd", "export_kg"])
-        for t in out_themes:
-            for ym, usd, kg in t["world"]:
-                w.writerow([ym, t["name"], t["hs"], "전체", usd, kg])
-            for cc, ser in t["by_country"].items():
-                for ym, usd, kg in ser:
-                    w.writerow([ym, t["name"], t["hs"], countries.get(cc, cc), usd, kg])
+        for k in sorted(hist):
+            w.writerow([*k, *hist[k]])
 
     print(f"테마 {len(out_themes)}개 · {months[0]}~{months[-1]} · 신호 {len(data['signals'])}건"
           f" · 실패 {','.join(failed) or '없음'}")
