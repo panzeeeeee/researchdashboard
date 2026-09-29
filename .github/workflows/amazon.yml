@@ -46,6 +46,13 @@ jobs:
           python scripts/fetch_trade.py
         continue-on-error: true
 
+      - name: 미국 실적 레이더 (SEC 8-K)
+        # 최근 40시간 안에 접수된 실적 공시를 모은다. 이미 받은 건 건너뛴다.
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python scripts/fetch_earnings.py
+        continue-on-error: true
+
       - name: 결과 커밋
         run: |
           git config user.name "dashboard-bot"
