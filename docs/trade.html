@@ -67,6 +67,10 @@ td.r,th.r{text-align:right}
 .kpi .c{font-size:.72rem;color:var(--ink-3)} .kpi .b{font-size:1.2rem;font-weight:700;font-variant-numeric:tabular-nums}
 .legend{display:flex;flex-wrap:wrap;gap:.3rem .9rem;margin-top:.4rem;font-size:.76rem;color:var(--ink-2)}
 .legend i{display:inline-block;width:14px;height:0;border-top:2.5px solid;margin-right:.3rem;vertical-align:middle}
+/* 리서치 콘솔 안에 끼워 보일 때(trade.html?embed=1): 머리말 숨기고 여백 없앰 */
+body.embed{background:transparent}
+body.embed header{display:none}
+body.embed .wrap{padding:0;max-width:none}
 </style>
 </head>
 <body>
@@ -94,6 +98,7 @@ td.r,th.r{text-align:right}
 </div>
 
 <script>
+if (new URLSearchParams(location.search).has("embed")) document.body.classList.add("embed");
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const usd = v => v == null ? "—" : v >= 1e9 ? "$" + (v / 1e9).toFixed(2) + "B"
   : v >= 1e6 ? "$" + (v / 1e6).toFixed(0) + "M" : "$" + Math.round(v / 1e3) + "K";
