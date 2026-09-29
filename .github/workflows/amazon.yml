@@ -50,9 +50,9 @@ jobs:
         run: |
           git config user.name "dashboard-bot"
           git config user.email "bot@users.noreply.github.com"
-          for f in docs/data/banner.json docs/data/amazon.json docs/data/trade.json history; do
-            if [ -e "$f" ]; then git add "$f"; fi
-          done
+          # docs/data 폴더 전체를 올린다 -- 새 화면용 파일이 생겨도 여기를 고칠 필요 없음
+          git add docs/data
+          if [ -e history ]; then git add history; fi
           git diff --staged --quiet && exit 0
           git commit -m "배너·아마존·수출입 갱신 $(date -u +%Y-%m-%dT%H:%MZ)"
           git pull --rebase
