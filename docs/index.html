@@ -220,6 +220,7 @@ tr:last-child td{border-bottom:none}
   <a href="#extremes">신고가·신저가<br>카드</a>
   <a href="#calls">컨콜 흐름</a>
   <a href="#amazon">센텔리안24<br>아마존</a>
+  <a href="#trade">수출입 레이더</a>
   <a href="#news">섹터 뉴스 <span class="count" id="c-news"></span></a>
   <div class="divider"></div>
   <a href="#soon">준비 중</a>
@@ -327,6 +328,13 @@ tr:last-child td{border-bottom:none}
 <section id="amazon">
   <h2>센텔리안24 아마존<span class="tagline" id="amazon-tag">구글 시트 기준 · 매일 아침 반영</span></h2>
   <div id="amazon-box"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="trade">
+  <h2>수출입 레이더<span class="tagline">관세청 무역통계 · 테마별 월간 수출 ·
+    <a href="trade.html" target="_blank" rel="noopener" style="color:var(--accent)">따로 열기</a></span></h2>
+  <iframe id="trade-frame" title="수출입 레이더" loading="lazy"
+    style="width:100%;border:0;display:block;min-height:600px"></iframe>
 </section>
 
 <section id="news">
@@ -2048,6 +2056,28 @@ function renderAmazon(data) {
     Object.fromEntries(blockNames.map((n, i) => [n, "amazon-t-" + i])));
   draw();
 }
+
+// ── 수출입 레이더 ─────────────────────────────────────────────
+// trade.html 을 그대로 끼워 보여준다. 처음 이 메뉴를 열 때 불러오고,
+// 안쪽 내용 높이에 맞춰 틀 높이를 계속 맞춘다(안에서 스크롤바가 생기지 않게).
+(function () {
+  const frame = document.getElementById("trade-frame");
+  if (!frame) return;
+  const fit = () => {
+    try {
+      const d = frame.contentDocument;
+      if (d && d.documentElement) frame.style.height = d.documentElement.scrollHeight + "px";
+    } catch (e) { /* 다른 주소에서 열리면 높이 맞춤만 생략 */ }
+  };
+  frame.addEventListener("load", () => {
+    fit();
+    try { new ResizeObserver(fit).observe(frame.contentDocument.body); } catch (e) {}
+  });
+  const load = () => { if (!frame.src) frame.src = "trade.html?embed=1"; };
+  if (location.hash === "#trade") load();
+  document.querySelectorAll('a[href="#trade"]').forEach(a => a.addEventListener("click", () => setTimeout(() => { load(); fit(); }, 0)));
+  window.addEventListener("popstate", () => { if (location.hash === "#trade") load(); });
+})();
 
 fetch("data/amazon.json?t=" + Date.now())
   .then(r => r.ok ? r.json() : null)
