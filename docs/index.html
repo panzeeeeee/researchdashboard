@@ -17,9 +17,11 @@
          --navy:#0a1420; --navy-2:#122032; --navy-ink:#f4f6f8; --navy-ink-2:#8fa2b6; }
 }
 *{box-sizing:border-box}
+/* 전체 글씨 크기 기준: 16px → 18px. rem 으로 적힌 모든 글씨가 같이 커진다 */
+html{font-size:18px}
 body{margin:0;background:var(--paper);color:var(--ink);
   font-family:Pretendard,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  font-size:1rem;line-height:1.65;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1180px;margin:0 auto;padding:2rem 1.25rem 4rem}
 
 header{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
@@ -47,9 +49,21 @@ main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;b
   #breakout,#deepvalue,#extremes{--sg:#EF9F27}
   #portfolio,#calls,#amazon,#trade{--sg:#F0997B}
 }
+/* 머리말 배너: 금리·유가·환율 */
+.ticker{flex-basis:100%;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;
+  margin-top:.4rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+.ticker:empty{display:none}
+.tk{flex:1 0 auto;min-width:108px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  border-radius:10px;padding:.45rem .7rem}
+.tk .l{font-size:.72rem;color:var(--navy-ink-2);white-space:nowrap}
+.tk .v{font-size:1.05rem;font-weight:700;color:var(--navy-ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tk .c{font-size:.76rem;font-weight:600;margin-left:.3rem}
+.tk .c.u{color:#7ee2a8} .tk .c.d{color:#ff9d94} .tk .c.z{color:var(--navy-ink-2)}
+.tk.stale{opacity:.55}
+.ticker-asof{font-size:.7rem;color:var(--navy-ink-2);align-self:center;white-space:nowrap;padding:0 .3rem}
 .tagline{font-size:.82rem;font-weight:400;color:var(--ink-3);margin-left:.55rem}
 
-.layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:2rem;align-items:start}
+.layout{display:grid;grid-template-columns:200px minmax(0,1fr);gap:2rem;align-items:start}
 nav{position:sticky;top:1rem;max-height:calc(100vh - 2rem);overflow-y:auto;scrollbar-width:thin}
 nav a{display:block;font-size:.9rem;color:var(--ink-2);text-decoration:none;
   padding:.55rem .75rem;border-radius:8px;margin-bottom:.15rem;line-height:1.35;font-weight:500}
@@ -85,7 +99,10 @@ nav a.soon{font-size:.78rem;color:var(--ink-3);margin-top:.2rem}
 main section{display:none}
 main section.on{display:block}
 @media (max-width:760px){
-  .layout{grid-template-columns:1fr;gap:1rem}
+  .wrap{padding:1rem .8rem 3rem}
+  .group,.slot,.callout{padding:1rem}
+  .layout{grid-template-columns:minmax(0,1fr);gap:1rem}
+  main,nav{min-width:0}
   header{border-radius:10px;padding:1.15rem 1.25rem}
   nav{position:static;max-height:none;display:flex;gap:.35rem;overflow-x:auto;
     padding-bottom:.5rem;border-bottom:1px solid var(--rule)}
@@ -218,7 +235,7 @@ tr:last-child td{border-bottom:none}
 
 /* 센텔리안24 아마존 */
 .amz-chart{width:100%;height:auto;display:block}
-.amz-chart text{font-family:inherit;fill:var(--ink-3);font-size:11px}
+.amz-chart text{font-family:inherit;fill:var(--ink-3);font-size:13px}
 .amz-legend{display:flex;flex-wrap:wrap;gap:.35rem .8rem;margin:.5rem 0 0}
 .amz-legend button{background:none;border:none;padding:0;cursor:pointer;font-family:inherit;
   font-size:.76rem;color:var(--ink-2);display:flex;align-items:center;gap:.35rem}
@@ -244,6 +261,7 @@ tr:last-child td{border-bottom:none}
     <h1>모닝 브리프</h1>
   </div>
   <span class="meta" id="stamp">불러오는 중</span>
+  <div class="ticker" id="ticker"></div>
 </header>
 
 <div class="layout">
@@ -1886,7 +1904,8 @@ const amzNum = v => (typeof v === "number") ? fmtNum(v) : esc(nz(v));
 
 // 여러 상품을 한 차트에 겹친다. 날짜 간격이 들쭉날쭉해서 실제 날짜 위치에 점을 찍는다.
 function amzChart(lines, opt) {
-  const W = 720, H = 280, L = 58, R = 16, T = 14, B = 30;
+  const narrow = window.innerWidth < 700;
+  const W = narrow ? 400 : 720, H = narrow ? 260 : 280, L = narrow ? 52 : 62, R = 14, T = 14, B = 30;
   const pts = lines.flatMap(l => l.series.filter(p => typeof p[1] === "number" && (!opt.log || p[1] > 0)));
   if (pts.length < 2) return '<p class="note">이 지표는 아직 자료가 부족합니다.</p>';
 
@@ -1927,7 +1946,7 @@ function amzChart(lines, opt) {
              <text x="${L - 6}" y="${yy}" text-anchor="end" dominant-baseline="middle">${fmtNum(v)}</text>`;
   });
   const dates = [...new Set(pts.map(p => p[0]))].sort();
-  const stride = Math.max(1, Math.ceil(dates.length / 10));
+  const stride = Math.max(1, Math.ceil(dates.length / (narrow ? 5 : 10)));
   dates.forEach((d, i) => {
     if (i % stride && i !== dates.length - 1) return;
     grid += `<text x="${X(d).toFixed(1)}" y="${H - 8}" text-anchor="middle">${esc(d.slice(5))}</text>`;
@@ -2137,6 +2156,26 @@ function renderAmazon(data) {
   document.querySelectorAll('a[href="#trade"]').forEach(a => a.addEventListener("click", () => setTimeout(() => { load(); fit(); }, 0)));
   window.addEventListener("popstate", () => { if (location.hash === "#trade") load(); });
 })();
+
+// ── 머리말 배너 (data/banner.json, 하루 두 번 갱신) ─────────────────
+fetch("data/banner.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(b => {
+  const box = document.getElementById("ticker");
+  if (!box || !b || !b.items) return;
+  const fmtV = i => i.kind === "yield" ? i.value.toFixed(2) + "%"
+    : i.kind === "spread" ? (i.value > 0 ? "+" : "") + i.value + "bp"
+    : i.value >= 100 ? i.value.toLocaleString("ko-KR", { maximumFractionDigits: 1 }) : i.value.toFixed(2);
+  const fmtC = i => {
+    if (i.chg == null) return "";
+    const cls = i.chg > 0 ? "u" : i.chg < 0 ? "d" : "z";
+    const unit = i.kind === "px" ? "%" : "bp";
+    return `<span class="c ${cls}">${i.chg > 0 ? "+" : ""}${i.chg}${unit}</span>`;
+  };
+  box.innerHTML = b.items.map(i => `
+    <div class="tk ${i.stale ? "stale" : ""}" title="${esc(i.label)} · ${esc(i.asof || "")} 기준${i.stale ? " (이번엔 못 받아 직전 값)" : ""}">
+      <div class="l">${esc(i.label)}</div>
+      <div class="v">${fmtV(i)}${fmtC(i)}</div>
+    </div>`).join("") + `<div class="ticker-asof">${esc(b.updated.slice(5))} 기준<br>실시간 아님</div>`;
+});
 
 fetch("data/amazon.json?t=" + Date.now())
   .then(r => r.ok ? r.json() : null)
