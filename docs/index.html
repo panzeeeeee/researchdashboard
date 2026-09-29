@@ -41,12 +41,31 @@ nav a:hover{background:var(--card);color:var(--ink)}
 nav a.on{color:#fff;background:var(--accent);font-weight:700}
 nav a.on .count{color:rgba(255,255,255,.8)}
 nav .count{float:right;color:var(--ink-3);font-size:.74rem;font-weight:400}
-nav .divider{height:1px;background:var(--rule);margin:1rem .6rem .5rem}
-nav .gl{font-size:.7rem;font-weight:600;color:var(--ink-3);letter-spacing:.06em;
-  margin:1.1rem .75rem .3rem;line-height:1}
-nav .gl:first-child{margin-top:.2rem}
-nav a{white-space:nowrap}
-nav a.soon{font-size:.78rem;color:var(--ink-3)}
+nav .divider{height:1px;background:var(--rule);margin:.6rem}
+/* 사이드바 묶음: 카드 + 묶음별 색 (--g 진한 색, --gb 테두리, --gt 카드 바탕, --gh 마우스 올림) */
+nav .ngrp{background:var(--gt);border:1.5px solid var(--gb);border-radius:12px;
+  padding:.5rem .35rem .35rem;margin-bottom:.65rem}
+nav .ngrp .gl{display:flex;align-items:center;gap:.4rem;font-size:.76rem;font-weight:800;
+  letter-spacing:.05em;color:var(--g);margin:.15rem .5rem .35rem;line-height:1}
+nav .ngrp .gl::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--g)}
+nav .ngrp a{margin-bottom:.05rem;white-space:nowrap;color:var(--ink)}
+nav .ngrp a:hover{background:var(--gh);color:var(--ink)}
+nav .ngrp a.on{background:var(--g);color:var(--g-on)}
+nav .g1{--g:#0F6E56;--gb:#5DCAA5;--gt:#E1F5EE;--gh:#9FE1CB}
+nav .g2{--g:#185FA5;--gb:#85B7EB;--gt:#E6F1FB;--gh:#B5D4F4}
+nav .g3{--g:#534AB7;--gb:#AFA9EC;--gt:#EEEDFE;--gh:#CECBF6}
+nav .g4{--g:#854F0B;--gb:#EF9F27;--gt:#FAEEDA;--gh:#FAC775}
+nav .g5{--g:#993C1D;--gb:#F0997B;--gt:#FAECE7;--gh:#F5C4B3}
+nav .ngrp{--g-on:#fff}
+@media (prefers-color-scheme: dark){
+  nav .g1{--g:#5DCAA5;--gb:#0F6E56;--gt:#0f2a23;--gh:#085041}
+  nav .g2{--g:#85B7EB;--gb:#185FA5;--gt:#0f2236;--gh:#0C447C}
+  nav .g3{--g:#AFA9EC;--gb:#534AB7;--gt:#1d1a3a;--gh:#3C3489}
+  nav .g4{--g:#EF9F27;--gb:#854F0B;--gt:#2e2108;--gh:#633806}
+  nav .g5{--g:#F0997B;--gb:#993C1D;--gt:#331a10;--gh:#712B13}
+  nav .ngrp{--g-on:#12151a}
+}
+nav a.soon{font-size:.78rem;color:var(--ink-3);margin-top:.2rem}
 main section{display:none}
 main section.on{display:block}
 @media (max-width:760px){
@@ -58,6 +77,9 @@ main section.on{display:block}
   nav a.on{background:var(--accent);color:#fff}
   nav a br{display:none}
   nav .count,nav .divider,nav .gl{display:none}
+  nav .ngrp{display:contents}
+  nav .ngrp .gl{display:none}
+  nav .ngrp a{margin-bottom:0}
   .brow{grid-template-columns:76px 1fr 54px !important;gap:.4rem !important}
 }
 
@@ -209,35 +231,39 @@ tr:last-child td{border-bottom:none}
 <div class="layout">
 
 <nav id="nav">
-  <p class="gl">오늘</p>
-  <a href="#picks" class="on">오늘의 종목 <span class="count" id="c-picks"></span></a>
-  <a href="#hotnews">주요뉴스</a>
-  <a href="#news">섹터 뉴스 <span class="count" id="c-news"></span></a>
-  <a href="#calendar">주요 일정</a>
-
-  <p class="gl">시장</p>
-  <a href="#market">미국 시황</a>
-  <a href="#breadth">섹터 온도</a>
-  <a href="#commodities">원자재·귀금속</a>
-  <a href="#macro">경제 지표</a>
-
-  <p class="gl">돈의 흐름</p>
-  <a href="#liquidity">글로벌 유동성</a>
-  <a href="#credit">크레딧 스프레드</a>
-  <a href="#moneymarket">자금시장</a>
-
-  <p class="gl">스크리너</p>
-  <a href="#breakout">긴 조정 후 신고가</a>
-  <a href="#deepvalue">딥밸류</a>
-  <a href="#extremes">신고가·신저가</a>
-
-  <p class="gl">내 종목·리서치</p>
-  <a href="#portfolio">포트폴리오</a>
-  <a href="#calls">컨콜 흐름</a>
-  <a href="#amazon">센텔리안24 아마존</a>
-  <a href="#trade">수출입 레이더</a>
-
-  <div class="divider"></div>
+  <div class="ngrp g1">
+    <p class="gl">오늘</p>
+    <a href="#picks" class="on">오늘의 종목 <span class="count" id="c-picks"></span></a>
+    <a href="#hotnews">주요뉴스</a>
+    <a href="#news">섹터 뉴스 <span class="count" id="c-news"></span></a>
+    <a href="#calendar">주요 일정</a>
+  </div>
+  <div class="ngrp g2">
+    <p class="gl">시장</p>
+    <a href="#market">미국 시황</a>
+    <a href="#breadth">섹터 온도</a>
+    <a href="#commodities">원자재·귀금속</a>
+    <a href="#macro">경제 지표</a>
+  </div>
+  <div class="ngrp g3">
+    <p class="gl">돈의 흐름</p>
+    <a href="#liquidity">글로벌 유동성</a>
+    <a href="#credit">크레딧 스프레드</a>
+    <a href="#moneymarket">자금시장</a>
+  </div>
+  <div class="ngrp g4">
+    <p class="gl">스크리너</p>
+    <a href="#breakout">긴 조정 후 신고가</a>
+    <a href="#deepvalue">딥밸류</a>
+    <a href="#extremes">신고가·신저가</a>
+  </div>
+  <div class="ngrp g5">
+    <p class="gl">내 종목·리서치</p>
+    <a href="#portfolio">포트폴리오</a>
+    <a href="#calls">컨콜 흐름</a>
+    <a href="#amazon">센텔리안24 아마존</a>
+    <a href="#trade">수출입 레이더</a>
+  </div>
   <a href="#soon" class="soon">준비 중</a>
 </nav>
 
