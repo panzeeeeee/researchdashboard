@@ -170,6 +170,24 @@ tr:last-child td{border-bottom:none}
 .chart-xaxis span{position:absolute;transform:translateX(-50%);
   font-size:.68rem;color:var(--ink-3)}
 .chart-grid{stroke:var(--rule);stroke-width:1;vector-effect:non-scaling-stroke}
+
+/* 센텔리안24 아마존 */
+.amz-chart{width:100%;height:auto;display:block}
+.amz-chart text{font-family:inherit;fill:var(--ink-3);font-size:11px}
+.amz-legend{display:flex;flex-wrap:wrap;gap:.35rem .8rem;margin:.5rem 0 0}
+.amz-legend button{background:none;border:none;padding:0;cursor:pointer;font-family:inherit;
+  font-size:.76rem;color:var(--ink-2);display:flex;align-items:center;gap:.35rem}
+.amz-legend button.off{opacity:.35}
+.amz-legend i{display:inline-block;width:16px;height:0;border-top:2.5px solid}
+.amz-legend i.dash{border-top-style:dashed}
+.slot .amz-sale{font-size:.66rem;font-weight:700;color:#fff;background:var(--down);
+  border-radius:4px;padding:.02rem .35rem;margin-left:.3rem;vertical-align:middle}
+#amazon td a{color:var(--ink);text-decoration:none;font-weight:500}
+#amazon td a:hover{color:var(--accent)}
+.amz-memo summary{cursor:pointer;font-size:.86rem;font-weight:600;color:var(--ink-2)}
+.amz-memo dl{margin:.6rem 0 0;font-size:.84rem}
+.amz-memo dt{font-weight:600;margin-top:.55rem}
+.amz-memo dd{margin:.1rem 0 0;color:var(--ink-2)}
 </style>
 </head>
 <body>
@@ -201,6 +219,7 @@ tr:last-child td{border-bottom:none}
   <a href="#breakout">긴 조정 후<br>52주 신고가</a>
   <a href="#extremes">신고가·신저가<br>카드</a>
   <a href="#calls">컨콜 흐름</a>
+  <a href="#amazon">센텔리안24<br>아마존</a>
   <a href="#news">섹터 뉴스 <span class="count" id="c-news"></span></a>
   <div class="divider"></div>
   <a href="#soon">준비 중</a>
@@ -303,6 +322,11 @@ tr:last-child td{border-bottom:none}
 <section id="calls">
   <h2>컨콜 흐름<span class="tagline">최근 3년</span></h2>
   <div id="calls-box"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="amazon">
+  <h2>센텔리안24 아마존<span class="tagline" id="amazon-tag">구글 시트 기준 · 매일 아침 반영</span></h2>
+  <div id="amazon-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="news">
@@ -1773,6 +1797,262 @@ Promise.all([
     '<p class="note">data/news.json 을 찾지 못했습니다. Actions 탭에서 수집을 실행하세요.</p>';
   setupNav();
 });
+
+// ── 센텔리안24 아마존 ─────────────────────────────────────────
+// data/amazon.json (fetch_amazon.py 가 구글 시트에서 만든 것)을 따로 불러온다.
+// 다른 패널과 독립이라, 이 파일이 없거나 깨져도 나머지 화면에는 영향이 없다.
+const AMZ_CORE_COLORS = ["#0f6e56", "#2563eb", "#d97706", "#9333ea", "#db2777"];
+const AMZ_COMP_COLORS = ["#64748b", "#a16207", "#0891b2", "#be123c", "#15803d"];
+const AMZ_METRICS = {
+  bsr:    { kind: "bsr_main", label: "BSR 전체순위", log: true, invert: true,
+            note: "Beauty & Personal Care 순위 · 위로 갈수록 좋음 · 로그 눈금" },
+  bought: { kind: "bought", label: "월 구매수", log: true, note: "bought in past month · 로그 눈금" },
+  review: { kind: "review", label: "리뷰 수", log: true, note: "누적 리뷰 · 로그 눈금" },
+  price:  { kind: "price", label: "가격", log: false, note: "달러 · 할인 반영된 판매가" },
+};
+
+const amzShort = p => p.name.replace(/^[A-Z]?\d+\s+/, "").slice(0, 28);
+const amzMetric = (p, kind) => (p.metrics || []).find(m => m.kind === kind);
+const amzLast = m => (m && m.series && m.series.length) ? m.series[m.series.length - 1] : null;
+const amzPrev = m => (m && m.series && m.series.length > 1) ? m.series[m.series.length - 2] : null;
+const amzNum = v => (typeof v === "number") ? fmtNum(v) : esc(nz(v));
+
+// 여러 상품을 한 차트에 겹친다. 날짜 간격이 들쭉날쭉해서 실제 날짜 위치에 점을 찍는다.
+function amzChart(lines, opt) {
+  const W = 720, H = 280, L = 58, R = 16, T = 14, B = 30;
+  const pts = lines.flatMap(l => l.series.filter(p => typeof p[1] === "number" && (!opt.log || p[1] > 0)));
+  if (pts.length < 2) return '<p class="note">이 지표는 아직 자료가 부족합니다.</p>';
+
+  const tx = d => new Date(d + "T00:00:00Z").getTime();
+  const xsAll = pts.map(p => tx(p[0]));
+  let x0 = Math.min(...xsAll), x1 = Math.max(...xsAll);
+  if (x1 === x0) { x0 -= 864e5; x1 += 864e5; }
+  const f = v => opt.log ? Math.log10(v) : v;
+  const fv = pts.map(p => f(p[1]));
+  let y0 = Math.min(...fv), y1 = Math.max(...fv);
+  if (y1 === y0) { y0 -= 0.5; y1 += 0.5; }
+  const pad = (y1 - y0) * 0.06; y0 -= pad; y1 += pad;
+
+  const X = d => L + (tx(d) - x0) / (x1 - x0) * (W - L - R);
+  const Yf = g => { const r = (g - y0) / (y1 - y0);
+    return opt.invert ? T + r * (H - T - B) : H - B - r * (H - T - B); };
+  const Y = v => Yf(f(v));
+
+  // 눈금: 로그면 1·2·5 단위(너무 많으면 10의 거듭제곱만), 아니면 5등분
+  let ticks = [];
+  if (opt.log) {
+    for (const mults of [[1, 2, 5], [1, 3], [1]]) {
+      ticks = [];
+      for (let k = Math.floor(y0); k <= Math.ceil(y1); k++)
+        mults.forEach(m => { const v = m * Math.pow(10, k); if (f(v) >= y0 && f(v) <= y1) ticks.push(v); });
+      if (ticks.length <= 7) break;
+    }
+  }
+  if (ticks.length < 2) {
+    ticks = [];
+    for (let i = 0; i < 5; i++) ticks.push(opt.log ? Math.pow(10, y0 + (y1 - y0) * i / 4) : y0 + (y1 - y0) * i / 4);
+    ticks = ticks.map(v => Number(v.toPrecision(v >= 100 ? 2 : 3)));
+  }
+  let grid = "";
+  ticks.forEach(v => {
+    const yy = Y(v).toFixed(1);
+    grid += `<line x1="${L}" y1="${yy}" x2="${W - R}" y2="${yy}" class="chart-grid"/>
+             <text x="${L - 6}" y="${yy}" text-anchor="end" dominant-baseline="middle">${fmtNum(v)}</text>`;
+  });
+  const dates = [...new Set(pts.map(p => p[0]))].sort();
+  const stride = Math.max(1, Math.ceil(dates.length / 10));
+  dates.forEach((d, i) => {
+    if (i % stride && i !== dates.length - 1) return;
+    grid += `<text x="${X(d).toFixed(1)}" y="${H - 8}" text-anchor="middle">${esc(d.slice(5))}</text>`;
+  });
+
+  const body = lines.filter(l => !l.off).map(l => {
+    const s = l.series.filter(p => typeof p[1] === "number" && (!opt.log || p[1] > 0));
+    if (!s.length) return "";
+    const d = s.map((p, i) => `${i ? "L" : "M"}${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`).join(" ");
+    const dots = s.map(p => `<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="3.2"
+        fill="${l.color}"><title>${esc(l.label)} · ${esc(p[0])} · ${fmtNum(p[1])}</title></circle>`).join("");
+    return `<path d="${d}" fill="none" stroke="${l.color}" stroke-width="2"
+        ${l.dash ? 'stroke-dasharray="6 4"' : ""}/>${dots}`;
+  }).join("");
+
+  return `<svg viewBox="0 0 ${W} ${H}" class="amz-chart">${grid}${body}</svg>`;
+}
+
+// 상품 한 개 요약 카드 -- BSR 이 크게, 그 아래 구매수·가격·리뷰
+function amzCard(p, color) {
+  const bsr = amzMetric(p, "bsr_main"), sub = amzMetric(p, "bsr_sub");
+  const last = amzLast(bsr), prev = amzPrev(bsr);
+  let delta = "";
+  if (last && prev && typeof last[1] === "number" && typeof prev[1] === "number") {
+    const d = prev[1] - last[1];   // 순위는 숫자가 줄면 좋아진 것
+    delta = d === 0 ? '<span class="miss">변동 없음</span>'
+      : `<span class="${d > 0 ? "up" : "down"}">${d > 0 ? "▲" : "▼"}${fmtNum(Math.abs(d))}</span>
+         <span class="miss">(${esc(prev[0].slice(5))} 대비)</span>`;
+  }
+  const bought = amzLast(amzMetric(p, "bought"));
+  const price = amzLast(amzMetric(p, "price"));
+  const disc = amzLast(amzMetric(p, "discount"));
+  const rv = amzMetric(p, "review"), rvL = amzLast(rv), rvP = amzPrev(rv);
+  const rvD = (rvL && rvP && typeof rvL[1] === "number" && typeof rvP[1] === "number")
+    ? ` <span class="miss">(${rvL[1] - rvP[1] >= 0 ? "+" : ""}${fmtNum(rvL[1] - rvP[1])})</span>` : "";
+  const subL = amzLast(sub);
+  const sale = (disc && typeof disc[1] === "number" && disc[1] > 0)
+    ? `<span class="amz-sale">세일 ${disc[1]}%</span>` : "";
+  const name = p.link ? `<a href="${esc(p.link)}" target="_blank" rel="noopener"
+      style="color:inherit;text-decoration:none">${esc(p.name)}</a>` : esc(p.name);
+  return `
+    <div class="slot" style="border-top:3px solid ${color}">
+      <p class="cap">${name}</p>
+      <p class="big">${last ? "#" + amzNum(last[1]) : "—"}</p>
+      <p class="miss" style="margin:0 0 .45rem">${delta || "비교할 이전 값 없음"}</p>
+      <p class="miss">${sub && subL ? esc(sub.name.replace(/\s*\(.*\)$/, "")) + " #" + amzNum(subL[1]) : ""}</p>
+      <p class="miss">구매수 ${bought ? amzNum(bought[1]) + "+" : "—"} · 리뷰 ${rvL ? amzNum(rvL[1]) : "—"}${rvD}</p>
+      <p class="miss">가격 ${price ? "$" + amzNum(price[1]) : "—"}${sale}
+        · ${last ? esc(last[0].slice(5)) + " 기준" : ""}</p>
+    </div>`;
+}
+
+// 블록별 전체 표 -- 각 상품의 가장 최근 값
+function amzTable(block) {
+  const prods = block.products || [];
+  if (block.name === "소셜") {
+    const rows = prods.map(p => {
+      const fo = amzLast(amzMetric(p, "followers")), po = amzLast(amzMetric(p, "posts"));
+      const st = amzLast(amzMetric(p, "status"));
+      return `<tr><td>${p.link ? `<a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.name)}</a>` : esc(p.name)}</td>
+        <td class="n">${fo ? amzNum(fo[1]) : "—"}</td><td class="n">${po ? amzNum(po[1]) : "—"}</td>
+        <td>${st ? esc(st[1]) : ""}</td>
+        <td class="miss">${esc(((fo || po || st || [""])[0] || "").slice(5))}</td></tr>`;
+    }).join("");
+    return `<div class="scroll"><table>
+      <tr><th>계정</th><th class="n">팔로워</th><th class="n">게시물</th><th>상태</th><th>기준일</th></tr>
+      ${rows}</table></div>`;
+  }
+  const isBundle = block.name === "번들";
+  const rows = prods.map(p => {
+    const g = k => amzLast(amzMetric(p, k));
+    const bsr = g("bsr_main"), sub = amzMetric(p, "bsr_sub"), subL = amzLast(sub);
+    const price = g("price"), disc = g("discount"), bought = g("bought"), rv = g("review");
+    const unit = g("unit_price"), units = g("units");
+    const dateOf = [bsr, price, bought, rv].find(Boolean);
+    return `<tr>
+      <td>${p.link ? `<a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.name)}</a>` : esc(p.name)}
+          ${p.core ? '<span class="pill on">주력</span>' : ""}</td>
+      <td class="n">${price ? "$" + amzNum(price[1]) : "—"}</td>
+      <td class="n">${disc && disc[1] ? `<span class="down">${disc[1]}%</span>` : "—"}</td>
+      ${isBundle ? `<td class="n">${unit ? "$" + amzNum(unit[1]) : "—"}</td>` : ""}
+      <td class="n">${bought ? amzNum(bought[1]) : "—"}</td>
+      ${isBundle ? `<td class="n">${units ? amzNum(units[1]) : "—"}</td>` : ""}
+      <td class="n">${rv ? amzNum(rv[1]) : "—"}</td>
+      <td class="n">${bsr ? amzNum(bsr[1]) : "—"}</td>
+      <td class="n">${subL ? amzNum(subL[1]) : "—"}
+          <span class="miss">${sub ? esc(sub.name.replace(/\s*\(.*\)$/, "")) : ""}</span></td>
+      <td class="miss">${dateOf ? esc(dateOf[0].slice(5)) : ""}</td></tr>`;
+  }).join("");
+  return `<div class="scroll"><table>
+    <tr><th>상품</th><th class="n">가격</th><th class="n">할인</th>
+      ${isBundle ? '<th class="n">개당</th>' : ""}
+      <th class="n">${isBundle ? "월 구매(세트)" : "월 구매"}</th>
+      ${isBundle ? '<th class="n">환산 수량</th>' : ""}
+      <th class="n">리뷰</th><th class="n">BSR 전체</th><th class="n">BSR 세부</th><th>기준일</th></tr>
+    ${rows}</table></div>`;
+}
+
+function renderAmazon(data) {
+  const box = document.getElementById("amazon-box");
+  if (!data || !data.blocks) {
+    box.innerHTML = '<p class="note">amazon.json 이 아직 없습니다. Actions 탭에서 "센텔리안24 아마존"을 실행하세요.</p>';
+    return;
+  }
+  // 번들 지표 이름 보정 -- "월 구매수 (세트)", "환산 수량 (개)" 를 순위가 아닌 수량으로
+  data.blocks.forEach(b => (b.products || []).forEach(p => (p.metrics || []).forEach(m => {
+    if (/^월 구매수/.test(m.name)) m.kind = "bought";
+    else if (/^환산 수량/.test(m.name)) m.kind = "units";
+  })));
+
+  const tag = document.getElementById("amazon-tag");
+  if (tag) tag.textContent = `구글 시트 기준 · 마지막 수집 ${data.last_date || "—"} · 매일 아침 반영`;
+
+  const block = n => data.blocks.find(b => b.name === n) || { products: [] };
+  const core = block("단품").products.filter(p => p.core);
+  const comp = block("경쟁").products;
+
+  let metric = "bsr", group = "core";
+  const hidden = new Set();
+  const chartArea = document.createElement("div");
+
+  const makeLines = () => {
+    const m = AMZ_METRICS[metric];
+    const out = [];
+    if (group !== "comp") core.forEach((p, i) => out.push({ key: "k" + p.id, label: amzShort(p),
+      color: AMZ_CORE_COLORS[i % 5], dash: false, series: (amzMetric(p, m.kind) || {}).series || [] }));
+    if (group !== "core") comp.forEach((p, i) => out.push({ key: "c" + p.id, label: amzShort(p),
+      color: AMZ_COMP_COLORS[i % 5], dash: true, series: (amzMetric(p, m.kind) || {}).series || [] }));
+    out.forEach(l => { l.off = hidden.has(l.key); });
+    return out;
+  };
+
+  const draw = () => {
+    const m = AMZ_METRICS[metric];
+    const lines = makeLines();
+    chartArea.innerHTML = `
+      <div class="rangebtns">
+        ${Object.entries(AMZ_METRICS).map(([k, v]) =>
+          `<button data-m="${k}" class="${k === metric ? "on" : ""}">${v.label}</button>`).join("")}
+      </div>
+      <div class="rangebtns">
+        <button data-g="core" class="${group === "core" ? "on" : ""}">주력 5종</button>
+        <button data-g="comp" class="${group === "comp" ? "on" : ""}">경쟁 5종</button>
+        <button data-g="both" class="${group === "both" ? "on" : ""}">주력 + 경쟁</button>
+      </div>
+      <p class="miss" style="margin:0 0 .3rem">${esc(m.note)} · 점에 마우스를 올리면 값이 보입니다</p>
+      ${amzChart(lines, m)}
+      <div class="amz-legend">
+        ${lines.map(l => `<button data-k="${l.key}" class="${l.off ? "off" : ""}">
+          <i class="${l.dash ? "dash" : ""}" style="border-color:${l.color}"></i>${esc(l.label)}</button>`).join("")}
+      </div>
+      <p class="miss" style="margin-top:.4rem">실선 = 센텔리안24 주력 · 점선 = 경쟁 · 범례를 누르면 선을 숨기거나 다시 켭니다</p>`;
+    chartArea.querySelectorAll("[data-m]").forEach(b =>
+      b.addEventListener("click", () => { metric = b.dataset.m; draw(); }));
+    chartArea.querySelectorAll("[data-g]").forEach(b =>
+      b.addEventListener("click", () => { group = b.dataset.g; draw(); }));
+    chartArea.querySelectorAll("[data-k]").forEach(b =>
+      b.addEventListener("click", () => {
+        hidden.has(b.dataset.k) ? hidden.delete(b.dataset.k) : hidden.add(b.dataset.k); draw(); }));
+  };
+
+  // 차트를 맨 위에, 요약 카드와 표는 그 아래에
+  box.innerHTML = "";
+  box.appendChild(chartArea);
+
+  const rest = document.createElement("div");
+  const blockNames = data.blocks.map(b => b.name);
+  rest.innerHTML = `
+    <p class="sub">주력 5종</p>
+    <div class="grid">${core.map((p, i) => amzCard(p, AMZ_CORE_COLORS[i % 5])).join("") || '<p class="note">없음</p>'}</div>
+    <p class="sub">경쟁 5종</p>
+    <div class="grid">${comp.map((p, i) => amzCard(p, AMZ_COMP_COLORS[i % 5])).join("") || '<p class="note">없음</p>'}</div>
+    <p class="sub">전체 상품 <span class="miss">각 상품의 가장 최근 수집값</span></p>
+    <div class="rangebtns" id="amazon-tabs">
+      ${blockNames.map((n, i) => `<button data-v="${esc(n)}" class="${i === 0 ? "on" : ""}">${esc(n)}</button>`).join("")}
+    </div>
+    ${data.blocks.map((b, i) => `<div id="amazon-t-${i}" class="${i === 0 ? "" : "hidden"}">${amzTable(b)}</div>`).join("")}
+    ${(data.memo || []).length ? `
+      <div class="group amz-memo" style="margin-top:1.5rem"><details>
+        <summary>시트 메모 · 수집 방식과 주의사항 (${data.memo.length})</summary>
+        <dl>${data.memo.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
+      </details></div>` : ""}`;
+  box.appendChild(rest);
+  setupTabToggle("amazon-tabs",
+    Object.fromEntries(blockNames.map((n, i) => [n, "amazon-t-" + i])));
+  draw();
+}
+
+fetch("data/amazon.json?t=" + Date.now())
+  .then(r => r.ok ? r.json() : null)
+  .catch(() => null)
+  .then(renderAmazon);
 </script>
 </body>
 </html>
