@@ -38,13 +38,13 @@ main section > h2{display:flex;align-items:baseline;flex-wrap:wrap;gap:.1rem}
 main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;border-radius:3px;
   margin-right:.6rem;background:var(--sg,var(--accent))}
 #picks,#hotnews,#news,#calendar{--sg:#0F6E56}
-#market,#breadth,#commodities,#macro{--sg:#185FA5}
+#market,#breadth,#commodities,#rates,#macro{--sg:#185FA5}
 #liquidity,#credit,#moneymarket{--sg:#534AB7}
 #breakout,#deepvalue,#extremes{--sg:#854F0B}
 #portfolio,#calls,#amazon,#trade{--sg:#993C1D}
 @media (prefers-color-scheme: dark){
   #picks,#hotnews,#news,#calendar{--sg:#5DCAA5}
-  #market,#breadth,#commodities,#macro{--sg:#85B7EB}
+  #market,#breadth,#commodities,#rates,#macro{--sg:#85B7EB}
   #liquidity,#credit,#moneymarket{--sg:#AFA9EC}
   #breakout,#deepvalue,#extremes{--sg:#EF9F27}
   #portfolio,#calls,#amazon,#trade{--sg:#F0997B}
@@ -279,6 +279,7 @@ tr:last-child td{border-bottom:none}
     <a href="#market">미국 시황</a>
     <a href="#breadth">섹터 온도</a>
     <a href="#commodities">원자재·귀금속</a>
+    <a href="#rates">금리·환율</a>
     <a href="#macro">경제 지표</a>
   </div>
   <div class="ngrp g3">
@@ -342,6 +343,11 @@ tr:last-child td{border-bottom:none}
 <section id="commodities">
   <h2>원자재·귀금속<span class="tagline">금·은·유가·비트코인 등</span></h2>
   <div id="commodities-box"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="rates">
+  <h2>금리·환율<span class="tagline" id="rates-tag">미국채·주요 환율 · 하루 두 번 갱신 · 실시간 아님</span></h2>
+  <div id="rates-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="liquidity">
@@ -2156,6 +2162,86 @@ function renderAmazon(data) {
   document.querySelectorAll('a[href="#trade"]').forEach(a => a.addEventListener("click", () => setTimeout(() => { load(); fit(); }, 0)));
   window.addEventListener("popstate", () => { if (location.hash === "#trade") load(); });
 })();
+
+// ── 금리·환율 (data/rates_fx.json) ─────────────────────────────
+// 원자재 화면과 같은 방식: 위에 고른 항목의 추이 차트, 아래에 항목별 카드
+function renderRates(d) {
+  const box = document.getElementById("rates-box");
+  if (!d || !d.groups) {
+    box.innerHTML = '<p class="note">rates_fx.json 이 아직 없습니다. Actions 탭에서 "아마존·수출입·배너"를 실행하세요.</p>';
+    return;
+  }
+  const tag = document.getElementById("rates-tag");
+  if (tag) tag.textContent = `미국채·주요 환율 · ${d.updated.slice(5)} 기준 · 하루 두 번 갱신 · 실시간 아님`;
+  const all = d.groups.flatMap(g => g.items);
+  const fmtV = i => i.kind === "yield" ? Number(i.value).toFixed(2) + "%"
+    : i.kind === "spread" ? (i.value > 0 ? "+" : "") + Math.round(i.value) + "bp"
+    : Number(i.value).toLocaleString("ko-KR", { maximumFractionDigits: 2 });
+  // n 거래일 전 대비 변화 (금리·금리차는 bp, 환율은 %)
+  const chgN = (i, n) => {
+    const h = i.history || [];
+    if (h.length <= n) return null;
+    const a = h[h.length - 1 - n].value, b = h[h.length - 1].value;
+    if (i.kind === "yield") return Math.round((b - a) * 1000) / 10;
+    if (i.kind === "spread") return Math.round((b - a) * 10) / 10;
+    return Math.round((b / a - 1) * 1000) / 10;
+  };
+  const chgS = (i, v) => {
+    if (v == null) return '<span class="miss">—</span>';
+    const u = i.kind === "px" ? "%" : "bp";
+    const cls = v > 0 ? "up" : v < 0 ? "down" : "";
+    return `<span class="${cls}">${v > 0 ? "+" : ""}${v}${u}</span>`;
+  };
+  // 1년 전 인덱스: 최근 1년은 일별이라 약 250개 전
+  const yearAgo = i => {
+    const h = i.history || [];
+    const cut = new Date(h.length ? h[h.length - 1].date : Date.now());
+    cut.setFullYear(cut.getFullYear() - 1);
+    const k = h.findIndex(p => new Date(p.date) >= cut);
+    return k >= 0 ? h.length - 1 - k : null;
+  };
+
+  let current = (all.find(i => i.key === "us10y") || all[0] || {}).key, range = "1y";
+  const chartArea = document.createElement("div");
+  const draw = () => {
+    const it = all.find(i => i.key === current);
+    if (!it) { chartArea.innerHTML = ""; return; }
+    const cut = new Date(); cut.setFullYear(cut.getFullYear() - (range === "1y" ? 1 : 5));
+    const pts = (it.history || []).filter(p => new Date(p.date) >= cut);
+    chartArea.innerHTML = `
+      ${d.groups.map(g => `<div class="rangebtns">
+        <span class="miss" style="align-self:center;min-width:2.6rem">${esc(g.name)}</span>
+        ${g.items.map(i => `<button data-i="${i.key}" class="${i.key === current ? "on" : ""}">${esc(i.label)}</button>`).join("")}
+      </div>`).join("")}
+      <div class="rangebtns">
+        <button data-r="1y" class="${range === "1y" ? "on" : ""}">1년</button>
+        <button data-r="5y" class="${range === "5y" ? "on" : ""}">5년</button>
+      </div>
+      <p class="sub" style="margin:.6rem 0 .4rem">${esc(it.label)} <span class="miss">${fmtV(it)} · ${esc(it.asof || "")}</span></p>
+      ${lineChart(pts)}`;
+    chartArea.querySelectorAll("[data-i]").forEach(b => b.addEventListener("click", () => { current = b.dataset.i; draw(); }));
+    chartArea.querySelectorAll("[data-r]").forEach(b => b.addEventListener("click", () => { range = b.dataset.r; draw(); }));
+  };
+
+  const cards = d.groups.map(g => `<p class="sub">${esc(g.name)}</p><div class="grid">${g.items.map(i => `
+      <div class="slot" style="cursor:pointer${i.stale ? ";opacity:.6" : ""}" data-pick="${i.key}">
+        <p class="cap">${esc(i.label)}</p>
+        <p class="big">${fmtV(i)}</p>
+        <p>전일 ${chgS(i, i.chg)} · 1개월 ${chgS(i, chgN(i, 21))} · 1년 ${chgS(i, chgN(i, yearAgo(i)))}</p>
+      </div>`).join("")}</div>`).join("");
+
+  // 차트를 맨 위에, 카드는 그 아래에 (카드를 누르면 위 차트가 그 항목으로 바뀜)
+  box.innerHTML = "";
+  box.appendChild(chartArea);
+  const wrap = document.createElement("div");
+  wrap.innerHTML = cards + '<p class="note" style="margin-top:1rem">금리 변화는 bp(0.01%p), 환율 변화는 %. 출처: 야후 파이낸스, 없는 날은 FRED.</p>';
+  box.appendChild(wrap);
+  wrap.querySelectorAll("[data-pick]").forEach(c => c.addEventListener("click", () => {
+    current = c.dataset.pick; draw(); chartArea.scrollIntoView({ behavior: "smooth", block: "start" });
+  }));
+  draw();
+}
+fetch("data/rates_fx.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderRates);
 
 // ── 머리말 배너 (data/banner.json, 하루 두 번 갱신) ─────────────────
 fetch("data/banner.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(b => {
