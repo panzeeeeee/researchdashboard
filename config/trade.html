@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>수출입 레이더</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{
+  --paper:#f6f5f0; --card:#fff; --ink:#12151a; --ink-2:#4a5057; --ink-3:#686e75;
+  --rule:#dcdcd6; --accent:#0f6e56; --tintA:#eef4f1; --up:#1d7a4a; --down:#b3332e;
+  --navy:#0e1a2b; --navy-ink:#f4f6f8; --navy-ink-2:#9fb0c2;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --paper:#121417; --card:#1a1d22; --ink:#e9eae6; --ink-2:#b6bbc1; --ink-3:#9098a1;
+         --rule:#343841; --accent:#5dcaa5; --tintA:#1c2a26; --up:#5dc48a; --down:#e78078;
+         --navy:#0a1420; --navy-ink:#f4f6f8; --navy-ink-2:#8fa2b6; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:Pretendard,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:2rem 1.25rem 4rem}
+header{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  background:var(--navy);color:var(--navy-ink);border-radius:14px;padding:1.5rem 1.75rem;margin-bottom:2rem}
+.eyebrow{font-size:.7rem;font-weight:700;letter-spacing:.14em;color:var(--navy-ink-2);margin:0 0 .35rem}
+h1{font-size:1.55rem;font-weight:700;margin:0;color:var(--navy-ink)}
+.meta{font-size:.82rem;color:var(--navy-ink-2);background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:.35rem .85rem}
+.back{color:var(--navy-ink-2);font-size:.82rem;text-decoration:none;margin-right:.8rem}
+.back:hover{color:#fff}
+h2{font-size:1.15rem;font-weight:700;margin:2.2rem 0 1rem}
+h2:first-of-type{margin-top:0}
+.tagline{font-size:.74rem;font-weight:400;color:var(--ink-3);margin-left:.55rem}
+.box{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:1.1rem 1.25rem}
+.note,.miss{font-size:.8rem;color:var(--ink-3)}
+.up{color:var(--up)} .down{color:var(--down)}
+svg text{font-family:inherit;fill:var(--ink-3);font-size:11px}
+svg .lbl{fill:var(--ink);font-size:12px}
+.grid-line{stroke:var(--rule);stroke-width:1}
+.sig{list-style:none;padding:0;margin:.9rem 0 0}
+.sig li{padding:.45rem 0;border-top:1px solid var(--rule);font-size:.9rem;display:flex;gap:.6rem;align-items:baseline}
+.sig li:first-child{border-top:none}
+.kind{font-size:.68rem;font-weight:700;border-radius:4px;padding:.05rem .4rem;color:#fff;background:var(--accent);flex-shrink:0}
+.kind.단가{background:#d97706} .kind.국가{background:#2563eb}
+.sig a{color:var(--ink);text-decoration:none;cursor:pointer}
+.sig a:hover{color:var(--accent)}
+.btns{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .6rem}
+.btns button{background:none;border:1px solid var(--rule);color:var(--ink-2);border-radius:999px;
+  padding:.2rem .75rem;font-size:.76rem;cursor:pointer;font-family:inherit}
+.btns button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.7rem}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.8rem .9rem;cursor:pointer}
+.card:hover,.card.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.card .n{font-size:.84rem;font-weight:600}
+.card .v{font-size:1.25rem;font-weight:700;font-variant-numeric:tabular-nums;margin:.1rem 0 0}
+.card svg{width:100%;height:34px;display:block;margin-top:.3rem}
+.grp{font-size:.82rem;font-weight:700;color:var(--accent);margin:1.2rem 0 .5rem}
+.grp:first-child{margin-top:0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;font-variant-numeric:tabular-nums}
+th{text-align:left;font-weight:600;color:var(--ink-3);font-size:.72rem;padding:.4rem .5rem;border-bottom:2px solid var(--rule);white-space:nowrap}
+td{padding:.45rem .5rem;border-bottom:1px solid var(--rule)}
+td.r,th.r{text-align:right}
+.scroll{overflow-x:auto}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.6rem;margin:.9rem 0}
+.kpi{border:1px solid var(--rule);border-radius:9px;padding:.6rem .8rem}
+.kpi .c{font-size:.72rem;color:var(--ink-3)} .kpi .b{font-size:1.2rem;font-weight:700;font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-wrap:wrap;gap:.3rem .9rem;margin-top:.4rem;font-size:.76rem;color:var(--ink-2)}
+.legend i{display:inline-block;width:14px;height:0;border-top:2.5px solid;margin-right:.3rem;vertical-align:middle}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div>
+    <p class="eyebrow">TRADE RADAR</p>
+    <h1>수출입 레이더</h1>
+  </div>
+  <div><a class="back" href="index.html">← 리서치 콘솔</a><span class="meta" id="stamp">불러오는 중</span></div>
+</header>
+
+<h2>한눈에 보기<span class="tagline">테마별 최근 3개월 수출 · 전년 같은 기간 대비</span></h2>
+<div class="box" id="overview"><p class="note">불러오는 중입니다.</p></div>
+
+<h2 id="detail-h">테마 상세</h2>
+<div class="box" id="detail"></div>
+
+<h2>테마 카드<span class="tagline">누르면 위 상세가 바뀝니다 · 작은 선은 최근 12개월</span></h2>
+<div id="cards"></div>
+
+<p class="note" style="margin-top:2rem">출처: 관세청 무역통계(공공데이터포털). 매월 15일경 전월 확정치가 반영됩니다.
+수출액은 신고 기준 달러, 단가는 수출액 ÷ 순중량. 신호는 정해진 숫자 규칙으로만 뽑으며 자동 요약이 아닙니다.</p>
+</div>
+
+<script>
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const usd = v => v == null ? "—" : v >= 1e9 ? "$" + (v / 1e9).toFixed(2) + "B"
+  : v >= 1e6 ? "$" + (v / 1e6).toFixed(0) + "M" : "$" + Math.round(v / 1e3) + "K";
+const pctS = v => v == null ? '<span class="miss">—</span>'
+  : `<span class="${v > 0 ? "up" : v < 0 ? "down" : ""}">${v > 0 ? "+" : ""}${v.toFixed(1)}%</span>`;
+const ppS = v => v == null ? '<span class="miss">—</span>'
+  : `<span class="${v > 0 ? "up" : v < 0 ? "down" : ""}">${v > 0 ? "+" : ""}${v.toFixed(1)}%p</span>`;
+const PALETTE = ["#0f6e56", "#2563eb", "#d97706", "#9333ea", "#db2777", "#64748b"];
+
+let DATA = null, current = null, metric = "usd", range = 24;
+
+// 월 단위 선 차트. lines = [{label, color, dash, pts:[[ym, v]]}]
+function lineChart(lines, fmt) {
+  const W = 760, H = 260, L = 64, R = 16, T = 12, B = 28;
+  const all = lines.flatMap(l => l.pts).filter(p => p[1] != null);
+  if (all.length < 2) return '<p class="note">자료가 부족합니다.</p>';
+  const months = [...new Set(all.map(p => p[0]))].sort();
+  const xi = Object.fromEntries(months.map((m, i) => [m, i]));
+  const vals = all.map(p => p[1]);
+  let lo = Math.min(...vals, 0 < Math.min(...vals) ? Math.min(...vals) : 0), hi = Math.max(...vals);
+  lo = Math.min(...vals); const pad = (hi - lo) * 0.08 || 1; lo -= pad; hi += pad;
+  const X = m => L + xi[m] / Math.max(1, months.length - 1) * (W - L - R);
+  const Y = v => H - B - (v - lo) / (hi - lo) * (H - T - B);
+  let g = "";
+  for (let i = 0; i < 5; i++) {
+    const v = lo + (hi - lo) * i / 4, y = Y(v).toFixed(1);
+    g += `<line x1="${L}" x2="${W - R}" y1="${y}" y2="${y}" class="grid-line"/>
+          <text x="${L - 6}" y="${y}" text-anchor="end" dominant-baseline="middle">${fmt(v)}</text>`;
+  }
+  const step = Math.max(1, Math.ceil(months.length / 8));
+  months.forEach((m, i) => {
+    if (i % step && i !== months.length - 1) return;
+    g += `<text x="${X(m).toFixed(1)}" y="${H - 8}" text-anchor="middle">${m.slice(2).replace("-", ".")}</text>`;
+  });
+  const body = lines.map(l => {
+    const p = l.pts.filter(q => q[1] != null);
+    if (!p.length) return "";
+    const d = p.map((q, i) => `${i ? "L" : "M"}${X(q[0]).toFixed(1)},${Y(q[1]).toFixed(1)}`).join(" ");
+    const last = p[p.length - 1];
+    return `<path d="${d}" fill="none" stroke="${l.color}" stroke-width="2" ${l.dash ? 'stroke-dasharray="5 4"' : ""}/>
+      ${p.map(q => `<circle cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="2.2" fill="${l.color}"><title>${esc(l.label)} ${q[0]} · ${fmt(q[1])}</title></circle>`).join("")}`;
+  }).join("");
+  const legend = lines.length > 1 ? `<div class="legend">${lines.map(l =>
+    `<span><i style="border-color:${l.color};${l.dash ? "border-top-style:dashed" : ""}"></i>${esc(l.label)}</span>`).join("")}</div>` : "";
+  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block">${g}${body}</svg>${legend}`;
+}
+
+// 한눈에 보기: 테마별 최근 3개월 전년 대비를 가로 막대로
+function renderOverview() {
+  const box = document.getElementById("overview");
+  const rows = DATA.themes.filter(t => t.stats && t.stats.yoy3m != null)
+    .sort((a, b) => b.stats.yoy3m - a.stats.yoy3m);
+  const W = 760, rowH = 24, L = 150, R = 70, H = rows.length * rowH + 10;
+  const mx = Math.max(10, ...rows.map(t => Math.abs(t.stats.yoy3m)));
+  const zero = L + (W - L - R) / 2, half = (W - L - R) / 2;
+  const bars = rows.map((t, i) => {
+    const v = t.stats.yoy3m, w = Math.abs(v) / mx * half, y = i * rowH + 5;
+    const x = v >= 0 ? zero : zero - w, c = v >= 0 ? "var(--up)" : "var(--down)";
+    return `<g style="cursor:pointer" data-k="${t.key}">
+      <text x="${L - 8}" y="${y + 12}" text-anchor="end" class="lbl">${esc(t.name)}</text>
+      <rect x="${x.toFixed(1)}" y="${y + 3}" width="${Math.max(1, w).toFixed(1)}" height="${rowH - 9}" rx="3" fill="${c}" opacity=".85"/>
+      <text x="${(v >= 0 ? zero + w + 5 : zero - w - 5).toFixed(1)}" y="${y + 12}" text-anchor="${v >= 0 ? "start" : "end"}"
+        dominant-baseline="middle">${v > 0 ? "+" : ""}${v.toFixed(1)}%</text></g>`;
+  }).join("");
+  const svg = `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block">
+    <line x1="${zero}" x2="${zero}" y1="0" y2="${H}" class="grid-line"/>${bars}</svg>`;
+
+  let sig = DATA.signals || [];
+  const sigHtml = sig.length ? `<ul class="sig">${sig.map(s =>
+      `<li><span class="kind ${esc(s.kind)}">${esc(s.kind)}</span><a data-k="${s.key}">${esc(s.text)}</a></li>`).join("")}</ul>`
+    : '<p class="note" style="margin-top:.8rem">이번 달은 규칙에 걸린 큰 변화가 없습니다.</p>';
+  box.innerHTML = svg + `<p class="note" style="margin:.8rem 0 0"><b>이번 달 신호</b> · 3개월 ±20% 이상, 단가 ±15% 이상, 국가 비중 ±5%p 이상</p>` + sigHtml;
+  box.querySelectorAll("[data-k]").forEach(el => el.addEventListener("click", () => select(el.dataset.k, true)));
+}
+
+function renderDetail() {
+  const t = DATA.themes.find(x => x.key === current);
+  const box = document.getElementById("detail");
+  if (!t) { box.innerHTML = '<p class="note">테마를 고르세요.</p>'; return; }
+  document.getElementById("detail-h").innerHTML =
+    `${esc(t.name)}<span class="tagline">HS ${esc(t.hs)} · ${esc(t.group)}</span>`;
+  const s = t.stats || {};
+  const cut = range ? DATA.months.slice(-range)[0] : "0000";
+  const inR = p => p[0] >= cut;
+  let chart;
+  if (metric === "usd") {
+    chart = lineChart([{ label: "전체 수출", color: PALETTE[0], pts: t.world.filter(inR).map(p => [p[0], p[1]]) }], usd);
+  } else if (metric === "unit") {
+    chart = lineChart([{ label: "단가 $/kg", color: "#d97706",
+      pts: t.world.filter(inR).map(p => [p[0], p[2] ? p[1] / p[2] : null]) }], v => "$" + v.toFixed(v < 10 ? 2 : 0));
+  } else {
+    const top = (s.countries || []).slice(0, 5);
+    chart = lineChart(top.map((c, i) => ({ label: c.name, color: PALETTE[i],
+      pts: (t.by_country[c.code] || []).filter(inR).map(p => [p[0], p[1]]) })), usd);
+  }
+  const rows = (s.countries || []).slice(0, 15).map(c => `<tr><td>${esc(c.name)}</td>
+    <td class="r">${usd(c.usd3m)}</td><td class="r">${c.share != null ? c.share + "%" : "—"}</td>
+    <td class="r">${ppS(c.share_chg)}</td><td class="r">${pctS(c.yoy3m)}</td></tr>`).join("");
+  box.innerHTML = `
+    <div class="btns">
+      ${[["usd", "수출액"], ["unit", "단가 ($/kg)"], ["cty", "상위 5개국"]].map(([k, n]) =>
+        `<button data-m="${k}" class="${metric === k ? "on" : ""}">${n}</button>`).join("")}
+      <span style="width:.6rem"></span>
+      ${[[12, "1년"], [24, "2년"], [0, "전체"]].map(([k, n]) =>
+        `<button data-r="${k}" class="${range === k ? "on" : ""}">${n}</button>`).join("")}
+    </div>
+    ${chart}
+    <div class="kpis">
+      <div class="kpi"><div class="c">${esc((s.latest || "").replace("-", "년 "))}월 수출</div><div class="b">${usd(s.usd)}</div></div>
+      <div class="kpi"><div class="c">전년 같은 달 대비</div><div class="b">${pctS(s.yoy)}</div></div>
+      <div class="kpi"><div class="c">최근 3개월 전년 대비</div><div class="b">${pctS(s.yoy3m)}</div></div>
+      <div class="kpi"><div class="c">단가 $/kg (전년 대비)</div><div class="b">${s.unit != null ? "$" + s.unit : "—"} <span style="font-size:.8rem">${pctS(s.unit_yoy)}</span></div></div>
+    </div>
+    <p class="note" style="margin:.4rem 0 .3rem"><b>국가 믹스</b> · 최근 3개월 기준, 비중 변화는 1년 전 같은 3개월과 비교 · 목록에 없는 나라는 표에서 빠짐</p>
+    <div class="scroll"><table>
+      <tr><th>나라</th><th class="r">3개월 수출</th><th class="r">비중</th><th class="r">비중 변화</th><th class="r">전년 대비</th></tr>
+      ${rows || '<tr><td colspan="5" class="note">나라별 자료 없음</td></tr>'}
+    </table></div>`;
+  box.querySelectorAll("[data-m]").forEach(b => b.addEventListener("click", () => { metric = b.dataset.m; renderDetail(); }));
+  box.querySelectorAll("[data-r]").forEach(b => b.addEventListener("click", () => { range = +b.dataset.r; renderDetail(); }));
+}
+
+function spark(t) {
+  const p = t.world.slice(-12).map(q => q[1]);
+  if (p.length < 2) return "";
+  const lo = Math.min(...p), hi = Math.max(...p), W = 200, H = 34;
+  const d = p.map((v, i) => `${i ? "L" : "M"}${(i / (p.length - 1) * W).toFixed(1)},${(H - 3 - (v - lo) / ((hi - lo) || 1) * (H - 6)).toFixed(1)}`).join(" ");
+  const c = p[p.length - 1] >= p[0] ? "var(--up)" : "var(--down)";
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><path d="${d}" fill="none" stroke="${c}" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg>`;
+}
+
+function renderCards() {
+  const box = document.getElementById("cards");
+  box.innerHTML = (DATA.groups || []).map(g => {
+    const ts = DATA.themes.filter(t => t.group === g);
+    if (!ts.length) return "";
+    return `<p class="grp">${esc(g)}</p><div class="cards">${ts.map(t => {
+      const s = t.stats || {};
+      return `<div class="card ${t.key === current ? "on" : ""}" data-k="${t.key}">
+        <div class="n">${esc(t.name)}</div>
+        <div class="v">${usd(s.usd)}</div>
+        <div class="miss">${esc((s.latest || "").slice(5))}월 · 전년 대비 ${pctS(s.yoy)} · 3개월 ${pctS(s.yoy3m)}</div>
+        ${spark(t)}</div>`;
+    }).join("")}</div>`;
+  }).join("");
+  box.querySelectorAll("[data-k]").forEach(el => el.addEventListener("click", () => select(el.dataset.k, true)));
+}
+
+function select(key, scroll) {
+  current = key;
+  renderDetail();
+  document.querySelectorAll(".card").forEach(c => c.classList.toggle("on", c.dataset.k === key));
+  if (scroll) document.getElementById("detail-h").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+fetch("data/trade.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(d => {
+  if (!d || !d.themes) {
+    document.getElementById("stamp").textContent = "데이터 없음";
+    document.getElementById("overview").innerHTML =
+      '<p class="note">trade.json 이 아직 없습니다. Actions 탭에서 수집을 실행하세요.</p>';
+    return;
+  }
+  DATA = d;
+  document.getElementById("stamp").textContent = `최신 ${d.latest_month} · 갱신 ${d.updated.slice(5, 16)}`;
+  current = (d.signals && d.signals[0] && d.signals[0].key) || d.themes[0].key;
+  renderOverview();
+  renderCards();
+  renderDetail();
+});
+</script>
+</body>
+</html>
