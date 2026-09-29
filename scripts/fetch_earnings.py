@@ -39,7 +39,7 @@ MAX_PAGES = 30           # 100건 x 30쪽 = 3,000건까지 훑는다
 LOOKBACK_HOURS = 40      # 이보다 오래된 접수가 나오면 멈춘다
 KEEP_DAYS = 90
 REACT_DAYS = 10          # 이 기간 안의 발표만 반응을 채우거나 다시 본다
-ET = ZoneInfo("America/New_York")
+NY = ZoneInfo("America/New_York")
 
 NS = {"a": "http://www.w3.org/2005/Atom"}
 ITEM_RE = re.compile(r"Item\s+(\d+\.\d+)", re.I)
@@ -142,7 +142,7 @@ def download_closes(tickers):
         return {}
 
     # 미국 장이 아직 안 끝났으면 오늘 봉은 미완성이라 뺀다
-    now_et = datetime.now(ET)
+    now_et = datetime.now(NY)
     today_et = now_et.date()
     closed = now_et.hour * 60 + now_et.minute >= 16 * 60 + 10
 
@@ -177,7 +177,7 @@ def window(series, day, after_close):
 
 
 def fill_reactions(items):
-    today = datetime.now(ET).date()
+    today = datetime.now(NY).date()
     todo = []
     for x in items:
         if x.get("react_status") == "확정":
