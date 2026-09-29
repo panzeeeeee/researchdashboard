@@ -40,13 +40,13 @@ main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;b
 #picks,#hotnews,#news,#calendar{--sg:#0F6E56}
 #market,#breadth,#commodities,#rates,#macro{--sg:#185FA5}
 #liquidity,#credit,#moneymarket{--sg:#534AB7}
-#breakout,#deepvalue,#extremes{--sg:#854F0B}
+#breakout,#deepvalue,#extremes,#earnings{--sg:#854F0B}
 #portfolio,#calls,#amazon,#trade{--sg:#993C1D}
 @media (prefers-color-scheme: dark){
   #picks,#hotnews,#news,#calendar{--sg:#5DCAA5}
   #market,#breadth,#commodities,#rates,#macro{--sg:#85B7EB}
   #liquidity,#credit,#moneymarket{--sg:#AFA9EC}
-  #breakout,#deepvalue,#extremes{--sg:#EF9F27}
+  #breakout,#deepvalue,#extremes,#earnings{--sg:#EF9F27}
   #portfolio,#calls,#amazon,#trade{--sg:#F0997B}
 }
 /* 머리말 배너: 금리·유가·환율 */
@@ -233,6 +233,26 @@ tr:last-child td{border-bottom:none}
   font-size:.74rem;color:var(--ink-3)}
 .chart-grid{stroke:var(--rule);stroke-width:1;vector-effect:non-scaling-stroke}
 
+/* 미국 실적 레이더 */
+#earnings td{vertical-align:top}
+#earnings td.stock{min-width:12rem}
+#earnings .co{font-size:.8rem;color:var(--ink-3);display:block;line-height:1.35}
+#earnings .esum{font-size:.84rem;color:var(--ink-2);margin:.25rem 0 0;line-height:1.5;max-width:46ch}
+#earnings .when{white-space:nowrap;font-size:.84rem;color:var(--ink-2)}
+#earnings .sess{font-size:.74rem;color:var(--ink-3);display:block}
+#earnings .yr{font-size:.74rem;color:#fff;background:var(--ink-3);border-radius:4px;
+  padding:.02rem .35rem;margin-left:.3rem;vertical-align:middle}
+#earnings .gd{font-size:.8rem;font-weight:600;white-space:nowrap}
+#earnings .wait{font-size:.8rem;color:var(--ink-3)}
+#earnings td a.src-link{color:var(--accent);font-size:.78rem;font-weight:500;margin-left:.45rem;text-decoration:none}
+#earnings td a.src-link:hover{text-decoration:underline}
+#earnings .small{font-size:.76rem;color:var(--ink-3);display:block;white-space:nowrap}
+@media (max-width:640px){
+  #earnings .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}
+  #earnings .slot{padding:.8rem .9rem}
+  #earnings .slot .big{font-size:1.45rem}
+}
+
 /* 센텔리안24 아마존 */
 .amz-chart{width:100%;height:auto;display:block}
 .amz-chart text{font-family:inherit;fill:var(--ink-3);font-size:13px}
@@ -293,6 +313,7 @@ tr:last-child td{border-bottom:none}
     <a href="#breakout">긴 조정 후 신고가</a>
     <a href="#deepvalue">딥밸류</a>
     <a href="#extremes">신고가·신저가</a>
+    <a href="#earnings">미국 실적 레이더 <span class="count" id="c-earnings"></span></a>
   </div>
   <div class="ngrp g5">
     <p class="gl">내 종목·리서치</p>
@@ -401,6 +422,11 @@ tr:last-child td{border-bottom:none}
   </div>
   <div id="extremes-box"><p class="note">불러오는 중입니다.</p></div>
   <div id="extremes-table-box" class="hidden"></div>
+</section>
+
+<section id="earnings">
+  <h2>미국 실적 레이더<span class="tagline" id="earnings-tag">SEC 8-K 실적 공시 · 하루 두 번 갱신</span></h2>
+  <div id="earnings-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="calls">
@@ -2262,6 +2288,110 @@ fetch("data/banner.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catc
       <div class="v">${fmtV(i)}${fmtC(i)}</div>
     </div>`).join("") + `<div class="ticker-asof">${esc(b.updated.slice(5))} 기준<br>실시간 아님</div>`;
 });
+
+// ── 미국 실적 레이더 (data/earnings.json) ─────────────────────────
+// 위: 고른 날의 요약 카드 / 가운데: 날짜·정렬 버튼 / 아래: 종목별 표
+function renderEarnings(d) {
+  const box = document.getElementById("earnings-box");
+  const items = (d && d.items) || [];
+  if (!items.length) {
+    box.innerHTML = '<p class="note">earnings.json 이 아직 없습니다. Actions 탭에서 "아마존·수출입·배너"를 실행하세요.</p>';
+    return;
+  }
+  const tag = document.getElementById("earnings-tag");
+  if (tag && d.updated_at) tag.textContent = `SEC 8-K 실적 공시 · ${d.updated_at.slice(5, 16).replace("T", " ")} 갱신 · 하루 두 번`;
+
+  const dates = [...new Set(items.map(x => x.date_et))].sort().reverse();
+  const cnt = document.getElementById("c-earnings");
+  if (cnt) cnt.textContent = items.filter(x => x.date_et === dates[0]).length || "";
+
+  let day = dates[0], sort = "time";
+  const wd = s => "일월화수목금토"[new Date(s + "T12:00:00").getDay()];
+  const pct = (v, unit = "%") => v == null ? '<span class="miss">—</span>'
+    : `<span class="${v > 0 ? "up" : v < 0 ? "down" : ""}">${v > 0 ? "+" : ""}${v.toFixed(1)}${unit}</span>`;
+  const money = v => v == null ? "" : v >= 1000 ? "$" + (v / 1000).toFixed(v >= 10000 ? 0 : 1) + "B" : "$" + Math.round(v) + "M";
+  const eps = n => {
+    if (!n) return '<span class="miss">—</span>';
+    const adj = n.eps_adj != null;
+    const v = adj ? n.eps_adj : n.eps_gaap, pv = adj ? n.eps_adj_prior : n.eps_gaap_prior;
+    if (v == null) return '<span class="miss">—</span>';
+    const usd = x => (x < 0 ? "-$" : "$") + Math.abs(x).toFixed(2);
+    return `${usd(v)}<span class="small">${adj ? "조정" : "GAAP"}${pv != null ? " · 전년 " + usd(pv) : ""}</span>`;
+  };
+  const guide = g => {
+    if (!g || g === "없음") return '<span class="miss">—</span>';
+    const cls = g === "상향" ? "up" : g === "하향" ? "down" : "";
+    return `<span class="gd ${cls}">${esc(g)}</span>`;
+  };
+  const react = x => {
+    if (x.react_status === "확정")
+      return `${pct(x.rel_pct, "%p")}<span class="small">종목 ${x.react_pct > 0 ? "+" : ""}${x.react_pct}%</span><span class="small">SPY ${x.spy_pct > 0 ? "+" : ""}${x.spy_pct}%</span>`;
+    if (x.react_status === "대기") return '<span class="wait" title="장후 발표: 다음 거래일 종가가 나오면 채워집니다">대기</span>';
+    return '<span class="miss">—</span>';
+  };
+  const isYear = p => /full|annual|연간|fy\s*\d{4}$/i.test(p || "") && !/q\d/i.test(p || "");
+  // "Full Fiscal Year 2026" 같은 긴 표기를 줄인다
+  const period = p => {
+    if (!p) return "—";
+    if (isYear(p)) { const y = (p.match(/\d{4}/) || [""])[0]; return (y ? "FY" + y : esc(p)) + '<span class="yr">연간</span>'; }
+    return esc(p);
+  };
+
+  const draw = () => {
+    let rows = items.filter(x => day === "all" || x.date_et === day);
+    if (sort === "up") rows = rows.slice().sort((a, b) => (b.rel_pct ?? -1e9) - (a.rel_pct ?? -1e9));
+    else if (sort === "down") rows = rows.slice().sort((a, b) => (a.rel_pct ?? 1e9) - (b.rel_pct ?? 1e9));
+    else rows = rows.slice().sort((a, b) => (b.accepted_et || "").localeCompare(a.accepted_et || ""));
+
+    const done = rows.filter(x => x.react_status === "확정");
+    const upN = done.filter(x => x.rel_pct > 0).length;
+    const g = rows.map(x => x.numbers && x.numbers.guidance);
+    const yoys = rows.map(x => x.numbers && x.numbers.revenue_yoy).filter(v => v != null).sort((a, b) => a - b);
+    const med = yoys.length ? yoys[Math.floor((yoys.length - 1) / 2)] : null;
+
+    box.innerHTML = `
+      <div class="rangebtns">
+        ${dates.slice(0, 6).map(t => `<button data-d="${t}" class="${t === day ? "on" : ""}">${t.slice(5).replace("-", "/")}(${wd(t)})</button>`).join("")}
+        <button data-d="all" class="${day === "all" ? "on" : ""}">전체</button>
+      </div>
+      <div class="grid" style="margin-bottom:1.2rem">
+        <div class="slot"><p class="cap">실적 발표</p><p class="big">${rows.length}건</p>
+          <p>장전 ${rows.filter(x => x.session === "장전").length} · 장후 ${rows.filter(x => x.session === "장후").length}</p></div>
+        <div class="slot"><p class="cap">시장보다 오른 곳</p><p class="big">${done.length ? upN + " / " + done.length : "—"}</p>
+          <p>${done.length ? "반응 확정분 기준" : "반응 확정 전"}${rows.length > done.length ? ` · 대기 ${rows.length - done.length}` : ""}</p></div>
+        <div class="slot"><p class="cap">가이던스</p><p class="big"><span class="up">↑${g.filter(v => v === "상향").length}</span> <span class="down">↓${g.filter(v => v === "하향").length}</span></p>
+          <p>첫 제시 ${g.filter(v => v === "첫 제시").length} · 유지 ${g.filter(v => v === "유지").length}</p></div>
+        <div class="slot"><p class="cap">매출 YoY 중앙값</p><p class="big">${med == null ? "—" : (med > 0 ? "+" : "") + med.toFixed(1) + "%"}</p>
+          <p>숫자 있는 ${yoys.length}곳 기준</p></div>
+      </div>
+      <div class="rangebtns">
+        <button data-s="time" class="${sort === "time" ? "on" : ""}">발표 순</button>
+        <button data-s="up" class="${sort === "up" ? "on" : ""}">시장 대비 강한 순</button>
+        <button data-s="down" class="${sort === "down" ? "on" : ""}">시장 대비 약한 순</button>
+      </div>
+      <div class="scroll"><table>
+        <thead><tr><th>발표</th><th>종목</th><th>분기</th><th class="n">매출<br>YoY</th><th class="n">EPS</th><th>가이던스</th><th class="n">시장 대비</th></tr></thead>
+        <tbody>${rows.map(x => {
+          const n = x.numbers;
+          return `<tr>
+            <td class="when">${esc((x.accepted_et || "").slice(5).replace("-", "/"))}<span class="sess">${esc(x.session)}</span></td>
+            <td class="stock"><span class="tick">${esc(x.ticker)}</span><a class="src-link" href="${esc(x.pr_url || x.url)}" target="_blank" rel="noopener">원문</a><span class="co">${esc(x.company)}</span>${n && n.summary ? `<p class="esum">${esc(n.summary)}</p>` : ""}</td>
+            <td style="white-space:nowrap">${n ? period(n.period) : '<span class="miss">추출 전</span>'}</td>
+            <td class="n">${n ? pct(n.revenue_yoy) + `<span class="small">${money(n.revenue)}</span>` : '<span class="miss">—</span>'}</td>
+            <td class="n">${eps(n)}</td>
+            <td>${guide(n && n.guidance)}</td>
+            <td class="n">${react(x)}</td>
+          </tr>`;
+        }).join("")}</tbody>
+      </table></div>
+      <p class="note" style="margin-top:1rem">반응: 장전·장중 발표는 전날 종가→발표일 종가, 장후 발표는 발표일 종가→다음 거래일 종가. 시장 대비는 같은 구간 SPY를 뺀 값.
+      분기·매출·EPS·가이던스·요약은 보도자료에서 Gemini가 자동으로 옮긴 것이라 틀릴 수 있습니다. 판단 전에 원문으로 확인하세요. 시각은 미국 동부 기준.</p>`;
+    box.querySelectorAll("[data-d]").forEach(b => b.addEventListener("click", () => { day = b.dataset.d; draw(); }));
+    box.querySelectorAll("[data-s]").forEach(b => b.addEventListener("click", () => { sort = b.dataset.s; draw(); }));
+  };
+  draw();
+}
+fetch("data/earnings.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderEarnings);
 
 fetch("data/amazon.json?t=" + Date.now())
   .then(r => r.ok ? r.json() : null)
