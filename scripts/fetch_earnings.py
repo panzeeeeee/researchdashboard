@@ -12,6 +12,9 @@
     장전·장중 발표: 전날 종가 -> 발표일 종가
     장후 발표:     발표일 종가 -> 다음 거래일 종가 (그 전까지는 '대기')
   반응은 야후에서 한 번에 받는다(종목마다 요청하면 429로 막힌다).
+  보도자료 숫자(매출·EPS·전년 수치·가이던스·한 줄 요약) -- Gemini 추출.
+    실행당 MAX_SUMMARIES 건까지, 큰 회사부터. 못 한 건 다음 실행으로 넘긴다.
+    자동 추출이므로 원문 링크로 확인할 것.
 
 쌓는 방식
   docs/data/earnings.json 에 누적. 이미 있는 건 건너뛰고, 90일 지난 건 버린다.
@@ -20,6 +23,7 @@ SEC 요청 예절
   fetch_edgar.py 와 같은 User-Agent(SEC_USER_AGENT)와 요청 간격을 쓴다.
 """
 
+import json
 import re
 import subprocess
 import sys
@@ -28,9 +32,8 @@ import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
-from common import DATA_DIR, now_kst, read_json, write_json
-from fetch_edgar import HEAD, PAUSE, load_cik_map
-from common import get
+from common import DATA_DIR, ask_gemini, env, get, now_kst, read_json, write_json
+from fetch_edgar import HEAD, PAUSE, load_cik_map, press_release
 
 OUT = DATA_DIR / "earnings.json"
 FEED = ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent"
@@ -40,6 +43,10 @@ LOOKBACK_HOURS = 40      # 이보다 오래된 접수가 나오면 멈춘다
 KEEP_DAYS = 90
 REACT_DAYS = 10          # 이 기간 안의 발표만 반응을 채우거나 다시 본다
 NY = ZoneInfo("America/New_York")
+MAX_SUMMARIES = 20       # 실행당 Gemini 호출 상한
+MAX_TRIES = 2            # 이만큼 실패하면 포기
+PROMPT_CHARS = 30_000    # 보도자료 앞부분만 넘긴다(표가 대개 앞쪽에 있다)
+GEMINI_PAUSE = 5         # 무료 등급 분당 한도를 넉넉히 지킨다
 
 NS = {"a": "http://www.w3.org/2005/Atom"}
 ITEM_RE = re.compile(r"Item\s+(\d+\.\d+)", re.I)
@@ -234,12 +241,127 @@ def fill_reactions(items):
     print(f"  반응 확정 {done}건 · 대기 {wait}건 · 시세 없음 {miss}건")
 
 
+# ---------------------------------------------------------------- 숫자 추출
+
+PROMPT = """아래는 미국 상장사의 분기 실적 보도자료(SEC 8-K 첨부)다.
+보도자료에 적힌 숫자만 옮겨라. 계산하거나 추측하지 마라. 없으면 null.
+
+JSON 하나만 출력한다. 설명, 코드블록 표시(```) 없이.
+{{
+ "period": "보고 분기 (예: Q3 FY2026)",
+ "revenue": 이번 분기 매출(백만 달러, 숫자),
+ "revenue_prior": 전년 같은 분기 매출(백만 달러, 숫자),
+ "eps_gaap": 이번 분기 GAAP 희석 EPS(달러),
+ "eps_gaap_prior": 전년 같은 분기 GAAP 희석 EPS,
+ "eps_adj": 회사가 제시한 조정(Non-GAAP) EPS, 없으면 null,
+ "eps_adj_prior": 전년 같은 분기 조정 EPS,
+ "guidance": "상향" | "유지" | "하향" | "첫 제시" | "없음",
+ "summary": "한국어 한 문장, 60자 이내. 무엇이 좋았고 무엇이 나빴는지."
+}}
+guidance 판정:
+ - 이전 전망치보다 올렸다고 적혀 있으면 "상향", 내렸다고 적혀 있으면 "하향"
+ - 이전 전망치를 그대로 유지한다고 적혀 있으면 "유지"
+ - 이번에 처음 전망치를 내놓았거나, 전망치는 있는데 이전과 비교가 없으면 "첫 제시"
+ - 전망 언급이 아예 없으면 "없음"
+분기가 아니라 연간·반기 보고면 해당 기간 숫자를 쓰고 period 에 그렇게 적어라.
+
+--- 보도자료 ---
+{text}
+"""
+
+NUM_KEYS = ("revenue", "revenue_prior", "eps_gaap", "eps_gaap_prior",
+            "eps_adj", "eps_adj_prior")
+GUIDE = {"상향", "유지", "하향", "첫 제시", "없음"}
+
+
+def _num(v):
+    if v is None or isinstance(v, bool):
+        return None
+    try:
+        return float(str(v).replace(",", "").replace("$", "").strip())
+    except ValueError:
+        return None
+
+
+def parse_answer(raw):
+    if not raw:
+        return None
+    raw = raw.replace("```json", "").replace("```", "")
+    a, b = raw.find("{"), raw.rfind("}")
+    if a < 0 or b <= a:
+        return None
+    try:
+        d = json.loads(raw[a:b + 1])
+    except json.JSONDecodeError:
+        return None
+    out = {k: _num(d.get(k)) for k in NUM_KEYS}
+    out["period"] = str(d.get("period") or "")[:30]
+    g = str(d.get("guidance") or "없음").strip()
+    out["guidance"] = g if g in GUIDE else "없음"
+    out["summary"] = str(d.get("summary") or "")[:120]
+
+    rv, rp = out["revenue"], out["revenue_prior"]
+    out["revenue_yoy"] = round((rv / rp - 1) * 100, 1) if rv and rp and rp > 0 else None
+    if not any(out[k] is not None for k in NUM_KEYS) and not out["summary"]:
+        return None
+    return out
+
+
+def fill_summaries(items, size_rank):
+    key = env("GEMINI_API_KEY")
+    if not key:
+        print("  GEMINI_API_KEY 없음 -- 숫자 추출을 건너뜁니다.")
+        return
+
+    today = datetime.now(NY).date()
+    todo = []
+    for x in items:
+        if x.get("numbers") or x.get("num_tries", 0) >= MAX_TRIES:
+            continue
+        try:
+            if (today - date.fromisoformat(x.get("date_et", ""))).days > REACT_DAYS:
+                continue
+        except ValueError:
+            continue
+        todo.append(x)
+    # 큰 회사부터 (SEC 티커 목록 순서 = 대략 시가총액 순)
+    todo.sort(key=lambda x: size_rank.get(x["ticker"], 10 ** 6))
+    if not todo:
+        print("  숫자 추출할 건 없음")
+        return
+    print(f"  숫자 추출 대기 {len(todo)}건 중 이번에 {min(len(todo), MAX_SUMMARIES)}건")
+
+    ok = fail = 0
+    for x in todo[:MAX_SUMMARIES]:
+        x["num_tries"] = x.get("num_tries", 0) + 1
+        folder = x["accession"].replace("-", "")
+        text, pr_url = press_release(x["cik"], folder, x["ticker"])
+        if not text:
+            fail += 1
+            continue
+        raw = ask_gemini(PROMPT.format(text=text[:PROMPT_CHARS]), key, timeout=90)
+        time.sleep(GEMINI_PAUSE)
+        nums = parse_answer(raw)
+        if not nums:
+            print(f"    {x['ticker']}: 답을 해석하지 못함", file=sys.stderr)
+            fail += 1
+            continue
+        x["numbers"] = nums
+        x["pr_url"] = pr_url
+        ok += 1
+        yoy = nums["revenue_yoy"]
+        print(f"    {x['ticker']:6} {nums['period']:12} 매출 YoY "
+              f"{'—' if yoy is None else f'{yoy:+.1f}%':>7}  가이던스 {nums['guidance']}")
+    print(f"  숫자 추출 성공 {ok}건 · 실패 {fail}건")
+
+
 def main():
     store = read_json(OUT) or {"items": []}
     have = {x["accession"] for x in store["items"]}
 
     cik_map = load_cik_map()            # 티커 -> CIK
     cik_to_ticker = {}
+    size_rank = {t: i for i, t in enumerate(cik_map)}   # SEC 목록 순서
     for t, c in sorted(cik_map.items(), key=lambda kv: len(kv[0])):
         cik_to_ticker.setdefault(c, t)  # 여러 종류 주식이면 짧은 티커 하나만
 
@@ -294,6 +416,11 @@ def main():
         fill_reactions(store["items"])
     except Exception as e:
         print(f"  반응 계산 중 오류(수집분은 그대로 저장): {e}", file=sys.stderr)
+
+    try:
+        fill_summaries(store["items"], size_rank)
+    except Exception as e:
+        print(f"  숫자 추출 중 오류(나머지는 그대로 저장): {e}", file=sys.stderr)
 
     keep_from = (now_kst() - timedelta(days=KEEP_DAYS)).strftime("%Y-%m-%d")
     store["items"] = [x for x in store["items"] if x.get("date_et", "") >= keep_from]
