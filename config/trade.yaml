@@ -1,0 +1,46 @@
+# 수출입 대시보드 테마 목록
+# 한 줄 = 테마 하나. 빼려면 줄을 지우고, 더하려면 같은 모양으로 한 줄 추가.
+#   key: 영문 짧은 이름(겹치지 않게)  name: 화면에 보일 이름
+#   group: 묶음 이름  hs: HS코드(2·4·6·10자리)
+themes:
+  - {key: memory,    name: 메모리 반도체,       group: 반도체,     hs: "854232"}
+  - {key: logic,     name: 시스템반도체,        group: 반도체,     hs: "854231"}
+  - {key: semieq,    name: 반도체 장비,         group: 반도체,     hs: "8486"}
+  - {key: cosmetic,  name: 화장품,              group: 뷰티·헬스,  hs: "3304"}
+  - {key: bio,       name: 바이오의약품·톡신,   group: 뷰티·헬스,  hs: "3002"}
+  - {key: pharma,    name: 완제의약품,          group: 뷰티·헬스,  hs: "3004"}
+  - {key: meddevice, name: 의료기기,            group: 뷰티·헬스,  hs: "9018"}
+  - {key: transformer, name: 변압기·전력변환기, group: 전력·에너지, hs: "8504"}
+  - {key: cable,     name: 전선·케이블,         group: 전력·에너지, hs: "8544"}
+  - {key: solar,     name: 태양광 모듈,         group: 전력·에너지, hs: "854143"}
+  - {key: battery,   name: 리튬이온 배터리,     group: 전력·에너지, hs: "850760"}
+  - {key: car,       name: 승용차,              group: 산업·소비,  hs: "8703"}
+  - {key: ship,      name: 선박,                group: 산업·소비,  hs: "8901"}
+  - {key: ramen,     name: 라면,                group: 산업·소비,  hs: "190230"}
+
+# 국가별로 나눠 볼 나라들 (코드: 이름). 여기 없는 나라는 '기타'로 묶인다.
+countries:
+  US: 미국
+  CN: 중국
+  JP: 일본
+  HK: 홍콩
+  VN: 베트남
+  TW: 대만
+  SG: 싱가포르
+  MY: 말레이시아
+  PH: 필리핀
+  TH: 태국
+  ID: 인도네시아
+  IN: 인도
+  AU: 호주
+  DE: 독일
+  NL: 네덜란드
+  PL: 폴란드
+  GB: 영국
+  RU: 러시아
+  AE: 아랍에미리트
+  KZ: 카자흐스탄
+  MX: 멕시코
+  CA: 캐나다
+  TR: 튀르키예
+  SA: 사우디아라비아
