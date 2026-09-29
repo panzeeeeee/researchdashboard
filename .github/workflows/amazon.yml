@@ -50,6 +50,7 @@ jobs:
         # 최근 40시간 안에 접수된 실적 공시를 모은다. 이미 받은 건 건너뛴다.
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/fetch_earnings.py
         continue-on-error: true
 
