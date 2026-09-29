@@ -41,7 +41,12 @@ nav a:hover{background:var(--card);color:var(--ink)}
 nav a.on{color:#fff;background:var(--accent);font-weight:700}
 nav a.on .count{color:rgba(255,255,255,.8)}
 nav .count{float:right;color:var(--ink-3);font-size:.74rem;font-weight:400}
-nav .divider{height:1px;background:var(--rule);margin:.6rem}
+nav .divider{height:1px;background:var(--rule);margin:1rem .6rem .5rem}
+nav .gl{font-size:.7rem;font-weight:600;color:var(--ink-3);letter-spacing:.06em;
+  margin:1.1rem .75rem .3rem;line-height:1}
+nav .gl:first-child{margin-top:.2rem}
+nav a{white-space:nowrap}
+nav a.soon{font-size:.78rem;color:var(--ink-3)}
 main section{display:none}
 main section.on{display:block}
 @media (max-width:760px){
@@ -52,7 +57,7 @@ main section.on{display:block}
   nav a{white-space:nowrap;border-radius:999px;padding:.4rem .75rem;margin-bottom:0}
   nav a.on{background:var(--accent);color:#fff}
   nav a br{display:none}
-  nav .count,nav .divider{display:none}
+  nav .count,nav .divider,nav .gl{display:none}
   .brow{grid-template-columns:76px 1fr 54px !important;gap:.4rem !important}
 }
 
@@ -204,26 +209,36 @@ tr:last-child td{border-bottom:none}
 <div class="layout">
 
 <nav id="nav">
+  <p class="gl">오늘</p>
   <a href="#picks" class="on">오늘의 종목 <span class="count" id="c-picks"></span></a>
   <a href="#hotnews">주요뉴스</a>
+  <a href="#news">섹터 뉴스 <span class="count" id="c-news"></span></a>
   <a href="#calendar">주요 일정</a>
-  <a href="#macro">경제 지표</a>
+
+  <p class="gl">시장</p>
   <a href="#market">미국 시황</a>
   <a href="#breadth">섹터 온도</a>
   <a href="#commodities">원자재·귀금속</a>
+  <a href="#macro">경제 지표</a>
+
+  <p class="gl">돈의 흐름</p>
   <a href="#liquidity">글로벌 유동성</a>
   <a href="#credit">크레딧 스프레드</a>
-  <a href="#moneymarket">자금시장 상세</a>
-  <a href="#portfolio">포트폴리오</a>
+  <a href="#moneymarket">자금시장</a>
+
+  <p class="gl">스크리너</p>
+  <a href="#breakout">긴 조정 후 신고가</a>
   <a href="#deepvalue">딥밸류</a>
-  <a href="#breakout">긴 조정 후<br>52주 신고가</a>
-  <a href="#extremes">신고가·신저가<br>카드</a>
+  <a href="#extremes">신고가·신저가</a>
+
+  <p class="gl">내 종목·리서치</p>
+  <a href="#portfolio">포트폴리오</a>
   <a href="#calls">컨콜 흐름</a>
-  <a href="#amazon">센텔리안24<br>아마존</a>
+  <a href="#amazon">센텔리안24 아마존</a>
   <a href="#trade">수출입 레이더</a>
-  <a href="#news">섹터 뉴스 <span class="count" id="c-news"></span></a>
+
   <div class="divider"></div>
-  <a href="#soon">준비 중</a>
+  <a href="#soon" class="soon">준비 중</a>
 </nav>
 
 <main>
