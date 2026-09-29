@@ -365,6 +365,44 @@ def extreme_lines(cards):
     return out
 
 
+def low_summary(highs, lows, top=3):
+    """신저가를 업종별로 세서 두세 줄로 요약한다.
+    같은 업종의 신고가 수를 옆에 붙여, 업종 전체가 무너지는 건지
+    그 업종 안에서도 갈리는 건지 구분할 수 있게 한다."""
+    if not lows:
+        return ""
+
+    def count(cards):
+        out = {}
+        for c in cards:
+            k = (c.get("sector") or "").strip() or "기타"
+            out[k] = out.get(k, 0) + 1
+        return out
+
+    lo, hi = count(lows), count(highs)
+    ranked = sorted(lo.items(), key=lambda kv: -kv[1])
+    total = len(lows)
+
+    lines = ["<b>📉 신저가 업종</b>"]
+    for name, n in ranked[:top]:
+        share = round(n / total * 100)
+        lines.append(f"· {esc(name)} {n}개 ({share}%) · 같은 업종 신고가 {hi.get(name, 0)}개")
+
+    name, n = ranked[0]
+    share = n / total
+    h = hi.get(name, 0)
+    if n < 3 or (len(ranked) > 1 and ranked[1][1] == n):
+        note = "뚜렷하게 몰린 업종 없음 -- 개별 종목 이슈에 가까움"
+    elif share >= 0.3 and h == 0:
+        note = f"{name}에 몰려 있고 신고가는 없음 -- 업종 전체가 밀리는 모양"
+    elif share >= 0.3:
+        note = f"{name}에 몰려 있지만 신고가도 {h}개 -- 업종 안에서 종목별로 갈림"
+    else:
+        note = "여러 업종에 흩어져 있음 -- 특정 업종 문제라기보다 개별 종목 이슈"
+    lines.append(f"<i>{esc(note)}</i>")
+    return "\n".join(lines)
+
+
 # 섹션별: (차트 제목 영문, 차트 색)
 SECTIONS = {
     "breakout":  ("NEW HIGH AFTER BASE", "#16a34a"),
@@ -383,11 +421,14 @@ def build_screener_messages():
     highs = ex.get("high") or []
     lows = ex.get("low") or []
 
-    messages = [(None, None,
-        f"<b>🔎 스크리너 결과</b>  <i>{now_kst().strftime('%m/%d')}</i>\n"
-        f"· 긴 조정 후 신고가 {len(bo)}건\n"
-        f"· 딥밸류 {len(dv)}건\n"
-        f"· 52주 신고가 {len(highs)}건 · 신저가 {len(lows)}건")]
+    head = (f"<b>🔎 스크리너 결과</b>  <i>{now_kst().strftime('%m/%d')}</i>\n"
+            f"· 긴 조정 후 신고가 {len(bo)}건\n"
+            f"· 딥밸류 {len(dv)}건\n"
+            f"· 52주 신고가 {len(highs)}건 · 신저가 {len(lows)}건")
+    low_text = low_summary(highs, lows)
+    if low_text:
+        head += "\n\n" + low_text
+    messages = [(None, None, head)]
 
     for c in bo:
         messages.append((c, "breakout", "🟢 <b>[신고가]</b>\n" + "\n".join(breakout_lines([c]))))
@@ -395,8 +436,7 @@ def build_screener_messages():
         messages.append((c, "deepvalue", "🔵 <b>[딥밸류]</b>\n" + "\n".join(deepvalue_lines([c]))))
     for c in highs:
         messages.append((c, "high", "🔺 <b>[52주 신고가]</b>\n" + "\n".join(extreme_lines([c]))))
-    for c in lows:
-        messages.append((c, "low", "🔻 <b>[52주 신저가]</b>\n" + "\n".join(extreme_lines([c]))))
+    # 신저가는 종목별로 보내지 않는다 -- 너무 많아서. 위 요약에 업종별 개수만.
     return messages
 
 
