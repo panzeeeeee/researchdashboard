@@ -1,0 +1,42 @@
+name: 센텔리안24 아마존
+
+on:
+  schedule:
+    # UTC 기준입니다. 한국시간 매일 아침 7시 반, 하루 한 번.
+    # 시트에 새 날짜가 있으면 반영하고, 없으면 그대로 둡니다.
+    - cron: "30 22 * * *"
+  workflow_dispatch:        # 저장소 Actions 탭에서 손으로도 돌릴 수 있습니다
+
+permissions:
+  contents: write
+
+concurrency:
+  # 대시보드 갱신(news.yml)과 같은 줄에 세워, 둘이 동시에 커밋하다 부딪히지 않게 한다
+  group: news
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 시트 읽기 → 패널 데이터·이력 갱신
+        run: python scripts/fetch_amazon.py
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "dashboard-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/data/amazon.json history
+          git diff --staged --quiet && exit 0
+          git commit -m "아마존 트래커 갱신 $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase
+          git push
