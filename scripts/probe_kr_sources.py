@@ -193,6 +193,10 @@ def probe_sample():
 
 
 def main():
+    if env("PROBE_ONLY") == "ecos":
+        import probe_ecos
+        probe_ecos.main()
+        return
     if env("PROBE_ONLY") == "dartidx":
         import probe_dart_fin
         probe_dart_fin.main_idx()

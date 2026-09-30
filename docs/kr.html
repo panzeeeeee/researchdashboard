@@ -49,8 +49,13 @@ h2{font-size:1.25rem;font-weight:700;margin:0 0 1.3rem;letter-spacing:-.01em}
 /* 화면 제목 앞 색 띠 = 사이드바 묶음 색 (미국 화면과 같은 방식) */
 main section > h2{display:flex;align-items:baseline;flex-wrap:wrap;gap:.1rem}
 main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;border-radius:3px;margin-right:.6rem;background:var(--sg,var(--accent))}
-#s-news,#s-dart{--sg:#0F6E56} #s-market,#s-breadth,#s-rates{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn,#s-break,#s-extreme{--sg:#854F0B}
-@media (prefers-color-scheme: dark){#s-news,#s-dart{--sg:#5DCAA5} #s-market,#s-breadth,#s-rates{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn,#s-break,#s-extreme{--sg:#EF9F27}}
+#s-news,#s-dart{--sg:#0F6E56} #s-market,#s-breadth,#s-rates{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#854F0B}
+@media (prefers-color-scheme: dark){#s-news,#s-dart{--sg:#5DCAA5} #s-market,#s-breadth,#s-rates{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#EF9F27}}
+.dots{display:flex;gap:.25rem;flex-wrap:wrap;margin:.4rem 0 0}
+.dots span{font-size:.68rem;border-radius:4px;padding:0 .35rem;border:1px solid var(--rule);color:var(--ink-3)}
+.dots span.y{background:var(--up);border-color:var(--up);color:#fff}
+.trg{display:inline-block;font-size:.7rem;font-weight:700;color:#fff;background:#2563eb;border-radius:4px;padding:0 .4rem;margin:.25rem .25rem 0 0}
+.why{font-size:.82rem;color:var(--ink-2);margin:.35rem 0 0;line-height:1.5}
 .scard{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.8rem .9rem;border-top:3px solid var(--sg,var(--accent))}
 .scard .nm{font-weight:700;font-size:1rem;line-height:1.35} .scard .sm{font-size:.76rem;color:var(--ink-3)}
 .scard .px{font-size:1.25rem;font-weight:700;font-variant-numeric:tabular-nums}
@@ -177,6 +182,7 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
   <div class="ngrp g4">
     <p class="gl">스크리너</p>
     <a href="#break">긴 조정 후 신고가</a>
+    <a href="#dv">딥밸류</a>
     <a href="#extreme">신고가·신저가</a>
     <a href="#earn">잠정실적 레이더</a>
   </div>
@@ -212,6 +218,11 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
 <section id="s-break">
   <h2>긴 조정 후 신고가<span class="tagline" id="break-tag">코스피·코스닥 52주 신고가 × 물극필반 · 종가 기준</span></h2>
   <div id="break-box"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="s-dv">
+  <h2>딥밸류<span class="tagline" id="dv-tag">싸고 망가졌지만 살아남고 회복 신호가 있는 종목 · 미국 딥밸류와 같은 판정</span></h2>
+  <div id="dv-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="s-extreme">
@@ -658,6 +669,66 @@ function renderBreak(d) {
   };
   draw();
 }
+
+// ── 딥밸류 (data/kr_deepvalue.json) ──
+const F_LABELS = { f1_roa_pos: "ROA>0", f2_cfo_pos: "영업CF>0", f3_droa_pos: "ROA개선", f4_accrual: "현금>이익",
+  f5_dlev_down: "부채↓", f6_dcurr_up: "유동비율↑", f7_no_issue: "주식발행無", f8_dmargin_up: "매출총이익률↑", f9_dturnover_up: "자산회전↑" };
+function renderDv(d) {
+  const box = document.getElementById("dv-box");
+  if (!d) { box.innerHTML = '<p class="note">kr_deepvalue.json 이 아직 없습니다. Actions 탭에서 "한국 딥밸류"를 실행하세요.</p>'; return; }
+  const tag = document.getElementById("dv-tag");
+  if (tag) tag.textContent = `싸고 망가졌지만 살아남고 회복 신호가 있는 종목 · ${d.asof} 종가 · 미국 딥밸류와 같은 판정`;
+  let mode = (d.candidates || []).length ? "cand" : "near", mk = "전체";
+  const pct = (v, dp = 1) => v == null ? "—" : (v > 0 ? "+" : "") + v.toFixed(dp) + "%";
+  const x = (v, dp = 1) => v == null ? "—" : v.toFixed(dp) + "배";
+  const draw = () => {
+    const src = mode === "trig" ? (d.triggered || []) : mode === "near" ? (d.near || []) : (d.candidates || []);
+    const rows = src.filter(r => mk === "전체" || r.market === mk);
+    const f = Object.fromEntries((d.funnel || []).map(a => [a[0], a[1]]));
+    box.innerHTML = `
+      <div class="grid">
+        <div class="slot"><p class="cap">후보</p><p class="big">${(d.candidates || []).length}</p><p>F-Score ${d.notes.cfg.min_fscore}+ 통과</p></div>
+        <div class="slot"><p class="cap">오늘 트리거 발동</p><p class="big">${(d.triggered || []).length}</p><p>후보 중 신호가 켜진 것</p></div>
+        <div class="slot"><p class="cap">근접(F-Score 미달)</p><p class="big">${(d.near || []).length}</p><p>싸고 살아 있지만 회복 신호 부족</p></div>
+        <div class="slot"><p class="cap">재무 확보</p><p class="big">${f["재무 확보"] ?? "—"}</p><p>가격 필터 통과 ${f["0단계 가격 필터 통과"] ?? "—"} 중${f["재무 수집 미룸(다음 실행)"] ? " · 미룸 " + f["재무 수집 미룸(다음 실행)"] : ""}</p></div>
+      </div>
+      <div class="btns">
+        <button data-m="cand" class="${mode === "cand" ? "on" : ""}">후보 (${(d.candidates || []).length})</button>
+        <button data-m="trig" class="${mode === "trig" ? "on" : ""}">트리거 발동 (${(d.triggered || []).length})</button>
+        <button data-m="near" class="${mode === "near" ? "on" : ""}">근접후보 (${(d.near || []).length})</button>
+        ${["전체", "코스피", "코스닥"].map(k => `<button data-k="${k}" class="${mk === k ? "on" : ""}">${k}</button>`).join("")}
+      </div>
+      ${rows.length ? `<div class="cards">${rows.map(r => `
+        <div class="scard">
+          <div class="nm">${esc(r.name)}${r.trigger_count ? '<span class="fin">트리거</span>' : ""}</div>
+          <div class="sm">${esc(r.code)} · ${esc(r.market)} · ${esc(r.industry || r.sector || "")}</div>
+          <div class="px">${num(r.price, 0)}원 <span class="miss" style="font-size:.78rem;font-weight:400">시총 ${r.mcap_eok == null ? "—" : num(r.mcap_eok, 0) + "억"}</span></div>
+          ${spark((r.chart || []).map(p => ({ value: p[1] })))}
+          <div class="st"><b>F-Score ${r.fscore ?? "—"}</b>${r.composite != null ? ` · 종합 ${r.composite}` : ""} · 3년 고점 대비 ${pct(r.dd_3y, 0)} · 200일선 아래 ${r.days_below ?? "—"}일<br>
+            정상화이익수익률 ${pct(r.norm_earn_yield)} · EV/매출 ${x(r.ev_sales, 2)} · P/TBV ${x(r.p_tbv, 2)} · FCF수익률 ${pct(r.fcf_yield)}<br>
+            순차입/EBITDA ${x(r.net_debt_ebitda)} · 이자보상 ${x(r.int_cov)} · 유동비율 ${r.curr_ratio ?? "—"}<br>
+            3년 주식수 ${pct(r.share_growth_3y)} · 5년 매출 CAGR ${pct(r.rev_cagr_5y)} · 최근분기 매출 YoY ${pct(r.rev_yoy_q0)}</div>
+          ${r.why ? `<p class="why">왜 싼가: ${esc(r.why)}</p>` : ""}
+          ${r.triggers ? `<div>${r.triggers.split(", ").filter(Boolean).map(t => `<span class="trg">${esc(t.replace(/_/g, " "))}</span>`).join("")}</div>` : ""}
+          <div class="dots">${Object.entries(F_LABELS).map(([k, n]) => `<span class="${(r.f_parts || {})[k] ? "y" : ""}" title="${esc(n)}">${esc(n)}</span>`).join("")}</div>
+        </div>`).join("")}</div>` : '<p class="note">이 조건의 종목이 없습니다.</p>'}
+      <details class="dg"><summary>깔때기 진단과 탈락 사유</summary>
+        <table><tbody>${(d.funnel || []).map(a => `<tr><td>${esc(a[0])}</td><td class="r">${a[1]}</td></tr>`).join("")}</tbody></table>
+        <p class="sub" style="margin-top:1rem">탈락 사유(상위)</p>
+        <table><tbody>${(d.reject_reasons || []).map(a => `<tr><td>${a.stage}단계 · ${esc(a.reason)}</td><td class="r">${a.n}</td></tr>`).join("")}</tbody></table>
+        <p class="sub" style="margin-top:1rem">재무 값 확보율(%)</p>
+        <p class="note">${Object.entries(d.coverage || {}).map(([k, v]) => `${esc(k)} ${v}`).join(" · ")}</p></details>
+      <p class="note" style="margin-top:1rem">미국 딥밸류와 같은 판정입니다: 가격 필터(3년 고점 대비 큰 낙폭·200일선 아래 오래 머묾) → 생존·희석 하드컷(이자보상·차입·유동비율·주식 희석·구조적 매출 감소) →
+      피오트로스키 F-Score ${d.notes.cfg.min_fscore}점 이상 → 정상화이익수익률·FCF·EV/매출 등으로 점수. 초록 칸이 통과한 F-Score 세부 항목입니다.
+      한국 실정에 맞춰 종가 ${num(d.notes.cfg.min_price, 0)}원 이상·20일 평균 거래대금 ${d.notes.cfg.min_turnover_eok}억 원 이상·시총 ${num(d.notes.cfg.min_mcap_eok, 0)}억 원 이상으로 바꿨습니다.
+      재무는 DART 전체 재무제표(연결 우선)에서 가져옵니다. ${esc(d.notes.missing)} 감가상각비를 재무제표에서 못 찾은 종목은 EBITDA 관련 항목이 비어 있습니다.
+      자동 계산 결과이며 투자 판단은 원문 공시와 함께 하세요.</p>`;
+    box.querySelectorAll("[data-m]").forEach(b => b.addEventListener("click", () => { mode = b.dataset.m; draw(); }));
+    box.querySelectorAll("[data-k]").forEach(b => b.addEventListener("click", () => { mk = b.dataset.k; draw(); }));
+  };
+  draw();
+}
+fetch("data/kr_deepvalue.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderDv);
 
 function renderExtreme(d) {
   const box = document.getElementById("extreme-box");
