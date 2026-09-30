@@ -33,7 +33,7 @@ from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
 from common import DATA_DIR, ask_gemini, env, get, now_kst, read_json, write_json
-from fetch_edgar import HEAD, PAUSE, load_cik_map, press_release
+from fetch_edgar import HEAD, PAUSE, load_cik_map, press_release, sec_get
 
 OUT = DATA_DIR / "earnings.json"
 FEED = ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent"
@@ -45,6 +45,7 @@ REACT_DAYS = 10          # 이 기간 안의 발표만 반응을 채우거나 �
 NY = ZoneInfo("America/New_York")
 MAX_SUMMARIES = 20       # 실행당 Gemini 호출 상한
 MAX_TRIES = 2            # 이만큼 실패하면 포기
+MAX_INDUSTRY = 80        # 실행당 업종 조회 상한 (회사마다 SEC 요청 1번)
 PROMPT_CHARS = 30_000    # 보도자료 앞부분만 넘긴다(표가 대개 앞쪽에 있다)
 GEMINI_PAUSE = 5         # 무료 등급 분당 한도를 넉넉히 지킨다
 
@@ -241,9 +242,68 @@ def fill_reactions(items):
     print(f"  반응 확정 {done}건 · 대기 {wait}건 · 시세 없음 {miss}건")
 
 
+# ---------------------------------------------------------------- 업종
+
+# SEC 산업코드(SIC) -> 대분류. 위에서부터 먼저 맞는 규칙을 쓰므로 세부 규칙이 앞에 온다.
+SIC_RULES = [
+    (100, 999, "필수소비재"), (1000, 1099, "소재"), (1200, 1399, "에너지"),
+    (1400, 1499, "소재"), (1500, 1799, "산업재"),
+    (2000, 2199, "필수소비재"), (2200, 2399, "경기소비재"), (2400, 2499, "소재"),
+    (2500, 2599, "경기소비재"), (2600, 2699, "소재"), (2700, 2799, "커뮤니케이션"),
+    (2830, 2839, "헬스케어"), (2840, 2849, "필수소비재"), (2800, 2899, "소재"),
+    (2900, 2999, "에너지"), (3000, 3099, "소재"), (3100, 3199, "경기소비재"),
+    (3200, 3399, "소재"), (3400, 3499, "산업재"),
+    (3570, 3579, "IT"), (3500, 3569, "산업재"), (3580, 3599, "산업재"),
+    (3651, 3651, "경기소비재"), (3660, 3679, "IT"), (3600, 3699, "산업재"),
+    (3710, 3719, "경기소비재"), (3700, 3799, "산업재"),
+    (3826, 3826, "헬스케어"), (3840, 3859, "헬스케어"), (3800, 3899, "산업재"),
+    (3900, 3999, "경기소비재"), (4000, 4799, "산업재"), (4800, 4899, "커뮤니케이션"),
+    (4900, 4999, "유틸리티"), (5122, 5122, "헬스케어"), (5000, 5199, "산업재"),
+    (5400, 5499, "필수소비재"), (5912, 5912, "필수소비재"), (5200, 5999, "경기소비재"),
+    (6770, 6770, "기타"), (6798, 6798, "부동산"), (6500, 6599, "부동산"),
+    (6000, 6799, "금융"), (7000, 7299, "경기소비재"), (7370, 7379, "IT"),
+    (7300, 7399, "산업재"), (7800, 7899, "커뮤니케이션"), (7900, 7999, "경기소비재"),
+    (8000, 8099, "헬스케어"), (8731, 8731, "헬스케어"), (8100, 8999, "산업재"),
+]
+
+
+def sector_of(sic):
+    try:
+        s = int(sic)
+    except (TypeError, ValueError):
+        return "기타"
+    for lo, hi, name in SIC_RULES:
+        if lo <= s <= hi:
+            return name
+    return "기타"
+
+
+def fill_industry(items):
+    """종목마다 SEC 산업코드로 대분류(sector)와 세부 업종(industry)을 붙인다.
+    같은 회사(CIK)는 한 번만 묻고, 실행당 MAX_INDUSTRY 건까지."""
+    known = {x["cik"]: (x["sic"], x["industry"]) for x in items
+             if x.get("cik") and x.get("sic")}
+    asked = ok = 0
+    for x in items:
+        if x.get("sector") or not x.get("cik"):
+            continue
+        if x["cik"] not in known:
+            if asked >= MAX_INDUSTRY:
+                continue
+            asked += 1
+            d = sec_get(f"https://data.sec.gov/submissions/CIK{x['cik']}.json", as_json=True)
+            if not d:
+                continue
+            known[x["cik"]] = (str(d.get("sic") or ""), str(d.get("sicDescription") or ""))
+        sic, desc = known[x["cik"]]
+        x.update({"sic": sic, "industry": desc, "sector": sector_of(sic)})
+        ok += 1
+    print(f"  업종 채움 {ok}건 (SEC 조회 {asked}회)")
+
+
 # ---------------------------------------------------------------- 숫자 추출
 
-PROMPT = """아래는 미국 상장사의 분기 실적 보도자료(SEC 8-K 첨부)다.
+PROMPT ="""아래는 미국 상장사의 분기 실적 보도자료(SEC 8-K 첨부)다.
 보도자료에 적힌 숫자만 옮겨라. 계산하거나 추측하지 마라. 없으면 null.
 
 JSON 하나만 출력한다. 설명, 코드블록 표시(```) 없이.
@@ -416,6 +476,11 @@ def main():
         fill_reactions(store["items"])
     except Exception as e:
         print(f"  반응 계산 중 오류(수집분은 그대로 저장): {e}", file=sys.stderr)
+
+    try:
+        fill_industry(store["items"])
+    except Exception as e:
+        print(f"  업종 채우기 중 오류(나머지는 그대로 저장): {e}", file=sys.stderr)
 
     try:
         fill_summaries(store["items"], size_rank)

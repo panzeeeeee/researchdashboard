@@ -1928,6 +1928,8 @@ const AMZ_METRICS = {
   price:  { kind: "price", label: "가격", log: false, note: "달러 · 할인 반영된 판매가" },
 };
 
+const AMZ_GAP_DAYS = 3;   // 이보다 오래 기록이 빈 구간은 선을 끊는다
+
 const amzShort = p => p.name.replace(/^[A-Z]?\d+\s+/, "").slice(0, 28);
 const amzMetric = (p, kind) => (p.metrics || []).find(m => m.kind === kind);
 const amzLast = m => (m && m.series && m.series.length) ? m.series[m.series.length - 1] : null;
@@ -1937,7 +1939,7 @@ const amzNum = v => (typeof v === "number") ? fmtNum(v) : esc(nz(v));
 // 여러 상품을 한 차트에 겹친다. 날짜 간격이 들쭉날쭉해서 실제 날짜 위치에 점을 찍는다.
 function amzChart(lines, opt) {
   const narrow = window.innerWidth < 700;
-  const W = narrow ? 400 : 720, H = narrow ? 260 : 280, L = narrow ? 52 : 62, R = 14, T = 14, B = 30;
+  const W = narrow ? 400 : 720, H = narrow ? 260 : 280, L = narrow ? 52 : 62, R = 24, T = 14, B = 30;
   const pts = lines.flatMap(l => l.series.filter(p => typeof p[1] === "number" && (!opt.log || p[1] > 0)));
   if (pts.length < 2) return '<p class="note">이 지표는 아직 자료가 부족합니다.</p>';
 
@@ -1987,7 +1989,11 @@ function amzChart(lines, opt) {
   const body = lines.filter(l => !l.off).map(l => {
     const s = l.series.filter(p => typeof p[1] === "number" && (!opt.log || p[1] > 0));
     if (!s.length) return "";
-    const d = s.map((p, i) => `${i ? "L" : "M"}${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`).join(" ");
+    // 기록 사이가 AMZ_GAP_DAYS 일보다 벌어지면 선을 잇지 않고 끊는다(점은 그대로)
+    const d = s.map((p, i) => {
+      const cut = !i || (tx(p[0]) - tx(s[i - 1][0])) / 864e5 > AMZ_GAP_DAYS;
+      return `${cut ? "M" : "L"}${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`;
+    }).join(" ");
     const dots = s.map(p => `<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="3.2"
         fill="${l.color}"><title>${esc(l.label)} · ${esc(p[0])} · ${fmtNum(p[1])}</title></circle>`).join("");
     return `<path d="${d}" fill="none" stroke="${l.color}" stroke-width="2"
@@ -2305,8 +2311,8 @@ function renderEarnings(d) {
   const cnt = document.getElementById("c-earnings");
   if (cnt) cnt.textContent = items.filter(x => x.date_et === dates[0]).length || "";
 
-  let day = dates[0], sort = "time";
-  const wd = s => "일월화수목금토"[new Date(s + "T12:00:00").getDay()];
+  let day = dates[0], sort = "time", view = "stock", span = 30;
+  const wd =s => "일월화수목금토"[new Date(s + "T12:00:00").getDay()];
   const pct = (v, unit = "%") => v == null ? '<span class="miss">—</span>'
     : `<span class="${v > 0 ? "up" : v < 0 ? "down" : ""}">${v > 0 ? "+" : ""}${v.toFixed(1)}${unit}</span>`;
   const money = v => v == null ? "" : v >= 1000 ? "$" + (v / 1000).toFixed(v >= 10000 ? 0 : 1) + "B" : "$" + Math.round(v) + "M";
@@ -2337,7 +2343,52 @@ function renderEarnings(d) {
     return esc(p);
   };
 
+  // 업종별 집계: 최근 span 일 안에 발표한 건을 대분류(sector)로 묶는다
+  const medianOf = a => { a = a.filter(v => v != null).sort((p, q) => p - q); return a.length ? a[Math.floor((a.length - 1) / 2)] : null; };
+  const drawSector = () => {
+    const from = new Date(Date.now() - span * 864e5).toISOString().slice(0, 10);
+    const pool = items.filter(x => (x.date_et || "") >= from);
+    const groups = {};
+    pool.forEach(x => (groups[x.sector || "미분류"] ||= []).push(x));
+    const rows = Object.entries(groups).map(([name, v]) => {
+      const gs = v.map(x => x.numbers && x.numbers.guidance).filter(g => g && g !== "없음");
+      const up = gs.filter(g => g === "상향").length, dn = gs.filter(g => g === "하향").length;
+      const done = v.filter(x => x.react_status === "확정");
+      return { name, n: v.length,
+        rel: medianOf(done.map(x => x.rel_pct)), relN: done.length,
+        yoy: medianOf(v.map(x => x.numbers && x.numbers.revenue_yoy)),
+        yoyN: v.filter(x => x.numbers && x.numbers.revenue_yoy != null).length,
+        up, dn, gN: gs.length };
+    }).sort((a, b) => b.n - a.n);
+    const ratio = (k, n) => n ? Math.round(k / n * 100) + "%" : "—";
+    box.innerHTML = `
+      ${viewTabs()}
+      <div class="rangebtns">
+        ${[7, 30, 90].map(s => `<button data-span="${s}" class="${s === span ? "on" : ""}">최근 ${s}일</button>`).join("")}
+      </div>
+      <div class="scroll"><table>
+        <thead><tr><th>업종</th><th class="n">발표</th><th class="n">시장 대비<br>중앙값</th><th class="n">매출 YoY<br>중앙값</th><th class="n">가이던스<br>상향 비율</th><th class="n">가이던스<br>하향 비율</th></tr></thead>
+        <tbody>${rows.map(r => `<tr>
+          <td>${esc(r.name)}</td>
+          <td class="n">${r.n}건</td>
+          <td class="n">${pct(r.rel, "%p")}<span class="small">${r.relN}곳 기준</span></td>
+          <td class="n">${pct(r.yoy)}<span class="small">${r.yoyN}곳 기준</span></td>
+          <td class="n">${ratio(r.up, r.gN)}<span class="small">${r.up}/${r.gN}</span></td>
+          <td class="n">${ratio(r.dn, r.gN)}<span class="small">${r.dn}/${r.gN}</span></td></tr>`).join("")}</tbody>
+      </table></div>
+      <p class="note" style="margin-top:1rem">업종은 SEC 산업코드(SIC)를 11개 대분류로 묶은 것이라 GICS와 다를 수 있습니다. 발표가 3건 미만인 업종은 중앙값이 흔들리니 참고만 하세요.
+      가이던스 비율은 '없음'을 뺀 곳 기준입니다. 시장 대비는 반응이 확정된 곳만 계산합니다.</p>`;
+    bindView();
+    box.querySelectorAll("[data-span]").forEach(b => b.addEventListener("click", () => { span = +b.dataset.span; drawSector(); }));
+  };
+  const viewTabs = () => `<div class="rangebtns">
+      <button data-view="stock" class="${view === "stock" ? "on" : ""}">종목별</button>
+      <button data-view="sector" class="${view === "sector" ? "on" : ""}">업종별 집계</button></div>`;
+  const bindView = () => box.querySelectorAll("[data-view]").forEach(b =>
+    b.addEventListener("click", () => { view = b.dataset.view; draw(); }));
+
   const draw = () => {
+    if (view === "sector") { drawSector(); return; }
     let rows = items.filter(x => day === "all" || x.date_et === day);
     if (sort === "up") rows = rows.slice().sort((a, b) => (b.rel_pct ?? -1e9) - (a.rel_pct ?? -1e9));
     else if (sort === "down") rows = rows.slice().sort((a, b) => (a.rel_pct ?? 1e9) - (b.rel_pct ?? 1e9));
@@ -2350,6 +2401,7 @@ function renderEarnings(d) {
     const med = yoys.length ? yoys[Math.floor((yoys.length - 1) / 2)] : null;
 
     box.innerHTML = `
+      ${viewTabs()}
       <div class="rangebtns">
         ${dates.slice(0, 6).map(t => `<button data-d="${t}" class="${t === day ? "on" : ""}">${t.slice(5).replace("-", "/")}(${wd(t)})</button>`).join("")}
         <button data-d="all" class="${day === "all" ? "on" : ""}">전체</button>
@@ -2375,7 +2427,7 @@ function renderEarnings(d) {
           const n = x.numbers;
           return `<tr>
             <td class="when">${esc((x.accepted_et || "").slice(5).replace("-", "/"))}<span class="sess">${esc(x.session)}</span></td>
-            <td class="stock"><span class="tick">${esc(x.ticker)}</span><a class="src-link" href="${esc(x.pr_url || x.url)}" target="_blank" rel="noopener">원문</a><span class="co">${esc(x.company)}</span>${n && n.summary ? `<p class="esum">${esc(n.summary)}</p>` : ""}</td>
+            <td class="stock"><span class="tick">${esc(x.ticker)}</span><a class="src-link" href="${esc(x.pr_url || x.url)}" target="_blank" rel="noopener">원문</a><span class="co">${esc(x.company)}${x.sector ? ` · ${esc(x.sector)}` : ""}</span>${n && n.summary ? `<p class="esum">${esc(n.summary)}</p>` : ""}</td>
             <td style="white-space:nowrap">${n ? period(n.period) : '<span class="miss">추출 전</span>'}</td>
             <td class="n">${n ? pct(n.revenue_yoy) + `<span class="small">${money(n.revenue)}</span>` : '<span class="miss">—</span>'}</td>
             <td class="n">${eps(n)}</td>
@@ -2386,6 +2438,7 @@ function renderEarnings(d) {
       </table></div>
       <p class="note" style="margin-top:1rem">반응: 장전·장중 발표는 전날 종가→발표일 종가, 장후 발표는 발표일 종가→다음 거래일 종가. 시장 대비는 같은 구간 SPY를 뺀 값.
       분기·매출·EPS·가이던스·요약은 보도자료에서 Gemini가 자동으로 옮긴 것이라 틀릴 수 있습니다. 판단 전에 원문으로 확인하세요. 시각은 미국 동부 기준.</p>`;
+    bindView();
     box.querySelectorAll("[data-d]").forEach(b => b.addEventListener("click", () => { day = b.dataset.d; draw(); }));
     box.querySelectorAll("[data-s]").forEach(b => b.addEventListener("click", () => { sort = b.dataset.s; draw(); }));
   };

@@ -22,6 +22,8 @@ import time
 
 import requests
 
+from datetime import datetime, timedelta
+
 from common import DATA_DIR, env, now_kst, read_json
 
 API = "https://api.telegram.org/bot{token}/sendMessage"
@@ -403,6 +405,88 @@ def low_summary(highs, lows, top=3):
     return "\n".join(lines)
 
 
+EARNINGS_TOP = 8           # 텔레그램에 종목별로 적는 최대 건수(큰 회사 순)
+EARNINGS_STALE_HOURS = 30  # earnings.json 이 이보다 오래됐으면 오래된 소식이라 안 보낸다
+
+
+def build_earnings_message():
+    """밤사이 나온 미국 실적을 한 메시지로. 없거나 자료가 오래됐으면 None.
+    '밤사이' = earnings.json 에서 가장 최근 발표일(미국 동부 기준) 하루치."""
+    d = read_json(DATA_DIR / "earnings.json") or {}
+    items = d.get("items") or []
+    if not items:
+        return None
+    try:
+        age = now_kst() - datetime.fromisoformat(d["updated_at"])
+        if age > timedelta(hours=EARNINGS_STALE_HOURS):
+            print(f"  earnings.json 이 {age} 전 자료라 실적 블록을 건너뜁니다.")
+            return None
+    except Exception:
+        return None
+
+    day = max(x.get("date_et", "") for x in items)
+    rows = [x for x in items if x.get("date_et") == day]
+    if not rows:
+        return None
+
+    done = [x for x in rows if x.get("react_status") == "확정"]
+    up = sum(1 for x in done if x["rel_pct"] > 0)
+    guide = [(x.get("numbers") or {}).get("guidance") for x in rows]
+    yoys = sorted(v for v in ((x.get("numbers") or {}).get("revenue_yoy") for x in rows)
+                  if v is not None)
+    med = yoys[(len(yoys) - 1) // 2] if yoys else None
+
+    lines = [f"<b>🌙 밤사이 미국 실적</b>  <i>{esc(day[5:].replace('-', '/'))} 발표 {len(rows)}건</i>", ""]
+    if done:
+        lines.append(f"· 시장(SPY)보다 오른 곳 {up}/{len(done)} (반응 확정분)")
+    if len(rows) > len(done):
+        lines.append(f"· 반응 대기 {len(rows) - len(done)}건 (장후 발표는 다음 거래일 종가 이후)")
+    lines.append(f"· 가이던스 상향 {guide.count('상향')} · 하향 {guide.count('하향')}"
+                 f" · 첫 제시 {guide.count('첫 제시')}")
+    if med is not None:
+        lines.append(f"· 매출 YoY 중앙값 {signed(med, '%')} (숫자 있는 {len(yoys)}곳)")
+
+    # 업종별 한 줄: 발표가 3건 이상인 업종만, 많은 순 상위 3개
+    by = {}
+    for x in rows:
+        by.setdefault(x.get("sector") or "기타", []).append(x)
+    top = sorted(((k, v) for k, v in by.items() if len(v) >= 3 and k != "기타"),
+                 key=lambda kv: -len(kv[1]))[:3]
+    if top:
+        lines += ["", "<b>업종별</b>"]
+        for k, v in top:
+            ys = sorted(n["revenue_yoy"] for n in (x.get("numbers") or {} for x in v)
+                        if n.get("revenue_yoy") is not None)
+            y = f" · 매출 YoY 중앙값 {signed(ys[(len(ys) - 1) // 2], '%')}" if ys else ""
+            lines.append(f"· {esc(k)} {len(v)}건{y}")
+
+    # 큰 회사부터 종목별 (SEC 티커 목록 순서 ≈ 시가총액 순), 숫자가 있는 건만
+    try:
+        from fetch_edgar import load_cik_map
+        order = {t: i for i, t in enumerate(load_cik_map())}
+    except Exception:
+        order = {}      # 못 받으면 발표 순서 그대로
+    with_num = sorted((x for x in rows if x.get("numbers")),
+                      key=lambda x: order.get(x["ticker"], 10 ** 6))[:EARNINGS_TOP]
+    if with_num:
+        lines += ["", "<b>주요 종목</b>"]
+        for x in with_num:
+            n = x["numbers"]
+            bits = []
+            if n.get("revenue_yoy") is not None:
+                bits.append(f"매출 {signed(n['revenue_yoy'], '%')}")
+            if n.get("guidance") in ("상향", "하향", "첫 제시"):
+                bits.append(f"가이던스 {n['guidance']}")
+            if x.get("react_status") == "확정":
+                bits.append(f"시장 대비 {signed(x['rel_pct'], '%p')}")
+            lines.append(f"· <b>{esc(x['ticker'])}</b> {esc(x['company'][:24])}"
+                         + (f" — {' · '.join(bits)}" if bits else ""))
+            if n.get("summary"):
+                lines.append(f"  <i>{esc(n['summary'])}</i>")
+    lines += ["", "<i>보도자료를 AI가 자동 추출한 값 · 틀릴 수 있으니 대시보드 원문 링크로 확인</i>"]
+    return "\n".join(lines)
+
+
 # 섹션별: (차트 제목 영문, 차트 색)
 SECTIONS = {
     "breakout":  ("NEW HIGH AFTER BASE", "#16a34a"),
@@ -461,6 +545,14 @@ def main():
 
     ok, charts = 0, 0
     if send(token, chat_id, build_market_msg()):
+        ok += 1
+
+    try:
+        earn = build_earnings_message()
+    except Exception as e:      # 실적 블록이 잘못돼도 나머지 발송은 계속한다
+        print(f"  실적 블록 실패: {e}", file=sys.stderr)
+        earn = None
+    if earn and send(token, chat_id, earn):
         ok += 1
 
     messages = build_screener_messages()
