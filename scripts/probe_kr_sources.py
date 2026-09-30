@@ -192,7 +192,35 @@ def probe_sample():
             print(f"    가장 짧은 쪽: {name} {n}봉 첫날 {first}")
 
 
+def probe_overview():
+    """네이버 증권에서 '기업개요' 글을 어디서 얻을 수 있는지."""
+    step("기업개요 후보 (네이버 증권)")
+    for code, nm in (("114090", "GKL"), ("248170", "샘표식품"), ("052400", "코나아이")):
+        for label, url in (("main", f"https://finance.naver.com/item/main.naver?code={code}"),
+                           ("wisereport", f"https://navercomp.wisereport.co.kr/v2/company/c1010001.aspx?cmp_cd={code}")):
+            try:
+                t0 = time.time()
+                r = requests.get(url, headers=UA, timeout=25)
+                enc = "euc-kr" if label == "main" else (r.encoding or "utf-8")
+                html = r.content.decode(enc, errors="replace")
+                print(f"\n  [{nm} {code} {label}] HTTP {r.status_code} · {len(r.content):,}바이트 · {time.time()-t0:.1f}초")
+                for key in ("summary_info", "corp_group", "cmp_comment", "기업개요", "Business Summary", "cmp-table-cell"):
+                    i = html.find(key)
+                    if i >= 0:
+                        seg = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html[i:i + 1600]))
+                        print(f"    '{key}' 발견 위치 {i}: {seg[:420]}")
+                        break
+                else:
+                    print("    개요 키워드 없음")
+            except Exception as e:
+                print(f"  [{nm} {code} {label}] 실패: {str(e)[:120]}")
+
+
 def main():
+    if env("PROBE_ONLY") == "overview":
+        probe_overview()
+        print("\n시험 끝")
+        return
     if env("PROBE_ONLY") == "ecos2":
         import probe_ecos
         probe_ecos.main2()
