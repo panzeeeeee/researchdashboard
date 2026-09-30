@@ -12,6 +12,9 @@ on:
       force:
         description: "장 마감 전에도 돌리기 (1이면 강제)"
         default: ""
+      refresh:
+        description: "주가 캐시를 버리고 전부 새로 받기 (1이면, 약 10분)"
+        default: ""
 
 permissions:
   contents: write
@@ -44,7 +47,7 @@ jobs:
       - name: 한국 신고가 스크리너
         env:
           KR_FORCE: ${{ inputs.force }}
-        run: python scripts/kr_breakout.py -w screener --limit ${{ inputs.limit || 0 }}
+        run: python scripts/kr_breakout.py -w screener --limit ${{ inputs.limit || 0 }} ${{ inputs.refresh && '--full-refresh' || '' }}
 
       - name: 결과 커밋
         run: |

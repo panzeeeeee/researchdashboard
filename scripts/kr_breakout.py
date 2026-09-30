@@ -199,6 +199,17 @@ def main():
     tickers = sorted(set(univ["티커"]) | set(BENCHES))
     px, mkt_last = ub.fetch_prices(tickers, full_refresh=args.full_refresh)
 
+    # 장 마감 전(강제 실행)이면 오늘 봉은 장중 값이다 -- 빼서 어제 종가까지로 계산하고 캐시에도 어제까지만 남긴다.
+    # (캐시 마지막 날짜가 '시장 최종 거래일'이면 다시 안 받으므로, 장중 값이 남으면 종가로 안 고쳐진다)
+    if kst.weekday() < 5 and kst.hour < 16:
+        today = kst.date()
+        px = {t: d[[pd.Timestamp(i).date() != today for i in d.index]] for t, d in px.items()}
+        px = {t: d for t, d in px.items() if len(d)}
+        ub._save_cache(px)
+        if "^KS11" in px:
+            mkt_last = pd.Timestamp(px["^KS11"].index[-1]).date()
+        print(f"  장중 실행 -- 오늘({today}) 봉을 빼고 {mkt_last} 종가 기준으로 계산합니다.")
+
     # 진단: 종목별 봉 수 분포 (히스토리가 900봉 미만이면 스크리너가 판정하지 않는다)
     lens = pd.Series({t: len(px[t]) for t in tickers if t in px and t not in BENCHES})
     if len(lens):
