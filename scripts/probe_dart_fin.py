@@ -33,10 +33,19 @@ def corp_codes():
 
 
 def call(path, **params):
+    """요청 한 건. 걸린 시간을 찍는다(느린지 알아보려고). 25초 안에 못 받으면 포기."""
+    import time
     params["crtfc_key"] = KEY
-    r = requests.get(f"{BASE}/{path}", params=params, headers=UA, timeout=40)
-    r.raise_for_status()
-    return r.json()
+    t0 = time.time()
+    try:
+        r = requests.get(f"{BASE}/{path}", params=params, headers=UA, timeout=25)
+        r.raise_for_status()
+        d = r.json()
+        print(f"  · {path} {time.time() - t0:.1f}초 · 응답 {len(r.content):,}바이트", flush=True)
+        return d
+    except Exception as e:
+        print(f"  · {path} 실패 {time.time() - t0:.1f}초: {str(e)[:120]}", flush=True)
+        return {"status": "ERR", "message": str(e)[:80], "list": []}
 
 
 def show_fin(corp, year, reprt, fs, only=None, limit=400):
@@ -62,8 +71,10 @@ def main():
     if not KEY:
         print("DART_API_KEY 없음")
         return
+    import time
+    t0 = time.time()
     cc = corp_codes()
-    print(f"상장사 고유번호 {len(cc)}개")
+    print(f"상장사 고유번호 {len(cc)}개 · {time.time() - t0:.1f}초", flush=True)
 
     # 1) 삼성전자: 연간(연결) 전체, 반기(연결)의 손익 열
     samsung = cc["005930"][0]

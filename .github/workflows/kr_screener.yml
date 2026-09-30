@@ -27,6 +27,8 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      PYTHONUNBUFFERED: "1"      # 진행 상황이 로그에 바로 보이게
     steps:
       - uses: actions/checkout@v4
 
