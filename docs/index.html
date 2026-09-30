@@ -28,6 +28,11 @@ header{display:flex;align-items:center;justify-content:space-between;gap:1rem;fl
   background:var(--navy);color:var(--navy-ink);border-radius:14px;
   padding:1.5rem 1.75rem;margin-bottom:2rem}
 .eyebrow{font-size:.7rem;font-weight:700;letter-spacing:.14em;color:var(--navy-ink-2);margin:0 0 .35rem}
+.mtabs{display:flex;gap:.4rem;margin-top:.7rem}
+.mtabs a{font-size:.85rem;font-weight:600;color:var(--navy-ink-2);text-decoration:none;border:1px solid rgba(255,255,255,.2);
+  border-radius:999px;padding:.25rem .95rem}
+.mtabs a.on{background:#fff;color:var(--navy);border-color:#fff}
+.mtabs a:hover:not(.on){color:#fff}
 h1{font-size:1.55rem;font-weight:700;margin:0;letter-spacing:-.01em;color:var(--navy-ink)}
 .meta{font-size:.82rem;color:var(--navy-ink-2);font-variant-numeric:tabular-nums;
   background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
@@ -279,6 +284,7 @@ tr:last-child td{border-bottom:none}
   <div>
     <p class="eyebrow">MORNING BRIEF</p>
     <h1>모닝 브리프</h1>
+    <div class="mtabs"><a href="index.html" class="on">미국</a><a href="kr.html">한국</a></div>
   </div>
   <span class="meta" id="stamp">불러오는 중</span>
   <div class="ticker" id="ticker"></div>

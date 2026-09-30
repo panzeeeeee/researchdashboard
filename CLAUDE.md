@@ -150,6 +150,10 @@ SEC 8-K는 미국 정부 공시라 원문 보관 가능.
 실적 레이더 6단계: 실적 화면에 [종목별 | 업종별 집계] 탭. 업종은 SEC 산업코드(SIC)를 `fetch_earnings.py`의
 `SIC_RULES`로 11개 대분류에 묶은 것(GICS 아님). 종목마다 `sector`, `industry`, `sic`가 earnings.json에 붙는다.
 
+(진행 중) 한국 탭 1단계: `scripts/fetch_kr_market.py` → `docs/data/kr_market.json` → `docs/kr.html`.
+amazon.yml에 단계 추가, Secret `ECOS_API_KEY` 등록됨. 업종은 KODEX 업종 ETF로 대용(KRX 업종지수는 야후에 없음).
+국고채는 ECOS 통계표 817Y002에서 항목 이름("국고채(3년)")으로 코드를 찾는다. 머리말 미국/한국 탭은 index.html·kr.html 양쪽에 있다.
+
 1. 한국 탭: 머리말에 미국/한국 탭, 한국은 `kr.html` 별도. 순서 = 코스피·코스닥 지수·업종 + 국고채
    → 한국 뉴스 → DART 공시·잠정실적 → 한국 스크리너(us_breakout.py 로직, 종목 목록만 코스피·코스닥)
    → 수급. KRX는 해외 서버 차단 우려로 야후·DART·ECOS 등 공식 API 위주

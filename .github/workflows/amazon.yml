@@ -54,6 +54,13 @@ jobs:
         run: python scripts/fetch_earnings.py
         continue-on-error: true
 
+      - name: 한국 시장 (코스피·코스닥·업종·국고채)
+        # 지수·업종은 야후, 국고채는 한국은행 ECOS. 키가 없으면 국고채만 건너뛴다.
+        env:
+          ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
+        run: python scripts/fetch_kr_market.py
+        continue-on-error: true
+
       - name: 결과 커밋
         run: |
           git config user.name "dashboard-bot"

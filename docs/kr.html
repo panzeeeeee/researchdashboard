@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>모닝 브리프 · 한국</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{
+  --paper:#f6f5f0; --card:#fff; --ink:#12151a; --ink-2:#3d434a; --ink-3:#555b62;
+  --rule:#dcdcd6; --accent:#0f6e56; --tintA:#eef4f1; --up:#1d7a4a; --down:#b3332e;
+  --navy:#0e1a2b; --navy-ink:#f4f6f8; --navy-ink-2:#9fb0c2;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --paper:#121417; --card:#1a1d22; --ink:#e9eae6; --ink-2:#c3c8cd; --ink-3:#a9b0b8;
+         --rule:#343841; --accent:#5dcaa5; --tintA:#1c2a26; --up:#5dc48a; --down:#e78078;
+         --navy:#0a1420; --navy-ink:#f4f6f8; --navy-ink-2:#8fa2b6; }
+}
+*{box-sizing:border-box}
+html{font-size:18px}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:Pretendard,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:1rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:2rem 1.25rem 4rem}
+@media (max-width:700px){.wrap{padding:1rem .8rem 3rem}}
+header{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  background:var(--navy);color:var(--navy-ink);border-radius:14px;padding:1.5rem 1.75rem;margin-bottom:2rem}
+.eyebrow{font-size:.7rem;font-weight:700;letter-spacing:.14em;color:var(--navy-ink-2);margin:0 0 .35rem}
+h1{font-size:1.55rem;font-weight:700;margin:0;color:var(--navy-ink)}
+.meta{white-space:nowrap;display:inline-block;font-size:.82rem;color:var(--navy-ink-2);background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:.35rem .85rem}
+.tabs{display:flex;gap:.4rem;margin-top:.7rem}
+.tabs a{font-size:.85rem;font-weight:600;color:var(--navy-ink-2);text-decoration:none;border:1px solid rgba(255,255,255,.2);
+  border-radius:999px;padding:.25rem .95rem}
+.tabs a.on{background:#fff;color:var(--navy);border-color:#fff}
+.tabs a:hover:not(.on){color:#fff}
+h2{font-size:1.15rem;font-weight:700;margin:2.2rem 0 1rem}
+.tagline{font-size:.82rem;font-weight:400;color:var(--ink-3);margin-left:.55rem}
+.box{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:1.1rem 1.25rem}
+.note,.miss{font-size:.86rem;color:var(--ink-3)}
+.up{color:var(--up)} .down{color:var(--down)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.7rem}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.8rem .9rem}
+.card .n{font-size:.9rem;font-weight:600;color:var(--ink-2)}
+.card .v{font-size:1.5rem;font-weight:700;font-variant-numeric:tabular-nums;margin:.1rem 0 0;line-height:1.3}
+.card .c{font-size:.9rem;font-weight:600}
+.card svg{width:100%;height:44px;display:block;margin-top:.4rem}
+.card .asof{font-size:.74rem;color:var(--ink-3)}
+table{width:100%;border-collapse:collapse;font-size:.92rem;font-variant-numeric:tabular-nums}
+th{text-align:left;font-weight:600;color:var(--ink-3);font-size:.78rem;padding:.55rem .6rem;border-bottom:2px solid var(--rule);white-space:nowrap}
+td{padding:.6rem .6rem;border-bottom:1px solid var(--rule)}
+td.r,th.r{text-align:right}
+.scroll{overflow-x:auto}
+.stale{opacity:.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div>
+    <p class="eyebrow">MORNING BRIEF</p>
+    <h1>모닝 브리프 · 한국</h1>
+    <div class="tabs"><a href="index.html">미국</a><a href="kr.html" class="on">한국</a></div>
+  </div>
+  <span class="meta" id="stamp">불러오는 중</span>
+</header>
+
+<h2>지수<span class="tagline">전 거래일 종가 기준 · 작은 선은 최근 1년</span></h2>
+<div class="cards" id="indexes"><p class="note">불러오는 중입니다.</p></div>
+
+<h2>업종 온도<span class="tagline">KODEX 업종 ETF 기준 · 업종지수의 대용입니다</span></h2>
+<div class="box"><div class="scroll" id="sectors"><p class="note">불러오는 중입니다.</p></div></div>
+
+<h2>국고채 금리<span class="tagline">한국은행 ECOS · 등락은 전일 대비 bp</span></h2>
+<div class="cards" id="rates"><p class="note">불러오는 중입니다.</p></div>
+<p class="note" id="rates-note"></p>
+
+<p class="note" style="margin-top:2rem">실시간 시세가 아니라 아침 7시 반·저녁 6시에 갱신한 값입니다.
+업종은 ETF 가격이라 실제 KRX 업종지수와 조금 다를 수 있습니다. 뉴스·공시·스크리너·수급은 다음 단계에서 붙입니다.</p>
+</div>
+
+<script>
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const cls = v => v > 0 ? "up" : v < 0 ? "down" : "";
+const sgn = (v, d, unit) => v == null ? '<span class="miss">—</span>'
+  : `<span class="${cls(v)}">${v > 0 ? "+" : ""}${v.toFixed(d)}${unit}</span>`;
+const num = (v, d = 2) => v == null ? "—" : v.toLocaleString("ko-KR", { minimumFractionDigits: d, maximumFractionDigits: d });
+
+// 작은 추세선. 한국은 상승=빨강 관례가 있지만 이 대시보드는 미국 화면과 같은 색(상승=초록)으로 맞춘다.
+function spark(hist) {
+  const v = (hist || []).map(p => p.value);
+  if (v.length < 2) return "";
+  const W = 200, H = 44, lo = Math.min(...v), hi = Math.max(...v), span = hi - lo || 1;
+  const pts = v.map((x, i) => `${(i / (v.length - 1) * W).toFixed(1)},${(H - 3 - (x - lo) / span * (H - 6)).toFixed(1)}`).join(" ");
+  const up = v[v.length - 1] >= v[0];
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><polyline points="${pts}" fill="none"
+    stroke="${up ? "var(--up)" : "var(--down)"}" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg>`;
+}
+
+function card(i) {
+  const isRate = i.kind === "rate", isSpread = i.kind === "spread";
+  const value = isRate ? num(i.value, 3) + "%" : isSpread ? num(i.value, 1) + "bp" : num(i.value);
+  const chg = isRate || isSpread ? sgn(i.chg, 1, "bp") : sgn(i.chg, 2, "%");
+  return `<div class="card${i.stale ? " stale" : ""}">
+    <div class="n">${esc(i.label)}</div><div class="v">${value}</div>
+    <div class="c">${chg}</div>${spark(i.history)}
+    <div class="asof">${esc(i.asof || "")} 기준${i.stale ? " · 이전 값" : ""}</div></div>`;
+}
+
+function render(d) {
+  document.getElementById("stamp").textContent = d && d.updated ? d.updated.slice(5) + " 갱신" : "자료 없음";
+  if (!d) {
+    ["indexes", "sectors", "rates"].forEach(id => document.getElementById(id).innerHTML =
+      '<p class="note">kr_market.json 이 아직 없습니다. Actions 탭에서 "아마존·수출입·배너"를 실행하세요.</p>');
+    return;
+  }
+  document.getElementById("indexes").innerHTML = (d.indexes || []).map(card).join("")
+    || '<p class="note">지수를 받지 못했습니다.</p>';
+
+  const secs = (d.sectors || []).slice().sort((a, b) => (b.d1 ?? -1e9) - (a.d1 ?? -1e9));
+  document.getElementById("sectors").innerHTML = secs.length ? `<table>
+    <thead><tr><th>업종</th><th class="r">1일</th><th class="r">5일</th><th class="r">1개월</th><th>기준일</th></tr></thead>
+    <tbody>${secs.map(s => `<tr class="${s.stale ? "stale" : ""}"><td>${esc(s.label)}</td>
+      <td class="r">${sgn(s.d1, 2, "%")}</td><td class="r">${sgn(s.d5, 2, "%")}</td><td class="r">${sgn(s.m1, 2, "%")}</td>
+      <td class="miss">${esc((s.asof || "").slice(5))}</td></tr>`).join("")}</tbody></table>`
+    : '<p class="note">업종 시세를 받지 못했습니다.</p>';
+
+  document.getElementById("rates").innerHTML = (d.rates || []).map(card).join("")
+    || '<p class="note">국고채 금리가 아직 없습니다.</p>';
+  document.getElementById("rates-note").textContent = d.rates_note || "";
+}
+
+fetch("data/kr_market.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(render);
+</script>
+</body>
+</html>
