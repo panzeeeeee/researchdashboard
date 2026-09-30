@@ -1989,14 +1989,18 @@ function amzChart(lines, opt) {
   const body = lines.filter(l => !l.off).map(l => {
     const s = l.series.filter(p => typeof p[1] === "number" && (!opt.log || p[1] > 0));
     if (!s.length) return "";
-    // 기록 사이가 AMZ_GAP_DAYS 일보다 벌어지면 선을 잇지 않고 끊는다(점은 그대로)
+    // 기록 사이가 AMZ_GAP_DAYS 일보다 벌어지면 실선을 끊고, 그 사이는 얇은 점선(데이터 유실)으로 잇는다
+    let gaps = "";
     const d = s.map((p, i) => {
       const cut = !i || (tx(p[0]) - tx(s[i - 1][0])) / 864e5 > AMZ_GAP_DAYS;
+      if (cut && i) gaps += `M${X(s[i - 1][0]).toFixed(1)},${Y(s[i - 1][1]).toFixed(1)} L${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)} `;
       return `${cut ? "M" : "L"}${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`;
     }).join(" ");
+    const gapPath = gaps ? `<path d="${gaps}" fill="none" stroke="${l.color}" stroke-width="1.5"
+        stroke-dasharray="1.5 4" stroke-linecap="round" opacity="0.55"/>` : "";
     const dots = s.map(p => `<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="3.2"
         fill="${l.color}"><title>${esc(l.label)} · ${esc(p[0])} · ${fmtNum(p[1])}</title></circle>`).join("");
-    return `<path d="${d}" fill="none" stroke="${l.color}" stroke-width="2"
+    return `${gapPath}<path d="${d}" fill="none" stroke="${l.color}" stroke-width="2"
         ${l.dash ? 'stroke-dasharray="6 4"' : ""}/>${dots}`;
   }).join("");
 
@@ -2136,7 +2140,7 @@ function renderAmazon(data) {
         ${lines.map(l => `<button data-k="${l.key}" class="${l.off ? "off" : ""}">
           <i class="${l.dash ? "dash" : ""}" style="border-color:${l.color}"></i>${esc(l.label)}</button>`).join("")}
       </div>
-      <p class="miss" style="margin-top:.4rem">실선 = 센텔리안24 주력 · 점선 = 경쟁 · 범례를 누르면 선을 숨기거나 다시 켭니다</p>`;
+      <p class="miss" style="margin-top:.4rem">실선 = 센텔리안24 주력 · 굵은 점선 = 경쟁 · 가는 점선(⋯) = 기록이 없는 구간(데이터 유실) · 범례를 누르면 선을 숨기거나 다시 켭니다</p>`;
     chartArea.querySelectorAll("[data-m]").forEach(b =>
       b.addEventListener("click", () => { metric = b.dataset.m; draw(); }));
     chartArea.querySelectorAll("[data-g]").forEach(b =>
