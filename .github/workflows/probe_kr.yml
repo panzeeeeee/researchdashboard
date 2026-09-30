@@ -2,6 +2,10 @@ name: 한국 스크리너 자료원 시험
 
 on:
   workflow_dispatch:        # 손으로만 돌리는 시험용. 아무 파일도 저장하지 않습니다.
+    inputs:
+      only:
+        description: "chart 라고 쓰면 네이버 차트 시험만 (빠름). 비우면 전부"
+        default: "chart"
 
 permissions:
   contents: read
@@ -22,4 +26,5 @@ jobs:
       - name: 자료원 시험 (네이버 금융·KIND·DART·야후)
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          PROBE_ONLY: ${{ inputs.only }}
         run: python scripts/probe_kr_sources.py

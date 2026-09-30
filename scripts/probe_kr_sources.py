@@ -114,11 +114,69 @@ def probe_yahoo(codes):
             print(f"  일괄 실패: {str(e)[:150]}")
 
 
+def naver_chart(symbol, count=1500):
+    """네이버 차트 일봉 [(날짜, 종가, 거래량)]. 주소 하나에 종목 하나."""
+    url = f"https://fchart.stock.naver.com/sise.nhn?symbol={symbol}&timeframe=day&count={count}&requestType=0"
+    r = requests.get(url, headers=UA, timeout=20)
+    r.raise_for_status()
+    rows = []
+    for m in re.finditer(r'<item data="([^"]+)"', r.content.decode("euc-kr", errors="replace")):
+        p = m.group(1).split("|")
+        if len(p) >= 6 and p[4] not in ("", "null"):
+            rows.append((p[0], float(p[4]), float(p[5] or 0)))
+    return rows
+
+
+def probe_naver_chart():
+    step("5. 네이버 차트 일봉 (fchart.stock.naver.com)")
+    for sym, label in (("014950", "삼익제약(야후엔 228봉)"), ("012210", "삼미금속(야후 815봉)"),
+                       ("005930", "삼성전자"), ("247540", "에코프로비엠"),
+                       ("KOSPI", "코스피 지수"), ("KOSDAQ", "코스닥 지수")):
+        try:
+            t0 = time.time()
+            rows = naver_chart(sym)
+            print(f"  {sym} {label}: {len(rows)}봉 · {rows[0][0] if rows else '-'} ~ {rows[-1][0] if rows else '-'}"
+                  f" · 끝 종가 {rows[-1][1] if rows else '-'} · {time.time()-t0:.1f}초")
+        except Exception as e:
+            print(f"  {sym} {label}: 실패 {str(e)[:120]}")
+
+    # 야후와 종가 비교 (수정주가 방식이 같은지)
+    try:
+        import yfinance as yf
+        y = yf.download("005930.KS", period="2y", interval="1d", progress=False, auto_adjust=True)["Close"]
+        y = y.squeeze().dropna()
+        n = {d: c for d, c, _ in naver_chart("005930", 600)}
+        diffs = []
+        for ts, val in y.items():
+            k = ts.strftime("%Y%m%d")
+            if k in n and val:
+                diffs.append(abs(n[k] / float(val) - 1))
+        if diffs:
+            print(f"  삼성전자 야후 대비 종가 차이: 평균 {sum(diffs)/len(diffs)*100:.2f}% · 최대 {max(diffs)*100:.2f}% ({len(diffs)}일)")
+    except Exception as e:
+        print(f"  야후 비교 실패: {str(e)[:120]}")
+
+    # 속도: 순서대로 40종목
+    codes = ["005930", "000660", "035420", "005380", "051910"] * 8
+    t0, ok = time.time(), 0
+    for c in codes:
+        try:
+            ok += 1 if naver_chart(c, 60) else 0
+        except Exception:
+            pass
+    print(f"  40번 연속 요청: {time.time()-t0:.1f}초 · 성공 {ok}/40")
+
+
 def main():
+    if env("PROBE_ONLY") == "chart":
+        probe_naver_chart()
+        print("\n시험 끝")
+        return
     probe_naver()
     probe_kind()
     codes = probe_dart()
     probe_yahoo(codes)
+    probe_naver_chart()
     print("\n시험 끝")
 
 
