@@ -174,7 +174,9 @@ amazon.yml에 단계 추가, Secret `ECOS_API_KEY` 등록됨. 업종은 KODEX �
 
 (진행 중) 한국 탭 3단계 공시: `scripts/fetch_dart.py` → `docs/data/kr_disclosures.json` → kr.html "공시".
 OpenDART 공시검색(list.json)에서 유형 I(거래소공시)·B(주요사항)의 최근 3일을 받아 제목 낱말로 분류(`CATEGORIES`)해 30일 누적.
-Secret `DART_API_KEY`. 잠정실적 숫자 추출(Gemini)은 아직 없음 -- 지금은 공시 제목과 원문 링크만.
+Secret `DART_API_KEY`. 잠정실적은 공시 원문(document.xml, zip)을 받아 Gemini가 매출·영업이익·순이익과 전년 동기 값을
+옮기고(단위는 공시 그대로 받아 억원으로 통일), 증감률·흑자/적자전환은 코드가 계산(`fill_numbers`). 실행당 30건, 코스피 먼저.
+kr.html "잠정실적 레이더" 화면이 이 데이터를 쓴다(주가 반응은 아직 없음).
 
 1. 한국 탭: 머리말에 미국/한국 탭, 한국은 `kr.html` 별도. 순서 = 코스피·코스닥 지수·업종 + 국고채
    → 한국 뉴스 → DART 공시·잠정실적 → 한국 스크리너(us_breakout.py 로직, 종목 목록만 코스피·코스닥)

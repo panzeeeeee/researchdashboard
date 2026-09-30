@@ -39,8 +39,17 @@ h2{font-size:1.25rem;font-weight:700;margin:0 0 1.3rem;letter-spacing:-.01em}
 /* 화면 제목 앞 색 띠 = 사이드바 묶음 색 (미국 화면과 같은 방식) */
 main section > h2{display:flex;align-items:baseline;flex-wrap:wrap;gap:.1rem}
 main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;border-radius:3px;margin-right:.6rem;background:var(--sg,var(--accent))}
-#s-news,#s-dart{--sg:#0F6E56} #s-market,#s-rates{--sg:#185FA5} #s-trade{--sg:#993C1D}
-@media (prefers-color-scheme: dark){#s-news,#s-dart{--sg:#5DCAA5} #s-market,#s-rates{--sg:#85B7EB} #s-trade{--sg:#F0997B}}
+#s-news,#s-dart{--sg:#0F6E56} #s-market,#s-rates{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn{--sg:#854F0B}
+@media (prefers-color-scheme: dark){#s-news,#s-dart{--sg:#5DCAA5} #s-market,#s-rates{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn{--sg:#EF9F27}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;margin-bottom:1.2rem}
+.slot{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.8rem .9rem}
+.slot .cap{font-size:.8rem;color:var(--ink-3);margin:0}
+.slot .big{font-size:1.5rem;font-weight:700;margin:.1rem 0;line-height:1.3;font-variant-numeric:tabular-nums}
+.slot p{margin:0;font-size:.82rem;color:var(--ink-2)}
+#earn-box td{vertical-align:top}
+#earn-box .esum{font-size:.84rem;color:var(--ink-2);margin:.25rem 0 0;line-height:1.5;max-width:40ch}
+#earn-box .small{font-size:.76rem;color:var(--ink-3);display:block;white-space:nowrap}
+#earn-box .tg{font-size:.8rem;font-weight:700;white-space:nowrap}
 .layout{display:grid;grid-template-columns:200px minmax(0,1fr);gap:2rem;align-items:start}
 nav{position:sticky;top:1rem;max-height:calc(100vh - 2rem);overflow-y:auto;scrollbar-width:thin}
 nav a{display:block;font-size:.9rem;color:var(--ink-2);text-decoration:none;padding:.55rem .75rem;border-radius:8px;margin-bottom:.15rem;line-height:1.35;font-weight:500}
@@ -53,7 +62,9 @@ nav .ngrp a.on{background:var(--g);color:var(--g-on)}
 nav .g1{--g:#0F6E56;--gb:#5DCAA5;--gt:#E1F5EE;--gh:#9FE1CB}
 nav .g2{--g:#185FA5;--gb:#85B7EB;--gt:#E6F1FB;--gh:#B5D4F4}
 nav .g5{--g:#993C1D;--gb:#F0997B;--gt:#FAECE7;--gh:#F5C4B3}
+nav .g4{--g:#854F0B;--gb:#EF9F27;--gt:#FAEEDA;--gh:#FAC775}
 @media (prefers-color-scheme: dark){
+  nav .g4{--g:#EF9F27;--gb:#854F0B;--gt:#2e2108;--gh:#633806}
   nav .g1{--g:#5DCAA5;--gb:#0F6E56;--gt:#0f2a23;--gh:#085041}
   nav .g2{--g:#85B7EB;--gb:#185FA5;--gt:#0f2236;--gh:#0C447C}
   nav .g5{--g:#F0997B;--gb:#993C1D;--gt:#331a10;--gh:#712B13}
@@ -128,6 +139,10 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
     <a href="#news">주요 뉴스</a>
     <a href="#dart">공시</a>
   </div>
+  <div class="ngrp g4">
+    <p class="gl">실적</p>
+    <a href="#earn">잠정실적 레이더</a>
+  </div>
   <div class="ngrp g2">
     <p class="gl">시장</p>
     <a href="#market">지수·업종</a>
@@ -154,6 +169,11 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
     <div class="btns" id="dart-btns"></div>
     <div class="scroll" id="dart-box"><p class="note">불러오는 중입니다.</p></div>
   </div>
+</section>
+
+<section id="s-earn">
+  <h2>잠정실적 레이더<span class="tagline" id="earn-tag">DART 영업(잠정)실적 공시 · 억원 기준</span></h2>
+  <div id="earn-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="s-market">
@@ -340,7 +360,66 @@ function renderDart(d) {
   draw();
 }
 
-fetch("data/kr_disclosures.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderDart);
+// ── 잠정실적 레이더 (kr_disclosures.json 중 category = 잠정실적) ──
+function renderEarn(d) {
+  const box = document.getElementById("earn-box");
+  const items = ((d && d.items) || []).filter(x => x.category === "잠정실적");
+  if (!items.length) { box.innerHTML = '<p class="note">잠정실적 공시가 아직 없습니다.</p>'; return; }
+  const dates = [...new Set(items.map(x => x.date))].sort().reverse();
+  let day = dates[0], sort = "time";
+  const eok = v => {
+    if (v == null) return '<span class="miss">—</span>';
+    const a = Math.abs(v), s = v < 0 ? "-" : "";
+    return a >= 1e4 ? `${s}${(a / 1e4).toFixed(a >= 1e5 ? 0 : 1)}조` : `${s}${Math.round(a).toLocaleString("ko-KR")}억`;
+  };
+  const yy = (pct, tag) => tag ? `<span class="tg ${tag === "흑자전환" ? "up" : "down"}">${tag}</span>`
+    : pct == null ? '<span class="miss">—</span>'
+    : `<span class="${cls(pct)}">${pct > 0 ? "+" : ""}${pct.toFixed(1)}%</span>`;
+  const cell = (v, pct, tag) => `${yy(pct, tag)}<span class="small">${eok(v)}</span>`;
+  const median = a => { a = a.filter(v => v != null).sort((p, q) => p - q); return a.length ? a[Math.floor((a.length - 1) / 2)] : null; };
+  const rank = x => { const n = x.numbers; if (!n) return -1e9;
+    return n.op_tag === "흑자전환" ? 1e6 : n.op_tag === "적자전환" ? -1e6 : n.op_yoy ?? -1e8; };
+
+  const draw = () => {
+    let rows = items.filter(x => day === "all" || x.date === day);
+    rows = sort === "op" ? rows.slice().sort((a, b) => rank(b) - rank(a))
+      : rows.slice().sort((a, b) => b.rcept_no.localeCompare(a.rcept_no));
+    const ns = rows.map(x => x.numbers).filter(Boolean);
+    const turnUp = ns.filter(n => n.op_tag === "흑자전환").length, turnDn = ns.filter(n => n.op_tag === "적자전환").length;
+    const medOp = median(ns.map(n => n.op_yoy)), medRev = median(ns.map(n => n.revenue_yoy));
+    const pc = v => v == null ? "—" : (v > 0 ? "+" : "") + v.toFixed(1) + "%";
+    box.innerHTML = `
+      <div class="btns">${dates.slice(0, 6).map(t => `<button data-d="${t}" class="${t === day ? "on" : ""}">${t.slice(5).replace("-", "/")}</button>`).join("")}
+        <button data-d="all" class="${day === "all" ? "on" : ""}">전체</button></div>
+      <div class="grid">
+        <div class="slot"><p class="cap">잠정실적 공시</p><p class="big">${rows.length}건</p><p>숫자 추출 ${ns.length}건</p></div>
+        <div class="slot"><p class="cap">영업이익 전환</p><p class="big"><span class="up">흑전 ${turnUp}</span> <span class="down">적전 ${turnDn}</span></p><p>전년 동기 대비</p></div>
+        <div class="slot"><p class="cap">영업이익 YoY 중앙값</p><p class="big">${pc(medOp)}</p><p>전환 종목 제외</p></div>
+        <div class="slot"><p class="cap">매출 YoY 중앙값</p><p class="big">${pc(medRev)}</p><p>숫자 있는 ${ns.filter(n => n.revenue_yoy != null).length}곳</p></div>
+      </div>
+      <div class="btns"><button data-s="time" class="${sort === "time" ? "on" : ""}">공시 순</button>
+        <button data-s="op" class="${sort === "op" ? "on" : ""}">영업이익 증가 순</button></div>
+      <div class="scroll"><table>
+        <thead><tr><th>종목</th><th>기간</th><th class="r">매출<br>YoY</th><th class="r">영업이익<br>YoY</th><th class="r">순이익<br>YoY</th></tr></thead>
+        <tbody>${rows.map(x => { const n = x.numbers; return `<tr>
+          <td><span style="white-space:nowrap;font-weight:600">${esc(x.corp)}</span><a class="dl" style="font-size:.78rem;margin-left:.45rem;color:var(--accent)" href="${esc(x.url)}" target="_blank" rel="noopener">원문</a>
+            <span class="small">${esc(x.code)} · ${esc(x.market)} · ${esc(x.date.slice(5).replace("-", "/"))}</span>
+            ${n && n.summary ? `<p class="esum">${esc(n.summary)}</p>` : ""}</td>
+          <td style="white-space:nowrap">${n ? esc(n.period) + `<span class="small">${esc(n.basis)}</span>` : '<span class="miss">추출 전</span>'}</td>
+          <td class="r">${n ? cell(n.revenue, n.revenue_yoy, n.revenue_tag) : '<span class="miss">—</span>'}</td>
+          <td class="r">${n ? cell(n.op, n.op_yoy, n.op_tag) : '<span class="miss">—</span>'}</td>
+          <td class="r">${n ? cell(n.net, n.net_yoy, n.net_tag) : '<span class="miss">—</span>'}</td></tr>`; }).join("")}</tbody>
+      </table></div>
+      <p class="note" style="margin-top:1rem">DART 영업(잠정)실적 공시에서 Gemini가 숫자를 자동으로 옮긴 것이라 틀릴 수 있습니다. 판단 전에 '원문'으로 확인하세요.
+      금액은 억원으로 통일했고, 증감률은 전년 동기 대비를 코드가 계산합니다. 연결이 있으면 연결 기준입니다.</p>`;
+    box.querySelectorAll("[data-d]").forEach(b => b.addEventListener("click", () => { day = b.dataset.d; draw(); }));
+    box.querySelectorAll("[data-s]").forEach(b => b.addEventListener("click", () => { sort = b.dataset.s; draw(); }));
+  };
+  draw();
+}
+
+fetch("data/kr_disclosures.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null)
+  .then(d => { renderDart(d); renderEarn(d); });
 fetch("data/kr_market.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(render);
 fetch("data/kr_news.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderNews);
 </script>

@@ -74,6 +74,7 @@ jobs:
         # 코스피·코스닥 상장사의 잠정실적·공급계약·자사주 등 주요 공시를 모은다. 키가 없으면 건너뛴다.
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/fetch_dart.py
         continue-on-error: true
 
