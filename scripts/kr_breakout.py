@@ -189,7 +189,9 @@ def main():
     print("[종목 목록]")
     univ = get_universe(ub.PATHS["work"])
     if args.limit:
-        univ = pd.concat([univ[univ["시장"] == m].head(args.limit // 2) for m in ("코스피", "코스닥")])
+        # KIND 목록은 상장일 최신순이라 앞에서 자르면 신규 상장만 남는다 -- 무작위로 뽑는다
+        univ = pd.concat([univ[univ["시장"] == m].sample(min(args.limit // 2, int((univ["시장"] == m).sum())), random_state=1)
+                          for m in ("코스피", "코스닥")])
     info = univ.set_index("티커")[["코드", "종목명", "시장", "업종"]].to_dict("index")
     print(f"  코스피 {int((univ['시장'] == '코스피').sum())} · 코스닥 {int((univ['시장'] == '코스닥').sum())}")
 
