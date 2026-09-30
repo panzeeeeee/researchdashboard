@@ -85,10 +85,9 @@ def r(x, nd=2, mult=1.0, cap=None):
 
 
 def load_universe():
-    files = sorted(UNIV_DIR.glob("kr_*.csv"))
-    if not files:
-        raise SystemExit("종목 목록(screener/universe_cache/kr_*.csv)이 없습니다. 한국 스크리너를 먼저 돌리세요.")
-    return pd.read_csv(files[-1], dtype={"코드": str})
+    """KIND 상장법인 목록 (한국 스크리너와 같은 함수). 2초 안팎이라 매번 받고, 실패하면 캐시."""
+    from kr_breakout import get_universe
+    return get_universe(str(ROOT / "screener"))
 
 
 def item(row, m, close_series):
@@ -229,6 +228,9 @@ def main():
             continue
         have_fd.append(fd)
         px = px_map[t]
+        if _f(fd.get("market_cap")) is None:          # 시총을 못 구하면 시총 필터를 그냥 통과하게 두지 않는다
+            rejects.append({"ticker": t, "stage": 0, "reason": "no_market_cap"})
+            continue
         ok, why = stage0_pass(px, fd.get("market_cap"), cfg)
         if not ok:
             rejects.append({"ticker": t, "stage": 0, "reason": why})
