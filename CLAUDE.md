@@ -195,6 +195,20 @@ kr.html "잠정실적 레이더" 화면이 이 데이터를 쓴다(주가 반응
 `history`는 [[날짜, 값]] 형식이 표준이고 화면(`toPts`)은 예전 {date,value} 형식도 받는다.
 남은 보강 후보: 경제 지표(ECOS), 유동성·크레딧(ECOS), 주요 일정, 텔레그램 한국 요약(텍스트만, 차트 없이).
 
+(진행 중) 한국 딥밸류: `scripts/kr_dv_data.py`(DART 전체 재무제표 -> 미국 dv_metrics 가 기대하는 fd 딕셔너리) +
+`scripts/kr_deepvalue.py`(미국 `deepvalue/dv_metrics.py`의 판정 함수를 수정 없이 재사용) → `docs/data/kr_deepvalue.json` → kr.html "딥밸류".
+워크플로우 `kr_deepvalue.yml`(평일 19:40 KST, 시간 예산 45분, 재무는 Actions 캐시 `screener/dv_kr_cache`). 한국 스크리너의 주가 캐시가 있어야 한다.
+DART 는 해외 서버에서 느리다(연결 하나당 초당 약 15KB): 요청 하나 7~9초, 고유번호 목록 3.6MB 는 220초 -> 종목 목록 파일 `screener/dart_corp_codes.json`
+을 저장소에 올려 두었고, 재무는 스레드 8개로 동시에 받는다(동시 요청은 잘 통함: 8개 12초 vs 순차 79초).
+DART 응답: 분기 IS 는 thstrm_amount=그 분기 3개월, thstrm_add_amount=누적, frmtrm_q_amount=전년 같은 분기, frmtrm_add_amount=전년 누적.
+한국용으로 바꾼 임계값: 종가 1,000원 / 20일 평균 거래대금 5억 원 / 시총 2,700억 원. 이자비용은 손익계산서 -> 현금흐름표 조정 -> 이자 지급액 -> (마지막) 금융비용 순
+(금융비용은 환율·파생상품 손실이 섞여 과대). 미국판처럼 fd 에 'ebit' 를 넣지 않는다(이자보상배율이 정상화 EBIT 기준). 감가상각비가 재무제표에 없으면 EBITDA 는 비운다.
+애널리스트 추정치 수정·공매도는 한국에 출처가 없어 점수에서 빠진다. 시험 결과 확인용 `probe_out/dv_debug.txt`(워크플로우 입력 debug=N).
+시험 결과를 저장소 파일(`probe_out/latest.txt`)로 올려 GitHub 로그 대신 읽는다(`probe_kr.yml`, 입력 only=ecos/ecos2/dartfin/dartidx/chart/sample).
+(진행 중) 한국 경제 지표: `scripts/fetch_kr_macro.py`(ECOS 통계표 코드는 시험으로 확인) → `docs/data/kr_macro.json` → kr.html "경제 지표"(amazon.yml 단계).
+지표 21종: 기준금리·M2 증가율 / CPI·근원 2종·PPI / GDP 전기비·전년비·전산업생산·선행/동행지수 / 수출·수입·경상수지 / 소비자심리·BSI 2종·경제심리 / 실업률·고용률·취업자 증감.
+GitHub Actions 무료 한도(비공개 저장소: Free 2,000분/월, Pro 3,000분/월)를 주의한다. 관세청 수집(`fetch_trade.py`)은 해외 서버에서 매번 4분씩 시간 초과라 낭비다.
+
 1. 한국 탭: 머리말에 미국/한국 탭, 한국은 `kr.html` 별도. 순서 = 코스피·코스닥 지수·업종 + 국고채
    → 한국 뉴스 → DART 공시·잠정실적 → 한국 스크리너(us_breakout.py 로직, 종목 목록만 코스피·코스닥)
    → 수급. KRX는 해외 서버 차단 우려로 야후·DART·ECOS 등 공식 API 위주

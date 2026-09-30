@@ -78,6 +78,14 @@ jobs:
         run: python scripts/fetch_dart.py
         continue-on-error: true
 
+      - name: 한국 경제 지표 (ECOS)
+        # 기준금리·물가·성장·수출·심리·고용 20여 종과 해설. 가벼운 요청이라 몇십 초면 끝난다.
+        env:
+          ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_kr_macro.py
+        continue-on-error: true
+
       - name: 결과 커밋
         run: |
           git config user.name "dashboard-bot"

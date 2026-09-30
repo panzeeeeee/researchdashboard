@@ -49,8 +49,8 @@ h2{font-size:1.25rem;font-weight:700;margin:0 0 1.3rem;letter-spacing:-.01em}
 /* 화면 제목 앞 색 띠 = 사이드바 묶음 색 (미국 화면과 같은 방식) */
 main section > h2{display:flex;align-items:baseline;flex-wrap:wrap;gap:.1rem}
 main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;border-radius:3px;margin-right:.6rem;background:var(--sg,var(--accent))}
-#s-news,#s-dart{--sg:#0F6E56} #s-market,#s-breadth,#s-rates{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#854F0B}
-@media (prefers-color-scheme: dark){#s-news,#s-dart{--sg:#5DCAA5} #s-market,#s-breadth,#s-rates{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#EF9F27}}
+#s-news,#s-dart{--sg:#0F6E56} #s-market,#s-breadth,#s-rates,#s-macro{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#854F0B}
+@media (prefers-color-scheme: dark){#s-news,#s-dart{--sg:#5DCAA5} #s-market,#s-breadth,#s-rates,#s-macro{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#EF9F27}}
 .dots{display:flex;gap:.25rem;flex-wrap:wrap;margin:.4rem 0 0}
 .dots span{font-size:.68rem;border-radius:4px;padding:0 .35rem;border:1px solid var(--rule);color:var(--ink-3)}
 .dots span.y{background:var(--up);border-color:var(--up);color:#fff}
@@ -191,6 +191,7 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
     <a href="#market">지수·업종</a>
     <a href="#breadth">섹터 온도</a>
     <a href="#rates">금리·환율</a>
+    <a href="#macro">경제 지표</a>
   </div>
   <div class="ngrp g5">
     <p class="gl">리서치</p>
@@ -266,6 +267,11 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
   <div class="box" id="fx-chart" style="margin-top:.8rem"></div>
   <p class="note" style="margin-top:1rem">국고채는 하루 두 번 갱신하는 일별 종가 금리이고, 1년보다 앞은 주 단위 점입니다.
   '한미 10년 금리차'는 국고채 10년에서 미국채 10년을 뺀 값이라 마이너스면 미국 금리가 더 높다는 뜻입니다(날짜가 같은 날만 비교).</p>
+</section>
+
+<section id="s-macro">
+  <h2>경제 지표<span class="tagline" id="macro-tag">한국은행 ECOS · 물가·통화·성장·대외·심리·고용</span></h2>
+  <div id="macro-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="s-trade">
@@ -669,6 +675,52 @@ function renderBreak(d) {
   };
   draw();
 }
+
+// ── 경제 지표 (data/kr_macro.json, 한국은행 ECOS) ──
+function renderMacro(d) {
+  const box = document.getElementById("macro-box");
+  const items = ((d && d.indicators) || []).filter(e => e.value != null);
+  if (!items.length) { box.innerHTML = '<p class="note">kr_macro.json 이 아직 없습니다. Actions 탭에서 "아마존·수출입·배너"를 실행하세요.</p>'; return; }
+  const tag = document.getElementById("macro-tag");
+  if (tag && d.updated_at) tag.textContent = `한국은행 ECOS · ${d.updated_at.slice(5, 16).replace("T", " ")} 갱신 · 월·분기 지표라 자주 바뀌지 않습니다`;
+  const groups = (d.group_order || []).filter(g => items.some(e => e.group === g));
+  let grp = groups[0], cur = items.find(e => e.group === grp).key, range = 1830;
+  const fmt = v => v == null ? "—" : Number(v).toLocaleString("ko-KR", { maximumFractionDigits: 2 });
+  const arrow = e => e.prev == null ? "" : e.value > e.prev ? " ▲" : e.value < e.prev ? " ▼" : " —";
+  const n = d.notes || {};
+  const block = (t, x) => x ? `<p class="sub">${esc(t)}</p><p class="sum">${esc(x)}</p>` : "";
+  const recap = (n.situation || n.why || n.history) ? `<div class="callout">${block("지금 상황", n.situation)}${block("왜 중요한가요", n.why)}${block("과거엔 이랬어요", n.history)}
+    <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p></div>` : "";
+  const draw = () => {
+    const e = items.find(x => x.key === cur);
+    box.innerHTML = `${recap}
+      <p class="sub" style="margin-top:0">지표별 추이<span class="tagline">${esc(e.label)} · ${esc(e.unit)}</span></p>
+      <div class="box">
+        <div class="btns">${groups.map(g => `<button data-g="${esc(g)}" class="${g === grp ? "on" : ""}">${esc(g)}</button>`).join("")}</div>
+        <div class="btns">${items.filter(x => x.group === grp).map(x => `<button data-k="${x.key}" class="${x.key === cur ? "on" : ""}">${esc(x.label)}</button>`).join("")}</div>
+        <div class="btns">${[["3년", 1096], ["5년", 1830], ["10년", 3660]].map(([nm, dd]) => `<button data-r="${dd}" class="${dd === range ? "on" : ""}">${nm}</button>`).join("")}</div>
+        <div id="macro-c"></div>
+      </div>
+      ${groups.map(g => `<p class="sub">${esc(g)}</p><div class="grid">${items.filter(x => x.group === g).map(x => `
+        <div class="slot" data-c="${x.key}" style="cursor:pointer">
+          <p class="cap">${esc(x.label)}</p>
+          <p class="big">${fmt(x.value)}<span class="miss" style="font-size:.9rem">${arrow(x)}</span></p>
+          <p class="miss">${esc(x.unit)} · ${esc(x.date || "")}</p>
+          <p class="miss">직전 ${fmt(x.prev)}${x.prev_date ? " (" + esc(x.prev_date) + ")" : ""}</p>
+        </div>`).join("")}</div>`).join("")}
+      <p class="note" style="margin-top:1rem">전년比는 같은 달(분기)과 비교한 증감률이고, 지표를 누르면 위 차트가 바뀝니다. 발표 시차가 있어 지표마다 최신 시점이 다릅니다.
+      출처: 한국은행 경제통계시스템(ECOS).</p>`;
+    drawChart(box.querySelector("#macro-c"), [{ label: e.label, color: PALETTE[0], pts: cut(e.history, range) }],
+      { rebase: false, fmt: v => Number(v).toLocaleString("ko-KR", { maximumFractionDigits: 1 }) });
+    box.querySelectorAll("[data-g]").forEach(b => b.addEventListener("click", () => { grp = b.dataset.g; cur = items.find(x => x.group === grp).key; draw(); }));
+    box.querySelectorAll("[data-k]").forEach(b => b.addEventListener("click", () => { cur = b.dataset.k; draw(); }));
+    box.querySelectorAll("[data-r]").forEach(b => b.addEventListener("click", () => { range = +b.dataset.r; draw(); }));
+    box.querySelectorAll("[data-c]").forEach(c => c.addEventListener("click", () => {
+      cur = c.dataset.c; grp = items.find(x => x.key === cur).group; draw(); box.scrollIntoView(); }));
+  };
+  draw();
+}
+fetch("data/kr_macro.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderMacro);
 
 // ── 딥밸류 (data/kr_deepvalue.json) ──
 const F_LABELS = { f1_roa_pos: "ROA>0", f2_cfo_pos: "영업CF>0", f3_droa_pos: "ROA개선", f4_accrual: "현금>이익",
