@@ -64,6 +64,14 @@ td.r,th.r{text-align:right}
 .src{display:block;font-size:.78rem;color:var(--ink-3)}
 .badge-hot{display:inline-block;font-size:.7rem;font-weight:700;color:#fff;background:var(--accent);border-radius:4px;padding:0 .4rem;margin-right:.4rem}
 .hidden{display:none}
+.btns{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .8rem}
+.btns button{background:none;border:1px solid var(--rule);color:var(--ink-2);border-radius:999px;
+  padding:.28rem .85rem;font-size:.82rem;cursor:pointer;font-family:inherit}
+.btns button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cat{display:inline-block;font-size:.72rem;font-weight:700;border-radius:4px;padding:.02rem .45rem;color:#fff;background:var(--ink-3);white-space:nowrap}
+.cat.리스크{background:var(--down)} .cat.잠정실적,.cat.실적변동{background:var(--accent)} .cat.공급계약{background:#2563eb}
+td a.dl{color:var(--ink);text-decoration:none} td a.dl:hover{color:var(--accent)}
+td .sub{font-size:.76rem;color:var(--ink-3);display:block}
 .morebtn{margin-top:.7rem;background:none;border:1px solid var(--rule);color:var(--ink-2);border-radius:999px;padding:.3rem 1rem;font-size:.85rem;cursor:pointer;font-family:inherit}
 </style>
 </head>
@@ -85,6 +93,12 @@ td.r,th.r{text-align:right}
 <h2>주요 뉴스<span class="tagline" id="news-tag">한국 증시 헤드라인</span></h2>
 <div id="news-recap"></div>
 <div class="box" id="news-box"><p class="note">불러오는 중입니다.</p></div>
+
+<h2>공시<span class="tagline" id="dart-tag">DART · 코스피·코스닥 주요 공시</span></h2>
+<div class="box">
+  <div class="btns" id="dart-btns"></div>
+  <div class="scroll" id="dart-box"><p class="note">불러오는 중입니다.</p></div>
+</div>
 
 <h2>업종 온도<span class="tagline">KODEX 업종 ETF 기준 · 업종지수의 대용입니다</span></h2>
 <div class="box"><div class="scroll" id="sectors"><p class="note">불러오는 중입니다.</p></div></div>
@@ -187,6 +201,41 @@ function renderNews(d) {
   });
 }
 
+// ── 공시 (data/kr_disclosures.json) ──
+function renderDart(d) {
+  const box = document.getElementById("dart-box"), btns = document.getElementById("dart-btns");
+  const items = (d && d.items) || [];
+  if (!items.length) {
+    box.innerHTML = '<p class="note">공시 자료가 아직 없습니다. Actions 탭에서 "아마존·수출입·배너"를 실행하세요.</p>';
+    return;
+  }
+  const tag = document.getElementById("dart-tag");
+  if (tag && d.updated_at) tag.textContent = `DART · 코스피·코스닥 주요 공시 · ${d.updated_at.slice(5, 16).replace("T", " ")} 갱신`;
+  const cats = ["전체", ...Object.entries(items.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {}))
+    .sort((a, b) => b[1] - a[1]).map(e => e[0])];
+  let cat = "전체", days = 3, all = false;
+  const draw = () => {
+    const from = new Date(Date.now() - days * 864e5).toISOString().slice(0, 10);
+    const rows = items.filter(x => (cat === "전체" || x.category === cat) && x.date >= from);
+    const shown = all ? rows : rows.slice(0, 40);
+    btns.innerHTML = cats.map(c => `<button data-c="${esc(c)}" class="${c === cat ? "on" : ""}">${esc(c)}</button>`).join("")
+      + [3, 7, 30].map(n => `<button data-n="${n}" class="${n === days ? "on" : ""}">${n === 30 ? "한 달" : "최근 " + n + "일"}</button>`).join("");
+    box.innerHTML = rows.length ? `<table><thead><tr><th>접수</th><th>종목</th><th>분류</th><th>공시</th></tr></thead>
+      <tbody>${shown.map(x => `<tr><td class="miss" style="white-space:nowrap">${esc(x.date.slice(5).replace("-", "/"))}</td>
+        <td style="white-space:nowrap">${esc(x.corp)}<span class="sub">${esc(x.code)} · ${esc(x.market)}</span></td>
+        <td><span class="cat ${esc(x.category)}">${esc(x.category)}</span></td>
+        <td><a class="dl" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></td></tr>`).join("")}</tbody></table>
+      ${rows.length > shown.length ? `<button class="morebtn" id="dart-more">더 보기 (${rows.length - shown.length})</button>` : ""}`
+      : '<p class="note">이 조건의 공시가 없습니다.</p>';
+    btns.querySelectorAll("[data-c]").forEach(b => b.addEventListener("click", () => { cat = b.dataset.c; all = false; draw(); }));
+    btns.querySelectorAll("[data-n]").forEach(b => b.addEventListener("click", () => { days = +b.dataset.n; all = false; draw(); }));
+    const more = document.getElementById("dart-more");
+    if (more) more.addEventListener("click", () => { all = true; draw(); });
+  };
+  draw();
+}
+
+fetch("data/kr_disclosures.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderDart);
 fetch("data/kr_market.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(render);
 fetch("data/kr_news.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderNews);
 </script>

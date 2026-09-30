@@ -164,6 +164,10 @@ amazon.yml에 단계 추가, Secret `ECOS_API_KEY` 등록됨. 업종은 KODEX �
 `fetch_news.gather`(네이버 API 우선)와 `fetch_hot_news.cluster_by_event(topic=...)`를 재사용. amazon.yml에서 kr_market 단계 뒤에 돈다.
 한국 지수·업종은 장 마감 전에 돌면 오늘 봉을 빼고 종가만 쓴다(15:40 KST 이후 포함).
 
+(진행 중) 한국 탭 3단계 공시: `scripts/fetch_dart.py` → `docs/data/kr_disclosures.json` → kr.html "공시".
+OpenDART 공시검색(list.json)에서 유형 I(거래소공시)·B(주요사항)의 최근 3일을 받아 제목 낱말로 분류(`CATEGORIES`)해 30일 누적.
+Secret `DART_API_KEY`. 잠정실적 숫자 추출(Gemini)은 아직 없음 -- 지금은 공시 제목과 원문 링크만.
+
 1. 한국 탭: 머리말에 미국/한국 탭, 한국은 `kr.html` 별도. 순서 = 코스피·코스닥 지수·업종 + 국고채
    → 한국 뉴스 → DART 공시·잠정실적 → 한국 스크리너(us_breakout.py 로직, 종목 목록만 코스피·코스닥)
    → 수급. KRX는 해외 서버 차단 우려로 야후·DART·ECOS 등 공식 API 위주
