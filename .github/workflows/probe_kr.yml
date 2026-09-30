@@ -4,8 +4,8 @@ on:
   workflow_dispatch:        # 손으로만 돌리는 시험용. 아무 파일도 저장하지 않습니다.
     inputs:
       only:
-        description: "chart = 네이버 차트 시험, sample = 무작위 표본 히스토리 길이. 비우면 전부"
-        default: "sample"
+        description: "dartfin = DART 재무제표 응답 구조, chart = 네이버 차트, sample = 무작위 표본 히스토리. 비우면 전부"
+        default: "dartfin"
 
 permissions:
   contents: read
