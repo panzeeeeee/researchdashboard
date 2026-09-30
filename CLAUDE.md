@@ -178,6 +178,12 @@ Secret `DART_API_KEY`. 잠정실적은 공시 원문(document.xml, zip)을 받�
 옮기고(단위는 공시 그대로 받아 억원으로 통일), 증감률·흑자/적자전환은 코드가 계산(`fill_numbers`). 실행당 30건, 코스피 먼저.
 kr.html "잠정실적 레이더" 화면이 이 데이터를 쓴다(주가 반응은 아직 없음).
 
+(진행 중) 한국 탭 4단계 스크리너: `scripts/kr_breakout.py`(us_breakout의 판정·가격캐시 함수를 import해서 재사용, 일부만 교체)
+→ `docs/data/kr_breakout.json` → kr.html "긴 조정 후 신고가"·"신고가·신저가". 워크플로우 `kr_screener.yml`(평일 18:50 KST, 가격캐시는 Actions 캐시).
+종목 목록은 KRX KIND 상장법인 목록(유가증권=.KS, 코스닥=.KQ, 코넥스 제외). 시험에서 GitHub 서버에서도 KIND·야후 모두 잘 받아짐을 확인함
+(`probe_kr.yml`/`probe_kr_sources.py`는 그 시험용). 시총 필터·실적 임박 배제·재무 게이트는 없음. 손으로 시험할 땐 Run workflow의 limit(종목 수)·force 입력을 쓴다.
+야후는 틀린 접미사(.KQ↔.KS)에도 엉뚱한 데이터를 줄 수 있어 반드시 KIND 시장구분으로 접미사를 정한다.
+
 1. 한국 탭: 머리말에 미국/한국 탭, 한국은 `kr.html` 별도. 순서 = 코스피·코스닥 지수·업종 + 국고채
    → 한국 뉴스 → DART 공시·잠정실적 → 한국 스크리너(us_breakout.py 로직, 종목 목록만 코스피·코스닥)
    → 수급. KRX는 해외 서버 차단 우려로 야후·DART·ECOS 등 공식 API 위주

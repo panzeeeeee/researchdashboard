@@ -49,8 +49,17 @@ h2{font-size:1.25rem;font-weight:700;margin:0 0 1.3rem;letter-spacing:-.01em}
 /* 화면 제목 앞 색 띠 = 사이드바 묶음 색 (미국 화면과 같은 방식) */
 main section > h2{display:flex;align-items:baseline;flex-wrap:wrap;gap:.1rem}
 main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;border-radius:3px;margin-right:.6rem;background:var(--sg,var(--accent))}
-#s-news,#s-dart{--sg:#0F6E56} #s-market,#s-rates{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn{--sg:#854F0B}
-@media (prefers-color-scheme: dark){#s-news,#s-dart{--sg:#5DCAA5} #s-market,#s-rates{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn{--sg:#EF9F27}}
+#s-news,#s-dart{--sg:#0F6E56} #s-market,#s-rates{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn,#s-break,#s-extreme{--sg:#854F0B}
+@media (prefers-color-scheme: dark){#s-news,#s-dart{--sg:#5DCAA5} #s-market,#s-rates{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn,#s-break,#s-extreme{--sg:#EF9F27}}
+.scard{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.8rem .9rem;border-top:3px solid var(--sg,var(--accent))}
+.scard .nm{font-weight:700;font-size:1rem;line-height:1.35} .scard .sm{font-size:.76rem;color:var(--ink-3)}
+.scard .px{font-size:1.25rem;font-weight:700;font-variant-numeric:tabular-nums}
+.scard .st{font-size:.8rem;color:var(--ink-2);margin:.35rem 0 0;line-height:1.5}
+.scard .ms{font-size:.76rem;color:var(--ink-3);margin:.25rem 0 0}
+.fin{display:inline-block;font-size:.7rem;font-weight:700;color:#fff;background:var(--accent);border-radius:4px;padding:0 .4rem;margin-left:.4rem}
+.chips{display:flex;flex-wrap:wrap;gap:.35rem;margin:.3rem 0 .8rem}
+.chip{font-size:.8rem;border:1px solid var(--rule);border-radius:999px;padding:.1rem .65rem;background:var(--card);white-space:nowrap}
+details.dg{margin-top:1rem} details.dg summary{cursor:pointer;color:var(--ink-3);font-size:.86rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;margin-bottom:1.2rem}
 .slot{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.8rem .9rem}
 .slot .cap{font-size:.8rem;color:var(--ink-3);margin:0}
@@ -151,7 +160,9 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
     <a href="#dart">공시</a>
   </div>
   <div class="ngrp g4">
-    <p class="gl">실적</p>
+    <p class="gl">스크리너</p>
+    <a href="#break">긴 조정 후 신고가</a>
+    <a href="#extreme">신고가·신저가</a>
     <a href="#earn">잠정실적 레이더</a>
   </div>
   <div class="ngrp g2">
@@ -163,7 +174,7 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
     <p class="gl">리서치</p>
     <a href="#trade">수출입 레이더</a>
   </div>
-  <a href="#soon" class="soon" onclick="return false">준비 중: 스크리너·수급</a>
+  <a href="#soon" class="soon" onclick="return false">준비 중: 수급</a>
 </nav>
 
 <main>
@@ -180,6 +191,16 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
     <div class="btns" id="dart-btns"></div>
     <div class="scroll" id="dart-box"><p class="note">불러오는 중입니다.</p></div>
   </div>
+</section>
+
+<section id="s-break">
+  <h2>긴 조정 후 신고가<span class="tagline" id="break-tag">코스피·코스닥 52주 신고가 × 물극필반 · 종가 기준</span></h2>
+  <div id="break-box"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="s-extreme">
+  <h2>신고가·신저가<span class="tagline" id="extreme-tag">코스피·코스닥 52주 · 거래대금 5억 원 이상만</span></h2>
+  <div id="extreme-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="s-earn">
@@ -400,6 +421,75 @@ function renderDart(d) {
   };
   draw();
 }
+
+// ── 한국 스크리너 (data/kr_breakout.json) ──
+function renderBreak(d) {
+  const box = document.getElementById("break-box");
+  if (!d) { box.innerHTML = '<p class="note">kr_breakout.json 이 아직 없습니다. Actions 탭에서 "한국 스크리너"를 실행하세요.</p>'; return; }
+  const tag = document.getElementById("break-tag");
+  if (tag) tag.textContent = `코스피·코스닥 52주 신고가 × 물극필반 · ${d.asof} 종가 기준`;
+  const all = d.breakout || [];
+  let mode = "all", mk = "전체";
+  const draw = () => {
+    const rows = all.filter(x => (mode === "all" || x.final) && (mk === "전체" || x.market === mk));
+    const finals = all.filter(x => x.final).length;
+    box.innerHTML = `
+      <div class="grid">
+        <div class="slot"><p class="cap">최종후보</p><p class="big">${finals}</p><p>게이트·트리거 전부 통과</p></div>
+        <div class="slot"><p class="cap">근접후보</p><p class="big">${all.length}</p><p>미달 ${d.criteria.near_miss}개 이하</p></div>
+        <div class="slot"><p class="cap">52주 신고가</p><p class="big">${d.extremes.n_high}</p><p>신저가 ${d.extremes.n_low}</p></div>
+      </div>
+      <div class="btns">
+        <button data-m="all" class="${mode === "all" ? "on" : ""}">근접후보 전체</button>
+        <button data-m="final" class="${mode === "final" ? "on" : ""}">최종후보만</button>
+        ${["전체", "코스피", "코스닥"].map(k => `<button data-k="${k}" class="${mk === k ? "on" : ""}">${k}</button>`).join("")}
+      </div>
+      ${rows.length ? `<div class="cards">${rows.map(x => `
+        <div class="scard">
+          <div class="nm">${esc(x.name)}${x.final ? '<span class="fin">최종</span>' : ""}</div>
+          <div class="sm">${esc(x.code)} · ${esc(x.market)} · ${esc(x.sector)}</div>
+          <div class="px">${num(x.price, 0)}원 ${sgn(x.chg, 2, "%")}</div>
+          ${spark((x.chart || []).map(p => ({ value: p[1] })))}
+          <div class="st">점수 ${x.score} · 게이트 ${x.gates} · 낙폭 ${x.drawdown ?? "—"}% · 신고가 나이 ${x.high_age ?? "—"}일<br>
+            거래량 ${x.vol_mult ?? "—"}배 · RS ${x.rs ?? "—"} · 거래대금 ${num(x.turnover_eok, 0)}억</div>
+          ${x.missing ? `<div class="ms">미달: ${esc(x.missing)}</div>` : ""}
+        </div>`).join("")}</div>` : '<p class="note">이 조건의 종목이 없습니다.</p>'}
+      <details class="dg"><summary>깔때기 진단</summary>
+        <table><tbody>${(d.funnel || []).map(f => `<tr><td>${esc(f[0])}</td><td class="r">${f[1]}</td></tr>`).join("")}</tbody></table></details>
+      <p class="note" style="margin-top:1rem">미국 스크리너와 같은 판정(긴 조정 뒤 오래된 고점을 넘는 신고가, 바닥 횡보, 거래량·정배열·상대강도)입니다.
+      시가총액 필터는 없고 종가 1,000원 이상·20일 평균 거래대금 5억 원 이상만 봅니다. 재무(실적 변곡·밸류)와 실적 발표 임박은 반영하지 않으니 원문·공시로 확인하세요.
+      RS는 코스피·코스닥 각각의 지수 대비 6개월 초과수익 순위입니다.</p>`;
+    box.querySelectorAll("[data-m]").forEach(b => b.addEventListener("click", () => { mode = b.dataset.m; draw(); }));
+    box.querySelectorAll("[data-k]").forEach(b => b.addEventListener("click", () => { mk = b.dataset.k; draw(); }));
+  };
+  draw();
+}
+
+function renderExtreme(d) {
+  const box = document.getElementById("extreme-box");
+  if (!d) { box.innerHTML = '<p class="note">kr_breakout.json 이 아직 없습니다. Actions 탭에서 "한국 스크리너"를 실행하세요.</p>'; return; }
+  const e = d.extremes;
+  const tag = document.getElementById("extreme-tag");
+  if (tag) tag.textContent = `코스피·코스닥 52주 · ${d.asof} 종가 · 거래대금 5억 원 이상만`;
+  const chips = rows => rows.length ? `<div class="chips">${rows.map(r =>
+    `<span class="chip" title="${esc(r.sector)}">${esc(r.name)} ${sgn(r.chg, 1, "%")}</span>`).join("")}</div>` : '<p class="note">없음</p>';
+  box.innerHTML = `
+    <div class="grid">
+      <div class="slot"><p class="cap">52주 신고가</p><p class="big up">${e.n_high}</p></div>
+      <div class="slot"><p class="cap">52주 신저가</p><p class="big down">${e.n_low}</p></div>
+    </div>
+    <p class="sub">업종별 개수<span class="tagline">신고가·신저가가 많은 업종 순</span></p>
+    <div class="box"><div class="scroll"><table>
+      <thead><tr><th>업종</th><th class="r">신고가</th><th class="r">신저가</th></tr></thead>
+      <tbody>${e.sectors.map(s => `<tr><td>${esc(s.sector)}</td><td class="r up">${s.high || "—"}</td><td class="r down">${s.low || "—"}</td></tr>`).join("")}</tbody>
+    </table></div></div>
+    <p class="sub">신고가 종목<span class="tagline">거래대금 큰 순 · 최대 60개</span></p>${chips(e.high)}
+    <p class="sub">신저가 종목<span class="tagline">거래대금 큰 순 · 최대 60개</span></p>${chips(e.low)}
+    <p class="note">종목에 마우스를 올리면 업종이 보입니다. 유동성 필터를 통과한 종목만 셉니다.</p>`;
+}
+
+fetch("data/kr_breakout.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null)
+  .then(d => { renderBreak(d); renderExtreme(d); });
 
 // ── 잠정실적 레이더 (kr_disclosures.json 중 category = 잠정실적) ──
 function renderEarn(d) {
