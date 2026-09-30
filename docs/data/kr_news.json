@@ -1,32 +1,29 @@
 {
- "updated_at": "2026-09-30T13:58:21.997499+09:00",
+ "updated_at": "2026-09-30T14:11:59.023183+09:00",
  "event_notes": {
-  "why": "미국 30년물 국채 금리가 2002년 이후 최고치를 기록하고 금값도 하락하는 등 글로벌 금리 상승 충격의 영향으로 코스피가 약세를 보였다. 국내에서도 주택담보대출 금리가 3년 9개월 만에 최고치인 4.66%를 기록하는 등 대출금리 상승 부담이 겹치면서 건설, 2차전지, 에너지화학 등 주요 업종이 큰 폭으로 하락했다. 반면 반도체 업종은 환율 하락과 실적 기대감 속에서 3.58% 상승하며 코스닥의 소폭 반등을 이끈 것으로 보인다.",
-  "watch": "미국 국채금리 상승세가 진정되는지 여부와 함께 국내 가계대출 금리 인상 추이가 증시와 업종별 주가 흐름에 미칠 영향을 지속적으로 지켜봐야 한다."
+  "why": "코스피는 반도체 강세에도 불구하고 미 국채금리 충격과 추석 연휴 뒤 약세 흐름의 영향으로 0.27% 하락하며 사흘 만의 반등 시도가 주춤했다. 반도체 업종은 삼전 3분기 영업익 100조 돌파 기대감과 맞물려 3.58% 올랐으나, 건설, 2차전지, 에너지화학 등은 주담대 금리가 레고랜드 사태 이후 최고인 4.66%를 기록하는 등 대출금리 상승과 변동성 장세 우려로 크게 약세였다.",
+  "watch": "금리가 과도하게 오를 때 정부가 시행하는 긴급 바이백 조치와 함께, 4분기 반도체 실적 추이 및 미 국채금리 변동성이 향후 증시 방향성을 가를 것으로 보인다."
  },
  "clusters": [
   {
-   "title": "대출금리 상승 및 주담대 금리 4.66% 기록",
+   "title": "주택담보대출 및 은행 대출금리 상승",
    "sources": [
-    "ajunews.com",
-    "asiatime.co.kr",
     "beyondpost.co.kr",
     "biz.heraldcorp.com",
-    "biz.newdaily.co.kr",
     "g-enews.com",
     "iminju.net",
-    "kizmom.com",
+    "mbnmoney.mbn.co.kr",
     "metroseoul.co.kr",
-    "news.einfomax.co.kr",
-    "news.mtn.co.kr",
     "news.sbs.co.kr",
-    "newsway.co.kr",
     "pinpointnews.co.kr",
     "raonnews.com",
+    "segyebiz.com",
+    "shinailbo.co.kr",
     "wowtv.co.kr",
-    "youthdaily.co.kr"
+    "youthdaily.co.kr",
+    "ytn.co.kr"
    ],
-   "count": 17,
+   "count": 14,
    "items": [
     {
      "title": "8월 은행권 주담대 금리 4.66%...3년 9개월 만에 최고",
@@ -34,7 +31,39 @@
      "source": "wowtv.co.kr",
      "published": "2026-09-30T13:24:00+09:00",
      "dup_count": 3,
-     "summary": "8월 예금은행 가계 대출금리와 주담대 금리가 동반 상승했다."
+     "summary": "한국은행이 발표한 '8월 금융기관 가중평균금리'에 따르면, 예금은행의 신규 취급액 기준 가계 대출금리는 4.76%로 전월(4.64%)보다 0.12%p 상승했다. "
+    },
+    {
+     "title": "주담대 금리 4.66%...4개월 연속 상승",
+     "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005928880",
+     "source": "mbnmoney.mbn.co.kr",
+     "published": "2026-09-30T14:08:00+09:00",
+     "dup_count": 0,
+     "summary": "(신규취급액 기준)는 연 4.66%로, 전월보다 0.18%포인트(p) 올랐습니다. 5월(4.42%) 이후 상승세를 유지한 가중평균 금리는 2022년 11월(4.7"
+    },
+    {
+     "title": "8월 은행 주담대 금리 연 4.66%...'레고랜드 사태' 이후 최고",
+     "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5067397",
+     "source": "shinailbo.co.kr",
+     "published": "2026-09-30T14:04:00+09:00",
+     "dup_count": 0,
+     "summary": "레고랜드 사태 이후 8월 은행 주담대 금리가 최고치를 기록했다."
+    },
+    {
+     "title": "주담대 금리 넉 달째 상승...일반신용대출 금리 6%대",
+     "url": "https://www.ytn.co.kr/_ln/0102_202609301400340129",
+     "source": "ytn.co.kr",
+     "published": "2026-09-30T14:00:00+09:00",
+     "dup_count": 0,
+     "summary": "8월 주담대 금리가 넉 달째 올랐고 일반신용대출은 6%대를 기록했다."
+    },
+    {
+     "title": "8월 은행 대출금리 연 4.40%로 반등...예대금리차 7개월 만에 확대",
+     "url": "http://www.segyebiz.com/newsView/20260930511087?OutUrl=naver",
+     "source": "segyebiz.com",
+     "published": "2026-09-30T13:58:00+09:00",
+     "dup_count": 0,
+     "summary": "반면 예금금리는 제자리걸음을 이어가면서, 신규취급액 기준 은행의 예대금리차는 7개월 만에 확대 전환했다. 30일 한국은행이 발표한 ‘2026년 8월 금융기관 가중"
     },
     {
      "title": "예금 금리 줄었는데 왜 대출만 오르나...주담대 지난달 4.66%, 3년9개월만...",
@@ -42,7 +71,7 @@
      "source": "biz.heraldcorp.com",
      "published": "2026-09-30T13:52:00+09:00",
      "dup_count": 0,
-     "summary": "보금자리론 금리 상승 등으로 예대금리차가 확대됐다."
+     "summary": "대출 금리 상승과 변동금리 비중 감소로 주담대가 3년 9개월 만에 최고치를 기록했다."
     },
     {
      "title": "은행 전체대출 2년 전 밑도는데...가계대출 금리는 0.68%p 더 높아졌다",
@@ -50,7 +79,7 @@
      "source": "pinpointnews.co.kr",
      "published": "2026-09-30T13:32:00+09:00",
      "dup_count": 0,
-     "summary": "예금금리는 멈춘 반면 대출금리가 올라 예대금리차가 벌어졌다."
+     "summary": "은행 전체대출이 정체된 가운데 가계대출 금리는 크게 상승했다."
     },
     {
      "title": "주택담보대출 금리, 4개월 연속 올라...2022년 9월 '레고랜드' 사태이후...",
@@ -58,7 +87,7 @@
      "source": "beyondpost.co.kr",
      "published": "2026-09-30T13:28:00+09:00",
      "dup_count": 0,
-     "summary": "8월 주담대 금리가 4.66%로 3년 9개월 만에 최고치를 기록했다."
+     "summary": "8월 주담대 금리가 4개월 연속 상승해 레고랜드 사태 이후 최고치를 기록했다."
     },
     {
      "title": "주담대 4.66%·신용대출 6.33%...대출금리 일제히 상승",
@@ -66,7 +95,7 @@
      "source": "metroseoul.co.kr",
      "published": "2026-09-30T13:20:00+09:00",
      "dup_count": 0,
-     "summary": "주담대와 일반신용대출 금리가 일제히 오르며 예대금리차가 확대됐다."
+     "summary": "주담대와 신용대출 금리가 동반 상승하며 예대금리차가 확대됐다."
     },
     {
      "title": "주담대 금리 4.66%까지 치솟아...레고랜드 사태 이후 '최고치'",
@@ -74,7 +103,7 @@
      "source": "youthdaily.co.kr",
      "published": "2026-09-30T13:10:00+09:00",
      "dup_count": 0,
-     "summary": "8월 주담대 금리가 레고랜드 사태 이후 최고치를 기록했다."
+     "summary": "한국은행(한은)이 30일 발표한 '금융기관 가중평균 금리' 통계에 따르면, 8월 예금은행의 신규 취급액 기준 주택담보대출 금리는 연 4.66%로 전월보다 0.18"
     },
     {
      "title": "은행 주담대 금리 4개월 연속상승 4.66%... 3년 9개월만에 최고",
@@ -82,7 +111,7 @@
      "source": "g-enews.com",
      "published": "2026-09-30T13:10:00+09:00",
      "dup_count": 0,
-     "summary": "은행채 단기금리 상승 등으로 주담대 금리가 4개월 연속 올랐다."
+     "summary": "가중평균금리’에 따르면 지난 8월 중 예금은행의 주택담보대출 가중평균 금리(신규취급액 기준)는 연... 한국은행은 지표금리인 은행채 단기 금리가 상승한 가운데 중"
     },
     {
      "title": "은행 대출금리 4.40%로 상승...주담대 3년 9개월 만 최고치",
@@ -90,7 +119,7 @@
      "source": "iminju.net",
      "published": "2026-09-30T13:00:00+09:00",
      "dup_count": 0,
-     "summary": "8월 예금은행 신규취급액 기준 대출금리가 연 4.40%로 올랐다."
+     "summary": "8월 은행 대출금리가 상승한 반면 저축성수신금리는 제자리걸음을 했다."
     },
     {
      "title": "은행 주담대 금리 연 4.66%...넉 달 연속 올라 3년 9개월 만에 최고",
@@ -98,7 +127,7 @@
      "source": "news.sbs.co.kr",
      "published": "2026-09-30T12:32:00+09:00",
      "dup_count": 0,
-     "summary": "▲ 한국은행 지난달 주택담보대출 금리가 4개월 연속 올라 레고랜드 사태 이후 가장 높은 수준을... 은행 신규 취급액 기준 대출 금리와 수신 금리의 차이, 즉 예"
+     "summary": "8월 주담대 금리가 4개월 연속 올라 레고랜드 사태 이후 최고를 기록했다."
     },
     {
      "title": "주담대 금리 4.66%로 넉 달째 상승...신규 대출 64.7%는 변동금리",
@@ -107,92 +136,30 @@
      "published": "2026-09-30T12:20:00+09:00",
      "dup_count": 0,
      "summary": "8월 신규 주담대 중 변동금리 비중이 64.7%를 차지했다."
-    },
-    {
-     "title": "\"대출이자 더 오르나\"...주담대 금리 4.66%, 3년 9개월 만에 최고",
-     "url": "https://www.kizmom.com/news/articleView.html?idxno=113035",
-     "source": "kizmom.com",
-     "published": "2026-09-30T12:16:00+09:00",
-     "dup_count": 0,
-     "summary": "주담대 금리가 4.66%로 오르며 레고랜드 사태 이후 최고치를 기록했다."
-    },
-    {
-     "title": "대출금리 다시 들썩...주담대 4.66%·신용대출 6.33%",
-     "url": "https://news.mtn.co.kr/news-detail/2026093010503213340",
-     "source": "news.mtn.co.kr",
-     "published": "2026-09-30T12:04:00+09:00",
-     "dup_count": 0,
-     "summary": "8월 예금은행 대출금리가 상승하고 저축성수신금리는 동률을 기록했다."
-    },
-    {
-     "title": "지난달 가계대출 금리 연 4.76%...21개월 만 최고치",
-     "url": "https://www.asiatime.co.kr/article/20260930500179",
-     "source": "asiatime.co.kr",
-     "published": "2026-09-30T12:02:00+09:00",
-     "dup_count": 0,
-     "summary": "지난달 시장금리 반영으로 가계와 기업 대출금리가 모두 올랐다."
-    },
-    {
-     "title": "\"월급 300 받아서 이자만 150\"...주담대 이자, 고정·변동 모두 오름세",
-     "url": "https://www.newsway.co.kr/news/view?ud=2026093010291005264",
-     "source": "newsway.co.kr",
-     "published": "2026-09-30T12:02:00+09:00",
-     "dup_count": 0,
-     "summary": "대출금리가 오른 반면 수신금리는 동결되어 예대금리차가 확대됐다."
-    },
-    {
-     "title": "8월 주담대 4.66% ... 은행 대출금리 4.40%·가계대출 4.76%로 ‘껑충’",
-     "url": "https://biz.newdaily.co.kr/site/data/html/2026/09/30/2026093000176.html",
-     "source": "biz.newdaily.co.kr",
-     "published": "2026-09-30T12:02:00+09:00",
-     "dup_count": 0,
-     "summary": "8월 은행 대출금리와 가계대출 금리가 큰 폭으로 상승했다."
-    },
-    {
-     "title": "8월 주담대 금리 3년9개월來 최고...\"9월 더 오를 가능성\"",
-     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437122",
-     "source": "news.einfomax.co.kr",
-     "published": "2026-09-30T12:02:00+09:00",
-     "dup_count": 0,
-     "summary": "8월 주담대 금리가 3년 9개월 만에 최고치를 기록하며 9월 추가 상승이 우려된다."
-    },
-    {
-     "title": "8월 주담대 금리, 3년 9개월 만에 최고...신용대출도 6%대로",
-     "url": "https://www.ajunews.com/view/20260930104947954",
-     "source": "ajunews.com",
-     "published": "2026-09-30T12:02:00+09:00",
-     "dup_count": 0,
-     "summary": "한국은행은 9월에도 시장금리 상승을 반영해 대출 금리가 오를 가능성이 크다고 봤다. 한국은행이 30일... 가중평균금리' 통계에 따르면 지난 8월 중 예금은행의 "
     }
    ]
   },
   {
-   "title": "미국 국채금리 상승과 코스피 증시 영향",
+   "title": "코스피 등 증시 동향 및 반도체 실적",
    "sources": [
     "ajunews.com",
-    "asiatoday.co.kr",
     "biz.sbs.co.kr",
-    "businesskorea.co.kr",
+    "businessplus.kr",
     "ekoreanews.co.kr",
-    "mstoday.co.kr"
+    "magazine.hankyung.com",
+    "metroseoul.co.kr",
+    "mstoday.co.kr",
+    "ppss.kr"
    ],
-   "count": 6,
+   "count": 8,
    "items": [
-    {
-     "title": "[개장 시황] 美 국채금리 공포 뚫은 AI 훈풍...코스피, 반도체 주도로 69...",
-     "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=277911",
-     "source": "businesskorea.co.kr",
-     "published": "2026-09-30T12:06:00+09:00",
-     "dup_count": 4,
-     "summary": "코스피가 미국발 고금리 충격을 딛고 AI 훈풍에 6940선을 회복했다."
-    },
     {
      "title": "[食전食후] 상승 출발한 코스피, 외인·기관 매도에 하락 전환...코스닥...",
      "url": "https://www.ajunews.com/view/20260930125524320",
      "source": "ajunews.com",
      "published": "2026-09-30T12:58:00+09:00",
      "dup_count": 3,
-     "summary": "뉴욕증시 장기물 국채금리 상승 부담으로 코스피가 하락했다."
+     "summary": "뉴욕증시 장기물 국채 금리 상승 부담으로 코스피가 하락 전환했다."
     },
     {
      "title": "美 장기금리 24년래 최고...코스피 1% 상승 뒤 하락 전환",
@@ -200,7 +167,15 @@
      "source": "mstoday.co.kr",
      "published": "2026-09-30T13:08:00+09:00",
      "dup_count": 2,
-     "summary": "美 장기금리 최고치 경신 여파로 코스피가 하락 전환했다."
+     "summary": "美 장기금리 최고치 경신 속 코스피가 상승 후 하락 전환했다."
+    },
+    {
+     "title": "증권가 “4분기에도 변동성 장세”...반도체 실적 주목",
+     "url": "http://www.metroseoul.co.kr/article/20260930500255",
+     "source": "metroseoul.co.kr",
+     "published": "2026-09-30T14:10:00+09:00",
+     "dup_count": 1,
+     "summary": "신영증권은 4분기 증권가에 변동성 장세가 이어질 것으로 전망했다."
     },
     {
      "title": "추석 연휴 뒤 코스피 약세, 이유 있었네",
@@ -208,7 +183,31 @@
      "source": "ekoreanews.co.kr",
      "published": "2026-09-30T13:56:00+09:00",
      "dup_count": 1,
-     "summary": "추석 이후 코스피는 금리 부담으로 6800대까지 하락했다."
+     "summary": "추석 연휴 이후 코스피는 금리 부담 등으로 약세를 보였다."
+    },
+    {
+     "title": "코스닥, 850선 회복 시도...개인 매수에 이틀째 상승",
+     "url": "https://magazine.hankyung.com/money/article/202609304516c",
+     "source": "magazine.hankyung.com",
+     "published": "2026-09-30T12:46:00+09:00",
+     "dup_count": 1,
+     "summary": "코스닥은 개인 매수에 힘입어 850선 회복을 시도하며 이틀째 상승했다."
+    },
+    {
+     "title": "코스피 사흘 만에 반등...반도체 강세 속 7천선 탈환 시도",
+     "url": "https://www.ppss.kr/news/articleView.html?idxno=313131",
+     "source": "ppss.kr",
+     "published": "2026-09-30T13:56:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피는 반도체 강세에 힘입어 사흘 만에 반등을 시도했다."
+    },
+    {
+     "title": "[뉴스+]환율 하락에 눈높이 하향...삼전 3Q영업익 100조 돌파 무난할까",
+     "url": "https://www.businessplus.kr/news/articleView.html?idxno=117488",
+     "source": "businessplus.kr",
+     "published": "2026-09-30T13:52:00+09:00",
+     "dup_count": 0,
+     "summary": "환율 하락 속 삼성전자의 3분기 영업익 100조 돌파 여부에 관심이 쏠린다."
     },
     {
      "title": "[직설] 美 국채금리 충격...코스피 약세 이어지나?",
@@ -216,51 +215,18 @@
      "source": "biz.sbs.co.kr",
      "published": "2026-09-30T13:49:00+09:00",
      "dup_count": 0,
-     "summary": "미 국채금리 충격과 중동 리스크로 코스피가 약세를 보였다."
-    },
-    {
-     "title": "美 30년물 국채 5.613%, 2002년 이후 최고...亞 자금 이탈·韓 국채 부담 ...",
-     "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260930010010659",
-     "source": "asiatoday.co.kr",
-     "published": "2026-09-30T13:12:00+09:00",
-     "dup_count": 0,
-     "summary": "美 30년물 국채금리가 2002년 이후 최고치를 기록했다."
+     "summary": "미 국채금리 충격 속 코스피의 반등 여부가 중대 기로에 섰다."
     }
    ]
   },
   {
-   "title": "예금 및 대출 금리 동향 (예금금리 하락·정기예금 4% 돌파 등)",
+   "title": "미국 국채금리 상승 및 환율·금값 등 글로벌 금융시장",
    "sources": [
-    "edaily.co.kr",
-    "mediapen.com"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "\"2년 3개월만\" 은행권 정기예금 금리 4% 돌파",
-     "url": "https://www.mediapen.com/news/view/1126888",
-     "source": "mediapen.com",
-     "published": "2026-09-30T13:00:00+09:00",
-     "dup_count": 0,
-     "summary": "글로벌 장기채 금리 상승으로 은행권 정기예금 금리가 4%를 넘었다."
-    },
-    {
-     "title": "\"8월에도 기준금리 올렸는데\"...예·적금 금리는 왜 떨어졌나",
-     "url": "https://www.edaily.co.kr/News/Read?newsId=03745766645585368&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-     "source": "edaily.co.kr",
-     "published": "2026-09-30T12:03:00+09:00",
-     "dup_count": 0,
-     "summary": "기준금리 인상에도 불구하고 시중은행의 예·적금 금리는 하락했다."
-    }
-   ]
-  },
-  {
-   "title": "환율 및 엔화 동향",
-   "sources": [
-    "businessplus.kr",
+    "asiatoday.co.kr",
+    "biz.chosun.com",
     "kidd.co.kr"
    ],
-   "count": 2,
+   "count": 3,
    "items": [
     {
      "title": "원-엔화 환율, 3원 이상 상승하면서 863원 후반대 안착...달러-엔화 환율...",
@@ -271,17 +237,76 @@
      "summary": "원-엔화 환율이 3원 이상의 상승세를 나타내면서 863원 후반대까지 올라서는 모습을 보였다. 달러-엔화... 도쿄 외환시장에서 달러-엔화 환율은 1달러 당 157"
     },
     {
-     "title": "[뉴스+]환율 하락에 눈높이 하향...삼전 3Q영업익 100조 돌파 무난할까",
-     "url": "https://www.businessplus.kr/news/articleView.html?idxno=117488",
-     "source": "businessplus.kr",
-     "published": "2026-09-30T13:52:00+09:00",
+     "title": "금값, 금리 상승에 한달 새 10% 하락... 1년래 최저가 눈앞",
+     "url": "https://biz.chosun.com/stock/finance/2026/09/30/VEE4E5K77FFEZIBTJM2WESVDLU/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+     "source": "biz.chosun.com",
+     "published": "2026-09-30T13:36:00+09:00",
      "dup_count": 0,
-     "summary": "서울외환시장에서 원·달러 환율은 1356.7원으로 마감했다."
+     "summary": "금리 상승 여파로 금값이 한 달 새 10% 하락해 1년래 최저가를 기록했다."
+    },
+    {
+     "title": "美 30년물 국채 5.613%, 2002년 이후 최고...亞 자금 이탈·韓 국채 부담 ...",
+     "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260930010010659",
+     "source": "asiatoday.co.kr",
+     "published": "2026-09-30T13:12:00+09:00",
+     "dup_count": 0,
+     "summary": "미 30년물 국채 금리가 2002년 이후 최고치를 기록했다."
     }
    ]
   },
   {
-   "title": "서학개미 해외 주식 매수",
+   "title": "국민참여성장펀드 2차 출격",
+   "sources": [
+    "thevaluenews.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "국민참여성장펀드 1차 흥행 이을까? 2차 6000억 출격...금융권 투자자 유...",
+     "url": "http://www.thevaluenews.co.kr/news/view.php?idx=201965",
+     "source": "thevaluenews.co.kr",
+     "published": "2026-09-30T14:04:00+09:00",
+     "dup_count": 0,
+     "summary": "KB자산운용 등이 참여하는 국민참여성장펀드 2차 6000억 원이 출격한다."
+    }
+   ]
+  },
+  {
+   "title": "엘리스그룹 상장 및 글로벌 공략",
+   "sources": [
+    "metroseoul.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "엘리스그룹, 교육 넘어 AI 인프라로...상장 발판 삼아 글로벌 공략",
+     "url": "http://www.metroseoul.co.kr/article/20260930500242",
+     "source": "metroseoul.co.kr",
+     "published": "2026-09-30T14:02:00+09:00",
+     "dup_count": 0,
+     "summary": "엘리스그룹은 상장을 발판 삼아 글로벌 AI 인프라 공략에 나선다."
+    }
+   ]
+  },
+  {
+   "title": "이형일 부총리 금리 긴급 바이백 발언",
+   "sources": [
+    "sidae.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "이형일 부총리 \"금리 과도하게 오르면 '긴급 바이백'\"",
+     "url": "https://www.sidae.com/article/2026093012490395414",
+     "source": "sidae.com",
+     "published": "2026-09-30T14:00:00+09:00",
+     "dup_count": 0,
+     "summary": "신현송 한국은행 총재가 참석했다. 재경부 국고채 통합정보시스템에 따르면 전날 10년물 국고채 금리는 연... 채권시장도 금리 상승세가 지속되고 있다\"고 평가했다."
+    }
+   ]
+  },
+  {
+   "title": "서학개미 해외 주식 집중 매수",
    "sources": [
     "newsroad.co.kr"
    ],
@@ -293,29 +318,80 @@
      "source": "newsroad.co.kr",
      "published": "2026-09-30T13:38:00+09:00",
      "dup_count": 0,
-     "summary": "서학개미들이 추석 연휴 동안 AI 관련 기술주를 집중 매수했다."
+     "summary": "서학개미들은 추석 연휴 동안 메타와 알파벳 등을 집중 매수했다."
     }
    ]
   },
   {
-   "title": "금값 하락",
+   "title": "폴리뉴스 모닝브리핑",
    "sources": [
-    "biz.chosun.com"
+    "polinews.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "금값, 금리 상승에 한달 새 10% 하락... 1년래 최저가 눈앞",
-     "url": "https://biz.chosun.com/stock/finance/2026/09/30/VEE4E5K77FFEZIBTJM2WESVDLU/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-     "source": "biz.chosun.com",
-     "published": "2026-09-30T13:36:00+09:00",
+     "title": "폴리뉴스 모닝브리핑 9월 30일 수요일",
+     "url": "https://www.polinews.co.kr/news/articleView.html?idxno=744451",
+     "source": "polinews.co.kr",
+     "published": "2026-09-30T13:38:00+09:00",
      "dup_count": 0,
-     "summary": "금리 상승 여파로 금값이 한 달 새 10% 하락했다."
+     "summary": "美 국채금리 부담으로 코스피가 이틀째 하락하고 외국인이 대거 매도했다."
     }
    ]
   },
   {
-   "title": "한국항공우주 3분기 실적",
+   "title": "코리보 단기금리 기준",
+   "sources": [
+    "news.einfomax.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[표] 은행간 단기금리 기준-코리보(30일)",
+     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437135",
+     "source": "news.einfomax.co.kr",
+     "published": "2026-09-30T13:04:00+09:00",
+     "dup_count": 0,
+     "summary": "연합인포맥스가 30일 오전 은행간 단기금리 기준 코리보를 고시했다."
+    }
+   ]
+  },
+  {
+   "title": "8월 산업활동동향 (생산·소비·투자 감소)",
+   "sources": [
+    "naeil.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "8월 생산·소비·투자 동반감소",
+     "url": "https://www.naeil.com/news/read/603823?ref=naver",
+     "source": "naeil.com",
+     "published": "2026-09-30T13:04:00+09:00",
+     "dup_count": 0,
+     "summary": "8월 설비투자 감소 등의 영향으로 생산·소비·투자가 동반 감소했다."
+    }
+   ]
+  },
+  {
+   "title": "은행권 정기예금 금리 4% 돌파",
+   "sources": [
+    "mediapen.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "\"2년 3개월만\" 은행권 정기예금 금리 4% 돌파",
+     "url": "https://www.mediapen.com/news/view/1126888",
+     "source": "mediapen.com",
+     "published": "2026-09-30T13:00:00+09:00",
+     "dup_count": 0,
+     "summary": "글로벌 장기채 금리 상승 등으로 은행권 정기예금 금리가 4%를 돌파했다."
+    }
+   ]
+  },
+  {
+   "title": "한국항공우주 3분기 실적 전망",
    "sources": [
     "newsquest.co.kr"
    ],
@@ -327,7 +403,7 @@
      "source": "newsquest.co.kr",
      "published": "2026-09-30T12:32:00+09:00",
      "dup_count": 0,
-     "summary": "한국항공우주는 3분기 실적 성장세와 수출 호조를 보이고 있다."
+     "summary": "한국항공우주는 3분기 납기 지연을 딛고 실적 성장세를 보이고 있다."
     }
    ]
   },
@@ -347,84 +423,88 @@
      "summary": "반도체 호황과 증시 활성화로 세수가 역대 최대를 기록했다."
     }
    ]
-  },
-  {
-   "title": "8월 산업활동동향 (생산·소비·투자 감소)",
-   "sources": [
-    "naeil.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "8월 생산·소비·투자 동반감소",
-     "url": "https://www.naeil.com/news/read/603823?ref=naver",
-     "source": "naeil.com",
-     "published": "2026-09-30T13:04:00+09:00",
-     "dup_count": 0,
-     "summary": "8월 설비투자가 선박·항공기 감소로 9.5% 줄었다."
-    }
-   ]
-  },
-  {
-   "title": "폴리뉴스 모닝브리핑",
-   "sources": [
-    "polinews.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "폴리뉴스 모닝브리핑 9월 30일 수요일",
-     "url": "https://www.polinews.co.kr/news/articleView.html?idxno=744451",
-     "source": "polinews.co.kr",
-     "published": "2026-09-30T13:38:00+09:00",
-     "dup_count": 0,
-     "summary": "美 국채금리 부담으로 코스피가 이틀 연속 하락 마감했다."
-    }
-   ]
-  },
-  {
-   "title": "코리보 금리 표",
-   "sources": [
-    "news.einfomax.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[표] 은행간 단기금리 기준-코리보(30일)",
-     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437135",
-     "source": "news.einfomax.co.kr",
-     "published": "2026-09-30T13:04:00+09:00",
-     "dup_count": 0,
-     "summary": "30일 기준 한국의 은행간 단기금리 코리보가 고시됐다."
-    }
-   ]
-  },
-  {
-   "title": "코스닥 시장 동향",
-   "sources": [
-    "magazine.hankyung.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "코스닥, 850선 회복 시도...개인 매수에 이틀째 상승",
-     "url": "https://magazine.hankyung.com/money/article/202609304516c",
-     "source": "magazine.hankyung.com",
-     "published": "2026-09-30T12:46:00+09:00",
-     "dup_count": 1,
-     "summary": "미국 장기 국채금리 상승에도 코스닥은 이틀째 상승했다."
-    }
-   ]
   }
  ],
  "items": [
+  {
+   "title": "증권가 “4분기에도 변동성 장세”...반도체 실적 주목",
+   "url": "http://www.metroseoul.co.kr/article/20260930500255",
+   "source": "metroseoul.co.kr",
+   "published": "2026-09-30T14:10:00+09:00",
+   "dup_count": 1,
+   "summary": "신영증권은 4분기 증권가에 변동성 장세가 이어질 것으로 전망했다."
+  },
+  {
+   "title": "주담대 금리 4.66%...4개월 연속 상승",
+   "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005928880",
+   "source": "mbnmoney.mbn.co.kr",
+   "published": "2026-09-30T14:08:00+09:00",
+   "dup_count": 0,
+   "summary": "(신규취급액 기준)는 연 4.66%로, 전월보다 0.18%포인트(p) 올랐습니다. 5월(4.42%) 이후 상승세를 유지한 가중평균 금리는 2022년 11월(4.7"
+  },
+  {
+   "title": "국민참여성장펀드 1차 흥행 이을까? 2차 6000억 출격...금융권 투자자 유...",
+   "url": "http://www.thevaluenews.co.kr/news/view.php?idx=201965",
+   "source": "thevaluenews.co.kr",
+   "published": "2026-09-30T14:04:00+09:00",
+   "dup_count": 0,
+   "summary": "KB자산운용 등이 참여하는 국민참여성장펀드 2차 6000억 원이 출격한다."
+  },
+  {
+   "title": "8월 은행 주담대 금리 연 4.66%...'레고랜드 사태' 이후 최고",
+   "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5067397",
+   "source": "shinailbo.co.kr",
+   "published": "2026-09-30T14:04:00+09:00",
+   "dup_count": 0,
+   "summary": "레고랜드 사태 이후 8월 은행 주담대 금리가 최고치를 기록했다."
+  },
+  {
+   "title": "엘리스그룹, 교육 넘어 AI 인프라로...상장 발판 삼아 글로벌 공략",
+   "url": "http://www.metroseoul.co.kr/article/20260930500242",
+   "source": "metroseoul.co.kr",
+   "published": "2026-09-30T14:02:00+09:00",
+   "dup_count": 0,
+   "summary": "엘리스그룹은 상장을 발판 삼아 글로벌 AI 인프라 공략에 나선다."
+  },
+  {
+   "title": "주담대 금리 넉 달째 상승...일반신용대출 금리 6%대",
+   "url": "https://www.ytn.co.kr/_ln/0102_202609301400340129",
+   "source": "ytn.co.kr",
+   "published": "2026-09-30T14:00:00+09:00",
+   "dup_count": 0,
+   "summary": "8월 주담대 금리가 넉 달째 올랐고 일반신용대출은 6%대를 기록했다."
+  },
+  {
+   "title": "이형일 부총리 \"금리 과도하게 오르면 '긴급 바이백'\"",
+   "url": "https://www.sidae.com/article/2026093012490395414",
+   "source": "sidae.com",
+   "published": "2026-09-30T14:00:00+09:00",
+   "dup_count": 0,
+   "summary": "신현송 한국은행 총재가 참석했다. 재경부 국고채 통합정보시스템에 따르면 전날 10년물 국고채 금리는 연... 채권시장도 금리 상승세가 지속되고 있다\"고 평가했다."
+  },
+  {
+   "title": "8월 은행 대출금리 연 4.40%로 반등...예대금리차 7개월 만에 확대",
+   "url": "http://www.segyebiz.com/newsView/20260930511087?OutUrl=naver",
+   "source": "segyebiz.com",
+   "published": "2026-09-30T13:58:00+09:00",
+   "dup_count": 0,
+   "summary": "반면 예금금리는 제자리걸음을 이어가면서, 신규취급액 기준 은행의 예대금리차는 7개월 만에 확대 전환했다. 30일 한국은행이 발표한 ‘2026년 8월 금융기관 가중"
+  },
   {
    "title": "추석 연휴 뒤 코스피 약세, 이유 있었네",
    "url": "https://www.ekoreanews.co.kr/news/articleView.html?idxno=88334",
    "source": "ekoreanews.co.kr",
    "published": "2026-09-30T13:56:00+09:00",
    "dup_count": 1,
-   "summary": "추석 이후 코스피는 금리 부담으로 6800대까지 하락했다."
+   "summary": "추석 연휴 이후 코스피는 금리 부담 등으로 약세를 보였다."
+  },
+  {
+   "title": "코스피 사흘 만에 반등...반도체 강세 속 7천선 탈환 시도",
+   "url": "https://www.ppss.kr/news/articleView.html?idxno=313131",
+   "source": "ppss.kr",
+   "published": "2026-09-30T13:56:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피는 반도체 강세에 힘입어 사흘 만에 반등을 시도했다."
   },
   {
    "title": "원-엔화 환율, 3원 이상 상승하면서 863원 후반대 안착...달러-엔화 환율...",
@@ -440,7 +520,7 @@
    "source": "businessplus.kr",
    "published": "2026-09-30T13:52:00+09:00",
    "dup_count": 0,
-   "summary": "서울외환시장에서 원·달러 환율은 1356.7원으로 마감했다."
+   "summary": "환율 하락 속 삼성전자의 3분기 영업익 100조 돌파 여부에 관심이 쏠린다."
   },
   {
    "title": "예금 금리 줄었는데 왜 대출만 오르나...주담대 지난달 4.66%, 3년9개월만...",
@@ -448,7 +528,7 @@
    "source": "biz.heraldcorp.com",
    "published": "2026-09-30T13:52:00+09:00",
    "dup_count": 0,
-   "summary": "보금자리론 금리 상승 등으로 예대금리차가 확대됐다."
+   "summary": "대출 금리 상승과 변동금리 비중 감소로 주담대가 3년 9개월 만에 최고치를 기록했다."
   },
   {
    "title": "[직설] 美 국채금리 충격...코스피 약세 이어지나?",
@@ -456,7 +536,7 @@
    "source": "biz.sbs.co.kr",
    "published": "2026-09-30T13:49:00+09:00",
    "dup_count": 0,
-   "summary": "미 국채금리 충격과 중동 리스크로 코스피가 약세를 보였다."
+   "summary": "미 국채금리 충격 속 코스피의 반등 여부가 중대 기로에 섰다."
   },
   {
    "title": "서학개미, 추석 연휴에 메타·샌디스크·알파벳 '몰빵 매수'",
@@ -464,7 +544,7 @@
    "source": "newsroad.co.kr",
    "published": "2026-09-30T13:38:00+09:00",
    "dup_count": 0,
-   "summary": "서학개미들이 추석 연휴 동안 AI 관련 기술주를 집중 매수했다."
+   "summary": "서학개미들은 추석 연휴 동안 메타와 알파벳 등을 집중 매수했다."
   },
   {
    "title": "폴리뉴스 모닝브리핑 9월 30일 수요일",
@@ -472,7 +552,7 @@
    "source": "polinews.co.kr",
    "published": "2026-09-30T13:38:00+09:00",
    "dup_count": 0,
-   "summary": "美 국채금리 부담으로 코스피가 이틀 연속 하락 마감했다."
+   "summary": "美 국채금리 부담으로 코스피가 이틀째 하락하고 외국인이 대거 매도했다."
   },
   {
    "title": "금값, 금리 상승에 한달 새 10% 하락... 1년래 최저가 눈앞",
@@ -480,7 +560,7 @@
    "source": "biz.chosun.com",
    "published": "2026-09-30T13:36:00+09:00",
    "dup_count": 0,
-   "summary": "금리 상승 여파로 금값이 한 달 새 10% 하락했다."
+   "summary": "금리 상승 여파로 금값이 한 달 새 10% 하락해 1년래 최저가를 기록했다."
   },
   {
    "title": "은행 전체대출 2년 전 밑도는데...가계대출 금리는 0.68%p 더 높아졌다",
@@ -488,7 +568,7 @@
    "source": "pinpointnews.co.kr",
    "published": "2026-09-30T13:32:00+09:00",
    "dup_count": 0,
-   "summary": "예금금리는 멈춘 반면 대출금리가 올라 예대금리차가 벌어졌다."
+   "summary": "은행 전체대출이 정체된 가운데 가계대출 금리는 크게 상승했다."
   },
   {
    "title": "주택담보대출 금리, 4개월 연속 올라...2022년 9월 '레고랜드' 사태이후...",
@@ -496,7 +576,7 @@
    "source": "beyondpost.co.kr",
    "published": "2026-09-30T13:28:00+09:00",
    "dup_count": 0,
-   "summary": "8월 주담대 금리가 4.66%로 3년 9개월 만에 최고치를 기록했다."
+   "summary": "8월 주담대 금리가 4개월 연속 상승해 레고랜드 사태 이후 최고치를 기록했다."
   },
   {
    "title": "8월 은행권 주담대 금리 4.66%...3년 9개월 만에 최고",
@@ -504,7 +584,7 @@
    "source": "wowtv.co.kr",
    "published": "2026-09-30T13:24:00+09:00",
    "dup_count": 3,
-   "summary": "8월 예금은행 가계 대출금리와 주담대 금리가 동반 상승했다."
+   "summary": "한국은행이 발표한 '8월 금융기관 가중평균금리'에 따르면, 예금은행의 신규 취급액 기준 가계 대출금리는 4.76%로 전월(4.64%)보다 0.12%p 상승했다. "
   },
   {
    "title": "주담대 4.66%·신용대출 6.33%...대출금리 일제히 상승",
@@ -512,7 +592,7 @@
    "source": "metroseoul.co.kr",
    "published": "2026-09-30T13:20:00+09:00",
    "dup_count": 0,
-   "summary": "주담대와 일반신용대출 금리가 일제히 오르며 예대금리차가 확대됐다."
+   "summary": "주담대와 신용대출 금리가 동반 상승하며 예대금리차가 확대됐다."
   },
   {
    "title": "美 30년물 국채 5.613%, 2002년 이후 최고...亞 자금 이탈·韓 국채 부담 ...",
@@ -520,7 +600,7 @@
    "source": "asiatoday.co.kr",
    "published": "2026-09-30T13:12:00+09:00",
    "dup_count": 0,
-   "summary": "美 30년물 국채금리가 2002년 이후 최고치를 기록했다."
+   "summary": "미 30년물 국채 금리가 2002년 이후 최고치를 기록했다."
   },
   {
    "title": "주담대 금리 4.66%까지 치솟아...레고랜드 사태 이후 '최고치'",
@@ -528,7 +608,7 @@
    "source": "youthdaily.co.kr",
    "published": "2026-09-30T13:10:00+09:00",
    "dup_count": 0,
-   "summary": "8월 주담대 금리가 레고랜드 사태 이후 최고치를 기록했다."
+   "summary": "한국은행(한은)이 30일 발표한 '금융기관 가중평균 금리' 통계에 따르면, 8월 예금은행의 신규 취급액 기준 주택담보대출 금리는 연 4.66%로 전월보다 0.18"
   },
   {
    "title": "은행 주담대 금리 4개월 연속상승 4.66%... 3년 9개월만에 최고",
@@ -536,7 +616,7 @@
    "source": "g-enews.com",
    "published": "2026-09-30T13:10:00+09:00",
    "dup_count": 0,
-   "summary": "은행채 단기금리 상승 등으로 주담대 금리가 4개월 연속 올랐다."
+   "summary": "가중평균금리’에 따르면 지난 8월 중 예금은행의 주택담보대출 가중평균 금리(신규취급액 기준)는 연... 한국은행은 지표금리인 은행채 단기 금리가 상승한 가운데 중"
   },
   {
    "title": "美 장기금리 24년래 최고...코스피 1% 상승 뒤 하락 전환",
@@ -544,7 +624,7 @@
    "source": "mstoday.co.kr",
    "published": "2026-09-30T13:08:00+09:00",
    "dup_count": 2,
-   "summary": "美 장기금리 최고치 경신 여파로 코스피가 하락 전환했다."
+   "summary": "美 장기금리 최고치 경신 속 코스피가 상승 후 하락 전환했다."
   },
   {
    "title": "[표] 은행간 단기금리 기준-코리보(30일)",
@@ -552,7 +632,7 @@
    "source": "news.einfomax.co.kr",
    "published": "2026-09-30T13:04:00+09:00",
    "dup_count": 0,
-   "summary": "30일 기준 한국의 은행간 단기금리 코리보가 고시됐다."
+   "summary": "연합인포맥스가 30일 오전 은행간 단기금리 기준 코리보를 고시했다."
   },
   {
    "title": "8월 생산·소비·투자 동반감소",
@@ -560,7 +640,7 @@
    "source": "naeil.com",
    "published": "2026-09-30T13:04:00+09:00",
    "dup_count": 0,
-   "summary": "8월 설비투자가 선박·항공기 감소로 9.5% 줄었다."
+   "summary": "8월 설비투자 감소 등의 영향으로 생산·소비·투자가 동반 감소했다."
   },
   {
    "title": "은행 대출금리 4.40%로 상승...주담대 3년 9개월 만 최고치",
@@ -568,7 +648,7 @@
    "source": "iminju.net",
    "published": "2026-09-30T13:00:00+09:00",
    "dup_count": 0,
-   "summary": "8월 예금은행 신규취급액 기준 대출금리가 연 4.40%로 올랐다."
+   "summary": "8월 은행 대출금리가 상승한 반면 저축성수신금리는 제자리걸음을 했다."
   },
   {
    "title": "\"2년 3개월만\" 은행권 정기예금 금리 4% 돌파",
@@ -576,7 +656,7 @@
    "source": "mediapen.com",
    "published": "2026-09-30T13:00:00+09:00",
    "dup_count": 0,
-   "summary": "글로벌 장기채 금리 상승으로 은행권 정기예금 금리가 4%를 넘었다."
+   "summary": "글로벌 장기채 금리 상승 등으로 은행권 정기예금 금리가 4%를 돌파했다."
   },
   {
    "title": "[食전食후] 상승 출발한 코스피, 외인·기관 매도에 하락 전환...코스닥...",
@@ -584,7 +664,7 @@
    "source": "ajunews.com",
    "published": "2026-09-30T12:58:00+09:00",
    "dup_count": 3,
-   "summary": "뉴욕증시 장기물 국채금리 상승 부담으로 코스피가 하락했다."
+   "summary": "뉴욕증시 장기물 국채 금리 상승 부담으로 코스피가 하락 전환했다."
   },
   {
    "title": "코스닥, 850선 회복 시도...개인 매수에 이틀째 상승",
@@ -592,7 +672,7 @@
    "source": "magazine.hankyung.com",
    "published": "2026-09-30T12:46:00+09:00",
    "dup_count": 1,
-   "summary": "미국 장기 국채금리 상승에도 코스닥은 이틀째 상승했다."
+   "summary": "코스닥은 개인 매수에 힘입어 850선 회복을 시도하며 이틀째 상승했다."
   },
   {
    "title": "\"LAH 납기 지연 딛고 5조 클럽 가시권...한국항공우주, 3분기 실적 성장세...",
@@ -600,7 +680,7 @@
    "source": "newsquest.co.kr",
    "published": "2026-09-30T12:32:00+09:00",
    "dup_count": 0,
-   "summary": "한국항공우주는 3분기 실적 성장세와 수출 호조를 보이고 있다."
+   "summary": "한국항공우주는 3분기 납기 지연을 딛고 실적 성장세를 보이고 있다."
   },
   {
    "title": "은행 주담대 금리 연 4.66%...넉 달 연속 올라 3년 9개월 만에 최고",
@@ -608,7 +688,7 @@
    "source": "news.sbs.co.kr",
    "published": "2026-09-30T12:32:00+09:00",
    "dup_count": 0,
-   "summary": "▲ 한국은행 지난달 주택담보대출 금리가 4개월 연속 올라 레고랜드 사태 이후 가장 높은 수준을... 은행 신규 취급액 기준 대출 금리와 수신 금리의 차이, 즉 예"
+   "summary": "8월 주담대 금리가 4개월 연속 올라 레고랜드 사태 이후 최고를 기록했다."
   },
   {
    "title": "반도체 호황에 세수 '역대 최대'...미래기금에 56조 더 넣을 수 있어",
@@ -625,78 +705,6 @@
    "published": "2026-09-30T12:20:00+09:00",
    "dup_count": 0,
    "summary": "8월 신규 주담대 중 변동금리 비중이 64.7%를 차지했다."
-  },
-  {
-   "title": "\"대출이자 더 오르나\"...주담대 금리 4.66%, 3년 9개월 만에 최고",
-   "url": "https://www.kizmom.com/news/articleView.html?idxno=113035",
-   "source": "kizmom.com",
-   "published": "2026-09-30T12:16:00+09:00",
-   "dup_count": 0,
-   "summary": "주담대 금리가 4.66%로 오르며 레고랜드 사태 이후 최고치를 기록했다."
-  },
-  {
-   "title": "[개장 시황] 美 국채금리 공포 뚫은 AI 훈풍...코스피, 반도체 주도로 69...",
-   "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=277911",
-   "source": "businesskorea.co.kr",
-   "published": "2026-09-30T12:06:00+09:00",
-   "dup_count": 4,
-   "summary": "코스피가 미국발 고금리 충격을 딛고 AI 훈풍에 6940선을 회복했다."
-  },
-  {
-   "title": "대출금리 다시 들썩...주담대 4.66%·신용대출 6.33%",
-   "url": "https://news.mtn.co.kr/news-detail/2026093010503213340",
-   "source": "news.mtn.co.kr",
-   "published": "2026-09-30T12:04:00+09:00",
-   "dup_count": 0,
-   "summary": "8월 예금은행 대출금리가 상승하고 저축성수신금리는 동률을 기록했다."
-  },
-  {
-   "title": "\"8월에도 기준금리 올렸는데\"...예·적금 금리는 왜 떨어졌나",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=03745766645585368&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "source": "edaily.co.kr",
-   "published": "2026-09-30T12:03:00+09:00",
-   "dup_count": 0,
-   "summary": "기준금리 인상에도 불구하고 시중은행의 예·적금 금리는 하락했다."
-  },
-  {
-   "title": "지난달 가계대출 금리 연 4.76%...21개월 만 최고치",
-   "url": "https://www.asiatime.co.kr/article/20260930500179",
-   "source": "asiatime.co.kr",
-   "published": "2026-09-30T12:02:00+09:00",
-   "dup_count": 0,
-   "summary": "지난달 시장금리 반영으로 가계와 기업 대출금리가 모두 올랐다."
-  },
-  {
-   "title": "\"월급 300 받아서 이자만 150\"...주담대 이자, 고정·변동 모두 오름세",
-   "url": "https://www.newsway.co.kr/news/view?ud=2026093010291005264",
-   "source": "newsway.co.kr",
-   "published": "2026-09-30T12:02:00+09:00",
-   "dup_count": 0,
-   "summary": "대출금리가 오른 반면 수신금리는 동결되어 예대금리차가 확대됐다."
-  },
-  {
-   "title": "8월 주담대 4.66% ... 은행 대출금리 4.40%·가계대출 4.76%로 ‘껑충’",
-   "url": "https://biz.newdaily.co.kr/site/data/html/2026/09/30/2026093000176.html",
-   "source": "biz.newdaily.co.kr",
-   "published": "2026-09-30T12:02:00+09:00",
-   "dup_count": 0,
-   "summary": "8월 은행 대출금리와 가계대출 금리가 큰 폭으로 상승했다."
-  },
-  {
-   "title": "8월 주담대 금리 3년9개월來 최고...\"9월 더 오를 가능성\"",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437122",
-   "source": "news.einfomax.co.kr",
-   "published": "2026-09-30T12:02:00+09:00",
-   "dup_count": 0,
-   "summary": "8월 주담대 금리가 3년 9개월 만에 최고치를 기록하며 9월 추가 상승이 우려된다."
-  },
-  {
-   "title": "8월 주담대 금리, 3년 9개월 만에 최고...신용대출도 6%대로",
-   "url": "https://www.ajunews.com/view/20260930104947954",
-   "source": "ajunews.com",
-   "published": "2026-09-30T12:02:00+09:00",
-   "dup_count": 0,
-   "summary": "한국은행은 9월에도 시장금리 상승을 반영해 대출 금리가 오를 가능성이 크다고 봤다. 한국은행이 30일... 가중평균금리' 통계에 따르면 지난 8월 중 예금은행의 "
   }
  ]
 }
