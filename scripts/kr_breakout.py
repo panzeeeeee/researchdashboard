@@ -166,6 +166,67 @@ def sector_counts(highs, lows):
     return sorted(by.values(), key=lambda x: -(x["high"] + x["low"]))
 
 
+def sector_breadth(px_all, info, highs, lows):
+    """KIND 업종별 섹터 온도 -- 종목별 수익률의 중앙값, 상승 종목 비율, 신고가·신저가 수, 상승/하락 대표 종목.
+    유동성 필터를 통과한 종목만. 업종 이름은 KIND 의 것 그대로(세분화돼 있다)."""
+    rows = []
+    for t, df in px_all.items():
+        c = df["Close"].dropna()
+        if len(c) < 64:
+            continue
+        ok, _ = kr_is_tradable(df.loc[c.index])
+        if not ok:
+            continue
+        last = float(c.iloc[-1])
+
+        def r(k):
+            return (last / float(c.iloc[-1 - k]) - 1) * 100
+        rows.append({"name": info[t]["종목명"], "code": info[t]["코드"], "market": info[t]["시장"],
+                     "sector": info[t]["업종"], "d1": r(1), "d5": r(5), "m1": r(21), "m3": r(63),
+                     "turnover_eok": turnover_eok(df)})
+    if not rows:
+        return None
+
+    def med(v):
+        return _f(np.median(v), 2)
+
+    n_hi, n_lo = {}, {}
+    for x in highs:
+        n_hi[x["sector"]] = n_hi.get(x["sector"], 0) + 1
+    for x in lows:
+        n_lo[x["sector"]] = n_lo.get(x["sector"], 0) + 1
+
+    markets = {}
+    for m in ("코스피", "코스닥"):
+        sub = [x for x in rows if x["market"] == m]
+        markets[m] = {"n": len(sub), "up": sum(1 for x in sub if x["d1"] > 0),
+                      "down": sum(1 for x in sub if x["d1"] < 0),
+                      "flat": sum(1 for x in sub if x["d1"] == 0),
+                      "n_high": sum(1 for x in highs if x["market"] == m),
+                      "n_low": sum(1 for x in lows if x["market"] == m)}
+
+    by = {}
+    for x in rows:
+        by.setdefault(x["sector"], []).append(x)
+    sectors = []
+    for name, v in by.items():
+        if len(v) < 3:
+            continue
+        up, down = sum(1 for x in v if x["d1"] > 0), sum(1 for x in v if x["d1"] < 0)
+        srt = sorted(v, key=lambda x: x["d1"], reverse=True)
+        pick = lambda x: {"name": x["name"], "code": x["code"], "chg": _f(x["d1"], 2)}
+        sectors.append({
+            "name": name, "n": len(v), "up": up, "down": down,
+            "adv_pct": _f(up / (up + down) * 100, 0) if up + down else None,
+            "d1": med([x["d1"] for x in v]), "d5": med([x["d5"] for x in v]),
+            "m1": med([x["m1"] for x in v]), "m3": med([x["m3"] for x in v]),
+            "n_high": n_hi.get(name, 0), "n_low": n_lo.get(name, 0),
+            "top": [pick(x) for x in srt[:3]], "bottom": [pick(x) for x in srt[::-1][:3] if x["d1"] < 0],
+        })
+    sectors.sort(key=lambda s: -(s["d1"] or 0))
+    return {"markets": markets, "sectors": sectors}
+
+
 # ---------------------------------------------------------------- 실행
 
 def main():
@@ -253,6 +314,15 @@ def main():
     all_px = {t: d for m in by_market.values() for t, d in m.items()}
     highs, lows = extremes(all_px, info)
     print(f"52주 신고가 {len(highs)} · 신저가 {len(lows)}")
+
+    try:
+        sb = sector_breadth(all_px, info, highs, lows)
+        if sb:
+            write_json(DATA_DIR / "kr_sectors.json", {"updated_at": now_kst().isoformat(),
+                                                      "asof": str(mkt_last), **sb})
+            print(f"섹터 온도: 업종 {len(sb['sectors'])}개 (종목 3개 이상)")
+    except Exception as e:      # 섹터 온도가 잘못돼도 스크리너 결과는 그대로 저장한다
+        print(f"  섹터 온도 계산 실패: {type(e).__name__}: {e}", file=sys.stderr)
 
     def trim(rows):
         return sorted(rows, key=lambda r: -(r["turnover_eok"] or 0))[:MAX_EXTREME_NAMES]

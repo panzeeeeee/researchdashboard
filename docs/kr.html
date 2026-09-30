@@ -49,8 +49,8 @@ h2{font-size:1.25rem;font-weight:700;margin:0 0 1.3rem;letter-spacing:-.01em}
 /* 화면 제목 앞 색 띠 = 사이드바 묶음 색 (미국 화면과 같은 방식) */
 main section > h2{display:flex;align-items:baseline;flex-wrap:wrap;gap:.1rem}
 main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;border-radius:3px;margin-right:.6rem;background:var(--sg,var(--accent))}
-#s-news,#s-dart{--sg:#0F6E56} #s-market,#s-rates{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn,#s-break,#s-extreme{--sg:#854F0B}
-@media (prefers-color-scheme: dark){#s-news,#s-dart{--sg:#5DCAA5} #s-market,#s-rates{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn,#s-break,#s-extreme{--sg:#EF9F27}}
+#s-news,#s-dart{--sg:#0F6E56} #s-market,#s-breadth,#s-rates{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn,#s-break,#s-extreme{--sg:#854F0B}
+@media (prefers-color-scheme: dark){#s-news,#s-dart{--sg:#5DCAA5} #s-market,#s-breadth,#s-rates{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn,#s-break,#s-extreme{--sg:#EF9F27}}
 .scard{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.8rem .9rem;border-top:3px solid var(--sg,var(--accent))}
 .scard .nm{font-weight:700;font-size:1rem;line-height:1.35} .scard .sm{font-size:.76rem;color:var(--ink-3)}
 .scard .px{font-size:1.25rem;font-weight:700;font-variant-numeric:tabular-nums}
@@ -59,6 +59,21 @@ main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;b
 .fin{display:inline-block;font-size:.7rem;font-weight:700;color:#fff;background:var(--accent);border-radius:4px;padding:0 .4rem;margin-left:.4rem}
 .chips{display:flex;flex-wrap:wrap;gap:.35rem;margin:.3rem 0 .8rem}
 .chip{font-size:.8rem;border:1px solid var(--rule);border-radius:999px;padding:.1rem .65rem;background:var(--card);white-space:nowrap}
+.kchart{width:100%;height:auto;display:block}
+.kchart text{font-family:inherit;fill:var(--ink-3);font-size:13px}
+.kchart .g{stroke:var(--rule);stroke-width:1}
+.kc-wrap{position:relative}
+.kc-tip{position:absolute;top:4px;left:58px;font-size:.78rem;background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:.3rem .55rem;pointer-events:none;display:none;line-height:1.5;z-index:2}
+.lg{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.6rem}
+.lg button{display:inline-flex;align-items:center;gap:.35rem;background:none;border:1px solid var(--rule);border-radius:999px;padding:.15rem .7rem;font-size:.8rem;color:var(--ink-2);cursor:pointer;font-family:inherit}
+.lg button.off{opacity:.4}
+.lg i{display:inline-block;width:14px;height:0;border-top:2.5px solid}
+.btrack.split{display:flex;height:9px;background:var(--rule);border-radius:999px;overflow:hidden;margin-top:.6rem}
+.btrack.split span{display:block;height:100%}
+td.h{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.nm{min-width:9.5rem}
+tr.rowc{cursor:pointer} tr.rowc:hover td.nm{color:var(--accent)}
+tr.dr td{background:var(--tintA);font-size:.84rem;white-space:normal}
 details.dg{margin-top:1rem} details.dg summary{cursor:pointer;color:var(--ink-3);font-size:.86rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;margin-bottom:1.2rem}
 .slot{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.8rem .9rem}
@@ -168,6 +183,7 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
   <div class="ngrp g2">
     <p class="gl">시장</p>
     <a href="#market">지수·업종</a>
+    <a href="#breadth">섹터 온도</a>
     <a href="#rates">국고채 금리</a>
   </div>
   <div class="ngrp g5">
@@ -209,12 +225,22 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
 </section>
 
 <section id="s-market">
-  <h2>지수·업종<span class="tagline">종가 기준 · 작은 선은 최근 1년</span></h2>
+  <h2>지수·업종<span class="tagline">종가 기준 · 하루 두 번 갱신 · 실시간 아님</span></h2>
+  <div id="mk-recap"></div>
   <div class="cards" id="indexes"><p class="note">불러오는 중입니다.</p></div>
-  <p class="sub">업종 온도<span class="tagline">KODEX 업종 ETF 기준 · 업종지수의 대용입니다</span></p>
+  <p class="sub">지수 추이<span class="tagline">차트 위에 마우스를 올리면 날짜별 값이 보입니다</span></p>
+  <div class="box" id="idx-chart"></div>
+  <p class="sub">업종 추이<span class="tagline">KODEX 업종 ETF · 시작일을 100으로 맞춰 비교 · 아래 이름을 누르면 선을 켜고 끕니다</span></p>
+  <div class="box" id="etf-chart"></div>
+  <p class="sub">업종 ETF 등락<span class="tagline">업종지수의 대용입니다 · 더 정확한 업종 온도는 '섹터 온도' 화면</span></p>
   <div class="box"><div class="scroll" id="sectors"><p class="note">불러오는 중입니다.</p></div></div>
-  <p class="note" style="margin-top:1rem">아침 7시 반·저녁 6시에 갱신한 종가 값입니다(실시간 아님).
-  업종은 ETF 가격이라 실제 KRX 업종지수와 조금 다를 수 있습니다.</p>
+  <p class="note" style="margin-top:1rem">아침 7시 반·저녁 6시에 갱신한 종가 값입니다. 업종은 ETF 가격이라 실제 KRX 업종지수와 조금 다를 수 있습니다.
+  3년·5년 구간은 1년보다 앞은 주 단위 점입니다.</p>
+</section>
+
+<section id="s-breadth">
+  <h2>섹터 온도<span class="tagline" id="breadth-tag">KRX 업종별 · 코스피·코스닥 상장 종목 전체</span></h2>
+  <div id="breadth-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="s-rates">
@@ -243,7 +269,7 @@ const num = (v, d = 2) => v == null ? "—" : v.toLocaleString("ko-KR", { minimu
 
 // 작은 추세선. 한국은 상승=빨강 관례가 있지만 이 대시보드는 미국 화면과 같은 색(상승=초록)으로 맞춘다.
 function spark(hist) {
-  const v = (hist || []).map(p => p.value);
+  const v = (hist || []).map(p => Array.isArray(p) ? p[1] : p.value);
   if (v.length < 2) return "";
   const W = 200, H = 44, lo = Math.min(...v), hi = Math.max(...v), span = hi - lo || 1;
   const pts = v.map((x, i) => `${(i / (v.length - 1) * W).toFixed(1)},${(H - 3 - (x - lo) / span * (H - 6)).toFixed(1)}`).join(" ");
@@ -262,6 +288,109 @@ function card(i) {
     <div class="asof">${esc(i.asof || "")} 기준${i.stale ? " · 이전 값" : ""}</div></div>`;
 }
 
+// ── 기간 버튼이 있는 선 차트 ──
+const RANGES = [["1개월", 31], ["3개월", 92], ["6개월", 183], ["1년", 366], ["3년", 1096], ["5년", 1830]];
+const isoAgo = days => { const d = new Date(); d.setDate(d.getDate() - days); return d.toISOString().slice(0, 10); };
+const PALETTE = ["#0f6e56", "#2563eb", "#d97706", "#9333ea", "#db2777", "#64748b", "#0891b2", "#be123c", "#a16207"];
+
+// lines: [{label, color, off, pts:[[날짜, 값]]}]   opt: {rebase(시작=100), fmt(값 모양)}
+// 실제 날짜 위치에 점을 찍고, 마우스를 올리면 그 날짜의 값을 보여준다.
+function drawChart(el, lines, opt) {
+  const narrow = window.innerWidth < 700;
+  const W = narrow ? 400 : 760, H = narrow ? 260 : 300, L = narrow ? 50 : 60, R = 24, T = 14, B = 30;
+  const ser = lines.filter(l => !l.off && l.pts.length >= 2).map(l => {
+    const base = opt.rebase ? l.pts[0][1] : 1;
+    return { ...l, pts: l.pts.map(([d, v]) => [d, opt.rebase ? v / base * 100 : v]) };
+  });
+  if (!ser.length) { el.innerHTML = '<p class="note">이 기간의 자료가 부족합니다.</p>'; return; }
+  const tx = d => new Date(d + "T00:00:00Z").getTime();
+  const all = ser.flatMap(l => l.pts);
+  const x0 = Math.min(...all.map(p => tx(p[0]))), x1 = Math.max(...all.map(p => tx(p[0])));
+  let y0 = Math.min(...all.map(p => p[1])), y1 = Math.max(...all.map(p => p[1]));
+  const pad = (y1 - y0) * 0.06 || 1; y0 -= pad; y1 += pad;
+  const X = d => L + (tx(d) - x0) / ((x1 - x0) || 1) * (W - L - R);
+  const Y = v => H - B - (v - y0) / (y1 - y0) * (H - T - B);
+  const fmt = opt.rebase ? (v => v.toFixed(0)) : (opt.fmt || (v => v.toLocaleString("ko-KR", { maximumFractionDigits: 0 })));
+  let g = "";
+  for (let i = 0; i < 5; i++) {
+    const v = y0 + (y1 - y0) * i / 4, yy = Y(v).toFixed(1);
+    g += `<line class="g" x1="${L}" x2="${W - R}" y1="${yy}" y2="${yy}"/><text x="${L - 6}" y="${yy}" text-anchor="end" dominant-baseline="middle">${fmt(v)}</text>`;
+  }
+  const long = (x1 - x0) / 864e5 > 500;
+  for (let i = 0; i < 5; i++) {
+    const t = new Date(x0 + (x1 - x0) * i / 4), s = t.toISOString().slice(0, 10);
+    g += `<text x="${(L + (W - L - R) * i / 4).toFixed(1)}" y="${H - 8}" text-anchor="${i === 0 ? "start" : i === 4 ? "end" : "middle"}">${long ? s.slice(2, 7).replace("-", ".") : s.slice(5).replace("-", "/")}</text>`;
+  }
+  const paths = ser.map(l => `<path d="${l.pts.map((p, i) => `${i ? "L" : "M"}${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`).join(" ")}"
+    fill="none" stroke="${l.color}" stroke-width="2" stroke-linejoin="round"/>`).join("");
+  el.innerHTML = `<div class="kc-wrap"><svg viewBox="0 0 ${W} ${H}" class="kchart">${g}${paths}
+    <line class="cur" x1="0" x2="0" y1="${T}" y2="${H - B}" stroke="var(--ink-3)" stroke-width="1" style="display:none"/>
+    <rect x="${L}" y="${T}" width="${W - L - R}" height="${H - T - B}" fill="transparent"/></svg><div class="kc-tip"></div></div>`;
+  const svg = el.querySelector("svg"), tip = el.querySelector(".kc-tip"), cur = el.querySelector(".cur");
+  const show = ev => {
+    const r = svg.getBoundingClientRect(), cx = (ev.touches ? ev.touches[0].clientX : ev.clientX);
+    const vx = (cx - r.left) / r.width * W;
+    if (vx < L || vx > W - R) { tip.style.display = "none"; cur.style.display = "none"; return; }
+    const t = x0 + (vx - L) / (W - L - R) * (x1 - x0);
+    const near = ser.map(l => { let b = l.pts[0]; for (const p of l.pts) if (Math.abs(tx(p[0]) - t) < Math.abs(tx(b[0]) - t)) b = p; return { l, p: b }; });
+    const dt = near.reduce((a, n) => Math.abs(tx(n.p[0]) - t) < Math.abs(tx(a) - t) ? n.p[0] : a, near[0].p[0]);
+    cur.setAttribute("x1", X(dt)); cur.setAttribute("x2", X(dt)); cur.style.display = "";
+    tip.innerHTML = `<b>${esc(dt)}</b>` + near.map(n => `<br><span style="color:${n.l.color}">●</span> ${esc(n.l.label)} ${fmt(n.p[1])}`).join("");
+    tip.style.display = "block";
+  };
+  svg.addEventListener("mousemove", show); svg.addEventListener("touchmove", show, { passive: true });
+  svg.addEventListener("mouseleave", () => { tip.style.display = "none"; cur.style.display = "none"; });
+}
+
+const rangeBtns = cur => `<div class="btns">${RANGES.map(([n, d]) => `<button data-r="${d}" class="${d === cur ? "on" : ""}">${n}</button>`).join("")}</div>`;
+const cut = (pts, days) => { const c = isoAgo(days); return (pts || []).filter(p => p[0] >= c); };
+
+// 지수 추이: 코스피 / 코스닥 / 둘 비교(시작=100)
+function initIdxChart(d) {
+  const box = document.getElementById("idx-chart");
+  const idx = (d.indexes || []).filter(i => Array.isArray((i.history || [])[0]));
+  if (!idx.length) { box.innerHTML = '<p class="note">지수 추이 자료가 아직 없습니다. 다음 갱신 뒤에 나옵니다.</p>'; return; }
+  let mode = idx[0].key, range = 366;
+  const draw = () => {
+    const chosen = mode === "both" ? idx : idx.filter(i => i.key === mode);
+    const lines = chosen.map((i, n) => ({ label: i.label, color: PALETTE[n], pts: cut(i.history, range) }));
+    box.innerHTML = `<div class="btns">${idx.map(i => `<button data-m="${i.key}" class="${mode === i.key ? "on" : ""}">${esc(i.label)}</button>`).join("")}
+      ${idx.length > 1 ? `<button data-m="both" class="${mode === "both" ? "on" : ""}">둘 비교(시작=100)</button>` : ""}</div>${rangeBtns(range)}<div id="idx-c"></div>`;
+    drawChart(box.querySelector("#idx-c"), lines, { rebase: mode === "both" });
+    box.querySelectorAll("[data-m]").forEach(b => b.addEventListener("click", () => { mode = b.dataset.m; draw(); }));
+    box.querySelectorAll("[data-r]").forEach(b => b.addEventListener("click", () => { range = +b.dataset.r; draw(); }));
+  };
+  draw();
+}
+
+// 업종 ETF 추이: 시작=100 으로 맞춰 겹쳐 보고, 이름을 눌러 켜고 끈다
+function initEtfChart(d) {
+  const box = document.getElementById("etf-chart");
+  const secs = (d.sectors || []).filter(s => (s.history || []).length > 1);
+  if (!secs.length) { box.innerHTML = '<p class="note">업종 추이 자료가 아직 없습니다. 다음 갱신 뒤에 나옵니다.</p>'; return; }
+  let range = 366; const off = new Set();
+  const draw = () => {
+    const lines = secs.map((s, n) => ({ key: s.label, label: s.label, color: PALETTE[n % PALETTE.length], off: off.has(s.label), pts: cut(s.history, range) }));
+    box.innerHTML = `${rangeBtns(range)}<div id="etf-c"></div>
+      <div class="lg">${lines.map(l => `<button data-k="${esc(l.key)}" class="${l.off ? "off" : ""}"><i style="border-color:${l.color}"></i>${esc(l.label)}</button>`).join("")}</div>`;
+    drawChart(box.querySelector("#etf-c"), lines, { rebase: true });
+    box.querySelectorAll("[data-r]").forEach(b => b.addEventListener("click", () => { range = +b.dataset.r; draw(); }));
+    box.querySelectorAll("[data-k]").forEach(b => b.addEventListener("click", () => { off.has(b.dataset.k) ? off.delete(b.dataset.k) : off.add(b.dataset.k); draw(); }));
+  };
+  draw();
+}
+
+// 지수·업종 화면 위쪽 해설 (한국 뉴스 수집 때 만든 해설을 그대로 보여준다)
+let KNEWS = null;
+function renderMkRecap() {
+  const box = document.getElementById("mk-recap");
+  const en = (KNEWS && KNEWS.event_notes) || {};
+  box.innerHTML = (en.why || en.watch) ? `<div class="callout">
+    ${en.why ? `<p class="sub">오늘 왜 이렇게 움직였나</p><p class="sum">${esc(en.why)}</p>` : ""}
+    ${en.watch ? `<p class="sub">앞으로 지켜볼 것</p><p class="sum">${esc(en.watch)}</p>` : ""}
+    <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p></div>` : "";
+}
+
 function render(d) {
   KR = d; renderTicker();
   document.getElementById("stamp").textContent = d && d.updated ? d.updated.slice(5) + " 갱신" : "자료 없음";
@@ -272,6 +401,7 @@ function render(d) {
   }
   document.getElementById("indexes").innerHTML = (d.indexes || []).map(card).join("")
     || '<p class="note">지수를 받지 못했습니다.</p>';
+  initIdxChart(d); initEtfChart(d);
 
   const secs = (d.sectors || []).slice().sort((a, b) => (b.d1 ?? -1e9) - (a.d1 ?? -1e9));
   document.getElementById("sectors").innerHTML = secs.length ? `<table>
@@ -362,6 +492,7 @@ function renderNews(d) {
     box.innerHTML = '<p class="note">kr_news.json 이 아직 없습니다. Actions 탭에서 "아마존·수출입·배너"를 실행하세요.</p>';
     return;
   }
+  KNEWS = d; renderMkRecap();
   const tag = document.getElementById("news-tag");
   if (tag && d.updated_at) tag.textContent = `한국 증시 헤드라인 · ${d.updated_at.slice(5, 16).replace("T", " ")} 갱신`;
   const en = d.event_notes || {};
@@ -490,6 +621,53 @@ function renderExtreme(d) {
 
 fetch("data/kr_breakout.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null)
   .then(d => { renderBreak(d); renderExtreme(d); });
+
+// ── 섹터 온도 (data/kr_sectors.json: 스크리너가 받은 전 종목 주가를 KRX 업종별로 묶은 것) ──
+function renderBreadth(d) {
+  const box = document.getElementById("breadth-box");
+  if (!d || !d.sectors) {
+    box.innerHTML = '<p class="note">kr_sectors.json 이 아직 없습니다. Actions 탭에서 "한국 스크리너"를 실행하세요.</p>';
+    return;
+  }
+  const tag = document.getElementById("breadth-tag");
+  if (tag) tag.textContent = `KRX 업종별 · ${d.asof} 종가 · 거래대금 5억 원 이상 종목 기준`;
+  const P = [["d1", "1일", 3], ["d5", "5일", 6], ["m1", "1개월", 12], ["m3", "3개월", 25]];
+  let period = "d1", small = false;
+  const heat = (v, scale) => v == null ? "" :
+    `background:${v > 0 ? "rgba(29,122,74," : "rgba(179,51,46,"}${(Math.min(Math.abs(v) / scale, 1) * 0.6).toFixed(2)})`;
+  const mcard = (name, m) => {
+    const tot = m.up + m.down, pct = tot ? Math.round(m.up / tot * 100) : 50;
+    return `<div class="slot"><p class="cap">${name} <span class="miss">${m.n}종목</span></p>
+      <p class="big"><span class="up">▲${m.up}</span> <span class="down">▼${m.down}</span></p>
+      <span class="btrack split"><span style="width:${pct}%;background:var(--up)"></span><span style="width:${100 - pct}%;background:var(--down)"></span></span>
+      <p style="margin-top:.35rem">52주 신고가 ${m.n_high} · 신저가 ${m.n_low}</p></div>`;
+  };
+  const draw = () => {
+    const rows = d.sectors.filter(s => small || s.n >= 4).slice().sort((a, b) => (b[period] ?? -1e9) - (a[period] ?? -1e9));
+    const names = arr => arr.length ? arr.map(x => `${esc(x.name)} ${sgn(x.chg, 1, "%")}`).join(" · ") : "—";
+    box.innerHTML = `
+      <div class="grid">${mcard("코스피", d.markets["코스피"])}${mcard("코스닥", d.markets["코스닥"])}</div>
+      <div class="btns">${P.map(([k, n]) => `<button data-p="${k}" class="${k === period ? "on" : ""}">${n} 순</button>`).join("")}
+        <button data-s="1" class="${small ? "on" : ""}">작은 업종 포함(3종목)</button></div>
+      <div class="scroll"><table>
+        <thead><tr><th>업종</th><th class="r">종목</th>${P.map(([k, n]) => `<th class="r">${n}</th>`).join("")}<th class="r">상승 비율</th><th class="r">신고가</th><th class="r">신저가</th></tr></thead>
+        <tbody>${rows.map((s, i) => `<tr class="rowc" data-i="${i}"><td class="nm">${esc(s.name)}</td><td class="h">${s.n}</td>
+          ${P.map(([k, n, sc]) => `<td class="h" style="${heat(s[k], sc)}">${s[k] == null ? "—" : (s[k] > 0 ? "+" : "") + s[k].toFixed(1) + "%"}</td>`).join("")}
+          <td class="h">${s.adv_pct == null ? "—" : s.adv_pct + "%"}<span class="miss" style="display:block">▲${s.up} ▼${s.down}</span></td>
+          <td class="h up">${s.n_high || "—"}</td><td class="h down">${s.n_low || "—"}</td></tr>
+          <tr class="dr hidden" id="dr-${i}"><td colspan="9"><b>오늘 상승 상위</b> ${names(s.top)}<br><b>오늘 하락 상위</b> ${names(s.bottom)}</td></tr>`).join("")}</tbody>
+      </table></div>
+      <p class="note" style="margin-top:1rem">업종은 KRX(KIND)의 업종 분류 그대로이고, 업종 안 종목들의 수익률 <b>중앙값</b>입니다(대형주 한두 개에 휘둘리지 않게).
+      진하게 칠해질수록 등락이 큽니다(1일 ±3% · 5일 ±6% · 1개월 ±12% · 3개월 ±25%에서 가장 진함). 업종 이름을 누르면 오늘 상승·하락 상위 종목이 펼쳐집니다.
+      종목이 4개 미만인 업종은 숨겼습니다.</p>`;
+    box.querySelectorAll("[data-p]").forEach(b => b.addEventListener("click", () => { period = b.dataset.p; draw(); }));
+    box.querySelectorAll("[data-s]").forEach(b => b.addEventListener("click", () => { small = !small; draw(); }));
+    box.querySelectorAll("tr.rowc").forEach(tr => tr.addEventListener("click", () =>
+      document.getElementById("dr-" + tr.dataset.i).classList.toggle("hidden")));
+  };
+  draw();
+}
+fetch("data/kr_sectors.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderBreadth);
 
 // ── 잠정실적 레이더 (kr_disclosures.json 중 category = 잠정실적) ──
 function renderEarn(d) {

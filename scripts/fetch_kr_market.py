@@ -14,7 +14,7 @@
 
 import re
 import sys
-from datetime import timedelta
+from datetime import date, timedelta
 
 from common import DATA_DIR, env, get, now_kst, read_json, write_json
 
@@ -60,6 +60,23 @@ def from_yahoo(tickers, period="1y"):
                 out[t] = rows
         except Exception:
             pass
+    return out
+
+
+def thin(ser):
+    """최근 1년은 매일, 그 이전은 주마다 한 점 -- 5년치를 파일 크기 걱정 없이 담는다."""
+    if not ser:
+        return []
+    cut = str(date.fromisoformat(ser[-1][0]) - timedelta(days=366))
+    out, last_week = [], None
+    for d, v in ser:
+        if d >= cut:
+            out.append((d, v))
+            continue
+        wk = date.fromisoformat(d).isocalendar()[:2]
+        if wk != last_week:
+            out.append((d, v))
+            last_week = wk
     return out
 
 
@@ -123,9 +140,12 @@ def summary(key, label, ser, kind):
         chg, nd = round((v1 - v0) * 100, 1), 3          # bp
     else:
         chg, nd = round((v1 / v0 - 1) * 100, 2), 2      # %
+    if kind == "index":     # 지수는 5년치를 [날짜, 값] 짝으로 (1년은 매일, 이전은 주별)
+        hist = [[d, round(v, nd)] for d, v in thin(ser)]
+    else:
+        hist = [{"date": d, "value": round(v, nd)} for d, v in ser]
     return {"key": key, "label": label, "kind": kind, "value": round(v1, nd),
-            "chg": chg, "asof": d1,
-            "history": [{"date": d, "value": round(v, nd)} for d, v in ser]}
+            "chg": chg, "asof": d1, "history": hist}
 
 
 def main():
@@ -135,7 +155,7 @@ def main():
     prev_sec = {i["label"]: i for i in prev.get("sectors", [])}
 
     tickers = [t for _, _, t in INDEXES] + [t for _, t in SECTOR_ETFS]
-    yahoo = from_yahoo(tickers)
+    yahoo = from_yahoo(tickers, "5y")
 
     indexes = []
     for key, label, t in INDEXES:
@@ -150,7 +170,8 @@ def main():
         if s:
             sectors.append({"label": label, "ticker": t, "price": round(s[-1][1]),
                             "asof": s[-1][0], "d1": pct_back(s, 1),
-                            "d5": pct_back(s, 5), "m1": pct_back(s, 21)})
+                            "d5": pct_back(s, 5), "m1": pct_back(s, 21), "m3": pct_back(s, 63),
+                            "history": [[d, round(v, 1)] for d, v in thin(s)]})
         else:
             print(f"  업종 ETF {label}({t}) 시세 없음", file=sys.stderr)
             if label in prev_sec:
