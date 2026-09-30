@@ -42,12 +42,14 @@ def source_from_url(url):
 
 
 def from_naver(query, creds):
-    url = "https://openapi.naver.com/v1/search/news.json"
+    # 2026-07-31 부터 개발자센터의 검색 API 신규 신청이 막혀 NAVER API HUB(네이버 클라우드)로 옮겼다.
+    # 주소와 인증 헤더가 다르다. 키 이름(NAVER_CLIENT_ID/SECRET)은 그대로 두고 값만 HUB 앱의 것을 넣는다.
+    url = "https://naverapihub.apigw.ntruss.com/search/v1/news"
     try:
         r = get(url,
                 params={"query": query, "display": PER_QUERY, "sort": "date"},
-                headers={"X-Naver-Client-Id": creds["naver_id"],
-                         "X-Naver-Client-Secret": creds["naver_secret"]})
+                headers={"X-NCP-APIGW-API-KEY-ID": creds["naver_id"],
+                         "X-NCP-APIGW-API-KEY": creds["naver_secret"]})
         r.raise_for_status()
         rows = r.json().get("items", [])
     except Exception as e:

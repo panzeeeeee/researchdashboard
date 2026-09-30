@@ -115,6 +115,12 @@ SEC_USER_AGENT, TELEGRAM_DIGEST_BOT_TOKEN, TELEGRAM_DIGEST_CHAT_ID
 
 ## 그동안 내린 결정과 이유
 
+**네이버 검색은 NAVER API HUB로 쓴다.** 2026-07-31부터 개발자센터(developers.naver.com)의 검색 API 신규 신청이
+막혔고 기존 키도 2027-06-30에 끊긴다. `fetch_news.py`의 `from_naver`는 HUB 주소
+(`naverapihub.apigw.ntruss.com/search/v1/news`)와 헤더(`X-NCP-APIGW-API-KEY-ID`/`X-NCP-APIGW-API-KEY`)를 쓴다.
+Secret 이름은 `NAVER_CLIENT_ID`/`NAVER_CLIENT_SECRET` 그대로이고 값만 HUB 앱의 Client ID/Secret이다.
+키가 없으면 구글 뉴스 RSS로 돌아간다. HUB는 지금 한시적 무료(검색 월 77.5만 건, 초당 50건).
+
 **가격 캐시를 압축했다.** 원래 161MB라 GitHub에 못 올렸다.
 종가·거래량만 남기고 float32 + gzip으로 22MB.
 
