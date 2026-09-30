@@ -193,6 +193,10 @@ def probe_sample():
 
 
 def main():
+    if env("PROBE_ONLY") == "ecos2":
+        import probe_ecos
+        probe_ecos.main2()
+        return
     if env("PROBE_ONLY") == "ecos":
         import probe_ecos
         probe_ecos.main()

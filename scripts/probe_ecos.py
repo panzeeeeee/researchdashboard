@@ -30,6 +30,47 @@ def call(path):
         return {}
 
 
+def main2():
+    """항목 코드가 필요한 지표만 이름으로 골라 찍는다 (표마다 최대 400개 항목을 훑는다)."""
+    if not KEY:
+        print("ECOS_API_KEY 없음")
+        return
+    want = {
+        "901Y010": ("농산물", "식료품", "에너지", "근원", "총지수"),           # 소비자물가(특수분류)
+        "404Y014": ("총지수", "총 지수", "총  지수"),                            # 생산자물가
+        "901Y027": ("실업", "고용률", "경제활동참가"),                           # 고용
+        "901Y067": ("선행", "동행", "후행"),                                    # 경기종합지수
+        "901Y066": ("설비투자지수",),
+        "901Y118": ("수출", "수입", "무역수지"),                                # 수출입 총괄
+        "901Y062": ("전국", "종합"),                                            # KB 주택매매가격지수
+        "161Y006": ("M2", "M1", "Lf"),                                          # 통화량
+        "901Y035": ("소매판매", "서비스업생산"),
+        "513Y001": ("경제심리", "순환변동"),
+    }
+    for code, kws in want.items():
+        d = call(f"StatisticItemList/{KEY}/json/kr/1/400/{code}")
+        rows = (d.get("StatisticItemList") or {}).get("row") or []
+        print(f"\n  --- {code} ({len(rows)}개 항목, 조건 낱말 {kws})")
+        n = 0
+        for r in rows:
+            nm = str(r.get("ITEM_NAME") or "")
+            if any(k in nm for k in kws) and r.get("CYCLE") in ("M", "Q"):
+                print(f"    {r.get('ITEM_CODE')} | {nm} | {r.get('CYCLE')} | {r.get('START_TIME')}~{r.get('END_TIME')} | {r.get('UNIT_NAME')}")
+                n += 1
+                if n >= 25:
+                    break
+        if not rows:
+            print("    (항목 없음 -- 통계표 코드가 다를 수 있음)")
+    print("\n=== 통계표 이름 추가 검색 ===", flush=True)
+    d = call(f"StatisticTableList/{KEY}/json/kr/1/2000/")
+    rows = (d.get("StatisticTableList") or {}).get("row") or []
+    for r in rows:
+        nm = str(r.get("STAT_NAME") or "")
+        if any(w in nm for w in ("소매판매", "경제심리", "가계신용", "서비스업생산", "무역수지", "취업자", "고용률", "주택가격", "주택매매", "경기종합", "수출입물가", "수출물가")) and r.get("SRCH_YN") == "Y":
+            print(f"  {r.get('STAT_CODE')} | {nm} | {r.get('CYCLE')}")
+    print("\n시험 끝", flush=True)
+
+
 def main():
     if not KEY:
         print("ECOS_API_KEY 없음")
