@@ -184,7 +184,7 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
     <p class="gl">시장</p>
     <a href="#market">지수·업종</a>
     <a href="#breadth">섹터 온도</a>
-    <a href="#rates">국고채 금리</a>
+    <a href="#rates">금리·환율</a>
   </div>
   <div class="ngrp g5">
     <p class="gl">리서치</p>
@@ -244,9 +244,17 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
 </section>
 
 <section id="s-rates">
-  <h2>국고채 금리<span class="tagline">한국은행 ECOS · 등락은 전일 대비 bp</span></h2>
+  <h2>금리·환율<span class="tagline">국고채 한국은행 ECOS · 환율 야후 · 실시간 아님</span></h2>
+  <p class="sub" style="margin-top:0">국고채<span class="tagline">등락은 전일 대비 bp</span></p>
   <div class="cards" id="rates"><p class="note">불러오는 중입니다.</p></div>
   <p class="note" id="rates-note"></p>
+  <p class="sub">금리 추이<span class="tagline">차트 위에 마우스를 올리면 날짜별 값이 보입니다</span></p>
+  <div class="box" id="rate-chart"><p class="note">불러오는 중입니다.</p></div>
+  <p class="sub">환율<span class="tagline">원/달러·원/100엔·엔/달러·달러인덱스</span></p>
+  <div class="cards" id="fx-cards"></div>
+  <div class="box" id="fx-chart" style="margin-top:.8rem"></div>
+  <p class="note" style="margin-top:1rem">국고채는 하루 두 번 갱신하는 일별 종가 금리이고, 1년보다 앞은 주 단위 점입니다.
+  '한미 10년 금리차'는 국고채 10년에서 미국채 10년을 뺀 값이라 마이너스면 미국 금리가 더 높다는 뜻입니다(날짜가 같은 날만 비교).</p>
 </section>
 
 <section id="s-trade">
@@ -414,7 +422,62 @@ function render(d) {
   document.getElementById("rates").innerHTML = (d.rates || []).map(card).join("")
     || '<p class="note">국고채 금리가 아직 없습니다.</p>';
   document.getElementById("rates-note").textContent = d.rates_note || "";
+  initRateChart(); initFx();
 }
+
+// ── 금리·환율 화면: 국고채(kr_market.json) + 환율·미국채(rates_fx.json, 미국 화면과 같은 파일) ──
+let RFX = null;
+const toPts = h => (h || []).map(p => Array.isArray(p) ? p : [p.date, p.value]);   // [[날짜,값]] 과 [{date,value}] 둘 다 받는다
+const rfxItem = k => ((RFX && RFX.groups) || []).flatMap(g => g.items).find(i => i.key === k);
+
+function initRateChart() {
+  const box = document.getElementById("rate-chart");
+  const kr = k => ((KR && KR.rates) || []).find(i => i.key === k);
+  const yrs = ["kr3y", "kr5y", "kr10y", "kr30y"].map(kr).filter(Boolean);
+  if (!yrs.length) { box.innerHTML = '<p class="note">국고채 추이 자료가 아직 없습니다.</p>'; return; }
+  // 한미 10년 금리차: 날짜가 같은 날만 (bp)
+  const k10 = toPts((kr("kr10y") || {}).history), us10 = rfxItem("us10y");
+  const usMap = new Map(toPts((us10 || {}).history));
+  const gap = k10.filter(p => usMap.has(p[0])).map(p => [p[0], (p[1] - usMap.get(p[0])) * 100]);
+  const modes = [["curve", "국고채 3·5·10·30년"]];
+  if (kr("kr_spread")) modes.push(["spread", "10년−3년 금리차"]);
+  if (gap.length > 30) modes.push(["kus", "한국 vs 미국 10년"], ["gap", "한미 10년 금리차"]);
+  let mode = "curve", range = 366;
+  const pctF = v => v.toFixed(2) + "%", bpF = v => v.toFixed(0) + "bp";
+  const draw = () => {
+    let lines, fmt;
+    if (mode === "curve") { lines = yrs.map((i, n) => ({ label: i.label, color: PALETTE[n], pts: cut(toPts(i.history), range) })); fmt = pctF; }
+    else if (mode === "spread") { lines = [{ label: "10년−3년", color: PALETTE[0], pts: cut(toPts(kr("kr_spread").history), range) }]; fmt = bpF; }
+    else if (mode === "kus") { lines = [{ label: "국고채 10년", color: PALETTE[0], pts: cut(k10, range) }, { label: "미국채 10년", color: PALETTE[1], pts: cut(toPts(us10.history), range) }]; fmt = pctF; }
+    else { lines = [{ label: "한미 10년 금리차", color: PALETTE[2], pts: cut(gap, range) }]; fmt = bpF; }
+    box.innerHTML = `<div class="btns">${modes.map(([k, n]) => `<button data-m="${k}" class="${mode === k ? "on" : ""}">${n}</button>`).join("")}</div>
+      ${rangeBtns(range)}<div id="rate-c"></div>
+      ${lines.length > 1 ? `<div class="lg">${lines.map(l => `<span style="font-size:.8rem;color:var(--ink-2)"><span style="color:${l.color}">●</span> ${esc(l.label)}</span>`).join("")}</div>` : ""}`;
+    drawChart(box.querySelector("#rate-c"), lines, { rebase: false, fmt });
+    box.querySelectorAll("[data-m]").forEach(b => b.addEventListener("click", () => { mode = b.dataset.m; draw(); }));
+    box.querySelectorAll("[data-r]").forEach(b => b.addEventListener("click", () => { range = +b.dataset.r; draw(); }));
+  };
+  draw();
+}
+
+function initFx() {
+  const cards = document.getElementById("fx-cards"), box = document.getElementById("fx-chart");
+  const items = ["usdkrw", "jpykrw", "usdjpy", "dxy"].map(rfxItem).filter(Boolean);
+  if (!items.length) { cards.innerHTML = ""; box.innerHTML = '<p class="note">환율 자료를 아직 못 받았습니다.</p>'; return; }
+  cards.innerHTML = items.map(card).join("");
+  let cur = items[0].key, range = 366;
+  const fmt = v => v >= 100 ? v.toLocaleString("ko-KR", { maximumFractionDigits: 1 }) : v.toFixed(2);
+  const draw = () => {
+    const it = items.find(i => i.key === cur);
+    box.innerHTML = `<div class="btns">${items.map(i => `<button data-k="${i.key}" class="${i.key === cur ? "on" : ""}">${esc(i.label)}</button>`).join("")}</div>${rangeBtns(range)}<div id="fx-c"></div>`;
+    drawChart(box.querySelector("#fx-c"), [{ label: it.label, color: PALETTE[0], pts: cut(toPts(it.history), range) }], { rebase: false, fmt });
+    box.querySelectorAll("[data-k]").forEach(b => b.addEventListener("click", () => { cur = b.dataset.k; draw(); }));
+    box.querySelectorAll("[data-r]").forEach(b => b.addEventListener("click", () => { range = +b.dataset.r; draw(); }));
+  };
+  draw();
+}
+fetch("data/rates_fx.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null)
+  .then(d => { RFX = d; initFx(); if (KR) initRateChart(); });
 
 // 머리말 배너: 한국 지수·국고채(kr_market.json) + 환율·유가(banner.json, 미국 화면과 같은 파일)
 let KR = null, BN = null;
@@ -632,7 +695,7 @@ function renderBreadth(d) {
   const tag = document.getElementById("breadth-tag");
   if (tag) tag.textContent = `KRX 업종별 · ${d.asof} 종가 · 거래대금 5억 원 이상 종목 기준`;
   const P = [["d1", "1일", 3], ["d5", "5일", 6], ["m1", "1개월", 12], ["m3", "3개월", 25]];
-  let period = "d1", small = false;
+  let period = "d1", small = false, level = (d.groups && d.groups.length) ? "group" : "sector";
   const heat = (v, scale) => v == null ? "" :
     `background:${v > 0 ? "rgba(29,122,74," : "rgba(179,51,46,"}${(Math.min(Math.abs(v) / scale, 1) * 0.6).toFixed(2)})`;
   const mcard = (name, m) => {
@@ -643,12 +706,15 @@ function renderBreadth(d) {
       <p style="margin-top:.35rem">52주 신고가 ${m.n_high} · 신저가 ${m.n_low}</p></div>`;
   };
   const draw = () => {
-    const rows = d.sectors.filter(s => small || s.n >= 4).slice().sort((a, b) => (b[period] ?? -1e9) - (a[period] ?? -1e9));
+    const src = level === "group" ? d.groups : d.sectors;
+    const rows = src.filter(s => level === "group" || small || s.n >= 4).slice().sort((a, b) => (b[period] ?? -1e9) - (a[period] ?? -1e9));
     const names = arr => arr.length ? arr.map(x => `${esc(x.name)} ${sgn(x.chg, 1, "%")}`).join(" · ") : "—";
     box.innerHTML = `
       <div class="grid">${mcard("코스피", d.markets["코스피"])}${mcard("코스닥", d.markets["코스닥"])}</div>
+      <div class="btns">${d.groups && d.groups.length ? `<button data-l="group" class="${level === "group" ? "on" : ""}">대분류(${d.groups.length})</button>
+        <button data-l="sector" class="${level === "sector" ? "on" : ""}">세분류(KRX 업종 그대로)</button>` : ""}</div>
       <div class="btns">${P.map(([k, n]) => `<button data-p="${k}" class="${k === period ? "on" : ""}">${n} 순</button>`).join("")}
-        <button data-s="1" class="${small ? "on" : ""}">작은 업종 포함(3종목)</button></div>
+        ${level === "sector" ? `<button data-s="1" class="${small ? "on" : ""}">작은 업종 포함(3종목)</button>` : ""}</div>
       <div class="scroll"><table>
         <thead><tr><th>업종</th><th class="r">종목</th>${P.map(([k, n]) => `<th class="r">${n}</th>`).join("")}<th class="r">상승 비율</th><th class="r">신고가</th><th class="r">신저가</th></tr></thead>
         <tbody>${rows.map((s, i) => `<tr class="rowc" data-i="${i}"><td class="nm">${esc(s.name)}</td><td class="h">${s.n}</td>
@@ -659,9 +725,10 @@ function renderBreadth(d) {
       </table></div>
       <p class="note" style="margin-top:1rem">업종은 KRX(KIND)의 업종 분류 그대로이고, 업종 안 종목들의 수익률 <b>중앙값</b>입니다(대형주 한두 개에 휘둘리지 않게).
       진하게 칠해질수록 등락이 큽니다(1일 ±3% · 5일 ±6% · 1개월 ±12% · 3개월 ±25%에서 가장 진함). 업종 이름을 누르면 오늘 상승·하락 상위 종목이 펼쳐집니다.
-      종목이 4개 미만인 업종은 숨겼습니다.</p>`;
+      '대분류'는 KRX 업종 이름의 낱말로 제가 20여 개 묶음으로 다시 모은 것이고, 세분류에서는 종목이 4개 미만인 업종을 기본으로 숨깁니다.</p>`;
     box.querySelectorAll("[data-p]").forEach(b => b.addEventListener("click", () => { period = b.dataset.p; draw(); }));
     box.querySelectorAll("[data-s]").forEach(b => b.addEventListener("click", () => { small = !small; draw(); }));
+    box.querySelectorAll("[data-l]").forEach(b => b.addEventListener("click", () => { level = b.dataset.l; draw(); }));
     box.querySelectorAll("tr.rowc").forEach(tr => tr.addEventListener("click", () =>
       document.getElementById("dr-" + tr.dataset.i).classList.toggle("hidden")));
   };

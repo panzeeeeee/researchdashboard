@@ -113,10 +113,10 @@ def ecos_rates(key):
             codes[int(m.group(1))] = r["ITEM_CODE"]
 
     end = now_kst().date()
-    start = end - timedelta(days=400)
+    start = end - timedelta(days=1830)          # 5년치 (한 번에 최대 2,000건)
     out = {}
     for yrs, code in sorted(codes.items()):
-        d = ecos_json(f"{ECOS}/StatisticSearch/{key}/json/kr/1/1000/{ECOS_TABLE}/D/"
+        d = ecos_json(f"{ECOS}/StatisticSearch/{key}/json/kr/1/2000/{ECOS_TABLE}/D/"
                       f"{start:%Y%m%d}/{end:%Y%m%d}/{code}")
         rows = ((d or {}).get("StatisticSearch") or {}).get("row") or []
         ser = []
@@ -140,10 +140,8 @@ def summary(key, label, ser, kind):
         chg, nd = round((v1 - v0) * 100, 1), 3          # bp
     else:
         chg, nd = round((v1 / v0 - 1) * 100, 2), 2      # %
-    if kind == "index":     # 지수는 5년치를 [날짜, 값] 짝으로 (1년은 매일, 이전은 주별)
-        hist = [[d, round(v, nd)] for d, v in thin(ser)]
-    else:
-        hist = [{"date": d, "value": round(v, nd)} for d, v in ser]
+    # 5년치를 [날짜, 값] 짝으로 (1년은 매일, 이전은 주별)
+    hist = [[d, round(v, nd)] for d, v in thin(ser)]
     return {"key": key, "label": label, "kind": kind, "value": round(v1, nd),
             "chg": chg, "asof": d1, "history": hist}
 

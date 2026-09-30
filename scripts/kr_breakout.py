@@ -166,6 +166,41 @@ def sector_counts(highs, lows):
     return sorted(by.values(), key=lambda x: -(x["high"] + x["low"]))
 
 
+# KIND 업종(세분류)을 큰 묶음으로. 위에서부터 먼저 맞는 규칙을 쓴다.
+GROUP_RULES = [
+    ("유통", ["도매", "소매", "상품 종합", "상품 중개", "무역", "전자상거래"]),     # '기계장비 도매업'이 기계로 안 가게 맨 위
+    ("반도체·전자부품", ["반도체", "전자부품", "전자 부품", "집적회로"]),
+    ("제약·바이오", ["의약품", "의약물질", "의료용 물질", "연구개발", "생물"]),
+    ("의료기기·헬스케어", ["의료", "병원", "보건"]),
+    ("IT하드웨어", ["통신 및 방송 장비", "컴퓨터 및 주변", "영상 및 음향", "광학", "측정, 시험"]),
+    ("소프트웨어·IT서비스", ["소프트웨어", "컴퓨터 프로그래밍", "자료처리", "정보 서비스", "포털", "인터넷", "시스템 통합"]),
+    ("통신", ["전기 통신", "통신업", "위성 통신"]),
+    ("미디어·게임", ["게임", "영화", "방송", "출판", "광고", "오디오", "비디오", "창작", "예술", "음악"]),
+    ("2차전지·전기장비", ["전지", "전기장비", "전동기", "발전기", "전기 변환", "절연선", "케이블", "조명장치", "가정용 전기"]),
+    ("자동차·부품", ["자동차", "트레일러", "차체"]),
+    ("기계·조선·방산", ["기계", "선박", "항공기", "우주선", "철도", "무기", "총포", "운송장비"]),
+    ("에너지·유틸리티·환경", ["석유", "코크스", "연탄", "전기, 가스", "가스", "발전", "수도", "석탄", "원유", "폐기물", "환경"]),
+    ("화학·소재", ["화학", "고무", "플라스틱", "비금속", "유리", "시멘트", "도자기", "합성"]),
+    ("철강·금속", ["1차 금속", "금속", "철강", "비철", "주조"]),
+    ("건설·엔지니어링", ["건설", "토목", "건축기술", "엔지니어링", "건물", "시설물", "공사업"]),
+    ("금융", ["금융", "은행", "보험", "증권", "신탁", "투자", "저축", "여신"]),
+    ("지주·컨설팅", ["회사 본부", "경영 컨설팅", "지주"]),
+    ("운송·물류", ["운송", "창고", "물류", "화물", "택배", "여객"]),
+    ("음식료·농수산", ["식품", "음료", "담배", "곡물", "사료", "농업", "수산", "어업", "도축", "육류", "식료품"]),
+    ("의류·화장품·생활", ["섬유", "의복", "가죽", "신발", "화장품", "비누", "방적", "직물", "가방", "가정용품", "가정용 기기", "완구", "악기", "귀금속"]),
+    ("종이·목재·가구", ["종이", "목재", "가구", "인쇄", "펄프"]),
+    ("서비스·부동산", ["부동산", "숙박", "음식점", "여행", "교육", "오락", "임대", "사업 지원", "전문 서비스", "전문, 과학", "인력", "경비", "스포츠"]),
+]
+
+
+def group_of(sector):
+    s = str(sector or "")
+    for name, words in GROUP_RULES:
+        if any(w in s for w in words):
+            return name
+    return "기타"
+
+
 def sector_breadth(px_all, info, highs, lows):
     """KIND 업종별 섹터 온도 -- 종목별 수익률의 중앙값, 상승 종목 비율, 신고가·신저가 수, 상승/하락 대표 종목.
     유동성 필터를 통과한 종목만. 업종 이름은 KIND 의 것 그대로(세분화돼 있다)."""
@@ -205,26 +240,37 @@ def sector_breadth(px_all, info, highs, lows):
                       "n_high": sum(1 for x in highs if x["market"] == m),
                       "n_low": sum(1 for x in lows if x["market"] == m)}
 
-    by = {}
+    def aggregate(by, hi, lo, min_n):
+        out = []
+        for name, v in by.items():
+            if len(v) < min_n:
+                continue
+            up, down = sum(1 for x in v if x["d1"] > 0), sum(1 for x in v if x["d1"] < 0)
+            srt = sorted(v, key=lambda x: x["d1"], reverse=True)
+            pick = lambda x: {"name": x["name"], "code": x["code"], "chg": _f(x["d1"], 2)}
+            out.append({
+                "name": name, "n": len(v), "up": up, "down": down,
+                "adv_pct": _f(up / (up + down) * 100, 0) if up + down else None,
+                "d1": med([x["d1"] for x in v]), "d5": med([x["d5"] for x in v]),
+                "m1": med([x["m1"] for x in v]), "m3": med([x["m3"] for x in v]),
+                "n_high": hi.get(name, 0), "n_low": lo.get(name, 0),
+                "top": [pick(x) for x in srt[:3]], "bottom": [pick(x) for x in srt[::-1][:3] if x["d1"] < 0],
+            })
+        out.sort(key=lambda s: -(s["d1"] or 0))
+        return out
+
+    by_sector, by_group = {}, {}
     for x in rows:
-        by.setdefault(x["sector"], []).append(x)
-    sectors = []
-    for name, v in by.items():
-        if len(v) < 3:
-            continue
-        up, down = sum(1 for x in v if x["d1"] > 0), sum(1 for x in v if x["d1"] < 0)
-        srt = sorted(v, key=lambda x: x["d1"], reverse=True)
-        pick = lambda x: {"name": x["name"], "code": x["code"], "chg": _f(x["d1"], 2)}
-        sectors.append({
-            "name": name, "n": len(v), "up": up, "down": down,
-            "adv_pct": _f(up / (up + down) * 100, 0) if up + down else None,
-            "d1": med([x["d1"] for x in v]), "d5": med([x["d5"] for x in v]),
-            "m1": med([x["m1"] for x in v]), "m3": med([x["m3"] for x in v]),
-            "n_high": n_hi.get(name, 0), "n_low": n_lo.get(name, 0),
-            "top": [pick(x) for x in srt[:3]], "bottom": [pick(x) for x in srt[::-1][:3] if x["d1"] < 0],
-        })
-    sectors.sort(key=lambda s: -(s["d1"] or 0))
-    return {"markets": markets, "sectors": sectors}
+        by_sector.setdefault(x["sector"], []).append(x)
+        by_group.setdefault(group_of(x["sector"]), []).append(x)
+    g_hi, g_lo = {}, {}
+    for x in highs:
+        g_hi[group_of(x["sector"])] = g_hi.get(group_of(x["sector"]), 0) + 1
+    for x in lows:
+        g_lo[group_of(x["sector"])] = g_lo.get(group_of(x["sector"]), 0) + 1
+    return {"markets": markets,
+            "sectors": aggregate(by_sector, n_hi, n_lo, 3),     # 세분류 (KIND 업종 그대로)
+            "groups": aggregate(by_group, g_hi, g_lo, 3)}       # 대분류 (GROUP_RULES)
 
 
 # ---------------------------------------------------------------- 실행
@@ -320,7 +366,8 @@ def main():
         if sb:
             write_json(DATA_DIR / "kr_sectors.json", {"updated_at": now_kst().isoformat(),
                                                       "asof": str(mkt_last), **sb})
-            print(f"섹터 온도: 업종 {len(sb['sectors'])}개 (종목 3개 이상)")
+            print(f"섹터 온도: 세분류 {len(sb['sectors'])}개 · 대분류 {len(sb['groups'])}개 (종목 3개 이상)")
+            print("  대분류: " + ", ".join(f"{g['name']}({g['n']})" for g in sb["groups"][:30]))
     except Exception as e:      # 섹터 온도가 잘못돼도 스크리너 결과는 그대로 저장한다
         print(f"  섹터 온도 계산 실패: {type(e).__name__}: {e}", file=sys.stderr)
 
