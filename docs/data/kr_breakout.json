@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-09-30T15:19:05.444872+09:00",
- "asof": "2026-09-30",
+ "updated_at": "2026-09-30T15:47:46.123119+09:00",
+ "asof": "2026-09-29",
  "funnel": [
   [
    "코스피 전체",
@@ -24,7 +24,7 @@
   ],
   [
    "  └ 오늘 52주 신고가(유동성 통과)",
-   5
+   10
   ],
   [
    "  └ 게이트 3개 이상",
@@ -51,20 +51,24 @@
    "name": "유니퀘스트",
    "market": "코스피",
    "sector": "기계장비 및 관련 물품 도매업",
-   "price": 10090.0,
-   "chg": 0.9,
-   "turnover_eok": 25.3,
-   "score": 0.668,
+   "price": 10000.0,
+   "chg": 2.35,
+   "turnover_eok": 25.9,
+   "score": 0.649,
    "gates": 2,
    "drawdown": 81.0,
-   "high_age": 715,
-   "vol_mult": 0.9,
+   "high_age": 714,
+   "vol_mult": 1.3,
    "rs": 100.0,
-   "fresh": 0.52,
+   "fresh": 0.6,
    "missing": "G3바닥횡보, T거래량",
    "missing_n": 2,
    "final": false,
    "chart": [
+    [
+     "2025-09-12",
+     6493
+    ],
     [
      "2025-09-15",
      6589
@@ -1068,216 +1072,203 @@
     [
      "2026-09-29",
      10000
-    ],
-    [
-     "2026-09-30",
-     10090
     ]
    ]
   }
  ],
  "extremes": {
-  "n_high": 7,
-  "n_low": 19,
+  "n_high": 12,
+  "n_low": 12,
   "high": [
-   {
-    "code": "003490",
-    "name": "대한항공",
-    "market": "코스피",
-    "sector": "항공 여객 운송업",
-    "price": 31950.0,
-    "chg": 1.75,
-    "turnover_eok": 855.7
-   },
-   {
-    "code": "119850",
-    "name": "지엔씨에너지",
-    "market": "코스닥",
-    "sector": "전동기, 발전기 및 전기 변환 · 공급 · 제어 장치 제조업",
-    "price": 56900.0,
-    "chg": 2.52,
-    "turnover_eok": 331.1
-   },
    {
     "code": "031980",
     "name": "피에스케이홀딩스",
     "market": "코스닥",
     "sector": "특수 목적용 기계 제조업",
-    "price": 181500.0,
-    "chg": 0.39,
-    "turnover_eok": 285.4
+    "price": 180800.0,
+    "chg": 8.33,
+    "turnover_eok": 285.3
+   },
+   {
+    "code": "064290",
+    "name": "인텍플러스",
+    "market": "코스닥",
+    "sector": "특수 목적용 기계 제조업",
+    "price": 56300.0,
+    "chg": 3.11,
+    "turnover_eok": 191.2
    },
    {
     "code": "092870",
     "name": "엑시콘",
     "market": "코스닥",
     "sector": "특수 목적용 기계 제조업",
-    "price": 48450.0,
-    "chg": 0.94,
-    "turnover_eok": 145.2
+    "price": 48000.0,
+    "chg": 2.13,
+    "turnover_eok": 142.5
+   },
+   {
+    "code": "252990",
+    "name": "샘씨엔에스",
+    "market": "코스닥",
+    "sector": "전자부품 제조업",
+    "price": 19950.0,
+    "chg": 7.55,
+    "turnover_eok": 126.5
+   },
+   {
+    "code": "144960",
+    "name": "뉴파워프라즈마",
+    "market": "코스닥",
+    "sector": "특수 목적용 기계 제조업",
+    "price": 13030.0,
+    "chg": 3.33,
+    "turnover_eok": 99.4
+   },
+   {
+    "code": "052260",
+    "name": "현대바이오랜드",
+    "market": "코스닥",
+    "sector": "기타 화학제품 제조업",
+    "price": 5670.0,
+    "chg": 29.9,
+    "turnover_eok": 60.1
+   },
+   {
+    "code": "053800",
+    "name": "안랩",
+    "market": "코스닥",
+    "sector": "소프트웨어 개발 및 공급업",
+    "price": 76700.0,
+    "chg": 2.82,
+    "turnover_eok": 50.0
    },
    {
     "code": "219130",
     "name": "타이거일렉",
     "market": "코스닥",
     "sector": "전자부품 제조업",
-    "price": 92800.0,
-    "chg": 1.98,
-    "turnover_eok": 32.1
+    "price": 91000.0,
+    "chg": 9.77,
+    "turnover_eok": 31.5
    },
    {
     "code": "077500",
     "name": "유니퀘스트",
     "market": "코스피",
     "sector": "기계장비 및 관련 물품 도매업",
-    "price": 10090.0,
-    "chg": 0.9,
-    "turnover_eok": 25.3
+    "price": 10000.0,
+    "chg": 2.35,
+    "turnover_eok": 25.9
    },
    {
-    "code": "017890",
-    "name": "한국알콜",
+    "code": "029460",
+    "name": "케이씨",
+    "market": "코스피",
+    "sector": "측정, 시험, 항해, 제어 및 기타 정밀기기 제조업; 광학기기 제외",
+    "price": 46250.0,
+    "chg": 5.59,
+    "turnover_eok": 14.3
+   },
+   {
+    "code": "068930",
+    "name": "디지털대성",
     "market": "코스닥",
-    "sector": "기타 화학제품 제조업",
-    "price": 15790.0,
-    "chg": 1.74,
-    "turnover_eok": 9.3
+    "sector": "일반 교습 학원",
+    "price": 9830.0,
+    "chg": 1.65,
+    "turnover_eok": 8.3
+   },
+   {
+    "code": "052860",
+    "name": "아이앤씨",
+    "market": "코스닥",
+    "sector": "반도체 제조업",
+    "price": 7960.0,
+    "chg": 4.46,
+    "turnover_eok": 7.3
    }
   ],
   "low": [
+   {
+    "code": "010140",
+    "name": "삼성중공업",
+    "market": "코스피",
+    "sector": "선박 및 보트 건조업",
+    "price": 19330.0,
+    "chg": -3.83,
+    "turnover_eok": 662.2
+   },
    {
     "code": "015760",
     "name": "한국전력공사",
     "market": "코스피",
     "sector": "전기업",
-    "price": 30050.0,
-    "chg": -0.17,
-    "turnover_eok": 468.5
-   },
-   {
-    "code": "064350",
-    "name": "현대로템",
-    "market": "코스피",
-    "sector": "그외 기타 운송장비 제조업",
-    "price": 111900.0,
-    "chg": -0.36,
-    "turnover_eok": 391.8
-   },
-   {
-    "code": "352820",
-    "name": "하이브",
-    "market": "코스피",
-    "sector": "오디오물 출판 및 원판 녹음업",
-    "price": 156300.0,
-    "chg": -1.51,
-    "turnover_eok": 294.4
+    "price": 30100.0,
+    "chg": -1.95,
+    "turnover_eok": 481.4
    },
    {
     "code": "034220",
     "name": "LG디스플레이",
     "market": "코스피",
     "sector": "전자부품 제조업",
-    "price": 8330.0,
-    "chg": -0.12,
-    "turnover_eok": 277.7
+    "price": 8340.0,
+    "chg": -1.3,
+    "turnover_eok": 481.2
+   },
+   {
+    "code": "064350",
+    "name": "현대로템",
+    "market": "코스피",
+    "sector": "그외 기타 운송장비 제조업",
+    "price": 112300.0,
+    "chg": -2.94,
+    "turnover_eok": 389.8
    },
    {
     "code": "298380",
     "name": "에이비엘바이오",
     "market": "코스닥",
     "sector": "기초 의약물질 제조업",
-    "price": 48300.0,
-    "chg": -2.03,
-    "turnover_eok": 199.8
-   },
-   {
-    "code": "259960",
-    "name": "크래프톤",
-    "market": "코스피",
-    "sector": "소프트웨어 개발 및 공급업",
-    "price": 195000.0,
-    "chg": -1.86,
-    "turnover_eok": 147.5
+    "price": 49300.0,
+    "chg": -1.79,
+    "turnover_eok": 206.3
    },
    {
     "code": "145020",
     "name": "휴젤",
     "market": "코스닥",
     "sector": "기초 의약물질 제조업",
-    "price": 178800.0,
-    "chg": -2.45,
-    "turnover_eok": 114.7
+    "price": 183300.0,
+    "chg": -1.5,
+    "turnover_eok": 116.3
    },
    {
-    "code": "008770",
-    "name": "호텔신라",
+    "code": "071970",
+    "name": "HD현대마린엔진",
     "market": "코스피",
-    "sector": "기타 상품 전문 소매업",
-    "price": 39400.0,
-    "chg": -1.99,
-    "turnover_eok": 74.4
+    "sector": "일반 목적용 기계 제조업",
+    "price": 47200.0,
+    "chg": -3.87,
+    "turnover_eok": 84.9
    },
    {
-    "code": "214150",
-    "name": "클래시스",
+    "code": "389470",
+    "name": "인벤티지랩",
     "market": "코스닥",
-    "sector": "의료용 기기 제조업",
-    "price": 30150.0,
-    "chg": -1.95,
-    "turnover_eok": 44.4
-   },
-   {
-    "code": "029780",
-    "name": "삼성카드",
-    "market": "코스피",
-    "sector": "기타 금융업",
-    "price": 42250.0,
-    "chg": -0.59,
-    "turnover_eok": 43.2
-   },
-   {
-    "code": "068760",
-    "name": "셀트리온제약",
-    "market": "코스닥",
-    "sector": "의약품 제조업",
-    "price": 38000.0,
-    "chg": -1.55,
-    "turnover_eok": 30.4
-   },
-   {
-    "code": "069620",
-    "name": "대웅제약",
-    "market": "코스피",
-    "sector": "의약품 제조업",
-    "price": 106200.0,
-    "chg": -1.03,
-    "turnover_eok": 20.4
-   },
-   {
-    "code": "086900",
-    "name": "메디톡스",
-    "market": "코스닥",
-    "sector": "기초 의약물질 제조업",
-    "price": 66800.0,
-    "chg": -0.45,
-    "turnover_eok": 13.6
-   },
-   {
-    "code": "067160",
-    "name": "SOOP",
-    "market": "코스닥",
-    "sector": "소프트웨어 개발 및 공급업",
-    "price": 36300.0,
-    "chg": -1.49,
-    "turnover_eok": 11.5
+    "sector": "자연과학 및 공학 연구개발업",
+    "price": 23750.0,
+    "chg": -0.63,
+    "turnover_eok": 19.8
    },
    {
     "code": "003060",
     "name": "에이프로젠바이오로직스",
     "market": "코스피",
     "sector": "의약품 제조업",
-    "price": 1464.0,
-    "chg": -2.85,
+    "price": 1507.0,
+    "chg": -3.89,
     "turnover_eok": 10.5
    },
    {
@@ -1294,52 +1285,38 @@
     "name": "대웅",
     "market": "코스피",
     "sector": "의약품 제조업",
-    "price": 15070.0,
-    "chg": -3.64,
-    "turnover_eok": 10.0
-   },
-   {
-    "code": "114090",
-    "name": "GKL",
-    "market": "코스피",
-    "sector": "유원지 및 기타 오락관련 서비스업",
-    "price": 8800.0,
-    "chg": -1.9,
-    "turnover_eok": 7.6
+    "price": 15640.0,
+    "chg": -1.94,
+    "turnover_eok": 9.9
    },
    {
     "code": "007460",
     "name": "에이프로젠",
     "market": "코스피",
     "sector": "의약품 제조업",
-    "price": 1933.0,
-    "chg": -1.18,
-    "turnover_eok": 6.5
+    "price": 1956.0,
+    "chg": -3.17,
+    "turnover_eok": 6.6
    }
   ],
   "sectors": [
    {
-    "sector": "의약품 제조업",
-    "high": 0,
-    "low": 5
-   },
-   {
-    "sector": "기초 의약물질 제조업",
-    "high": 0,
-    "low": 3
-   },
-   {
     "sector": "특수 목적용 기계 제조업",
-    "high": 2,
+    "high": 4,
     "low": 0
    },
    {
     "sector": "전자부품 제조업",
-    "high": 1,
+    "high": 2,
     "low": 1
    },
    {
-    "sector": "소프트웨어 개발 및 공급업",
+    "sector": "의약품 제조업",
+    "high": 0,
+    "low": 3
+   },
+   {
+    "sector": "기초 의약물질 제조업",
     "high": 0,
     "low": 2
    },
@@ -1349,12 +1326,22 @@
     "low": 0
    },
    {
-    "sector": "항공 여객 운송업",
+    "sector": "측정, 시험, 항해, 제어 및 기타 정밀기기 제조업; 광학기기 제외",
     "high": 1,
     "low": 0
    },
    {
-    "sector": "전동기, 발전기 및 전기 변환 · 공급 · 제어 장치 제조업",
+    "sector": "반도체 제조업",
+    "high": 1,
+    "low": 0
+   },
+   {
+    "sector": "일반 교습 학원",
+    "high": 1,
+    "low": 0
+   },
+   {
+    "sector": "소프트웨어 개발 및 공급업",
     "high": 1,
     "low": 0
    },
@@ -1364,27 +1351,17 @@
     "low": 0
    },
    {
-    "sector": "오디오물 출판 및 원판 녹음업",
-    "high": 0,
-    "low": 1
-   },
-   {
     "sector": "그외 기타 운송장비 제조업",
     "high": 0,
     "low": 1
    },
    {
-    "sector": "유원지 및 기타 오락관련 서비스업",
+    "sector": "일반 목적용 기계 제조업",
     "high": 0,
     "low": 1
    },
    {
-    "sector": "기타 금융업",
-    "high": 0,
-    "low": 1
-   },
-   {
-    "sector": "기타 상품 전문 소매업",
+    "sector": "선박 및 보트 건조업",
     "high": 0,
     "low": 1
    },
@@ -1399,7 +1376,7 @@
     "low": 1
    },
    {
-    "sector": "의료용 기기 제조업",
+    "sector": "자연과학 및 공학 연구개발업",
     "high": 0,
     "low": 1
    }
