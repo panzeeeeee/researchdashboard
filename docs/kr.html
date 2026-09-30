@@ -49,8 +49,8 @@ h2{font-size:1.25rem;font-weight:700;margin:0 0 1.3rem;letter-spacing:-.01em}
 /* 화면 제목 앞 색 띠 = 사이드바 묶음 색 (미국 화면과 같은 방식) */
 main section > h2{display:flex;align-items:baseline;flex-wrap:wrap;gap:.1rem}
 main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;border-radius:3px;margin-right:.6rem;background:var(--sg,var(--accent))}
-#s-news,#s-dart{--sg:#0F6E56} #s-market,#s-breadth,#s-rates,#s-macro{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#854F0B}
-@media (prefers-color-scheme: dark){#s-news,#s-dart{--sg:#5DCAA5} #s-market,#s-breadth,#s-rates,#s-macro{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#EF9F27}}
+#s-news,#s-dart,#s-snews{--sg:#0F6E56} #s-market,#s-breadth,#s-rates,#s-macro{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#854F0B}
+@media (prefers-color-scheme: dark){#s-news,#s-dart,#s-snews{--sg:#5DCAA5} #s-market,#s-breadth,#s-rates,#s-macro{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#EF9F27}}
 .dots{display:flex;gap:.25rem;flex-wrap:wrap;margin:.4rem 0 0}
 .dots span{font-size:.68rem;border-radius:4px;padding:0 .35rem;border:1px solid var(--rule);color:var(--ink-3)}
 .dots span.y{background:var(--up);border-color:var(--up);color:#fff}
@@ -178,6 +178,7 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
     <p class="gl">오늘</p>
     <a href="#news">주요 뉴스</a>
     <a href="#dart">공시</a>
+    <a href="#snews">섹터 뉴스</a>
   </div>
   <div class="ngrp g4">
     <p class="gl">스크리너</p>
@@ -206,6 +207,11 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
   <h2>주요 뉴스<span class="tagline" id="news-tag">한국 증시 헤드라인</span></h2>
   <div id="news-recap"></div>
   <div class="box" id="news-box"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="s-snews">
+  <h2>섹터 뉴스<span class="tagline" id="snews-tag">관심 업종별 최근 48시간 기사 · 같은 사건은 하나로 묶음</span></h2>
+  <div id="snews-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="s-dart">
@@ -675,6 +681,44 @@ function renderBreak(d) {
   };
   draw();
 }
+
+// ── 섹터 뉴스 (data/news.json 의 고정 관심 업종. 업종은 config/sectors.yaml 에서 추가·수정) ──
+function renderSectorNews(d) {
+  const box = document.getElementById("snews-box");
+  const secs = ((d && d.sectors) || []).filter(s => (s.items || []).length);
+  if (!secs.length) { box.innerHTML = '<p class="note">섹터 뉴스가 아직 없습니다.</p>'; return; }
+  const tag = document.getElementById("snews-tag");
+  if (tag && d.updated_at) tag.textContent = `관심 업종별 최근 ${d.lookback_hours || 48}시간 기사 · ${d.updated_at.slice(5, 16).replace("T", " ")} 갱신 · 같은 사건은 하나로 묶음`;
+  let pick = "전체";
+  const SN_SHOW = 5;
+  const src = it => it.dup_count > 0 ? `${esc(it.source)} 외 ${it.dup_count}곳` : esc(it.source);
+  const row = (it, i, headline) => headline ? `
+      <div class="headline">
+        <a href="${esc(it.url)}" target="_blank" rel="noopener">${it.dup_count >= 2 ? '<span class="badge-hot">주요</span>' : ""}${esc(it.title)}</a>
+        ${it.summary ? `<p class="sum">${esc(it.summary)}</p>` : ""}
+        <span class="src">${src(it)} · ${ago(it.published)}</span></div>` : `
+      <div class="newsrow${i < SN_SHOW ? "" : " extra hidden"}">
+        <a href="${esc(it.url)}" target="_blank" rel="noopener">${it.dup_count >= 2 ? '<span class="badge-hot">주요</span>' : ""}${esc(it.title)}</a>
+        ${it.summary ? `<p class="sum" style="margin:.15rem 0 0;font-size:.84rem;color:var(--ink-2)">${esc(it.summary)}</p>` : ""}
+        <span class="src">${src(it)} · ${ago(it.published)}</span></div>`;
+  const draw = () => {
+    const show = secs.filter(s => pick === "전체" || s.name === pick);
+    box.innerHTML = `
+      <div class="btns">${["전체", ...secs.map(s => s.name)].map(n => `<button data-p="${esc(n)}" class="${n === pick ? "on" : ""}">${esc(n)}${n === "전체" ? "" : ` (${secs.find(s => s.name === n).items.length})`}</button>`).join("")}</div>
+      ${show.map(s => `<div class="box" style="margin-bottom:1rem">
+        <p class="sub" style="margin-top:0">${esc(s.name)}<span class="tagline">${s.items.length}건</span></p>
+        ${s.items.map((it, i) => row(it, i, i === 0)).join("")}
+        ${s.items.length > SN_SHOW ? `<button class="morebtn" data-more="${esc(s.name)}">더 보기 (${s.items.length - SN_SHOW})</button>` : ""}
+      </div>`).join("")}
+      <p class="note">뉴스는 하루 두 번(아침·저녁) 모읍니다. 실시간이 아니라 그 시각까지 나온 기사입니다. 관심 업종과 검색어는 config/sectors.yaml 에서 추가·수정합니다.
+      요약은 자동 생성이라 틀릴 수 있으니 제목을 눌러 원문을 확인하세요.</p>`;
+    box.querySelectorAll("[data-p]").forEach(b => b.addEventListener("click", () => { pick = b.dataset.p; draw(); }));
+    box.querySelectorAll("[data-more]").forEach(b => b.addEventListener("click", () => {
+      b.closest(".box").querySelectorAll(".extra").forEach(e => e.classList.remove("hidden")); b.remove(); }));
+  };
+  draw();
+}
+fetch("data/news.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderSectorNews);
 
 // ── 경제 지표 (data/kr_macro.json, 한국은행 ECOS) ──
 function renderMacro(d) {
