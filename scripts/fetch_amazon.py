@@ -1,6 +1,9 @@
 """센텔리안24 아마존 트래커(구글 시트) → 대시보드 패널 데이터.
 
-시트는 '웹에 게시'된 CSV 주소로 읽는다(로그인·키 불필요).
+시트는 '웹에 게시'된 주소로 읽는다(로그인·키 불필요).
+주소는 config/amazon.yaml 의 sheet_url 한 줄에 둔다. 시트를 새로 만들면
+그 파일을 '웹에 게시'하고 주소만 바꾸면 된다(코드는 안 고쳐도 됨).
+게시 주소는 웹 페이지(pubhtml)·CSV 어느 형식이든 받아서 CSV 로 바꿔 읽는다.
 시트 구조: 블록마다 제목 줄(A=블록명, B="지표", C열부터 날짜)이 있고,
 그 아래 상품별로 [링크 줄 → 지표 줄들 → 빈 줄]이 반복된다.
 블록: 단품 / 번들 / 소셜 / 경쟁, 맨 아래 '메모'.
@@ -24,15 +27,27 @@ from pathlib import Path
 
 import requests
 
-from common import DATA_DIR, now_kst
+from common import CONFIG_DIR, DATA_DIR, load_config, now_kst
 
-SHEET_CSV = ("https://docs.google.com/spreadsheets/d/e/"
+# 설정 파일이 없을 때만 쓰는 예비 주소(예전 시트)
+FALLBACK_URL = ("https://docs.google.com/spreadsheets/d/e/"
              "2PACX-1vTolwFm5uMd-VC-hz-hOgl3ILtZOC5TvwEahdkXBJNGv4X2HxLfsyu5mBGQiXrI7PTcQhYFFBSl_YND"
              "/pub?output=csv")
 
 ROOT = Path(__file__).resolve().parent.parent
 HISTORY = ROOT / "history" / "centellian_amazon.csv"
 OUT = DATA_DIR / "amazon.json"
+
+def sheet_csv_url():
+    url = ""
+    if (CONFIG_DIR / "amazon.yaml").exists():
+        url = str((load_config("amazon.yaml") or {}).get("sheet_url") or "").strip()
+    url = url or FALLBACK_URL
+    # .../pubhtml, .../pubhtml?gid=..., .../pub?output=csv 모두 CSV 주소로
+    gid = re.search(r"[?&#]gid=(\d+)", url)
+    base = re.split(r"/pub(?:html)?\b", url)[0]
+    return f"{base}/pub?output=csv" + (f"&gid={gid.group(1)}" if gid else "")
+
 
 BLOCKS = ["단품", "번들", "소셜", "경쟁"]
 CORE_IDS = {"1", "2", "3", "4", "15"}          # 주력 5종 (단품 번호)
@@ -160,7 +175,9 @@ def main():
         text = Path(sys.argv[sys.argv.index("--file") + 1]).read_text(encoding="utf-8")
     else:
         try:
-            r = requests.get(SHEET_CSV, timeout=30)
+            url = sheet_csv_url()
+            print(f"시트 주소: {url[:70]}…")
+            r = requests.get(url, timeout=30)
             r.raise_for_status()
             r.encoding = "utf-8"
             text = r.text
