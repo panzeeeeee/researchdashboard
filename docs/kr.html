@@ -34,7 +34,40 @@ h1{font-size:1.55rem;font-weight:700;margin:0;color:var(--navy-ink)}
   border-radius:999px;padding:.25rem .95rem}
 .tabs a.on{background:#fff;color:var(--navy);border-color:#fff}
 .tabs a:hover:not(.on){color:#fff}
-h2{font-size:1.15rem;font-weight:700;margin:2.2rem 0 1rem}
+h2{font-size:1.25rem;font-weight:700;margin:0 0 1.3rem;letter-spacing:-.01em}
+.sub{font-size:1rem;font-weight:700;margin:1.8rem 0 .8rem}
+/* 화면 제목 앞 색 띠 = 사이드바 묶음 색 (미국 화면과 같은 방식) */
+main section > h2{display:flex;align-items:baseline;flex-wrap:wrap;gap:.1rem}
+main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;border-radius:3px;margin-right:.6rem;background:var(--sg,var(--accent))}
+#s-news,#s-dart{--sg:#0F6E56} #s-market,#s-rates{--sg:#185FA5} #s-trade{--sg:#993C1D}
+@media (prefers-color-scheme: dark){#s-news,#s-dart{--sg:#5DCAA5} #s-market,#s-rates{--sg:#85B7EB} #s-trade{--sg:#F0997B}}
+.layout{display:grid;grid-template-columns:200px minmax(0,1fr);gap:2rem;align-items:start}
+nav{position:sticky;top:1rem;max-height:calc(100vh - 2rem);overflow-y:auto;scrollbar-width:thin}
+nav a{display:block;font-size:.9rem;color:var(--ink-2);text-decoration:none;padding:.55rem .75rem;border-radius:8px;margin-bottom:.15rem;line-height:1.35;font-weight:500}
+nav .ngrp{background:var(--gt);border:1.5px solid var(--gb);border-radius:12px;padding:.5rem .35rem .35rem;margin-bottom:.65rem;--g-on:#fff}
+nav .ngrp .gl{display:flex;align-items:center;gap:.4rem;font-size:.76rem;font-weight:800;letter-spacing:.05em;color:var(--g);margin:.15rem .5rem .35rem;line-height:1}
+nav .ngrp .gl::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--g)}
+nav .ngrp a{margin-bottom:.05rem;white-space:nowrap;color:var(--ink);padding:.4rem .7rem}
+nav .ngrp a:hover{background:var(--gh)}
+nav .ngrp a.on{background:var(--g);color:var(--g-on)}
+nav .g1{--g:#0F6E56;--gb:#5DCAA5;--gt:#E1F5EE;--gh:#9FE1CB}
+nav .g2{--g:#185FA5;--gb:#85B7EB;--gt:#E6F1FB;--gh:#B5D4F4}
+nav .g5{--g:#993C1D;--gb:#F0997B;--gt:#FAECE7;--gh:#F5C4B3}
+@media (prefers-color-scheme: dark){
+  nav .g1{--g:#5DCAA5;--gb:#0F6E56;--gt:#0f2a23;--gh:#085041}
+  nav .g2{--g:#85B7EB;--gb:#185FA5;--gt:#0f2236;--gh:#0C447C}
+  nav .g5{--g:#F0997B;--gb:#993C1D;--gt:#331a10;--gh:#712B13}
+  nav .ngrp{--g-on:#12151a}
+}
+nav a.soon{font-size:.78rem;color:var(--ink-3);margin-top:.2rem}
+main section{display:none} main section.on{display:block}
+@media (max-width:760px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:1rem} main,nav{min-width:0}
+  nav{position:static;max-height:none;display:flex;gap:.35rem;overflow-x:auto;padding-bottom:.5rem;border-bottom:1px solid var(--rule)}
+  nav a{white-space:nowrap;border-radius:999px;padding:.4rem .75rem;margin-bottom:0}
+  nav .ngrp{display:contents} nav .ngrp .gl{display:none}
+  nav .ngrp a.on,nav a.on{background:var(--accent);color:#fff}
+}
 .tagline{font-size:.82rem;font-weight:400;color:var(--ink-3);margin-left:.55rem}
 .box{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:1.1rem 1.25rem}
 .note,.miss{font-size:.86rem;color:var(--ink-3)}
@@ -87,28 +120,66 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
   <span class="meta" id="stamp">불러오는 중</span>
 </header>
 
-<h2>지수<span class="tagline">종가 기준 · 작은 선은 최근 1년</span></h2>
-<div class="cards" id="indexes"><p class="note">불러오는 중입니다.</p></div>
+<div class="layout">
 
-<h2>주요 뉴스<span class="tagline" id="news-tag">한국 증시 헤드라인</span></h2>
-<div id="news-recap"></div>
-<div class="box" id="news-box"><p class="note">불러오는 중입니다.</p></div>
+<nav id="nav">
+  <div class="ngrp g1">
+    <p class="gl">오늘</p>
+    <a href="#news">주요 뉴스</a>
+    <a href="#dart">공시</a>
+  </div>
+  <div class="ngrp g2">
+    <p class="gl">시장</p>
+    <a href="#market">지수·업종</a>
+    <a href="#rates">국고채 금리</a>
+  </div>
+  <div class="ngrp g5">
+    <p class="gl">리서치</p>
+    <a href="#trade">수출입 레이더</a>
+  </div>
+  <a href="#soon" class="soon" onclick="return false">준비 중: 스크리너·수급</a>
+</nav>
 
-<h2>공시<span class="tagline" id="dart-tag">DART · 코스피·코스닥 주요 공시</span></h2>
-<div class="box">
-  <div class="btns" id="dart-btns"></div>
-  <div class="scroll" id="dart-box"><p class="note">불러오는 중입니다.</p></div>
+<main>
+
+<section id="s-news">
+  <h2>주요 뉴스<span class="tagline" id="news-tag">한국 증시 헤드라인</span></h2>
+  <div id="news-recap"></div>
+  <div class="box" id="news-box"><p class="note">불러오는 중입니다.</p></div>
+</section>
+
+<section id="s-dart">
+  <h2>공시<span class="tagline" id="dart-tag">DART · 코스피·코스닥 주요 공시</span></h2>
+  <div class="box">
+    <div class="btns" id="dart-btns"></div>
+    <div class="scroll" id="dart-box"><p class="note">불러오는 중입니다.</p></div>
+  </div>
+</section>
+
+<section id="s-market">
+  <h2>지수·업종<span class="tagline">종가 기준 · 작은 선은 최근 1년</span></h2>
+  <div class="cards" id="indexes"><p class="note">불러오는 중입니다.</p></div>
+  <p class="sub">업종 온도<span class="tagline">KODEX 업종 ETF 기준 · 업종지수의 대용입니다</span></p>
+  <div class="box"><div class="scroll" id="sectors"><p class="note">불러오는 중입니다.</p></div></div>
+  <p class="note" style="margin-top:1rem">아침 7시 반·저녁 6시에 갱신한 종가 값입니다(실시간 아님).
+  업종은 ETF 가격이라 실제 KRX 업종지수와 조금 다를 수 있습니다.</p>
+</section>
+
+<section id="s-rates">
+  <h2>국고채 금리<span class="tagline">한국은행 ECOS · 등락은 전일 대비 bp</span></h2>
+  <div class="cards" id="rates"><p class="note">불러오는 중입니다.</p></div>
+  <p class="note" id="rates-note"></p>
+</section>
+
+<section id="s-trade">
+  <h2>수출입 레이더<span class="tagline">관세청 무역통계 · 테마별 월간 수출 ·
+    <a href="trade.html" target="_blank" rel="noopener" style="color:var(--accent)">따로 열기</a></span></h2>
+  <iframe id="trade-frame" title="수출입 레이더" loading="lazy"
+    style="width:100%;border:0;display:block;min-height:600px"></iframe>
+</section>
+
+</main>
 </div>
-
-<h2>업종 온도<span class="tagline">KODEX 업종 ETF 기준 · 업종지수의 대용입니다</span></h2>
-<div class="box"><div class="scroll" id="sectors"><p class="note">불러오는 중입니다.</p></div></div>
-
-<h2>국고채 금리<span class="tagline">한국은행 ECOS · 등락은 전일 대비 bp</span></h2>
-<div class="cards" id="rates"><p class="note">불러오는 중입니다.</p></div>
-<p class="note" id="rates-note"></p>
-
-<p class="note" style="margin-top:2rem">실시간 시세가 아니라 아침 7시 반·저녁 6시에 갱신한 값입니다.
-업종은 ETF 가격이라 실제 KRX 업종지수와 조금 다를 수 있습니다. 공시·스크리너·수급은 다음 단계에서 붙입니다.</p>
 </div>
 
 <script>
@@ -160,6 +231,40 @@ function render(d) {
   document.getElementById("rates").innerHTML = (d.rates || []).map(card).join("")
     || '<p class="note">국고채 금리가 아직 없습니다.</p>';
   document.getElementById("rates-note").textContent = d.rates_note || "";
+}
+
+// 사이드바로 화면을 전환한다(한 번에 한 화면). 미국 화면과 같은 방식.
+(function setupNav() {
+  const links = [...document.querySelectorAll("nav a:not(.soon)")];
+  const show = id => {
+    const target = document.getElementById("s-" + id) ? id : "news";
+    document.querySelectorAll("main section").forEach(s => s.classList.toggle("on", s.id === "s-" + target));
+    links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + target));
+    if (target === "trade") loadTrade();
+    window.scrollTo(0, 0);
+  };
+  links.forEach(a => a.addEventListener("click", e => {
+    e.preventDefault();
+    const id = a.getAttribute("href").slice(1);
+    if (location.hash !== "#" + id) history.pushState(null, "", "#" + id);
+    show(id);
+  }));
+  window.addEventListener("popstate", () => show(location.hash.slice(1) || "news"));
+  show(location.hash.slice(1) || "news");
+})();
+
+// 수출입 레이더: trade.html 을 끼워 보이고, 안쪽 높이에 맞춰 틀 높이를 맞춘다.
+function loadTrade() {
+  const frame = document.getElementById("trade-frame");
+  if (!frame || frame.src) return;
+  const fit = () => {
+    try { frame.style.height = frame.contentDocument.documentElement.scrollHeight + "px"; } catch (e) {}
+  };
+  frame.addEventListener("load", () => {
+    fit();
+    try { new ResizeObserver(fit).observe(frame.contentDocument.body); } catch (e) {}
+  });
+  frame.src = "trade.html?embed=1";
 }
 
 const ago = iso => {

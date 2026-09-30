@@ -46,13 +46,13 @@ main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;b
 #market,#breadth,#commodities,#rates,#macro{--sg:#185FA5}
 #liquidity,#credit,#moneymarket{--sg:#534AB7}
 #breakout,#deepvalue,#extremes,#earnings{--sg:#854F0B}
-#portfolio,#calls,#amazon,#trade{--sg:#993C1D}
+#portfolio,#calls,#amazon{--sg:#993C1D}
 @media (prefers-color-scheme: dark){
   #picks,#hotnews,#news,#calendar{--sg:#5DCAA5}
   #market,#breadth,#commodities,#rates,#macro{--sg:#85B7EB}
   #liquidity,#credit,#moneymarket{--sg:#AFA9EC}
   #breakout,#deepvalue,#extremes,#earnings{--sg:#EF9F27}
-  #portfolio,#calls,#amazon,#trade{--sg:#F0997B}
+  #portfolio,#calls,#amazon{--sg:#F0997B}
 }
 /* 머리말 배너: 금리·유가·환율 */
 .ticker{flex-basis:100%;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;
@@ -326,7 +326,6 @@ tr:last-child td{border-bottom:none}
     <a href="#portfolio">포트폴리오</a>
     <a href="#calls">컨콜 흐름</a>
     <a href="#amazon">센텔리안24 아마존</a>
-    <a href="#trade">수출입 레이더</a>
   </div>
   <a href="#soon" class="soon">준비 중</a>
 </nav>
@@ -443,13 +442,6 @@ tr:last-child td{border-bottom:none}
 <section id="amazon">
   <h2>센텔리안24 아마존<span class="tagline" id="amazon-tag">구글 시트 기준 · 매일 아침 반영</span></h2>
   <div id="amazon-box"><p class="note">불러오는 중입니다.</p></div>
-</section>
-
-<section id="trade">
-  <h2>수출입 레이더<span class="tagline">관세청 무역통계 · 테마별 월간 수출 ·
-    <a href="trade.html" target="_blank" rel="noopener" style="color:var(--accent)">따로 열기</a></span></h2>
-  <iframe id="trade-frame" title="수출입 레이더" loading="lazy"
-    style="width:100%;border:0;display:block;min-height:600px"></iframe>
 </section>
 
 <section id="news">
@@ -2183,27 +2175,7 @@ function renderAmazon(data) {
   draw();
 }
 
-// ── 수출입 레이더 ─────────────────────────────────────────────
-// trade.html 을 그대로 끼워 보여준다. 처음 이 메뉴를 열 때 불러오고,
-// 안쪽 내용 높이에 맞춰 틀 높이를 계속 맞춘다(안에서 스크롤바가 생기지 않게).
-(function () {
-  const frame = document.getElementById("trade-frame");
-  if (!frame) return;
-  const fit = () => {
-    try {
-      const d = frame.contentDocument;
-      if (d && d.documentElement) frame.style.height = d.documentElement.scrollHeight + "px";
-    } catch (e) { /* 다른 주소에서 열리면 높이 맞춤만 생략 */ }
-  };
-  frame.addEventListener("load", () => {
-    fit();
-    try { new ResizeObserver(fit).observe(frame.contentDocument.body); } catch (e) {}
-  });
-  const load = () => { if (!frame.src) frame.src = "trade.html?embed=1"; };
-  if (location.hash === "#trade") load();
-  document.querySelectorAll('a[href="#trade"]').forEach(a => a.addEventListener("click", () => setTimeout(() => { load(); fit(); }, 0)));
-  window.addEventListener("popstate", () => { if (location.hash === "#trade") load(); });
-})();
+// (수출입 레이더는 한국 탭 kr.html 로 옮겼다)
 
 // ── 금리·환율 (data/rates_fx.json) ─────────────────────────────
 // 원자재 화면과 같은 방식: 위에 고른 항목의 추이 차트, 아래에 항목별 카드
