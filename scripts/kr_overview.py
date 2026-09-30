@@ -96,7 +96,7 @@ def summarize(entries, key):
     return out
 
 
-def attach_overviews(items, workers=4):
+def attach_overviews(items, workers=2):
     """items: [{'code', 'name', ...}] 각 항목에 'overview'(불릿 리스트)를 붙인다. 캐시를 갱신해 저장한다."""
     cache = _load()
     codes = [x["code"] for x in items if x.get("code")]
@@ -107,15 +107,27 @@ def attach_overviews(items, workers=4):
     if need_text:
         print(f"  기업개요 받기 {len(need_text)}종목")
 
+        # 연속으로 실패하면(접속 제한 등) 나머지는 포기한다 -- 실패를 캐시에 남기지 않아 다음에 다시 시도한다
+        state = {"fails": 0, "stop": False}
+
         def job(c):
+            if state["stop"]:
+                return c, None, False
             t = fetch_text(c)
-            time.sleep(0.4)
-            return c, t
+            if t:
+                state["fails"] = 0
+            else:
+                state["fails"] += 1
+                if state["fails"] >= 12:
+                    state["stop"] = True
+                    print("    개요 연속 실패 -> 이번 실행은 여기서 중단", file=sys.stderr)
+            time.sleep(1.0)
+            return c, t, True
         with ThreadPoolExecutor(max_workers=workers) as ex:
-            for c, t in ex.map(job, need_text):
+            for c, t, tried in ex.map(job, need_text):
                 if t:
                     cache[c] = {"text": t, "ts": now_kst().isoformat()}
-                else:
+                elif tried and not state["stop"]:
                     cache[c] = {"fail": now}
     names = {x["code"]: x.get("name", "") for x in items}
     todo = [(c, names.get(c, c), cache[c]["text"]) for c in codes
