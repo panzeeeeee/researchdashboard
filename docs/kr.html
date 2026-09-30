@@ -90,7 +90,8 @@ tr.rowc{cursor:pointer} tr.rowc:hover td.nm{color:var(--accent)}
 tr.dr td{background:var(--tintA);font-size:.84rem;white-space:normal}
 details.dg{margin-top:1rem} details.dg summary{cursor:pointer;color:var(--ink-3);font-size:.86rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;margin-bottom:1.2rem}
-.slot{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.8rem .9rem}
+.slot{background:color-mix(in srgb,var(--sg,var(--accent)) 7%,var(--card));border:1px solid color-mix(in srgb,var(--sg,var(--accent)) 25%,var(--rule));border-top:3px solid var(--sg,var(--accent));border-radius:10px;padding:.8rem .9rem}
+.slot .big.up{color:var(--up)} .slot .big.down{color:var(--down)}
 .slot .cap{font-size:.8rem;color:var(--ink-3);margin:0}
 .slot .big{font-size:1.5rem;font-weight:700;margin:.1rem 0;line-height:1.3;font-variant-numeric:tabular-nums}
 .slot p{margin:0;font-size:.82rem;color:var(--ink-2)}
@@ -132,7 +133,7 @@ main section{display:none} main section.on{display:block}
 .note,.miss{font-size:.86rem;color:var(--ink-3)}
 .up{color:var(--up)} .down{color:var(--down)}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.7rem}
-.card{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.8rem .9rem}
+.card{background:color-mix(in srgb,var(--sg,var(--accent)) 7%,var(--card));border:1px solid color-mix(in srgb,var(--sg,var(--accent)) 25%,var(--rule));border-top:3px solid var(--sg,var(--accent));border-radius:10px;padding:.8rem .9rem}
 .card .n{font-size:.9rem;font-weight:600;color:var(--ink-2)}
 .card .v{font-size:1.5rem;font-weight:700;font-variant-numeric:tabular-nums;margin:.1rem 0 0;line-height:1.3}
 .card .c{font-size:.9rem;font-weight:600}
@@ -852,7 +853,7 @@ function renderMacro(d) {
       ${groups.map(g => `<p class="sub">${esc(g)}</p><div class="grid">${items.filter(x => x.group === g).map(x => `
         <div class="slot" data-c="${x.key}" style="cursor:pointer">
           <p class="cap">${esc(x.label)}</p>
-          <p class="big">${fmt(x.value)}<span class="miss" style="font-size:.9rem">${arrow(x)}</span></p>
+          <p class="big ${x.prev == null || x.value === x.prev ? "" : x.value > x.prev ? "up" : "down"}">${fmt(x.value)}<span style="font-size:.9rem">${arrow(x)}</span></p>
           <p class="miss">${esc(x.unit)} · ${esc(x.date || "")}</p>
           <p class="miss">직전 ${fmt(x.prev)}${x.prev_date ? " (" + esc(x.prev_date) + ")" : ""}</p>
         </div>`).join("")}</div>`).join("")}
