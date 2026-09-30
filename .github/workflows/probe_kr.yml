@@ -8,7 +8,7 @@ on:
         default: "dartfin"
 
 permissions:
-  contents: read
+  contents: write           # 시험 결과 파일(probe_out/latest.txt)을 저장소에 올려 로그를 대신 읽을 수 있게
 
 jobs:
   probe:
@@ -29,4 +29,16 @@ jobs:
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           PROBE_ONLY: ${{ inputs.only }}
-        run: python scripts/probe_kr_sources.py
+        run: |
+          mkdir -p probe_out
+          python scripts/probe_kr_sources.py 2>&1 | tee probe_out/latest.txt
+
+      - name: 결과 파일 올리기
+        run: |
+          git config user.name "dashboard-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add probe_out
+          git diff --staged --quiet && exit 0
+          git commit -m "자료원 시험 결과 $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase
+          git push
