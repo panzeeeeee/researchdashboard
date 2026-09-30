@@ -98,14 +98,17 @@ def load_universe():
 
 def item(row, m, close_series):
     """JSON 에 담을 종목 한 건."""
-    chart = None
+    chart, chg = None, None
     if close_series is not None:
-        c = close_series.dropna().tail(CHART_DAYS)
+        cc = close_series.dropna()
+        c = cc.tail(CHART_DAYS)
         chart = [[str(d.date()), int(round(float(v)))] for d, v in c.items()]
+        if len(cc) >= 2 and float(cc.iloc[-2]):
+            chg = round((float(cc.iloc[-1]) / float(cc.iloc[-2]) - 1) * 100, 2)
     return {
         "code": row["코드"], "name": row["종목명"], "market": row["시장"], "sector": m.get("sector"),
-        "industry": m.get("industry"), "price": r(m.get("price"), 0),
-        "mcap_eok": r(m.get("market_cap"), 0, 1e-8),
+        "industry": m.get("industry"), "price": r(m.get("price"), 0), "chg": chg,
+        "mcap_eok": r(m.get("market_cap"), 0, 1e-8), "turnover_eok": r(m.get("dollar_vol_20d"), 0, 1e-8),
         "composite": r(m.get("composite"), 3), "value": r(m.get("value_score"), 3), "turn": r(m.get("turn_score"), 3),
         "fscore": int(m["fscore"]) if _f(m.get("fscore")) is not None else None,
         "sector_rank": r(m.get("sector_rank"), 0),
