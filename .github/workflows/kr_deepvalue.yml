@@ -1,0 +1,73 @@
+name: 한국 딥밸류
+
+on:
+  schedule:
+    # UTC 기준입니다. 한국시간 평일 저녁 7시 40분 -- 한국 스크리너(18:50)가 주가 캐시를 갱신한 뒤.
+    - cron: "40 10 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "시험용: 0단계 통과 종목 중 앞에서 이 개수만 (0이면 전체)"
+        default: "0"
+      budget:
+        description: "재무 수집에 쓸 시간(분). 넘으면 남은 종목은 다음 실행으로"
+        default: "45"
+      debug:
+        description: "처음 N종목의 재무 요약을 probe_out/dv_debug.txt 로 남기기 (0이면 안 남김)"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 가격 캐시 복원 (한국 스크리너가 만든 것, 읽기만)
+        uses: actions/cache/restore@v4
+        with:
+          path: screener/kr_px_cache.pkl.gz
+          key: kr-px-cache-none
+          restore-keys: kr-px-cache-
+
+      - name: 재무 캐시 복원
+        uses: actions/cache@v4
+        with:
+          path: |
+            screener/dv_kr_cache
+            screener/dv_kr_snapshots
+          key: dv-kr-cache-${{ github.run_id }}
+          restore-keys: dv-kr-cache-
+
+      - name: 한국 딥밸류
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/kr_deepvalue.py --limit ${{ inputs.limit || 0 }} --budget-min ${{ inputs.budget || 45 }} --debug ${{ inputs.debug || 0 }}
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "dashboard-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/data
+          if [ -e probe_out/dv_debug.txt ]; then git add probe_out/dv_debug.txt; fi
+          git diff --staged --quiet && exit 0
+          git commit -m "한국 딥밸류 갱신 $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase
+          git push
