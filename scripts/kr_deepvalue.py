@@ -324,6 +324,11 @@ def main():
         near_df = near_df.sort_values("fscore", ascending=False)
     near_items = to_items(near_df, TOP_NEAR) if not near_df.empty else []
     add_why(cand_items)
+    try:                      # 기업개요 (네이버 증권 소개글 -> 2줄 요약). 실패해도 나머지는 그대로 저장한다
+        from kr_overview import attach_overviews
+        attach_overviews(cand_items + near_items)
+    except Exception as e:      # noqa: BLE001
+        print(f"  기업개요 실패(나머지는 그대로 저장): {type(e).__name__}: {e}", file=sys.stderr)
 
     rej = pd.DataFrame(rejects)
     rej_list = ([] if rej.empty else

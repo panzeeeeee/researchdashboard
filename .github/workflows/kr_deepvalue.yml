@@ -61,11 +61,21 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/kr_deepvalue.py --limit ${{ inputs.limit || 0 }} --budget-min ${{ inputs.budget || 45 }} --debug ${{ inputs.debug || 0 }}
 
+      - name: 한국 오늘의 종목 (신고가·딥밸류·실적 흑자전환)
+        # 딥밸류 결과와 한국 스크리너 결과를 읽어 카드를 만든다. 기업개요·뉴스를 붙이느라 1~2분 걸린다.
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+        run: python scripts/kr_picks.py
+        continue-on-error: true
+
       - name: 결과 커밋
         run: |
           git config user.name "dashboard-bot"
           git config user.email "bot@users.noreply.github.com"
           git add docs/data
+          if [ -e screener/kr_overview_cache.json ]; then git add screener/kr_overview_cache.json; fi
           if [ -e probe_out/dv_debug.txt ]; then git add probe_out/dv_debug.txt; fi
           git diff --staged --quiet && exit 0
           git commit -m "한국 딥밸류 갱신 $(date -u +%Y-%m-%dT%H:%MZ)"

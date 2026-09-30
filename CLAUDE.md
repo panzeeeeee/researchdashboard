@@ -209,6 +209,13 @@ DART 응답: 분기 IS 는 thstrm_amount=그 분기 3개월, thstrm_add_amount=�
 지표 21종: 기준금리·M2 증가율 / CPI·근원 2종·PPI / GDP 전기비·전년비·전산업생산·선행/동행지수 / 수출·수입·경상수지 / 소비자심리·BSI 2종·경제심리 / 실업률·고용률·취업자 증감.
 GitHub Actions 무료 한도(비공개 저장소: Free 2,000분/월, Pro 3,000분/월)를 주의한다. 관세청 수집(`fetch_trade.py`)은 해외 서버에서 매번 4분씩 시간 초과라 낭비다.
 
+(진행 중) 한국 오늘의 종목: `scripts/kr_picks.py`(신고가 4 + 딥밸류 3 + 잠정실적 영업이익 흑자전환 3, 전략별로 뽑아 합치고 중복은 태그만 합침)
+→ `docs/data/kr_picks.json` → kr.html "오늘의 종목"(첫 화면). 카드마다 차트·근거 지표·기업개요(2줄)·최근 뉴스 3건. `kr_deepvalue.yml`에서 딥밸류 다음에 돈다.
+기업개요: `scripts/kr_overview.py` -- 네이버 증권 기업분석 페이지(`navercomp.wisereport.co.kr/v2/company/c1010001.aspx?cmp_cd=코드`, class="cmp_comment")의
+소개글을 종목마다 한 번만 받아 Gemini 로 2줄 요약, `screener/kr_overview_cache.json`(저장소에 커밋)에 저장. 일반 종목 페이지(main.naver)에는 개요가 없다.
+화면 양식: 미국 탭처럼 한 종목씩 크게 넘기는 카드(`.callout`+이전/다음)와 목록 보기. 소제목·카드 띠·활성 버튼은 화면 묶음 색(`--sg`)을 쓴다.
+남은 일: 신고가·신저가 카드(미국 `renderExtremes`와 같은 양식: 신고가/신저가 전환+카드 넘기기), 경제 정책 뉴스, 주요 일정, 텔레그램 한국 요약.
+
 1. 한국 탭: 머리말에 미국/한국 탭, 한국은 `kr.html` 별도. 순서 = 코스피·코스닥 지수·업종 + 국고채
    → 한국 뉴스 → DART 공시·잠정실적 → 한국 스크리너(us_breakout.py 로직, 종목 목록만 코스피·코스닥)
    → 수급. KRX는 해외 서버 차단 우려로 야후·DART·ECOS 등 공식 API 위주

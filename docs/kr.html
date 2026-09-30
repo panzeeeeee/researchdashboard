@@ -56,8 +56,8 @@ h2{font-size:1.25rem;font-weight:700;margin:0 0 1.3rem;letter-spacing:-.01em}
 /* 화면 제목 앞 색 띠 = 사이드바 묶음 색 (미국 화면과 같은 방식) */
 main section > h2{display:flex;align-items:baseline;flex-wrap:wrap;gap:.1rem}
 main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;border-radius:3px;margin-right:.6rem;background:var(--sg,var(--accent))}
-#s-news,#s-dart,#s-snews{--sg:#0F6E56} #s-market,#s-breadth,#s-rates,#s-macro{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#854F0B}
-@media (prefers-color-scheme: dark){#s-news,#s-dart,#s-snews{--sg:#5DCAA5} #s-market,#s-breadth,#s-rates,#s-macro{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#EF9F27}}
+#s-picks,#s-news,#s-dart,#s-snews{--sg:#0F6E56} #s-market,#s-breadth,#s-rates,#s-macro{--sg:#185FA5} #s-trade{--sg:#993C1D} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#854F0B}
+@media (prefers-color-scheme: dark){#s-picks,#s-news,#s-dart,#s-snews{--sg:#5DCAA5} #s-market,#s-breadth,#s-rates,#s-macro{--sg:#85B7EB} #s-trade{--sg:#F0997B} #s-earn,#s-break,#s-extreme,#s-dv{--sg:#EF9F27}}
 .dots{display:flex;gap:.25rem;flex-wrap:wrap;margin:.4rem 0 0}
 .dots span{font-size:.68rem;border-radius:4px;padding:0 .35rem;border:1px solid var(--rule);color:var(--ink-3)}
 .dots span.y{background:var(--up);border-color:var(--up);color:#fff}
@@ -190,6 +190,7 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
 <nav id="nav">
   <div class="ngrp g1">
     <p class="gl">오늘</p>
+    <a href="#picks">오늘의 종목</a>
     <a href="#news">주요 뉴스</a>
     <a href="#dart">공시</a>
     <a href="#snews">섹터 뉴스</a>
@@ -216,6 +217,11 @@ td .sub{font-size:.76rem;color:var(--ink-3);display:block}
 </nav>
 
 <main>
+
+<section id="s-picks">
+  <h2>오늘의 종목<span class="tagline" id="picks-tag">신고가 · 딥밸류 · 실적 흑자전환에서 고른 종목</span></h2>
+  <div id="picks-box"><p class="note">불러오는 중입니다.</p></div>
+</section>
 
 <section id="s-news">
   <h2>주요 뉴스<span class="tagline" id="news-tag">한국 증시 헤드라인</span></h2>
@@ -313,6 +319,7 @@ const sgn = (v, d, unit) => v == null ? '<span class="miss">—</span>'
 // 네이버 증권 종목 페이지 링크 (실시간에 가까운 시세는 여기서 본다)
 const nvUrl = code => `https://finance.naver.com/item/main.naver?code=${encodeURIComponent(code)}`;
 const nv = code => `<a class="nv" href="${nvUrl(code)}" target="_blank" rel="noopener" title="네이버 증권에서 시세 보기">증권↗</a>`;
+const eokF = v => v == null ? "—" : v >= 10000 ? (v / 10000).toFixed(1) + "조원" : Math.round(v).toLocaleString("ko-KR") + "억원";
 const num = (v, d = 2) => v == null ? "—" : v.toLocaleString("ko-KR", { minimumFractionDigits: d, maximumFractionDigits: d });
 
 // 작은 추세선. 한국은 상승=빨강 관례가 있지만 이 대시보드는 미국 화면과 같은 색(상승=초록)으로 맞춘다.
@@ -552,7 +559,7 @@ fetch("data/banner.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catc
 (function setupNav() {
   const links = [...document.querySelectorAll("nav a:not(.soon)")];
   const show = id => {
-    const target = document.getElementById("s-" + id) ? id : "news";
+    const target = document.getElementById("s-" + id) ? id : "picks";
     document.querySelectorAll("main section").forEach(s => s.classList.toggle("on", s.id === "s-" + target));
     links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + target));
     if (target === "trade") loadTrade();
@@ -564,8 +571,8 @@ fetch("data/banner.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catc
     if (location.hash !== "#" + id) history.pushState(null, "", "#" + id);
     show(id);
   }));
-  window.addEventListener("popstate", () => show(location.hash.slice(1) || "news"));
-  show(location.hash.slice(1) || "news");
+  window.addEventListener("popstate", () => show(location.hash.slice(1) || "picks"));
+  show(location.hash.slice(1) || "picks");
 })();
 
 // 수출입 레이더: trade.html 을 끼워 보이고, 안쪽 높이에 맞춰 틀 높이를 맞춘다.
@@ -782,6 +789,75 @@ function renderMacro(d) {
   draw();
 }
 fetch("data/kr_macro.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderMacro);
+
+// ── 오늘의 종목 (data/kr_picks.json: kr_picks.py 가 신고가·딥밸류·실적 흑자전환에서 고른 것) ──
+function renderPicks(d) {
+  const box = document.getElementById("picks-box");
+  const all = (d && d.picks) || [];
+  if (!all.length) { box.innerHTML = '<p class="note">오늘의 종목이 아직 없습니다. 저녁 딥밸류 실행 뒤에 만들어집니다(Actions 탭 "한국 딥밸류").</p>'; return; }
+  const tag = document.getElementById("picks-tag");
+  if (tag && d.updated_at) tag.textContent = `신고가 · 딥밸류 · 실적 흑자전환에서 고른 종목 · ${d.updated_at.slice(5, 16).replace("T", " ")} 갱신`;
+  let grp = "전체", view = "card", idx = 0;
+  const pct = (v, dp = 1) => v == null ? "—" : (v > 0 ? "+" : "") + v.toFixed(dp) + "%";
+  const x = (v, dp = 1) => v == null ? "—" : v.toFixed(dp) + "배";
+  const TAGC = { "신고가": "#16a34a", "딥밸류": "#2563eb", "실적 흑자전환": "#d97706" };
+  const pill = t => `<span class="fin" style="background:${TAGC[t] || "var(--accent)"}">${esc(t)}</span>`;
+
+  const basis = (t, m) => {
+    if (t === "신고가") return `<p class="sub">신고가 근거</p><p class="miss">점수 ${m.score ?? "—"} · 게이트 ${m.gates ?? "—"} · 낙폭 ${m.drawdown ?? "—"}% · 신고가 나이 ${m.high_age ?? "—"}일<br>
+      거래량 ${m.vol_mult ?? "—"}배 · RS ${m.rs ?? "—"} · 돌파 신선도 ${m.fresh ?? "—"}${m.final ? " · <b>최종후보</b>" : ""}${m.missing ? `<br>못 넘은 항목: ${esc(m.missing)}` : ""}</p>`;
+    if (t === "딥밸류") return `<p class="sub">딥밸류 근거</p><p class="miss"><b>F-Score ${m.fscore ?? "—"}</b>${m.composite != null ? ` · 종합 ${m.composite} (가치 ${m.value} · 회복 ${m.turn})` : ""}<br>
+      3년 고점 대비 ${pct(m.dd_3y, 0)} · 200일선 아래 ${m.days_below ?? "—"}일<br>
+      정상화이익수익률 ${pct(m.norm_earn_yield)} · EV/매출 ${x(m.ev_sales, 2)} · P/TBV ${x(m.p_tbv, 2)} · FCF수익률 ${pct(m.fcf_yield)}<br>
+      순차입/EBITDA ${x(m.net_debt_ebitda)} · 이자보상 ${x(m.int_cov)} · 유동비율 ${m.curr_ratio ?? "—"} · 최근분기 매출 YoY ${pct(m.rev_yoy_q0)}</p>
+      <div class="dots">${Object.entries(F_LABELS).map(([k, n]) => `<span class="${(m.f_parts || {})[k] ? "y" : ""}">${esc(n)}</span>`).join("")}</div>
+      ${m.triggers ? `<div>${m.triggers.split(", ").filter(Boolean).map(s => `<span class="trg">${esc(s.replace(/_/g, " "))}</span>`).join("")}</div>` : ""}
+      ${m.why ? `<p class="why">왜 싼가: ${esc(m.why)}</p>` : ""}`;
+    return `<p class="sub">실적 흑자전환 근거</p><p class="miss">${esc(m.date.slice(5).replace("-", "/"))} 공시 · ${esc(m.period || "")}${m.basis ? " (" + esc(m.basis) + ")" : ""}<br>
+      영업이익 <b>${eokF(m.op)}</b> (전년 동기 ${eokF(m.op_prior)} → 흑자전환) · 매출 ${eokF(m.revenue)} (${pct(m.revenue_yoy)}) · 순이익 ${eokF(m.net)}
+      ${m.summary ? `<br>${esc(m.summary)}` : ""}${m.url ? `<br><a class="dl" style="color:var(--accent)" href="${esc(m.url)}" target="_blank" rel="noopener">DART 공시 원문 ↗</a>` : ""}</p>`;
+  };
+  const cardHtml = p => {
+    const bullets = (p.overview || []).length ? `<ul class="lines">${p.overview.map(b => `<li>${esc(b)}</li>`).join("")}</ul>` : '<p class="note">기업개요 없음</p>';
+    const news = (p.news || []).length ? p.news.map(n => `<div class="newsrow"><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>
+        ${n.summary ? `<p class="sum" style="margin:.1rem 0 0;font-size:.84rem">${esc(n.summary)}</p>` : ""}<span class="src">${esc(n.source || "")} · ${ago(n.published)}</span></div>`).join("")
+      : '<p class="note">최근 뉴스 없음</p>';
+    return `<div class="callout">
+      <p class="gname">🇰🇷 ${esc(p.name)} <span>(${sgn(p.chg, 2, "%")})</span> ${p.tags.map(pill).join(" ")}</p>
+      <p class="miss">가격 ${num(p.price, 0)}원 · ${esc(p.market)}${p.industry ? " · " + esc(p.industry) : ""}${nv(p.code)}</p>
+      <div id="picks-chart"></div>
+      <p class="sub">종목 정보</p>
+      <p class="miss">종목코드 : ${esc(p.code)}<br>${p.mcap_eok != null ? `시가총액 : ${eokF(p.mcap_eok)}<br>` : ""}거래대금 : ${p.turnover_eok == null ? "—" : num(p.turnover_eok, 0) + "억원 (20일 평균)"}</p>
+      ${p.tags.map(t => basis(t, (p.meta || {})[t] || {})).join("")}
+      <p class="sub">기업개요</p>${bullets}
+      <p class="sub">최근 뉴스</p>${news}
+    </div>`;
+  };
+  const draw = () => {
+    const rows = all.filter(p => grp === "전체" || p.tags.includes(grp));
+    if (idx >= rows.length) idx = 0;
+    const groups = ["전체", ...Object.keys(TAGC).filter(t => all.some(p => p.tags.includes(t)))];
+    box.innerHTML = `
+      <div class="btns">${groups.map(g => `<button data-g="${esc(g)}" class="${g === grp ? "on" : ""}">${esc(g)} (${g === "전체" ? all.length : all.filter(p => p.tags.includes(g)).length})</button>`).join("")}
+        <button data-v="card" class="${view === "card" ? "on" : ""}">카드 넘기기</button><button data-v="table" class="${view === "table" ? "on" : ""}">목록</button></div>
+      ${view === "card" ? `<div class="ghead"><button class="morebtn" data-nav="prev">← 이전</button><span class="miss">${idx + 1} / ${rows.length}</span><button class="morebtn" data-nav="next">다음 →</button></div>${cardHtml(rows[idx])}` : `
+        <div class="scroll"><table><thead><tr><th>종목</th><th>선정 이유</th><th class="r">현재가</th><th class="r">등락</th><th class="r">거래대금</th></tr></thead>
+        <tbody>${rows.map((p, i) => `<tr class="rowc" data-i="${i}"><td class="nm"><b>${esc(p.name)}</b><span class="sub" style="display:inline;margin:0 0 0 .4rem;font-size:.72rem;color:var(--ink-3)">${esc(p.market)}</span></td>
+          <td>${p.tags.map(pill).join(" ")}</td><td class="h">${num(p.price, 0)}원</td><td class="h">${sgn(p.chg, 2, "%")}</td><td class="h">${p.turnover_eok == null ? "—" : num(p.turnover_eok, 0) + "억"}</td></tr>`).join("")}</tbody></table></div>
+        <p class="note">행을 누르면 그 종목 카드로 이동합니다.</p>`}
+      <p class="note" style="margin-top:1rem">전략별로 상위 몇 개씩 뽑아 합친 것입니다(점수 체계가 서로 달라 한 줄로 세우지 않습니다): 긴 조정 후 신고가 4개 · 딥밸류 3개(트리거 켜진 것 우선) ·
+      영업이익 흑자전환 공시 3개(최근 3일, 거래대금 5억 원 이상). 같은 종목이 여러 전략에 걸리면 카드 하나에 태그를 모두 답니다. 기업개요는 네이버 증권 소개글을 자동 요약했습니다.
+      자동 선정 결과이며 투자 권유가 아닙니다. 판단 전에 공시 원문과 재무를 확인하세요.</p>`;
+    box.querySelectorAll("[data-g]").forEach(b => b.addEventListener("click", () => { grp = b.dataset.g; idx = 0; draw(); }));
+    box.querySelectorAll("[data-v]").forEach(b => b.addEventListener("click", () => { view = b.dataset.v; draw(); }));
+    box.querySelectorAll("[data-nav]").forEach(b => b.addEventListener("click", () => { idx = b.dataset.nav === "prev" ? (idx - 1 + rows.length) % rows.length : (idx + 1) % rows.length; draw(); }));
+    box.querySelectorAll("tr.rowc").forEach(tr => tr.addEventListener("click", () => { idx = +tr.dataset.i; view = "card"; draw(); box.scrollIntoView(); }));
+    const ch = box.querySelector("#picks-chart"), cur = rows[idx];
+    if (ch && cur && (cur.chart || []).length > 1) drawChart(ch, [{ label: cur.name, color: PALETTE[0], pts: cur.chart }], { rebase: false, fmt: v => num(v, 0) });
+  };
+  draw();
+}
+fetch("data/kr_picks.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderPicks);
 
 // ── 딥밸류 (data/kr_deepvalue.json) ──
 const F_LABELS = { f1_roa_pos: "ROA>0", f2_cfo_pos: "영업CF>0", f3_droa_pos: "ROA개선", f4_accrual: "현금>이익",

@@ -46,6 +46,14 @@ def write_json(path, payload):
     return p
 
 
+def write_json_compact(path, payload):
+    """들여쓰기 없이 저장 -- 차트 좌표가 많은 파일은 들여쓰기를 하면 3배로 커진다."""
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    return p
+
+
 def get(url, **kwargs):
     kwargs.setdefault("timeout", 15)
     headers = kwargs.pop("headers", {})
