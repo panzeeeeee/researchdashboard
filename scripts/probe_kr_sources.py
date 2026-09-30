@@ -167,7 +167,36 @@ def probe_naver_chart():
     print(f"  40번 연속 요청: {time.time()-t0:.1f}초 · 성공 {ok}/40")
 
 
+def probe_sample():
+    """KIND 목록에서 코스피·코스닥을 무작위로 30개씩 뽑아, 네이버 일봉 봉 수 분포를 본다.
+    (앞쪽 100개만 쓰면 표본이 치우칠 수 있어서)"""
+    step("6. 무작위 표본의 히스토리 길이 (네이버)")
+    r = requests.get("https://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13", headers=UA, timeout=30)
+    df = pd.read_html(io.StringIO(r.content.decode("euc-kr", errors="replace")))[0]
+    df["코드"] = df["종목코드"].astype(str).str.replace(r"\.0$", "", regex=True).str.zfill(6)
+    print(f"  KIND 앞 5행: {df[['회사명', '시장구분', '코드']].head(5).values.tolist()}")
+    for m, label in (("유가", "코스피"), ("코스닥", "코스닥")):
+        sub = df[df["시장구분"] == m]
+        sample = sub.sample(30, random_state=7)
+        lens = []
+        for _, row in sample.iterrows():
+            try:
+                rows = naver_chart(row["코드"], 1500)
+                lens.append((len(rows), row["회사명"], rows[0][0] if rows else "-"))
+            except Exception:
+                lens.append((0, row["회사명"], "-"))
+            time.sleep(0.2)
+        ns = sorted(n for n, _, _ in lens)
+        print(f"  {label} 표본 30개: 봉 수 최소 {ns[0]} · 중앙 {ns[len(ns)//2]} · 최대 {ns[-1]} · 900봉 이상 {sum(1 for n in ns if n >= 900)}/30")
+        for n, name, first in sorted(lens)[:5]:
+            print(f"    가장 짧은 쪽: {name} {n}봉 첫날 {first}")
+
+
 def main():
+    if env("PROBE_ONLY") == "sample":
+        probe_sample()
+        print("\n시험 끝")
+        return
     if env("PROBE_ONLY") == "chart":
         probe_naver_chart()
         print("\n시험 끝")

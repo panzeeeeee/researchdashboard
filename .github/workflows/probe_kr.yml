@@ -4,8 +4,8 @@ on:
   workflow_dispatch:        # 손으로만 돌리는 시험용. 아무 파일도 저장하지 않습니다.
     inputs:
       only:
-        description: "chart 라고 쓰면 네이버 차트 시험만 (빠름). 비우면 전부"
-        default: "chart"
+        description: "chart = 네이버 차트 시험, sample = 무작위 표본 히스토리 길이. 비우면 전부"
+        default: "sample"
 
 permissions:
   contents: read
