@@ -84,6 +84,12 @@ def r(x, nd=2, mult=1.0, cap=None):
     return round(v, nd)
 
 
+def write_compact(path, obj):
+    """들여쓰기 없이 저장 -- 차트 좌표가 많아서 들여쓰기를 하면 파일이 3배로 커진다."""
+    import json
+    Path(path).write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+
+
 def load_universe():
     """KIND 상장법인 목록 (한국 스크리너와 같은 함수). 2초 안팎이라 매번 받고, 실패하면 캐시."""
     from kr_breakout import get_universe
@@ -325,7 +331,7 @@ def main():
               [f"생존·희석 통과 + F-Score {cfg.min_fscore}+ (후보)", len(rows)],
               ["근접(F-Score 미달)", len(near_rows)], ["오늘 트리거 발동", trig_n]]
     asof = str(closes[next(iter(closes))].index[-1].date()) if closes else None
-    write_json(OUT, {
+    write_compact(OUT, {
         "updated_at": now_kst().isoformat(), "asof": asof, "funnel": funnel, "reject_reasons": rej_list[:25],
         "coverage": cov, "notes": {
             "cfg": {"min_price": cfg.min_price, "min_turnover_eok": cfg.min_dollar_vol_20d / 1e8,
