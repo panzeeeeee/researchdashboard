@@ -197,6 +197,14 @@ def main():
     tickers = sorted(set(univ["티커"]) | set(BENCHES))
     px, mkt_last = ub.fetch_prices(tickers, full_refresh=args.full_refresh)
 
+    # 진단: 종목별 봉 수 분포 (히스토리가 900봉 미만이면 스크리너가 판정하지 않는다)
+    lens = pd.Series({t: len(px[t]) for t in tickers if t in px and t not in BENCHES})
+    if len(lens):
+        print(f"  봉 수: 최소 {int(lens.min())} · 중앙 {int(lens.median())} · 최대 {int(lens.max())} · "
+              f"{ub.CFG['MIN_BARS']}봉 이상 {int((lens >= ub.CFG['MIN_BARS']).sum())}/{len(lens)}")
+        for t, n in lens[lens < ub.CFG["MIN_BARS"]].head(10).items():
+            print(f"    짧음: {t} {info.get(t, {}).get('종목명', '')} {n}봉 · 첫날 {px[t].index[0].date()} · 끝 {px[t].index[-1].date()}")
+
     frames, funnel, dropped_all = [], [], 0
     by_market = {}
     for m, (label, _, bench) in {v[0]: v for v in MARKETS.values()}.items():
