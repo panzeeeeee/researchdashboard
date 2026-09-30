@@ -48,8 +48,8 @@ from kr_breakout import group_of                                                
 PX_CACHE = ROOT / "screener" / "kr_px_cache.pkl.gz"
 UNIV_DIR = ROOT / "screener" / "universe_cache"
 OUT = DATA_DIR / "kr_deepvalue.json"
-TOP_CAND = 60
-TOP_NEAR = 60
+TOP_CAND = 100          # 후보는 전부 보이게 (미국판은 60개로 잘랐지만 한국은 후보가 그보다 많을 수 있다)
+TOP_NEAR = 80
 CHART_DAYS = 252
 
 
@@ -338,8 +338,8 @@ def main():
                     "min_mcap_eok": cfg.min_market_cap / 1e8, "dd_3y": cfg.dd_from_3y_high, "min_fscore": cfg.min_fscore,
                     "days_below_200": cfg.min_days_below_200dma},
             "missing": "애널리스트 추정치 수정·공매도 자료는 한국에 출처가 없어 점수에서 빠집니다."},
-        "candidates": cand_items, "near": near_items,
-        "triggered": [x for x in cand_items if x["trigger_count"] > 0],
+        "candidates": cand_items, "near": near_items,      # 트리거 발동 종목은 화면이 candidates 에서 trigger_count > 0 으로 거른다(중복 저장 안 함)
+        "n_candidates_total": len(rows), "n_triggered": sum(1 for x in cand_items if x["trigger_count"] > 0),
     })
     print(f"\n저장 완료 ({(time.time() - t0) / 60:.1f}분): 후보 {len(cand_items)} · 근접 {len(near_items)}")
     return 0

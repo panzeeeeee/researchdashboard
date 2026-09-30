@@ -783,19 +783,20 @@ function renderDv(d) {
   const pct = (v, dp = 1) => v == null ? "—" : (v > 0 ? "+" : "") + v.toFixed(dp) + "%";
   const x = (v, dp = 1) => v == null ? "—" : v.toFixed(dp) + "배";
   const draw = () => {
-    const src = mode === "trig" ? (d.triggered || []) : mode === "near" ? (d.near || []) : (d.candidates || []);
+    const trigList = (d.candidates || []).filter(r => r.trigger_count > 0);       // 트리거 발동 = 후보 중 신호가 켜진 것
+    const src = mode === "trig" ? trigList : mode === "near" ? (d.near || []) : (d.candidates || []);
     const rows = src.filter(r => mk === "전체" || r.market === mk);
     const f = Object.fromEntries((d.funnel || []).map(a => [a[0], a[1]]));
     box.innerHTML = `
       <div class="grid">
         <div class="slot"><p class="cap">후보</p><p class="big">${(d.candidates || []).length}</p><p>F-Score ${d.notes.cfg.min_fscore}+ 통과</p></div>
-        <div class="slot"><p class="cap">오늘 트리거 발동</p><p class="big">${(d.triggered || []).length}</p><p>후보 중 신호가 켜진 것</p></div>
+        <div class="slot"><p class="cap">오늘 트리거 발동</p><p class="big">${trigList.length}</p><p>후보 중 신호가 켜진 것</p></div>
         <div class="slot"><p class="cap">근접(F-Score 미달)</p><p class="big">${(d.near || []).length}</p><p>싸고 살아 있지만 회복 신호 부족</p></div>
         <div class="slot"><p class="cap">재무 확보</p><p class="big">${f["재무 확보"] ?? "—"}</p><p>가격 필터 통과 ${f["0단계 가격 필터 통과"] ?? "—"} 중${f["재무 수집 미룸(다음 실행)"] ? " · 미룸 " + f["재무 수집 미룸(다음 실행)"] : ""}</p></div>
       </div>
       <div class="btns">
         <button data-m="cand" class="${mode === "cand" ? "on" : ""}">후보 (${(d.candidates || []).length})</button>
-        <button data-m="trig" class="${mode === "trig" ? "on" : ""}">트리거 발동 (${(d.triggered || []).length})</button>
+        <button data-m="trig" class="${mode === "trig" ? "on" : ""}">트리거 발동 (${trigList.length})</button>
         <button data-m="near" class="${mode === "near" ? "on" : ""}">근접후보 (${(d.near || []).length})</button>
         ${["전체", "코스피", "코스닥"].map(k => `<button data-k="${k}" class="${mk === k ? "on" : ""}">${k}</button>`).join("")}
       </div>
