@@ -1,26 +1,38 @@
-"""DART 재무제표 응답 구조를 눈으로 확인하는 시험 (파일을 만들지 않는다).
+"""DART 재무제표 시험 2 (한국 딥밸류 준비).
 
-한국 딥밸류의 재무 자료를 DART 전체 재무제표(fnlttSinglAcntAll)에서 받기 전에,
-실제 응답이 어떤 모양인지 -- 계정과목 이름·코드, 3개월/누적 열, 단위, 연결/개별 --
-를 로그로 확인한다.
+확인하는 것
+  1. 종목 고유번호 목록을 파일(screener/dart_corp_codes.json)로 저장 -- 다음부터 218초를 다시 안 쓴다
+  2. 분기 보고서 손익 행의 모든 열 이름 (전년 같은 분기 값이 어느 열인지)
+  3. 주요계정 API(fnlttSinglAcnt, 가벼운 요청) 응답
+  4. 8종목 연간 재무제표를 동시에 요청했을 때 걸리는 시간 (병렬로 빨라지는지)
 """
 
 import io
+import json
 import sys
+import time
 import zipfile
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 
 import requests
 
-from common import env
+from common import ROOT, env
 
 KEY = env("DART_API_KEY")
 BASE = "https://opendart.fss.or.kr/api"
 UA = {"User-Agent": "Mozilla/5.0 (compatible; research-dashboard/1.0)"}
+CORP_FILE = ROOT / "screener" / "dart_corp_codes.json"
 
 
 def corp_codes():
-    r = requests.get(f"{BASE}/corpCode.xml", params={"crtfc_key": KEY}, headers=UA, timeout=60)
+    if CORP_FILE.exists():
+        d = json.loads(CORP_FILE.read_text(encoding="utf-8"))
+        print(f"고유번호 파일 사용: {len(d)}개", flush=True)
+        return d
+    t0 = time.time()
+    r = requests.get(f"{BASE}/corpCode.xml", params={"crtfc_key": KEY}, headers=UA, timeout=600)
     r.raise_for_status()
     z = zipfile.ZipFile(io.BytesIO(r.content))
     root = ET.fromstring(z.read(z.namelist()[0]))
@@ -28,88 +40,88 @@ def corp_codes():
     for it in root.findall("list"):
         sc = (it.findtext("stock_code") or "").strip()
         if sc:
-            out[sc] = (it.findtext("corp_code").strip(), (it.findtext("corp_name") or "").strip())
+            out[sc] = [it.findtext("corp_code").strip(), (it.findtext("corp_name") or "").strip()]
+    CORP_FILE.parent.mkdir(parents=True, exist_ok=True)
+    CORP_FILE.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"고유번호 {len(out)}개 받아 저장 · {time.time() - t0:.0f}초", flush=True)
     return out
 
 
 def call(path, **params):
-    """요청 한 건. 걸린 시간을 찍는다(느린지 알아보려고). 25초 안에 못 받으면 포기."""
-    import time
     params["crtfc_key"] = KEY
     t0 = time.time()
     try:
-        r = requests.get(f"{BASE}/{path}", params=params, headers=UA, timeout=25)
+        r = requests.get(f"{BASE}/{path}", params=params, headers=UA, timeout=60)
         r.raise_for_status()
         d = r.json()
-        print(f"  · {path} {time.time() - t0:.1f}초 · 응답 {len(r.content):,}바이트", flush=True)
+        print(f"  · {path} {time.time() - t0:.1f}초 · {len(r.content):,}바이트 · status {d.get('status')}", flush=True)
         return d
     except Exception as e:
-        print(f"  · {path} 실패 {time.time() - t0:.1f}초: {str(e)[:120]}", flush=True)
-        return {"status": "ERR", "message": str(e)[:80], "list": []}
-
-
-def show_fin(corp, year, reprt, fs, only=None, limit=400):
-    d = call("fnlttSinglAcntAll.json", corp_code=corp, bsns_year=year, reprt_code=reprt, fs_div=fs)
-    print(f"  [{year} {reprt} {fs}] status={d.get('status')} {d.get('message')} · 행 {len(d.get('list') or [])}")
-    rows = d.get("list") or []
-    n = 0
-    for r in rows:
-        if only and r.get("sj_div") not in only:
-            continue
-        if r.get("sj_div") == "SCE":
-            continue
-        print(f"    {r.get('sj_div'):3} {str(r.get('account_id'))[:38]:38} | {str(r.get('account_nm'))[:24]:24} | "
-              f"{r.get('thstrm_amount')} | add {r.get('thstrm_add_amount')} | 전기 {r.get('frmtrm_amount')} | 전전기 {r.get('bfefrmtrm_amount')}")
-        n += 1
-        if n >= limit:
-            print("    ...")
-            break
-    return rows
+        print(f"  · {path} 실패 {time.time() - t0:.1f}초: {str(e)[:100]}", flush=True)
+        return {"status": "ERR", "list": []}
 
 
 def main():
     if not KEY:
         print("DART_API_KEY 없음")
         return
-    import time
-    t0 = time.time()
     cc = corp_codes()
-    print(f"상장사 고유번호 {len(cc)}개 · {time.time() - t0:.1f}초", flush=True)
-
-    # 1) 삼성전자: 연간(연결) 전체, 반기(연결)의 손익 열
     samsung = cc["005930"][0]
-    print(f"\n=== 삼성전자 {samsung} 사업보고서 2025 (연결) ===")
-    show_fin(samsung, "2025", "11011", "CFS", limit=260)
-    print(f"\n=== 삼성전자 반기보고서 2026 (연결) -- 손익·현금흐름만 ===")
-    show_fin(samsung, "2026", "11012", "CFS", only=("IS", "CIS", "CF"), limit=80)
-    print(f"\n=== 삼성전자 1분기 2026 (연결) -- 손익만 ===")
-    show_fin(samsung, "2026", "11013", "CFS", only=("IS", "CIS"), limit=30)
 
-    # 2) 주식 총수
-    print("\n=== 주식총수 현황 stockTotqySttus (삼성전자 2025 사업보고서) ===")
-    d = call("stockTotqySttus.json", corp_code=samsung, bsns_year="2025", reprt_code="11011")
-    print(f"  status={d.get('status')} {d.get('message')}")
-    for r in (d.get("list") or [])[:8]:
-        print("   ", {k: r.get(k) for k in ("se", "isu_stock_totqy", "now_to_isu_stock_totqy", "istc_totqy", "tesstk_co", "distb_stock_co")})
-
-    # 3) 중소형주: 계정과목 이름·코드 변형 살펴보기 (이름 목록만)
-    print("\n=== 중소형주 3곳: 계정 이름 변형 (BS·IS·CF 계정 이름과 코드) ===")
-    for sc in ("247540", "086520", "035900"):      # 에코프로비엠, 에코프로, JYP Ent.
-        if sc not in cc:
-            continue
-        corp, name = cc[sc]
-        print(f"\n--- {name} {sc} {corp} 사업보고서 2025 ---")
-        rows = None
-        for fs in ("CFS", "OFS"):
-            d = call("fnlttSinglAcntAll.json", corp_code=corp, bsns_year="2025", reprt_code="11011", fs_div=fs)
-            if d.get("status") == "000":
-                rows = d.get("list") or []
-                print(f"  {fs} 행 {len(rows)}")
+    # 2) 분기 보고서 손익·재무상태 행의 모든 열
+    print("\n=== 분기 보고서(반기 2026) 행 하나의 전체 열 ===", flush=True)
+    d = call("fnlttSinglAcntAll.json", corp_code=samsung, bsns_year="2026", reprt_code="11012", fs_div="CFS")
+    rows = d.get("list") or []
+    for want in ("ifrs-full_Revenue", "ifrs-full_Inventories", "dart_OperatingIncomeLoss"):
+        for r in rows:
+            if r.get("account_id") == want and r.get("sj_div") in ("IS", "BS", "CIS"):
+                print("  ", json.dumps(r, ensure_ascii=False))
                 break
-        for r in rows or []:
-            if r.get("sj_div") in ("BS", "IS", "CIS", "CF"):
-                print(f"    {r['sj_div']:3} {str(r.get('account_id'))[:36]:36} | {str(r.get('account_nm'))[:26]}")
-    print("\n시험 끝")
+    print("\n=== 1분기 2026 매출 행 ===", flush=True)
+    d = call("fnlttSinglAcntAll.json", corp_code=samsung, bsns_year="2026", reprt_code="11013", fs_div="CFS")
+    for r in d.get("list") or []:
+        if r.get("account_id") == "ifrs-full_Revenue":
+            print("  ", json.dumps(r, ensure_ascii=False))
+            break
+    print("\n=== 3분기 2025 매출 행 (누적과 3개월) ===", flush=True)
+    d = call("fnlttSinglAcntAll.json", corp_code=samsung, bsns_year="2025", reprt_code="11014", fs_div="CFS")
+    for r in d.get("list") or []:
+        if r.get("account_id") == "ifrs-full_Revenue":
+            print("  ", json.dumps(r, ensure_ascii=False))
+            break
+
+    # 3) 주요계정 API
+    print("\n=== 주요계정 fnlttSinglAcnt (삼성전자 2022 사업보고서) ===", flush=True)
+    d = call("fnlttSinglAcnt.json", corp_code=samsung, bsns_year="2022", reprt_code="11011")
+    for r in d.get("list") or []:
+        print(f"    {r.get('fs_div')} {r.get('sj_div')} {r.get('account_nm')} | {r.get('thstrm_amount')} | 전기 {r.get('frmtrm_amount')} | 전전기 {r.get('bfefrmtrm_amount')}")
+
+    # 4) 병렬 요청 속도
+    codes = ["005930", "000660", "035420", "005380", "051910", "068270", "028300", "293490"]
+    print("\n=== 8종목 연간 재무제표 동시 요청 (스레드 8개) ===", flush=True)
+
+    def one(sc):
+        t0 = time.time()
+        try:
+            r = requests.get(f"{BASE}/fnlttSinglAcntAll.json", headers=UA, timeout=90,
+                             params={"crtfc_key": KEY, "corp_code": cc[sc][0], "bsns_year": "2025",
+                                     "reprt_code": "11011", "fs_div": "CFS"})
+            d = r.json()
+            ids = {x.get("account_id") for x in (d.get("list") or [])}
+            has = [k for k in ("ifrs-full_Revenue", "ifrs-full_GrossProfit", "dart_OperatingIncomeLoss",
+                               "ifrs-full_Inventories") if k in ids]
+            return sc, time.time() - t0, len(r.content), d.get("status"), len(has)
+        except Exception as e:
+            return sc, time.time() - t0, 0, f"ERR {str(e)[:50]}", 0
+
+    t0 = time.time()
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        res = list(ex.map(one, codes))
+    wall = time.time() - t0
+    for sc, sec, size, st, n in res:
+        print(f"    {sc} {cc[sc][1]:12} {sec:5.1f}초 {size:>8,}바이트 status {st} · 핵심계정 {n}/4")
+    print(f"  전체 걸린 시간 {wall:.1f}초 (하나씩 하면 약 {sum(r[1] for r in res):.0f}초)")
+    print("\n시험 끝", flush=True)
 
 
 if __name__ == "__main__":
