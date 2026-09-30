@@ -4,8 +4,8 @@ on:
   workflow_dispatch:        # 손으로만 돌리는 시험용. 아무 파일도 저장하지 않습니다.
     inputs:
       only:
-        description: "dartfin = DART 재무제표 응답 구조, chart = 네이버 차트, sample = 무작위 표본 히스토리. 비우면 전부"
-        default: "dartfin"
+        description: "dartidx = DART 주요 재무지표, dartfin = 재무제표 구조, chart = 네이버 차트, sample = 표본 히스토리. 비우면 전부"
+        default: "dartidx"
 
 permissions:
   contents: write           # 시험 결과 파일(probe_out/latest.txt)을 저장소에 올려 로그를 대신 읽을 수 있게

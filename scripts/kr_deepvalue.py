@@ -12,7 +12,7 @@
   - 최소 종가 1,000원, 20일 평균 거래대금 27억 원, 시총 2,700억 원 이상 (미국판 $3 / $2M / $200M 에 해당)
   - 재무: 야후 대신 DART 전체 재무제표(kr_dv_data.py). 이자비용은 손익계산서 -> 현금흐름표 -> 금융비용 순으로 찾는다
   - 애널리스트 추정치 수정(revision_breadth, eps_trend)은 한국에 출처가 없어 비어 있다 -> 점수에서 빠지고 나머지로 재정규화
-  - 실제 영업이익(ebit)을 넣었다 (미국판은 비어 있어 이자보상배율을 정상화 EBIT 로 계산)
+  - 미국판처럼 'ebit' 는 넣지 않는다 -> 이자보상배율이 정상화 EBIT(5년 중앙 마진 x 매출)로 계산된다(같은 기준 비교)
 
 DART 가 느려서(연결 하나당 초당 약 15KB) 종목마다 몇 번씩 요청한다. 스레드 여러 개로 동시에 받고,
 결과는 캐시에 남겨 다음 실행은 새 공시가 나온 종목만 받는다. 시간 예산(--budget-min)을 넘으면 남은 종목은
@@ -255,7 +255,7 @@ def main():
     # ---- 재무 값 확보율 (검증용)
     cov = {}
     if have_fd:
-        for k in ("rev_ttm", "gross_profit", "ebit", "ebitda", "net_income", "interest_exp", "total_assets",
+        for k in ("rev_ttm", "gross_profit", "op_income", "ebitda", "net_income", "interest_exp", "total_assets",
                   "cur_assets", "cur_liab", "total_debt", "lt_debt", "cash", "equity", "inventory",
                   "cfo", "fcf_avg3", "shares", "shares_p1", "shares_p3", "market_cap", "rev_yoy_q0",
                   "ebit_margin_med5"):
@@ -271,7 +271,7 @@ def main():
     if args.debug:
         p = ROOT / "probe_out"
         p.mkdir(exist_ok=True)
-        keys = ["name", "fs_div", "fy", "q_latest", "rev_hist", "rev_ttm", "gross_profit", "ebit", "ebitda", "net_income",
+        keys = ["name", "fs_div", "fy", "q_latest", "rev_hist", "rev_ttm", "gross_profit", "op_income", "ebitda", "net_income",
                 "interest_exp", "interest_exp_src", "total_assets", "cur_assets", "cur_liab", "total_debt", "lt_debt",
                 "cash", "equity", "goodwill_intang", "inventory", "cfo", "capex", "fcf", "fcf_avg3", "buyback",
                 "shares", "shares_p1", "shares_p3", "market_cap", "pb", "ebit_margin_med5", "q_rev", "q_ni",

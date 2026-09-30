@@ -61,6 +61,23 @@ def call(path, **params):
         return {"status": "ERR", "list": []}
 
 
+def main_idx():
+    """주요 재무지표 API(fnlttSinglIndx): DART 가 계산해 주는 지표에 EBITDA 관련이 있는지."""
+    if not KEY:
+        print("DART_API_KEY 없음")
+        return
+    cc = corp_codes()
+    for sc in ("005930", "348370", "321370", "005380"):
+        corp, name = cc[sc]
+        print(f"\n=== {name} {sc} 2025 사업보고서 주요 재무지표 ===", flush=True)
+        for code, label in (("M210000", "수익성"), ("M220000", "안정성"), ("M230000", "성장성"), ("M240000", "활동성")):
+            d = call("fnlttSinglIndx.json", corp_code=corp, bsns_year="2025", reprt_code="11011", idx_cl_code=code)
+            print(f"  [{label}] status {d.get('status')} {d.get('message', '')}")
+            for r in d.get("list") or []:
+                print(f"    {r.get('idx_nm')}: {r.get('idx_val')}")
+    print("\n시험 끝", flush=True)
+
+
 def main():
     if not KEY:
         print("DART_API_KEY 없음")

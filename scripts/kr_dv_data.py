@@ -252,6 +252,10 @@ def parse_annual(rows):
     if out["interest_exp"] is None:                 # 손익계산서에 이자비용이 없으면 현금흐름표 조정 항목
         r = find_one(rows, ("CF",), ["dart_AdjustmentsForInterestExpenses"], re.compile(r"^이자비용$"))
         out["interest_exp_cf"] = _cols_a(r) if r else None
+    # 현금흐름표의 '이자의 지급'(실제로 낸 이자). 금융비용은 환율·파생상품 손실이 섞여 과대하므로 이걸 먼저 쓴다
+    ip = find_all(rows, "CF", lambda x: (x.get("account_id") or "").startswith("ifrs-full_InterestPaid")
+                  or re.match(r"^이자(의)?\s*지급$", (x.get("account_nm") or "").strip()))
+    out["interest_paid"] = _sum3(ip)
     return out
 
 
@@ -478,11 +482,14 @@ def _build_fd(sc, name, sector, industry, price):
     gp = _gp(A)
     da = A.get("da")
     ebitda = _elem(A.get("op_income"), da, lambda o, d: o + d)     # 감가상각비를 알 때만
-    intr = A.get("interest_exp") or A.get("interest_exp_cf") or A.get("finance_costs")
-    fd["interest_exp_src"] = ("interest" if A.get("interest_exp") else "interest_cf" if A.get("interest_exp_cf")
-                              else "finance_costs" if A.get("finance_costs") else "none")
+    # 이자비용: 손익계산서 -> 현금흐름표 조정 항목 -> 이자 지급액 -> (마지막) 금융비용
+    src = [("interest", A.get("interest_exp")), ("interest_cf", A.get("interest_exp_cf")),
+           ("interest_paid", A.get("interest_paid")), ("finance_costs", A.get("finance_costs"))]
+    intr, fd["interest_exp_src"] = next(((c, n) for n, c in src if c), (None, "none"))
+    # 주의: 미국판은 fd 에 'ebit' 를 넣지 않아 이자보상배율이 정상화 EBIT(5년 중앙 마진 x 매출)로 계산된다.
+    #       같은 기준으로 비교하려고 여기서도 'ebit' 는 넣지 않는다(영업이익은 op_income 으로만 남긴다).
     for k, cols in (("gross_profit", gp), ("ebitda", ebitda), ("net_income", A.get("net_income")),
-                    ("interest_exp", intr), ("ebit", A.get("op_income"))):
+                    ("interest_exp", intr), ("op_income", A.get("op_income"))):
         fd[k] = _v(cols, 0)
         fd[k + "_p1"] = _v(cols, 1)
     eq = A.get("equity_owner") or A.get("equity_total")
