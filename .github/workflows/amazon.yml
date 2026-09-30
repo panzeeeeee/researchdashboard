@@ -78,6 +78,20 @@ jobs:
         run: python scripts/fetch_dart.py
         continue-on-error: true
 
+      - name: 한국 주요 일정
+        # 금통위·옵션 만기일·휴장일·미국 주요 지표 일정. 네트워크 없이 몇 초면 끝난다.
+        run: python scripts/fetch_kr_calendar.py
+        continue-on-error: true
+
+      - name: 한국 경제 정책 뉴스
+        # 분야별(금리·재정·부동산·산업·무역) 정책 기사와 부처 보도자료를 모으고 영향 업종·요약을 붙인다.
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_kr_policy.py
+        continue-on-error: true
+
       - name: 한국 경제 지표 (ECOS)
         # 기준금리·물가·성장·수출·심리·고용 20여 종과 해설. 가벼운 요청이라 몇십 초면 끝난다.
         env:

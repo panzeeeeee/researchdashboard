@@ -216,7 +216,27 @@ def probe_overview():
                 print(f"  [{nm} {code} {label}] 실패: {str(e)[:120]}")
 
 
+def check_syntax():
+    """scripts/ 아래 모든 파이썬 파일이 문법 오류 없이 읽히는지 (실행은 하지 않는다)."""
+    import py_compile
+    from pathlib import Path
+    step("문법 검사 (scripts/**/*.py)")
+    bad = 0
+    files = sorted(Path(__file__).resolve().parent.rglob("*.py"))
+    for f in files:
+        try:
+            py_compile.compile(str(f), doraise=True)
+        except py_compile.PyCompileError as e:
+            bad += 1
+            print(f"  ✗ {f.name}: {str(e)[:300]}")
+    print(f"  검사 {len(files)}개 · 오류 {bad}개" + (" -- 전부 통과" if not bad else ""))
+
+
 def main():
+    if env("PROBE_ONLY") == "syntax":
+        check_syntax()
+        print("\n시험 끝")
+        return
     if env("PROBE_ONLY") == "overview":
         probe_overview()
         print("\n시험 끝")

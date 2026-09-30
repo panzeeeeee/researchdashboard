@@ -49,6 +49,7 @@ jobs:
       - name: 한국 신고가 스크리너
         env:
           KR_FORCE: ${{ inputs.force }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}      # 신고가·신저가 카드의 기업개요 요약용
         run: python scripts/kr_breakout.py -w screener --limit ${{ inputs.limit || 0 }} ${{ inputs.refresh && '--full-refresh' || '' }}
 
       - name: 결과 커밋
@@ -56,6 +57,7 @@ jobs:
           git config user.name "dashboard-bot"
           git config user.email "bot@users.noreply.github.com"
           git add docs/data
+          if [ -e screener/kr_overview_cache.json ]; then git add screener/kr_overview_cache.json; fi
           git diff --staged --quiet && exit 0
           git commit -m "한국 스크리너 갱신 $(date -u +%Y-%m-%dT%H:%MZ)"
           git pull --rebase

@@ -28,7 +28,7 @@ import pandas as pd
 import requests
 
 import us_breakout as ub
-from common import DATA_DIR, env, now_kst, write_json
+from common import DATA_DIR, env, now_kst, write_json, write_json_compact
 
 KIND_URL = "https://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13"
 UA = {"User-Agent": "Mozilla/5.0 (compatible; research-dashboard/1.0)"}
@@ -374,7 +374,26 @@ def main():
     def trim(rows):
         return sorted(rows, key=lambda r: -(r["turnover_eok"] or 0))[:MAX_EXTREME_NAMES]
 
-    write_json(DATA_DIR / "kr_breakout.json", {
+    # 신고가·신저가 카드용: 종목마다 1년 차트와 기업개요(네이버 증권 소개글 요약)를 붙인다
+    tick_of = {v["코드"]: k for k, v in info.items()}
+
+    def with_charts(rows):
+        out = []
+        for row_ in trim(rows):
+            df = all_px.get(tick_of.get(row_["code"]))
+            if df is not None:
+                cc = df["Close"].dropna().tail(CHART_DAYS)
+                row_ = {**row_, "chart": [[str(d.date()), int(round(float(v)))] for d, v in cc.items()]}
+            out.append(row_)
+        return out
+    high_items, low_items = with_charts(highs), with_charts(lows)
+    try:
+        from kr_overview import attach_overviews
+        attach_overviews(high_items + low_items)
+    except Exception as e:      # 기업개요가 안 돼도 스크리너 결과는 그대로 저장한다
+        print(f"  기업개요 실패(나머지는 그대로 저장): {type(e).__name__}: {e}", file=sys.stderr)
+
+    write_json_compact(DATA_DIR / "kr_breakout.json", {
         "updated_at": now_kst().isoformat(),
         "asof": str(mkt_last),
         "funnel": funnel,
@@ -382,7 +401,7 @@ def main():
                      "gate_min": ub.CFG["GATE_MIN"], "near_miss": NEAR_MISS},
         "breakout": breakout,
         "extremes": {"n_high": len(highs), "n_low": len(lows),
-                     "high": trim(highs), "low": trim(lows), "sectors": sector_counts(highs, lows)[:25]},
+                     "high": high_items, "low": low_items, "sectors": sector_counts(highs, lows)[:25]},
     })
     print(f"\n저장 완료 (기준일 {mkt_last}, {time.time()-t0:.0f}초)")
     return 0
