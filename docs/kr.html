@@ -56,6 +56,8 @@ main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;b
 .dots span.y{background:var(--up);border-color:var(--up);color:#fff}
 .trg{display:inline-block;font-size:.7rem;font-weight:700;color:#fff;background:#2563eb;border-radius:4px;padding:0 .4rem;margin:.25rem .25rem 0 0}
 .why{font-size:.82rem;color:var(--ink-2);margin:.35rem 0 0;line-height:1.5}
+.nv{font-size:.72rem;font-weight:500;margin-left:.45rem;color:var(--accent);text-decoration:none;white-space:nowrap}
+.nv:hover{text-decoration:underline}
 .scard{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:.8rem .9rem;border-top:3px solid var(--sg,var(--accent))}
 .scard .nm{font-weight:700;font-size:1rem;line-height:1.35} .scard .sm{font-size:.76rem;color:var(--ink-3)}
 .scard .px{font-size:1.25rem;font-weight:700;font-variant-numeric:tabular-nums}
@@ -296,6 +298,9 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "
 const cls = v => v > 0 ? "up" : v < 0 ? "down" : "";
 const sgn = (v, d, unit) => v == null ? '<span class="miss">—</span>'
   : `<span class="${cls(v)}">${v > 0 ? "+" : ""}${v.toFixed(d)}${unit}</span>`;
+// 네이버 증권 종목 페이지 링크 (실시간에 가까운 시세는 여기서 본다)
+const nvUrl = code => `https://finance.naver.com/item/main.naver?code=${encodeURIComponent(code)}`;
+const nv = code => `<a class="nv" href="${nvUrl(code)}" target="_blank" rel="noopener" title="네이버 증권에서 시세 보기">증권↗</a>`;
 const num = (v, d = 2) => v == null ? "—" : v.toLocaleString("ko-KR", { minimumFractionDigits: d, maximumFractionDigits: d });
 
 // 작은 추세선. 한국은 상승=빨강 관례가 있지만 이 대시보드는 미국 화면과 같은 색(상승=초록)으로 맞춘다.
@@ -626,7 +631,7 @@ function renderDart(d) {
       + [3, 7, 30].map(n => `<button data-n="${n}" class="${n === days ? "on" : ""}">${n === 30 ? "한 달" : "최근 " + n + "일"}</button>`).join("");
     box.innerHTML = rows.length ? `<table><thead><tr><th>접수</th><th>종목</th><th>분류</th><th>공시</th></tr></thead>
       <tbody>${shown.map(x => `<tr><td class="miss" style="white-space:nowrap">${esc(x.date.slice(5).replace("-", "/"))}</td>
-        <td style="white-space:nowrap">${esc(x.corp)}<span class="sub">${esc(x.code)} · ${esc(x.market)}</span></td>
+        <td style="white-space:nowrap">${esc(x.corp)}${nv(x.code)}<span class="sub">${esc(x.code)} · ${esc(x.market)}</span></td>
         <td><span class="cat ${esc(x.category)}">${esc(x.category)}</span></td>
         <td><a class="dl" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></td></tr>`).join("")}</tbody></table>
       ${rows.length > shown.length ? `<button class="morebtn" id="dart-more">더 보기 (${rows.length - shown.length})</button>` : ""}`
@@ -664,7 +669,7 @@ function renderBreak(d) {
       ${rows.length ? `<div class="cards">${rows.map(x => `
         <div class="scard">
           <div class="nm">${esc(x.name)}${x.final ? '<span class="fin">최종</span>' : ""}</div>
-          <div class="sm">${esc(x.code)} · ${esc(x.market)} · ${esc(x.sector)}</div>
+          <div class="sm">${esc(x.code)} · ${esc(x.market)} · ${esc(x.sector)}${nv(x.code)}</div>
           <div class="px">${num(x.price, 0)}원 ${sgn(x.chg, 2, "%")}</div>
           ${spark((x.chart || []).map(p => ({ value: p[1] })))}
           <div class="st">점수 ${x.score} · 게이트 ${x.gates} · 낙폭 ${x.drawdown ?? "—"}% · 신고가 나이 ${x.high_age ?? "—"}일<br>
@@ -797,7 +802,7 @@ function renderDv(d) {
       ${rows.length ? `<div class="cards">${rows.map(r => `
         <div class="scard">
           <div class="nm">${esc(r.name)}${r.trigger_count ? '<span class="fin">트리거</span>' : ""}</div>
-          <div class="sm">${esc(r.code)} · ${esc(r.market)} · ${esc(r.industry || r.sector || "")}</div>
+          <div class="sm">${esc(r.code)} · ${esc(r.market)} · ${esc(r.industry || r.sector || "")}${nv(r.code)}</div>
           <div class="px">${num(r.price, 0)}원 <span class="miss" style="font-size:.78rem;font-weight:400">시총 ${r.mcap_eok == null ? "—" : num(r.mcap_eok, 0) + "억"}</span></div>
           ${spark((r.chart || []).map(p => ({ value: p[1] })))}
           <div class="st"><b>F-Score ${r.fscore ?? "—"}</b>${r.composite != null ? ` · 종합 ${r.composite}` : ""} · 3년 고점 대비 ${pct(r.dd_3y, 0)} · 200일선 아래 ${r.days_below ?? "—"}일<br>
@@ -833,7 +838,7 @@ function renderExtreme(d) {
   const tag = document.getElementById("extreme-tag");
   if (tag) tag.textContent = `코스피·코스닥 52주 · ${d.asof} 종가 · 거래대금 5억 원 이상만`;
   const chips = rows => rows.length ? `<div class="chips">${rows.map(r =>
-    `<span class="chip" title="${esc(r.sector)}">${esc(r.name)} ${sgn(r.chg, 1, "%")}</span>`).join("")}</div>` : '<p class="note">없음</p>';
+    `<a class="chip" href="${nvUrl(r.code)}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" title="${esc(r.sector)} · 네이버 증권에서 시세 보기">${esc(r.name)} ${sgn(r.chg, 1, "%")}</a>`).join("")}</div>` : '<p class="note">없음</p>';
   box.innerHTML = `
     <div class="grid">
       <div class="slot"><p class="cap">52주 신고가</p><p class="big up">${e.n_high}</p></div>
@@ -875,7 +880,7 @@ function renderBreadth(d) {
   const draw = () => {
     const src = level === "group" ? d.groups : d.sectors;
     const rows = src.filter(s => level === "group" || small || s.n >= 4).slice().sort((a, b) => (b[period] ?? -1e9) - (a[period] ?? -1e9));
-    const names = arr => arr.length ? arr.map(x => `${esc(x.name)} ${sgn(x.chg, 1, "%")}`).join(" · ") : "—";
+    const names = arr => arr.length ? arr.map(x => `<a href="${nvUrl(x.code)}" target="_blank" rel="noopener" style="color:inherit">${esc(x.name)}</a> ${sgn(x.chg, 1, "%")}`).join(" · ") : "—";
     box.innerHTML = `
       <div class="grid">${mcard("코스피", d.markets["코스피"])}${mcard("코스닥", d.markets["코스닥"])}</div>
       <div class="btns">${d.groups && d.groups.length ? `<button data-l="group" class="${level === "group" ? "on" : ""}">대분류(${d.groups.length})</button>
@@ -945,7 +950,7 @@ function renderEarn(d) {
       <div class="scroll"><table>
         <thead><tr><th>종목</th><th>기간</th><th class="r">매출<br>YoY</th><th class="r">영업이익<br>YoY</th><th class="r">순이익<br>YoY</th></tr></thead>
         <tbody>${rows.map(x => { const n = x.numbers; return `<tr>
-          <td><span style="white-space:nowrap;font-weight:600">${esc(x.corp)}</span><a class="dl" style="font-size:.78rem;margin-left:.45rem;color:var(--accent)" href="${esc(x.url)}" target="_blank" rel="noopener">원문</a>
+          <td><span style="white-space:nowrap;font-weight:600">${esc(x.corp)}</span><a class="dl" style="font-size:.78rem;margin-left:.45rem;color:var(--accent)" href="${esc(x.url)}" target="_blank" rel="noopener">원문</a>${nv(x.code)}
             <span class="small">${esc(x.code)} · ${esc(x.market)} · ${esc(x.date.slice(5).replace("-", "/"))}</span>
             ${n && n.summary ? `<p class="esum">${esc(n.summary)}</p>` : ""}</td>
           <td style="white-space:nowrap">${n ? esc(n.period) + `<span class="small">${esc(n.basis)}</span>` : '<span class="miss">추출 전</span>'}</td>
