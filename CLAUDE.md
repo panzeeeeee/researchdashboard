@@ -154,6 +154,10 @@ SEC 8-K는 미국 정부 공시라 원문 보관 가능.
 amazon.yml에 단계 추가, Secret `ECOS_API_KEY` 등록됨. 업종은 KODEX 업종 ETF로 대용(KRX 업종지수는 야후에 없음).
 국고채는 ECOS 통계표 817Y002에서 항목 이름("국고채(3년)")으로 코드를 찾는다. 머리말 미국/한국 탭은 index.html·kr.html 양쪽에 있다.
 
+(진행 중) 한국 탭 2단계 뉴스: `scripts/fetch_kr_news.py` → `docs/data/kr_news.json` → kr.html "주요 뉴스".
+`fetch_news.gather`(네이버 API 우선)와 `fetch_hot_news.cluster_by_event(topic=...)`를 재사용. amazon.yml에서 kr_market 단계 뒤에 돈다.
+한국 지수·업종은 장 마감 전에 돌면 오늘 봉을 빼고 종가만 쓴다(15:40 KST 이후 포함).
+
 1. 한국 탭: 머리말에 미국/한국 탭, 한국은 `kr.html` 별도. 순서 = 코스피·코스닥 지수·업종 + 국고채
    → 한국 뉴스 → DART 공시·잠정실적 → 한국 스크리너(us_breakout.py 로직, 종목 목록만 코스피·코스닥)
    → 수급. KRX는 해외 서버 차단 우려로 야후·DART·ECOS 등 공식 API 위주

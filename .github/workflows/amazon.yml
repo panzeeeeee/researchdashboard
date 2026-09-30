@@ -61,6 +61,15 @@ jobs:
         run: python scripts/fetch_kr_market.py
         continue-on-error: true
 
+      - name: 한국 주요 뉴스
+        # 시장 전체 헤드라인을 모아 사건별로 묶고 해설을 붙인다. 지수·업종 단계 뒤에 돌아야 한다.
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_kr_news.py
+        continue-on-error: true
+
       - name: 결과 커밋
         run: |
           git config user.name "dashboard-bot"

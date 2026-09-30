@@ -66,8 +66,9 @@ def parse_event_notes(text):
     return notes
 
 
-def cluster_by_event(items, api_key):
+def cluster_by_event(items, api_key, topic="미국 시장"):
     """헤드라인을 같은 사건끼리 묶는다. Gemini에게 번호를 그룹으로 나누게 한다.
+    topic 은 프롬프트에 들어가는 말 -- 한국 뉴스는 "한국 시장"으로 부른다.
 
     실패하거나 키가 없으면 빈 리스트를 돌려준다 -- 화면이 원본 목록으로 폴백한다.
     각 클러스터: {title(대표 제목), items(그 사건 기사들)}.
@@ -77,7 +78,7 @@ def cluster_by_event(items, api_key):
 
     numbered = "\n".join(f"{i+1}. {it['title']}" for i, it in enumerate(items))
     prompt = (
-        "다음은 미국 시장 뉴스 헤드라인 목록이다. 같은 사건·주제를 다루는 것끼리 "
+        f"다음은 {topic} 뉴스 헤드라인 목록이다. 같은 사건·주제를 다루는 것끼리 "
         "묶어라. 서로 다른 사건은 절대 한 그룹에 넣지 마라 (억지로 묶는 것보다 "
         "따로 두는 게 낫다). 각 그룹을 한 줄에, 다른 말 없이 이 형식으로만 출력해라:\n"
         "그룹대표제목 | 1,4,9\n"

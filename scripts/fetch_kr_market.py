@@ -46,11 +46,18 @@ def from_yahoo(tickers, period="1y"):
     except Exception as e:
         print(f"야후 실패: {e}", file=sys.stderr)
         return out
+    # 한국 장(15:30 마감)이 끝나기 전이면 오늘 봉은 장중 값이라 뺀다 -- 항상 종가만 쓴다
+    now = now_kst()
+    today = str(now.date())
+    closed = now.hour * 60 + now.minute >= 15 * 60 + 40
     for t in tickers:
         try:
             s = df[t]["Close"].dropna()
-            if len(s) >= 2:
-                out[t] = [(str(i.date()), float(v)) for i, v in s.items()]
+            rows = [(str(i.date()), float(v)) for i, v in s.items()]
+            if not closed and rows and rows[-1][0] == today:
+                rows = rows[:-1]
+            if len(rows) >= 2:
+                out[t] = rows
         except Exception:
             pass
     return out

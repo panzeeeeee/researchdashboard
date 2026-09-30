@@ -52,6 +52,19 @@ td{padding:.6rem .6rem;border-bottom:1px solid var(--rule)}
 td.r,th.r{text-align:right}
 .scroll{overflow-x:auto}
 .stale{opacity:.6}
+.callout{background:var(--tintA);border:1px solid var(--rule);border-radius:12px;padding:1rem 1.25rem;margin-bottom:1rem}
+.callout .sub{font-size:.86rem;font-weight:700;color:var(--accent);margin:.2rem 0 .1rem}
+.callout .sum{margin:0 0 .6rem;font-size:.95rem;color:var(--ink-2)}
+.headline{padding:.2rem 0 .9rem;border-bottom:2px solid var(--rule);margin-bottom:.3rem}
+.headline a{font-size:1.08rem;font-weight:700;color:var(--ink);text-decoration:none}
+.headline .sum{margin:.3rem 0 .2rem;font-size:.9rem;color:var(--ink-2)}
+.newsrow{padding:.55rem 0;border-bottom:1px solid var(--rule)}
+.newsrow a{color:var(--ink);text-decoration:none;font-size:.95rem}
+.newsrow a:hover,.headline a:hover{color:var(--accent)}
+.src{display:block;font-size:.78rem;color:var(--ink-3)}
+.badge-hot{display:inline-block;font-size:.7rem;font-weight:700;color:#fff;background:var(--accent);border-radius:4px;padding:0 .4rem;margin-right:.4rem}
+.hidden{display:none}
+.morebtn{margin-top:.7rem;background:none;border:1px solid var(--rule);color:var(--ink-2);border-radius:999px;padding:.3rem 1rem;font-size:.85rem;cursor:pointer;font-family:inherit}
 </style>
 </head>
 <body>
@@ -66,8 +79,12 @@ td.r,th.r{text-align:right}
   <span class="meta" id="stamp">불러오는 중</span>
 </header>
 
-<h2>지수<span class="tagline">전 거래일 종가 기준 · 작은 선은 최근 1년</span></h2>
+<h2>지수<span class="tagline">종가 기준 · 작은 선은 최근 1년</span></h2>
 <div class="cards" id="indexes"><p class="note">불러오는 중입니다.</p></div>
+
+<h2>주요 뉴스<span class="tagline" id="news-tag">한국 증시 헤드라인</span></h2>
+<div id="news-recap"></div>
+<div class="box" id="news-box"><p class="note">불러오는 중입니다.</p></div>
 
 <h2>업종 온도<span class="tagline">KODEX 업종 ETF 기준 · 업종지수의 대용입니다</span></h2>
 <div class="box"><div class="scroll" id="sectors"><p class="note">불러오는 중입니다.</p></div></div>
@@ -77,7 +94,7 @@ td.r,th.r{text-align:right}
 <p class="note" id="rates-note"></p>
 
 <p class="note" style="margin-top:2rem">실시간 시세가 아니라 아침 7시 반·저녁 6시에 갱신한 값입니다.
-업종은 ETF 가격이라 실제 KRX 업종지수와 조금 다를 수 있습니다. 뉴스·공시·스크리너·수급은 다음 단계에서 붙입니다.</p>
+업종은 ETF 가격이라 실제 KRX 업종지수와 조금 다를 수 있습니다. 공시·스크리너·수급은 다음 단계에서 붙입니다.</p>
 </div>
 
 <script>
@@ -131,7 +148,47 @@ function render(d) {
   document.getElementById("rates-note").textContent = d.rates_note || "";
 }
 
+const ago = iso => {
+  if (!iso) return "";
+  const h = (Date.now() - new Date(iso)) / 36e5;
+  return h < 1 ? "방금" : h < 24 ? Math.floor(h) + "시간 전" : Math.floor(h / 24) + "일 전";
+};
+const SHOW = 8;
+
+function renderNews(d) {
+  const box = document.getElementById("news-box"), recap = document.getElementById("news-recap");
+  if (!d) {
+    box.innerHTML = '<p class="note">kr_news.json 이 아직 없습니다. Actions 탭에서 "아마존·수출입·배너"를 실행하세요.</p>';
+    return;
+  }
+  const tag = document.getElementById("news-tag");
+  if (tag && d.updated_at) tag.textContent = `한국 증시 헤드라인 · ${d.updated_at.slice(5, 16).replace("T", " ")} 갱신`;
+  const en = d.event_notes || {};
+  recap.innerHTML = (en.why || en.watch) ? `<div class="callout">
+    ${en.why ? `<p class="sub">오늘 왜 이렇게 움직였나</p><p class="sum">${esc(en.why)}</p>` : ""}
+    ${en.watch ? `<p class="sub">앞으로 지켜볼 것</p><p class="sum">${esc(en.watch)}</p>` : ""}
+    <p class="miss">해설은 자동 생성이며 검증되지 않았습니다 · 판단 근거가 아닌 참고용입니다</p></div>` : "";
+
+  // 사건별 묶음이 있으면 그걸로, 없으면 기사 목록 그대로
+  const groups = (d.clusters || []).length
+    ? d.clusters.slice(0, 15).map(c => ({ title: c.title, count: c.count, srcs: (c.sources || []).join(", "), rep: c.items[0] }))
+    : (d.items || []).slice(0, 20).map(it => ({ title: it.title, count: 1, srcs: it.source, rep: it }));
+  if (!groups.length) { box.innerHTML = '<p class="note">모은 뉴스가 없습니다.</p>'; return; }
+  box.innerHTML = groups.map((g, i) => {
+    const badge = g.count >= 2 ? `<span class="badge-hot">${g.count}곳</span>` : "";
+    const link = `<a href="${esc(g.rep.url)}" target="_blank" rel="noopener">${badge}${esc(g.title)}</a>`;
+    const meta = `<span class="src">${esc(g.srcs)} · ${ago(g.rep.published)}</span>`;
+    if (i === 0) return `<div class="headline">${link}${g.rep.summary ? `<p class="sum">${esc(g.rep.summary)}</p>` : ""}${meta}</div>`;
+    return `<div class="newsrow${i < SHOW ? "" : " extra hidden"}">${link}${meta}</div>`;
+  }).join("") + (groups.length > SHOW ? `<button class="morebtn" id="more">더 보기 (${groups.length - SHOW})</button>` : "");
+  const more = document.getElementById("more");
+  if (more) more.addEventListener("click", () => {
+    box.querySelectorAll(".extra").forEach(e => e.classList.remove("hidden")); more.remove();
+  });
+}
+
 fetch("data/kr_market.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(render);
+fetch("data/kr_news.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderNews);
 </script>
 </body>
 </html>
