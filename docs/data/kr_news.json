@@ -1,31 +1,55 @@
 {
- "updated_at": "2026-09-30T19:06:17.937788+09:00",
+ "updated_at": "2026-10-01T00:40:54.714651+09:00",
  "event_notes": {
-  "why": "미국 국채금리 5%대 고공행진과 주담대 금리의 3년 9개월 만에 최고치 경신 부담으로 투자심리가 위축되면서 코스피는 사흘 연속 하락하고 은행주가 3.11% 급락했다. 반면 코스닥은 정부의 로봇 20만대 보급 정책에 따른 로보틱스 관심과 월말 반도체 소재주 추격 매수세 유입 등의 영향으로 상승 마감한 것으로 보인다.",
-  "watch": "글로벌 금리 상승세가 한국은행의 추가 금리 인상 가능성과 대출금리에 미치는 영향이 지수 향방을 가를 주요 변수가 될 것으로 보인다. 또한 수출 호조에도 불구하고 생산·소비·투자 트리플 감소라는 국내 실물경제 지표 부진이 증시에 어떤 파장을 미칠지 주시해야 한다."
+  "why": "미국 국채금리 5% 돌파와 주담대 금리 상승 등 고금리 장기화 우려로 은행주가 3.11% 급락하고 코스피는 외국인 매도세에 3거래일 연속 하락했다. 반면 코스닥은 기관과 개인 매수에 힘입어 소폭 상승했고, 주성엔지니어링과 이오테크닉스 등 반도체 소부장 종목들이 삼전닉스 형님을 따라간다는 분위기 속에 반도체 업종이 1.09% 상승했다. 고금리 폭풍 속에서도 AI 투자 기대감이 유지되면서 관련 종목들이 선방한 영향으로 보인다.",
+  "watch": "증시 경계심을 키우고 있는 미국의 주요 물가지수 발표와 마이크론의 실적 발표 결과가 향후 지수 방향성을 가를 핵심 지표가 될 것이다."
  },
  "clusters": [
   {
-   "title": "미 국채 금리 급등과 외국인 매도에 따른 코스피 하락",
+   "title": "미국 금리 및 마이크론 실적 앞둔 코스피 하락",
    "sources": [
-    "biz.sbs.co.kr",
-    "delighti.co.kr",
-    "hankyung.com",
-    "mt.co.kr",
-    "news.bbsi.co.kr",
+    "betanews.net",
+    "bigtanews.co.kr",
+    "cbci.co.kr",
+    "econotelling.com",
+    "mediafine.co.kr",
     "news.kbs.co.kr",
-    "newstopkorea.com",
+    "womentimes.co.kr",
     "yonhapnewstv.co.kr"
    ],
    "count": 8,
    "items": [
+    {
+     "title": "코스피, 외국인 매도에 3거래일 연속 하락...6,838선 마감",
+     "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=91315",
+     "source": "mediafine.co.kr",
+     "published": "2026-09-30T21:58:00+09:00",
+     "dup_count": 3,
+     "summary": "외국인의 대규모 순매도로 코스피가 3거래일 연속 하락하며 6,838선에 마감했다."
+    },
+    {
+     "title": "[증시 오늘] 코스피 6800 턱걸이",
+     "url": "https://www.bigtanews.co.kr/article/view/big202609300024",
+     "source": "bigtanews.co.kr",
+     "published": "2026-09-30T20:32:00+09:00",
+     "dup_count": 3,
+     "summary": "외국인과 기관의 거센 매도세로 코스피가 6,800선 턱걸이로 마감했다."
+    },
+    {
+     "title": "[증시 시황] \"장중 7,000선 터치 후 와르르\"...코스피, 美 금리·마이크론...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=611312",
+     "source": "cbci.co.kr",
+     "published": "2026-10-01T00:00:00+09:00",
+     "dup_count": 2,
+     "summary": "외국인과 기관의 순매도로 코스피가 장중 7,000선을 터치한 뒤 하락 전환했다."
+    },
     {
      "title": "코스피, 사흘 연속 하락...미 국채금리 급등 부담",
      "url": "http://www.yonhapnewstv.co.kr/news/MYH20260930184608j55",
      "source": "yonhapnewstv.co.kr",
      "published": "2026-09-30T18:46:00+09:00",
      "dup_count": 2,
-     "summary": "코스피가 미 국채금리 급등 부담을 이기지 못하고 사흘 연속 하락했다."
+     "summary": "미 국채금리 급등 부담으로 코스피가 등락 끝에 하락 마감했다."
     },
     {
      "title": "코스피, 사흘 연속 하락...코스닥은 상승 마감",
@@ -33,253 +57,362 @@
      "source": "news.kbs.co.kr",
      "published": "2026-09-30T18:46:00+09:00",
      "dup_count": 2,
-     "summary": "코스피는 외국인 매도세에 3거래일 연속 하락했으나 코스닥은 상승 마감했다."
+     "summary": "코스피는 외국인 매도에 3거래일 연속 하락했고 코스닥은 상승 마감했다."
     },
     {
-     "title": "코스피, 美 국채금리 급등 부담으로 0.48% 하락",
-     "url": "https://www.delighti.co.kr/news/articleView.html?idxno=122630",
-     "source": "delighti.co.kr",
-     "published": "2026-09-30T18:18:00+09:00",
-     "dup_count": 2,
-     "summary": "코스피는 미국 국채금리 급등 부담으로 장중 하락 전환해 0.48% 내렸다."
-    },
-    {
-     "title": "외국인 '팔자' 행렬에 코스피 3거래일째 하락",
-     "url": "https://www.hankyung.com/article/2026093055131",
-     "source": "hankyung.com",
-     "published": "2026-09-30T17:56:00+09:00",
-     "dup_count": 2,
-     "summary": "외국인의 지속적인 매도 행렬로 코스피가 3거래일째 하락세를 이어갔다."
-    },
-    {
-     "title": "코스피, '미 금리 악재'에 0.4%↓...사흘 연속 하락",
-     "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4109570",
-     "source": "news.bbsi.co.kr",
-     "published": "2026-09-30T17:54:00+09:00",
-     "dup_count": 2,
-     "summary": "코스피는 미 금리 악재로 0.4% 하락했고, 원·달러 환율은 1352.8원에 마감했다."
-    },
-    {
-     "title": "亞증시 혼조...AI 훈풍 日 1.94% 급등·美 국채금리에 韓 0.48%↓",
-     "url": "https://www.newstopkorea.com/news/articleView.html?idxno=47942",
-     "source": "newstopkorea.com",
-     "published": "2026-09-30T17:52:00+09:00",
-     "dup_count": 2,
-     "summary": "아시아 증시가 혼조세를 보인 가운데 코스피는 미 국채금리 여파로 0.48% 하락했다."
-    },
-    {
-     "title": "'전강후약' 코스피 사흘째 내리막...외국인 나흘째 '팔자'",
-     "url": "https://biz.sbs.co.kr/article_hub/20000337627?division=NAVER",
-     "source": "biz.sbs.co.kr",
-     "published": "2026-09-30T18:10:00+09:00",
+     "title": "코스피, 약보합마감...美 물가지수·마이크론 실적 발표 앞두고 경계심...",
+     "url": "https://www.betanews.net/article/view/beta202609300090",
+     "source": "betanews.net",
+     "published": "2026-09-30T22:36:00+09:00",
      "dup_count": 1,
-     "summary": "코스피는 미 국채금리 상승 부담으로 외국인 매도세가 이어지며 하락했다."
+     "summary": "미국 물가지수와 마이크론 실적 발표를 앞둔 경계감에 코스피가 약보합을 기록했다."
     },
     {
-     "title": "美국채금리 한파에 외인·기관 3조 이탈...\"반도체 주목\"",
-     "url": "https://www.mt.co.kr/stock/2026/09/30/2026093017331564801",
-     "source": "mt.co.kr",
-     "published": "2026-09-30T17:52:00+09:00",
-     "dup_count": 1,
-     "summary": "30일 코스피 지수는 전일 대비 32.77포인트(0.48%) 내린 6838.04에 마감했다. 이날 코스피는 72.66포인트(1.06%) 오른 6943.47로 출발"
+     "title": "또 뒷심 떨어진 코스피",
+     "url": "http://www.econotelling.com/news/articleView.html?idxno=21384",
+     "source": "econotelling.com",
+     "published": "2026-09-30T20:34:00+09:00",
+     "dup_count": 0,
+     "summary": "외국인과 기관의 2조원대 순매도 공세로 코스피가 하락 압력을 받았다."
+    },
+    {
+     "title": "사이드카도 멈춘 9월 코스피...7000선 회복 뒤 다시 6800선대",
+     "url": "https://www.womentimes.co.kr/news/articleView.html?idxno=106641",
+     "source": "womentimes.co.kr",
+     "published": "2026-09-30T19:44:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피는 7,000선을 회복하려 했으나 외국인 매도로 다시 6,800선대로 내려앉았다."
     }
    ]
   },
   {
-   "title": "주택담보대출 금리 상승 및 대출 부담",
+   "title": "주택담보대출 및 가계대출 금리 상승",
    "sources": [
-    "asiatoday.co.kr",
-    "dailian.co.kr",
-    "hankyung.com",
-    "inews24.com",
-    "sedaily.com",
-    "weeklytoday.com",
+    "businesspost.co.kr",
+    "cnbnews.com",
+    "donga.com",
+    "kwnews.co.kr",
+    "segye.com",
     "yonhapnewstv.co.kr"
    ],
-   "count": 7,
+   "count": 6,
    "items": [
+    {
+     "title": "8월 은행 주담대 금리 4.66%로 4개월 연속 상승, 3년9개월 만에 최고 수...",
+     "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448355",
+     "source": "businesspost.co.kr",
+     "published": "2026-09-30T20:38:00+09:00",
+     "dup_count": 1,
+     "summary": "8월 은행권 주담대 금리가 연 4.66%로 오르며 3년 9개월 만에 최고치를 기록했다."
+    },
+    {
+     "title": "주담대 금리 3년 9개월만에 최고치... “7~8%대까지 오를 수도”",
+     "url": "https://www.donga.com/news/Economy/article/all/20260930/134763008/2",
+     "source": "donga.com",
+     "published": "2026-10-01T00:31:00+09:00",
+     "dup_count": 0,
+     "summary": "한국은행 기준금리 인상 여파로 8월 주담대 금리가 연 4.66%를 기록했다."
+    },
+    {
+     "title": "기준금리·대출금리 상승에도 가계대출 증가세 여전",
+     "url": "https://www.kwnews.co.kr/article/20260930501371",
+     "source": "kwnews.co.kr",
+     "published": "2026-10-01T00:02:00+09:00",
+     "dup_count": 0,
+     "summary": "대출금리 상승세에도 불구하고 강원지역 예금은행의 가계대출은 계속 증가했다."
+    },
+    {
+     "title": "[이슈추적] 주담대-신용대출 동반 상승...가계대출 평균금리 4.76%",
+     "url": "https://www.cnbnews.com/news/articleView.html?idxno=1017720",
+     "source": "cnbnews.com",
+     "published": "2026-09-30T22:32:00+09:00",
+     "dup_count": 0,
+     "summary": "기준금리가 두 달 사이 0.50%포인트 오르며 가계대출 평균금리도 상승했다."
+    },
+    {
+     "title": "주담대 금리 4.66% 넉달째 상승... 45개월 만에 최고",
+     "url": "https://www.segye.com/newsView/20260930516514?OutUrl=naver",
+     "source": "segye.com",
+     "published": "2026-09-30T20:02:00+09:00",
+     "dup_count": 0,
+     "summary": "8월 주담대 가중평균 금리가 연 4.66%를 기록하며 45개월 만에 가장 높았다."
+    },
     {
      "title": "주담대 금리 연 4.66%로 '껑충'...3년 9개월 만에 최고",
      "url": "http://www.yonhapnewstv.co.kr/news/MYH20260930185002OWV",
      "source": "yonhapnewstv.co.kr",
      "published": "2026-09-30T18:50:00+09:00",
      "dup_count": 0,
-     "summary": "<김성준 / 한국은행 금융통계팀장> \"변동형 금리가 고정형 금리보다 주택담보대출 금리가 더 많이 올랐어요.... 36%p로, 전체적인 가계금리 상승에 큰 폭을 차"
-    },
-    {
-     "title": "계속 오르는 대출금리 '영끌족' 비명⋯서울 부동산 경매 45% ↑",
-     "url": "http://www.inews24.com/view/2010554",
-     "source": "inews24.com",
-     "published": "2026-09-30T18:17:00+09:00",
-     "dup_count": 0,
-     "summary": "대출금리가 계속 오르는 가운데 서울 부동산 경매 신청 건수가 45% 증가했다."
-    },
-    {
-     "title": "'코로나 긴축' 닮아가는 글로벌 금리...韓도 年3.5% 갈까",
-     "url": "https://www.hankyung.com/article/2026093056651",
-     "source": "hankyung.com",
-     "published": "2026-09-30T18:12:00+09:00",
-     "dup_count": 0,
-     "summary": "글로벌 긴축 기조 속에 한국은행의 기준금리 추가 인상 전망이 나오고 있다."
-    },
-    {
-     "title": "美국채금리 5%대 고공행진...한은 금리인상 가능성 '촉각'",
-     "url": "https://www.dailian.co.kr/news/view/1696338/?sc=Naver",
-     "source": "dailian.co.kr",
-     "published": "2026-09-30T18:11:00+09:00",
-     "dup_count": 0,
-     "summary": "미국 국채금리가 연 5%대를 기록하며 한은의 추가 금리인상 가능성에 촉각이 쏠렸다."
-    },
-    {
-     "title": "美 30년물 국채금리 쇼크... 韓 국채 부담·亞 자금유출 경고등",
-     "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261001010010923",
-     "source": "asiatoday.co.kr",
-     "published": "2026-09-30T18:06:00+09:00",
-     "dup_count": 0,
-     "summary": "38달러(12만1351원)에 마감했다. 그러나 파라마운트 스카이댄스가 워너브러더스 디스커버리 인수를 위해... 코스피는 29일 전장보다 18.93포인트(0.27%"
-    },
-    {
-     "title": "은행 예금 80%가 법인 몫...만기까지 짧아져 대출금리 더 뛴다",
-     "url": "https://www.sedaily.com/article/20096770?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-09-30T18:06:00+09:00",
-     "dup_count": 0,
-     "summary": "은행 예금의 대부분이 법인 몫이고 만기가 짧아져 대출금리 상승이 우려된다."
-    },
-    {
-     "title": "[위클리오늘] 8월 은행 대출금리 4.40%로 0.13%p↑···신규 예대금리차...",
-     "url": "http://www.weeklytoday.com/news/articleView.html?idxno=796447",
-     "source": "weeklytoday.com",
-     "published": "2026-09-30T17:56:00+09:00",
-     "dup_count": 0,
-     "summary": "8월 예금은행의 대출금리가 연 4.40%로 오르며 예대금리차가 벌어졌다."
+     "summary": "시장금리 상승에 따라 변동형 주담대 금리가 큰 폭으로 오르며 가계 부담이 커졌다."
     }
    ]
   },
   {
-   "title": "환율 및 외환시장 동향",
-   "sources": [
-    "dailypop.kr",
-    "news.einfomax.co.kr",
-    "tokenpost.kr"
-   ],
-   "count": 3,
-   "items": [
-    {
-     "title": "[외환-마감] 양방향 수급에 1,350원대 횡보...3.90원↓",
-     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437190",
-     "source": "news.einfomax.co.kr",
-     "published": "2026-09-30T18:00:00+09:00",
-     "dup_count": 2,
-     "summary": "서울 외환시장에서 원·달러 환율은 양방향 수급 속 1,350원대에서 횡보했다."
-    },
-    {
-     "title": "[오늘의 원화] 달러-원 1,352.8원...3.9원 내려",
-     "url": "https://www.tokenpost.kr/news/insights/416409",
-     "source": "tokenpost.kr",
-     "published": "2026-09-30T18:12:00+09:00",
-     "dup_count": 0,
-     "summary": "서울 외환시장에서 원·달러 환율은 3.9원 내린 1,352.8원에 마감했다."
-    },
-    {
-     "title": "[매일 금리·환율 브리핑] 9월 30일, 국고채 5년 금리 하락",
-     "url": "http://www.dailypop.kr/news/articleView.html?idxno=103008",
-     "source": "dailypop.kr",
-     "published": "2026-09-30T18:06:00+09:00",
-     "dup_count": 0,
-     "summary": "9월 30일 기준 국고채 5년 금리가 전일 대비 7bp 하락한 4.203%를 기록했다."
-    }
-   ]
-  },
-  {
-   "title": "삼성전자·SK하이닉스 등 반도체주 주가 동향 및 외국인 매도",
-   "sources": [
-    "khan.co.kr",
-    "kjdaily.com",
-    "sedaily.com"
-   ],
-   "count": 3,
-   "items": [
-    {
-     "title": "삼성전자 1.47%↓·SK하이닉스 0.62%↑...주식 혼조 마감",
-     "url": "http://www.kjdaily.com/article.php?aid=1790758287687960276",
-     "source": "kjdaily.com",
-     "published": "2026-09-30T17:52:00+09:00",
-     "dup_count": 3,
-     "summary": "삼성전자는 하락하고 SK하이닉스는 상승한 가운데 코스피는 혼조세로 마감했다."
-    },
-    {
-     "title": "삼전·닉스 이제 누가 사려나···자사주 매입, 10월 초중순 종료",
-     "url": "https://www.khan.co.kr/article/202609301800001",
-     "source": "khan.co.kr",
-     "published": "2026-09-30T18:00:00+09:00",
-     "dup_count": 0,
-     "summary": "삼성전자와 SK하이닉스의 자사주 매입이 10월 초중순 종료를 앞두고 있다."
-    },
-    {
-     "title": "9월에도 21.5조 팔아치운 외인...삼전닉스부터 던졌다",
-     "url": "https://www.sedaily.com/article/20096754?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-09-30T17:57:00+09:00",
-     "dup_count": 0,
-     "summary": "외국인이 9월에도 삼성전자와 SK하이닉스 위주로 21조 원 넘게 팔아치웠다."
-    }
-   ]
-  },
-  {
-   "title": "2차 국민성장펀드(국민참여성장펀드) 판매",
-   "sources": [
-    "news1.kr",
-    "sedaily.com"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "\"1차 때와는 딴판\"...2차 국민성장펀드 증권사 '완판', 은행은 '썰렁'(종...",
-     "url": "https://www.news1.kr/finance/general-finance/6306481",
-     "source": "news1.kr",
-     "published": "2026-09-30T18:13:00+09:00",
-     "dup_count": 0,
-     "summary": "2차 국민성장펀드가 증권사에서 완판됐으나 은행 판매는 썰렁했다."
-    },
-    {
-     "title": "‘6000억 모집’ 2차 국민참여성장펀드, 첫날 3분의1 넘게 팔렸다",
-     "url": "https://www.sedaily.com/article/20096748?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-09-30T17:53:00+09:00",
-     "dup_count": 0,
-     "summary": "모집 금액의 30% 이상을 비상장사와 코스닥 기술특례상장사에 투입한다. 투자 금액의 최대 40%까지... 앞서 올 5월 1차 펀드 출시 때는 5대 은행 판매 물량"
-    }
-   ]
-  },
-  {
-   "title": "증시 반등 및 실적 관련 전망",
+   "title": "반도체 소부장 및 관련 종목 강세",
    "sources": [
     "etoday.co.kr",
-    "hankyung.com"
+    "ggilbo.com",
+    "kjdaily.com",
+    "munhwa.com",
+    "wowtv.co.kr"
    ],
-   "count": 2,
+   "count": 6,
    "items": [
     {
-     "title": "돌고 돌아 결국 실적...증시 반등 분수령 되나",
-     "url": "https://www.etoday.co.kr/news/view/2631031",
-     "source": "etoday.co.kr",
-     "published": "2026-09-30T18:02:00+09:00",
-     "dup_count": 2,
-     "summary": "코스피가 혼조세를 보인 가운데 증시가 반등의 분수렐을 맞이할지 주목된다."
+     "title": "동일스틸럭스·윈팩·KBI동양철관·빅웨이브로보틱스 29%대↑",
+     "url": "http://www.kjdaily.com/article.php?aid=1790772560688036276",
+     "source": "kjdaily.com",
+     "published": "2026-09-30T21:50:00+09:00",
+     "dup_count": 3,
+     "summary": "코스닥 시장을 중심으로 다수의 종목이 강세를 보이며 상승 마감했다."
     },
     {
-     "title": "고금리·고유가에도 '증시 강세론'으로 돌아선 월가",
-     "url": "https://www.hankyung.com/article/2026093056331",
-     "source": "hankyung.com",
-     "published": "2026-09-30T18:03:00+09:00",
+     "title": "[주식마감] SK하이닉스 D램 후공정 외주 확대 기대감에 윈팩 상한가... ...",
+     "url": "https://www.ggilbo.com/news/articleView.html?idxno=1184595",
+     "source": "ggilbo.com",
+     "published": "2026-09-30T19:40:00+09:00",
+     "dup_count": 2,
+     "summary": "이날 코스피는 32.77포인트(0.48%) 내린 6,838.04로 마감했다. 지수는 72.66p(1.06%) 오른 6,943.47로 개장해 한때 1.38% 오르며"
+    },
+    {
+     "title": "SK하이닉스·삼성전자 거래대금 10조3천억원",
+     "url": "http://www.kjdaily.com/article.php?aid=1790769923688037276",
+     "source": "kjdaily.com",
+     "published": "2026-09-30T21:06:00+09:00",
+     "dup_count": 1,
+     "summary": "SK하이닉스와 삼성전자가 국내 증시에서 막대한 거래대금을 기록했다."
+    },
+    {
+     "title": "D램 값 또 최고치...코스피 잠잠한데 삼전·닉스 또 갈까?",
+     "url": "https://www.munhwa.com/article/11620629?ref=naver",
+     "source": "munhwa.com",
+     "published": "2026-09-30T20:20:00+09:00",
+     "dup_count": 1,
+     "summary": "D램 가격 최고치 경신 속에 SK하이닉스 등 반도체 주가의 움직임이 주목받고 있다."
+    },
+    {
+     "title": "\"저희도 삼전닉스 형님 따라 갑니다\"...시총 판 흔든 소부장 아우들",
+     "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609300201&t=NN",
+     "source": "wowtv.co.kr",
+     "published": "2026-09-30T21:45:00+09:00",
      "dup_count": 0,
-     "summary": "고금리·고유가 속에서도 월가가 증시 강세론으로 돌아서 주목을 받고 있다."
+     "summary": "마이크론 실적 발표와 삼성전자 실적 예고에 반도체주 투자 심리가 주목받고 있다."
+    },
+    {
+     "title": "장비주 20% 뛸 때 소재주 16%...월말 추격 빨라진 반도체 소재주",
+     "url": "https://www.etoday.co.kr/news/view/2631047",
+     "source": "etoday.co.kr",
+     "published": "2026-09-30T18:32:00+09:00",
+     "dup_count": 0,
+     "summary": "KRX 반도체 지수가 상승세를 보이며 반도체 소재·장비주에 매수세가 몰렸다."
     }
    ]
   },
   {
-   "title": "정부의 로봇 보급 정책과 관련 테마",
+   "title": "주요 기업 공시",
+   "sources": [
+    "kdpress.co.kr"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "[주요공시] 피델릭스, 씨싸이트, 국일신동, 제일기획, 신도기연, 우리기...",
+     "url": "https://www.kdpress.co.kr/news/articleView.html?idxno=208979",
+     "source": "kdpress.co.kr",
+     "published": "2026-10-01T00:06:00+09:00",
+     "dup_count": 3,
+     "summary": "미국 국채금리 상승과 외국인 매도세로 30일 코스피가 하락 마감했다."
+    },
+    {
+     "title": "[주요공시] 셀비온, 이지케어텍, 피델릭스, 현대오토에버 외",
+     "url": "https://www.kdpress.co.kr/news/articleView.html?idxno=208977",
+     "source": "kdpress.co.kr",
+     "published": "2026-09-30T22:38:00+09:00",
+     "dup_count": 3,
+     "summary": "서울외환시장에서 원·달러 환율은 네고물량 유입 등으로 하락 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "지자체 소상공인 지원 및 부동산 시장",
+   "sources": [
+    "ksmnews.co.kr"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "포항시, 소상공인 특례보증 86.7% 집행...300억원 추가 공급",
+     "url": "https://www.ksmnews.co.kr/news/view.php?idx=623899",
+     "source": "ksmnews.co.kr",
+     "published": "2026-09-30T20:40:00+09:00",
+     "dup_count": 0,
+     "summary": "시는 이번 추가 공급으로 약 1000명이 더 지원받을 것으로 예상하고 있다.협약 대출금리는 한국은행 기준금리에 2%포인트를 더하는 방식이다. 현재 기준금리 3%를"
+    },
+    {
+     "title": "경북 미분양 한 달 새 772가구 급증...경산 ‘펜타힐즈 더블유’ 영향",
+     "url": "https://www.ksmnews.co.kr/news/view.php?idx=623865",
+     "source": "ksmnews.co.kr",
+     "published": "2026-09-30T20:40:00+09:00",
+     "dup_count": 0,
+     "summary": "한국은행의 기준금리 인상 여파로 경북 지역의 미분양 주택이 급증했다."
+    }
+   ]
+  },
+  {
+   "title": "미국 국채금리 상승과 실물경제 부담",
+   "sources": [
+    "kmib.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "뉴노멀 된 美 국채금리 5%... 韓 실물경제 부담 커지나",
+     "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000018786&cp=nv",
+     "source": "kmib.co.kr",
+     "published": "2026-10-01T00:17:00+09:00",
+     "dup_count": 2,
+     "summary": "미국 국채금리 5% 고착화와 조달 비용 증가로 코스피가 약세를 보였다."
+    }
+   ]
+  },
+  {
+   "title": "외환 시장 동향",
+   "sources": [
+    "cbci.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[외환 시장] 1,359원 찍고 턴어라운드...월말 네고와 엔화 강세 맞물려 3...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=611253",
+     "source": "cbci.co.kr",
+     "published": "2026-10-01T00:06:00+09:00",
+     "dup_count": 1,
+     "summary": "월말 네고 물량과 엔화 강세의 영향으로 원/달러 환율이 1,352.8원에 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "고금리 환경과 증시 전망",
+   "sources": [
+    "newsis.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "\"고금리 폭풍에도 AI 투자 안 꺾인다\"...염승환 LS증권 이사의 증시 전망",
+     "url": "https://www.newsis.com/view/NISX20260930_0003809284",
+     "source": "newsis.com",
+     "published": "2026-10-01T00:00:00+09:00",
+     "dup_count": 0,
+     "summary": "고금리 기조 속에서도 AI 데이터센터 등 관련 투자는 지속되고 있다."
+    }
+   ]
+  },
+  {
+   "title": "엔비디아 젠슨황 자사주",
+   "sources": [
+    "g-enews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[김대호 인물] 엔비디아 젠슨황... 사상최대 규모 \"자사주 노림수\"",
+     "url": "https://www.g-enews.com/view.php?ud=202609290841095432906806b77b_1",
+     "source": "g-enews.com",
+     "published": "2026-09-30T23:56:00+09:00",
+     "dup_count": 0,
+     "summary": "젠슨 황이 이끄는 엔비디아가 사상 최대 규모의 자사주 매입에 나섰다."
+    }
+   ]
+  },
+  {
+   "title": "코스닥 시장 및 개별 종목 동향",
+   "sources": [
+    "econonews.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "코스닥, 기관과 개인 매수에 소폭 상승...주성엔지니어링, 이오테크닉스...",
+     "url": "http://www.econonews.co.kr/news/articleView.html?idxno=445065",
+     "source": "econonews.co.kr",
+     "published": "2026-09-30T21:30:00+09:00",
+     "dup_count": 0,
+     "summary": "개인과 기관의 매수세에 힘입어 코스닥 지수가 855.91로 상승 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "매매동향",
+   "sources": [
+    "pinpointnews.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[표] 9월 30일 매매동향...외국인, SK스퀘어·HD현대중공업·SK이노베이션...",
+     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=491613",
+     "source": "pinpointnews.co.kr",
+     "published": "2026-09-30T21:16:00+09:00",
+     "dup_count": 0,
+     "summary": "30일 국내 증시에서 외국인과 기관은 코스피 주식을 대거 순매도했다."
+    }
+   ]
+  },
+  {
+   "title": "주식 거래량 및 손바뀜",
+   "sources": [
+    "kjdaily.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "덕산넵코어스 243%·글로벌테크놀로지 203%...손바뀜 활발",
+     "url": "http://www.kjdaily.com/article.php?aid=1790768624688035276",
+     "source": "kjdaily.com",
+     "published": "2026-09-30T20:46:00+09:00",
+     "dup_count": 1,
+     "summary": "중소형 코스닥 종목들을 중심으로 활발한 손바뀜과 주가 변동성이 나타났다."
+    }
+   ]
+  },
+  {
+   "title": "코스피 4000 경고",
+   "sources": [
+    "ekn.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "“진실의 순간 왔다”...삼전닉스 버팀목 사라지자 ‘코스피 4000’ 경고...",
+     "url": "https://www.ekn.kr/web/view.php?key=20260930022540569",
+     "source": "ekn.kr",
+     "published": "2026-09-30T20:04:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피가 장중 7,000선에 육박했으나 하락 전환하며 3거래일 연속 내렸다."
+    }
+   ]
+  },
+  {
+   "title": "아시아 증시 동향",
+   "sources": [
+    "news.einfomax.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[亞증시-종합] 기술주 강세 속 혼조",
+     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437201",
+     "source": "news.einfomax.co.kr",
+     "published": "2026-09-30T19:30:00+09:00",
+     "dup_count": 0,
+     "summary": "기술주 강세와 마이크론 실적 발표를 앞두고 아시아 증시가 혼조세를 보였다."
+    }
+   ]
+  },
+  {
+   "title": "정부 로봇 보급 및 2차전지·로보틱스 관심",
    "sources": [
     "00news.co.kr"
    ],
@@ -291,12 +424,12 @@
      "source": "00news.co.kr",
      "published": "2026-09-30T18:50:00+09:00",
      "dup_count": 3,
-     "summary": "서울 외환시장에서 달러·원 환율은 3시30분 기준 전일 주간 종가보다 3.9원 내린 1352.8원에 마감했다. 코스피는 중동산 원유 공급 회복 및 미국 금리 인상"
+     "summary": "원/달러 환율은 하락 마감했으나 장중 미 국채금리 상승 우려가 유입됐다."
     }
    ]
   },
   {
-   "title": "생산·소비·투자 감소 등 실물경제 지표 부진",
+   "title": "실물경제 지표 및 수출·내수 양극화",
    "sources": [
     "ytn.co.kr"
    ],
@@ -308,155 +441,251 @@
      "source": "ytn.co.kr",
      "published": "2026-09-30T18:36:00+09:00",
      "dup_count": 0,
-     "summary": "수출은 양호한 반면 생산과 소비, 투자가 모두 줄어 K-양극화에 비상이 걸렸다."
-    }
-   ]
-  },
-  {
-   "title": "반도체 소재·장비주 동향",
-   "sources": [
-    "etoday.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "장비주 20% 뛸 때 소재주 16%...월말 추격 빨라진 반도체 소재주",
-     "url": "https://www.etoday.co.kr/news/view/2631047",
-     "source": "etoday.co.kr",
-     "published": "2026-09-30T18:32:00+09:00",
-     "dup_count": 0,
-     "summary": "월말을 맞아 반도체 장비주와 소재주를 중심으로 추격 매수세가 빨라졌다."
-    }
-   ]
-  },
-  {
-   "title": "한국은행 총재 관련 일화",
-   "sources": [
-    "khan.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[여적]한은 총재 집무실의 ‘호미’",
-     "url": "https://www.khan.co.kr/article/202609301830001",
-     "source": "khan.co.kr",
-     "published": "2026-09-30T18:30:00+09:00",
-     "dup_count": 0,
-     "summary": "한국은행이 기준금리를 연 3.0%로 인상한 배경에 관심이 집중됐다."
-    }
-   ]
-  },
-  {
-   "title": "패션 관련 주가 등락",
-   "sources": [
-    "okfashion.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "패션-LF·인디에프·비비안 등 상승...형지I&C 20.61% 급락",
-     "url": "http://okfashion.co.kr/detail.php?number=64175&thread=62r04",
-     "source": "okfashion.co.kr",
-     "published": "2026-09-30T18:26:00+09:00",
-     "dup_count": 1,
-     "summary": "9월 마지막 거래일 코스피는 6838.04로 마감하며 3거래일 연속 하락했다."
-    }
-   ]
-  },
-  {
-   "title": "오픈AI의 '닷츠' 출시 등 AI 관련 소식",
-   "sources": [
-    "futurechosun.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[더나은미래 경제브리핑] 오픈AI, 메타 대항마 ‘닷츠’ 출시...“신입사...",
-     "url": "https://futurechosun.com/?p=161569",
-     "source": "futurechosun.com",
-     "published": "2026-09-30T18:20:00+09:00",
-     "dup_count": 1,
-     "summary": "오픈AI가 메타의 대항마 '닷츠'를 출시한 가운데 코스피는 사흘 연속 하락했다."
-    }
-   ]
-  },
-  {
-   "title": "수출입은행의 바이오 산업 지원",
-   "sources": [
-    "sedaily.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "수은, K바이오 키운다...종근당·비티젠 등에 2조 공급",
-     "url": "https://www.sedaily.com/article/20096768?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-09-30T18:03:00+09:00",
-     "dup_count": 0,
-     "summary": "수은이 종근당과 비티젠 등 K바이오 성장을 위해 2조 원을 공급한다."
-    }
-   ]
-  },
-  {
-   "title": "연령대별 국내 주식 투자 이익",
-   "sources": [
-    "ajunews.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[단독] 상반기 국내주식 투자이익 231조...'60대 이상' 국장 잘했다",
-     "url": "https://www.ajunews.com/view/20260930142331587",
-     "source": "ajunews.com",
-     "published": "2026-09-30T18:02:00+09:00",
-     "dup_count": 0,
-     "summary": "지난 3월 23일 코스피는 하루 만에 6.49% 떨어진 5405.75로 마감했고 장중에는 매도 사이드카까지 발동됐다. 하지만 이후 시장은 반등했고 상반기 후반에는"
-    }
-   ]
-  },
-  {
-   "title": "보험주 주가 하락",
-   "sources": [
-    "nspna.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[업앤다운]보험주 하락...한화생명·한화손보↓",
-     "url": "https://www.nspna.com/news/?mode=view&newsid=830108",
-     "source": "nspna.com",
-     "published": "2026-09-30T17:46:00+09:00",
-     "dup_count": 1,
-     "summary": "9월 30일 증시에서 한화생명과 한화손보 등 주요 보험주들이 동반 하락했다."
-    }
-   ]
-  },
-  {
-   "title": "[오늘의 주목주] 삼성전자우 주가 4%대 내려, 코스피 외국인·기관 매도...",
-   "sources": [
-    "businesspost.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[오늘의 주목주] 삼성전자우 주가 4%대 내려, 코스피 외국인·기관 매도...",
-     "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448352",
-     "source": "businesspost.co.kr",
-     "published": "2026-09-30T18:08:00+09:00",
-     "dup_count": 2,
-     "summary": "코스피 시총 상위 종목 중 삼성전자우가 4%대 하락하며 약세를 보였다."
+     "summary": "수출은 양호한 반면 생산, 소비, 투자가 줄어드는 트리플 감소 현상이 나타났다."
     }
    ]
   }
  ],
  "items": [
   {
+   "title": "주담대 금리 3년 9개월만에 최고치... “7~8%대까지 오를 수도”",
+   "url": "https://www.donga.com/news/Economy/article/all/20260930/134763008/2",
+   "source": "donga.com",
+   "published": "2026-10-01T00:31:00+09:00",
+   "dup_count": 0,
+   "summary": "한국은행 기준금리 인상 여파로 8월 주담대 금리가 연 4.66%를 기록했다."
+  },
+  {
+   "title": "뉴노멀 된 美 국채금리 5%... 韓 실물경제 부담 커지나",
+   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000018786&cp=nv",
+   "source": "kmib.co.kr",
+   "published": "2026-10-01T00:17:00+09:00",
+   "dup_count": 2,
+   "summary": "미국 국채금리 5% 고착화와 조달 비용 증가로 코스피가 약세를 보였다."
+  },
+  {
+   "title": "[외환 시장] 1,359원 찍고 턴어라운드...월말 네고와 엔화 강세 맞물려 3...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=611253",
+   "source": "cbci.co.kr",
+   "published": "2026-10-01T00:06:00+09:00",
+   "dup_count": 1,
+   "summary": "월말 네고 물량과 엔화 강세의 영향으로 원/달러 환율이 1,352.8원에 마감했다."
+  },
+  {
+   "title": "[주요공시] 피델릭스, 씨싸이트, 국일신동, 제일기획, 신도기연, 우리기...",
+   "url": "https://www.kdpress.co.kr/news/articleView.html?idxno=208979",
+   "source": "kdpress.co.kr",
+   "published": "2026-10-01T00:06:00+09:00",
+   "dup_count": 3,
+   "summary": "미국 국채금리 상승과 외국인 매도세로 30일 코스피가 하락 마감했다."
+  },
+  {
+   "title": "기준금리·대출금리 상승에도 가계대출 증가세 여전",
+   "url": "https://www.kwnews.co.kr/article/20260930501371",
+   "source": "kwnews.co.kr",
+   "published": "2026-10-01T00:02:00+09:00",
+   "dup_count": 0,
+   "summary": "대출금리 상승세에도 불구하고 강원지역 예금은행의 가계대출은 계속 증가했다."
+  },
+  {
+   "title": "[증시 시황] \"장중 7,000선 터치 후 와르르\"...코스피, 美 금리·마이크론...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=611312",
+   "source": "cbci.co.kr",
+   "published": "2026-10-01T00:00:00+09:00",
+   "dup_count": 2,
+   "summary": "외국인과 기관의 순매도로 코스피가 장중 7,000선을 터치한 뒤 하락 전환했다."
+  },
+  {
+   "title": "\"고금리 폭풍에도 AI 투자 안 꺾인다\"...염승환 LS증권 이사의 증시 전망",
+   "url": "https://www.newsis.com/view/NISX20260930_0003809284",
+   "source": "newsis.com",
+   "published": "2026-10-01T00:00:00+09:00",
+   "dup_count": 0,
+   "summary": "고금리 기조 속에서도 AI 데이터센터 등 관련 투자는 지속되고 있다."
+  },
+  {
+   "title": "[김대호 인물] 엔비디아 젠슨황... 사상최대 규모 \"자사주 노림수\"",
+   "url": "https://www.g-enews.com/view.php?ud=202609290841095432906806b77b_1",
+   "source": "g-enews.com",
+   "published": "2026-09-30T23:56:00+09:00",
+   "dup_count": 0,
+   "summary": "젠슨 황이 이끄는 엔비디아가 사상 최대 규모의 자사주 매입에 나섰다."
+  },
+  {
+   "title": "[주요공시] 셀비온, 이지케어텍, 피델릭스, 현대오토에버 외",
+   "url": "https://www.kdpress.co.kr/news/articleView.html?idxno=208977",
+   "source": "kdpress.co.kr",
+   "published": "2026-09-30T22:38:00+09:00",
+   "dup_count": 3,
+   "summary": "서울외환시장에서 원·달러 환율은 네고물량 유입 등으로 하락 마감했다."
+  },
+  {
+   "title": "코스피, 약보합마감...美 물가지수·마이크론 실적 발표 앞두고 경계심...",
+   "url": "https://www.betanews.net/article/view/beta202609300090",
+   "source": "betanews.net",
+   "published": "2026-09-30T22:36:00+09:00",
+   "dup_count": 1,
+   "summary": "미국 물가지수와 마이크론 실적 발표를 앞둔 경계감에 코스피가 약보합을 기록했다."
+  },
+  {
+   "title": "[이슈추적] 주담대-신용대출 동반 상승...가계대출 평균금리 4.76%",
+   "url": "https://www.cnbnews.com/news/articleView.html?idxno=1017720",
+   "source": "cnbnews.com",
+   "published": "2026-09-30T22:32:00+09:00",
+   "dup_count": 0,
+   "summary": "기준금리가 두 달 사이 0.50%포인트 오르며 가계대출 평균금리도 상승했다."
+  },
+  {
+   "title": "코스피, 외국인 매도에 3거래일 연속 하락...6,838선 마감",
+   "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=91315",
+   "source": "mediafine.co.kr",
+   "published": "2026-09-30T21:58:00+09:00",
+   "dup_count": 3,
+   "summary": "외국인의 대규모 순매도로 코스피가 3거래일 연속 하락하며 6,838선에 마감했다."
+  },
+  {
+   "title": "동일스틸럭스·윈팩·KBI동양철관·빅웨이브로보틱스 29%대↑",
+   "url": "http://www.kjdaily.com/article.php?aid=1790772560688036276",
+   "source": "kjdaily.com",
+   "published": "2026-09-30T21:50:00+09:00",
+   "dup_count": 3,
+   "summary": "코스닥 시장을 중심으로 다수의 종목이 강세를 보이며 상승 마감했다."
+  },
+  {
+   "title": "\"저희도 삼전닉스 형님 따라 갑니다\"...시총 판 흔든 소부장 아우들",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609300201&t=NN",
+   "source": "wowtv.co.kr",
+   "published": "2026-09-30T21:45:00+09:00",
+   "dup_count": 0,
+   "summary": "마이크론 실적 발표와 삼성전자 실적 예고에 반도체주 투자 심리가 주목받고 있다."
+  },
+  {
+   "title": "코스닥, 기관과 개인 매수에 소폭 상승...주성엔지니어링, 이오테크닉스...",
+   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=445065",
+   "source": "econonews.co.kr",
+   "published": "2026-09-30T21:30:00+09:00",
+   "dup_count": 0,
+   "summary": "개인과 기관의 매수세에 힘입어 코스닥 지수가 855.91로 상승 마감했다."
+  },
+  {
+   "title": "[표] 9월 30일 매매동향...외국인, SK스퀘어·HD현대중공업·SK이노베이션...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=491613",
+   "source": "pinpointnews.co.kr",
+   "published": "2026-09-30T21:16:00+09:00",
+   "dup_count": 0,
+   "summary": "30일 국내 증시에서 외국인과 기관은 코스피 주식을 대거 순매도했다."
+  },
+  {
+   "title": "SK하이닉스·삼성전자 거래대금 10조3천억원",
+   "url": "http://www.kjdaily.com/article.php?aid=1790769923688037276",
+   "source": "kjdaily.com",
+   "published": "2026-09-30T21:06:00+09:00",
+   "dup_count": 1,
+   "summary": "SK하이닉스와 삼성전자가 국내 증시에서 막대한 거래대금을 기록했다."
+  },
+  {
+   "title": "덕산넵코어스 243%·글로벌테크놀로지 203%...손바뀜 활발",
+   "url": "http://www.kjdaily.com/article.php?aid=1790768624688035276",
+   "source": "kjdaily.com",
+   "published": "2026-09-30T20:46:00+09:00",
+   "dup_count": 1,
+   "summary": "중소형 코스닥 종목들을 중심으로 활발한 손바뀜과 주가 변동성이 나타났다."
+  },
+  {
+   "title": "포항시, 소상공인 특례보증 86.7% 집행...300억원 추가 공급",
+   "url": "https://www.ksmnews.co.kr/news/view.php?idx=623899",
+   "source": "ksmnews.co.kr",
+   "published": "2026-09-30T20:40:00+09:00",
+   "dup_count": 0,
+   "summary": "시는 이번 추가 공급으로 약 1000명이 더 지원받을 것으로 예상하고 있다.협약 대출금리는 한국은행 기준금리에 2%포인트를 더하는 방식이다. 현재 기준금리 3%를"
+  },
+  {
+   "title": "경북 미분양 한 달 새 772가구 급증...경산 ‘펜타힐즈 더블유’ 영향",
+   "url": "https://www.ksmnews.co.kr/news/view.php?idx=623865",
+   "source": "ksmnews.co.kr",
+   "published": "2026-09-30T20:40:00+09:00",
+   "dup_count": 0,
+   "summary": "한국은행의 기준금리 인상 여파로 경북 지역의 미분양 주택이 급증했다."
+  },
+  {
+   "title": "8월 은행 주담대 금리 4.66%로 4개월 연속 상승, 3년9개월 만에 최고 수...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448355",
+   "source": "businesspost.co.kr",
+   "published": "2026-09-30T20:38:00+09:00",
+   "dup_count": 1,
+   "summary": "8월 은행권 주담대 금리가 연 4.66%로 오르며 3년 9개월 만에 최고치를 기록했다."
+  },
+  {
+   "title": "또 뒷심 떨어진 코스피",
+   "url": "http://www.econotelling.com/news/articleView.html?idxno=21384",
+   "source": "econotelling.com",
+   "published": "2026-09-30T20:34:00+09:00",
+   "dup_count": 0,
+   "summary": "외국인과 기관의 2조원대 순매도 공세로 코스피가 하락 압력을 받았다."
+  },
+  {
+   "title": "[증시 오늘] 코스피 6800 턱걸이",
+   "url": "https://www.bigtanews.co.kr/article/view/big202609300024",
+   "source": "bigtanews.co.kr",
+   "published": "2026-09-30T20:32:00+09:00",
+   "dup_count": 3,
+   "summary": "외국인과 기관의 거센 매도세로 코스피가 6,800선 턱걸이로 마감했다."
+  },
+  {
+   "title": "D램 값 또 최고치...코스피 잠잠한데 삼전·닉스 또 갈까?",
+   "url": "https://www.munhwa.com/article/11620629?ref=naver",
+   "source": "munhwa.com",
+   "published": "2026-09-30T20:20:00+09:00",
+   "dup_count": 1,
+   "summary": "D램 가격 최고치 경신 속에 SK하이닉스 등 반도체 주가의 움직임이 주목받고 있다."
+  },
+  {
+   "title": "“진실의 순간 왔다”...삼전닉스 버팀목 사라지자 ‘코스피 4000’ 경고...",
+   "url": "https://www.ekn.kr/web/view.php?key=20260930022540569",
+   "source": "ekn.kr",
+   "published": "2026-09-30T20:04:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피가 장중 7,000선에 육박했으나 하락 전환하며 3거래일 연속 내렸다."
+  },
+  {
+   "title": "주담대 금리 4.66% 넉달째 상승... 45개월 만에 최고",
+   "url": "https://www.segye.com/newsView/20260930516514?OutUrl=naver",
+   "source": "segye.com",
+   "published": "2026-09-30T20:02:00+09:00",
+   "dup_count": 0,
+   "summary": "8월 주담대 가중평균 금리가 연 4.66%를 기록하며 45개월 만에 가장 높았다."
+  },
+  {
+   "title": "사이드카도 멈춘 9월 코스피...7000선 회복 뒤 다시 6800선대",
+   "url": "https://www.womentimes.co.kr/news/articleView.html?idxno=106641",
+   "source": "womentimes.co.kr",
+   "published": "2026-09-30T19:44:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피는 7,000선을 회복하려 했으나 외국인 매도로 다시 6,800선대로 내려앉았다."
+  },
+  {
+   "title": "[주식마감] SK하이닉스 D램 후공정 외주 확대 기대감에 윈팩 상한가... ...",
+   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1184595",
+   "source": "ggilbo.com",
+   "published": "2026-09-30T19:40:00+09:00",
+   "dup_count": 2,
+   "summary": "이날 코스피는 32.77포인트(0.48%) 내린 6,838.04로 마감했다. 지수는 72.66p(1.06%) 오른 6,943.47로 개장해 한때 1.38% 오르며"
+  },
+  {
+   "title": "[亞증시-종합] 기술주 강세 속 혼조",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437201",
+   "source": "news.einfomax.co.kr",
+   "published": "2026-09-30T19:30:00+09:00",
+   "dup_count": 0,
+   "summary": "기술주 강세와 마이크론 실적 발표를 앞두고 아시아 증시가 혼조세를 보였다."
+  },
+  {
    "title": "['클릭' 증시] 정부, 로봇 20만대 보급...2차전지·로보틱스 관심",
    "url": "http://www.00news.co.kr/news/articleView.html?idxno=106898",
    "source": "00news.co.kr",
    "published": "2026-09-30T18:50:00+09:00",
    "dup_count": 3,
-   "summary": "서울 외환시장에서 달러·원 환율은 3시30분 기준 전일 주간 종가보다 3.9원 내린 1352.8원에 마감했다. 코스피는 중동산 원유 공급 회복 및 미국 금리 인상"
+   "summary": "원/달러 환율은 하락 마감했으나 장중 미 국채금리 상승 우려가 유입됐다."
   },
   {
    "title": "주담대 금리 연 4.66%로 '껑충'...3년 9개월 만에 최고",
@@ -464,7 +693,7 @@
    "source": "yonhapnewstv.co.kr",
    "published": "2026-09-30T18:50:00+09:00",
    "dup_count": 0,
-   "summary": "<김성준 / 한국은행 금융통계팀장> \"변동형 금리가 고정형 금리보다 주택담보대출 금리가 더 많이 올랐어요.... 36%p로, 전체적인 가계금리 상승에 큰 폭을 차"
+   "summary": "시장금리 상승에 따라 변동형 주담대 금리가 큰 폭으로 오르며 가계 부담이 커졌다."
   },
   {
    "title": "코스피, 사흘 연속 하락...미 국채금리 급등 부담",
@@ -472,7 +701,7 @@
    "source": "yonhapnewstv.co.kr",
    "published": "2026-09-30T18:46:00+09:00",
    "dup_count": 2,
-   "summary": "코스피가 미 국채금리 급등 부담을 이기지 못하고 사흘 연속 하락했다."
+   "summary": "미 국채금리 급등 부담으로 코스피가 등락 끝에 하락 마감했다."
   },
   {
    "title": "코스피, 사흘 연속 하락...코스닥은 상승 마감",
@@ -480,7 +709,7 @@
    "source": "news.kbs.co.kr",
    "published": "2026-09-30T18:46:00+09:00",
    "dup_count": 2,
-   "summary": "코스피는 외국인 매도세에 3거래일 연속 하락했으나 코스닥은 상승 마감했다."
+   "summary": "코스피는 외국인 매도에 3거래일 연속 하락했고 코스닥은 상승 마감했다."
   },
   {
    "title": "수출 잘 되는데 생산·소비·투자 '트리플' 감소...K-양극화 비상",
@@ -488,7 +717,7 @@
    "source": "ytn.co.kr",
    "published": "2026-09-30T18:36:00+09:00",
    "dup_count": 0,
-   "summary": "수출은 양호한 반면 생산과 소비, 투자가 모두 줄어 K-양극화에 비상이 걸렸다."
+   "summary": "수출은 양호한 반면 생산, 소비, 투자가 줄어드는 트리플 감소 현상이 나타났다."
   },
   {
    "title": "장비주 20% 뛸 때 소재주 16%...월말 추격 빨라진 반도체 소재주",
@@ -496,239 +725,7 @@
    "source": "etoday.co.kr",
    "published": "2026-09-30T18:32:00+09:00",
    "dup_count": 0,
-   "summary": "월말을 맞아 반도체 장비주와 소재주를 중심으로 추격 매수세가 빨라졌다."
-  },
-  {
-   "title": "[여적]한은 총재 집무실의 ‘호미’",
-   "url": "https://www.khan.co.kr/article/202609301830001",
-   "source": "khan.co.kr",
-   "published": "2026-09-30T18:30:00+09:00",
-   "dup_count": 0,
-   "summary": "한국은행이 기준금리를 연 3.0%로 인상한 배경에 관심이 집중됐다."
-  },
-  {
-   "title": "패션-LF·인디에프·비비안 등 상승...형지I&C 20.61% 급락",
-   "url": "http://okfashion.co.kr/detail.php?number=64175&thread=62r04",
-   "source": "okfashion.co.kr",
-   "published": "2026-09-30T18:26:00+09:00",
-   "dup_count": 1,
-   "summary": "9월 마지막 거래일 코스피는 6838.04로 마감하며 3거래일 연속 하락했다."
-  },
-  {
-   "title": "[더나은미래 경제브리핑] 오픈AI, 메타 대항마 ‘닷츠’ 출시...“신입사...",
-   "url": "https://futurechosun.com/?p=161569",
-   "source": "futurechosun.com",
-   "published": "2026-09-30T18:20:00+09:00",
-   "dup_count": 1,
-   "summary": "오픈AI가 메타의 대항마 '닷츠'를 출시한 가운데 코스피는 사흘 연속 하락했다."
-  },
-  {
-   "title": "코스피, 美 국채금리 급등 부담으로 0.48% 하락",
-   "url": "https://www.delighti.co.kr/news/articleView.html?idxno=122630",
-   "source": "delighti.co.kr",
-   "published": "2026-09-30T18:18:00+09:00",
-   "dup_count": 2,
-   "summary": "코스피는 미국 국채금리 급등 부담으로 장중 하락 전환해 0.48% 내렸다."
-  },
-  {
-   "title": "계속 오르는 대출금리 '영끌족' 비명⋯서울 부동산 경매 45% ↑",
-   "url": "http://www.inews24.com/view/2010554",
-   "source": "inews24.com",
-   "published": "2026-09-30T18:17:00+09:00",
-   "dup_count": 0,
-   "summary": "대출금리가 계속 오르는 가운데 서울 부동산 경매 신청 건수가 45% 증가했다."
-  },
-  {
-   "title": "\"1차 때와는 딴판\"...2차 국민성장펀드 증권사 '완판', 은행은 '썰렁'(종...",
-   "url": "https://www.news1.kr/finance/general-finance/6306481",
-   "source": "news1.kr",
-   "published": "2026-09-30T18:13:00+09:00",
-   "dup_count": 0,
-   "summary": "2차 국민성장펀드가 증권사에서 완판됐으나 은행 판매는 썰렁했다."
-  },
-  {
-   "title": "[오늘의 원화] 달러-원 1,352.8원...3.9원 내려",
-   "url": "https://www.tokenpost.kr/news/insights/416409",
-   "source": "tokenpost.kr",
-   "published": "2026-09-30T18:12:00+09:00",
-   "dup_count": 0,
-   "summary": "서울 외환시장에서 원·달러 환율은 3.9원 내린 1,352.8원에 마감했다."
-  },
-  {
-   "title": "'코로나 긴축' 닮아가는 글로벌 금리...韓도 年3.5% 갈까",
-   "url": "https://www.hankyung.com/article/2026093056651",
-   "source": "hankyung.com",
-   "published": "2026-09-30T18:12:00+09:00",
-   "dup_count": 0,
-   "summary": "글로벌 긴축 기조 속에 한국은행의 기준금리 추가 인상 전망이 나오고 있다."
-  },
-  {
-   "title": "美국채금리 5%대 고공행진...한은 금리인상 가능성 '촉각'",
-   "url": "https://www.dailian.co.kr/news/view/1696338/?sc=Naver",
-   "source": "dailian.co.kr",
-   "published": "2026-09-30T18:11:00+09:00",
-   "dup_count": 0,
-   "summary": "미국 국채금리가 연 5%대를 기록하며 한은의 추가 금리인상 가능성에 촉각이 쏠렸다."
-  },
-  {
-   "title": "'전강후약' 코스피 사흘째 내리막...외국인 나흘째 '팔자'",
-   "url": "https://biz.sbs.co.kr/article_hub/20000337627?division=NAVER",
-   "source": "biz.sbs.co.kr",
-   "published": "2026-09-30T18:10:00+09:00",
-   "dup_count": 1,
-   "summary": "코스피는 미 국채금리 상승 부담으로 외국인 매도세가 이어지며 하락했다."
-  },
-  {
-   "title": "[오늘의 주목주] 삼성전자우 주가 4%대 내려, 코스피 외국인·기관 매도...",
-   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448352",
-   "source": "businesspost.co.kr",
-   "published": "2026-09-30T18:08:00+09:00",
-   "dup_count": 2,
-   "summary": "코스피 시총 상위 종목 중 삼성전자우가 4%대 하락하며 약세를 보였다."
-  },
-  {
-   "title": "美 30년물 국채금리 쇼크... 韓 국채 부담·亞 자금유출 경고등",
-   "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261001010010923",
-   "source": "asiatoday.co.kr",
-   "published": "2026-09-30T18:06:00+09:00",
-   "dup_count": 0,
-   "summary": "38달러(12만1351원)에 마감했다. 그러나 파라마운트 스카이댄스가 워너브러더스 디스커버리 인수를 위해... 코스피는 29일 전장보다 18.93포인트(0.27%"
-  },
-  {
-   "title": "은행 예금 80%가 법인 몫...만기까지 짧아져 대출금리 더 뛴다",
-   "url": "https://www.sedaily.com/article/20096770?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-09-30T18:06:00+09:00",
-   "dup_count": 0,
-   "summary": "은행 예금의 대부분이 법인 몫이고 만기가 짧아져 대출금리 상승이 우려된다."
-  },
-  {
-   "title": "[매일 금리·환율 브리핑] 9월 30일, 국고채 5년 금리 하락",
-   "url": "http://www.dailypop.kr/news/articleView.html?idxno=103008",
-   "source": "dailypop.kr",
-   "published": "2026-09-30T18:06:00+09:00",
-   "dup_count": 0,
-   "summary": "9월 30일 기준 국고채 5년 금리가 전일 대비 7bp 하락한 4.203%를 기록했다."
-  },
-  {
-   "title": "고금리·고유가에도 '증시 강세론'으로 돌아선 월가",
-   "url": "https://www.hankyung.com/article/2026093056331",
-   "source": "hankyung.com",
-   "published": "2026-09-30T18:03:00+09:00",
-   "dup_count": 0,
-   "summary": "고금리·고유가 속에서도 월가가 증시 강세론으로 돌아서 주목을 받고 있다."
-  },
-  {
-   "title": "수은, K바이오 키운다...종근당·비티젠 등에 2조 공급",
-   "url": "https://www.sedaily.com/article/20096768?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-09-30T18:03:00+09:00",
-   "dup_count": 0,
-   "summary": "수은이 종근당과 비티젠 등 K바이오 성장을 위해 2조 원을 공급한다."
-  },
-  {
-   "title": "[단독] 상반기 국내주식 투자이익 231조...'60대 이상' 국장 잘했다",
-   "url": "https://www.ajunews.com/view/20260930142331587",
-   "source": "ajunews.com",
-   "published": "2026-09-30T18:02:00+09:00",
-   "dup_count": 0,
-   "summary": "지난 3월 23일 코스피는 하루 만에 6.49% 떨어진 5405.75로 마감했고 장중에는 매도 사이드카까지 발동됐다. 하지만 이후 시장은 반등했고 상반기 후반에는"
-  },
-  {
-   "title": "돌고 돌아 결국 실적...증시 반등 분수령 되나",
-   "url": "https://www.etoday.co.kr/news/view/2631031",
-   "source": "etoday.co.kr",
-   "published": "2026-09-30T18:02:00+09:00",
-   "dup_count": 2,
-   "summary": "코스피가 혼조세를 보인 가운데 증시가 반등의 분수렐을 맞이할지 주목된다."
-  },
-  {
-   "title": "[외환-마감] 양방향 수급에 1,350원대 횡보...3.90원↓",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437190",
-   "source": "news.einfomax.co.kr",
-   "published": "2026-09-30T18:00:00+09:00",
-   "dup_count": 2,
-   "summary": "서울 외환시장에서 원·달러 환율은 양방향 수급 속 1,350원대에서 횡보했다."
-  },
-  {
-   "title": "삼전·닉스 이제 누가 사려나···자사주 매입, 10월 초중순 종료",
-   "url": "https://www.khan.co.kr/article/202609301800001",
-   "source": "khan.co.kr",
-   "published": "2026-09-30T18:00:00+09:00",
-   "dup_count": 0,
-   "summary": "삼성전자와 SK하이닉스의 자사주 매입이 10월 초중순 종료를 앞두고 있다."
-  },
-  {
-   "title": "9월에도 21.5조 팔아치운 외인...삼전닉스부터 던졌다",
-   "url": "https://www.sedaily.com/article/20096754?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-09-30T17:57:00+09:00",
-   "dup_count": 0,
-   "summary": "외국인이 9월에도 삼성전자와 SK하이닉스 위주로 21조 원 넘게 팔아치웠다."
-  },
-  {
-   "title": "외국인 '팔자' 행렬에 코스피 3거래일째 하락",
-   "url": "https://www.hankyung.com/article/2026093055131",
-   "source": "hankyung.com",
-   "published": "2026-09-30T17:56:00+09:00",
-   "dup_count": 2,
-   "summary": "외국인의 지속적인 매도 행렬로 코스피가 3거래일째 하락세를 이어갔다."
-  },
-  {
-   "title": "[위클리오늘] 8월 은행 대출금리 4.40%로 0.13%p↑···신규 예대금리차...",
-   "url": "http://www.weeklytoday.com/news/articleView.html?idxno=796447",
-   "source": "weeklytoday.com",
-   "published": "2026-09-30T17:56:00+09:00",
-   "dup_count": 0,
-   "summary": "8월 예금은행의 대출금리가 연 4.40%로 오르며 예대금리차가 벌어졌다."
-  },
-  {
-   "title": "코스피, '미 금리 악재'에 0.4%↓...사흘 연속 하락",
-   "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4109570",
-   "source": "news.bbsi.co.kr",
-   "published": "2026-09-30T17:54:00+09:00",
-   "dup_count": 2,
-   "summary": "코스피는 미 금리 악재로 0.4% 하락했고, 원·달러 환율은 1352.8원에 마감했다."
-  },
-  {
-   "title": "‘6000억 모집’ 2차 국민참여성장펀드, 첫날 3분의1 넘게 팔렸다",
-   "url": "https://www.sedaily.com/article/20096748?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-09-30T17:53:00+09:00",
-   "dup_count": 0,
-   "summary": "모집 금액의 30% 이상을 비상장사와 코스닥 기술특례상장사에 투입한다. 투자 금액의 최대 40%까지... 앞서 올 5월 1차 펀드 출시 때는 5대 은행 판매 물량"
-  },
-  {
-   "title": "美국채금리 한파에 외인·기관 3조 이탈...\"반도체 주목\"",
-   "url": "https://www.mt.co.kr/stock/2026/09/30/2026093017331564801",
-   "source": "mt.co.kr",
-   "published": "2026-09-30T17:52:00+09:00",
-   "dup_count": 1,
-   "summary": "30일 코스피 지수는 전일 대비 32.77포인트(0.48%) 내린 6838.04에 마감했다. 이날 코스피는 72.66포인트(1.06%) 오른 6943.47로 출발"
-  },
-  {
-   "title": "삼성전자 1.47%↓·SK하이닉스 0.62%↑...주식 혼조 마감",
-   "url": "http://www.kjdaily.com/article.php?aid=1790758287687960276",
-   "source": "kjdaily.com",
-   "published": "2026-09-30T17:52:00+09:00",
-   "dup_count": 3,
-   "summary": "삼성전자는 하락하고 SK하이닉스는 상승한 가운데 코스피는 혼조세로 마감했다."
-  },
-  {
-   "title": "亞증시 혼조...AI 훈풍 日 1.94% 급등·美 국채금리에 韓 0.48%↓",
-   "url": "https://www.newstopkorea.com/news/articleView.html?idxno=47942",
-   "source": "newstopkorea.com",
-   "published": "2026-09-30T17:52:00+09:00",
-   "dup_count": 2,
-   "summary": "아시아 증시가 혼조세를 보인 가운데 코스피는 미 국채금리 여파로 0.48% 하락했다."
-  },
-  {
-   "title": "[업앤다운]보험주 하락...한화생명·한화손보↓",
-   "url": "https://www.nspna.com/news/?mode=view&newsid=830108",
-   "source": "nspna.com",
-   "published": "2026-09-30T17:46:00+09:00",
-   "dup_count": 1,
-   "summary": "9월 30일 증시에서 한화생명과 한화손보 등 주요 보험주들이 동반 하락했다."
+   "summary": "KRX 반도체 지수가 상승세를 보이며 반도체 소재·장비주에 매수세가 몰렸다."
   }
  ]
 }

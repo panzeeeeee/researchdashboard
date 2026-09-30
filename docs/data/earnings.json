@@ -1,6 +1,120 @@
 {
  "items": [
   {
+   "accession": "0001193125-26-408391",
+   "ticker": "PWCM",
+   "company": "POWERCOMPUTE, INC.",
+   "cik": "0001640384",
+   "accepted_et": "2026-09-30 08:30",
+   "date_et": "2026-09-30",
+   "session": "장전",
+   "url": "https://www.sec.gov/Archives/edgar/data/1640384/000119312526408391/0001193125-26-408391-index.htm",
+   "react_status": "대기",
+   "sic": "6199",
+   "industry": "Finance Services",
+   "sector": "금융",
+   "num_tries": 1
+  },
+  {
+   "accession": "0001628280-26-063890",
+   "ticker": "JBL",
+   "company": "JABIL INC",
+   "cik": "0000898293",
+   "accepted_et": "2026-09-30 07:32",
+   "date_et": "2026-09-30",
+   "session": "장전",
+   "url": "https://www.sec.gov/Archives/edgar/data/898293/000162828026063890/0001628280-26-063890-index.htm",
+   "react_status": "대기",
+   "sic": "3672",
+   "industry": "Printed Circuit Boards",
+   "sector": "IT",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 10616.0,
+    "revenue_prior": 8252.0,
+    "eps_gaap": 3.76,
+    "eps_gaap_prior": 1.99,
+    "eps_adj": 4.4,
+    "eps_adj_prior": 3.29,
+    "period": "Q4 FY2026",
+    "guidance": "첫 제시",
+    "summary": "AI 인프라 성장과 수익성 개선으로 매출과 이익이 크게 증가하며 예상을 상회했다.",
+    "revenue_yoy": 28.6
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/898293/000162828026063890/jbl-20260930ex991.htm"
+  },
+  {
+   "accession": "0000023217-26-000052",
+   "ticker": "CAG",
+   "company": "CONAGRA BRANDS INC.",
+   "cik": "0000023217",
+   "accepted_et": "2026-09-30 07:32",
+   "date_et": "2026-09-30",
+   "session": "장전",
+   "url": "https://www.sec.gov/Archives/edgar/data/23217/000002321726000052/0000023217-26-000052-index.htm",
+   "react_status": "대기",
+   "sic": "2000",
+   "industry": "Food and Kindred Products",
+   "sector": "필수소비재",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 2595.9,
+    "revenue_prior": 2632.6,
+    "eps_gaap": 0.36,
+    "eps_gaap_prior": 0.34,
+    "eps_adj": 0.41,
+    "eps_adj_prior": 0.39,
+    "period": "Q1 FY2027",
+    "guidance": "유지",
+    "summary": "매출은 소폭 감소했으나 수익성과 조정 EPS가 개선되며 양호한 실적을 거두었다.",
+    "revenue_yoy": -1.4
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/23217/000002321726000052/tmb-ex99d1.htm"
+  },
+  {
+   "accession": "0001628280-26-063888",
+   "ticker": "FDS",
+   "company": "FACTSET RESEARCH SYSTEMS INC",
+   "cik": "0001013237",
+   "accepted_et": "2026-09-30 07:01",
+   "date_et": "2026-09-30",
+   "session": "장전",
+   "url": "https://www.sec.gov/Archives/edgar/data/1013237/000162828026063888/0001628280-26-063888-index.htm",
+   "react_status": "대기",
+   "sic": "7370",
+   "industry": "Services-Computer Programming, Data Processing, Etc.",
+   "sector": "IT",
+   "num_tries": 1
+  },
+  {
+   "accession": "0001562762-26-000111",
+   "ticker": "CALM",
+   "company": "CAL-MAINE FOODS INC",
+   "cik": "0000016160",
+   "accepted_et": "2026-09-30 06:07",
+   "date_et": "2026-09-30",
+   "session": "장전",
+   "url": "https://www.sec.gov/Archives/edgar/data/16160/000156276226000111/0001562762-26-000111-index.htm",
+   "react_status": "대기",
+   "sic": "0200",
+   "industry": "Agricultural Prod-Livestock & Animal Specialties",
+   "sector": "필수소비재",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 539607.0,
+    "revenue_prior": 922602.0,
+    "eps_gaap": -1.26,
+    "eps_gaap_prior": 4.12,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q1 FY2027",
+    "guidance": "없음",
+    "summary": "계절적 수요 약세와 공급 과잉으로 매출과 순이익이 급감함.",
+    "revenue_yoy": -41.5
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/16160/000156276226000111/exhibit991.htm"
+  },
+  {
    "accession": "0001803599-26-000147",
    "ticker": "CNXC",
    "company": "Concentrix Corp",
@@ -481,5 +595,5 @@
    "sector": "커뮤니케이션"
   }
  ],
- "updated_at": "2026-09-30T19:05:13.087346+09:00"
+ "updated_at": "2026-10-01T00:39:29.147730+09:00"
 }
