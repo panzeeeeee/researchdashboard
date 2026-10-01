@@ -1,228 +1,351 @@
 {
- "updated_at": "2026-10-01T01:16:20.579972+09:00",
+ "updated_at": "2026-10-01T10:49:48.430007+09:00",
  "event_notes": {
-  "why": "예상보다 낮게 나온 미국의 물가 상승률 지표로 연방준비제도의 금리 인상 우려가 완화되면서 기술주와 통신서비스 섹터가 상승을 주도했다. 특히 엔비디아의 3분기 행보와 관련된 AI 열풍 속에서 마이크론의 실적 발표를 앞두고 기술 섹터가 1.14퍼센트 오르며 시장을 끌어올렸다. 반면 헬스케어와 부동산 등 일부 섹터는 모더나의 등급 하향 같은 개별 요인과 순환매 속에 하락세를 보였다.",
-  "watch": "AI 메모리 붐의 지속 가능성을 가늠할 마이크론의 실적 발표와 향후 연방준비제도의 통화 정책 방향을 결정할 추가 물가 및 고용 지표들을 주목해야 한다."
+  "why": "마이크론이 AI 수요 가속화에 힘입어 시장 예상을 웃도는 실적과 1분기 가이던스를 발표한 영향으로 기술 섹터가 상승 마감했다. 다만 향후 설비투자(Capex) 증가 전망에 대한 우려도 함께 제기되면서, 온건한 물가 지표 발표 속에서도 기술을 제외한 금융, 헬스케어, 필수소비재 등 대다수 섹터는 하락 압력을 받았다.",
+  "watch": "AI 반도체 수요가 메모리 부족 현상과 맞물려 전체 시장으로 온기를 확산시킬지, 그리고 다가오는 분기 실적 시즌에서 주요 기업들의 가이던스가 어떻게 제시될지 주목해야 한다."
  },
  "clusters": [
   {
-   "title": "마이크론 실적 발표 및 AI 메모리 칩 전망",
+   "title": "마이크론 실적 및 주가 움직임",
    "sources": [
+    "Barron's",
+    "CNBC",
     "Investing.com",
+    "Reuters",
+    "WSJ",
+    "Yahoo Finance"
+   ],
+   "count": 13,
+   "items": [
+    {
+     "title": "Micron tops Q4 estimates on top and bottom lines, offers strong Q1 outlook",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQNDlVYjVua3UtY2o4RFFRQi00bDE1dWFkbmRGWEc1UThTV2xsYTd2Y2YxYm44NjNQaGpfZWhFZVQtV0wzLWo4RlNXWWI0LVpKOGJuSFIxMmc5cHFiVmVKeDlCLVdiN0xjamdYYzdLcVA3OXlTb1hXSW9SM21zN3oxQVY2R1BJY0RmaEJFWURtYzB4UERCWGRzblNGWDB0VGljMU0taktnSloxTG1NM2Y0R1pHb2RnSmRyN0Eta0w0b0MtSTNFN1hiRWdfTC1uQQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T05:04:14+09:00",
+     "dup_count": 2,
+     "summary": "마이크론은 4분기 실적이 예상치를 상회하고 강력한 1분기 전망을 제시했다."
+    },
+    {
+     "title": "MU Stock Drops After Hours: Micron’s Heightened Capex Forecast Overpowers Q4 Beat, Expectation-Beating Q1 Guidance",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZjI1SzNObXNzYk96WkIwamZzTnVyWVJUdDMyVGd6Q1RqQWE3YklDQksxOF82bGZrU0ZUWkdxS0FzcFdISDJXYmp3ZEw5bkVvU3ZiRnIxT212LXhUVHdqYzN2bW9XMkE1d2NpSFBmQThlbG4yUDMzSDRQWUlqbVF3UHZMTjlIQ2hQY0dWYVl4N3ZlSzVBazJR?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T07:25:32+09:00",
+     "dup_count": 1,
+     "summary": "마이크론은 호실적과 1분기 가이던스에도 대규모 설비투자 전망에 시간외 주가가 하락했다."
+    },
+    {
+     "title": "AI demand fuels Micron earnings beat",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUWw0T3VYVnZ2eHZYeXVITWM0NTRjSXB3ZVhuVnZsVmlxRkkzRGl5LU1OaHhUcGQ3MFJsRy1wcmdPUXNUYkhNTjhoT19LczB3Z25vRFZiaTNhZ3I3M2ZuVkxaelJHd0dfdjdlSUFQcEIzMmlpdzR3S1B1c25JaC1IaU9uTWo?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T05:46:00+09:00",
+     "dup_count": 1,
+     "summary": "AI 수요가 마이크론의 실적 호조를 견인했다."
+    },
+    {
+     "title": "Micron Stock Flashes New Warning Sign Before Earnings",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY1ljM0hzUVJ0dUptdFVQM0V2R24zcWUzdkdmX0ZoaGF6MTlDeUJaWEkzMGxUcEtXSS10LTE4U0dLcEp4RFJhNXJneUxDU3lRS2Fwb2JMOXd0dFY4T0pRdXNZVzVYN2NGRzBHaHJvTjA0WWlWdU42czJJNm4tY1lOQVFvS29udWYyVWIwbW1WNENhZkNGcmVudUpRLXRkNzA?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T03:03:54+09:00",
+     "dup_count": 1,
+     "summary": "실적 발표를 앞두고 마이크론 주식에서 새로운 경고 신호가 감지됐다."
+    },
+    {
+     "title": "We're raising our Micron price target after an incredible quarter and robust guidance",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQSlY4eE51aUp6TW93TURkYWxBM3hMSC1QQkxUcjk5aTJ4aHhIdzgwU0piaV9CamZleEJYdF9XdWFaQk9IRUdQazhuYTd5U0F0VHQxWXZyVEthNWZ6SS1WQXI2MVVnd0tuVFJZTXdXVENOSjQ5VFdHT29vSDQ0RW1VZWdESHNWNXlYQTc3bEZHWWhxc2J5cWt0eTJrRGVldjgwV3ViZkdQMDRuWlc0UmFtcWU1TzZySUp2SlZXbQ?oc=5",
+     "source": "CNBC",
+     "published": "2026-10-01T09:04:00+09:00",
+     "dup_count": 0,
+     "summary": "마이크론의 실적 호조와 전망 상향으로 목표주가가 상향됐다."
+    },
+    {
+     "title": "Micron's AI-fueled revenue forecast blows past estimates, backlog swells",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSGljZXdlMjRDc2xMM29UN0s3NmM2cXVLUjVmbEdWRHVpRUwyeWltZDRNVUU0VDlYenBNc3lnVVh2SHprdnFSN3RjTWhKR3JYRk4xWHRtSzg5Qi01c3RuaGJnWDl3emxPZDhzckpDVlpRLUxENWlENUpXYWliRmtLc2FfNkFoQ2g2bEZFbWpULVRhQllzX0NDTFJTZw?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-01T08:06:01+09:00",
+     "dup_count": 0,
+     "summary": "마이크론의 AI 기반 매출 전망이 예상을 뛰어넘고 수주잔고도 급증했다."
+    },
+    {
+     "title": "Micron Profit, Revenue Surge as Memory Crunch Looks to Last Through 2028",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTERLUlNXYXNnbWZ0R0tJOTVLWERGbEVFa0c5bkpQXzlvRWptTHk0WUdlVDRYNGRDWGpJOVBIVkJSS3NUMmluLTBacUwwcE1xZW80MlZIeEUyMUYxUElJOGJEcUdGdmlIdzR5OWxhd0V6RnRLT3FMeTdkWndhRkVNMUFjT2tBY3V3dld0U2paNFdwam1IN2c?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-01T07:28:00+09:00",
+     "dup_count": 0,
+     "summary": "메모리 품귀 현상이 2028년까지 이어지며 마이크론의 실적이 급증했다."
+    },
+    {
+     "title": "Micron forecasts stronger first quarter as AI demand accelerates, shares jump",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZUtVVHUxeW1XanNRQWJ2MlkyQWRMOE5rVEw5aXpMN2RQLWZRWnFvNHN0bDMzTGtfNXV6cWxTR2JHR0FrbXBPVjhOSTRYN2F3RlZGaFNVMjJiZzdPdC04UjNacmpUQ2RJdjFxbkcwdzI2Z2pTZkRwVFo0cWptc2ZPZzJxdlBkd3lVb3VkSzB3VnhwbnpCUFVvRS1OblRzQXE3TGNmNEhTSGZLSVA3bHRicHVLa1RRQnl1WXpxY2xhdG1HelU?oc=5",
+     "source": "Investing.com",
+     "published": "2026-10-01T07:21:45+09:00",
+     "dup_count": 0,
+     "summary": "AI 수요 가속화로 1분기 호실이 예상되면서 마이크론 주가가 급등했다."
+    },
+    {
+     "title": "Earnings call transcript: Micron tops Q4 2026 estimates as demand stays hot",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOR2hDMEFXRmhGSHhlT0tOSXVrNkZoYzVRVE83dWxaTnhSRTFENHg0SWlQakF4TFlMaWhWa0p0dFRmRFpGQ2ZZMXU3VU1xSVp0bnFpdVVETmFFd0drUnN1dFBPR0Y4RUkyX0VUZ2VHdlJabUc4dVJuMnNGMHhQS0wtMkRhTHg1VjhjZWs3RzM0eTZGcWFFUVZKYzN5YWtYREJHaXJNOGtLV0o4ZENXOGdEbkJDOE93SDFlRTdfZk51QVF1emp5RV9TM2N3?oc=5",
+     "source": "Investing.com",
+     "published": "2026-10-01T06:50:27+09:00",
+     "dup_count": 0,
+     "summary": "수요가 유지되면서 마이크론은 2026년 4분기 예상치를 상회했다."
+    },
+    {
+     "title": "Micron’s AI Boom Just Got Bigger As Revenue Soars 379%",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQ0xpbnpFU2V1VjdjWnBobWdwSF9yc2E3bFVjaWNZM3J6aEFXdTNpLTkwZ0trX2tjSGt2Q2VTdWdmdy1TTE93OHdpNmVPUkZnSzV0OXdpNXRJOHJ4d1JJeXZEamRpc2hwUTduS1RRY3h5Uml2am9YOGpnc05hQzNwc0hnd1lYN1EtajBDOQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T05:38:43+09:00",
+     "dup_count": 0,
+     "summary": "매출이 379% 급증하며 마이크론의 AI 붐이 더욱 거세졌다."
+    },
+    {
+     "title": "Micron Earnings Could Be the Catalyst This Wildly Popular ETF Needs",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQmw3bUxILV9tWFJjV1NxNmotcWRqQ1ZYZTZMU2R2YVZGdHl4bXJtSnZVYlMyajhZUWF3cXd6bTJNeFlCZU9BcGlWTl9oLXpsaDJsdVVoeUpLNG5rQXhoVGJ2dnZ6RkxjRXJBUlE3UDVWWkx4VXJhYTd6QWsyOC1Za2VsNDZwQkR4ZVlMNkQ3Zw?oc=5",
+     "source": "Barron's",
+     "published": "2026-10-01T05:36:00+09:00",
+     "dup_count": 0,
+     "summary": "마이크론의 실적이 인기 ETF의 촉매제가 될 수 있다."
+    },
+    {
+     "title": "Micron (NASDAQ:MU) Delivers Strong Q3 Numbers But Inventory Levels Increase",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdEVxYWFLVnd6WXlGY29pS0czYXdqMUo1T3FIc0VIZlFJdlJMNGhCVDJlck9xal9tMjlqd1BFYVlqdW1DaU9EOWhZTlpXOGFpY1l4MEdDMUN0Z0ZFejV5Qllab3FfVlBnZDMzMHJzT1o4MkZkekh5eS1jSDV6eE5wVjR1OFBjemw4cVZIcWVJdHI3MERxbExUVUdGdWQwZw?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T05:08:10+09:00",
+     "dup_count": 0,
+     "summary": "마이크론은 3분기 호실적을 기록했으나 재고 수준은 증가했다."
+    },
+    {
+     "title": "Micron Earnings Could Reach $50 A Quarter, Says Susquehanna: Analyst Sees Memory Driving AI Profits",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZE52ME5VRlFPNUVUWWJFclNJUFB6T0IxZlJfRHNuM2dOb1BBaVpZdkctQ19RVTgzV3JOdTlyX01lS3BHVUsyTUswYm5xWXNIUlZuQzlaTkw0U0ZaUVhhaVBwODllRkZkTVZjN2d2V3BaOGlmZTltVmJyR19RZ1pUcW81TkZST2NuQlZyVm9hUUFHOTNJNy1JdlZ5MA?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T01:41:15+09:00",
+     "dup_count": 0,
+     "summary": "서스퀘하나 분석가는 메모리가 AI 수익을 견인하며 마이크론의 분기 주당 순이익이 50달러에 이를 수 있다고 전망했다."
+    }
+   ]
+  },
+  {
+   "title": "미국 증시 마감 및 3분기 결산",
+   "sources": [
+    "Bloomberg.com",
+    "CNBC",
+    "Reuters",
+    "WSJ",
     "Yahoo Finance"
    ],
    "count": 9,
    "items": [
     {
-     "title": "Micron reports Q4 today: Why Lynx Equity sees massive upside",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMVlKTDUxTDBxbElVTkJScGlvY1NZbFhJOEpXaFlhWXJ5TDJDbmcta1BCRy1lVmNpQ1NwR2M0anRLdDdUWkcxcGxEdVJuYndzdVlDODBHc01kdmZySzFOQjZFcTU4aklHbFE0RURMMlh3VWF2eWRNaWdrbFJXc2Yya3NQczB6YnFxdWxHMVBhRHZnOEswQldj?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T22:45:30+09:00",
-     "dup_count": 4,
-     "summary": "림스 에퀴티가 오늘 4분기를 발표하는 마이크론의 대규모 상승 여력을 본다."
-    },
-    {
-     "title": "Micron's 261% Rally Faces a 7.75% Earnings Test",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcjZlVmF1WkhEcjVpOG4xc1Z2SjZ3a3NWZHNudUJxYkp5cDhHZW0zRVNSbXFZXzljdURqVm1xSFpJb2l5TVZkSEdzQ1ZGcFZNSkJ6emdGVUFLVHY3Y0Y1TDJjalBsUWNUVWljUnQ2a3JZNFBFaE12dnpuWnRscTJwWHBmS2M5ZTZmaWtwSVJqeGZLMUk1?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T23:18:36+09:00",
-     "dup_count": 2,
-     "summary": "마이크론의 261% 급등세가 7.75%의 실적 시험대를 맞이했다."
-    },
-    {
-     "title": "Micron Stock Could Swing 8% After Today's Earnings",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSl9IMV9Bd3pFaEtUNURLTkh6dDhnSWkyM1lsUGlBOW9pdFZoWlk1OWFHd3ZGaG5lc2hVZVNEdlY1X1p6dVg5eGpNd18yaWktc0lGWWNKTUFwYjg4RmNnTks1RHI1MHNxMVpfbG5XZXpHWFI5SGQyN2JRVUdMbk94MFlaMmdOa28zd1JXY0lPUHZoR3pBUXc?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T21:13:48+09:00",
-     "dup_count": 2,
-     "summary": "마이크론 주가가 오늘 실적 발표 이후 8%까지 변동할 수 있다."
-    },
-    {
-     "title": "Micron to report Q4 earnings as memory boom powers on",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY2REVk9Lb2VfOThUV0hPeUZrdGt4aEFwdFdCVVlHNFB4WmhBbjFaWkxweHhBZlVMTFphUlhqbUZPSkRWdG12OWFNb1phQ2xpRC0xZ2d2akxmTnRLb1Nnc1Blbk1KQ19jNndORFp1U2MtMUtCT3hoc3dwaHFFS0ljODctU1RvNFk2T2RsTzQtZmJ6Y29RaGJOaEpKdFhON1ZOZVFIcGoyNUpQMy1fZ3Q0WERsWQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T19:21:59+09:00",
-     "dup_count": 2,
-     "summary": "메모리 호황에 힘입어 마이크론이 4분기 실적을 발표할 예정이다."
-    },
-    {
-     "title": "Micron Earnings Prediction Market Preview: Can the AI Memory Boom Keep Running?",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUF91bml3bVRqSVB1a21NbUV4cUo2aUNaWUk5bTZpQXF2OFE5Y2ExRDVvbkpueDZLVzhXTGljY2kzcWlDRUphNzQ5cUFvRzBTXy1HdENvUjJvUktKZUtIVW5mNEZMT1FrWVpCTGI3c09acl9oQnRqS1NvUk9zRVlFWWQyVnZXVmJUVGZrMjNWbTN3eHkzVGpfOG5zb0hjcU5yRU41b0JIZEZwdw?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T23:30:51+09:00",
-     "dup_count": 0,
-     "summary": "AI 메모리 호황 속 마이크론 실적 발표를 앞두고 시장이 주목하고 있다."
-    },
-    {
-     "title": "5 Micron Entry Points Reveal Why Timing Matters More Than How Long You Hold",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUkVpMndUaFJDclkyQXN4N0ZFeUhMVGtVenVIbVRqZW04TmllN1dsaEwwYlRoaWg2Q1NRNl9xcUZQeDVKcTl6XzRlMkFublQxdWtaTl91WFJqMWRBblJnbTB6QVhwQTlfRllXMThKTlNOUi1Qd1lsa051aWVnUnN4TDhIclNJb2c3V1Z2MTZXa3c1d0lZTnZ5SA?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T22:05:40+09:00",
-     "dup_count": 0,
-     "summary": "5개의 마이크론 진입 시점으로 타이밍이 보유 기간보다 중요한 이유를 본다."
-    },
-    {
-     "title": "Micron Earnings Preview: All Eyes on Its Outlook for the Next AI Chip Cycle",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPenRzOW5VWW9EaTYxQ3JlVkQ2YlEteHZEMFVLVkdCV041YmE1RExFZXBjTk5lTlB1QVNvNFgtSmJ1eC1xdHYydnIyaW55QzIxQXhRbUVubHVvdWhYd2ptVlFHX2RkT1RHSlB6dVRhcXZ0Sm81ck12aEQ0QmxtUy0ybHJ4a0RiRGJjZUtMLXhHNkZPd0gta2RZMWNEN1NuM2NWUGN4aTVrQXd0X21sN3FGWmR5emZqanBwaG9n?oc=5",
-     "source": "Investing.com",
-     "published": "2026-09-30T17:56:08+09:00",
-     "dup_count": 0,
-     "summary": "마이크론 실적 발표를 앞두고 차세대 AI 칩 주기 전망에 이목이 쏠린다."
-    },
-    {
-     "title": "MU Stock Rises Ahead Of Crucial Q4 Earnings Report: Investors, Analysts Look For Clues On How Long Memory Boom Can Last",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcGZpbXZMSzV5Q21pMEYzY3hxV3AydDd5azVTRmVfQVdPYUJhWmtybVdRREtNVllTcjZwaTNjbW9yYW5taFVpU1ozbzh0T1djdFNQblo5VHhDWkFURmZjUHV5UFJUQ2JGbUI5MjZDRTgtc3RLNTRialhiYllabXpwVkhLeVctSHR6YnAtemFSdWVVUk9ZT2ZYRw?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T17:47:29+09:00",
-     "dup_count": 0,
-     "summary": "메모리 호황 지속성에 대한 기대감으로 마이크론 주가가 실적 발표를 앞두고 상승했다."
-    },
-    {
-     "title": "Why Are Nasdaq Futures Rising Premarket? MU, TSLA, CAPR, VNDA, ASTS, HOOD, BA Stocks In Focus",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdGZyOVZ4RUNLZUxleGhCSTFyUnhZYWxURTBFcFNDSVRWN19DclprVEpadmV0dDlqb1F4VEhZb3V5VUEzRFM5WUo0RWMzdWZLM0YtVXVJZVVMcEp3bFFvZkkzMDdlTENac2hGSlZQQXJZQ3ZtT0JnRjlsdXRHZ2stR01Ed3VyUDUxOE5tQ3FVSWxDQ0pZRFBCRkRyQWRhNW9pYnc?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T17:29:53+09:00",
-     "dup_count": 0,
-     "summary": "긍정적인 프리마켓 분위기 속에서 MU, TSLA 등의 종목들이 주목받고 있다."
-    }
-   ]
-  },
-  {
-   "title": "미국 물가 상승률 둔화 및 연준 금리 인상 우려 완화",
-   "sources": [
-    "Investing.com",
-    "Reuters",
-    "Yahoo Finance"
-   ],
-   "count": 6,
-   "items": [
-    {
-     "title": "Wall St climbs as cooling inflation tempers Fed rate-hike concerns",
+     "title": "S&P 500 dips, Nasdaq higher after data shows moderate inflation rise",
      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdXFFNHNQQUxXRkRPN3ZndG5TZS1PSGpvaFZPMG8zRU1oNFdrOUFZQnNsT183YWZ2R3NoNGNUX1NVdmtZNmxaYVc2X2c0Vm5tNWZjbEo1ZkYzNzVqeW1BS0VTaWZYc1hKRlRaRGxrQlk1aGlpQTROOV9mSDZldFlkejFZVGxKYmZzQ3czLUFPUDRBVmNJNWpuMnBPdE00QUlncU9EU2lXZw?oc=5",
      "source": "Reuters",
-     "published": "2026-10-01T00:17:54+09:00",
-     "dup_count": 3,
-     "summary": "둔화된 인플레이션으로 연준 금리 인상 우려가 완화되며 월가가 상승했다."
+     "published": "2026-10-01T08:40:02+09:00",
+     "dup_count": 2,
+     "summary": "완만한 인플레이션 지표 발표 후 S&P 500은 하락하고 나스닥은 상승했다."
     },
     {
-     "title": "A cooler-than-expected reading on Fed’s favored inflation measure tamps down on urgency for rate hikes",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTnZRVjQzMnpzRHZpcGxDd1VNR09Jejl5STdNdWRGNnE2NDNsZnd4dVBMOUxTSFBiMTcxSGNkbjhnQXFOY1d1QkxubThXWFBGTkhaWDlwVFJNcEkxYlVGSlMwcnhqalJsUzJsSlYzT2tCekU4XzRoZ2VxNDRQZGk3NUNqeVJFVzBGYmhUeVZSQnJXTk8wWVZGNGJnNUVqVWNrdGUtOFJMbDFHOWM3cnB3RjVOd2dXZ1pQcGZMNjlETmJZYy1Oc3NmVTJBS1NZZw?oc=5",
+     "title": "'AI or bust:' Tech trade powered stocks through volatile September",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVnNBemxKR21leTFtVjZVWE4xNUNraVcya2xOZXRoM1dRS2JDTU8wc1pvUjNrTFlvVldZazBKd3RIaFpFV1l0bElkSXNWQko2TTdSRU5oSDV1ZkQ2TC1jN1BrZXNTSGVBLVo1OFVTblRiTVBlb2Y1Y3E2QVVSeVNRMVBoYUVzSU1rcGdrbk9NMFNOYzVxc0xIWjNzbFNybjdaaVYxUG9rR3ZPRWwzQ1FmM09hOHdjeEwwbVBLMA?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-09-30T23:57:17+09:00",
-     "dup_count": 3,
-     "summary": "연준이 선호하는 물가 지표가 예상보다 낮아져 금리 인상 압박이 줄었다."
+     "published": "2026-10-01T07:47:59+09:00",
+     "dup_count": 1,
+     "summary": "변동성 큰 9월 동안 AI 관련 기술주가 증시를 이끌었다."
     },
     {
-     "title": "US inflation rises below expectations in August; consumer spending robust",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSktrS2JqeGdwTmowTVBNV2lPbnZwcVdwSzJPVi1aRzZuVDVQU3RtRGZ1UExTOVJnWm9CcTNYbnFneF9wOWlCMU5MNXEwMDN4UmhVVkx2MFVWOC1EYVdyb3Y3WXNYYXhNUzZSUExKQzNZOWk4U1dRaVBMMUZBeklyT0VqNFVhbUV3RjJmbThsM3FOejFUV2lBV0ZtZjNTZjVqRFYwcGZqZWdKdjBRa3FvcmdKRTRWak0?oc=5",
+     "title": "Asian Stocks Eye Rough Start After US Reversal: Markets Wrap",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdGZSU2VKcVFJYnI0WHlseEpJenJhX3ZZOUR5TWhNd1RvT1Q0Q1ZxSFBaczFVVnNpV0hiRGI4SEtiUEpkd0ZBRjJKOVVka2pLZmxFVVl5M3E3N3RtTHl4a1NFbzM3RG93VHRfN3hSNGxhcmNjYkVXcHFaakdMQ2d2cmFLVjNxM0pubG1Nd040ZDhWRFFP?oc=5",
+     "source": "Bloomberg.com",
+     "published": "2026-10-01T07:19:53+09:00",
+     "dup_count": 1,
+     "summary": "미국증시 반전 여파로 아시아 증시는 불안한 출발을 보였다."
+    },
+    {
+     "title": "A Tech-Fueled Stock Market Powers Through, but Limps Into the Fourth Quarter",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPc1JDbTJOSTJNWnhqQ2tkWE83TVpKNnZwUW4yVXVXV3NjRzE1WUZOVG1hZWJCR1lEWEU3UE1laFhldFlvbTFTa1Z2THJNMUQwbElyX2hZUTNrMW91dzNjMndRRWNlMGxKVDBpdG01WUdQUEdQWW0ydTNzc09WTHBhX0JMaGxrcE9QeDYyYXRla2ptcnFCUlZFZ1pvUHR3RW94aVFhWHJsbENhWnU5WmNDREVzY0pxZVkxYnJR?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-01T06:37:00+09:00",
+     "dup_count": 1,
+     "summary": "기술주 주도의 증시가 4분기에 진입하며 고전하고 있다."
+    },
+    {
+     "title": "Technology Shares Lift Nasdaq as Broader Market Slips",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSTc0MzlHUy00NXRueDJOVmZhbnVRX0lOd09GRklPRUVoVGJ1R0xQb09ydll3a0lBVVZzbUk2SEhYZXhLdDhwcnVhdWRQdjJDNFZqVmotNWFjTFNLVkZsZVZISGs1TndyamVsaHJ5LVFMcTg4VS1HUks2N2tDQmxDWFc1MGFuTkJXSVhNODlTNTNKak5lQ2ExV2JBSF9kUQ?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-01T05:55:00+09:00",
+     "dup_count": 1,
+     "summary": "기술주 상승이 나스닥을 끌어올린 반면 전체 시장은 하락했다."
+    },
+    {
+     "title": "Thursday's big stock stories: What’s likely to move the market in the next trading session",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTURfSUtpaGxmMFVnRmNtVkJGOG1xOWxXa01kSHNJaUYxNzRkY25JVmpySUR5R3l1aFJaNGlXT3M3eXJPM0xDcDFSTmt0czU2ZTRCQjNZTTVsRGZwckg1VEhlMDk5RzlTTFhBcTJvR1dUclUwdGxUdGZMSkdDVjFNeXBqZjllbjhINndjd2M4Y2h5Mi10UjFFX0JlZlI?oc=5",
+     "source": "CNBC",
+     "published": "2026-10-01T08:07:50+09:00",
+     "dup_count": 0,
+     "summary": "다음 거래일 시장을 움직일 목요일의 주요 주식 뉴스가 공개됐다."
+    },
+    {
+     "title": "S&P 500, Dow End Lower As Investors Shrug Off Cooler-Than-Expected Inflation Data — MGM, SPCX, AAPL, TSM In Focus",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRnlxWkw0VGNQUjB0b0UxaVdZempLUWQtN19TQnQ2N0FLUm1kbFBpdkg1NVQ0QmZTdlpSNkM3c2R1bVZnVWRwWU1XNkhqdkJzR1RvUzJOcWRfZVEybldHM2g3bUNEZUN6NWcxWlZaUVRiNmFQMlpOcldxalJIangxaUllQXIzT1lpLW1QUw?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T06:23:29+09:00",
+     "dup_count": 0,
+     "summary": "완만한 인플레이션에도 S&P 500과 다우지수는 하락 마감했다."
+    },
+    {
+     "title": "COMMENTARY: Trading Day: Shrugging off a volatile September, markets shuffle into Q4",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaThZWmxxSzE4Q3hOazJLT29OcExPMnFWcGRpTFhGWlkxV2xkbV9qTlB1WDRpWGJKYXJRdk9QR1pKZzlSeENqMnlXbGo0TFI5dERyQlZsVEZubnFLdFNzLVhRQ1ZrdWs3RlZwbC1wYTdlNzhpdjBhdUduTnYyMVJuWjNfTE1FeFZ2Q0ZCaUx0eF9LMUxNWjNFXzIwNA?oc=5",
      "source": "Reuters",
-     "published": "2026-10-01T00:18:52+09:00",
+     "published": "2026-10-01T06:05:35+09:00",
      "dup_count": 0,
-     "summary": "8월 미국 인플레이션이 예상치를 하회하고 소비 지출은 견조하다."
+     "summary": "변동성 큰 9월을 이겨낸 시장이 4분기로 접어들고 있다."
     },
     {
-     "title": "Bets on October Fed rate hike wane after soft inflation data, dovish comments",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZmlyeTdLdk5xODcwVXVEekNHYk1TdEViVks2d3ZVem1tdU1SOHkxdGhjUENNV0Nsdy1zQWExUGFCcTkyRnNFMEo3LVFoR0JLWHoweFQ0SlJJX0dWd0ZrZ19QR2dSakNSVW1fcV9yZndXR0Y4cVJZV2V2R0lZNHNxcU5WT1BMeWhscDFnd25Wbmo2cXpXQWM5THgwU1QxWTJRY0dna0dMc1VQNDl3TTdHMThMQ3VqYXNHRE03cQ?oc=5",
-     "source": "Investing.com",
-     "published": "2026-09-30T22:46:08+09:00",
+     "title": "Wall Street is closing out a strong quarter. Plus, Lilly's mixed obesity drug trial data",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdXdqT3N0UTNibEpsaXN1RXRrRzJ1aXlUa0dndnVLdlptbC1USmlnUzlSczJ3T2ZjMUJJLUUxVG5PTHI1Q3RXRTk0czF3OFkzQXN5VDFuTjB4NWJoV3ZfcmxNVFg1Tjh4UmdPZ2U5b3FBUzRaaUI1M3RETHNsZTBiMDFFVHc1OVQ4RWpDUWNmTVFKbTJYb1MwWjNIMk1zcUE1eHV3eEdhU0ROUQ?oc=5",
+     "source": "CNBC",
+     "published": "2026-10-01T03:55:12+09:00",
      "dup_count": 0,
-     "summary": "완화된 물가 지표로 10월 연준 금리 인상 베팅이 줄어들고 있다."
-    },
-    {
-     "title": "Tech leads stocks higher after cooler-than-expected inflation read: AlphaCheck",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNcElHaEViUURhYnRTd3RXdk50T1RkSnR1NU5BbGtHUngzWEtSOENWaG1ROWFIUlZJT0NCMEk2US1BMTk1dDVFbHR6OHJXXy1MSHhEOGhMTXBvaUhTMDA5X25zTmFpd0lNOE43TWRYUkQxLVVCYlk4RE9ReDhnRV9FcUxMcENIaXEwb0xjYTFlU0hDOXh5SkFnbXFBVEIxNVF5d05IX0d1YzI4UFpUc3ItN0N6MUdWaDhqdnQ3eXg5UGN6b0Qzd2ZaQ3JzbFRDMm8?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T22:41:26+09:00",
-     "dup_count": 0,
-     "summary": "예상보다 낮은 인플레이션 지표 덕분에 기술주가 증시 상승을 주도했다."
-    },
-    {
-     "title": "FTSE 100 today: Stocks edge higher after cooler-than-expected U.S. inflation data",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYThHQ0YwbjFKOVpicUF5MHBaekI4OWxfUHBhT09TU2l3NzJid2VWUDNuY0NqeXFDNGJRR1NqaXRQWGJpWTAxTEJuaG40V3ltSXhiTkttaVdTWmtSdkdhY200dFEzVzFIanpyUm81eVRORE5wQWY3UENpYVQtSVYxRjhSWlNyVDRpdmJza3JrUkhFdWx6enFQWEVXRExYS2IyWHo5MlA4M0FITDhTeWdSWnExSTV1YzRVeW02MGN3?oc=5",
-     "source": "Investing.com",
-     "published": "2026-09-30T22:14:13+09:00",
-     "dup_count": 0,
-     "summary": "미국 인플레이션 둔화 소식에 힘입어 영국 FTSE 100 지수가 상승했다."
+     "summary": "월스트리트는 강력한 분기 마감을 앞두고 일라이 릴리의 혼조세인 비만약 임상 데이터를 주시하고 있다."
     }
    ]
   },
   {
-   "title": "엔비디아 CEO 젠슨 황의 행보와 AI 관련 소식",
+   "title": "HPE 관련 주가 동향",
    "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 3,
-   "items": [
-    {
-     "title": "Nvidia CEO Jensen Huang was everywhere in Q3. The AI giant's stock proves it.",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOaHV5TDVmT2tDX2Z3a19vSGZiZ2FYSG5MbEd5V0ZUejRLM21TaEY1ck1uQlNGNXZiUW4teWhONEt4dEk3bmJTQXJGQUtZdWs1OUlvVGVKRTVHMkNQTU45QXBFRTZGbnVOZG52aEFyaEcxSU1IVHU2Ry1Bd09oa1BNeXN0SWlhVjE2ZnBkWXQ3WG5HSGNTTEJLZ19Zd1FTTnJFTGtCM2U5bHBKSWVIQklKM1drTDlTZzhjYkNkUV9ob0RpRmV1TEM5M3Q0SnpfRmRVTVo0Yg?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-01T00:20:47+09:00",
-     "dup_count": 0,
-     "summary": "3분기 젠슨 황의 활약과 엔비디아의 주가는 AI 열풍을 증명한다."
-    },
-    {
-     "title": "Breaking Jensen Huang’s biggest moves of Q3 2026",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUTI4bEZsbjVveVNtU3RYSVlPUEhPLUZMcko4REFTTGN3WHlnNUxpS24zckwzNGpvdE9TSkI5RzZrQVZQV3lJSDM2UFFOemRqelh0STBocXQ0b25IYjVjZERuMEVpMGlaUVE3eXNHa0FvVWp2eGlQR3drNXVBZmFRSENQUFhwbEVMV3hnXzZvZ3JHT0hIcUlqbFdR?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T23:10:14+09:00",
-     "dup_count": 0,
-     "summary": "2026년 3분기 젠슨 황의 가장 파격적인 행보들이 공개되었다."
-    },
-    {
-     "title": "Nvidia CEO Jensen Huang: AI data center build-out could create 1 million jobs and reshape the US economy",
-     "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPRkZyOE5xTkdoRlNPZ244R2NMU3ZudWJ3MUxkWHpGM1ZyMDJBMXdiM0xCR2Yyd0tWTGVpRm1vNUlRLW4wRXVReV9yTnM0UkRtR2t3NjZlS3doajl4TGduVlBpbm5TeVZoNmhuQVk0LUxGSzBCWF90RlRINjVtY0hMVlFvODkzR29ueEVac0tOVlFhOEZGSzZLeFBNRW1DbEtTNVlWaVhKM3Y0aWxfd0RGV2lScWtqT2M1SHRvNzY0NlEzMXVsMVdxQ19wWXpqd3JVOUFSUFBlV29XMmhrR2VUWTVadFZBWWpoODlITG9TblZGeUU2cFE?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T20:07:06+09:00",
-     "dup_count": 0,
-     "summary": "젠슨 황은 AI 데이터센터 구축이 100만 개 일자리를 만들 것으로 전망했다."
-    }
-   ]
-  },
-  {
-   "title": "모더나 주가 하락 및 시티그룹의 등급 하향",
-   "sources": [
+    "Barron's",
     "Yahoo Finance"
    ],
    "count": 2,
    "items": [
     {
-     "title": "Target upgraded, Moderna downgraded: Wall Street's top analyst calls",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQTkk2REhCMVNSaG1kVTM3bl9YYWNmcmRzNDdqSVU3WWstOFU4ZEFtZGg0OEpJWUtZbDVtbHZnVE1HUUlwaDRjbnJCZGJNWFRWcHBIM2xwUzVieDlETTA0Z001UXFtV1ZCZGR3QkUzdDVncUsza0Roa3pxZXhiYTVLLS1xbHBSbDJ0R1ZWMGw4WHlpVnBucGhFUk1NT0tJTHdxOW85OU8zSQ?oc=5",
+     "title": "HPE stock closes at record high on growing networking orders, $1.2 billion AMD Helios order",
+     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVVA0cDhxNjZxT20yVTJKX0xzaFRQMWR0dWd1RUdFUXVGTUN5eGdVaER4cThEenFwSTRXVlJfT2Y3QmY1RkwzTHJXSjRaN2wwMFFzallsaGpMVHVtRWZEX0VfVl9oVEhjMkJMeEhNbDVfd0dkVEhoNWVqbWtXemJ3UHFoU09ZM0g3a1FFM0haZ1hyNHV2aF9qZDdpcV92R0Q1WTB0SGVsUW5TbzM2NWlldlZ0a3NFZWxPV0xKTXNLYU53WXlZcW43aGJIT2pWTy0wSVM2ZFNUTjlpTHM0VktwU2d1X3g4VTg?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-09-30T22:40:37+09:00",
+     "published": "2026-10-01T06:12:04+09:00",
      "dup_count": 1,
-     "summary": "타겟은 상향되고 모더나는 하향된 월스트리트 주요 애널리스트의 평가다."
+     "summary": "HPE는 네트워킹 주문 증가와 12억 달러 규모의 AMD 헤리오스 주문으로 최고가 마감했다."
     },
     {
-     "title": "MRNA Stock Falls Premarket After Citi Downgrade: Analyst Says Valuation Looks Stretched Despite Cancer Vaccine Momentum",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMGRVeVZ5eFFHWHE5NVN0RXNtRm1Wb0VRM0dkNGd1S21PRGlVd2tadHZobG5SaFpidDN4bVVPb2t3a3k5MFBsZGdBLVNpTkZBLTJZc0dzNWV3b0EtWDBwbkRmQlZIMDRxVU5hSUs2VjRzV0xPdXRDOWhCRFc0bGdweU84VXJ5VTU4bDFJenhEUndqaENwN1VOS0xvQVA?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T21:03:28+09:00",
+     "title": "Moderna, Cerebras, Jabil, HPE, Cal-Maine, Mattel, and More Stocks That Explain Today’s Market",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8xUnNscXpFaVRXZUpmaTFsSGlVNmwwU2ljV0JrZzRXRWhzM2JuOWJ4STNjVE1LYmx5dERXNThzYU5JS2pOWkRKWVR0aTFMU1prZkdHZXpzcFVJSkl0bTMxeEw4dXQ?oc=5",
+     "source": "Barron's",
+     "published": "2026-10-01T06:09:00+09:00",
      "dup_count": 0,
-     "summary": "씨티의 하향 조정과 밸류에이션 부담으로 모더나 주가가 프리마켓에서 하락했다."
+     "summary": "모더나, 세레브라스, 자빌, HPE 등의 주식이 오늘의 시장을 설명한다."
     }
    ]
   },
   {
-   "title": "The Constant Beeps in Hospitals Drive Everyone Crazy. There’s a Better Way.",
+   "title": "미국 국채 금리 상승",
    "sources": [
     "WSJ"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "Treasury Yields Hit Fresh Highs",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNR1h4Wm1PMS0zdk5jczNlaHg3aDlpSXd6Y3hWaFM2MmR6ZkV0cWc2LVdsOTdWbEdrNW85WXNCR08zeDF3TWJLRVpFZEFvTFpxVTEyM2JuM3JNSFdoa1k1NzNXR0xRU0d2ZEptY2pndU9SelM3d0pqcTFMVWtkRFJ1NEc3NU5RbDZ3MHB3dmJ5YzYyU2dBWi1MRW5hZzlzQUZxNm5LMUlMbUh4dw?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-01T03:55:00+09:00",
+     "dup_count": 1,
+     "summary": "미 국채 금리가 연일 최고치를 경신했다."
+    },
+    {
+     "title": "10-Year Treasury Yield Rises to New 24-Year High",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZWRvWVlTczRMcnM3cm9DOVFaLUNGRXhWR1RxcEtDZWMzNXkzOVh6OUJCVXpBOG9aNzlscm1kb1pHd25YQ3UyMUhsRXJvdWZHN3RHVVpsdmxMU2dTaG1CUk9vaEpUWkU5eTBPOF92MmdUb0pGeXdzUmVRbm5ic0xYZFlhb1JmamQxZi1OR3Y1VEw5U1hJZUFtZjZTbw?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-01T05:21:00+09:00",
+     "dup_count": 0,
+     "summary": "10년 만기 미 국채 금리가 24년 만의 최고치로 상승했다."
+    }
+   ]
+  },
+  {
+   "title": "알파벳(구글) 제미니 관련 주가 하락",
+   "sources": [
+    "Yahoo Finance"
    ],
    "count": 1,
    "items": [
     {
-     "title": "The Constant Beeps in Hospitals Drive Everyone Crazy. There’s a Better Way.",
-     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBfc2RTUXAwbERCa3ZWcFMtcWF3Q05LZll5YWE3Y3M2N213ZUpvUWcydkoxQ2Z2aVVucHBhck1aeC1IRVpoM2xwUENCQy1DUF9HM09fa2ZIX2pGYXdUSWRDN1BLbUlQRDZQRmotRlJNZXhyVDh1MEwxdlFR?oc=5",
-     "source": "WSJ",
-     "published": "2026-10-01T01:13:08+09:00",
+     "title": "Alphabet stock slips on report of internal doubts over Gemini 4",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZ2R6Nm1uN2FsMFpFRW9vQzVaMTJKNVNabVFteFpRak9nOHFRQUpURHVJZUNSaXFrWWxjLWxjUXRGb3NWUDEtbDRXNjBDbTdqajhnZ0pxUDZsWklIMW9McU5qWGlNSXRuVHlsU25ZUzVXcnlyanR5WFVDY0xHbklQS0ZIZUdzcElIWkMta0xJZlg5dC1WVl9PMDhtczB6Y3RSVFE?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T05:30:29+09:00",
      "dup_count": 0,
-     "summary": "병원의 끊긴 소음 문제를 해결할 더 나은 대안이 제시되었다."
+     "summary": "제미나이 4 내부 우려 보도로 알파벳 주가가 하락했다."
     }
    ]
   },
   {
-   "title": "Jabil Stock Is Falling. A Blistering AI Demand Outlook Isn’t Enough.",
+   "title": "파라마운트-워너브라더스 합병 및 매텔 CEO 영입",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Paramount poaches Mattel CEO to be co-CEO of new company merged with Warner Bros. Discovery",
+     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNY1FwU0VsRC1feERtTnZ1OHlNYTNPM1ZIOFhNTjRUa1hfWm1uUFNUS0VMc1ZnUVFSZXlhOTIzdmx1NjFtMFNTbmFuVG9MNnVNenN3eE1fdjdKeVp5Z1Vac1BlSi1RY2VPdUR1TFlaTnN3Z0x0dHhVWGxpWmRxOW5HcnRjSjI4RGRic2VRbnRKcURkSGx0RlFOZWhmYkNCN3pBTFdKbVU0V0F4eE5TeXc3RldIcDFleHFqLUhXandLcjIyLVZtR3RDUU45Nll1aFhnTXN3cGtDWDJ2dU1RMTJ5RGI0Z2hiNmdXbUE?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T05:29:23+09:00",
+     "dup_count": 1,
+     "summary": "파라마운트는 워너브라더스와 합병하는 신회사 공동 CEO로 마텔 CEO를 영입했다."
+    }
+   ]
+  },
+  {
+   "title": "우버 투자 전망",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Prediction: If You Invest $10,000 in Uber Today, It Will Be Worth This Much by 2030",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcnlDLUVsc0NTemNLZDkwbHNHUjJYT3hqeDN5YmFQVmI5ZHE5bkpPLXZtUVdMbnNvUC0zclFDRmF5ZzBudVRYNlV6MmlzYTZWR1U3Vjd4djkxN0JueXppYUNGdkc4NTh4VThhckw5b3hPVUtLYVVkMmhvN1NmYWRYcW01bEc4Z3hiRXlMWXN4Z0RLaW1vRXZkcExB?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T05:25:00+09:00",
+     "dup_count": 1,
+     "summary": "우버에 1만 달러 투자 시 2030년까지 예상되는 가치 전망이 제시됐다."
+    }
+   ]
+  },
+  {
+   "title": "세레브라스 관련 동향",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Is Cerebras' Next Big Thing Already Here?",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcHh3M0lRZGFDeENYVF8wbnlXSzhTXzgxUUVqd2MzU2l4UG55TmRyd0hDV2VRVFhoRnNMazYzdVM0T0lrUTdOUF8ta3BNYUhOVlBCQjZGVGdIRzRzaHZCc25zeG5TMDFQdi0xY0VZeVpmS3J3cU5mLVBrNFZVdy1xZ1gtVUIyWHdLT0lpbWh3bDN3STlKRFluSTVZNA?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T04:15:32+09:00",
+     "dup_count": 0,
+     "summary": "세레브라스의 다음 대형 제품이 이미 출시되었는지 주목된다."
+    }
+   ]
+  },
+  {
+   "title": "소비자 신뢰지수 하락",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Consumer Confidence Fell to Its Lowest Level Since 2014 and Consumer Stocks Are Already Paying for It",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTC1MWlBZVzd4Z01VYXdSUWFlWFBPT3J1dlJSN00xNkRON0pOZG9ORzRJWjg4OElILVViMnhqdy1HUHJVb2dGM0VkeGhhckpkaWVvQTFlYURhcEt2ZE5Qb2VXUkxuUk13U0hpNkNKcG5vMlo0alA3a1ZldldFZ3FIbTQtX1piVHpoNVpsNlJaeXNnRmZEUndEalB3SQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-01T03:55:30+09:00",
+     "dup_count": 0,
+     "summary": "2014년 이후 최저치로 떨어진 소비자신뢰지수가 소비재 주가에 타격을 주고 있다."
+    }
+   ]
+  },
+  {
+   "title": "자빌 주가 하락",
    "sources": [
     "Barron's"
    ],
@@ -232,514 +355,344 @@
      "title": "Jabil Stock Is Falling. A Blistering AI Demand Outlook Isn’t Enough.",
      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBNQUVwT2pjN3RySC1FMTd2RXdNX0tKNGc5a3piRW5PTjJuRGxmaFJaUHJLaUJsT0tKRUV0MVQ4V2pQTmExcVo5WDNEYlpXQWtaNmJ4TXQwN0owMFJfWDBINjBWaThiaHNBREh1UVpOVV9jVjNLU29J?oc=5",
      "source": "Barron's",
-     "published": "2026-09-30T22:57:00+09:00",
+     "published": "2026-10-01T03:46:00+09:00",
      "dup_count": 0,
      "summary": "강력한 AI 수요 전망에도 불구하고 자빌 주가는 하락하고 있다."
     }
    ]
   },
   {
-   "title": "What Is Going On With Alphabet Stock?",
+   "title": "오라클 주가 하락",
    "sources": [
     "Yahoo Finance"
    ],
    "count": 1,
    "items": [
     {
-     "title": "What Is Going On With Alphabet Stock?",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2MzRnRNMXlZWmlWSVVjWG4wS2dlTkxFVXZ2Zy1BNUNReDUySzJtTWtZWGtuMDhURDBSNUNkZW5kZmR4cXdieVhuTmFfdWtURHNqM1dyeEE0RHhGSmtCNzJWVTlIRzFjYXIyWTdIQmkyZ2tQZndKS1BYeS1HdHBmOVZDcWFiTFVZc3lBSTVn?oc=5",
+     "title": "Oracle Stock Is Down 60% From Its High. Here's Why I'm Still Not Buying.",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZjdfMTdteFFNVXprT2dVNXh0eU9lVzVNTFpRUmJZeDVwRkRTN2JITzJSQkZhR3EwUnk1VEM2cTJZaEhaSlgxaHBCQ1hORThmWFViQW4wbEJyaVNsVnF4UGRfOTNrVS1GWWpfMV9UQXBya21MLXp1aFV3U0JZTTMzQ1ZDZldIVlFjNXpjc0FsMWNBTWdL?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-09-30T22:35:17+09:00",
+     "published": "2026-10-01T03:32:00+09:00",
      "dup_count": 0,
-     "summary": "알파벳 주가가 최근 어떤 국면을 맞이하고 있는지 주목받고 있다."
+     "summary": "오라클 주가가 고점 대비 60% 하락한 이유가 분석됐다."
     }
    ]
   },
   {
-   "title": "An inside man at the Fed, OpenAI debuts Dots, an IPO trend and more in Morning Squawk",
-   "sources": [
-    "CNBC"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "An inside man at the Fed, OpenAI debuts Dots, an IPO trend and more in Morning Squawk",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYlU1cE5zakl3ZVVIT3JiVm5hbFJET3FqNnVjaS1tNnd3YlpmZFE5MjdDb3hmc2tQNXFLMjVYWmhrSU9UR3hySXZwbnFUTUw2cjNhUVBJWUJlWWhrR3dCbHdpYmFlQkI4SWtzZlJmaGU5bzA2YUxHaERMVXlTbzJOaEVGaGEzRkYxTlBR0gGQAUFVX3lxTFBFQjdsLVUzUEplLThzdE9GUXhYQWNHbmxncklxMGQtYUQxQ3phQlJST2xaWGxHUGM2bkNpejV1ckNWMzNEbVo2ZkNTWUVrUUR0clgyRlI0VVJTRXJfd045TGROSU94bjZHSjRfazgyQXNhYkF5MUdVX0cxWWVVWG5lMGdPSTRFejZqbFJaaTFzMw?oc=5",
-     "source": "CNBC",
-     "published": "2026-09-30T21:35:26+09:00",
-     "dup_count": 0,
-     "summary": "연준 내부자, 오픈AI의 Dots, IPO 트렌드 등이 모닝 스쿼크에서 다뤄졌다."
-    }
-   ]
-  },
-  {
-   "title": "Robinhood Unveiled In-App AI Trading Agents. Here’s Where the Stock Could Go by 2030",
+   "title": "AI 시장 리스크 관련 분석",
    "sources": [
     "Yahoo Finance"
    ],
    "count": 1,
    "items": [
     {
-     "title": "Robinhood Unveiled In-App AI Trading Agents. Here’s Where the Stock Could Go by 2030",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYmpiRmx2VXUydGZ0bElmSWtpeDRBMEdTUk02YmtQb1E5Z2U5bTN0MEdhSnhuWDNSY3JJOTVvQURjTHVJNFJDNnloOGdTT3IyY1BaQk1jeUUxWk5WVkNxTUNWWE9nbGVvU21MR2VRVXQzMnp2ZGRtNzN6NEF6RG5OX0pFakQxLTBqVXV3em8xUmlvZ2xuTVBYRDdSSTVVZW8?oc=5",
+     "title": "Market may be mispricing AI doomsday risk: Strategist",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaEk0VXVqSFVfcFlYd2VVZTZNS2hhM0JzVEhObjBQdmRtLXgzZU9JNUtnc1pKS3A1THNuZlhYSHdWZGhURjY2d25Fc0tuUlJCTGtORjd3SXd6ckdrTW5PaDFUUm5uTDdrWTZ6M2pHcjAxUXA5R1h1RTRmMm82cFV1cWRYU0ZvS1Z4QUpvbmdpSTBjV3ZLS2tTRG5LcTQ4STVVdW5hZDdzMGxhaVYtSUE?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-09-30T21:34:20+09:00",
+     "published": "2026-10-01T02:23:03+09:00",
      "dup_count": 0,
-     "summary": "로빈후드가 인앱 AI 트레이딩 에이전트를 공개하며 2030년 주가 전망을 제시했다."
+     "summary": "시장이 AI 파멸 시나리오의 위험성을 과소평가하고 있다는 전략가의 분석이다."
     }
    ]
   },
   {
-   "title": "Apple's New CEO Targets Middle Management in Shake-Up",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Apple's New CEO Targets Middle Management in Shake-Up",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOLXczbXhKb3FiRFpjVnQ5Z25fUVpyQ3ZxMWNNUUdBVVZTNkIyRlN1VVE2THd2dk1EWU12UWprMTgyOV9GUWVvWG1YTmQ2ejBQWFAwUDQzNE4tZHNMandFZGRWcGp4NDFnQUNDQkdkWl9qRkxIeDlLZGpiOFdRMnR3TGRkOGVieUhCeWN3ZjFsM1FiZDhJSUhPaFF2clRHZ09iVHl3?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T21:31:17+09:00",
-     "dup_count": 0,
-     "summary": "애플의 새 CEO가 중간 관리층을 겨냥한 대대적인 조직 개편을 단행했다."
-    }
-   ]
-  },
-  {
-   "title": "Two Google alumni raise $11.3M to back AI startups that enterprises will actually pay for",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Two Google alumni raise $11.3M to back AI startups that enterprises will actually pay for",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR3pNYUtLZWttZkllSlJJRFBWV1NkazFCUkQ1WF9mZzJyTXhWdXJVTE5nNVdKc0xKVnYyTmpBaWJ5NmJtczZaZ3diV0JuRXM0aUlhN091VTNaS2FuZzN6TERhVWVYanVKdWxnQ0RwLTNhaFZBWmtoRU5MSGdiUUJtNGFFUGlpOTA5TG5XVkVZQUgwR3g0?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T21:00:00+09:00",
-     "dup_count": 0,
-     "summary": "전직 구글 직원 2명이 기업용 AI 스타트업 지원을 위해 1,130만 달러를 모금했다."
-    }
-   ]
-  },
-  {
-   "title": "Meet the Low-Cost Vanguard ETF With 51.8% Invested in Nvidia, Apple, Alphabet, Microsoft, and Amazon While VOO Has Just 30%",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Meet the Low-Cost Vanguard ETF With 51.8% Invested in Nvidia, Apple, Alphabet, Microsoft, and Amazon While VOO Has Just 30%",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOT21WcHVXY1U3ZjBGR2QtZVF2OVN0emtFa2RiM2MyWDN4R05KQWQ2Y2xxMVNjaW9XMTJRWUdyQm1rZXU1N3VTZ3VQN3hQWVF6TUl6VXhpTE1uY1diY2Q1LVBPZm1TVFBtbTBIQURNWFU4ZWJSOGxQMGNEZTdwR3lMZFphRzE1ZVVHZDBJTXZ3RnNHYkllMEE?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T20:50:00+09:00",
-     "dup_count": 0,
-     "summary": "엔비디아·애플 등에 고루 투자하는 저비용 뱅가드 ETF가 주목받고 있다."
-    }
-   ]
-  },
-  {
-   "title": "Japan Pauses Forex Intervention as Yen Strengthens",
+   "title": "기초소재 부문 시장 동향",
    "sources": [
     "WSJ"
    ],
    "count": 1,
    "items": [
     {
-     "title": "Japan Pauses Forex Intervention as Yen Strengthens",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMjIySnlXU0w0UjZHc0dsZkdhelVBNDZjWkdzZHNYNXJ1VExtNVYwejhMdGREOTBCdXJkeXFObEdsNUNEaWdHUWZnaE04Z0Z2b0puUTJFeENLWW10VHE1Z1lPMUhjX2xlX2xubnR1S3pMekRzS0tzWHI5bkQ1blRhaEZKTTRQeUI2ZzNNSm0tS29tNGF6dHlOd0ZwNFRfZFU?oc=5",
+     "title": "Basic Materials Roundup: Market Talk",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE81TXlwZlJBY3VMcFJCdUxlaGttbnFUVW9oaV9QQU92QjZ0QXJGaVlPOUxPYXotN0JKSF9tZUdiT01wakdKaUpBcVJIanhvNGhNbzRJSjBvdFpKSjFNaEZYbmk5TlJXQ0VOMzBheEt4ZEc4ckcyU0U4Yk40aElQZw?oc=5",
      "source": "WSJ",
-     "published": "2026-09-30T19:57:38+09:00",
+     "published": "2026-10-01T01:51:30+09:00",
      "dup_count": 0,
-     "summary": "엔화가 강세를 보이면서 일본이 외환시장 개입을 일시 중단했다."
-    }
-   ]
-  },
-  {
-   "title": "Euro Unlikely to Extend Recent Losses Much Further But Risks Remain",
-   "sources": [
-    "WSJ"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Euro Unlikely to Extend Recent Losses Much Further But Risks Remain",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSGtkRV9qRmRfUGtOOGpsRnkydE9DY2FTVFVtTVRpeTVwUDdzQkh6X2RHRDl6ZHpuLURSMkxpM0plOGZucW5DTDdlUUFvRDNxeGRvY0ctalVYdlZVb3N0Q3d5Q1ctWHFCVlFPZnpQbDRFb1NlZTlNSEdLVG5qUWlZUHNENFhGRi1SOVJBb09oNUhIdktSR3lBTGh6ajZMN2E2eFNXbGJ4a1RROE1SQnVQSDBNNkVSWEFKNWZOa1NxV2g?oc=5",
-     "source": "WSJ",
-     "published": "2026-09-30T19:44:00+09:00",
-     "dup_count": 0,
-     "summary": "유로화의 최근 하락세는 진정될 전망이나 여전히 리스크는 남아 있다."
-    }
-   ]
-  },
-  {
-   "title": "Archer Aviation (ACHR) Stock Could Trade Below Fair Value On Its 47% Slump",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Archer Aviation (ACHR) Stock Could Trade Below Fair Value On Its 47% Slump",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTHVHR0hJRHlnUzJEUVVWR2hBSEJ3Q2xWR0Jkc2xBa3RvYzRDZG5iVHhjRkN3b2lfb19WNzU1NHdzaC11QXZiVEh2SkxKQWpZRnZYY0h5NUtVSlRYWlc2RzFrb0FhdzF1b0dSQ1F3Sm05bWw4UTA2TjlYWDZ3czhLdFZhTTl3TUQ5NGlRMERuOGNNbjE3RXJpLXpTUm5fQQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T19:09:13+09:00",
-     "dup_count": 0,
-     "summary": "47% 폭락한 아처 에비에이션 주가가 공정 가치 이하로 거래될 수 있다."
-    }
-   ]
-  },
-  {
-   "title": "Anthropic IPO documents show there really is only one risk with AI",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Anthropic IPO documents show there really is only one risk with AI",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbWZiNUVsSEFCbnJkbWI4QVdnSXRuOTRrUWpGQ19TLWZTTWRjWXN6TGt6RzB4azUzZktWZ2g4Q2xibGRIY3B0dE1kZzh5eHVVYXh0OHFVcFd6LXI2M3VBWF8tYlNQT0daem1LX09wdTBRUFp2ZjhvMmh3Q3A0aDBrbElYeFQ1dVl4OWR6WWdDaVJyQ05kbmUwMHFtNHhGaUY2X0JCdkFJT0d2MXlkbkQ1MFBYU3R6c0lKa2JLVkp4X1otYlFQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T19:00:00+09:00",
-     "dup_count": 1,
-     "summary": "앤스로픽 IPO 서류는 AI와 관련된 단 하나의 리스크를 명확히 보여준다."
-    }
-   ]
-  },
-  {
-   "title": "AI companies just signed a White House accord, and tech folks can't get enough of the signatures",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "AI companies just signed a White House accord, and tech folks can't get enough of the signatures",
-     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQaEZxTkotdzc5MHppVnlTYW5tSnhvOE80cFdWdE1FOUpLckZLdnhKNWVidVdTNjlWQ2FYdVgwaEVMLTF3UVVyejVEMGFiWGNxNXhwN1c2ZlNqaVNGNGZkNDNMUFRXZm1CMFp1QzRRaVRSU3h4WGJLa21MbkpLWk1JVHJBblR0a0R1MzczdzlPNTAwRzZZbUd5R01rM1pmWDBFX3I0WnlydTg0NDJtR2U3RVZMM2tlRWdFS0ZwZkFBTHhMRmg2N3NPTUM0ckQ0LXBOUzZWSmhkblh3b3FwZXVmOTc4ckFmNm44VWc?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T18:58:52+09:00",
-     "dup_count": 1,
-     "summary": "AI 기업들이 백악관 협약에 서명하며 기술 업계의 큰 관심을 받고 있다."
-    }
-   ]
-  },
-  {
-   "title": "Pepsi Just Extended Its Dividend Streak Again. Here's the Annual Income on $10,000.",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Pepsi Just Extended Its Dividend Streak Again. Here's the Annual Income on $10,000.",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU2RhS1FDNGVPQ05DMkZibjBIU0ZFZmN6U3Z1QmoyTWNQbVdUWVJDeEl3TVZsTkpvVVUxeTdqQ3pqempDbDZqUVhHdGNWaGUxOTlKMTJLWGNrQVNlMUlTS0xEMHlkUDhEWHN3OFVhMXlWX3RiYTJ2ZUtwU3N4V2NOMXhHbWFRUXB2YjlhbVRzN01YVFRwQ2w4ZnZQWTVpOGNrWmc?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T18:57:00+09:00",
-     "dup_count": 0,
-     "summary": "펩시가 배당 지급 기간을 연장하며 1만 달러 투자 시 연간 수익을 보여준다."
-    }
-   ]
-  },
-  {
-   "title": "Billionaire Israel Englander Buys 2 Artificial Intelligence (AI) Stocks Up 405% and 575% in 2 Years",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Billionaire Israel Englander Buys 2 Artificial Intelligence (AI) Stocks Up 405% and 575% in 2 Years",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdHpZNXVXaV83OXlzOE1wN0F1RTlONFNfcWxZOVRZNkE5V0FqMDVYUy1yMlhDNlBDRGxHLThJM3pRRUV6RXYyaWZjcnN6RklnWjctUWp4Vk82N1FlTU5BcU1QNHNBMmdzRHBTN0JYZDNsNmItRmh5RldEYzBTVjlOTW8yS1BJNDd3M21tUVBNUi1ZSVlOQWRLbGhrZ2VQN19ISlE?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-09-30T18:04:02+09:00",
-     "dup_count": 0,
-     "summary": "억만장자 이스라엘 잉글랜더가 2년간 405%, 575% 오른 AI 주식 2개를 매수했다."
+     "summary": "기초소재 부문 시장 동향이 발표됐다."
     }
    ]
   }
  ],
  "items": [
   {
-   "title": "The Constant Beeps in Hospitals Drive Everyone Crazy. There’s a Better Way.",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBfc2RTUXAwbERCa3ZWcFMtcWF3Q05LZll5YWE3Y3M2N213ZUpvUWcydkoxQ2Z2aVVucHBhck1aeC1IRVpoM2xwUENCQy1DUF9HM09fa2ZIX2pGYXdUSWRDN1BLbUlQRDZQRmotRlJNZXhyVDh1MEwxdlFR?oc=5",
-   "source": "WSJ",
-   "published": "2026-10-01T01:13:08+09:00",
+   "title": "We're raising our Micron price target after an incredible quarter and robust guidance",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQSlY4eE51aUp6TW93TURkYWxBM3hMSC1QQkxUcjk5aTJ4aHhIdzgwU0piaV9CamZleEJYdF9XdWFaQk9IRUdQazhuYTd5U0F0VHQxWXZyVEthNWZ6SS1WQXI2MVVnd0tuVFJZTXdXVENOSjQ5VFdHT29vSDQ0RW1VZWdESHNWNXlYQTc3bEZHWWhxc2J5cWt0eTJrRGVldjgwV3ViZkdQMDRuWlc0UmFtcWU1TzZySUp2SlZXbQ?oc=5",
+   "source": "CNBC",
+   "published": "2026-10-01T09:04:00+09:00",
    "dup_count": 0,
-   "summary": "병원의 끊긴 소음 문제를 해결할 더 나은 대안이 제시되었다."
+   "summary": "마이크론의 실적 호조와 전망 상향으로 목표주가가 상향됐다."
   },
   {
-   "title": "Nvidia CEO Jensen Huang was everywhere in Q3. The AI giant's stock proves it.",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOaHV5TDVmT2tDX2Z3a19vSGZiZ2FYSG5MbEd5V0ZUejRLM21TaEY1ck1uQlNGNXZiUW4teWhONEt4dEk3bmJTQXJGQUtZdWs1OUlvVGVKRTVHMkNQTU45QXBFRTZGbnVOZG52aEFyaEcxSU1IVHU2Ry1Bd09oa1BNeXN0SWlhVjE2ZnBkWXQ3WG5HSGNTTEJLZ19Zd1FTTnJFTGtCM2U5bHBKSWVIQklKM1drTDlTZzhjYkNkUV9ob0RpRmV1TEM5M3Q0SnpfRmRVTVo0Yg?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-01T00:20:47+09:00",
-   "dup_count": 0,
-   "summary": "3분기 젠슨 황의 활약과 엔비디아의 주가는 AI 열풍을 증명한다."
-  },
-  {
-   "title": "US inflation rises below expectations in August; consumer spending robust",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSktrS2JqeGdwTmowTVBNV2lPbnZwcVdwSzJPVi1aRzZuVDVQU3RtRGZ1UExTOVJnWm9CcTNYbnFneF9wOWlCMU5MNXEwMDN4UmhVVkx2MFVWOC1EYVdyb3Y3WXNYYXhNUzZSUExKQzNZOWk4U1dRaVBMMUZBeklyT0VqNFVhbUV3RjJmbThsM3FOejFUV2lBV0ZtZjNTZjVqRFYwcGZqZWdKdjBRa3FvcmdKRTRWak0?oc=5",
-   "source": "Reuters",
-   "published": "2026-10-01T00:18:52+09:00",
-   "dup_count": 0,
-   "summary": "8월 미국 인플레이션이 예상치를 하회하고 소비 지출은 견조하다."
-  },
-  {
-   "title": "Wall St climbs as cooling inflation tempers Fed rate-hike concerns",
+   "title": "S&P 500 dips, Nasdaq higher after data shows moderate inflation rise",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdXFFNHNQQUxXRkRPN3ZndG5TZS1PSGpvaFZPMG8zRU1oNFdrOUFZQnNsT183YWZ2R3NoNGNUX1NVdmtZNmxaYVc2X2c0Vm5tNWZjbEo1ZkYzNzVqeW1BS0VTaWZYc1hKRlRaRGxrQlk1aGlpQTROOV9mSDZldFlkejFZVGxKYmZzQ3czLUFPUDRBVmNJNWpuMnBPdE00QUlncU9EU2lXZw?oc=5",
    "source": "Reuters",
-   "published": "2026-10-01T00:17:54+09:00",
-   "dup_count": 3,
-   "summary": "둔화된 인플레이션으로 연준 금리 인상 우려가 완화되며 월가가 상승했다."
-  },
-  {
-   "title": "A cooler-than-expected reading on Fed’s favored inflation measure tamps down on urgency for rate hikes",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTnZRVjQzMnpzRHZpcGxDd1VNR09Jejl5STdNdWRGNnE2NDNsZnd4dVBMOUxTSFBiMTcxSGNkbjhnQXFOY1d1QkxubThXWFBGTkhaWDlwVFJNcEkxYlVGSlMwcnhqalJsUzJsSlYzT2tCekU4XzRoZ2VxNDRQZGk3NUNqeVJFVzBGYmhUeVZSQnJXTk8wWVZGNGJnNUVqVWNrdGUtOFJMbDFHOWM3cnB3RjVOd2dXZ1pQcGZMNjlETmJZYy1Oc3NmVTJBS1NZZw?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T23:57:17+09:00",
-   "dup_count": 3,
-   "summary": "연준이 선호하는 물가 지표가 예상보다 낮아져 금리 인상 압박이 줄었다."
-  },
-  {
-   "title": "Micron Earnings Prediction Market Preview: Can the AI Memory Boom Keep Running?",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUF91bml3bVRqSVB1a21NbUV4cUo2aUNaWUk5bTZpQXF2OFE5Y2ExRDVvbkpueDZLVzhXTGljY2kzcWlDRUphNzQ5cUFvRzBTXy1HdENvUjJvUktKZUtIVW5mNEZMT1FrWVpCTGI3c09acl9oQnRqS1NvUk9zRVlFWWQyVnZXVmJUVGZrMjNWbTN3eHkzVGpfOG5zb0hjcU5yRU41b0JIZEZwdw?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T23:30:51+09:00",
-   "dup_count": 0,
-   "summary": "AI 메모리 호황 속 마이크론 실적 발표를 앞두고 시장이 주목하고 있다."
-  },
-  {
-   "title": "Micron's 261% Rally Faces a 7.75% Earnings Test",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcjZlVmF1WkhEcjVpOG4xc1Z2SjZ3a3NWZHNudUJxYkp5cDhHZW0zRVNSbXFZXzljdURqVm1xSFpJb2l5TVZkSEdzQ1ZGcFZNSkJ6emdGVUFLVHY3Y0Y1TDJjalBsUWNUVWljUnQ2a3JZNFBFaE12dnpuWnRscTJwWHBmS2M5ZTZmaWtwSVJqeGZLMUk1?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T23:18:36+09:00",
+   "published": "2026-10-01T08:40:02+09:00",
    "dup_count": 2,
-   "summary": "마이크론의 261% 급등세가 7.75%의 실적 시험대를 맞이했다."
+   "summary": "완만한 인플레이션 지표 발표 후 S&P 500은 하락하고 나스닥은 상승했다."
   },
   {
-   "title": "Breaking Jensen Huang’s biggest moves of Q3 2026",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUTI4bEZsbjVveVNtU3RYSVlPUEhPLUZMcko4REFTTGN3WHlnNUxpS24zckwzNGpvdE9TSkI5RzZrQVZQV3lJSDM2UFFOemRqelh0STBocXQ0b25IYjVjZERuMEVpMGlaUVE3eXNHa0FvVWp2eGlQR3drNXVBZmFRSENQUFhwbEVMV3hnXzZvZ3JHT0hIcUlqbFdR?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T23:10:14+09:00",
+   "title": "Thursday's big stock stories: What’s likely to move the market in the next trading session",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTURfSUtpaGxmMFVnRmNtVkJGOG1xOWxXa01kSHNJaUYxNzRkY25JVmpySUR5R3l1aFJaNGlXT3M3eXJPM0xDcDFSTmt0czU2ZTRCQjNZTTVsRGZwckg1VEhlMDk5RzlTTFhBcTJvR1dUclUwdGxUdGZMSkdDVjFNeXBqZjllbjhINndjd2M4Y2h5Mi10UjFFX0JlZlI?oc=5",
+   "source": "CNBC",
+   "published": "2026-10-01T08:07:50+09:00",
    "dup_count": 0,
-   "summary": "2026년 3분기 젠슨 황의 가장 파격적인 행보들이 공개되었다."
+   "summary": "다음 거래일 시장을 움직일 목요일의 주요 주식 뉴스가 공개됐다."
+  },
+  {
+   "title": "Micron's AI-fueled revenue forecast blows past estimates, backlog swells",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSGljZXdlMjRDc2xMM29UN0s3NmM2cXVLUjVmbEdWRHVpRUwyeWltZDRNVUU0VDlYenBNc3lnVVh2SHprdnFSN3RjTWhKR3JYRk4xWHRtSzg5Qi01c3RuaGJnWDl3emxPZDhzckpDVlpRLUxENWlENUpXYWliRmtLc2FfNkFoQ2g2bEZFbWpULVRhQllzX0NDTFJTZw?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-01T08:06:01+09:00",
+   "dup_count": 0,
+   "summary": "마이크론의 AI 기반 매출 전망이 예상을 뛰어넘고 수주잔고도 급증했다."
+  },
+  {
+   "title": "'AI or bust:' Tech trade powered stocks through volatile September",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVnNBemxKR21leTFtVjZVWE4xNUNraVcya2xOZXRoM1dRS2JDTU8wc1pvUjNrTFlvVldZazBKd3RIaFpFV1l0bElkSXNWQko2TTdSRU5oSDV1ZkQ2TC1jN1BrZXNTSGVBLVo1OFVTblRiTVBlb2Y1Y3E2QVVSeVNRMVBoYUVzSU1rcGdrbk9NMFNOYzVxc0xIWjNzbFNybjdaaVYxUG9rR3ZPRWwzQ1FmM09hOHdjeEwwbVBLMA?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T07:47:59+09:00",
+   "dup_count": 1,
+   "summary": "변동성 큰 9월 동안 AI 관련 기술주가 증시를 이끌었다."
+  },
+  {
+   "title": "Micron Profit, Revenue Surge as Memory Crunch Looks to Last Through 2028",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTERLUlNXYXNnbWZ0R0tJOTVLWERGbEVFa0c5bkpQXzlvRWptTHk0WUdlVDRYNGRDWGpJOVBIVkJSS3NUMmluLTBacUwwcE1xZW80MlZIeEUyMUYxUElJOGJEcUdGdmlIdzR5OWxhd0V6RnRLT3FMeTdkWndhRkVNMUFjT2tBY3V3dld0U2paNFdwam1IN2c?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-01T07:28:00+09:00",
+   "dup_count": 0,
+   "summary": "메모리 품귀 현상이 2028년까지 이어지며 마이크론의 실적이 급증했다."
+  },
+  {
+   "title": "MU Stock Drops After Hours: Micron’s Heightened Capex Forecast Overpowers Q4 Beat, Expectation-Beating Q1 Guidance",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZjI1SzNObXNzYk96WkIwamZzTnVyWVJUdDMyVGd6Q1RqQWE3YklDQksxOF82bGZrU0ZUWkdxS0FzcFdISDJXYmp3ZEw5bkVvU3ZiRnIxT212LXhUVHdqYzN2bW9XMkE1d2NpSFBmQThlbG4yUDMzSDRQWUlqbVF3UHZMTjlIQ2hQY0dWYVl4N3ZlSzVBazJR?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T07:25:32+09:00",
+   "dup_count": 1,
+   "summary": "마이크론은 호실적과 1분기 가이던스에도 대규모 설비투자 전망에 시간외 주가가 하락했다."
+  },
+  {
+   "title": "Micron forecasts stronger first quarter as AI demand accelerates, shares jump",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZUtVVHUxeW1XanNRQWJ2MlkyQWRMOE5rVEw5aXpMN2RQLWZRWnFvNHN0bDMzTGtfNXV6cWxTR2JHR0FrbXBPVjhOSTRYN2F3RlZGaFNVMjJiZzdPdC04UjNacmpUQ2RJdjFxbkcwdzI2Z2pTZkRwVFo0cWptc2ZPZzJxdlBkd3lVb3VkSzB3VnhwbnpCUFVvRS1OblRzQXE3TGNmNEhTSGZLSVA3bHRicHVLa1RRQnl1WXpxY2xhdG1HelU?oc=5",
+   "source": "Investing.com",
+   "published": "2026-10-01T07:21:45+09:00",
+   "dup_count": 0,
+   "summary": "AI 수요 가속화로 1분기 호실이 예상되면서 마이크론 주가가 급등했다."
+  },
+  {
+   "title": "Asian Stocks Eye Rough Start After US Reversal: Markets Wrap",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdGZSU2VKcVFJYnI0WHlseEpJenJhX3ZZOUR5TWhNd1RvT1Q0Q1ZxSFBaczFVVnNpV0hiRGI4SEtiUEpkd0ZBRjJKOVVka2pLZmxFVVl5M3E3N3RtTHl4a1NFbzM3RG93VHRfN3hSNGxhcmNjYkVXcHFaakdMQ2d2cmFLVjNxM0pubG1Nd040ZDhWRFFP?oc=5",
+   "source": "Bloomberg.com",
+   "published": "2026-10-01T07:19:53+09:00",
+   "dup_count": 1,
+   "summary": "미국증시 반전 여파로 아시아 증시는 불안한 출발을 보였다."
+  },
+  {
+   "title": "Earnings call transcript: Micron tops Q4 2026 estimates as demand stays hot",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOR2hDMEFXRmhGSHhlT0tOSXVrNkZoYzVRVE83dWxaTnhSRTFENHg0SWlQakF4TFlMaWhWa0p0dFRmRFpGQ2ZZMXU3VU1xSVp0bnFpdVVETmFFd0drUnN1dFBPR0Y4RUkyX0VUZ2VHdlJabUc4dVJuMnNGMHhQS0wtMkRhTHg1VjhjZWs3RzM0eTZGcWFFUVZKYzN5YWtYREJHaXJNOGtLV0o4ZENXOGdEbkJDOE93SDFlRTdfZk51QVF1emp5RV9TM2N3?oc=5",
+   "source": "Investing.com",
+   "published": "2026-10-01T06:50:27+09:00",
+   "dup_count": 0,
+   "summary": "수요가 유지되면서 마이크론은 2026년 4분기 예상치를 상회했다."
+  },
+  {
+   "title": "A Tech-Fueled Stock Market Powers Through, but Limps Into the Fourth Quarter",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPc1JDbTJOSTJNWnhqQ2tkWE83TVpKNnZwUW4yVXVXV3NjRzE1WUZOVG1hZWJCR1lEWEU3UE1laFhldFlvbTFTa1Z2THJNMUQwbElyX2hZUTNrMW91dzNjMndRRWNlMGxKVDBpdG01WUdQUEdQWW0ydTNzc09WTHBhX0JMaGxrcE9QeDYyYXRla2ptcnFCUlZFZ1pvUHR3RW94aVFhWHJsbENhWnU5WmNDREVzY0pxZVkxYnJR?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-01T06:37:00+09:00",
+   "dup_count": 1,
+   "summary": "기술주 주도의 증시가 4분기에 진입하며 고전하고 있다."
+  },
+  {
+   "title": "S&P 500, Dow End Lower As Investors Shrug Off Cooler-Than-Expected Inflation Data — MGM, SPCX, AAPL, TSM In Focus",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRnlxWkw0VGNQUjB0b0UxaVdZempLUWQtN19TQnQ2N0FLUm1kbFBpdkg1NVQ0QmZTdlpSNkM3c2R1bVZnVWRwWU1XNkhqdkJzR1RvUzJOcWRfZVEybldHM2g3bUNEZUN6NWcxWlZaUVRiNmFQMlpOcldxalJIangxaUllQXIzT1lpLW1QUw?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T06:23:29+09:00",
+   "dup_count": 0,
+   "summary": "완만한 인플레이션에도 S&P 500과 다우지수는 하락 마감했다."
+  },
+  {
+   "title": "HPE stock closes at record high on growing networking orders, $1.2 billion AMD Helios order",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVVA0cDhxNjZxT20yVTJKX0xzaFRQMWR0dWd1RUdFUXVGTUN5eGdVaER4cThEenFwSTRXVlJfT2Y3QmY1RkwzTHJXSjRaN2wwMFFzallsaGpMVHVtRWZEX0VfVl9oVEhjMkJMeEhNbDVfd0dkVEhoNWVqbWtXemJ3UHFoU09ZM0g3a1FFM0haZ1hyNHV2aF9qZDdpcV92R0Q1WTB0SGVsUW5TbzM2NWlldlZ0a3NFZWxPV0xKTXNLYU53WXlZcW43aGJIT2pWTy0wSVM2ZFNUTjlpTHM0VktwU2d1X3g4VTg?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T06:12:04+09:00",
+   "dup_count": 1,
+   "summary": "HPE는 네트워킹 주문 증가와 12억 달러 규모의 AMD 헤리오스 주문으로 최고가 마감했다."
+  },
+  {
+   "title": "Moderna, Cerebras, Jabil, HPE, Cal-Maine, Mattel, and More Stocks That Explain Today’s Market",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8xUnNscXpFaVRXZUpmaTFsSGlVNmwwU2ljV0JrZzRXRWhzM2JuOWJ4STNjVE1LYmx5dERXNThzYU5JS2pOWkRKWVR0aTFMU1prZkdHZXpzcFVJSkl0bTMxeEw4dXQ?oc=5",
+   "source": "Barron's",
+   "published": "2026-10-01T06:09:00+09:00",
+   "dup_count": 0,
+   "summary": "모더나, 세레브라스, 자빌, HPE 등의 주식이 오늘의 시장을 설명한다."
+  },
+  {
+   "title": "COMMENTARY: Trading Day: Shrugging off a volatile September, markets shuffle into Q4",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaThZWmxxSzE4Q3hOazJLT29OcExPMnFWcGRpTFhGWlkxV2xkbV9qTlB1WDRpWGJKYXJRdk9QR1pKZzlSeENqMnlXbGo0TFI5dERyQlZsVEZubnFLdFNzLVhRQ1ZrdWs3RlZwbC1wYTdlNzhpdjBhdUduTnYyMVJuWjNfTE1FeFZ2Q0ZCaUx0eF9LMUxNWjNFXzIwNA?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-01T06:05:35+09:00",
+   "dup_count": 0,
+   "summary": "변동성 큰 9월을 이겨낸 시장이 4분기로 접어들고 있다."
+  },
+  {
+   "title": "Technology Shares Lift Nasdaq as Broader Market Slips",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSTc0MzlHUy00NXRueDJOVmZhbnVRX0lOd09GRklPRUVoVGJ1R0xQb09ydll3a0lBVVZzbUk2SEhYZXhLdDhwcnVhdWRQdjJDNFZqVmotNWFjTFNLVkZsZVZISGs1TndyamVsaHJ5LVFMcTg4VS1HUks2N2tDQmxDWFc1MGFuTkJXSVhNODlTNTNKak5lQ2ExV2JBSF9kUQ?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-01T05:55:00+09:00",
+   "dup_count": 1,
+   "summary": "기술주 상승이 나스닥을 끌어올린 반면 전체 시장은 하락했다."
+  },
+  {
+   "title": "AI demand fuels Micron earnings beat",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUWw0T3VYVnZ2eHZYeXVITWM0NTRjSXB3ZVhuVnZsVmlxRkkzRGl5LU1OaHhUcGQ3MFJsRy1wcmdPUXNUYkhNTjhoT19LczB3Z25vRFZiaTNhZ3I3M2ZuVkxaelJHd0dfdjdlSUFQcEIzMmlpdzR3S1B1c25JaC1IaU9uTWo?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T05:46:00+09:00",
+   "dup_count": 1,
+   "summary": "AI 수요가 마이크론의 실적 호조를 견인했다."
+  },
+  {
+   "title": "Micron’s AI Boom Just Got Bigger As Revenue Soars 379%",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQ0xpbnpFU2V1VjdjWnBobWdwSF9yc2E3bFVjaWNZM3J6aEFXdTNpLTkwZ0trX2tjSGt2Q2VTdWdmdy1TTE93OHdpNmVPUkZnSzV0OXdpNXRJOHJ4d1JJeXZEamRpc2hwUTduS1RRY3h5Uml2am9YOGpnc05hQzNwc0hnd1lYN1EtajBDOQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T05:38:43+09:00",
+   "dup_count": 0,
+   "summary": "매출이 379% 급증하며 마이크론의 AI 붐이 더욱 거세졌다."
+  },
+  {
+   "title": "Micron Earnings Could Be the Catalyst This Wildly Popular ETF Needs",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQmw3bUxILV9tWFJjV1NxNmotcWRqQ1ZYZTZMU2R2YVZGdHl4bXJtSnZVYlMyajhZUWF3cXd6bTJNeFlCZU9BcGlWTl9oLXpsaDJsdVVoeUpLNG5rQXhoVGJ2dnZ6RkxjRXJBUlE3UDVWWkx4VXJhYTd6QWsyOC1Za2VsNDZwQkR4ZVlMNkQ3Zw?oc=5",
+   "source": "Barron's",
+   "published": "2026-10-01T05:36:00+09:00",
+   "dup_count": 0,
+   "summary": "마이크론의 실적이 인기 ETF의 촉매제가 될 수 있다."
+  },
+  {
+   "title": "Alphabet stock slips on report of internal doubts over Gemini 4",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZ2R6Nm1uN2FsMFpFRW9vQzVaMTJKNVNabVFteFpRak9nOHFRQUpURHVJZUNSaXFrWWxjLWxjUXRGb3NWUDEtbDRXNjBDbTdqajhnZ0pxUDZsWklIMW9McU5qWGlNSXRuVHlsU25ZUzVXcnlyanR5WFVDY0xHbklQS0ZIZUdzcElIWkMta0xJZlg5dC1WVl9PMDhtczB6Y3RSVFE?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T05:30:29+09:00",
+   "dup_count": 0,
+   "summary": "제미나이 4 내부 우려 보도로 알파벳 주가가 하락했다."
+  },
+  {
+   "title": "Paramount poaches Mattel CEO to be co-CEO of new company merged with Warner Bros. Discovery",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNY1FwU0VsRC1feERtTnZ1OHlNYTNPM1ZIOFhNTjRUa1hfWm1uUFNUS0VMc1ZnUVFSZXlhOTIzdmx1NjFtMFNTbmFuVG9MNnVNenN3eE1fdjdKeVp5Z1Vac1BlSi1RY2VPdUR1TFlaTnN3Z0x0dHhVWGxpWmRxOW5HcnRjSjI4RGRic2VRbnRKcURkSGx0RlFOZWhmYkNCN3pBTFdKbVU0V0F4eE5TeXc3RldIcDFleHFqLUhXandLcjIyLVZtR3RDUU45Nll1aFhnTXN3cGtDWDJ2dU1RMTJ5RGI0Z2hiNmdXbUE?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T05:29:23+09:00",
+   "dup_count": 1,
+   "summary": "파라마운트는 워너브라더스와 합병하는 신회사 공동 CEO로 마텔 CEO를 영입했다."
+  },
+  {
+   "title": "Prediction: If You Invest $10,000 in Uber Today, It Will Be Worth This Much by 2030",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcnlDLUVsc0NTemNLZDkwbHNHUjJYT3hqeDN5YmFQVmI5ZHE5bkpPLXZtUVdMbnNvUC0zclFDRmF5ZzBudVRYNlV6MmlzYTZWR1U3Vjd4djkxN0JueXppYUNGdkc4NTh4VThhckw5b3hPVUtLYVVkMmhvN1NmYWRYcW01bEc4Z3hiRXlMWXN4Z0RLaW1vRXZkcExB?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T05:25:00+09:00",
+   "dup_count": 1,
+   "summary": "우버에 1만 달러 투자 시 2030년까지 예상되는 가치 전망이 제시됐다."
+  },
+  {
+   "title": "10-Year Treasury Yield Rises to New 24-Year High",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZWRvWVlTczRMcnM3cm9DOVFaLUNGRXhWR1RxcEtDZWMzNXkzOVh6OUJCVXpBOG9aNzlscm1kb1pHd25YQ3UyMUhsRXJvdWZHN3RHVVpsdmxMU2dTaG1CUk9vaEpUWkU5eTBPOF92MmdUb0pGeXdzUmVRbm5ic0xYZFlhb1JmamQxZi1OR3Y1VEw5U1hJZUFtZjZTbw?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-01T05:21:00+09:00",
+   "dup_count": 0,
+   "summary": "10년 만기 미 국채 금리가 24년 만의 최고치로 상승했다."
+  },
+  {
+   "title": "Micron (NASDAQ:MU) Delivers Strong Q3 Numbers But Inventory Levels Increase",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdEVxYWFLVnd6WXlGY29pS0czYXdqMUo1T3FIc0VIZlFJdlJMNGhCVDJlck9xal9tMjlqd1BFYVlqdW1DaU9EOWhZTlpXOGFpY1l4MEdDMUN0Z0ZFejV5Qllab3FfVlBnZDMzMHJzT1o4MkZkekh5eS1jSDV6eE5wVjR1OFBjemw4cVZIcWVJdHI3MERxbExUVUdGdWQwZw?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T05:08:10+09:00",
+   "dup_count": 0,
+   "summary": "마이크론은 3분기 호실적을 기록했으나 재고 수준은 증가했다."
+  },
+  {
+   "title": "Micron tops Q4 estimates on top and bottom lines, offers strong Q1 outlook",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQNDlVYjVua3UtY2o4RFFRQi00bDE1dWFkbmRGWEc1UThTV2xsYTd2Y2YxYm44NjNQaGpfZWhFZVQtV0wzLWo4RlNXWWI0LVpKOGJuSFIxMmc5cHFiVmVKeDlCLVdiN0xjamdYYzdLcVA3OXlTb1hXSW9SM21zN3oxQVY2R1BJY0RmaEJFWURtYzB4UERCWGRzblNGWDB0VGljMU0taktnSloxTG1NM2Y0R1pHb2RnSmRyN0Eta0w0b0MtSTNFN1hiRWdfTC1uQQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T05:04:14+09:00",
+   "dup_count": 2,
+   "summary": "마이크론은 4분기 실적이 예상치를 상회하고 강력한 1분기 전망을 제시했다."
+  },
+  {
+   "title": "Is Cerebras' Next Big Thing Already Here?",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcHh3M0lRZGFDeENYVF8wbnlXSzhTXzgxUUVqd2MzU2l4UG55TmRyd0hDV2VRVFhoRnNMazYzdVM0T0lrUTdOUF8ta3BNYUhOVlBCQjZGVGdIRzRzaHZCc25zeG5TMDFQdi0xY0VZeVpmS3J3cU5mLVBrNFZVdy1xZ1gtVUIyWHdLT0lpbWh3bDN3STlKRFluSTVZNA?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T04:15:32+09:00",
+   "dup_count": 0,
+   "summary": "세레브라스의 다음 대형 제품이 이미 출시되었는지 주목된다."
+  },
+  {
+   "title": "Consumer Confidence Fell to Its Lowest Level Since 2014 and Consumer Stocks Are Already Paying for It",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTC1MWlBZVzd4Z01VYXdSUWFlWFBPT3J1dlJSN00xNkRON0pOZG9ORzRJWjg4OElILVViMnhqdy1HUHJVb2dGM0VkeGhhckpkaWVvQTFlYURhcEt2ZE5Qb2VXUkxuUk13U0hpNkNKcG5vMlo0alA3a1ZldldFZ3FIbTQtX1piVHpoNVpsNlJaeXNnRmZEUndEalB3SQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T03:55:30+09:00",
+   "dup_count": 0,
+   "summary": "2014년 이후 최저치로 떨어진 소비자신뢰지수가 소비재 주가에 타격을 주고 있다."
+  },
+  {
+   "title": "Wall Street is closing out a strong quarter. Plus, Lilly's mixed obesity drug trial data",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdXdqT3N0UTNibEpsaXN1RXRrRzJ1aXlUa0dndnVLdlptbC1USmlnUzlSczJ3T2ZjMUJJLUUxVG5PTHI1Q3RXRTk0czF3OFkzQXN5VDFuTjB4NWJoV3ZfcmxNVFg1Tjh4UmdPZ2U5b3FBUzRaaUI1M3RETHNsZTBiMDFFVHc1OVQ4RWpDUWNmTVFKbTJYb1MwWjNIMk1zcUE1eHV3eEdhU0ROUQ?oc=5",
+   "source": "CNBC",
+   "published": "2026-10-01T03:55:12+09:00",
+   "dup_count": 0,
+   "summary": "월스트리트는 강력한 분기 마감을 앞두고 일라이 릴리의 혼조세인 비만약 임상 데이터를 주시하고 있다."
+  },
+  {
+   "title": "Treasury Yields Hit Fresh Highs",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNR1h4Wm1PMS0zdk5jczNlaHg3aDlpSXd6Y3hWaFM2MmR6ZkV0cWc2LVdsOTdWbEdrNW85WXNCR08zeDF3TWJLRVpFZEFvTFpxVTEyM2JuM3JNSFdoa1k1NzNXR0xRU0d2ZEptY2pndU9SelM3d0pqcTFMVWtkRFJ1NEc3NU5RbDZ3MHB3dmJ5YzYyU2dBWi1MRW5hZzlzQUZxNm5LMUlMbUh4dw?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-01T03:55:00+09:00",
+   "dup_count": 1,
+   "summary": "미 국채 금리가 연일 최고치를 경신했다."
   },
   {
    "title": "Jabil Stock Is Falling. A Blistering AI Demand Outlook Isn’t Enough.",
    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBNQUVwT2pjN3RySC1FMTd2RXdNX0tKNGc5a3piRW5PTjJuRGxmaFJaUHJLaUJsT0tKRUV0MVQ4V2pQTmExcVo5WDNEYlpXQWtaNmJ4TXQwN0owMFJfWDBINjBWaThiaHNBREh1UVpOVV9jVjNLU29J?oc=5",
    "source": "Barron's",
-   "published": "2026-09-30T22:57:00+09:00",
+   "published": "2026-10-01T03:46:00+09:00",
    "dup_count": 0,
    "summary": "강력한 AI 수요 전망에도 불구하고 자빌 주가는 하락하고 있다."
   },
   {
-   "title": "Bets on October Fed rate hike wane after soft inflation data, dovish comments",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZmlyeTdLdk5xODcwVXVEekNHYk1TdEViVks2d3ZVem1tdU1SOHkxdGhjUENNV0Nsdy1zQWExUGFCcTkyRnNFMEo3LVFoR0JLWHoweFQ0SlJJX0dWd0ZrZ19QR2dSakNSVW1fcV9yZndXR0Y4cVJZV2V2R0lZNHNxcU5WT1BMeWhscDFnd25Wbmo2cXpXQWM5THgwU1QxWTJRY0dna0dMc1VQNDl3TTdHMThMQ3VqYXNHRE03cQ?oc=5",
-   "source": "Investing.com",
-   "published": "2026-09-30T22:46:08+09:00",
+   "title": "Oracle Stock Is Down 60% From Its High. Here's Why I'm Still Not Buying.",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZjdfMTdteFFNVXprT2dVNXh0eU9lVzVNTFpRUmJZeDVwRkRTN2JITzJSQkZhR3EwUnk1VEM2cTJZaEhaSlgxaHBCQ1hORThmWFViQW4wbEJyaVNsVnF4UGRfOTNrVS1GWWpfMV9UQXBya21MLXp1aFV3U0JZTTMzQ1ZDZldIVlFjNXpjc0FsMWNBTWdL?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T03:32:00+09:00",
    "dup_count": 0,
-   "summary": "완화된 물가 지표로 10월 연준 금리 인상 베팅이 줄어들고 있다."
+   "summary": "오라클 주가가 고점 대비 60% 하락한 이유가 분석됐다."
   },
   {
-   "title": "Micron reports Q4 today: Why Lynx Equity sees massive upside",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMVlKTDUxTDBxbElVTkJScGlvY1NZbFhJOEpXaFlhWXJ5TDJDbmcta1BCRy1lVmNpQ1NwR2M0anRLdDdUWkcxcGxEdVJuYndzdVlDODBHc01kdmZySzFOQjZFcTU4aklHbFE0RURMMlh3VWF2eWRNaWdrbFJXc2Yya3NQczB6YnFxdWxHMVBhRHZnOEswQldj?oc=5",
+   "title": "Micron Stock Flashes New Warning Sign Before Earnings",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY1ljM0hzUVJ0dUptdFVQM0V2R24zcWUzdkdmX0ZoaGF6MTlDeUJaWEkzMGxUcEtXSS10LTE4U0dLcEp4RFJhNXJneUxDU3lRS2Fwb2JMOXd0dFY4T0pRdXNZVzVYN2NGRzBHaHJvTjA0WWlWdU42czJJNm4tY1lOQVFvS29udWYyVWIwbW1WNENhZkNGcmVudUpRLXRkNzA?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-09-30T22:45:30+09:00",
-   "dup_count": 4,
-   "summary": "림스 에퀴티가 오늘 4분기를 발표하는 마이크론의 대규모 상승 여력을 본다."
-  },
-  {
-   "title": "Tech leads stocks higher after cooler-than-expected inflation read: AlphaCheck",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNcElHaEViUURhYnRTd3RXdk50T1RkSnR1NU5BbGtHUngzWEtSOENWaG1ROWFIUlZJT0NCMEk2US1BMTk1dDVFbHR6OHJXXy1MSHhEOGhMTXBvaUhTMDA5X25zTmFpd0lNOE43TWRYUkQxLVVCYlk4RE9ReDhnRV9FcUxMcENIaXEwb0xjYTFlU0hDOXh5SkFnbXFBVEIxNVF5d05IX0d1YzI4UFpUc3ItN0N6MUdWaDhqdnQ3eXg5UGN6b0Qzd2ZaQ3JzbFRDMm8?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T22:41:26+09:00",
-   "dup_count": 0,
-   "summary": "예상보다 낮은 인플레이션 지표 덕분에 기술주가 증시 상승을 주도했다."
-  },
-  {
-   "title": "Target upgraded, Moderna downgraded: Wall Street's top analyst calls",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQTkk2REhCMVNSaG1kVTM3bl9YYWNmcmRzNDdqSVU3WWstOFU4ZEFtZGg0OEpJWUtZbDVtbHZnVE1HUUlwaDRjbnJCZGJNWFRWcHBIM2xwUzVieDlETTA0Z001UXFtV1ZCZGR3QkUzdDVncUsza0Roa3pxZXhiYTVLLS1xbHBSbDJ0R1ZWMGw4WHlpVnBucGhFUk1NT0tJTHdxOW85OU8zSQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T22:40:37+09:00",
+   "published": "2026-10-01T03:03:54+09:00",
    "dup_count": 1,
-   "summary": "타겟은 상향되고 모더나는 하향된 월스트리트 주요 애널리스트의 평가다."
+   "summary": "실적 발표를 앞두고 마이크론 주식에서 새로운 경고 신호가 감지됐다."
   },
   {
-   "title": "What Is Going On With Alphabet Stock?",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2MzRnRNMXlZWmlWSVVjWG4wS2dlTkxFVXZ2Zy1BNUNReDUySzJtTWtZWGtuMDhURDBSNUNkZW5kZmR4cXdieVhuTmFfdWtURHNqM1dyeEE0RHhGSmtCNzJWVTlIRzFjYXIyWTdIQmkyZ2tQZndKS1BYeS1HdHBmOVZDcWFiTFVZc3lBSTVn?oc=5",
+   "title": "Market may be mispricing AI doomsday risk: Strategist",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaEk0VXVqSFVfcFlYd2VVZTZNS2hhM0JzVEhObjBQdmRtLXgzZU9JNUtnc1pKS3A1THNuZlhYSHdWZGhURjY2d25Fc0tuUlJCTGtORjd3SXd6ckdrTW5PaDFUUm5uTDdrWTZ6M2pHcjAxUXA5R1h1RTRmMm82cFV1cWRYU0ZvS1Z4QUpvbmdpSTBjV3ZLS2tTRG5LcTQ4STVVdW5hZDdzMGxhaVYtSUE?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-09-30T22:35:17+09:00",
+   "published": "2026-10-01T02:23:03+09:00",
    "dup_count": 0,
-   "summary": "알파벳 주가가 최근 어떤 국면을 맞이하고 있는지 주목받고 있다."
+   "summary": "시장이 AI 파멸 시나리오의 위험성을 과소평가하고 있다는 전략가의 분석이다."
   },
   {
-   "title": "FTSE 100 today: Stocks edge higher after cooler-than-expected U.S. inflation data",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYThHQ0YwbjFKOVpicUF5MHBaekI4OWxfUHBhT09TU2l3NzJid2VWUDNuY0NqeXFDNGJRR1NqaXRQWGJpWTAxTEJuaG40V3ltSXhiTkttaVdTWmtSdkdhY200dFEzVzFIanpyUm81eVRORE5wQWY3UENpYVQtSVYxRjhSWlNyVDRpdmJza3JrUkhFdWx6enFQWEVXRExYS2IyWHo5MlA4M0FITDhTeWdSWnExSTV1YzRVeW02MGN3?oc=5",
-   "source": "Investing.com",
-   "published": "2026-09-30T22:14:13+09:00",
-   "dup_count": 0,
-   "summary": "미국 인플레이션 둔화 소식에 힘입어 영국 FTSE 100 지수가 상승했다."
-  },
-  {
-   "title": "5 Micron Entry Points Reveal Why Timing Matters More Than How Long You Hold",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUkVpMndUaFJDclkyQXN4N0ZFeUhMVGtVenVIbVRqZW04TmllN1dsaEwwYlRoaWg2Q1NRNl9xcUZQeDVKcTl6XzRlMkFublQxdWtaTl91WFJqMWRBblJnbTB6QVhwQTlfRllXMThKTlNOUi1Qd1lsa051aWVnUnN4TDhIclNJb2c3V1Z2MTZXa3c1d0lZTnZ5SA?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T22:05:40+09:00",
-   "dup_count": 0,
-   "summary": "5개의 마이크론 진입 시점으로 타이밍이 보유 기간보다 중요한 이유를 본다."
-  },
-  {
-   "title": "An inside man at the Fed, OpenAI debuts Dots, an IPO trend and more in Morning Squawk",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYlU1cE5zakl3ZVVIT3JiVm5hbFJET3FqNnVjaS1tNnd3YlpmZFE5MjdDb3hmc2tQNXFLMjVYWmhrSU9UR3hySXZwbnFUTUw2cjNhUVBJWUJlWWhrR3dCbHdpYmFlQkI4SWtzZlJmaGU5bzA2YUxHaERMVXlTbzJOaEVGaGEzRkYxTlBR0gGQAUFVX3lxTFBFQjdsLVUzUEplLThzdE9GUXhYQWNHbmxncklxMGQtYUQxQ3phQlJST2xaWGxHUGM2bkNpejV1ckNWMzNEbVo2ZkNTWUVrUUR0clgyRlI0VVJTRXJfd045TGROSU94bjZHSjRfazgyQXNhYkF5MUdVX0cxWWVVWG5lMGdPSTRFejZqbFJaaTFzMw?oc=5",
-   "source": "CNBC",
-   "published": "2026-09-30T21:35:26+09:00",
-   "dup_count": 0,
-   "summary": "연준 내부자, 오픈AI의 Dots, IPO 트렌드 등이 모닝 스쿼크에서 다뤄졌다."
-  },
-  {
-   "title": "Robinhood Unveiled In-App AI Trading Agents. Here’s Where the Stock Could Go by 2030",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYmpiRmx2VXUydGZ0bElmSWtpeDRBMEdTUk02YmtQb1E5Z2U5bTN0MEdhSnhuWDNSY3JJOTVvQURjTHVJNFJDNnloOGdTT3IyY1BaQk1jeUUxWk5WVkNxTUNWWE9nbGVvU21MR2VRVXQzMnp2ZGRtNzN6NEF6RG5OX0pFakQxLTBqVXV3em8xUmlvZ2xuTVBYRDdSSTVVZW8?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T21:34:20+09:00",
-   "dup_count": 0,
-   "summary": "로빈후드가 인앱 AI 트레이딩 에이전트를 공개하며 2030년 주가 전망을 제시했다."
-  },
-  {
-   "title": "Apple's New CEO Targets Middle Management in Shake-Up",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOLXczbXhKb3FiRFpjVnQ5Z25fUVpyQ3ZxMWNNUUdBVVZTNkIyRlN1VVE2THd2dk1EWU12UWprMTgyOV9GUWVvWG1YTmQ2ejBQWFAwUDQzNE4tZHNMandFZGRWcGp4NDFnQUNDQkdkWl9qRkxIeDlLZGpiOFdRMnR3TGRkOGVieUhCeWN3ZjFsM1FiZDhJSUhPaFF2clRHZ09iVHl3?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T21:31:17+09:00",
-   "dup_count": 0,
-   "summary": "애플의 새 CEO가 중간 관리층을 겨냥한 대대적인 조직 개편을 단행했다."
-  },
-  {
-   "title": "Micron Stock Could Swing 8% After Today's Earnings",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSl9IMV9Bd3pFaEtUNURLTkh6dDhnSWkyM1lsUGlBOW9pdFZoWlk1OWFHd3ZGaG5lc2hVZVNEdlY1X1p6dVg5eGpNd18yaWktc0lGWWNKTUFwYjg4RmNnTks1RHI1MHNxMVpfbG5XZXpHWFI5SGQyN2JRVUdMbk94MFlaMmdOa28zd1JXY0lPUHZoR3pBUXc?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T21:13:48+09:00",
-   "dup_count": 2,
-   "summary": "마이크론 주가가 오늘 실적 발표 이후 8%까지 변동할 수 있다."
-  },
-  {
-   "title": "MRNA Stock Falls Premarket After Citi Downgrade: Analyst Says Valuation Looks Stretched Despite Cancer Vaccine Momentum",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMGRVeVZ5eFFHWHE5NVN0RXNtRm1Wb0VRM0dkNGd1S21PRGlVd2tadHZobG5SaFpidDN4bVVPb2t3a3k5MFBsZGdBLVNpTkZBLTJZc0dzNWV3b0EtWDBwbkRmQlZIMDRxVU5hSUs2VjRzV0xPdXRDOWhCRFc0bGdweU84VXJ5VTU4bDFJenhEUndqaENwN1VOS0xvQVA?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T21:03:28+09:00",
-   "dup_count": 0,
-   "summary": "씨티의 하향 조정과 밸류에이션 부담으로 모더나 주가가 프리마켓에서 하락했다."
-  },
-  {
-   "title": "Two Google alumni raise $11.3M to back AI startups that enterprises will actually pay for",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR3pNYUtLZWttZkllSlJJRFBWV1NkazFCUkQ1WF9mZzJyTXhWdXJVTE5nNVdKc0xKVnYyTmpBaWJ5NmJtczZaZ3diV0JuRXM0aUlhN091VTNaS2FuZzN6TERhVWVYanVKdWxnQ0RwLTNhaFZBWmtoRU5MSGdiUUJtNGFFUGlpOTA5TG5XVkVZQUgwR3g0?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T21:00:00+09:00",
-   "dup_count": 0,
-   "summary": "전직 구글 직원 2명이 기업용 AI 스타트업 지원을 위해 1,130만 달러를 모금했다."
-  },
-  {
-   "title": "Meet the Low-Cost Vanguard ETF With 51.8% Invested in Nvidia, Apple, Alphabet, Microsoft, and Amazon While VOO Has Just 30%",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOT21WcHVXY1U3ZjBGR2QtZVF2OVN0emtFa2RiM2MyWDN4R05KQWQ2Y2xxMVNjaW9XMTJRWUdyQm1rZXU1N3VTZ3VQN3hQWVF6TUl6VXhpTE1uY1diY2Q1LVBPZm1TVFBtbTBIQURNWFU4ZWJSOGxQMGNEZTdwR3lMZFphRzE1ZVVHZDBJTXZ3RnNHYkllMEE?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T20:50:00+09:00",
-   "dup_count": 0,
-   "summary": "엔비디아·애플 등에 고루 투자하는 저비용 뱅가드 ETF가 주목받고 있다."
-  },
-  {
-   "title": "Nvidia CEO Jensen Huang: AI data center build-out could create 1 million jobs and reshape the US economy",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPRkZyOE5xTkdoRlNPZ244R2NMU3ZudWJ3MUxkWHpGM1ZyMDJBMXdiM0xCR2Yyd0tWTGVpRm1vNUlRLW4wRXVReV9yTnM0UkRtR2t3NjZlS3doajl4TGduVlBpbm5TeVZoNmhuQVk0LUxGSzBCWF90RlRINjVtY0hMVlFvODkzR29ueEVac0tOVlFhOEZGSzZLeFBNRW1DbEtTNVlWaVhKM3Y0aWxfd0RGV2lScWtqT2M1SHRvNzY0NlEzMXVsMVdxQ19wWXpqd3JVOUFSUFBlV29XMmhrR2VUWTVadFZBWWpoODlITG9TblZGeUU2cFE?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T20:07:06+09:00",
-   "dup_count": 0,
-   "summary": "젠슨 황은 AI 데이터센터 구축이 100만 개 일자리를 만들 것으로 전망했다."
-  },
-  {
-   "title": "Japan Pauses Forex Intervention as Yen Strengthens",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMjIySnlXU0w0UjZHc0dsZkdhelVBNDZjWkdzZHNYNXJ1VExtNVYwejhMdGREOTBCdXJkeXFObEdsNUNEaWdHUWZnaE04Z0Z2b0puUTJFeENLWW10VHE1Z1lPMUhjX2xlX2xubnR1S3pMekRzS0tzWHI5bkQ1blRhaEZKTTRQeUI2ZzNNSm0tS29tNGF6dHlOd0ZwNFRfZFU?oc=5",
+   "title": "Basic Materials Roundup: Market Talk",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE81TXlwZlJBY3VMcFJCdUxlaGttbnFUVW9oaV9QQU92QjZ0QXJGaVlPOUxPYXotN0JKSF9tZUdiT01wakdKaUpBcVJIanhvNGhNbzRJSjBvdFpKSjFNaEZYbmk5TlJXQ0VOMzBheEt4ZEc4ckcyU0U4Yk40aElQZw?oc=5",
    "source": "WSJ",
-   "published": "2026-09-30T19:57:38+09:00",
+   "published": "2026-10-01T01:51:30+09:00",
    "dup_count": 0,
-   "summary": "엔화가 강세를 보이면서 일본이 외환시장 개입을 일시 중단했다."
+   "summary": "기초소재 부문 시장 동향이 발표됐다."
   },
   {
-   "title": "Euro Unlikely to Extend Recent Losses Much Further But Risks Remain",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSGtkRV9qRmRfUGtOOGpsRnkydE9DY2FTVFVtTVRpeTVwUDdzQkh6X2RHRDl6ZHpuLURSMkxpM0plOGZucW5DTDdlUUFvRDNxeGRvY0ctalVYdlZVb3N0Q3d5Q1ctWHFCVlFPZnpQbDRFb1NlZTlNSEdLVG5qUWlZUHNENFhGRi1SOVJBb09oNUhIdktSR3lBTGh6ajZMN2E2eFNXbGJ4a1RROE1SQnVQSDBNNkVSWEFKNWZOa1NxV2g?oc=5",
-   "source": "WSJ",
-   "published": "2026-09-30T19:44:00+09:00",
+   "title": "Micron Earnings Could Reach $50 A Quarter, Says Susquehanna: Analyst Sees Memory Driving AI Profits",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZE52ME5VRlFPNUVUWWJFclNJUFB6T0IxZlJfRHNuM2dOb1BBaVpZdkctQ19RVTgzV3JOdTlyX01lS3BHVUsyTUswYm5xWXNIUlZuQzlaTkw0U0ZaUVhhaVBwODllRkZkTVZjN2d2V3BaOGlmZTltVmJyR19RZ1pUcW81TkZST2NuQlZyVm9hUUFHOTNJNy1JdlZ5MA?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-01T01:41:15+09:00",
    "dup_count": 0,
-   "summary": "유로화의 최근 하락세는 진정될 전망이나 여전히 리스크는 남아 있다."
-  },
-  {
-   "title": "Micron to report Q4 earnings as memory boom powers on",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY2REVk9Lb2VfOThUV0hPeUZrdGt4aEFwdFdCVVlHNFB4WmhBbjFaWkxweHhBZlVMTFphUlhqbUZPSkRWdG12OWFNb1phQ2xpRC0xZ2d2akxmTnRLb1Nnc1Blbk1KQ19jNndORFp1U2MtMUtCT3hoc3dwaHFFS0ljODctU1RvNFk2T2RsTzQtZmJ6Y29RaGJOaEpKdFhON1ZOZVFIcGoyNUpQMy1fZ3Q0WERsWQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T19:21:59+09:00",
-   "dup_count": 2,
-   "summary": "메모리 호황에 힘입어 마이크론이 4분기 실적을 발표할 예정이다."
-  },
-  {
-   "title": "Archer Aviation (ACHR) Stock Could Trade Below Fair Value On Its 47% Slump",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTHVHR0hJRHlnUzJEUVVWR2hBSEJ3Q2xWR0Jkc2xBa3RvYzRDZG5iVHhjRkN3b2lfb19WNzU1NHdzaC11QXZiVEh2SkxKQWpZRnZYY0h5NUtVSlRYWlc2RzFrb0FhdzF1b0dSQ1F3Sm05bWw4UTA2TjlYWDZ3czhLdFZhTTl3TUQ5NGlRMERuOGNNbjE3RXJpLXpTUm5fQQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T19:09:13+09:00",
-   "dup_count": 0,
-   "summary": "47% 폭락한 아처 에비에이션 주가가 공정 가치 이하로 거래될 수 있다."
-  },
-  {
-   "title": "Anthropic IPO documents show there really is only one risk with AI",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbWZiNUVsSEFCbnJkbWI4QVdnSXRuOTRrUWpGQ19TLWZTTWRjWXN6TGt6RzB4azUzZktWZ2g4Q2xibGRIY3B0dE1kZzh5eHVVYXh0OHFVcFd6LXI2M3VBWF8tYlNQT0daem1LX09wdTBRUFp2ZjhvMmh3Q3A0aDBrbElYeFQ1dVl4OWR6WWdDaVJyQ05kbmUwMHFtNHhGaUY2X0JCdkFJT0d2MXlkbkQ1MFBYU3R6c0lKa2JLVkp4X1otYlFQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T19:00:00+09:00",
-   "dup_count": 1,
-   "summary": "앤스로픽 IPO 서류는 AI와 관련된 단 하나의 리스크를 명확히 보여준다."
-  },
-  {
-   "title": "AI companies just signed a White House accord, and tech folks can't get enough of the signatures",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQaEZxTkotdzc5MHppVnlTYW5tSnhvOE80cFdWdE1FOUpLckZLdnhKNWVidVdTNjlWQ2FYdVgwaEVMLTF3UVVyejVEMGFiWGNxNXhwN1c2ZlNqaVNGNGZkNDNMUFRXZm1CMFp1QzRRaVRSU3h4WGJLa21MbkpLWk1JVHJBblR0a0R1MzczdzlPNTAwRzZZbUd5R01rM1pmWDBFX3I0WnlydTg0NDJtR2U3RVZMM2tlRWdFS0ZwZkFBTHhMRmg2N3NPTUM0ckQ0LXBOUzZWSmhkblh3b3FwZXVmOTc4ckFmNm44VWc?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T18:58:52+09:00",
-   "dup_count": 1,
-   "summary": "AI 기업들이 백악관 협약에 서명하며 기술 업계의 큰 관심을 받고 있다."
-  },
-  {
-   "title": "Pepsi Just Extended Its Dividend Streak Again. Here's the Annual Income on $10,000.",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU2RhS1FDNGVPQ05DMkZibjBIU0ZFZmN6U3Z1QmoyTWNQbVdUWVJDeEl3TVZsTkpvVVUxeTdqQ3pqempDbDZqUVhHdGNWaGUxOTlKMTJLWGNrQVNlMUlTS0xEMHlkUDhEWHN3OFVhMXlWX3RiYTJ2ZUtwU3N4V2NOMXhHbWFRUXB2YjlhbVRzN01YVFRwQ2w4ZnZQWTVpOGNrWmc?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T18:57:00+09:00",
-   "dup_count": 0,
-   "summary": "펩시가 배당 지급 기간을 연장하며 1만 달러 투자 시 연간 수익을 보여준다."
-  },
-  {
-   "title": "Billionaire Israel Englander Buys 2 Artificial Intelligence (AI) Stocks Up 405% and 575% in 2 Years",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdHpZNXVXaV83OXlzOE1wN0F1RTlONFNfcWxZOVRZNkE5V0FqMDVYUy1yMlhDNlBDRGxHLThJM3pRRUV6RXYyaWZjcnN6RklnWjctUWp4Vk82N1FlTU5BcU1QNHNBMmdzRHBTN0JYZDNsNmItRmh5RldEYzBTVjlOTW8yS1BJNDd3M21tUVBNUi1ZSVlOQWRLbGhrZ2VQN19ISlE?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T18:04:02+09:00",
-   "dup_count": 0,
-   "summary": "억만장자 이스라엘 잉글랜더가 2년간 405%, 575% 오른 AI 주식 2개를 매수했다."
-  },
-  {
-   "title": "Micron Earnings Preview: All Eyes on Its Outlook for the Next AI Chip Cycle",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPenRzOW5VWW9EaTYxQ3JlVkQ2YlEteHZEMFVLVkdCV041YmE1RExFZXBjTk5lTlB1QVNvNFgtSmJ1eC1xdHYydnIyaW55QzIxQXhRbUVubHVvdWhYd2ptVlFHX2RkT1RHSlB6dVRhcXZ0Sm81ck12aEQ0QmxtUy0ybHJ4a0RiRGJjZUtMLXhHNkZPd0gta2RZMWNEN1NuM2NWUGN4aTVrQXd0X21sN3FGWmR5emZqanBwaG9n?oc=5",
-   "source": "Investing.com",
-   "published": "2026-09-30T17:56:08+09:00",
-   "dup_count": 0,
-   "summary": "마이크론 실적 발표를 앞두고 차세대 AI 칩 주기 전망에 이목이 쏠린다."
-  },
-  {
-   "title": "MU Stock Rises Ahead Of Crucial Q4 Earnings Report: Investors, Analysts Look For Clues On How Long Memory Boom Can Last",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcGZpbXZMSzV5Q21pMEYzY3hxV3AydDd5azVTRmVfQVdPYUJhWmtybVdRREtNVllTcjZwaTNjbW9yYW5taFVpU1ozbzh0T1djdFNQblo5VHhDWkFURmZjUHV5UFJUQ2JGbUI5MjZDRTgtc3RLNTRialhiYllabXpwVkhLeVctSHR6YnAtemFSdWVVUk9ZT2ZYRw?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T17:47:29+09:00",
-   "dup_count": 0,
-   "summary": "메모리 호황 지속성에 대한 기대감으로 마이크론 주가가 실적 발표를 앞두고 상승했다."
-  },
-  {
-   "title": "Why Are Nasdaq Futures Rising Premarket? MU, TSLA, CAPR, VNDA, ASTS, HOOD, BA Stocks In Focus",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdGZyOVZ4RUNLZUxleGhCSTFyUnhZYWxURTBFcFNDSVRWN19DclprVEpadmV0dDlqb1F4VEhZb3V5VUEzRFM5WUo0RWMzdWZLM0YtVXVJZVVMcEp3bFFvZkkzMDdlTENac2hGSlZQQXJZQ3ZtT0JnRjlsdXRHZ2stR01Ed3VyUDUxOE5tQ3FVSWxDQ0pZRFBCRkRyQWRhNW9pYnc?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-09-30T17:29:53+09:00",
-   "dup_count": 0,
-   "summary": "긍정적인 프리마켓 분위기 속에서 MU, TSLA 등의 종목들이 주목받고 있다."
+   "summary": "서스퀘하나 분석가는 메모리가 AI 수익을 견인하며 마이크론의 분기 주당 순이익이 50달러에 이를 수 있다고 전망했다."
   }
  ]
 }
