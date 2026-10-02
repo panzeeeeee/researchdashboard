@@ -58,9 +58,8 @@ main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;b
 .ticker{flex-basis:100%;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;
   margin-top:.4rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
 .ticker:empty{display:none}
-/* 실시간 시세 띠(TradingView 위젯). 기존 종가 배너(#ticker)는 숨김 -- 데이터는 계속 만든다 */
+/* 실시간 시세 띠(TradingView 위젯). 종가 배너(#ticker)는 그대로 두고 그 아래에 붙인다 */
 .tvtape{flex-basis:100%;margin-top:.4rem;padding-top:.5rem;border-top:1px solid rgba(255,255,255,.12);min-height:52px}
-#ticker{display:none!important}
 .tk{flex:1 0 auto;min-width:108px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
   border-radius:10px;padding:.45rem .7rem}
 .tk .l{font-size:.72rem;color:var(--navy-ink-2);white-space:nowrap}
@@ -294,7 +293,7 @@ tr:last-child td{border-bottom:none}
   <!-- 실시간 시세 띠: TradingView 무료 위젯(시세는 TradingView 가 직접 보여줌, 우리 JSON 과 무관). 종가 기준 숫자는 아래 화면들 -->
   <div class="tvtape"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {"symbols":[{"proName":"FOREXCOM:SPXUSD","title":"S&P 500"},{"proName":"FOREXCOM:NSXUSD","title":"나스닥 100"},{"proName":"FOREXCOM:DJI","title":"다우"},{"proName":"NASDAQ:NVDA","title":"엔비디아"},{"proName":"NASDAQ:TSLA","title":"테슬라"},{"proName":"NASDAQ:AAPL","title":"애플"},{"proName":"NASDAQ:MSFT","title":"마이크로소프트"},{"proName":"TVC:US10Y","title":"미국 10년물"},{"proName":"NYMEX:CL1!","title":"WTI"},{"proName":"FX_IDC:USDKRW","title":"원/달러"},{"proName":"BITSTAMP:BTCUSD","title":"비트코인"}],"showSymbolLogo":true,"colorTheme":"dark","isTransparent":true,"displayMode":"adaptive","locale":"kr"}
+  {"symbols":[{"proName":"FOREXCOM:SPXUSD","title":"S&P 500"},{"proName":"FOREXCOM:NSXUSD","title":"나스닥 100"},{"proName":"FOREXCOM:DJI","title":"다우"},{"proName":"NASDAQ:NVDA","title":"엔비디아"},{"proName":"NASDAQ:TSLA","title":"테슬라"},{"proName":"NASDAQ:AAPL","title":"애플"},{"proName":"NASDAQ:MSFT","title":"마이크로소프트"},{"proName":"FX_IDC:USDKRW","title":"원/달러"},{"proName":"BITSTAMP:BTCUSD","title":"비트코인"}],"showSymbolLogo":true,"colorTheme":"dark","isTransparent":true,"displayMode":"adaptive","locale":"kr"}
   </script></div></div>
 </header>
 
