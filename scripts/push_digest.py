@@ -523,15 +523,16 @@ def build_earnings_message():
                   if v is not None)
     med = yoys[(len(yoys) - 1) // 2] if yoys else None
 
-    lines = [f"<b>🌙 밤사이 미국 실적</b>  <i>{esc(day[5:].replace('-', '/'))} 발표 {len(rows)}건</i>", ""]
+    lines = [f"<b>🌙 밤사이 미국 실적</b> · {esc(day[5:].replace('-', '/'))} 발표 {len(rows)}건", "",
+             "<b>📊 한눈에</b>"]
     if done:
-        lines.append(f"· 시장(SPY)보다 오른 곳 {up}/{len(done)} (반응 확정분)")
+        lines.append(f" 🏁 시장(SPY)보다 오른 곳 {up}/{len(done)} (반응 확정분)")
     if len(rows) > len(done):
-        lines.append(f"· 반응 대기 {len(rows) - len(done)}건 (장후 발표는 다음 거래일 종가 이후)")
-    lines.append(f"· 가이던스 상향 {guide.count('상향')} · 하향 {guide.count('하향')}"
-                 f" · 첫 제시 {guide.count('첫 제시')}")
+        lines.append(f" ⏳ 반응 대기 {len(rows) - len(done)}건 (장후 발표는 다음 거래일 종가 이후)")
+    lines.append(f" 🧭 가이던스  🔼 {guide.count('상향')} · 🔽 {guide.count('하향')}"
+                 f" · 🆕 {guide.count('첫 제시')}")
     if med is not None:
-        lines.append(f"· 매출 YoY 중앙값 {signed(med, '%')} (숫자 있는 {len(yoys)}곳)")
+        lines.append(f" 📈 매출 YoY 중앙값 <b>{signed(med, '%')}</b> (숫자 있는 {len(yoys)}곳)")
 
     # 업종별 한 줄: 발표가 3건 이상인 업종만, 많은 순 상위 3개
     by = {}
@@ -540,12 +541,12 @@ def build_earnings_message():
     top = sorted(((k, v) for k, v in by.items() if len(v) >= 3 and k != "기타"),
                  key=lambda kv: -len(kv[1]))[:3]
     if top:
-        lines += ["", "<b>업종별</b>"]
+        lines += ["", "<b>🏭 업종별</b>"]
         for k, v in top:
             ys = sorted(n["revenue_yoy"] for n in (x.get("numbers") or {} for x in v)
                         if n.get("revenue_yoy") is not None)
             y = f" · 매출 YoY 중앙값 {signed(ys[(len(ys) - 1) // 2], '%')}" if ys else ""
-            lines.append(f"· {esc(k)} {len(v)}건{y}")
+            lines.append(f" · <b>{esc(k)}</b> {len(v)}건{y}")
 
     # 큰 회사부터 종목별 (SEC 티커 목록 순서 ≈ 시가총액 순), 숫자가 있는 건만
     try:
@@ -556,21 +557,27 @@ def build_earnings_message():
     with_num = sorted((x for x in rows if x.get("numbers")),
                       key=lambda x: order.get(x["ticker"], 10 ** 6))[:EARNINGS_TOP]
     if with_num:
-        lines += ["", "<b>주요 종목</b>"]
+        lines += ["", "<b>⭐ 주요 종목</b>", ""]
+        gicon = {"상향": "🔼", "하향": "🔽", "첫 제시": "🆕"}
         for x in with_num:
             n = x["numbers"]
+            yoy = n.get("revenue_yoy")
+            dot = "⚪" if yoy is None else "🟢" if yoy > 0 else "🔴" if yoy < 0 else "⚪"
             bits = []
-            if n.get("revenue_yoy") is not None:
-                bits.append(f"매출 {signed(n['revenue_yoy'], '%')}")
-            if n.get("guidance") in ("상향", "하향", "첫 제시"):
-                bits.append(f"가이던스 {n['guidance']}")
+            if yoy is not None:
+                bits.append(f"매출 <b>{signed(yoy, '%')}</b>")
+            if n.get("guidance") in gicon:
+                bits.append(f"{gicon[n['guidance']]} 가이던스 {n['guidance']}")
             if x.get("react_status") == "확정":
                 bits.append(f"시장 대비 {signed(x['rel_pct'], '%p')}")
-            lines.append(f"· <b>{esc(x['ticker'])}</b> {esc(x['company'][:24])}"
-                         + (f" — {' · '.join(bits)}" if bits else ""))
+            lines.append(f"{dot} <code>{esc(x['ticker'])}</code> <b>{esc(x['company'][:24])}</b>")
+            if bits:
+                lines.append("   " + " · ".join(bits))
             if n.get("summary"):
-                lines.append(f"  <i>{esc(n['summary'])}</i>")
-    lines += ["", "<i>보도자료를 AI가 자동 추출한 값 · 틀릴 수 있으니 대시보드 원문 링크로 확인</i>"]
+                lines.append(f"<blockquote>{esc(n['summary'])}</blockquote>")
+            lines.append("")        # 종목 사이를 한 줄 띄워 읽기 편하게
+        lines.pop()
+    lines += ["", "<i>🤖 보도자료를 AI가 자동 추출한 값 · 틀릴 수 있으니 대시보드 원문 링크로 확인</i>"]
     return "\n".join(lines)
 
 
