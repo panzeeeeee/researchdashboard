@@ -1,6 +1,133 @@
 {
  "items": [
   {
+   "accession": "0001193125-26-410775",
+   "ticker": "FEAM",
+   "company": "5E Advanced Materials, Inc.",
+   "cik": "0001888654",
+   "accepted_et": "2026-10-01 16:46",
+   "date_et": "2026-10-01",
+   "session": "장후",
+   "url": "https://www.sec.gov/Archives/edgar/data/1888654/000119312526410775/0001193125-26-410775-index.htm",
+   "react_status": "대기",
+   "sic": "1400",
+   "industry": "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)",
+   "sector": "소재",
+   "num_tries": 1
+  },
+  {
+   "accession": "0000706129-26-000077",
+   "ticker": "HBNC",
+   "company": "HORIZON BANCORP INC /IN/",
+   "cik": "0000706129",
+   "accepted_et": "2026-10-01 16:20",
+   "date_et": "2026-10-01",
+   "session": "장후",
+   "url": "https://www.sec.gov/Archives/edgar/data/706129/000070612926000077/0000706129-26-000077-index.htm",
+   "react_status": "대기",
+   "sic": "6022",
+   "industry": "State Commercial Banks",
+   "sector": "금융",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": null,
+    "revenue_prior": null,
+    "eps_gaap": null,
+    "eps_gaap_prior": null,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 2026",
+    "guidance": "없음",
+    "summary": "실적 발표 일정을 안내하는 Form 8-K로 구체적인 실적 숫자는 없다.",
+    "revenue_yoy": null
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/706129/000070612926000077/hbnc-20261001.htm"
+  },
+  {
+   "accession": "0001747777-26-000031",
+   "ticker": "OTF",
+   "company": "Blue Owl Technology Finance Corp.",
+   "cik": "0001747777",
+   "accepted_et": "2026-10-01 16:16",
+   "date_et": "2026-10-01",
+   "session": "장후",
+   "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777726000031/0001747777-26-000031-index.htm",
+   "react_status": "대기",
+   "sic": "",
+   "industry": "",
+   "sector": "기타",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": null,
+    "revenue_prior": null,
+    "eps_gaap": null,
+    "eps_gaap_prior": null,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "없음",
+    "summary": "실적 발표 일정을 안내하는 보도자료로 관련 수치와 전망이 포함되지 않았다.",
+    "revenue_yoy": null
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777726000031/exhibit991pressrelease-sch.htm"
+  },
+  {
+   "accession": "0001655888-26-000063",
+   "ticker": "OBDC",
+   "company": "Blue Owl Capital Corp",
+   "cik": "0001655888",
+   "accepted_et": "2026-10-01 16:16",
+   "date_et": "2026-10-01",
+   "session": "장후",
+   "url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588826000063/0001655888-26-000063-index.htm",
+   "react_status": "대기",
+   "sic": "",
+   "industry": "",
+   "sector": "기타",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": null,
+    "revenue_prior": null,
+    "eps_gaap": null,
+    "eps_gaap_prior": null,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 2026",
+    "guidance": "없음",
+    "summary": "실적 발표 일정을 안내하는 보도자료로 분기 실적 수치는 없음.",
+    "revenue_yoy": null
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588826000063/exhibit991pressrelease-sch.htm"
+  },
+  {
+   "accession": "0000320187-26-000184",
+   "ticker": "NKE",
+   "company": "NIKE, Inc.",
+   "cik": "0000320187",
+   "accepted_et": "2026-10-01 16:15",
+   "date_et": "2026-10-01",
+   "session": "장후",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000184/0000320187-26-000184-index.htm",
+   "react_status": "대기",
+   "sic": "3021",
+   "industry": "Rubber & Plastics Footwear",
+   "sector": "소재",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 11213.0,
+    "revenue_prior": 11720.0,
+    "eps_gaap": 0.48,
+    "eps_gaap_prior": 0.49,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q1 FY2027",
+    "guidance": "첫 제시",
+    "summary": "중화권 부진으로 매출과 EPS가 감소했으나 매출총이익률은 개선됨.",
+    "revenue_yoy": -4.3
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000184/q1fy27exhibit991er.htm"
+  },
+  {
    "accession": "0001575872-26-000667",
    "ticker": "MOJO",
    "company": "EQUATOR Beverage Co",
@@ -9,11 +136,16 @@
    "date_et": "2026-10-01",
    "session": "장중",
    "url": "https://www.sec.gov/Archives/edgar/data/1414953/000157587226000667/0001575872-26-000667-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "2080",
    "industry": "Beverages",
    "sector": "필수소비재",
-   "num_tries": 1
+   "num_tries": 2,
+   "react_pct": 15.9,
+   "spy_pct": 0.2,
+   "rel_pct": 15.8,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0001493152-26-045278",
@@ -24,7 +156,7 @@
    "date_et": "2026-10-01",
    "session": "장전",
    "url": "https://www.sec.gov/Archives/edgar/data/1269026/000149315226045278/0001493152-26-045278-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "3841",
    "industry": "Surgical & Medical Instruments & Apparatus",
    "sector": "헬스케어",
@@ -41,7 +173,12 @@
     "summary": "산업용 매출 호조로 3분기 예비 매출이 예상치를 상회했으며 4분기 가이던스는 유지했다.",
     "revenue_yoy": null
    },
-   "pr_url": "https://www.sec.gov/Archives/edgar/data/1269026/000149315226045278/ex99-1.htm"
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1269026/000149315226045278/ex99-1.htm",
+   "react_pct": -4.5,
+   "spy_pct": 0.2,
+   "rel_pct": -4.7,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0001437749-26-031664",
@@ -52,7 +189,7 @@
    "date_et": "2026-10-01",
    "session": "장전",
    "url": "https://www.sec.gov/Archives/edgar/data/887151/000143774926031664/0001437749-26-031664-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "5030",
    "industry": "Wholesale-Lumber & Other Construction Materials",
    "sector": "산업재",
@@ -69,7 +206,12 @@
     "summary": "7~8월 유기농 매출과 총이익이 전년 대비 성장세를 지속했다.",
     "revenue_yoy": 7.6
    },
-   "pr_url": "https://www.sec.gov/Archives/edgar/data/887151/000143774926031664/ex_1021159.htm"
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/887151/000143774926031664/ex_1021159.htm",
+   "react_pct": 7.1,
+   "spy_pct": 0.2,
+   "rel_pct": 7.0,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0001104659-26-112595",
@@ -80,7 +222,7 @@
    "date_et": "2026-10-01",
    "session": "장전",
    "url": "https://www.sec.gov/Archives/edgar/data/1534254/000110465926112595/0001104659-26-112595-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "",
    "industry": "",
    "sector": "기타",
@@ -97,7 +239,12 @@
     "summary": "실적 발표 일정을 안내하는 보도자료로 구체적인 실적 숫자는 포함되지 않았습니다.",
     "revenue_yoy": null
    },
-   "pr_url": "https://www.sec.gov/Archives/edgar/data/1534254/000110465926112595/tm2626516d1_ex99-1.htm"
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1534254/000110465926112595/tm2626516d1_ex99-1.htm",
+   "react_pct": 1.9,
+   "spy_pct": 0.2,
+   "rel_pct": 1.7,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0000063754-26-000326",
@@ -108,7 +255,7 @@
    "date_et": "2026-10-01",
    "session": "장전",
    "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000326/0000063754-26-000326-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "2090",
    "industry": "Miscellaneous Food Preparations & Kindred Products",
    "sector": "필수소비재",
@@ -125,7 +272,12 @@
     "summary": "매출과 마진이 개선되었으나 일회성 비용으로 GAAP 이익은 감소했다.",
     "revenue_yoy": null
    },
-   "pr_url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000326/mkcreportssolidthirdquar.htm"
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000326/mkcreportssolidthirdquar.htm",
+   "react_pct": -4.9,
+   "spy_pct": 0.2,
+   "rel_pct": -5.0,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0001144215-26-000047",
@@ -136,7 +288,7 @@
    "date_et": "2026-10-01",
    "session": "장전",
    "url": "https://www.sec.gov/Archives/edgar/data/1144215/000114421526000047/0001144215-26-000047-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "3640",
    "industry": "Electric Lighting & Wiring Equipment",
    "sector": "산업재",
@@ -153,7 +305,12 @@
     "summary": "지능형 공간 사업의 성장으로 매출과 순이익이 증가했으나 일부 부문은 부진했다.",
     "revenue_yoy": 2.9
    },
-   "pr_url": "https://www.sec.gov/Archives/edgar/data/1144215/000114421526000047/ayi-20261001x8xk_ex991.htm"
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1144215/000114421526000047/ayi-20261001x8xk_ex991.htm",
+   "react_pct": -3.4,
+   "spy_pct": 0.2,
+   "rel_pct": -3.6,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0001467373-26-000037",
@@ -164,7 +321,7 @@
    "date_et": "2026-10-01",
    "session": "장전",
    "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737326000037/0001467373-26-000037-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "7389",
    "industry": "Services-Business Services, NEC",
    "sector": "산업재",
@@ -181,7 +338,12 @@
     "summary": "매출과 GAAP EPS가 증가했으나 조정 EPS는 전년 동기 대비 비교치가 직접 제시되지 않았다.",
     "revenue_yoy": 6.2
    },
-   "pr_url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737326000037/q4fy26earnings8-kexhibit.htm"
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737326000037/q4fy26earnings8-kexhibit.htm",
+   "react_pct": 15.8,
+   "spy_pct": 0.2,
+   "rel_pct": 15.6,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0001104659-26-112532",
@@ -192,7 +354,7 @@
    "date_et": "2026-10-01",
    "session": "장전",
    "url": "https://www.sec.gov/Archives/edgar/data/1698990/000110465926112532/0001104659-26-112532-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "1311",
    "industry": "Crude Petroleum & Natural Gas",
    "sector": "에너지",
@@ -209,7 +371,12 @@
     "summary": "와일드파이어 인수 완료 후 4분기 실적 가이던스를 새롭게 제시함.",
     "revenue_yoy": null
    },
-   "pr_url": "https://www.sec.gov/Archives/edgar/data/1698990/000110465926112532/mgy-ex99d1.htm"
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1698990/000110465926112532/mgy-ex99d1.htm",
+   "react_pct": 2.5,
+   "spy_pct": 0.2,
+   "rel_pct": 2.3,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0001493152-26-045158",
@@ -220,11 +387,16 @@
    "date_et": "2026-09-30",
    "session": "장후",
    "url": "https://www.sec.gov/Archives/edgar/data/1530766/000149315226045158/0001493152-26-045158-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "6200",
    "industry": "Security & Commodity Brokers, Dealers, Exchanges & Services",
    "sector": "금융",
-   "num_tries": 2
+   "num_tries": 2,
+   "react_pct": -4.8,
+   "spy_pct": 0.2,
+   "rel_pct": -5.0,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0001437749-26-031604",
@@ -235,7 +407,7 @@
    "date_et": "2026-09-30",
    "session": "장후",
    "url": "https://www.sec.gov/Archives/edgar/data/50471/000143774926031604/0001437749-26-031604-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "7374",
    "industry": "Services-Computer Processing & Data Preparation",
    "sector": "IT",
@@ -252,7 +424,12 @@
     "summary": "매출과 순이익이 증가하고 영업이익률이 개선되었으나 4분기 매출은 소폭 감소함.",
     "revenue_yoy": 3.1
    },
-   "pr_url": "https://www.sec.gov/Archives/edgar/data/50471/000143774926031604/ex_1020954.htm"
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/50471/000143774926031604/ex_1020954.htm",
+   "react_pct": -0.2,
+   "spy_pct": 0.2,
+   "rel_pct": -0.4,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0001437749-26-031601",
@@ -263,7 +440,7 @@
    "date_et": "2026-09-30",
    "session": "장후",
    "url": "https://www.sec.gov/Archives/edgar/data/10329/000143774926031601/0001437749-26-031601-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "2511",
    "industry": "Wood Household Furniture, (No Upholstered)",
    "sector": "경기소비재",
@@ -280,7 +457,12 @@
     "summary": "매출과 영업이익이 증가했으나 주택 경기 침체와 고금리가 부담이다.",
     "revenue_yoy": 3.4
    },
-   "pr_url": "https://www.sec.gov/Archives/edgar/data/10329/000143774926031601/ex_1020960.htm"
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/10329/000143774926031601/ex_1020960.htm",
+   "react_pct": 9.1,
+   "spy_pct": 0.2,
+   "rel_pct": 8.9,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0000876167-26-000110",
@@ -291,7 +473,7 @@
    "date_et": "2026-09-30",
    "session": "장후",
    "url": "https://www.sec.gov/Archives/edgar/data/876167/000087616726000110/0000876167-26-000110-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "7372",
    "industry": "Services-Prepackaged Software",
    "sector": "IT",
@@ -308,7 +490,12 @@
     "summary": "매출은 소폭 감소했으나 돔오 인수와 비용 관리로 순이익과 EPS가 크게 증가했습니다.",
     "revenue_yoy": -1.6
    },
-   "pr_url": "https://www.sec.gov/Archives/edgar/data/876167/000087616726000110/exhibit991-q32026earningsr.htm"
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/876167/000087616726000110/exhibit991-q32026earningsr.htm",
+   "react_pct": -8.5,
+   "spy_pct": 0.2,
+   "rel_pct": -8.7,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0000723125-26-000018",
@@ -319,7 +506,7 @@
    "date_et": "2026-09-30",
    "session": "장후",
    "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/0000723125-26-000018-index.htm",
-   "react_status": "대기",
+   "react_status": "확정",
    "sic": "3674",
    "industry": "Semiconductors & Related Devices",
    "sector": "IT",
@@ -336,7 +523,12 @@
     "summary": "AI 수요 확대로 매출과 순익이 폭증했으나 운영비용도 크게 늘었다.",
     "revenue_yoy": 379.3
    },
-   "pr_url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm"
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
+   "react_pct": 3.0,
+   "spy_pct": 0.2,
+   "rel_pct": 2.9,
+   "react_from": "2026-09-30",
+   "react_to": "2026-10-01"
   },
   {
    "accession": "0001437749-26-031585",
@@ -1019,5 +1211,5 @@
    "sector": "커뮤니케이션"
   }
  ],
- "updated_at": "2026-10-02T01:00:20.720113+09:00"
+ "updated_at": "2026-10-02T10:48:22.384277+09:00"
 }
