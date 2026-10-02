@@ -301,22 +301,31 @@ def krw_short(v):
 def info_lines(c):
     """시총(원화)·거래대금(원화)·시총순위·기업개요 -- 카드에 있는 걸 텔레에도."""
     out = []
-    parts = [f"시총 {usd_short(c.get('marketCap'))}{krw_short(c.get('marketCapKrw'))}",
-             f"거래대금 {usd_short(c.get('tradingValue'))}{krw_short(c.get('tradingValueKrw'))}"]
+    parts = [f"시총 <b>{usd_short(c.get('marketCap'))}</b>{krw_short(c.get('marketCapKrw'))}",
+             f"거래대금 <b>{usd_short(c.get('tradingValue'))}</b>{krw_short(c.get('tradingValueKrw'))}"]
     if c.get("capRank"):
-        parts.append(f"시총순위 {c['capRank']}위")
-    out.append("  <i>" + " · ".join(parts) + "</i>")
-    for b in (c.get("overview") or [])[:2]:
-        out.append(f"  - {esc(b)}")
+        parts.append(f"시총순위 <b>{c['capRank']}위</b>")
+    out.append("💰 " + " · ".join(parts))
+    ov = [esc(b) for b in (c.get("overview") or [])[:2]]
+    if ov:
+        out.append("<blockquote>" + "\n".join(f"▸ {b}" for b in ov) + "</blockquote>")
     return out
+
+
+def _head(c, price=False):
+    """종목 한 줄: 등락 색 점 + 이름(굵게) + 티커(고정폭) + 등락률"""
+    chg = c.get("chg")
+    dot = "⚪" if chg is None or chg == 0 else "🟢" if chg > 0 else "🔴"
+    p = f" ${esc(c.get('price'))}" if price else ""
+    return (f'<b>{esc(c.get("name"))}</b> <code>{esc(c.get("ticker"))}</code>{p}  '
+            f'{dot} <b>{signed(chg, "%")}</b>')
 
 
 def breakout_lines(cards):
     out = []
     for c in cards:
         m = c.get("meta") or {}
-        out.append(f'· <b>{esc(c.get("name"))}</b> ({esc(c.get("ticker"))}) '
-                   f'{signed(c.get("chg"), "%")}')
+        out.append(_head(c))
         detail = []
         if c.get("sector"):
             detail.append(esc(c["sector"]))
@@ -327,7 +336,7 @@ def breakout_lines(cards):
         if m.get("drawdown") is not None:
             detail.append(f"낙폭 {m['drawdown']}%")
         if detail:
-            out.append(f"  <i>{' · '.join(detail)}</i>")
+            out.append("🏷 " + " · ".join(detail))
         out += info_lines(c)
     return out
 
@@ -336,9 +345,7 @@ def deepvalue_lines(cards):
     out = []
     for c in cards:
         m = c.get("meta") or {}
-        trig = " 🔥트리거" if m.get("triggered") else ""
-        out.append(f'· <b>{esc(c.get("name"))}</b> ({esc(c.get("ticker"))}) '
-                   f'{signed(c.get("chg"), "%")}{trig}')
+        out.append(_head(c) + (" 🔥 <b>트리거</b>" if m.get("triggered") else ""))
         detail = []
         if c.get("sector"):
             detail.append(esc(c["sector"]))
@@ -349,9 +356,9 @@ def deepvalue_lines(cards):
         if m.get("drawdown") is not None:
             detail.append(f"낙폭 {m['drawdown']}%")
         if detail:
-            out.append(f"  <i>{' · '.join(detail)}</i>")
+            out.append("🏷 " + " · ".join(detail))
         if m.get("why"):
-            out.append(f"  <i>왜 싼가: {esc(m['why'])}</i>")
+            out.append(f"🤔 <i>왜 싼가: {esc(m['why'])}</i>")
         out += info_lines(c)
     return out
 
@@ -359,10 +366,9 @@ def deepvalue_lines(cards):
 def extreme_lines(cards):
     out = []
     for c in cards:
-        out.append(f'· <b>{esc(c.get("name"))}</b> ({esc(c.get("ticker"))}) '
-                   f'${esc(c.get("price"))} {signed(c.get("chg"), "%")}')
+        out.append(_head(c, price=True))
         if c.get("sector"):
-            out.append(f"  <i>{esc(c['sector'])}</i>")
+            out.append(f"🏷 {esc(c['sector'])}")
         out += info_lines(c)
     return out
 
@@ -388,7 +394,7 @@ def low_summary(highs, lows, top=3):
     lines = ["<b>📉 신저가 업종</b>"]
     for name, n in ranked[:top]:
         share = round(n / total * 100)
-        lines.append(f"· {esc(name)} {n}개 ({share}%) · 같은 업종 신고가 {hi.get(name, 0)}개")
+        lines.append(f" ▸ <b>{esc(name)}</b> {n}개 ({share}%) · 같은 업종 신고가 {hi.get(name, 0)}개")
 
     name, n = ranked[0]
     share = n / total
@@ -602,10 +608,10 @@ def build_screener_messages():
     highs = ex.get("high") or []
     lows = ex.get("low") or []
 
-    head = (f"<b>🔎 스크리너 결과</b>  <i>{now_kst().strftime('%m/%d')}</i>\n"
-            f"· 긴 조정 후 신고가 {len(bo)}건\n"
-            f"· 딥밸류 {len(dv)}건\n"
-            f"· 52주 신고가 {len(highs)}건 · 신저가 {len(lows)}건")
+    head = (f"<b>🔎 스크리너 결과</b> · {now_kst().strftime('%m/%d')}\n\n"
+            f" 🟢 긴 조정 후 신고가 <b>{len(bo)}</b>건\n"
+            f" 🔵 딥밸류 <b>{len(dv)}</b>건\n"
+            f" 🔺 52주 신고가 <b>{len(highs)}</b>건 · 🔻 신저가 <b>{len(lows)}</b>건")
     low_text = low_summary(highs, lows)
     if low_text:
         head += "\n\n" + low_text
