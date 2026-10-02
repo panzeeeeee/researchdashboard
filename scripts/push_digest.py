@@ -424,9 +424,11 @@ def build_kr_message():
 
     def num(v, d=2):
         return f"{v:,.{d}f}"
-    lines = [f"<b>🇰🇷 한국 시장 요약</b>  <i>{now_kst().strftime('%m/%d %H:%M')} · 마감 기준</i>", ""]
+    def dot(v):
+        return "⚪" if v is None or v == 0 else "🟢" if v > 0 else "🔴"
+    lines = [f"<b>🇰🇷 한국 시장 요약</b> · {now_kst().strftime('%m/%d %H:%M')} 마감 기준", "", "<b>📊 시장</b>"]
     for i in mk["indexes"]:
-        lines.append(f"· {esc(i['label'])}: {num(i['value'])} ({signed(i['chg'], '%')})")
+        lines.append(f"{dot(i['chg'])} <b>{esc(i['label'])}</b> {num(i['value'])} ({signed(i['chg'], '%')})")
     rates = {r["key"]: r for r in mk.get("rates", [])}
     parts = []
     for k, nm in (("kr3y", "국고채 3년"), ("kr10y", "국고채 10년")):
@@ -436,16 +438,16 @@ def build_kr_message():
     if fx:
         parts.append(f"원/달러 {num(fx['value'], 1)} ({signed(fx['chg'], '%')})")
     if parts:
-        lines.append("· " + " · ".join(parts))
+        lines.append(" 💱 " + " · ".join(parts))
     secs = [s for s in mk.get("sectors", []) if s.get("d1") is not None]
     if len(secs) >= 4:
         secs.sort(key=lambda s: -s["d1"])
-        lines.append("· 강한 업종 " + ", ".join(f"{esc(s['label'])} {signed(s['d1'], '%')}" for s in secs[:3])
-                     + " / 약한 업종 " + ", ".join(f"{esc(s['label'])} {signed(s['d1'], '%')}" for s in secs[-3:][::-1]))
+        lines.append(" 🔥 강한 업종 " + ", ".join(f"{esc(s['label'])} {signed(s['d1'], '%')}" for s in secs[:3]))
+        lines.append(" 🧊 약한 업종 " + ", ".join(f"{esc(s['label'])} {signed(s['d1'], '%')}" for s in secs[-3:][::-1]))
 
     why = ((news.get("event_notes") or {}).get("why") or "").strip()
     if why:
-        lines += ["", "<b>총평</b>", esc(why[:380]), "<i>자동 생성 · 참고용</i>"]
+        lines += ["", "<b>💬 총평</b>", f"<blockquote>{esc(why[:380])}</blockquote>", "<i>🤖 자동 생성 · 참고용</i>"]
 
     items = dis.get("items") or []
     tur = [x for x in items if x.get("category") == "잠정실적" and x.get("numbers")]
@@ -456,12 +458,12 @@ def build_kr_message():
         dn = [x["corp"] for x in today if x["numbers"].get("op_tag") == "적자전환"]
         lines += ["", f"<b>📋 잠정실적</b> {last[5:].replace('-', '/')} 공시 {len(today)}건 (숫자 확인 {len(tur)}건 중)"]
         if up:
-            lines.append("· 영업이익 흑자전환: " + ", ".join(esc(n) for n in up[:5]))
+            lines.append(" 🟢 영업이익 흑자전환: " + ", ".join(esc(n) for n in up[:5]))
         if dn:
-            lines.append("· 영업이익 적자전환: " + ", ".join(esc(n) for n in dn[:5]))
+            lines.append(" 🔴 영업이익 적자전환: " + ", ".join(esc(n) for n in dn[:5]))
     risk = [x for x in items if x.get("category") == "리스크" and x["date"] >= (now_kst() - timedelta(days=1)).strftime("%Y-%m-%d")]
     if risk:
-        lines.append("· ⚠ 리스크 공시: " + ", ".join(f"{esc(x['corp'])}({esc(x['title'][:14])})" for x in risk[:4]))
+        lines.append(" ⚠️ 리스크 공시: " + ", ".join(f"{esc(x['corp'])}({esc(x['title'][:14])})" for x in risk[:4]))
 
     ex = bo.get("extremes") or {}
     if ex or dv.get("funnel"):
@@ -469,26 +471,27 @@ def build_kr_message():
         cand = f.get("생존·희석 통과 + F-Score 6+ (후보)")
         lines += ["", "<b>🔎 스크리너</b>"]
         if ex:
-            lines.append(f"· 52주 신고가 {ex.get('n_high', 0)} · 신저가 {ex.get('n_low', 0)}"
+            lines.append(f" 🔺 52주 신고가 <b>{ex.get('n_high', 0)}</b> · 🔻 신저가 <b>{ex.get('n_low', 0)}</b>"
                          + (f" · 긴 조정 후 신고가 근접후보 {len(bo.get('breakout') or [])}" if bo.get("breakout") is not None else ""))
         if cand is not None:
             trig = sum(1 for x in dv.get("candidates", []) if x.get("trigger_count"))
-            lines.append(f"· 딥밸류 후보 {cand} (오늘 트리거 {trig})")
+            lines.append(f" 💎 딥밸류 후보 <b>{cand}</b> (오늘 트리거 {trig})")
     pk = picks.get("picks") or []
     if pk:
         lines += ["", "<b>⭐ 오늘의 종목</b>"]
         for p in pk[:10]:
-            lines.append(f"· {esc(p['name'])} ({esc(', '.join(p['tags']))}) {signed(p.get('chg'), '%')}")
+            lines.append(f"{dot(p.get('chg'))} <b>{esc(p['name'])}</b> {signed(p.get('chg'), '%')}")
+            lines.append(f"   <i>{esc(', '.join(p['tags']))}</i>")
     dg = pol.get("digest") or []
     if dg:
-        lines += ["", "<b>🏛 정책 이슈</b>"] + [f"· {esc(x)}" for x in dg[:3]]
+        lines += ["", "<b>🏛 정책 이슈</b>"] + [f" ▸ {esc(x)}" for x in dg[:3]]
     soon = [e for e in cal.get("events", []) if e["date"] <= (now_kst() + timedelta(days=7)).strftime("%Y-%m-%d")
             and e["date"] >= now_kst().strftime("%Y-%m-%d") and e.get("kind") != "휴장"]
     hol = [e for e in cal.get("events", []) if e.get("kind") == "휴장" and e["date"] <= (now_kst() + timedelta(days=7)).strftime("%Y-%m-%d")
            and e["date"] >= now_kst().strftime("%Y-%m-%d")]
     if soon or hol:
-        lines += ["", "<b>📅 이번 주 일정</b>"] + [f"· {esc(e['date'][5:].replace('-', '/'))} {esc(e['label'])}" for e in (soon + hol)[:6]]
-    lines += ["", f'<a href="{DASH_KR}">한국 대시보드 열기</a>']
+        lines += ["", "<b>📅 이번 주 일정</b>"] + [f" ▸ <b>{esc(e['date'][5:].replace('-', '/'))}</b> {esc(e['label'])}" for e in (soon + hol)[:6]]
+    lines += ["", f'<a href="{DASH_KR}">👉 한국 대시보드 열기</a>']
     return "\n".join(lines)[:4000]
 
 
