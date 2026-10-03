@@ -1,6 +1,49 @@
 {
  "items": [
   {
+   "accession": "0001477932-26-006021",
+   "ticker": "GLTK",
+   "company": "GlobalTech Corp",
+   "cik": "0001938338",
+   "accepted_et": "2026-10-02 16:30",
+   "date_et": "2026-10-02",
+   "session": "장후",
+   "url": "https://www.sec.gov/Archives/edgar/data/1938338/000147793226006021/0001477932-26-006021-index.htm",
+   "react_status": "대기",
+   "sic": "4813",
+   "industry": "Telephone Communications (No Radiotelephone)",
+   "sector": "커뮤니케이션",
+   "num_tries": 1
+  },
+  {
+   "accession": "0001193125-26-412356",
+   "ticker": "WSBC",
+   "company": "WESBANCO INC",
+   "cik": "0000203596",
+   "accepted_et": "2026-10-02 16:24",
+   "date_et": "2026-10-02",
+   "session": "장후",
+   "url": "https://www.sec.gov/Archives/edgar/data/203596/000119312526412356/0001193125-26-412356-index.htm",
+   "react_status": "대기",
+   "sic": "6021",
+   "industry": "National Commercial Banks",
+   "sector": "금융",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": null,
+    "revenue_prior": null,
+    "eps_gaap": null,
+    "eps_gaap_prior": null,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "없음",
+    "summary": "2026년 3분기 실적 발표 및 컨퍼런스 콜 개최 일정을 안내하는 보도자료입니다.",
+    "revenue_yoy": null
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/203596/000119312526412356/wsbc-ex99_1.htm"
+  },
+  {
    "accession": "0001628280-26-064366",
    "ticker": "TSLA",
    "company": "Tesla, Inc.",
@@ -69,7 +112,7 @@
    "sic": "1000",
    "industry": "Metal Mining",
    "sector": "소재",
-   "num_tries": 1
+   "num_tries": 2
   },
   {
    "accession": "0000917520-26-000067",
@@ -112,7 +155,7 @@
    "sic": "6199",
    "industry": "Finance Services",
    "sector": "금융",
-   "num_tries": 1
+   "num_tries": 2
   },
   {
    "accession": "0001193125-26-410775",
@@ -1325,5 +1368,5 @@
    "sector": "커뮤니케이션"
   }
  ],
- "updated_at": "2026-10-03T00:23:19.267052+09:00"
+ "updated_at": "2026-10-03T10:21:08.002871+09:00"
 }
