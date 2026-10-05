@@ -1,707 +1,789 @@
 {
- "updated_at": "2026-10-04T23:37:31.541806+09:00",
+ "updated_at": "2026-10-05T10:10:32.597653+09:00",
  "event_notes": {
-  "why": "코스피는 한화솔루션 직전장 강세 보도 속에서 에너지화학(4.09%)과 2차전지(2.83%) 등 관련 업종이 강세를 보인 영향으로 0.46% 상승 마감했다. 반면 코스닥은 최근 K뷰티와 푸드 대표주들이 원고 역풍과 주가 조정 우려를 받은 영향 등으로 0.11% 하락하며 혼조세를 보였다.",
-  "watch": "삼성전자 실적 발표를 앞두고 미국 국채금리와 반도체 업종의 향방이 증시 전반에 큰 변수로 작용할 것으로 보여 이를 주의 깊게 지켜봐야 한다."
+  "why": "미국 고용 부진에 안도하며 지수가 소폭 상승한 가운데, 국민연금이 삼성전자를 팔고 SK하이닉스를 대거 사들였다는 소식이 전해지며 반도체 업종은 차익실현 매물과 엇갈린 수급 영향으로 0.61% 하락했다. 반면 연휴 기간 엔비디아와 테슬라 등 미국 기술주가 강세를 보인 영향 등이 일부 반영되면서 2차전지(+2.83%)와 에너지화학(+4.09%) 등 일부 성장 및 경기순환 업종이 강세를 보였다. 반면 코스닥 제약 업종은 고금리 환경과 반도체 쏠림 현상에 밀려 최악의 한 달을 보냈다는 진단 속에서 2.12% 하락하며 약세를 면치 못했다.",
+  "watch": "코스피가 박스권을 벗어나 안착하기 위해서는 이번 주 발표되는 삼성전자의 실적과 미국 국채 금리의 흐름을 주의 깊게 지켜봐야 할 것으로 보인다."
  },
  "clusters": [
   {
-   "title": "고금리 및 미국 국채금리 영향",
+   "title": "국내 증시 전망 및 삼성전자 실적 변수",
    "sources": [
-    "donga.com",
+    "breaknews.com",
+    "daily.hankooki.com",
     "ekn.kr",
-    "ggilbo.com",
-    "hani.co.kr",
-    "news.bizwatch.co.kr",
-    "news.einfomax.co.kr",
-    "pinpointnews.co.kr",
-    "seoulfn.com"
-   ],
-   "count": 8,
-   "items": [
-    {
-     "title": "[외환-주간] 美 고용 둔화에 열린 달러-원 하방...국채금리가 제동 걸까",
-     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437720",
-     "source": "news.einfomax.co.kr",
-     "published": "2026-10-04T13:02:00+09:00",
-     "dup_count": 1,
-     "summary": "미국 고용 둔화로 달러-원 환율 하락세가 나타난 가운데 국채금리가 추가 하락의 제동으로 작용 중이다."
-    },
-    {
-     "title": "금리 부담에도 증시는 버텼다...신한투자증권이 주목한 반도체 왜?",
-     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492609",
-     "source": "pinpointnews.co.kr",
-     "published": "2026-10-04T18:02:00+09:00",
-     "dup_count": 0,
-     "summary": "신한투자증권은 금리 부담 속에서도 반도체 등 실적과 수출이 뚜렷한 업종에 주목했다."
-    },
-    {
-     "title": "‘반도체·실물경기 호황’ 딴 세상 얘기...‘고금리’ 시름 자영업, 연...",
-     "url": "https://www.hani.co.kr/arti/economy/economy_general/1280851.html",
-     "source": "hani.co.kr",
-     "published": "2026-10-04T17:46:00+09:00",
-     "dup_count": 0,
-     "summary": "자영업자의 향후 경기 전망이 악화된 가운데 은행권 주택담보대출 금리는 4%대 후반으로 치솟았다."
-    },
-    {
-     "title": "美 금리인상 ‘주춤’ 전망에도...“韓 주담대는 계속 오를 것”",
-     "url": "https://www.donga.com/news/Inter/article/all/20261004/134782211/1",
-     "source": "donga.com",
-     "published": "2026-10-04T16:45:00+09:00",
-     "dup_count": 0,
-     "summary": "연준의 금리인상 주춤 전망에도 국내 주택담보대출 금리는 계속 오를 것이란 관측이 우세하다."
-    },
-    {
-     "title": "주담대 금리 4.66%까지 '쑥'... 3년 9개월 만에 최고",
-     "url": "https://www.ggilbo.com/news/articleView.html?idxno=1184423",
-     "source": "ggilbo.com",
-     "published": "2026-10-04T13:16:00+09:00",
-     "dup_count": 0,
-     "summary": "8월 예금은행의 주택담보대출 금리가 연 4.66%를 기록하며 3년 9개월 만에 최고치를 경신했다."
-    },
-    {
-     "title": "고금리에 주식보다 채권 매력 '부각'···채권 ETF 투자수요 확대",
-     "url": "https://www.seoulfn.com/news/articleView.html?idxno=639275",
-     "source": "seoulfn.com",
-     "published": "2026-10-04T13:00:00+09:00",
-     "dup_count": 0,
-     "summary": "시장금리가 자리하고 있다. 지난달 미국 연방준비제도(Fed·연준)의 기준금리 인상과 추가 긴축 우려로... 채권시장에서는 한국은행의 금리 인상 속도 조절 기대가 "
-    },
-    {
-     "title": "“언제까지 AI로 버티나”...美 국채금리 5%대에 증시 ‘시한폭탄’ [머...",
-     "url": "https://www.ekn.kr/web/view.php?key=20261004024392069",
-     "source": "ekn.kr",
-     "published": "2026-10-04T12:38:00+09:00",
-     "dup_count": 0,
-     "summary": "미국 국채금리가 5%대를 기록한 가운데 과도한 AI 투자 의존도가 증시의 시한폭탄으로 지적된다."
-    },
-    {
-     "title": "미 국채금리 발 국고채 4%대...가계·기업 '비상'",
-     "url": "https://news.bizwatch.co.kr/article/finance/2026/10/02/0033",
-     "source": "news.bizwatch.co.kr",
-     "published": "2026-10-04T12:00:00+09:00",
-     "dup_count": 0,
-     "summary": "미국 국채금리 상승세가 진정된 가운데 국내 금리 안정 여부가 가계와 기업의 비상 상황을 좌우할 전망이다."
-    }
-   ]
-  },
-  {
-   "title": "코스피 7000선 및 삼성전자 실적·증시 전망",
-   "sources": [
-    "cbci.co.kr",
-    "ebn.co.kr",
-    "econovill.com",
-    "kjdaily.com",
-    "moneystorm.kr",
-    "view.asiae.co.kr"
-   ],
-   "count": 7,
-   "items": [
-    {
-     "title": "[이번주 증시] 삼성전자 실적·美 국채금리 주목",
-     "url": "http://www.kjdaily.com/article.php?aid=1791105269688212276",
-     "source": "kjdaily.com",
-     "published": "2026-10-04T18:16:00+09:00",
-     "dup_count": 3,
-     "summary": "이번 주 증시는 삼성전자 실적 발표와 미국 국채금리 흐름이 주요 변수로 작용할 전망이다."
-    },
-    {
-     "title": "[주간증시전망] 코스피 7000선 안착 시험대...삼성전자 실적·美 금리 주...",
-     "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1726692",
-     "source": "ebn.co.kr",
-     "published": "2026-10-04T16:14:00+09:00",
-     "dup_count": 3,
-     "summary": "코스피는 삼성전자 실적과 마이크론 호실적에 힘입어 7000선 안착을 시험하고 있다."
-    },
-    {
-     "title": "[마켓 ING]7000선 안착 시도 코스피, 삼성전자 실적 주목",
-     "url": "https://view.asiae.co.kr/article/2026100414175270994",
-     "source": "view.asiae.co.kr",
-     "published": "2026-10-04T14:17:00+09:00",
-     "dup_count": 2,
-     "summary": "코스피가 7000선을 사수한 가운데, 이번 주는 삼성전자의 3분기 실적에 시장 관심이 집중된다."
-    },
-    {
-     "title": "삼성전자 실적 앞둔 코스피, '7천피' 지킬까...美 금리·반도체가 변수",
-     "url": "https://www.econovill.com/news/articleView.html?idxno=752704",
-     "source": "econovill.com",
-     "published": "2026-10-04T18:38:00+09:00",
-     "dup_count": 1,
-     "summary": "삼성전자 실적 발표를 앞둔 코스피는 반도체 업황 기대와 미국 금리가 변수로 작용하고 있다."
-    },
-    {
-     "title": "NAVER(네이버) 주가 19만원선, 흐름 '이목'...코스피 7000 회복",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612358",
-     "source": "cbci.co.kr",
-     "published": "2026-10-04T21:40:00+09:00",
-     "dup_count": 0,
-     "summary": "NAVER 주가가 개천절 연휴를 앞두고 소폭 상승하며 코스피는 7000선을 회복했다."
-    },
-    {
-     "title": "한화솔루션 직전장 '강세'...코스피 7000 탈환 속 다음장은",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612356",
-     "source": "cbci.co.kr",
-     "published": "2026-10-04T21:28:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피는 장중 등락을 거듭한 끝에 상승 반전하며 7003.74로 장을 마감했다."
-    },
-    {
-     "title": "[증시 프리즘] 삼전 실적 앞둔 코스피, '7천피' 안착 시험대...외인 돌아...",
-     "url": "https://www.moneystorm.kr/news/articleView.html?idxno=7033",
-     "source": "moneystorm.kr",
-     "published": "2026-10-04T11:11:00+09:00",
-     "dup_count": 0,
-     "summary": "삼성전자의 3분기 실적 발표를 앞두고 반도체주가 국내 증시의 방향성을 결정할 핵심 변수로 부각됐다."
-    }
-   ]
-  },
-  {
-   "title": "반도체 및 수출 관련 산업",
-   "sources": [
-    "hankyung.com",
-    "khan.co.kr",
-    "kidd.co.kr",
-    "sedaily.com",
-    "seoulfn.com"
+    "g-enews.com",
+    "newsway.co.kr"
    ],
    "count": 5,
    "items": [
     {
-     "title": "'K기판 르네상스'...역대 최대 수출액 노린다",
-     "url": "https://www.hankyung.com/article/2026100426341",
-     "source": "hankyung.com",
-     "published": "2026-10-04T18:17:00+09:00",
-     "dup_count": 0,
-     "summary": "고부가가치 PCB 판매가 집중되면서 K기판이 역대 최대 수출액 경신을 노리고 있다."
+     "title": "'트럼프 배당금' 뭇매...고금리·고유가 속 한국증시 '7천피' 안간힘",
+     "url": "http://www.breaknews.com/1240973",
+     "source": "breaknews.com",
+     "published": "2026-10-05T09:06:00+09:00",
+     "dup_count": 2,
+     "summary": "고금리 속에서도 반도체 대기업의 달러 매도 등으로 원·달러 환율이 하락했다."
     },
     {
-     "title": "수출 1조달러 시대의 남은 과제는? 정체된 ‘글로벌사우스’ 교역 활로...",
-     "url": "https://www.khan.co.kr/article/202610041413001",
-     "source": "khan.co.kr",
-     "published": "2026-10-04T14:13:00+09:00",
-     "dup_count": 0,
-     "summary": "한국의 연간 수출액 1조 달러 클럽 가입이 눈앞인 반면 반도체 쏠림 해소는 과제로 남았다."
+     "title": "[주간증시전망] 방향성 탐색하는 코스피, '삼성전자 실적'에 쏠린 눈",
+     "url": "https://www.g-enews.com/view.php?ud=202610021529109126923c501012_1",
+     "source": "g-enews.com",
+     "published": "2026-10-05T09:02:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피의 방향성이 탐색되는 가운데 시장의 시선은 삼성전자의 3분기 잠정실실적에 쏠렸다."
     },
     {
-     "title": "[창간24 / 한국무역 80년 2] \"팔 수 있는 건 다 판다\"···경제개발 5개...",
-     "url": "https://www.seoulfn.com/news/articleView.html?idxno=639281",
-     "source": "seoulfn.com",
-     "published": "2026-10-04T14:00:00+09:00",
+     "title": "美 금리 5%에 갇힌 코스피...‘7000 안착’ 열쇠는 삼성전자 실적[주간증...",
+     "url": "https://www.ekn.kr/web/view.php?key=20261005027591862",
+     "source": "ekn.kr",
+     "published": "2026-10-05T09:38:00+09:00",
      "dup_count": 0,
-     "summary": "한국은 반도체 수출의 폭발적 성장세에 힘입어 사상 첫 연간 수출 1조 달러 달성을 앞두고 있다."
+     "summary": "코스피가 7000선에 안착할지 여부는 마이크론 호실적과 삼성전자 실적에 달렸다."
     },
     {
-     "title": "한 달 수출이 31년 전 1년치 육박...韓 경제 체급이 달라졌다[Pick코노미...",
-     "url": "https://www.sedaily.com/article/20097987?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-10-04T13:00:00+09:00",
+     "title": "박스권에 갇힌 코스피 향방은...美국채 금리·삼성전자 실적 '변수'",
+     "url": "https://daily.hankooki.com/news/articleView.html?idxno=1411844",
+     "source": "daily.hankooki.com",
+     "published": "2026-10-05T09:00:00+09:00",
      "dup_count": 0,
-     "summary": "9월 수출이 월 1200억 달러를 돌파하며 반도체 호황 속 연간 1조 달러 달성을 눈앞에 두고 있다."
+     "summary": "미국 국채 금리와 삼성전자 실적이 박스권에 갇힌 코스피의 향방을 가를 주요 변수다."
     },
     {
-     "title": "9월 수출 1천209억 달러...반도체 강세 속 비반도체 품목도 반등",
-     "url": "https://kidd.co.kr/news/247617",
-     "source": "kidd.co.kr",
-     "published": "2026-10-04T11:10:00+09:00",
+     "title": "코스피, 7000선 문턱서 오락가락...삼성전자 실적에 쏠린 눈",
+     "url": "https://www.newsway.co.kr/news/view?ud=2026100211213174421",
+     "source": "newsway.co.kr",
+     "published": "2026-10-05T08:04:00+09:00",
      "dup_count": 0,
-     "summary": "9월 반도체 수출이 역대 최대를 기록한 가운데 비반도체 품목의 수출도 동반 반등세를 보였다."
+     "summary": "마이크론의 호실적과 반도체 수출 확대로 코스피가 7000선 돌파를 시도하고 있다."
     }
    ]
   },
   {
-   "title": "국민연금 코스닥 투자",
+   "title": "코스닥 제약·바이오 부진",
    "sources": [
-    "fnnews.com",
-    "wowtv.co.kr"
+    "etoday.co.kr",
+    "m-economynews.com",
+    "smedaily.co.kr"
    ],
    "count": 3,
    "items": [
     {
-     "title": "국민연금 코스닥 투자액 10조 넘어",
-     "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610040026&t=NN",
-     "source": "wowtv.co.kr",
-     "published": "2026-10-04T13:04:00+09:00",
+     "title": "반도체 쏠림·고금리에 밀린 바이오...코스닥 제약 ‘최악의 한달’",
+     "url": "https://www.etoday.co.kr/news/view/2632408",
+     "source": "etoday.co.kr",
+     "published": "2026-10-05T09:22:00+09:00",
+     "dup_count": 0,
+     "summary": "반도체 쏠림과 고금리 여파로 코스닥 제약·바이오주는 최악의 부진을 겪었다."
+    },
+    {
+     "title": "AI·반도체 쏠림에 제약주 ‘찬바람’...코스닥 제약 한 달 새 10% 급락",
+     "url": "https://www.m-economynews.com/news/article.html?no=71340",
+     "source": "m-economynews.com",
+     "published": "2026-10-05T08:26:00+09:00",
+     "dup_count": 0,
+     "summary": "글로벌 금리 상승 압력과 미국 국채금리 급등이 제약주 등 성장주 전반의 투자심리를 위축시켰다."
+    },
+    {
+     "title": "코스닥 수익률 꼴찌는 제약·바이오",
+     "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=364154",
+     "source": "smedaily.co.kr",
+     "published": "2026-10-05T07:22:00+09:00",
+     "dup_count": 0,
+     "summary": "금리 인상과 개별 기업 악재가 겹치면서 코스닥 시장에서 제약·바이오주 수익률이 꼴찌를 기록했다."
+    }
+   ]
+  },
+  {
+   "title": "주택담보대출 및 대출금리 관련 금융 뉴스",
+   "sources": [
+    "newsis.com",
+    "raonnews.com"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "[숫자로 읽는 금융 3] 주담대 3천만원 갚으면 수수료 10만원대, 이자 연...",
+     "url": "https://www.raonnews.com/news/article.html?no=61631",
+     "source": "raonnews.com",
+     "published": "2026-10-05T09:04:00+09:00",
+     "dup_count": 0,
+     "summary": "주택담보대출 3000만 원을 갚으면 수수료를 제외하고 연간 이자가 크게 줄어든다."
+    },
+    {
+     "title": "주담대 금리도 '들썩'...한은 추가 인상에 이자 더 오르나[금리 쇼크3]",
+     "url": "https://www.newsis.com/view/NISX20261002_0003813177",
+     "source": "newsis.com",
+     "published": "2026-10-05T08:00:00+09:00",
+     "dup_count": 0,
+     "summary": "한국은행의 연속 기준금리 인상으로 주택담보대출 금리가 오르며 이자 부담이 커지고 있다."
+    },
+    {
+     "title": "\"대출금리 어쩌나\"...비용 부담 커진 중기·벤처",
+     "url": "https://www.newsis.com/view/NISX20261002_0003813187",
+     "source": "newsis.com",
+     "published": "2026-10-05T07:01:00+09:00",
+     "dup_count": 0,
+     "summary": "한국은행의 기준금리 연달아 인상으로 대출금리가 뛰며 중기·벤처기업의 금융비용 부담이 커졌다."
+    }
+   ]
+  },
+  {
+   "title": "미국 고용 지표 및 증시 전망",
+   "sources": [
+    "mediapen.com",
+    "opinionnews.co.kr"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "[이번주 증시] 美 고용 부진에 안도 랠리 이어질 듯",
+     "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=145251",
+     "source": "opinionnews.co.kr",
+     "published": "2026-10-05T09:42:00+09:00",
      "dup_count": 1,
-     "summary": "국민연금의 코스닥 투자액이 10조 원을 넘었으나 전체 국내 주식 투자액 대비 비중은 2.6%에 그쳤다."
+     "summary": "미국의 고용 부진에 안도한 코스피는 반도체주 중심의 저가 매수세로 반등했다."
     },
     {
-     "title": "'큰손' 국민연금, 코스닥 투자 10조 넘었다",
-     "url": "https://www.fnnews.com/news/202610041832201684",
-     "source": "fnnews.com",
-     "published": "2026-10-04T18:34:00+09:00",
+     "title": "[김이코의 시장분석]美 고용보고서 나비효과...증시 어디로 가나",
+     "url": "https://www.mediapen.com/news/view/1127867",
+     "source": "mediapen.com",
+     "published": "2026-10-05T09:14:00+09:00",
      "dup_count": 0,
-     "summary": "국민연금의 코스닥 시장 투자액이 10조 원을 넘은 가운데, 코스닥은 소폭 하락 마감했다."
-    },
-    {
-     "title": "국민연금, 코스닥 투자액 10조원 넘어...국내 주식 투자 비중은 2%대",
-     "url": "https://www.fnnews.com/news/202610041507185563",
-     "source": "fnnews.com",
-     "published": "2026-10-04T15:26:00+09:00",
-     "dup_count": 0,
-     "summary": "다만 상승폭을 반납하면서 종가는 전 거래일보다 0.11% 낮은 893.29로 마감했다. 증권업계에서는 코스닥의 큰 폭 조정으로 가격 과열과 밸류에이션 부담이 완화"
+     "summary": "미국 고용보고서에 따른 대미 수요 둔화 우려가 대형 수출주의 핵심 변수로 부각됐다."
     }
    ]
   },
   {
-   "title": "뷰티·푸드 주가 및 환율 영향",
+   "title": "연휴 휴장 및 해외 증시·국내 대형주(삼성전자·SK하이닉스) 동향",
    "sources": [
-    "mk.co.kr"
+    "cbci.co.kr",
+    "greenpostkorea.co.kr"
    ],
    "count": 2,
    "items": [
     {
-     "title": "“요즘 K 붙으면 영 불안한데”...주가 조정받은 뷰티·푸드 대표주들",
-     "url": "https://www.mk.co.kr/article/12168202",
-     "source": "mk.co.kr",
-     "published": "2026-10-04T19:15:00+09:00",
-     "dup_count": 0,
-     "summary": "K소비재 주가 조정 속에서도 견조한 수출을 보이는 K뷰티주 중심의 선별 투자가 강조된다."
+     "title": "연휴에 멈춘 내 주식··· 엔비디아·테슬라는 뛰었다, 6일 '삼전닉스'...",
+     "url": "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=307595",
+     "source": "greenpostkorea.co.kr",
+     "published": "2026-10-05T09:24:00+09:00",
+     "dup_count": 2,
+     "summary": "연휴 동안 엔비디아와 테슬라가 급등하면서 국내 증시의 향후 움직임에 관심이 쏠린다."
     },
     {
-     "title": "원高 역풍...K뷰티·푸드株 실적전망 엇갈려",
-     "url": "https://www.mk.co.kr/article/12168125",
-     "source": "mk.co.kr",
-     "published": "2026-10-04T17:17:00+09:00",
-     "dup_count": 0,
-     "summary": "원고 역풍 속에서 K뷰티와 K푸드주의 실적 전망이 엇갈리며 옥석 가리기가 요구되고 있다."
-    }
-   ]
-  },
-  {
-   "title": "삼성전자 3분기 실적 및 전망",
-   "sources": [
-    "bloter.net",
-    "hani.co.kr"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "삼성전자 3분기 영역이익 ‘첫 100조’ 돌파할까...성과급·주주환원 쟁...",
-     "url": "https://www.hani.co.kr/arti/economy/marketing/1280813.html",
-     "source": "hani.co.kr",
-     "published": "2026-10-04T14:52:00+09:00",
-     "dup_count": 0,
-     "summary": "삼성전자 3분기 영업이익 100조 돌파 기대를 모으는 가운데 환율 하락 변수도 작용하고 있다."
-    },
-    {
-     "title": "삼성전자, 3분기 영업익 첫 100조 기대에도...희비 엇갈린 DS·DX",
-     "url": "https://www.bloter.net/news/articleView.html?idxno=674910",
-     "source": "bloter.net",
-     "published": "2026-10-04T11:00:00+09:00",
-     "dup_count": 0,
-     "summary": "삼성전자는 3분기 최대 영업이익 기대에도 DS 부문과 DX 부문의 실적 희비가 엇갈리고 있다."
-    }
-   ]
-  },
-  {
-   "title": "기타 경제 뉴스",
-   "sources": [
-    "businesspost.co.kr",
-    "dealsite.co.kr"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "[10월5일자] 비즈니스포스트 아침의 주요기사",
-     "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448605",
-     "source": "businesspost.co.kr",
-     "published": "2026-10-04T16:52:00+09:00",
-     "dup_count": 0,
-     "summary": "이번 주 증시는 반도체 실적과 고금리 악재를 딛고 박스피를 탈출할지 주목된다."
-    },
-    {
-     "title": "[머니 인 스토리] ‘오징어 게임’이 던진 질문...빚은 얼마까지 감당할...",
-     "url": "https://dealsite.co.kr/articles/170072",
-     "source": "dealsite.co.kr",
-     "published": "2026-10-04T11:12:00+09:00",
-     "dup_count": 0,
-     "summary": "고금리 시대에 대출자의 소득 대비 원리금 부담을 제한하는 DSR 규제의 중요성이 커지고 있다."
-    }
-   ]
-  },
-  {
-   "title": "아산 삼성 투자 및 기업도시",
-   "sources": [
-    "weekly.hankooki.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[현장] \"아산에 오면 삼성과 함께 큰다\"...113조 투자 품고 '기업도시 대...",
-     "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7187384",
-     "source": "weekly.hankooki.com",
-     "published": "2026-10-04T19:08:00+09:00",
-     "dup_count": 0,
-     "summary": "아산시는 삼성의 113조 원 투자를 바탕으로 수출 제조기업 중심의 기업도시로 도약한다."
-    }
-   ]
-  },
-  {
-   "title": "코스닥 상장폐지 기준",
-   "sources": [
-    "fnnews.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "'몸집'만 보는 코스닥 상폐기준... 흑자기업도 퇴출 걱정",
-     "url": "https://www.fnnews.com/news/202610041831546708",
-     "source": "fnnews.com",
-     "published": "2026-10-04T18:33:00+09:00",
-     "dup_count": 1,
-     "summary": "코스닥 상폐 기준이 실적보다 몸집 중심이어서 흑자기업도 퇴출을 우려하는 상황이다."
-    }
-   ]
-  },
-  {
-   "title": "기후 및 에너지 정책",
-   "sources": [
-    "zdnet.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "K-GX 시대, 기후·에너지 정책 설계가 국가 경쟁력을 가른다",
-     "url": "https://zdnet.co.kr/view/?no=20261004163126",
-     "source": "zdnet.co.kr",
-     "published": "2026-10-04T16:32:00+09:00",
-     "dup_count": 0,
-     "summary": "탄소국경조정제도는 이미 수출 제조업에 실제 비용을 청구하고 있으나, 업종별 대응격차를 메우는 지원제도에는 여전히 큰 공백이 존재한다. 감축 실적을 검증할 방법론도"
-    }
-   ]
-  },
-  {
-   "title": "펩트론 주가 동향",
-   "sources": [
-    "cbci.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "펩트론 주가 8%대 약세...13만원선서 향후 추이 '주목'",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612345",
+     "title": "[국내 증시] 한국 주식 5일장 휴장 왜?...재개는 언제",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612354",
      "source": "cbci.co.kr",
-     "published": "2026-10-04T16:14:00+09:00",
-     "dup_count": 0,
-     "summary": "펩트론 주가가 8%대 약세를 보이며 코스닥 지수 하락폭보다 큰 폭의 변동성을 나타냈다."
+     "published": "2026-10-05T07:50:00+09:00",
+     "dup_count": 1,
+     "summary": "개천절 연휴와 추가 휴장으로 국내 증시가 쉬어가는 가운데 7000선을 회복한 상태다."
     }
    ]
   },
   {
-   "title": "테슬라 AI 부품 관련",
+   "title": "삼성전기 실적 및 사업 구조 개선",
+   "sources": [
+    "opinionnews.co.kr",
+    "pinpointnews.co.kr"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "삼성전기, 3분기 커지는 '어닝 서프라이즈' 기대감...\"환율 악재도 뚫는...",
+     "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=145226",
+     "source": "opinionnews.co.kr",
+     "published": "2026-10-05T09:00:00+09:00",
+     "dup_count": 0,
+     "summary": "삼성전기는 환율 악재에도 불구하고 고성능 반도체 기판 덕분에 어닝 서프라이즈가 기대된다."
+    },
+    {
+     "title": "삼성전기, 범용 MLCC 줄이고 고부가 제품 확대...수익성 개선",
+     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492629",
+     "source": "pinpointnews.co.kr",
+     "published": "2026-10-05T08:22:00+09:00",
+     "dup_count": 0,
+     "summary": "삼성전기는 AI와 반도체 중심의 고부가 MLCC 제품 확대로 수익성을 개선할 전망이다."
+    }
+   ]
+  },
+  {
+   "title": "국민연금의 삼성전자·SK하이닉스 매매 엇갈림",
+   "sources": [
+    "economist.co.kr",
+    "mt.co.kr"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "국민연금의 엇갈린 선택...삼전 8000억 팔고 하닉 1.6조 샀다",
+     "url": "https://economist.co.kr/article/view/ecn202610050004",
+     "source": "economist.co.kr",
+     "published": "2026-10-05T09:53:00+09:00",
+     "dup_count": 0,
+     "summary": "국민연금은 삼성전자를 팔고 SK하이닉스를 대거 사들이며 엇갈린 행보를 보였다."
+    },
+    {
+     "title": "삼전 8000억 팔고 하닉 1.6조 샀다...국민연금 선택은",
+     "url": "https://www.mt.co.kr/stock/2026/10/05/2026100217232429211",
+     "source": "mt.co.kr",
+     "published": "2026-10-05T08:00:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피 하락세 속에서 국민연금은 삼성전자를 매도하고 SK스퀘어 등을 대거 매수했다."
+    }
+   ]
+  },
+  {
+   "title": "미국 증시 과열 및 하락",
    "sources": [
     "g-enews.com"
    ],
    "count": 1,
    "items": [
     {
-     "title": "테슬라, 공급난에 AI5 램 깎았다가 최하위 낙인 피하려 96GB로 재조정",
-     "url": "https://www.g-enews.com/view.php?ud=202610041045243938fbbec65dfb_1",
+     "title": "98년 만에 여섯 번째 울린 월가 과열 경보, 질주하던 미국 증시 멈춰 서...",
+     "url": "https://www.g-enews.com/view.php?ud=202610050922431138fbbec65dfb_1",
      "source": "g-enews.com",
-     "published": "2026-10-04T10:56:00+09:00",
+     "published": "2026-10-05T09:38:00+09:00",
      "dup_count": 0,
-     "summary": "한국 반도체 수출은 인공지능 수요 확대를 맞아 구조적 공급 병목 해소가 실적 개선의 관건이다."
+     "summary": "미국 증시의 98년 만의 과열 경보가 글로벌 자산 배분과 국내 반도체주에 영향을 미치고 있다."
     }
    ]
   },
   {
-   "title": "증권사 종목 추천",
+   "title": "국내 증시 신용거래(빚투) 감소",
    "sources": [
-    "bigtanews.co.kr"
+    "asiatime.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "미래에셋증권, 10월 첫째주 삼성전기 등 14종목 매수 추천",
-     "url": "https://www.bigtanews.co.kr/article/view/big202610040004",
-     "source": "bigtanews.co.kr",
-     "published": "2026-10-04T10:52:00+09:00",
+     "title": "불안한 증시에 '빚투' 뚝...신용대출 1년8개월 만에 최대폭 감소",
+     "url": "https://www.asiatime.co.kr/article/20261002500269",
+     "source": "asiatime.co.kr",
+     "published": "2026-10-05T09:34:00+09:00",
+     "dup_count": 1,
+     "summary": "증시가 7000선 박스권에서 공방을 벌이면서 신용대출과 빚투 자금이 크게 줄었다."
+    }
+   ]
+  },
+  {
+   "title": "SK하이닉스 중복 상장 논란 및 주주환원",
+   "sources": [
+    "hankyung.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "\"노조환원 그만하고 이제 주주환원\"...SK하닉 중복 상장 논란 [강경주의...",
+     "url": "https://www.hankyung.com/article/2026100204896",
+     "source": "hankyung.com",
+     "published": "2026-10-05T10:01:00+09:00",
      "dup_count": 0,
-     "summary": "미래에셋증권은 삼성전기를 비롯한 14개 종목을 10월 첫째 주 매수 추천 종목으로 제시했다."
+     "summary": "SK하이닉스 주주들은 노조환원 대신 중복 상장 계획을 철회하라고 촉구했다."
+    }
+   ]
+  },
+  {
+   "title": "삼성 베트남 수출 및 투자",
+   "sources": [
+    "g-enews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "17년 공장 돌려 674조원 수출한 삼성...베트남에 '기술 뿌리' 심는다",
+     "url": "https://www.g-enews.com/view.php?ud=202610050913431160fbbec65dfb_1",
+     "source": "g-enews.com",
+     "published": "2026-10-05T09:24:00+09:00",
+     "dup_count": 0,
+     "summary": "삼성전자는 베트남에서 17년간 674조 원의 수출을 기록하며 현지 연구개발을 강화한다."
+    }
+   ]
+  },
+  {
+   "title": "수출 양대 품목 희비",
+   "sources": [
+    "newsis.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "반도체 5000억弗·자동차 700억弗...수출 양대품목 연말 희비",
+     "url": "https://www.newsis.com/view/NISX20261001_0003810235",
+     "source": "newsis.com",
+     "published": "2026-10-05T09:00:00+09:00",
+     "dup_count": 0,
+     "summary": "올해 9월까지 반도체 수출 3403억 달러를 기록하며 양대 품목 수출이 선전했다."
+    }
+   ]
+  },
+  {
+   "title": "SNT모티브 자사주 소각",
+   "sources": [
+    "pinpointnews.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "SNT모티브, 자사주 270만주 소각...2027년 실적 확대 본격화",
+     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492634",
+     "source": "pinpointnews.co.kr",
+     "published": "2026-10-05T08:56:00+09:00",
+     "dup_count": 0,
+     "summary": "SNT모티브는 자사주 소각과 함께 방산 및 반도체장비 부문의 실적 확대를 노린다."
+    }
+   ]
+  },
+  {
+   "title": "현대차 주식선물 동향",
+   "sources": [
+    "tokenpost.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[온체인 주식선물] 현대차, 정규장 종가보다 1.48% 웃돈",
+     "url": "https://www.tokenpost.kr/news/insights/418235",
+     "source": "tokenpost.kr",
+     "published": "2026-10-05T08:32:00+09:00",
+     "dup_count": 1,
+     "summary": "현대차의 온체인 주식선물 괴리율은 개장 전 국내 수급 분위기를 가늠하는 지표로 활용된다."
+    }
+   ]
+  },
+  {
+   "title": "쎄크 HBM 장비 관련주 주목",
+   "sources": [
+    "economist.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "마이크론도 샀다...‘HBM 불량’ 잡는 쎄크, 삼성·SK 문 두드린다",
+     "url": "https://economist.co.kr/article/view/ecn202609220062",
+     "source": "economist.co.kr",
+     "published": "2026-10-05T08:31:00+09:00",
+     "dup_count": 0,
+     "summary": "HBM 불량을 잡는 쎄크가 고출력 검사장비 수요에 힘입어 삼성과 SK에 도전한다."
+    }
+   ]
+  },
+  {
+   "title": "삼성전자 3분기 실적 증권가 전망",
+   "sources": [
+    "newsdream.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[주식도락] '삼성전자 3분기는'...증권가 잇딴 '장밋빛 전망'",
+     "url": "http://www.newsdream.kr/news/articleView.html?idxno=119349",
+     "source": "newsdream.kr",
+     "published": "2026-10-05T08:30:00+09:00",
+     "dup_count": 0,
+     "summary": "증권가에서는 삼성전자의 3분기 실적과 관련해 원화 환율 하락에도 장밋빛 전망을 내놓고 있다."
+    }
+   ]
+  },
+  {
+   "title": "삼성전자 자사주 매입과 수급 공백",
+   "sources": [
+    "news.einfomax.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "삼성전자 자사주 매입 막바지...내주 '수급 공백' 첫 시험대",
+     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437739",
+     "source": "news.einfomax.co.kr",
+     "published": "2026-10-05T08:12:00+09:00",
+     "dup_count": 0,
+     "summary": "삼성전자의 자사주 매입이 막바지에 이른 가운데 반도체 수출 급증이 업황 회복을 지지하고 있다."
+    }
+   ]
+  },
+  {
+   "title": "단일종목 레버리지 ETF 거래 제도",
+   "sources": [
+    "kjdaily.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "단일종목 레버리지 ETF ‘20주씩 거래’...1~19주는 어떻게 파나",
+     "url": "http://www.kjdaily.com/article.php?aid=1791155155688216276",
+     "source": "kjdaily.com",
+     "published": "2026-10-05T08:08:00+09:00",
+     "dup_count": 0,
+     "summary": "금융당국은 단일종목 레버리지 ETF 투자자들이 장 마감 후 잔여 물량을 처분할 길을 열었다."
+    }
+   ]
+  },
+  {
+   "title": "환율 및 NDF 동향",
+   "sources": [
+    "news.einfomax.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "NDF, 1,342.10/ 1,342.50원...7.50원↓(재송)",
+     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437734",
+     "source": "news.einfomax.co.kr",
+     "published": "2026-10-05T07:42:00+09:00",
+     "dup_count": 0,
+     "summary": "뉴욕 NDF 시장에서 달러-원 1개월물 환율이 달러인덱스 약세에 힘입어 하락했다."
+    }
+   ]
+  },
+  {
+   "title": "한국 경제 성장률",
+   "sources": [
+    "news1.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "韓 2년 평균 성장률 'G20 선진국 1위'...잠재성장률 2배 속도로 성장",
+     "url": "https://www.news1.kr/economy/trend/6309518",
+     "source": "news1.kr",
+     "published": "2026-10-05T07:30:00+09:00",
+     "dup_count": 0,
+     "summary": "한국은 반도체 초호황에 힘입어 최근 2년 평균 G20 선진국 중 가장 빠른 성장세를 기록했다."
+    }
+   ]
+  },
+  {
+   "title": "S&P500 노후 준비 투자",
+   "sources": [
+    "news.kbs.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "“4조 8천억 몰렸다”...S&P500으로 노후 준비? 이렇게 하세요 [잇슈 머니...",
+     "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8677562&ref=A",
+     "source": "news.kbs.co.kr",
+     "published": "2026-10-05T07:11:00+09:00",
+     "dup_count": 0,
+     "summary": "원·달러 환율이 석 달 만에 급락하면서 동일한 S&P500 추종 ETF의 수익률에도 영향을 미쳤다."
+    }
+   ]
+  },
+  {
+   "title": "경상수지 흑자 및 달러-원 환율",
+   "sources": [
+    "news.einfomax.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "올해 경상수지 흑자 5천억弗 넘나...달러-원 하방 압력 가중",
+     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437732",
+     "source": "news.einfomax.co.kr",
+     "published": "2026-10-05T07:06:00+09:00",
+     "dup_count": 0,
+     "summary": "반도체 수출 호조가 이어지면서 올해 경상수지 흑자 규모가 5000억 달러를 넘을지 주목된다."
+    }
+   ]
+  },
+  {
+   "title": "엔비디아 사상 최고가 돌파",
+   "sources": [
+    "coinreaders.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "엔비디아(NVDA), 사상 최고가 돌파...월가 목표가 '515달러'까지 상승",
+     "url": "http://coinreaders.com/261526",
+     "source": "coinreaders.com",
+     "published": "2026-10-05T07:02:00+09:00",
+     "dup_count": 0,
+     "summary": "미국의 대중국 수출 통제 우려에도 불구하고 엔비디아는 독점적 수요에 힘입어 사상 최고가를 돌파했다."
     }
    ]
   }
  ],
  "items": [
   {
-   "title": "NAVER(네이버) 주가 19만원선, 흐름 '이목'...코스피 7000 회복",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612358",
-   "source": "cbci.co.kr",
-   "published": "2026-10-04T21:40:00+09:00",
-   "dup_count": 0,
-   "summary": "NAVER 주가가 개천절 연휴를 앞두고 소폭 상승하며 코스피는 7000선을 회복했다."
-  },
-  {
-   "title": "한화솔루션 직전장 '강세'...코스피 7000 탈환 속 다음장은",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612356",
-   "source": "cbci.co.kr",
-   "published": "2026-10-04T21:28:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피는 장중 등락을 거듭한 끝에 상승 반전하며 7003.74로 장을 마감했다."
-  },
-  {
-   "title": "“요즘 K 붙으면 영 불안한데”...주가 조정받은 뷰티·푸드 대표주들",
-   "url": "https://www.mk.co.kr/article/12168202",
-   "source": "mk.co.kr",
-   "published": "2026-10-04T19:15:00+09:00",
-   "dup_count": 0,
-   "summary": "K소비재 주가 조정 속에서도 견조한 수출을 보이는 K뷰티주 중심의 선별 투자가 강조된다."
-  },
-  {
-   "title": "[현장] \"아산에 오면 삼성과 함께 큰다\"...113조 투자 품고 '기업도시 대...",
-   "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7187384",
-   "source": "weekly.hankooki.com",
-   "published": "2026-10-04T19:08:00+09:00",
-   "dup_count": 0,
-   "summary": "아산시는 삼성의 113조 원 투자를 바탕으로 수출 제조기업 중심의 기업도시로 도약한다."
-  },
-  {
-   "title": "삼성전자 실적 앞둔 코스피, '7천피' 지킬까...美 금리·반도체가 변수",
-   "url": "https://www.econovill.com/news/articleView.html?idxno=752704",
-   "source": "econovill.com",
-   "published": "2026-10-04T18:38:00+09:00",
-   "dup_count": 1,
-   "summary": "삼성전자 실적 발표를 앞둔 코스피는 반도체 업황 기대와 미국 금리가 변수로 작용하고 있다."
-  },
-  {
-   "title": "'큰손' 국민연금, 코스닥 투자 10조 넘었다",
-   "url": "https://www.fnnews.com/news/202610041832201684",
-   "source": "fnnews.com",
-   "published": "2026-10-04T18:34:00+09:00",
-   "dup_count": 0,
-   "summary": "국민연금의 코스닥 시장 투자액이 10조 원을 넘은 가운데, 코스닥은 소폭 하락 마감했다."
-  },
-  {
-   "title": "'몸집'만 보는 코스닥 상폐기준... 흑자기업도 퇴출 걱정",
-   "url": "https://www.fnnews.com/news/202610041831546708",
-   "source": "fnnews.com",
-   "published": "2026-10-04T18:33:00+09:00",
-   "dup_count": 1,
-   "summary": "코스닥 상폐 기준이 실적보다 몸집 중심이어서 흑자기업도 퇴출을 우려하는 상황이다."
-  },
-  {
-   "title": "'K기판 르네상스'...역대 최대 수출액 노린다",
-   "url": "https://www.hankyung.com/article/2026100426341",
+   "title": "\"노조환원 그만하고 이제 주주환원\"...SK하닉 중복 상장 논란 [강경주의...",
+   "url": "https://www.hankyung.com/article/2026100204896",
    "source": "hankyung.com",
-   "published": "2026-10-04T18:17:00+09:00",
+   "published": "2026-10-05T10:01:00+09:00",
    "dup_count": 0,
-   "summary": "고부가가치 PCB 판매가 집중되면서 K기판이 역대 최대 수출액 경신을 노리고 있다."
+   "summary": "SK하이닉스 주주들은 노조환원 대신 중복 상장 계획을 철회하라고 촉구했다."
   },
   {
-   "title": "[이번주 증시] 삼성전자 실적·美 국채금리 주목",
-   "url": "http://www.kjdaily.com/article.php?aid=1791105269688212276",
-   "source": "kjdaily.com",
-   "published": "2026-10-04T18:16:00+09:00",
-   "dup_count": 3,
-   "summary": "이번 주 증시는 삼성전자 실적 발표와 미국 국채금리 흐름이 주요 변수로 작용할 전망이다."
-  },
-  {
-   "title": "금리 부담에도 증시는 버텼다...신한투자증권이 주목한 반도체 왜?",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492609",
-   "source": "pinpointnews.co.kr",
-   "published": "2026-10-04T18:02:00+09:00",
+   "title": "국민연금의 엇갈린 선택...삼전 8000억 팔고 하닉 1.6조 샀다",
+   "url": "https://economist.co.kr/article/view/ecn202610050004",
+   "source": "economist.co.kr",
+   "published": "2026-10-05T09:53:00+09:00",
    "dup_count": 0,
-   "summary": "신한투자증권은 금리 부담 속에서도 반도체 등 실적과 수출이 뚜렷한 업종에 주목했다."
+   "summary": "국민연금은 삼성전자를 팔고 SK하이닉스를 대거 사들이며 엇갈린 행보를 보였다."
   },
   {
-   "title": "‘반도체·실물경기 호황’ 딴 세상 얘기...‘고금리’ 시름 자영업, 연...",
-   "url": "https://www.hani.co.kr/arti/economy/economy_general/1280851.html",
-   "source": "hani.co.kr",
-   "published": "2026-10-04T17:46:00+09:00",
-   "dup_count": 0,
-   "summary": "자영업자의 향후 경기 전망이 악화된 가운데 은행권 주택담보대출 금리는 4%대 후반으로 치솟았다."
-  },
-  {
-   "title": "원高 역풍...K뷰티·푸드株 실적전망 엇갈려",
-   "url": "https://www.mk.co.kr/article/12168125",
-   "source": "mk.co.kr",
-   "published": "2026-10-04T17:17:00+09:00",
-   "dup_count": 0,
-   "summary": "원고 역풍 속에서 K뷰티와 K푸드주의 실적 전망이 엇갈리며 옥석 가리기가 요구되고 있다."
-  },
-  {
-   "title": "[10월5일자] 비즈니스포스트 아침의 주요기사",
-   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448605",
-   "source": "businesspost.co.kr",
-   "published": "2026-10-04T16:52:00+09:00",
-   "dup_count": 0,
-   "summary": "이번 주 증시는 반도체 실적과 고금리 악재를 딛고 박스피를 탈출할지 주목된다."
-  },
-  {
-   "title": "美 금리인상 ‘주춤’ 전망에도...“韓 주담대는 계속 오를 것”",
-   "url": "https://www.donga.com/news/Inter/article/all/20261004/134782211/1",
-   "source": "donga.com",
-   "published": "2026-10-04T16:45:00+09:00",
-   "dup_count": 0,
-   "summary": "연준의 금리인상 주춤 전망에도 국내 주택담보대출 금리는 계속 오를 것이란 관측이 우세하다."
-  },
-  {
-   "title": "K-GX 시대, 기후·에너지 정책 설계가 국가 경쟁력을 가른다",
-   "url": "https://zdnet.co.kr/view/?no=20261004163126",
-   "source": "zdnet.co.kr",
-   "published": "2026-10-04T16:32:00+09:00",
-   "dup_count": 0,
-   "summary": "탄소국경조정제도는 이미 수출 제조업에 실제 비용을 청구하고 있으나, 업종별 대응격차를 메우는 지원제도에는 여전히 큰 공백이 존재한다. 감축 실적을 검증할 방법론도"
-  },
-  {
-   "title": "[주간증시전망] 코스피 7000선 안착 시험대...삼성전자 실적·美 금리 주...",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1726692",
-   "source": "ebn.co.kr",
-   "published": "2026-10-04T16:14:00+09:00",
-   "dup_count": 3,
-   "summary": "코스피는 삼성전자 실적과 마이크론 호실적에 힘입어 7000선 안착을 시험하고 있다."
-  },
-  {
-   "title": "펩트론 주가 8%대 약세...13만원선서 향후 추이 '주목'",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612345",
-   "source": "cbci.co.kr",
-   "published": "2026-10-04T16:14:00+09:00",
-   "dup_count": 0,
-   "summary": "펩트론 주가가 8%대 약세를 보이며 코스닥 지수 하락폭보다 큰 폭의 변동성을 나타냈다."
-  },
-  {
-   "title": "국민연금, 코스닥 투자액 10조원 넘어...국내 주식 투자 비중은 2%대",
-   "url": "https://www.fnnews.com/news/202610041507185563",
-   "source": "fnnews.com",
-   "published": "2026-10-04T15:26:00+09:00",
-   "dup_count": 0,
-   "summary": "다만 상승폭을 반납하면서 종가는 전 거래일보다 0.11% 낮은 893.29로 마감했다. 증권업계에서는 코스닥의 큰 폭 조정으로 가격 과열과 밸류에이션 부담이 완화"
-  },
-  {
-   "title": "삼성전자 3분기 영역이익 ‘첫 100조’ 돌파할까...성과급·주주환원 쟁...",
-   "url": "https://www.hani.co.kr/arti/economy/marketing/1280813.html",
-   "source": "hani.co.kr",
-   "published": "2026-10-04T14:52:00+09:00",
-   "dup_count": 0,
-   "summary": "삼성전자 3분기 영업이익 100조 돌파 기대를 모으는 가운데 환율 하락 변수도 작용하고 있다."
-  },
-  {
-   "title": "[마켓 ING]7000선 안착 시도 코스피, 삼성전자 실적 주목",
-   "url": "https://view.asiae.co.kr/article/2026100414175270994",
-   "source": "view.asiae.co.kr",
-   "published": "2026-10-04T14:17:00+09:00",
-   "dup_count": 2,
-   "summary": "코스피가 7000선을 사수한 가운데, 이번 주는 삼성전자의 3분기 실적에 시장 관심이 집중된다."
-  },
-  {
-   "title": "수출 1조달러 시대의 남은 과제는? 정체된 ‘글로벌사우스’ 교역 활로...",
-   "url": "https://www.khan.co.kr/article/202610041413001",
-   "source": "khan.co.kr",
-   "published": "2026-10-04T14:13:00+09:00",
-   "dup_count": 0,
-   "summary": "한국의 연간 수출액 1조 달러 클럽 가입이 눈앞인 반면 반도체 쏠림 해소는 과제로 남았다."
-  },
-  {
-   "title": "[창간24 / 한국무역 80년 2] \"팔 수 있는 건 다 판다\"···경제개발 5개...",
-   "url": "https://www.seoulfn.com/news/articleView.html?idxno=639281",
-   "source": "seoulfn.com",
-   "published": "2026-10-04T14:00:00+09:00",
-   "dup_count": 0,
-   "summary": "한국은 반도체 수출의 폭발적 성장세에 힘입어 사상 첫 연간 수출 1조 달러 달성을 앞두고 있다."
-  },
-  {
-   "title": "주담대 금리 4.66%까지 '쑥'... 3년 9개월 만에 최고",
-   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1184423",
-   "source": "ggilbo.com",
-   "published": "2026-10-04T13:16:00+09:00",
-   "dup_count": 0,
-   "summary": "8월 예금은행의 주택담보대출 금리가 연 4.66%를 기록하며 3년 9개월 만에 최고치를 경신했다."
-  },
-  {
-   "title": "국민연금 코스닥 투자액 10조 넘어",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610040026&t=NN",
-   "source": "wowtv.co.kr",
-   "published": "2026-10-04T13:04:00+09:00",
+   "title": "[이번주 증시] 美 고용 부진에 안도 랠리 이어질 듯",
+   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=145251",
+   "source": "opinionnews.co.kr",
+   "published": "2026-10-05T09:42:00+09:00",
    "dup_count": 1,
-   "summary": "국민연금의 코스닥 투자액이 10조 원을 넘었으나 전체 국내 주식 투자액 대비 비중은 2.6%에 그쳤다."
+   "summary": "미국의 고용 부진에 안도한 코스피는 반도체주 중심의 저가 매수세로 반등했다."
   },
   {
-   "title": "[외환-주간] 美 고용 둔화에 열린 달러-원 하방...국채금리가 제동 걸까",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437720",
-   "source": "news.einfomax.co.kr",
-   "published": "2026-10-04T13:02:00+09:00",
-   "dup_count": 1,
-   "summary": "미국 고용 둔화로 달러-원 환율 하락세가 나타난 가운데 국채금리가 추가 하락의 제동으로 작용 중이다."
-  },
-  {
-   "title": "고금리에 주식보다 채권 매력 '부각'···채권 ETF 투자수요 확대",
-   "url": "https://www.seoulfn.com/news/articleView.html?idxno=639275",
-   "source": "seoulfn.com",
-   "published": "2026-10-04T13:00:00+09:00",
-   "dup_count": 0,
-   "summary": "시장금리가 자리하고 있다. 지난달 미국 연방준비제도(Fed·연준)의 기준금리 인상과 추가 긴축 우려로... 채권시장에서는 한국은행의 금리 인상 속도 조절 기대가 "
-  },
-  {
-   "title": "한 달 수출이 31년 전 1년치 육박...韓 경제 체급이 달라졌다[Pick코노미...",
-   "url": "https://www.sedaily.com/article/20097987?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-10-04T13:00:00+09:00",
-   "dup_count": 0,
-   "summary": "9월 수출이 월 1200억 달러를 돌파하며 반도체 호황 속 연간 1조 달러 달성을 눈앞에 두고 있다."
-  },
-  {
-   "title": "“언제까지 AI로 버티나”...美 국채금리 5%대에 증시 ‘시한폭탄’ [머...",
-   "url": "https://www.ekn.kr/web/view.php?key=20261004024392069",
-   "source": "ekn.kr",
-   "published": "2026-10-04T12:38:00+09:00",
-   "dup_count": 0,
-   "summary": "미국 국채금리가 5%대를 기록한 가운데 과도한 AI 투자 의존도가 증시의 시한폭탄으로 지적된다."
-  },
-  {
-   "title": "미 국채금리 발 국고채 4%대...가계·기업 '비상'",
-   "url": "https://news.bizwatch.co.kr/article/finance/2026/10/02/0033",
-   "source": "news.bizwatch.co.kr",
-   "published": "2026-10-04T12:00:00+09:00",
-   "dup_count": 0,
-   "summary": "미국 국채금리 상승세가 진정된 가운데 국내 금리 안정 여부가 가계와 기업의 비상 상황을 좌우할 전망이다."
-  },
-  {
-   "title": "[머니 인 스토리] ‘오징어 게임’이 던진 질문...빚은 얼마까지 감당할...",
-   "url": "https://dealsite.co.kr/articles/170072",
-   "source": "dealsite.co.kr",
-   "published": "2026-10-04T11:12:00+09:00",
-   "dup_count": 0,
-   "summary": "고금리 시대에 대출자의 소득 대비 원리금 부담을 제한하는 DSR 규제의 중요성이 커지고 있다."
-  },
-  {
-   "title": "[증시 프리즘] 삼전 실적 앞둔 코스피, '7천피' 안착 시험대...외인 돌아...",
-   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=7033",
-   "source": "moneystorm.kr",
-   "published": "2026-10-04T11:11:00+09:00",
-   "dup_count": 0,
-   "summary": "삼성전자의 3분기 실적 발표를 앞두고 반도체주가 국내 증시의 방향성을 결정할 핵심 변수로 부각됐다."
-  },
-  {
-   "title": "9월 수출 1천209억 달러...반도체 강세 속 비반도체 품목도 반등",
-   "url": "https://kidd.co.kr/news/247617",
-   "source": "kidd.co.kr",
-   "published": "2026-10-04T11:10:00+09:00",
-   "dup_count": 0,
-   "summary": "9월 반도체 수출이 역대 최대를 기록한 가운데 비반도체 품목의 수출도 동반 반등세를 보였다."
-  },
-  {
-   "title": "삼성전자, 3분기 영업익 첫 100조 기대에도...희비 엇갈린 DS·DX",
-   "url": "https://www.bloter.net/news/articleView.html?idxno=674910",
-   "source": "bloter.net",
-   "published": "2026-10-04T11:00:00+09:00",
-   "dup_count": 0,
-   "summary": "삼성전자는 3분기 최대 영업이익 기대에도 DS 부문과 DX 부문의 실적 희비가 엇갈리고 있다."
-  },
-  {
-   "title": "테슬라, 공급난에 AI5 램 깎았다가 최하위 낙인 피하려 96GB로 재조정",
-   "url": "https://www.g-enews.com/view.php?ud=202610041045243938fbbec65dfb_1",
+   "title": "98년 만에 여섯 번째 울린 월가 과열 경보, 질주하던 미국 증시 멈춰 서...",
+   "url": "https://www.g-enews.com/view.php?ud=202610050922431138fbbec65dfb_1",
    "source": "g-enews.com",
-   "published": "2026-10-04T10:56:00+09:00",
+   "published": "2026-10-05T09:38:00+09:00",
    "dup_count": 0,
-   "summary": "한국 반도체 수출은 인공지능 수요 확대를 맞아 구조적 공급 병목 해소가 실적 개선의 관건이다."
+   "summary": "미국 증시의 98년 만의 과열 경보가 글로벌 자산 배분과 국내 반도체주에 영향을 미치고 있다."
   },
   {
-   "title": "미래에셋증권, 10월 첫째주 삼성전기 등 14종목 매수 추천",
-   "url": "https://www.bigtanews.co.kr/article/view/big202610040004",
-   "source": "bigtanews.co.kr",
-   "published": "2026-10-04T10:52:00+09:00",
+   "title": "美 금리 5%에 갇힌 코스피...‘7000 안착’ 열쇠는 삼성전자 실적[주간증...",
+   "url": "https://www.ekn.kr/web/view.php?key=20261005027591862",
+   "source": "ekn.kr",
+   "published": "2026-10-05T09:38:00+09:00",
    "dup_count": 0,
-   "summary": "미래에셋증권은 삼성전기를 비롯한 14개 종목을 10월 첫째 주 매수 추천 종목으로 제시했다."
+   "summary": "코스피가 7000선에 안착할지 여부는 마이크론 호실적과 삼성전자 실적에 달렸다."
+  },
+  {
+   "title": "불안한 증시에 '빚투' 뚝...신용대출 1년8개월 만에 최대폭 감소",
+   "url": "https://www.asiatime.co.kr/article/20261002500269",
+   "source": "asiatime.co.kr",
+   "published": "2026-10-05T09:34:00+09:00",
+   "dup_count": 1,
+   "summary": "증시가 7000선 박스권에서 공방을 벌이면서 신용대출과 빚투 자금이 크게 줄었다."
+  },
+  {
+   "title": "연휴에 멈춘 내 주식··· 엔비디아·테슬라는 뛰었다, 6일 '삼전닉스'...",
+   "url": "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=307595",
+   "source": "greenpostkorea.co.kr",
+   "published": "2026-10-05T09:24:00+09:00",
+   "dup_count": 2,
+   "summary": "연휴 동안 엔비디아와 테슬라가 급등하면서 국내 증시의 향후 움직임에 관심이 쏠린다."
+  },
+  {
+   "title": "17년 공장 돌려 674조원 수출한 삼성...베트남에 '기술 뿌리' 심는다",
+   "url": "https://www.g-enews.com/view.php?ud=202610050913431160fbbec65dfb_1",
+   "source": "g-enews.com",
+   "published": "2026-10-05T09:24:00+09:00",
+   "dup_count": 0,
+   "summary": "삼성전자는 베트남에서 17년간 674조 원의 수출을 기록하며 현지 연구개발을 강화한다."
+  },
+  {
+   "title": "반도체 쏠림·고금리에 밀린 바이오...코스닥 제약 ‘최악의 한달’",
+   "url": "https://www.etoday.co.kr/news/view/2632408",
+   "source": "etoday.co.kr",
+   "published": "2026-10-05T09:22:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체 쏠림과 고금리 여파로 코스닥 제약·바이오주는 최악의 부진을 겪었다."
+  },
+  {
+   "title": "[김이코의 시장분석]美 고용보고서 나비효과...증시 어디로 가나",
+   "url": "https://www.mediapen.com/news/view/1127867",
+   "source": "mediapen.com",
+   "published": "2026-10-05T09:14:00+09:00",
+   "dup_count": 0,
+   "summary": "미국 고용보고서에 따른 대미 수요 둔화 우려가 대형 수출주의 핵심 변수로 부각됐다."
+  },
+  {
+   "title": "'트럼프 배당금' 뭇매...고금리·고유가 속 한국증시 '7천피' 안간힘",
+   "url": "http://www.breaknews.com/1240973",
+   "source": "breaknews.com",
+   "published": "2026-10-05T09:06:00+09:00",
+   "dup_count": 2,
+   "summary": "고금리 속에서도 반도체 대기업의 달러 매도 등으로 원·달러 환율이 하락했다."
+  },
+  {
+   "title": "[숫자로 읽는 금융 3] 주담대 3천만원 갚으면 수수료 10만원대, 이자 연...",
+   "url": "https://www.raonnews.com/news/article.html?no=61631",
+   "source": "raonnews.com",
+   "published": "2026-10-05T09:04:00+09:00",
+   "dup_count": 0,
+   "summary": "주택담보대출 3000만 원을 갚으면 수수료를 제외하고 연간 이자가 크게 줄어든다."
+  },
+  {
+   "title": "[주간증시전망] 방향성 탐색하는 코스피, '삼성전자 실적'에 쏠린 눈",
+   "url": "https://www.g-enews.com/view.php?ud=202610021529109126923c501012_1",
+   "source": "g-enews.com",
+   "published": "2026-10-05T09:02:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피의 방향성이 탐색되는 가운데 시장의 시선은 삼성전자의 3분기 잠정실실적에 쏠렸다."
+  },
+  {
+   "title": "반도체 5000억弗·자동차 700억弗...수출 양대품목 연말 희비",
+   "url": "https://www.newsis.com/view/NISX20261001_0003810235",
+   "source": "newsis.com",
+   "published": "2026-10-05T09:00:00+09:00",
+   "dup_count": 0,
+   "summary": "올해 9월까지 반도체 수출 3403억 달러를 기록하며 양대 품목 수출이 선전했다."
+  },
+  {
+   "title": "박스권에 갇힌 코스피 향방은...美국채 금리·삼성전자 실적 '변수'",
+   "url": "https://daily.hankooki.com/news/articleView.html?idxno=1411844",
+   "source": "daily.hankooki.com",
+   "published": "2026-10-05T09:00:00+09:00",
+   "dup_count": 0,
+   "summary": "미국 국채 금리와 삼성전자 실적이 박스권에 갇힌 코스피의 향방을 가를 주요 변수다."
+  },
+  {
+   "title": "삼성전기, 3분기 커지는 '어닝 서프라이즈' 기대감...\"환율 악재도 뚫는...",
+   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=145226",
+   "source": "opinionnews.co.kr",
+   "published": "2026-10-05T09:00:00+09:00",
+   "dup_count": 0,
+   "summary": "삼성전기는 환율 악재에도 불구하고 고성능 반도체 기판 덕분에 어닝 서프라이즈가 기대된다."
+  },
+  {
+   "title": "SNT모티브, 자사주 270만주 소각...2027년 실적 확대 본격화",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492634",
+   "source": "pinpointnews.co.kr",
+   "published": "2026-10-05T08:56:00+09:00",
+   "dup_count": 0,
+   "summary": "SNT모티브는 자사주 소각과 함께 방산 및 반도체장비 부문의 실적 확대를 노린다."
+  },
+  {
+   "title": "[온체인 주식선물] 현대차, 정규장 종가보다 1.48% 웃돈",
+   "url": "https://www.tokenpost.kr/news/insights/418235",
+   "source": "tokenpost.kr",
+   "published": "2026-10-05T08:32:00+09:00",
+   "dup_count": 1,
+   "summary": "현대차의 온체인 주식선물 괴리율은 개장 전 국내 수급 분위기를 가늠하는 지표로 활용된다."
+  },
+  {
+   "title": "마이크론도 샀다...‘HBM 불량’ 잡는 쎄크, 삼성·SK 문 두드린다",
+   "url": "https://economist.co.kr/article/view/ecn202609220062",
+   "source": "economist.co.kr",
+   "published": "2026-10-05T08:31:00+09:00",
+   "dup_count": 0,
+   "summary": "HBM 불량을 잡는 쎄크가 고출력 검사장비 수요에 힘입어 삼성과 SK에 도전한다."
+  },
+  {
+   "title": "[주식도락] '삼성전자 3분기는'...증권가 잇딴 '장밋빛 전망'",
+   "url": "http://www.newsdream.kr/news/articleView.html?idxno=119349",
+   "source": "newsdream.kr",
+   "published": "2026-10-05T08:30:00+09:00",
+   "dup_count": 0,
+   "summary": "증권가에서는 삼성전자의 3분기 실적과 관련해 원화 환율 하락에도 장밋빛 전망을 내놓고 있다."
+  },
+  {
+   "title": "AI·반도체 쏠림에 제약주 ‘찬바람’...코스닥 제약 한 달 새 10% 급락",
+   "url": "https://www.m-economynews.com/news/article.html?no=71340",
+   "source": "m-economynews.com",
+   "published": "2026-10-05T08:26:00+09:00",
+   "dup_count": 0,
+   "summary": "글로벌 금리 상승 압력과 미국 국채금리 급등이 제약주 등 성장주 전반의 투자심리를 위축시켰다."
+  },
+  {
+   "title": "삼성전기, 범용 MLCC 줄이고 고부가 제품 확대...수익성 개선",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492629",
+   "source": "pinpointnews.co.kr",
+   "published": "2026-10-05T08:22:00+09:00",
+   "dup_count": 0,
+   "summary": "삼성전기는 AI와 반도체 중심의 고부가 MLCC 제품 확대로 수익성을 개선할 전망이다."
+  },
+  {
+   "title": "삼성전자 자사주 매입 막바지...내주 '수급 공백' 첫 시험대",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437739",
+   "source": "news.einfomax.co.kr",
+   "published": "2026-10-05T08:12:00+09:00",
+   "dup_count": 0,
+   "summary": "삼성전자의 자사주 매입이 막바지에 이른 가운데 반도체 수출 급증이 업황 회복을 지지하고 있다."
+  },
+  {
+   "title": "단일종목 레버리지 ETF ‘20주씩 거래’...1~19주는 어떻게 파나",
+   "url": "http://www.kjdaily.com/article.php?aid=1791155155688216276",
+   "source": "kjdaily.com",
+   "published": "2026-10-05T08:08:00+09:00",
+   "dup_count": 0,
+   "summary": "금융당국은 단일종목 레버리지 ETF 투자자들이 장 마감 후 잔여 물량을 처분할 길을 열었다."
+  },
+  {
+   "title": "코스피, 7000선 문턱서 오락가락...삼성전자 실적에 쏠린 눈",
+   "url": "https://www.newsway.co.kr/news/view?ud=2026100211213174421",
+   "source": "newsway.co.kr",
+   "published": "2026-10-05T08:04:00+09:00",
+   "dup_count": 0,
+   "summary": "마이크론의 호실적과 반도체 수출 확대로 코스피가 7000선 돌파를 시도하고 있다."
+  },
+  {
+   "title": "삼전 8000억 팔고 하닉 1.6조 샀다...국민연금 선택은",
+   "url": "https://www.mt.co.kr/stock/2026/10/05/2026100217232429211",
+   "source": "mt.co.kr",
+   "published": "2026-10-05T08:00:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피 하락세 속에서 국민연금은 삼성전자를 매도하고 SK스퀘어 등을 대거 매수했다."
+  },
+  {
+   "title": "주담대 금리도 '들썩'...한은 추가 인상에 이자 더 오르나[금리 쇼크3]",
+   "url": "https://www.newsis.com/view/NISX20261002_0003813177",
+   "source": "newsis.com",
+   "published": "2026-10-05T08:00:00+09:00",
+   "dup_count": 0,
+   "summary": "한국은행의 연속 기준금리 인상으로 주택담보대출 금리가 오르며 이자 부담이 커지고 있다."
+  },
+  {
+   "title": "[국내 증시] 한국 주식 5일장 휴장 왜?...재개는 언제",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612354",
+   "source": "cbci.co.kr",
+   "published": "2026-10-05T07:50:00+09:00",
+   "dup_count": 1,
+   "summary": "개천절 연휴와 추가 휴장으로 국내 증시가 쉬어가는 가운데 7000선을 회복한 상태다."
+  },
+  {
+   "title": "NDF, 1,342.10/ 1,342.50원...7.50원↓(재송)",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437734",
+   "source": "news.einfomax.co.kr",
+   "published": "2026-10-05T07:42:00+09:00",
+   "dup_count": 0,
+   "summary": "뉴욕 NDF 시장에서 달러-원 1개월물 환율이 달러인덱스 약세에 힘입어 하락했다."
+  },
+  {
+   "title": "韓 2년 평균 성장률 'G20 선진국 1위'...잠재성장률 2배 속도로 성장",
+   "url": "https://www.news1.kr/economy/trend/6309518",
+   "source": "news1.kr",
+   "published": "2026-10-05T07:30:00+09:00",
+   "dup_count": 0,
+   "summary": "한국은 반도체 초호황에 힘입어 최근 2년 평균 G20 선진국 중 가장 빠른 성장세를 기록했다."
+  },
+  {
+   "title": "코스닥 수익률 꼴찌는 제약·바이오",
+   "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=364154",
+   "source": "smedaily.co.kr",
+   "published": "2026-10-05T07:22:00+09:00",
+   "dup_count": 0,
+   "summary": "금리 인상과 개별 기업 악재가 겹치면서 코스닥 시장에서 제약·바이오주 수익률이 꼴찌를 기록했다."
+  },
+  {
+   "title": "“4조 8천억 몰렸다”...S&P500으로 노후 준비? 이렇게 하세요 [잇슈 머니...",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8677562&ref=A",
+   "source": "news.kbs.co.kr",
+   "published": "2026-10-05T07:11:00+09:00",
+   "dup_count": 0,
+   "summary": "원·달러 환율이 석 달 만에 급락하면서 동일한 S&P500 추종 ETF의 수익률에도 영향을 미쳤다."
+  },
+  {
+   "title": "올해 경상수지 흑자 5천억弗 넘나...달러-원 하방 압력 가중",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437732",
+   "source": "news.einfomax.co.kr",
+   "published": "2026-10-05T07:06:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체 수출 호조가 이어지면서 올해 경상수지 흑자 규모가 5000억 달러를 넘을지 주목된다."
+  },
+  {
+   "title": "엔비디아(NVDA), 사상 최고가 돌파...월가 목표가 '515달러'까지 상승",
+   "url": "http://coinreaders.com/261526",
+   "source": "coinreaders.com",
+   "published": "2026-10-05T07:02:00+09:00",
+   "dup_count": 0,
+   "summary": "미국의 대중국 수출 통제 우려에도 불구하고 엔비디아는 독점적 수요에 힘입어 사상 최고가를 돌파했다."
+  },
+  {
+   "title": "\"대출금리 어쩌나\"...비용 부담 커진 중기·벤처",
+   "url": "https://www.newsis.com/view/NISX20261002_0003813187",
+   "source": "newsis.com",
+   "published": "2026-10-05T07:01:00+09:00",
+   "dup_count": 0,
+   "summary": "한국은행의 기준금리 연달아 인상으로 대출금리가 뛰며 중기·벤처기업의 금융비용 부담이 커졌다."
   }
  ]
 }
