@@ -23,6 +23,7 @@ from fetch_edgar import load_cik_map, sec_get
 NEWS_DAYS = 7
 NEWS_MAX = 6
 FILING_DAYS = 45
+KR_FILING_DAYS = 90      # 한국 공시는 드물어서 더 길게 본다
 FILING_MAX = 6
 
 # 회사명이 티커와 달라 검색이 빗나가는 종목의 검색어를 직접 지정한다
@@ -41,10 +42,10 @@ QUERY_OVERRIDE = {
     "MSFT": ["Microsoft stock"],
 }
 
-HOT_EN = ("earnings", "guidance", "forecast", "outlook", "acquire", "acquisition", "merger", "buyout",
+HOT_EN = ("earnings results", "reports q", "guidance", "acquire", "acquisition", "merger", "buyout",
           "lawsuit", "sues", "settlement", "downgrade", "upgrade", "price target", "ceo", "cfo", "resign",
           "layoff", "job cuts", "recall", "fda", "approval", "bankruptcy", "investigation", "probe",
-          "buyback", "repurchase", "dividend", "offering", "plunge", "surge", "soar", "tumble", "beats", "misses")
+          "buyback", "repurchase", "dividend cut", "dividend hike", "raises dividend", "offering", "plunge", "surge", "soar", "tumble", "beats", "misses")
 HOT_KO = ("실적", "가이던스", "인수", "합병", "소송", "하향", "상향", "목표가", "대표", "사임", "구조조정",
           "리콜", "승인", "허가", "상장폐지", "횡령", "배임", "조사", "자사주", "배당", "유상증자", "급락", "급등")
 
@@ -132,7 +133,7 @@ def kr_filings(code):
         print(f"  DART 고유번호 없음: {code}", file=sys.stderr)
         return []
     from fetch_dart import category_of
-    bgn = (now_kst() - timedelta(days=FILING_DAYS)).strftime("%Y%m%d")
+    bgn = (now_kst() - timedelta(days=KR_FILING_DAYS)).strftime("%Y%m%d")
     try:
         r = get("https://opendart.fss.or.kr/api/list.json", timeout=40,
                 params={"crtfc_key": key, "corp_code": corp, "bgn_de": bgn,
@@ -142,6 +143,7 @@ def kr_filings(code):
     except Exception as e:      # noqa: BLE001
         print(f"  DART 요청 실패: {str(e)[:100]}", file=sys.stderr)
         return []
+    print(f"  DART {code}: 상태 {d.get('status')} · {len(d.get('list') or [])}건")
     if d.get("status") not in ("000", "013"):
         print(f"  DART 응답 이상: {d.get('status')} {d.get('message')}", file=sys.stderr)
         return []
@@ -193,7 +195,7 @@ def main():
         print(f"내 종목: {k['name']}")
         news = news_for([k["name"], f"{k['name']} 주가"], creds, "kr")
         stocks.append({"market": "kr", "ticker": k["code"], "name": k["name"], "news": news,
-                       "filings": kr_filings(k["code"])})
+                       "filings": kr_filings(k["code"]), "filing_days": KR_FILING_DAYS})
 
     for s in stocks:
         s["hot"] = sum(1 for x in s["news"] if x.get("hot")) + sum(1 for x in s["filings"] if x.get("hot"))

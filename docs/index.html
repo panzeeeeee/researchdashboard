@@ -1845,7 +1845,7 @@ function renderMyStocks(d) {
       <div class="ms-head"><span class="tk">${esc(kr ? s.name : s.ticker)}</span><span class="nm">${esc(kr ? s.ticker + " · 한국" : s.name)}</span>
         ${s.hot ? `<span class="ms-fire">🔥 중요 ${s.hot}</span>` : ""}</div>
       <p class="ms-sub">공시</p>
-      ${s.filings.length ? s.filings.map(filRow).join("") : `<p class="ms-none">${s.ticker === "SPY" ? "ETF라 개별 공시는 보지 않습니다" : "최근 " + d.filing_days + "일 공시 없음"}</p>`}
+      ${s.filings.length ? s.filings.map(filRow).join("") : `<p class="ms-none">${s.ticker === "SPY" ? "ETF라 개별 공시는 보지 않습니다" : "최근 " + (s.filing_days || d.filing_days) + "일 공시 없음"}</p>`}
       <p class="ms-sub">뉴스</p>
       ${s.news.length ? s.news.map(newsRow).join("") : `<p class="ms-none">최근 ${d.news_days}일 뉴스 없음</p>`}
     </div>`;
