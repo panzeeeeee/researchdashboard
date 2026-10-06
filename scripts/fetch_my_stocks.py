@@ -35,6 +35,7 @@ QUERY_OVERRIDE = {
     "NKE": ["Nike stock"],
     "PFE": ["Pfizer stock"],
     "ENPH": ["Enphase Energy stock"],
+    "FSLR": ["First Solar stock"],
     "GOOGL": ["Alphabet Google stock"],
     "AMZN": ["Amazon stock"],
     "MSFT": ["Microsoft stock"],
