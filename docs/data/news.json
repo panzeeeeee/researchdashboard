@@ -1,534 +1,297 @@
 {
- "updated_at": "2026-10-06T11:43:53.970633+09:00",
+ "updated_at": "2026-10-07T01:22:42.578322+09:00",
  "lookback_hours": 48,
- "total": 199,
+ "total": 171,
  "stocks": [
   {
-   "code": "MRNA",
-   "name": "Moderna",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Healthcare",
-   "score": 0.87,
-   "note": "G3",
-   "source": "신고가·물극필반",
-   "items": [
-    {
-     "title": "NVAX Stock Outruns Moderna As Vaxcyte’s Shot Clears A Late-Stage Test",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOamxVeHZCcDBzUDhDODlpX2ZIT01Zcm1RVkUwVlhSdDhmeGJWNGFLcU5jazlOeE1iX0ItWU12b09NSlB3SVlKMl82bE5QZVRxMmRmUHI1LXJFc01hTVZzZXp0MWxoUjJxUy0zSFE5UkEyY2gxTzNwb19SYS1tMmREb2V0eUFmdGFWYkg3a3o2VlhSdXBGTEw1QzczNDNhc19wRkM2c2RmSGNSRS1TTF8xb2EzYm1fS3pjV1BnMDF0d2ZPOEtUdzBCaXFmamY2UQ?oc=5",
-     "source": "Stocktwits",
-     "published": "2026-10-06T08:44:03+09:00",
-     "dup_count": 1,
-     "summary": "벡사이트의 후기 임상 성공으로 노바백스가 모더나를 앞섰다."
-    },
-    {
-     "title": "MRNA Stock Soars Ahead Of Slated Return To Nasdaq-100; Retail Echoes Valuation Concerns",
-     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNNzdIOTQxQ19mQTU5c2UyTEtNZ19ya2NCXzdDTjBCLU5zYmRUU3BVcmVsbWk5SkR1cjJ0Wl9qNDBkemlzWU05b3p4ZTRHel94c2hDR3pDcFJ6OVFpNG5GQ1JEaVVmUlFQdUZSRnJHOURHazJWSF9pdU51WFE2OHdaZ1Y1RDl4Rl9LWmphSFVDN0pzTDdSTF9ZNzRhQ25iQTFhNzg5ZTN1QkVHQkxuZHZ5cDFqTlhtMmJtZ2F6aDlCdVZMTUZtNks3Z21uU0lSNmU5YTJacVVHUWRNWFJfWWwxWU5mQkw?oc=5",
-     "source": "Stocktwits",
-     "published": "2026-10-06T07:52:18+09:00",
-     "dup_count": 2,
-     "summary": "모더나(MRNA) 주가가 나스닥-100 복귀를 앞두고 급등했다."
-    },
-    {
-     "title": "Moderna (MRNA) COO Juan Andres reports direct ownership of 125,000 common shares.",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPN0RLaWlpcmdDTmh6UVo2MHRGenR0RmVpcXI2NHRobnJuNzdIRWttb2ktcVZzbzhaUFFnQ1prTjJpbW5ocXJKZEwzV2p4SnRuUjFzWVVSRmlZdTRJTmY2WTZkaVdvcVdTRUtOdkRsQUNrWjJ4YjFxRjA4UXdvd0hHMzd6VFFBdm1hTTJ5UWtIMzFaVU1qbndmYTNOTmFneVFoem1NdHlrbWUxZ2RMVVVPUXdteWZHN1F0MFlVazA4OA?oc=5",
-     "source": "Stock Titan",
-     "published": "2026-10-06T07:27:23+09:00",
-     "dup_count": 1,
-     "summary": "모더나 COO 후안 안드레스가 보통주 12만 5천 주를 직접 소유 중이다."
-    },
-    {
-     "title": "Lilly’s Jaypirca approved as first-line CLL therapy",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMTRrejVLNEt5Tmhibmp4UDR2NkRaQUZtMDlkUTN1dC1oZkZPQmtHeGpVSXNWYjN4NzY3amJyM0NWNk1OSFlmcGt2QVAwRXVTZnV4Q0djYXJ0dEdkTTJYNldEODJ5ZGdHNGsyUC01V19XajhEdjRaazlFY1Z6bXphNDdKc2stcnI3OTBPVEtILUI3YVBfbGNUZW5MWFJRcE1N?oc=5",
-     "source": "STAT",
-     "published": "2026-10-06T06:21:34+09:00",
-     "dup_count": 0,
-     "summary": "릴리의 제이피르카가 1차 CLL 치료제로 승인되었다."
-    },
-    {
-     "title": "Novavax Shorts on Edge as Russia Plague Fears Spread",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVHRIbndNTWpuR1ZaVEJhMWhHN1JqWHJRRlBMd09DR0tSdmtOTXViRkNfUWNiNFoyNmlPVFpwWm5KYjJyWlhMM3dKdi1kcHkxVjhiRWEtUWR5NGR4NHF1X3pRbHhrSmFlc3YzbWM4WXYtRTd5MEphR0lNSHpzYUxZLVFoQUFlRldtR2lOelVaQ1A4NXdFVjJPYmdzU0lDM0h0T2dDeG4wWndpX3NwOXZpWkxTZw?oc=5",
-     "source": "Benzinga",
-     "published": "2026-10-06T05:32:21+09:00",
-     "dup_count": 1,
-     "summary": "러시아 페스트 공포 확산으로 노바백스 공매도 투자자들이 긴장하고 있다."
-    },
-    {
-     "title": "Moderna stock jumps 8% ahead of full melanoma v...",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTVVYMXFJRkNHWk4wQnh2ZG1mVlJTSWtkbV92SVR5MWJWSGZYT3ppbE9mc1ZJTXlFTTViLVVEVVBDWnVXWHlDM0lqaFNHSjAzVXVaeGRZbnNOV2pLRUVzVHZxTGM3alRvX3I2b052cllRdWl0ZjBkd2ktRnZtZ2daSXJlVQ?oc=5",
-     "source": "Pluang",
-     "published": "2026-10-06T04:04:14+09:00",
-     "dup_count": 1,
-     "summary": "흑색종 백신 결과 발표를 앞두고 모더나 주가가 8% 급등했다."
-    },
-    {
-     "title": "Novavax Soars 22% as Sanofi Carries Nuvaxovid Into Vaccination Season; Moderna Climbs 8%, BioNTech Ticks Up",
-     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOODQzQkJ2TFhOZG5tcGJOelBia2VDVlJCbVhEbUFYUlNrVERCRFF3RldIOVBmcUdCWjdHM1NHd29LQkJubk5NNE1qR2Q1cDdvb1NMWUdJRUNMWXgtV2hXbkRGamZvTWpsUVRUVTlScHBya2ZVM2wtMURCaXUwaVB0c2NKVzhwVTdkdHg4dXFmbHpWN2tJZG9MeW9JNU5vRGQzZ0pXQ1NuaVBWTU1sT2c4OGZNcTItdW83dmsxdGlNS2ROczVBOWtUSUtlUFJsOXJoelpxZEVoem5RLVI2WTFiOA?oc=5",
-     "source": "24/7 Wall St.",
-     "published": "2026-10-06T04:02:00+09:00",
-     "dup_count": 1,
-     "summary": "사노피의 뉴바소비드 도입으로 노바백스가 22% 급등했다."
-    },
-    {
-     "title": "Moderna Surges 8% as Full Melanoma Readout Nears; BioNTech Ticks Up, Pfizer Slips",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWFl0ck1hZ0pyYzZrS0Mzcm1IU3h2cTJtTDN2Y0FjLXlUaVlqcDNqVlpNMmZ1WjFJbEFYWXk2REJxWnl4YUluMXhpaDdYaW83OExWSGJ2X2R3ZmZsaGlzR05GVkJydVdXSXIzOUpaSnNlTE9TRWdmb09IbjFLbHM2RTBndnNSWHNrSUxOUGoySmRuSl9HSXc?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-06T03:47:02+09:00",
-     "dup_count": 3,
-     "summary": "흑색종 백신 기대감으로 모더나가 8% 급등했다."
-    },
-    {
-     "title": "What's next for personalized mRNA cancer vaccines? (MRNA:NASDAQ)",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTmpPcWs0X3ZQaFhQWFp0V3hXTXhlcTJQVU5ITGlocjFTOHFpNm9ISW5tR0ZzeE5mTXZOdmhlNDRXY2ltYkFfa3pTTlRiT1daMkk2RjZDdTV0V2FfcGJCSXZLZVBYcWU3dTYtNWhHcXpqbzBPem9RUmxrNV9QX0o1SXJlN0xDWHJGNVFXcXJlbw?oc=5",
-     "source": "Seeking Alpha",
-     "published": "2026-10-06T03:33:42+09:00",
-     "dup_count": 1,
-     "summary": "맞춤형 mRNA 암 백신의 향후 전망에 관심이 집중된다."
-    },
-    {
-     "title": "Moderna Jumps 6.7% After Citigroup Downgrades to Sell",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSUxJMjdvc1ZOR3RwQXRhbU8tSDZqX1dMTm9PNEhPS1FFVXkyQkhGNTNId0ZuSVBkbEh5RE13VWdzQ0h6bzdDLS1ObmRPcUdLY0dkcnZmcC1YbEhwRlJMUzNYSEdqMTFnUzF0N1N4M2J0elpIVnlPRG9oaHhKZjNKNl9UOXduYV91c2N0Q3dxWdIBjwFBVV95cUxQSUxJMjdvc1ZOR3RwQXRhbU8tSDZqX1dMTm9PNEhPS1FFVXkyQkhGNTNId0ZuSVBkbEh5RE13VWdzQ0h6bzdDLS1ObmRPcUdLY0dkcnZmcC1YbEhwRlJMUzNYSEdqMTFnUzF0N1N4M2J0elpIVnlPRG9oaHhKZjNKNl9UOXduYV91c2N0Q3dxWQ?oc=5",
-     "source": "AlphaStreet",
-     "published": "2026-10-06T03:27:39+09:00",
-     "dup_count": 0,
-     "summary": "씨티그룹의 매도 등급 하향에도 모더나는 6.7% 상승했다."
-    },
-    {
-     "title": "Why is Moderna (NASDAQ:MRNA) stock surging as cancer vaccine optimism builds?",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbGwtWXFhYjdERHNGZGJLSTNuZEM0SndGWGZCZzdvNmVMVmhRUjhGR0ZDaVplZzYxcVc1MW83VnVVbUFmVWNsZmg5WjY3dHVTdGNrY053WUNsZnlaNk9vU2JvVjFlb3lrMFhJYWRHX1dTRFRUVEdkZmZPd0Frejh3bWluYXlsUVFkN3lMbkxqLTQwT3piYWVCdGtKMV8wQmlpN2otTC1Kd01lTnpJRFpVMkJ0cEFGckJBdDRr?oc=5",
-     "source": "Kalkine Media",
-     "published": "2026-10-06T03:08:00+09:00",
-     "dup_count": 0,
-     "summary": "암 백신 기대감으로 모더나 주가가 급등세를 보이고 있다."
-    },
-    {
-     "title": "Moderna Inc Stock (MRNA) Moved Up by 5.71% on Oct 5: What Investors Need To Know",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZWlpM3RORkdlQ05vRExvWGl0cXVqMVc2c1VSSmpqY3ptdnJIS2NpRW5lRGw5VUdCb1NwWENJQ3JBejVpMjFjOHltTDRoWm4xdmpPcUxweHpEUDEydG1RREFtSGFJdzU1X3lSQmcwbGdCQlUzQkMwTnNDRFp4ZGU1ODkxT0Z0SHpHS0Uw?oc=5",
-     "source": "TradingKey",
-     "published": "2026-10-06T02:15:27+09:00",
-     "dup_count": 1,
-     "summary": "10월 5일 모더나 주가는 5.71% 상승했다."
-    },
-    {
-     "title": "Moderna rises as index inclusion and oncology optimism stay in focus",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdHlRODlOSmFZTXZTQ0QzaVFwWldGb0hFZGJLOU5XbGRmR2RIdld5OVR0emV2SDhGem9vV0J6ZjZjTDB6aUptelVNbkVxWW45RWdTRU9YN1JhOWVnQ01QV3NCRDNrLU1nQVJrMGFnVmFhb1MzWm1CU1lMaXpvcFE2cVUtaU4tSW5WeUJiWjVybmxsRWFKcC1fUFQzamo1UjZIS1Jr?oc=5",
-     "source": "Quiver Quantitative",
-     "published": "2026-10-06T01:18:00+09:00",
-     "dup_count": 1,
-     "summary": "지수 편입과 암 치료 기대감으로 모더나가 상승했다."
-    },
-    {
-     "title": "MRNA Oct 2026 250.000 put (MRNA261016P00250000) interactive stock chart",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5VeklyOEFGS19IbFJyYURxQlE0OXNDSUtJZURQOXZTSUgzV3pzdUtvdHRvN1hVXzVBV0lUZXMwNlBtSmp6dWlLbWZ4RTIwQkpNa290czZ0MmpQV19XdDM2Y1hOQ0psdDVHVUx0U3Bn?oc=5",
-     "source": "Yahoo Finance UK",
-     "published": "2026-10-06T01:05:01+09:00",
-     "dup_count": 2,
-     "summary": "MRNA 2026년 10월 250달러 풋옵션 차트 정보."
-    },
-    {
-     "title": "MRNA Oct 2026 172.500 put (MRNA261023P00172500) Stock Price, News, Quote & History",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9uVm1lZ3NPYlUzSS02OTBCSnBfQ1l2VjVaNG5VUUVKSlgxZXNjdkl0X0xoQ1FZTncxbjFZa3QtcHY4MDVhQ0JEc05HaGstNjdLNWk3cFNsbXhEZjJEUFZha09PQmRFUQ?oc=5",
-     "source": "Yahoo! Finance Canada",
-     "published": "2026-10-05T23:00:47+09:00",
-     "dup_count": 1,
-     "summary": "MRNA 2026년 10월 172.50달러 풋옵션 가격 및 내역."
-    },
-    {
-     "title": "Moderna Inc. Stock Grades | MRNA",
-     "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPeUxQS3hzMDBoSTZtaG1JRXQwemhTNGEwWEFScmpmSFlkc20zTFRtTEJFVzFyWUZyRFpZX2NYZ0tjal9abWdDdHdjNVR6MzhvM3BONEpwZXZkVlhrLVlKQzFyWnlLdmxaa01WRGNzOE5YcDd3V3hmZS1DcUYxc2hrbXI1dGM2ZHZxTW1qd1V5N2Nld2NuOFk1aGFTSG1ydEVFRVFpdk9nUnhBLXhUcTdpOWpRTjBucjFNc0RMd3hzbVdsMEJzcldXVEtZaFJpMFN1YTItSUFpeU8xT0FlY0NVQllUMjRXekx3Ym9pdG1YMl96ekJkX2dMeFpLSGE3Y0hacDFFQloxSUJzRG95QVRjRDRBbjdmRjAtODJhaUVlQ0xiYlFxbFo2RzNNVmhWN0hXRE1qaW5B?oc=5",
-     "source": "Barron's",
-     "published": "2026-10-05T18:28:00+09:00",
-     "dup_count": 0,
-     "summary": "모더나(MRNA)의 주식 등급 정보."
-    },
-    {
-     "title": "1 Safe-and-Steady Stock with Competitive Advantages and 2 Facing Headwinds",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTmVrVU53SmJGa0VuQnBGQzYwMlBwX1E3Qk1EbU4tTmxhcXlaYXVwM0V6YkRZeHVWN3Q5N0NYem1nQVc4eUwzdDdTdXJTT2RnalBWZGJYS3Z0aDFUUlJNMTVRdXphbUNuV05DcHR3eVhUVzE5UUVHaGFiMnpjR2xMTmxZSlFiZkhPa3hoRzRQbVFtRTUtcTJVYUJCR2ZjVk5BVmJjcVZRX0RlVlM2Rjd3WnBqZTRGWnd0YVBvbm9saGVaajcyVnlfOFJGVWNaSEtjYXc?oc=5",
-     "source": "StockStory",
-     "published": "2026-10-05T17:15:26+09:00",
-     "dup_count": 0,
-     "summary": "경쟁력을 가진 안정적인 주식 1개와 역풍을 맞는 주식 2개."
-    },
-    {
-     "title": "Moderna (MRNA) Soars 175% in Q3: Can The Stock Keep Running?",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObHN1S0l1cUlMSEx5TFBIWTZoVVBWdUc2VE8xOFpMYkJGOWs3QVdZLU5ZN1RGaGRVN2Zra1VHWld4TEV2bmQzZTdjZXZxdGpqeEdFcHJEREticS1Gb0FxNTViQkZiZHdzQmxvSTFnRlFIRnhkekpndGdHRW9EUzhDU0YzNEFzbWtkX2ZlZC1lZEVVcDVk?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-05T12:07:00+09:00",
-     "dup_count": 1,
-     "summary": "모더나 주가는 3분기에 175% 폭등했다."
-    },
-    {
-     "title": "Jim Cramer Says This Stock Could Rise Like Moderna (MRNA)",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPazllNlZiZ0k2c3U2UkVwQWs1cGNwOHNPaG9CcEh2SzBFNDc4QzM1aGpzNG9rRTRoVFNkcG1Pa1IwNzhlYzBRNU94TW5mVDRIcHhHLWczSS0wNW5qYnJDVFlZSmdkVDZmXy1obXJQOHBKbmJ1WlFpSHgwa1ptOHUtMXVFWjRYdnRYSmFka2VtSWN4UQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-05T08:20:06+09:00",
-     "dup_count": 1,
-     "summary": "짐 크레이머는 이 종목이 모더나처럼 상승할 수 있다고 말했다."
-    },
-    {
-     "title": "Moderna (MRNA) Shares Surge on Cancer Vaccine Optimism Despite C",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSmZDa2p5dFplaDRHOWxoNloyY09aNGxPcGFBZElzOE5oc0V4VXVLV2NLc1Q0eE1tQnYzenMwaGJWal9YWnd4eVp5RFc4LUdxckttUDdvN0c3RVlNR1JwZ3ZkOHFtZHlyVDNCNHA1UUM4T1pTbXZCR0xsdEpEdGo2RWtLNzBiV2J3TERxVGF3WWxGdDNSTWk3STk4WjlJczNlUDRBampLellNUWFzdjF5OHdFekJzcGRfWUdR?oc=5",
-     "source": "GuruFocus",
-     "published": "2026-10-05T03:04:25+09:00",
-     "dup_count": 0,
-     "summary": "매도 의견에도 암 백신 낙관론으로 모더나 주가가 급등했다."
-    }
-   ]
-  },
-  {
-   "code": "CDNA",
-   "name": "CAREDX",
+   "code": "FRSH",
+   "name": "FRESHWORKS CLASS A",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.809,
+   "sector": "Technology",
+   "score": 0.683,
    "note": "G1",
    "source": "신고가·물극필반",
    "items": [
     {
-     "title": "CareDx CCO Jessica Meng Withholds 2,619 Shares for RSU Tax on October 1, 2026",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNUZ6elJFdlRIcDVONEMwZ0R2cEVaQ2xtM2hkSGlqdnBzZDdFcWFpcmh1by1xWFVZbUY3NTlURmlOYjM3RHI2NDNoOFFIdGVnaHJEZTJkWWxrLXg2d25Lb3NXUEFqNkRqcGUtajRETW5hM2FJcnhWMXoyODN0UXBFcld6VlpHbVVwRFJ4MjFkaGpGaWcxazNjMG5scE9LLTFCWUxPM3dCeTl3d1JjdEhpaHFPQ2hJTEJNVzhmMlpDWQ?oc=5",
-     "source": "Kalkine Media",
-     "published": "2026-10-06T10:32:16+09:00",
+     "title": "Why Are Freshworks (FRSH) Shares Soaring Today",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSXJjNmRjTnpjUm00a25MeG5NMzRISEItUUlaMEx1VzZsemNCZnM0bzZMQXdOenUzaXpCS3A1WEczR0h4WFMwOWJWaFFiaGpuSk10Nk1VN3JHQVBReDVkR1E5a1JVVUktYTlTa0U0bkIzQUpCdUZVUlY0TFZYZ3F5MUxoR1FJSGNyYzVKVktSX0VXbXRkSTB4d055TXhCX3hpdldlRkZFZTI?oc=5",
+     "source": "TradingView",
+     "published": "2026-10-06T23:16:07+09:00",
      "dup_count": 0,
-     "summary": "CareDx CCO Jessica Meng가 세금 납부를 위해 2,619주의 주식을 원천징수했다."
+     "summary": "Freshworks(FRSH) 주가가 급등세를 보이고 있다."
     },
     {
-     "title": "Form 4 Caredx Inc For: 5 October By Investing.com",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQclRsTWVCU1NUZ2h5SXZQaHdmaTlUM2VucWxuNGRnZEotUi1PWk92ZDVXemhia1dNSmowZ1NFSHVTZGFPbjllMlAzOGJLbHZVVUZzSlB6ZHR1MjZwZ19NM29HX0hyc0dnNklPdTV3MU16OTBTS21OUzVsUVNBdVg3MEE4TjdILUlHM3FVVjIxUHU4RGVobWxr?oc=5",
-     "source": "Investing.com South Africa",
-     "published": "2026-10-06T08:11:25+09:00",
+     "title": "Form 4 Freshworks Inc For: 5 October By Investing.com",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZjVZd0t3U3lsNG8zQ0dORThUMW0zOFZCYUJ4clJZd3drNVRDMHJ6NnZTcVZXQXEzU1MyWG9TSU05aUh5WFFTajg4MGNPU0I1MjdGS2YzUDlyc0JmLWpRU3N2Yk5MVy12Y2VtSGRuMGlTdU8yeUxud3AyOC1tRlhOcFpORlM3LTNBM2xQYktVU1BXZDhVbHFkcVpsZWE?oc=5",
+     "source": "Investing.com Canada",
+     "published": "2026-10-06T08:57:03+09:00",
      "dup_count": 0,
-     "summary": "CareDx Inc의 Form 4 내부자 거래 공시가 제출되었다."
+     "summary": "Investing.com이 공개한 Freshworks의 Form 4 공시."
     },
     {
-     "title": "Form 4 CareDx, Inc. For: Oct 01 Filed by: Novack Jeffrey Adam",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUUpVU2FLVC1RcVVmYU5femRyMlVMb0hvd1B4ZUxWTWxhS0xtNmhYcXhzZjFPbFR3eDdJYURCa1BqTVJGSTNtd2oyX1Y0Njc3dzdmTW4teXVBdG9XOHZoTHdteDlZYlNaazB2NFpiYVoyQ3BiSWtjaERFdWlQSkR1dXlreFhGbXhKbEtQN193LTFyYVFDN1lCbHM5aWFXMzc0Q1JaNFdhOTJ2RUo0NEhIcDg4SDc5V0NOcW43alJES08?oc=5",
-     "source": "StreetInsider",
-     "published": "2026-10-06T07:51:47+09:00",
+     "title": "Freshworks (NASDAQ:FRSH) Stock: Insider Philippa Lawrence Sells 3,492 Shares",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQc3JxMFVSaUJoVG9yY3R6R0hrR2pES2dFdWVmT0RQalhRY1F1Y29nd09wbFo2YUxocGROcXhaQWNSN3J4M2llRUdEU0RMR2dpYm1QTzVXbUtGZ2lfYUszeVNLNDdzdkRmM2lXTkxfbDdBRTZSRGdPNFFKUjZRZG90UGZpTDdFUU91QUVhVlozMFdHeEtLdlY1VmNCd01SaE9jWS16dDF4V0dSMGh5bkdrWjVRWDNSdGE3cDF4c0RBMnlDdnZneGQ5RU5Cb3YzN0U?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-06T08:41:52+09:00",
      "dup_count": 0,
-     "summary": "Jeffrey Adam Novack이 CareDx Inc의 Form 4를 공시했다."
+     "summary": "Freshworks 내부자 Philippa Lawrence가 3,492주를 매각했다."
     },
     {
-     "title": "Stock vesting triggers 997-share tax withholding for CareDx (CDNA) counsel Jeffrey Adam Novack.",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLVdEc1VZYUczN3dGWW1VVDZpYThQQWlBTWlkVUQ1TFpwZF9ZTlU2LVVSdV9ZdmdnMkZVNTBKR2xJTk52NVVIQktGRi1qb2Y0OUd3cnBxLW5tSWotYkhnOG1QRk1TQXpENkg5RmxqVmxJMU5mZmlLbFlsWk9aSGJwX3QwTE15V1AyNk1YUzhxZmNLRWpOb1QwZzRTMWgyS1k5YlR1QmU5YW8?oc=5",
+     "title": "Freshworks CAO Philippa Lawrence sells $45k in stock",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQVUd6QUJXZVZHLTc1NGFZRTdZN3NTbVd1elA4dHQxVHBPRmZPRGIwdTJVc1kyMFpwcEMxdVE3dGx0bWxaZmRucmNXTzZCY3ZUR0dVYTBtV3VkNEZMYTU0Mm5OTWxaNXlZZnZfOVEySmQ1Z3NNQnMwUllZVWFQOHBESzVvN2J4RHdPVk9BMjJQaUM0SHRtelk2bkI1MlZpUDd5MzI4UmRCSG9zRXRnZnljUVl4OF9PUHc?oc=5",
+     "source": "Investing.com",
+     "published": "2026-10-06T08:16:32+09:00",
+     "dup_count": 0,
+     "summary": "CAO Philippa Lawrence가 4만 5천 달러어치 주식을 매도했다."
+    },
+    {
+     "title": "A trading plan guided Philippa Lawrence's sale of 3,492 Freshworks (FRSH) shares at an average $12.98.",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOR0h3U1dwQjQ4bWNjRVZGbGtWamczbHFQTEtUdTBtYkdnZy1ubkdBUEtmOTRvRmd2MzV3Sk9FSGxNeXF5WTNMM1pzRWVSQjhya2FmRGJHRWU4MUp3WHp6Slp6a0l2SzNsbXh4Tjg1WFdxVFF3cElKLXRTRTZPT2pnN2VuX254NmpBN2pnS1FleWlYdVpDQmdncngwYnlxellybDZxaW9lSXAtRmN6?oc=5",
      "source": "Stock Titan",
-     "published": "2026-10-06T07:50:00+09:00",
+     "published": "2026-10-06T06:56:53+09:00",
      "dup_count": 1,
-     "summary": "CareDx 법률고문 Jeffrey Adam Novack이 997주를 세금으로 원천징수했다."
+     "summary": "Philippa Lawrence가 3,492주의 FRSH 주식을 주당 12.98달러에 매각했다."
     },
     {
-     "title": "Form 4 CareDx, Inc. For: Oct 01 Filed by: Hanna John Walter JR",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdHJKY0FKWDNKU0NWN3d3N1hiQTNYcEJXLVJRRkZzM1M2UjFVWEk1VmNPYi1VZGIxQjJ1bHdGZ0YzNUVwbWZweF9XQW93R3lNRnhjX2NOVGxsRTBDZnVjSFdoVGJpOGotWnF1aXctdFZiVmh0YlYzVXBlLUNoUk43TGJsTFRpcUprSFlnV3M4TzZKMHhJY1RZOVlDc0MwU0syRGxTTkNNUXN1TUlkdlFyT0tNVUlldWFtbUUwcDZ2OC1ZQQ?oc=5",
-     "source": "StreetInsider",
-     "published": "2026-10-06T07:49:49+09:00",
-     "dup_count": 0,
-     "summary": "John Walter Hanna Jr가 CareDx Inc의 Form 4를 공시했다."
-    },
-    {
-     "title": "After 8,511 shares were withheld for taxes, CareDx (CDNA) CEO holds 644,937 shares directly.",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORXRUV29NUXNrZ0pFaFkxSjI0Q0U4RXUyTy1IQUItaWFQYjRMU05oYU9FWmJHbjVDUnRQTU00Mm8yd3RzcGxKR2xqMkg5U2xqTXNNVTdJVDhobGtYVnBMdkxrNDZDRGdXcWhnUWEzYUoxQ2liZjI0dmhySXJrNlltb0pqTnU3TGFVYU9qUko2c0E3Vm81UUlqOGZ5SmJ1R0dxYnVlMlRiaU0?oc=5",
+     "title": "Stock grants vest; Freshworks (FRSH) revenue chief has 21,219 shares withheld for taxes.",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQTZ4c29BN3NzdkVYYXZXTFhsckVheDNzTlFtLVpydzQySjV4TUMzbldmLWpyd0pQUm9GM1Q2UDByRkpFN0NCb1lVcWc1bzhnVmwwYjQ1NWR2YWVNa2VZeU9oZHJDbTNDb1hadWNxNzJxNzZrMEd3azRTRmZfM1FHeGNDRFNqZkRCV3ItUjJjR3piUTlpdURrZUQzUGZTVDFIVGNVMFR4cXllX2Vo?oc=5",
      "source": "Stock Titan",
-     "published": "2026-10-06T07:48:14+09:00",
+     "published": "2026-10-06T06:54:48+09:00",
      "dup_count": 1,
-     "summary": "CareDx CEO는 세금 원천징수 후 644,937주의 직간접 주식을 보유한다."
+     "summary": "Freshworks 매출 책임자가 세금 납부를 위해 21,219주를 원천징수당했다."
     },
     {
-     "title": "Tax withholding leaves CareDx (CDNA) CFO Keith Kennedy with 208,686 directly held shares.",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSkV3ckZaZkFTVHVNdEc5UFN0TTZkU09vZVNKd0NON1ItZ2hXa1liWVk4cmlaNFdEbllNRVk5U2VKSkhkcV9Ia3ZQVmMzU3lpazFLaFpjS1Y1NU5jQkhWNGFVeGdTSUNIenB6c2xRaERyYVRqdDZTV2VzOXY0SUM4N0d5M0hLU2dDR2VwVlVYT0xORDVwMUEwanY0dzVMVjVQLU9TVTNHNnk?oc=5",
+     "title": "At $12.78 a share, Freshworks (FRSH) CEO has 22,473 shares withheld for vesting taxes.",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYUhNdGVPdHJ3bEtXaGxXekV1Q0VESGpUcXA3a2dvd0dia2NqUURJWEJnSlNSckxMU1I4dmZ4VHM0MHV0aEo2dFNNU0tqX0VtRGJMQmVZcEk0WUgxWlFHQV96Xzhiem9oNy1ZTENJUWoyTFhOMjZCT1ZhNUh6UjhUYVJWQXItRFNNTXBXM0JjZERIY2YwZlVnUlcxU1RxWTVVdUNpcGFlbDllV2dB?oc=5",
      "source": "Stock Titan",
-     "published": "2026-10-06T07:47:27+09:00",
+     "published": "2026-10-06T06:51:50+09:00",
      "dup_count": 1,
-     "summary": "CareDx CFO Keith Kennedy는 세금 원천징수 후 208,686주를 직접 보유한다."
-    },
-    {
-     "title": "Form 4 CareDx, Inc. For: Oct 01 Filed by: Meng Jessica",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZ081QTNGOHIxWDl0aXltNm9LSTF5Y01EcXZ3bGtGcDMySjItYjFMSUR5bUN5dXBVdDc0NkIwZVkyeGJPM2JmUnVjaHZtNFIxSmY3dVo2VGI0ZWZzWmROek9BLURPQmstU3NTT1NLT0JLRGZmSzNBVnhoR3RxMy1abGoyN0xoVkFrV0cweFRWQnBuelZ1LTFDSDRBZEJmLUNYbVl0bzFCanN5aExlOWxPY3NyWk1mUVk?oc=5",
-     "source": "StreetInsider",
-     "published": "2026-10-06T07:47:25+09:00",
-     "dup_count": 0,
-     "summary": "Jessica Meng이 CareDx Inc의 Form 4를 공시했다."
-    },
-    {
-     "title": "For stock-vesting taxes, CareDx (CDNA) withholds 2,619 shares from its chief commercial officer.",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSkRad2d0WTdYMF85SHVrQm9RSXB5WkZwUzBtcEdJTXpYMGU2YkNGenVjN1dyTGROQ3hncjJQc1AtT2Q2LXdOam8zSjF2N3dCOFhFLWZ0UHM5WjRVOEd4R1dtMkgtbTFaRS11emRLenZoYm1UWkE3dWpyNkRIQ0I2WmxQMXdqMlh5aXhWZm9oaWZnZUkyWUFCZjk4NUJLM1JpYjhlN05KcVM?oc=5",
-     "source": "Stock Titan",
-     "published": "2026-10-06T07:46:50+09:00",
-     "dup_count": 1,
-     "summary": "CareDx는 스톡옵션 세금을 위해 CCO의 주식 2,619주를 원천징수했다."
-    },
-    {
-     "title": "A 588-share grant replaces cash pay for CareDx (CDNA) director Michael Goldberg.",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaG50d3dwZ2JxTEg5ZDFERFFSbTBsdGRTR0JzQlRDRUJSekpNX2NvdDNsdmRwaHIweTJaOG52cjhGcUwydTBGU0YxRjJTa21jMU1nbEsyeG0wQjRfWGlobHFlVTZwbE9DbV9VYmZfQzZ2bVJXUl9rcWdGMGFxRVRhOHdRZzdQbXMwSmxPNl8tV1NobU5aTUJLb01BMjh1Snp5X2Z3dVpLdGY?oc=5",
-     "source": "Stock Titan",
-     "published": "2026-10-06T06:35:51+09:00",
-     "dup_count": 1,
-     "summary": "CareDx 이사 Michael Goldberg는 현금 보수 대신 588주의 주식을 받았다."
-    },
-    {
-     "title": "Biotech Stocks At 52-Week Highs - CDNA, RCEL, AZTA, HNGE",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQN1pxUVNCWmhheXN3MnV6MjRnZldZUVk5eDJlTXVNNTRlZFd2aV9MZlFUbFl4a1NpcFVVVms4d3ZvNmVBQXJ5ODJTaUVrT3oxN0p6N0FhVDlzQkszYXg0TGExSHotNVpNdElKOExZbVFtQWxFa19BUHg1bEk3OEhGTlc3S2YtWXNzNkZRYnZSamh0aGxLQzhv?oc=5",
-     "source": "RTTNews",
-     "published": "2026-10-05T17:26:00+09:00",
-     "dup_count": 0,
-     "summary": "CDNA, RCEL, AZTA 등 바이오 주식이 52주 신고가를 기록했다."
+     "summary": "Freshworks CEO가 주식 보상 세금 납부를 위해 22,473주를 원천징수당했다."
     }
    ]
   },
   {
-   "code": "CRL",
-   "name": "Charles River Laboratories",
+   "code": "LILAK",
+   "name": "LIBERTY LATIN AMERICA CLASS C",
    "market": "us",
    "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Healthcare",
-   "score": 0.74,
-   "note": "G2",
+   "universe": "R2K",
+   "sector": "Communication Services",
+   "score": 0.608,
+   "note": "G1",
    "source": "신고가·물극필반",
    "items": [
     {
-     "title": "A Look at Charles River Laboratories International Inc (CRL) Aft",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOb0lGd1lGczVnTGVCZ2JqM0M1Ti1uY3E1UVVla1JOSWhMX2hrSEw4emZJVTI5LTZoc3l6WE0tWmZvcDV4Z0Fadm56aWFsVFlCbDRFSjIzVDRrTGxpUnU5M0FITXItZEplSmRNLThrci1qaEFoRTF0S3ZfczNzVEJQNVlLeHlXMlFYalFoQmlxX2k3Zk1YQWxtOXpJTERFN3VycERCeEZXMWl6dDIyek5NSmd4VmxwME05UDBIZWtxRW9COTBMdVN5MFZVYm1weXF1dVdjSEUwTlA?oc=5",
-     "source": "GuruFocus",
-     "published": "2026-10-06T07:35:20+09:00",
+     "title": "LILAK Q2 2026 Earnings: Wider-Than-Expected Loss per Share Draws Modest Positive Stock Reaction - EBITDA Analysis",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMEdLV1lTT0FPcVVxbUlrRk1pdEpXeVB1b2JJdk9HRFBWOExnakRqY01SS21nSG1vTU9hUTZDVnNMdHNpR2Z1TDdSd3pXdlRtMzBYZG5ib2hwVXBJaS1PMDM1QW1vYUpkR0VnRlM3REVoZFd2UXA1N3dTUlplMjFHdVEteGh1dWJDblJ0aDhKSTYyczFXQVZJdEFHRVN6UWhyazdoOXhPMnNrbkxoLWs0YXpXRmFZbHJGS0QwMFNkbV9IZTgtWDRLWWRnR3hHdDRN?oc=5",
+     "source": "https://www.siam.in/",
+     "published": "2026-10-05T22:30:21+09:00",
      "dup_count": 0,
-     "summary": ""
+     "summary": "LILAK의 2026 회계연도 2분기 주당순손실 확대에도 EBITDA 분석 호조로 주가는 소폭 상승했다."
     },
     {
-     "title": "Charles River Laboratories International Inc. stock outperforms competitors on strong trading day",
-     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQlgwV1NReDMxeDNZcTU5X005LUlNQnFUNHVEbld0d0pvc0RXUG5yNXpldjREbUhxblNCNmpMaXJ1cHpFOVpwYnNORVJfeFVYZW96M1lsbDR5S0E4d1VGX2xZMFRkdFNUUnBUNDNOOXZTOHpiY0h5eVNqcDZIZ2hianA1Wnk1ZlpQYmJNeTgydkh6aUdjNjFDYjR4dXZsUkVzdVh2ck5KYURsbVUxUk05cDQ2ejh6NVh3NGlfU0ZUTV84X2tFcGcwek5ZSWEyZW9JWlZ3bHFhT3pSZjlKN092VFRKdVdORUZnUGlGVw?oc=5",
-     "source": "MarketWatch",
-     "published": "2026-10-06T05:30:00+09:00",
+     "title": "LILAK Oct 2026 10.000 call (LILAK261016C00010000) Stock Historical Prices & Data",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0tQ21mcUZxN1ROeDhWQnNKSWFTdktrcnQyVENhOWRKUlV4YjFWblJTN0ZURVlqX1dMbTU3eEdBOFNUZDlfN09YbzVfS2lWVWxVM2d3Q3hZaXVUNmtaU2gwTHlJb01xc21TTzVpcXFYd3hYZw?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "published": "2026-10-05T21:34:14+09:00",
      "dup_count": 0,
-     "summary": ""
+     "summary": "야후 파이낸스 캐나다는 2026년 10월 만기인 LILAK 10.000 콜옵션의 역사적 주가 데이터를 제공한다."
+    }
+   ]
+  },
+  {
+   "code": "P",
+   "name": "Everpure",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Technology",
+   "score": 0.603,
+   "note": "G1",
+   "source": "신고가·물극필반",
+   "items": [
+    {
+     "title": "Moving Flash Into the Runtime: Everpure Repositions FlashBlade for Agentic Workloads",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVGZ3RFNLUzFRZTlPS1FTLU1Lc0xrWHg5VEZsSGpDTlR1QW5FOHJ6ZXBzMExHaTZTVzZidW9ZVW1tV1pMOUlzY2VucnZ4M1czN1ZheWowbzgyalJxSmNXX2t5NVo4VFM3R3NnSTBHS0FWdVV2U2NGSFh5WmUyczlXMjlaODdpcl80c0Q1NFprMlctdzZ1TDhhNWM3elRKaEx2YnRRQ0Rmay1BMnpmd0pCVk9NSll2eXBVVEE?oc=5",
+     "source": "The Futurum Group",
+     "published": "2026-10-06T23:40:05+09:00",
+     "dup_count": 0,
+     "summary": "Everpure가 FlashBlade를 에이전틱 워크로드용으로 재편했다."
     },
     {
-     "title": "Charles River Laboratories International Inc Stock (CRL) Closed Up by 7.09% on Oct 5: Key Drivers Unveiled",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMUppYVk3bmtpYmVTaVdsYVNzX1FnclNNZUJJX1NUWi1hVVA2ZmFlc055X1dLNEVhSGdVT2RHT3JKUlBzbmhKSXZBQkptVzZPOENsVEFYaGthaXBhSGplU2JTSDhnYXJQcjM0dHFraUljbDlkTG5BLUR3MmNkbG5mekZvMUtnSGk3WVE?oc=5",
-     "source": "TradingKey",
-     "published": "2026-10-06T05:15:38+09:00",
+     "title": "Everpure Impact Report 2026: Sustainability Strategy, Priorities, and Targets",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUTk3RTZiaWJiVDQ2R1NmUEE1LUQ1MDlfSWZxOUcxWjd6TGNzOEd6cmZJcnJPZndkM2VqaFlNekJwcEJmLTMwM3Uxa1ZhRm1Hd25DYUtseXlYZ1cxLTJIdEFaVngwbTF6YkwxMkEyMllMaFJQSkdjM1dkUnY5ZFZiRnRpRFVYTzhBamlwVUxVOWtSWEZjekpDa3FzelRiQTBRTmZZZ3A3aVdYMzI5OVE?oc=5",
+     "source": "CSRwire",
+     "published": "2026-10-06T23:00:53+09:00",
+     "dup_count": 0,
+     "summary": "Everpure가 2026 임팩트 보고서에서 지속가능성 전략을 발표했다."
+    },
+    {
+     "title": "Everpure's Data Primacy Gets Real: Data Intelligence, AI Cost Control, and Storage Efficiency",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMkVxRGxrbDN6eTVYVTh1VE9CZGdCZkhWWUVKeHZ2LVFMMGVMaDZ6V3NoOW5SbVhZUS1TQ09YeXJuMXI0dkhGWXVFdmdlZ0pheWlDQlhTQ2sxdjBjRWF4c1ZzR1BmTW9WclRUR19aMU83LVdlWlVWWFpJUTdUcXhOeWt5WWIxLTJkc0Q2cTBrRVRMMWl6dU5DSU9QbndsY3d6WjJ5TWU5VFRNMXMxTVZTbVVn?oc=5",
+     "source": "VMblog",
+     "published": "2026-10-06T21:04:35+09:00",
+     "dup_count": 0,
+     "summary": "Everpure가 데이터 인텔리전스와 AI 비용 절감 전략을 공개했다."
+    },
+    {
+     "title": "Everpure (NYSE:P) Hits New 52-Week High - Still a Buy?",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNN1lYS2g3dXFQY0lJX0h2WHktRHdQeW9PUU11R1dxcFNZN2NkQnZaLW54Z3Z6d0EzN28zUXU1RURHcDAxVEhXdG5iZ2RSVlcwNUNfMnR5RFNLZEdWeWNmT01fekZZMV80MWxEclY4eTBfNVQtbjZYVWoyRUQ4dWxxMUh5TG9ZbU5tOFcxWC00aDNsTHlSSm85b3V0NzhDZXJOTGNqY096ejc5WkJsRGc?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-06T18:11:20+09:00",
+     "dup_count": 0,
+     "summary": "Everpure 주가가 52주 최고가를 기록했다."
+    },
+    {
+     "title": "An 8-Day Winning Streak Has Everpure Stock Up 31%",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdjlwV2UwTDBjN182MjBndHNubi1EaDFCUWZEd2tScGRYY0hqMmtjTWQyX0ZCYVR5UDlUVVpqbzBOelVBWVNuY2Jsdzlfc25DYmdMbWNmLXhvNkFSSVRJcVZBeVpFUWlGV0JQak5SbGhIMng5T19sQ1FBRUdKTkdLSS1Ua3M0bTZsWWlZM2pxd0NUZTlqZHZwV0g5WmxWd1U5REttcEFTNFZJUQ?oc=5",
+     "source": "Trefis",
+     "published": "2026-10-06T15:23:13+09:00",
      "dup_count": 1,
-     "summary": "10월 5일 Charles River Laboratories 주가는 주요 동력에 힘입어 7.09% 상승 마감했다."
+     "summary": "Everpure 주가가 8일 연속 상승하며 31% 올랐다."
     },
     {
-     "title": "Charles River Laboratories International Jumps 5.6% in Broad Rally",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdUJEbHZXZkJkdjdhTmVBZFo1MGZBMUV3Z3VxX0ZrVXAtVjhRS2pOMVZoLXYwRDFBLWZ2dnlnUTFvT1MwWmZfZDI1SVllczF6T3FsNmx2RzJ3d1oyVFFhNHZSTU9WWkNBTzEwaE5xeC1NZzF0ZTdxdGw1N3VZSFJ3NHJRYmM2MTN5MmlaXzRZRVFvTFpabXZ0aHplUTVHdGVL0gGgAUFVX3lxTE51QkRsdldmQmR2N2FOZUFkWjUwZkExRXdndXFfRmtVcC1WOFFLak4xVmgtdjBEMUEtZnZ2eWdRMW9PUzBaZl9kMjVJWWVzMXpPcWw2bHZHMnd3WjJUUWE0dlJNT1ZaQ0FPMTBoTnF4LU1nMXRlN3F0bDU3dVlIUnc0clFiYzYxM3kyaVpfNFlFUW9MWlptdnRoemVRNUd0ZUs?oc=5",
-     "source": "AlphaStreet",
-     "published": "2026-10-06T03:27:45+09:00",
-     "dup_count": 0,
-     "summary": ""
-    },
-    {
-     "title": "Charles River Laboratories stock hits 52-week high at 303.33 USD",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcTJqVjQ0bl9paXJJZGdLM09BUmV4bjNmbzkydkpWd3ZRLWo1dlpmQnhNanlPdkxqbnkzdnFFRkc0X0lEb1ZLeGM5RmpPeW1zU19ZRkU0Z3d5OVdtR1pRQlFmT1NJWUpEOFNla2VDY2ZXakZaV0lROGJEQ0V6WUxlbEFaal9YaGdkRWNqVC1taGFER2sxZWlwT05kdWFpMVY4eHJKZ2ZVTzBQT2xuRGpkTnlQVm5PM2ZHZncw?oc=5",
-     "source": "Investing.com",
-     "published": "2026-10-06T01:29:59+09:00",
-     "dup_count": 0,
-     "summary": ""
-    },
-    {
-     "title": "Charles River Laboratories Inte (CRL) Stock Forecasts",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZ3V6UXRIUFYzenpSbzFYX1VqRWRWYlNRamJXTXlMWUcyTHRHZWlEZ2FZN3o4cEtnRU9qdUEwa0N5R3c3TktFb1V6VVBTX2R0N0NaQ3hmZnhqb1NWSXJmaWpDTGRvZE02Qk55OUtWU2ZGQkp1bmFlXzFXQTlpMExBNTRZbkFmVk4xQVE?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-05T18:28:46+09:00",
+     "title": "S&P 500 (^GSPC) Charts, Data & News",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE81dlEyYzk0cXJLODkyM3FNMlQwOWlLWmc3VHhUSUl5ZWNBdFg0Vm9LVnpMb0s0VjJtMTlFZXN2dXZ0eVRWLURta3VKZE55YjVMZmVQRmp3?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "published": "2026-10-06T06:55:42+09:00",
      "dup_count": 1,
+     "summary": "S&P 500 지수의 최신 차트와 시장 동향을 제공한다."
+    },
+    {
+     "title": "Insiders Are Selling These 3 Stocks, Should You?",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQWhSSTV2MTRCa3VSWW5zQ2hTcEZXSGNybXNjYm5ydmg1S0pTTFM2QUl5Q0l6aWVUMjNuRGY0a0pRakpFcUE4TV9HNkdzc2p2RnQ1dmF4TjBta2NkMDRKc2N0eVhScVlqczNpZ1VtX19zYWJTd3U5bmx4NklGRFhrdTZ0UU9SSE1kSC1B?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-06T01:48:39+09:00",
+     "dup_count": 0,
+     "summary": "내부자들의 주식 매도세 속 투자 판단을 다룬다."
+    },
+    {
+     "title": "Everpure on Track for Record High Close -- Data Talk",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOEMxUTZtNFBLazVSTmFjOS1DVFhnNUlrWGc2Z0N4dHRfZ3Z3U1ljTW14Q2xnX3huS2FDSTU4cVd6YXJDdFdaSG5YdG54dnF4c05VcXp1TXJZWmVOcVZmbUxWR2phNUV3Yy1tYmw5UTZndmtLdHg3YzZMaDh5a29TS0VoemphNmVKamV6Q0xpZWVHVktPQW1HVw?oc=5",
+     "source": "Moomoo",
+     "published": "2026-10-06T00:21:00+09:00",
+     "dup_count": 0,
+     "summary": "Everpure가 기록적인 최고 종가 경신을 앞두고 있다."
+    },
+    {
+     "title": "Yuanta/P-shares Taiwan Electronics Tech ETF (0053.TW) stock price, news, quote and history",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5RSnNwaWNsSHR4Qkl5d2laV1dtVjV2emYtbml0MWhYVUs0RE5TeXVGcnRJM3Nhelc2Wjl3aUtrajdMbG5fNHluNFhrLXRJblRtczNRZTh3?oc=5",
+     "source": "Yahoo Finance Singapore",
+     "published": "2026-10-05T20:34:25+09:00",
+     "dup_count": 0,
      "summary": ""
     },
     {
-     "title": "What You Can Learn From Charles River Holders Who Are Up 64%",
-     "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOTDVqVnM1LVNoZ3ZUaDhXMDFCdHp5MGYxellyeUwyV2Jld0ctVU1tdUJsUXZHR1lYNDRVaTcwTDFGbkl6aUE2b0UyeW5uMXZNV2xGcVdIRG9sdlFWUjUwbEhLSTgxMHhYTzRWdDBrQUFvdUtyWHZWVzlnc3dUeGlmZVd6Mmt3b3g4ZENwQkJuNjFXWmV6VnpZZUU0cWRxVER3Vjk1OWZJV3lsWEszNGM3cXp1Zm1ScjBOZ2VIWkZmQ1JDNnlSTGhUY3FHMzhMNlJqX3QxSEdsRjJyZXpaNjB6T2F0RGZzVUpEVWtXVTFQUHdFOU9xX2prVlZPQ0c0eTTSAYQCQVVfeXFMUDhZeC0yZlRBbDlUMHBMUkRuU3E4cEhHaWdBLVJQMDgtUGgzNDh0MkpJZDdTVGxNRmNSSDZ6Z3BmVHlkdEJqREhWbjNRU0VVLXhBNWhEV1RsdmY2dk5GeWxJN2MtbkgzWFJQRkk3QVNiZlNnMDNYQi0xSjZWbGZhaXRZY3BkRXJFbkE5MFhxM1IwemR5SG4zcXRLMFZtYndia2pKQTF5aVAxRmRocmR0aTI2UXNndWJQNHExZTFiT0ZfcGNsanJXakhLQkgxblpUNHJBMEpZbmVfQU5FdUNwRlN4VC1CZVlqczRoak9hQVVPdnI5X3lDSzEzakVIM2xzdGxzQnY?oc=5",
+     "title": "Everpure (P) Data Primacy Push Tests The Case For More Upside",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSUhaeWs4MWoxYUhxS2U2ajhBTGZjMGgtcmVPaUhuRzk2aGhvMmlEa0RSUEVtcjZCd3drcDF1SVRYdUxWTVVtdkNQRFVRQmRIblBlZnhXTXpJMjdhQ05ZU2hkN0pLY1lQOGhOcUhOR0NUdkMzUURqSUhVSnV6RmhWYWlEVjRhOTB1c0NRZmI5aEpWbnd2MXZRbmZqZTF3SEd0R2dJNnFHRGFaNFFBNGFndXBjTGNFTDE3SUFKa0JR0gG-AUFVX3lxTE1JSFp5azgxajFhSHFLZTZqOEFMZmMwaC1yZU9pSG5HOTZoaG8yaURrRFJQRW1yNkJ3d2twMXVJVFh1TFZNVW12Q1BEVVFCZEhuUGVmeFdNekkyN2FDTllTaGQ3SktjWVA4aE5xSE5HQ1R2QzNRRGpJSFVKdXpGaFZhaURWNGE5MHVzQ1FmYjloSlZud3YxdlFuZmplMXdIR3RHZ0k2cUdEYVo0UUE0YWd1cGNMY0VMMTdJQUprQlE?oc=5",
      "source": "Simply Wall Street",
-     "published": "2026-10-04T23:22:05+09:00",
+     "published": "2026-10-05T19:17:31+09:00",
      "dup_count": 0,
-     "summary": "64% 수익을 거둔 Charles River 주주들에게 배우는 투자 교훈."
+     "summary": "Everpure의 데이터 프라이머시 전략이 추가 상승세를 시험한다."
     },
     {
-     "title": "Q2 2026 Charles River Laboratories International Inc Earnings Call Transcript",
-     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0tUmFtUWxFQm85QloxdUJLOU93N3BtU1JYRmc2cUp0TEJPWWo2NTlrTmxCZ3lRQUJBRnFPX05mWEloOEtCV1c4N1dQajJfZlJxSmJnTEFwV0lhbVRRbmxwdTVsb1ZMRzRETnBB?oc=5",
-     "source": "GuruFocus",
-     "published": "2026-10-04T22:18:24+09:00",
-     "dup_count": 0,
-     "summary": "Charles River Laboratories International Inc의 2026년 2분기 실적 발표 대화록."
+     "title": "7 Green Days In A Row: Everpure Stock Is Up 28%",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdW0weEdhYl9fSzd0bHp1RU9FdkRMRXFUZ3NzUVBHME16VXc0bWY0akIyNDFaTkxucEhkTGRGUkpBNmt4QkluUE4wczlyNkVBd01Vd1RuVHl4QXdnbm1YX1ByOE1OQm1sNmFnV0dKcjU3WFA2cU9vcHV6TGJaZGptb3ZzQm1rZG1HdGIwOE5WOXc5bWtyeU1td2dfZUxVVjhiSlFXa3Vn?oc=5",
+     "source": "Trefis",
+     "published": "2026-10-05T16:37:39+09:00",
+     "dup_count": 1,
+     "summary": "Everpure 주가가 7일 연속 상승하며 28% 올랐다."
     }
    ]
   },
   {
-   "code": "ILMN",
-   "name": "Illumina, Inc.",
+   "code": "PANW",
+   "name": "Palo Alto Networks, Inc. Common Stock",
    "market": "us",
    "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Healthcare",
-   "score": 0.726,
-   "note": "G2",
+   "universe": "NDX",
+   "sector": "Technology",
+   "score": 0.593,
+   "note": "G1",
    "source": "신고가·물극필반",
    "items": [
     {
-     "title": "Illumina (ILMN) Shares Skyrocket, What You Need To Know",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbzZwVmFfdFU4TmpucWpQNTItODBGajhGYjBSUmFBVGxLcW9jeFVPSkdLdzQ0MlRzd3NsNXlDZnBfMHZFVWxBUUtJTlROTEpCYVFCY3VEeVhtUW9ybExCT3hqdDFFc2lsLTd0WHh6ejRCTnFvRmNLa29Kb3ZxWHNLQVF1c1g2ODNZSGVvMXlqYm1UM19oYlNfMjQwMm45U29tVm1rMEZLVkEyb1FlMHFCOVBFQnI?oc=5",
-     "source": "StockStory",
-     "published": "2026-10-06T06:27:04+09:00",
+     "title": "Palo Alto Networks (NASDAQ:PANW) Sets New 52-Week High - Here's What Happened",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQWmFlXzRjazVvOUdjX2habm8ybjJ0MFFtSmp2Smo3YVczWUQyRmFjU1ltOEgxWnJDdE1uMVpNa2NTeDVnZ05ac0gtZFpJU2VCZ1QweWYwVXV2cXppQk5DS2RhMmhLZnVhMXMtcWtDcEo3Q1NBSjh2QWgwR2ttajZYRmJqTzE3cmNNV2lma2pRb3g0X2FBa1dmdmpsQ2k3T3cxVDVnclZmV2E4aHE5MElfZldmclo1S054ajRnSl85Uk5KWExKem4tdG95SkU?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-06T23:03:26+09:00",
      "dup_count": 0,
-     "summary": "Illumina 주가가 급등하며 투자자들의 주목을 받고 있다."
+     "summary": "Palo Alto Networks(PANW) 주가가 새로운 52주 최고가를 기록했다."
     },
     {
-     "title": "Illumina Inc. stock outperforms competitors on strong trading day",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMWpPVmZaZ1BZZkFJc0RMeFpNOEpRekZPenpuZTRwLVQwQlNpWE5jVFRkVm9YUVZUWXVaMUlTTjMtX2hTVWgxT1l1aXc5UFdVRzBhQ3pya281cjFjWkNVQUFXTGpKT3E1aXFxOWxrc1NYQU1QWkRNWl9ta253Y2dFQ3VzZm9oQXJCN2lSdW5WR1JnX1owT1h3RklmczE0RVc0NUk5WXNwcS1yU0VpRENvQVNiQ29TY2dtSlVtTTZGd2dCZw?oc=5",
-     "source": "MarketWatch",
-     "published": "2026-10-06T05:30:00+09:00",
-     "dup_count": 0,
-     "summary": "Illumina 주식이 강세장에서 경쟁사들보다 우수한 성과를 냈다."
-    },
-    {
-     "title": "Illumina stock gains 7.95 percent as RBC raises target",
-     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNM3VXSnhpR1d4RVI4NGRYdWVxc2dzRVRrTWNKMXpaV3F4YkpiMUFUTkNaTkQ3cDZQUjBJVGtXX01YVjhHZVVKZXI3em9WMzdIY3Y0a3paQTgzQ3FYenFFdTBQbGRETERyNUNEOUlLbkZBYWo1S0xuclRIUzY4eG8zTEpRTXhWWlNFWllOcHphNGtYYkpZMDVJVVRYUFBGS1dlN0hlZFlneXdfa1oxM2liYy1TX1E2X1BS?oc=5",
-     "source": "AD HOC NEWS",
-     "published": "2026-10-06T04:34:24+09:00",
-     "dup_count": 0,
-     "summary": "RBC의 목표가 상향으로 Illumina 주가가 7.95% 상승했다."
-    },
-    {
-     "title": "Illumina Inc Stock (ILMN) Moved Up by 7.85% on Oct 5: Drivers Behind the Movement",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQk4ycnhDMS1IZ2k4T0JfaUJLOTdVWm1KR0d6cmpKQlJhREx3VkluZ2UySlJVZUZaTkM2Q095QkkzTURkNUNxR1FfZ2w3OFdsQVEtRzNsalp4NGNzYWp4dGNwWWxWMjRKblAxY2RsOGgxSGNPdE9NWnRUVDV5NlFqYURJbFQxS21lY19F?oc=5",
+     "title": "Palo Alto Networks Inc Stock (PANW) Opened Up by 4.89% on Oct 6: Facts Behind the Movement",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOX25MSFM0YlZZNkdqOVc3VFZkNmpSSlI1YXRuWUxjNVJpUnRDTks5MkhGSHJHblNRTS1PTWFBX2NFSDVRNG83WllUdkgwcmVpaWJhSnZJQ25OZmZIU2daTFNrMUwxcENqQ1R4dmxiODRNUW82VFdSTmRCeC1oU2NKbnZkNzlfZjBGbUVR?oc=5",
      "source": "TradingKey",
-     "published": "2026-10-06T04:15:42+09:00",
-     "dup_count": 1,
-     "summary": "10월 5일, 여러 요인으로 인해 Illumina 주가가 7.85% 상승했다."
-    },
-    {
-     "title": "Illumina stock hits 52-week high at 280.44 USD",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZnU5dXpUbGh2R3FQaHVUdlN5ZFFyU2V1Snc3UTczY01qNzV3SzZXWDFhR0hiUTVUNWZDY0VDczNwRVBEcVc5MmtlVDBTeEVlOWtaMlBVMmdPbDZmYUJFdFR3Sl80YjE1TWVkSk5meWVPM0RnaktGTE5qQlFPcm56MFdMMkdBWFBueW1oNXZQblVIMjd0Q3V4d0FBdTdCdWpsSFpr?oc=5",
-     "source": "Investing.com",
-     "published": "2026-10-06T01:01:28+09:00",
-     "dup_count": 1,
-     "summary": "Illumina 주가가 280.44 USD로 52주 최고가를 기록했다."
-    },
-    {
-     "title": "RBC Capital raises Illumina stock price target on clinical sales",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNWtESjVhN1llTFJUVmZfVnZHNXlEUUh2OUdKeUVGSXZXYkpiOXhHVXhrdy1wbFNaQWNKdS1CTEN2cjB3TkFSUEJYMnJxcHl6djlsSDFoVnlRNG8xVXpjZWFfZTFRMVZWdi1CSHhzbnBLWF9tQ0NJN2VOYTdROEhyb05jWHJlOW1NaFNTeGtTODJOOWF2WFBscVhFelhfR0hLRF9UOVJQSmRiRENSYnpTM1BwbDREaFdKVmxsWmk2blVkdw?oc=5",
-     "source": "Investing.com",
-     "published": "2026-10-05T23:24:35+09:00",
+     "published": "2026-10-06T22:47:25+09:00",
      "dup_count": 0,
-     "summary": "RBC Capital이 임상 매출을 이유로 Illumina 목표가를 상향했다."
+     "summary": "10월 6일 Palo Alto Networks(PANW) 주가는 4.89% 상승하며 장을 열었다."
     },
     {
-     "title": "ILMN Dec 2026 320.000 call (ILMN261218C00320000) Stock Price, News, Quote & History",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tY1lLTERrQTg5SzZaMnZwRzZPc0c3QmNGS3IxQ1VZVkZlUjZKTEtyajhRU3NMNUdwTXlPTU5xMVJ4UGhDR1FnS1FxaDdURUVpcFljWGtCZVdFZFdPbFJkeHhsVnlZUQ?oc=5",
-     "source": "Yahoo! Finance Canada",
-     "published": "2026-10-05T22:10:50+09:00",
+     "title": "Palo Alto Networks (NASDAQ:PANW) CAO Josh Paul Sells 400 Shares of Stock",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNOHlEYmJWZmNmdnlqamhXLWMtczVnQUhENFNsTHZmVUp3N0cxR3lmVTJlQ25DcVJEOFd6VV9Hdk14ekhDTlR1eHdRTnlMdkQtOTROUVdkLTRBN2REOF9FM2p0TTNTZVhMT2Vtazg3VDEwYjVhX1FMTmZTby1ZWk5SbVJlQmQwNHpMYTJnbnQzci12cG82WXY0dE1mTU1WaURaYW9pVDFBU19VMFJxZE9qT3BFLXlNVjRLZjVrQzZSMXFQTkhhUDY3OXhybkU?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-06T06:20:16+09:00",
      "dup_count": 0,
-     "summary": "ILMN 2026년 12월 320달러 콜옵션의 가격과 역사적 기록이다."
+     "summary": "Palo Alto Networks(PANW)의 CAO Josh Paul이 주식 400주를 매도했다."
     },
     {
-     "title": "RBC raises target for Illumina stock to USD 310",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQOUpmWkMzcWdHWU12NVNKbkFzRkQ4TzNIYWFBRnFHQm5VMzFBOVRkYmVKbU1nZ3N3UlQ0WHoybTJvZlBqSTc0ZmpFS21wczVNT1NWaDFLR1FlT25falktZE8wWkU1d3R0OVJpQm9nUmdsUl8weWZQQzZiVkJTYXZOWHJWRldEaW8tNDdqdXhXTXVQejlnSi1DZ2s0YW9XQS13TUhWQWRLbktNM3lfWEtr?oc=5",
-     "source": "AD HOC NEWS",
-     "published": "2026-10-05T22:08:36+09:00",
-     "dup_count": 0,
-     "summary": "RBC가 Illumina의 목표 주가를 310 USD로 상향 조정했다."
-    },
-    {
-     "title": "BE, P, ILMN Join S&P 500; LNG Misses Out — Bloom Energy Stock Gains While Cheniere Energy Slips",
-     "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQRGc2TVdoUmtLMndmdGpFeGtaVGtJcjdUMl9VSTU1YW05UWtHMnhka1dNUC1MazVfcUJKYVdWUVF0NFFHVGNVdm9sYnU2ZWlIV2J0eTZUSmtzTWpMa1pobWJpa1ItNFdRRExWSHJmOWlOUDI0WUh6RUVHVWdtcTk1N1lCOTI2UkJBOTM1UUxOUHl2ZzcxRzQyS2w3ZzNQd25uMlJ0ZGZTdlc0SXZXN205QTdXeG4xTlc1d3l0bGZvejIwYVJGdnhGUHZTS2trbXBwcXNGbFM0aHVya2E0T1ZwaE51NVRKNXdlT0hCZjFKWQ?oc=5",
-     "source": "Stocktwits",
-     "published": "2026-10-05T00:05:28+09:00",
-     "dup_count": 0,
-     "summary": "ILMN이 BE, P와 함께 S&P 500에 새롭게 편입되었다."
-    },
-    {
-     "title": "ILMN Oct 2026 165.000 put (ILMN261016P00165000) Stock Price, News, Quote & History",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1TeERoelAybDJGTGtTVlF2aHhhZVVfY3VnWjVPU2V0ZFhIN0pZb2FPWXNBbHNVNkF1MGZMNVg3ZFBfTHdfcWd2aFI3UHFIc25hUmNvblNUSlVLcGVNVWlnMlUyQjdodw?oc=5",
-     "source": "Yahoo! Finance Canada",
-     "published": "2026-10-04T16:11:27+09:00",
-     "dup_count": 1,
-     "summary": "ILMN 2026년 10월 165달러 풋옵션 관련 정보 및 시세이다."
-    }
-   ]
-  },
-  {
-   "code": "KKR",
-   "name": "KKR & Co. Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "SPX",
-   "sector": "Financial Services",
-   "score": 0.783,
-   "note": "F6",
-   "source": "딥밸류",
-   "items": [
-    {
-     "title": "KKR to buy fund administrator Gen II in $5.1 billion deal including debt",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWUNoNVl1RGFnRVM5U2FKNldwRU9fZnREcE9NRlV2b0hQalIxYUVZdTBNU0hrb2xlSjRiOENiMEtUak5VdWRGZUtxS3RRX1J1YjJxRl9POGR5M1FJWDRqdVhuZmFpYl8tVFRDWmZjT1BsREhOQ3kzUkVWM3RtUXN2RW5DWmtFWWc2N251eEtjS0RzZk91QklrMThzbkhKeFE1MDBBdEdlSktaMlRTLW5sNFpncllLbjNfNy1FdA?oc=5",
-     "source": "Reuters",
-     "published": "2026-10-06T09:13:00+09:00",
-     "dup_count": 0,
-     "summary": "KKR이 부채를 포함해 51억 달러 규모로 펀드 관리사 Gen II를 인수한다."
-    },
-    {
-     "title": "At $6.21 each, 9,672 CFO shares were withheld for taxes at KKR Real Estate Finance Trust (KREF).",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQOHhnMmgySkpwMEpackZZLXRITldfU0JqbzlKam1LU3lPTzM0SVVpcDJNTFdCNjdNcTlPdk1aZ2puYzdjVXBBSTRqWEFVdGJpZHBoVm1NUUxVQjVEQXJzWWdiaFptNEFLVkxSN2phbEhtc2g3dERBSDJ3NXkxSzJIbVNrX1BucDl3ZU00ZGd2YnVOc1RvTXdsZUFZWWtPV0xvZVUxV2dKc3A1M2NZOFBUQVFHcHhhd1NVdjRqRW90X0tsYi0zV1E?oc=5",
+     "title": "1,308 shares were withheld for taxes as Palo Alto Networks (PANW) officer sold 400 shares.",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORzlBRENvN2NYMElMX1A3WUNJNDhRdG5KVm1ERmZHZ3c5ZVJib3hQYjZQMU44bGhTQWF5ZHhvZ2kwMXBHeEdJV2lqbUNPemxxdkkwR3JqNEJMbkVoemlvVWJhV2ktZ3JoQkcyOUhUUWN5UU8yd2NIYS1YVEhXbnUxeU00eE94V3JRM0hYb2pnM0pGRFVtNkpOdHFwTlA0SzVnSTRwUGhJLWVHOFpVYkpxdU9QSXJPTnM?oc=5",
      "source": "Stock Titan",
-     "published": "2026-10-06T05:34:02+09:00",
-     "dup_count": 0,
-     "summary": "KREF에서 세금 납부를 위해 CFO 주식 9,672주가 원천징수되었다."
-    },
-    {
-     "title": "Here's How Much $100 Invested In KKR 15 Years Ago Would Be Worth Today",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOUF5WDJNM182dnVScTRCbGxFeHlBbkFBdi05WUdKeXh6ek04Ylo5eXVRbS1VOXZjN2VNaEJrWDhvY0g2aE9paG5TV1FXc0c1TzVFUi1YdnJENjAwNmZCX2lVamNTZThyajlvalNpVm5oLTRzSU16RjRxbWhkNUtQN2YwdkNXQ2RuZFdHUkF3QTVwakRtVmNLYkxVdGljdlAzV1BpdUpyQTlCWVZuR3QzUA?oc=5",
-     "source": "Benzinga",
-     "published": "2026-10-05T23:30:37+09:00",
+     "published": "2026-10-06T05:30:51+09:00",
      "dup_count": 1,
-     "summary": "15년 전 KKR에 투자한 100달러의 현재 가치를 분석했다."
+     "summary": "Palo Alto Networks(PANW) 임원의 주식 매도와 함께 세금으로 1,308주가 원천징수되었다."
     },
     {
-     "title": "KKR Jan 2029 60.000 call (KKR290119C00060000) Interactive Stock Chart",
-     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iNDI1cFBiYlVkUkw0RFgzbm9IN2t3ZFU0bDlraGdMc0daMnVNV0JLcFdSUDlMSTJjZzNXaWVoNkRnd0dSclRHYkxwb21fQS1EMzdQdE5qRWZKV2tNdm90QW1JSTcyZ2tnT216aQ?oc=5",
-     "source": "Yahoo! Finance Canada",
-     "published": "2026-10-05T21:34:13+09:00",
+     "title": "PANW, CRWD, ZS Lead Nasdaq-100 Gains As Nvidia's AI Agent Safety Push, Security Scares Lift Cybersecurity Stocks",
+     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOLXhwMzA4d1d4c3RJTXdVUGxYQjhQV2xHUXh2SklkSXpGdmwxYnA5dDE3MTA4Ymh1RVpnQnpqQXZ4Mmk2LUxYaVdmb3N2NDlObFpNQ1NvdFBGYm1Fa3h2cDJVTVNESUk3M2JFWWQwRjNMYk92SUZOWV8tRHhybUNBeV9PUnlSb21pcm5jYmMtYXZCaFZNNkhWYmRDRGdGUm14dHdZajJPY3hoTktvTVJNVDlnMDhlMXQwUTc1djR6OXhmVU5Gb0Y4YWRWU0lDRTFvV1l3TEptSWFYX1RfeHBxeVByTF9iV2Y4R2M1cWtOMzdFcmdmZzVvcEtRV2pFTm9zd2ww?oc=5",
+     "source": "Stocktwits",
+     "published": "2026-10-06T03:14:03+09:00",
      "dup_count": 0,
-     "summary": "KKR의 2029년 1월 만기 60.000 콜옵션 차트를 제공한다."
+     "summary": "PANW, CRWD, ZS는 엔비디아의 AI 안전성 강조와 보안 이슈로 상승세를 주도했다."
     },
     {
-     "title": "KKR stock gets a cautious Wells Fargo rating at USD 97.00",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRGF6Q2x1SW1lMm5nTHhTMXJ0UGhOUXhPajV3UXdGbVZTUUdoeW1WRmtqNFNFdDFBdGk2dW1XWGNtM1lxcVFVbEJCNERjdzdzZF9FX2RVVHF6UThCbWgweERyNkx5bmk3ZEQ2WVZ5UjZiampXZ3lBNHRud1ItWDg4ekc1SGpzZGMxdDZqSFdta1NPOGJLbkNDejJpWUQ0OHBSYlhaS3hQaG83RE5qTm9XNmRyMl9tZWQtMG5MWA?oc=5",
-     "source": "AD HOC NEWS",
-     "published": "2026-10-05T20:18:59+09:00",
+     "title": "Palo Alto Networks, Inc. $PANW Stake Trimmed by Park National Corp OH",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOY0RzV2w0RW5jOExiRE9FcXVfRnNLcGtwWTNCVkdUQXFha2NXLU9HX1Q0NkJ3UFFla2ZjZExoT1oxQUdaaEhVSjFCMnlZRkFjNy0tTGdyM2dhNERHU25hUlpyV3oyNEllcWlleUdwcVRFMndEYTVZTC1WUHp3OC0tMGFrdU1FWk5GYWl6cHYxLVFpdnVxQVJtVldaM2pxTDBYcnpfTHhKV1N6c3NlU2hWcFIwWjE1eWRQbVRMRGZISGRhX2pkbGc?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-06T02:48:31+09:00",
      "dup_count": 0,
-     "summary": "웰스파고는 KKR 주식에 대해 97.00달러로 신중한 등급을 부여했다."
+     "summary": "Park National Corp OH가 Palo Alto Networks(PANW) 지분을 축소했다."
     },
     {
-     "title": "Top 3 Financial Stocks That Could Blast Off This Month",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPLWVFSktzakhRYVRzZmRxQzR1OVRhTmdIZkJCeHRTLWM3UWZrU0JHOW1YUzBLUTlCNDNiZVlLWHhaeTJiWkUzcGl2UnJiMEV4VGo0Q3Fzel9YSEdSSVQwVTdUUWtJd3E1Y2lTbFh0RHJJd3hIR1l4c0pUTzRUNlJ2UGYtMDZQdUluLS16MjdNaHhndXo1RFVra3NDLVpVR05mdEl2THIxaDN1UFQwY3kyU3BBMThPeHlWTmY5aWl3?oc=5",
-     "source": "Benzinga",
-     "published": "2026-10-05T19:17:08+09:00",
-     "dup_count": 1,
-     "summary": "이번 달에 급등할 수 있는 상위 3개 금융주를 선정했다."
-    },
-    {
-     "title": "KKR Oct 2026 96.000 put (KKR261030P00096000) Stock Price, News, Quote & History",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5PRFN0OE0xeDh6UUppdU05SnNlYlpKUHVldk14RTd0OHdIOWk2b05paEZxWk5zOHR2UjRJdzhvS1VkaG9hLTNmejBwbktfXzg0NDVvQW1MeEh1YVlabENEY1p0Y2M?oc=5",
-     "source": "Yahoo! Finance Canada",
-     "published": "2026-10-05T09:40:59+09:00",
-     "dup_count": 3,
-     "summary": "KKR의 2026년 10월 만기 96.000 풋옵션 정보를 제공한다."
-    },
-    {
-     "title": "KKR Sep 2027 100.000 put (KKR270917P00100000) Stock Historical Prices & Data",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1vV3gyZUFFUWxiUWNrMEhkOTYzRk9JRFlYTkdZclpnVVJkU01SWnViX2UtSVMza0U3Z0RlVlp4S3RFN1I1S3B4d3BEdmZ3aDlUbW9rMEtuRUxubXBFVEYzYzA1TkxvWmpya19mMk5lRQ?oc=5",
-     "source": "Yahoo! Finance Canada",
-     "published": "2026-10-05T09:27:13+09:00",
-     "dup_count": 1,
-     "summary": "KKR의 2027년 9월 만기 100.000 풋옵션 가격 데이터를 제공한다."
-    },
-    {
-     "title": "Apollo vs. KKR: How Much Should Investors Pay to Rely Less on Insurance?",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQN3JLWF9Uc0N5N2hjNFlWQTRYV0l0S1poMjB1dVdUNDMwenlhYURjWnVOZ05EbXdUNnFnbGY4NEFCM3FGY251TW5pQzFZUlJWYktmeU5zV1pCUW5fdHQzcjJlSDN4NWlLNmgwbTBzekdkYm1MVnVITUk0RVlnVXpGbG1BOUtBOEphalhrU3pCNzRUNDNZUHBYQg?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-05T08:59:16+09:00",
+     "title": "13,886 Palo Alto Networks, Inc. $PANW Shares Sold by Ferguson Wellman Capital Management Inc.",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOcjRRTW5iYzFfakllMXV1T3o3S3pyV2gtR1VTVTcxdG5rWW1kLVNWR2R4c21vVktkazY4VVpBc1pyMFFwT2ZOOThUOFpqQTNXQUgyS2hKWHhGT1AxM0o1M25zdU5Iakp1NTNZQ1ZyS0lsQV9KUUE4YUk2NTlYREJLRmlCQnAyU0lyU2hyUnpVZV8wTmV5RnJXckNZVjZILUM1Sjl4RW16S0hnNDJMWkZMdVNJVXNfd0tBVDl2UXRmV2h3SzJ5aURRWnIzMnFCOXRZOW5CQ3R2Tk9HMnpVb3R6elRxbw?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-06T02:27:35+09:00",
      "dup_count": 0,
-     "summary": "아폴로와 KKR의 보험 의존도에 따른 투자 가치를 비교했다."
+     "summary": "Ferguson Wellman Capital Management가 PANW 주식 13,886주를 매각했다."
+    },
+    {
+     "title": "Eastern Bank Sells 9,788 Shares of Palo Alto Networks, Inc. $PANW",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdXhpa1lGVC1jNjY1OVcxY3AzY2hkem5sdUhCZTRfUHUxTVlCdWxETFQ3d3dBa2R6NlNSV2ZyaUV4S1EzQnZWMWx6V1Z4anAtU21pY3FtaVNoS2lucXY5ZWJTd1hyOU1wQlJyQ3puZDRVR2dZdWplTmxJMVRtc2hXTjdENktjR2t4MVdSdmFyTjh1Z2Z1V0p5QmEyVkhURHBpLTFDblpNOWw0dHFCMDdxU1NNTUptVTNuUFJMdkFqQQ?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-06T02:15:33+09:00",
+     "dup_count": 0,
+     "summary": "Eastern Bank가 Palo Alto Networks(PANW) 주식 9,788주를 매각했다."
+    },
+    {
+     "title": "5,091 Palo Alto Networks, Inc. $PANW Shares Sold by MassMutual Private Wealth & Trust FSB",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPV0lOSFJLTkx3S2w2Vjd1ekxuUW5hUUR0X3FoVVFSMUN5YnpTaG53bU1hNHhmSmRjZWFBQzU3cVRic1RvcFppX1d4OWtDRTRERFIxR1AwbnVBWEZVdW5rMlMySG5FdXhZWmpKcTdidzJYTFgxb2h5OG9zYkhteS0zdklrOC15dUs5cmdTampvczRJVmdLTWFnOVZmR3A3TVVTVkc2cXd1V3NLT1h6VVVUZXdvMTI4cUQ1Z1ZOelMyUHlaOGpNbjQ4c1J1VHlmZ3A3UkVnVjh2YnZFZDl3?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-05T20:07:03+09:00",
+     "dup_count": 0,
+     "summary": "MassMutual은 Palo Alto Networks(PANW) 주식 5,091주를 매각했다."
+    },
+    {
+     "title": "Palo Alto Networks Stock And The AI Governance Shift Investors Should Watch",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOa3NkUm1MeHRkbHlmZ05PVVBUTGRzTnoyS0JfRVV3b1ZVOHU4cnZXd1k5ZmtSeFduTnd0dy1LbmlNZjUyeDUweElaczdoLTJPUjhKWm04NnE3bVByY1hoRWdFSXkzRFNWT255VEdsZUVvcTR1V0duR3VkdDBDYVBnNkVzZGVCaVU4eXhEU1lZVkpEUFctdVFfWVZFbUNFWTY3dm95M0swQWl1aW1pbDdweExhT003dGxvM1F0OFJVZUtxZzVENUtuVkp4UGMzci0yMHR30gHYAUFVX3lxTE5Dd2JqNTE0S2FBbWxsbVdKZG1IcGlUVVpXY1Zid3NVenpoTDFWQ3BDV0Rydjhua3hRQmV1Q21zdjhaXzA4NWM0aTg3em9yT01pa09vU01OejlqMDQzYlhJNVp0dFY4WUg5bE5EeTZVTzJlem93cldlejlHc1cxakoyN3hSakRkQVhER19GMlVaWjdwbkRjenFBRVJORWhvNFlXSzhpWnlmNFY5Q251cnpuXzBIdlJTcWtPUzFCaVRKZ2ZqOUhIQnpSMWJpSU41TkpFeWJhcDRRdA?oc=5",
+     "source": "Simply Wall Street",
+     "published": "2026-10-05T14:03:02+09:00",
+     "dup_count": 0,
+     "summary": "투자자들은 Palo Alto Networks 주가와 AI 거버넌스 변화를 주목해야 한다."
     }
    ]
   },
@@ -539,25 +302,118 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.767,
+   "score": 0.787,
    "note": "F8",
    "source": "딥밸류",
    "items": [
     {
-     "title": "Aptiv stock after-hours at EUR 39.10: plus 0.77 percent versus the Lang & Schwarz prior close",
-     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNcjZNbjUzSllhZzhubkJzd05pSnBOcXJtRDR0OVVZVnI1aXR0SFVPdnlTRDlCMl9EX01CWXJOU2tjSDVmc0pCWFU3YUpUTVA5ZDVLNmZaUVRsbGNSX09WcGF6eHZGeWZ3dlBlbVVqelV0elB3QmdnZnl1NEk2Qjh6Q3ZVLTBfMGVXdWpyQlZXSHd4aXdISm5kdmQydjZTSlhYNlhQYW9sMmVkSEpCU1gzWm5IaXV5NjdtbHVIOEZsVmktV0RqUHVuV2RBYkljU0FzYXgweGU0YmNSaERoeW91aUxCRklxQlFz?oc=5",
-     "source": "AD HOC NEWS",
-     "published": "2026-10-06T05:57:21+09:00",
+     "title": "APTV Stock Wrapped 4 Months Of Losses: Goldman Sachs Sees Further Demand Risk For Aptiv Amid China Concerns",
+     "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNV3g3RDA3NEU1S1FBTWpfbndwcjBzVVlfcnBYRlZLYlhzT1BLVThLNEFRSmIwVjJYaGR3eDJnMmx2aFppakhWRXR1UHpQaEZIYnlsd2JoQzJHdndCR2xFejRkSnN1SHM1TGpacEdVVzhsM09MS2JHeTd6eUw5VXhLejZMdUJNSlE3eWVHRUNnclVIQy1aQ3AtQzZ6SGdxNXlUSlBlbUEwakZYOE9MU0pFUDlKTnlkSnRxQ0FPNS1VcmdHLWRxMVd6Y3gtUnl6X0lVN3A2WmZVSHRxVzFQZ3JLSlNpWEF4NzZoUHhzYjNyUUU2MTd5Uk8xVEk1a2JIZXM?oc=5",
+     "source": "Stocktwits",
+     "published": "2026-10-06T22:24:29+09:00",
      "dup_count": 0,
-     "summary": "앱티브 주가는 랑앤슈바르츠 전일 종가 대비 0.77% 오른 39.10유로를 기록했다."
+     "summary": "골드만삭스는 중국 우려로 압티브의 추가 수요 리스크를 경고했다."
     },
     {
-     "title": "J.P. Morgan keeps Hold rating for Aptiv stock at USD 56.00",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVURocEF5TkdWbW9FV3NWTG1xajJSZlhGMU9IWWF6ejRfWFJIcVpaN3JTNk56eWhQM0xNR05VMkczanFQc1NDc0VndXViSENkSG1BUXBSbFdGam5NaDgxSHBDTjFnZUNLOGZ3Wm5KODFYcTZ0QW9RMDhhWFRRZ0oySnVrS3AyUHdYZE1yOWJGSEZfSG1ySE5iOHUyRGNnRVJYU2VDdU9BVkhxaUo0VHlJZzdPT21xcUxXWFBTTA?oc=5",
-     "source": "AD HOC NEWS",
-     "published": "2026-10-05T21:50:13+09:00",
+     "title": "Wall Street Bulls Look Optimistic About APTIV PLC (APTV): Should You Buy?",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQU1ZaMW9MamhfNVl0aURPVDNnQTBkWkVDNllmVWVyLXlWZnpOX1pyZFdMN2RZSTZvSXNaU0txczcxWGNUN2lqQm5FanpCUDdwdHVPaUVLSXJxN3U4UWtTeWllcTlmZkJKQmE5OXZ2cXpobDg3Q0xfYjNNeHNscUlhV0RRQmFCUWJSRXd5czhpdWtXZThNUU5SMnR5LU9LS1k?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T21:30:04+09:00",
      "dup_count": 0,
-     "summary": "JP모건은 앱티브 주식에 대해 보유 의견을 유지하며 목표가는 56.00달러로 제시했다."
+     "summary": "월스트리트 강세론자들은 압티브(APTV) 주식에 대해 낙관적이다."
+    },
+    {
+     "title": "Goldman Sachs Adjusts Price Target on Aptiv to $61 From $71, Keeps Buy Rating",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQlc5UzBnWTlCZVVkbTRRZEtuNjJQRlJqNEFXVEdRTmZtYklIb1hSUTJjbExIUVBEUzdYb215NC0wZ3QtZElBWW0xRnhfUzJVOTNzc3ZoYWpRbldYNWJBM2NPMGtNemRJVFhNRGtVZDlWbUhPYXdxUHV0VExjaUlTeDdfNS00d28zZHIyU25pM1lVMTFIRW8yRjhrMnhIYTZUa3ZoaEItVWRncVk4cFNic29IYXhpY09RbWc0THVzTFp0WEFBc2c?oc=5",
+     "source": "marketscreener.com",
+     "published": "2026-10-06T20:23:29+09:00",
+     "dup_count": 0,
+     "summary": "골드만삭스는 압티브의 목표주가를 71달러에서 61달러로 낮췄다."
+    },
+    {
+     "title": "INSM, FSLR, APTV: Dreaded Death Cross Has Formed On These Stocks — What It Means For Investors",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPR1ZURlFWZTNjSlZJUHFwVWtmSnlxVmQ5NkJvSjY0bjk1OXVpWlVTaDZwSm5hVkRWbWFJdnhUVWQtY3NvWTAxZDFJeGxJMWpwX1BiTWY3MXRSblpTaHRGbThibmN4OGQ1R3E4OENLeVZBSjB6aEhnMkJQS1ZHaTZCVGVJQ01TVE5QVzVYaVc1azhJVWhKTG1fckFUdE5xR2FqbnMyVG05SUNnLU1tdkxpc1EwWGxnSm5FM1dKQldlYzd5UW1aWTMyOUhtRDlHWjBXRE9mR3dnV3IwTVRnaFE?oc=5",
+     "source": "Stocktwits",
+     "published": "2026-10-06T11:32:56+09:00",
+     "dup_count": 0,
+     "summary": "INSM, FSLR, APTV 주식에서 데스 크로스가 발생해 주의가 필요하다."
+    }
+   ]
+  },
+  {
+   "code": "PNR",
+   "name": "Pentair plc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "SPX",
+   "sector": "Industrials",
+   "score": 0.732,
+   "note": "F9",
+   "source": "딥밸류",
+   "items": [
+    {
+     "title": "Pentair completes USD 1.40 billion Taco deal and declares USD 0.27 per Pentair stock",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNY3pXcklHLTFPN3ZLRmhaQ0pZNVBIcG85WUpvTVhiUHVFWVFNV3l0R0UxRUdRT3RXdnlOcDRNTkdzVnE0eTlRc2ltWWJiM05CV3RLZUdqUE1yN2VzZk1fNzZsVTAtTXh2MDZycFBiQ2xyaDBoeDN4ZXlCN253RjN0X0tmTmZDdG9ZbGM3Z3FLV0tmc2J5Qkh0b2NBVEFrU0w3Z0Z6dGc0LTR1QWRhZmNMU2g0anNuWjIzR1I1NkxybU1ROFZGLXdheU5veUNuZ0lGTGltN2E0V1d5NUxydXBTbA?oc=5",
+     "source": "AD HOC NEWS",
+     "published": "2026-10-06T21:17:00+09:00",
+     "dup_count": 0,
+     "summary": "펜테아, 14억 달러 규모의 Taco 인수 완료 및 주당 0.27달러 배당 선언"
+    },
+    {
+     "title": "Pentair (NYSE:PNR) Rides Water Solutions Demand",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQa05menJaZDlTNU5WWDdLNV9nVEh0Ymx3VWJyaGdKZXAxVnpDR3FTcy1BMGRoRkNQRHA1b1JicC1hODlGNHFxYmVkSUJoaWw5MUREWFdMODNqOE8zbHppWEVDdFY4YUZFcTNpY0xlQU9pLWhpWjIxeWpqVlhtbi0yb0g5bkpiUlhMQXFKVTVYUHhRc21a?oc=5",
+     "source": "Kalkine Media",
+     "published": "2026-10-06T18:30:00+09:00",
+     "dup_count": 0,
+     "summary": "펜테아, 수처리 솔루션 수요 증가에 힘입어 성장세 기록"
+    },
+    {
+     "title": "Pentair stock pre-market at EUR 47.22: minus 0.32 percent",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcW1MTk9WbUxCU2J4ZG5QMlFiUDNQcFlpNnk1R0p0WUlJd29NQmc1ZXRKWW8yd1A5My1Kbm10d2dMcV8tUzFfaUpudUM0MjUyOXlRSmpKNW90WmVCVXJxR1hvYVBMTEZsSGNOX0pSdlNrUVQ3U09WUEVsazA2UFBmRDFKTVdpZ05TenpTX3FabU5VQ245UUtNdTFYZjV5TXI1LTJUbE96SkhraVpJYmZfekVfMmk?oc=5",
+     "source": "AD HOC NEWS",
+     "published": "2026-10-06T15:39:03+09:00",
+     "dup_count": 0,
+     "summary": "펜테아 주식, 장외 시장에서 0.32% 하락한 47.22유로 기록"
+    },
+    {
+     "title": "Pentair plc (PNT.SG) Stock Price, News, Quote & History",
+     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBiNUdadFRfWElpX2Y1THA1NnY2SWxMZTN3anRGY0JpMmpudTktenBWc2syVGd6aEZDY293OF8wT0R6WVRyd1F2VTlZMmhZVWRqcWJlbFFMOVF4b2hjcWdPNGp5Zw?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "published": "2026-10-06T14:14:48+09:00",
+     "dup_count": 0,
+     "summary": "펜테아 플로어(PNT.SG) 주가 변동 및 관련 뉴스 기록 조회"
+    },
+    {
+     "title": "Pentair stock completes USD 1.4 billion Taco acquisition",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZktKQzUwaHBkTmU0cDAwbzdRMUhkLU9lSWVzQlItbVhXaFE1QWdLTUtxeWwxZGF5Sl9iUWNSY1g2YkJXbEo4djBxWjltYkY5RjhPZ01fMGhvemw4bGVtekMzRzBncnRqVGF6N1phaHE5eS1Qd2MtZVV1a3dLQTRuZmZldUd6ZERldFg0THlxVzZFY01UeDczdFZxblhtc1RuTWpLTjEwSFJ5RzZZRHFOd1hGRVh2TXJoWmhv?oc=5",
+     "source": "AD HOC NEWS",
+     "published": "2026-10-06T06:43:21+09:00",
+     "dup_count": 0,
+     "summary": "펜테아, 14억 달러 규모의 Taco 인수 절차 최종 완료"
+    },
+    {
+     "title": "Pentair closes $1.4B acquisition of century-old Cranston manufacturer",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQk4yakFpbTBOS2xBM0pfelFmT05WQVRJWTBvSVF6RjBHTFlIZkhrTjdoMzBsMWI2bnVHSHhGM0xQcVhvcFVQMGRvTFBlU0Q3S1dMNU1LR2t4M1o4WldPOXE5UEt6RTFvVHhSUGV5clk4ZDNaZEE3bUdSYnpWX1ZhT3FlWTdWLWFSUll4Y3hB?oc=5",
+     "source": "The Business Journals",
+     "published": "2026-10-06T01:36:00+09:00",
+     "dup_count": 0,
+     "summary": "펜테아, 크랜스턴 소재 100년 전통 제조업체 Taco 14억 달러에 인수"
+    },
+    {
+     "title": "Pentair Expands Water Solutions Segment With Taco Acquisition",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOQW05MjlvdzBVaXEySG5MMi0wY3BGR2JzTGVNbG9nVjRzMkhlNDRPaVRZMGFJeXZBeUZwZFctejlhLWUyRndyTU43S2FjNDlXcDFWS3FwZWp1eThMcExnVjVkd1dVUk41dlhObEtOcGcyejZvSWJZRGJEaW8wLXZ1QW9rMnUzbTY5aXlpQUpqUTdZcVBzSHZ6cEtad1FjN2hTaVg3X1U5eTRqOTJoeWV0UE12S3hjejdXXzFEY1pFZUNkYm9HYkpGcVFISm9VVm5WRmZLOHZPcjNRZjluVlZ4Tg?oc=5",
+     "source": "The Globe and Mail",
+     "published": "2026-10-06T01:24:00+09:00",
+     "dup_count": 0,
+     "summary": "펜테아, Taco 인수 통해 수처리 솔루션 사업 부문 확장"
+    },
+    {
+     "title": "Pentair PLC R (PNT.MU) Q1 FY2026 earnings call transcript",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRWhGdTVmWkZMemRmTW5ab0FjRHpPRk1CRU5mWHZ4THU3R09YalctRFBndV8tbUZ6YjU0anZtd3ozX1p3emVzQkVfbVY3b2NHYWJoelczbEtobGNTR1NjTWxLbThacHNSd2daSmZCRE5ZWC1fb0M0OFNIUTBHbDZZWmctcWRBWGJpRXFzdWxxeDZIUQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-05T08:11:52+09:00",
+     "dup_count": 0,
+     "summary": "펜테아 PLC R의 2026 회계연도 1분기 실적 발표 컨퍼런스 콜 진행"
     }
    ]
   },
@@ -571,20 +427,53 @@
    "score": 0.725,
    "note": "F8",
    "source": "딥밸류",
-   "items": []
+   "items": [
+    {
+     "title": "Mortgage Rates Today, Tuesday, October 6: Back on the Rise",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQTBsVUNzLUdkelFJMVRZdzJDM2tULTZ5VjZGSWUySEJ1UXZ1TzM0cjIzUXBZUzIySEZLN09LMGQtMV92WG1DNWlqMnp1ODJUazZXNWpOUXdsbEVWRkhCd2kxelM5RXRqcWFWcEpWT0NkY1JfNk8yUzJSX1J5cjI2Tm9abU04T2pLaWVXUVR3?oc=5",
+     "source": "NerdWallet",
+     "published": "2026-10-06T21:47:12+09:00",
+     "dup_count": 0,
+     "summary": "10월 6일 기준 모기지 금리가 다시 상승세를 보이고 있다."
+    },
+    {
+     "title": "NRDS Mar 2027 17.500 call (NRDS270319C00017500) stock price, news, quote and history",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA3SXZMVzNUcU5TanVSZ3NXS0Y5c0VIbDI0b3RlYUh1Q1NDZGd2dXNEUC04aG9fbU0zRE45cTA3NkdLdW1VLV9YU2Uzekw1d0xTeWhZdjhib0lWYWxfQ1ZwempsSWNlZw?oc=5",
+     "source": "Yahoo Finance UK",
+     "published": "2026-10-06T03:02:54+09:00",
+     "dup_count": 0,
+     "summary": "NRDS 2027년 3월 17.500 콜옵션의 주가와 관련 소식이다."
+    },
+    {
+     "title": "Venmo Credit Card Revises Rewards: Up to 4% Back, With Strings Attached",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRnZCdm5ncGJUcXo3ZzF0em5JdGl0UFItZTRrZDhtWExyY0VRN3Vuc1FJRFd2ajhaWVhKUXhaMVRJNDZYUVI3RDU1SUVZb282bnNVU015SkxSNldwRUtXRDc0dzA2TnluUEhDXzBiWkY1SjlfbUNxRmIzbk5oemZVNDlqM1c?oc=5",
+     "source": "NerdWallet",
+     "published": "2026-10-06T02:49:38+09:00",
+     "dup_count": 0,
+     "summary": "Venmo 신용카드가 조건부로 최대 4% 적립 혜택을 개편했다."
+    },
+    {
+     "title": "NRDS270319C00017500 Interactive Stock Chart | NRDS Mar 2027 17.500 call Stock",
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5FclAtT3pJbmc4VTg0aU5nOWxqd1Z1amFXeXdKc1dzdXlHZzB4S0daaTNqaXF3QnNQUHBaRE9lLTNabHhZc1RmemZvRFE0d1picXdWY2hqRjZmVXdlc29WVA?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T02:06:03+09:00",
+     "dup_count": 0,
+     "summary": "NRDS Mar 2027 17.500 call의 인터랙티브 주가 차트다."
+    }
+   ]
   }
  ],
  "auto_sectors": [
   {
    "name": "Technology",
-   "count": 28,
+   "count": 30,
    "tickers": [
-    "AMPL",
-    "CRWD",
+    "FRSH",
+    "P",
     "PANW",
-    "NVDA",
-    "MLAB",
-    "P"
+    "CRWD",
+    "NTAP",
+    "ZETA"
    ],
    "strategies": [
     "딥밸류",
@@ -592,361 +481,270 @@
    ],
    "items": [
     {
-     "title": "Nasdaq Continues To Hit Record Highs As Tech Stocks Gain — Treasury Yields Stay Elevated",
-     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNOU1hd2dzdWNSUi1TMzYtejRSazJzb0lMUHNTd20wMGFJT05VUEhuLUFkS2haSGo0TTlhUXMxaGg3YVpwU0FHOGVoRkRaeDlZeFBDSzZodUIzd1lnZlVBYnJxbGlBVTZTYkVqMzY2bGRxNmNBcF9iTnRjdG5qS1ZhNEFDMk1rcmVoOVZ2SUp4azdoQlVucWZ3dkNzZVJVaEtjTVNmU25OV3duekNuRDZNQ2p5cUg5d1VkeWpWN1NuRVhvNXVpbUVabUJaQ2R1SlZUcXBuTEFzREoxLTB1TXViamFWTGw?oc=5",
-     "source": "Stocktwits",
-     "published": "2026-10-06T08:07:16+09:00",
-     "dup_count": 0,
-     "summary": "기술주 강세로 Nasdaq이 최고가 행진을 이어갔다."
-    },
-    {
-     "title": "3 California Tech Stocks With Real Exposure To Digital Growth",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVF9jQWJmOUxTWjlsbGw3VjNEdUx1cUd3R2NXRjVKajk5MG1jajZjYzU3c05Wdjc5MzlzNG5Ra1I5SXp6ZWVaaG4xZTlhOFA4d1hWUXFLNENSaE90SHZjUkt6bnV0QXlrREI1a081TTF4Q1JBTTFKazVWR3pTZjNMUWlCR3NYVjZMRUllaDFBUFRHRk1EdmlZSFVFV2VHZG84eXRoUGhyc1o5cDBORjFvNDJVblQ1c2otUXlZN0NWbkpfR0RyVFd2aXZn0gHPAUFVX3lxTE1RZFdyVnI2dWpQNXJKdFVqbldaLWJ1Yk0zMHRkaVFaZlVBUFZGNjAxUV9VUEdRbTJGZ3dkLVNUNlVlRVNobjdNTUFhRFpLa2ZsMlI4Z3lpaTN4ZVEzRkRibmYtVFdfd3plNXNwcm9FOUxsbWJtclB0U01vYjVqVkgzUUZIUkYtVERkWjZRaHNiUEVjalNYdFdUaVNhNWJUNjNNNEc3NmxreHptOG5PcmdoaXdQMWJhWkVEakUxOEhnd3hZSEdiN244V1cwQnAycw?oc=5",
-     "source": "Simply Wall Street",
-     "published": "2026-10-06T08:01:34+09:00",
-     "dup_count": 0,
-     "summary": "캘리포니아의 3개 기술주가 디지털 성장을 주도하고 있다."
-    },
-    {
-     "title": "Wall St Futures Dip as Tech Stocks Take a Breather",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUUNSck91QVhmaTlpeTRIXzVyVE9hOUc4Qy1iQUpZSUJLQm90SE1Gd2YzTzRvZ3NCM0ltU1pMVG9xclhIZjhiTExNeDZvbTl4M21WWi1PSGh2Q2Y5Tko4MDBJcU82NG1NOUJ6U283UWd5bjdhQkgwbVpFMVY2U050dGx6OFZzbjZuajdRT2ROU1BMdUF3ZWdYQm9YZlJZS0F4bFhJNmo3YjZJb1hsN0tF?oc=5",
-     "source": "US News Money",
-     "published": "2026-10-06T07:52:30+09:00",
-     "dup_count": 3,
-     "summary": "기술주 숨고르기로 Wall St 선물 지수가 하락했다."
-    },
-    {
-     "title": "S&P 500 rises, Nasdaq hits record high as tech stocks gain",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUVJKTmloTUp4Z243anZOSnFqemdHRV9velRGNWQwXzZmV1BFZXowNVdGd1dOY1dKTTd0UHlmd3pJRjFrZlNzd2o1ci1yQlNYY2RqYXVaLXB5MERLTl8zb0ZpTXhhRnVGMjROYVI1dTNKYWJtZDZjUS1nVEdlYk8yTQ?oc=5",
-     "source": "The Journal Record",
-     "published": "2026-10-06T07:24:41+09:00",
-     "dup_count": 0,
-     "summary": "기술주 상승에 힘입어 S&P 500과 Nasdaq이 올랐다."
-    },
-    {
-     "title": "12 Information Technology Stocks Moving In Monday's After-Market Session",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcTRTTkFESnNjcGNxSGR6cE1xaW84U09ZVnA5eG9fTC04QmdVWVUzdUUzemQwZ3Qxa1ZjOElOTGUtMXRDOUVaN1lXWU9pRUc1UU1PTWhNYUEtUGh0UER1ODBYa0pMMkplMDFqUDVLVU9ic1htdk90Xzh4SlFYOXNaMGdlVkhKU2xfRnFwYjNTZE5BR3UwUFh0enRyUDZHLWdUdlp0ZDFqQm1pcjJuWVhiVFRYYlJQSXo3UGM4WlM4NDZGSThzOURFTjZR?oc=5",
-     "source": "Benzinga",
-     "published": "2026-10-06T06:06:00+09:00",
-     "dup_count": 1,
-     "summary": "월요일 애프터마켓에서 12개 IT 주식이 움직였다."
-    },
-    {
-     "title": "Uber Technologies (UBER) Exceeds Market Returns: Some Facts to Consider",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORHlKdC1GazM4V2V2X1dPRFJFTkwyN0ZVZFJOVEI5MVZBdTJsLWpTWXJUVjRFQ0NDODhoQ3dRV0xFamVhTEFuaFlZTE80eGlMVGh0ZURSZHlSNkZNUW1VM2hUSlJibFVZLVpyNGQ3aFBVNGc5cVJYbmFzSnBFUy0tTnVweHdzNm1YR1dpamFuNW9VMFlMU0lDRmhYSDN5azlnU2dNVA?oc=5",
+     "title": "Boeing vs. Space Exploration Technologies: Which Industrials Stock Is a Better Buy in 2026?",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNkQ4cVBwRVRfcWRQcWd2ZE1jOFJEanhzUm5aclExOTA1MzM0VE9OU3hqTlRBdXBCak54N1ZXM0l4WXlFdzlCeVdMSFZGMFFxRXlxSThmd1hHTGhuUWFLdTZWU19pVkY5ZFZlZEk2U1B5SU5Gb0h5MEtCWWhPUDRnYjVJVHdIclJzWjFuX0Z6bDZ4dzJSM01ZU1BaUDU1M3d5a0ZKYzBRNjI?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-10-06T05:45:04+09:00",
+     "published": "2026-10-07T00:40:02+09:00",
      "dup_count": 0,
-     "summary": "Uber Technologies가 시장 수익률을 상회했다."
+     "summary": "Boeing과 Space Exploration Technologies의 2026년 주식 매수 비교."
     },
     {
-     "title": "Promising Technology Stocks To Follow Now - October 5th",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPb1l4d0lWVGRWTnVNSk1mLWVsN1JvZWRSekMxcHEtb0NJMFBNNGk3dnFJa3lDeGZ1ai1fcVo2Sy03RXFBb1BvZUhBNEtydVkxTzJyWE1SbGEzNldCYzEtbHNUZF9OZnViaXFUZ2ZBS2NPcUwyVzlGSGh2QV9tRTJ5N0RlenVPUkU4Xzgya25vV1ZXUkxhQ2FQNk01R2ZkbzJQTjB1SWd0MDN2Y1d6Zl9SWXFB?oc=5",
-     "source": "MarketBeat",
-     "published": "2026-10-06T05:10:11+09:00",
-     "dup_count": 0,
-     "summary": "10월 5일 주목해야 할 유망 기술주들이 소개됐다."
-    },
-    {
-     "title": "Top power technology stocks for selective trading, says Oppenheimer",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPS2oxOTVzRVVBbHNkZG1DRkFGS1RNdDdCeVJTVWJHMFk5OXlDWlUxWmxWZ0JLMF9pT3lXaFliS1pyZGtYbUdsY0NmQ2czY0tTX0dwWUsxV3NxbkZGa0FLMzR5M0tnXzc3WndIbU9XZ0k2Z085Mi16MElkZDdKdm1Bak1JMnRzODVEVjY5Q1NER2tIaGU3eTJUcjNQRmxvLXk1NHNnag?oc=5",
+     "title": "BWX Technologies stock jumps on New Brunswick reactor selection",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQXRVS2kxR01MaUxxcVZrN0VEY29IS0lCOVdCcWpNZWFPUnRfUDVTNDBJR1g5TkhMNjRaQW1QNFpKdWRQSUZubHpSUTUwUFdWZWk0TjJLZ1RKRWg2N1FDaFM1WFNBUGNXY08xX3cxNEdTcWxXeGFVUVpKWkNKb1RRWEp4ZlE5dHRPN2tQRU5zeGV0SUZDTl96NzhUUUdpVjViVHlGX1pB?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-10-06T05:03:40+09:00",
+     "published": "2026-10-07T00:34:48+09:00",
      "dup_count": 0,
-     "summary": "Oppenheimer가 우수 전력 기술주를 추천했다."
+     "summary": "BWX Technologies 주가가 뉴브런즈윅 원자로 선정으로 급등함."
     },
     {
-     "title": "+225% gains and counting: These AI-picked tech stocks are crushing the market",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdGtKay1IZXZKZ3FNUDlSOFdiR0hBQ0paYl9zZkZObVB6T18yd010ZDFzTkhuMlNSVG1xWVZlME90WGNHQmI0TFdIaU5UVzBCODlON2FTdmZBNjE2Y2R4QmEtRGNxWEFXM2lWazlESXFYcklJNHJURHpuRmhlOEhwMXF1UE9qSUdzeVdkTXk0NTl6REpYenFIWnVkYUMtOC1HQUVEOGxfZGhqRzRXZFlSSUdndXJsVEdRUlJjU085OW1wRlFZektzTWN3?oc=5",
-     "source": "Investing.com",
-     "published": "2026-10-06T05:02:57+09:00",
-     "dup_count": 0,
-     "summary": "AI가 고른 기술주들이 225% 넘는 수익률을 기록했다."
-    },
-    {
-     "title": "Sector Update: Tech Stocks Mixed Late Afternoon",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOU2NFS21Ec2dwckJfZExCVWlTazJ2MGE4ZENKa0xnS1lqTlNwclJiU1BMV2RRWWlPMHhoNUZUWWFJa0cwVTFIR0hlRldVNk5KODIwZWhXbjdEOFRCdHFTTkZnamRJM3hUM0c5a1o0TFQzcmhLdHFZamVISktKUkxNdjNxbUk1aTByMXFaal9ROHNMMG5aVnIxYU5fM3FYZ2Ew?oc=5",
+     "title": "3 Great AI Stocks To Own In October 2026",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZWxmcmJ3aUlGOVlpLW5JZWlIWVJ3a1lDeFIyWEp2RS10S1F6MUEyUFQzSUZEQ0JQanhDaWNBM2Rad1hWdExPNnNtRkcwbTdaUTBzRUgya0RGWVhZek9BX292OVJ1aHpZSEhpM3BPeTJzYWpYaXJBRDJQZllndVhxZURDd3FnLVhDbTlhYm9B?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-10-06T04:42:40+09:00",
-     "dup_count": 1,
-     "summary": "장 마감 무렵 기술주들은 혼조세를 보였다."
-    },
-    {
-     "title": "Healthcare Technology for Providers Stocks Q2 Recap: Benchmarking Omnicell (NASDAQ:OMCL)",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQzFKYThYV0NrT1IzeU5ydW9wYVhfTnhYV3l0SVRjSE81WFZYbWNiWm14M2xaX2dNV1F2bkMxQlhVMkp0V2M3ODhibWRzbXp1T3h5Z2JfTEVmTVBoaGRYQzIzNUdEVldFakc5bjdQczJSVkVJcktSQ196cGg5MC00OUJkbWFRNTZEMmZ5UGFsRmExYXRmLXFJRXloOUJFQ1VWajZ5Zw?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-06T02:47:00+09:00",
+     "published": "2026-10-07T00:08:37+09:00",
      "dup_count": 0,
-     "summary": "Omnicell을 포함한 헬스케어 기술주 2분기가 결산됐다."
-    },
-    {
-     "title": "6 Information Technology Stocks With Whale Alerts In Today’s Session",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQXJrcmJ6TkhFeHo2ZnEtMlF3Y0ZpZUZ2Mm4yZmdjazV6c2lKcEJBcVpGT0F1ZGlOdVhHNUZJTDBhd1RmcnhBN0RsZHhORWRRcnJNZ2RfTU9UOF90dkx5dkd6RVg0UnE1U1dWQ3NSY2ZBeE1MUnZjV0tJbTNpNDEtcjZibVNmZkpXQXVzbnVjQ1d4eEFiMmZtTWpmSWd6YURWLTJqV0pXUlVqdlRpalhzNWhXeGVGREE?oc=5",
-     "source": "Benzinga",
-     "published": "2026-10-06T02:35:17+09:00",
-     "dup_count": 0,
-     "summary": "오늘 세션에서 6개 IT 주식에 고래 경보가 포착됐다."
-    },
-    {
-     "title": "3 Large Cap Tech Stocks Resetting After The Weak US Jobs Report",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQNjF4QmI5Ni04SWVTV3BOTWs2UWxIc1Yzb0F5anVfM3lyamxkd1dtQ0RNWDM4ZDEwOEhUYS1BQWFQbjJfZDlIeHEtaVM5MDNKcWpOZ0JDQkRlX3hyTURMcWZFQ3ZXLTJXN0NNQUR4Zno2Nmc1TnZxY2JMTC1HQ2diWGx0V3FrcDZyTVZ4elFPZDByRks5TG1ZWThJelFVUkpaTDVzRURrSHRTclhFMWNlVzBuNEpNVWpyLVhycWJTTTc4SlRz0gHKAUFVX3lxTE1oV0ZKOXhLWmJfXzQtbFl1TmFuU0JLNXNYekV3N1NlcUp3OTdCeDNzRGo1SHlPcTE3TVppVHM2UER4aHdXbEsxcVNwTk1icXE4V0FCR3A5SFhfVC1CZGlsQTlXTXAyVnNvVVBHbExzRVU4U2JRRnpaOEQ3MEJrQ1F3ekVFNHAtTTBsMTBxQUFUaUpJbUhaVG4tOGk3N09MYkJWMXNsYlFVdl92NUJRTTd6V001MDRSdTFaNVdESm14REMteGJJVDdrRkE?oc=5",
-     "source": "Simply Wall Street",
-     "published": "2026-10-06T02:34:35+09:00",
-     "dup_count": 0,
-     "summary": "미국 고용보고서 부진 후 대형 기술주들이 조정을 받았다."
-    },
-    {
-     "title": "Technology Shares Lift Nasdaq as Broader Market Slips",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSTc0MzlHUy00NXRueDJOVmZhbnVRX0lOd09GRklPRUVoVGJ1R0xQb09ydll3a0lBVVZzbUk2SEhYZXhLdDhwcnVhdWRQdjJDNFZqVmotNWFjTFNLVkZsZVZISGs1TndyamVsaHJ5LVFMcTg4VS1HUks2N2tDQmxDWFc1MGFuTkJXSVhNODlTNTNKak5lQ2ExV2JBSF9kUQ?oc=5",
-     "source": "WSJ",
-     "published": "2026-10-06T02:03:04+09:00",
-     "dup_count": 0,
-     "summary": "기술주가 Nasdaq을 끌어올린 반면 전반적 시장은 약세였다."
-    },
-    {
-     "title": "BigBear.ai vs. SoundHound AI: Which Tech Stock Is a Better Buy in 2026?",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPOUVMVjU0cElEcXdtc0d2c2FQUVozeUMzemRMeXhqS2xVU0pSS3JiOElfTWFqc1pvTXpyX3AxdDFkYTFKTzRxNjRYajZTQkcyR2h1RGNjVmpYRFJSQ2l6REVHbFp0NEgyQTlTV1I5MXRaMDkzb2dycXZmTDF3aTBSb18wWWZEUXFYWHJXM3pOTVBVMU55a3o3dUZpc1paV3k5WUVzaXJ3YUdDZzFTV25pUEE3aExQeEhMMlc0X3Jn?oc=5",
-     "source": "The Motley Fool",
-     "published": "2026-10-05T23:59:00+09:00",
-     "dup_count": 0,
-     "summary": "2026년 매수 유망주로 BigBear.ai와 SoundHound AI가 비교됐다."
-    },
-    {
-     "title": "Quantum Technology Market Report 2026: Global Size, Share, Trends, and Forecast to 2030 | Capture $5.41B as Microsoft, IBM, AWS, Huawei, and Intel Scale Quantum Security",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTkJ1UjVaMXAzek9nZ1FwaXMtZXdYSnhwT3F4RmxsdlpENXowQ2pER3E5RFVCTURMVWRFOXUxSW1xRXNRQU1pR21BY09JaGprelJpTlRwVk5XN0l0OW5EZllNY2lfMFdvR3lUSE1zZkJLQzdic2J3bTBoS1pNMUVtM0dtZ0JtOXhLNWFuSl9zMA?oc=5",
-     "source": "Yahoo Finance UK",
-     "published": "2026-10-05T22:32:00+09:00",
-     "dup_count": 0,
-     "summary": "2030년까지 54억 1천만 달러 규모의 양자 기술 시장 보고서가 나왔다."
-    },
-    {
-     "title": "Exchange-Traded Funds, Equity Futures Down Pre-Bell Monday as Tech Stocks Normalize",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcHRuRXg4VlFVWHZUUjRWYjJaQ2hRV3Z2aGRZZ0dMeF96U1NVM2M3NVRqWHNtdTE1SmUzYWN2NDQxdC1KZXhZVEpPMFhpYUlBSWdzcmFpUnhVak05S0dtdU1TUFZTcW1EQWxaNlhrcDdsRnB6REJRZjlfd2FOekhEWjQzaGRjNzdZN0szTXJFUkplZVlfUDhqRDgxSzB6XzNydFdB?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-05T22:18:05+09:00",
-     "dup_count": 0,
-     "summary": "월요일 개장 전 기술주 조정으로 선물 지수가 하락했다."
+     "summary": "2026년 10월에 보유할 만한 3개의 우수 AI 주식."
     },
     {
      "title": "US stocks rise to the edge of an all-time high",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5NcEhXbWV1dmtxYVViOExYeUlPSklDMWhqRU9qOTBJY1dsa1ZzRUlmZm45RVhoY29KRFdkZ2txRnRGd1ZYeUVmcUJJcmplVDkySmQ4QUpxemNGbUhuNElnaS00S2R1c05UbkJHRGxXRW4?oc=5",
-     "source": "The Mercury News",
-     "published": "2026-10-05T22:03:59+09:00",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOYjZEOUxHUExnOUVXOFZaSHJBc3d4RnYtY1pkU1NfS082LVV6cUVER3RPQ3R3QXpYU05VVDdFaU41UVVWdm5PZGxoWTNKb0VsYlVQUmY2Q281cXZGU1lUYlBsU1RZc3gyNlB5OVlISElZbjZCWktQczBhNGY3dWduR09uOVZqM2M?oc=5",
+     "source": "WHEC.com",
+     "published": "2026-10-07T00:01:10+09:00",
      "dup_count": 0,
-     "summary": "미국 주식시장이 사상 최고치에 근접하며 상승했다."
+     "summary": "미국 증시가 사상 최고치에 육박하며 상승세를 보임."
     },
     {
-     "title": "Are Computer and Technology Stocks Lagging Advanced Energy Industries (AEIS) This Year?",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMWlFYkdxVlVUUHU3VEFkc2pIc2JxVWVNbEFHWFhoVGpDNDhEak9jY1E0U1g4MDFLUmRidDdUdWFQSVpkWTQtOEpIUDcyZHFTdXFFRG9XU0tZZnlOYnJtbHpaQnpwM09RdkdZNjM3V3hPUzIteEpmN1Fwbi00TzVCX2JVMlkwYUNrZDZJS0trYzM1amhyMkQtUURfdllzQWU3RWhVcnE1empMSzRD?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-05T22:00:05+09:00",
+     "title": "U.S. Stock Market Movements | Memory Chip Stocks Decline Broadly; Seagate Technology (STX.US) Falls Over 7%",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSmp4eXpJMEM1UXFLa3VLQnFna3dwTC1ZMW0zRDJVTGl1SktsZi1BbUxNRklGalpKUXFob2dYN2MxLVRTWGF2dkp2MEV5UmtMdXV1UWcyYWlHR0FCcmdOTDlfWGUzcmh6QzdWa3lORHozWnNXQU5rSmtobmFFWUZvYTFsczJib3FDR0s3OERPbjJ6ZU93UXROTUxEQ1JXQWhwVTdRdFpRTGh6dTh6VFNlVVFB?oc=5",
+     "source": "Moomoo",
+     "published": "2026-10-06T23:53:02+09:00",
      "dup_count": 0,
-     "summary": "Advanced Energy Industries가 기술주 대비 성과를 냈다."
+     "summary": "메모리 반도체주 약세로 Seagate Technology 주가 7% 하락."
     },
     {
-     "title": "3 US Growth Tech Stocks Retail Investors Are Watching After Cooling Inflation",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQmxud1NMSnR3VDE5N1FXQXBzb1o2cVBBdjNPenFvTXBUaUZjRVBpSWNEWXpMMS1VRTRteVBtV3pRVWRobVBzek9vUG1EUlNCVUFOZWxPUTdHUWZvb3RsRVVJcHZ4ZEl3Um5pbWlyODlkZlh6ZUFyck1CWmlzejlwbF9mdVpBUm1PR3cwUkxmbHJiUQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-05T20:07:17+09:00",
+     "title": "S&P 500 Hits Record After Four-Day Climb Led by Tech Stocks",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYkVQNzdBMzRnSHBYVlBuMlRiUkVoT3VwcVhqcUtmaGJNemhuazg4V1RPY1cycmNNRUg0N3NfTTRmdWI0blNRUExLa1duS2dpQk1SOUNhaWxRQUZWUHBVcW9TX01qZExNSTgyM3dTNGxBbFBxS2lVYlVZNkZyelNFM0JBUm10SFM5ZkVGdkdDZGdBSHlQTVJEU0k2SlFTeFE?oc=5",
+     "source": "Northeast Times",
+     "published": "2026-10-06T23:33:06+09:00",
      "dup_count": 0,
-     "summary": "인플레이션 안정 후 소매투자자들이 3개 미국 성장 기술주를 주시한다."
+     "summary": "기술주 주도로 4일간 상승한 S&P 500 지수가 사상 최고치 경신."
+    },
+    {
+     "title": "Marvell Technology stock rallies following ambitious investor day targets",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSnp4UUVUSjdPLTF1anNVQVdtN3NYWDR6RklramNjZl8xdE1tVFRxekhLZk9mUmUtdE5xd19JTjQ1a0V4R3kyNUJfTms4SEt0eG45RlY5QVJfOUd3NEhoWUhJcDNrX25mQjdWT2plUHJ3dXJCeW10MzFQZ2YxUzFLZlRkYXQybWE2ZUxDMlZjaEZZLWlTLWc?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "published": "2026-10-06T23:25:13+09:00",
+     "dup_count": 0,
+     "summary": "Marvell Technology, 적극적인 투자자의 날 목표 발표 후 주가 상승."
+    },
+    {
+     "title": "S&P 500 hits record high as Nvidia nears $6 trillion milestone",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOc3hzcS00a3M2eTZZRUtOU0tMU2ZpNFN1ejYzRkt6X3NSVC1UN3I5RkJmRkduOFN0Uno3cXZjTEJITG1GeVB2eDMwMTYxMUV3Q0k2NlZlVE9ON3gyQTM2aHNqUDJPRFRnMkp2NmZiRVZlYnVxQV9yOGhIQVZYNjVVTHR4NA?oc=5",
+     "source": "NBC News",
+     "published": "2026-10-06T23:22:02+09:00",
+     "dup_count": 0,
+     "summary": "Nvidia가 6조 달러에 육박하며 S&P 500 지수가 사상 최고치 경신."
+    },
+    {
+     "title": "Shopify vs. Uber Technologies: Which Technology Stock Is a Better Buy in 2026?",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVXBxeEJaQWJGRXNyZ25ieGlra1J2bDhBZ201akxQeVhkY2hLS3ZhbEY3MU0zRGloWnZFUjg3X0FRb1Y2MzBrTGlqd2NsdmdlbnNKMHhQQWRrNUs3cEo2UzVvcmo5bHl4aWZ1dGZCbVFOZGMxRVo1TjhEbmFEd29oc0FxOVdTSEQ3MEJRNzlJODY3UkVjT3hXZmZEZDVrSVJrbi1GcTUxalVncUhRWjQ3Qm15VWxQTkp5eTA5cmMyQm05TWVZbHRF?oc=5",
+     "source": "The Motley Fool",
+     "published": "2026-10-06T22:53:53+09:00",
+     "dup_count": 0,
+     "summary": "Shopify와 Uber Technologies의 2026년 주식 투자 가치 비교."
+    },
+    {
+     "title": "3 Stocks to Buy From the Prospering Semiconductor Industry",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdWwtQ2VGUTZEVzVQUEY5M21tcXlqRy1QM0lkeXh3dFdDWGNiY1c2UVQzM2VQYXFUckM1LUVoWUtWOWYtWS1mZy1JVDR1TG1seGRlZWlSdlgwaWZNVDZ1UWZEM3RPVmR2c2dHV3pKWGlwdlJHVExYVkgzSVdyTEE0WVJTOWs3N054QVExWEJsVnJ4LTg1NHphSUlWUXVyV2IxTzViZw?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T22:50:00+09:00",
+     "dup_count": 0,
+     "summary": "번창하는 반도체 산업에서 매수할 추천 주식 3선."
+    },
+    {
+     "title": "Seagate, Western Digital stocks slip as Toshiba's AI storage push rattles sector",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWHIycWk2N0w4NE5xcmtIZTV6RkxmVkIyWjlTajNnRzJ4OGJqc3V4MFRRZE9qeGQwLVQxVnZhZVFwS1p2MTBnVTlzRGU4aF9KQjJEOGJuM1BMWklHVmV0YVZjZ3ZxbGVhUXpQbTQ1TWRGclFjR2NaX2l6amxydXdPLVdlN0NUSWhoQVZfQzd4TzhlVndlY2pGck1aam1XR2FyTm0yanZkSzhIVlo1X1VNLTFMd2FPbXR4bnIzTzBpb1BZS3NkZDlJYW5fOVdEMXFI?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T22:35:25+09:00",
+     "dup_count": 0,
+     "summary": "도시바의 AI 스토리지 진출로 Seagate와 Western Digital 주가 하락."
+    },
+    {
+     "title": "ASE Technology Rises 27% in a Month: Should You Buy the Stock?",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZGNCUW9SWm9fNGNVNXdxLUIxMHRFSGJ0cEtXZ0RFejRERVlOMWFwbWx4OC11VDVMc2JrRDI1OXBGUEtUc0lnOEUwV1QtNHVLbVprbUZJeDZ2YzRKdkVyMklSWVlySDdSN1NJcml2bHZfVGJuQUg5Z0pmYkc1cTN3WWVlQlM?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "published": "2026-10-06T22:15:00+09:00",
+     "dup_count": 0,
+     "summary": "ASE Technology 주가가 한 달간 27% 상승함."
+    },
+    {
+     "title": "Is Cognex (CGNX) Outperforming Other Computer and Technology Stocks This Year?",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdTRqWVpFSWRiZ3BwNUFTXy03WG1iYWs4RlJ1dzVQWlRBcUxZVEN0c1BwZDZVTkFZRC15OE9SUE5HeHpIX3AtUlFkTVR0dFpwcHhtbkhpTHFEdzJuOC1VcWhSRGE4dmkxTkxBRWkzTUwxZnNqQVRaZ3VfV0k0bDJvWmhRdnFPMW1xWkthejMxVHA5TDA?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "published": "2026-10-06T21:40:04+09:00",
+     "dup_count": 0,
+     "summary": "Cognex(CGNX)가 올해 다른 컴퓨터 및 기술주보다 성과가 좋은지 분석."
+    },
+    {
+     "title": "12 Information Technology Stocks Moving In Tuesday's Pre-Market Session",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNc0lfdWV0WDcwUFNWUlp0aVZGOTNKajE1T2hvTjFoUUl5Q3BMcUpHM0dYd3hSaE9DYmVUaE1VT0xXTVRfN0JrcUFfWmdPbjdXbFZDT0FWcTRCNkRQV0k1QWd3ZjNvUTZiSFBzbUVPc2J1emdpdW5hU2NhOGVLdEh6TVIteWRjM1pwcENYdlhJbUYtUi0tSzg4dUJOWWh1UEhiSzk0THhPLWlnejFHbHRPSkdSM2s3UHp6RUVrbmVycDhuY283MXVlLQ?oc=5",
+     "source": "Benzinga",
+     "published": "2026-10-06T21:05:49+09:00",
+     "dup_count": 0,
+     "summary": "화요일 프리마켓 세션에서 변동성을 보인 12개 정보기술 주식."
+    },
+    {
+     "title": "Micron Stock Is Waiting On One Answer",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaURNTFNsVlo3dHBQN3djUUVvdWFlandURkRzcTUteVZ4Unhjd0tBQTQxcFZQejV1Yl9EZjZLOXdMTW5DVjRTaXZvYi1rLU0wSXdqWGJNM3I4YW1ybFNEdG0xa2c4NmJ4U1pzZWI1NUtmTXZMRDEwOC1rWGhubDBuWjkxWk51T1BhQ1c0WkJBenlnbG41bFRTZHFFbmo?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T21:03:01+09:00",
+     "dup_count": 0,
+     "summary": "마이크론 주가가 하나의 확실한 답변을 기다리고 있음."
+    },
+    {
+     "title": "These information technology stocks earn A+ growth grades heading into Q4",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQY2Z4b3MzTDA1ZmNLMW5meG1Ja19FaDVWbFlPckp4ZzZWLTBHa2c4em1PTzVuNU8tRDk2cHVNY0N1czlDZnBJcTJkbDJoTDEyQUEtQjNyLXRVd0NPUVNVMU9MdzJqNF9DbHNPNHdmSGhHa0E0VjQ5Nm9keGxyYzdXTDJPZGhqSXVaZEljNFY3VDZVelZOc1g1bkUwUTRBdlY1cndVbTZTSEZvUEt1RVlEWEhWTElHeG14bVNsaGRSWnRsREQwQzNqTXI2Z2hrV0c3?oc=5",
+     "source": "TradingView",
+     "published": "2026-10-06T21:01:37+09:00",
+     "dup_count": 1,
+     "summary": "4분기를 앞두고 A+ 성장 등급을 획득한 정보기술 주식들."
+    },
+    {
+     "title": "Nvidia vs. Broadcom: Which AI Chip Stock Is the Better Buy Now?",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVnZfb0RWUEs4aUNKZ2VHNVZGWWdxb2V6NU4wclNhX2ZnRl9KZ0FfSkdDQ094bTBkOXhtYkFydndUdE11Z2hrNWhpaDQyUnBnS1YzZFk1c19DNElkNk51NS1iZjJCakhPMzFLZVFQQ19YN1V6Mk1abUtlTmxkcnNtc0FZN1NSVEFqdnkzMThPSUVWQVk3?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T19:01:28+09:00",
+     "dup_count": 0,
+     "summary": "Nvidia와 Broadcom 중 지금 더 매수하기 좋은 AI 반도체 주는?"
+    },
+    {
+     "title": "Hong Kong’s Hermitage Capital stays devoted to top-tier tech stocks",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVlFOdFUyRmFObDRHZlVFS3ZMS3RiQkFNUldUUHdXWEZrT29kSnVrQWJCMXlUUzVKSHIwaDhPZDF5V3Y2T1lBR05nVTZxSjNDdWpHaU41ZjZ4OWRaQ3IxX2lCa2wxVHNyTlZOZl9NZ1lHa2Y4UUFObDNsRmFSNWNHMmFrLS1lN0t1WTIwRXZsekFDWDRqY3FKZURZUVVHUDgtSUQ5T2xKQ1AyM09BRlRNblJTbWlCQm0xX3fSAboBQVVfeXFMTktPNzl1TkhXNkJwTmNIQnhtQ0lQeDhYVy1oUUlndVR5V0NwdFg2eXhvQ3JXRVBjS0pkSmJfQ0lJQmZvNG1UVzNvUnFPMVpzQ0Z3S1QwSXBsLWdUekFGUENlNVlrUk1mUXNtb3NnT2RDRGFrOV9SdTNRSlo5eEJqenE2Y0NNdXBwN2I1M0RRTmk3OHc3UkdDXzZ6OTZVQlN4U3ZxeGNpalVkNnl0MG9RQjNZMXFrLWxDVlpR?oc=5",
+     "source": "South China Morning Post",
+     "published": "2026-10-06T15:00:07+09:00",
+     "dup_count": 0,
+     "summary": "홍콩의 Hermitage Capital이 우량 기술주에 대한 투자를 유지함."
+    },
+    {
+     "title": "DXC Technology (DXC) Surges 5.1%: Is This an Indication of Further Gains?",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNElhNUxabVFVU2V5VmRsLWdRS2VrYXhkdC14RTU1bnotQlViaV9TM0hiRWg2enRmWlgxNkFBT1dGUEh2SnlYd1Y2aXZPTVh4Qnl4X0p6cmRKYTZTd01LejJTVmdlQUtYN1Vkal9Rd1RpRFFhMFhJMTgxYnRjVkNCZnBESGp2bWRuZDVGNVJpOVAyV2RoZWtj?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T13:45:00+09:00",
+     "dup_count": 0,
+     "summary": "DXC Technology(DXC) 주가가 5.1% 급등함."
+    },
+    {
+     "title": "Asian stocks mixed despite tech-led Wall St record",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNRDFvUlVKYk9XblY2UmF3eGtERTdmYXN1ZFJlMGN0eWpPRDh3bjNnSHA0R2ZwekpKQUlWZ0l5Y3dZcVd1OUJnRHZlUmJUaV9Ebjd0QWY5d0x4cXZNRjNEdDNlVnFUd0xwbVE2TTRoXzU3UjhXSURDY0JxTHdxeWF4ME52Y0FfZ0U?oc=5",
+     "source": "Yahoo Finance UK",
+     "published": "2026-10-06T11:39:00+09:00",
+     "dup_count": 0,
+     "summary": "월스트리트의 기술주 기록에도 불구하고 아시아 증시는 혼조세를 보임."
     }
    ]
   },
   {
    "name": "Unknown",
-   "count": 22,
+   "count": 19,
    "tickers": [
     "FISV",
     "BL",
-    "WLDN",
     "CARS",
     "ARDT",
-    "CALX"
+    "CALX",
+    "CLB"
    ],
    "strategies": [
     "딥밸류"
    ],
-   "items": [
-    {
-     "title": "Korea's Pet Food Market Hits 2.5 Trillion Won, but Import Share Unknown",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVVVMdS1qOXNMTkl3b2FrNkdvZ3ZDWjZ4SEl2cU5GcGdMYzZ0VXp5Ulp4Z0dTOVZtTEh6anFYeFh6T1pSM1VhbE1ncXd5WUc3b3hKMklGVlU2RUFfUnN0UGp2QUpjTG9Sbk1zcjBqc18tQk5mRjlKallCMGp4SzFDbE5LanVOZG5WRnJEdXJxQzlrTmpYY3FmVUpBSU42Zw?oc=5",
-     "source": "Seoul Economic Daily",
-     "published": "2026-10-04T18:32:25+09:00",
-     "dup_count": 0,
-     "summary": "국내 펫푸드 시장이 2조 5천억 원 규모로 성장했으나 수입산 비중은 미지수다."
-    }
-   ]
-  },
-  {
-   "name": "Healthcare",
-   "count": 20,
-   "tickers": [
-    "MRNA",
-    "CDNA",
-    "CRL",
-    "ILMN",
-    "TXG",
-    "SDGR"
-   ],
-   "strategies": [
-    "딥밸류",
-    "신고가·물극필반"
-   ],
-   "items": [
-    {
-     "title": "Sector Update: Healthcare Stocks Rise Monday Afternoon",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeTg2UDdmUlFSMkd3YWdYeU41Sjg0TXU0YWlxSXBheFNRWFhYZ3VaYUhKLTJJemxYWS02NnU0TFZGTUxINjduYkdVZVluRXZlQzVmWTdGZ0xnNUFoZm1mQ3FWQklxN0ZiVlBKb3R5TnVQZXlUNXhtYWVkZDVOVjROdmM4Ym1tVUgwTGpIUExTZHJNQUdGVFlIZ0VDa0lEZw?oc=5",
-     "source": "Moomoo",
-     "published": "2026-10-06T07:17:18+09:00",
-     "dup_count": 0,
-     "summary": "헬스케어 주는 월요일 오후 상승세를 기록했다."
-    },
-    {
-     "title": "12 Health Care Stocks Moving In Monday's After-Market Session",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTFBvMXFQTWcyd0UxVEUxcnhoS1BLenZ6Qnp3ZlpMNXJhYUNDeDBGemtUZGcxY0ZTbjFXYlVQOVpBeG1lU2l3dnRWNWZmSzRFTF85X015cUk2bjRDcjRfczhRT3RqUmZmSXc0Q3BuMWdWMVFMYXJiQXRjQ3kwOE5EQ0w1Vy1TQ0tKQzhOcW5wYnhDbEU5RW5pdjl0WmUtRDc5YkRuZF9tYk44bVVJVUhGeVB6ZzdHRTVxSVQw?oc=5",
-     "source": "Benzinga",
-     "published": "2026-10-06T06:06:01+09:00",
-     "dup_count": 2,
-     "summary": "12개 헬스케어 종목이 월요일 시간외 거래에서 움직였다."
-    },
-    {
-     "title": "Option Care Health surges 22% on report of $5 billion takeover by McKesson, CD&R",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObFJXT1BZWEFjN25aMndTXzM5eHl1VHY4aERtcDMzTFVSRGFzRVRsZndKVEpEZV9wZjdvek8zNFgyUHNVeHZ4NHZDWW5vTDcxWk5NdGp0RU52TGgwRkNBUlR2Mlg2TnZ4eS0ya0RkQkVYbE9LU3F4MjRCdzhzMVJQUmNEZHZCcFBrUGN6bzFzVUhDaEk?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-06T05:44:47+09:00",
-     "dup_count": 0,
-     "summary": "옵션 케어 헬스는 멕케슨 등의 인수 보도로 22% 급등했다."
-    },
-    {
-     "title": "McKesson, CD&R near $5 billion-plus deal to buy Option Care, FT reports",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQa1FrMVprc3hOcndnMTdmYW9wclM5UWtIZ21QUnVvZXpjMW1oSW5rX25PdXZQQ1lkMk9QM0VESnl3MlJGMnBsQk1JLXJjLWpsTS1qMDMzanlLYWVlcmRPdHdhcDhTZDVOMWZMT0ZUOEJLWUI2bllNSndkUGhIakxyX1F0VF9fOWV3?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-06T05:17:44+09:00",
-     "dup_count": 0,
-     "summary": "멕케슨과 CD&R은 옵션 케어 인수를 위해 5억 달러 이상 규모의 계약을 추진 중이다."
-    },
-    {
-     "title": "Sector Update: Healthcare Stocks Advance Late Afternoon",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdEFEZmFXUEQyMzNpaUhLUmdoQm9LUFNRX1NwX3Ffb1Q1dUk3WnlEbVZYLXBYZXA0NjBGTGQwOWFabGRiandZREdDYmtlU2pxQ0ZBamY2RVFwbFRfRmZCdE43bVZXaUx6eVZGQnVlWXp6ZkYtbHN5RmNtZTNWU3FCSlB1eHlsVWZYaVJEdUV4UnF6SURqblFsNWt0akxoMjViYXQ1eEd3?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-06T04:50:20+09:00",
-     "dup_count": 0,
-     "summary": "헬스케어 주는 늦은 오후에도 상승세를 이어갔다."
-    },
-    {
-     "title": "Healthcare Stocks To Add to Your Watchlist - October 5th",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWUVGWGI3UjJ6Sk5fbklOTVYyQUoydEw1TlJUUkFZOVBLUklWS0FOcnRKRDZTT0VWR3BRRmxhcldLMTJodmpXanIzRGpqQ2hkeDhNUzFwMXlNRjFtNUFTZElKNHVIY2ZkTkFXTE5aVzR6NThKdFFvQWN1dkJjbkNHV090aUNHM0lBc19qX2xSOWZxYWFRbXB1eE91S2dCREwzZ1VGUE9pb0tGREF3eWVmV2RhNA?oc=5",
-     "source": "MarketBeat",
-     "published": "2026-10-06T03:21:08+09:00",
-     "dup_count": 1,
-     "summary": "10월 5일 주목할 만한 헬스케어 주식이 공개됐다."
-    },
-    {
-     "title": "Healthcare Technology for Providers Stocks Q2 Recap: Benchmarking Omnicell (NASDAQ:OMCL)",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQzFKYThYV0NrT1IzeU5ydW9wYVhfTnhYV3l0SVRjSE81WFZYbWNiWm14M2xaX2dNV1F2bkMxQlhVMkp0V2M3ODhibWRzbXp1T3h5Z2JfTEVmTVBoaGRYQzIzNUdEVldFakc5bjdQczJSVkVJcktSQ196cGg5MC00OUJkbWFRNTZEMmZ5UGFsRmExYXRmLXFJRXloOUJFQ1VWajZ5Zw?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-06T02:47:00+09:00",
-     "dup_count": 0,
-     "summary": "옴니셀을 중심으로 의료 제공자용 헬스케어 기술주 2분기 실적이 발표됐다."
-    },
-    {
-     "title": "These healthcare stocks stand out with A+ growth grades (XLV:NYSEARCA)",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTUN4UzVyNTFfY3BGLXRXMFAtMnZRakJuMUg2VXhob3JrcnF4UjZsR01IQVcyU1BHY2xpYTBSU2xyYnZkYXF1czZWUG1iaXlYN3psU2dDRjg1cmRpR0NIVzZQcVVjRkdHdzBpcnNtanlTZ2Jib0czVjhGelBBeVh1Z0NDaUdJMHpRa1BhS3VVU0JzVm45c3dz?oc=5",
-     "source": "Seeking Alpha",
-     "published": "2026-10-06T00:59:56+09:00",
-     "dup_count": 0,
-     "summary": "XLV 등 일부 헬스케어 주식이 A+ 성장 등급으로 주목받고 있다."
-    },
-    {
-     "title": "Looking for a Dividend Stock That Can Weather a Downturn? Start With Johnson & Johnson.",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0NFbUJRb1hHVy1PRHhDZVA5SnZPSUgyUXRSWmduQTktbjE5TWtOOW9DaG5HU0FyN1lSME9lckxYWG81dnpLUFcxQVBFZ1lIODM1b091aExLMXRfUXU2ZzNaRkZkdGFpUF9BR2RYWFBCenAzU2dpR3g1RTBDa3N6cXdwQXVKNlpYcXNKZkxfQmFJMkVxaktBdg?oc=5",
-     "source": "The Motley Fool",
-     "published": "2026-10-05T22:51:00+09:00",
-     "dup_count": 0,
-     "summary": "존슨앤드존슨은 경기 침체에 대비할 배당주로 꼽힌다."
-    },
-    {
-     "title": "Eli Lilly vs. Pfizer: Which Healthcare Stock Is a Better Buy in 2026?",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVTFFb1R4Qzl3bHBvUXN4MzExUXA0VXQtSHNock40dThPVkFPeHNXM1U1VlF6RG5WWXp1MkVmSzVSNDVNakdPaDM1dFVXZkdYODdxZ1puaHl5YUhhZnk2TmpHSm5EYlVGTTlkMG52QlBoSm1ibTdtWmpKd211ME5pU1NKRG1pV09ZbW5wWXh3TV9vU2I0b2g5TE5FaEZ2dzc4WTZER1dBZHI2Ym9sczZBTldIdEJXaXRibm1V?oc=5",
-     "source": "The Motley Fool",
-     "published": "2026-10-05T22:44:00+09:00",
-     "dup_count": 1,
-     "summary": "일라이 릴리와 화이자의 2026년 투자 매력도가 비교됐다."
-    },
-    {
-     "title": "Top 3 Health Care Stocks That May Collapse In Q4",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORmYzclMwRWpMcHFaWlVHTnF4WDdNamVjRjI2WE5DYWlDMVl2VkM1MWJ0SC1RUl9qUnlfbk44d1pQbzRjTGNnNEJuMHgzbEVHbzk5X3lHVG1kRkNZR2VySmczd0pYU0w2eFFEOFdFcWdwbGs0bW52OFhPMnlGeUVIRkphOXhncDd2ZFBMN2hYdzlqdTdUWkJPSWZ6VmJVX1RwQXdPOXkybzk0aVFMcXY0T3dhN1g?oc=5",
-     "source": "Benzinga",
-     "published": "2026-10-05T22:01:07+09:00",
-     "dup_count": 0,
-     "summary": "4분기에 하락할 수 있는 상위 3개 헬스케어 주식이 언급됐다."
-    },
-    {
-     "title": "Is Acadia Healthcare (ACHC) Outperforming Other Medical Stocks This Year?",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObTB6UXl3ckstLW4wcmdwSWhsRWdBZ1E3RDJITUdHUVdLQnNPV3V2OFhaOXBoMjV6M3U3VFR2Ym15bTJBMml3amk0VHNPbmhQZGoyNm9pSzJQX09TVFdERHI0VlMtWkt0eE5pRFlkSUFydWhZb2VYLXRTX3ZkSHpkM3hKR0dzMDc2R2xEQWk0YXNYcmdWei13TFJveC1XdDd1a0dVa25xekIxc28?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-05T22:00:03+09:00",
-     "dup_count": 0,
-     "summary": "아카디아 헬스케어가 올해 의료 주식들보다 성과가 좋은지 주목된다."
-    },
-    {
-     "title": "The Zacks Analyst Blog Highlights Abbott, Corcept, Precigen and Bausch Health Companies",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVGFjNXh1cGJlTDNGcmhPbXRsVVV6VzFtS2gyQlFGSHVLUHdfNlU5MlQ2aUNlcGhidjhmdkY4TDBZUENHRmZNSkNtdTVOSHZlalFYaHptcG5IbUtjUnBFcHJMbFcwQ2NQMnlBTThZNkFpeWJ0elRfY2JzNlBFOTVJU2QwdUxjNUYxaGlVRkY2U2l6N2pDWmcwYmVHMEY5QQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-05T21:29:00+09:00",
-     "dup_count": 0,
-     "summary": "애보트, 코셉트, 프리시젠, 바슈 헬스가 자크스 분석가 블로그에 조명됐다."
-    },
-    {
-     "title": "1 Unpopular Stock That Deserves a Second Chance and 2 We Question",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaTVkT2VvSVVuc1FCYWxhUjA0cjZVcUI3UVM3dkFLUGxIS1gyZndtNE94QTBLd0RBSVlNa0JBS0Q5UUYwODlwakxabFBKeFYzOWxscGoxT2dKUXl4RFBmOEk2VXJ1dGZuNkNZZkJ4aHMyR0hKR2w4UVVTS1ZZVXNTdWNXNkNIckIxcGZlVnhXWHgteURSTXVJcUVtbHRMaVlKbmZzRzZjZHlQQkpXbnRPMEp2aUlmNkRFbVVQWFdyXzdDUQ?oc=5",
-     "source": "StockStory",
-     "published": "2026-10-05T19:21:10+09:00",
-     "dup_count": 0,
-     "summary": "재평가가 필요한 비인기 주식 1개와 의문이 드는 주식 2개가 선정됐다."
-    },
-    {
-     "title": "Trump Tariff Boast Puts Spotlight on U.S. Drug Manufacturing and Healthcare Stocks",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUTh2WW1Xcl8wYlQ3eF9rVzFKT2ZObVV0d2pIWHBra2djUlEwQ0xJcU1rYzBZdXktbXBicG9VbGp0dHBGT1k3ZmtOUWk2UUdiY3JzX0hDN0lMcmQtazdpSGxCbWlOWmx4eUZ6UmtpRFpvV2JMNGtqdWRrVHhwSi11SUNUV2JXYXdJd1FuNXdBNF94bFRsU2NfYmxJWXVuTW51aUJsLWdkRUNLX2NfaFFmdjdocjZFMG54OEVWcA?oc=5",
-     "source": "TipRanks",
-     "published": "2026-10-05T03:21:07+09:00",
-     "dup_count": 0,
-     "summary": "트럼프의 관세 언급으로 미국 의약품 제조 및 헬스케어 주식이 주목받았다."
-    }
-   ]
+   "items": []
   },
   {
    "name": "Industrials",
-   "count": 19,
+   "count": 14,
    "tickers": [
-    "CYRX",
-    "ASC",
-    "EXPD",
     "NDSN",
+    "ATKR",
+    "XMTR",
     "MTW",
-    "ATKR"
+    "GIC",
+    "JCI"
    ],
    "strategies": [
     "딥밸류",
     "신고가·물극필반"
    ],
    "items": [
+    {
+     "title": "Boeing vs. Space Exploration Technologies: Which Industrials Stock Is a Better Buy in 2026?",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNa25vcUpXem5yT2xFeHdhZkdvbGRzYmtUa2o2OWtYdThUdXFGeFF4RTBkZS1ha1hwTkdzSFh4RU8zRWNoWEdJb1ZTZi1ZTVByYnVQNUJnVG5rMU1tRUMzUGZCMko2TVNLWDJKMEEyeUMyZ3daZ1pNQzlINllJRzJyYmY2M1J6SXFRSkFrdmNZWkxPOVF6dzJNamlaZG1VcUg4U09ITWI4eEVqc3BXZ3h2czUtOGlCYlh0bmcyR256UUdnUkFzal8yTDlqOU9vbDA0Y044TFpFaVM?oc=5",
+     "source": "The Motley Fool",
+     "published": "2026-10-07T00:26:15+09:00",
+     "dup_count": 0,
+     "summary": "Boeing과 SpaceX의 2026년 주식 매수 우위 비교 분석 (모틀리 풀)"
+    },
+    {
+     "title": "Top 3 Industrials Stocks You May Want To Dump In October",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUlJsaUY2bFdxUkg5NGJ5VXllRHJNaHR1ekg1OUYxSENFQ1N0QmpvTmJXeHBMLUt3UGxaSXdfVUlBZ1BsbkUzbkVndGM3dEs5RDU5R01YdkctbHFFb2xFVEhWVWU1ZzhJNXpVWmdFTjh0ejVLZWY1WVhwVGVrcGlGUWcxdFlTYnFMcGRLR3JKMXpTektjTFVNLWJ6OUNjaE5HYzN5Nll3Mk9CVzFfaEl4bVpKb09pVXNQWW5OVk5GNA?oc=5",
+     "source": "Benzinga",
+     "published": "2026-10-06T21:50:21+09:00",
+     "dup_count": 0,
+     "summary": "벤징가, 10월에 매각을 고려해야 할 주요 산업재 주식 3선 선정"
+    },
+    {
+     "title": "12 Industrials Stocks Moving In Tuesday's Pre-Market Session",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNS3M2ZFI1cV9hVFlrSGstbWQ2OGtHUm1PZnpCSVhmalFnNm16SzF2Wmk5Qi1pQ0Fvb3JCU1FROHVoVzJsbnlUOE5Ed0pWVHVkNVBkdER2UUZvVm1ZTGNORVE3dllMaF81bTZNejhpQ2lFTTFRV3A0aE41eWpDS1hrVHRfOElzNFJUY3dxaUhLTmhoWm9RN3N6NkNpS0p5bFNLbWRNMWk0WnRRckM4d0Uwck5MeEdDMjY1ZHc?oc=5",
+     "source": "Benzinga",
+     "published": "2026-10-06T21:05:50+09:00",
+     "dup_count": 2,
+     "summary": "화요일 프리마켓에서 변동성을 보인 12개 산업재 주식 동향"
+    },
+    {
+     "title": "3 Industrials Stocks Walking a Fine Line",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcThGVkJJNWJEeHZUOFVabGVBeHZISEFfTmpTZkpKYTBiM1hkQTFUMVQtSkhoNXlpLUdIdnltd0xHc1BDUEQ2X0RPbllpRjJBSWQyOGF4Z3czb0hXOXhfbHFSMDhwNEtFMEJEcEs4R1FrUWFkYU1JUlkwSnRZQWhDbl9FX3lOM3BsNEFxMEhSZk00Y3A2RXl1Y2JjLW94cjg?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T20:20:34+09:00",
+     "dup_count": 0,
+     "summary": "야후 파이낸스, 현재 리스크와 기로에 선 3개의 산업재 주식 조명"
+    },
+    {
+     "title": "Morgan Stanley's latest industrial stock picks ranked by Quant ratings (XLI:NYSEARCA)",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVGRSTG5vRlVCZVYxTzJuTnQzNTVxdnM0X2NpeW5rYjBtRTZJcHhvakVOeE1mQi1RUVhoNzVXdTJNZnVKOHEzdVBlLUtXdGNIT1R0SDBXWkl5ZkhKc1d4LVl2dGpxZ2Q4NTdnanNiVHJyaWVXaE1DV3dNSGp3cExrRVNTWFM1MlVLbU9SMzdKSERVelNYY0EtTWo1bi1wanNfZ3UweTFtMXV1V00?oc=5",
+     "source": "Seeking Alpha",
+     "published": "2026-10-06T19:38:03+09:00",
+     "dup_count": 0,
+     "summary": "모간스탠리의 산업재 주식 추천 종목 퀀트 등급별 순위 발표"
+    },
+    {
+     "title": "2 Industrials Stocks to Target This Week and 1 We Avoid",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPR3hHcHI0R1Bvd0p0YXdQcVprN3VQNU5hRzJvZEpENHliQ1F5a1lJN2oySURMc2hVY1kzbHlKZC16NXM3dkYtaVdSX01qWmhfeUpKZUUtRlJEM0ZtYkQwLTMwTWlHOXJuUlJOX1JmZ0g1Zk5OU0RrX000NnRFV0ZQWmVOOG0wT1g3aEplT01kRGlsdnAxUDhrY04wcFlDcjNFYzJvbnVJVzRqc3diSFUtWWxqSzA?oc=5",
+     "source": "StockStory",
+     "published": "2026-10-06T19:24:46+09:00",
+     "dup_count": 0,
+     "summary": "이번 주 주목할 산업재 주식 2선과 피해야 할 1선 선정"
+    },
+    {
+     "title": "Rate Hikes Are Back. Here Are 3 Industrial Stocks Built to Win Anyway",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOR3FRUkc2UFZ1YUtxSlJ1U0M3Q3M4THl6dk01UWU2WURuR3J0X1VSb05LMG1lcGlPOWxwRXpHbklGdnNvTEUzdEpFQ1lJbHFMbzI3aHkzZjUzeDlrSXBxTVNEaFlKUjlGTWhCb0xtRHNseGptVVduUTVyN0FpUzlzeEdGN3dmWE50ZGJpZkdBLVdtcThwVjllNw?oc=5",
+     "source": "The Motley Fool",
+     "published": "2026-10-06T12:15:00+09:00",
+     "dup_count": 1,
+     "summary": "금리 인상기에도 성과가 기대되는 산업재 주식 3선 소개"
+    },
     {
      "title": "BofA cuts Industrials on positioning, raises Healthcare stock rating",
      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNcm04UXl4QjQyY25sdEpSbGVpcGFqb25KQ1RNYXVWNFRDS2VSRV92M2dyelEzc0xDMnFKTHh5V2p6cEhfaXhQMFViWDhQQlg4UkJULVVjbDBjRzE5dE9qZldNb0tKbkd6TGJUbHB2VlFjVUpNRHJxalV6bnpPTWM3U21nVlVJQlZFdzd5QXd3QldzMTBhQ2pNQldETnpJYmZNRlloQTlVNUl3MnBvUi0wa2RDaFF3NmdySWNaX19NZF9RRnRjUTA3QQ?oc=5",
      "source": "Investing.com",
      "published": "2026-10-06T07:10:35+09:00",
      "dup_count": 0,
-     "summary": "BofA가 산업재 투자의견을 낮추고 헬스케어는 상향했다."
+     "summary": "뱅크오브아메리카, 산업재 투자의견 하향 및 헬스케어 상향"
     },
     {
-     "title": "12 Industrials Stocks Moving In Monday's After-Market Session",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMDhJbzJmeE9HZTFWYXJvNzg1djktQUI2am5VMXI0djFQWHBhS1d6cng5dzFUQkt1bG1NdFhPSXlBeGJ3NDhlOVI2eERhRWd3VGhFR1BrX1RBZUZjZXVKWno2MExvY1RJWTNuX2ZkVk9nOVJIWENWUFdTbU1CQXJNc3lKSElmOE94and0Rnd5R3ZDWlhjcjRpb3hsekFXV1FodVZKQ1hSZHVIWXh1dHgxSUt3d3hPWTV2VEhr?oc=5",
+     "title": "12 Industrials Stocks Moving In Monday's Intraday Session",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSWZ2bV9YSVhsdmo1Tm9lYWNBOU5yWEp0c2ZpdG1yY1lIR1RMUHBuUG96aWpqZ054RjJCa1Z6RGR4WnNoZ21QTzNfcUtXZFgzNXlsaEhBenp0cWhmcmZTZVJqa01tUUw4OFBiVHNFV1cyN3p4aDhMczl2Q0hVdkJ5bkZ2YzE1TW5SdnhVX0dLdV82cjJIQjJ6RTZ4enFIZ2xIeFM3Wk85NmJ2Z3RwN3hhZ2lGZ0x3UQ?oc=5",
      "source": "Benzinga",
-     "published": "2026-10-06T06:06:01+09:00",
-     "dup_count": 2,
-     "summary": "월요일 애프터마켓에서 12개 산업재 주식이 움직였다."
+     "published": "2026-10-06T02:05:56+09:00",
+     "dup_count": 0,
+     "summary": "월요일 장중 거래 시간 동안 움직인 12개 산업재 주식 현황"
     },
     {
      "title": "These industrials stocks carry A+ growth grades heading into Q4 (XLI:NYSEARCA)",
@@ -954,184 +752,163 @@
      "source": "Seeking Alpha",
      "published": "2026-10-05T20:05:02+09:00",
      "dup_count": 0,
-     "summary": "일부 산업재 주식들이 4분기를 앞두고 A+ 성장 등급을 받았다."
+     "summary": "4분기를 앞두고 A+ 성장 등급을 획득한 주요 산업재 주식들"
     }
    ]
   },
   {
-   "name": "Energy",
-   "count": 10,
+   "name": "Communication Services",
+   "count": 6,
    "tickers": [
-    "PBF",
-    "MPC",
-    "INSW",
-    "CVI",
-    "DHT",
-    "VLO"
+    "LILAK",
+    "WBD",
+    "WBD",
+    "NRDS",
+    "APP",
+    "APP"
    ],
    "strategies": [
+    "딥밸류",
     "신고가·물극필반"
    ],
    "items": [
     {
-     "title": "3 Stocks From AI & Energy to Buy Before Q3 Earnings Kick Off",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObF9SRmtOZnNUREROei1CbjJVZ1A5XzJPS29iYlNCbjk0QW1nOGdWVG13dXVSSVZ0aXduUVFfU2duZmZ1RlVRemcybTUxRTl2b2xyYmNOX3NXUHJidkZ2QlRqbDVRejdoc2puYVR6SXNfWE5rMnVtNHZ5TlFTRmZlZmtvM2JHbFpnSjViUXJmLVRYbVdab05wNko0Y1ozenBw?oc=5",
-     "source": "Zacks Investment Research",
-     "published": "2026-10-06T09:31:12+09:00",
-     "dup_count": 0,
-     "summary": "3분기 실적 발표를 앞두고 주목할 AI 및 에너지 주식 3선."
-    },
-    {
-     "title": "Some Excellent Energy Stocks Are Found In This ETF",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNenpZeGdVYk5pVzEzbHFldUdzdlB0Y2ZGWERhNzVRcDdzWXN2TUlORVItWnk3cXNOQ25Id3g2YjRDNDVsbF9makZEWTRSMWx5bTFhR3Fpdkc5eDczNUFtdFRCQThzLVpYdGhnMmpJMTJBdWVURW5WZUdWblFIMUEzcUFpOEZiUUV2VWVTcw?oc=5",
-     "source": "ETF Database",
-     "published": "2026-10-06T06:22:30+09:00",
-     "dup_count": 0,
-     "summary": "특정 ETF에서 우수한 실적을 내는 에너지 관련 주식들이 발견됨."
-    },
-    {
-     "title": "Vistra, An S&P 500 Nuclear Stock, Pops Above Key Level. Here's Why.",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMmUxaXZIbzVUWG5RNEZ2bXV3SjlTM1Y4aG9vYWFMdWtzS2h1MnFva25QWVFPVDNhS2k3MXo5eTMyTHpLTHNJTGhVRVNGVGVCb08yOTFWbjlGZWZtRHk3cHdzNUFzWVh6Y0FzNWRHb0Z6MUZQQ2hNSzI4Y0ktbE5LM3Vzb2NFdnRaLThYWUQ1UTFSNlFPRW03S2Vn?oc=5",
-     "source": "Investor's Business Daily",
-     "published": "2026-10-06T06:07:00+09:00",
-     "dup_count": 0,
-     "summary": "S&P 500 편입 원자력 주식 Vistra가 주요 저항선을 돌파함."
-    },
-    {
-     "title": "Energy Transfer raises guidance on record earni...",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQkh2SjVZcWNURzlIbzNBTnZCZmFsbUtqVXNCZWlIVmFfZFNVYmVSemhWM0hodkRZYzd0VlZ3cWZ5cmhuWXM4UnNPRUNsOUxkTDA1Vldoc3R6MzlzTDIzZFJzakotZThsS25VT045TUdIWEljRHJLT3YyTEtEblAzb3NRdWVrbktLcmlBM21nSTc3V3NKTWk3NmpPQ0VyY0E?oc=5",
-     "source": "Pluang",
-     "published": "2026-10-06T05:10:36+09:00",
-     "dup_count": 0,
-     "summary": "Energy Transfer가 역대급 실적에 힘입어 가이던스를 상향 조정함."
-    },
-    {
-     "title": "Sector Update: Energy Stocks Higher Late Afternoon",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVkxPZk9ueEszS2ZaUGtmMGZwM1l2VmpJVVUxaFVFcF9VZ0Nzc0pEa2JkVHQwV0wwLWpCMUM5V0o0cEJDZVZ2X1QyTGFnSW5OSzBNbFBaZkE5VVB3TjVUYzNpWm1sdFhiVkpsVkNHZlc1eUFJZHZSZ1ZzcVk4WlV5dW5NZ0l3RWNpcGpOZzFBZkdFSmVTeTl3YmZn?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-06T04:55:53+09:00",
-     "dup_count": 1,
-     "summary": "장 마감 전후로 미국 에너지 관련 주식들이 전반적인 상승세를 기록함."
-    },
-    {
-     "title": "US Supreme Court wrestles with oil companies' bid to scuttle climate lawsuit",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd2t4Tld4Y2hsdXplcC1OLUhMeENlQURPLXFUX0pNZWl3TGcydUZKV0xiSDdDZ0JCakNwZ2RhdVZ0dGozLUlVdEVCamQtN1ZPS29ZeXg0bzR5bGMxOV9LbU9VLVE1anpaLTVFRC1oWXE4aUx1by13ZW8tVVBJQmFzQ2ZYZ3pSLUk3azNmaEdlSmtfU3RUTHZXRmk3YTdTb1BGWU9mclJiV1R4RWUzeGNOeE5Wa3hvb2Y3NExfVExn?oc=5",
-     "source": "Reuters",
-     "published": "2026-10-06T03:48:12+09:00",
-     "dup_count": 0,
-     "summary": "미 연방대법원이 석유사들의 기후변화 소송 기각 요청을 심리 중임."
-    },
-    {
-     "title": "Is the Options Market Predicting a Spike in Cenovus Energy Stock?",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZ2pMVkV4WGxtSngxb282WVhNUXRVbHFYYXdnMGtHVDNzc3N2TGE2MFlZb2NEUWM5V3pIdW1PV2JPZ0VfaDZsMEF0RmFvWUZvcmg3Ynl3UHJ6NEl4aXdTQlRPV1d5MzhGVlBnTm5lTWJETXR0emJIT21ab0VZLTdlWEduTFg1MVhKQTl1aDBiUk5CQQ?oc=5",
-     "source": "Yahoo! Finance Canada",
-     "published": "2026-10-06T03:35:00+09:00",
-     "dup_count": 0,
-     "summary": "옵션 시장이 Cenovus Energy 주가의 급등 가능성을 예고하고 있음."
-    },
-    {
-     "title": "Supreme Court wrestles with energy companies' bid to block major climate-change lawsuit",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTjRTZzRNMkcyRFBEcldaMldlczFBTlFhQW5nLXRQNER4UGpRUzhTeVlXak5nZllaM0pMODB6RXVpbTdXVFZGdHg4WUtaWE84Q1FRcjRjb1FMa1BhREVnWTc5Ym1vQWZLRldYVHJ5cjNsTzlUa0xldGhiMGpQT0pQQ3cyaXlvRzYwNXEtcWFlZ3JLMmloQ0NWM3Q1LUc2UDF0WDZiUw?oc=5",
-     "source": "CBS News",
-     "published": "2026-10-06T02:54:00+09:00",
-     "dup_count": 0,
-     "summary": "대법원이 에너지 기업들의 대형 기후변화 소송 차단 시도를 다룸."
-    },
-    {
-     "title": "New Supreme Court term begins with justices stumped by climate change case",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQU1FnOFdJSE5xQXFjdUJTaFFpNG51S0JLeVhIWE4zR3BnYW1pdXlFZ1R0RzJYTENIVnUyaEZELXJFZWljVTNVMHE5OXV5dW5LZl9iSTRlTFRUYVZlZF9ESG02eUl0ZUhwVk5ralJxT2NzRFNtUmRqYnNnVjJqOGVycG1XQVFWOUZmb25aakFPUE9yWWpQVjNRdzRUeWJRaVFRWmVJZC11X2RuX3k5aDMwdzBacHRLQzFycnFsMEhZWEZOSGstTUE?oc=5",
-     "source": "NBC News",
-     "published": "2026-10-06T02:11:14+09:00",
-     "dup_count": 0,
-     "summary": "기후변화 소송을 다루며 새로운 대법원 임기가 복잡하게 시작됨."
-    },
-    {
-     "title": "Oil Stocks in US Strategic Petroleum Reserve Fall to Lowest Level Since 1982",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWmxaN196OTkyeFNRbEFkWWRBM0RkZ183ODhxZ3pVY2VjcXZrU0YzODkyN09yTlRlNXJqdzE5Y0pub2h3MlE0R2FveWpDOUk1b2oxNUtfWTVWRGdubmFKWmJQbUFzMGNiVm9aQkIzVEVPUFVtUHJnV1pQQzVLalplTVVISFE1V2xrbktHOGJFN3pkRVZXWVdpeWVydXF0UDVudEhVZXV1d25vQUF0SVE?oc=5",
-     "source": "EnergyNow.com",
-     "published": "2026-10-06T01:29:40+09:00",
-     "dup_count": 0,
-     "summary": "미국 전략비축유의 석유 재고가 1982년 이후 최저 수준으로 떨어짐."
-    },
-    {
-     "title": "Fervo Energy (NASDAQ:FRVO) Stock Falls 7.1% - Should You Sell?",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNU3ZNTXZZclhoc0V5VWNHRXhPenNjZjI0MHoyZW1CelVic0NZa2ZwYVJpREc2NldlaGVDXzNpaW5NM1dLREwwM25fMU9pX3RrUjJ5UzM4aFVlYmpkTFBjRmhxam40cktpV0t0ejlBaHBPYU5YWGVEZUtXSkhSNGNWM3lWOUpZczRxYU9TekR2OFJ0NmZhN3JnOGEyRGhsUFRCWFAxWjJ0R05tUGFKLUwxTGcxZTFodw?oc=5",
-     "source": "MarketBeat",
-     "published": "2026-10-06T01:03:04+09:00",
-     "dup_count": 0,
-     "summary": "Fervo Energy 주가가 7.1% 하락하여 투자자들의 고민이 커짐."
-    },
-    {
-     "title": "Energy stocks weigh on TSX as oil prices ease",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRkN0VkZfZmcyUDdHci1FLW1ZdGRPVHZ6M1NMeldYR242Wkd2a0NTTWFESlJQOW5aUHNWNFowcXdISnZkeGxtQjhReUFNMzVNVnh2cGt1aFB5U09DalRnLUc1bDVCN3FjTmhDLVl6Q3dmcTdfZ2p1S2k5VE53dURTZzZvTWJudWQ3UnlYcmRDVXgyUVUyc1dtUENONm9HMEE?oc=5",
-     "source": "marketscreener.com",
-     "published": "2026-10-05T23:26:52+09:00",
-     "dup_count": 1,
-     "summary": "유가 하락 여파로 에너지 주식들이 TSX 지수에 하향 압력을 가함."
-    },
-    {
-     "title": "Why Bloom Energy Stock Soared 34% in September, and Why It Might Have More Room to Run",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOV1dwbEh4cVZqbVNTNnNFYXFudDN3dS1JN0tfV3FLWEFEcEhwTzctRWpGaTNUOFVTUUM0bF8teTZ4VjVxNi1TUUt1YWZUaHJjdVNwdkM1MXpiQklGeE9mbmFkZ2Z1VGJtR0NERTF1ejVhVUZIRnpwbU5WM0diaGxWMGxhOVJHOVMyTVFkYUoxWjdrVFBzdWNxZkF3?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-05T22:40:08+09:00",
-     "dup_count": 0,
-     "summary": "Bloom Energy 주가가 9월에 34% 급등했으며 추가 상승 여력이 있음."
-    },
-    {
-     "title": "Is HF Sinclair (DINO) Outperforming Other Oils-Energy Stocks This Year?",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOc2JoYUhxT3dJekJYeURPNWo0VkpNa3dKUENVdFlkd3FaeTgzNm9rTngxbUhXZERzbU5HRmtFV3NQRDFRdzllUThfdlRiakdpRlowcUhpdmdaM1VqNWNRaGRCVTJLRTQxamRUbEIyOHVKXy1JY3lacC1qbTJmQ2tzM3NOQ3VtN2x6ckFLei14cnZxaUhQNnR5eXZuTEloLWtSTERF?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-05T22:00:03+09:00",
-     "dup_count": 0,
-     "summary": "HF Sinclair가 올해 다른 석유 및 에너지 주식보다 우수한 성과를 내는 중."
-    },
-    {
-     "title": "49% Gains Haven’t Stopped Wall Street From Calling Energy Stocks ‘Behind’",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQLWN4aDRXNUEzM0NPMUxhZDQ0OXdON25SWUEzbHZjVUdfeDF0cmdCRDNVUExZSWtic1ItbWlyYTVlWm5ubm42d0h3OFZ4RlV5SW1wMVBsQlY3cUVrQngtRGE4U2tEUjFWVnFuZlVqNm9RMlhENFZGNV9VVXdHV21qalRvNHZZT2Vm?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-05T20:30:32+09:00",
-     "dup_count": 1,
-     "summary": "월스트리트는 49% 상승에도 불구하고 에너지 주식이 여전히 저평가됐다고 봄."
-    },
-    {
-     "title": "Energy stocks with A+ growth grade to watch as Q4 begins (XLE:NYSEARCA)",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPc1VsNmVOdVBEMURzbWVOdndENW9GMjh6UnRUMURYUnV4SmdnNExXVEU1V0Y1bkFCNjNDbWpBV055T093QjFjTjNUMFNUM1lJTWNodHJ2UzNKRWJ4MjVFYkxZMUJha05UakpKcUhBcExocU90aGx0U25uRjM4eXduOEJsNHlmVUs2c3hDbTVDTmRoOGNHNFJaVw?oc=5",
+     "title": "Communication services stocks with strong growth grades heading into Q4 (XLC:NYSEARCA)",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVWlsdFlDRzBFbmxPcGFGR0F2N3N2amdQenctWERFQTA3S3JCMzhMcU5mU2lLbWtfaWRmTW9qT2xjYnNNdF9KaTk2dFBZNGVnT0pWYmVmMkRsd2JSUi1ieEJNTzRpdnRYNUU0UmxXMVh1QWpGWXk1bFBvZjZfaXRpR2ozQnJkYzl4cDNsaC1kNmNVclk4WnprSElkSWIzS0xIN0s5S1FPUHpDWEVDcWc?oc=5",
      "source": "Seeking Alpha",
-     "published": "2026-10-05T19:30:58+09:00",
-     "dup_count": 1,
-     "summary": "4분기 시작과 함께 A+ 성장 등급을 받은 XLE 등 에너지 주식에 주목해야 함."
-    },
-    {
-     "title": "Up 228% in the Past Year, Bloom Energy Expands Manufacturing Capacity",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYXFzZEM1bHNiYWVLZTNkM1NUb2RiZUVCcjY4Vkt4RWxHUjgxSFk0a1FzZVk0cGZERHMxYkYyb0hWOEVZV3NRMVF3SnZBX3BJOHd1OHVIUWtVTGdfaTkxN1h3R0FpcXpwMFUwcUZTMDZDZFJrUDBpQzlRNUJQaGVfUXVobGM1T3ZoaGJTMnV2cVJGTDc2MGptUEhNNnVtYXJuOFJtOWttTTY2eVpXVDQxZA?oc=5",
-     "source": "Barchart.com",
-     "published": "2026-10-05T07:17:57+09:00",
+     "published": "2026-10-07T00:40:14+09:00",
      "dup_count": 0,
-     "summary": "지난해 228% 상승한 Bloom Energy가 제조업 생산 능력을 확장함."
+     "summary": "XLC의 커뮤니케이션 서비스주는 4분기 강한 성장 등급을 기록하고 있다."
     },
     {
-     "title": "Dry-Type Transformers Market Forecast to 2035: Renewable Energy Integration to Drive Growth - News and Statistics",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOQmVJNHJBb1BfdVhITzFfVTNDNHhZaDVrX24zcVBMUFZoUVhCSU5wZ0RVVnpwdVN5YVItb2xoQ29mYXdZaUdlZHY2d1pzb1I4U3hYZGdHQ1VwY0htYnBQMEtfbGdnNHJFR0dZbTMxZTM2NzVOUTlxclZUd3VGZmNWUHZjOXNVTjhTYkZyWmFmUldBYk81U0J0bWVzZ0xyYTlCWkVoWTNIZVRJUGtTcHpfX2hqSHFIY0dZS1FXU1FwcTJfQQ?oc=5",
-     "source": "IndexBox",
-     "published": "2026-10-05T06:56:04+09:00",
+     "title": "3 Enterprise Software Stocks Retail Investors Are Watching For Stronger Cash Flow",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdVY2cEUyaVR4djk3aUtkVW4xRG5CVU52cHVUbTJlN1hnT3V1bWFKYUZpTUoxQUI5TC1fN1RnRTBKU2hyVERtZTBjMWN4czlwVVVabUVMQ3dRTHIxek1YNFhIaXdMSnZoanNybmVDVTlnUVhsSW9IVWNwZHFWQjNWbmh1ZjNqTEVvWnRWV0FZVDVjS3dyaGpOWGk5Uk5zLWVVN3BudURRNEllalVmMFRnQ2JuQk5CWHhrT2NYWU51MXdrc1Et0gHKAUFVX3lxTE5PaU5kUGs1djZTaXdQNWYtUWJTRnJIbDdNSVdzSzZXVDV0RW9qNzdWdUdkaVhsTGRWZ0UtMk50Y0t6V3o5Q2g5QTZ1M1FaX1FGeVRITlVFdmFILVZaVmU2cXJhYWJOY3NuMV9yNWdNSmEwSnptZXJpZDFvWWkxc0t0R1ZJY2dQeUFOOGwzZUVmS3FJQmV2SW5wMTNwLWp5NE5aT2hfdkhreGdsWjQ4ZFl6d2FjWVppYUNtMDRhQnVMSVNUNGw3aEFzcEE?oc=5",
+     "source": "Simply Wall Street",
+     "published": "2026-10-07T00:31:09+09:00",
      "dup_count": 0,
-     "summary": "재생에너지 통합으로 2035년까지 건식 변압기 시장이 성장할 전망임."
+     "summary": "개인투자자들은 현금흐름이 강한 3개의 엔터프라이즈 소프트웨어 주식을 주시하고 있다."
     },
     {
-     "title": "What a 20-Year Deal With Amazon Means for Constellation Energy Stock",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaXZveWZQUXp1MF9GWG5XZmgyNldfY1NiQWlWZkRiMndnMmd0M1p4dUVTYlFkYndjbTVoZGpZUnhBdWRlaGlmNDJ0ck5JamRGdXZBeWdfcEJKMjh5Vm1yTEVTbjU2MFo2Y0otcXFlVDdQNXdjblkyNFk1S1JUOGtoOUlFdzJlU0V3OW05SmlwcFRQb2lyYU9Wa1NBdXNjWnE5ZnpjTW13THhKSUxxYWNoTTV3?oc=5",
-     "source": "Barchart.com",
-     "published": "2026-10-05T03:30:02+09:00",
+     "title": "Why Is Comcast (NASDAQ:CMCSA) Trimming Streaming Staff Before Its Earnings?",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRm9PZGgxZ0lQdGx5M1AtZHJ6MERVSWwtcnBQQTVINmVGUTAyaDVQdkhYS0ZmXzBvbGhOSEg5ZVY1amlsbVg2Nk1pckxNQk5BLWk5WVAwSGFmTmhDVm95NFdyMzNZRkdSOXg0MUs5MU1FWlZNQ2RCREJTeHp6OU0xUk5jR2owdVNKWHRvVWxUYWJfVHlZS1daa0stWXV3bGpuak93TUhBNHlpazFLUkVNYmo5WjdSLV9OMW10LQ?oc=5",
+     "source": "Kalkine Media",
+     "published": "2026-10-06T23:15:00+09:00",
      "dup_count": 0,
-     "summary": "Constellation Energy가 아마존과 맺은 20년 계약이 주가에 미치는 의미."
+     "summary": "컴캐스트(NASDAQ:CMCSA)는 실적 발표를 앞두고 스트리밍 부서 인력을 감축하고 있다."
     },
     {
-     "title": "The AI Buildout Needs Power It Cannot Get: 4 Energy Stocks Already Have It",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQM3hOTVNJMGYtZkJGclo0cTVEQ1BwYWFjUkpSZzloVks0bEtXc2tSMEJpYmZXQXBpdzdKZmtjRTQwUjgzS01uWmhJY1pKV0pmd2cyZ3JlMUlGOTYtMXFlaWZrVmZHeE5Zc2xjRGN0MmRkZl9tNlA3N2VYemI3OUR3a21wbk9sc1J4bWRHV0RPY1c?oc=5",
+     "title": "3 Communication Stocks Likely to Gain From Industry Tailwinds",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNM2ptNzlHdG9pVXJkbm9iazhpWmNPVHowT1FUbHowYmFSSVYtYzA1V3JuZC0tdGhXRkJKekhjOE5TTlZJSDJIUTRVWFNlenY2Tkx6YmIyckE4cGpZSUh1VjRQN0ZjVWtnQ3hIQ25MVmNncUtLMVo0SmRPRWRDN0phTEp3aldWWmhVVzJCYmppUjVHV2lpQTFZNTlIbXBzanBf?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-10-05T01:25:00+09:00",
+     "published": "2026-10-06T22:36:00+09:00",
      "dup_count": 0,
-     "summary": "전력이 부족한 AI 인프라 시대에 전력 확보한 에너지 주식 4선."
+     "summary": "3개의 커뮤니케이션 주식이 산업 호재로 상승세를 탈 것으로 보인다."
+    },
+    {
+     "title": "4 Communication Services Stocks Whale Activity In Today’s Session",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZDU1VFk3dmRZMUEydjVJNXFUMkRlcURmLU92MW9EU2FwTTdxekRKYkRNOGE1czJSUkJJWi0wMGZDcEZNOW9yZmFac3M4M1NNNjBkUHJ3RkJpOHFYODhfYUxUMGM1MUxDUERCeU0zNDh2cjFrRWpXc09TRVJJQkN2OHgzMVU2RFR0OE0zdExSRmFzRU9RckZ5dHh0Y3ZYVEYyMEpqQjFIdGk1d1JIOVljUW9uV0MxeGpneXc?oc=5",
+     "source": "Benzinga",
+     "published": "2026-10-06T02:35:17+09:00",
+     "dup_count": 0,
+     "summary": "오늘 세션에서 4개의 커뮤니케이션 서비스 주식에 대형 투자자들의 활동이 포착됐다."
+    },
+    {
+     "title": "The Largest Communications Services Companies by Market Cap in October 2026",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5vSTlaNVZqTHM2WWJzMV9Fdm1mNXBHNkY0UXVXM1ZBang2c0I5MnRNeEdNTmo1ZjRibk1RV1g4T0RpY3R0dURxbE1yOEhmOEJzS3NWUlBiTENiS1poNHNKdUM0anlUTFhXR1NwUUZyWE0?oc=5",
+     "source": "The Motley Fool",
+     "published": "2026-10-05T09:03:00+09:00",
+     "dup_count": 0,
+     "summary": "2026년 10월 기준 시가총액 기준 최대 커뮤니케이션 서비스 기업들이다."
+    }
+   ]
+  },
+  {
+   "name": "Consumer Cyclical",
+   "count": 6,
+   "tickers": [
+    "LIND",
+    "JILL",
+    "APTV",
+    "LVS",
+    "NKE",
+    "TSCO"
+   ],
+   "strategies": [
+    "딥밸류",
+    "신고가·물극필반"
+   ],
+   "items": [
+    {
+     "title": "Stellantis N.V. vs. Tesla: Which Consumer Stock Is a Better Buy in 2026?",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQYnNSNU96VmdSLUJNVUFxQWlaS0p6ZjBxaXV5SU5LMVJ1aksxVkxTaGkzRUppaU40NG5XRWdacmVlTmE1NGMxX2dvZFlfMlF3eXJjQTQzUkR4SlM4OXNpRHdiVFZqa3d6am5GRDJPTEtBZWhoc2daOHZSblR6aURwYTlKclRUM2pZU2Y4ZTlEZDF5QQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-07T00:22:32+09:00",
+     "dup_count": 0,
+     "summary": "Stellantis와 Tesla 중 2026년 더 나은 투자처를 비교했다."
+    },
+    {
+     "title": "Amazon Kicked Off Prime Big Deal Days as Consumer Stocks Slump. Here’s Where the Stock Could Go by 2030",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRGQ5SU9jNFhEVjdjRmt0bHV5WENfVXpGZXRBNi1NcTJTdXBRUk0wOHRRUFE5dzBoLWZXYWxhYUcwZTV1VjFteDk3NzNCQmx5bkNTN3lLX0FoM3lXV0RUYXU0TUxzaGNHREx2aXRHbUlsWlJzRnJuY3FvQTA1eERnVURDUkVObmQxY1g3TlZScUl5SlVlQnVJ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T23:28:46+09:00",
+     "dup_count": 0,
+     "summary": "Amazon은 Prime Big Deal Days를 시작하며 2030년 주가 전망을 밝혔다."
+    },
+    {
+     "title": "Is Betterware de Mexico SAPI de C (BWMX) Outperforming Other Consumer Discretionary Stocks This Year?",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVWVIOE5nQzh5cnRTUjB2SWV1UXJzRDgyX3hkLTlMdTNQWDhmRWRuTHQxNWstX184TTh2WkRtWHpyekFqWk1sVzR6LWNNNE9TUDVOMXppMzN4Ym9icmhXX3NnTjZENTQzSnd1V25paUhmOVlpZXhsVVI1QzBBbFJBUWNxaUh4UWF1bmJpRjZab0wxSkQyZ0hyRjln?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T21:40:03+09:00",
+     "dup_count": 0,
+     "summary": "Betterware de Mexico(BWMX)가 올해 경기소비재 종목들을 능가하는지 분석했다."
+    },
+    {
+     "title": "Consumer Discretionary - Apparel and Accessories Stocks Q2 Results: Benchmarking Carter's (NYSE:CRI)",
+     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQYVRIUHJLZVVkc0lVMlZhekpQWVlLaENZTXJoS1FPWWdiWDNSWU52alBPMGFvVTFndWY2V2RmZ3kwNFJVNnFJZ3FzdXRCN1dkRVB5YkZKSjRZMTFIZUh6N0RJcUVIamk4Y2Y2LVlIRXRBTnhfcmYydkFFTmpvMzc0YXJwd3I5NG9qSV9fWTREcC12MjI0c3dlZURkckY2a2hIRVM0S3lRU0E0UENlNWtva0I1MEh5MTdlYTBQcE5POHlsSERSbVBNb0RpcWpQdTJGR3FEOUY0RlFGYW1oS2FLMVJqZ29xZWo1SVl4aQ?oc=5",
+     "source": "TradingView",
+     "published": "2026-10-06T12:35:00+09:00",
+     "dup_count": 0,
+     "summary": "Carter's(CRI)의 Q2 실적을 통해 의류 및 악세사리 주식을 벤치마킹했다."
+    },
+    {
+     "title": "A Look Back at Consumer Discretionary - Apparel and Accessories Stocks’ Q2 Earnings: Tapestry (NYSE:TPR) Vs The Rest Of The Pack",
+     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNTVpKV1lrUE9ydUVoZzd2RGtSRXZpaU9oV3h3UVp6Y0lUdlBHVGxHUTlmV0t2bld0dlBuSzcyZVpuY3E0TUZtdzAtLVBUeDVVYkd0Sm13LTMwcHJnVjFoWEJxYlkydGRuMkc3SnVuOEtadzFzMHZJa2VsakxncXBwUE0yNW5xemdiXy1wMzRBWFRmTU1idHYtcnZtSDBTNmVpLXpzOVI1bU1TYU15WjdDZTg4WVRHODd6X3pXTk5JOVprX3VYNjI3MXpkQVR3UWQ1aTNqbEhhRlpSd1BrOGF4STRNQjZpN0hEZzhkbW9RNExQbnYwd3VCZXY3UC1hU2NaVmlKRFlWZlI4Z3dSSFllcw?oc=5",
+     "source": "TradingView",
+     "published": "2026-10-06T12:31:00+09:00",
+     "dup_count": 0,
+     "summary": "Tapestry(TPR)의 Q2 실적을 다른 의류 및 악세사리 주식들과 비교했다."
+    },
+    {
+     "title": "Abercrombie (ANF) vs. e.l.f. Beauty (ELF): Which Consumer Stock Is the Better Buy?",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMUh2SlUyMDc3blNNLXk3UEZKSllER1g3R2lrbk5tcGdjUmY1OGNPRWlOckNsT1BMRlpKQThpaEtmLWF5WGUtelZYLXkweGNtcVBlaERSZUtsRzRWcTRIUndsNUxpVXVRWW91RVFOUExidnFTUV8tT1RDUW55dmM5UTVhUXFPMENJUU0zY1MydHQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T12:19:00+09:00",
+     "dup_count": 0,
+     "summary": "Abercrombie(ANF)와 e.l.f. Beauty(ELF) 중 더 나은 매수 종목을 비교했다."
+    },
+    {
+     "title": "Consumer Discretionary - Wireless, Cable and Satellite Stocks Q2 In Review: Charter (NASDAQ:CHTR) Vs Peers",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOGFkMm9pOXRMdER1MEdZcFR6MFdQYjRhZDU3bmtqNS1HLV95Z0J2Sk1ETzFTN3ZBNHAxSFdmUWhkOUxHcEMwSk4yRVpNOUFJN3hOaW1BRXFEcm5wMmZwNC1sZkdmSDh2cGVyY2tBd1ZtNk9VNUU2bGhRbFFHODFES0tWUlJ4ZXBnU3R4WjliVVRsQlVRQWFHdGNVbm5wMVo1Zl9NaHg1X0xOSmhFMmFlWmFR?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T03:27:00+09:00",
+     "dup_count": 0,
+     "summary": "Charter(NASDAQ:CHTR)와 동종업체의 Q2 무선·케이블·위성 실적을 검토했다."
+    },
+    {
+     "title": "12 Consumer Discretionary Stocks Moving In Monday's Intraday Session",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNczBrMTgydThNcHh1dWV0YzVGaTdIRGQ1cTQ0MXIxc1Bta01jTW41c1diVWhOTm5BY2E0VS0xclpNaWVjWFJ3U0hIb0FmNkNJOUR3N3Q4Rkg2YlJhdmZ4MkQ3LVpkY1g5SGN0S2ZNWHZQMWtmRHpNdlEzaUItMVBkakNSZGViQmhHOXo1MFlXWVhhbkdidWpBT2FmaXdvWFcxeU4wT1FDTEdvQ1hlZDMzNjltVm1oYUtlSnpSaUtGSmlKRzl5?oc=5",
+     "source": "Benzinga",
+     "published": "2026-10-06T02:05:57+09:00",
+     "dup_count": 0,
+     "summary": "월요일 장중 거래에서 12개의 경기소비재 주식이 움직였다."
+    },
+    {
+     "title": "Higher rates are pummeling consumer discretionary stocks — here's the damage: Chart of the Day",
+     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPS1l5cXdYVWUzVHFnclhMTzZjUEpLZ2JObGNqRlRnY29EZDRiYUNuMmVDQ0F1Z0Y1aUlrRWxvWEhLdGhZZnJUYWhGWDBqMU9CSk41SzU3WmUwYjRRa1lGMndnUG9tNTJvUXFyeVVrT3lJTy1YbkpyZEJtd3Y4T1N1N24wOWY3QjgxSktRZTlkT1M3Z21vMHJpdVBmbHVsZmNZdEN5T1E4ODdXZEpjdFNiTkVuWFZMX3NzVkc1Yng0YWNuSjRpSTY4MFNXbWg0SmFUS0oxQ3ZHaVZ6R2owVkdXVHRB?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T01:10:08+09:00",
+     "dup_count": 0,
+     "summary": "고금리가 경기소비재 주식에 큰 타격을 주어 그 피해를 차트로 분석했다."
     }
    ]
   }
@@ -1142,164 +919,164 @@
    "push": true,
    "items": [
     {
-     "title": "\"7개월 만에 다시 한국 찾는다\"...리사 수 AMD CEO, 7일 용산 '게이머 데이...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612541",
-     "source": "cbci.co.kr",
-     "published": "2026-10-06T11:40:00+09:00",
-     "dup_count": 0,
-     "summary": "리사 수 AMD CEO가 7일 용산에서 열리는 게이머 데이에 참석해 한국 공략을 본격화한다."
-    },
-    {
-     "title": "금리 부담·메모리 약세에 '칠천피' 다시 내줘...코스닥 2.5%↑[장중시황...",
-     "url": "https://www.news1.kr/finance/general-stock/6311291",
-     "source": "news1.kr",
-     "published": "2026-10-06T11:40:00+09:00",
-     "dup_count": 1,
-     "summary": "금리 부담과 메모리 약세로 코스피 7,000선이 무너진 가운데 SK하이닉스와 삼성전자가 하락했다."
-    },
-    {
-     "title": "외국인 팔자에 코스피 7천선 붕괴...뉴욕증시 상승",
-     "url": "https://biz.sbs.co.kr/article_hub/20000338406?division=NAVER",
-     "source": "biz.sbs.co.kr",
-     "published": "2026-10-06T11:39:00+09:00",
-     "dup_count": 0,
-     "summary": "외국인 매도세로 코스피 7,000선이 붕괴된 가운데 삼성전기와 한미반도체는 강세를 보였다."
-    },
-    {
-     "title": "인도 반도체 2단계, 장비·소재 공급망이 열린다... SEMICON India 2026 현장",
-     "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=110&CONTENTS_NO=1&bbsGbn=245&bbsSn=245&pNttSn=244385",
-     "source": "dream.kotra.or.kr",
-     "published": "2026-10-06T11:36:00+09:00",
-     "dup_count": 0,
-     "summary": "인도 반도체 2단계 성숙 공정에서 한국 중견·중소기업의 참여 여지가 커지고 있다."
-    },
-    {
-     "title": "코스피, 외인 7천600억 순매도에 7,000선 '하회'...반도체도 '약세'",
-     "url": "https://www.youthdaily.co.kr/news/article.html?no=227967",
-     "source": "youthdaily.co.kr",
-     "published": "2026-10-06T11:36:00+09:00",
-     "dup_count": 0,
-     "summary": "외국인 순매도로 코스피가 7,000선을 하회했으며 삼성전자와 SK하이닉스도 약세를 보였다."
-    },
-    {
-     "title": "코스피, 7,000선 턱걸이 공방...장 초반 상승세 축소",
-     "url": "https://www.m-economynews.com/news/article.html?no=71369",
-     "source": "m-economynews.com",
-     "published": "2026-10-06T11:34:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피가 7,000선 턱걸이 공방을 벌이는 가운데 SK하이닉스는 하락하고 삼성전자는 혼조세를 보였다."
-    },
-    {
-     "title": "삼전·SK하닉 핵심인력 中 CXMT행...이직 후 평균 2.9년만에 퇴출",
-     "url": "https://www.donga.com/news/Economy/article/all/20261006/134791630/1",
-     "source": "donga.com",
-     "published": "2026-10-06T11:32:00+09:00",
-     "dup_count": 0,
-     "summary": "삼성전자와 SK하이닉스의 핵심 반도체 인력이 중국 CXMT로 이직 후 대부분 퇴출당했다."
-    },
-    {
-     "title": "‘성과급 큰손’ 몰린 반도체 벨트...내구재 기업들도 몰린다",
-     "url": "https://biz.heraldcorp.com/article/10894073?ref=naver",
-     "source": "biz.heraldcorp.com",
-     "published": "2026-10-06T11:27:00+09:00",
-     "dup_count": 0,
-     "summary": "삼성전자와 SK하이닉스 생산시설이 있는 반도체 벨트에 내구재 기업과 세수도 몰리고 있다."
-    },
-    {
-     "title": "[2026 국감] 삼성·SK 반도체 베테랑 27명 中 CXMT로...“반도체 팹 통째로...",
-     "url": "https://www.ekn.kr/web/view.php?key=20261006026262546",
-     "source": "ekn.kr",
-     "published": "2026-10-06T11:26:00+09:00",
-     "dup_count": 0,
-     "summary": "삼성과 SK의 반도체 베테랑 인력 27명이 중국 CXMT로 우회 이직한 사실이 국감에서 드러났다."
-    },
-    {
-     "title": "곽동신 한미반도체 회장 \"삼성그룹을 환영한다\"",
-     "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=53426",
-     "source": "koreareport.co.kr",
-     "published": "2026-10-06T11:26:00+09:00",
-     "dup_count": 0,
-     "summary": "곽동신 한미반도체 회장이 삼성그룹과의 245억 원 규모 거래를 환영하며 협력을 강조했다."
-    },
-    {
-     "title": "전력 부족해 데이터센터 멈출 판...'삼전닉스' 호황에 불똥 튀나",
-     "url": "https://www.hankyung.com/article/202610064567g",
+     "title": "美국채 수요 둔화 조짐...금리 상승에도 엔비디아는 건재[박신영의 개장...",
+     "url": "https://www.hankyung.com/article/202610076737i",
      "source": "hankyung.com",
-     "published": "2026-10-06T11:23:00+09:00",
+     "published": "2026-10-07T01:04:00+09:00",
      "dup_count": 0,
-     "summary": "이번 경고가 삼성전자·SK하이닉스 등 국내 반도체 업계에도 잠재적 위험이 될지도 관심사다. 모건스탠리가 이들 두 회사의 실적을 직접 전망한 것은 아니지만 메모리 "
+     "summary": "엔비디아와 마이크론 등 초대형 기술주로 자금이 집중되고 있다."
     },
     {
-     "title": "코스피, 장중 7,000선 내주며 약보합...코스닥 2%대 상승",
-     "url": "https://www.yna.co.kr/view/AKR20261006081400008?input=1195m",
-     "source": "yna.co.kr",
-     "published": "2026-10-06T11:21:00+09:00",
+     "title": "[종합] \"호남 몰아주기\" vs \"기업이 선택\"...삼성전자·SK하이닉스 800조 ...",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=553015",
+     "source": "joongangenews.com",
+     "published": "2026-10-07T00:46:00+09:00",
      "dup_count": 0,
-     "summary": "코스피가 장중 7,000선을 내주며 약보합세를 보인 가운데 삼성전자와 하이닉스가 하락했다."
+     "summary": "삼성전자와 SK하이닉스는 AI와 HBM 수요로 추가 생산시설 확보가 시급하다."
     },
     {
-     "title": "솔리다임, 대만 SSD 생산망 확대...AI서버 제조사 협력 강화",
-     "url": "https://www.fetv.co.kr/news/articleView.html?idxno=311283",
-     "source": "fetv.co.kr",
-     "published": "2026-10-06T11:16:00+09:00",
+     "title": "엔비디아 최고치 찍고 ‘시총 6조달러’ 눈앞... 삼전닉스는 답보",
+     "url": "https://www.donga.com/news/Economy/article/all/20261006/134795749/2",
+     "source": "donga.com",
+     "published": "2026-10-07T00:32:00+09:00",
      "dup_count": 0,
-     "summary": "AI 서버는 GPU와 HBM 등 연산용 반도체뿐 아니라 대규모 데이터를 저장하고 빠르게 처리하기 위한 고용량·고성능 SSD를 필요로 한다. AI 서버 출하가 확대"
+     "summary": "엔비디아가 사상 최고치를 경신하며 시총 6조 달러 돌파를 앞두고 있다."
     },
     {
-     "title": "한미반도체, 삼성과 약 245억 규모 거래...곽동신 회장 \"환영한다\"",
-     "url": "https://news.tf.co.kr/read/economy/2373194.htm",
-     "source": "news.tf.co.kr",
-     "published": "2026-10-06T11:14:00+09:00",
+     "title": "\"하루 만에 '7천피' 반납 vs 코스닥 3% 급등\"...코스피, 美 국채금리 부담...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612872",
+     "source": "cbci.co.kr",
+     "published": "2026-10-07T00:06:00+09:00",
      "dup_count": 0,
-     "summary": "한미반도체가 삼성과 245억 원 규모의 반도체 장비 공급 계약을 체결했다."
+     "summary": "글로벌 금리 충격 속 코스피는 하락하고 코스닥은 3% 급등했다."
     },
     {
-     "title": "헨켈, 반도체대전서 AI·HBM용 첨단 패키징 소재 선봬",
-     "url": "http://www.inews24.com/view/2012053",
-     "source": "inews24.com",
-     "published": "2026-10-06T11:14:00+09:00",
+     "title": "\"자사주 매입 막바지·솔리다임 논란에 휘청\"...삼성전자·SK하이닉스 동...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612874",
+     "source": "cbci.co.kr",
+     "published": "2026-10-07T00:06:00+09:00",
      "dup_count": 0,
-     "summary": "인공지능(AI)과 고대역폭메모리(HBM) 시장 확대에 따라 반도체 패키징의 열과 휨을 잡는 소재 기술의... 헨켈은 오는 14~16일 서울 코엑스에서 열리는 '제"
+     "summary": "자사주 매입 종료와 솔리다임 논란이 삼성전자와 SK하이닉스 주가를 흔들었다."
     },
     {
-     "title": "삼성전자, 분기 영업익 ‘100조 시대’ 연다",
-     "url": "https://biz.heraldcorp.com/article/10894011?ref=naver",
-     "source": "biz.heraldcorp.com",
-     "published": "2026-10-06T11:11:00+09:00",
+     "title": "메트로신문 10월7일자 한줄뉴스",
+     "url": "http://www.metroseoul.co.kr/article/20261006500438",
+     "source": "metroseoul.co.kr",
+     "published": "2026-10-07T00:02:00+09:00",
+     "dup_count": 1,
+     "summary": "HBM 고객사 요구가 세분화되면서 삼성전자와 SK하이닉스의 대응 폭이 넓어졌다."
+    },
+    {
+     "title": "[증시 프리즘] \"4분기 실적 잔치 연다\"...반도체 양대 산맥 실적 기대속...",
+     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=89932",
+     "source": "thefairnews.co.kr",
+     "published": "2026-10-07T00:00:00+09:00",
+     "dup_count": 1,
+     "summary": "HBM 수요와 서버용 D램 공급 부족으로 반도체 양사의 하반기 영업이익이 기대된다."
+    },
+    {
+     "title": "[미국 특징주] 엔비디아, 사상 최고가 경신...'시총 6조달러' 첫 기업 눈...",
+     "url": "https://www.newspim.com/news/view/20261006001532",
+     "source": "newspim.com",
+     "published": "2026-10-06T23:45:00+09:00",
+     "dup_count": 0,
+     "summary": "엔비디아는 직전 실적 발표에서 2028 회계연도 매출이 70% 늘어날 것으로 전망했다. 시장 예상치였던 45%를... 마이크론 테크놀로지(MU)와 마벨 테크놀로지"
+    },
+    {
+     "title": "유가·美 국채 내리자...S&P500·나스닥 사상 최고치 돌파",
+     "url": "https://www.hankyung.com/article/202610066710i",
+     "source": "hankyung.com",
+     "published": "2026-10-06T23:22:00+09:00",
+     "dup_count": 1,
+     "summary": "마이크론은 개장초 하락에서 상승으로 돌아섰으나 인텔과 TSMC,본장에서 하락한 SK하이닉스 ADR 하락했다.... 올해 S&P500지수는 견조한 기업 실적, AI"
+    },
+    {
+     "title": "미국증시 장초반 상승...금리·유가 숨고르자 AI주 재점화, 메모리는 엇...",
+     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16239988",
+     "source": "topstarnews.net",
+     "published": "2026-10-06T22:52:00+09:00",
+     "dup_count": 1,
+     "summary": "미국증시는 금리와 유가 안정 속 AI주가 재점화되며 상승세를 보였다."
+    },
+    {
+     "title": "유가 하락 뉴욕증시 상승...S&P500 사상 최고치 경신 눈앞",
+     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=89942",
+     "source": "thefairnews.co.kr",
+     "published": "2026-10-06T22:48:00+09:00",
+     "dup_count": 0,
+     "summary": "이번 주 주요 경제지표 발표가 많지 않은 가운데 투자자들은 중동 정세와 기업 실적에 시선을 돌리고... 삼성전자는 1.5%, SK하이닉스는 3.7% 하락했다. 일"
+    },
+    {
+     "title": "중국 D램 점유율 10% 돌파...“제2의 LCD 참사 우려”",
+     "url": "https://wemakenews.co.kr/news/view.php?no=26471",
+     "source": "wemakenews.co.kr",
+     "published": "2026-10-06T22:38:00+09:00",
+     "dup_count": 0,
+     "summary": "허 의원은 CXMT가 중국 국가 반도체 펀드와 정부 보조금 등을 바탕으로 대규모 투자를 진행하는 동안 국내 기업들이 고대역폭메모리(HBM)와 첨단 DDR5 등에 "
+    },
+    {
+     "title": "김정관 \"알래스카 LNG 투자, 아직 확정 아냐...중동전쟁 후 전략적 가치...",
+     "url": "https://www.newsis.com/view/NISX20261006_0003815537",
+     "source": "newsis.com",
+     "published": "2026-10-06T22:35:00+09:00",
+     "dup_count": 0,
+     "summary": "김정관 장관은 HBM 등 첨단 반도체 분야에서 확실한 기술 우위를 강조했다."
+    },
+    {
+     "title": "엔비디아, 시총 6조달러 근접...실적 전망·자사주 매입에 주가 최고치",
+     "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=87104",
+     "source": "industrynews.co.kr",
+     "published": "2026-10-06T22:34:00+09:00",
+     "dup_count": 0,
+     "summary": "엔비디아가 실적 전망과 자사주 매입 기대감에 힘입어 주가 최고치를 기록했다."
+    },
+    {
+     "title": "AMD, 2027 메모리 선점...삼성·SK하이닉스 장기계약 확대",
+     "url": "http://sateconomy.co.kr/news/view/1065619488562019",
+     "source": "sateconomy.co.kr",
+     "published": "2026-10-06T22:30:00+09:00",
      "dup_count": 2,
-     "summary": "삼성전자가 HBM4 양산 등에 힘입어 분기 영업이익 100조 원 시대를 열 전망이다."
+     "summary": "연산칩을 늘려도 HBM과 서버용 D램을 확보하지 못하면 AI 시스템 공급을 확대하기 어렵다. 실제 메모리 업체들의 미래 생산물량은 빠르게 계약으로 묶이고 있다. "
     },
     {
-     "title": "주가는 빠지는데 목표가 310만원...SK하이닉스, 무엇을 믿었나",
-     "url": "https://www.fnnews.com/news/202610061104345524",
-     "source": "fnnews.com",
-     "published": "2026-10-06T11:11:00+09:00",
-     "dup_count": 1,
-     "summary": "SK하이닉스가 HBM 사양 변경 우려에도 불구하고 공급 부족과 가격 상승으로 목표가 310만 원을 기록했다."
-    },
-    {
-     "title": "차세대 전공정·후공정 장비재조명... 반도체 장비주 주가 탄력",
-     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492899",
-     "source": "pinpointnews.co.kr",
-     "published": "2026-10-06T11:10:00+09:00",
-     "dup_count": 1,
-     "summary": "AI 반도체 수요 급증에 힘입어 HBM 및 첨단 공정 장비주들의 주가가 탄력을 받고 있다."
-    },
-    {
-     "title": "[오늘증시] 7000선 내준 코스피...외인 매도 속 코스닥은 '상승모드'",
-     "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=815049",
-     "source": "startuptoday.co.kr",
-     "published": "2026-10-06T11:10:00+09:00",
+     "title": "뉴욕증시 프리뷰, 美 국채금리·유가 동반 하락에 주가 선물 일제 상승...",
+     "url": "https://www.newspim.com/news/view/20261006001491",
+     "source": "newspim.com",
+     "published": "2026-10-06T21:57:00+09:00",
      "dup_count": 0,
-     "summary": "외인 매도세로 코스피가 7,000선을 내준 가운데 삼성전자는 보합, SK하이닉스는 하락했다."
+     "summary": "AI 투자 확대와 실적 기대감 속 뉴욕증시 선물은 일제히 상승했다."
     },
     {
-     "title": "\"5공장, 기대보다 빨랐다\" 삼성바이오, 환율·파업 뚫은 성장...리노공업...",
-     "url": "https://www.fnnews.com/news/202610061051191075",
-     "source": "fnnews.com",
-     "published": "2026-10-06T11:09:00+09:00",
+     "title": "연휴 끝 코스피, 7,000선 하회...외국인 매도",
+     "url": "http://www.yonhapnewstv.co.kr/news/MYH20261006212550ecY",
+     "source": "yonhapnewstv.co.kr",
+     "published": "2026-10-06T21:26:00+09:00",
      "dup_count": 0,
-     "summary": "삼성바이오와 리노공업 등이 AI와 HBM 수요 확대에 힘입어 새로운 테스트 영역에서 성장하고 있다."
+     "summary": "연휴 후 코스피는 외국인 매도로 7000선을 하회하며 약세를 보였다."
+    },
+    {
+     "title": "10월 1주 주요 제조업 전망",
+     "url": "https://www.laborplus.co.kr/news/articleView.html?idxno=41595",
+     "source": "laborplus.co.kr",
+     "published": "2026-10-06T21:20:00+09:00",
+     "dup_count": 1,
+     "summary": "9월 말 기준 주요 DRAM 제품 가격은 전주 대비 보합세를 유지했다."
+    },
+    {
+     "title": "[26.10.6 증시 인싸잇] 外人 매도에 코스피 0.89%↓... 코스닥은 소부장·...",
+     "url": "https://www.mediawatch.kr/news/article.html?no=261281",
+     "source": "mediawatch.kr",
+     "published": "2026-10-06T21:04:00+09:00",
+     "dup_count": 0,
+     "summary": "외국인 매도와 삼성전자 및 SK하이닉스 등 대형주 약세로 코스피가 하락했다."
+    },
+    {
+     "title": "AMD AI칩 대규모 증산 예고...삼성전자·SK하이닉스 HBM·서버 D램 기회 커...",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=553006",
+     "source": "joongangenews.com",
+     "published": "2026-10-06T20:58:00+09:00",
+     "dup_count": 0,
+     "summary": "AI 가속기와 서버용 중앙처리장치(CPU) 생산을 늘리기 위해 첨단 웨이퍼는 물론 고대역폭메모리(HBM) 등... AI 가속기와 서버용 중앙처리장치(CPU) 생산"
     }
    ]
   },
@@ -1308,164 +1085,164 @@
    "push": true,
    "items": [
     {
-     "title": "[K메이커] 북미에 승부 건 오뚜기, 해외 매출 1조원 목표로 글로벌 확장",
-     "url": "https://www.newspim.com/news/view/20261006000465",
-     "source": "newspim.com",
-     "published": "2026-10-06T11:34:00+09:00",
+     "title": "1세대 K-뷰티 '엇갈린 성적표'...미샤, 인력 감축하고 마케팅비 급증 '눈...",
+     "url": "https://news.tf.co.kr/read/economy/2373275.htm",
+     "source": "news.tf.co.kr",
+     "published": "2026-10-07T00:01:00+09:00",
      "dup_count": 0,
-     "summary": "오뚜기가 북미 시장을 겨냥하며 해외 매출 1조 원 달성을 위한 글로벌 확장에 나섰다."
+     "summary": "미샤는 해외와 디지털 중심으로 사업을 개편하며 인력 감축과 마케팅비용을 늘렸다."
     },
     {
-     "title": "여성기업종합지원센터, 일본서 K-뷰티 공동관...여성스타트업 10개사 판...",
-     "url": "https://www.womentimes.co.kr/news/articleView.html?idxno=106788",
-     "source": "womentimes.co.kr",
-     "published": "2026-10-06T11:28:00+09:00",
+     "title": "\"미국·일본 넘어 유럽으로\"... K뷰티, 수출 지형 달라졌다 [최기자의 뷰...",
+     "url": "https://www.meconomynews.com/news/articleView.html?idxno=202281",
+     "source": "meconomynews.com",
+     "published": "2026-10-06T23:46:00+09:00",
      "dup_count": 0,
-     "summary": "여성기업종합지원센터가 일본 코스메 위크 오사카에서 여성스타트업 10개사의 판로를 지원했다."
+     "summary": "K-뷰티가 세계 화장품 수출 2위로 도약하며 미국과 일본을 넘어 유럽까지 영토를 넓히고 있다."
     },
     {
-     "title": "코스맥스, IFSCC서 최다 구두 발표...응용 연구 '톱10'도 선정",
-     "url": "http://www.iminju.net/news/articleView.html?idxno=170398",
-     "source": "iminju.net",
-     "published": "2026-10-06T11:22:00+09:00",
+     "title": "K뷰티, 이제 '제품' 넘어 '과학'으로 승부한다",
+     "url": "https://www.meconomynews.com/news/articleView.html?idxno=202279",
+     "source": "meconomynews.com",
+     "published": "2026-10-06T23:32:00+09:00",
      "dup_count": 0,
-     "summary": "코스맥스가 세계화장품학회에서 다량의 구두 발표를 진행하며 뛰어난 연구개발 역량을 입증했다."
+     "summary": "코스맥스가 IFSCC 2026에서 글로벌 최다 구두발표를 기록하며 K-뷰티의 과학적 역량을 입증했다."
     },
     {
-     "title": "코스맥스, 세계화장품학회서 연구 성과 32건 발표",
-     "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7187522",
-     "source": "weekly.hankooki.com",
-     "published": "2026-10-06T11:22:00+09:00",
-     "dup_count": 1,
-     "summary": "코스맥스가 제36회 세계화장품학회에서 구두 발표 10건 등 총 32건의 연구 성과를 발표했다."
-    },
-    {
-     "title": "제주인디, 日 오사카 코스메 위크 참가",
-     "url": "https://www.jejudomin.co.kr/news/articleView.html?idxno=400919",
-     "source": "jejudomin.co.kr",
-     "published": "2026-10-06T11:18:00+09:00",
+     "title": "코스맥스, 세계화장품학회서 연구 32건 발표...우수 응용연구 '톱 10' 선정",
+     "url": "http://www.thefirstmedia.net/news/articleView.html?idxno=210245",
+     "source": "thefirstmedia.net",
+     "published": "2026-10-06T22:04:00+09:00",
      "dup_count": 0,
-     "summary": "제주인디가 일본 오사카 코스메 위크에 참가해 서귀포 관광 콘텐츠와 함께 화장품을 홍보했다."
+     "summary": "코스맥스는 세계화장품학회에서 연구 결과 총 32건을 발표하며 기술력을 과시했다."
     },
     {
-     "title": "코스멘토코리아 ‘헤브블루’, 재구매 기반 실적 확대...올해 연매출 30...",
-     "url": "http://www.globalepic.co.kr/view.php?ud=2026100611071390899aeda69934_29",
-     "source": "globalepic.co.kr",
-     "published": "2026-10-06T11:16:00+09:00",
+     "title": "경산 K-뷰티기업, 말레이 시장 사로잡다",
+     "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=561576",
+     "source": "idaegu.co.kr",
+     "published": "2026-10-06T21:34:00+09:00",
      "dup_count": 0,
-     "summary": "코스멘토코리아의 헤브블루가 재구매율을 높이며 올해 연매출 30억 원을 바라보고 있다."
+     "summary": "경산시와 경상북도는 말레이시아 전시회에서 K-뷰티 기업들의 바이어 발굴을 적극 지원했다."
     },
     {
-     "title": "여기종, 日 ‘코스메 위크 오사카’ 참가...뷰티 스타트업 10개사 지원",
-     "url": "https://www.sentv.co.kr/article/view/sentv202610060086",
-     "source": "sentv.co.kr",
-     "published": "2026-10-06T11:14:00+09:00",
+     "title": "충남도, 슬로바키아서 도내 화장품 유럽 판로 확대",
+     "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1299131",
+     "source": "jeonmae.co.kr",
+     "published": "2026-10-06T21:32:00+09:00",
      "dup_count": 0,
-     "summary": "최근 일본 화장품 시장에서 기능성과 독창성을 앞세운 K-뷰티가 수입 점유율 1위를 유지하며 영향력을... 진출이 수출 성패를 가르는 핵심 요인으로 꼽힌다는 분석이"
+     "summary": "충남도는 슬로바키아 한국 이야기 축제에 참가해 도내 화장품 기업의 유럽 판로 개척을 도왔다."
     },
     {
-     "title": "궁중비책, 글로벌 K-뷰티 플랫폼 스타일코리안 입점",
-     "url": "http://www.ktnews.com/news/articleView.html?idxno=149074",
-     "source": "ktnews.com",
-     "published": "2026-10-06T11:14:00+09:00",
+     "title": "10월 1주 주요 제조업 전망",
+     "url": "https://www.laborplus.co.kr/news/articleView.html?idxno=41595",
+     "source": "laborplus.co.kr",
+     "published": "2026-10-06T21:20:00+09:00",
      "dup_count": 0,
-     "summary": "궁중비책이 실리콘투의 글로벌 K-뷰티 이커머스 '스타일코리안'에 입점했다. 궁중비책은 지난 9월 30일부터... 스타일코리안은 실리콘투가 전개하는 글로벌 K-뷰티"
+     "summary": "10월 1주 20대 주력 수출품목 중 화장품을 포함한 11개 품목의 수출 증가가 전망된다."
     },
     {
-     "title": "[카드] 코스맥스, ISFCC서 구두발표 10건...글로벌 최다",
-     "url": "http://www.newsprime.co.kr/news/article.html?no=749970",
-     "source": "newsprime.co.kr",
-     "published": "2026-10-06T11:10:00+09:00",
+     "title": "“수출품에 ‘디지털정보여권’... 伊 명품도 러브콜”",
+     "url": "https://www.segye.com/newsView/20261006516059?OutUrl=naver",
+     "source": "segye.com",
+     "published": "2026-10-06T20:32:00+09:00",
      "dup_count": 0,
-     "summary": "코스맥스가 호주에서 열린 제36회 세계화장품학회에서 총 32건의 연구 결과를 발표했다."
+     "summary": "부산의 데이터스피라는 디지털제품 여권(DPP)을 통해 화장품과 명품 등의 해외 수출을 지원한다."
     },
     {
-     "title": "한국콜마? 코스맥스? ... 증권가 '픽'이 바뀐다",
-     "url": "https://www.ilovepc.co.kr/news/articleView.html?idxno=60866",
-     "source": "ilovepc.co.kr",
-     "published": "2026-10-06T11:10:00+09:00",
+     "title": "코스맥스, 매출 5% R&I 재투자 결실...'세계 최다 구두발표'로 입증한 기...",
+     "url": "http://www.lkp.news/news/articleView.html?idxno=84678",
+     "source": "lkp.news",
+     "published": "2026-10-06T20:16:00+09:00",
      "dup_count": 0,
-     "summary": "증권가가 내수 중심의 한국콜마 대신 해외에서 약진하는 코스맥스로 눈을 돌리고 있다."
+     "summary": "코스맥스는 매출의 5%를 R&I에 재투자해 세계 최다 구두발표 성과를 거두었다."
     },
     {
-     "title": "코스맥스, IFSCC 구두발표 ‘글로벌 최다’⋯ 연구성과 32건 공개",
-     "url": "https://www.viva100.com/article/20261006500322",
-     "source": "viva100.com",
-     "published": "2026-10-06T11:10:00+09:00",
+     "title": "[미리보는 이데일리 신문]\"홍보영상 이젠 직접\"...AI가 삼킨 외주일감",
+     "url": "https://www.edaily.co.kr/News/Read?newsId=05651446645610296&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+     "source": "edaily.co.kr",
+     "published": "2026-10-06T19:58:00+09:00",
      "dup_count": 0,
-     "summary": "코스맥스가 세계화장품학회에서 글로벌 참가 기업 중 가장 많은 10건의 구두발표를 진행했다."
+     "summary": "AI 기술의 도입으로 코스맥스와 한국콜마 등에서 외주 홍보영상 업무가 크게 줄어들고 있다."
     },
     {
-     "title": "[기업家] CJ그룹 5ᅵ K푸드·K뷰티 세계로...콘텐츠·물류까지 고객 접점...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612648",
-     "source": "cbci.co.kr",
-     "published": "2026-10-06T11:06:00+09:00",
+     "title": "경산 K-뷰티, 말레이 시장 뚫었다... 11억원 수출계약",
+     "url": "https://www.hidomin.com/news/articleView.html?idxno=723912",
+     "source": "hidomin.com",
+     "published": "2026-10-06T19:48:00+09:00",
      "dup_count": 0,
-     "summary": "CJ그룹이 K푸드와 K뷰티를 앞세워 콘텐츠와 물류를 아우르며 세계화에 박차를 가하고 있다."
+     "summary": "경산 K-뷰티 기업들이 말레이시아에서 11억 원 규모의 수출 계약을 체결하는 성과를 거뒀다."
     },
     {
-     "title": "코스맥스, '화장품 올림픽' IFSCC서 글로벌 최다 구두발표...10건 기록",
-     "url": "https://www.joongangenews.com/news/articleView.html?idxno=552685",
-     "source": "joongangenews.com",
-     "published": "2026-10-06T11:00:00+09:00",
+     "title": "K-뷰티 경산, 말레이시아 뷰티엑스포 첫 참가서 80만달러 수출계약",
+     "url": "https://www.dkilbo.com/news/articleView.html?idxno=556425",
+     "source": "dkilbo.com",
+     "published": "2026-10-06T19:36:00+09:00",
      "dup_count": 0,
-     "summary": "코스맥스가 화장품 올림픽인 세계화장품학회에서 글로벌 최다인 10건의 구두발표를 기록했다."
+     "summary": "아울러 경산시는 화장품 연구·개발과 생산을 비롯해 인증지원, 수출에 이르기까지 기업의 성장 단계별 지원체계를 구축하고 있다. 이를 통해 관련 기업의 지역 유입을 "
     },
     {
-     "title": "K뷰티 뜨는데 수입 화장품 위상 흔들 ... 에스티로더 한국법인 '적자 전...",
-     "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/06/2026100600109.html",
-     "source": "biz.newdaily.co.kr",
-     "published": "2026-10-06T10:54:00+09:00",
+     "title": "[증권픽] 한국투자증권, 연금 MTS 개편...자산 조회·맞춤 알림 강화 外",
+     "url": "http://www.newsian.co.kr/news/articleView.html?idxno=96616",
+     "source": "newsian.co.kr",
+     "published": "2026-10-06T19:32:00+09:00",
      "dup_count": 0,
-     "summary": "K-뷰티의 인기로 에스티로더 한국법인이 적자를 기록하는 등 수입 화장품의 위상이 흔들리고 있다."
+     "summary": "한국투자증권은 연금 MTS 개편을 기념해 올리브영 상품권 등을 제공하는 이벤트를 연다."
     },
     {
-     "title": "효자 '널디'가 어쩌다...질주하는 에이피알서 존재감 '1%'",
-     "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1726784",
-     "source": "ebn.co.kr",
-     "published": "2026-10-06T10:52:00+09:00",
+     "title": "[세상읽기] 화양연화",
+     "url": "https://www.kyeonggi.com/article/20261006580523",
+     "source": "kyeonggi.com",
+     "published": "2026-10-06T19:29:00+09:00",
      "dup_count": 0,
-     "summary": "에이피알이 뷰티 사업 비중을 키우는 반면, 효자였던 널디는 부진한 실적을 보이고 있다."
+     "summary": "반도체 외에도 화장품과 자동차 등이 수출 전선에서 한국의 저력을 든든히 뒷받침하고 있다."
     },
     {
-     "title": "코스맥스, 세계화장품학회 구두발표 최다...1년 새 2배",
-     "url": "https://www.wolyo.co.kr/news/articleView.html?idxno=318678",
-     "source": "wolyo.co.kr",
-     "published": "2026-10-06T10:52:00+09:00",
-     "dup_count": 1,
-     "summary": "코스맥스가 제36회 세계화장품학회에서 구두발표 10건을 기록하며 글로벌 최다 발표를 달성했다."
-    },
-    {
-     "title": "여기종, 'K-뷰티' 여성스타트업 일본 진출 지원...10개사 참여",
-     "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5068948",
-     "source": "shinailbo.co.kr",
-     "published": "2026-10-06T10:42:00+09:00",
+     "title": "올리브영, 상권·고객 맞춤 ‘특화 매장’ 확대...‘K-뷰티 랜드마크’ ...",
+     "url": "https://futurechosun.com/?p=162102",
+     "source": "futurechosun.com",
+     "published": "2026-10-06T19:22:00+09:00",
      "dup_count": 0,
-     "summary": "여성기업종합지원센터가 K-뷰티 여성스타트업 10개사의 일본 시장 진출과 판로 확대를 도왔다."
+     "summary": "/뉴시스 올리브영은 2010년대 중반부터 외국인 방문객 비중이 높은 매장을 ‘글로벌관광상권’으로 지정해 다국어 서비스와 맞춤형 큐레이션을 제공해 왔다. 최근에는 "
     },
     {
-     "title": "코스맥스, IFSCC서 연구 32건 발표...\"선케어·헤어케어 등 5개 분야\"",
-     "url": "http://www.kdfnews.com/news/articleView.html?idxno=188869",
-     "source": "kdfnews.com",
-     "published": "2026-10-06T10:42:00+09:00",
+     "title": "경산 유망 뷰티기업, 말레이시아 시장 사로잡아",
+     "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=870461",
+     "source": "hansbiz.co.kr",
+     "published": "2026-10-06T19:02:00+09:00",
      "dup_count": 0,
-     "summary": "코스맥스가 제36회 세계화장품학회에서 선케어와 헤어케어 등 5개 분야 총 32건을 발표했다."
+     "summary": "경산시는 체계적인 지원을 통해 지역 유망 뷰티기업들을 글로벌 수출 거점으로 육성하고 있다."
     },
     {
-     "title": "[K뷰티 판을 바꾸다(上)] 美 틱톡샵 스킨케어 19%가 APR(에이피알) 메디...",
-     "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=86898",
-     "source": "industrynews.co.kr",
-     "published": "2026-10-06T10:40:00+09:00",
+     "title": "신용한 충북지사 “삶의 질 높이는 대전환 이룰 것”",
+     "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000020319&cp=nv",
+     "source": "kmib.co.kr",
+     "published": "2026-10-06T18:47:00+09:00",
      "dup_count": 0,
-     "summary": "9월 화장품 수출이 15억 1000만 달러를 기록하며 월간 기준 사상 최대치를 경신했다."
+     "summary": "충북도는 일라이트 자원을 활용한 화장품 및 건축자재 기업 유치에 적극적으로 나선다."
     },
     {
-     "title": "[Weekly 제약&바이오] 차병원·차바이오그룹·동아제약·심평원",
-     "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=815030",
-     "source": "startuptoday.co.kr",
-     "published": "2026-10-06T10:36:00+09:00",
+     "title": "충남도, 화장품 기업 슬로바키아 진출 지원",
+     "url": "https://www.ccdn.co.kr/news/articleView.html?idxno=1103482",
+     "source": "ccdn.co.kr",
+     "published": "2026-10-06T18:38:00+09:00",
      "dup_count": 0,
-     "summary": "차병원그룹과 동아제약 등이 인재 육성과 신제품 출시로 글로벌 및 국내 시장 공략을 강화한다."
+     "summary": "충남도는 슬로바키아에서 도내 화장품 기업의 제품 소개와 실질적 수출 상담을 지원했다."
+    },
+    {
+     "title": "제주도 제안 5000억 'K-아레나' 사업 정부에 퇴짜",
+     "url": "http://www.samdailbo.com/news/articleView.html?idxno=271012",
+     "source": "samdailbo.com",
+     "published": "2026-10-06T18:26:00+09:00",
+     "dup_count": 0,
+     "summary": "제주도는 5000억 원 규모의 K-아레나 사업을 통해 화장품 등 K-컬처 결합을 추진했다."
+    },
+    {
+     "title": "코스맥스, 세계화장품학회서 구두발표 10건 ‘최다’",
+     "url": "https://www.fnnews.com/news/202610061820131278",
+     "source": "fnnews.com",
+     "published": "2026-10-06T18:22:00+09:00",
+     "dup_count": 3,
+     "summary": "코스맥스는 세계화장품학회에서 10건의 구두발표를 포함해 총 32건의 연구를 발표했다."
     }
    ]
   },
@@ -1474,164 +1251,164 @@
    "push": false,
    "items": [
     {
-     "title": "한미약품, 오픈이노베이션 전략 통했다...기술수출 성과 목전",
-     "url": "https://www.etnews.com/20261006000174",
-     "source": "etnews.com",
-     "published": "2026-10-06T11:42:00+09:00",
-     "dup_count": 1,
-     "summary": "기술수출하면서 그동안 추진해 온 오픈이노베이션 전략이 효과를 내고 있다는 평가가 나온다. 6일... 한미약품은 지난 수십 년간 다수의 글로벌 제약사와 다양한 파트"
-    },
-    {
-     "title": "'글로벌 톱 50' 향해...유한양행, 밀라노서 위탁생산 영업 총력",
-     "url": "https://www.fnnews.com/news/202610061137319219",
-     "source": "fnnews.com",
-     "published": "2026-10-06T11:41:00+09:00",
+     "title": "세계식량가격, 3년 10개월만 '최고치'",
+     "url": "http://www.fsnews.co.kr/news/articleView.html?idxno=62310",
+     "source": "fsnews.co.kr",
+     "published": "2026-10-07T01:20:00+09:00",
      "dup_count": 0,
-     "summary": "원료의약품 수출 호조를 이어가고 있는 유한양행이 세계 최대 제약·바이오 박람회에서 위탁개발생산(CDMO) 수주 확대에 시동을 건다. 유한양행은 6~8일(현지시간)"
+     "summary": "흑해 물류 제약과 북미 건조 날씨로 국제 밀과 옥수수 가격이 상승했다."
     },
     {
-     "title": "삼진제약, '월드클래스 플러스' 선정서 수여...R&D 지원",
-     "url": "https://www.medipana.com/news/articleView.html?idxno=418810",
-     "source": "medipana.com",
-     "published": "2026-10-06T11:40:00+09:00",
-     "dup_count": 0,
-     "summary": "월드클래스 플러스 프로젝트는 산업통상자원부와 한국산업기술진흥원(KIAT)이 글로벌 성장 잠재력을 갖춘 중견기업을 선정해 R&D와 수출, 금융, 컨설팅 등을 지원하"
-    },
-    {
-     "title": "급여 후 '진짜 효과' 확인...RWE 약제평가 체계화 시동",
-     "url": "https://www.medipana.com/news/articleView.html?idxno=418801",
-     "source": "medipana.com",
-     "published": "2026-10-06T11:40:00+09:00",
-     "dup_count": 0,
-     "summary": "국내서 사전승인 의약품 등 RWE 약제평가 체계화 시동"
-    },
-    {
-     "title": "센텔리안24, 카카오톡 선물하기에 '마데카 기프트 세트' 2종 구성",
-     "url": "http://www.ktnews.com/news/articleView.html?idxno=149081",
-     "source": "ktnews.com",
-     "published": "2026-10-06T11:34:00+09:00",
-     "dup_count": 0,
-     "summary": "동국제약의 더마코스메틱 브랜드 센텔리안24가 카카오톡 선물하기에서 '마데카 기프트 세트' 2종을 선보인다. 제품은 '마데카 프리미엄 컬렉션 기프트 세트'와 '마데"
-    },
-    {
-     "title": "한미약품, 보스턴 학회서 TME 표적 FAP-SMDC 연구 결과 발표",
-     "url": "http://www.ttlnews.com/news/articleView.html?idxno=3149457",
-     "source": "ttlnews.com",
-     "published": "2026-10-06T11:34:00+09:00",
-     "dup_count": 0,
-     "summary": "글로벌 제약바이오 업계의 핵심 모달리티로 떠오른 항체 약물 접합체(ADC)가 고형암 조직 내부 침투율... 기술수출(L/O)을 타진한다는 복안이다. 현재 글로벌 "
-    },
-    {
-     "title": "유한양행, CPHI Milan 2026 단독 부스 참가...글로벌 파트너십 확대",
-     "url": "https://www.biotimes.co.kr/news/articleView.html?idxno=34975",
-     "source": "biotimes.co.kr",
-     "published": "2026-10-06T11:32:00+09:00",
-     "dup_count": 0,
-     "summary": "유한양행은 현재 다국적 제약사와의 API 위탁생산 물량이 꾸준히 늘면서 수출을 확대하고 있다. 유한화학의 생산능력 확대와 글로벌 규제기관의 기준에 맞춘 품질관리를"
-    },
-    {
-     "title": "연말 가동 앞둔 롯데바이오...K바이오 수주전 본격화",
-     "url": "https://www.sidae.com/article/2026100608405442653",
-     "source": "sidae.com",
-     "published": "2026-10-06T11:31:00+09:00",
-     "dup_count": 1,
-     "summary": "롯데바이오 연말 가동 앞두고 K바이오 수주전 본격화"
-    },
-    {
-     "title": "동국제약, 센텔리안24 '마데카 기프트 세트' 선봬",
-     "url": "https://www.bosa.co.kr/news/articleView.html?idxno=3013343",
-     "source": "bosa.co.kr",
-     "published": "2026-10-06T11:26:00+09:00",
-     "dup_count": 3,
-     "summary": "동국제약이 더마코스메틱 브랜드 '센텔리안24'의 대표 제품을 선물용 구성으로 묶어 온라인 유통 접점 확대에 나선다. 동국제약(대표이사 송준호)은 '센텔리안24'의"
-    },
-    {
-     "title": "‘바이오 재팬’ 동시 출격",
-     "url": "https://biz.heraldcorp.com/article/10894066?ref=naver",
-     "source": "biz.heraldcorp.com",
-     "published": "2026-10-06T11:26:00+09:00",
-     "dup_count": 0,
-     "summary": "국내 대형 CDMO 기업들 '바이오 재팬' 동시 출격"
-    },
-    {
-     "title": "[제약브리핑] JW중외제약, 'EASD 2026'서 '엠파가드' 임상 3상 결과 발표...",
-     "url": "https://www.seoulfn.com/news/articleView.html?idxno=639400",
-     "source": "seoulfn.com",
-     "published": "2026-10-06T11:24:00+09:00",
-     "dup_count": 1,
-     "summary": "이에 따라 향후 최대 4년간 정부로부터 연구개발(R&D) 자금을 지원받으며, 연구개발·수출·금융·컨설팅 등을 연계한 지원을 받게 된다. 삼진제약은 '혁신신약 고도"
-    },
-    {
-     "title": "유한양행, 밀라노서 '유한CDMO' 알린다...글로벌 고객사 확보 박차",
-     "url": "http://www.consumernews.co.kr/news/articleView.html?idxno=765302",
-     "source": "consumernews.co.kr",
-     "published": "2026-10-06T11:22:00+09:00",
-     "dup_count": 0,
-     "summary": "유한양행은 글로벌 다국적 제약사로부터 수주한 API 위탁생산 물량 증가에 힘입어 관련 수출을 확대하고 있다. 자회사 유한화학도 생산능력을 선제적으로 확충하고 글로"
-    },
-    {
-     "title": "삼진제약, '2026 월드클래스 플러스 프로젝트' 지원 대상 기업 선정",
-     "url": "http://www.consumernews.co.kr/news/articleView.html?idxno=765290",
-     "source": "consumernews.co.kr",
-     "published": "2026-10-06T11:22:00+09:00",
-     "dup_count": 0,
-     "summary": "향후에는 글로벌 제약사와의 협력 네트워크를 활용해 기술수출을 확대하고 개발 단계별 기술이전을 통한 수익 창출 구조를 강화할 방침이다. 해외 사업 네트워크를 활용해"
-    },
-    {
-     "title": "제일약품, '2026년 제2차 제약·바이오 글로벌 진출 지원 사업' 수행",
-     "url": "http://www.consumernews.co.kr/news/articleView.html?idxno=765317",
-     "source": "consumernews.co.kr",
-     "published": "2026-10-06T11:22:00+09:00",
-     "dup_count": 0,
-     "summary": "제일약품은 한국보건산업진흥원(KHIDI)이 주관하는 '2026년 제2차 제약·바이오 글로벌 진출 지원 사업(K-VIP)... 현재 중국과 인도, 중남미, 북유럽 "
-    },
-    {
-     "title": "[트렌드 포커스] 농장·병원·공장을 바꾼다...혁신기업의 다음 무대",
-     "url": "http://www.sisacast.kr/news/articleView.html?idxno=100696",
-     "source": "sisacast.kr",
-     "published": "2026-10-06T11:22:00+09:00",
-     "dup_count": 0,
-     "summary": "노바티스 등 글로벌 제약사, AI 활용 신약 개발 협업 진행"
-    },
-    {
-     "title": "[기업家] SK그룹 23ᅵ AI부터 바이오·친환경까지...미래 먹거리 전방위...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=612668",
-     "source": "cbci.co.kr",
-     "published": "2026-10-06T11:18:00+09:00",
-     "dup_count": 0,
-     "summary": "한미약품, 대사질환 치료제 기술수출로 글로벌 거래 9위 기록"
-    },
-    {
-     "title": "마데카크림 1억개 돌파 기념...동국제약, 카카오톡 선물하기 세트 2종 출...",
-     "url": "https://www.thepowernews.co.kr/view.php?ud=202610061113577762de3f0aa1be_7",
-     "source": "thepowernews.co.kr",
-     "published": "2026-10-06T11:16:00+09:00",
-     "dup_count": 0,
-     "summary": "동국제약이 마데카크림 누적 판매량 1억개 돌파를 계기로 센텔리안24의 선물 수요 공략에 나선다. 베스트셀러 스킨케어 제품과 리프팅 케어 제품을 각각 묶은 기프트 "
-    },
-    {
-     "title": "제일약품, 정부 K-VIP 사업 선정⋯\"글로벌 사업 확대\"",
-     "url": "http://www.inews24.com/view/2012026",
-     "source": "inews24.com",
-     "published": "2026-10-06T11:16:00+09:00",
-     "dup_count": 0,
-     "summary": "K-VIP는 국내 제약·바이오 기업의 지속가능한 글로벌 진출을 지원하기 위해 마련된 정부 지원사업이다. 세계 각국의 수출입 규제 강화와 공급망 리스크, 통상환경 "
-    },
-    {
-     "title": "사우디 아람코 CEO \"세계 원유 재고 회복에 최장 2년 걸려\"",
-     "url": "https://www.news1.kr/world/middleeast-africa/6311217",
+     "title": "美 8월 무역적자 141조원...작년 3월 이후 최대폭",
+     "url": "https://www.news1.kr/world/usa-canada/6312161",
      "source": "news1.kr",
-     "published": "2026-10-06T11:15:00+09:00",
+     "published": "2026-10-07T00:58:00+09:00",
      "dup_count": 0,
-     "summary": "또한 중동산 원유 수출은 상당 부분 회복됐으나 석유제품 물량은 여전히 심각한 제약을 받고 있다고 설명했다. 이란은 지난 2월 28일 전쟁 발발 이후 호르무즈 해협"
+     "summary": "금과 원유 수출 증가로 美 8월 무역적자가 작년 3월 이후 최대폭을 기록했다."
     },
     {
-     "title": "美 의약품 관세 일주일...K바이오 생존법 된 'Made in USA'",
-     "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1726792",
-     "source": "ebn.co.kr",
-     "published": "2026-10-06T11:08:00+09:00",
+     "title": "[더페어 돋보기] 증권가 \"코스피, 4분기 상단 최대 7500선\"...반도체·AI ...",
+     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=89930",
+     "source": "thefairnews.co.kr",
+     "published": "2026-10-07T00:00:00+09:00",
      "dup_count": 0,
-     "summary": "미국 의약품 관세 시행 속 K바이오의 생존법으로 부상한 미국 생산"
+     "summary": "증권가는 4분기 코스피 상단이 반도체와 AI 등에 힘입어 최대 7500선에 이를 것으로 예상했다."
+    },
+    {
+     "title": "[이슈국감] '용인 팹 10기 가동하면 한강 물부족에 수도권 몸살'",
+     "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=870563",
+     "source": "hansbiz.co.kr",
+     "published": "2026-10-06T23:34:00+09:00",
+     "dup_count": 0,
+     "summary": "용인 반도체 팹 10기 가동이 한강 물 부족으로 수도권의 핵심 제약 요인이 될 수 있다는 지적이다."
+    },
+    {
+     "title": "곡물·설탕값 올라 9월 FAO 세계식량가격지수 136.0...전월보다 1.5% 상승",
+     "url": "https://www.youngnong.co.kr/news/articleView.html?idxno=70817",
+     "source": "youngnong.co.kr",
+     "published": "2026-10-06T23:18:00+09:00",
+     "dup_count": 0,
+     "summary": "밀 가격은 흑해 지역 물류 제약과 북미 일부 지역의 건조한 날씨 영향으로 전월 대비 6.3% 상승했고, 옥수수는 미국 수확량이 예상에 못 미치고 브라질 수출 가능"
+    },
+    {
+     "title": "센텔리안24, 마데카 세트 카톡 입점...자주, 손상모 3종 출시",
+     "url": "https://www.slist.kr/news/articleView.html?idxno=771461",
+     "source": "slist.kr",
+     "published": "2026-10-06T22:20:00+09:00",
+     "dup_count": 0,
+     "summary": "동국제약 센텔리안24가 '마데카 기프트 세트' 2종을 카카오톡 선물하기에 출시했다."
+    },
+    {
+     "title": "제일약품, 글로벌 진출 지원사업 선정...자큐보·신약 확대",
+     "url": "https://www.kpinews.kr/newsView/1065577855174949",
+     "source": "kpinews.kr",
+     "published": "2026-10-06T21:56:00+09:00",
+     "dup_count": 0,
+     "summary": "현지 제약·바이오 기업들과 파트너링 미팅을 진행하고 기술수출과 공동개발 등 사업 협력 기회를 모색한다. 제일약품은 차세대 당뇨병 치료제 'JP-2266'과 항암제"
+    },
+    {
+     "title": "동국제약, 센텔리안24 '마데카 기프트 세트' 카카오톡 출시",
+     "url": "http://www.newsbrite.net/news/articleView.html?idxno=200758",
+     "source": "newsbrite.net",
+     "published": "2026-10-06T20:44:00+09:00",
+     "dup_count": 1,
+     "summary": "동국제약이 더마코스메틱 브랜드 '센텔리안24'의 '마데카 기프트 세트' 2종을 카카오톡 선물하기 플랫폼에 출시했다. 이번에 출시된 기프트 세트는 센텔리안24의 인"
+    },
+    {
+     "title": "경향신문 창간 80주년 기념행사에 참석해주신 분들께 감사드립니다",
+     "url": "https://www.khan.co.kr/article/202610062044015",
+     "source": "khan.co.kr",
+     "published": "2026-10-06T20:44:00+09:00",
+     "dup_count": 1,
+     "summary": "경향신문 창간 80주년 기념행사에 동국제약 이용훈 부장 등이 참석했다."
+    },
+    {
+     "title": "삼진제약, '2026 월드클래스 플러스' 선정",
+     "url": "https://www.dailymedi.com/news/news_view.php?wr_id=941169",
+     "source": "dailymedi.com",
+     "published": "2026-10-06T20:30:00+09:00",
+     "dup_count": 0,
+     "summary": "삼진제약이 '2026 월드클래스 플러스'에 선정되어 글로벌 기술수출을 추진한다."
+    },
+    {
+     "title": "[EBN 오늘(6일) 이슈 종합] 美 의약품 관세 일주일...K바이오 생존법 된 ...",
+     "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1726897",
+     "source": "ebn.co.kr",
+     "published": "2026-10-06T20:24:00+09:00",
+     "dup_count": 0,
+     "summary": "美 의약품 관세 부과에 따라 국내 제약·바이오업계가 현지 중심의 사업 재편에 나섰다."
+    },
+    {
+     "title": "서울창조경제혁신센터, 존스홉킨스·히크마와 국내 바이오헬스 스타트...",
+     "url": "https://magazine.hankyung.com/job-joy/article/202610066615d",
+     "source": "magazine.hankyung.com",
+     "published": "2026-10-06T20:24:00+09:00",
+     "dup_count": 0,
+     "summary": "서울창조경제혁신센터가 국내 바이오헬스 스타트업의 글로벌 제약사 협력을 지원했다."
+    },
+    {
+     "title": "알알이 새겨진 ‘송도 DNA’... 탄탄히 자리잡은 의약품 산업 [2026 창간특...",
+     "url": "https://www.kyeongin.com/article/1772075",
+     "source": "kyeongin.com",
+     "published": "2026-10-06T20:12:00+09:00",
+     "dup_count": 0,
+     "summary": "인천은 2024년 기준 의약품 산업 생산액 7.7조원을 기록하며 최대 거점으로 성장했다."
+    },
+    {
+     "title": "[기고] K-조선과 미 해양 패권의 결합: '핀란드 모델'에서 '필리조선소 ...",
+     "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=129871",
+     "source": "ntoday.co.kr",
+     "published": "2026-10-06T20:10:00+09:00",
+     "dup_count": 0,
+     "summary": "한국 조선업의 미 해양 패권 결합 과정에서 다양한 기회와 제약 요인이 공존하고 있다."
+    },
+    {
+     "title": "코스피, 외국인 매도에 '7천선' 반납...코스닥은 3% 상승",
+     "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=53440",
+     "source": "koreareport.co.kr",
+     "published": "2026-10-06T19:14:00+09:00",
+     "dup_count": 0,
+     "summary": "외국인 매도로 코스피가 하락한 가운데 운송장비와 전기·전자, 제약 업종도 약세를 보였다."
+    },
+    {
+     "title": "박희승 의원 '충전소 없는 수소차 강국 없다' 수소 통합관리 촉구",
+     "url": "http://www.e-platform.net/news/articleView.html?idxno=105935",
+     "source": "e-platform.net",
+     "published": "2026-10-06T18:34:00+09:00",
+     "dup_count": 0,
+     "summary": "수소충전소 부족이 수소차 강국 도약을 제약하는 요인으로 작용하고 있다는 지적이다."
+    },
+    {
+     "title": "'월드클래스' 오른 삼진제약...SJN314·ADC 글로벌 정조준",
+     "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065605092187722",
+     "source": "megaeconomy.co.kr",
+     "published": "2026-10-06T18:30:00+09:00",
+     "dup_count": 0,
+     "summary": "삼진제약이 '월드클래스' 선정에 힘입어 SJN314와 ADC의 글로벌 기술수출을 노린다."
+    },
+    {
+     "title": "에이로봇, 방위사업청 '방산혁신기업' 5기 선정... 국방 분야 확장 본격...",
+     "url": "http://www.engjournal.co.kr/news/articleView.html?idxno=3998",
+     "source": "engjournal.co.kr",
+     "published": "2026-10-06T18:30:00+09:00",
+     "dup_count": 0,
+     "summary": "방산 수출 지원 등 전방위적인 혜택을 받게 된다. 이를 통해 민간 현장에서 검증된 이족보행 기술을 국방... 능력, ▲통신 제약·단절 환경 대응 온디바이스 비전 "
+    },
+    {
+     "title": "에이로봇, 방사청 '방산혁신기업 5기' 선정...휴머노이드 국방 상용화 추...",
+     "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=705327",
+     "source": "digitaltoday.co.kr",
+     "published": "2026-10-06T18:20:00+09:00",
+     "dup_count": 0,
+     "summary": "에이로봇이 방산혁신기업 5기로 선정되어 통신 제약 환경에 대응하는 휴머노이드 기술을 고도화한다."
+    },
+    {
+     "title": "제일약품, 당뇨·항암 후보물질 사업화 속도",
+     "url": "https://www.fnnews.com/news/202610061817381912",
+     "source": "fnnews.com",
+     "published": "2026-10-06T18:19:00+09:00",
+     "dup_count": 0,
+     "summary": "제일약품이 정부의 K-VIP 지원사업에 선정되며 당뇨 및 항암 후보물질 사업화에 속도를 낸다."
     }
    ]
   },
@@ -1640,164 +1417,164 @@
    "push": false,
    "items": [
     {
-     "title": "AI와 에너지의 융합, 중국 디지털 에너지 산업의 현주소: 2026 선전 국제...",
-     "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=110&CONTENTS_NO=1&bbsGbn=245&bbsSn=245&pNttSn=244451",
-     "source": "dream.kotra.or.kr",
-     "published": "2026-10-06T11:36:00+09:00",
+     "title": "최대 호황 K조선... ‘3개 먹구름’ 몰려온다",
+     "url": "https://www.chosun.com/economy/industry-company/2026/10/07/WYJGHFRQHZHZJDLCDQJCTRJWZE/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+     "source": "chosun.com",
+     "published": "2026-10-07T00:34:00+09:00",
      "dup_count": 0,
-     "summary": "한국 기업은 차별화된 기술력으로 중국 디지털 에너지 시장 진출을 검토할 수 있다."
+     "summary": "K조선은 호황 속에서도 3대 리스크 장기화에 따른 미래 대비와 철저한 충격 대비가 필요하다."
     },
     {
-     "title": "한전 전력절감 실적 3분의 1이 캐시백...'정책 효과' 검증은 빠졌다",
-     "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203831",
-     "source": "energydaily.co.kr",
-     "published": "2026-10-06T11:32:00+09:00",
+     "title": "美 조선소 현대화 ‘2000억 달러·50년’... K조선엔 기회",
+     "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000020410&cp=nv",
+     "source": "kmib.co.kr",
+     "published": "2026-10-07T00:19:00+09:00",
      "dup_count": 0,
-     "summary": "한전의 전력절감 실적 중 캐시백 비중이 높으나 정책 효과 검증은 부족하다."
+     "summary": "미국의 조선소 현대화 추진과 미군 함정 MRO 사업은 K조선에 새로운 기회로 작용하고 있다."
     },
     {
-     "title": "두산로보틱스, 989억 규모 피지컬 AI 국책과제 수주",
-     "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610060027&t=NN",
-     "source": "wowtv.co.kr",
-     "published": "2026-10-06T11:20:00+09:00",
-     "dup_count": 2,
-     "summary": "두산로보틱스가 피지컬 AI(Physical AI) 관련 국책과제 2건을 잇달아 수주하며 정부 지원금을 받는다.... 이후 조선, 플랜트, 방산 등으로 적용 범위를"
-    },
-    {
-     "title": "두산로보틱스, 980억 원대 국책과제 수주...'국산 AI 칩' 로봇으로 피지...",
-     "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=145278",
-     "source": "opinionnews.co.kr",
-     "published": "2026-10-06T11:16:00+09:00",
+     "title": "에이로봇, 방산혁신기업 선정...휴머노이드 군 시범운용 추진",
+     "url": "https://www.edaily.co.kr/News/Read?newsId=07058566645610296&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+     "source": "edaily.co.kr",
+     "published": "2026-10-06T23:44:00+09:00",
      "dup_count": 0,
-     "summary": "사진= 두산로보틱스 두산로보틱스가 총 989억 원 규모의 대형 국책과제 2건을 동시에 수주하며 국내 제조업... 실증 작업은 두산에너빌리티 원자력센터에서 진행되며"
+     "summary": "에이로봇이 방산혁신기업으로 선정되어 조선·건설 현장의 휴머노이드 기술을 국방 분야로 확장한다."
     },
     {
-     "title": "두산로보틱스, 국산 AI칩 기반 ‘피지컬 AI’ 개발",
-     "url": "https://biz.heraldcorp.com/article/10894015?ref=naver",
-     "source": "biz.heraldcorp.com",
-     "published": "2026-10-06T11:11:00+09:00",
+     "title": "삼성중공업, LNG운반선 2척 추가 수주... 올해 누적 20척 달성",
+     "url": "https://www.job-post.co.kr/news/articleView.html?idxno=230898",
+     "source": "job-post.co.kr",
+     "published": "2026-10-06T22:48:00+09:00",
      "dup_count": 0,
-     "summary": "두산로보틱스가 국산 인공지능(AI) 반도체를 탑재해 클라우드 없이 스스로 판단·제어하고, 숙련공 수준의... 원전 기자재 제조 공정의 가접, 예열, 용접 작업 등"
+     "summary": "삼성중공업은 스마트 조선소 전환과 인프라를 바탕으로 LNG운반선 2척을 추가 수주해 누적 20척을 달성했다."
     },
     {
-     "title": "한화오션, 8일 하청노조와 첫 교섭...'원청 사용자성' 시험대",
-     "url": "https://www.newspim.com/news/view/20261006000421",
-     "source": "newspim.com",
-     "published": "2026-10-06T11:07:00+09:00",
+     "title": "두산로보틱스, 피지컬 AI 국책과제 2건 수주...연구개발비 989억원",
+     "url": "http://www.thefirstmedia.net/news/articleView.html?idxno=210240",
+     "source": "thefirstmedia.net",
+     "published": "2026-10-06T22:04:00+09:00",
      "dup_count": 0,
-     "summary": "거제통영고성조선하청지회, 웰리브지회와 교섭하기로 했다. 회사는 구체적인 교섭 내용과 범위는 아직... 잠정합의안에는 기본급 12만원 인상과 격려금 등 일시금 11"
+     "summary": "두산로보틱스는 989억 원 규모의 피지컬 AI 국책과제를 수주해 원전과 조선 등으로 적용을 확대한다."
     },
     {
-     "title": "국가핵심기술 '디스플레이'도 AI 쓴다...정부, 보안 가이드 마련",
-     "url": "https://www.mt.co.kr/economy/2026/10/06/2026100609373434507",
-     "source": "mt.co.kr",
-     "published": "2026-10-06T11:04:00+09:00",
+     "title": "탄소 바닷길 열린다...조선업 새 시장 선점 경쟁",
+     "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8679122&ref=A",
+     "source": "news.kbs.co.kr",
+     "published": "2026-10-06T21:55:00+09:00",
      "dup_count": 0,
-     "summary": "정부가 디스플레이 국가핵심기술 보안 가이드를 마련하고 규제를 완화한다."
+     "summary": "친환경 탄소 바닷길 개막에 맞춰 K조선은 가스운반선 건조 경험을 바탕으로 새 시장 선점 경쟁에 나섰다."
     },
     {
-     "title": "두산로보틱스, 피지컬 AI 국책과제 2건 수주...온디바이스 AI 협동로봇 개...",
-     "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=312553",
-     "source": "straightnews.co.kr",
-     "published": "2026-10-06T11:02:00+09:00",
+     "title": "거제 고공농성 7일째... \"노사, 실질 대화 나서야\"",
+     "url": "http://www.gnmaeil.com/news/articleView.html?idxno=596050",
+     "source": "gnmaeil.com",
+     "published": "2026-10-06T21:36:00+09:00",
      "dup_count": 0,
-     "summary": "[사진=두산로보틱스] 두산로보틱스가 피지컬 AI(Physical AI) 관련 국책과제 2건을 잇달아 수주했다. 온디바이스... 원전 기자재 제조 공정의 가접과 예"
+     "summary": "거제 조선소 고공농성 7일째를 맞아 조선산업 생태계 안정을 위한 노사의 실질적인 대화가 촉구되고 있다."
     },
     {
-     "title": "강화유리 수입부터 AI까지...디스플레이 규제 확 푼다",
-     "url": "https://www.nocutnews.co.kr/news/6587344?utm_source=naver&utm_medium=article&utm_campaign=20261006110011",
-     "source": "nocutnews.co.kr",
-     "published": "2026-10-06T11:01:00+09:00",
-     "dup_count": 0,
-     "summary": "정부가 디스플레이 수출입공고 개정 및 재생에너지 직접전력거래를 허용한다."
-    },
-    {
-     "title": "강세로 돌아선 원화에 HD현대重·한화오션 이익 전망 하향... 삼성은 영...",
-     "url": "https://biz.chosun.com/industry/company/2026/10/06/TBC2P2RMG5F6XISGGRGYALSRHM/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-     "source": "biz.chosun.com",
-     "published": "2026-10-06T11:01:00+09:00",
-     "dup_count": 0,
-     "summary": "원화 강세로 HD현대중공업과 한화오션의 이익 전망이 하향 조정됐다."
-    },
-    {
-     "title": "이형일 “반도체 호황에 3%대 성장”...대외리스크 선제 대응",
-     "url": "https://www.dt.co.kr/article/12087567?ref=naver",
-     "source": "dt.co.kr",
-     "published": "2026-10-06T10:49:00+09:00",
-     "dup_count": 0,
-     "summary": "정부가 반도체 호황에 힘입어 3%대 성장을 전망하고 대외 리스크에 대응한다."
-    },
-    {
-     "title": "기후부, 재생에너지 100GW·2040 탈석탄 추진...전력·물관리 체계 전면 ...",
-     "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203824",
-     "source": "energydaily.co.kr",
-     "published": "2026-10-06T10:48:00+09:00",
-     "dup_count": 0,
-     "summary": "전력과 용수 공급계획을 연계해 반도체·인공지능 데이터센터 등 첨단산업 수요에 대응하고, 에너지 전환... 일반 배전선로의 최대 접속용량은 14MW에서 16MW로,"
-    },
-    {
-     "title": "HLB테라퓨틱스 20% 솟구쳤다... 콜드체인 테마 러브콜 봇물",
-     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492883",
-     "source": "pinpointnews.co.kr",
-     "published": "2026-10-06T10:46:00+09:00",
-     "dup_count": 0,
-     "summary": "HLB테라퓨틱스가 콜드체인 테마 강세 속 의약품 유통 수주 호조를 보였다."
-    },
-    {
-     "title": "두산로보틱스, 국산 AI 반도체로 로봇 개발...989억 국책과제 수주",
-     "url": "https://www.newsway.co.kr/news/view?ud=2026100610081148277",
-     "source": "newsway.co.kr",
-     "published": "2026-10-06T10:44:00+09:00",
+     "title": "10월 1주 주요 제조업 전망",
+     "url": "https://www.laborplus.co.kr/news/articleView.html?idxno=41595",
+     "source": "laborplus.co.kr",
+     "published": "2026-10-06T21:20:00+09:00",
      "dup_count": 1,
-     "summary": "두산로보틱스가 989억 원 규모의 국책과제를 통해 국산 AI 반도체 로봇을 개발한다."
+     "summary": "핵심 전력으로 평가받음 - 앞서 HD현대중공업은 2008년과 2012년 세종대왕급 이지스구축함 1번함... 전기기기 △철강 △비철금속 △화장품 등 20대 주력 수"
     },
     {
-     "title": "두산로보틱스, AI칩·로봇 국책과제 2건 수주...989억원 규모",
-     "url": "https://www.delighti.co.kr/news/articleView.html?idxno=122845",
-     "source": "delighti.co.kr",
-     "published": "2026-10-06T10:44:00+09:00",
+     "title": "두산로보틱스, 피지컬 AI 국책과제 2건 수주 1천억원 규모",
+     "url": "https://vop.co.kr/A00001697022.html",
+     "source": "vop.co.kr",
+     "published": "2026-10-06T21:20:00+09:00",
      "dup_count": 0,
-     "summary": "두산로보틱스가 989억 원 규모의 AI칩 및 로봇 국책과제 2건을 수주했다."
+     "summary": "두산로보틱스가 1천억 원 규모의 피지컬 AI 국책과제를 수주하며 제조 현장 혁신과 조선·방산 진출을 추진한다."
     },
     {
-     "title": "[이슈국감] 이형일 부총리 \"경제정책 총괄·조정 강화\"",
-     "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=870194",
-     "source": "hansbiz.co.kr",
-     "published": "2026-10-06T10:32:00+09:00",
+     "title": "이언주 \"전력·자원·에너지 공급망, 경제안보로 묶어야\"",
+     "url": "https://www.sentv.co.kr/article/view/sentv202610060227",
+     "source": "sentv.co.kr",
+     "published": "2026-10-06T21:06:00+09:00",
      "dup_count": 0,
-     "summary": "이형일 부총리가 경제정책 총괄 및 1500억 달러 조선협력 투자를 강조했다."
+     "summary": "이언주 의원은 전력·자원 공급망을 경제안보로 묶어 한국형 에너지 피지컬 AI 사업 등을 추진해야 한다고 강조했다."
     },
     {
-     "title": "사람 부족한 조선소, AI·로봇이 메운다 ... 조선3사 ‘자동화 경쟁’ 가...",
-     "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/06/2026100600081.html",
-     "source": "biz.newdaily.co.kr",
-     "published": "2026-10-06T10:32:00+09:00",
+     "title": "[새만금에 1000조(兆) 담기] 16 '현대차 9조' 다음은 '공장→산업 생태계...",
+     "url": "https://www.pressian.com/pages/articles/2026100619300518975?utm_source=naver&utm_medium=search",
+     "source": "pressian.com",
+     "published": "2026-10-06T20:38:00+09:00",
      "dup_count": 0,
-     "summary": "조선 3사가 인력 부족을 극복하기 위해 AI와 로봇을 활용한 자동화 경쟁에 나섰다."
+     "summary": "전북도는 새만금에 현대차 등과 함께 데이터센터와 전력·냉각설비 등 연관 산업 생태계 구축을 지원한다."
     },
     {
-     "title": "이형일 “부동산세제 합리화·가업상속공제 재설계...공정과세 실현”",
-     "url": "https://biz.heraldcorp.com/article/10893871?ref=naver",
-     "source": "biz.heraldcorp.com",
-     "published": "2026-10-06T10:30:00+09:00",
+     "title": "[기고] K-조선과 미 해양 패권의 결합: '핀란드 모델'에서 '필리조선소 ...",
+     "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=129871",
+     "source": "ntoday.co.kr",
+     "published": "2026-10-06T20:10:00+09:00",
      "dup_count": 0,
-     "summary": "정부가 부동산세제 합리화와 1500억 달러 규모의 대미 조선협력 투자를 추진한다."
+     "summary": "K조선과 미 해양 패권의 결합을 위해 초기 건조 지원과 현지 투자를 아우르는 유기적 협력체계 구축이 필요하다."
     },
     {
-     "title": "국산 AI 반도체로 ‘한국형 피지컬 AI’ 구현 나선다",
-     "url": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0200&key=20261006.99099001296",
-     "source": "kookje.co.kr",
-     "published": "2026-10-06T10:30:00+09:00",
+     "title": "중소조선, 선수금환급보증 1조원만으론 역부족",
+     "url": "http://www.engdaily.com/news/articleView.html?idxno=23485",
+     "source": "engdaily.com",
+     "published": "2026-10-06T19:28:00+09:00",
      "dup_count": 0,
-     "summary": "기자재 수준의 고난도 용접을 자동화하는 것이 핵심이다. 로봇은 카메라로 용접 대상을 인식해 위치를... 뒤 조선, 플랜트, 방산 등으로 적용 범위를 넓힐 예정이다"
+     "summary": "중소조선소는 1조 원의 선수금환급보증(RG)만으로는 부족해 정부의 추가적인 재정·제도적 지원이 시급하다."
     },
     {
-     "title": "AI가 무역을 바꾼다: 2026 글로벌 디지털무역박람회 참관기",
-     "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=110&CONTENTS_NO=1&bbsGbn=245&bbsSn=245&pNttSn=244458",
-     "source": "dream.kotra.or.kr",
-     "published": "2026-10-06T10:27:00+09:00",
+     "title": "“美 조선소 재건에 2000억 달러·50년”... K조선엔 기회의 문 열린다",
+     "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000020308&cp=nv",
+     "source": "kmib.co.kr",
+     "published": "2026-10-06T18:38:00+09:00",
      "dup_count": 0,
-     "summary": "2026 글로벌 디지털무역박람회에서 AI와 에너지 융합 기술이 주목받았다."
+     "summary": "미국의 2천억 달러 규모 조선소 재건 계획은 K조선이 MRO 사업 등 미국 시장으로 진출할 기회다."
+    },
+    {
+     "title": "에이로봇, 방위사업청 '방산혁신기업' 5기 선정... 국방 분야 확장 본격...",
+     "url": "http://www.engjournal.co.kr/news/articleView.html?idxno=3998",
+     "source": "engjournal.co.kr",
+     "published": "2026-10-06T18:30:00+09:00",
+     "dup_count": 0,
+     "summary": "에이로봇이 방산혁신기업 5기로 선정되어 비정형 산업 현장의 이족보행 휴머노이드 기술을 국방으로 넓힌다."
+    },
+    {
+     "title": "에이로봇, 방사청 '방산혁신기업 5기' 선정...휴머노이드 국방 상용화 추...",
+     "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=705327",
+     "source": "digitaltoday.co.kr",
+     "published": "2026-10-06T18:20:00+09:00",
+     "dup_count": 0,
+     "summary": "에이로봇이 방산혁신기업에 선정됨에 따라 조선·건설 현장에서 검증된 휴머노이드 기술의 국방 상용화에 나선다."
+    },
+    {
+     "title": "두산로보틱스, 989억 규모 국책과제 수주...'한국형 피지컬 AI' 생태계 구...",
+     "url": "http://www.wikileaks-kr.org/news/articleView.html?idxno=192870",
+     "source": "wikileaks-kr.org",
+     "published": "2026-10-06T18:10:00+09:00",
+     "dup_count": 0,
+     "summary": "두산로보틱스는 989억 원 규모의 국책과제를 수주하여 피지컬 AI 기술을 원전과 조선·방산 분야로 확장한다."
+    },
+    {
+     "title": "두산로보틱스, 국산 AI 칩 탑재 '피지컬 AI' 구현",
+     "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=665907",
+     "source": "kfenews.co.kr",
+     "published": "2026-10-06T18:08:00+09:00",
+     "dup_count": 0,
+     "summary": "두산로보틱스는 국산 AI 칩을 탑재한 피지컬 AI로봇을 개발해 조선과 방산 등 고난도 제조 현장 혁신을 추진한다."
+    },
+    {
+     "title": "아름다운 산문시라고 불러도 손색없는 ‘시적수필’ 창안",
+     "url": "https://www.kbmaeil.com/article/20261001500152",
+     "source": "kbmaeil.com",
+     "published": "2026-10-06T18:02:00+09:00",
+     "dup_count": 0,
+     "summary": "수주 변영로 시인의 영시집 서평 등 해방공간 한흑구의 시적 수필 창안은 한국 문학사에 중요한 의미를 지닌다."
+    },
+    {
+     "title": "中 63% 독주에 로봇으로 맞불...K조선, 생산성 경쟁",
+     "url": "https://www.g-enews.com/view.php?ud=202610061303006086112616b072_1",
+     "source": "g-enews.com",
+     "published": "2026-10-06T18:02:00+09:00",
+     "dup_count": 0,
+     "summary": "중국의 조선업 독주에 맞서 K조선은 인공지능과 로봇을 결합한 생산 자동화로 생산성 경쟁력을 높이고 있다."
     }
    ]
   }
