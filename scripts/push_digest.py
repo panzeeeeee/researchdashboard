@@ -501,6 +501,49 @@ def build_kr_message():
     return "\n".join(lines)[:4000]
 
 
+DASH_US = "https://panzeeeeee.github.io/researchdashboard/index.html#mystocks"
+
+
+def build_my_stocks_message():
+    """보유 종목(+동국제약)의 최근 하루 반 사이 '중요' 표시 뉴스·공시만 모은다. 없으면 None."""
+    d = read_json(DATA_DIR / "my_stocks.json") or {}
+    stocks = d.get("stocks") or []
+    if not stocks:
+        return None
+    try:
+        if now_kst() - datetime.fromisoformat(d["updated_at"]) > timedelta(hours=30):
+            return None            # 오래된 자료
+    except Exception:
+        return None
+    since = (now_kst() - timedelta(hours=36))
+    day0 = since.strftime("%Y-%m-%d")
+    lines = ["<b>📌 내 종목 새 소식</b>", ""]
+    n = 0
+    for s in stocks:
+        name = s["name"] if s.get("market") == "kr" else s["ticker"]
+        rows = []
+        for f in s.get("filings") or []:
+            if f.get("hot") and f.get("date", "") >= day0:
+                rows.append(f'  📄 <a href="{esc(f["url"])}">{esc(f.get("title") or f.get("label"))}</a>')
+        for x in s.get("news") or []:
+            try:
+                fresh = x.get("published") and datetime.fromisoformat(x["published"]) >= since
+            except Exception:
+                fresh = False
+            if x.get("hot") and fresh:
+                sm = f" — <i>{esc(x['summary'])}</i>" if x.get("summary") else ""
+                rows.append(f'  📰 <a href="{esc(x["url"])}">{esc(x["title"][:70])}</a>{sm}')
+        if rows:
+            lines.append(f"🔥 <b>{esc(name)}</b>")
+            lines += rows[:4]
+            lines.append("")
+            n += len(rows[:4])
+    if not n:
+        return None
+    lines.append(f'<a href="{DASH_US}">👉 내 종목 소식 전체 보기</a>')
+    return "\n".join(lines)[:4000]
+
+
 EARNINGS_TOP = 8           # 텔레그램에 종목별로 적는 최대 건수(큰 회사 순)
 EARNINGS_STALE_HOURS = 30  # earnings.json 이 이보다 오래됐으면 오래된 소식이라 안 보낸다
 
@@ -664,6 +707,14 @@ def main():
         print(f"  한국 요약 실패: {type(e).__name__}: {e}", file=sys.stderr)
         kr = None
     if kr and send(token, chat_id, kr):
+        ok += 1
+
+    try:                      # 내 종목 새 소식 (중요 표시된 것만). 없으면 보내지 않는다
+        mine = build_my_stocks_message()
+    except Exception as e:      # noqa: BLE001
+        print(f"  내 종목 소식 실패: {type(e).__name__}: {e}", file=sys.stderr)
+        mine = None
+    if mine and send(token, chat_id, mine):
         ok += 1
 
     messages = build_screener_messages()

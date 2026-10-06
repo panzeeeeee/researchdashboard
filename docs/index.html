@@ -46,13 +46,13 @@ main section > h2::before{content:"";align-self:center;width:5px;height:1.15em;b
 #market,#breadth,#commodities,#rates,#macro{--sg:#185FA5}
 #liquidity,#credit,#moneymarket{--sg:#534AB7}
 #breakout,#deepvalue,#extremes,#earnings{--sg:#854F0B}
-#portfolio,#calls,#amazon{--sg:#993C1D}
+#mystocks,#portfolio,#calls,#amazon{--sg:#993C1D}
 @media (prefers-color-scheme: dark){
   #picks,#hotnews,#news,#calendar{--sg:#5DCAA5}
   #market,#breadth,#commodities,#rates,#macro{--sg:#85B7EB}
   #liquidity,#credit,#moneymarket{--sg:#AFA9EC}
   #breakout,#deepvalue,#extremes,#earnings{--sg:#EF9F27}
-  #portfolio,#calls,#amazon{--sg:#F0997B}
+  #mystocks,#portfolio,#calls,#amazon{--sg:#F0997B}
 }
 /* 머리말 배너: 금리·유가·환율 */
 .ticker{flex-basis:100%;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;
@@ -226,6 +226,23 @@ tr:last-child td{border-bottom:none}
 .brow .bval{font-size:.86rem;text-align:right;font-variant-numeric:tabular-nums}
 .btrack.split{display:flex;height:9px;background:var(--rule);border-radius:999px;overflow:hidden;margin-top:.6rem}
 .btrack.split span{display:block;height:100%}
+/* 내 종목 소식 */
+.ms-card{background:var(--card);border:1px solid var(--rule);border-top:3px solid var(--sg,var(--accent));border-radius:10px;padding:.9rem 1.1rem;margin-bottom:1rem}
+.ms-card.hot{border-color:var(--sg,var(--accent))}
+.ms-head{display:flex;align-items:baseline;gap:.55rem;flex-wrap:wrap;margin-bottom:.5rem}
+.ms-head .tk{font-size:1.1rem;font-weight:700}
+.ms-head .nm{font-size:.88rem;color:var(--ink-3)}
+.ms-fire{font-size:.74rem;font-weight:700;color:#fff;background:#d9480f;border-radius:999px;padding:.05rem .5rem}
+.ms-sub{font-size:.78rem;font-weight:700;color:var(--sg,var(--accent));margin:.8rem 0 .25rem;letter-spacing:.02em}
+.ms-row{padding:.5rem 0;border-top:1px solid var(--rule)}
+.ms-row:first-of-type{border-top:none}
+.ms-row a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.94rem;line-height:1.45}
+.ms-row a:hover{color:var(--sg,var(--accent))}
+.ms-row .sm{font-size:.84rem;color:var(--ink-2);margin:.15rem 0 0;line-height:1.6}
+.ms-row .meta{font-size:.78rem;color:var(--ink-3);margin-top:.15rem}
+.ms-row.hot{background:color-mix(in srgb,#d9480f 7%,transparent);border-radius:6px;padding-left:.5rem;padding-right:.5rem}
+.ms-lab{display:inline-block;font-size:.72rem;font-weight:700;border-radius:4px;padding:.05rem .4rem;margin-right:.4rem;background:color-mix(in srgb,var(--sg,var(--accent)) 14%,var(--card));color:var(--sg,var(--accent))}
+.ms-none{font-size:.84rem;color:var(--ink-3);padding:.3rem 0}
 .rangebtns{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .6rem}
 .rangebtns button{background:none;border:1px solid var(--rule);color:var(--ink-2);
   border-radius:999px;padding:.28rem .85rem;font-size:.82rem;cursor:pointer;font-family:inherit}
@@ -330,6 +347,7 @@ tr:last-child td{border-bottom:none}
   </div>
   <div class="ngrp g5">
     <p class="gl">내 종목·리서치</p>
+    <a href="#mystocks">내 종목 소식 <span class="count" id="c-mystocks"></span></a>
     <a href="#portfolio">포트폴리오</a>
     <a href="#calls">컨콜 흐름</a>
     <a href="#amazon">센텔리안24 아마존</a>
@@ -398,6 +416,11 @@ tr:last-child td{border-bottom:none}
   <h2>자금시장 상세</h2>
   <div id="moneymarket-box"><p class="note">불러오는 중입니다.</p></div>
   <div id="moneymarket-notes"></div>
+</section>
+
+<section id="mystocks">
+  <h2>내 종목 소식 <span class="tagline" id="ms-tag"></span></h2>
+  <div id="ms-box"><p class="note">불러오는 중입니다.</p></div>
 </section>
 
 <section id="portfolio">
@@ -1797,6 +1820,57 @@ function renderTables(t) {
     <p class="sub">다 걸러낸 조건</p>
     <div class="chips">${chips || '<span class="note">집계 없음</span>'}</div>`;
 }
+
+// ── 내 종목 소식 (data/my_stocks.json, fetch_my_stocks.py: 보유 종목 11개 + 동국제약의 뉴스·공시) ──
+function renderMyStocks(d) {
+  const box = document.getElementById("ms-box");
+  const all = (d && d.stocks) || [];
+  if (!all.length) { box.innerHTML = '<p class="note">my_stocks.json 이 아직 없습니다. Actions 탭에서 "아마존·수출입·배너"를 실행하세요.</p>'; return; }
+  const tag = document.getElementById("ms-tag");
+  if (tag && d.updated_at) tag.textContent = `뉴스 최근 ${d.news_days}일 · 공시 최근 ${d.filing_days}일 · ${d.updated_at.slice(5, 16).replace("T", " ")} 갱신`;
+  const totalHot = all.reduce((a, s) => a + (s.hot || 0), 0);
+  const cnt = document.getElementById("c-mystocks");
+  if (cnt) cnt.textContent = totalHot ? totalHot : "";
+  let view = "all";
+  const newsRow = it => `<div class="ms-row ${it.hot ? "hot" : ""}">
+      <a href="${esc(it.url)}" target="_blank" rel="noopener">${it.hot ? "🔥 " : ""}${esc(it.title)}</a>
+      ${it.summary ? `<p class="sm">${esc(it.summary)}</p>` : ""}
+      <div class="meta">${esc(it.source || "")} · ${ago(it.published)}</div></div>`;
+  const filRow = f => `<div class="ms-row ${f.hot ? "hot" : ""}">
+      <span class="ms-lab">${f.hot ? "🔥 " : ""}${esc(f.label)}</span><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.title || f.form)}</a>
+      <div class="meta">${esc(f.date)}</div></div>`;
+  const card = s => {
+    const kr = s.market === "kr";
+    return `<div class="ms-card ${s.hot ? "hot" : ""}">
+      <div class="ms-head"><span class="tk">${esc(kr ? s.name : s.ticker)}</span><span class="nm">${esc(kr ? s.ticker + " · 한국" : s.name)}</span>
+        ${s.hot ? `<span class="ms-fire">🔥 중요 ${s.hot}</span>` : ""}</div>
+      <p class="ms-sub">공시</p>
+      ${s.filings.length ? s.filings.map(filRow).join("") : `<p class="ms-none">${s.ticker === "SPY" ? "ETF라 개별 공시는 보지 않습니다" : "최근 " + d.filing_days + "일 공시 없음"}</p>`}
+      <p class="ms-sub">뉴스</p>
+      ${s.news.length ? s.news.map(newsRow).join("") : `<p class="ms-none">최근 ${d.news_days}일 뉴스 없음</p>`}
+    </div>`;
+  };
+  const draw = () => {
+    let list = all.filter(s => view === "all" || (view === "hot" ? s.hot > 0 : s.market === view));
+    list = [...list].sort((a, b) => (b.hot || 0) - (a.hot || 0));
+    const hotItems = all.flatMap(s => [
+      ...s.news.filter(x => x.hot).map(x => ({ s, kind: "뉴스", t: x.title, u: x.url, d: x.published || "" })),
+      ...s.filings.filter(x => x.hot).map(x => ({ s, kind: "공시", t: x.title || x.label, u: x.url, d: x.date })),
+    ]).sort((a, b) => String(b.d).localeCompare(String(a.d))).slice(0, 8);
+    const btn = (id, label) => `<button data-v="${id}" class="${view === id ? "on" : ""}">${label}</button>`;
+    box.innerHTML = `
+      ${hotItems.length ? `<div class="ms-card hot"><p class="ms-sub" style="margin-top:0">🔥 먼저 볼 소식</p>${hotItems.map(h => `<div class="ms-row">
+          <span class="ms-lab">${esc(h.s.market === "kr" ? h.s.name : h.s.ticker)} · ${h.kind}</span><a href="${esc(h.u)}" target="_blank" rel="noopener">${esc(h.t)}</a></div>`).join("")}
+        <p class="meta" style="font-size:.78rem;color:var(--ink-3);margin-top:.5rem">제목·공시 항목의 낱말(실적·가이던스·인수·소송·임원 변경 등)로 자동 표시한 것이라 놓치거나 과하게 잡을 수 있습니다</p></div>` : ""}
+      <div class="rangebtns">${btn("all", `전체 (${all.length})`)}${btn("hot", "🔥 중요만")}${btn("us", "미국")}${btn("kr", "한국")}</div>
+      ${list.map(card).join("") || '<p class="note">해당하는 종목이 없습니다.</p>'}
+      <p class="note">뉴스는 구글 뉴스(미국)·네이버(한국), 공시는 SEC EDGAR(미국)·DART(한국)에서 하루 두 번 모읍니다. 한 줄 요약은 자동 생성이라 틀릴 수 있으니 제목을 눌러 원문을 확인하세요.
+      미국 내부자 거래(Form 4)는 "포트폴리오" 화면에 있습니다.</p>`;
+    box.querySelectorAll("[data-v]").forEach(b => b.addEventListener("click", () => { view = b.dataset.v; draw(); }));
+  };
+  draw();
+}
+fetch("data/my_stocks.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null).then(renderMyStocks);
 
 Promise.all([
   fetch("data/news.json?t=" + Date.now()).then(r => r.json()),

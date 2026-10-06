@@ -233,3 +233,8 @@ git 설치와 clone 완료. 저장소는 Private이라 push에는 GitHub 로그�
 - 스크립트는 `scripts` 폴더, 화면은 `docs` 폴더, 워크플로우는 `.github/workflows`.
 - 실패하면 Actions 로그의 해당 단계를 캡처해서 보여준다
 - 새 스크립트는 `continue-on-error: true`로 붙여 다른 단계를 막지 않게 한다
+
+(진행 중) 내 종목 소식(미국 탭, 2026-10-06): `scripts/fetch_my_stocks.py` → `docs/data/my_stocks.json` → index.html "내 종목 소식"(내 종목·리서치 묶음 첫 화면).
+대상 = `config/portfolio.yaml` holdings(보유=관심종목 11개) + `config/watchlist.yaml` kr(동국제약만). 뉴스는 `fetch_news.gather`(미국 구글 영문·한국 네이버, 최근 7일, 종목당 6건),
+공시는 SEC 제출목록(8-K 항목 번호를 한국어로, 10-Q/10-K·13D/G·S-3 등. Form 4는 '포트폴리오 종목 수급'에 있어 뺌)과 DART(동국제약 고유번호, 최근 45일).
+제목·공시 항목 낱말로 hot 표시(🔥, 위로 올림). amazon.yml 단계, 텔레그램 아침 요약에 `build_my_stocks_message`(중요 소식만, 없으면 안 보냄).
