@@ -1,17 +1,306 @@
 {
- "updated_at": "2026-10-06T03:58:48.072629+09:00",
+ "updated_at": "2026-10-06T11:44:05.477723+09:00",
  "event_notes": {
-  "why": "대형 기술주의 강세와 천연가스 반등 등 원자재 관련 기대감이 맞물리며 통신서비스, 소재, 에너지 섹터가 상승세를 주도한 것으로 보입니다. 반면 50억 달러 규모의 RXO 인수 발표 이후 매수 기업인 C.H. 로빈슨이 급락하면서 산업재 섹터의 반등 폭이 제한되었습니다. 아울러 미 국채 금리 상승세에 대한 경계감이 헤드라인으로 부각되면서 금리 부담에 취약한 부동산 섹터가 유일하게 하락한 원인으로 풀이됩니다.",
-  "watch": "서비스업 지표 둔화 속에서 언급된 물가 상승 압력과 국채 금리의 추가 상승 여부가 금리에 민감한 부동산과 성장 섹터의 향방을 가를 주요 변수가 될 것으로 보입니다."
+  "why": "나스닥이 기업 실적 호조와 인공지능 관련 투자 심리에 힘입어 사상 최고치를 경신하면서 기술 섹터의 상승을 이끌었고, G7의 원유 및 디젤 방출 계획에도 호르무즈 해협의 선박 운송 위험이 지속되면서 에너지 섹터도 1.0% 상승했다. 반면 장기 국채 수익률이 수십 년 만의 최고치로 치솟고 채권 시장 약세가 이어지면서 부동산 섹터는 -0.34%로 하락세를 보였다.",
+  "watch": "채권 금리 상승세가 주식 시장의 인공지능 및 실적 기반 상승세를 계속 상쇄할지, 그리고 호르무즈 해협의 지정학적 리스크가 원유 가격과 관련 섹터에 미치는 영향이 지속될지 지켜봐야 한다."
  },
  "clusters": [
   {
-   "title": "C.H. Robinson의 RXO 인수",
+   "title": "미국 증시 및 기술주 상승 (나스닥 신고가)",
+   "sources": [
+    "Reuters",
+    "WSJ",
+    "Yahoo Finance Singapore",
+    "Yahoo! Finance Canada"
+   ],
+   "count": 6,
+   "items": [
+    {
+     "title": "Nasdaq notches record high close as investors focus on earnings",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQV09jSm4zWHp2ODd2SmNPRHdJcUhDcjNzZ3dwYkwzZ3NSVHdyVUdUVEI0TWltb3RKQUZucVVNa2l1UzAxWmtSd0hQSWFjVXV0WVZiUjJFNGJDeEZQVlhoWDJ5WWpxLWxuc3ZVYXBLR0QxSzdZMVFjSklpUTB2Q2YwdE12VFl0bUw2RGRjZ3VoUmFlMkp4UUstYy1R?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-06T07:38:44+09:00",
+     "dup_count": 3,
+     "summary": "실적 기대감에 Nasdaq이 사상 최고치를 경신했다."
+    },
+    {
+     "title": "U.S. Stocks Rise as AI Bets Offset Bond Yield Fears",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSVdLNXRUd1JHdk52SC1nZS1pb2REZHVBYVJjQl9uLUNwUTUydWw3NmYxa3p1ZXFzMWtQYW1tX0NoR29ZSGFGUFg2Mk5QNWg3ZTVzY1dXdFg0LS1IX2FNNDdKd3dHQzZqa3FoWU9UWVhnRzQySTdjWVFVZFdKZEJPYUV3LUZjeDRrNFVFemxJcndxbTZOek9WRjZ3?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-06T05:42:00+09:00",
+     "dup_count": 3,
+     "summary": "AI 투자 호조로 미 증시가 채권 금리 우려를 상쇄하며 상승했다."
+    },
+    {
+     "title": "Trading Day: Nasdaq highs, Brazil surprise",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNekZHUjVfNDc1RTVWS1M2YVFlU2MtOG93UUhfWkIyTzRWRE9sWTFiY05sNWxDU2tydkNJWWdEWlNoQzUwVzh6djlETnJLRUIzQnhkNjBwOHBoSTRYLUFzMlRIdDZrTGxZQjU4UU1xUWdqM2xITHc4SG1KdElwZ2p4YXdiaW1YSV9zanZxTUM3MUp2N3R2YVpIN3JNVGozR05wNXQ4V0VB?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-06T07:05:18+09:00",
+     "dup_count": 2,
+     "summary": "Nasdaq 고공행진과 브라질 증시가 주목받았다."
+    },
+    {
+     "title": "Stock Market Today (Oct. 5, 2026): S&P 500 moves higher, yields higher ahead of Fed minutes release",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAyX3Q1U1U1R3hrbkNYVWxHajBHY05WMXVlUXN2V0RpYXlkVEhrOVFaSFdjUUNxR09yejhIaXlhUU4zUnlPRHJtcmZJQUt1VTFPSzlsc2E3MGdNM0ZVVUxzdzM2RzNKQTBzQWstNGNlWUF4SHFzMndnRWFTMkREUQ?oc=5",
+     "source": "Yahoo Finance Singapore",
+     "published": "2026-10-05T22:55:37+09:00",
+     "dup_count": 1,
+     "summary": "연준 의사공개 앞두고 S&P 500과 금리가 모두 상승했다."
+    },
+    {
+     "title": "Nasdaq Poised to Hit New High as Treasury Yields Climb",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbFZ1TmhsZVJXVHh3NGo5eWhKcWZyNU8tbk8wYlh4eWd5S2lTNkhSSk5NTGxjcW9uNE8wQlVCekZwZjRRMVhlQ0oxUVNwSEFZeDJjR3dtQ3Nweno0Y3RrdXRYM2Z5TFZzN2djVWdDX21nRVpPZXF4Mk1iRGhpSXphWkFwRTJQa1p0ZUpMMXVjNFp6QU5GVnJLVnpuakNXQm5UQ0E3OE90aFZJM0JobmJXYlY1cDBVNEU?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-06T03:29:00+09:00",
+     "dup_count": 0,
+     "summary": "채권 금리 상승 속에서 Nasdaq이 신고가 경신을 앞두고 있다."
+    },
+    {
+     "title": "US stocks are rising near their records, with the Nasdaq composite on track for an all-time high",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQczhRelczeVJEdU1HOUtqOU4zRnQ1M1FoeHo4cDdOeGZ3Q1pzaUc2cVZtLXNqaEpJOHJkODBxVjMtc21KMnUzbmpSdklmZGdVOHhSZzBCSGxQR3BGZE1BVmdFNXdXSGdzUWVEam1oNG9NTERMVmVxZ2RIZFczcE1mQ1JQTDlIbjE0Mmc0?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "published": "2026-10-06T03:12:00+09:00",
+     "dup_count": 0,
+     "summary": "미국 증시가 상승하며 Nasdaq 컴포지트가 사상 최고치를 향하고 있다."
+    }
+   ]
+  },
+  {
+   "title": "미국 국채 금리 상승 및 채권 시장",
+   "sources": [
+    "MarketWatch",
+    "Reuters",
+    "WSJ"
+   ],
+   "count": 4,
+   "items": [
+    {
+     "title": "Stocks Up, Yields Up",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBiX1F4bWhnbkl2YnY3aVFsaG1Hd1oxZ2lHNXI4am9MZXhEalpYS2k4WmFhQnk1REZEN2lKTmFaTUFpLXZrVDIySUlfckZDY205M3p6UHlPMUFyVjViZThlSDNYd1gtb3FSeW5tbjJ0TWg?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-06T05:56:00+09:00",
+     "dup_count": 2,
+     "summary": "주가와 국채 금리가 모두 상승했다."
+    },
+    {
+     "title": "Investors see big opportunity in ferocious 2026 bond-market rout",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR2NRSXZsLWJrWC15UmZqa0F3ZFBzTEYtMGwtbkswb0hfMVc0bXE5YWlLTmRUQjhyWUFmbHcwY2Q0c1Q3M2NTZUIyYmtHT2FIVkhzT29HSUlDZU1FSHV3aWg2TWJROFM2WVdZMWJicHVHN2Q0REVNdnViM0tZT21tZ0NUb20wVHZZcUpPQ0hEUElSRzlWdXQ3TTVnWkJ4cFhudGVacFdZa2I4TTA?oc=5",
+     "source": "MarketWatch",
+     "published": "2026-10-06T05:14:00+09:00",
+     "dup_count": 0,
+     "summary": "투자자들이 2026년 채권시장 폭락에서 큰 기회를 보고 있다."
+    },
+    {
+     "title": "Long-Term Treasury Yields Settle at New Multidecade Highs",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQN0NZcGplN2RwWDJPQ2VzODQ3NDdnN2NYYjE5UTlLYWpxQ2dudV9QRmVvMmY1VjJ5LTJHNTItdnpkdVVGZVZXdlYxVkpWMHFuQ2Ffek93bWl4dUM1cTNqUnVOM2xuUVNrZ2V2VlFId0t5cktkbDl3QUkyclhtV1daOXpIenk5Z3BUaGFVYVR0OXoxa2poSnJSWXFIbkRQZ0tKM0NJ?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-06T05:06:00+09:00",
+     "dup_count": 0,
+     "summary": "장기 미 국채 금리가 수십 년 만의 최고치로 마감했다."
+    },
+    {
+     "title": "What will Washington do next if US bond yields keep rising?",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQnNOaEpMX1dfS3ZXNUV1SFZZcDY5MWI0UW9udWNkN3dJc0wtZU4wc1JFX1laSjlTY1N1MTdkdjRtMVlIMXFRMkhuUmwtcFcwYlQ2UUEyZnBJSEY3VGo5azVGUXJYU1BuZU9aSmRlZEVsQzNGN3FJeTctRUdlR0ItcFJKbkVYODktX2dWRzE4MjY3aFp3RV9KR3BsYlM5RGpTLS03YW9R?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-06T00:33:31+09:00",
+     "dup_count": 0,
+     "summary": "미 국채 금리 상승 지속 시 워싱턴의 대응에 관심이 쏠린다."
+    }
+   ]
+  },
+  {
+   "title": "스페이스X 주가 상승과 일론 머스크",
+   "sources": [
+    "CNBC",
+    "Yahoo Finance"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "SpaceX stock climbs to highest since June, returning Musk to trillionaire status",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS3hETWlsS2FCZ3FMTFNUazJaNl9SSmxyRmtjTkhuYWM4aC1xQV9YQV9WZHlhWkZtc0V4SllmQzR0emtveDVSc2VWWl9xUXkyamJrUUJJakNYVjZCenY4QU5GNEE0cHBPdlY5YXpIZGV3Y2trUFFidVFoLWdUUlN1ejEyOHdUczd5YW9NZ18xVzFEZ2NxcHFnX1lmU1B3ZVdtc1RuZWN2eFNpZ9IBrwFBVV95cUxNRkd5Q0xBRGY1SXluT1BuOEVGMEFFQngzTUkzaTNvRThoS1BNQTBJSm5ibThDSi1PZGlraWhUVkZDTEtJNzlsU1p2b3JqQUJ3UkVEUUZmWGplbk5DZ2I2ZGdhYTRsTkdzZlJDVWpwTzV6WDR1Z29KLWtJN2ZTS1E5YnpyMTA1T3NIQkthbFNsamNIRXZpc1dGV3ZVR2hTODI3clVNWnIzQ0w0Ujk3bWhr?oc=5",
+     "source": "CNBC",
+     "published": "2026-10-06T05:04:38+09:00",
+     "dup_count": 1,
+     "summary": "SpaceX 주가 상승으로 일론 머스크가 다시 트릴로네어에 복귀했다."
+    },
+    {
+     "title": "SpaceX jumps to highest close since June on bullish Morgan Stanley call",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNXpGTnRqWTB1OTFnYUdpVzQtWlBrbnBIVkM0cXJqRzVYLXliZjlMWGlSS2ZDbnJRa3pHU25sWVpNVUZCdDAtXzZ1YmtleDRHbHd2UG5QZVNQSFlXbGIxbmF1a0djOW0xNGR6SXJsMWFZQmtkR1Y5RWw4dF9GY2stczB5cUxBNFh2U2I4akFUYVgwelE5VG5fSTBzbTcxZV9MZXpNNXhiM2s4NkNqemduSzFnUElNTVVlbjNhSUJaR3UtOE5SVkNuOExkVkVkRkhX?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T05:03:44+09:00",
+     "dup_count": 0,
+     "summary": "Morgan Stanley의 긍정적 평가로 SpaceX 주가가 6월 이후 최고치로 급등했다."
+    },
+    {
+     "title": "Elon Musk Becomes A Trillionaire—Again—After SpaceX Stock Jumps",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQanZrQmtYVUJiaTdYdkhWYmxaU3dKN1JsMXkxYUpxcng5dUxNdW9VQzJUZTAxaWI3SFVyNll2SWxQbkRmNVBxUlQzdDVMWTBRTEJrYWJGdF82S05qandQV25pMWpvcHM1cGZvN2ZBWDdLeFNNTFdDTi1wS2QxYWV2ZDM0cTdQUUk0Si1TZHlfT1ZkRzJhN0lEMnBaMUxyY0RPSndR?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-05T23:15:50+09:00",
+     "dup_count": 0,
+     "summary": "SpaceX 주가 급등으로 일론 머스크가 다시 트릴로네어가 되었다."
+    }
+   ]
+  },
+  {
+   "title": "엔비디아·인텔 등 개별 기술주 동향 및 AI 관련주",
    "sources": [
     "Barron's",
-    "wsj.com"
+    "CNBC"
    ],
-   "count": 2,
+   "count": 3,
+   "items": [
+    {
+     "title": "The Stock Market Dynamic Has Shifted, Just Look at Intel and Nvidia",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMVluVzVER3NydFdyRGFfYnRZcElBSVhRNGtIdmxFSi1KNDdtTm9adkJnN0RpcXozdFNScERaMTdndzR5VU1aYWdoVlZsYkNoNHAzbWJOUG52dGE5SF9ocFRMZmpJNDE0MEppMHBRZGxqTTNkSWRDOEpWUkUtcE5rdU9pWUhsUkxILVdzcHBlcUN2dw?oc=5",
+     "source": "Barron's",
+     "published": "2026-10-05T23:04:00+09:00",
+     "dup_count": 2,
+     "summary": "Intel과 Nvidia를 통해 증시 역학의 변화를 확인할 수 있다."
+    },
+    {
+     "title": "Wall Street rewards Microsoft's AI pivot. A longtime skeptic says it's just the beginning",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxORmtMbmhGV2NXSVhHV09MV3dYaHgzZkc0R25FUDliTXAzck5Qd0RsWVVrTmJmOGVDR20wb2JKTFJEVktDR05wTThqRllmNUF5RWZublQ5b3J0VEVCN2E2YktrcFFHU20wWUpLMGdPd3JMcnlPSUw4a3Z3Q2xKWmJSN3RaOWlld0xTa2NDQWpEX0M2dXdfYVgtRUJQejNwcVhzSjNxUmE1cTBIeHkweUxWOTlpMTFaWDdVZWQ0aV9FM0g?oc=5",
+     "source": "CNBC",
+     "published": "2026-10-06T03:39:51+09:00",
+     "dup_count": 0,
+     "summary": "월스트리트는 마이크로소프트의 AI 전환을 긍정적으로 평가했다."
+    },
+    {
+     "title": "Nvidia, Intel, Micron, XP Inc., PTC, Vaxcyte, Western Digital, and More Stocks That Explain Today’s Market",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA2SkZNSmdPMzdVUnlaenp2eW9mOUNlM1JSTWQzM3BYdGMxcjhxOGQ0eFRMWEJFM2VfY1JnNHhlbTMyQ2lKN3hPZXNqVzhpbVlPTEJxcS1memo0cU5oTUtOYW55eGc?oc=5",
+     "source": "Barron's",
+     "published": "2026-10-06T03:31:00+09:00",
+     "dup_count": 0,
+     "summary": "Nvidia, Intel 등 주요 종목들이 오늘의 시장을 설명한다."
+    }
+   ]
+  },
+  {
+   "title": "유가 및 원자재(천연가스) 시장 동향",
+   "sources": [
+    "Reuters",
+    "WSJ"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "Oil Prices Fall as G-7 Plans Crude, Diesel Release But Hormuz Shipping Risks Persist",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPOFA5UUZFdndtdnBodnFleklOcmpCZmdBUzlROTlFSkFiWkZsNG5sMHU4M0VoR2ZLNFVNYlhKbmpjYlc4Q0NObmdDdFNLenRmU0VQdVZfWXU1YU44NWFUcnlWeUNtQkhBMlAyZGpDemdPY3VkY3NzdDRpNWlOcTlabURzNE1udEdkOVVYeW5qcmhndjM3VHVHYVFSZy0yQzYyR1VnSnJGWVdZdEZTUV9IeF84OXpEaFcyNUxzNFIwaFAybGplVHN3cTM1THc?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-06T08:52:46+09:00",
+     "dup_count": 0,
+     "summary": "G-7의 원유 방출 계획으로 유가가 하락했다."
+    },
+    {
+     "title": "Natural Gas Settles Higher on Storage Build Projections",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ2loS0stOWg4aUd5UGJQbTAwUFdQb2RPbWZMbjdvNU5Wb2J3RzlzRjFQc1hnQk1oWlMwbzEyQmNwVVlKdm43UGlLcUZ5T3Fld1BGVzZlVXJfLVA1QUs5NDdfbmNvWGQzYTVxN3BrM3BWQ2lpZGx1M1lNRFo1bXJiZkk1NkVYR2luVmFINElmWXZtYWRvdEpPcGxLeHQ2di11Y3B4c3JGeUZ5YW9oLUxPMVFHNA?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-06T05:01:00+09:00",
+     "dup_count": 0,
+     "summary": "천연가스 가격이 저장량 확충 전망에 힘입어 상승 마감했다."
+    },
+    {
+     "title": "Russia's oil earnings fall despite price jump as output drops, rouble rises",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWXVBVEdSV0VCSHNQZ0lMMkpoWV9ZQzVKZ1h4TXNUUWJDWldiWXU0cWt5NWNGYTZJZnM1SERHTTdyU1RFekV5Y3NNQmo4czFaUWZWRk8xVlNZUnBpWGFNYlh5VVB1M1pCMER3czZzUVZCS1J1WG5meldjTy1FTTdVLXdtN1FsZDFtcy1FSDFwd0RhbEV1X01wVlZial9xaUlkRFR2VVR0dmotcElabjExUko5bW5VbjgxUGZlYkZKUQ?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-05T20:51:20+09:00",
+     "dup_count": 0,
+     "summary": "생산량 감소와 루화 강세로 러시아의 원유 수입이 감소했다."
+    }
+   ]
+  },
+  {
+   "title": "브라질 증시(보우소나루 랠리)",
+   "sources": [
+    "Reuters"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Brazil markets' Bolsonaro rally sends stock exchange to record high",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNnBVVGg0X283c2E3UVFRekJud193dksxLU9RcDJSLXVoT3dpN1k0emRjS0k4RnJ2Yk1VN3lMd3Z3al94X3FreFRuWV82ei1RY21IUkFTZHB3djVIQkxlZzc1TElvY2JfNWpTOXNucTRVSFpNQ090ZnlFVEVDWnpHMy02WmQzLXRqTmRRTnFGeWhJbTV3MEh6TV9EMmhDOWpQNHBpM3JXWlJvalpm?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-06T06:34:19+09:00",
+     "dup_count": 0,
+     "summary": "브라질 시장의 보우소나루 랠리로 증시가 사상 최고치를 기록했다."
+    }
+   ]
+  },
+  {
+   "title": "KKR의 젠투(Gen II) 인수",
+   "sources": [
+    "WSJ"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Exclusive | KKR Strikes Deal to Buy Private-Capital Fund Administrator Gen II",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRWZudVNxdXFZQktZalJqQXRUS1NDSWdhVk1NTFFqa1pzUlBrVDlrUTdVbnpPTUxYWHJwMVR4YnN4bktxeGhvNm9JRGFDVkYzWVJkNDVHbEZ3QkZCVklZWkdHbTlLVG5EUG0yRmY4dDBoTWdBTHhQeWVGcVk0aDFLUy1aNzdua09BUm83VVZPaTR5U1ZZaVc2YVI1c2ZkU3hCNXFnT3Y5SjJOR2x6Ukg0ZnNn?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-06T06:09:00+09:00",
+     "dup_count": 0,
+     "summary": "KKR이 사모펀드 관리사 Gen II를 인수하는 계약을 체결했다."
+    }
+   ]
+  },
+  {
+   "title": "중국산 자동차의 영국 시장 진입",
+   "sources": [
+    "WSJ"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "How Britain Learned to Love Chinese Cars—Especially a Look-Alike Range Rover",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNkJ0TFRoZHFOeHFjSkgwMnRhSTF6U19fZXB5TnBsZUc5aXBMRXFvVkRxZkJGb1lzd2ZCOE9xMExreWFlVVNDMFRKaHp6NnMtS181bzJubGJVY0J2cm1OQ3dSc2FwWElaRFVKSi1aZEVOOGhHY0JoNFhQSERLcUZPVjM3LVM0aXBaM0kwaDZYblBWUER2SjZvYWxkZnhnaGpCMlRpbEh2NFBHVVRWMzd3YjBZTGNRTDBTeURj?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-06T05:50:01+09:00",
+     "dup_count": 0,
+     "summary": "영국에서 중국산 자동차의 인기가 높아지고 있다."
+    }
+   ]
+  },
+  {
+   "title": "스타벅스 '설탕 무첨가' 단백질 음료 허위 표시 소송",
+   "sources": [
+    "WSJ"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Starbucks Accused of Mislabeling ‘Sugar-Free’ Protein Drinks in Lawsuit",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaU5mUmhteWpIUVRUdVpmUDFRc0wzblVGSkNnU3FBRld5T3pRRURHdVRCaE1ieVA5OVlURkhNbThtcG1EMGxPbUhoNVBaeUwwNE4xVVloOVFUTUNmaDY3c0t2RmtaZmllLUZLRHo2dFlhazFzR1ItMzc2MmtFYkNiNWRPVXBLUU5IeTl2WWNQc2g3aHFhV0VDX2E3clZIcGVSU3ZLTkJlRFJIRW8?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-06T04:02:00+09:00",
+     "dup_count": 0,
+     "summary": "스타벅스가 무설탕 단백질 음료 허위 표시로 소송을 당했다."
+    }
+   ]
+  },
+  {
+   "title": "영국 FTSE 100 지수 및 금속 랠리",
+   "sources": [
+    "Investing.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "FTSE 100 today: Stocks end higher on metals rally, weak U.S. jobs cut Fed bets",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYzNEa1RnYi1oakViWmNUYlJscXFNZzhJemR4cDVJQzdCWndYSENkb0V6UXF3bHRWUHQ4dUxWclp2NUVhVnJPX0pBZ3c0QjhNbWNOME5RN010QVVSY1E4LU52Zmhub2RST3k5RHZ2ZDZ0S0pTQkFTTkI5d09zX1hkZXNnRHJoV09yUm1FT0xIR2RBMU1TUjZFQm9TYy1aeWQ3Y01uOHlyYkNhVVFiWk9vS2U1N2FmUjE4amRyLXQ2TXg?oc=5",
+     "source": "Investing.com",
+     "published": "2026-10-06T03:11:58+09:00",
+     "dup_count": 0,
+     "summary": "금속 랠리와 미국 고용 부진으로 FTSE 100 지수가 상승 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "C.H. 로빈슨의 RXO 인수",
+   "sources": [
+    "Barron's"
+   ],
+   "count": 1,
    "items": [
     {
      "title": "RXO Stock Soars on C.H. Robinson Buyout. Why the Buyer Is Today’s Worst S&P 500 Performer.",
@@ -19,54 +308,29 @@
      "source": "Barron's",
      "published": "2026-10-06T02:37:00+09:00",
      "dup_count": 0,
-     "summary": "CH로빈슨 피인수로 RXO 급등, 인수사는 최악 부진."
-    },
-    {
-     "title": "C.H. Robinson to Buy RXO for About $5.3 Billion",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOXZkTDZCV3lmcVNBdUl3d1Q4a29wRnh4Q29UWHJpQmI3MUVpSEZMbmhnbU9BYUN0QXVsaXNFdG5XdEQ0eGdPa29EVGFaeXRsb3hWb3BfbXZOdm4zb3hJUHJmd0FnNzg2cGpIdEpPY1pCR0RLdzU4bkdhSWl4ZENPS0NodmZTVjFDc3JiblNiclo?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-05T23:12:00+09:00",
-     "dup_count": 0,
-     "summary": "CH로빈슨이 RXO를 약 53억 달러에 인수하기로 함."
+     "summary": "RXO 주가가 C.H. Robinson 인수 발표로 급등했다."
     }
    ]
   },
   {
-   "title": "Intel, XP Inc., PTC, RXO, Vaxcyte, Western Digital, Cerebras, and More Stocks That Explain Today’s Market",
-   "sources": [
-    "Barron's"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Intel, XP Inc., PTC, RXO, Vaxcyte, Western Digital, Cerebras, and More Stocks That Explain Today’s Market",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA2SkZNSmdPMzdVUnlaenp2eW9mOUNlM1JSTWQzM3BYdGMxcjhxOGQ0eFRMWEJFM2VfY1JnNHhlbTMyQ2lKN3hPZXNqVzhpbVlPTEJxcS1memo0cU5oTUtOYW55eGc?oc=5",
-     "source": "Barron's",
-     "published": "2026-10-06T03:31:00+09:00",
-     "dup_count": 0,
-     "summary": "인텔, RXO 등 핵심 종목들이 시장을 이끌었다."
-    }
-   ]
-  },
-  {
-   "title": "TSX futures point higher as bets on October Fed rate hike fade",
+   "title": "누 홀딩스(Nu Holdings) 주가 급등",
    "sources": [
     "Investing.com"
    ],
    "count": 1,
    "items": [
     {
-     "title": "TSX futures point higher as bets on October Fed rate hike fade",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRFNHbEh2WU45SVl6UzRxeDg0VV83UkRfVF9hS011U0Q4ekVRc0h4bmdQT0pGWjdNaDZDaUlPTE1KYWczb1VtUVJ5MTNoNWxEa295aHJZSVFPcjBpSFdKM1pHTmRBSnlqRDhLMDl6Q3VWYjhvaTItUWxiTFc2VlI0VDJmUjg1alpPem9TQ1M0ZGhNeWFib192RkZwMkc3S3BnNzRIYUExalgxT2pzVWk4WjF6VkUtcEV2bk4w?oc=5",
+     "title": "Why is Nu Holdings stock soaring today?",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOLXNUUGZ3bTlIN1YyYkhaWUd2d3JVZmJfQ0Q3amhTVG1wTE5rT2VacTJlZW41dlFqX2J1QzNMcWVlVWdnX3g0RWRnTXVsQ0J1SVg5Q2Q0Ql9pSlZMaWJST1VzWUZaam9xdlpZRzlSeVV2MHRQc0JLcjk1MXI0Q2dlX09ZbDNDNUpXR05MQlI3dkVmdkRiR25QNV9rMXFrWWZUb1E?oc=5",
      "source": "Investing.com",
-     "published": "2026-10-06T03:11:15+09:00",
-     "dup_count": 1,
-     "summary": "연준의 10월 금리 인상 기대 약화로 TSX 선물 상승."
+     "published": "2026-10-06T02:08:06+09:00",
+     "dup_count": 0,
+     "summary": "Nu Holdings 주가가 오늘 급등세를 보이고 있다."
     }
    ]
   },
   {
-   "title": "US services sector cools in September, price pressures building",
+   "title": "미국 9월 서비스업 경기 둔화",
    "sources": [
     "Reuters"
    ],
@@ -78,97 +342,46 @@
      "source": "Reuters",
      "published": "2026-10-06T02:03:09+09:00",
      "dup_count": 0,
-     "summary": "미국 9월 서비스업 둔화 속에 물가 상승 압력 가중."
+     "summary": "9월 미국 서비스업 둔화와 함께 물가 압력이 커지고 있다."
     }
    ]
   },
   {
-   "title": "This multi-trillion stock is \"cheap and getting cheaper\": Morgan Stanley",
+   "title": "고금리로 인한 경기소비재 타격",
    "sources": [
-    "Investing.com"
+    "Yahoo Finance"
    ],
    "count": 1,
    "items": [
     {
-     "title": "This multi-trillion stock is \"cheap and getting cheaper\": Morgan Stanley",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdm1pY2I4X1U1T2FqMG9lck5DVUh1MU1oSWdHNUJWNm9kWnZOMHlwQVZ5NllKNmQwbHU2VGYwT2E0UHVNZmVmZjBITS1qb2RDMFZxMGM0c00ta3NTcUUzMHFURk9JaDRzOTZtbTNwbUxNN1B1ZGN0YlNoXzRsUDJhVTR3eWIwOEZJQzQwMmlGT0ZMTWZlM2JvQXdRX3ViMXgtR2J3cndIYmNRcmxaVmdkMmt0TXlkUzNMYVItZG5GcVJLb1E?oc=5",
-     "source": "Investing.com",
-     "published": "2026-10-06T01:34:21+09:00",
-     "dup_count": 0,
-     "summary": "모건스탠리는 수조 달러대 종목이 점점 더 싸졌다고 평가."
-    }
-   ]
-  },
-  {
-   "title": "Energy & Utilities Roundup: Market Talk",
-   "sources": [
-    "wsj.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Energy & Utilities Roundup: Market Talk",
-     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBQZklzRDdfNUNjaEdvQnliTlZjLVRMOXh3cmF1RGhYc0RrV0haZ3hQMTl4bDBPUzRhMUdaMDJreG45TGRFaVVTbEU5cWxTY3h6NFBzcGc4M0tRVjdUeWpQSV9IMjUtRnZEaW5ZYTVhTmZBLUxKOExaVk5FX0NZTDQ?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-06T01:27:00+09:00",
-     "dup_count": 0,
-     "summary": "에너지 및 유틸리티 부문 주요 시장 동향 정리."
-    }
-   ]
-  },
-  {
-   "title": "Why is PTC stock surging today?",
-   "sources": [
-    "Investing.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Why is PTC stock surging today?",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZTBpb01jTzJ3c240aEtoUUYzaGRSWVBhSmFObTF5LVFwOHNIMmhOd0c4TllBSVYwT0E4NUFUMkRULUF1OXRCdW80MklXRVZfVEQxejF4QnZObWFBS25PUDZMXzI1NlJnR2dLY2NyaGRSaXpqM0o3NDBaY0NWUUNqSklJdVExOURTTnNhR0pVdXY1WlU1Z2Yw?oc=5",
-     "source": "Investing.com",
-     "published": "2026-10-06T01:16:57+09:00",
-     "dup_count": 0,
-     "summary": "소프트웨어 기업 PTC 주가가 급등하며 주목받고 있다."
-    }
-   ]
-  },
-  {
-   "title": "S&P 500 up, Nasdaq at record high as megacap tech stocks rise",
-   "sources": [
-    "Reuters"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "S&P 500 up, Nasdaq at record high as megacap tech stocks rise",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQV09jSm4zWHp2ODd2SmNPRHdJcUhDcjNzZ3dwYkwzZ3NSVHdyVUdUVEI0TWltb3RKQUZucVVNa2l1UzAxWmtSd0hQSWFjVXV0WVZiUjJFNGJDeEZQVlhoWDJ5WWpxLWxuc3ZVYXBLR0QxSzdZMVFjSklpUTB2Q2YwdE12VFl0bUw2RGRjZ3VoUmFlMkp4UUstYy1R?oc=5",
-     "source": "Reuters",
-     "published": "2026-10-06T01:09:42+09:00",
+     "title": "Higher rates are pummeling consumer discretionary stocks — here's the damage: Chart of the Day",
+     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPS1l5cXdYVWUzVHFnclhMTzZjUEpLZ2JObGNqRlRnY29EZDRiYUNuMmVDQ0F1Z0Y1aUlrRWxvWEhLdGhZZnJUYWhGWDBqMU9CSk41SzU3WmUwYjRRa1lGMndnUG9tNTJvUXFyeVVrT3lJTy1YbkpyZEJtd3Y4T1N1N24wOWY3QjgxSktRZTlkT1M3Z21vMHJpdVBmbHVsZmNZdEN5T1E4ODdXZEpjdFNiTkVuWFZMX3NzVkc1Yng0YWNuSjRpSTY4MFNXbWg0SmFUS0oxQ3ZHaVZ6R2owVkdXVHRB?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T01:10:08+09:00",
      "dup_count": 1,
-     "summary": "대형 기술주 상승으로 S&P 500과 나스닥 최고치 기록."
+     "summary": "고금리가 경기소비재 주가에 큰 타격을 입히고 있다."
     }
    ]
   },
   {
-   "title": "Brazil's currency, stocks jump after Bolsonaro scores first-round upset",
+   "title": "미국 달러화 강세 전망",
    "sources": [
     "Reuters"
    ],
    "count": 1,
    "items": [
     {
-     "title": "Brazil's currency, stocks jump after Bolsonaro scores first-round upset",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNnBVVGg0X283c2E3UVFRekJud193dksxLU9RcDJSLXVoT3dpN1k0emRjS0k4RnJ2Yk1VN3lMd3Z3al94X3FreFRuWV82ei1RY21IUkFTZHB3djVIQkxlZzc1TElvY2JfNWpTOXNucTRVSFpNQ090ZnlFVEVDWnpHMy02WmQzLXRqTmRRTnFGeWhJbTV3MEh6TV9EMmhDOWpQNHBpM3JXWlJvalpm?oc=5",
+     "title": "US dollar strength to fizzle, FX forecasters unmoved by searing rally: Reuters poll",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOd2dwdWJwQlZLYmFiRzlaNjRQUXJUbWNyaHgtaGdqVC1ZQ3pxOG0tR1c2eldXaWo4WlowRmVYR0phME9Cc3RXVFRvQ1NYbXRwZkxVMnUtbG5vSG1QeWNkaHZQQjdWc3liTUVldVFEcEx1SDJJSGc2aTBlSlNJZ1FSb0tYS1FIRzFTTkU5aUV0U2Fxdy1JZGZ0VnZaVEllNDd5QkhON0xxZkxmdE9RS05N?oc=5",
      "source": "Reuters",
-     "published": "2026-10-06T01:06:48+09:00",
+     "published": "2026-10-06T01:00:47+09:00",
      "dup_count": 0,
-     "summary": "보우소나루 1차 선전 후 브라질 통화와 증시 급등."
+     "summary": "전문가들은 미 달러화의 강세가 곧 사그라질 것으로 전망했다."
     }
    ]
   },
   {
-   "title": "Why is GameStop stock climbing today?",
+   "title": "게임스탑 주가 상승",
    "sources": [
     "Investing.com"
    ],
@@ -180,165 +393,29 @@
      "source": "Investing.com",
      "published": "2026-10-06T00:59:46+09:00",
      "dup_count": 0,
-     "summary": "게임스톱 주가가 상승세를 보이며 관심이 집중됐다."
+     "summary": "GameStop 주가가 오늘 상승세를 보이고 있다."
     }
    ]
   },
   {
-   "title": "What will Washington do next if US bond yields keep rising?",
+   "title": "야후 파이낸스 시장 정보",
    "sources": [
-    "Reuters"
+    "Yahoo Finance"
    ],
    "count": 1,
    "items": [
     {
-     "title": "What will Washington do next if US bond yields keep rising?",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQnNOaEpMX1dfS3ZXNUV1SFZZcDY5MWI0UW9udWNkN3dJc0wtZU4wc1JFX1laSjlTY1N1MTdkdjRtMVlIMXFRMkhuUmwtcFcwYlQ2UUEyZnBJSEY3VGo5azVGUXJYU1BuZU9aSmRlZEVsQzNGN3FJeTctRUdlR0ItcFJKbkVYODktX2dWRzE4MjY3aFp3RV9KR3BsYlM5RGpTLS03YW9R?oc=5",
-     "source": "Reuters",
-     "published": "2026-10-06T00:33:31+09:00",
+     "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+     "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTFBBTy1pM1poaEROWTVTNDVTYVdvTDZEWmM1VDhGdlUzWW1OUXNvQ3RmZTVZQ3BGVlhvbTlWNFNhUQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T06:13:26+09:00",
      "dup_count": 1,
-     "summary": "미국 국채 금리 급등 지속 시 워싱턴의 대응에 주목."
+     "summary": "Yahoo Finance에서 실시간 증시와 금융 뉴스를 제공한다."
     }
    ]
   },
   {
-   "title": "Opinion | CFTC’s New Rules for Crypto",
-   "sources": [
-    "wsj.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Opinion | CFTC’s New Rules for Crypto",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0tcWhpNTd0dmNvc192anJkWWM3ZUd2S2JxcEFOdXhaUmNUdjJJaGJFR3dKS1pyOENBMUtkcTVIQlJMeVdIQVRhV2QtWDJ4cE5PV1dQMGtxcGxiNUFMb0dleDBhNmM0N2NleDl2UWkzcVk?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-06T00:30:00+09:00",
-     "dup_count": 0,
-     "summary": "CFTC의 새로운 가상자산 규제 도입 필요성 제기."
-    }
-   ]
-  },
-  {
-   "title": "Why is Nu Holdings stock soaring today?",
-   "sources": [
-    "Investing.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Why is Nu Holdings stock soaring today?",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOLXNUUGZ3bTlIN1YyYkhaWUd2d3JVZmJfQ0Q3amhTVG1wTE5rT2VacTJlZW41dlFqX2J1QzNMcWVlVWdnX3g0RWRnTXVsQ0J1SVg5Q2Q0Ql9pSlZMaWJST1VzWUZaam9xdlpZRzlSeVV2MHRQc0JLcjk1MXI0Q2dlX09ZbDNDNUpXR05MQlI3dkVmdkRiR25QNV9rMXFrWWZUb1E?oc=5",
-     "source": "Investing.com",
-     "published": "2026-10-05T23:48:46+09:00",
-     "dup_count": 0,
-     "summary": "핀테크 기업 누 홀딩스 주가가 급등세를 기록했다."
-    }
-   ]
-  },
-  {
-   "title": "Natural Gas Inches Higher Even With Mild Weather Outlook",
-   "sources": [
-    "wsj.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Natural Gas Inches Higher Even With Mild Weather Outlook",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ2loS0stOWg4aUd5UGJQbTAwUFdQb2RPbWZMbjdvNU5Wb2J3RzlzRjFQc1hnQk1oWlMwbzEyQmNwVVlKdm43UGlLcUZ5T3Fld1BGVzZlVXJfLVA1QUs5NDdfbmNvWGQzYTVxN3BrM3BWQ2lpZGx1M1lNRFo1bXJiZkk1NkVYR2luVmFINElmWXZtYWRvdEpPcGxLeHQ2di11Y3B4c3JGeUZ5YW9oLUxPMVFHNA?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-05T23:17:00+09:00",
-     "dup_count": 1,
-     "summary": "온화한 날씨 전망에도 천연가스 가격이 소폭 상승했다."
-    }
-   ]
-  },
-  {
-   "title": "The Stock Market Dynamic Has Shifted, Just Look at Intel and Nvidia",
-   "sources": [
-    "Barron's"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "The Stock Market Dynamic Has Shifted, Just Look at Intel and Nvidia",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMVluVzVER3NydFdyRGFfYnRZcElBSVhRNGtIdmxFSi1KNDdtTm9adkJnN0RpcXozdFNScERaMTdndzR5VU1aYWdoVlZsYkNoNHAzbWJOUG52dGE5SF9ocFRMZmpJNDE0MEppMHBRZGxqTTNkSWRDOEpWUkUtcE5rdU9pWUhsUkxILVdzcHBlcUN2dw?oc=5",
-     "source": "Barron's",
-     "published": "2026-10-05T23:04:00+09:00",
-     "dup_count": 2,
-     "summary": "인텔과 엔비디아를 통해 시장 주도권 변화가 확인됨."
-    }
-   ]
-  },
-  {
-   "title": "Microsoft Is the ‘Adult in Charge’ on Fears Over AI Security. The Stock Gets Upgraded to Buy.",
-   "sources": [
-    "Barron's"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Microsoft Is the ‘Adult in Charge’ on Fears Over AI Security. The Stock Gets Upgraded to Buy.",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9VU3FmVU9OVWh4NDhfcXNMZ1B0ZE05TW1wd24xT1Z1ZlVLLUZGRTNnbkJnVDA5TWRSZzBIdG5OaElZaUNGNWFuaDk5ODRuck53LUFsbllFZVlNdDhjdms3UWE4NEJiWk03UEJidXNfRGpYMnpKaS1nTVdjaHU5QQ?oc=5",
-     "source": "Barron's",
-     "published": "2026-10-05T23:02:00+09:00",
-     "dup_count": 0,
-     "summary": "MS가 AI 보안 우려를 달래며 매수 투자의견으로 상향."
-    }
-   ]
-  },
-  {
-   "title": "Stock Market Today (Oct. 5, 2026): S&P 500 moves higher, yields higher ahead of Fed minutes release",
-   "sources": [
-    "finance.yahoo.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Stock Market Today (Oct. 5, 2026): S&P 500 moves higher, yields higher ahead of Fed minutes release",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOb0N1SnlPM04yWkQtWURSOXJDeWptRTFIc1hQYnFCMUJGS2lpTGhsM3NQR0ZZc3Q3UTV3QXFqODlZMzBRQTg4ejZybFE3VnNGWTdpY20walBBSFBYWFcza3pqdnNNWThiUldncTg3U2RaMjR0cWRMbTd3T0wxSnhpbkdhQjhPWno4UnFWNUNaVTZiN1k?oc=5",
-     "source": "finance.yahoo.com",
-     "published": "2026-10-05T22:55:37+09:00",
-     "dup_count": 0,
-     "summary": "연준 의사록 앞두고 S&P 500과 금리가 동반 상승함."
-    }
-   ]
-  },
-  {
-   "title": "Oil Prices Fall as G-7 Plans Crude, Diesel Release But Hormuz Shipping Risks Persist",
-   "sources": [
-    "wsj.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Oil Prices Fall as G-7 Plans Crude, Diesel Release But Hormuz Shipping Risks Persist",
-     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPOFA5UUZFdndtdnBodnFleklOcmpCZmdBUzlROTlFSkFiWkZsNG5sMHU4M0VoR2ZLNFVNYlhKbmpjYlc4Q0NObmdDdFNLenRmU0VQdVZfWXU1YU44NWFUcnlWeUNtQkhBMlAyZGpDemdPY3VkY3NzdDRpNWlOcTlabURzNE1udEdkOVVYeW5qcmhndjM3VHVHYVFSZy0yQzYyR1VnSnJGWVdZdEZTUV9IeF84OXpEaFcyNUxzNFIwaFAybGplVHN3cTM1THc?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-05T22:53:00+09:00",
-     "dup_count": 1,
-     "summary": "G7 비축유 방출 추진에 유가 하락, 호르무즈 위험 지속."
-    }
-   ]
-  },
-  {
-   "title": "Treasury Yields Stable as Oil Prices Stay High, Bets on Fed Hold Rise",
-   "sources": [
-    "wsj.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Treasury Yields Stable as Oil Prices Stay High, Bets on Fed Hold Rise",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQN0NZcGplN2RwWDJPQ2VzODQ3NDdnN2NYYjE5UTlLYWpxQ2dudV9QRmVvMmY1VjJ5LTJHNTItdnpkdVVGZVZXdlYxVkpWMHFuQ2Ffek93bWl4dUM1cTNqUnVOM2xuUVNrZ2V2VlFId0t5cktkbDl3QUkyclhtV1daOXpIenk5Z3BUaGFVYVR0OXoxa2poSnJSWXFIbkRQZ0tKM0NJ?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-05T22:06:00+09:00",
-     "dup_count": 0,
-     "summary": "유가 강세와 연준 동결 전망 속에 미 국채 금리 안정."
-    }
-   ]
-  },
-  {
-   "title": "Chick-fil-A's growth plans, AI wearables, Gen Z's sports betting and more in Morning Squawk",
+   "title": "모닝 스쿼크 및 종합 뉴스",
    "sources": [
     "CNBC"
    ],
@@ -350,63 +427,12 @@
      "source": "CNBC",
      "published": "2026-10-05T21:37:59+09:00",
      "dup_count": 0,
-     "summary": "칙필레 성장 전략과 AI 기기, Z세대 스포츠 베팅 조명."
+     "summary": "Chick-fil-A 성장 전략과 AI 웨어러블 등이 주목받고 있다."
     }
    ]
   },
   {
-   "title": "Exclusive | GE HealthCare to Buy Sofie for Nearly $1 Billion to Grow Medical-Imaging Business",
-   "sources": [
-    "wsj.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Exclusive | GE HealthCare to Buy Sofie for Nearly $1 Billion to Grow Medical-Imaging Business",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd1pFRnZoRlZ3VzBmQUJzNWFaN0VXR1YyY0hQZVFvNkJMZ2NDMUtwYW9KZzYyY3BLUlBCd2duTTVJa2g3WHRadTc3S0htYVA5U0FGYy1FN1ZRVHFaMWpGRzdBcjgySHg5QXRmTDdFeGJueHJlRXliRVBYdjBBV0VMa2EtaVMzUXh5Y3BBNkdWR2hfYTZDSnliVkgtZm1zT0VYeEJyQXFZY0h2TDAzSklpSUtrTUh4VzQyXzh0TVpZRkpUX2hCbHc?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-05T21:35:00+09:00",
-     "dup_count": 0,
-     "summary": "GE헬스케어가 소피를 10억 달러에 인수해 영상 사업 확대."
-    }
-   ]
-  },
-  {
-   "title": "5 Things to Know Before the Stock Market Opens on Monday",
-   "sources": [
-    "finance.yahoo.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "5 Things to Know Before the Stock Market Opens on Monday",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaml0dEpjcjN6TUl3cUt5R3JqMklCZFA0bGtOci1SZUZtNVQzUm84TmVzaC03UTJBXzVKSWxyZ0NZTy1DTlhnTDlxQTVfWjhqbkF6WHMwaVZhQ0ZIYjdTeEloY3VZa3pkY0hkUjAtcDFUbTVzWWFxQ0c1aExCMUJsQnVpSkpaZVcyeW9BRnBBQVE1RkxEYmc?oc=5",
-     "source": "finance.yahoo.com",
-     "published": "2026-10-05T21:04:49+09:00",
-     "dup_count": 0,
-     "summary": "월요일 증시 개장 전 확인해야 할 5가지 핵심 이슈."
-    }
-   ]
-  },
-  {
-   "title": "Nvidia's $6 trillion milestone looms. Here's when options traders see it happening",
-   "sources": [
-    "CNBC"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Nvidia's $6 trillion milestone looms. Here's when options traders see it happening",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbG1XWTdSakZtY1ZyblBtWFdRdkF1eU54bklJQy04QjJkZjdtOXlZeWZudWVNOFRCY2dmR1VGSjdQVGI4cUxJWWhJV01JYmZhY2s4d01VNFAxNUpwMFRUdV9RaXR6ME9LTWhZUVZ2NUI4WHJNNGpTblQtQ3k5bDE1UGhZa1FiWXQtaHdwcGRITDVNVlFkdWt5Sy1PLU9VU2ZoM1FOeVVqRUEzdWtxNnlmVVJQOF9RUdIBuwFBVV95cUxNV2RaMmJOVzNLbm1HNXdwUWExdnltWFUzdHpLdGRuZjBjcEtXOTIyY2pBUms4UXQ5dGlrVXNzWmRabmpRazcyNnYtQ00zSUhkT19NcG9yRkNEWHVSNjBnblJ3UTM2Rl9RLTlCaER4WmRaLTlwVVpRWGlKYW5zMWk3NG5RNXdncGgxX25XSVJUVTN3M0IwYlc3SUliSWwzSWJ1YVlrV1dKMFo3SmU4WEF6bEdXQ0pXSjJpZDJB?oc=5",
-     "source": "CNBC",
-     "published": "2026-10-05T20:57:23+09:00",
-     "dup_count": 0,
-     "summary": "옵션 트레이더들이 엔비디아의 6조 달러 달성 시점을 전망."
-    }
-   ]
-  },
-  {
-   "title": "Five things to watch in markets in the week ahead",
+   "title": "주간 시장 관전 포인트",
    "sources": [
     "Investing.com"
    ],
@@ -418,197 +444,213 @@
      "source": "Investing.com",
      "published": "2026-10-05T20:56:22+09:00",
      "dup_count": 0,
-     "summary": "이번 주 금융시장에서 주목해야 할 5대 핵심 관전 포인트."
+     "summary": "이번 주 금융시장에서 주목해야 할 5가지 핵심 요소를 짚었다."
     }
    ]
   },
   {
-   "title": "Russia's oil earnings fall despite price jump as output drops, rouble rises",
+   "title": "에너지 및 유틸리티 라운드업",
    "sources": [
-    "Reuters"
+    "WSJ"
    ],
    "count": 1,
    "items": [
     {
-     "title": "Russia's oil earnings fall despite price jump as output drops, rouble rises",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWXVBVEdSV0VCSHNQZ0lMMkpoWV9ZQzVKZ1h4TXNUUWJDWldiWXU0cWt5NWNGYTZJZnM1SERHTTdyU1RFekV5Y3NNQmo4czFaUWZWRk8xVlNZUnBpWGFNYlh5VVB1M1pCMER3czZzUVZCS1J1WG5meldjTy1FTTdVLXdtN1FsZDFtcy1FSDFwd0RhbEV1X01wVlZial9xaUlkRFR2VVR0dmotcElabjExUko5bW5VbjgxUGZlYkZKUQ?oc=5",
-     "source": "Reuters",
-     "published": "2026-10-05T20:51:20+09:00",
+     "title": "Energy & Utilities Roundup: Market Talk",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBQZklzRDdfNUNjaEdvQnliTlZjLVRMOXh3cmF1RGhYc0RrV0haZ3hQMTl4bDBPUzRhMUdaMDJreG45TGRFaVVTbEU5cWxTY3h6NFBzcGc4M0tRVjdUeWpQSV9IMjUtRnZEaW5ZYTVhTmZBLUxKOExaVk5FX0NZTDQ?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-06T01:27:00+09:00",
      "dup_count": 0,
-     "summary": "감산과 루블화 강세로 유가 상승에도 러시아 석유 수입 감소."
+     "summary": "에너지 및 유틸리티 부문 시장 동향을 정리했다."
     }
    ]
   },
   {
-   "title": "Private Equity Has a Problem",
+   "title": "Microsoft Corporation (MSFT) Stock Price, News, Quote & History",
    "sources": [
-    "wsj.com"
+    "Yahoo Finance"
    ],
    "count": 1,
    "items": [
     {
-     "title": "Private Equity Has a Problem",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWlZ6SjlMa0Q4N2xNcmtXbG5sZEh2N2lQTmtIc2RmdEVRTnRCOE1BU1JfeUdudTVXSlNBRUF3R09rZnpKdjdXRHpScDhlVTRZb2ZKRWhHN2ZVTHFXOFg2NmJ4TE53Q1ZzVXczXzR3cG9KX2FiNi1uRlhfbjRJc1dldg?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-05T20:47:35+09:00",
+     "title": "Microsoft Corporation (MSFT) Stock Price, News, Quote & History",
+     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE02aDBpUWN4ZVp0ajliNXhvdWpuVWc1Z1B4eEVyUUFmN2RoazgzbUlUaU9kR1JTU2Q0bVR6ck45M2szN28wUWVmcmRoZlRnQQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-06T03:07:10+09:00",
      "dup_count": 0,
-     "summary": "사모펀드 업계가 자금 회수 등 구조적 문제에 직면했다."
-    }
-   ]
-  },
-  {
-   "title": "What’s the ROI on EDM? Brands Are Throwing Raves as Promotional Events",
-   "sources": [
-    "wsj.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "What’s the ROI on EDM? Brands Are Throwing Raves as Promotional Events",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNamozbVFjT2VncWhaaU13ZW44QXI4aU5aWUVZYmdSdlhveUhYa2hVUjhDOTNuNC12QzNxQWtRWGFvQjA1NWpMWEFzTU5oWDJhWWZDRGgzUDlvWjhqZzlBZGU0UGk5ZnlfRjJQY0VuSmxVb0xudXoyTEY0U3BqQTlDQUNTZEdHRF84SVpHMXFKclVOMldNZUNOYlU0eVhvcm1vaVpUN05ycndJTEk?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-05T20:00:00+09:00",
-     "dup_count": 2,
-     "summary": "브랜드들이 EDM 파티를 홍보 행사로 열며 투자수익 분석."
-    }
-   ]
-  },
-  {
-   "title": "Stock Market Today: Indexes Mixed at Opening Bell as Treasury Yields Rise, Oil Prices Fall",
-   "sources": [
-    "finance.yahoo.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Stock Market Today: Indexes Mixed at Opening Bell as Treasury Yields Rise, Oil Prices Fall",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdnJNTGdrT1JHOUNJelVGcHozSEZUbDJnRkw0WjJyQ1FqWlFKcXRaMmVCNnJaSEhIQ2pjZEFOTnFIZ2tqS3pNWXpxWndHakIwWHM2UjYxX2NNaU5hZkdnYnZEMEZPTVRBNWM4V3pnYlUtQzVjeXJoOXF4Z2lPbGt2blVzV0dmUkNwd1ZYQU5GSE4zeTJ0UEtLcVVKYWlMQQ?oc=5",
-     "source": "finance.yahoo.com",
-     "published": "2026-10-05T19:52:48+09:00",
-     "dup_count": 0,
-     "summary": "국채 금리 상승과 유가 하락 속에 뉴욕 증시 혼조세 출발."
-    }
-   ]
-  },
-  {
-   "title": "Euro Falls Vs Sterling as Fiscal Concerns Appear Greater in France Than U.K.",
-   "sources": [
-    "wsj.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Euro Falls Vs Sterling as Fiscal Concerns Appear Greater in France Than U.K.",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUTF6QUtTdUpPM0ViZ1E3ellWU0xwTnk5WWJZeFRiMzRzaERvc3FHVEFGcUxINzNraWZSV3pjUUdPQTh5REVud25QYTFXRkJ3UU5MZnZDYVJTZ054Tno4WlZhZWdCTHNnazY0TEt5N01Gczk5d2xjdEVaQWdIejZTa1FOSUFxcENER19oUDBTLVZsVUE1LTYxS0RzdEFRQ3pNNHlUa211MzBLbU5OVEladTNEQllMbXpVMFh0djlmRkJXNzNZRkZF?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-05T19:26:00+09:00",
-     "dup_count": 0,
-     "summary": "프랑스 재정 우려 부각으로 유로화 가치가 파운드화 대비 하락."
-    }
-   ]
-  },
-  {
-   "title": "Equities Won’t Be Dragged by Spike In Bond Yields",
-   "sources": [
-    "wsj.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Equities Won’t Be Dragged by Spike In Bond Yields",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPa3ZMVVhDLXNXWlRzb3ltNUpWZUhXTUt3S0ZReWNhRXRoRjNJRVRKYWhmOVluZ2JjSWdVRlY3STdYSmtmdVNIdl8tZU5BYUNwUEpOYlNxS3lNTEZrVGpmd0pjcUVBelQ5eHZkNFZQaEplQjFlZl8xY3F5cE5NUm1ybjNPMXpkRTBDTFN0dkJyZjdqMm82ejdKd0V4Mjc?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-05T19:21:00+09:00",
-     "dup_count": 2,
-     "summary": "국채 금리 급등에도 주식 시장은 크게 위축되지 않을 전망."
-    }
-   ]
-  },
-  {
-   "title": "Which is the better FTSE 100 income stock today: Aviva or National Grid?",
-   "sources": [
-    "Yahoo Finance UK"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Which is the better FTSE 100 income stock today: Aviva or National Grid?",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMms5VGlseVJGVEc4d1EyRkphbzA1WUFlNGpNUTRVWTFjdW5mM1BnNnVvTW1IYzBGblRPRkIzY0V3ZUxXSElmN29wNWdFWmZaaFhVNVFsQk80MjNGXzNKZWNQamxiNy1aeXFVU2NMcXFCTHk5MEs0cUEzdFVpLWx1Z2dFQQ?oc=5",
-     "source": "Yahoo Finance UK",
-     "published": "2026-10-05T19:09:18+09:00",
-     "dup_count": 0,
-     "summary": "FTSE 100 배당주 중 아비바와 내셔널그리드의 매력 비교."
-    }
-   ]
-  },
-  {
-   "title": "Saudi Arabia Slashes Crude Prices for Asia as Exports Recover",
-   "sources": [
-    "wsj.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Saudi Arabia Slashes Crude Prices for Asia as Exports Recover",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdjFlc2J6ZDR6ZC05cWxLdVdnbTN1blJTbzVXMHB3dERWXzBTalRDRGhuOHlBbXBVSlNsSDhoWENsMS1OMUUzNlpxanZiZEhoSEhra2tFRkNmS18zWnFWTGdjaFdGbW02TTViUXZmdlppYjZBSlNKdWxwRzhfWjRoV0FxbW5IMUVZVk1PM0pKbElTdTNKRkZ5aU1DYV9YbHQzT1djdlZqa0ZlQm1wQmxB?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-05T19:09:00+09:00",
-     "dup_count": 0,
-     "summary": "사우디가 수출 회복세를 맞아 아시아 공급 원유 가격을 인하."
-    }
-   ]
-  },
-  {
-   "title": "The American consumer is souring: What to watch this week",
-   "sources": [
-    "finance.yahoo.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "The American consumer is souring: What to watch this week",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYlktTFB6VFVvTGpPZ3YwMkJiZWVaZ19odE9jV2ZJODJ4WlNrc1ZNY3Z5dlhpdWQwR1JBei05Y0FLRmlrYlRPWE13SkNUeWRreHQyc0FsSnJ6a05jaENLUVZBWVhpdjJOZk9yTExDVzNBeDFQMm5NOU5iamppOUs2N1ZaSmJ2THlEcm9walZydEtnbF9adW96MDJvSWJlVzB6aWdrWkY0eXJXZjBuYXlYTDBOZw?oc=5",
-     "source": "finance.yahoo.com",
-     "published": "2026-10-05T19:00:00+09:00",
-     "dup_count": 3,
-     "summary": "미국 소비자 심리 위축에 따라 이번 주 지표 발표에 주목."
-    }
-   ]
-  },
-  {
-   "title": "ECB’s Lane Sees ‘Demand Destruction’ Muting Energy Impact On Inflation",
-   "sources": [
-    "wsj.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "ECB’s Lane Sees ‘Demand Destruction’ Muting Energy Impact On Inflation",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOXzQ1TFpqUWNUZjFzWGdkSmo1NUFEOUw1RFBqRzdWbDNCVEZmSElxTFZLckxBVjNKY0hfemhpZjJjbDM4alU2ZnpmMXRubEpJTHRZVzU3c3lJdlpPS1Zacm00SXA2d1BxLU9PRXp3S0prYmVnY0t1VU5rVHhkZ2VidEdxTl9BZ0Nsd0c2V0FndXpiOVVHWGpJb0VHejVNQW9BeG12b2g4X3NRZy1jRU5OREFTelU5VnpTUW1PcQ?oc=5",
-     "source": "wsj.com",
-     "published": "2026-10-05T17:42:00+09:00",
-     "dup_count": 0,
-     "summary": "ECB 레인은 수요 감소가 에너지 인플레 압력을 낮춘다고 봄."
+     "summary": "마이크로소프트의 주가, 뉴스 및 거래 기록 정보이다."
     }
    ]
   }
  ],
  "items": [
   {
-   "title": "Intel, XP Inc., PTC, RXO, Vaxcyte, Western Digital, Cerebras, and More Stocks That Explain Today’s Market",
+   "title": "Oil Prices Fall as G-7 Plans Crude, Diesel Release But Hormuz Shipping Risks Persist",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPOFA5UUZFdndtdnBodnFleklOcmpCZmdBUzlROTlFSkFiWkZsNG5sMHU4M0VoR2ZLNFVNYlhKbmpjYlc4Q0NObmdDdFNLenRmU0VQdVZfWXU1YU44NWFUcnlWeUNtQkhBMlAyZGpDemdPY3VkY3NzdDRpNWlOcTlabURzNE1udEdkOVVYeW5qcmhndjM3VHVHYVFSZy0yQzYyR1VnSnJGWVdZdEZTUV9IeF84OXpEaFcyNUxzNFIwaFAybGplVHN3cTM1THc?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-06T08:52:46+09:00",
+   "dup_count": 0,
+   "summary": "G-7의 원유 방출 계획으로 유가가 하락했다."
+  },
+  {
+   "title": "Nasdaq notches record high close as investors focus on earnings",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQV09jSm4zWHp2ODd2SmNPRHdJcUhDcjNzZ3dwYkwzZ3NSVHdyVUdUVEI0TWltb3RKQUZucVVNa2l1UzAxWmtSd0hQSWFjVXV0WVZiUjJFNGJDeEZQVlhoWDJ5WWpxLWxuc3ZVYXBLR0QxSzdZMVFjSklpUTB2Q2YwdE12VFl0bUw2RGRjZ3VoUmFlMkp4UUstYy1R?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-06T07:38:44+09:00",
+   "dup_count": 3,
+   "summary": "실적 기대감에 Nasdaq이 사상 최고치를 경신했다."
+  },
+  {
+   "title": "Trading Day: Nasdaq highs, Brazil surprise",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNekZHUjVfNDc1RTVWS1M2YVFlU2MtOG93UUhfWkIyTzRWRE9sWTFiY05sNWxDU2tydkNJWWdEWlNoQzUwVzh6djlETnJLRUIzQnhkNjBwOHBoSTRYLUFzMlRIdDZrTGxZQjU4UU1xUWdqM2xITHc4SG1KdElwZ2p4YXdiaW1YSV9zanZxTUM3MUp2N3R2YVpIN3JNVGozR05wNXQ4V0VB?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-06T07:05:18+09:00",
+   "dup_count": 2,
+   "summary": "Nasdaq 고공행진과 브라질 증시가 주목받았다."
+  },
+  {
+   "title": "Brazil markets' Bolsonaro rally sends stock exchange to record high",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNnBVVGg0X283c2E3UVFRekJud193dksxLU9RcDJSLXVoT3dpN1k0emRjS0k4RnJ2Yk1VN3lMd3Z3al94X3FreFRuWV82ei1RY21IUkFTZHB3djVIQkxlZzc1TElvY2JfNWpTOXNucTRVSFpNQ090ZnlFVEVDWnpHMy02WmQzLXRqTmRRTnFGeWhJbTV3MEh6TV9EMmhDOWpQNHBpM3JXWlJvalpm?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-06T06:34:19+09:00",
+   "dup_count": 0,
+   "summary": "브라질 시장의 보우소나루 랠리로 증시가 사상 최고치를 기록했다."
+  },
+  {
+   "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+   "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTFBBTy1pM1poaEROWTVTNDVTYVdvTDZEWmM1VDhGdlUzWW1OUXNvQ3RmZTVZQ3BGVlhvbTlWNFNhUQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-06T06:13:26+09:00",
+   "dup_count": 1,
+   "summary": "Yahoo Finance에서 실시간 증시와 금융 뉴스를 제공한다."
+  },
+  {
+   "title": "Exclusive | KKR Strikes Deal to Buy Private-Capital Fund Administrator Gen II",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRWZudVNxdXFZQktZalJqQXRUS1NDSWdhVk1NTFFqa1pzUlBrVDlrUTdVbnpPTUxYWHJwMVR4YnN4bktxeGhvNm9JRGFDVkYzWVJkNDVHbEZ3QkZCVklZWkdHbTlLVG5EUG0yRmY4dDBoTWdBTHhQeWVGcVk0aDFLUy1aNzdua09BUm83VVZPaTR5U1ZZaVc2YVI1c2ZkU3hCNXFnT3Y5SjJOR2x6Ukg0ZnNn?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-06T06:09:00+09:00",
+   "dup_count": 0,
+   "summary": "KKR이 사모펀드 관리사 Gen II를 인수하는 계약을 체결했다."
+  },
+  {
+   "title": "Stocks Up, Yields Up",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBiX1F4bWhnbkl2YnY3aVFsaG1Hd1oxZ2lHNXI4am9MZXhEalpYS2k4WmFhQnk1REZEN2lKTmFaTUFpLXZrVDIySUlfckZDY205M3p6UHlPMUFyVjViZThlSDNYd1gtb3FSeW5tbjJ0TWg?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-06T05:56:00+09:00",
+   "dup_count": 2,
+   "summary": "주가와 국채 금리가 모두 상승했다."
+  },
+  {
+   "title": "How Britain Learned to Love Chinese Cars—Especially a Look-Alike Range Rover",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNkJ0TFRoZHFOeHFjSkgwMnRhSTF6U19fZXB5TnBsZUc5aXBMRXFvVkRxZkJGb1lzd2ZCOE9xMExreWFlVVNDMFRKaHp6NnMtS181bzJubGJVY0J2cm1OQ3dSc2FwWElaRFVKSi1aZEVOOGhHY0JoNFhQSERLcUZPVjM3LVM0aXBaM0kwaDZYblBWUER2SjZvYWxkZnhnaGpCMlRpbEh2NFBHVVRWMzd3YjBZTGNRTDBTeURj?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-06T05:50:01+09:00",
+   "dup_count": 0,
+   "summary": "영국에서 중국산 자동차의 인기가 높아지고 있다."
+  },
+  {
+   "title": "U.S. Stocks Rise as AI Bets Offset Bond Yield Fears",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSVdLNXRUd1JHdk52SC1nZS1pb2REZHVBYVJjQl9uLUNwUTUydWw3NmYxa3p1ZXFzMWtQYW1tX0NoR29ZSGFGUFg2Mk5QNWg3ZTVzY1dXdFg0LS1IX2FNNDdKd3dHQzZqa3FoWU9UWVhnRzQySTdjWVFVZFdKZEJPYUV3LUZjeDRrNFVFemxJcndxbTZOek9WRjZ3?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-06T05:42:00+09:00",
+   "dup_count": 3,
+   "summary": "AI 투자 호조로 미 증시가 채권 금리 우려를 상쇄하며 상승했다."
+  },
+  {
+   "title": "Investors see big opportunity in ferocious 2026 bond-market rout",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR2NRSXZsLWJrWC15UmZqa0F3ZFBzTEYtMGwtbkswb0hfMVc0bXE5YWlLTmRUQjhyWUFmbHcwY2Q0c1Q3M2NTZUIyYmtHT2FIVkhzT29HSUlDZU1FSHV3aWg2TWJROFM2WVdZMWJicHVHN2Q0REVNdnViM0tZT21tZ0NUb20wVHZZcUpPQ0hEUElSRzlWdXQ3TTVnWkJ4cFhudGVacFdZa2I4TTA?oc=5",
+   "source": "MarketWatch",
+   "published": "2026-10-06T05:14:00+09:00",
+   "dup_count": 0,
+   "summary": "투자자들이 2026년 채권시장 폭락에서 큰 기회를 보고 있다."
+  },
+  {
+   "title": "Long-Term Treasury Yields Settle at New Multidecade Highs",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQN0NZcGplN2RwWDJPQ2VzODQ3NDdnN2NYYjE5UTlLYWpxQ2dudV9QRmVvMmY1VjJ5LTJHNTItdnpkdVVGZVZXdlYxVkpWMHFuQ2Ffek93bWl4dUM1cTNqUnVOM2xuUVNrZ2V2VlFId0t5cktkbDl3QUkyclhtV1daOXpIenk5Z3BUaGFVYVR0OXoxa2poSnJSWXFIbkRQZ0tKM0NJ?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-06T05:06:00+09:00",
+   "dup_count": 0,
+   "summary": "장기 미 국채 금리가 수십 년 만의 최고치로 마감했다."
+  },
+  {
+   "title": "SpaceX stock climbs to highest since June, returning Musk to trillionaire status",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS3hETWlsS2FCZ3FMTFNUazJaNl9SSmxyRmtjTkhuYWM4aC1xQV9YQV9WZHlhWkZtc0V4SllmQzR0emtveDVSc2VWWl9xUXkyamJrUUJJakNYVjZCenY4QU5GNEE0cHBPdlY5YXpIZGV3Y2trUFFidVFoLWdUUlN1ejEyOHdUczd5YW9NZ18xVzFEZ2NxcHFnX1lmU1B3ZVdtc1RuZWN2eFNpZ9IBrwFBVV95cUxNRkd5Q0xBRGY1SXluT1BuOEVGMEFFQngzTUkzaTNvRThoS1BNQTBJSm5ibThDSi1PZGlraWhUVkZDTEtJNzlsU1p2b3JqQUJ3UkVEUUZmWGplbk5DZ2I2ZGdhYTRsTkdzZlJDVWpwTzV6WDR1Z29KLWtJN2ZTS1E5YnpyMTA1T3NIQkthbFNsamNIRXZpc1dGV3ZVR2hTODI3clVNWnIzQ0w0Ujk3bWhr?oc=5",
+   "source": "CNBC",
+   "published": "2026-10-06T05:04:38+09:00",
+   "dup_count": 1,
+   "summary": "SpaceX 주가 상승으로 일론 머스크가 다시 트릴로네어에 복귀했다."
+  },
+  {
+   "title": "SpaceX jumps to highest close since June on bullish Morgan Stanley call",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNXpGTnRqWTB1OTFnYUdpVzQtWlBrbnBIVkM0cXJqRzVYLXliZjlMWGlSS2ZDbnJRa3pHU25sWVpNVUZCdDAtXzZ1YmtleDRHbHd2UG5QZVNQSFlXbGIxbmF1a0djOW0xNGR6SXJsMWFZQmtkR1Y5RWw4dF9GY2stczB5cUxBNFh2U2I4akFUYVgwelE5VG5fSTBzbTcxZV9MZXpNNXhiM2s4NkNqemduSzFnUElNTVVlbjNhSUJaR3UtOE5SVkNuOExkVkVkRkhX?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-06T05:03:44+09:00",
+   "dup_count": 0,
+   "summary": "Morgan Stanley의 긍정적 평가로 SpaceX 주가가 6월 이후 최고치로 급등했다."
+  },
+  {
+   "title": "Natural Gas Settles Higher on Storage Build Projections",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ2loS0stOWg4aUd5UGJQbTAwUFdQb2RPbWZMbjdvNU5Wb2J3RzlzRjFQc1hnQk1oWlMwbzEyQmNwVVlKdm43UGlLcUZ5T3Fld1BGVzZlVXJfLVA1QUs5NDdfbmNvWGQzYTVxN3BrM3BWQ2lpZGx1M1lNRFo1bXJiZkk1NkVYR2luVmFINElmWXZtYWRvdEpPcGxLeHQ2di11Y3B4c3JGeUZ5YW9oLUxPMVFHNA?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-06T05:01:00+09:00",
+   "dup_count": 0,
+   "summary": "천연가스 가격이 저장량 확충 전망에 힘입어 상승 마감했다."
+  },
+  {
+   "title": "Starbucks Accused of Mislabeling ‘Sugar-Free’ Protein Drinks in Lawsuit",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaU5mUmhteWpIUVRUdVpmUDFRc0wzblVGSkNnU3FBRld5T3pRRURHdVRCaE1ieVA5OVlURkhNbThtcG1EMGxPbUhoNVBaeUwwNE4xVVloOVFUTUNmaDY3c0t2RmtaZmllLUZLRHo2dFlhazFzR1ItMzc2MmtFYkNiNWRPVXBLUU5IeTl2WWNQc2g3aHFhV0VDX2E3clZIcGVSU3ZLTkJlRFJIRW8?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-06T04:02:00+09:00",
+   "dup_count": 0,
+   "summary": "스타벅스가 무설탕 단백질 음료 허위 표시로 소송을 당했다."
+  },
+  {
+   "title": "Wall Street rewards Microsoft's AI pivot. A longtime skeptic says it's just the beginning",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxORmtMbmhGV2NXSVhHV09MV3dYaHgzZkc0R25FUDliTXAzck5Qd0RsWVVrTmJmOGVDR20wb2JKTFJEVktDR05wTThqRllmNUF5RWZublQ5b3J0VEVCN2E2YktrcFFHU20wWUpLMGdPd3JMcnlPSUw4a3Z3Q2xKWmJSN3RaOWlld0xTa2NDQWpEX0M2dXdfYVgtRUJQejNwcVhzSjNxUmE1cTBIeHkweUxWOTlpMTFaWDdVZWQ0aV9FM0g?oc=5",
+   "source": "CNBC",
+   "published": "2026-10-06T03:39:51+09:00",
+   "dup_count": 0,
+   "summary": "월스트리트는 마이크로소프트의 AI 전환을 긍정적으로 평가했다."
+  },
+  {
+   "title": "Nvidia, Intel, Micron, XP Inc., PTC, Vaxcyte, Western Digital, and More Stocks That Explain Today’s Market",
    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA2SkZNSmdPMzdVUnlaenp2eW9mOUNlM1JSTWQzM3BYdGMxcjhxOGQ0eFRMWEJFM2VfY1JnNHhlbTMyQ2lKN3hPZXNqVzhpbVlPTEJxcS1memo0cU5oTUtOYW55eGc?oc=5",
    "source": "Barron's",
    "published": "2026-10-06T03:31:00+09:00",
    "dup_count": 0,
-   "summary": "인텔, RXO 등 핵심 종목들이 시장을 이끌었다."
+   "summary": "Nvidia, Intel 등 주요 종목들이 오늘의 시장을 설명한다."
   },
   {
-   "title": "TSX futures point higher as bets on October Fed rate hike fade",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRFNHbEh2WU45SVl6UzRxeDg0VV83UkRfVF9hS011U0Q4ekVRc0h4bmdQT0pGWjdNaDZDaUlPTE1KYWczb1VtUVJ5MTNoNWxEa295aHJZSVFPcjBpSFdKM1pHTmRBSnlqRDhLMDl6Q3VWYjhvaTItUWxiTFc2VlI0VDJmUjg1alpPem9TQ1M0ZGhNeWFib192RkZwMkc3S3BnNzRIYUExalgxT2pzVWk4WjF6VkUtcEV2bk4w?oc=5",
+   "title": "Nasdaq Poised to Hit New High as Treasury Yields Climb",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbFZ1TmhsZVJXVHh3NGo5eWhKcWZyNU8tbk8wYlh4eWd5S2lTNkhSSk5NTGxjcW9uNE8wQlVCekZwZjRRMVhlQ0oxUVNwSEFZeDJjR3dtQ3Nweno0Y3RrdXRYM2Z5TFZzN2djVWdDX21nRVpPZXF4Mk1iRGhpSXphWkFwRTJQa1p0ZUpMMXVjNFp6QU5GVnJLVnpuakNXQm5UQ0E3OE90aFZJM0JobmJXYlY1cDBVNEU?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-06T03:29:00+09:00",
+   "dup_count": 0,
+   "summary": "채권 금리 상승 속에서 Nasdaq이 신고가 경신을 앞두고 있다."
+  },
+  {
+   "title": "US stocks are rising near their records, with the Nasdaq composite on track for an all-time high",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQczhRelczeVJEdU1HOUtqOU4zRnQ1M1FoeHo4cDdOeGZ3Q1pzaUc2cVZtLXNqaEpJOHJkODBxVjMtc21KMnUzbmpSdklmZGdVOHhSZzBCSGxQR3BGZE1BVmdFNXdXSGdzUWVEam1oNG9NTERMVmVxZ2RIZFczcE1mQ1JQTDlIbjE0Mmc0?oc=5",
+   "source": "Yahoo! Finance Canada",
+   "published": "2026-10-06T03:12:00+09:00",
+   "dup_count": 0,
+   "summary": "미국 증시가 상승하며 Nasdaq 컴포지트가 사상 최고치를 향하고 있다."
+  },
+  {
+   "title": "FTSE 100 today: Stocks end higher on metals rally, weak U.S. jobs cut Fed bets",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYzNEa1RnYi1oakViWmNUYlJscXFNZzhJemR4cDVJQzdCWndYSENkb0V6UXF3bHRWUHQ4dUxWclp2NUVhVnJPX0pBZ3c0QjhNbWNOME5RN010QVVSY1E4LU52Zmhub2RST3k5RHZ2ZDZ0S0pTQkFTTkI5d09zX1hkZXNnRHJoV09yUm1FT0xIR2RBMU1TUjZFQm9TYy1aeWQ3Y01uOHlyYkNhVVFiWk9vS2U1N2FmUjE4amRyLXQ2TXg?oc=5",
    "source": "Investing.com",
-   "published": "2026-10-06T03:11:15+09:00",
-   "dup_count": 1,
-   "summary": "연준의 10월 금리 인상 기대 약화로 TSX 선물 상승."
+   "published": "2026-10-06T03:11:58+09:00",
+   "dup_count": 0,
+   "summary": "금속 랠리와 미국 고용 부진으로 FTSE 100 지수가 상승 마감했다."
+  },
+  {
+   "title": "Microsoft Corporation (MSFT) Stock Price, News, Quote & History",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE02aDBpUWN4ZVp0ajliNXhvdWpuVWc1Z1B4eEVyUUFmN2RoazgzbUlUaU9kR1JTU2Q0bVR6ck45M2szN28wUWVmcmRoZlRnQQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-06T03:07:10+09:00",
+   "dup_count": 0,
+   "summary": "마이크로소프트의 주가, 뉴스 및 거래 기록 정보이다."
   },
   {
    "title": "RXO Stock Soars on C.H. Robinson Buyout. Why the Buyer Is Today’s Worst S&P 500 Performer.",
@@ -616,7 +658,15 @@
    "source": "Barron's",
    "published": "2026-10-06T02:37:00+09:00",
    "dup_count": 0,
-   "summary": "CH로빈슨 피인수로 RXO 급등, 인수사는 최악 부진."
+   "summary": "RXO 주가가 C.H. Robinson 인수 발표로 급등했다."
+  },
+  {
+   "title": "Why is Nu Holdings stock soaring today?",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOLXNUUGZ3bTlIN1YyYkhaWUd2d3JVZmJfQ0Q3amhTVG1wTE5rT2VacTJlZW41dlFqX2J1QzNMcWVlVWdnX3g0RWRnTXVsQ0J1SVg5Q2Q0Ql9pSlZMaWJST1VzWUZaam9xdlpZRzlSeVV2MHRQc0JLcjk1MXI0Q2dlX09ZbDNDNUpXR05MQlI3dkVmdkRiR25QNV9rMXFrWWZUb1E?oc=5",
+   "source": "Investing.com",
+   "published": "2026-10-06T02:08:06+09:00",
+   "dup_count": 0,
+   "summary": "Nu Holdings 주가가 오늘 급등세를 보이고 있다."
   },
   {
    "title": "US services sector cools in September, price pressures building",
@@ -624,47 +674,31 @@
    "source": "Reuters",
    "published": "2026-10-06T02:03:09+09:00",
    "dup_count": 0,
-   "summary": "미국 9월 서비스업 둔화 속에 물가 상승 압력 가중."
-  },
-  {
-   "title": "This multi-trillion stock is \"cheap and getting cheaper\": Morgan Stanley",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdm1pY2I4X1U1T2FqMG9lck5DVUh1MU1oSWdHNUJWNm9kWnZOMHlwQVZ5NllKNmQwbHU2VGYwT2E0UHVNZmVmZjBITS1qb2RDMFZxMGM0c00ta3NTcUUzMHFURk9JaDRzOTZtbTNwbUxNN1B1ZGN0YlNoXzRsUDJhVTR3eWIwOEZJQzQwMmlGT0ZMTWZlM2JvQXdRX3ViMXgtR2J3cndIYmNRcmxaVmdkMmt0TXlkUzNMYVItZG5GcVJLb1E?oc=5",
-   "source": "Investing.com",
-   "published": "2026-10-06T01:34:21+09:00",
-   "dup_count": 0,
-   "summary": "모건스탠리는 수조 달러대 종목이 점점 더 싸졌다고 평가."
+   "summary": "9월 미국 서비스업 둔화와 함께 물가 압력이 커지고 있다."
   },
   {
    "title": "Energy & Utilities Roundup: Market Talk",
    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBQZklzRDdfNUNjaEdvQnliTlZjLVRMOXh3cmF1RGhYc0RrV0haZ3hQMTl4bDBPUzRhMUdaMDJreG45TGRFaVVTbEU5cWxTY3h6NFBzcGc4M0tRVjdUeWpQSV9IMjUtRnZEaW5ZYTVhTmZBLUxKOExaVk5FX0NZTDQ?oc=5",
-   "source": "wsj.com",
+   "source": "WSJ",
    "published": "2026-10-06T01:27:00+09:00",
    "dup_count": 0,
-   "summary": "에너지 및 유틸리티 부문 주요 시장 동향 정리."
+   "summary": "에너지 및 유틸리티 부문 시장 동향을 정리했다."
   },
   {
-   "title": "Why is PTC stock surging today?",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZTBpb01jTzJ3c240aEtoUUYzaGRSWVBhSmFObTF5LVFwOHNIMmhOd0c4TllBSVYwT0E4NUFUMkRULUF1OXRCdW80MklXRVZfVEQxejF4QnZObWFBS25PUDZMXzI1NlJnR2dLY2NyaGRSaXpqM0o3NDBaY0NWUUNqSklJdVExOURTTnNhR0pVdXY1WlU1Z2Yw?oc=5",
-   "source": "Investing.com",
-   "published": "2026-10-06T01:16:57+09:00",
-   "dup_count": 0,
-   "summary": "소프트웨어 기업 PTC 주가가 급등하며 주목받고 있다."
-  },
-  {
-   "title": "S&P 500 up, Nasdaq at record high as megacap tech stocks rise",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQV09jSm4zWHp2ODd2SmNPRHdJcUhDcjNzZ3dwYkwzZ3NSVHdyVUdUVEI0TWltb3RKQUZucVVNa2l1UzAxWmtSd0hQSWFjVXV0WVZiUjJFNGJDeEZQVlhoWDJ5WWpxLWxuc3ZVYXBLR0QxSzdZMVFjSklpUTB2Q2YwdE12VFl0bUw2RGRjZ3VoUmFlMkp4UUstYy1R?oc=5",
-   "source": "Reuters",
-   "published": "2026-10-06T01:09:42+09:00",
+   "title": "Higher rates are pummeling consumer discretionary stocks — here's the damage: Chart of the Day",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPS1l5cXdYVWUzVHFnclhMTzZjUEpLZ2JObGNqRlRnY29EZDRiYUNuMmVDQ0F1Z0Y1aUlrRWxvWEhLdGhZZnJUYWhGWDBqMU9CSk41SzU3WmUwYjRRa1lGMndnUG9tNTJvUXFyeVVrT3lJTy1YbkpyZEJtd3Y4T1N1N24wOWY3QjgxSktRZTlkT1M3Z21vMHJpdVBmbHVsZmNZdEN5T1E4ODdXZEpjdFNiTkVuWFZMX3NzVkc1Yng0YWNuSjRpSTY4MFNXbWg0SmFUS0oxQ3ZHaVZ6R2owVkdXVHRB?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-06T01:10:08+09:00",
    "dup_count": 1,
-   "summary": "대형 기술주 상승으로 S&P 500과 나스닥 최고치 기록."
+   "summary": "고금리가 경기소비재 주가에 큰 타격을 입히고 있다."
   },
   {
-   "title": "Brazil's currency, stocks jump after Bolsonaro scores first-round upset",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNnBVVGg0X283c2E3UVFRekJud193dksxLU9RcDJSLXVoT3dpN1k0emRjS0k4RnJ2Yk1VN3lMd3Z3al94X3FreFRuWV82ei1RY21IUkFTZHB3djVIQkxlZzc1TElvY2JfNWpTOXNucTRVSFpNQ090ZnlFVEVDWnpHMy02WmQzLXRqTmRRTnFGeWhJbTV3MEh6TV9EMmhDOWpQNHBpM3JXWlJvalpm?oc=5",
+   "title": "US dollar strength to fizzle, FX forecasters unmoved by searing rally: Reuters poll",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOd2dwdWJwQlZLYmFiRzlaNjRQUXJUbWNyaHgtaGdqVC1ZQ3pxOG0tR1c2eldXaWo4WlowRmVYR0phME9Cc3RXVFRvQ1NYbXRwZkxVMnUtbG5vSG1QeWNkaHZQQjdWc3liTUVldVFEcEx1SDJJSGc2aTBlSlNJZ1FSb0tYS1FIRzFTTkU5aUV0U2Fxdy1JZGZ0VnZaVEllNDd5QkhON0xxZkxmdE9RS05N?oc=5",
    "source": "Reuters",
-   "published": "2026-10-06T01:06:48+09:00",
+   "published": "2026-10-06T01:00:47+09:00",
    "dup_count": 0,
-   "summary": "보우소나루 1차 선전 후 브라질 통화와 증시 급등."
+   "summary": "전문가들은 미 달러화의 강세가 곧 사그라질 것으로 전망했다."
   },
   {
    "title": "Why is GameStop stock climbing today?",
@@ -672,47 +706,23 @@
    "source": "Investing.com",
    "published": "2026-10-06T00:59:46+09:00",
    "dup_count": 0,
-   "summary": "게임스톱 주가가 상승세를 보이며 관심이 집중됐다."
+   "summary": "GameStop 주가가 오늘 상승세를 보이고 있다."
   },
   {
    "title": "What will Washington do next if US bond yields keep rising?",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQnNOaEpMX1dfS3ZXNUV1SFZZcDY5MWI0UW9udWNkN3dJc0wtZU4wc1JFX1laSjlTY1N1MTdkdjRtMVlIMXFRMkhuUmwtcFcwYlQ2UUEyZnBJSEY3VGo5azVGUXJYU1BuZU9aSmRlZEVsQzNGN3FJeTctRUdlR0ItcFJKbkVYODktX2dWRzE4MjY3aFp3RV9KR3BsYlM5RGpTLS03YW9R?oc=5",
    "source": "Reuters",
    "published": "2026-10-06T00:33:31+09:00",
-   "dup_count": 1,
-   "summary": "미국 국채 금리 급등 지속 시 워싱턴의 대응에 주목."
-  },
-  {
-   "title": "Opinion | CFTC’s New Rules for Crypto",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0tcWhpNTd0dmNvc192anJkWWM3ZUd2S2JxcEFOdXhaUmNUdjJJaGJFR3dKS1pyOENBMUtkcTVIQlJMeVdIQVRhV2QtWDJ4cE5PV1dQMGtxcGxiNUFMb0dleDBhNmM0N2NleDl2UWkzcVk?oc=5",
-   "source": "wsj.com",
-   "published": "2026-10-06T00:30:00+09:00",
    "dup_count": 0,
-   "summary": "CFTC의 새로운 가상자산 규제 도입 필요성 제기."
+   "summary": "미 국채 금리 상승 지속 시 워싱턴의 대응에 관심이 쏠린다."
   },
   {
-   "title": "Why is Nu Holdings stock soaring today?",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOLXNUUGZ3bTlIN1YyYkhaWUd2d3JVZmJfQ0Q3amhTVG1wTE5rT2VacTJlZW41dlFqX2J1QzNMcWVlVWdnX3g0RWRnTXVsQ0J1SVg5Q2Q0Ql9pSlZMaWJST1VzWUZaam9xdlpZRzlSeVV2MHRQc0JLcjk1MXI0Q2dlX09ZbDNDNUpXR05MQlI3dkVmdkRiR25QNV9rMXFrWWZUb1E?oc=5",
-   "source": "Investing.com",
-   "published": "2026-10-05T23:48:46+09:00",
+   "title": "Elon Musk Becomes A Trillionaire—Again—After SpaceX Stock Jumps",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQanZrQmtYVUJiaTdYdkhWYmxaU3dKN1JsMXkxYUpxcng5dUxNdW9VQzJUZTAxaWI3SFVyNll2SWxQbkRmNVBxUlQzdDVMWTBRTEJrYWJGdF82S05qandQV25pMWpvcHM1cGZvN2ZBWDdLeFNNTFdDTi1wS2QxYWV2ZDM0cTdQUUk0Si1TZHlfT1ZkRzJhN0lEMnBaMUxyY0RPSndR?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-05T23:15:50+09:00",
    "dup_count": 0,
-   "summary": "핀테크 기업 누 홀딩스 주가가 급등세를 기록했다."
-  },
-  {
-   "title": "Natural Gas Inches Higher Even With Mild Weather Outlook",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ2loS0stOWg4aUd5UGJQbTAwUFdQb2RPbWZMbjdvNU5Wb2J3RzlzRjFQc1hnQk1oWlMwbzEyQmNwVVlKdm43UGlLcUZ5T3Fld1BGVzZlVXJfLVA1QUs5NDdfbmNvWGQzYTVxN3BrM3BWQ2lpZGx1M1lNRFo1bXJiZkk1NkVYR2luVmFINElmWXZtYWRvdEpPcGxLeHQ2di11Y3B4c3JGeUZ5YW9oLUxPMVFHNA?oc=5",
-   "source": "wsj.com",
-   "published": "2026-10-05T23:17:00+09:00",
-   "dup_count": 1,
-   "summary": "온화한 날씨 전망에도 천연가스 가격이 소폭 상승했다."
-  },
-  {
-   "title": "C.H. Robinson to Buy RXO for About $5.3 Billion",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOXZkTDZCV3lmcVNBdUl3d1Q4a29wRnh4Q29UWHJpQmI3MUVpSEZMbmhnbU9BYUN0QXVsaXNFdG5XdEQ0eGdPa29EVGFaeXRsb3hWb3BfbXZOdm4zb3hJUHJmd0FnNzg2cGpIdEpPY1pCR0RLdzU4bkdhSWl4ZENPS0NodmZTVjFDc3JiblNiclo?oc=5",
-   "source": "wsj.com",
-   "published": "2026-10-05T23:12:00+09:00",
-   "dup_count": 0,
-   "summary": "CH로빈슨이 RXO를 약 53억 달러에 인수하기로 함."
+   "summary": "SpaceX 주가 급등으로 일론 머스크가 다시 트릴로네어가 되었다."
   },
   {
    "title": "The Stock Market Dynamic Has Shifted, Just Look at Intel and Nvidia",
@@ -720,39 +730,15 @@
    "source": "Barron's",
    "published": "2026-10-05T23:04:00+09:00",
    "dup_count": 2,
-   "summary": "인텔과 엔비디아를 통해 시장 주도권 변화가 확인됨."
-  },
-  {
-   "title": "Microsoft Is the ‘Adult in Charge’ on Fears Over AI Security. The Stock Gets Upgraded to Buy.",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9VU3FmVU9OVWh4NDhfcXNMZ1B0ZE05TW1wd24xT1Z1ZlVLLUZGRTNnbkJnVDA5TWRSZzBIdG5OaElZaUNGNWFuaDk5ODRuck53LUFsbllFZVlNdDhjdms3UWE4NEJiWk03UEJidXNfRGpYMnpKaS1nTVdjaHU5QQ?oc=5",
-   "source": "Barron's",
-   "published": "2026-10-05T23:02:00+09:00",
-   "dup_count": 0,
-   "summary": "MS가 AI 보안 우려를 달래며 매수 투자의견으로 상향."
+   "summary": "Intel과 Nvidia를 통해 증시 역학의 변화를 확인할 수 있다."
   },
   {
    "title": "Stock Market Today (Oct. 5, 2026): S&P 500 moves higher, yields higher ahead of Fed minutes release",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOb0N1SnlPM04yWkQtWURSOXJDeWptRTFIc1hQYnFCMUJGS2lpTGhsM3NQR0ZZc3Q3UTV3QXFqODlZMzBRQTg4ejZybFE3VnNGWTdpY20walBBSFBYWFcza3pqdnNNWThiUldncTg3U2RaMjR0cWRMbTd3T0wxSnhpbkdhQjhPWno4UnFWNUNaVTZiN1k?oc=5",
-   "source": "finance.yahoo.com",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAyX3Q1U1U1R3hrbkNYVWxHajBHY05WMXVlUXN2V0RpYXlkVEhrOVFaSFdjUUNxR09yejhIaXlhUU4zUnlPRHJtcmZJQUt1VTFPSzlsc2E3MGdNM0ZVVUxzdzM2RzNKQTBzQWstNGNlWUF4SHFzMndnRWFTMkREUQ?oc=5",
+   "source": "Yahoo Finance Singapore",
    "published": "2026-10-05T22:55:37+09:00",
-   "dup_count": 0,
-   "summary": "연준 의사록 앞두고 S&P 500과 금리가 동반 상승함."
-  },
-  {
-   "title": "Oil Prices Fall as G-7 Plans Crude, Diesel Release But Hormuz Shipping Risks Persist",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPOFA5UUZFdndtdnBodnFleklOcmpCZmdBUzlROTlFSkFiWkZsNG5sMHU4M0VoR2ZLNFVNYlhKbmpjYlc4Q0NObmdDdFNLenRmU0VQdVZfWXU1YU44NWFUcnlWeUNtQkhBMlAyZGpDemdPY3VkY3NzdDRpNWlOcTlabURzNE1udEdkOVVYeW5qcmhndjM3VHVHYVFSZy0yQzYyR1VnSnJGWVdZdEZTUV9IeF84OXpEaFcyNUxzNFIwaFAybGplVHN3cTM1THc?oc=5",
-   "source": "wsj.com",
-   "published": "2026-10-05T22:53:00+09:00",
    "dup_count": 1,
-   "summary": "G7 비축유 방출 추진에 유가 하락, 호르무즈 위험 지속."
-  },
-  {
-   "title": "Treasury Yields Stable as Oil Prices Stay High, Bets on Fed Hold Rise",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQN0NZcGplN2RwWDJPQ2VzODQ3NDdnN2NYYjE5UTlLYWpxQ2dudV9QRmVvMmY1VjJ5LTJHNTItdnpkdVVGZVZXdlYxVkpWMHFuQ2Ffek93bWl4dUM1cTNqUnVOM2xuUVNrZ2V2VlFId0t5cktkbDl3QUkyclhtV1daOXpIenk5Z3BUaGFVYVR0OXoxa2poSnJSWXFIbkRQZ0tKM0NJ?oc=5",
-   "source": "wsj.com",
-   "published": "2026-10-05T22:06:00+09:00",
-   "dup_count": 0,
-   "summary": "유가 강세와 연준 동결 전망 속에 미 국채 금리 안정."
+   "summary": "연준 의사공개 앞두고 S&P 500과 금리가 모두 상승했다."
   },
   {
    "title": "Chick-fil-A's growth plans, AI wearables, Gen Z's sports betting and more in Morning Squawk",
@@ -760,31 +746,7 @@
    "source": "CNBC",
    "published": "2026-10-05T21:37:59+09:00",
    "dup_count": 0,
-   "summary": "칙필레 성장 전략과 AI 기기, Z세대 스포츠 베팅 조명."
-  },
-  {
-   "title": "Exclusive | GE HealthCare to Buy Sofie for Nearly $1 Billion to Grow Medical-Imaging Business",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd1pFRnZoRlZ3VzBmQUJzNWFaN0VXR1YyY0hQZVFvNkJMZ2NDMUtwYW9KZzYyY3BLUlBCd2duTTVJa2g3WHRadTc3S0htYVA5U0FGYy1FN1ZRVHFaMWpGRzdBcjgySHg5QXRmTDdFeGJueHJlRXliRVBYdjBBV0VMa2EtaVMzUXh5Y3BBNkdWR2hfYTZDSnliVkgtZm1zT0VYeEJyQXFZY0h2TDAzSklpSUtrTUh4VzQyXzh0TVpZRkpUX2hCbHc?oc=5",
-   "source": "wsj.com",
-   "published": "2026-10-05T21:35:00+09:00",
-   "dup_count": 0,
-   "summary": "GE헬스케어가 소피를 10억 달러에 인수해 영상 사업 확대."
-  },
-  {
-   "title": "5 Things to Know Before the Stock Market Opens on Monday",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaml0dEpjcjN6TUl3cUt5R3JqMklCZFA0bGtOci1SZUZtNVQzUm84TmVzaC03UTJBXzVKSWxyZ0NZTy1DTlhnTDlxQTVfWjhqbkF6WHMwaVZhQ0ZIYjdTeEloY3VZa3pkY0hkUjAtcDFUbTVzWWFxQ0c1aExCMUJsQnVpSkpaZVcyeW9BRnBBQVE1RkxEYmc?oc=5",
-   "source": "finance.yahoo.com",
-   "published": "2026-10-05T21:04:49+09:00",
-   "dup_count": 0,
-   "summary": "월요일 증시 개장 전 확인해야 할 5가지 핵심 이슈."
-  },
-  {
-   "title": "Nvidia's $6 trillion milestone looms. Here's when options traders see it happening",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbG1XWTdSakZtY1ZyblBtWFdRdkF1eU54bklJQy04QjJkZjdtOXlZeWZudWVNOFRCY2dmR1VGSjdQVGI4cUxJWWhJV01JYmZhY2s4d01VNFAxNUpwMFRUdV9RaXR6ME9LTWhZUVZ2NUI4WHJNNGpTblQtQ3k5bDE1UGhZa1FiWXQtaHdwcGRITDVNVlFkdWt5Sy1PLU9VU2ZoM1FOeVVqRUEzdWtxNnlmVVJQOF9RUdIBuwFBVV95cUxNV2RaMmJOVzNLbm1HNXdwUWExdnltWFUzdHpLdGRuZjBjcEtXOTIyY2pBUms4UXQ5dGlrVXNzWmRabmpRazcyNnYtQ00zSUhkT19NcG9yRkNEWHVSNjBnblJ3UTM2Rl9RLTlCaER4WmRaLTlwVVpRWGlKYW5zMWk3NG5RNXdncGgxX25XSVJUVTN3M0IwYlc3SUliSWwzSWJ1YVlrV1dKMFo3SmU4WEF6bEdXQ0pXSjJpZDJB?oc=5",
-   "source": "CNBC",
-   "published": "2026-10-05T20:57:23+09:00",
-   "dup_count": 0,
-   "summary": "옵션 트레이더들이 엔비디아의 6조 달러 달성 시점을 전망."
+   "summary": "Chick-fil-A 성장 전략과 AI 웨어러블 등이 주목받고 있다."
   },
   {
    "title": "Five things to watch in markets in the week ahead",
@@ -792,7 +754,7 @@
    "source": "Investing.com",
    "published": "2026-10-05T20:56:22+09:00",
    "dup_count": 0,
-   "summary": "이번 주 금융시장에서 주목해야 할 5대 핵심 관전 포인트."
+   "summary": "이번 주 금융시장에서 주목해야 할 5가지 핵심 요소를 짚었다."
   },
   {
    "title": "Russia's oil earnings fall despite price jump as output drops, rouble rises",
@@ -800,79 +762,7 @@
    "source": "Reuters",
    "published": "2026-10-05T20:51:20+09:00",
    "dup_count": 0,
-   "summary": "감산과 루블화 강세로 유가 상승에도 러시아 석유 수입 감소."
-  },
-  {
-   "title": "Private Equity Has a Problem",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWlZ6SjlMa0Q4N2xNcmtXbG5sZEh2N2lQTmtIc2RmdEVRTnRCOE1BU1JfeUdudTVXSlNBRUF3R09rZnpKdjdXRHpScDhlVTRZb2ZKRWhHN2ZVTHFXOFg2NmJ4TE53Q1ZzVXczXzR3cG9KX2FiNi1uRlhfbjRJc1dldg?oc=5",
-   "source": "wsj.com",
-   "published": "2026-10-05T20:47:35+09:00",
-   "dup_count": 0,
-   "summary": "사모펀드 업계가 자금 회수 등 구조적 문제에 직면했다."
-  },
-  {
-   "title": "What’s the ROI on EDM? Brands Are Throwing Raves as Promotional Events",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNamozbVFjT2VncWhaaU13ZW44QXI4aU5aWUVZYmdSdlhveUhYa2hVUjhDOTNuNC12QzNxQWtRWGFvQjA1NWpMWEFzTU5oWDJhWWZDRGgzUDlvWjhqZzlBZGU0UGk5ZnlfRjJQY0VuSmxVb0xudXoyTEY0U3BqQTlDQUNTZEdHRF84SVpHMXFKclVOMldNZUNOYlU0eVhvcm1vaVpUN05ycndJTEk?oc=5",
-   "source": "wsj.com",
-   "published": "2026-10-05T20:00:00+09:00",
-   "dup_count": 2,
-   "summary": "브랜드들이 EDM 파티를 홍보 행사로 열며 투자수익 분석."
-  },
-  {
-   "title": "Stock Market Today: Indexes Mixed at Opening Bell as Treasury Yields Rise, Oil Prices Fall",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdnJNTGdrT1JHOUNJelVGcHozSEZUbDJnRkw0WjJyQ1FqWlFKcXRaMmVCNnJaSEhIQ2pjZEFOTnFIZ2tqS3pNWXpxWndHakIwWHM2UjYxX2NNaU5hZkdnYnZEMEZPTVRBNWM4V3pnYlUtQzVjeXJoOXF4Z2lPbGt2blVzV0dmUkNwd1ZYQU5GSE4zeTJ0UEtLcVVKYWlMQQ?oc=5",
-   "source": "finance.yahoo.com",
-   "published": "2026-10-05T19:52:48+09:00",
-   "dup_count": 0,
-   "summary": "국채 금리 상승과 유가 하락 속에 뉴욕 증시 혼조세 출발."
-  },
-  {
-   "title": "Euro Falls Vs Sterling as Fiscal Concerns Appear Greater in France Than U.K.",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUTF6QUtTdUpPM0ViZ1E3ellWU0xwTnk5WWJZeFRiMzRzaERvc3FHVEFGcUxINzNraWZSV3pjUUdPQTh5REVud25QYTFXRkJ3UU5MZnZDYVJTZ054Tno4WlZhZWdCTHNnazY0TEt5N01Gczk5d2xjdEVaQWdIejZTa1FOSUFxcENER19oUDBTLVZsVUE1LTYxS0RzdEFRQ3pNNHlUa211MzBLbU5OVEladTNEQllMbXpVMFh0djlmRkJXNzNZRkZF?oc=5",
-   "source": "wsj.com",
-   "published": "2026-10-05T19:26:00+09:00",
-   "dup_count": 0,
-   "summary": "프랑스 재정 우려 부각으로 유로화 가치가 파운드화 대비 하락."
-  },
-  {
-   "title": "Equities Won’t Be Dragged by Spike In Bond Yields",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPa3ZMVVhDLXNXWlRzb3ltNUpWZUhXTUt3S0ZReWNhRXRoRjNJRVRKYWhmOVluZ2JjSWdVRlY3STdYSmtmdVNIdl8tZU5BYUNwUEpOYlNxS3lNTEZrVGpmd0pjcUVBelQ5eHZkNFZQaEplQjFlZl8xY3F5cE5NUm1ybjNPMXpkRTBDTFN0dkJyZjdqMm82ejdKd0V4Mjc?oc=5",
-   "source": "wsj.com",
-   "published": "2026-10-05T19:21:00+09:00",
-   "dup_count": 2,
-   "summary": "국채 금리 급등에도 주식 시장은 크게 위축되지 않을 전망."
-  },
-  {
-   "title": "Which is the better FTSE 100 income stock today: Aviva or National Grid?",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMms5VGlseVJGVEc4d1EyRkphbzA1WUFlNGpNUTRVWTFjdW5mM1BnNnVvTW1IYzBGblRPRkIzY0V3ZUxXSElmN29wNWdFWmZaaFhVNVFsQk80MjNGXzNKZWNQamxiNy1aeXFVU2NMcXFCTHk5MEs0cUEzdFVpLWx1Z2dFQQ?oc=5",
-   "source": "Yahoo Finance UK",
-   "published": "2026-10-05T19:09:18+09:00",
-   "dup_count": 0,
-   "summary": "FTSE 100 배당주 중 아비바와 내셔널그리드의 매력 비교."
-  },
-  {
-   "title": "Saudi Arabia Slashes Crude Prices for Asia as Exports Recover",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdjFlc2J6ZDR6ZC05cWxLdVdnbTN1blJTbzVXMHB3dERWXzBTalRDRGhuOHlBbXBVSlNsSDhoWENsMS1OMUUzNlpxanZiZEhoSEhra2tFRkNmS18zWnFWTGdjaFdGbW02TTViUXZmdlppYjZBSlNKdWxwRzhfWjRoV0FxbW5IMUVZVk1PM0pKbElTdTNKRkZ5aU1DYV9YbHQzT1djdlZqa0ZlQm1wQmxB?oc=5",
-   "source": "wsj.com",
-   "published": "2026-10-05T19:09:00+09:00",
-   "dup_count": 0,
-   "summary": "사우디가 수출 회복세를 맞아 아시아 공급 원유 가격을 인하."
-  },
-  {
-   "title": "The American consumer is souring: What to watch this week",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYlktTFB6VFVvTGpPZ3YwMkJiZWVaZ19odE9jV2ZJODJ4WlNrc1ZNY3Z5dlhpdWQwR1JBei05Y0FLRmlrYlRPWE13SkNUeWRreHQyc0FsSnJ6a05jaENLUVZBWVhpdjJOZk9yTExDVzNBeDFQMm5NOU5iamppOUs2N1ZaSmJ2THlEcm9walZydEtnbF9adW96MDJvSWJlVzB6aWdrWkY0eXJXZjBuYXlYTDBOZw?oc=5",
-   "source": "finance.yahoo.com",
-   "published": "2026-10-05T19:00:00+09:00",
-   "dup_count": 3,
-   "summary": "미국 소비자 심리 위축에 따라 이번 주 지표 발표에 주목."
-  },
-  {
-   "title": "ECB’s Lane Sees ‘Demand Destruction’ Muting Energy Impact On Inflation",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOXzQ1TFpqUWNUZjFzWGdkSmo1NUFEOUw1RFBqRzdWbDNCVEZmSElxTFZLckxBVjNKY0hfemhpZjJjbDM4alU2ZnpmMXRubEpJTHRZVzU3c3lJdlpPS1Zacm00SXA2d1BxLU9PRXp3S0prYmVnY0t1VU5rVHhkZ2VidEdxTl9BZ0Nsd0c2V0FndXpiOVVHWGpJb0VHejVNQW9BeG12b2g4X3NRZy1jRU5OREFTelU5VnpTUW1PcQ?oc=5",
-   "source": "wsj.com",
-   "published": "2026-10-05T17:42:00+09:00",
-   "dup_count": 0,
-   "summary": "ECB 레인은 수요 감소가 에너지 인플레 압력을 낮춘다고 봄."
+   "summary": "생산량 감소와 루화 강세로 러시아의 원유 수입이 감소했다."
   }
  ]
 }

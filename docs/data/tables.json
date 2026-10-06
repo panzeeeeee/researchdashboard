@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-06T03:56:44.173681+09:00",
+ "updated_at": "2026-10-06T11:42:24.305986+09:00",
  "breakout": [
   {
    "code": "MRNA",
@@ -268,30 +268,30 @@
    "name": "KKR & Co. Inc.",
    "universe": "SPX",
    "sector": "Financial Services",
-   "score": 0.779,
-   "value": 0.927,
-   "turn": 0.598,
+   "score": 0.783,
+   "value": 0.934,
+   "turn": 0.599,
    "fscore": 6,
    "drawdown": 45.5,
    "below200": 200,
    "earn_yld": 175.5,
    "triggered": true,
-   "why": "고금리 장기화에 따른 자산 회수 및 신규 펀딩 둔화."
+   "why": "고금리 장기화에 따른 자금 회수 및 사모펀드 펀딩 둔화 우려."
   },
   {
    "code": "APTV",
    "name": "Aptiv PLC",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.759,
-   "value": 0.874,
-   "turn": 0.619,
+   "score": 0.767,
+   "value": 0.878,
+   "turn": 0.631,
    "fscore": 8,
-   "drawdown": 55.5,
+   "drawdown": 55.6,
    "below200": 153,
    "earn_yld": 10.0,
    "triggered": true,
-   "why": "글로벌 전기차 수요 둔화 및 완성차 생산 차질 우려."
+   "why": "글로벌 전기차 수요 둔화 및 완성차 고객사 감산 여파."
   },
   {
    "code": "NRDS",
@@ -302,52 +302,37 @@
    "value": 0.5,
    "turn": 1.0,
    "fscore": 8,
-   "drawdown": 48.7,
+   "drawdown": 48.0,
    "below200": 179,
    "earn_yld": 1.8,
    "triggered": true,
-   "why": "고금리로 인한 대출·신용카드 등 금융 중개 수요 위축."
-  },
-  {
-   "code": "FSLR",
-   "name": "First Solar, Inc.",
-   "universe": "SPX",
-   "sector": "Technology",
-   "score": 0.712,
-   "value": 0.606,
-   "turn": 0.842,
-   "fscore": 8,
-   "drawdown": 45.0,
-   "below200": 115,
-   "earn_yld": 9.2,
-   "triggered": true,
-   "why": "고금리 부담 및 미국 친환경 보조금 정책 불확실성."
+   "why": "고금리로 인한 금융 대출 수요 감소와 광고 집행 축소."
   },
   {
    "code": "PNR",
    "name": "Pentair plc.",
    "universe": "SPX",
    "sector": "Industrials",
-   "score": 0.703,
-   "value": 0.653,
-   "turn": 0.764,
+   "score": 0.709,
+   "value": 0.663,
+   "turn": 0.766,
    "fscore": 9,
-   "drawdown": 52.4,
+   "drawdown": 52.5,
    "below200": 170,
    "earn_yld": 7.8,
    "triggered": true,
-   "why": "주택 경기 침체로 주거용 수영장 등 장비 수요 둔화."
+   "why": "주택 경기 침체에 따른 수영장·수처리 수요 둔화."
   },
   {
    "code": "RHLD",
    "name": "Resolute Holdings Management",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.692,
+   "score": 0.697,
    "value": 0.55,
-   "turn": 0.866,
+   "turn": 0.877,
    "fscore": 7,
-   "drawdown": 49.2,
+   "drawdown": 48.9,
    "below200": 105,
    "earn_yld": 16.4,
    "triggered": true,
@@ -358,15 +343,15 @@
    "name": "Zoetis Inc.",
    "universe": "SPX",
    "sector": "Healthcare",
-   "score": 0.668,
+   "score": 0.67,
    "value": 0.659,
-   "turn": 0.678,
+   "turn": 0.684,
    "fscore": 8,
    "drawdown": 63.0,
    "below200": 252,
    "earn_yld": 9.6,
    "triggered": true,
-   "why": "신약 안전성 논란 및 반려동물 헬스케어 지출 둔화."
+   "why": "반려동물 의약품 부작용 논란 및 소비 심리 위축 여파."
   },
   {
    "code": "INTU",
@@ -377,26 +362,26 @@
    "value": 0.7,
    "turn": 0.615,
    "fscore": 7,
-   "drawdown": 64.4,
+   "drawdown": 64.3,
    "below200": 242,
    "earn_yld": 7.0,
    "triggered": true,
-   "why": "중소기업 경기 둔화에 따른 소프트웨어 지출 축소."
+   "why": "중소기업 경기 둔화 우려 및 AI발 소프트웨어 경쟁 심화."
   },
   {
    "code": "LVS",
    "name": "Las Vegas Sands Corp.",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.605,
-   "value": 0.609,
-   "turn": 0.601,
+   "score": 0.617,
+   "value": 0.621,
+   "turn": 0.612,
    "fscore": 8,
-   "drawdown": 46.3,
+   "drawdown": 46.4,
    "below200": 142,
    "earn_yld": 8.5,
    "triggered": true,
-   "why": "중국 경기 침체로 인한 마카오 카지노 회복세 지연."
+   "why": "중국 경기 침체에 따른 마카오 카지노 매출 회복 지연."
   },
   {
    "code": "CPRT",
@@ -407,41 +392,41 @@
    "value": 0.667,
    "turn": 0.527,
    "fscore": 7,
-   "drawdown": 56.9,
+   "drawdown": 56.7,
    "below200": 252,
    "earn_yld": 8.4,
    "triggered": true,
-   "why": "중고차 가격 하락 및 전손 차량 경매 물량 정체."
-  },
-  {
-   "code": "FISV",
-   "name": "Fiserv, Inc.",
-   "universe": "SPX",
-   "sector": "Unknown",
-   "score": 0.589,
-   "value": 0.859,
-   "turn": 0.259,
-   "fscore": 6,
-   "drawdown": 80.6,
-   "below200": 252,
-   "earn_yld": 10.6,
-   "triggered": true,
-   "why": "가맹점 결제 시장 경쟁 심화 및 소비 지출 둔화."
+   "why": "중고차 가격 하락과 사고 차량 전손 처리율 정체 우려."
   },
   {
    "code": "NKE",
    "name": "Nike, Inc.",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.583,
-   "value": 0.713,
-   "turn": 0.423,
+   "score": 0.6,
+   "value": 0.733,
+   "turn": 0.437,
    "fscore": 7,
-   "drawdown": 70.7,
+   "drawdown": 70.4,
    "below200": 241,
    "earn_yld": 8.8,
    "triggered": true,
-   "why": "북미·중국 수요 부진 및 경쟁 심화로 인한 성장 정체."
+   "why": "중국 수요 부진 및 신흥 브랜드와의 경쟁 심화에 따른 타격."
+  },
+  {
+   "code": "FISV",
+   "name": "Fiserv, Inc.",
+   "universe": "SPX",
+   "sector": "Unknown",
+   "score": 0.59,
+   "value": 0.851,
+   "turn": 0.27,
+   "fscore": 6,
+   "drawdown": 80.6,
+   "below200": 252,
+   "earn_yld": 10.6,
+   "triggered": true,
+   "why": "지급결제 시장 경쟁 심화와 전통 핀테크 성장성 둔화."
   },
   {
    "code": "VRSK",
@@ -449,14 +434,14 @@
    "universe": "SPX",
    "sector": "Industrials",
    "score": 0.569,
-   "value": 0.324,
-   "turn": 0.869,
+   "value": 0.325,
+   "turn": 0.868,
    "fscore": 8,
-   "drawdown": 48.8,
+   "drawdown": 48.5,
    "below200": 244,
    "earn_yld": 5.8,
    "triggered": true,
-   "why": "보험 업황 둔화 및 금융권의 IT 지출 통제 기조."
+   "why": "손해보험 업황 둔화 및 데이터 솔루션 성장세 둔화 우려."
   },
   {
    "code": "APP",
@@ -467,56 +452,56 @@
    "value": 0.183,
    "turn": 1.0,
    "fscore": 9,
-   "drawdown": 61.3,
+   "drawdown": 61.6,
    "below200": 159,
    "earn_yld": 2.9,
    "triggered": true,
-   "why": "모바일 게임 광고 시장 둔화 및 플랫폼 규제 우려."
+   "why": "모바일 게임 시장 침체와 광고 타깃팅 규제 영향."
   },
   {
    "code": "CPRT",
    "name": "Copart, Inc.",
    "universe": "SPX",
    "sector": "Industrials",
-   "score": 0.524,
-   "value": 0.557,
-   "turn": 0.484,
+   "score": 0.542,
+   "value": 0.577,
+   "turn": 0.5,
    "fscore": 7,
-   "drawdown": 56.9,
+   "drawdown": 56.7,
    "below200": 252,
    "earn_yld": 8.4,
    "triggered": true,
-   "why": "중고차 가격 하락 및 전손 차량 경매 물량 정체."
+   "why": "중고차 가격 하락과 사고 차량 전손 처리율 정체 우려."
   },
   {
    "code": "INTU",
    "name": "Intuit Inc.",
    "universe": "SPX",
    "sector": "Technology",
-   "score": 0.52,
-   "value": 0.499,
-   "turn": 0.546,
+   "score": 0.535,
+   "value": 0.513,
+   "turn": 0.563,
    "fscore": 7,
-   "drawdown": 64.4,
+   "drawdown": 64.3,
    "below200": 242,
    "earn_yld": 7.0,
    "triggered": true,
-   "why": "중소기업 경기 둔화에 따른 소프트웨어 지출 축소."
+   "why": "중소기업 경기 둔화 우려 및 AI발 소프트웨어 경쟁 심화."
   },
   {
    "code": "STZ",
    "name": "Constellation Brands, Inc.",
    "universe": "SPX",
    "sector": "Consumer Defensive",
-   "score": 0.49,
-   "value": 0.461,
-   "turn": 0.525,
+   "score": 0.505,
+   "value": 0.472,
+   "turn": 0.544,
    "fscore": 7,
-   "drawdown": 55.7,
+   "drawdown": 55.8,
    "below200": 175,
    "earn_yld": 5.3,
    "triggered": true,
-   "why": "미국 내 주류 소비 위축 및 와인·증류주 판매 부진."
+   "why": "주류 소비 트렌드 변화 및 와인 부문 수요 부진 여파."
   },
   {
    "code": "APP",
@@ -524,44 +509,59 @@
    "universe": "SPX",
    "sector": "Communication Services",
    "score": 0.474,
-   "value": 0.1,
-   "turn": 0.93,
+   "value": 0.092,
+   "turn": 0.941,
    "fscore": 9,
-   "drawdown": 61.3,
+   "drawdown": 61.6,
    "below200": 159,
    "earn_yld": 2.9,
    "triggered": true,
-   "why": "모바일 게임 광고 시장 둔화 및 플랫폼 규제 우려."
+   "why": "모바일 게임 시장 침체와 광고 타깃팅 규제 영향."
   },
   {
    "code": "TYL",
    "name": "Tyler Technologies, Inc.",
    "universe": "SPX",
    "sector": "Technology",
-   "score": 0.464,
-   "value": 0.172,
-   "turn": 0.821,
+   "score": 0.467,
+   "value": 0.169,
+   "turn": 0.83,
    "fscore": 7,
-   "drawdown": 49.1,
+   "drawdown": 49.2,
    "below200": 244,
    "earn_yld": 2.4,
    "triggered": true,
-   "why": "공공부문 IT 예산 집행 지연 및 전환 비용 부담."
+   "why": "공공부문 예산 집행 지연 및 클라우드 전환 비용 부담."
   },
   {
    "code": "BF-B",
    "name": "Brown Forman Inc",
    "universe": "SPX",
    "sector": "Consumer Defensive",
-   "score": 0.449,
-   "value": 0.425,
-   "turn": 0.478,
+   "score": 0.457,
+   "value": 0.436,
+   "turn": 0.481,
    "fscore": 6,
-   "drawdown": 53.5,
+   "drawdown": 53.4,
    "below200": 180,
    "earn_yld": 7.8,
    "triggered": true,
-   "why": "글로벌 위스키 수요 둔화 및 도매 재고 조정 영향."
+   "why": "증류주 소비 위축과 글로벌 유통망 재고 조정 영향."
+  },
+  {
+   "code": "BSX",
+   "name": "Boston Scientific Corporation",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.433,
+   "value": 0.307,
+   "turn": 0.588,
+   "fscore": 8,
+   "drawdown": 60.8,
+   "below200": 245,
+   "earn_yld": 4.4,
+   "triggered": false,
+   "why": "의료기기 경쟁 심화 및 높은 밸류에이션 부담 여파."
   }
  ],
  "funnel": {
@@ -633,11 +633,11 @@
   ],
   [
    "illiquid",
-   193
+   192
   ],
   [
    "fundamentals_unavailable",
-   161
+   160
   ],
   [
    "price_too_low",
@@ -645,7 +645,7 @@
   ],
   [
    "not_neglected_long_enough",
-   116
+   117
   ],
   [
    "no_price_history",
@@ -653,7 +653,7 @@
   ],
   [
    "dilution",
-   35
+   33
   ],
   [
    "already_recovered",
@@ -732,10 +732,6 @@
    2
   ],
   [
-   "leverage|structural_decline",
-   2
-  ],
-  [
    "interest_coverage|liquidity",
    1
   ],
@@ -761,6 +757,10 @@
   ],
   [
    "interest_coverage|liquidity|negative_equity|dilution|structural_decline",
+   1
+  ],
+  [
+   "leverage|structural_decline",
    1
   ],
   [
@@ -923,7 +923,7 @@
    "gate3": 1,
    "buyable": 0,
    "dv_candidates": 20,
-   "dv_triggered": 20
+   "dv_triggered": 19
   }
  ]
 }
