@@ -1,38 +1,51 @@
 {
- "updated_at": "2026-10-08T11:28:05.384543+09:00",
+ "updated_at": "2026-10-09T02:07:53.181391+09:00",
  "breakout": [
   {
-   "code": "NTAP",
-   "name": "NetApp",
-   "universe": "SPX",
-   "sector": "Technology",
-   "score": 0.689,
-   "gates": 1,
-   "missing": "G1신고가나이, G2하락이력, T거래량",
-   "missing_n": 3,
-   "drawdown": 0.0,
-   "buyable": false,
-   "final": false
-  },
-  {
-   "code": "AMPL",
-   "name": "AMPLITUDE CLASS A",
+   "code": "HAE",
+   "name": "HAEMONETICS CORP",
    "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.685,
-   "gates": 2,
-   "missing": "G3바닥횡보, T거래량",
+   "sector": "Healthcare",
+   "score": 0.628,
+   "gates": 1,
+   "missing": "G1신고가나이, G2하락이력",
    "missing_n": 2,
-   "drawdown": 93.4,
+   "drawdown": 0.0,
    "buyable": false,
    "final": false
   },
   {
-   "code": "P",
-   "name": "Everpure",
+   "code": "PCRX",
+   "name": "PACIRA BIOSCIENCES",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.619,
+   "gates": 2,
+   "missing": "G3바닥횡보, TRS, T신선도",
+   "missing_n": 3,
+   "drawdown": 85.7,
+   "buyable": false,
+   "final": false
+  },
+  {
+   "code": "PSX",
+   "name": "Phillips 66",
    "universe": "SPX",
-   "sector": "Technology",
-   "score": 0.654,
+   "sector": "Energy",
+   "score": 0.547,
+   "gates": 1,
+   "missing": "G1신고가나이, G2하락이력, T거래량, TRS, T신선도",
+   "missing_n": 5,
+   "drawdown": 0.0,
+   "buyable": false,
+   "final": false
+  },
+  {
+   "code": "CVI",
+   "name": "CVR ENERGY INC",
+   "universe": "R2K",
+   "sector": "Energy",
+   "score": 0.518,
    "gates": 1,
    "missing": "G1신고가나이, G2하락이력, T거래량",
    "missing_n": 3,
@@ -41,41 +54,15 @@
    "final": false
   },
   {
-   "code": "LILAK",
-   "name": "LIBERTY LATIN AMERICA CLASS C",
+   "code": "SIG",
+   "name": "SIGNET JEWELERS",
    "universe": "R2K",
-   "sector": "Communication Services",
-   "score": 0.621,
+   "sector": "Consumer Cyclical",
+   "score": 0.508,
    "gates": 1,
    "missing": "G1신고가나이, G3바닥횡보, T거래량, TRS",
    "missing_n": 4,
-   "drawdown": 66.3,
-   "buyable": false,
-   "final": false
-  },
-  {
-   "code": "HPE",
-   "name": "Hewlett Packard Enterprise",
-   "universe": "SPX",
-   "sector": "Technology",
-   "score": 0.604,
-   "gates": 1,
-   "missing": "G1신고가나이, G2하락이력, T거래량, T신선도",
-   "missing_n": 4,
-   "drawdown": 0.0,
-   "buyable": false,
-   "final": false
-  },
-  {
-   "code": "BOX",
-   "name": "BOX INC CLASS A",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.514,
-   "gates": 2,
-   "missing": "G1신고가나이, T거래량, TRS",
-   "missing_n": 3,
-   "drawdown": 44.6,
+   "drawdown": 57.1,
    "buyable": false,
    "final": false
   },
@@ -84,7 +71,7 @@
    "name": "ATKORE",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.514,
+   "score": 0.507,
    "gates": 2,
    "missing": "G1신고가나이, T거래량, TRS",
    "missing_n": 3,
@@ -93,37 +80,11 @@
    "final": false
   },
   {
-   "code": "MPC",
-   "name": "Marathon Petroleum",
-   "universe": "SPX",
+   "code": "PBF",
+   "name": "PBF ENERGY CLASS A",
+   "universe": "R2K",
    "sector": "Energy",
-   "score": 0.505,
-   "gates": 1,
-   "missing": "G1신고가나이, G2하락이력, T거래량, TRS, T신선도",
-   "missing_n": 5,
-   "drawdown": 0.0,
-   "buyable": false,
-   "final": false
-  },
-  {
-   "code": "ZETA",
-   "name": "ZETA GLOBAL HOLDINGS CLASS A",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.487,
-   "gates": 2,
-   "missing": "G1신고가나이, T거래량, T신선도",
-   "missing_n": 3,
-   "drawdown": 70.0,
-   "buyable": false,
-   "final": false
-  },
-  {
-   "code": "PAYS",
-   "name": "PAYSIGN INC",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.486,
+   "score": 0.482,
    "gates": 1,
    "missing": "G1신고가나이, G2하락이력, T거래량, T신선도",
    "missing_n": 4,
@@ -132,15 +93,15 @@
    "final": false
   },
   {
-   "code": "ABBV",
-   "name": "AbbVie",
-   "universe": "SPX",
-   "sector": "Healthcare",
-   "score": 0.461,
+   "code": "UTZ",
+   "name": "UTZ BRANDS CLASS A",
+   "universe": "R2K",
+   "sector": "Consumer Defensive",
+   "score": 0.471,
    "gates": 1,
-   "missing": "G1신고가나이, G2하락이력, T거래량, TRS, T신선도",
-   "missing_n": 5,
-   "drawdown": 0.0,
+   "missing": "G1신고가나이, G3바닥횡보, T거래량, T신선도",
+   "missing_n": 4,
+   "drawdown": 63.8,
    "buyable": false,
    "final": false
   },
@@ -149,7 +110,7 @@
    "name": "INTERNATIONAL SEAWAYS",
    "universe": "R2K",
    "sector": "Energy",
-   "score": 0.455,
+   "score": 0.456,
    "gates": 1,
    "missing": "G1신고가나이, G2하락이력, T거래량, T신선도",
    "missing_n": 4,
@@ -158,27 +119,27 @@
    "final": false
   },
   {
-   "code": "IDT",
-   "name": "IDT CLASS B",
+   "code": "NAT",
+   "name": "NORDIC AMERICAN TANKERS LTD",
    "universe": "R2K",
-   "sector": "Communication Services",
+   "sector": "Energy",
    "score": 0.446,
    "gates": 1,
-   "missing": "G1신고가나이, G2하락이력, T거래량",
-   "missing_n": 3,
+   "missing": "G1신고가나이, G2하락이력, T거래량, T신선도",
+   "missing_n": 4,
    "drawdown": 0.0,
    "buyable": false,
    "final": false
   },
   {
-   "code": "VLO",
-   "name": "Valero Energy",
-   "universe": "SPX",
+   "code": "TNK",
+   "name": "TEEKAY TANKERS LTD CLASS A",
+   "universe": "R2K",
    "sector": "Energy",
-   "score": 0.446,
+   "score": 0.424,
    "gates": 1,
-   "missing": "G1신고가나이, G2하락이력, T거래량, TRS, T신선도",
-   "missing_n": 5,
+   "missing": "G1신고가나이, G2하락이력, T거래량, TRS",
+   "missing_n": 4,
    "drawdown": 0.0,
    "buyable": false,
    "final": false
@@ -188,7 +149,7 @@
    "name": "HEALTHSTREAM",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.44,
+   "score": 0.421,
    "gates": 2,
    "missing": "G1신고가나이, T거래량, TRS",
    "missing_n": 3,
@@ -197,24 +158,24 @@
    "final": false
   },
   {
-   "code": "TNK",
-   "name": "TEEKAY TANKERS LTD CLASS A",
+   "code": "DHT",
+   "name": "DHT HOLDINGS",
    "universe": "R2K",
    "sector": "Energy",
-   "score": 0.432,
+   "score": 0.421,
    "gates": 1,
-   "missing": "G1신고가나이, G2하락이력, T거래량, TRS",
-   "missing_n": 4,
+   "missing": "G1신고가나이, G2하락이력, T거래량, TRS, T신선도",
+   "missing_n": 5,
    "drawdown": 0.0,
    "buyable": false,
    "final": false
   },
   {
-   "code": "XERS",
-   "name": "XERIS BIOPHARMA HOLDINGS",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.421,
+   "code": "MPC",
+   "name": "Marathon Petroleum",
+   "universe": "SPX",
+   "sector": "Energy",
+   "score": 0.403,
    "gates": 1,
    "missing": "G1신고가나이, G2하락이력, T거래량, T신선도",
    "missing_n": 4,
@@ -223,11 +184,11 @@
    "final": false
   },
   {
-   "code": "DHT",
-   "name": "DHT HOLDINGS",
+   "code": "PARR",
+   "name": "PAR PACIFIC HOLDINGS",
    "universe": "R2K",
    "sector": "Energy",
-   "score": 0.418,
+   "score": 0.4,
    "gates": 1,
    "missing": "G1신고가나이, G2하락이력, T거래량, TRS, T신선도",
    "missing_n": 5,
@@ -236,11 +197,24 @@
    "final": false
   },
   {
-   "code": "BKH",
-   "name": "BLACK HILLS CORP",
+   "code": "PRTH",
+   "name": "PRIORITY TECHNOLOGY HOLDINGS INC",
    "universe": "R2K",
-   "sector": "Utilities",
-   "score": 0.406,
+   "sector": "Technology",
+   "score": 0.384,
+   "gates": 2,
+   "missing": "G1신고가나이, T거래량, TRS",
+   "missing_n": 3,
+   "drawdown": 62.3,
+   "buyable": false,
+   "final": false
+  },
+  {
+   "code": "PM",
+   "name": "Philip Morris International",
+   "universe": "SPX",
+   "sector": "Consumer Defensive",
+   "score": 0.371,
    "gates": 1,
    "missing": "G1신고가나이, G2하락이력, T거래량, TRS, T신선도",
    "missing_n": 5,
@@ -249,11 +223,37 @@
    "final": false
   },
   {
-   "code": "NWE",
-   "name": "NORTHWESTERN ENERGY GROUP",
+   "code": "UVE",
+   "name": "UNIVERSAL INSURANCE HOLDINGS INC",
    "universe": "R2K",
-   "sector": "Utilities",
-   "score": 0.406,
+   "sector": "Financial Services",
+   "score": 0.369,
+   "gates": 1,
+   "missing": "G1신고가나이, G2하락이력, T거래량, TRS, T신선도",
+   "missing_n": 5,
+   "drawdown": 0.0,
+   "buyable": false,
+   "final": false
+  },
+  {
+   "code": "TK",
+   "name": "TEEKAY CORPORATION CORP LTD",
+   "universe": "R2K",
+   "sector": "Energy",
+   "score": 0.346,
+   "gates": 1,
+   "missing": "G1신고가나이, G2하락이력, T거래량, TRS, T신선도",
+   "missing_n": 5,
+   "drawdown": 0.0,
+   "buyable": false,
+   "final": false
+  },
+  {
+   "code": "GCT",
+   "name": "GIGACLOUD TECHNOLOGY INC CLASS A",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.267,
    "gates": 1,
    "missing": "G1신고가나이, G2하락이력, T거래량, TRS, T신선도",
    "missing_n": 5,
@@ -268,87 +268,72 @@
    "name": "Yelp Inc.",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.881,
-   "value": 0.95,
-   "turn": 0.796,
+   "score": 0.883,
+   "value": 0.946,
+   "turn": 0.806,
    "fscore": 7,
-   "drawdown": 62.0,
+   "drawdown": 61.0,
    "below200": 247,
    "earn_yld": 17.6,
    "triggered": true,
-   "why": "광고 매출 정체 및 경쟁 심화 요인 반영"
-  },
-  {
-   "code": "NRDS",
-   "name": "NerdWallet, Inc.",
-   "universe": "R2K",
-   "sector": "Communication Services",
-   "score": 0.801,
-   "value": 0.655,
-   "turn": 0.979,
-   "fscore": 8,
-   "drawdown": 46.5,
-   "below200": 180,
-   "earn_yld": 1.8,
-   "triggered": true,
-   "why": "고금리에 따른 대출 및 금융 상품 수요 위축"
+   "why": "구글 검색 잠식과 디지털 광고 성장 정체"
   },
   {
    "code": "KKR",
    "name": "KKR & Co. Inc.",
    "universe": "SPX",
    "sector": "Financial Services",
-   "score": 0.778,
-   "value": 0.933,
-   "turn": 0.588,
+   "score": 0.775,
+   "value": 0.932,
+   "turn": 0.583,
    "fscore": 6,
-   "drawdown": 45.7,
+   "drawdown": 46.0,
    "below200": 200,
    "earn_yld": 175.5,
    "triggered": true,
-   "why": "확인 필요"
-  },
-  {
-   "code": "APTV",
-   "name": "Aptiv PLC",
-   "universe": "SPX",
-   "sector": "Consumer Cyclical",
-   "score": 0.761,
-   "value": 0.874,
-   "turn": 0.624,
-   "fscore": 8,
-   "drawdown": 55.3,
-   "below200": 155,
-   "earn_yld": 10.0,
-   "triggered": true,
-   "why": "전방 자동차 산업 수요 부진 및 비용 증가"
+   "why": "고금리로 인한 자산 매각 지연 및 펀드 회수 부진"
   },
   {
    "code": "SAM",
    "name": "Boston Beer Company, Inc. (The)",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.755,
-   "value": 0.697,
-   "turn": 0.825,
+   "score": 0.768,
+   "value": 0.709,
+   "turn": 0.84,
    "fscore": 8,
-   "drawdown": 55.8,
+   "drawdown": 54.7,
    "below200": 181,
    "earn_yld": 8.5,
    "triggered": true,
-   "why": "수제맥주 시장 성장 둔화 및 경쟁 심화"
+   "why": "하드셀처 거품 붕괴와 수제맥주 수요 둔화"
+  },
+  {
+   "code": "APTV",
+   "name": "Aptiv PLC",
+   "universe": "SPX",
+   "sector": "Consumer Cyclical",
+   "score": 0.766,
+   "value": 0.868,
+   "turn": 0.64,
+   "fscore": 8,
+   "drawdown": 55.5,
+   "below200": 156,
+   "earn_yld": 10.0,
+   "triggered": true,
+   "why": "글로벌 전기차 수요 둔화와 전장 전환 지연"
   },
   {
    "code": "RHLD",
    "name": "Resolute Holdings Management",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.734,
-   "value": 0.648,
-   "turn": 0.839,
+   "score": 0.743,
+   "value": 0.658,
+   "turn": 0.847,
    "fscore": 7,
-   "drawdown": 49.2,
-   "below200": 107,
+   "drawdown": 49.8,
+   "below200": 108,
    "earn_yld": 16.4,
    "triggered": true,
    "why": "확인 필요"
@@ -358,15 +343,30 @@
    "name": "Pentair plc.",
    "universe": "SPX",
    "sector": "Industrials",
-   "score": 0.709,
-   "value": 0.663,
-   "turn": 0.764,
+   "score": 0.697,
+   "value": 0.644,
+   "turn": 0.761,
    "fscore": 9,
-   "drawdown": 53.1,
-   "below200": 172,
+   "drawdown": 53.3,
+   "below200": 173,
    "earn_yld": 7.8,
    "triggered": true,
-   "why": "주택 및 산업용 수처리 수요 둔화 우려"
+   "why": "주택 경기 침체에 따른 수영장 설비 수요 둔화"
+  },
+  {
+   "code": "TRIP",
+   "name": "TripAdvisor, Inc.",
+   "universe": "R2K",
+   "sector": "Consumer Cyclical",
+   "score": 0.69,
+   "value": 0.783,
+   "turn": 0.576,
+   "fscore": 7,
+   "drawdown": 69.3,
+   "below200": 207,
+   "earn_yld": 11.3,
+   "triggered": true,
+   "why": "구글 여행 검색 잠식과 메타서치 수익성 악화"
   },
   {
    "code": "INTU",
@@ -377,26 +377,11 @@
    "value": 0.737,
    "turn": 0.615,
    "fscore": 7,
-   "drawdown": 62.8,
+   "drawdown": 62.7,
    "below200": 244,
    "earn_yld": 7.0,
    "triggered": true,
-   "why": "고가 소프트웨어 수요 둔화 및 성장 둔화 우려"
-  },
-  {
-   "code": "TRIP",
-   "name": "TripAdvisor, Inc.",
-   "universe": "R2K",
-   "sector": "Consumer Cyclical",
-   "score": 0.678,
-   "value": 0.769,
-   "turn": 0.567,
-   "fscore": 7,
-   "drawdown": 69.8,
-   "below200": 206,
-   "earn_yld": 11.3,
-   "triggered": true,
-   "why": "여행 수요 회복 지연 및 플랫폼 경쟁 심화"
+   "why": "크레딧카마 부진과 AI 대체 경쟁 심화"
   },
   {
    "code": "CPRT",
@@ -407,101 +392,146 @@
    "value": 0.75,
    "turn": 0.574,
    "fscore": 7,
-   "drawdown": 58.3,
+   "drawdown": 57.6,
    "below200": 252,
    "earn_yld": 8.4,
    "triggered": true,
-   "why": "중고차 가격 하락 및 물류 비용 증가"
+   "why": "중고차 가격 정상화로 경매 물량 및 수수료 둔화"
   },
   {
-   "code": "ZTS",
-   "name": "Zoetis Inc.",
+   "code": "LVS",
+   "name": "Las Vegas Sands Corp.",
    "universe": "SPX",
-   "sector": "Healthcare",
-   "score": 0.664,
-   "value": 0.65,
-   "turn": 0.68,
+   "sector": "Consumer Cyclical",
+   "score": 0.665,
+   "value": 0.597,
+   "turn": 0.747,
    "fscore": 8,
-   "drawdown": 62.9,
-   "below200": 252,
-   "earn_yld": 9.6,
+   "drawdown": 47.7,
+   "below200": 145,
+   "earn_yld": 8.6,
    "triggered": true,
-   "why": "반려동물 의약품 성장 둔화 및 특허 우려"
+   "why": "중국 경기 둔화에 따른 마카오 카지노 회복 지연"
   },
   {
    "code": "UPBD",
    "name": "Upbound Group, Inc.",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.644,
-   "value": 0.676,
-   "turn": 0.606,
+   "score": 0.656,
+   "value": 0.687,
+   "turn": 0.62,
    "fscore": 7,
-   "drawdown": 51.4,
+   "drawdown": 51.2,
    "below200": 196,
    "earn_yld": 7.9,
    "triggered": false,
-   "why": "소비재 렌탈 수요 둔화 및 경기 침체 우려"
+   "why": "저신용 고객 연체율 상승과 가계 소비 위축"
+  },
+  {
+   "code": "ZTS",
+   "name": "Zoetis Inc.",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.656,
+   "value": 0.63,
+   "turn": 0.688,
+   "fscore": 8,
+   "drawdown": 62.0,
+   "below200": 252,
+   "earn_yld": 9.6,
+   "triggered": true,
+   "why": "신약 부작용 논란과 반려동물 헬스케어 지출 둔화"
   },
   {
    "code": "COLL",
    "name": "Collegium Pharmaceutical, Inc.",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.639,
-   "value": 0.841,
-   "turn": 0.393,
+   "score": 0.645,
+   "value": 0.849,
+   "turn": 0.395,
    "fscore": 6,
-   "drawdown": 56.0,
-   "below200": 150,
+   "drawdown": 55.9,
+   "below200": 151,
    "earn_yld": 16.9,
    "triggered": true,
-   "why": "주력 의약품 제네릭 경쟁 및 실적 우려"
-  },
-  {
-   "code": "DXC",
-   "name": "DXC Technology Company",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.629,
-   "value": 0.845,
-   "turn": 0.366,
-   "fscore": 6,
-   "drawdown": 52.0,
-   "below200": 211,
-   "earn_yld": 10.3,
-   "triggered": true,
-   "why": "IT 서비스 수요 둔화 및 구조조정 비용"
+   "why": "오피오이드 규제 리스크와 주력 약품 특허 만료"
   },
   {
    "code": "APOG",
    "name": "Apogee Enterprises, Inc.",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.628,
-   "value": 0.645,
-   "turn": 0.608,
+   "score": 0.637,
+   "value": 0.656,
+   "turn": 0.613,
    "fscore": 6,
-   "drawdown": 50.7,
-   "below200": 164,
+   "drawdown": 51.3,
+   "below200": 163,
    "earn_yld": 11.2,
    "triggered": true,
-   "why": "건설 경기 둔화에 따른 건축자재 수요 감소"
+   "why": "상업용 부동산 침체에 따른 건축 외장재 수요 부진"
   },
   {
    "code": "ARDT",
    "name": "Ardent Health, Inc.",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.624,
-   "value": 0.629,
-   "turn": 0.617,
+   "score": 0.635,
+   "value": 0.637,
+   "turn": 0.632,
    "fscore": 8,
-   "drawdown": 46.1,
+   "drawdown": 46.4,
    "below200": 163,
    "earn_yld": 12.7,
    "triggered": true,
-   "why": "의료 서비스 비용 증가 및 마진 압박"
+   "why": "의료 인력 인건비 부담과 높은 부채 비율"
+  },
+  {
+   "code": "DXC",
+   "name": "DXC Technology Company",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.63,
+   "value": 0.845,
+   "turn": 0.366,
+   "fscore": 6,
+   "drawdown": 52.2,
+   "below200": 210,
+   "earn_yld": 10.3,
+   "triggered": true,
+   "why": "레거시 IT 비중 과다와 클라우드 전환 지연"
+  },
+  {
+   "code": "ICFI",
+   "name": "ICF International, Inc.",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.627,
+   "value": 0.486,
+   "turn": 0.8,
+   "fscore": 7,
+   "drawdown": 50.6,
+   "below200": 168,
+   "earn_yld": 6.7,
+   "triggered": true,
+   "why": "정부 예산 집행 지연과 공공 컨설팅 수주 변동성"
+  },
+  {
+   "code": "LRN",
+   "name": "Stride, Inc.",
+   "universe": "R2K",
+   "sector": "Consumer Defensive",
+   "score": 0.624,
+   "value": 0.733,
+   "turn": 0.49,
+   "fscore": 6,
+   "drawdown": 52.4,
+   "below200": 205,
+   "earn_yld": 13.0,
+   "triggered": true,
+   "why": "팬데믹 특수 종료 후 온라인 교육 등록 학생 감소"
   },
   {
    "code": "APP",
@@ -512,56 +542,26 @@
    "value": 0.312,
    "turn": 1.0,
    "fscore": 9,
-   "drawdown": 61.7,
-   "below200": 161,
+   "drawdown": 62.3,
+   "below200": 162,
    "earn_yld": 2.9,
    "triggered": true,
-   "why": "확인 필요"
-  },
-  {
-   "code": "ICFI",
-   "name": "ICF International, Inc.",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.612,
-   "value": 0.47,
-   "turn": 0.787,
-   "fscore": 7,
-   "drawdown": 52.3,
-   "below200": 169,
-   "earn_yld": 6.7,
-   "triggered": true,
-   "why": "정부 예산 집행 지연 및 컨설팅 수요 둔화"
-  },
-  {
-   "code": "LRN",
-   "name": "Stride, Inc.",
-   "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.612,
-   "value": 0.717,
-   "turn": 0.483,
-   "fscore": 6,
-   "drawdown": 53.1,
-   "below200": 204,
-   "earn_yld": 13.0,
-   "triggered": true,
-   "why": "온라인 교육 시장 경쟁 심화 및 비용 증가"
+   "why": "애플 개인정보 규제 영향과 모바일 게임 광고 침체"
   },
   {
    "code": "JBI",
    "name": "Janus International Group, Inc.",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.611,
-   "value": 0.792,
-   "turn": 0.389,
+   "score": 0.621,
+   "value": 0.804,
+   "turn": 0.398,
    "fscore": 6,
    "drawdown": 72.7,
-   "below200": 230,
+   "below200": 231,
    "earn_yld": 16.0,
    "triggered": true,
-   "why": "보관 및 출입국 시설 수요 둔화 우려"
+   "why": "셀프 스토리지 신규 착공 감소와 건설 경기 둔화"
   }
  ],
  "funnel": {
@@ -574,38 +574,38 @@
   "R2K": {
    "Russell2000 전체": 1974,
    "가격 데이터 확보": 1965,
-   "히스토리 900일 이상": 1768,
-   "오늘 52주 신고가": 29,
-   "거래정지/저유동성 제외": -8,
-   "유효 신고가": 21,
-   "시총 $300M/거래대금 $5M 통과": 21,
+   "히스토리 900일 이상": 1769,
+   "오늘 52주 신고가": 33,
+   "거래정지/저유동성 제외": -11,
+   "유효 신고가": 22,
+   "시총 $300M/거래대금 $5M 통과": 22,
    "G1 신고가나이 단독 통과": 1,
-   "G2 하락이력 단독 통과": 9,
-   "G3 바닥횡보 단독 통과": 18,
-   "T 거래량 단독 통과": 0,
-   "T 정배열 단독 통과": 21,
+   "G2 하락이력 단독 통과": 8,
+   "G3 바닥횡보 단독 통과": 19,
+   "T 거래량 단독 통과": 2,
+   "T 정배열 단독 통과": 22,
    "T 상대강도 단독 통과": 7,
-   "T 돌파신선도 단독 통과": 10,
+   "T 돌파신선도 단독 통과": 9,
    "게이트 3개 이상": 0,
-   "트리거 전부 통과": 0,
+   "트리거 전부 통과": 1,
    "최종후보 (가격+트리거만)": 0,
    "어닝임박 배제 후 매수가능": 0
   },
   "SPX": {
    "S&P500 전체": 503,
-   "가격 데이터 확보": 503,
-   "히스토리 900일 이상": 494,
-   "오늘 52주 신고가": 8,
+   "가격 데이터 확보": 502,
+   "히스토리 900일 이상": 493,
+   "오늘 52주 신고가": 4,
    "거래정지/저유동성 제외": 0,
-   "유효 신고가": 8,
-   "시총 $300M/거래대금 $5M 통과": 8,
+   "유효 신고가": 4,
+   "시총 $300M/거래대금 $5M 통과": 4,
    "G1 신고가나이 단독 통과": 0,
-   "G2 하락이력 단독 통과": 1,
-   "G3 바닥횡보 단독 통과": 8,
+   "G2 하락이력 단독 통과": 0,
+   "G3 바닥횡보 단독 통과": 4,
    "T 거래량 단독 통과": 0,
-   "T 정배열 단독 통과": 8,
-   "T 상대강도 단독 통과": 3,
-   "T 돌파신선도 단독 통과": 2,
+   "T 정배열 단독 통과": 4,
+   "T 상대강도 단독 통과": 2,
+   "T 돌파신선도 단독 통과": 0,
    "게이트 3개 이상": 0,
    "트리거 전부 통과": 0,
    "최종후보 (가격+트리거만)": 0,
@@ -615,31 +615,31 @@
  "rejects": [
   [
    "not_drawn_down_enough",
-   1605
+   1595
   ],
   [
    "illiquid",
-   195
+   205
   ],
   [
    "price_too_low",
-   154
+   156
   ],
   [
    "not_neglected_long_enough",
-   130
+   133
   ],
   [
    "no_price_history",
-   86
+   85
   ],
   [
    "dilution",
-   73
+   72
   ],
   [
    "already_recovered",
-   24
+   23
   ],
   [
    "structural_decline",
@@ -651,11 +651,11 @@
   ],
   [
    "interest_coverage|dilution",
-   16
+   17
   ],
   [
    "interest_coverage",
-   16
+   17
   ],
   [
    "leverage|liquidity",
@@ -663,7 +663,7 @@
   ],
   [
    "liquidity",
-   13
+   12
   ],
   [
    "mcap_too_small",
@@ -690,11 +690,11 @@
    6
   ],
   [
-   "dilution|structural_decline",
-   5
+   "interest_coverage|negative_equity|dilution",
+   6
   ],
   [
-   "interest_coverage|negative_equity|dilution",
+   "dilution|structural_decline",
    5
   ],
   [
@@ -718,7 +718,7 @@
    3
   ],
   [
-   "interest_coverage|dilution|structural_decline",
+   "liquidity|dilution",
    2
   ],
   [
@@ -726,11 +726,11 @@
    2
   ],
   [
-   "interest_coverage|leverage|liquidity|dilution|structural_decline",
+   "interest_coverage|dilution|structural_decline",
    1
   ],
   [
-   "interest_coverage|leverage|liquidity|negative_equity",
+   "interest_coverage|leverage|liquidity|dilution|structural_decline",
    1
   ],
   [
@@ -746,7 +746,7 @@
    1
   ],
   [
-   "leverage|liquidity|dilution",
+   "interest_coverage|leverage|liquidity|negative_equity",
    1
   ],
   [
@@ -758,7 +758,7 @@
    1
   ],
   [
-   "liquidity|dilution",
+   "leverage|liquidity|dilution",
    1
   ],
   [
@@ -779,14 +779,6 @@
   ]
  ],
  "history": [
-  {
-   "date": "2026-09-14",
-   "highs": 44,
-   "gate3": 0,
-   "buyable": 0,
-   "dv_candidates": 16,
-   "dv_triggered": 16
-  },
   {
    "date": "2026-09-15",
    "highs": 45,
@@ -934,6 +926,14 @@
   {
    "date": "2026-10-08",
    "highs": 29,
+   "gate3": 0,
+   "buyable": 0,
+   "dv_candidates": 20,
+   "dv_triggered": 19
+  },
+  {
+   "date": "2026-10-09",
+   "highs": 26,
    "gate3": 0,
    "buyable": 0,
    "dv_candidates": 20,
