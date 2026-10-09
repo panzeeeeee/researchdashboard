@@ -1,6 +1,118 @@
 {
  "items": [
   {
+   "accession": "0001193125-26-418699",
+   "ticker": "WBHC",
+   "company": "WILSON BANK HOLDING CO",
+   "cik": "0000885275",
+   "accepted_et": "2026-10-09 11:07",
+   "date_et": "2026-10-09",
+   "session": "장중",
+   "url": "https://www.sec.gov/Archives/edgar/data/885275/000119312526418699/0001193125-26-418699-index.htm",
+   "react_status": "대기",
+   "sic": "6021",
+   "industry": "National Commercial Banks",
+   "sector": "금융",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": null,
+    "revenue_prior": null,
+    "eps_gaap": 5.29,
+    "eps_gaap_prior": 4.43,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Nine Months Ended September 30",
+    "guidance": "없음",
+    "summary": "대출과 예금의 증가로 순이익과 주당순이익이 상승했음.",
+    "revenue_yoy": null
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/885275/000119312526418699/ck0000885275-ex99_1.htm"
+  },
+  {
+   "accession": "0001213900-26-108213",
+   "ticker": "HOVR",
+   "company": "New Horizon Aircraft Ltd.",
+   "cik": "0001930021",
+   "accepted_et": "2026-10-09 07:24",
+   "date_et": "2026-10-09",
+   "session": "장전",
+   "url": "https://www.sec.gov/Archives/edgar/data/1930021/000121390026108213/0001213900-26-108213-index.htm",
+   "react_status": "대기",
+   "sic": "3721",
+   "industry": "Aircraft",
+   "sector": "산업재",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": null,
+    "revenue_prior": null,
+    "eps_gaap": null,
+    "eps_gaap_prior": null,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q1 FY2027",
+    "guidance": "없음",
+    "summary": "7천만 달러 이상의 강력한 유동성을 확보하고 Cavorite X7 개발을 진전시켰으나 매출 및 EPS 수치는 미포함되었다.",
+    "revenue_yoy": null
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1930021/000121390026108213/ea030812901ex99-1.htm"
+  },
+  {
+   "accession": "0001193125-26-418501",
+   "ticker": "AVNT",
+   "company": "AVIENT CORP",
+   "cik": "0001122976",
+   "accepted_et": "2026-10-09 07:10",
+   "date_et": "2026-10-09",
+   "session": "장전",
+   "url": "https://www.sec.gov/Archives/edgar/data/1122976/000119312526418501/0001193125-26-418501-index.htm",
+   "react_status": "대기",
+   "sic": "2821",
+   "industry": "Plastic Materials, Synth Resins & Nonvulcan Elastomers",
+   "sector": "소재",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": null,
+    "revenue_prior": null,
+    "eps_gaap": null,
+    "eps_gaap_prior": null,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "유지",
+    "summary": "신임 CEO 선임과 함께 연간 및 3분기 실적 가이던스를 재확인함.",
+    "revenue_yoy": null
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1122976/000119312526418501/d158162dex991.htm"
+  },
+  {
+   "accession": "0000027904-26-000035",
+   "ticker": "DAL",
+   "company": "DELTA AIR LINES, INC.",
+   "cik": "0000027904",
+   "accepted_et": "2026-10-09 06:30",
+   "date_et": "2026-10-09",
+   "session": "장전",
+   "url": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000035/0000027904-26-000035-index.htm",
+   "react_status": "대기",
+   "sic": "4512",
+   "industry": "Air Transportation, Scheduled",
+   "sector": "산업재",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 17585.0,
+    "revenue_prior": 15197.0,
+    "eps_gaap": 1.15,
+    "eps_gaap_prior": 2.17,
+    "eps_adj": 1.72,
+    "eps_adj_prior": 1.7,
+    "period": "Q3 FY2026",
+    "guidance": "유지",
+    "summary": "수요 호조로 매출이 증가했으나 유류비 상승이 이익에 부담을 주었다.",
+    "revenue_yoy": 15.7
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000035/deltaairlinesannouncessept.htm"
+  },
+  {
    "accession": "0001829126-26-010910",
    "ticker": "LUCY",
    "company": "Innovative Eyewear Inc",
@@ -69,7 +181,7 @@
    "sic": "8050",
    "industry": "Services-Nursing & Personal Care Facilities",
    "sector": "헬스케어",
-   "num_tries": 1
+   "num_tries": 2
   },
   {
    "accession": "0000821189-26-000202",
@@ -168,7 +280,7 @@
    "sic": "1311",
    "industry": "Crude Petroleum & Natural Gas",
    "sector": "에너지",
-   "num_tries": 1
+   "num_tries": 2
   },
   {
    "accession": "0001628280-26-065414",
@@ -3343,5 +3455,5 @@
    "sector": "커뮤니케이션"
   }
  ],
- "updated_at": "2026-10-09T11:30:02.440949+09:00"
+ "updated_at": "2026-10-10T00:49:42.566969+09:00"
 }
