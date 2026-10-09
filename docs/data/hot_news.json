@@ -1,18 +1,727 @@
 {
- "updated_at": "2026-10-09T02:20:20.838571+09:00",
+ "updated_at": "2026-10-09T11:47:22.772248+09:00",
  "event_notes": {
-  "why": "국채 금리 상승과 연준의 추가 금리 인상 시사 발언 영향으로 기술주가 1.94% 하락하며 타격을 입었고, 실제로 시퍼 디지털과 테라울프 같은 데이터센터 및 채굴 관련주들이 약세를 보였다. 반면 실적을 발표한 펩시코가 북미 사업 부진으로 가이던스를 낮췄음에도 3분기 실적 호조에 힘입어 방어주 성격의 필수소비재 섹터는 2.11% 상승했다. 또한 유가 변동 등을 반영하며 에너지 섹터도 2.65% 상승세로 마감했다.",
-  "watch": "최근 시장에 큰 영향을 미치고 있는 급격한 국채 금리 움직임이 진정될지 여부와 함께, 연준 위원들의 금리 관련 추가 발언들을 주의 깊게 살펴봐야 한다."
+  "why": "원유 가격 급등과 연준 인사의 추가 금리 인상 시사 발언이 겹치면서 에너지와 필수소비재 섹터가 상승한 반면, 오픈에이아이의 매출이 예상치를 밑돌았다는 보도와 반도체 주 약세의 영향으로 기술 섹터가 큰 폭으로 하락한 것으로 보인다.",
+  "watch": "인공지능 관련 기업들의 실제 수익성 검증과 함께 물가 안정을 위한 연준의 통화 정책 관련 발언 및 금리 인상 가능성을 주시해야 한다."
  },
- "clusters": [],
+ "clusters": [
+  {
+   "title": "오픈AI 매출 부진 및 칩 제조업체·테크주 하락",
+   "sources": [
+    "Bloomberg.com",
+    "Reuters",
+    "Yahoo Finance"
+   ],
+   "count": 7,
+   "items": [
+    {
+     "title": "Nasdaq 100 Ends Lower As Report Of Weaker-Than-Expected OpenAI Revenue Drags Chipmakers — NVDA, DIS, ORCL, SBUX In Focus",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOa2xoRnp3UDUwRW5RZnFSem5ZOWt1Mk01bmFVb3l6ZGdrdDE3VXY5dVJiX21IZ1NwRVllYW80eVpJRVlsU0NFbU04S0d2YXRHeUJjRTRNZGlMZExjbXdXMk9FZTJoandYMGhFMVJhajZoNW5GTThxOHpTSDZIMmdDSlpJVDJ3RUI2aTk0emZCVDg3UWdRMFByZw?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T07:55:19+09:00",
+     "dup_count": 2,
+     "summary": "오픈AI의 부진한 매출 소식에 NVDA 등 반도체주가 하락했다."
+    },
+    {
+     "title": "OpenAI's Revenue Was Lower Than Previously Reported. Stocks Dropped Dragged by AI Names.",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUmpTbWgtTE9LTHp6VHB6NF8wUWZiQ1oxZnMwWHo3Ri0wZGxtZC1oVGFtUldvUVRER1I5VzYzN2xDY0Qtb2g4aWZSVXNYYmFNaWluckRZR2VQOC1weklvTWVzZ0pzOTZDN0o4SG82bDFqemIwbHBEQ2tmbm1aVHd1TVNOb3F0Zzd5WXc1ZE4zM1VYN0ZSQVU3UmctekJ0TnZTQjFDNnEwR09Idw?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T05:21:29+09:00",
+     "dup_count": 1,
+     "summary": "오픈AI의 매출이 예상보다 부진해 기술주 중심으로 증시가 하락했다."
+    },
+    {
+     "title": "Tech Stocks to Fall as OpenAI Sinks US Chipmakers: Markets Wrap",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNLVdSbk1NMk9oczQxR1FzUXBRcVJuVlRWZExIbS1LQmh1am1NQ1J4ZzZEbXpaVHhVWU5FcHAtODFZYUQ1UkpZSTM0XzI2amdDa0dyTXlQVXNZbXdjcTRZd1pVSzhyRV9FbjM3cXpVeGwzY1I4WGFoZUN4VjQ2Rml2NzZfOGc2QmlPUUY0bGYtd3ZoUk53?oc=5",
+     "source": "Bloomberg.com",
+     "published": "2026-10-09T07:05:53+09:00",
+     "dup_count": 0,
+     "summary": "오픈AI의 부진으로 미국 반도체주와 기술주가 하락세를 보였다."
+    },
+    {
+     "title": "OpenAI's annualized revenue $20 billion less than previously signaled, FT reports",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLUJ6eFRkeVppWC1ocFZFMjRyWnFyczBwcml6OEJtaElGOEpxZkgzaFBSa1F2RTJjb3dXVTdLZ0pxWUpyZVhjZVdZRWR4TFpJQ2tjRG1UVGV6WWMwTkJsVVVDUHNjTU05MHBFWENJNGNPZW5sMjdyRUtLX0pfcUVLaWo5ZjhKd2ZCUnBHRlc2aXRpTFRMQTZSWWJuelZ4ZnVrM08xTVJBdlhtcjNEMS1PZUZhT2hDX3hYOUJGc2MzTV8?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-09T06:19:44+09:00",
+     "dup_count": 0,
+     "summary": "오픈AI의 연환산 매출이 예상보다 200억 달러 적은 것으로 나타났다."
+    },
+    {
+     "title": "MSFT, ORCL, NVDA, QQQ In Focus: OpenAI’s Annualized Revenue Reportedly Trails Prior Expectations By $20B",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQ2ZwNUQxQ2ZocEZhenBqRVI5Qk9BZE43cm1IZGM0aGVTTURlZFZVRnRDX1FLeVg4QnlScVZObE81N3lPM2tmdmRmTVV6ay1YWXNGMVJSRjJoRGRaR3U1dEw2ZnZKLXNqRVdualFtUUJDYjlWOWplRURTcmxiV2dHZENxbVlBWFA4d3ZqR20zSEg4UQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T04:01:41+09:00",
+     "dup_count": 0,
+     "summary": "오픈AI의 연환산 매출이 예상보다 20억 달러 적어 관련주가 주목받았다."
+    },
+    {
+     "title": "Oracle Stock Crashes After OpenAI's Revenue Gap. Who's Next?",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONTRaRDAzWl9DaHFOc2d5X0xHbFMzeVdCRFBGcWNNT0JZNnlRb2l0YW9VZjNMUnpSaEd0amY3SDVlcmdKekhLNlhjdmRaOGxhWjhfZ0RSNXFqcUZzZW9WVEhGaHVuZFJWZV9mdml5MWl0clFWb3JYMHZPWG8yVmhGcG1QVlBac2p5blc5TkhCYTF2V0dsSUFPeUFsNDBBcjlQWDVj?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T03:41:20+09:00",
+     "dup_count": 0,
+     "summary": "오픈AI 매출 부진 여파로 오라클 주가가 급락했다."
+    },
+    {
+     "title": "Oracle stock falls on more debt to fund AI chip buying, OpenAI revenue disclosure",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOY0ZtaEsyb0NYZFdFM2JtTENWa2VaYzVqcC0yOXVkdEpmV1gzSndpTjJ4TjlELXY0eW9kMjZEa01PVXNkTkJHMUhpRkI0ZTRxZmFkQlMwWlpjX1RtbjhzR2VpdDh0eUxfa0JzSGU3QWpTdDlOZUJlZGhTRXE1ZHNPM2lfOWhka1BXX3V1SEtaVV9Ub3ZZWHhaY0ZJdmpvSFJxWTMxMEMxS2k3MmhIMDJvd2UxWjF5ZDQ2T0tVU1Y4MkZaUnNCMUQyOENrUzlHZkFlcDdtN1ZONA?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T03:08:58+09:00",
+     "dup_count": 0,
+     "summary": "오라클은 AI 칩 구매 부채와 오픈AI 매출 공개 여파로 주가가 하락했다."
+    }
+   ]
+  },
+  {
+   "title": "연준 위원 금리 인상 필요성 발언",
+   "sources": [
+    "Reuters",
+    "WSJ",
+    "Yahoo Finance"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "Fed's Musalem says tighter monetary policy needed to lower inflation",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaGVSNzFYTFV0aklwQnlYM3lyV3NMY0FmNi1QUFQ4b1A5bmNkZ01LMkdVZ3NmdmI0SFVRZXM4V1BjN1JOcHE3bTJQQUczbF9ESGI1VUM5ZklBZXFqSUpFQlZLazhaUU5BNjUyTVFDMEtmdHhqOU12WjJMM2ZDNzdscVU5NUl6d1BuV2k4ZWVBblZGaFVoVWxReFlIUFdOU09KempHczB4bnl2SFBabnkwMGJR?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-09T05:48:43+09:00",
+     "dup_count": 0,
+     "summary": "무살렘 연은 총재는 인플레이션 하락을 위해 긴축 통화정책이 필요하다고 했다."
+    },
+    {
+     "title": "St. Louis Fed's Musalem sees more rate hikes in the next 6 months",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQWV93NjZQR09CRDRGeDF6WXcxcWw1WlloYlc3RS1fbUlvbjJjZGtXT1gzTElfTmJtUldkTmdCMUFTbXJVSjVJeTllTUdGNWJiUmRTbDFKb3pYQU5mdk9KQnIxT0ZVQVpVeVpXcTI0UVpFT1BUZDByb2tKeG1kQ04xckpUQkUxRGc4bXcwZWFoNFdIRGMwazlzQzh3OU1rUDVJaTFXY0MzLXIxalVvaXJrU29NcTdyemw5SzhmdUZTVjllLXlmakE?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T04:44:35+09:00",
+     "dup_count": 0,
+     "summary": "무살렘 세인트루이스 연은 총재는 향후 6개월간 금리 인상을 전망했다."
+    },
+    {
+     "title": "U.S. Interest Rates Could Rise Over Next Six to Nine Months, Fed’s Musalem Says",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeHRyMnRQZ0p3RDBMZ2J3eDFvbXIwNFlMbWY0eE9GQnRMYVljeGZ0NlZKaVBGbkFnY090QzZHeE13c05hLUpTT3h6Rm9pcGtiOFBnUnI2RFcwVFlkUzk4MjNoY01PVlRLV0FMekNqVkdRRTFDZHVxNGFTQ0hLZEM4d1UzSHhBWF9scWh2d0txRW91emUzTzFIUEhKMVE2WUVpdmdlb0I3NGhHX0VCRV9yZTJlNmQyX3BRZVNuaDBVRjNtM2M?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-09T03:45:00+09:00",
+     "dup_count": 0,
+     "summary": "무살렘 연은 총재는 향후 6~9개월간 미국 금리가 인상될 수 있다고 했다."
+    }
+   ]
+  },
+  {
+   "title": "트럼프 테크 거물 주식 매수 및 CEO 관련 행보",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "Trump Made His Biggest August Buy a Tech Giant That Jumped Over 30% in Seven Weeks",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMldEVUFHZWttRW9CLWhIclI3dldyNEgtdU94RGs5bzdXVXVUcjVxMnlXdDk1LUM4UW84RnpXMGlkVW9wajFwdm5kd0FUTWlBTDZrMU1EYVdicTNRVzVOQmhkMUppY2tDSVV3N01taVFaaWY4RWNFbjl3ZkpDcVBwRENMS25tTmZoZDZBUHZqdjMtM0xDMmdUcXh3?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T04:00:47+09:00",
+     "dup_count": 0,
+     "summary": "트럼프는 7주간 30% 이상 오른 기술주를 8월에 가장 많이 매수했다."
+    },
+    {
+     "title": "Trump disclosed millions in new trades in SpaceX and Microsoft. Today, he gave medals to their CEOs.",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOSlpMQ2ZGQ2xSamtOSzEwVVpmRU9HNU9oZGZYcnhyLUhldzFxRjZoVkFxR0tTeUgtMTYzeEZtZjA1Ykw5dkRUdzZrYmZ2VFhKNFZadkg4aF9tU0RXZl9ocW9laDI4NHJ0X2dBNG8zdFgtcWgwMzlyc21fcG9CZGFvOHNHM1ZXTjNibWFYLXRVUTFtLWhnUF9GNnNIMFdjZzVBWnlDa2tLNjBZbTAwU1pnLUJvRFlWMFdOcUp0Qm9XcU1UNkFCWnB1cFRHcXdraFZWcTFPSklmZk9NR1I5ZjFMc3VUa0JNRERYZGV1UHJuM0Rza2M?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T03:26:14+09:00",
+     "dup_count": 0,
+     "summary": "트럼프는 스페이스엑스와 마이크로소프트 주식 거래를 공개하고 CEO에게 훈장을 줬다."
+    },
+    {
+     "title": "Trump discloses Nvidia stock trades as he prepares to honor CEO Huang",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVEZQNW40RlJZMzdldzRvNF9sMEZqOG82MDJfdUxjaFlUQ0ttcV81aFNTUDQtUVNDclR2NUZSMXRYVG5PR1RqWGFNc3RjcWNOZVZ2RnJpdm95WlBpVVVRYjRGamNwSUd5dzhQU0VOcDVyZlozczlCVVVfMUJlQkZEUTk5UGc1ODl6Rm1FNmY0RlFwNXJxWlNPeTEtak5udU5BQmc?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T00:18:00+09:00",
+     "dup_count": 0,
+     "summary": "트럼프는 CEO 황인훈 표창을 준비하며 엔비디아 주식 거래를 공개했다."
+    }
+   ]
+  },
+  {
+   "title": "미국 증시 마감 및 시황",
+   "sources": [
+    "Reuters",
+    "WSJ"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "S&P 500, Nasdaq end lower as crude prices jump, chip stocks weigh",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPLTluWFV5cWFfM2xBV243NUduZW80Q3dmYnFLa1Y4Nmhha2RNNHVGTS1sM2NYZ0ZCeWJlazZpSndKOWM0OVUxTmx2M3luSDdpbVgzNnYtanQtb2VkWV9tU2NQaU03ejAxZy1NU1JhWkMwLXRNbmJUY2pWaTBrVE9XbGRXa2VFekh1LTVZbVNGUVRKTVhIU0NnSUZqdXI?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-09T08:09:38+09:00",
+     "dup_count": 3,
+     "summary": "유가 상승과 반도체주 약세로 S&P 500과 Nasdaq이 하락 마감했다."
+    },
+    {
+     "title": "U.S. Stocks Mixed as Oil Spikes, AI Profit Doubts Hit Tech",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcmRmSzBtSkZNNUdzbkJoOThxUHFJNlhXVDQ3aUhtQklNTTlCN2lyckhrSGxJY2d2OGV3QnFlYzdXYTltUmdvb01Kd3Uwa0ZGYnJ3VnE2OFkxUzRpSWpLUURoX2hkcVVhc056UXAxTEdrR0k3S3A1U3RUOUhjMlVjNk5WM1JXazV6VFpBY2lZeUpPa0E4YVBmZEFQVzhuWUZCNWc?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-09T05:42:00+09:00",
+     "dup_count": 0,
+     "summary": "유가 급등과 AI 수익성에 대한 우려로 미국 증시는 혼조세를 보였다."
+    }
+   ]
+  },
+  {
+   "title": "삼성전자 실적 및 메모리 반도체 성장 둔화",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "Samsung's Operating Profit Hit a Record $80 Billion. Like Micron's Memory Prices, Its Growth Is Slowing.",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdDlkb1k5WUlHbGt6Qmp1NHhEZlA1SVkwc2pvOGhvVG9xN0VrN1hUaW52TzdINzZUNVdKU0VmeUhCd2FjbDBORkRzaUVuMUtJRHk0cUJ6aXRRV0Z4V003ZVNydE51R1dDcFhFV0FFRHRoeTJ4Ni1pdmgxNUNqLXpFLVRHazd6aHdwcnhaeGUtQ3V2TS0zaGFXVkZlV1kxbUlZei1Z?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T06:06:02+09:00",
+     "dup_count": 0,
+     "summary": "삼성전자의 영업이익이 800억 달러를 기록했으나 성장은 둔화됐다."
+    },
+    {
+     "title": "The Memory Trade Cools After Samsung’s Preliminary Results Disappoint",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZ09yTVdkb0toNjZ3bFZwTnlzSkl0T1JWOFBOdGo1dUxSQ2gtbmRqa1ZqVHpIaEMxeHFTakpjZWtUdUlKcm4tR1VoWDNWQkgtZmt2RlV1UWVOcktXREp2MWM2dHNadGsxdVk5T0RPUm03S19EaG5CdXljZXJzNUxtSVFVWXNVTmYyNWtLSnFfYmZtYUJBa1ZaUWppQ09HYzE5a2F1SUVn?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T00:51:42+09:00",
+     "dup_count": 0,
+     "summary": "삼성전자의 예비 실적 부진으로 메모리 반도체 거래 열기가 식었다."
+    }
+   ]
+  },
+  {
+   "title": "스페이스X의 통신 산업 진출과 통신주 하락",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Elon Musk's SpaceX just made a huge play to challenge the phone industry and stocks like AT&T, T-Mobile and Verizon are getting crushed",
+     "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxORHpBZDEzQUdGYmktYTNxYms0SEtnQ3c1WWU2RUZ4Nm9pRkQyOE44MkdtTFFSSlRFV2VFbWNyQ2NJem5rLXoyZ2doeUM5SHBmRkFLek1aOWEtdXdaUUl2Y1gyOVVodVVHYlZSV0pxRWN1Ri0xUndfSGl0RmRfOVIxeHpfeEpMWUZCT3ladjZsR1FIeTdHVTRkUDBYZmdKWGI2MDIyX01kSDZfUEhyZ1JpRk42X0JxSmRpMk5iaGtodFZsV0VyVi14M2tSQ2NLMlA5SkZ3YnMtdkpCd3RUdTZLS3F3ZDdfVmMyenFFZk1ydEF6VHdjZW93Mm4ydGlURnFDamFZLXZsQWZMVGZ2UXdhYzlNYThnYU1nQlFZVlRtekNQUQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T08:06:47+09:00",
+     "dup_count": 0,
+     "summary": "스페이스엑스의 통신 시장 진출로 AT&T, T모바일, 버라이즌 주가가 하락했다."
+    }
+   ]
+  },
+  {
+   "title": "아리치아 실적 전망 상향",
+   "sources": [
+    "WSJ"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Aritzia Raises Sales Outlook as U.S. Growth Accelerates",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTDJYVTZ1aEE1N0t2RWN4REw2QVBpaV9hOElwckFlVTFsUUU2bEZTODNIYWlPSW9VNWtDZHdqbjN3elVIUkVQb3ZfZHV4WFBFY00zQU5DVm9INWkycG1tSVYzS3JHUzRSNlVXQ3c4clRtVzQ2azhVdnpGRTlPTW1zcUJjb2pGSnFiRXlqUXJlcVZVb0JqcEFGMGhJUXI5WklyR291V3M2M3FvNXN4NnNV?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-09T08:04:00+09:00",
+     "dup_count": 0,
+     "summary": "아지티아는 미국 시장의 성장 가속화로 매출 전망치를 상향 조정했다."
+    }
+   ]
+  },
+  {
+   "title": "팔란티어 골드만삭스 상향 조정과 신고가 근접",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Palantir stock nears all-time high after Goldman Sachs upgrade highlights next phase of growth",
+     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQQ20zSEtvRGhmZ1dHUUtoZC03RXFTcFlCWnBnUUJYV0NuOG9OWkNLSlgyM05ITHVrYXlRejJaSnAtMmNLOVNOQkF3Um1sbTZCaExJOEFyUHdDcWt2OERQMjNZaUY2cWNLMWdvanlxUEpTT2owZ0FOV1VacnZmZGxfU010OWdlNlNseGVnc1RtYmtpdUJYeVZVaDdwcm9CQ0V0SWJ1aERBaEhSa09IZmxLSE43MGNjZXVFYjF5YzZEOHVVX255TFd1SUdaUzdCeWwzS2I3WUFTY1puYW03QW1yY0RoQlNHSEZBQ1E?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T05:46:07+09:00",
+     "dup_count": 1,
+     "summary": "골드만삭스의 상향 조정으로 팔란티어 주가가 최고가에 근접했다."
+    }
+   ]
+  },
+  {
+   "title": "비트코인 하락 및 크립토·AI 인프라주 하락",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Bitcoin Drops Below $81K, Triggering Nearly $1B Crypto Liquidation Wave: Crypto Stocks Fall With AI Infrastructure Plays",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOd3ZaYzk5VWplcXM1dVB6V3RjM0M4ZEhxQ2FRTEdaUENlV0g2RDZZT0tDbU5jR21IdlZxRldDM05LUGFpZWJTMWNMbDlEOVRiWW10YlplS0c2RzNlWVlLM0lKcm1DNFl5YklIZFllSkRvdFVfT08zZ2ExQ0cwU1NaeVZZMDVmWFpmbm01eHNlQW9ja2swVVpYSVJUdW1Sd21M?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T02:35:43+09:00",
+     "dup_count": 0,
+     "summary": "비트코인이 81K 아래로 떨어지며 1억 달러 규모의 청산과 크립토주 하락을 유발했다."
+    }
+   ]
+  },
+  {
+   "title": "베이비붐 세대의 주택 매매 전망",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "14 million homes will change hands in the next decade as boomers age",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQUHFLb3ZiN3Y5d1B1MTNZSm5YcmdBSTBUM0lFTGJYZS03Y001OW0zNHpGLXpNZ1VreDhlYU1qVUkzVGlsVHhmYU5WNHQyaVlYMl83OFRMZFg0bEFmemRYdTlNOVdXMm9ZVzh1RVR6bVRJUGtKYlp6Z3NETEx6MzJZdmpoam9EX3dhVk9aekNyM0tJSEJXWTM0emUzUzdnUW5pZEdSLXQ0T2NwbDh2VkhFN3l6dUFtQVpkMUF4VndIc0JVM2M?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T02:07:36+09:00",
+     "dup_count": 0,
+     "summary": "향후 10년간 베이비붐 세대의 고령화로 1400만 채의 주택이 거래될 것이다."
+    }
+   ]
+  },
+  {
+   "title": "방산주 동향",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Ondas Falls 5% as Defense Orders Pile Up Without Lifting Shares; AeroVironment Slips, Kratos Edges Higher",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOc2tTbXZYLWtsbTRqRGF3V0xJOFBqSFgwZ3FCa3JsUEJ4Vm1HOVkzVGM3Rkp2N3J2YTBuVEQwV0I3WExTMWZ5RVdGTl9EaXpNUlYwa0pEbkRJVl9lRXFRWk5PZ1ZvWUZYRUsyUFdLck5LbHBnYXk2WVItS09QR3UyWHFkLW54RWd0TmFxa09aNjlmSmluWGJiVQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T02:03:58+09:00",
+     "dup_count": 0,
+     "summary": "온다스는 방산 주문에도 주가가 5% 하락했고 아어로바이런먼트도 소폭 내렸다."
+    }
+   ]
+  },
+  {
+   "title": "캐터필러 주가 트렌드라인 반등 가능성",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Caterpillar Stock Could Bounce From Key Trendline",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcWVvdzc0Q2VyNHFUT2lHdWdkZWY2R2ZjTHhsbDRLOEhibjFnVmZvY1Z4d1pFNlJwM0VjcjFjdWlmQ3hSaXVjTWtoZkVsRXA0OVBkT0tHanYwSnlMZ1FqbklJUzhReW5qV3hSWVk1eDhDanZrRjVKam13aHdTcUVtZ3huYTdsRVFHckQxcDRualR3UTZ2MWZGVUJ0bUFWNkF1?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T02:02:20+09:00",
+     "dup_count": 0,
+     "summary": "캐터필러 주식이 주요 추세선에서 반등할 가능성이 제기되었다."
+    }
+   ]
+  },
+  {
+   "title": "인도 TCS 9월 분기 성장 둔화",
+   "sources": [
+    "Reuters"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "India's TCS posts weakest September quarter growth in three years",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeDFMc2VuQ241aHc2WXZxa0tmOVp4UVNuVDlIbjViQ3VFWUFfWWNRT2M5S3BGbkNNSGhqclpoRU1ha2Y5VkxMNkxBb1h6cjlUZHViM0V5ODNRSzJQd3NmNkIyWkN1R3lOOGdVOC1VWEhDNUdHcm1aT0RlNzJfVmZpTzEwVXNZMlc5ZXpvVjNPTmtjUWd2OVUtcWE2aFBfUmJ5VDZudFQycXJLVmVp?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-09T00:44:49+09:00",
+     "dup_count": 0,
+     "summary": "인도 TCS의 9분기 실적 성장이 3년 만에 최저치를 기록했다."
+    }
+   ]
+  },
+  {
+   "title": "연준 윌러 이사 금리 발언",
+   "sources": [
+    "Reuters"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Fed's Waller: More hikes needed, but there is 'flexibility' about the pace",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVlJjTS1oeE1aRmVEcC05dTZkd25ONVRidzJkTlozaEE3Q0tvQ2hPd0dYemMxNWUzTUZORnFfb0FWZUdDOVp3QUVwelQ5cjJzcV9oMl9mZmpCTnJOaGh6XzZXLXlxOWJBUVhTX05oOVhwS2hhZG1WbmppWlRRRGNDOGZneGNneTRiLXBhVHd1Z3FGc1JaZC14Qm14SVRlYi1Cd3MxSjVR?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-09T00:33:03+09:00",
+     "dup_count": 0,
+     "summary": "월러 연은 이사는 추가 금리 인상이 필요하며 속도에는 유연성이 있다고 했다."
+    }
+   ]
+  },
+  {
+   "title": "델타항공 Q3 실적 프리뷰",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Delta Q3 earnings preview: Premium business expected to blunt high fuel costs; CEO Bastian, Musk battle over in-flight wifi",
+     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNQ1hBRFVGZ1VqclVqY00tcDc4SnB3QUVra1NKMEg4U1pZdHFJZmVmazF3MjhuME5RRS1GdGp5azdZV0lzRTNZaXhnSlhZbHZvT0JKbkZ3ZVpnY0l0SnZWY1owWFB6OGtQZmQyN2xaSXFPdjBEQ3pXVk1ldFFBVDFHV0xKVGFpa25YRmVBYlRBaUtpVXkxcjBDWlM1ZjZoQnhzN0loeFFKR1l4Z2tTazlYQ3pvMzl0aEsyUi1OSHIwcXpKbzRhV3BmZ3A2MzRiMjRROUI3OW5jczFSVXllUmd5YW5sM043WjktT210S0E2Z2xCMGRFNm9YQnZYSk55N2FXVGt0WUl1M3NYRDRfNkdaZHdn?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T00:30:09+09:00",
+     "dup_count": 0,
+     "summary": "델타항공은 프리미엄 사업으로 유가 상승에 대응할 것으로 예상된다."
+    }
+   ]
+  },
+  {
+   "title": "채권 금리 급변과 금융 시장",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Rapid bond yield moves have preceded nearly every major financial blowup: Chart of the Day",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcEltRWJGemx4eTIzdGkxcXJob0hZTXlmYXpCd0JLU1N1ajlwOEJma1d5M2ZyX2p0dmN1RktqSDdFVjNyZmtkWE9RUXBiUGZwNkg3R1pqUlc3ZXNxc2cwbmRlQkZVcXNXVV8yQXBaUzhNNk5PYlk5bnJ3Z3gySEdMSHc0QVJpc1FvUThXTGw0YnpSTjFseml6Mm5jSEhmcFM4SmN1bVlpNUE3NjA3LWRWZjV5MHc0RldzNGdnRlRKS25uU2o2WEx0bm55R200T1NrU2ZkcFhVTDhlVnVlOTRZ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T00:07:20+09:00",
+     "dup_count": 0,
+     "summary": "채권 금리의 급격한 변동은 거의 모든 주요 금융 사고의 전조였다."
+    }
+   ]
+  },
+  {
+   "title": "펩시코 Q3 실적",
+   "sources": [
+    "Investing.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "PepsiCo shares edge higher after Q3 beat, profit outlook cut",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWENQeFFKYnh2S0ZRNGpMeG9ocnZqVDhHUHVmUDFOSWNaM3EwZ21DdjF3WTVYd2pMSmZJdTV6ak9vb0xEZ3Jkcm4wcTdQYXZjTmYyemRvUFpaNndpVmRhVDVvb1pLdWJXSWMyaW1SNHUtWUtHMkFaRm1JTDZWSkplT3RGbWw3ZVNUUkVtYlNVdVBYdnpWS0tOR2djU2xtb2RqOXZBaVgwNGpTZFJVc093UEZ2U2puY1Q0Wm5z?oc=5",
+     "source": "Investing.com",
+     "published": "2026-10-08T23:49:57+09:00",
+     "dup_count": 0,
+     "summary": "펩시코는 3분기 호실적에도 이익 전망치를 낮춘 후 주가가 소폭 상승했다."
+    }
+   ]
+  },
+  {
+   "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+     "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTFBBTy1pM1poaEROWTVTNDVTYVdvTDZEWmM1VDhGdlUzWW1OUXNvQ3RmZTVZQ3BGVlhvbTlWNFNhUQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T08:23:12+09:00",
+     "dup_count": 0,
+     "summary": "야후 파이낸스는 주식 시장과 금융 뉴스를 실시간으로 제공한다."
+    }
+   ]
+  },
+  {
+   "title": "MarketWatch: Stock Market News - Financial News",
+   "sources": [
+    "MarketWatch"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "MarketWatch: Stock Market News - Financial News",
+     "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1BdVhUUlFwZmxHeFhzWGdpZHFTOGFReXUxTUVWR2JYd3d6ZjZBM2FuSWt6eUFSRUUwcTdkRHVrLVB3UQ?oc=5",
+     "source": "MarketWatch",
+     "published": "2026-10-09T07:39:44+09:00",
+     "dup_count": 1,
+     "summary": "마켓워치가 주식 시장 및 최신 금융 뉴스를 제공한다."
+    }
+   ]
+  },
+  {
+   "title": "Why is Vistra stock sliding today?",
+   "sources": [
+    "Investing.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Why is Vistra stock sliding today?",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOU25PU3J3NVBvdmdUdDFXdDcwa2lXVExWNXNOUDN0LTN5NEN3a1RETndZd1RIOURadVR1Mkhrb0VnMjRURWJxTzZrOWNsbVhHVEJFcXFxR2xzQlBOMXZGWThtQnJPX25nWVUxNzZJUjROVkx2WTA0bTU1TmVPYVd2dE5HWUZZcVdyMXZPZ0R1YkZ2ZmNIRzdHSXNYcw?oc=5",
+     "source": "Investing.com",
+     "published": "2026-10-09T03:42:01+09:00",
+     "dup_count": 0,
+     "summary": "비스트라 주가가 오늘 하락세를 보이고 있는 원인이 주목받고 있다."
+    }
+   ]
+  },
+  {
+   "title": "OpenAI corrects annualized revenue figure to $50 billion",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "OpenAI corrects annualized revenue figure to $50 billion",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOWduMmZzakQ3THR3RGFveWR5YVpFYVFBWnRHOFQwT1BWdno3YzdkLV9Ta1hOb2cwdDR0TTZoS21SenRURnJ2OTZQTk1NTEFLdjRqNFRXZXpZS0xtZUpPUDhFa283VFN5cXpwRFNMd21FeWJCR2JHOUxDX18wWnJVWkpmbE82VjZDSGtVVm0yUWZTdlpfRkJlTUZmdjctY21SejJHUXdPN19ZUQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T03:37:56+09:00",
+     "dup_count": 0,
+     "summary": "오픈AI는 연환산 매출 수치를 500억 달러로 정정했다."
+    }
+   ]
+  },
+  {
+   "title": "This cybersecurity stock is already growing revenue at a 20% clip. And now here comes the AI boost",
+   "sources": [
+    "CNBC"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "This cybersecurity stock is already growing revenue at a 20% clip. And now here comes the AI boost",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPQWoyTFZrN2NSamNWZjBqLUFqTmkwdXZjUmtUT2hHQk9zcVEydk01R3EtWDh0QUlyQlF2N0NqaG54b2FIR2QtRVpqMFBDRUdtVzNZdVd2b0w0VWppeF9OWjc2Yk16c3RfWGY2QzBIRmJtbC0ycEFmLXR5MmlSY3NhYzBtN1REMjU5bmhHaUdZWEdpZW9JdTI5TF95aWNJYi0yemFzYWlDdkF2U3RwQkNsZ3k2X1hLQ2M1T1JlcHVqSkR1c0Vadk5ZYmlPNU56NmxHcEcxc0lGVQ?oc=5",
+     "source": "CNBC",
+     "published": "2026-10-09T03:35:26+09:00",
+     "dup_count": 0,
+     "summary": "높은 성장세를 보이는 사이버보안 주식이 AI 부스트를 맞이하고 있다."
+    }
+   ]
+  },
+  {
+   "title": "The Mag 7 Stock With 64% Upside That Nobody Is Calling a Bargain",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "The Mag 7 Stock With 64% Upside That Nobody Is Calling a Bargain",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUFhqaGpzVmdYZXpMdDJrcldCSDdud01ISHlBc1ZVM1ZXc1ZaajliR2ZabFNsdFRtVnZBUERQcndldjJDc0l1eFM5VV93SWwwQlFSQWVIdEJYMV9FWUdzbGlwbWd1b1RERXBFVGQ2Q2dkSlJNT3JZbEFLM3o4TG4zTkhKUkh1cENLUXJGMmEtaw?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-09T00:30:32+09:00",
+     "dup_count": 0,
+     "summary": "64% 상승 여력이 있으나 저평가로 보이지 않는 맹그로브 7 주식이 있다."
+    }
+   ]
+  }
+ ],
  "items": [
   {
-   "title": "Trump disclosed millions in new trades in SpaceX and Microsoft. Today, he's giving medals to their CEOs.",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPVE90WDQxeTNDV2dKQWVRd29pVVZUbld3ZWt0QWFpMHRrbkxVZEwwTU1EdnYybFM4YUZ4ZzZyUzMxMDNlM1phTll5UXYwMmRLQ3dxRV9SVkF1UmZqS2dOakpnZ3czODlfWklKNXZ3aURYNXdEMk9UeFlYOU5QVVk4Yk9jWUsySUJiVkl2Tnl4eElERWhpZS1icVdSRVhuTTMxeHBzSkViRkhZMDFmeGoxQkVfbkFIRzlYeXVNQngwTXZNbWVQQlJDejY3OTFyNXlQVDZhTS1abXVteTExRmFBZV9XemxVRzc1cklQaU80R09sTnJEaDdJ?oc=5",
+   "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+   "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTFBBTy1pM1poaEROWTVTNDVTYVdvTDZEWmM1VDhGdlUzWW1OUXNvQ3RmZTVZQ3BGVlhvbTlWNFNhUQ?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-10-09T01:02:23+09:00",
+   "published": "2026-10-09T08:23:12+09:00",
+   "dup_count": 0,
+   "summary": "야후 파이낸스는 주식 시장과 금융 뉴스를 실시간으로 제공한다."
+  },
+  {
+   "title": "S&P 500, Nasdaq end lower as crude prices jump, chip stocks weigh",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPLTluWFV5cWFfM2xBV243NUduZW80Q3dmYnFLa1Y4Nmhha2RNNHVGTS1sM2NYZ0ZCeWJlazZpSndKOWM0OVUxTmx2M3luSDdpbVgzNnYtanQtb2VkWV9tU2NQaU03ejAxZy1NU1JhWkMwLXRNbmJUY2pWaTBrVE9XbGRXa2VFekh1LTVZbVNGUVRKTVhIU0NnSUZqdXI?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-09T08:09:38+09:00",
+   "dup_count": 3,
+   "summary": "유가 상승과 반도체주 약세로 S&P 500과 Nasdaq이 하락 마감했다."
+  },
+  {
+   "title": "Elon Musk's SpaceX just made a huge play to challenge the phone industry and stocks like AT&T, T-Mobile and Verizon are getting crushed",
+   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxORHpBZDEzQUdGYmktYTNxYms0SEtnQ3c1WWU2RUZ4Nm9pRkQyOE44MkdtTFFSSlRFV2VFbWNyQ2NJem5rLXoyZ2doeUM5SHBmRkFLek1aOWEtdXdaUUl2Y1gyOVVodVVHYlZSV0pxRWN1Ri0xUndfSGl0RmRfOVIxeHpfeEpMWUZCT3ladjZsR1FIeTdHVTRkUDBYZmdKWGI2MDIyX01kSDZfUEhyZ1JpRk42X0JxSmRpMk5iaGtodFZsV0VyVi14M2tSQ2NLMlA5SkZ3YnMtdkpCd3RUdTZLS3F3ZDdfVmMyenFFZk1ydEF6VHdjZW93Mm4ydGlURnFDamFZLXZsQWZMVGZ2UXdhYzlNYThnYU1nQlFZVlRtekNQUQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T08:06:47+09:00",
+   "dup_count": 0,
+   "summary": "스페이스엑스의 통신 시장 진출로 AT&T, T모바일, 버라이즌 주가가 하락했다."
+  },
+  {
+   "title": "Aritzia Raises Sales Outlook as U.S. Growth Accelerates",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTDJYVTZ1aEE1N0t2RWN4REw2QVBpaV9hOElwckFlVTFsUUU2bEZTODNIYWlPSW9VNWtDZHdqbjN3elVIUkVQb3ZfZHV4WFBFY00zQU5DVm9INWkycG1tSVYzS3JHUzRSNlVXQ3c4clRtVzQ2azhVdnpGRTlPTW1zcUJjb2pGSnFiRXlqUXJlcVZVb0JqcEFGMGhJUXI5WklyR291V3M2M3FvNXN4NnNV?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-09T08:04:00+09:00",
+   "dup_count": 0,
+   "summary": "아지티아는 미국 시장의 성장 가속화로 매출 전망치를 상향 조정했다."
+  },
+  {
+   "title": "Nasdaq 100 Ends Lower As Report Of Weaker-Than-Expected OpenAI Revenue Drags Chipmakers — NVDA, DIS, ORCL, SBUX In Focus",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOa2xoRnp3UDUwRW5RZnFSem5ZOWt1Mk01bmFVb3l6ZGdrdDE3VXY5dVJiX21IZ1NwRVllYW80eVpJRVlsU0NFbU04S0d2YXRHeUJjRTRNZGlMZExjbXdXMk9FZTJoandYMGhFMVJhajZoNW5GTThxOHpTSDZIMmdDSlpJVDJ3RUI2aTk0emZCVDg3UWdRMFByZw?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T07:55:19+09:00",
+   "dup_count": 2,
+   "summary": "오픈AI의 부진한 매출 소식에 NVDA 등 반도체주가 하락했다."
+  },
+  {
+   "title": "MarketWatch: Stock Market News - Financial News",
+   "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1BdVhUUlFwZmxHeFhzWGdpZHFTOGFReXUxTUVWR2JYd3d6ZjZBM2FuSWt6eUFSRUUwcTdkRHVrLVB3UQ?oc=5",
+   "source": "MarketWatch",
+   "published": "2026-10-09T07:39:44+09:00",
    "dup_count": 1,
-   "summary": "트럼프는 SpaceX와 Microsoft 투자 공개 후 CEO들에게 메달을 수여한다."
+   "summary": "마켓워치가 주식 시장 및 최신 금융 뉴스를 제공한다."
+  },
+  {
+   "title": "Tech Stocks to Fall as OpenAI Sinks US Chipmakers: Markets Wrap",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNLVdSbk1NMk9oczQxR1FzUXBRcVJuVlRWZExIbS1LQmh1am1NQ1J4ZzZEbXpaVHhVWU5FcHAtODFZYUQ1UkpZSTM0XzI2amdDa0dyTXlQVXNZbXdjcTRZd1pVSzhyRV9FbjM3cXpVeGwzY1I4WGFoZUN4VjQ2Rml2NzZfOGc2QmlPUUY0bGYtd3ZoUk53?oc=5",
+   "source": "Bloomberg.com",
+   "published": "2026-10-09T07:05:53+09:00",
+   "dup_count": 0,
+   "summary": "오픈AI의 부진으로 미국 반도체주와 기술주가 하락세를 보였다."
+  },
+  {
+   "title": "OpenAI's annualized revenue $20 billion less than previously signaled, FT reports",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLUJ6eFRkeVppWC1ocFZFMjRyWnFyczBwcml6OEJtaElGOEpxZkgzaFBSa1F2RTJjb3dXVTdLZ0pxWUpyZVhjZVdZRWR4TFpJQ2tjRG1UVGV6WWMwTkJsVVVDUHNjTU05MHBFWENJNGNPZW5sMjdyRUtLX0pfcUVLaWo5ZjhKd2ZCUnBHRlc2aXRpTFRMQTZSWWJuelZ4ZnVrM08xTVJBdlhtcjNEMS1PZUZhT2hDX3hYOUJGc2MzTV8?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-09T06:19:44+09:00",
+   "dup_count": 0,
+   "summary": "오픈AI의 연환산 매출이 예상보다 200억 달러 적은 것으로 나타났다."
+  },
+  {
+   "title": "Samsung's Operating Profit Hit a Record $80 Billion. Like Micron's Memory Prices, Its Growth Is Slowing.",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdDlkb1k5WUlHbGt6Qmp1NHhEZlA1SVkwc2pvOGhvVG9xN0VrN1hUaW52TzdINzZUNVdKU0VmeUhCd2FjbDBORkRzaUVuMUtJRHk0cUJ6aXRRV0Z4V003ZVNydE51R1dDcFhFV0FFRHRoeTJ4Ni1pdmgxNUNqLXpFLVRHazd6aHdwcnhaeGUtQ3V2TS0zaGFXVkZlV1kxbUlZei1Z?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T06:06:02+09:00",
+   "dup_count": 0,
+   "summary": "삼성전자의 영업이익이 800억 달러를 기록했으나 성장은 둔화됐다."
+  },
+  {
+   "title": "Fed's Musalem says tighter monetary policy needed to lower inflation",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaGVSNzFYTFV0aklwQnlYM3lyV3NMY0FmNi1QUFQ4b1A5bmNkZ01LMkdVZ3NmdmI0SFVRZXM4V1BjN1JOcHE3bTJQQUczbF9ESGI1VUM5ZklBZXFqSUpFQlZLazhaUU5BNjUyTVFDMEtmdHhqOU12WjJMM2ZDNzdscVU5NUl6d1BuV2k4ZWVBblZGaFVoVWxReFlIUFdOU09KempHczB4bnl2SFBabnkwMGJR?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-09T05:48:43+09:00",
+   "dup_count": 0,
+   "summary": "무살렘 연은 총재는 인플레이션 하락을 위해 긴축 통화정책이 필요하다고 했다."
+  },
+  {
+   "title": "Palantir stock nears all-time high after Goldman Sachs upgrade highlights next phase of growth",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQQ20zSEtvRGhmZ1dHUUtoZC03RXFTcFlCWnBnUUJYV0NuOG9OWkNLSlgyM05ITHVrYXlRejJaSnAtMmNLOVNOQkF3Um1sbTZCaExJOEFyUHdDcWt2OERQMjNZaUY2cWNLMWdvanlxUEpTT2owZ0FOV1VacnZmZGxfU010OWdlNlNseGVnc1RtYmtpdUJYeVZVaDdwcm9CQ0V0SWJ1aERBaEhSa09IZmxLSE43MGNjZXVFYjF5YzZEOHVVX255TFd1SUdaUzdCeWwzS2I3WUFTY1puYW03QW1yY0RoQlNHSEZBQ1E?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T05:46:07+09:00",
+   "dup_count": 1,
+   "summary": "골드만삭스의 상향 조정으로 팔란티어 주가가 최고가에 근접했다."
+  },
+  {
+   "title": "U.S. Stocks Mixed as Oil Spikes, AI Profit Doubts Hit Tech",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcmRmSzBtSkZNNUdzbkJoOThxUHFJNlhXVDQ3aUhtQklNTTlCN2lyckhrSGxJY2d2OGV3QnFlYzdXYTltUmdvb01Kd3Uwa0ZGYnJ3VnE2OFkxUzRpSWpLUURoX2hkcVVhc056UXAxTEdrR0k3S3A1U3RUOUhjMlVjNk5WM1JXazV6VFpBY2lZeUpPa0E4YVBmZEFQVzhuWUZCNWc?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-09T05:42:00+09:00",
+   "dup_count": 0,
+   "summary": "유가 급등과 AI 수익성에 대한 우려로 미국 증시는 혼조세를 보였다."
+  },
+  {
+   "title": "OpenAI's Revenue Was Lower Than Previously Reported. Stocks Dropped Dragged by AI Names.",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUmpTbWgtTE9LTHp6VHB6NF8wUWZiQ1oxZnMwWHo3Ri0wZGxtZC1oVGFtUldvUVRER1I5VzYzN2xDY0Qtb2g4aWZSVXNYYmFNaWluckRZR2VQOC1weklvTWVzZ0pzOTZDN0o4SG82bDFqemIwbHBEQ2tmbm1aVHd1TVNOb3F0Zzd5WXc1ZE4zM1VYN0ZSQVU3UmctekJ0TnZTQjFDNnEwR09Idw?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T05:21:29+09:00",
+   "dup_count": 1,
+   "summary": "오픈AI의 매출이 예상보다 부진해 기술주 중심으로 증시가 하락했다."
+  },
+  {
+   "title": "St. Louis Fed's Musalem sees more rate hikes in the next 6 months",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQWV93NjZQR09CRDRGeDF6WXcxcWw1WlloYlc3RS1fbUlvbjJjZGtXT1gzTElfTmJtUldkTmdCMUFTbXJVSjVJeTllTUdGNWJiUmRTbDFKb3pYQU5mdk9KQnIxT0ZVQVpVeVpXcTI0UVpFT1BUZDByb2tKeG1kQ04xckpUQkUxRGc4bXcwZWFoNFdIRGMwazlzQzh3OU1rUDVJaTFXY0MzLXIxalVvaXJrU29NcTdyemw5SzhmdUZTVjllLXlmakE?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T04:44:35+09:00",
+   "dup_count": 0,
+   "summary": "무살렘 세인트루이스 연은 총재는 향후 6개월간 금리 인상을 전망했다."
+  },
+  {
+   "title": "MSFT, ORCL, NVDA, QQQ In Focus: OpenAI’s Annualized Revenue Reportedly Trails Prior Expectations By $20B",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQ2ZwNUQxQ2ZocEZhenBqRVI5Qk9BZE43cm1IZGM0aGVTTURlZFZVRnRDX1FLeVg4QnlScVZObE81N3lPM2tmdmRmTVV6ay1YWXNGMVJSRjJoRGRaR3U1dEw2ZnZKLXNqRVdualFtUUJDYjlWOWplRURTcmxiV2dHZENxbVlBWFA4d3ZqR20zSEg4UQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T04:01:41+09:00",
+   "dup_count": 0,
+   "summary": "오픈AI의 연환산 매출이 예상보다 20억 달러 적어 관련주가 주목받았다."
+  },
+  {
+   "title": "Trump Made His Biggest August Buy a Tech Giant That Jumped Over 30% in Seven Weeks",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMldEVUFHZWttRW9CLWhIclI3dldyNEgtdU94RGs5bzdXVXVUcjVxMnlXdDk1LUM4UW84RnpXMGlkVW9wajFwdm5kd0FUTWlBTDZrMU1EYVdicTNRVzVOQmhkMUppY2tDSVV3N01taVFaaWY4RWNFbjl3ZkpDcVBwRENMS25tTmZoZDZBUHZqdjMtM0xDMmdUcXh3?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T04:00:47+09:00",
+   "dup_count": 0,
+   "summary": "트럼프는 7주간 30% 이상 오른 기술주를 8월에 가장 많이 매수했다."
+  },
+  {
+   "title": "U.S. Interest Rates Could Rise Over Next Six to Nine Months, Fed’s Musalem Says",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeHRyMnRQZ0p3RDBMZ2J3eDFvbXIwNFlMbWY0eE9GQnRMYVljeGZ0NlZKaVBGbkFnY090QzZHeE13c05hLUpTT3h6Rm9pcGtiOFBnUnI2RFcwVFlkUzk4MjNoY01PVlRLV0FMekNqVkdRRTFDZHVxNGFTQ0hLZEM4d1UzSHhBWF9scWh2d0txRW91emUzTzFIUEhKMVE2WUVpdmdlb0I3NGhHX0VCRV9yZTJlNmQyX3BRZVNuaDBVRjNtM2M?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-09T03:45:00+09:00",
+   "dup_count": 0,
+   "summary": "무살렘 연은 총재는 향후 6~9개월간 미국 금리가 인상될 수 있다고 했다."
+  },
+  {
+   "title": "Why is Vistra stock sliding today?",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOU25PU3J3NVBvdmdUdDFXdDcwa2lXVExWNXNOUDN0LTN5NEN3a1RETndZd1RIOURadVR1Mkhrb0VnMjRURWJxTzZrOWNsbVhHVEJFcXFxR2xzQlBOMXZGWThtQnJPX25nWVUxNzZJUjROVkx2WTA0bTU1TmVPYVd2dE5HWUZZcVdyMXZPZ0R1YkZ2ZmNIRzdHSXNYcw?oc=5",
+   "source": "Investing.com",
+   "published": "2026-10-09T03:42:01+09:00",
+   "dup_count": 0,
+   "summary": "비스트라 주가가 오늘 하락세를 보이고 있는 원인이 주목받고 있다."
+  },
+  {
+   "title": "Oracle Stock Crashes After OpenAI's Revenue Gap. Who's Next?",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONTRaRDAzWl9DaHFOc2d5X0xHbFMzeVdCRFBGcWNNT0JZNnlRb2l0YW9VZjNMUnpSaEd0amY3SDVlcmdKekhLNlhjdmRaOGxhWjhfZ0RSNXFqcUZzZW9WVEhGaHVuZFJWZV9mdml5MWl0clFWb3JYMHZPWG8yVmhGcG1QVlBac2p5blc5TkhCYTF2V0dsSUFPeUFsNDBBcjlQWDVj?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T03:41:20+09:00",
+   "dup_count": 0,
+   "summary": "오픈AI 매출 부진 여파로 오라클 주가가 급락했다."
+  },
+  {
+   "title": "OpenAI corrects annualized revenue figure to $50 billion",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOWduMmZzakQ3THR3RGFveWR5YVpFYVFBWnRHOFQwT1BWdno3YzdkLV9Ta1hOb2cwdDR0TTZoS21SenRURnJ2OTZQTk1NTEFLdjRqNFRXZXpZS0xtZUpPUDhFa283VFN5cXpwRFNMd21FeWJCR2JHOUxDX18wWnJVWkpmbE82VjZDSGtVVm0yUWZTdlpfRkJlTUZmdjctY21SejJHUXdPN19ZUQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T03:37:56+09:00",
+   "dup_count": 0,
+   "summary": "오픈AI는 연환산 매출 수치를 500억 달러로 정정했다."
+  },
+  {
+   "title": "This cybersecurity stock is already growing revenue at a 20% clip. And now here comes the AI boost",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPQWoyTFZrN2NSamNWZjBqLUFqTmkwdXZjUmtUT2hHQk9zcVEydk01R3EtWDh0QUlyQlF2N0NqaG54b2FIR2QtRVpqMFBDRUdtVzNZdVd2b0w0VWppeF9OWjc2Yk16c3RfWGY2QzBIRmJtbC0ycEFmLXR5MmlSY3NhYzBtN1REMjU5bmhHaUdZWEdpZW9JdTI5TF95aWNJYi0yemFzYWlDdkF2U3RwQkNsZ3k2X1hLQ2M1T1JlcHVqSkR1c0Vadk5ZYmlPNU56NmxHcEcxc0lGVQ?oc=5",
+   "source": "CNBC",
+   "published": "2026-10-09T03:35:26+09:00",
+   "dup_count": 0,
+   "summary": "높은 성장세를 보이는 사이버보안 주식이 AI 부스트를 맞이하고 있다."
+  },
+  {
+   "title": "Trump disclosed millions in new trades in SpaceX and Microsoft. Today, he gave medals to their CEOs.",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOSlpMQ2ZGQ2xSamtOSzEwVVpmRU9HNU9oZGZYcnhyLUhldzFxRjZoVkFxR0tTeUgtMTYzeEZtZjA1Ykw5dkRUdzZrYmZ2VFhKNFZadkg4aF9tU0RXZl9ocW9laDI4NHJ0X2dBNG8zdFgtcWgwMzlyc21fcG9CZGFvOHNHM1ZXTjNibWFYLXRVUTFtLWhnUF9GNnNIMFdjZzVBWnlDa2tLNjBZbTAwU1pnLUJvRFlWMFdOcUp0Qm9XcU1UNkFCWnB1cFRHcXdraFZWcTFPSklmZk9NR1I5ZjFMc3VUa0JNRERYZGV1UHJuM0Rza2M?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T03:26:14+09:00",
+   "dup_count": 0,
+   "summary": "트럼프는 스페이스엑스와 마이크로소프트 주식 거래를 공개하고 CEO에게 훈장을 줬다."
+  },
+  {
+   "title": "Oracle stock falls on more debt to fund AI chip buying, OpenAI revenue disclosure",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOY0ZtaEsyb0NYZFdFM2JtTENWa2VaYzVqcC0yOXVkdEpmV1gzSndpTjJ4TjlELXY0eW9kMjZEa01PVXNkTkJHMUhpRkI0ZTRxZmFkQlMwWlpjX1RtbjhzR2VpdDh0eUxfa0JzSGU3QWpTdDlOZUJlZGhTRXE1ZHNPM2lfOWhka1BXX3V1SEtaVV9Ub3ZZWHhaY0ZJdmpvSFJxWTMxMEMxS2k3MmhIMDJvd2UxWjF5ZDQ2T0tVU1Y4MkZaUnNCMUQyOENrUzlHZkFlcDdtN1ZONA?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T03:08:58+09:00",
+   "dup_count": 0,
+   "summary": "오라클은 AI 칩 구매 부채와 오픈AI 매출 공개 여파로 주가가 하락했다."
+  },
+  {
+   "title": "Bitcoin Drops Below $81K, Triggering Nearly $1B Crypto Liquidation Wave: Crypto Stocks Fall With AI Infrastructure Plays",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOd3ZaYzk5VWplcXM1dVB6V3RjM0M4ZEhxQ2FRTEdaUENlV0g2RDZZT0tDbU5jR21IdlZxRldDM05LUGFpZWJTMWNMbDlEOVRiWW10YlplS0c2RzNlWVlLM0lKcm1DNFl5YklIZFllSkRvdFVfT08zZ2ExQ0cwU1NaeVZZMDVmWFpmbm01eHNlQW9ja2swVVpYSVJUdW1Sd21M?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T02:35:43+09:00",
+   "dup_count": 0,
+   "summary": "비트코인이 81K 아래로 떨어지며 1억 달러 규모의 청산과 크립토주 하락을 유발했다."
+  },
+  {
+   "title": "14 million homes will change hands in the next decade as boomers age",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQUHFLb3ZiN3Y5d1B1MTNZSm5YcmdBSTBUM0lFTGJYZS03Y001OW0zNHpGLXpNZ1VreDhlYU1qVUkzVGlsVHhmYU5WNHQyaVlYMl83OFRMZFg0bEFmemRYdTlNOVdXMm9ZVzh1RVR6bVRJUGtKYlp6Z3NETEx6MzJZdmpoam9EX3dhVk9aekNyM0tJSEJXWTM0emUzUzdnUW5pZEdSLXQ0T2NwbDh2VkhFN3l6dUFtQVpkMUF4VndIc0JVM2M?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T02:07:36+09:00",
+   "dup_count": 0,
+   "summary": "향후 10년간 베이비붐 세대의 고령화로 1400만 채의 주택이 거래될 것이다."
+  },
+  {
+   "title": "Ondas Falls 5% as Defense Orders Pile Up Without Lifting Shares; AeroVironment Slips, Kratos Edges Higher",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOc2tTbXZYLWtsbTRqRGF3V0xJOFBqSFgwZ3FCa3JsUEJ4Vm1HOVkzVGM3Rkp2N3J2YTBuVEQwV0I3WExTMWZ5RVdGTl9EaXpNUlYwa0pEbkRJVl9lRXFRWk5PZ1ZvWUZYRUsyUFdLck5LbHBnYXk2WVItS09QR3UyWHFkLW54RWd0TmFxa09aNjlmSmluWGJiVQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T02:03:58+09:00",
+   "dup_count": 0,
+   "summary": "온다스는 방산 주문에도 주가가 5% 하락했고 아어로바이런먼트도 소폭 내렸다."
+  },
+  {
+   "title": "Caterpillar Stock Could Bounce From Key Trendline",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcWVvdzc0Q2VyNHFUT2lHdWdkZWY2R2ZjTHhsbDRLOEhibjFnVmZvY1Z4d1pFNlJwM0VjcjFjdWlmQ3hSaXVjTWtoZkVsRXA0OVBkT0tHanYwSnlMZ1FqbklJUzhReW5qV3hSWVk1eDhDanZrRjVKam13aHdTcUVtZ3huYTdsRVFHckQxcDRualR3UTZ2MWZGVUJ0bUFWNkF1?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T02:02:20+09:00",
+   "dup_count": 0,
+   "summary": "캐터필러 주식이 주요 추세선에서 반등할 가능성이 제기되었다."
+  },
+  {
+   "title": "The Memory Trade Cools After Samsung’s Preliminary Results Disappoint",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZ09yTVdkb0toNjZ3bFZwTnlzSkl0T1JWOFBOdGo1dUxSQ2gtbmRqa1ZqVHpIaEMxeHFTakpjZWtUdUlKcm4tR1VoWDNWQkgtZmt2RlV1UWVOcktXREp2MWM2dHNadGsxdVk5T0RPUm03S19EaG5CdXljZXJzNUxtSVFVWXNVTmYyNWtLSnFfYmZtYUJBa1ZaUWppQ09HYzE5a2F1SUVn?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T00:51:42+09:00",
+   "dup_count": 0,
+   "summary": "삼성전자의 예비 실적 부진으로 메모리 반도체 거래 열기가 식었다."
   },
   {
    "title": "India's TCS posts weakest September quarter growth in three years",
@@ -20,7 +729,7 @@
    "source": "Reuters",
    "published": "2026-10-09T00:44:49+09:00",
    "dup_count": 0,
-   "summary": "인도의 TCS는 3년 만에 가장 부진한 9월 분기 성장을 기록했다."
+   "summary": "인도 TCS의 9분기 실적 성장이 3년 만에 최저치를 기록했다."
   },
   {
    "title": "Fed's Waller: More hikes needed, but there is 'flexibility' about the pace",
@@ -28,15 +737,31 @@
    "source": "Reuters",
    "published": "2026-10-09T00:33:03+09:00",
    "dup_count": 0,
-   "summary": "연준의 월러는 추가 인상이 필요하지만 속도에는 유연성이 있다고 밝혔다."
+   "summary": "월러 연은 이사는 추가 금리 인상이 필요하며 속도에는 유연성이 있다고 했다."
   },
   {
-   "title": "Jim Cramer says he's in a buying mood. Here are some stocks he's considering",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeF9rVjVUM3lscm1ISmJiY2twQVJMdE5VUWFoY1dVUXB2N2VzTzNhbk9Vei1iVlU2QWNwanR0MG5WMEhEUWN2NjVubWJJN0FFcmRkNE1hY2Nsc2c5NG1RVWNFc2pnVW53Y2R6alBjaWJXbEMtX3pJVUlYaHAxdXNCWHJDTWlzbm05Z0YwY1hkbTZHN3hpVk1TZ2MwdFBveEFJOWlNUmo4eERJRVIyRkhzUEZPZ09relhVVVNSdnpkNE1PUQ?oc=5",
-   "source": "CNBC",
-   "published": "2026-10-09T00:15:03+09:00",
+   "title": "The Mag 7 Stock With 64% Upside That Nobody Is Calling a Bargain",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUFhqaGpzVmdYZXpMdDJrcldCSDdud01ISHlBc1ZVM1ZXc1ZaajliR2ZabFNsdFRtVnZBUERQcndldjJDc0l1eFM5VV93SWwwQlFSQWVIdEJYMV9FWUdzbGlwbWd1b1RERXBFVGQ2Q2dkSlJNT3JZbEFLM3o4TG4zTkhKUkh1cENLUXJGMmEtaw?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T00:30:32+09:00",
    "dup_count": 0,
-   "summary": "짐 크레이머는 매수세라며 주목할 만한 종목들을 언급했다."
+   "summary": "64% 상승 여력이 있으나 저평가로 보이지 않는 맹그로브 7 주식이 있다."
+  },
+  {
+   "title": "Delta Q3 earnings preview: Premium business expected to blunt high fuel costs; CEO Bastian, Musk battle over in-flight wifi",
+   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNQ1hBRFVGZ1VqclVqY00tcDc4SnB3QUVra1NKMEg4U1pZdHFJZmVmazF3MjhuME5RRS1GdGp5azdZV0lzRTNZaXhnSlhZbHZvT0JKbkZ3ZVpnY0l0SnZWY1owWFB6OGtQZmQyN2xaSXFPdjBEQ3pXVk1ldFFBVDFHV0xKVGFpa25YRmVBYlRBaUtpVXkxcjBDWlM1ZjZoQnhzN0loeFFKR1l4Z2tTazlYQ3pvMzl0aEsyUi1OSHIwcXpKbzRhV3BmZ3A2MzRiMjRROUI3OW5jczFSVXllUmd5YW5sM043WjktT210S0E2Z2xCMGRFNm9YQnZYSk55N2FXVGt0WUl1M3NYRDRfNkdaZHdn?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T00:30:09+09:00",
+   "dup_count": 0,
+   "summary": "델타항공은 프리미엄 사업으로 유가 상승에 대응할 것으로 예상된다."
+  },
+  {
+   "title": "Trump discloses Nvidia stock trades as he prepares to honor CEO Huang",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVEZQNW40RlJZMzdldzRvNF9sMEZqOG82MDJfdUxjaFlUQ0ttcV81aFNTUDQtUVNDclR2NUZSMXRYVG5PR1RqWGFNc3RjcWNOZVZ2RnJpdm95WlBpVVVRYjRGamNwSUd5dzhQU0VOcDVyZlozczlCVVVfMUJlQkZEUTk5UGc1ODl6Rm1FNmY0RlFwNXJxWlNPeTEtak5udU5BQmc?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-09T00:18:00+09:00",
+   "dup_count": 0,
+   "summary": "트럼프는 CEO 황인훈 표창을 준비하며 엔비디아 주식 거래를 공개했다."
   },
   {
    "title": "Rapid bond yield moves have preceded nearly every major financial blowup: Chart of the Day",
@@ -44,7 +769,7 @@
    "source": "Yahoo Finance",
    "published": "2026-10-09T00:07:20+09:00",
    "dup_count": 0,
-   "summary": "급격한 국채 금리 변동은 대형 금융 위기의 전조가 되어왔다."
+   "summary": "채권 금리의 급격한 변동은 거의 모든 주요 금융 사고의 전조였다."
   },
   {
    "title": "PepsiCo shares edge higher after Q3 beat, profit outlook cut",
@@ -52,239 +777,7 @@
    "source": "Investing.com",
    "published": "2026-10-08T23:49:57+09:00",
    "dup_count": 0,
-   "summary": "펩시코는 3분기 실적 호조에도 불구하고 이익 전망치를 하향 조정했다."
-  },
-  {
-   "title": "Cipher Digital Tumbles 6% as Data Center Names Sell Off With Yields Higher; TeraWulf Falls 5%, Applied Digital Pulls Back",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVU8xb2M2UXZ6UFRLZ1F6b0QxT2JPbTRjYWM3UmlCVDktZ19uZVE2Z0JINXVTTWo3WnVrRzh3aF8xT3RjQ2VzWktkUnpHTE1xaXRXekpTVTdIQUpXUm5rcDFGWFRSek5GTDZuOXJYVWYxWDljYm9WR093Z2Z4Mlp1MDhhZGxPeEdsbVVhUmVkX1lKU2dWUU1XZmZ3?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T23:47:46+09:00",
-   "dup_count": 0,
-   "summary": "국채 금리 상승과 데이터센터 주식 매도로 Cipher Digital은 6% 하락했다."
-  },
-  {
-   "title": "PepsiCo Trims Outlook as North American Unit Underperforms",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVndtcjJOOHZSX3JBeHBNUHpmbnVtLUVTVFU2UmxNT3JBOTVlNnYwYkktaHQyUFNEbG9OY1RCd0dUckx1YmFaRUpuZlVwdElvWXgzQW1UMFZlYTl3RUNPVF9ONF9uTUlITFdjZGhMMWVVendycEVqc0UxNTJWVGhfcWMzaVRXSS0xekZQbjZZQ01UVVU4dGFZcnFRWHRhVHBISFduNg?oc=5",
-   "source": "WSJ",
-   "published": "2026-10-08T23:08:00+09:00",
-   "dup_count": 1,
-   "summary": "북미 사업 부진으로 펩시코는 실적 전망치를 하향 조정했다."
-  },
-  {
-   "title": "Chip stocks retreat despite Samsung's record profit guidance: AlphaCheck",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQOGUwWjRsMjJaTWJjNDcxV2ZFVXhUckRKc2RlVGF2WXVacnRoZ2c2UWJPV29VZXlObS1EX2dTekNtNUlVVjJsRWNfZW5YQkszaDRXQkxJTndaSHBaamo3MXRtNEY2UEk2TDFzUXFHd0xTMUNNNjZnMnQ2TURRQ0F3N2xqLXRUYnBkM19ydnB1ZHRmTjBPTHQwQ21nX3dXcWJHM2lmd2lTb2xyek5LM0NCSVY1Z2hDRkMwZU12MnhER3VNcERrcWc?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T22:44:49+09:00",
-   "dup_count": 0,
-   "summary": "삼성의 사상 최대 이익 전망에도 반도체 주는 하락세를 보였다."
-  },
-  {
-   "title": "PepsiCo beats earnings expectations, lowers guidance as it aims to stabilize North America business",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQVUExUTFEa3h4Wmt3QzN1Y2xkZzd4QmViUzdyQ1lLUGRiY2xtdkFWb3NVdDZGYlhuNzI0QTgtU3F2YV9GSnZDZmpPc1A0ZEg0YlFGajhHUkVOaXh1cGJxYlNkZ1p6dEY0M2xMRjBKYjVoV0FYSTVzTTY5eWhSV2w1STBsSDVMcXhPd1ktbUNqVDhwZE1IV2EyV3A4V2Q5bEFLRUNCYUpfNDZJRmtWVUx5cmNSaUV0VmJ6RklmNzVvRXhpYWI4Mk05M3g2MXpoM3VtWm0yVlRqbzFsZDJmQ0lUQVZoc1NUMk5McXd4V1ZkY09GMV94?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T22:30:42+09:00",
-   "dup_count": 2,
-   "summary": "펩시코는 북미 사업 안정을 위해 실적 호조에도 가이던스를 낮췄다."
-  },
-  {
-   "title": "NVIDIA Is at Its 52-Week High and Wall Street Still Wants More",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOUQzRTZadURJbFBrMTBLSnkyZzFKZkhsSWJxQ191TWxKTmpkYkxYbkRvUFJDT3hhWnFlbmJqekYwYmR5SFJIV09zenBxV2lHbG5Ib2lBbU1uNHZDRzhwdE9oOXg5M0dhemFLUmZldkc4Mmt0UDlYbVp2NFk0aHAzNU1wWXBSamQ5Ny1LX2tabU9DZW8?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T22:30:18+09:00",
-   "dup_count": 0,
-   "summary": "엔비디아는 52주 최고가에도 월가의 강한 매수세를 받고 있다."
-  },
-  {
-   "title": "Microsoft’s Most Powerful Laptop Ever Runs on Nvidia, Not Intel",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWVEtVzMtWERZemRVX3ZPOWU4ajNDOGhqV25oVEp6YmE1NkJrXzBLQjNxN3JGMFJnZFBlUWNGaEJTb1NuOGc1cUNmLWpCcW9XUjVFLWY1XzhXZEVQVWpoZ3psUDhyVUxQcEtYNjQ1OXZvQTdiN0JCb0hxeS0yU0JnT2YwelhodDNlRVZxbHQyMzVDeG8xRGpXd2JsaVA?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T22:30:01+09:00",
-   "dup_count": 0,
-   "summary": "마이크로소프트의 가장 강력한 노트북은 인텔이 아닌 엔비디아를 탑재했다."
-  },
-  {
-   "title": "Options traders start calling bottom on bond rout after 'bullet bid' 10-year auction",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZFBWSE1DckdyMHZhMXAyLVBpdHBUbjU4RXdkeXRtUEJsTHdORlBPbzJxbV9ydU9JemVKMVEtZUtBa2VlMDR1VnJ1UjF0N1pGN3lUSWxLc0l6b09YUll5Wk96X2JMXzhPVFlhSUhaeWEybnI1Sm1KU1NCUkpGT3VaWTVsTXZiYjR1M0I5VG1ZZmo2Skxyd0dldS1vZHFWM2h0VmNFa1hOSmQydUdoOEhYNURsNFNzQ2stRE1n0gHAAUFVX3lxTE04dE9pRzFRME54R2pCYzY0dVBqWGFtMFVlTDhlMGh4WXNKblpjU205NDlIQ0FCczc2NERmNkRjMi1HN2Ewa0h0ZmpDT0FvaXR3V2gtQ0pfLUhvV2NMQzVGSDFGYTQ4cW5BcjliRVNqT2hTY0Jlam11Z0pKc2hTQVhzM3Z6bWR2ZnY1MDktMG4ySDBsU2FQMWJPTm5yM1RjN1VTcXEyeEhMYkdLV3B2QnI3WERTREtBTExPNDJiVmpacQ?oc=5",
-   "source": "CNBC",
-   "published": "2026-10-08T22:29:52+09:00",
-   "dup_count": 0,
-   "summary": "옵션 거래자들은 10년물 국채 입찰 이후 채권 매도세의 바닥을 논하기 시작했다."
-  },
-  {
-   "title": "Grab Holdings Limited (GRAB) Faces Earnings Pressure Over Indonesian Two-Wheeler Cap",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMTR5R1otNnkyUGJ3eE1vbG1SNGF5SDE2dFRNNVhXTVlqS3EtUHM5SnRsRkVZaHRrWlYzbWZsMElaOUZ6cE5WWFBuV2NVekZuTUdTcnRwMk93TE1wMzJpVl8zTFhKdG9xZFNnLTNrcFptYnotT2ZwVFpqNDREaFd5TWlWdTZwRkQxZWEtRnE1YlFUelBTOHh6ZG14TVJjdw?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T22:14:45+09:00",
-   "dup_count": 0,
-   "summary": "Grab Holdings는 인도네시아의 이륜차 규제로 실적 압박을 받고 있다."
-  },
-  {
-   "title": "Palantir, Intel, SpaceX, Wolfspeed, PepsiCo, Haemonetics, and More Stocks That Explain Today’s Market",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9PXy1XRDNVckRWR0RpOWo1U1k2WGZ2c0xZcDA0MTl3bjBJTFoteUVhQlREUmdWZmpfMHVybUNBbURWUTQwMkJ0TGVCRGFLUzVMYXZvLWpZZTdjU05wT1dsYzhvYlE?oc=5",
-   "source": "Barron's",
-   "published": "2026-10-08T22:12:00+09:00",
-   "dup_count": 0,
-   "summary": "팔란티어, 인텔, 스페이스X 등은 오늘의 시장 상황을 설명하는 주요 주식들이다."
-  },
-  {
-   "title": "Sandisk (SNDK) Is Up 1,322% in a Year: Is There Still Room to Run?",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQUVCSzBsU2dsbm1aU2FkZTNhdk56b00weWF2cFpDdElMZl9pNHdNUWVsWGZlRmNWTkR5dmhZRlBaT3BZTmhua1pMZmthQ1FiZTVKRm94QXVfYjJaNnBDNjNDNHFFb0dqWXdKQUhoQUZrc1U2VTkyMVZUYVBHMlRIU2RwRjhlc1gyVjVKclpjb3JYTms?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T22:08:24+09:00",
-   "dup_count": 0,
-   "summary": "Sandisk는 1년 만에 1,322% 급등하며 추가 상승 여력을 주목받고 있다."
-  },
-  {
-   "title": "Micron’s Quarterly NAND Revenue Jumped 526%. Here’s Where the Stock Could Go by 2031",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaVpua2JvS19aWXJ2VFByb0pkVkQxZENYYms5MW9pZDBlYTFvT3BxSTFXVlJFSEdSMk4tVW8zeDl4WW1wei1HZTJJcFdnbzVqb2swR1p0bllqemRsZWhDZkR6X2xXWGVDRjc0a2dZRGJYWE9KZWtaQjUxREVLemZXOW9VNm9pdGNaXzRjT1hoUHR3YXNVeFlzYWlWQ1UzbFJnYk80?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T22:06:07+09:00",
-   "dup_count": 0,
-   "summary": "마이크론의 분기 NAND 매출은 526% 급증하며 2031년 주가 전망을 밝혔다."
-  },
-  {
-   "title": "COMMENTARY: Morning Bid: Wall Street winces at bond squeeze",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUWJValB5TzlMMGM5czd2bW1Ma0xGZ0xXc3FKbEQteW9rbzl6Qkx0MHdwdjY2U25NZEdyQ28yeE91ZEVfaXMtOWJRMFQyWEFzeWdJTUpMTmRCd3BsUTVjNFQ2d3hlZmRiblZIWk82eTYwZllpamhPZXhvaXA1NHo2dDdlcVhHWmRwTXlNMWZjWXpIdG56Tkow?oc=5",
-   "source": "Reuters",
-   "published": "2026-10-08T22:02:05+09:00",
-   "dup_count": 0,
-   "summary": "월스트리트는 채권 금리 상승에 따른 압박으로 곤혹을 치르고 있다."
-  },
-  {
-   "title": "Applied Digital Q1 2027 earnings beat revenue estimates",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdjRCSnRUclluQXBmWWdzbXYxUklhNFRheTBsMzYwUllsc3l3QXNOUTBlZ01zN1lhUVMyWXdsNFFQU25RR01IWGpsNmotc3BmY0JrVGVzT3k0UU9mdFN1akZlb3RWeXhsZUhYNTY4WF8xT21qUTJldnNsdVBYV1VDZ2Z1OV9Dd0lDQlRDTDU5OFVGQnNVR0lLd185VGw?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T22:00:25+09:00",
-   "dup_count": 0,
-   "summary": "Applied Digital은 2027 회계연도 1분기 매출 예상치를 상회했다."
-  },
-  {
-   "title": "IREN Stock Fell 6% in a Day After SemiAnalysis Flagged Its Canadian Sites. Here’s Where the Stock Could Go",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQcnBRVUNmekVPMDBKSk93VTFjQ29sWUdJQWxQVGRyOFRYMWJQTkxfNzVlZjFxMjlQSkxzb2xvOEhGS2ZIbWtLYnAwZGxKS1FtV1AwdlRhRkplZWhBWnUyM0ZJSkNYeC03TVhnZFVnS0wtZDYyM01veFlhOUEwXzJFT1RmV282aVRmVEYyOHJPbw?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T21:50:47+09:00",
-   "dup_count": 1,
-   "summary": "SemiAnalysis의 캐나다 사이트 지적 후 IREN 주가는 하루 만에 6% 하락했다."
-  },
-  {
-   "title": "Fed minutes, Pepsi earnings, midterm megadonors and more in Morning Squawk",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUEtVYzFNNC1IVlIxSS1kWURaNU0xYzhZYTM1R2FFQ3BnSm5KYm5WQmpNOVNBLW1GTXJycjdGSFcxYmRJbU5ZREpnc29FamhkNTUyM2JhbERVaHhvUVNsNmdhaE9hbHFRWE1uOHA1a0dIcEltSE9qMERtMUdkNjNTazQ0bjdlTXJkY3Fz0gGQAUFVX3lxTE5SaVo5ZTRoV1cyVE1uRldCbXhwaVl6ZnBQaUFyMzNDX1JfYjZuQkxQc0p6U2hhdU1Rd0JSNlFUZmp0U2ljMTQ2OUhlV1FiMWh0VmZTY1JyVmNsU0pqRlBxdnZWWmdibGxNWEU2LXo1RzBTQ19NNTBtUWk2NDdEYTFvdlUzVW5obGpPaXVXVkdnLQ?oc=5",
-   "source": "CNBC",
-   "published": "2026-10-08T21:39:08+09:00",
-   "dup_count": 2,
-   "summary": "CNBC 모닝 스쿼크에서 연준 의사록과 펩시 실적 등을 조명했다."
-  },
-  {
-   "title": "AST SpaceMobile Got U.S.-Japan Backing. Wall Street Still Sees $3.2 Billion of Cash Burn Before 2029",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRDRrX2NWbXJYRmQ5OGlrdFVsTTc2S2xidDRYc1JwTjc4a1RDYWFneUdTbVFiVU8xUW5zeWlGZU9Rcms5a3czVTIwaEN6eU1IUWoyUXdNRzBFS3luUUlIRDdJblM2MzVZRWI2cEVVNlp1MXZLdkZTZXdWdm5Ra19BMHBjc2ptWWhrYk9DNzNJZjRfaXEzWlpV?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T21:36:54+09:00",
-   "dup_count": 0,
-   "summary": "AST SpaceMobile은 미·일 지원에도 2029년까지 32억 달러의 현금 소진이 예상된다."
-  },
-  {
-   "title": "Rising yields are quietly crashing the stock market’s earlier winners of 2026",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOc0JaTkd1X2NvUUJST1QxQVZjSHhjM1FabmRKbC02RERPTzNiNUZLX3NYU0NvQWtzSWRXbEM3SWVIVjQ0WEhSdTh1WUt1N1dRQXZGSXhlMERnVVc2VXFGQzl6cmhicUxNQ3BqNUdPREpXR1RUMUlWeUd1Wkg5aUp5S2hkS2h6b3FGdjJLc2J1ZDROcWotMUhTTVBvV0ZDOFhHNmI2aDY2UFlKdWd4V3pYendGRkxoeDZkdDJv?oc=5",
-   "source": "MarketWatch",
-   "published": "2026-10-08T21:32:00+09:00",
-   "dup_count": 0,
-   "summary": "금리 상승으로 2026년 초반 증시 승자들이 조용히 하락하고 있다."
-  },
-  {
-   "title": "APLD Stock Gets Target Hike From Wells Fargo Post Earnings - Analyst Sees Debt Raises For Meta Leases, 250 MWs Expansion As Catalysts Ahead",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRXNfcWRybmFBVWxIeGkxckpVX2tTSkZ0TTNaeElTVEsxWjQyVEFlMkJGeUlDOXVHanZCcTVkSUIzMEVXUW5MNHZydXU4MWNVX0xpWHNVTDR1c0pOM3lxMEtlX1RHZVFDV3haQ0tQUHYzRGZHdTRkX2UwRGVXcmdpdF9xMVNZMGFkSW9ZYlJsbmRWRHN1QlJr?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T21:13:39+09:00",
-   "dup_count": 1,
-   "summary": "웰스파고는 펠로시 렌트 부채와 250MW 확장을 이유로 APLD 목표가를 상향했다."
-  },
-  {
-   "title": "These 7 snacks powered PepsiCo's Q3 earnings",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONmVKdUR5dGd6cTV6VExSYjVmblplZjdtd210YjlZdkR0NmRrU2VoaUZISjZmWkFUZUU1V1NjQ052cWMtRk5HcUxhTE9udmdOVHI4ckFWdDN0dnVuNXRld1lzNlIxUnRkUEI3ek5JblB3UmtFVUtVTVdvSXpkT2xQY2ZFaHZWWHNRRjE0M2xtVnQxX2hsX0hhZnBPb0RpclJHRlE?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T21:13:35+09:00",
-   "dup_count": 1,
-   "summary": "7개의 스낵이 펩시코의 3분기 실적 성장을 이끌었다."
-  },
-  {
-   "title": "Moderna's Nasdaq-100 Entry: What Does It Mean for the Stock?",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOYkpJRnpoNzBsWm5BOFl3bEtySEZCMWhqX0dLX3kzdFh1eEEzNml2dFV5ZFk2dkNrOFRVZ0Npa0oyUFpCTTB5a0puMm1kdU51RzBKdHNfaENMR3BhMC0tVjRDNkxYWThFV3YxR3BuMWszU0hPNksyUWIySkZSZkhVTm5OSGo5VnRTNUstWTNwblY0WXg3VDk3bG9XRQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T20:42:00+09:00",
-   "dup_count": 0,
-   "summary": "모더나의 나스닥-100 편입이 주가에 미칠 영향에 관심이 집중된다."
-  },
-  {
-   "title": "Stocks Down Pre-Bell Amid Renewed Middle East Concerns; Traders Parse Fed Meeting Minutes",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUlV1MldkcEJqUU1QRjRFSUllRDVBV2pnSnR0Y1dwQWgzSTM5NXVqejVhLVpPWlNkTVNTbTFxM1dNT3F4Y0ZoZlJaNWpod2oxT2JndENiNE5idkxxN3pORlBDLWszNmpUd2xudzBqZjFYZXlPSkp1cF83ZjFiR1k5R3RnNmVEZlViXzNyc0VKS3JnNzNL?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T20:34:08+09:00",
-   "dup_count": 0,
-   "summary": "중동 우려 재발과 연준 의사록 주시 속에서 증시는 개장 전 하락했다."
-  },
-  {
-   "title": "Samsung Q3 2026 earnings: $80 billion record profit forecast",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYUZYdDRkY3pDOEFqWFRIaWxQenBOU3JGalRDb1RWYXhHOWI4UVFvbU5hVTF0V25fUVBFTmZDWDE3MGN3My1LVUtGLTIyQVNxNy1WWHVfdXdmSTJybzJiVTdtbnNBVVQ2YVRHZlVlOWRnbm1neThVU1dKUGpHR1hEcVdLbkl2UDhYcE02SklUQndXTk9HbWNr?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T20:30:16+09:00",
-   "dup_count": 1,
-   "summary": "삼성은 2026년 3분기에 800억 달러의 사상 최대 이익을 기록할 것으로 전망된다."
-  },
-  {
-   "title": "PepsiCo cuts full-year profit forecast in Q3 2026 earnings",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUHlqTV9DWEFRSUlSS1RuQW9kTWpiM2RQaXNFOGtGTkxyVVdkc0FDVjlLQklNYlI5ekRXZWVsM2pBM0FWeWlMVk83UU0xY1VfS0g4QVlkY3ZHbm1MWmVvSkpKOUlOdkZlWHMzMHlMbjJRLUVxV3QxdHd6YUt1RFNOQkJWcFhsRVNoOGt5SUtaQjZfTkhuRDhaejZBRVFUWFk?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T20:16:35+09:00",
-   "dup_count": 1,
-   "summary": "펩시코는 2026년 3분기 실적 발표에서 연간 이익 전망치를 하향 조정했다."
-  },
-  {
-   "title": "7-Eleven Owner Reports Lower Quarterly Profit",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMmpPVlc1b2JQM0Y3X0dldGREMFBpbU02VGtTSGFGTVM4VGhJN0pTREhRTFRBQVp0czl1bWlKRWtxTHhoMHJrY1F2VVRmVlRJS1FXVURkckNPaGNTa1FLUnZGaWl0NkpyWVlpazM3bk01R2oyMUUtUG1fWGlHQnVob2ZfTTF6cTlUbzZyQzBBZkxkTThpNWE0?oc=5",
-   "source": "WSJ",
-   "published": "2026-10-08T20:16:00+09:00",
-   "dup_count": 0,
-   "summary": "세븐일레븐 모회사는 저조한 분기 순이익을 기록했다."
-  },
-  {
-   "title": "1 Stock That's Quietly Paying Investors a Monster 6% Dividend Yield",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbnhHcTlhbWRXdDJaTFh6a0RSMjhkekx5cGI3VE5oNk5oMzYwMmY5YzFobzBQX3lMUWtEXzBjc2JLUEluQ0pDX00zZnA3N0xxWTNNSU1uS2xlcGgzV1R4eExFZTZpV3RRblg3ZWZDdldmRlJabkMzWW0yUDdyNmt4b0NBSi03bXpNZkhWLUdNRmUtV3pYRFdrcg?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T20:02:00+09:00",
-   "dup_count": 0,
-   "summary": "한 종목이 투자자들에게 6%라는 엄청난 배당 수익률을 조용히 지급하고 있다."
-  },
-  {
-   "title": "Fed Minutes Show No Urgency for October Hike",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTk9UeE52MHVzR05WQU00NU5MVEZNazlHSmxKTkRXc0x3NUF0V0NVWURTVENXVUNnWEtxbC0xMzVENnQySmpRZUpiaXhKM2NLd3l4NUVvMDdqMzNDdzBpaE1tbWYtd2R1SVNqQU1WT1NFdWk4emphX1lHazF5RkMxRkdVdHR2TVhPQnhlR0hR?oc=5",
-   "source": "WSJ",
-   "published": "2026-10-08T19:55:00+09:00",
-   "dup_count": 0,
-   "summary": "연준 의사록에 따르면 10월 금리 인상에 대한 급박성은 없는 것으로 나타났다."
-  },
-  {
-   "title": "US bank investors to focus on impact of higher rates, deals outlook in Q3 earnings",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORm5UakVwcWtuYk1ZZUZtMXBqRUpGak9BUUVkSFJJZVplS1RhUVU5U3g4c3RmbHBwWVM2VHJDakR4a1FYT0NyYjJlSUNkVkM1NGZ4WExKWGtJS0R6TTN3OW9DaGlIRDJwU0ZrVEljM1ZBTEdrdGFKZ0U2YTJSYVdrdTdlemFoQk9zVlJFRDhrSkUtRHhzOXVMejFZLWU0eUxiOXdONjI4U2xnQnhvdmRmeElGZDNFeWxfRExHUF9Lbw?oc=5",
-   "source": "Reuters",
-   "published": "2026-10-08T19:53:01+09:00",
-   "dup_count": 0,
-   "summary": "미국 은행 투자자들은 3분기 실적에서 고금리와 M&A 전망의 영향을 주시할 것이다."
-  },
-  {
-   "title": "Citi names 5 top chip picks ahead of Q3 earnings",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcklzV3BrN1BNSE9IcnBwMk85Z2dRMWRMdW5iZmFNcUFGX2tPUDlwbndIeldETVJHSjlsUFpDV1lKcF80TFZsTlFjX2F6bFhxbjdSTlJBU2I4V1VRNlZhTWN6SnB4TFJ3LVpUeEJVNGFQU01sVnNGaDJNVlBiUEg5aDV2blVoblE2ZzVMQXZjSQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T19:45:34+09:00",
-   "dup_count": 0,
-   "summary": "씨티는 3분기 실적 발표를 앞두고 5개의 주요 반도체 종목을 선정했다."
-  },
-  {
-   "title": "Nvidia-Backed IPO’s Cratering Demand Sends Warning on AI Funding",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYkxVcHFodTdrTDRFTUNuZmo3bnB1VUNiWlhrN3dCaTFvNERyRUhjcmpMdE9QTDhMenRwSkFzdHJNYWE0MkZ0cS1McFNIMDJRS0lrMG1qalBMYXlOYmdvRV9qc2xuRWRtQ256WlJBTVRyYWlDdjQwMlB5S3FBdTlWMXhLQ2ZSbE90eEw1bUlvS0lrajZscG1CeWhKd1dLaVE?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-08T19:20:43+09:00",
-   "dup_count": 0,
-   "summary": "엔비디아 지원 IPO의 수요 급감은 AI 자금 조달에 경고를 보낸다."
+   "summary": "펩시코는 3분기 호실적에도 이익 전망치를 낮춘 후 주가가 소폭 상승했다."
   }
  ]
 }

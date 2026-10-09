@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-09T02:02:36.671319+09:00",
+ "updated_at": "2026-10-09T11:43:43.009708+09:00",
  "picks": [
   {
    "code": "HAE",
@@ -52,7 +52,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.883,
+   "score": 0.889,
    "note": "F7",
    "source": "딥밸류"
   },
@@ -68,13 +68,13 @@
    "source": "딥밸류"
   },
   {
-   "code": "SAM",
-   "name": "Boston Beer Company, Inc. (The)",
+   "code": "APTV",
+   "name": "Aptiv PLC",
    "market": "us",
    "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.768,
+   "universe": "SPX",
+   "sector": "Consumer Cyclical",
+   "score": 0.766,
    "note": "F8",
    "source": "딥밸류"
   }
@@ -373,7 +373,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.883,
+   "score": 0.889,
    "note": "F7",
    "rank": 1
   },
@@ -389,17 +389,6 @@
    "rank": 2
   },
   {
-   "code": "SAM",
-   "name": "Boston Beer Company, Inc. (The)",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.768,
-   "note": "F8",
-   "rank": 3
-  },
-  {
    "code": "APTV",
    "name": "Aptiv PLC",
    "market": "us",
@@ -407,6 +396,17 @@
    "universe": "SPX",
    "sector": "Consumer Cyclical",
    "score": 0.766,
+   "note": "F8",
+   "rank": 3
+  },
+  {
+   "code": "SAM",
+   "name": "Boston Beer Company, Inc. (The)",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Consumer Defensive",
+   "score": 0.76,
    "note": "F8",
    "rank": 4
   },
@@ -417,7 +417,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.743,
+   "score": 0.742,
    "note": "F7",
    "rank": 5
   },
@@ -439,7 +439,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.69,
+   "score": 0.685,
    "note": "F7",
    "rank": 7
   },
@@ -494,7 +494,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.645,
+   "score": 0.643,
    "note": "F6",
    "rank": 12
   },
@@ -505,20 +505,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.637,
+   "score": 0.633,
    "note": "F6",
    "rank": 13
-  },
-  {
-   "code": "ARDT",
-   "name": "Ardent Health, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.635,
-   "note": "F8",
-   "rank": 14
   },
   {
    "code": "DXC",
@@ -527,31 +516,20 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.63,
+   "score": 0.631,
    "note": "F6",
+   "rank": 14
+  },
+  {
+   "code": "ARDT",
+   "name": "Ardent Health, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.631,
+   "note": "F8",
    "rank": 15
-  },
-  {
-   "code": "ICFI",
-   "name": "ICF International, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.627,
-   "note": "F7",
-   "rank": 16
-  },
-  {
-   "code": "LRN",
-   "name": "Stride, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.624,
-   "note": "F6",
-   "rank": 17
   },
   {
    "code": "APP",
@@ -562,6 +540,28 @@
    "sector": "Communication Services",
    "score": 0.622,
    "note": "F9",
+   "rank": 16
+  },
+  {
+   "code": "ICFI",
+   "name": "ICF International, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.622,
+   "note": "F7",
+   "rank": 17
+  },
+  {
+   "code": "LRN",
+   "name": "Stride, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Consumer Defensive",
+   "score": 0.621,
+   "note": "F6",
    "rank": 18
   },
   {
@@ -571,7 +571,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.621,
+   "score": 0.617,
    "note": "F6",
    "rank": 19
   },
@@ -582,7 +582,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.604,
+   "score": 0.599,
    "note": "F6",
    "rank": 20
   },
@@ -593,7 +593,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.6,
+   "score": 0.598,
    "note": "F6",
    "rank": 21
   },
@@ -609,17 +609,6 @@
    "rank": 22
   },
   {
-   "code": "MNTN",
-   "name": "MNTN, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.587,
-   "note": "F7",
-   "rank": 23
-  },
-  {
    "code": "FISV",
    "name": "Fiserv, Inc.",
    "market": "us",
@@ -628,6 +617,17 @@
    "sector": "Unknown",
    "score": 0.586,
    "note": "F6",
+   "rank": 23
+  },
+  {
+   "code": "MNTN",
+   "name": "MNTN, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.584,
+   "note": "F7",
    "rank": 24
   },
   {
@@ -637,7 +637,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.577,
+   "score": 0.571,
    "note": "F6",
    "rank": 25
   },
@@ -648,7 +648,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.566,
+   "score": 0.57,
    "note": "F6",
    "rank": 26
   },
@@ -659,7 +659,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Energy",
-   "score": 0.564,
+   "score": 0.561,
    "note": "F7",
    "rank": 27
   },
@@ -670,7 +670,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.549,
+   "score": 0.548,
    "note": "F7",
    "rank": 28
   },
@@ -681,19 +681,19 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.545,
+   "score": 0.544,
    "note": "F6",
    "rank": 29
   },
   {
-   "code": "BL",
-   "name": "BlackLine, Inc.",
+   "code": "UPWK",
+   "name": "Upwork Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.533,
-   "note": "F7",
+   "sector": "Communication Services",
+   "score": 0.532,
+   "note": "F6",
    "rank": 30
   }
  ],
@@ -716,7 +716,7 @@
   },
   {
    "name": "Healthcare",
-   "count": 13,
+   "count": 12,
    "tickers": [
     "HAE",
     "PCRX",
@@ -763,15 +763,15 @@
    ]
   },
   {
-   "name": "Consumer Cyclical",
+   "name": "Consumer Defensive",
    "count": 10,
    "tickers": [
-    "SIG",
-    "APTV",
-    "TRIP",
-    "LVS",
-    "BBW",
-    "NKE"
+    "UTZ",
+    "PM",
+    "SAM",
+    "LRN",
+    "ODD",
+    "TPB"
    ],
    "strategies": [
     "딥밸류",
