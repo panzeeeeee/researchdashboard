@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-10T01:36:12.227249+09:00",
+ "updated_at": "2026-10-12T10:58:53.375700+09:00",
  "picks": [
   {
    "code": "MRNA",
@@ -41,7 +41,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.893,
+   "score": 0.88,
    "note": "F7",
    "source": "딥밸류"
   },
@@ -52,7 +52,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.792,
+   "score": 0.781,
    "note": "F8",
    "source": "딥밸류"
   },
@@ -63,7 +63,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.764,
+   "score": 0.753,
    "note": "F8",
    "source": "딥밸류"
   }
@@ -406,7 +406,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.893,
+   "score": 0.88,
    "note": "F7",
    "rank": 1
   },
@@ -417,7 +417,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.792,
+   "score": 0.781,
    "note": "F8",
    "rank": 2
   },
@@ -428,9 +428,20 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.764,
+   "score": 0.753,
    "note": "F8",
    "rank": 3
+  },
+  {
+   "code": "KROS",
+   "name": "Keros Therapeutics, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.742,
+   "note": "F6",
+   "rank": 4
   },
   {
    "code": "RHLD",
@@ -439,9 +450,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.747,
+   "score": 0.739,
    "note": "F7",
-   "rank": 4
+   "rank": 5
   },
   {
    "code": "PNR",
@@ -450,9 +461,9 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Industrials",
-   "score": 0.724,
+   "score": 0.719,
    "note": "F9",
-   "rank": 5
+   "rank": 6
   },
   {
    "code": "LVS",
@@ -461,19 +472,8 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.695,
-   "note": "F8",
-   "rank": 6
-  },
-  {
-   "code": "TRIP",
-   "name": "TripAdvisor, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Consumer Cyclical",
    "score": 0.69,
-   "note": "F7",
+   "note": "F8",
    "rank": 7
   },
   {
@@ -483,7 +483,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Healthcare",
-   "score": 0.69,
+   "score": 0.683,
    "note": "F8",
    "rank": 8
   },
@@ -499,25 +499,25 @@
    "rank": 9
   },
   {
+   "code": "TRIP",
+   "name": "TripAdvisor, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Consumer Cyclical",
+   "score": 0.68,
+   "note": "F7",
+   "rank": 10
+  },
+  {
    "code": "CARS",
    "name": "Cars.com Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.648,
+   "score": 0.639,
    "note": "F7",
-   "rank": 10
-  },
-  {
-   "code": "COLL",
-   "name": "Collegium Pharmaceutical, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.645,
-   "note": "F6",
    "rank": 11
   },
   {
@@ -532,13 +532,13 @@
    "rank": 12
   },
   {
-   "code": "DXC",
-   "name": "DXC Technology Company",
+   "code": "COLL",
+   "name": "Collegium Pharmaceutical, Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.636,
+   "sector": "Healthcare",
+   "score": 0.634,
    "note": "F6",
    "rank": 13
   },
@@ -549,31 +549,20 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.636,
+   "score": 0.632,
    "note": "F6",
    "rank": 14
   },
   {
-   "code": "JBI",
-   "name": "Janus International Group, Inc.",
+   "code": "DXC",
+   "name": "DXC Technology Company",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.623,
+   "sector": "Technology",
+   "score": 0.626,
    "note": "F6",
    "rank": 15
-  },
-  {
-   "code": "LRN",
-   "name": "Stride, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.621,
-   "note": "F6",
-   "rank": 16
   },
   {
    "code": "ICFI",
@@ -582,8 +571,19 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.62,
+   "score": 0.614,
    "note": "F7",
+   "rank": 16
+  },
+  {
+   "code": "JBI",
+   "name": "Janus International Group, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.612,
+   "note": "F6",
    "rank": 17
   },
   {
@@ -593,9 +593,20 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Unknown",
-   "score": 0.616,
+   "score": 0.61,
    "note": "F6",
    "rank": 18
+  },
+  {
+   "code": "LRN",
+   "name": "Stride, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Consumer Defensive",
+   "score": 0.609,
+   "note": "F6",
+   "rank": 19
   },
   {
    "code": "NKE",
@@ -604,9 +615,9 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.612,
+   "score": 0.6,
    "note": "F7",
-   "rank": 19
+   "rank": 20
   },
   {
    "code": "AMPH",
@@ -615,18 +626,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.598,
-   "note": "F6",
-   "rank": 20
-  },
-  {
-   "code": "BBW",
-   "name": "Build-A-Bear Workshop, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Consumer Cyclical",
-   "score": 0.598,
+   "score": 0.594,
    "note": "F6",
    "rank": 21
   },
@@ -642,15 +642,26 @@
    "rank": 22
   },
   {
+   "code": "BBW",
+   "name": "Build-A-Bear Workshop, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Consumer Cyclical",
+   "score": 0.586,
+   "note": "F6",
+   "rank": 23
+  },
+  {
    "code": "MNTN",
    "name": "MNTN, Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.58,
+   "score": 0.577,
    "note": "F7",
-   "rank": 23
+   "rank": 24
   },
   {
    "code": "ODD",
@@ -659,19 +670,8 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.572,
+   "score": 0.564,
    "note": "F6",
-   "rank": 24
-  },
-  {
-   "code": "CLB",
-   "name": "Core Laboratories Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Energy",
-   "score": 0.569,
-   "note": "F7",
    "rank": 25
   },
   {
@@ -681,9 +681,20 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.569,
+   "score": 0.56,
    "note": "F6",
    "rank": 26
+  },
+  {
+   "code": "CLB",
+   "name": "Core Laboratories Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Energy",
+   "score": 0.559,
+   "note": "F7",
+   "rank": 27
   },
   {
    "code": "TRUP",
@@ -692,9 +703,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.551,
+   "score": 0.541,
    "note": "F7",
-   "rank": 27
+   "rank": 28
   },
   {
    "code": "INTU",
@@ -703,9 +714,9 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Technology",
-   "score": 0.54,
+   "score": 0.536,
    "note": "F7",
-   "rank": 28
+   "rank": 29
   },
   {
    "code": "CXM",
@@ -714,18 +725,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.539,
-   "note": "F6",
-   "rank": 29
-  },
-  {
-   "code": "UPWK",
-   "name": "Upwork Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Communication Services",
-   "score": 0.535,
+   "score": 0.529,
    "note": "F6",
    "rank": 30
   }
@@ -733,7 +733,7 @@
  "sectors": [
   {
    "name": "Technology",
-   "count": 26,
+   "count": 27,
    "tickers": [
     "AMPL",
     "PAYS",
@@ -796,15 +796,15 @@
    ]
   },
   {
-   "name": "Consumer Cyclical",
+   "name": "Consumer Defensive",
    "count": 10,
    "tickers": [
-    "SIG",
-    "APTV",
-    "LVS",
-    "TRIP",
-    "NKE",
-    "BBW"
+    "UTZ",
+    "PM",
+    "SAM",
+    "LRN",
+    "ODD",
+    "STZ"
    ],
    "strategies": [
     "딥밸류",

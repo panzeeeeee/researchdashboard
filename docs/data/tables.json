@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-10T01:39:39.274068+09:00",
+ "updated_at": "2026-10-12T11:01:54.925821+09:00",
  "breakout": [
   {
    "code": "MRNA",
@@ -268,56 +268,71 @@
    "name": "Yelp Inc.",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.893,
-   "value": 0.947,
+   "score": 0.88,
+   "value": 0.924,
    "turn": 0.828,
    "fscore": 7,
-   "drawdown": 60.8,
+   "drawdown": 61.6,
    "below200": 247,
    "earn_yld": 17.6,
    "triggered": true,
-   "why": "빅테크의 지역 검색 잠식과 광고 성장 둔화 우려 때문."
+   "why": "전통적 지역 광고 수요 감소와 경쟁 심화"
   },
   {
    "code": "APTV",
    "name": "Aptiv PLC",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.792,
-   "value": 0.915,
-   "turn": 0.641,
+   "score": 0.781,
+   "value": 0.908,
+   "turn": 0.626,
    "fscore": 8,
    "drawdown": 55.7,
    "below200": 157,
    "earn_yld": 10.0,
    "triggered": true,
-   "why": "전기차 전환 속도 조절과 전장 부품 마진 정체 우려 때문."
+   "why": "전동화 전환 지연 및 글로벌 완성차 부진"
   },
   {
    "code": "SAM",
    "name": "Boston Beer Company, Inc. (The)",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.764,
-   "value": 0.702,
-   "turn": 0.839,
+   "score": 0.753,
+   "value": 0.686,
+   "turn": 0.835,
    "fscore": 8,
-   "drawdown": 54.9,
+   "drawdown": 54.6,
    "below200": 181,
    "earn_yld": 8.5,
    "triggered": true,
-   "why": "수제맥주 수요 감소와 하드셀츠어 시장 경쟁 심화 때문."
+   "why": "수제맥주 시장 정체와 하드셀츠어 수요 둔화"
+  },
+  {
+   "code": "KROS",
+   "name": "Keros Therapeutics, Inc.",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.742,
+   "value": 0.984,
+   "turn": 0.446,
+   "fscore": 6,
+   "drawdown": 83.0,
+   "below200": 160,
+   "earn_yld": 42889.3,
+   "triggered": true,
+   "why": "확인 필요"
   },
   {
    "code": "RHLD",
    "name": "Resolute Holdings Management",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.747,
-   "value": 0.648,
+   "score": 0.739,
+   "value": 0.634,
    "turn": 0.868,
    "fscore": 7,
-   "drawdown": 48.7,
+   "drawdown": 47.8,
    "below200": 109,
    "earn_yld": 16.4,
    "triggered": true,
@@ -328,60 +343,45 @@
    "name": "Pentair plc.",
    "universe": "SPX",
    "sector": "Industrials",
-   "score": 0.724,
-   "value": 0.692,
-   "turn": 0.764,
+   "score": 0.719,
+   "value": 0.684,
+   "turn": 0.762,
    "fscore": 9,
-   "drawdown": 52.9,
+   "drawdown": 52.8,
    "below200": 174,
    "earn_yld": 7.8,
    "triggered": true,
-   "why": "주택 및 상업용 건설 경기 둔화와 수요 정체 때문."
+   "why": "주택 및 산업용 수처리 장비 수요 둔화"
   },
   {
    "code": "LVS",
    "name": "Las Vegas Sands Corp.",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.695,
-   "value": 0.652,
-   "turn": 0.748,
+   "score": 0.69,
+   "value": 0.651,
+   "turn": 0.737,
    "fscore": 8,
-   "drawdown": 47.1,
+   "drawdown": 47.0,
    "below200": 146,
    "earn_yld": 8.6,
    "triggered": true,
-   "why": "마카오 카지노 시장의 회복 지연과 소비 심리 위축 때문."
-  },
-  {
-   "code": "TRIP",
-   "name": "TripAdvisor, Inc.",
-   "universe": "R2K",
-   "sector": "Consumer Cyclical",
-   "score": 0.69,
-   "value": 0.774,
-   "turn": 0.587,
-   "fscore": 7,
-   "drawdown": 69.6,
-   "below200": 208,
-   "earn_yld": 11.3,
-   "triggered": true,
-   "why": "온라인 여행 플랫폼 간 경쟁 심화와 트래픽 성장 둔화."
+   "why": "마카오 시장 회복 지연과 마진 압박"
   },
   {
    "code": "ZTS",
    "name": "Zoetis Inc.",
    "universe": "SPX",
    "sector": "Healthcare",
-   "score": 0.69,
-   "value": 0.689,
-   "turn": 0.691,
+   "score": 0.683,
+   "value": 0.68,
+   "turn": 0.687,
    "fscore": 8,
-   "drawdown": 61.5,
+   "drawdown": 61.2,
    "below200": 252,
    "earn_yld": 9.6,
    "triggered": true,
-   "why": "반려동물용 의약품 성장 둔화 우려와 특허 만료 이슈."
+   "why": "반려동물용 의약품 성장세 둔화 우려"
   },
   {
    "code": "INTU",
@@ -392,11 +392,26 @@
    "value": 0.737,
    "turn": 0.615,
    "fscore": 7,
-   "drawdown": 62.0,
+   "drawdown": 61.9,
    "below200": 244,
    "earn_yld": 7.0,
    "triggered": true,
-   "why": "고가 소프트웨어 수요 둔화 및 성장주 전반의 밸류에이션 조정."
+   "why": "고가 소프트웨어 구독 성장 둔화 우려"
+  },
+  {
+   "code": "TRIP",
+   "name": "TripAdvisor, Inc.",
+   "universe": "R2K",
+   "sector": "Consumer Cyclical",
+   "score": 0.68,
+   "value": 0.756,
+   "turn": 0.586,
+   "fscore": 7,
+   "drawdown": 69.6,
+   "below200": 208,
+   "earn_yld": 11.3,
+   "triggered": true,
+   "why": "온라인 여행 플랫폼 간 경쟁 심화"
   },
   {
    "code": "CPRT",
@@ -407,56 +422,41 @@
    "value": 0.762,
    "turn": 0.565,
    "fscore": 7,
-   "drawdown": 57.0,
+   "drawdown": 57.2,
    "below200": 252,
    "earn_yld": 8.4,
    "triggered": false,
-   "why": "중고차 가격 하락과 사고 차량 처리 물량 감소 때문."
+   "why": "중고차 가격 하락 및 물류 비용 증가"
   },
   {
    "code": "UPBD",
    "name": "Upbound Group, Inc.",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.654,
-   "value": 0.677,
-   "turn": 0.627,
+   "score": 0.643,
+   "value": 0.661,
+   "turn": 0.622,
    "fscore": 7,
-   "drawdown": 52.2,
+   "drawdown": 52.1,
    "below200": 196,
    "earn_yld": 7.9,
    "triggered": false,
-   "why": "소비재 렌탈 수요 둔화 및 연체율 상승 우려 때문."
+   "why": "렌탈 및 리스 수요 위축 우려"
   },
   {
    "code": "CARS",
    "name": "Cars.com Inc.",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.648,
-   "value": 0.615,
-   "turn": 0.688,
+   "score": 0.639,
+   "value": 0.601,
+   "turn": 0.685,
    "fscore": 7,
-   "drawdown": 53.2,
+   "drawdown": 53.1,
    "below200": 154,
    "earn_yld": 7.0,
    "triggered": true,
-   "why": "온라인 자동차 플랫폼 경쟁 심화와 광고 수익 정체 때문."
-  },
-  {
-   "code": "COLL",
-   "name": "Collegium Pharmaceutical, Inc.",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.645,
-   "value": 0.841,
-   "turn": 0.405,
-   "fscore": 6,
-   "drawdown": 55.3,
-   "below200": 152,
-   "earn_yld": 16.9,
-   "triggered": true,
-   "why": "주력 의약품 특허 만료 우려 및 제네릭 경쟁 심화 때문."
+   "why": "온라인 자동차 플랫폼 경쟁 심화"
   },
   {
    "code": "NFLX",
@@ -467,101 +467,101 @@
    "value": 0.6,
    "turn": 0.681,
    "fscore": 7,
-   "drawdown": 47.1,
+   "drawdown": 47.5,
    "below200": 236,
    "earn_yld": 3.6,
    "triggered": true,
-   "why": "가입자 성장세 둔화 및 콘텐츠 투자 비용 증가 우려 때문."
+   "why": "가입자 성장 둔화 및 콘텐츠 투자 비용 부담"
+  },
+  {
+   "code": "COLL",
+   "name": "Collegium Pharmaceutical, Inc.",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.634,
+   "value": 0.822,
+   "turn": 0.405,
+   "fscore": 6,
+   "drawdown": 55.7,
+   "below200": 152,
+   "earn_yld": 16.9,
+   "triggered": true,
+   "why": "핵심 제약 제품 매출 성장 둔화"
   },
   {
    "code": "APOG",
    "name": "Apogee Enterprises, Inc.",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.636,
-   "value": 0.648,
-   "turn": 0.622,
+   "score": 0.632,
+   "value": 0.639,
+   "turn": 0.623,
    "fscore": 6,
-   "drawdown": 51.9,
+   "drawdown": 51.3,
    "below200": 162,
    "earn_yld": 11.2,
    "triggered": true,
-   "why": "상업용 건설 경기 둔화에 따른 유리 및 건축자재 수요 감소."
+   "why": "건설 및 건축 자재 수요 둔화"
   },
   {
    "code": "DXC",
    "name": "DXC Technology Company",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.636,
-   "value": 0.847,
-   "turn": 0.379,
+   "score": 0.626,
+   "value": 0.827,
+   "turn": 0.38,
    "fscore": 6,
-   "drawdown": 51.0,
+   "drawdown": 50.5,
    "below200": 209,
    "earn_yld": 10.3,
    "triggered": true,
-   "why": "IT 서비스 수요 둔화와 구조조정 비용 발생 때문."
-  },
-  {
-   "code": "JBI",
-   "name": "Janus International Group, Inc.",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.623,
-   "value": 0.794,
-   "turn": 0.414,
-   "fscore": 6,
-   "drawdown": 72.8,
-   "below200": 232,
-   "earn_yld": 16.0,
-   "triggered": true,
-   "why": "확인 필요"
-  },
-  {
-   "code": "LRN",
-   "name": "Stride, Inc.",
-   "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.621,
-   "value": 0.72,
-   "turn": 0.5,
-   "fscore": 6,
-   "drawdown": 49.9,
-   "below200": 205,
-   "earn_yld": 13.0,
-   "triggered": true,
-   "why": "확인 필요"
+   "why": "IT 컨설팅 및 아웃소싱 수요 부진"
   },
   {
    "code": "ICFI",
    "name": "ICF International, Inc.",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.62,
-   "value": 0.458,
-   "turn": 0.818,
+   "score": 0.614,
+   "value": 0.45,
+   "turn": 0.815,
    "fscore": 7,
-   "drawdown": 49.5,
+   "drawdown": 49.6,
    "below200": 167,
    "earn_yld": 6.7,
    "triggered": true,
-   "why": "정부 예산 축소로 인한 컨설팅 수주 감소 우려 때문."
+   "why": "정부 계약 및 컨설팅 예산 집행 지연"
+  },
+  {
+   "code": "JBI",
+   "name": "Janus International Group, Inc.",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.612,
+   "value": 0.776,
+   "turn": 0.411,
+   "fscore": 6,
+   "drawdown": 72.9,
+   "below200": 232,
+   "earn_yld": 16.0,
+   "triggered": true,
+   "why": "보관 및 출입문 솔루션 수요 둔화"
   },
   {
    "code": "FISV",
    "name": "Fiserv, Inc.",
    "universe": "SPX",
    "sector": "Unknown",
-   "score": 0.616,
-   "value": 0.903,
-   "turn": 0.266,
+   "score": 0.61,
+   "value": 0.908,
+   "turn": 0.245,
    "fscore": 6,
-   "drawdown": 80.9,
+   "drawdown": 80.8,
    "below200": 252,
    "earn_yld": 10.6,
    "triggered": true,
-   "why": "핀테크 경쟁 심화와 전통 결제 시장 성장 둔화 우려 때문."
+   "why": "확인 필요"
   }
  ],
  "funnel": {
@@ -629,11 +629,11 @@
  "rejects": [
   [
    "not_drawn_down_enough",
-   1608
+   1613
   ],
   [
    "illiquid",
-   205
+   198
   ],
   [
    "price_too_low",
@@ -641,7 +641,7 @@
   ],
   [
    "not_neglected_long_enough",
-   129
+   128
   ],
   [
    "no_price_history",
@@ -656,6 +656,10 @@
    28
   ],
   [
+   "structural_decline",
+   19
+  ],
+  [
    "leverage",
    18
   ],
@@ -664,16 +668,12 @@
    17
   ],
   [
-   "structural_decline",
-   17
+   "mcap_too_small",
+   14
   ],
   [
    "interest_coverage",
    14
-  ],
-  [
-   "mcap_too_small",
-   13
   ],
   [
    "leverage|liquidity",
@@ -692,11 +692,11 @@
    9
   ],
   [
-   "interest_coverage|leverage|liquidity",
-   6
+   "leverage|structural_decline",
+   7
   ],
   [
-   "leverage|structural_decline",
+   "interest_coverage|leverage|liquidity",
    6
   ],
   [
@@ -704,19 +704,15 @@
    6
   ],
   [
-   "dilution|structural_decline",
-   5
-  ],
-  [
    "interest_coverage|negative_equity|dilution",
    5
   ],
   [
-   "interest_coverage|liquidity|dilution",
-   3
+   "dilution|structural_decline",
+   5
   ],
   [
-   "negative_equity",
+   "interest_coverage|liquidity|dilution",
    3
   ],
   [
@@ -725,6 +721,10 @@
   ],
   [
    "leverage|liquidity|negative_equity",
+   3
+  ],
+  [
+   "negative_equity",
    3
   ],
   [
@@ -740,6 +740,10 @@
    2
   ],
   [
+   "interest_coverage|leverage|liquidity|negative_equity|dilution",
+   1
+  ],
+  [
    "interest_coverage|dilution|structural_decline",
    1
   ],
@@ -748,7 +752,7 @@
    1
   ],
   [
-   "interest_coverage|leverage|liquidity|negative_equity|dilution",
+   "interest_coverage|leverage|liquidity|dilution|structural_decline",
    1
   ],
   [
@@ -756,19 +760,15 @@
    1
   ],
   [
-   "interest_coverage|leverage|liquidity|dilution|structural_decline",
-   1
-  ],
-  [
    "interest_coverage|negative_equity|structural_decline",
    1
   ],
   [
-   "leverage|dilution",
+   "leverage|liquidity|dilution",
    1
   ],
   [
-   "leverage|liquidity|dilution",
+   "leverage|dilution",
    1
   ],
   [
@@ -780,23 +780,11 @@
    1
   ],
   [
-   "liquidity|negative_equity|dilution",
-   1
-  ],
-  [
    "liquidity|negative_equity",
    1
   ]
  ],
  "history": [
-  {
-   "date": "2026-09-16",
-   "highs": 40,
-   "gate3": 1,
-   "buyable": 0,
-   "dv_candidates": 20,
-   "dv_triggered": 20
-  },
   {
    "date": "2026-09-17",
    "highs": 55,
@@ -943,6 +931,14 @@
   },
   {
    "date": "2026-10-10",
+   "highs": 42,
+   "gate3": 2,
+   "buyable": 0,
+   "dv_candidates": 20,
+   "dv_triggered": 18
+  },
+  {
+   "date": "2026-10-12",
    "highs": 42,
    "gate3": 2,
    "buyable": 0,
