@@ -1,323 +1,151 @@
 {
- "updated_at": "2026-10-15T23:37:50.607578+09:00",
+ "updated_at": "2026-10-16T10:03:03.879054+09:00",
  "event_notes": {
-  "why": "엔비디아와 TSMC가 하락하고 AI 관련주 매도가 심화되면서 기술 섹터가 2.13% 하락했고, 러시아의 우크라이나 공습에 따른 유가 상승과 호르무즈 해협의 해운 리스크가 겹치면서 에너지 섹터도 1.38% 하락한 것으로 보인다. 반면 9월 도매 물가와 인플레이션이 4년 만에 최고치를 기록하며 금리 인상 가능성이 제기되었음에도 불구하고, 시장의 위험 회피 심리가 작용하면서 헬스케어와 필수소비재 등 방어적 성격의 섹터는 각각 2.43%와 2.37% 상승한 것으로 나타났다.",
-  "watch": "AI 반도체 수요 둔화 우려와 기술주 매도세가 진정될지 여부와 함께, 도매 물가 상승에 따른 추가 금리 인상 가능성이 향후 시장 방향성을 결정할 주요 변수가 될 것으로 보인다."
+  "why": "엔비디아 주도의 기술주 하락과 인공지능(AI) 관련주 매도세가 글로벌 기술주 전반에 타격을 주면서 기술주와 통신서비스 등이 부진했던 것으로 보인다. 반면 트레이더들이 인공지능에서 헬스케어로 자산을 이동시키고 9월 인플레이션 지표 발표가 나온 가운데, 헬스케어와 소재, 경기소비재 등의 섹터는 상승 마감했다.",
+  "watch": "기술주의 매도세가 진정될지 여부와 함께, 연방준비제의 추가 금리 인상 가능성에 영향을 미칠 물가 및 경제 지표들을 계속 지켜봐야 한다."
  },
  "clusters": [
   {
-   "title": "기타 개별 기업 뉴스 및 시장 분석",
-   "sources": [
-    "CNBC",
-    "MarketWatch",
-    "Reuters",
-    "WSJ",
-    "Yahoo Finance"
-   ],
-   "count": 12,
-   "items": [
-    {
-     "title": "Jim Cramer's top 10 things to watch in the stock market Thursday",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcjd5UEZqYXcxc29YTU9jaFk5WTFuZ2tGaXdjMkc3WF9lLThrOXNQQl93cFNHZVctSnF5WjZ6UUxoa3FFSFZiTjZpcDFGTWZ0VGxGOEpoNkpMNFpIRGVsSldUZ3Y3MHBTM29jTjgxcF9IZXVFamhQa0dtR05SMXNnbV9DVUdMSGh2WnFERWNGcnpXdEI2QWs1ZkZJb3c2UUVjY0dFZW1HRW03clZQZksyRTZsNkM?oc=5",
-     "source": "CNBC",
-     "published": "2026-10-15T21:54:30+09:00",
-     "dup_count": 0,
-     "summary": "Jim Cramer가 목요일 주식 시장에서 주목해야 할 10가지 핵심 포인트를 꼽았다."
-    },
-    {
-     "title": "Seagate Could Have a Long Runway as Data Storage Demand Explodes",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVlBoX0ljQWZTdW5RcGdicVFVYXlPZWVrbXhFaklFM05sYkQ5WFhkYUhqREVZdVNDRGRGOE5iQnNVX2NWYUV4aDl0VkdxbEUtbEJHbXFtaFNoRVowSDMzazZod1F1YlBfVHktc2NUZ0xjM2NOaTVZbTlpcmZFN2VZOVppVUkwdy0tU1VkX2dHc3d5LUVnSlZEUzA5OA?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T21:45:10+09:00",
-     "dup_count": 0,
-     "summary": "데이터 저장 수요 급증으로 Seagate가 장기 성장세를 누릴 수 있다는 분석이다."
-    },
-    {
-     "title": "Bank of New York Logs Higher Profit But Flags Market Volatility",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTS1LZU1VbWo1OTFQa3VPZUx1RkZCRGo1NnFfaFVYVDRwOXY1WWJFS1pOaWNNOHNlWFExTFdOakhqR2xRVWNmX0RiRXVIT0s2WGt1WWhxMXZzeEpvTm0wdEduSXV5UlNRUnZCbE1PaTh6a01MekxZWTM1d3dBbDZMdS1PUDJ5aG1hSTRMRVpJZHhybzZQWmc0WF93UQ?oc=5",
-     "source": "WSJ",
-     "published": "2026-10-15T21:36:00+09:00",
-     "dup_count": 0,
-     "summary": "Bank of New York은 이익 증가에도 시장 변동성에 대한 우려를 표명했다."
-    },
-    {
-     "title": "What Wall Street may be forgetting about Meta's AI business",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbkVjRkdRdVp2TUFaMmczY2dJaC00d1lUcnpZQ1RFN29hS0V5NHhmaGRGOGhZeDhocjFNM0FjeXMzb0JVV01HcGM1QUt3RDV1NGdpZGRSNllVWENhdUE4NG14UUV2NEdVa0tjWV9YeDFBR1JCUlJlbktFbzVUSHpPSkFpYkkyVWo2WUxJdnJicWRuMHBZTGdVQzFjVElVZGpNbk1GRkg2SGVETXBhUVJrLWs1aUJKTkVjdWJmdVpEWQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T21:34:22+09:00",
-     "dup_count": 0,
-     "summary": "월스트리트가 Meta의 AI 사업에서 간과하고 있을 수 있는 핵심 가치이다."
-    },
-    {
-     "title": "There’s a ‘monstrous bull market’ developing under the surface of the S&P 500. This hedge-fund manager tells you where it’s at.",
-     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOOThvUE9ES3JtNksySS1QMkpCN2hzS3lHdzZkNDZFYlV2akZCbnJSYU8yX2xtRG9KSmo3aFJ6UVBZRVBGRjJBTmlQc1NBVGhmWmlmdzZza0VrQ1R4TEt2cUFNNWotWVYtSGozQjl6cDJ0V0MycFp2MTIzeDIwNGRrU1dDQmh1cVI1bmJTeTBKWU1lejlWX2JmbDFJMzhhaEd3aVZleTV3S1JfMmo2Vm15dS1UQ0xobUxjeXgxOGJlNUl0Q3hpNWQ2eFRKS3RkNTl5M2l6MUdwMG9MWmlLX2hUMXVNZ0R3OVZiTFkycGo5MmxNdWRacllJ?oc=5",
-     "source": "MarketWatch",
-     "published": "2026-10-15T21:08:00+09:00",
-     "dup_count": 0,
-     "summary": "S&P 500 이면에서 전개되는 거대한 강세장의 위치를 한 헤지펀드 매니저가 전했다."
-    },
-    {
-     "title": "Kimberly-Clark Forecasts Quarterly Sales Decline Following Social-Media Firestorm in China",
-     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNYUxYbHoxeUh3Y01SbjRKOHpwR3RELXc5d2dBOUpaZUJrNFNaUS1MeC1HcGxIR0JzQXJiY2hKUDd4eWJlVW9wRjdYUVlveHcwWFNIVXd0RENhb1VscVMzSDBzRFdQcHVhUTBaNzBjUlB4WWZjUDlzUFdVaTZxSllpeW1ZdDRRaXVFb0o5OWZ4UUdCNk9GS25OVE1HcGI3MFA3Wng1aHk2Mkp2TVFxaFlHZGNRZWZuZDh5eUNJWVpOVnRTRWZWZGNRZUZZemJVRXdr?oc=5",
-     "source": "WSJ",
-     "published": "2026-10-15T21:05:00+09:00",
-     "dup_count": 0,
-     "summary": "중국 소셜미디어 논란 여파로 Kimberly-Clark의 분기 매출 감소가 전망된다."
-    },
-    {
-     "title": "If I Can Only Own Alphabet or Amazon for The Next 5 Years, I’m Choosing This One",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNjJLaTN5bndkcGVNMkpYZ25QeGQxVUtJRGM0NVFMNDA1RkFTUUwyc05rU2FGQ3dSam9tUmtQdHIzQllLZFozS2FyeUJjdnFlNVN1Y0ktM1pLeGQwa3RhYXR1dWtkdU9oZzgwcVdTaXBwRHhVZmFibTRrQTA3WXBtZ0pGaVc2N2lpb0pMdHNEbUJJV3V6OTFXYlJB?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T20:15:19+09:00",
-     "dup_count": 0,
-     "summary": "향후 5년간 Alphabet과 Amazon 중 하나만 소유할 수 있다면 선택할 기업이다."
-    },
-    {
-     "title": "S&P 500's march to 8,000 hinges on 'very, very strong' third quarter",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSFZNem55OW4xLXhGSWdlV2JWSmVwYnJxdTF4TVlGSGZZUENHR2hud0FVR0F4SmZodHdocFgtUXR4RVdEMDY0TDRoZjRRcFdLN0NBakFwbS1iSUJLeGFzMTNfVkQ4MjRLOWJqNmRKN1ZoNVp3OWU2Qzl3VzZreDdZNWpDODVuRjJSMEZJ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T19:28:08+09:00",
-     "dup_count": 0,
-     "summary": "S&P 500의 8,000선 돌파는 매우 강력한 3분기 실적에 달려 있다."
-    },
-    {
-     "title": "Rising Rates Threaten Wall Street’s Golden Goose in Trading",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOS1FoNS1HT2FMZ3QtNVlILUJYTjhPMXoyYUEzRTg1Yy1CaEgwOHVVNkNsYjMwWTY3SzQ1cVBEamJ0RXh1MUJ4UWZaS2R4MVZrVmx2R0FleExRRUU4MzgzV1hQWXpMTDNGek84cXJPMXdTOFhhdzhyNXVDazY5cTN2WVVUdEplM2pvNmVyWk5IN3ppRTBIZHR6Z3FSNnpZMjhiV1VweXp3?oc=5",
-     "source": "WSJ",
-     "published": "2026-10-15T18:30:00+09:00",
-     "dup_count": 0,
-     "summary": "금리 상승이 월스트리트 트레이딩의 핵심 수익원을 위협하고 있다."
-    },
-    {
-     "title": "U.K. Economy Defies Gloomy Predictions With Help From AI",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQmE5VndlSVB3NGFIb3FEelExSFI4dFdOckJ6a0lvWTdiTlY4OXhBT2xzbllyQUx3MmNzV1dSQjhaTkV6M3l6X1lBcFBhYnF5VXBmTW55NWMyVEtEQ1RLR3BRRjdkZEE0YmYwdDlnbF9KTnJGcFVaM09oTnhvMzA1eE53V1lwLVRyd0swTzd2S0ZTYmM?oc=5",
-     "source": "WSJ",
-     "published": "2026-10-15T18:26:00+09:00",
-     "dup_count": 0,
-     "summary": "AI의 지원 덕분에 영국 경제가 비관적 전망을 극복하고 있다."
-    },
-    {
-     "title": "Antofagasta Shares Slump on Weak Copper Outlook",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBCamp5Q18xbUJEemt1bkZhU01xTTJUaklackRlb0d6RHRNbFNSeWVyMDRubVNIU3ZmMkFPc2lWMW90TDFjX0c2UlVhV2ZyV0pBZExwRUVpZEUxc0J5OHhXdU1CdEVpemE2b1ZaWFR2ZHAyOEZ5YndUUW81aEUwZw?oc=5",
-     "source": "WSJ",
-     "published": "2026-10-15T18:00:00+09:00",
-     "dup_count": 0,
-     "summary": "구리 전망 악화로 Antofagasta 주가가 하락했다."
-    },
-    {
-     "title": "TomTom shares fall as revenue miss outweighs higher margin forecast",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPN05TQnNkY3ZzSzJNdzFMRGFQdjdJREJ2UzJtalo2emE0Y1c1cTVTZTQzTGVrX3VqSFF3QnZBZFFLNUF4OHNzRDctZUJTU3BxeXdTRmNZYUhFZm9VYUNBWERqa3RGbHcwWXExbFYtcjF1U3gxUTE2Q3R5SmNHTnRKVHNKajBBaDRicEZsNnRjMkhQdERNMGEtSkpnaFFFRm8xUml4dTdONTc0ZDBzMk14VnVUcTcyU2lva3dSajZFLVIwb0k?oc=5",
-     "source": "Reuters",
-     "published": "2026-10-15T14:13:00+09:00",
-     "dup_count": 0,
-     "summary": "TomTom은 마익 상승 전망에도 매출 부진으로 주가가 하락했다."
-    }
-   ]
-  },
-  {
-   "title": "AI 및 기술주 약세와 나스닥 하락",
+   "title": "AI 관련주 하락 및 증시 동향",
    "sources": [
     "Reuters",
     "Yahoo Finance"
    ],
-   "count": 8,
+   "count": 6,
    "items": [
     {
-     "title": "Nasdaq slides to near one-month low as AI rout deepens",
+     "title": "S&P 500 ends higher as traders shift from AI to healthcare",
      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZTRob0s4X3hCYkZQZzFfeUxuU1ZlN0tPT2hvelcwcW9QdU9yeVN1ZUZfR253ZUNoN3NjUlRHbG9aS0wzMmVGLUpNOVcyTUlHOWo3WERDX1psTXlmWGthb0JPN19GMGxnT2pkYkRWQ0R1THEyODhoWnZTd1NIQjdZbm5fLXNYb0M2c1g2YU02TENSSi1xSFZMQzRuUTc?oc=5",
      "source": "Reuters",
-     "published": "2026-10-15T23:23:07+09:00",
-     "dup_count": 2,
-     "summary": "AI 관련주 약세로 나스닥이 약 한 달 만에 최저치로 하락했다."
+     "published": "2026-10-16T08:24:51+09:00",
+     "dup_count": 3,
+     "summary": "S&P 500은 투자자들이 AI에서 헬스케어로 이동하며 상승 마감했다."
     },
     {
      "title": "Nvidia leads chip stocks lower as AI trade takes",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOHlfaC1zS3lncTY1VlI4b1lqX0F3UVNNeEV2d09iWHY4NE54dnNmeTctVHRLaEFhSzNDUU1KZC1FQWFOM1MtdWJxU29FNjdzMEk4Nzc2ck9NNDJoR29uOTE2blFHWGc0Sm50VkFHdG43NEUzS2hvbGwySkJjV3o5S1AtNEx2Q2NwN3ByeGZuVW1jWUQ3OFZEUUp6T3dRVWppUWVJSFF6RWxDOGdfeWk0bHVONng?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQY1lhcFhDalVzMzVWSUVsUWo2ZWtLYjdpR3dQUXJWWDc1UUFONzJUM3ZvazhJWFhxU0dST2R4cTgtaUdoTGx1MzFjOUU5U09ma3c4d0JNc3MzLWZxSGVOUVFTSFRxMWFRUEgxR1NCR2lWUHc5MFZZQmRJM1d1dFNZWWFkRnk5a0VWbXphUk90TWtUUktraE5lczFfLVVSbFBoRnBHYWMyY2VHSXFKd3p4VkZ6dW9NYUdwVTNHdTF0T0Y3SkVxbDhNQ2NTc2F4SnVrVGtReEt3?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-10-15T22:42:37+09:00",
-     "dup_count": 1,
-     "summary": "AI 투자 열기가 식으면서 Nvidia가 반도체주 하락을 주도했다."
+     "published": "2026-10-16T05:33:00+09:00",
+     "dup_count": 2,
+     "summary": "AI 투자 열풍이 식으면서 엔비디아가 반도체주 하락을 주도했다."
     },
     {
-     "title": "Stocks and dollar slide as tech rout deepens",
+     "title": "Stock Market Today (Oct. 15, 2026): Dow edges higher as tech sell-off pivots",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOOGw4VXVWdHRkWnlJQjF6cVA2Q19BNXV5aFAzYjVxZmNZOEROblpMM3N0WTJNQ0ZGWWMwYllQRkUtZnFLV3IyWnVCNklxWllJNFV1b21uUkZ3b0hsVGRiQmZFdUU3Q185Z2JfeU9KVTE4cmwyd0RtTGM4ME9sQUJYMjVhak5CTDA0VW9feXdpdzlXY1lZ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-15T23:04:29+09:00",
+     "dup_count": 2,
+     "summary": "기술주 매도세가 전환되며 10월 15일 다우지수는 소폭 상승했다."
+    },
+    {
+     "title": "Stock Market Midday, Oct. 15: Markets Mixed as AI Sell-Off Continues",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTW4yczRDRm5WMXQwMWlpV1p4Ti1xVG51cE9wVWNPbkc4X2hTVEFra2MtQUthbG90bFM0THJfbzVLTjRrek82UlQ4dVBwUVhsUUhHQ3ZsNGV5SmpiOEpzWS00dkMwTERybG5RTExTM3RKVkNJNTNSY01jcndYY1ktRWMxZXFLQnU5NWRUdzFzMGpjVDBZVEE?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T01:55:00+09:00",
+     "dup_count": 1,
+     "summary": "10월 15일 장중 증시는 AI 매도세 지속으로 혼조세를 보였다."
+    },
+    {
+     "title": "Global stocks flat as AI and rate fears hit tech",
      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeTRzUk5SRExJbm1EUXdJWG9JaXdKSEdtX29rb0k3ZkRTRFZIeHRxb0xMcm00eUF0NzhCS1owVkp4OWQ2eHF2dWl3aVpPak85emN3eGdqX1hEOW0zNjVlTWs3eGVUSlFUME1fVHVXRTFtNEZ4aVBZS1pSQmJnOVdHZTNZQkQwMnowenVWaW9PVFZnSG5i?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-10-15T22:45:36+09:00",
+     "published": "2026-10-16T06:19:22+09:00",
      "dup_count": 0,
-     "summary": "기술주 약세가 심화되면서 주가와 달러화가 동반 하락했다."
+     "summary": "AI와 금리 우려가 기술주를 타격하며 글로벌 증시는 보합세를 보였다."
     },
     {
-     "title": "Wall Street is 'tiring of the Bank of Nvidia, the Bank of AMD and the Bank of Broadcom': Baird's Mortonson",
-     "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxORkdyc3Y4YW9yMy16ZURxa09KMnc4Yk9YelpKVHpmNU5EcEpBODJKNXJiOE9jU1hkMnFFckNRbWJoVHRZSDNfOVg2WHpBdFlTSHdYV2VUcmxYeGUtR2Z1Zk95X09NVF84dFNaWHM1VWJIVDJud0ZJUmRSMFpfMl9lYkJCOWNUa1VRajQwQlNOU0gteml2Vlk4ZVQyNE0xX2cxOG5nQU82eW1iUXRBcnVBZEdxRjZsanlhQ2JsbW1jdkp1bmN6blJVYlRSYzMzbTRBMVJfYl9iRy1XWFcxeEJYRmxxLUxMalFyRXk1RkpqSQ?oc=5",
+     "title": "AMD, NVDA, Other Chip Stocks Extend Rout Amid AI Debt Concerns — Saxo Says Financing Squeeze Could Hit Supply Chain",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVjdKRG5kci1iQkJoSWEtdDVBQVE0UDBVMjB0VkR4NDVJTlNkLUhBSG5mUFd1enRxNkF2Yy1RYmhMZXZRaTNPb25sT25NZks5ODZKSDlUbXpQRC1odUtwOEhXTTdQdDdYbXgyUklCUnh6WkNUVm1CaWJkamJqME5hUGczczMxaFdBT05iNzRrZmgxSGlHT2c?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-10-15T21:12:35+09:00",
+     "published": "2026-10-16T00:28:26+09:00",
      "dup_count": 0,
-     "summary": "월스트리트는 Nvidia, AMD, Broadcom에 대한 과도한 의존에 피로감을 느끼고 있다."
-    },
-    {
-     "title": "Big Tech Will Spend $745 Billion on AI This Year. These Stocks Get Paid on Every Dollar.",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWlVkSnRFWXBxa2dZNVBDTXlvaTZ3ODZ2SmxXcjFWR2hIMVo3R0xzV195VV95dUoteFV6UGNTUThrZFlITzBxZDUwRXZTVmYzcXpwRURSY1p5VGk2Z3lkd256clMxY1dGUFdQQ3U0bjdzbk5jZmlIamR5X0lkNUFlbTVMbUN4NG9rZTRKVHk1YUJOWXNB?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T20:30:00+09:00",
-     "dup_count": 0,
-     "summary": "빅테크 기업들이 올해 AI에 745억 달러를 지출하며 관련 수혜주들이 주목받고 있다."
-    },
-    {
-     "title": "AI Bears March Down Wall Street Pre-Bell; Asia Down, Europe Off",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYzY4MFMwY2YweXcxX2w3a2JqWUhrSjJrY2JLZkZXdW1oSUtuSXlnbC1DQWREVmthZUpTM21IZV8xNnlZdzlqaHBIbFRKVGdwN3dORnRlRGdQWWc5VF9Mb1d3Y2djUFdCNEJCOW5IaEdFZXF3YlkxTmpGM3pscUNOR09UYmM5aVcwOXc?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T20:26:05+09:00",
-     "dup_count": 0,
-     "summary": "뉴욕증시 개장 전 AI 약세론이 대두된 가운데 아시아와 유럽 증시도 하락했다."
-    },
-    {
-     "title": "Tech Rout, Credit Concerns Rattle Asian Stock Markets",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMjNrXzBtNUtrWXk5ZnZwbS1EdTRCU1ZGeDZ4dXRaM1NfdDl0S2JRalgtSDJZa0dXWHJBRDVveUpHS2JFdkw5bHVPR2VJYUtWVko4YmFYcl9Cei1VWkVSM3huQ1NvWlVDanBkS0xQV21mZURQbzZPeVZhbkJwc1B2ZnN6MGhZM29KNWpneE9ScF9GS2N3YmE5cGdQSTNXbFlqWF9USEl3NA?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T19:37:48+09:00",
-     "dup_count": 0,
-     "summary": "기술주 매도세와 신용 우려가 아시아 증시를 흔들었다."
-    },
-    {
-     "title": "Why Are Nasdaq Futures Sinking Premarket? CRWV, MU, TSM, SKHY, IBRX, RKLB, TSLA Stocks In Focus",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWHBjeEdSRnR5SlpYS2Vma2M3aVljQWh1a2VQV3hwNkMyUnk1M3ZVY1FxWjlLYlVDUTFtcDV4azJvMWNjNFZlTzdkcERKc0hFMkNUeHNoOFpsYmdleTJjWS1yemNRV3dlQUtLeFdIemhoemViQWlWVFNSNmhHd19idlduTmc0MUJoNEgyVDVZWGV1T1BpWUpHeTVmUGFCai1tNnc0?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T17:58:23+09:00",
-     "dup_count": 0,
-     "summary": "CRWV, MU, TSM 등이 주목받는 가운데 나스닥 선물이 프리마켓에서 하락했다."
+     "summary": "AI 부채 우려와 자금 경색으로 AMD와 NVDA 등 반도체주가 하락했다."
     }
    ]
   },
   {
-   "title": "코어위브(CoreWeave) 주가 급락과 재무 우려",
+   "title": "아시아 증시 및 기술주 매도세 완화",
    "sources": [
+    "Bloomberg.com",
     "Yahoo Finance"
    ],
-   "count": 5,
+   "count": 3,
    "items": [
     {
-     "title": "Why CoreWeave stock may still rise over 100% despite financing fears, analyst says",
-     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUnY2dUliTWFad3JfZXBkVWtJV0lhRk8zQk5yaXhaOTNvTzBzLVlNZUhCWGNGVng5UzdFNmUtbFVqMjZ4eFRDYy05Z2VpR2Z5cU5WZ3Nvd0lNc29hR3lZSTVMbkhEUGdOSnZ6aFF0d1JWTWp3VEJyZDR3UzMxeVBsNExfbTNEc3ZNQUpuQm9HNjU4RFRJSjB6UHVYbENjcGxVSU93SWZOLVdpX2VJbVlfZlVPZmp6bU1BMzlfTDZSQzBZM3N0U2JoLTlVbXZVVjRSWU9oaFhXUFFKb1g5?oc=5",
+     "title": "Global chip sell-off deepens as South Korean market plunges",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSXNiMTFCNktwc01fZDNYVjlGV2taakFFdkt6TTl2UTd4YmhfdWp3WkJXS3lURlA4LVNTQVVpLTRRQzFHU1d2YzR0ZEY3eElmN2pWN1VCeFBRQUtHQm1HalJ0ejU0Qi1yMHY4eFUzS3JCaDRRY0ZSNGxsbEtuTjdfbHlJT0tpZk5YZG1ESFlNTzJjQ005N0N2aXV5VTFKb2tjcVNVMmIzeHhBUzZWd0o0aWs1WlBxaElUTUxELWI2aDI?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-10-15T21:51:23+09:00",
+     "published": "2026-10-15T22:44:30+09:00",
      "dup_count": 1,
-     "summary": "분석가들은 자금 조달 우려에도 CoreWeave 주가가 100% 이상 상승할 수 있다고 전망했다."
+     "summary": "한국 증시가 급락하며 글로벌 반도체 매도세가 심화되었다."
     },
     {
-     "title": "Premarket movers: CoreWeave tumbles; Penske Automotive surges",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYlJvaUFoWEZIN1Rwci1HRkY0aGFlVVItQUh5dEI2Nm5tUzQwUVBxU2kyY3UxZlFNTGZRXzQ0SnJGX2JzamMxNjVPclI4d2FtQzRPYnotSXU0RUI4d0FOekdCdzRqUENPdW5PTmJjSjVTX2ktQkI5S2JRX2NtamhNa1gxY2tLNmJ1a3N4cGNWYXhDU3ZMWlFmcUt2OVJnWUJTWHdMZk9saXZkdw?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T21:14:41+09:00",
+     "title": "Asian Stocks Set for Gains as Tech Selloff Eases: Markets Wrap",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdENxVU1tLTc2TGl0ZVlldEVMcndIaURqT2p4RGQ2NGZmTjNOZDhSQzFaU2lhQVZYVmo2dGNPMUxrOHlFOXlpZzZmcUdicmxNTkFpODROSjNNbTJWb0l4NmlLZTZOb1lURHhzeG1XWl96SVR5Y3JGRVJXZ2txV1dVUWVOelpZM0lOUk5LSmlkOFdMS2RC?oc=5",
+     "source": "Bloomberg.com",
+     "published": "2026-10-16T07:04:06+09:00",
      "dup_count": 0,
-     "summary": "장외 거래에서 CoreWeave는 급락하고 Penske Automotive는 급등했다."
+     "summary": "기술주 매도세가 완화되면서 아시아 증시는 상승세를 기록 중이다."
     },
     {
-     "title": "CRWV Stock On Track For 4-Day Slide Amid CoreWeave’s Debt Test: Analysts Split On Whether Selloff ‘Grossly Overexaggerated’",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYjMzWTBMVERHRmZpZUJTeEFEWGFNTFFkNllxbmpQcTF3RUcwOFM5MWQxakhaQ1hpMm03dlBnRW1ib1dxb1pteEFvTlFyZXdjQng1aUV3X2M0aUlsLUN5MC1HdGV1OWVQN250MWZpaUpqd3JNOUZnbWVaLThHYV9Wb3FIYWtkMzVEaXRDM0FDZEE?oc=5",
+     "title": "Global tech rout loses steam",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWkN0QVBXUnljOEtQV21ONG1fbDhiSHJhMHRNNWJZRkVvLV9QWWYtdkM1WXdXWGdpbE5yeDQ0M2lWWUZzbU9TaE8waU15NDh0VjNXelNKT2ZaMWJ6X3ZPa3VaTy1pV3J1T1lsaEw5Z2ZQcUpRSjM4ajdrSnZhRXBTdVRnMXg3VFJEUHQxaENLUy12QmhsTkwxZQ?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-10-15T20:50:55+09:00",
+     "published": "2026-10-16T06:04:38+09:00",
      "dup_count": 0,
-     "summary": "CoreWeave의 부채 우려 속 CRWV 주가 하락세가 이어지며 분석가들의 의견이 엇갈리고 있다."
-    },
-    {
-     "title": "Why CoreWeave stock panic matters to Nvidia, explained in under 30 seconds",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPRzVES1hFdko3MUN3Z1VTa2JvM0N4ZVpnbXdyV19lTmZ2eHY4U2ZsTFZHN0ZIQ25LWkhCb1hmT2NkeER2T1Btam9EQ25vZWJ0cGpNNUc4OVVlOHg3bUF4d0dSckVPbGk4VkRhSkExNE1FekljQm4xMXJLeVBGWW5QRV85UmllTXBpM3JtbVZ3eXh5ZmlqSGhFX01RTHRzTTNNRzhSeTBqaTBHeWI3YUNfNUxnMlZoZWRyM01OXzFWMlBocWYxVXBqM05hU2dkTWhaWVYw?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T18:59:31+09:00",
-     "dup_count": 0,
-     "summary": "CoreWeave 주가 패닉이 Nvidia에 미치는 중요성을 30초 만에 설명한다."
-    },
-    {
-     "title": "CoreWeave is getting drilled again the day after a panic-filled rout",
-     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUlFZazFORnJUVUplQ1NsaU0xblcxbjJyTTBnMWx4N1FGQjlzU3BHVWZFeWx3d1ZTSjdHdUMyR08taVdPZ2tSLTJTTzlXRm4xT0Vob3dCVUJVUUtIaTRoSmtyNmRRRGE0eGlON2hjYXNuVkRTczBHZHJKM1ZLX3BwSXVXLVU4ME9VdW5YVjVXbWpSb295RFlpazVQRHhReTE2eHJvdGptZFRVTGYzWDZZajU5cVhJMGVsSC01ZC0yVUtxbmNsbUw0UkdCSGg?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T18:18:11+09:00",
-     "dup_count": 0,
-     "summary": "패닉 장세 하루 만에 CoreWeave가 또다시 급락세를 겪고 있다."
+     "summary": "글로벌 기술주 매도세가 진정되는 양상을 보이고 있다."
     }
    ]
   },
   {
-   "title": "9월 도매 물가 및 인플레이션 상승",
+   "title": "9월 인플레이션과 연준 금리 인상 전망",
    "sources": [
+    "Investing.com",
     "WSJ",
     "Yahoo Finance"
    ],
    "count": 3,
    "items": [
     {
-     "title": "Wholesale prices bubbled higher in September, keeping a rate hike on the table",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQN3EtR2pBaUxLV3dhX3ZIVHFLSjRaanB1dTNmNzNuS2VVQkctbmlqZnZKeF9SZTlXZGoxMkZlTUhVMDJwYnVlWXZWSFlaZHpFQjlzZDFtdEM2RjJmZ0hRcTZxcGo1R2FkVjNGV1NGdnBURl9kaVp2eVVjQVEzdlFoaDJXblpsSmw2aDZ4a2o3SnFyN1NUZk9vU1l1SnlaclM0VkFrWThYYms0UWNweFlaUU4wUV9lWl8yOU15enRMNTIyVUxCZW9Fcmk2dGhqdw?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T23:00:22+09:00",
+     "title": "UBS now expects a third Fed rate hike after hot September inflation print",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQko0ZWtvbDlGdXp5Tk0yNFZ1OGdkVDluWUlmU3lxQXZsVy1WV0oySEtYVkNpSlpjWXlfRzc4VFVJaEJHU0hlVUtCd2RtR1BXTG52TmF3U2ZUemE4WGd1bEUzNnNyQmpRS1VFWWFkcm5KWjRpR1Jja3dfSFhtNmx2WnpVLU1RaERlN1kzUEV4bFZhQ0lHUlBvUWVodGlSclpaaS1jZk43U2laUlBnUWU3b1R2dHN6SGY2NFFDQUxIMUY2UlU?oc=5",
+     "source": "Investing.com",
+     "published": "2026-10-16T06:33:01+09:00",
      "dup_count": 0,
-     "summary": "9월 도매물가가 상승세를 보이면서 금리 인상 가능성이 유지됐다."
+     "summary": "UBS는 9월 고물가 여파로 연준의 세 번째 금리 인상을 전망했다."
     },
     {
-     "title": "Wholesale Inflation Hit 4-Year High in September",
+     "title": "Wholesale prices bubbled higher in September, keeping a rate hike on the table",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQVFNjQmgtaHNza2VtSzNLXzNoSWg4RlVNVVVHWThQR0V5ZlJlRUdKNGM0NkZtZTdsa1lWS09MRndhcUtNT1BWUFBPcnpkQ09TaWM2RjExc3pGN2p5Rmh3aG5uXzJXZmVlODJuZS1BaldnNXJaUFZ3ejNZR2t6aGZLY1lwdmtGRXVqWTZyeHlONHQ5NVlxcGx0dlNsWmNpX1ItUGxsa3doRElncGZ4NXVhVzFCd3FLMENmckJOMHpPS3ZUd01QeEJhYzN0bTFkd1U?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-15T23:18:45+09:00",
+     "dup_count": 0,
+     "summary": "9월 도매 물가가 상승하며 금리 인상 가능성이 유지되었다."
+    },
+    {
+     "title": "Wholesale Inflation Hit Four-Year High in September",
      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMGx6WHoyVnctUFBLRl8tcUs1THlPWTNKMThjQU9WcDJObmV1S1E0eVV6dUZYR1hpX1E3WUFWellJMDhBdDE0RTk2cDZGeElaR0RfRUtWZktYWDZKU0VEWTFHQmY4TUhsR0hQdzh5c241dTZhUXNHQWQ3LURPVGxZeVNicjBfeHBkQVhHSl9WaEVsb3ExM0lRQlNQNFVJZEQ4Skw4?oc=5",
      "source": "WSJ",
      "published": "2026-10-15T22:01:00+09:00",
      "dup_count": 0,
-     "summary": "9월 도매 물가상승률이 4년 만에 최고치를 기록했다."
-    },
-    {
-     "title": "Applied Optoelectronics Stock Fell 12% on Hot Inflation. Opportunity or Falling Knife?",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMkx1dDRXNzItd3VWU1lBZkdHWE1PVUtaSHZweDIxOXhCMVVadG9zU1M4U25meUJDc2NQZWxZSERkdnBaZ2g1M1lsNUlyUG0yWDgtaUVteEdPckJxTm9vanVPa1hSQ2l6Z3o1MGJSU2RJWkpQYVhPTURwV2JQSUZlblJkU0V2Z2FNTEo2SE41M28xNzVrQ08wZnNudkRxMUt4cGU4VQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T20:01:14+09:00",
-     "dup_count": 0,
-     "summary": "고물가 여파로 Applied Optoelectronics 주가가 12% 하락한 가운데 투자 기회인지 논란이다."
+     "summary": "9월 도매 인플레이션이 4년 만의 최고치를 기록했다."
     }
    ]
   },
   {
-   "title": "TSMC 실적 및 AI 반도체 수요",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 3,
-   "items": [
-    {
-     "title": "TSMC stock sinks despite record profit amid 'extremely robust demand' for AI chips",
-     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQQnViYU9abldsek5fd1VMekVwZ1RnNXFFTDlTRENFZmlQa2NwT015UW1UWVBlbWd0SGJKeXlmZElRYXQ3UlJCdTlnbVYzUU91VUQxaXBGa29sbTN1TEVPRHU4cVNmUm15b25GVFFqVUlzcXhLdWFUa2xtLUhaSTcxczBNVm1JT1VhUjVVQ1UxRWhTbFBaRFRlU1Y4ZmVfbG1OYkR4cFdSNXo1eFlFbjI5UnlDdlh2YnVlZE1Oem91NGZvUm5ST2NOZk4zY0xzeGt2TUpvWVhIQXJhTWVo?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T22:42:22+09:00",
-     "dup_count": 2,
-     "summary": "TSMC는 AI 칩의 강력한 수요에도 불구하고 사상 최대 실적 발표 후 주가가 하락했다."
-    },
-    {
-     "title": "TSMC Posts a Sixth Straight Record Quarter, and Its Q4 Guide Says the AI Boom Isn’t Slowing. Here’s the Fuller Picture",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbW1ZV3pVU3lGWHM4NDZJMHc3bzZhb29OZkt0NFhGUm9aU0h5Nm5qU1RKd3AteFJKVXlENDZVZnFUQ2hCampBTm1PQlRkb2lseUc5SjRteWNnS3Y5NndRM2lmSXRocjJQc0llVEFaZFBsTGtxbHRtS29FV1dWVGl1anZWZ0ZaNmpIVFE2bUF5V0JuaHRNVXhOcDBIdG5XQQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T18:14:06+09:00",
-     "dup_count": 0,
-     "summary": "TSMC가 6개 분기 연속 사상 최대 실적을 기록하며 AI 붐이 지속됨을 시사했다."
-    },
-    {
-     "title": "TSMC: Q3 Earnings Snapshot",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcV9pbFNTNTU0ZnhfSDZnRjk2SURpNGczUE5KN21fM000YUZxeHF1ZlM4SkFUdkFxX0FRVDUzN3pMOFNtNUNHWXNRM0tCU2tOYm1Ub1JwZ0FLTTNwQVJ4bFJ2SmZKNjhmQ2o2ZER5aEFLTGdLeFZ3eDBpbXFfMzBCNmJFbHhYMGxHdmpsV1hmLVd0a2RT?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-10-15T14:58:52+09:00",
-     "dup_count": 0,
-     "summary": "TSMC의 3분기 실적 스냅샷이 발표되었다."
-    }
-   ]
-  },
-  {
-   "title": "유가 변동과 지정학적 리스크",
+   "title": "유가 변동 및 지정학적 리스크",
    "sources": [
     "WSJ"
    ],
    "count": 2,
    "items": [
     {
-     "title": "Oil Prices Mixed as Traders Weigh Demand Outlook, Hormuz Shipping Risks",
+     "title": "Oil Prices End Mixed as Traders Weigh Demand Outlook, Hormuz Shipping Risks",
      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNW1MMHhCS1RGcmU1N242QUVfclBfWW56RTVPeWhhUFowX2owYlRJWlBFa1BEMFZaM2daaFVtbG1aVlBBOFJhbnVhR19jMEhmZ0FpYXFZcTllS25ETExYdUtWRTVIVkI3MVdGMDBDOTZDOVhJQm9CUkVDaDNvcWFQeFQxZ1NmdkpHZGZTdmFEUWNJS2R6QVNyZXNrWTNOazZOTUlvVWNwaVV5NENQbTNkTEJ2MVFyYmR6?oc=5",
      "source": "WSJ",
-     "published": "2026-10-15T22:49:00+09:00",
+     "published": "2026-10-16T04:37:00+09:00",
      "dup_count": 0,
-     "summary": "유가는 수요 전망과 호르무즈 해협 운송 리스크를 주시하며 혼조세를 보였다."
+     "summary": "유가는 수요 전망과 호르무즈 해협 리스크를 저울질하며 혼조세로 마감했다."
     },
     {
      "title": "S&P 500, Nasdaq Slip as Oil Rises on Russia Strikes in Ukraine",
@@ -325,92 +153,615 @@
      "source": "WSJ",
      "published": "2026-10-15T22:02:16+09:00",
      "dup_count": 0,
-     "summary": "우크라이나의 러시아 타격으로 유가가 상승하면서 S&P 500과 나스닥이 하락했다."
+     "summary": "우크라이나의 러시아 공습으로 유가가 상승하자 S&P 500과 나스닥이 하락했다."
     }
    ]
   },
   {
-   "title": "미국 정부의 글로벌파운드리 지분 확대",
+   "title": "슈퍼마이크로컴퓨터(SMCI) 신임 CFO 선임",
    "sources": [
     "Yahoo Finance"
    ],
    "count": 2,
    "items": [
     {
-     "title": "GlobalFoundries falls after Trump administration doubles its equity stake in chipmaker",
-     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQaTl2TU1hbGJkQmtlQ29sMGowTWszeU1wMkh1dHc2UUZoTzg4dGl4ckNNS3BsYmZiWkJFcmNIZDM2UW1UeVVtN1BCTU1wcnA2S1BMdWZ2OFpwXzk4Szl5UTJRRW1TTzJDclRpV0VsZjNLd3Bua2NsVVNhZlI0VFdTbUtULTN4YWdtd0ZjVURSYTVpb3ZyN2xsZk1tbGc0NERxYnA1OVdWSE93WVhNeGRRVHRLc0VDMl9yelF2NFhpMENzbGNTbWNGMjF1V3VLSkJyUXMtZE5kY2I5a2VHbzhz?oc=5",
+     "title": "SMCI taps former Western Digital CFO as new finance boss; shares tumble",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVXhtbEhmUDFRS25lVjRvMUIxX2IxaHQ5dU5iV09TdGUxZ0h1YXZCTFJET1ByaHl5ellqTDNERUgwNldHNGF6QXFPRUlvUnAtbkxIeGtqNTJTSWowSVVEbHdUdTNoRUEwaFI5TEsxT2NWRFdDZTZUOEswcnZ0a3dPMk5hWU5BRUZtT1FNWVdjY01naVdNVDJCekNQdHZ5dw?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-10-15T22:43:46+09:00",
+     "published": "2026-10-15T23:06:35+09:00",
      "dup_count": 0,
-     "summary": "트럼프 행정부의 지분 확대 소식에 GlobalFoundries 주가가 하락했다."
+     "summary": "SMCI는 전 웨스턴디지털 CFO를 영입했으나 주가는 하락했다."
     },
     {
-     "title": "Trump administration doubles its equity stake in GlobalFoundries, will partner with company in new semiconductor plant",
-     "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPRnY0NU5TWUp0SDByRktPdnhqdjBYaG5fNEwwNHhTQVJJYmNreFB1UTRibWRIelpMWjRDbXI5dFFMQnVUQTVfRlZTYUNWQTlxRWtUTzF1a1Q5WGFoWFFyZlpYZHA2S2J1WGtQTVFyenV5MV9zeUVzUWdWVWdtb0R6djdHOEdGZDFNVG5kSW0tYzFlR3gyNVJjR3dyWnd3eExOZnkwNEJiWkQtWW80WGhMSXlBN1JBWklsOFdlVXBXM3dCdm5XU1I2bnl3ZzBtSi0yMnVKdjc0OE5mRFdjbkFaek1rYnpfYnlTbGJUMExyMm93bHNCSDkycS15S1ZfbDF5NWgxU0pHQnQ?oc=5",
+     "title": "Supermicro Appoints Mark Long as Chief Financial Officer",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSGF4OEY1X0UzYU9DUUZsQlcxOXNpLWFQMFBTZWR0MmdRUGZaWG5jbHRCUFROWFNTZXJIR2p4aHNxendjck0zcDRqYU1LOFJKZldxdGtKNXhfMHZ2TUxPeVNScG1Gank1U2hkUDVvMWd5OU9EZGVuYjlGcGlfRkg4NnBlS0xkVnlCV2tBMDc3S2M3WmhaY1ZKa1hZTUxnMEdNa0E?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-10-15T18:00:00+09:00",
+     "published": "2026-10-15T22:05:00+09:00",
      "dup_count": 0,
-     "summary": "트럼프 행정부가 GlobalFoundries 지분을 두 배로 늘리고 신규 반도체 공장을 협력한다."
+     "summary": "슈퍼마이크로는 마크 롱을 새로운 최고재무책임자로 임명했다."
+    }
+   ]
+  },
+  {
+   "title": "테슬라 로드스터 이벤트",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Tesla's Roadster event is on tonight. Here's what to expect.",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRVVETll3OHlHX1RDOE5ZMW9vYUdLN0JkWktjVlpfLXI0cHMta25ENWpKcXFXSGVRS00xOFRnNGl3bkNmODgyZkUyWURqcmc0MS1abEZKVVVzcWhzZ25rSjRLRl9jZ0RCTDlCWC1HU0ZiM1hIMG9ZQU1vbXNxdV9WT2JmbjRsQWVMbFZKeDJKSGtKTUhRb2I1UE9CS3l1cFdEYmZvMWFCT1BIb1J6SzE0Y1RzSTNsemd3eW1jTQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T09:04:00+09:00",
+     "dup_count": 2,
+     "summary": "테슬라는 오늘 밤 로드스터 이벤트를 개최할 예정이다."
+    }
+   ]
+  },
+  {
+   "title": "금요일 증시 주요 뉴스 및 시장 전망",
+   "sources": [
+    "CNBC"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Friday's big stock stories: What’s likely to move the market in the next trading session",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTHROSGV0cmV5eDBUMlFRUkd3N1g0OThVelkycWtzSTN4Q1JTT2E2bGI5LXp3YWtMUlpYd3JvSkE5eEY3SVJabkwzYTE0cndCbGNPQ00tVU1kajBsZDFERVFWbGRkMW1vS191TjVzb0tsLUQ0QXlNbVNDeC1xYy1mNzVqd3VkYmMyRmVyX3ZBMS1Gc2J1S1M3Tkdn?oc=5",
+     "source": "CNBC",
+     "published": "2026-10-16T08:39:41+09:00",
+     "dup_count": 0,
+     "summary": "금요일 증시를 움직일 주요 시장 이슈들이 주목받고 있다."
+    }
+   ]
+  },
+  {
+   "title": "앤스로픽 IPO 가치 평가 기대치 조정",
+   "sources": [
+    "Reuters"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "EXCLUSIVE: Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-16T08:27:38+09:00",
+     "dup_count": 0,
+     "summary": "앤스로픽 투자자들은 매출 성장 둔화로 IPO 가치 평가를 낮추고 있다."
+    }
+   ]
+  },
+  {
+   "title": "로켓랩 주가 하락",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Rocket Lab stock tumbles as effort to take market share from SpaceX slips to 2027",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQdHZQNmdXS1dRSUc3NWdpVHVFbmFWdVRTcnZzNFpQVllUZWVkY1MtSTE3NWF5Tjc2YnR3SXIwdTU0UzZzTzRWM1k5ai00SllxZVZlWFdST3BSMGRnYnVON0o0WGViTXlyQUNLTlE4QVd6UVRDZ2lSaTdyRHBiZXhrc213c2s4RDlQdFR5UVRvZWFkSExQLTJHc3g2aDBaclZocEJrWVFBQi1oSGV3ZmhtcWUyUWlZQXdRNExGUE9SR2hIMjB0Qk5tODhsTS1BSkRSSnBZWlVsYWNYalk4TFE?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T05:45:55+09:00",
+     "dup_count": 0,
+     "summary": "스페이스X 추격이 2027년으로 지연되며 로켓랩 주가가 급락했다."
+    }
+   ]
+  },
+  {
+   "title": "은퇴자 소득 방어 전략",
+   "sources": [
+    "CNBC"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Retirees can take these steps to shore up income as yields rise and some dividend-paying sectors slip",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQUpvV0ZBOWpoSkRWcl81VmdZbEVweEthc01Tb3FqOGdtc0FjTzFENkRvU3hzX3ZaWkVPNjcwOHY2VEFrS184ajlMVmdMeHI2UlJmb3loNkhRRjd0NXI1SzdVQzg4N3FFZnRoTU9iXzNNY1lWNV9ET0QtN3BqV3Mza01sU0JROXg2THVCaFBUMm1BVTE3cUNkQVp6VDNxTjE5VEE?oc=5",
+     "source": "CNBC",
+     "published": "2026-10-16T05:28:05+09:00",
+     "dup_count": 0,
+     "summary": "은퇴자들은 금리 상승에 대비해 소득 방어 전략을 세워야 한다."
+    }
+   ]
+  },
+  {
+   "title": "메타 타이틀",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "META_TITLE_QUOTE",
+     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBpVTJIYnhWcW1kNFFKTHNoajhPeE9zSW9lTElhZkZvcEo3MExtQnpIZjBRek95cWJ0XzRKMzBtMHh0Ty1SYVRESUxfRTJ4Zw?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T04:19:10+09:00",
+     "dup_count": 0,
+     "summary": "메타 관련 증시 뉴스가 투자자들의 관심을 끌고 있다."
+    }
+   ]
+  },
+  {
+   "title": "에릭슨 주가 급등",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Why Ericsson Stock Soared Today",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMzlnb0gtcjhZZHBiaDhrSGNmS3ppdmJXTFF4dHB5TlZBX2gzaXZqSHR2Y1FpMGtZRkpBTzhYSHhDTXNUdmRLTXdGYUlRcC1SVTdNSEctNFJDZU00NXcxSU9ob0tsdVRLZ3EwdmpWeUVRa2RONlI3WXk5UlZ1QjUzYlh5UkZYeTZWdG9JZ1lyajdnOXZYTHBmNEJqcnI?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T03:17:01+09:00",
+     "dup_count": 0,
+     "summary": "에릭슨 주가가 오늘 급등세를 기록했다."
+    }
+   ]
+  },
+  {
+   "title": "마이크론 및 샌디스크 주가 저점 매수",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Micron & SanDisk Stocks Look Oversold: Time to Buy the Dip?",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPM0IxNTFYNE5WMF9jVXFmdWI5LWtDZ3EwUFkzT3c2OUJkcUQ0VjZjQThPcU9uVFAxVXpzVVRCTjNpa0FoS0duZmdSZ0N4S3dkWWtsWEsyZnVsRVRuVmxBVTlCUC0zSDY4WmdGdVVVcVYwZVNSdm1OQi1jM3FPTU4zVktSYkdyVnJmTThaMHI1MnUxWllsNk8wd1B4aWZVVUticVE?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T03:13:00+09:00",
+     "dup_count": 0,
+     "summary": "마이크론과 샌디스크 주식이 과매도 구간이라 저가 매수 기회가 언급된다."
+    }
+   ]
+  },
+  {
+   "title": "마블 테크놀로지 주가 매수 의견",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Should You Buy The Dip In Marvell Stock?",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcjhpSjd5STBOMGxhdUlUN0NxQ0hneFlxaGp4TENPZE1lbXh4aXlzT0hyUzAxQ1BEM24zaVpTMzJsZy12aWdQaVhGeW9xaG5DemY5TFZzRVNjLVBBWV9xRTBjTDdJUUJZTVhOVDF3Ujh6SEI5ODR5VTZKbXZqTmIxcXlSS0M4X0NMSjVfYlIyaw?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T03:11:01+09:00",
+     "dup_count": 0,
+     "summary": "마벨 주식의 저가 매수 시점에 대한 분석이 제기된다."
+    }
+   ]
+  },
+  {
+   "title": "테이크투 인터랙티브 주가 및 실적 우려",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "TTWO Stock In Focus: Citi Says This Blockbuster Game Could Potentially Ease Concerns About Post-GTA VI Earnings Drop",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQODkyTDVINUc1VXRKamVwU1htOHY3SUpRczZ0bXFqQjhfRldhRi03TDZQWmFkVlFwdW9FYXJUa3FBZ3RRRjI5U2lfcElEZ0JOUmttMFIwbExwR1pnV2hCT041OXpDOFVkdjRpYldrWkJQcElDbTdld1JmMXlsS3N3enMxVWhZRi1tQ3k2NE0tSFgtbGNWRXc?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T03:07:38+09:00",
+     "dup_count": 0,
+     "summary": "씨티는 GTA VI 이후의 실적 우려를 완화할 게임을 주목했다."
+    }
+   ]
+  },
+  {
+   "title": "나이키 주가 상승",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Why Nike Stock Was Climbing Today",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOclBnWEpUSGlnRVNKc29JYXhlcG55dXVZdjFldEZtdVl4RXI0YldSd2lnMG42Wk54UFpLTVZ1VUh1amYtaXl5UVRaZm5Zdzl2bVRMOFd2QWFna0xienR4TGlNX1dsb25BTHNzUk1mTy1meUpXV1NPT1Nzc0FGVXhjOEtLWWpqUUV4LWkzOUJyYkZ4bkxwQjlSWGt3?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T02:46:41+09:00",
+     "dup_count": 1,
+     "summary": "나이키 주가가 오늘 상승세를 기록했다."
+    }
+   ]
+  },
+  {
+   "title": "씨티은행의 암호화폐 관련주 추천",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Citi Stands Behind 2 Crypto Stocks as Its Top Picks for the Rest of 2026",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOQ2h1S0FGb3BTdDZIX0dkNkNKMjFKWHFUZEdoWUZwTzNIaEdXWEZmZ2d3WFM0YVhlS0dJSzIwdWlCZHlxajZCZ1RVTnJ4UzU3Skw3dnhOaG9mZFR1ekM4ZFV3ZmJ6Y1FwY2VhUU9jNk4xdVloRjlWVXh0MjJITGExQ1M3dHc0UERxV2tqMUhZQWU2amlYcWM0?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T02:30:00+09:00",
+     "dup_count": 0,
+     "summary": "씨티는 2026년 남은 기간 최고의 암호화폐 관련주 두 종목을 지지했다."
+    }
+   ]
+  },
+  {
+   "title": "증시 시장 리스크 분석",
+   "sources": [
+    "CNBC"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "A lot changed in stock market in just a few months. The single biggest risk did not",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8xSHVzX3JOTGhFdHo0c3ZQOXdvMG42NTl4WHRyNjB4Qm5jNGw0eFMySUowdHlwdU9zQ3hvZnk5WWR3dHotMWVmaFpTdGlJSENCeUtmWmw2bFk5Y3lYY05ub2hhU0tiOWh6LUFpSGxrSU5fUknSAXhBVV95cUxPZ2t4WmlBVGNvREtBbDUta21OUE1FOVRubEk0azhrZUwyUy00LUFwN1dySTliOTREdzZqblh4TWRYTmozZFRKcEtXMGZTN3JaMG9zd2J5TGFSS0JucThwNUdSd2xCRGpWQU8tcVNGRjhuNVRaZ2NqdEI?oc=5",
+     "source": "CNBC",
+     "published": "2026-10-16T02:12:33+09:00",
+     "dup_count": 1,
+     "summary": "증시는 크게 변했으나 단 하나의 최대 리스크는 여전히 남아있다."
+    }
+   ]
+  },
+  {
+   "title": "바이코어 주가 실적 발표 전 전망",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Should You Buy, Sell, or Hold Vicor Stock Before Q3 Earnings Release?",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcVJvb3pJNW0wZFU4TjJ3UFdxMktaakdUTzlRZzVLbVoza2pUUi1VRjlQYlVBODZqVF9zX244MUs2T2w1UlR5X1ZFVkFfS1VCOThVWW9Lel9NQ0ZBcGVOalY5bWNfNGtMY0paX3FkUHV2aXhtQ2xuSXpOX3RhRXhxQ3pLQ05oT0FaX0UwcmpOOWltOWh4?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T01:28:00+09:00",
+     "dup_count": 0,
+     "summary": "바이코어 주식의 3분기 실적 발표 전 매매 전략에 관심이 쏠린다."
+    }
+   ]
+  },
+  {
+   "title": "할리우드 AI 도입에 대한 실베스터 스탤론의 발언",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Sylvester Stallone on AI in Hollywood: 'It makes things so much easier'",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNl9tc0ZnRDNFSU1kcTYtcVRtVVpIV3hESmxlazdTdkpWQmRsenUxMXRKei1QcS1QUTZUVW1qVnJlR0ttTzlhY1Jqak9kWnp1ODhMRUxpb3BqaW1UUGlXcmJ1VFF0LVVYV20wclVGeGRGS0gwYTM2d2xYRm8wd3pTdmw3RXhOcEFicGhqb01MaDkwMGlybFZyT3ZBY3RaOTYwaWZScEJmV1ZfUVBsamlfZVhNSGltSV80bnN0S095eDFiRW8?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T01:00:00+09:00",
+     "dup_count": 0,
+     "summary": "실베스터 스탤론은 할리우드의 AI 도입이 일을 매우 수월하게 만든다고 말했다."
+    }
+   ]
+  },
+  {
+   "title": "콜럼버스 데이 증시 휴장 및 거래 시간 안내",
+   "sources": [
+    "Barron's"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Is the Stock Market Open Today? Here Are the Trading Hours for Columbus Day.",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZzhQcF9yTmp0c0w4NTBTd0FRS2JMeVdjOWwwSnRuMHZzRGl6SV8ycHZLMkhWLVYzQjdTTXBCLW5VS2FoU0NBamRaRVRjNFpPcy1sSm9UTUU3WEI1UXJ4cFk4N1JXa3MwSDRkOF9KbWQ1WHJMVFN5bkxpVXdyZ1Y5VWQ4aDlXV2kwVllOWHJYQzlGeWVNNlpqSTR6THVPRGE5aGdHa3lDOUFfUzRx?oc=5",
+     "source": "Barron's",
+     "published": "2026-10-16T00:51:18+09:00",
+     "dup_count": 0,
+     "summary": "콜럼버스 데이를 맞아 오늘의 증시 거래 시간이 안내되었다."
+    }
+   ]
+  },
+  {
+   "title": "TSMC 실적 및 AI 칩 수요",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "TSMC stock drops despite record profit amid 'extremely robust demand' for AI chips",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPY3JaUnZwbnJYUWtTbG9yY1FpM3NGSGlWN1QxeVM3eHotc3dqQ0xNdE5yaS03U1N6dV9BUWxLTnNXbklacXdtLU1aS2tZdlVlUmkwb1h4MThrTHFtcFBBTG82TFlsTTFqZVY2bnQ0QVgyZE9aYnpNa3M1QnRNTlJEZmoyb0ZoVGFjeTM0RTk5UjFycV9oUmRqVWd0V2FzTE90QnNoQzZOQ1JRTk1hZmRrTDJ2YWFrRVZRLVpiZEg4OGNVSUEwYnN0ZlhIMjVkd0tZdUgwV2FoYXdlSFF1?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-16T00:26:49+09:00",
+     "dup_count": 0,
+     "summary": "TSMC는 AI 칩의 강력한 수요에도 사상 최대 실적 속 주가가 하락했다."
+    }
+   ]
+  },
+  {
+   "title": "월마트 주가 상승 및 투자의견 상향",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Walmart stock moves higher after Deutsche Bank upgrades to Buy, raises price target",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbmg4dk5WOHZhb25HZ3BHRlBndFhqODl5SjdyS3RBME9YX04tZlhLQkRRcmtpUUZwd0hqMDA3dklRclRLRFp3Vmg0TVFSczdSLW9qRjRLNFlzUzgya01sU05kYzNaekxMOV9ZVXg2M004cnI5bjNfS0RPRmFuSWVaejZ6MHRXRTdzcHJkcHZZYlhZMVNkdFVCOXZBcVJ3VHNhLXlibkZnbVpEV1dRVU1OYm1QSmJaUmZoOEF1cGhlMVR3ZFlKTlI1LTFpWmZZdUVMb3V0bGNrSnJJMFpsWUhF?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-15T22:48:10+09:00",
+     "dup_count": 0,
+     "summary": "도이체방크의 상향 조정으로 월마트 주가가 상승했다."
+    }
+   ]
+  },
+  {
+   "title": "코어위브 주가 전망 및 자금 조달 우려",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Why CoreWeave stock may still rise over 100% despite financing fears, analyst says",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUnY2dUliTWFad3JfZXBkVWtJV0lhRk8zQk5yaXhaOTNvTzBzLVlNZUhCWGNGVng5UzdFNmUtbFVqMjZ4eFRDYy05Z2VpR2Z5cU5WZ3Nvd0lNc29hR3lZSTVMbkhEUGdOSnZ6aFF0d1JWTWp3VEJyZDR3UzMxeVBsNExfbTNEc3ZNQUpuQm9HNjU4RFRJSjB6UHVYbENjcGxVSU93SWZOLVdpX2VJbVlfZlVPZmp6bU1BMzlfTDZSQzBZM3N0U2JoLTlVbXZVVjRSWU9oaFhXUFFKb1g5?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-15T21:51:23+09:00",
+     "dup_count": 0,
+     "summary": "애널리스트는 자금 조달 우려에도 코어위브 주가가 100% 이상 상승할 수 있다고 보았다."
     }
    ]
   }
  ],
  "items": [
   {
-   "title": "Nasdaq slides to near one-month low as AI rout deepens",
+   "title": "Tesla's Roadster event is on tonight. Here's what to expect.",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRVVETll3OHlHX1RDOE5ZMW9vYUdLN0JkWktjVlpfLXI0cHMta25ENWpKcXFXSGVRS00xOFRnNGl3bkNmODgyZkUyWURqcmc0MS1abEZKVVVzcWhzZ25rSjRLRl9jZ0RCTDlCWC1HU0ZiM1hIMG9ZQU1vbXNxdV9WT2JmbjRsQWVMbFZKeDJKSGtKTUhRb2I1UE9CS3l1cFdEYmZvMWFCT1BIb1J6SzE0Y1RzSTNsemd3eW1jTQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T09:04:00+09:00",
+   "dup_count": 2,
+   "summary": "테슬라는 오늘 밤 로드스터 이벤트를 개최할 예정이다."
+  },
+  {
+   "title": "Friday's big stock stories: What’s likely to move the market in the next trading session",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTHROSGV0cmV5eDBUMlFRUkd3N1g0OThVelkycWtzSTN4Q1JTT2E2bGI5LXp3YWtMUlpYd3JvSkE5eEY3SVJabkwzYTE0cndCbGNPQ00tVU1kajBsZDFERVFWbGRkMW1vS191TjVzb0tsLUQ0QXlNbVNDeC1xYy1mNzVqd3VkYmMyRmVyX3ZBMS1Gc2J1S1M3Tkdn?oc=5",
+   "source": "CNBC",
+   "published": "2026-10-16T08:39:41+09:00",
+   "dup_count": 0,
+   "summary": "금요일 증시를 움직일 주요 시장 이슈들이 주목받고 있다."
+  },
+  {
+   "title": "EXCLUSIVE: Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-16T08:27:38+09:00",
+   "dup_count": 0,
+   "summary": "앤스로픽 투자자들은 매출 성장 둔화로 IPO 가치 평가를 낮추고 있다."
+  },
+  {
+   "title": "S&P 500 ends higher as traders shift from AI to healthcare",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZTRob0s4X3hCYkZQZzFfeUxuU1ZlN0tPT2hvelcwcW9QdU9yeVN1ZUZfR253ZUNoN3NjUlRHbG9aS0wzMmVGLUpNOVcyTUlHOWo3WERDX1psTXlmWGthb0JPN19GMGxnT2pkYkRWQ0R1THEyODhoWnZTd1NIQjdZbm5fLXNYb0M2c1g2YU02TENSSi1xSFZMQzRuUTc?oc=5",
    "source": "Reuters",
-   "published": "2026-10-15T23:23:07+09:00",
-   "dup_count": 2,
-   "summary": "AI 관련주 약세로 나스닥이 약 한 달 만에 최저치로 하락했다."
+   "published": "2026-10-16T08:24:51+09:00",
+   "dup_count": 3,
+   "summary": "S&P 500은 투자자들이 AI에서 헬스케어로 이동하며 상승 마감했다."
   },
   {
-   "title": "Wholesale prices bubbled higher in September, keeping a rate hike on the table",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQN3EtR2pBaUxLV3dhX3ZIVHFLSjRaanB1dTNmNzNuS2VVQkctbmlqZnZKeF9SZTlXZGoxMkZlTUhVMDJwYnVlWXZWSFlaZHpFQjlzZDFtdEM2RjJmZ0hRcTZxcGo1R2FkVjNGV1NGdnBURl9kaVp2eVVjQVEzdlFoaDJXblpsSmw2aDZ4a2o3SnFyN1NUZk9vU1l1SnlaclM0VkFrWThYYms0UWNweFlaUU4wUV9lWl8yOU15enRMNTIyVUxCZW9Fcmk2dGhqdw?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T23:00:22+09:00",
+   "title": "Asian Stocks Set for Gains as Tech Selloff Eases: Markets Wrap",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdENxVU1tLTc2TGl0ZVlldEVMcndIaURqT2p4RGQ2NGZmTjNOZDhSQzFaU2lhQVZYVmo2dGNPMUxrOHlFOXlpZzZmcUdicmxNTkFpODROSjNNbTJWb0l4NmlLZTZOb1lURHhzeG1XWl96SVR5Y3JGRVJXZ2txV1dVUWVOelpZM0lOUk5LSmlkOFdMS2RC?oc=5",
+   "source": "Bloomberg.com",
+   "published": "2026-10-16T07:04:06+09:00",
    "dup_count": 0,
-   "summary": "9월 도매물가가 상승세를 보이면서 금리 인상 가능성이 유지됐다."
+   "summary": "기술주 매도세가 완화되면서 아시아 증시는 상승세를 기록 중이다."
   },
   {
-   "title": "Oil Prices Mixed as Traders Weigh Demand Outlook, Hormuz Shipping Risks",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNW1MMHhCS1RGcmU1N242QUVfclBfWW56RTVPeWhhUFowX2owYlRJWlBFa1BEMFZaM2daaFVtbG1aVlBBOFJhbnVhR19jMEhmZ0FpYXFZcTllS25ETExYdUtWRTVIVkI3MVdGMDBDOTZDOVhJQm9CUkVDaDNvcWFQeFQxZ1NmdkpHZGZTdmFEUWNJS2R6QVNyZXNrWTNOazZOTUlvVWNwaVV5NENQbTNkTEJ2MVFyYmR6?oc=5",
-   "source": "WSJ",
-   "published": "2026-10-15T22:49:00+09:00",
+   "title": "UBS now expects a third Fed rate hike after hot September inflation print",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQko0ZWtvbDlGdXp5Tk0yNFZ1OGdkVDluWUlmU3lxQXZsVy1WV0oySEtYVkNpSlpjWXlfRzc4VFVJaEJHU0hlVUtCd2RtR1BXTG52TmF3U2ZUemE4WGd1bEUzNnNyQmpRS1VFWWFkcm5KWjRpR1Jja3dfSFhtNmx2WnpVLU1RaERlN1kzUEV4bFZhQ0lHUlBvUWVodGlSclpaaS1jZk43U2laUlBnUWU3b1R2dHN6SGY2NFFDQUxIMUY2UlU?oc=5",
+   "source": "Investing.com",
+   "published": "2026-10-16T06:33:01+09:00",
    "dup_count": 0,
-   "summary": "유가는 수요 전망과 호르무즈 해협 운송 리스크를 주시하며 혼조세를 보였다."
+   "summary": "UBS는 9월 고물가 여파로 연준의 세 번째 금리 인상을 전망했다."
   },
   {
-   "title": "Stocks and dollar slide as tech rout deepens",
+   "title": "Global stocks flat as AI and rate fears hit tech",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeTRzUk5SRExJbm1EUXdJWG9JaXdKSEdtX29rb0k3ZkRTRFZIeHRxb0xMcm00eUF0NzhCS1owVkp4OWQ2eHF2dWl3aVpPak85emN3eGdqX1hEOW0zNjVlTWs3eGVUSlFUME1fVHVXRTFtNEZ4aVBZS1pSQmJnOVdHZTNZQkQwMnowenVWaW9PVFZnSG5i?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-10-15T22:45:36+09:00",
+   "published": "2026-10-16T06:19:22+09:00",
    "dup_count": 0,
-   "summary": "기술주 약세가 심화되면서 주가와 달러화가 동반 하락했다."
+   "summary": "AI와 금리 우려가 기술주를 타격하며 글로벌 증시는 보합세를 보였다."
   },
   {
-   "title": "GlobalFoundries falls after Trump administration doubles its equity stake in chipmaker",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQaTl2TU1hbGJkQmtlQ29sMGowTWszeU1wMkh1dHc2UUZoTzg4dGl4ckNNS3BsYmZiWkJFcmNIZDM2UW1UeVVtN1BCTU1wcnA2S1BMdWZ2OFpwXzk4Szl5UTJRRW1TTzJDclRpV0VsZjNLd3Bua2NsVVNhZlI0VFdTbUtULTN4YWdtd0ZjVURSYTVpb3ZyN2xsZk1tbGc0NERxYnA1OVdWSE93WVhNeGRRVHRLc0VDMl9yelF2NFhpMENzbGNTbWNGMjF1V3VLSkJyUXMtZE5kY2I5a2VHbzhz?oc=5",
+   "title": "Global tech rout loses steam",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWkN0QVBXUnljOEtQV21ONG1fbDhiSHJhMHRNNWJZRkVvLV9QWWYtdkM1WXdXWGdpbE5yeDQ0M2lWWUZzbU9TaE8waU15NDh0VjNXelNKT2ZaMWJ6X3ZPa3VaTy1pV3J1T1lsaEw5Z2ZQcUpRSjM4ajdrSnZhRXBTdVRnMXg3VFJEUHQxaENLUy12QmhsTkwxZQ?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-10-15T22:43:46+09:00",
+   "published": "2026-10-16T06:04:38+09:00",
    "dup_count": 0,
-   "summary": "트럼프 행정부의 지분 확대 소식에 GlobalFoundries 주가가 하락했다."
+   "summary": "글로벌 기술주 매도세가 진정되는 양상을 보이고 있다."
+  },
+  {
+   "title": "Rocket Lab stock tumbles as effort to take market share from SpaceX slips to 2027",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQdHZQNmdXS1dRSUc3NWdpVHVFbmFWdVRTcnZzNFpQVllUZWVkY1MtSTE3NWF5Tjc2YnR3SXIwdTU0UzZzTzRWM1k5ai00SllxZVZlWFdST3BSMGRnYnVON0o0WGViTXlyQUNLTlE4QVd6UVRDZ2lSaTdyRHBiZXhrc213c2s4RDlQdFR5UVRvZWFkSExQLTJHc3g2aDBaclZocEJrWVFBQi1oSGV3ZmhtcWUyUWlZQXdRNExGUE9SR2hIMjB0Qk5tODhsTS1BSkRSSnBZWlVsYWNYalk4TFE?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T05:45:55+09:00",
+   "dup_count": 0,
+   "summary": "스페이스X 추격이 2027년으로 지연되며 로켓랩 주가가 급락했다."
   },
   {
    "title": "Nvidia leads chip stocks lower as AI trade takes",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOHlfaC1zS3lncTY1VlI4b1lqX0F3UVNNeEV2d09iWHY4NE54dnNmeTctVHRLaEFhSzNDUU1KZC1FQWFOM1MtdWJxU29FNjdzMEk4Nzc2ck9NNDJoR29uOTE2blFHWGc0Sm50VkFHdG43NEUzS2hvbGwySkJjV3o5S1AtNEx2Q2NwN3ByeGZuVW1jWUQ3OFZEUUp6T3dRVWppUWVJSFF6RWxDOGdfeWk0bHVONng?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQY1lhcFhDalVzMzVWSUVsUWo2ZWtLYjdpR3dQUXJWWDc1UUFONzJUM3ZvazhJWFhxU0dST2R4cTgtaUdoTGx1MzFjOUU5U09ma3c4d0JNc3MzLWZxSGVOUVFTSFRxMWFRUEgxR1NCR2lWUHc5MFZZQmRJM1d1dFNZWWFkRnk5a0VWbXphUk90TWtUUktraE5lczFfLVVSbFBoRnBHYWMyY2VHSXFKd3p4VkZ6dW9NYUdwVTNHdTF0T0Y3SkVxbDhNQ2NTc2F4SnVrVGtReEt3?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-10-15T22:42:37+09:00",
-   "dup_count": 1,
-   "summary": "AI 투자 열기가 식으면서 Nvidia가 반도체주 하락을 주도했다."
+   "published": "2026-10-16T05:33:00+09:00",
+   "dup_count": 2,
+   "summary": "AI 투자 열풍이 식으면서 엔비디아가 반도체주 하락을 주도했다."
   },
   {
-   "title": "TSMC stock sinks despite record profit amid 'extremely robust demand' for AI chips",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQQnViYU9abldsek5fd1VMekVwZ1RnNXFFTDlTRENFZmlQa2NwT015UW1UWVBlbWd0SGJKeXlmZElRYXQ3UlJCdTlnbVYzUU91VUQxaXBGa29sbTN1TEVPRHU4cVNmUm15b25GVFFqVUlzcXhLdWFUa2xtLUhaSTcxczBNVm1JT1VhUjVVQ1UxRWhTbFBaRFRlU1Y4ZmVfbG1OYkR4cFdSNXo1eFlFbjI5UnlDdlh2YnVlZE1Oem91NGZvUm5ST2NOZk4zY0xzeGt2TUpvWVhIQXJhTWVo?oc=5",
+   "title": "Retirees can take these steps to shore up income as yields rise and some dividend-paying sectors slip",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQUpvV0ZBOWpoSkRWcl81VmdZbEVweEthc01Tb3FqOGdtc0FjTzFENkRvU3hzX3ZaWkVPNjcwOHY2VEFrS184ajlMVmdMeHI2UlJmb3loNkhRRjd0NXI1SzdVQzg4N3FFZnRoTU9iXzNNY1lWNV9ET0QtN3BqV3Mza01sU0JROXg2THVCaFBUMm1BVTE3cUNkQVp6VDNxTjE5VEE?oc=5",
+   "source": "CNBC",
+   "published": "2026-10-16T05:28:05+09:00",
+   "dup_count": 0,
+   "summary": "은퇴자들은 금리 상승에 대비해 소득 방어 전략을 세워야 한다."
+  },
+  {
+   "title": "Oil Prices End Mixed as Traders Weigh Demand Outlook, Hormuz Shipping Risks",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNW1MMHhCS1RGcmU1N242QUVfclBfWW56RTVPeWhhUFowX2owYlRJWlBFa1BEMFZaM2daaFVtbG1aVlBBOFJhbnVhR19jMEhmZ0FpYXFZcTllS25ETExYdUtWRTVIVkI3MVdGMDBDOTZDOVhJQm9CUkVDaDNvcWFQeFQxZ1NmdkpHZGZTdmFEUWNJS2R6QVNyZXNrWTNOazZOTUlvVWNwaVV5NENQbTNkTEJ2MVFyYmR6?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-16T04:37:00+09:00",
+   "dup_count": 0,
+   "summary": "유가는 수요 전망과 호르무즈 해협 리스크를 저울질하며 혼조세로 마감했다."
+  },
+  {
+   "title": "META_TITLE_QUOTE",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBpVTJIYnhWcW1kNFFKTHNoajhPeE9zSW9lTElhZkZvcEo3MExtQnpIZjBRek95cWJ0XzRKMzBtMHh0Ty1SYVRESUxfRTJ4Zw?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-10-15T22:42:22+09:00",
+   "published": "2026-10-16T04:19:10+09:00",
+   "dup_count": 0,
+   "summary": "메타 관련 증시 뉴스가 투자자들의 관심을 끌고 있다."
+  },
+  {
+   "title": "Why Ericsson Stock Soared Today",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMzlnb0gtcjhZZHBiaDhrSGNmS3ppdmJXTFF4dHB5TlZBX2gzaXZqSHR2Y1FpMGtZRkpBTzhYSHhDTXNUdmRLTXdGYUlRcC1SVTdNSEctNFJDZU00NXcxSU9ob0tsdVRLZ3EwdmpWeUVRa2RONlI3WXk5UlZ1QjUzYlh5UkZYeTZWdG9JZ1lyajdnOXZYTHBmNEJqcnI?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T03:17:01+09:00",
+   "dup_count": 0,
+   "summary": "에릭슨 주가가 오늘 급등세를 기록했다."
+  },
+  {
+   "title": "Micron & SanDisk Stocks Look Oversold: Time to Buy the Dip?",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPM0IxNTFYNE5WMF9jVXFmdWI5LWtDZ3EwUFkzT3c2OUJkcUQ0VjZjQThPcU9uVFAxVXpzVVRCTjNpa0FoS0duZmdSZ0N4S3dkWWtsWEsyZnVsRVRuVmxBVTlCUC0zSDY4WmdGdVVVcVYwZVNSdm1OQi1jM3FPTU4zVktSYkdyVnJmTThaMHI1MnUxWllsNk8wd1B4aWZVVUticVE?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T03:13:00+09:00",
+   "dup_count": 0,
+   "summary": "마이크론과 샌디스크 주식이 과매도 구간이라 저가 매수 기회가 언급된다."
+  },
+  {
+   "title": "Should You Buy The Dip In Marvell Stock?",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcjhpSjd5STBOMGxhdUlUN0NxQ0hneFlxaGp4TENPZE1lbXh4aXlzT0hyUzAxQ1BEM24zaVpTMzJsZy12aWdQaVhGeW9xaG5DemY5TFZzRVNjLVBBWV9xRTBjTDdJUUJZTVhOVDF3Ujh6SEI5ODR5VTZKbXZqTmIxcXlSS0M4X0NMSjVfYlIyaw?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T03:11:01+09:00",
+   "dup_count": 0,
+   "summary": "마벨 주식의 저가 매수 시점에 대한 분석이 제기된다."
+  },
+  {
+   "title": "TTWO Stock In Focus: Citi Says This Blockbuster Game Could Potentially Ease Concerns About Post-GTA VI Earnings Drop",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQODkyTDVINUc1VXRKamVwU1htOHY3SUpRczZ0bXFqQjhfRldhRi03TDZQWmFkVlFwdW9FYXJUa3FBZ3RRRjI5U2lfcElEZ0JOUmttMFIwbExwR1pnV2hCT041OXpDOFVkdjRpYldrWkJQcElDbTdld1JmMXlsS3N3enMxVWhZRi1tQ3k2NE0tSFgtbGNWRXc?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T03:07:38+09:00",
+   "dup_count": 0,
+   "summary": "씨티는 GTA VI 이후의 실적 우려를 완화할 게임을 주목했다."
+  },
+  {
+   "title": "Why Nike Stock Was Climbing Today",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOclBnWEpUSGlnRVNKc29JYXhlcG55dXVZdjFldEZtdVl4RXI0YldSd2lnMG42Wk54UFpLTVZ1VUh1amYtaXl5UVRaZm5Zdzl2bVRMOFd2QWFna0xienR4TGlNX1dsb25BTHNzUk1mTy1meUpXV1NPT1Nzc0FGVXhjOEtLWWpqUUV4LWkzOUJyYkZ4bkxwQjlSWGt3?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T02:46:41+09:00",
+   "dup_count": 1,
+   "summary": "나이키 주가가 오늘 상승세를 기록했다."
+  },
+  {
+   "title": "Citi Stands Behind 2 Crypto Stocks as Its Top Picks for the Rest of 2026",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOQ2h1S0FGb3BTdDZIX0dkNkNKMjFKWHFUZEdoWUZwTzNIaEdXWEZmZ2d3WFM0YVhlS0dJSzIwdWlCZHlxajZCZ1RVTnJ4UzU3Skw3dnhOaG9mZFR1ekM4ZFV3ZmJ6Y1FwY2VhUU9jNk4xdVloRjlWVXh0MjJITGExQ1M3dHc0UERxV2tqMUhZQWU2amlYcWM0?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T02:30:00+09:00",
+   "dup_count": 0,
+   "summary": "씨티는 2026년 남은 기간 최고의 암호화폐 관련주 두 종목을 지지했다."
+  },
+  {
+   "title": "A lot changed in stock market in just a few months. The single biggest risk did not",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8xSHVzX3JOTGhFdHo0c3ZQOXdvMG42NTl4WHRyNjB4Qm5jNGw0eFMySUowdHlwdU9zQ3hvZnk5WWR3dHotMWVmaFpTdGlJSENCeUtmWmw2bFk5Y3lYY05ub2hhU0tiOWh6LUFpSGxrSU5fUknSAXhBVV95cUxPZ2t4WmlBVGNvREtBbDUta21OUE1FOVRubEk0azhrZUwyUy00LUFwN1dySTliOTREdzZqblh4TWRYTmozZFRKcEtXMGZTN3JaMG9zd2J5TGFSS0JucThwNUdSd2xCRGpWQU8tcVNGRjhuNVRaZ2NqdEI?oc=5",
+   "source": "CNBC",
+   "published": "2026-10-16T02:12:33+09:00",
+   "dup_count": 1,
+   "summary": "증시는 크게 변했으나 단 하나의 최대 리스크는 여전히 남아있다."
+  },
+  {
+   "title": "Stock Market Midday, Oct. 15: Markets Mixed as AI Sell-Off Continues",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTW4yczRDRm5WMXQwMWlpV1p4Ti1xVG51cE9wVWNPbkc4X2hTVEFra2MtQUthbG90bFM0THJfbzVLTjRrek82UlQ4dVBwUVhsUUhHQ3ZsNGV5SmpiOEpzWS00dkMwTERybG5RTExTM3RKVkNJNTNSY01jcndYY1ktRWMxZXFLQnU5NWRUdzFzMGpjVDBZVEE?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T01:55:00+09:00",
+   "dup_count": 1,
+   "summary": "10월 15일 장중 증시는 AI 매도세 지속으로 혼조세를 보였다."
+  },
+  {
+   "title": "Should You Buy, Sell, or Hold Vicor Stock Before Q3 Earnings Release?",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcVJvb3pJNW0wZFU4TjJ3UFdxMktaakdUTzlRZzVLbVoza2pUUi1VRjlQYlVBODZqVF9zX244MUs2T2w1UlR5X1ZFVkFfS1VCOThVWW9Lel9NQ0ZBcGVOalY5bWNfNGtMY0paX3FkUHV2aXhtQ2xuSXpOX3RhRXhxQ3pLQ05oT0FaX0UwcmpOOWltOWh4?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T01:28:00+09:00",
+   "dup_count": 0,
+   "summary": "바이코어 주식의 3분기 실적 발표 전 매매 전략에 관심이 쏠린다."
+  },
+  {
+   "title": "Sylvester Stallone on AI in Hollywood: 'It makes things so much easier'",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNl9tc0ZnRDNFSU1kcTYtcVRtVVpIV3hESmxlazdTdkpWQmRsenUxMXRKei1QcS1QUTZUVW1qVnJlR0ttTzlhY1Jqak9kWnp1ODhMRUxpb3BqaW1UUGlXcmJ1VFF0LVVYV20wclVGeGRGS0gwYTM2d2xYRm8wd3pTdmw3RXhOcEFicGhqb01MaDkwMGlybFZyT3ZBY3RaOTYwaWZScEJmV1ZfUVBsamlfZVhNSGltSV80bnN0S095eDFiRW8?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T01:00:00+09:00",
+   "dup_count": 0,
+   "summary": "실베스터 스탤론은 할리우드의 AI 도입이 일을 매우 수월하게 만든다고 말했다."
+  },
+  {
+   "title": "Is the Stock Market Open Today? Here Are the Trading Hours for Columbus Day.",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZzhQcF9yTmp0c0w4NTBTd0FRS2JMeVdjOWwwSnRuMHZzRGl6SV8ycHZLMkhWLVYzQjdTTXBCLW5VS2FoU0NBamRaRVRjNFpPcy1sSm9UTUU3WEI1UXJ4cFk4N1JXa3MwSDRkOF9KbWQ1WHJMVFN5bkxpVXdyZ1Y5VWQ4aDlXV2kwVllOWHJYQzlGeWVNNlpqSTR6THVPRGE5aGdHa3lDOUFfUzRx?oc=5",
+   "source": "Barron's",
+   "published": "2026-10-16T00:51:18+09:00",
+   "dup_count": 0,
+   "summary": "콜럼버스 데이를 맞아 오늘의 증시 거래 시간이 안내되었다."
+  },
+  {
+   "title": "AMD, NVDA, Other Chip Stocks Extend Rout Amid AI Debt Concerns — Saxo Says Financing Squeeze Could Hit Supply Chain",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVjdKRG5kci1iQkJoSWEtdDVBQVE0UDBVMjB0VkR4NDVJTlNkLUhBSG5mUFd1enRxNkF2Yy1RYmhMZXZRaTNPb25sT25NZks5ODZKSDlUbXpQRC1odUtwOEhXTTdQdDdYbXgyUklCUnh6WkNUVm1CaWJkamJqME5hUGczczMxaFdBT05iNzRrZmgxSGlHT2c?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T00:28:26+09:00",
+   "dup_count": 0,
+   "summary": "AI 부채 우려와 자금 경색으로 AMD와 NVDA 등 반도체주가 하락했다."
+  },
+  {
+   "title": "TSMC stock drops despite record profit amid 'extremely robust demand' for AI chips",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPY3JaUnZwbnJYUWtTbG9yY1FpM3NGSGlWN1QxeVM3eHotc3dqQ0xNdE5yaS03U1N6dV9BUWxLTnNXbklacXdtLU1aS2tZdlVlUmkwb1h4MThrTHFtcFBBTG82TFlsTTFqZVY2bnQ0QVgyZE9aYnpNa3M1QnRNTlJEZmoyb0ZoVGFjeTM0RTk5UjFycV9oUmRqVWd0V2FzTE90QnNoQzZOQ1JRTk1hZmRrTDJ2YWFrRVZRLVpiZEg4OGNVSUEwYnN0ZlhIMjVkd0tZdUgwV2FoYXdlSFF1?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-16T00:26:49+09:00",
+   "dup_count": 0,
+   "summary": "TSMC는 AI 칩의 강력한 수요에도 사상 최대 실적 속 주가가 하락했다."
+  },
+  {
+   "title": "Wholesale prices bubbled higher in September, keeping a rate hike on the table",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQVFNjQmgtaHNza2VtSzNLXzNoSWg4RlVNVVVHWThQR0V5ZlJlRUdKNGM0NkZtZTdsa1lWS09MRndhcUtNT1BWUFBPcnpkQ09TaWM2RjExc3pGN2p5Rmh3aG5uXzJXZmVlODJuZS1BaldnNXJaUFZ3ejNZR2t6aGZLY1lwdmtGRXVqWTZyeHlONHQ5NVlxcGx0dlNsWmNpX1ItUGxsa3doRElncGZ4NXVhVzFCd3FLMENmckJOMHpPS3ZUd01QeEJhYzN0bTFkd1U?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-15T23:18:45+09:00",
+   "dup_count": 0,
+   "summary": "9월 도매 물가가 상승하며 금리 인상 가능성이 유지되었다."
+  },
+  {
+   "title": "SMCI taps former Western Digital CFO as new finance boss; shares tumble",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVXhtbEhmUDFRS25lVjRvMUIxX2IxaHQ5dU5iV09TdGUxZ0h1YXZCTFJET1ByaHl5ellqTDNERUgwNldHNGF6QXFPRUlvUnAtbkxIeGtqNTJTSWowSVVEbHdUdTNoRUEwaFI5TEsxT2NWRFdDZTZUOEswcnZ0a3dPMk5hWU5BRUZtT1FNWVdjY01naVdNVDJCekNQdHZ5dw?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-15T23:06:35+09:00",
+   "dup_count": 0,
+   "summary": "SMCI는 전 웨스턴디지털 CFO를 영입했으나 주가는 하락했다."
+  },
+  {
+   "title": "Stock Market Today (Oct. 15, 2026): Dow edges higher as tech sell-off pivots",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOOGw4VXVWdHRkWnlJQjF6cVA2Q19BNXV5aFAzYjVxZmNZOEROblpMM3N0WTJNQ0ZGWWMwYllQRkUtZnFLV3IyWnVCNklxWllJNFV1b21uUkZ3b0hsVGRiQmZFdUU3Q185Z2JfeU9KVTE4cmwyd0RtTGM4ME9sQUJYMjVhak5CTDA0VW9feXdpdzlXY1lZ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-15T23:04:29+09:00",
    "dup_count": 2,
-   "summary": "TSMC는 AI 칩의 강력한 수요에도 불구하고 사상 최대 실적 발표 후 주가가 하락했다."
+   "summary": "기술주 매도세가 전환되며 10월 15일 다우지수는 소폭 상승했다."
+  },
+  {
+   "title": "Walmart stock moves higher after Deutsche Bank upgrades to Buy, raises price target",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbmg4dk5WOHZhb25HZ3BHRlBndFhqODl5SjdyS3RBME9YX04tZlhLQkRRcmtpUUZwd0hqMDA3dklRclRLRFp3Vmg0TVFSczdSLW9qRjRLNFlzUzgya01sU05kYzNaekxMOV9ZVXg2M004cnI5bjNfS0RPRmFuSWVaejZ6MHRXRTdzcHJkcHZZYlhZMVNkdFVCOXZBcVJ3VHNhLXlibkZnbVpEV1dRVU1OYm1QSmJaUmZoOEF1cGhlMVR3ZFlKTlI1LTFpWmZZdUVMb3V0bGNrSnJJMFpsWUhF?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-15T22:48:10+09:00",
+   "dup_count": 0,
+   "summary": "도이체방크의 상향 조정으로 월마트 주가가 상승했다."
+  },
+  {
+   "title": "Global chip sell-off deepens as South Korean market plunges",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSXNiMTFCNktwc01fZDNYVjlGV2taakFFdkt6TTl2UTd4YmhfdWp3WkJXS3lURlA4LVNTQVVpLTRRQzFHU1d2YzR0ZEY3eElmN2pWN1VCeFBRQUtHQm1HalJ0ejU0Qi1yMHY4eFUzS3JCaDRRY0ZSNGxsbEtuTjdfbHlJT0tpZk5YZG1ESFlNTzJjQ005N0N2aXV5VTFKb2tjcVNVMmIzeHhBUzZWd0o0aWs1WlBxaElUTUxELWI2aDI?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-15T22:44:30+09:00",
+   "dup_count": 1,
+   "summary": "한국 증시가 급락하며 글로벌 반도체 매도세가 심화되었다."
+  },
+  {
+   "title": "Supermicro Appoints Mark Long as Chief Financial Officer",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSGF4OEY1X0UzYU9DUUZsQlcxOXNpLWFQMFBTZWR0MmdRUGZaWG5jbHRCUFROWFNTZXJIR2p4aHNxendjck0zcDRqYU1LOFJKZldxdGtKNXhfMHZ2TUxPeVNScG1Gank1U2hkUDVvMWd5OU9EZGVuYjlGcGlfRkg4NnBlS0xkVnlCV2tBMDc3S2M3WmhaY1ZKa1hZTUxnMEdNa0E?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-15T22:05:00+09:00",
+   "dup_count": 0,
+   "summary": "슈퍼마이크로는 마크 롱을 새로운 최고재무책임자로 임명했다."
   },
   {
    "title": "S&P 500, Nasdaq Slip as Oil Rises on Russia Strikes in Ukraine",
@@ -418,223 +769,23 @@
    "source": "WSJ",
    "published": "2026-10-15T22:02:16+09:00",
    "dup_count": 0,
-   "summary": "우크라이나의 러시아 타격으로 유가가 상승하면서 S&P 500과 나스닥이 하락했다."
+   "summary": "우크라이나의 러시아 공습으로 유가가 상승하자 S&P 500과 나스닥이 하락했다."
   },
   {
-   "title": "Wholesale Inflation Hit 4-Year High in September",
+   "title": "Wholesale Inflation Hit Four-Year High in September",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMGx6WHoyVnctUFBLRl8tcUs1THlPWTNKMThjQU9WcDJObmV1S1E0eVV6dUZYR1hpX1E3WUFWellJMDhBdDE0RTk2cDZGeElaR0RfRUtWZktYWDZKU0VEWTFHQmY4TUhsR0hQdzh5c241dTZhUXNHQWQ3LURPVGxZeVNicjBfeHBkQVhHSl9WaEVsb3ExM0lRQlNQNFVJZEQ4Skw4?oc=5",
    "source": "WSJ",
    "published": "2026-10-15T22:01:00+09:00",
    "dup_count": 0,
-   "summary": "9월 도매 물가상승률이 4년 만에 최고치를 기록했다."
-  },
-  {
-   "title": "Jim Cramer's top 10 things to watch in the stock market Thursday",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcjd5UEZqYXcxc29YTU9jaFk5WTFuZ2tGaXdjMkc3WF9lLThrOXNQQl93cFNHZVctSnF5WjZ6UUxoa3FFSFZiTjZpcDFGTWZ0VGxGOEpoNkpMNFpIRGVsSldUZ3Y3MHBTM29jTjgxcF9IZXVFamhQa0dtR05SMXNnbV9DVUdMSGh2WnFERWNGcnpXdEI2QWs1ZkZJb3c2UUVjY0dFZW1HRW03clZQZksyRTZsNkM?oc=5",
-   "source": "CNBC",
-   "published": "2026-10-15T21:54:30+09:00",
-   "dup_count": 0,
-   "summary": "Jim Cramer가 목요일 주식 시장에서 주목해야 할 10가지 핵심 포인트를 꼽았다."
+   "summary": "9월 도매 인플레이션이 4년 만의 최고치를 기록했다."
   },
   {
    "title": "Why CoreWeave stock may still rise over 100% despite financing fears, analyst says",
    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUnY2dUliTWFad3JfZXBkVWtJV0lhRk8zQk5yaXhaOTNvTzBzLVlNZUhCWGNGVng5UzdFNmUtbFVqMjZ4eFRDYy05Z2VpR2Z5cU5WZ3Nvd0lNc29hR3lZSTVMbkhEUGdOSnZ6aFF0d1JWTWp3VEJyZDR3UzMxeVBsNExfbTNEc3ZNQUpuQm9HNjU4RFRJSjB6UHVYbENjcGxVSU93SWZOLVdpX2VJbVlfZlVPZmp6bU1BMzlfTDZSQzBZM3N0U2JoLTlVbXZVVjRSWU9oaFhXUFFKb1g5?oc=5",
    "source": "Yahoo Finance",
    "published": "2026-10-15T21:51:23+09:00",
-   "dup_count": 1,
-   "summary": "분석가들은 자금 조달 우려에도 CoreWeave 주가가 100% 이상 상승할 수 있다고 전망했다."
-  },
-  {
-   "title": "Seagate Could Have a Long Runway as Data Storage Demand Explodes",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVlBoX0ljQWZTdW5RcGdicVFVYXlPZWVrbXhFaklFM05sYkQ5WFhkYUhqREVZdVNDRGRGOE5iQnNVX2NWYUV4aDl0VkdxbEUtbEJHbXFtaFNoRVowSDMzazZod1F1YlBfVHktc2NUZ0xjM2NOaTVZbTlpcmZFN2VZOVppVUkwdy0tU1VkX2dHc3d5LUVnSlZEUzA5OA?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T21:45:10+09:00",
    "dup_count": 0,
-   "summary": "데이터 저장 수요 급증으로 Seagate가 장기 성장세를 누릴 수 있다는 분석이다."
-  },
-  {
-   "title": "Bank of New York Logs Higher Profit But Flags Market Volatility",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTS1LZU1VbWo1OTFQa3VPZUx1RkZCRGo1NnFfaFVYVDRwOXY1WWJFS1pOaWNNOHNlWFExTFdOakhqR2xRVWNmX0RiRXVIT0s2WGt1WWhxMXZzeEpvTm0wdEduSXV5UlNRUnZCbE1PaTh6a01MekxZWTM1d3dBbDZMdS1PUDJ5aG1hSTRMRVpJZHhybzZQWmc0WF93UQ?oc=5",
-   "source": "WSJ",
-   "published": "2026-10-15T21:36:00+09:00",
-   "dup_count": 0,
-   "summary": "Bank of New York은 이익 증가에도 시장 변동성에 대한 우려를 표명했다."
-  },
-  {
-   "title": "What Wall Street may be forgetting about Meta's AI business",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbkVjRkdRdVp2TUFaMmczY2dJaC00d1lUcnpZQ1RFN29hS0V5NHhmaGRGOGhZeDhocjFNM0FjeXMzb0JVV01HcGM1QUt3RDV1NGdpZGRSNllVWENhdUE4NG14UUV2NEdVa0tjWV9YeDFBR1JCUlJlbktFbzVUSHpPSkFpYkkyVWo2WUxJdnJicWRuMHBZTGdVQzFjVElVZGpNbk1GRkg2SGVETXBhUVJrLWs1aUJKTkVjdWJmdVpEWQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T21:34:22+09:00",
-   "dup_count": 0,
-   "summary": "월스트리트가 Meta의 AI 사업에서 간과하고 있을 수 있는 핵심 가치이다."
-  },
-  {
-   "title": "Premarket movers: CoreWeave tumbles; Penske Automotive surges",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYlJvaUFoWEZIN1Rwci1HRkY0aGFlVVItQUh5dEI2Nm5tUzQwUVBxU2kyY3UxZlFNTGZRXzQ0SnJGX2JzamMxNjVPclI4d2FtQzRPYnotSXU0RUI4d0FOekdCdzRqUENPdW5PTmJjSjVTX2ktQkI5S2JRX2NtamhNa1gxY2tLNmJ1a3N4cGNWYXhDU3ZMWlFmcUt2OVJnWUJTWHdMZk9saXZkdw?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T21:14:41+09:00",
-   "dup_count": 0,
-   "summary": "장외 거래에서 CoreWeave는 급락하고 Penske Automotive는 급등했다."
-  },
-  {
-   "title": "Wall Street is 'tiring of the Bank of Nvidia, the Bank of AMD and the Bank of Broadcom': Baird's Mortonson",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxORkdyc3Y4YW9yMy16ZURxa09KMnc4Yk9YelpKVHpmNU5EcEpBODJKNXJiOE9jU1hkMnFFckNRbWJoVHRZSDNfOVg2WHpBdFlTSHdYV2VUcmxYeGUtR2Z1Zk95X09NVF84dFNaWHM1VWJIVDJud0ZJUmRSMFpfMl9lYkJCOWNUa1VRajQwQlNOU0gteml2Vlk4ZVQyNE0xX2cxOG5nQU82eW1iUXRBcnVBZEdxRjZsanlhQ2JsbW1jdkp1bmN6blJVYlRSYzMzbTRBMVJfYl9iRy1XWFcxeEJYRmxxLUxMalFyRXk1RkpqSQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T21:12:35+09:00",
-   "dup_count": 0,
-   "summary": "월스트리트는 Nvidia, AMD, Broadcom에 대한 과도한 의존에 피로감을 느끼고 있다."
-  },
-  {
-   "title": "There’s a ‘monstrous bull market’ developing under the surface of the S&P 500. This hedge-fund manager tells you where it’s at.",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOOThvUE9ES3JtNksySS1QMkpCN2hzS3lHdzZkNDZFYlV2akZCbnJSYU8yX2xtRG9KSmo3aFJ6UVBZRVBGRjJBTmlQc1NBVGhmWmlmdzZza0VrQ1R4TEt2cUFNNWotWVYtSGozQjl6cDJ0V0MycFp2MTIzeDIwNGRrU1dDQmh1cVI1bmJTeTBKWU1lejlWX2JmbDFJMzhhaEd3aVZleTV3S1JfMmo2Vm15dS1UQ0xobUxjeXgxOGJlNUl0Q3hpNWQ2eFRKS3RkNTl5M2l6MUdwMG9MWmlLX2hUMXVNZ0R3OVZiTFkycGo5MmxNdWRacllJ?oc=5",
-   "source": "MarketWatch",
-   "published": "2026-10-15T21:08:00+09:00",
-   "dup_count": 0,
-   "summary": "S&P 500 이면에서 전개되는 거대한 강세장의 위치를 한 헤지펀드 매니저가 전했다."
-  },
-  {
-   "title": "Kimberly-Clark Forecasts Quarterly Sales Decline Following Social-Media Firestorm in China",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNYUxYbHoxeUh3Y01SbjRKOHpwR3RELXc5d2dBOUpaZUJrNFNaUS1MeC1HcGxIR0JzQXJiY2hKUDd4eWJlVW9wRjdYUVlveHcwWFNIVXd0RENhb1VscVMzSDBzRFdQcHVhUTBaNzBjUlB4WWZjUDlzUFdVaTZxSllpeW1ZdDRRaXVFb0o5OWZ4UUdCNk9GS25OVE1HcGI3MFA3Wng1aHk2Mkp2TVFxaFlHZGNRZWZuZDh5eUNJWVpOVnRTRWZWZGNRZUZZemJVRXdr?oc=5",
-   "source": "WSJ",
-   "published": "2026-10-15T21:05:00+09:00",
-   "dup_count": 0,
-   "summary": "중국 소셜미디어 논란 여파로 Kimberly-Clark의 분기 매출 감소가 전망된다."
-  },
-  {
-   "title": "CRWV Stock On Track For 4-Day Slide Amid CoreWeave’s Debt Test: Analysts Split On Whether Selloff ‘Grossly Overexaggerated’",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYjMzWTBMVERHRmZpZUJTeEFEWGFNTFFkNllxbmpQcTF3RUcwOFM5MWQxakhaQ1hpMm03dlBnRW1ib1dxb1pteEFvTlFyZXdjQng1aUV3X2M0aUlsLUN5MC1HdGV1OWVQN250MWZpaUpqd3JNOUZnbWVaLThHYV9Wb3FIYWtkMzVEaXRDM0FDZEE?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T20:50:55+09:00",
-   "dup_count": 0,
-   "summary": "CoreWeave의 부채 우려 속 CRWV 주가 하락세가 이어지며 분석가들의 의견이 엇갈리고 있다."
-  },
-  {
-   "title": "Big Tech Will Spend $745 Billion on AI This Year. These Stocks Get Paid on Every Dollar.",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWlVkSnRFWXBxa2dZNVBDTXlvaTZ3ODZ2SmxXcjFWR2hIMVo3R0xzV195VV95dUoteFV6UGNTUThrZFlITzBxZDUwRXZTVmYzcXpwRURSY1p5VGk2Z3lkd256clMxY1dGUFdQQ3U0bjdzbk5jZmlIamR5X0lkNUFlbTVMbUN4NG9rZTRKVHk1YUJOWXNB?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T20:30:00+09:00",
-   "dup_count": 0,
-   "summary": "빅테크 기업들이 올해 AI에 745억 달러를 지출하며 관련 수혜주들이 주목받고 있다."
-  },
-  {
-   "title": "AI Bears March Down Wall Street Pre-Bell; Asia Down, Europe Off",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYzY4MFMwY2YweXcxX2w3a2JqWUhrSjJrY2JLZkZXdW1oSUtuSXlnbC1DQWREVmthZUpTM21IZV8xNnlZdzlqaHBIbFRKVGdwN3dORnRlRGdQWWc5VF9Mb1d3Y2djUFdCNEJCOW5IaEdFZXF3YlkxTmpGM3pscUNOR09UYmM5aVcwOXc?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T20:26:05+09:00",
-   "dup_count": 0,
-   "summary": "뉴욕증시 개장 전 AI 약세론이 대두된 가운데 아시아와 유럽 증시도 하락했다."
-  },
-  {
-   "title": "If I Can Only Own Alphabet or Amazon for The Next 5 Years, I’m Choosing This One",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNjJLaTN5bndkcGVNMkpYZ25QeGQxVUtJRGM0NVFMNDA1RkFTUUwyc05rU2FGQ3dSam9tUmtQdHIzQllLZFozS2FyeUJjdnFlNVN1Y0ktM1pLeGQwa3RhYXR1dWtkdU9oZzgwcVdTaXBwRHhVZmFibTRrQTA3WXBtZ0pGaVc2N2lpb0pMdHNEbUJJV3V6OTFXYlJB?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T20:15:19+09:00",
-   "dup_count": 0,
-   "summary": "향후 5년간 Alphabet과 Amazon 중 하나만 소유할 수 있다면 선택할 기업이다."
-  },
-  {
-   "title": "Applied Optoelectronics Stock Fell 12% on Hot Inflation. Opportunity or Falling Knife?",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMkx1dDRXNzItd3VWU1lBZkdHWE1PVUtaSHZweDIxOXhCMVVadG9zU1M4U25meUJDc2NQZWxZSERkdnBaZ2g1M1lsNUlyUG0yWDgtaUVteEdPckJxTm9vanVPa1hSQ2l6Z3o1MGJSU2RJWkpQYVhPTURwV2JQSUZlblJkU0V2Z2FNTEo2SE41M28xNzVrQ08wZnNudkRxMUt4cGU4VQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T20:01:14+09:00",
-   "dup_count": 0,
-   "summary": "고물가 여파로 Applied Optoelectronics 주가가 12% 하락한 가운데 투자 기회인지 논란이다."
-  },
-  {
-   "title": "Tech Rout, Credit Concerns Rattle Asian Stock Markets",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMjNrXzBtNUtrWXk5ZnZwbS1EdTRCU1ZGeDZ4dXRaM1NfdDl0S2JRalgtSDJZa0dXWHJBRDVveUpHS2JFdkw5bHVPR2VJYUtWVko4YmFYcl9Cei1VWkVSM3huQ1NvWlVDanBkS0xQV21mZURQbzZPeVZhbkJwc1B2ZnN6MGhZM29KNWpneE9ScF9GS2N3YmE5cGdQSTNXbFlqWF9USEl3NA?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T19:37:48+09:00",
-   "dup_count": 0,
-   "summary": "기술주 매도세와 신용 우려가 아시아 증시를 흔들었다."
-  },
-  {
-   "title": "S&P 500's march to 8,000 hinges on 'very, very strong' third quarter",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSFZNem55OW4xLXhGSWdlV2JWSmVwYnJxdTF4TVlGSGZZUENHR2hud0FVR0F4SmZodHdocFgtUXR4RVdEMDY0TDRoZjRRcFdLN0NBakFwbS1iSUJLeGFzMTNfVkQ4MjRLOWJqNmRKN1ZoNVp3OWU2Qzl3VzZreDdZNWpDODVuRjJSMEZJ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T19:28:08+09:00",
-   "dup_count": 0,
-   "summary": "S&P 500의 8,000선 돌파는 매우 강력한 3분기 실적에 달려 있다."
-  },
-  {
-   "title": "Why CoreWeave stock panic matters to Nvidia, explained in under 30 seconds",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPRzVES1hFdko3MUN3Z1VTa2JvM0N4ZVpnbXdyV19lTmZ2eHY4U2ZsTFZHN0ZIQ25LWkhCb1hmT2NkeER2T1Btam9EQ25vZWJ0cGpNNUc4OVVlOHg3bUF4d0dSckVPbGk4VkRhSkExNE1FekljQm4xMXJLeVBGWW5QRV85UmllTXBpM3JtbVZ3eXh5ZmlqSGhFX01RTHRzTTNNRzhSeTBqaTBHeWI3YUNfNUxnMlZoZWRyM01OXzFWMlBocWYxVXBqM05hU2dkTWhaWVYw?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T18:59:31+09:00",
-   "dup_count": 0,
-   "summary": "CoreWeave 주가 패닉이 Nvidia에 미치는 중요성을 30초 만에 설명한다."
-  },
-  {
-   "title": "Rising Rates Threaten Wall Street’s Golden Goose in Trading",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOS1FoNS1HT2FMZ3QtNVlILUJYTjhPMXoyYUEzRTg1Yy1CaEgwOHVVNkNsYjMwWTY3SzQ1cVBEamJ0RXh1MUJ4UWZaS2R4MVZrVmx2R0FleExRRUU4MzgzV1hQWXpMTDNGek84cXJPMXdTOFhhdzhyNXVDazY5cTN2WVVUdEplM2pvNmVyWk5IN3ppRTBIZHR6Z3FSNnpZMjhiV1VweXp3?oc=5",
-   "source": "WSJ",
-   "published": "2026-10-15T18:30:00+09:00",
-   "dup_count": 0,
-   "summary": "금리 상승이 월스트리트 트레이딩의 핵심 수익원을 위협하고 있다."
-  },
-  {
-   "title": "U.K. Economy Defies Gloomy Predictions With Help From AI",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQmE5VndlSVB3NGFIb3FEelExSFI4dFdOckJ6a0lvWTdiTlY4OXhBT2xzbllyQUx3MmNzV1dSQjhaTkV6M3l6X1lBcFBhYnF5VXBmTW55NWMyVEtEQ1RLR3BRRjdkZEE0YmYwdDlnbF9KTnJGcFVaM09oTnhvMzA1eE53V1lwLVRyd0swTzd2S0ZTYmM?oc=5",
-   "source": "WSJ",
-   "published": "2026-10-15T18:26:00+09:00",
-   "dup_count": 0,
-   "summary": "AI의 지원 덕분에 영국 경제가 비관적 전망을 극복하고 있다."
-  },
-  {
-   "title": "CoreWeave is getting drilled again the day after a panic-filled rout",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUlFZazFORnJUVUplQ1NsaU0xblcxbjJyTTBnMWx4N1FGQjlzU3BHVWZFeWx3d1ZTSjdHdUMyR08taVdPZ2tSLTJTTzlXRm4xT0Vob3dCVUJVUUtIaTRoSmtyNmRRRGE0eGlON2hjYXNuVkRTczBHZHJKM1ZLX3BwSXVXLVU4ME9VdW5YVjVXbWpSb295RFlpazVQRHhReTE2eHJvdGptZFRVTGYzWDZZajU5cVhJMGVsSC01ZC0yVUtxbmNsbUw0UkdCSGg?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T18:18:11+09:00",
-   "dup_count": 0,
-   "summary": "패닉 장세 하루 만에 CoreWeave가 또다시 급락세를 겪고 있다."
-  },
-  {
-   "title": "TSMC Posts a Sixth Straight Record Quarter, and Its Q4 Guide Says the AI Boom Isn’t Slowing. Here’s the Fuller Picture",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbW1ZV3pVU3lGWHM4NDZJMHc3bzZhb29OZkt0NFhGUm9aU0h5Nm5qU1RKd3AteFJKVXlENDZVZnFUQ2hCampBTm1PQlRkb2lseUc5SjRteWNnS3Y5NndRM2lmSXRocjJQc0llVEFaZFBsTGtxbHRtS29FV1dWVGl1anZWZ0ZaNmpIVFE2bUF5V0JuaHRNVXhOcDBIdG5XQQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T18:14:06+09:00",
-   "dup_count": 0,
-   "summary": "TSMC가 6개 분기 연속 사상 최대 실적을 기록하며 AI 붐이 지속됨을 시사했다."
-  },
-  {
-   "title": "Trump administration doubles its equity stake in GlobalFoundries, will partner with company in new semiconductor plant",
-   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPRnY0NU5TWUp0SDByRktPdnhqdjBYaG5fNEwwNHhTQVJJYmNreFB1UTRibWRIelpMWjRDbXI5dFFMQnVUQTVfRlZTYUNWQTlxRWtUTzF1a1Q5WGFoWFFyZlpYZHA2S2J1WGtQTVFyenV5MV9zeUVzUWdWVWdtb0R6djdHOEdGZDFNVG5kSW0tYzFlR3gyNVJjR3dyWnd3eExOZnkwNEJiWkQtWW80WGhMSXlBN1JBWklsOFdlVXBXM3dCdm5XU1I2bnl3ZzBtSi0yMnVKdjc0OE5mRFdjbkFaek1rYnpfYnlTbGJUMExyMm93bHNCSDkycS15S1ZfbDF5NWgxU0pHQnQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T18:00:00+09:00",
-   "dup_count": 0,
-   "summary": "트럼프 행정부가 GlobalFoundries 지분을 두 배로 늘리고 신규 반도체 공장을 협력한다."
-  },
-  {
-   "title": "Antofagasta Shares Slump on Weak Copper Outlook",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBCamp5Q18xbUJEemt1bkZhU01xTTJUaklackRlb0d6RHRNbFNSeWVyMDRubVNIU3ZmMkFPc2lWMW90TDFjX0c2UlVhV2ZyV0pBZExwRUVpZEUxc0J5OHhXdU1CdEVpemE2b1ZaWFR2ZHAyOEZ5YndUUW81aEUwZw?oc=5",
-   "source": "WSJ",
-   "published": "2026-10-15T18:00:00+09:00",
-   "dup_count": 0,
-   "summary": "구리 전망 악화로 Antofagasta 주가가 하락했다."
-  },
-  {
-   "title": "Why Are Nasdaq Futures Sinking Premarket? CRWV, MU, TSM, SKHY, IBRX, RKLB, TSLA Stocks In Focus",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWHBjeEdSRnR5SlpYS2Vma2M3aVljQWh1a2VQV3hwNkMyUnk1M3ZVY1FxWjlLYlVDUTFtcDV4azJvMWNjNFZlTzdkcERKc0hFMkNUeHNoOFpsYmdleTJjWS1yemNRV3dlQUtLeFdIemhoemViQWlWVFNSNmhHd19idlduTmc0MUJoNEgyVDVZWGV1T1BpWUpHeTVmUGFCai1tNnc0?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T17:58:23+09:00",
-   "dup_count": 0,
-   "summary": "CRWV, MU, TSM 등이 주목받는 가운데 나스닥 선물이 프리마켓에서 하락했다."
-  },
-  {
-   "title": "TSMC: Q3 Earnings Snapshot",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcV9pbFNTNTU0ZnhfSDZnRjk2SURpNGczUE5KN21fM000YUZxeHF1ZlM4SkFUdkFxX0FRVDUzN3pMOFNtNUNHWXNRM0tCU2tOYm1Ub1JwZ0FLTTNwQVJ4bFJ2SmZKNjhmQ2o2ZER5aEFLTGdLeFZ3eDBpbXFfMzBCNmJFbHhYMGxHdmpsV1hmLVd0a2RT?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-15T14:58:52+09:00",
-   "dup_count": 0,
-   "summary": "TSMC의 3분기 실적 스냅샷이 발표되었다."
-  },
-  {
-   "title": "TomTom shares fall as revenue miss outweighs higher margin forecast",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPN05TQnNkY3ZzSzJNdzFMRGFQdjdJREJ2UzJtalo2emE0Y1c1cTVTZTQzTGVrX3VqSFF3QnZBZFFLNUF4OHNzRDctZUJTU3BxeXdTRmNZYUhFZm9VYUNBWERqa3RGbHcwWXExbFYtcjF1U3gxUTE2Q3R5SmNHTnRKVHNKajBBaDRicEZsNnRjMkhQdERNMGEtSkpnaFFFRm8xUml4dTdONTc0ZDBzMk14VnVUcTcyU2lva3dSajZFLVIwb0k?oc=5",
-   "source": "Reuters",
-   "published": "2026-10-15T14:13:00+09:00",
-   "dup_count": 0,
-   "summary": "TomTom은 마익 상승 전망에도 매출 부진으로 주가가 하락했다."
+   "summary": "애널리스트는 자금 조달 우려에도 코어위브 주가가 100% 이상 상승할 수 있다고 보았다."
   }
  ]
 }

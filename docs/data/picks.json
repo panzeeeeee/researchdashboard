@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-15T23:32:13.677781+09:00",
+ "updated_at": "2026-10-16T09:59:07.921935+09:00",
  "picks": [
   {
    "code": "MRNA",
@@ -41,7 +41,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.806,
+   "score": 0.81,
    "note": "F7",
    "source": "딥밸류"
   },
@@ -52,19 +52,19 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.798,
+   "score": 0.796,
    "note": "F8",
    "source": "딥밸류"
   },
   {
-   "code": "KROS",
-   "name": "Keros Therapeutics, Inc.",
+   "code": "SAM",
+   "name": "Boston Beer Company, Inc. (The)",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.739,
-   "note": "F6",
+   "sector": "Consumer Defensive",
+   "score": 0.751,
+   "note": "F8",
    "source": "딥밸류"
   }
  ],
@@ -406,7 +406,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.806,
+   "score": 0.81,
    "note": "F7",
    "rank": 1
   },
@@ -417,20 +417,9 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.798,
+   "score": 0.796,
    "note": "F8",
    "rank": 2
-  },
-  {
-   "code": "KROS",
-   "name": "Keros Therapeutics, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.739,
-   "note": "F6",
-   "rank": 3
   },
   {
    "code": "SAM",
@@ -439,8 +428,19 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.735,
+   "score": 0.751,
    "note": "F8",
+   "rank": 3
+  },
+  {
+   "code": "KROS",
+   "name": "Keros Therapeutics, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.736,
+   "note": "F6",
    "rank": 4
   },
   {
@@ -450,20 +450,9 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Industrials",
-   "score": 0.731,
+   "score": 0.735,
    "note": "F9",
    "rank": 5
-  },
-  {
-   "code": "VRRM",
-   "name": "Verra Mobility Corporation",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.724,
-   "note": "F8",
-   "rank": 6
   },
   {
    "code": "RHLD",
@@ -472,9 +461,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.713,
+   "score": 0.724,
    "note": "F7",
-   "rank": 7
+   "rank": 6
   },
   {
    "code": "ZTS",
@@ -483,9 +472,9 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Healthcare",
-   "score": 0.7,
+   "score": 0.697,
    "note": "F8",
-   "rank": 8
+   "rank": 7
   },
   {
    "code": "TRIP",
@@ -494,9 +483,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.667,
+   "score": 0.68,
    "note": "F7",
-   "rank": 9
+   "rank": 8
   },
   {
    "code": "INTU",
@@ -507,7 +496,7 @@
    "sector": "Technology",
    "score": 0.666,
    "note": "F7",
-   "rank": 10
+   "rank": 9
   },
   {
    "code": "COLL",
@@ -516,20 +505,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.659,
+   "score": 0.657,
    "note": "F6",
-   "rank": 11
-  },
-  {
-   "code": "DXC",
-   "name": "DXC Technology Company",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.649,
-   "note": "F6",
-   "rank": 12
+   "rank": 10
   },
   {
    "code": "NFLX",
@@ -540,6 +518,28 @@
    "sector": "Communication Services",
    "score": 0.637,
    "note": "F7",
+   "rank": 11
+  },
+  {
+   "code": "CARS",
+   "name": "Cars.com Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Communication Services",
+   "score": 0.634,
+   "note": "F7",
+   "rank": 12
+  },
+  {
+   "code": "APOG",
+   "name": "Apogee Enterprises, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.633,
+   "note": "F6",
    "rank": 13
   },
   {
@@ -549,31 +549,9 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Unknown",
-   "score": 0.627,
+   "score": 0.629,
    "note": "F6",
    "rank": 14
-  },
-  {
-   "code": "CARS",
-   "name": "Cars.com Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Communication Services",
-   "score": 0.626,
-   "note": "F7",
-   "rank": 15
-  },
-  {
-   "code": "APOG",
-   "name": "Apogee Enterprises, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.624,
-   "note": "F6",
-   "rank": 16
   },
   {
    "code": "JBI",
@@ -582,9 +560,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.618,
+   "score": 0.622,
    "note": "F6",
-   "rank": 17
+   "rank": 15
   },
   {
    "code": "LRN",
@@ -593,9 +571,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.602,
+   "score": 0.607,
    "note": "F6",
-   "rank": 18
+   "rank": 16
   },
   {
    "code": "ICFI",
@@ -604,9 +582,42 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
+   "score": 0.605,
+   "note": "F7",
+   "rank": 17
+  },
+  {
+   "code": "MNTN",
+   "name": "MNTN, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Technology",
    "score": 0.596,
    "note": "F7",
+   "rank": 18
+  },
+  {
+   "code": "BBW",
+   "name": "Build-A-Bear Workshop, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Consumer Cyclical",
+   "score": 0.592,
+   "note": "F6",
    "rank": 19
+  },
+  {
+   "code": "AMPH",
+   "name": "Amphastar Pharmaceuticals, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.591,
+   "note": "F6",
+   "rank": 20
   },
   {
    "code": "ROOT",
@@ -615,9 +626,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.594,
+   "score": 0.589,
    "note": "F6",
-   "rank": 20
+   "rank": 21
   },
   {
    "code": "APP",
@@ -628,7 +639,7 @@
    "sector": "Communication Services",
    "score": 0.588,
    "note": "F9",
-   "rank": 21
+   "rank": 22
   },
   {
    "code": "NKE",
@@ -637,42 +648,9 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.587,
-   "note": "F7",
-   "rank": 22
-  },
-  {
-   "code": "MNTN",
-   "name": "MNTN, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.585,
+   "score": 0.586,
    "note": "F7",
    "rank": 23
-  },
-  {
-   "code": "BBW",
-   "name": "Build-A-Bear Workshop, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Consumer Cyclical",
-   "score": 0.585,
-   "note": "F6",
-   "rank": 24
-  },
-  {
-   "code": "AMPH",
-   "name": "Amphastar Pharmaceuticals, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.578,
-   "note": "F6",
-   "rank": 25
   },
   {
    "code": "CLB",
@@ -681,20 +659,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Energy",
-   "score": 0.565,
+   "score": 0.585,
    "note": "F7",
-   "rank": 26
-  },
-  {
-   "code": "INTU",
-   "name": "Intuit Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "SPX",
-   "sector": "Technology",
-   "score": 0.543,
-   "note": "F7",
-   "rank": 27
+   "rank": 24
   },
   {
    "code": "ODD",
@@ -703,9 +670,20 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.538,
+   "score": 0.557,
    "note": "F6",
-   "rank": 28
+   "rank": 25
+  },
+  {
+   "code": "ARHS",
+   "name": "Arhaus, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Consumer Cyclical",
+   "score": 0.546,
+   "note": "F6",
+   "rank": 26
   },
   {
    "code": "STZ",
@@ -714,7 +692,29 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Defensive",
-   "score": 0.536,
+   "score": 0.539,
+   "note": "F7",
+   "rank": 27
+  },
+  {
+   "code": "INTU",
+   "name": "Intuit Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "SPX",
+   "sector": "Technology",
+   "score": 0.539,
+   "note": "F7",
+   "rank": 28
+  },
+  {
+   "code": "BL",
+   "name": "BlackLine, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.537,
    "note": "F7",
    "rank": 29
   },
@@ -725,7 +725,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.532,
+   "score": 0.535,
    "note": "F7",
    "rank": 30
   }
@@ -733,7 +733,7 @@
  "sectors": [
   {
    "name": "Healthcare",
-   "count": 35,
+   "count": 34,
    "tickers": [
     "MRNA",
     "VEEV",
@@ -749,7 +749,7 @@
   },
   {
    "name": "Technology",
-   "count": 23,
+   "count": 22,
    "tickers": [
     "BOX",
     "FRSH",
@@ -781,7 +781,7 @@
   },
   {
    "name": "Consumer Cyclical",
-   "count": 16,
+   "count": 17,
    "tickers": [
     "SIG",
     "FIGS",
