@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-20T23:38:25.526651+09:00",
+ "updated_at": "2026-10-21T10:10:52.300426+09:00",
  "picks": [
   {
    "code": "VEEV",
@@ -52,7 +52,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.819,
+   "score": 0.818,
    "note": "F7",
    "source": "딥밸류"
   },
@@ -63,7 +63,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.788,
+   "score": 0.779,
    "note": "F8",
    "source": "딥밸류"
   },
@@ -74,7 +74,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.758,
+   "score": 0.759,
    "note": "F8",
    "source": "딥밸류"
   }
@@ -417,7 +417,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.819,
+   "score": 0.818,
    "note": "F7",
    "rank": 1
   },
@@ -428,7 +428,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.788,
+   "score": 0.779,
    "note": "F8",
    "rank": 2
   },
@@ -439,7 +439,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.758,
+   "score": 0.759,
    "note": "F8",
    "rank": 3
   },
@@ -450,9 +450,20 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.731,
+   "score": 0.736,
    "note": "F7",
    "rank": 4
+  },
+  {
+   "code": "FSLR",
+   "name": "First Solar, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "SPX",
+   "sector": "Technology",
+   "score": 0.716,
+   "note": "F8",
+   "rank": 5
   },
   {
    "code": "PNR",
@@ -461,19 +472,8 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Industrials",
-   "score": 0.697,
+   "score": 0.688,
    "note": "F9",
-   "rank": 5
-  },
-  {
-   "code": "ZTS",
-   "name": "Zoetis Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "SPX",
-   "sector": "Healthcare",
-   "score": 0.69,
-   "note": "F8",
    "rank": 6
   },
   {
@@ -510,15 +510,26 @@
    "rank": 9
   },
   {
+   "code": "ZTS",
+   "name": "Zoetis Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.676,
+   "note": "F8",
+   "rank": 10
+  },
+  {
    "code": "TRIP",
    "name": "TripAdvisor, Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.669,
+   "score": 0.673,
    "note": "F7",
-   "rank": 10
+   "rank": 11
   },
   {
    "code": "COLL",
@@ -527,9 +538,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.668,
+   "score": 0.667,
    "note": "F6",
-   "rank": 11
+   "rank": 12
   },
   {
    "code": "IMXI",
@@ -538,9 +549,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.655,
+   "score": 0.659,
    "note": "F7",
-   "rank": 12
+   "rank": 13
   },
   {
    "code": "FISV",
@@ -549,9 +560,9 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Unknown",
-   "score": 0.642,
+   "score": 0.643,
    "note": "F6",
-   "rank": 13
+   "rank": 14
   },
   {
    "code": "APOG",
@@ -560,9 +571,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.627,
+   "score": 0.625,
    "note": "F6",
-   "rank": 14
+   "rank": 15
   },
   {
    "code": "ICFI",
@@ -571,19 +582,8 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.61,
-   "note": "F7",
-   "rank": 15
-  },
-  {
-   "code": "JBI",
-   "name": "Janus International Group, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
    "score": 0.607,
-   "note": "F6",
+   "note": "F7",
    "rank": 16
   },
   {
@@ -593,9 +593,20 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.607,
+   "score": 0.606,
    "note": "F6",
    "rank": 17
+  },
+  {
+   "code": "JBI",
+   "name": "Janus International Group, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.606,
+   "note": "F6",
+   "rank": 18
   },
   {
    "code": "ROOT",
@@ -604,19 +615,8 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.605,
+   "score": 0.599,
    "note": "F6",
-   "rank": 18
-  },
-  {
-   "code": "CPRT",
-   "name": "Copart, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "SPX",
-   "sector": "Industrials",
-   "score": 0.603,
-   "note": "F7",
    "rank": 19
   },
   {
@@ -637,7 +637,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.588,
+   "score": 0.59,
    "note": "F7",
    "rank": 21
   },
@@ -648,18 +648,18 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.581,
+   "score": 0.584,
    "note": "F6",
    "rank": 22
   },
   {
-   "code": "NKE",
-   "name": "Nike, Inc.",
+   "code": "CPRT",
+   "name": "Copart, Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "SPX",
-   "sector": "Consumer Cyclical",
-   "score": 0.571,
+   "sector": "Industrials",
+   "score": 0.579,
    "note": "F7",
    "rank": 23
   },
@@ -670,42 +670,20 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Energy",
-   "score": 0.568,
+   "score": 0.572,
    "note": "F7",
    "rank": 24
   },
   {
-   "code": "UPWK",
-   "name": "Upwork Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Communication Services",
-   "score": 0.543,
-   "note": "F6",
-   "rank": 25
-  },
-  {
-   "code": "STZ",
-   "name": "Constellation Brands, Inc.",
+   "code": "NKE",
+   "name": "Nike, Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "SPX",
-   "sector": "Consumer Defensive",
-   "score": 0.542,
+   "sector": "Consumer Cyclical",
+   "score": 0.555,
    "note": "F7",
-   "rank": 26
-  },
-  {
-   "code": "TRUP",
-   "name": "Trupanion, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Financial Services",
-   "score": 0.541,
-   "note": "F7",
-   "rank": 27
+   "rank": 25
   },
   {
    "code": "BL",
@@ -714,20 +692,31 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.541,
+   "score": 0.54,
    "note": "F7",
-   "rank": 28
+   "rank": 26
   },
   {
-   "code": "INTU",
-   "name": "Intuit Inc.",
+   "code": "UPWK",
+   "name": "Upwork Inc.",
    "market": "us",
    "strategy": "딥밸류",
-   "universe": "SPX",
-   "sector": "Technology",
+   "universe": "R2K",
+   "sector": "Communication Services",
+   "score": 0.539,
+   "note": "F6",
+   "rank": 27
+  },
+  {
+   "code": "TRUP",
+   "name": "Trupanion, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Financial Services",
    "score": 0.538,
    "note": "F7",
-   "rank": 29
+   "rank": 28
   },
   {
    "code": "APP",
@@ -738,10 +727,37 @@
    "sector": "Communication Services",
    "score": 0.537,
    "note": "F9",
+   "rank": 29
+  },
+  {
+   "code": "STZ",
+   "name": "Constellation Brands, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "SPX",
+   "sector": "Consumer Defensive",
+   "score": 0.527,
+   "note": "F7",
    "rank": 30
   }
  ],
  "sectors": [
+  {
+   "name": "Technology",
+   "count": 23,
+   "tickers": [
+    "BRZE",
+    "BOX",
+    "FRSH",
+    "SPT",
+    "PAGS",
+    "AVPT"
+   ],
+   "strategies": [
+    "딥밸류",
+    "신고가·물극필반"
+   ]
+  },
   {
    "name": "Healthcare",
    "count": 22,
@@ -752,22 +768,6 @@
     "LLY",
     "WST",
     "XERS"
-   ],
-   "strategies": [
-    "딥밸류",
-    "신고가·물극필반"
-   ]
-  },
-  {
-   "name": "Technology",
-   "count": 21,
-   "tickers": [
-    "BRZE",
-    "BOX",
-    "FRSH",
-    "SPT",
-    "PAGS",
-    "AVPT"
    ],
    "strategies": [
     "딥밸류",
