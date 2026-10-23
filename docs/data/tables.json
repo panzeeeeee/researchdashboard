@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-22T23:49:54.331085+09:00",
+ "updated_at": "2026-10-23T10:12:33.087703+09:00",
  "breakout": [
   {
    "code": "CRL",
@@ -264,31 +264,16 @@
  ],
  "deepvalue": [
   {
-   "code": "VRRM",
-   "name": "Verra Mobility Corporation",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.859,
-   "value": 0.759,
-   "turn": 0.983,
-   "fscore": 8,
-   "drawdown": 90.2,
-   "below200": 249,
-   "earn_yld": 16.0,
-   "triggered": true,
-   "why": ""
-  },
-  {
    "code": "APTV",
    "name": "Aptiv PLC",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.782,
-   "value": 0.917,
-   "turn": 0.616,
+   "score": 0.76,
+   "value": 0.878,
+   "turn": 0.615,
    "fscore": 8,
-   "drawdown": 52.0,
-   "below200": 166,
+   "drawdown": 54.1,
+   "below200": 165,
    "earn_yld": 9.8,
    "triggered": true,
    "why": ""
@@ -298,12 +283,12 @@
    "name": "Resolute Holdings Management",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.739,
-   "value": 0.668,
-   "turn": 0.826,
+   "score": 0.756,
+   "value": 0.672,
+   "turn": 0.857,
    "fscore": 7,
-   "drawdown": 48.6,
-   "below200": 118,
+   "drawdown": 49.1,
+   "below200": 117,
    "earn_yld": 16.4,
    "triggered": true,
    "why": ""
@@ -313,13 +298,28 @@
    "name": "Boston Beer Company, Inc. (The)",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.737,
-   "value": 0.675,
-   "turn": 0.813,
+   "score": 0.745,
+   "value": 0.681,
+   "turn": 0.823,
    "fscore": 8,
-   "drawdown": 50.4,
+   "drawdown": 51.6,
    "below200": 181,
    "earn_yld": 7.6,
+   "triggered": true,
+   "why": ""
+  },
+  {
+   "code": "KKR",
+   "name": "KKR & Co. Inc.",
+   "universe": "SPX",
+   "sector": "Financial Services",
+   "score": 0.722,
+   "value": 0.922,
+   "turn": 0.479,
+   "fscore": 6,
+   "drawdown": 45.6,
+   "below200": 200,
+   "earn_yld": 117.3,
    "triggered": true,
    "why": ""
   },
@@ -328,13 +328,28 @@
    "name": "First Solar, Inc.",
    "universe": "SPX",
    "sector": "Technology",
-   "score": 0.711,
-   "value": 0.639,
-   "turn": 0.799,
+   "score": 0.699,
+   "value": 0.614,
+   "turn": 0.804,
    "fscore": 8,
-   "drawdown": 46.1,
-   "below200": 128,
+   "drawdown": 45.1,
+   "below200": 127,
    "earn_yld": 9.3,
+   "triggered": true,
+   "why": ""
+  },
+  {
+   "code": "TRIP",
+   "name": "TripAdvisor, Inc.",
+   "universe": "R2K",
+   "sector": "Consumer Cyclical",
+   "score": 0.687,
+   "value": 0.758,
+   "turn": 0.601,
+   "fscore": 7,
+   "drawdown": 67.0,
+   "below200": 211,
+   "earn_yld": 10.6,
    "triggered": true,
    "why": ""
   },
@@ -347,24 +362,9 @@
    "value": 0.708,
    "turn": 0.652,
    "fscore": 7,
-   "drawdown": 56.4,
-   "below200": 245,
+   "drawdown": 57.8,
+   "below200": 244,
    "earn_yld": 6.0,
-   "triggered": true,
-   "why": ""
-  },
-  {
-   "code": "PNR",
-   "name": "Pentair plc.",
-   "universe": "SPX",
-   "sector": "Industrials",
-   "score": 0.683,
-   "value": 0.65,
-   "turn": 0.723,
-   "fscore": 9,
-   "drawdown": 51.2,
-   "below200": 183,
-   "earn_yld": 7.8,
    "triggered": true,
    "why": ""
   },
@@ -377,7 +377,7 @@
    "value": 0.792,
    "turn": 0.546,
    "fscore": 7,
-   "drawdown": 55.6,
+   "drawdown": 56.8,
    "below200": 252,
    "earn_yld": 8.7,
    "triggered": true,
@@ -392,39 +392,9 @@
    "value": 0.6,
    "turn": 0.775,
    "fscore": 7,
-   "drawdown": 50.6,
-   "below200": 245,
+   "drawdown": 51.4,
+   "below200": 244,
    "earn_yld": 3.6,
-   "triggered": true,
-   "why": ""
-  },
-  {
-   "code": "ZTS",
-   "name": "Zoetis Inc.",
-   "universe": "SPX",
-   "sector": "Healthcare",
-   "score": 0.674,
-   "value": 0.657,
-   "turn": 0.695,
-   "fscore": 8,
-   "drawdown": 58.0,
-   "below200": 252,
-   "earn_yld": 8.7,
-   "triggered": true,
-   "why": ""
-  },
-  {
-   "code": "TRIP",
-   "name": "TripAdvisor, Inc.",
-   "universe": "R2K",
-   "sector": "Consumer Cyclical",
-   "score": 0.673,
-   "value": 0.749,
-   "turn": 0.58,
-   "fscore": 7,
-   "drawdown": 67.0,
-   "below200": 212,
-   "earn_yld": 10.6,
    "triggered": true,
    "why": ""
   },
@@ -433,12 +403,12 @@
    "name": "Collegium Pharmaceutical, Inc.",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.667,
-   "value": 0.838,
-   "turn": 0.458,
+   "score": 0.672,
+   "value": 0.839,
+   "turn": 0.468,
    "fscore": 6,
-   "drawdown": 52.8,
-   "below200": 161,
+   "drawdown": 54.0,
+   "below200": 160,
    "earn_yld": 16.3,
    "triggered": true,
    "why": ""
@@ -448,12 +418,12 @@
    "name": "International Money Express, In",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.653,
-   "value": 0.818,
-   "turn": 0.451,
+   "score": 0.665,
+   "value": 0.82,
+   "turn": 0.476,
    "fscore": 7,
-   "drawdown": 59.9,
-   "below200": 104,
+   "drawdown": 58.7,
+   "below200": 103,
    "earn_yld": 23.4,
    "triggered": true,
    "why": ""
@@ -463,14 +433,29 @@
    "name": "Upbound Group, Inc.",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.65,
-   "value": 0.669,
-   "turn": 0.627,
+   "score": 0.663,
+   "value": 0.679,
+   "turn": 0.644,
    "fscore": 7,
-   "drawdown": 47.9,
+   "drawdown": 49.7,
    "below200": 196,
    "earn_yld": 7.7,
    "triggered": false,
+   "why": ""
+  },
+  {
+   "code": "PNR",
+   "name": "Pentair plc.",
+   "universe": "SPX",
+   "sector": "Industrials",
+   "score": 0.663,
+   "value": 0.616,
+   "turn": 0.72,
+   "fscore": 9,
+   "drawdown": 52.5,
+   "below200": 182,
+   "earn_yld": 7.8,
+   "triggered": true,
    "why": ""
   },
   {
@@ -478,13 +463,28 @@
    "name": "Stride, Inc.",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.65,
-   "value": 0.746,
-   "turn": 0.531,
+   "score": 0.659,
+   "value": 0.754,
+   "turn": 0.544,
    "fscore": 6,
-   "drawdown": 54.3,
-   "below200": 214,
+   "drawdown": 55.0,
+   "below200": 213,
    "earn_yld": 13.4,
+   "triggered": true,
+   "why": ""
+  },
+  {
+   "code": "ZTS",
+   "name": "Zoetis Inc.",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.655,
+   "value": 0.622,
+   "turn": 0.696,
+   "fscore": 8,
+   "drawdown": 58.7,
+   "below200": 252,
+   "earn_yld": 8.7,
    "triggered": true,
    "why": ""
   },
@@ -493,11 +493,11 @@
    "name": "Fiserv, Inc.",
    "universe": "SPX",
    "sector": "Unknown",
-   "score": 0.642,
-   "value": 0.915,
-   "turn": 0.307,
+   "score": 0.618,
+   "value": 0.867,
+   "turn": 0.314,
    "fscore": 6,
-   "drawdown": 79.2,
+   "drawdown": 79.7,
    "below200": 252,
    "earn_yld": 10.4,
    "triggered": true,
@@ -508,12 +508,12 @@
    "name": "Janus International Group, Inc.",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.607,
-   "value": 0.774,
-   "turn": 0.404,
+   "score": 0.617,
+   "value": 0.783,
+   "turn": 0.415,
    "fscore": 6,
-   "drawdown": 71.5,
-   "below200": 241,
+   "drawdown": 72.3,
+   "below200": 240,
    "earn_yld": 15.6,
    "triggered": true,
    "why": ""
@@ -523,28 +523,13 @@
    "name": "Apogee Enterprises, Inc.",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.605,
-   "value": 0.601,
-   "turn": 0.61,
+   "score": 0.616,
+   "value": 0.614,
+   "turn": 0.619,
    "fscore": 6,
-   "drawdown": 46.9,
-   "below200": 153,
+   "drawdown": 47.2,
+   "below200": 154,
    "earn_yld": 10.4,
-   "triggered": true,
-   "why": ""
-  },
-  {
-   "code": "BBW",
-   "name": "Build-A-Bear Workshop, Inc.",
-   "universe": "R2K",
-   "sector": "Consumer Cyclical",
-   "score": 0.604,
-   "value": 0.829,
-   "turn": 0.33,
-   "fscore": 6,
-   "drawdown": 68.1,
-   "below200": 185,
-   "earn_yld": 18.1,
    "triggered": true,
    "why": ""
   },
@@ -553,13 +538,28 @@
    "name": "ICF International, Inc.",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.603,
-   "value": 0.436,
-   "turn": 0.808,
+   "score": 0.616,
+   "value": 0.444,
+   "turn": 0.826,
    "fscore": 7,
-   "drawdown": 47.1,
-   "below200": 158,
+   "drawdown": 48.2,
+   "below200": 159,
    "earn_yld": 6.2,
+   "triggered": true,
+   "why": ""
+  },
+  {
+   "code": "BBW",
+   "name": "Build-A-Bear Workshop, Inc.",
+   "universe": "R2K",
+   "sector": "Consumer Cyclical",
+   "score": 0.615,
+   "value": 0.837,
+   "turn": 0.344,
+   "fscore": 6,
+   "drawdown": 68.3,
+   "below200": 184,
+   "earn_yld": 18.1,
    "triggered": true,
    "why": ""
   }
@@ -589,8 +589,8 @@
    "Russell2000 전체": 1968,
    "가격 데이터 확보": 1959,
    "히스토리 900일 이상": 1765,
-   "오늘 52주 신고가": 66,
-   "거래정지/저유동성 제외": -22,
+   "오늘 52주 신고가": 67,
+   "거래정지/저유동성 제외": -23,
    "유효 신고가": 44,
    "시총 $300M/거래대금 $5M 통과": 44,
    "G1 신고가나이 단독 통과": 5,
@@ -629,19 +629,19 @@
  "rejects": [
   [
    "not_drawn_down_enough",
-   1569
+   1584
   ],
   [
    "illiquid",
-   231
+   216
   ],
   [
    "price_too_low",
-   164
+   162
   ],
   [
    "not_neglected_long_enough",
-   148
+   136
   ],
   [
    "no_price_history",
@@ -649,15 +649,19 @@
   ],
   [
    "dilution",
-   69
+   72
   ],
   [
    "already_recovered",
-   30
+   27
+  ],
+  [
+   "leverage",
+   18
   ],
   [
    "structural_decline",
-   17
+   18
   ],
   [
    "interest_coverage|dilution",
@@ -665,11 +669,7 @@
   ],
   [
    "mcap_too_small",
-   15
-  ],
-  [
-   "leverage",
-   15
+   14
   ],
   [
    "fundamentals_unavailable",
@@ -685,7 +685,7 @@
   ],
   [
    "interest_coverage|leverage",
-   9
+   10
   ],
   [
    "interest_coverage|leverage|structural_decline",
@@ -712,6 +712,10 @@
    5
   ],
   [
+   "liquidity|dilution",
+   4
+  ],
+  [
    "negative_equity",
    4
   ],
@@ -720,19 +724,15 @@
    4
   ],
   [
-   "liquidity|dilution",
-   4
-  ],
-  [
-   "interest_coverage|liquidity|dilution",
-   3
-  ],
-  [
    "leverage|liquidity|negative_equity",
    3
   ],
   [
    "interest_coverage|structural_decline",
+   3
+  ],
+  [
+   "interest_coverage|liquidity|dilution",
    3
   ],
   [
@@ -744,19 +744,23 @@
    2
   ],
   [
-   "interest_coverage|dilution|structural_decline",
-   1
+   "liquidity|negative_equity",
+   2
   ],
   [
    "interest_coverage|leverage|liquidity|dilution|structural_decline",
    1
   ],
   [
-   "interest_coverage|leverage|liquidity|negative_equity",
+   "interest_coverage|dilution|structural_decline",
    1
   ],
   [
    "interest_coverage|liquidity|negative_equity|dilution|structural_decline",
+   1
+  ],
+  [
+   "interest_coverage|leverage|liquidity|negative_equity",
    1
   ],
   [
@@ -778,21 +782,9 @@
   [
    "liquidity|negative_equity|dilution",
    1
-  ],
-  [
-   "liquidity|negative_equity",
-   1
   ]
  ],
  "history": [
-  {
-   "date": "2026-09-29",
-   "highs": 34,
-   "gate3": 1,
-   "buyable": 0,
-   "dv_candidates": 20,
-   "dv_triggered": 20
-  },
   {
    "date": "2026-09-30",
    "highs": 10,
@@ -939,6 +931,14 @@
   },
   {
    "date": "2026-10-22",
+   "highs": 81,
+   "gate3": 2,
+   "buyable": 0,
+   "dv_candidates": 20,
+   "dv_triggered": 19
+  },
+  {
+   "date": "2026-10-23",
    "highs": 81,
    "gate3": 2,
    "buyable": 0,
