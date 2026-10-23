@@ -1,26 +1,740 @@
 {
- "updated_at": "2026-10-23T10:14:02.985490+09:00",
+ "updated_at": "2026-10-23T23:44:22.236845+09:00",
  "event_notes": {
-  "why": "",
-  "watch": ""
+  "why": "유가 상승세가 두드러지면서 에너지 섹터가 큰 폭으로 올랐고, 전일 급락했던 메타의 반등 시도 등에 힘입어 기술 섹터의 매도세가 다소 진정되며 소폭 상승했습니다. 반면 스페이스X와의 경쟁 우려가 AT&T 등 통신 기업들에 부담을 주면서 통신서비스 섹터가 하락했습니다. 여기에 아메리칸 익스프레스의 대규모 인력 감원 소식 등 경기 둔화 우려가 겹치며 금융과 산업재를 비롯한 대다수 경기 민감 섹터가 부진했던 것으로 풀이됩니다.",
+  "watch": "본격화되는 주요 기업들의 실적 발표와 더불어 연준 회의 결과가 불안정한 AI 주도 랠리와 국채 금리 흐름을 바꿀 수 있을지 지켜볼 필요가 있어 보입니다."
  },
- "clusters": [],
+ "clusters": [
+  {
+   "title": "유가 상승에 따른 인플레이션 우려 및 금값 약세",
+   "sources": [
+    "CNBC",
+    "Reuters",
+    "WSJ"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "Gold Falls as Energy Prices Rise Higher",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPLVpKUTYybGVMb1hPclJUSE5SNlRqaG5Lc19SRFRwajJiSUg0ejdvYy1MdXduNEhjdFNGc1JUcmxrVjBvVG9HTzRWcVQ1YUNKTHlha09qYXM5Mm1mMjREdngzTUtjbThaX21CVFh2dkJaZTZrMkt3NFVtSWpOMTZLd2hSTG9RMnVDWUJ3MUlVcUxJZzZITTk3a3RlQm1QeVpLdWhpeTdsYw?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-23T16:36:29+09:00",
+     "dup_count": 0,
+     "summary": "에너지 가격 상승 속에 금 가격이 하락세를 보였다."
+    },
+    {
+     "title": "Gold off three-month lows as oil rally fans inflation worries",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS0x2VHNBWkt6RWNETndlR0p1eDd4UnhlZFFFbWpaYWdocUl2MnRCQm16RFpYbHQ3dF9jOEtLMENKOHUySjNmaW03YkhFRmR3WXRnbWtIaGZwbVVQNHJMMC11aklCdlBNcjMySDZsOU16WVBaZl8zR2ttZkgxMXVVWldnY25RRjJzbks3WFJwZWpnUE9maFdseVAwcmlmRHFJYUxCTEJ4RmN5QdIBrwFBVV95cUxNUEhSek0wcnlJbXhsZ0NkYmVoNEJmSUF5NEdCRElnZUVtNEcyY1hJSUloNEVtV3RRcDNXazdBUzc5a0V5OS1JXzFZMkROWVU2VHE3dUZmUExCMzdiRkNXZ0ZTY3pwUEJXR2RGaWY2QXVJOEtxV3lCWmV6OGdkZEE2NmJxcGZpSUYzZUhFNnRCVkotekVpY3BrWEVudnJkckF6dmVVZl9qNUtwN193MVV3?oc=5",
+     "source": "CNBC",
+     "published": "2026-10-23T13:29:38+09:00",
+     "dup_count": 0,
+     "summary": "유가 급등발 인플레 우려에 금값이 3개월 저점 벗어나."
+    },
+    {
+     "title": "Gold set for second weekly loss as oil-fuelled inflation concerns bolster Fed hike outlook",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWE1LcUgzRWRwVDZmX3FEaWszVHF0cFQ1ekt6M1pyQ0lfc05PQm9DekdZcXprdm1vQk00SlNEZjEwQllCd1VwMUJySnIxcF9ZblFaRHFsV3BzSU52SlJSSi1TeWxoTmdYc1h6UHhPQTFQYU41ZEdQTFRNY3l0N1Q2bnRDV2x1MjlveGtxTk1oQWlGd3ExcUZEd2QzdF9TUkVKcXotUlIycUgtb1RrZjJ3?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-23T13:14:00+09:00",
+     "dup_count": 0,
+     "summary": "유가발 인플레로 금값은 2주 연속 하락세를 기록했다."
+    }
+   ]
+  },
+  {
+   "title": "AI 투자·지출 우려 재부각에 따른 나스닥 및 기술주 급락",
+   "sources": [
+    "Reuters",
+    "Yahoo Finance"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "S&P 500, Nasdaq end sharply lower as revived AI doubts ignite tech selloff",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTWxDZDg5X0padGNvb2k2V2ZkX2tEWW9YWkdjeVdMZHNUTlg1MXY4TmUyTDZHdUhNTHFRNWRPRjc2VFlEN3RXTDhNSjhDYmRfTWZGXzdKYXdLejRHNGgwRVdNbmZRUkFhSm9GakxMek56UUZ2OUtqajd6NVkzRkR1VzBNWlo5VWp5NUFkX2phUjlSSFlndUlNNGxvUXlHSm1wMlpTbkRR?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-23T08:54:52+09:00",
+     "dup_count": 3,
+     "summary": "AI 회의론 부각에 S&P 500과 Nasdaq 급락."
+    },
+    {
+     "title": "Nasdaq 100 Clocks Worst Day In Four Months As Investors Grow Weary Of Capex, Elevated Debt — META, SPCX, BE, MRNA In Focus",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRzlfQ1ItMS1TRWVZMW9QcFdpNkZrOUVUMHM5c25wck4tU09jYWZyNXc5YTdYQmJ0dDdRbHVFajRhZ0VicWEzV21ycDhLTXZtRXNNeDQwQmpCZXhDa3hUV1NzVjNBMFFCRWdmaWdYQ3dDY0s0TjZNcVcyUVgya3BFMENRWnNkZF9BNjl2MVpJejJQdlphMS1V?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T08:44:48+09:00",
+     "dup_count": 0,
+     "summary": "투자 부담 우려로 Nasdaq 100 지수 4개월래 최악."
+    },
+    {
+     "title": "Update: Nasdaq Marks Worst Day Since June as AI Spending Worries Resurface",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaHg2WE9GR3QyaGFoczlnbVEycTlHem1ZczBTdFQxRElOc1F4M2l3T3ZSaGVmVDJrYVdvLWZhamhNbnd1VnJacVZFcmxUSGlqWGlBaDVEcDlGRlNrN0lDTHJwVEVmQXNVNERrQXVOREhSYzBudXJHUjg1a0hhQTdmZ2RVSnJIWXZrcC0zaDRyeHRlcTBqSnY2eQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T05:45:14+09:00",
+     "dup_count": 0,
+     "summary": "AI 지출 우려 재점화로 Nasdaq 지수 6월래 최악."
+    }
+   ]
+  },
+  {
+   "title": "모더나 흑색종 백신 데이터 유출 보도로 주가 급락",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "Why Moderna (MRNA) stock is trading lower today",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUzVzR1B3MDBHWG1JVVR5XzZ6QWdGVFZ3MjZfZXRuaTB1RTdOMGdmSjBKb3VQZ1R5bmZ4T1QwaFI0Vk9laWh2cncyRW4tSHdEbU5iWUZCUXJEMUpNemRjQTBrVFlNcmlwX0ZSdEJReWtrbDM1Qzk2Mnk2TmgzQU13MkFLdk9WYWFYRE1yazFNakpmRkhDdGpISWoxcw?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T11:05:00+09:00",
+     "dup_count": 0,
+     "summary": "Moderna 주가가 임상 우려 등 악재로 하락했다."
+    },
+    {
+     "title": "Stock Market Today, Oct. 22: Moderna Stock Plummets 18% on Melanoma Vaccine Data Leak Reports",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPeXRyQmhxLWF6NDZJOHYxNlF1RThSZlNwZWhpcDhUN3dIZ1N5d1RkWjRYM1U0OWRYRVpIMVh6U3AzQU5OUVlLWkpVc3ItRGpGRnlBZERaQ3E5V0txMWR4V1J0OUdKYzlMRHVRTmlpS2lpRkxDLUlNSDB3UFQycG0yNlhveDM0NzliR09fdk5BNm1CRTJo?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T06:05:59+09:00",
+     "dup_count": 0,
+     "summary": "Moderna, 백신 데이터 유출설에 18% 폭락."
+    }
+   ]
+  },
+  {
+   "title": "블룸 에너지 호실적 및 가이던스 상향에도 현금흐름 부진에 시간외 하락",
+   "sources": [
+    "WSJ",
+    "Yahoo Finance"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "BE Stock Drops After-Hours: Bloom Energy Q4 Guidance Comes Above Estimates, But Negative Cash Flows In Q3 Dampen Sentiment",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeThaR0tjNm1LUFRXaVpIb2VUQ21SRXJmRk4wWUlmQjBPRXNfUzNSUmJybm5tb1VYRmt3dFNBWGFfWnhyN1hsT0hGM19rSkh1bHZBZFZVU2k2ZHlmZ3JHS0VUblVUcHdxTTQ1a2x3S0pRUVVWcmtCMGplbkRqWXF1V2RWOTkwbW5fdEhkcUVFVlN5YjRNYXVlWTJqUQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T06:47:33+09:00",
+     "dup_count": 0,
+     "summary": "현금흐름 악화에 Bloom Energy 시간외 급락."
+    },
+    {
+     "title": "Bloom Energy Lifts Outlook, Logs Higher Profit",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVTJ3U1l3LXBKdDR5Ui1XSkl2NkRFS2ducjhSamhRQWpRYnV2V0ZnM3o5a2kyWVo3U3FOU0stS1ZITWpRN19BQ3U5LW1ldlFKb3JsRXdvalBHbXZCT185VGtvVGRhejBZaVB1ekN6enBTRFYyNmwtU096cm1aT05CSXpqeU1GZGQtd3NkRmxYbXNFa1Q0RGVB?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-23T05:33:00+09:00",
+     "dup_count": 0,
+     "summary": "Bloom Energy가 수익 증가에 힘입어 가이던스 상향."
+    }
+   ]
+  },
+  {
+   "title": "스페이스X 통신 진출 우려 및 AI 매도세로 미 증시 하락",
+   "sources": [
+    "Reuters"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Wall St dips after AI-led selloff; SpaceX worries hit telecoms",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQR01KeXBjdXBubVRzTlJfWWJTMHctb2hFS2pVT21ydWtZNzBaMldxd1c2ZUJGNWhIeGV6MUxvQVZvSl9GdFh5QThQbFpuT0IwYi02Y3JGM19YSWJ3LXMtb29RbS1WZUljdGtsS2dockxHVm5SWnBSMzJpM0Y4RFItdW5SMzFsdXg2LWtrYWE1SC1TQlkxOERJZHNtQVREdw?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-23T23:16:52+09:00",
+     "dup_count": 0,
+     "summary": "AI 매도세와 SpaceX 우려에 미 증시와 통신주 하락."
+    }
+   ]
+  },
+  {
+   "title": "오늘 시장을 움직인 주요 종목 분석",
+   "sources": [
+    "Barron's"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Moderna, Meta, SpaceX, Bloom Energy, AT&T, and More Stocks That Explain Today’s Market",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1rLXV3T1ZiM0NSaTBxNEh1Yk95cWZidlhldU5PNENBMlM5RDJ3V3dmTXR5TnQ4Y210MU5wZndISi1aWk05ZjRJTXVvNWFiZGZ1cko5MGNXaWdLZGRnaDJsaWFHQ2c?oc=5",
+     "source": "Barron's",
+     "published": "2026-10-23T23:00:00+09:00",
+     "dup_count": 0,
+     "summary": "Meta·SpaceX 등 주요 종목이 시장 흐름 주도."
+    }
+   ]
+  },
+  {
+   "title": "유가 강세 속 기술주 급락세 진정",
+   "sources": [
+    "Bloomberg.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Tech Rout Eases With Oil Strength Capping Relief: Markets Wrap",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZGVVVVZBVjRRcTNYSXJlNS0tV0E5MkEwOVlGcTh3anZ1eC16ZEdSYmp5ODRIcUo1T3BkU01vNkpTTmJxOUFELVFUUG9SS0o2SDNSWHQ5bE9PVGp3a29vLUROenZwc2FBTnhMQ3VOR1B4SVJiZjFvaDV6TjMwUlg3dUlQcmlkdUJXZU5PbXE2YWtrZXN1?oc=5",
+     "source": "Bloomberg.com",
+     "published": "2026-10-23T22:48:47+09:00",
+     "dup_count": 0,
+     "summary": "유가 상승 속에 기술주 폭락세가 다소 진정됐다."
+    }
+   ]
+  },
+  {
+   "title": "미 증시 하락세 지속 및 10년물 국채금리 5% 하회",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Stocks extend declines, 10-year Treasury holds below 5%: AlphaCheck",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUE9EQkJ3MmRvbnNvNXdyS1pDR011RlBLY3ZRMHJ1WVpHLUZyQi14bGFKVENMcWd2TTBTTElQNHlOY0c1WjVOcGt4MFY4S3ZJOERPSGNxZlBoLTJqS09PejBYc3ZHTGNvNmd4amhndnYzVC0yNWhMREVkeGNya1hKLVRCMEdsT000R2VXcmUzOThscWtQQkhNN2xYZWlXZDg1SEVZVWhld0dzYnRXcV9scnVDaHZMdWhJV3BZ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T22:42:24+09:00",
+     "dup_count": 0,
+     "summary": "미 증시 하락세 지속 속 10년물 국채금리 5% 밑돌아."
+    }
+   ]
+  },
+  {
+   "title": "아메리칸 익스프레스 글로벌 인력 5% 감원",
+   "sources": [
+    "WSJ"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "American Express to Cut 5% of Global Workforce",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONmpaSkFKXzhJclpJSlJYeTlsZlFMQmd6Tmo5UG53V05tREY5cWNxY2h5T1VYd0x3SnpxNUpmbDlHbk5KV0NSZlBLVDdZemU3VTNWTENFMW5PMVd1TmwybGs5VXBqSm1udHV4dktCUVFLb1BId29QclFDajI0TEp6UU55ckhBQ3JTbG9yRWQ0SWU4LW5kd2NXMGNLN3F0VndnTnhhbDExcEpWQVR2N3ZOWE9fUkM?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-23T22:31:00+09:00",
+     "dup_count": 0,
+     "summary": "American Express가 전 세계 인력 5%를 감원한다."
+    }
+   ]
+  },
+  {
+   "title": "메타 주가 전일 7% 급락 후 개장 전 반등",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Meta stock pares losses in pre-market trading following yesterday's 7% decline",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNOVBsWC1HZmNiRnJHT3RIbzlmcmZLZVpRVVlibk5sMFhyLUJfSHVtZlhxNzBLWkJ6RkgtWWprZnl2ZUVCeVBzb3NOVzlJQkYwbjBvVzQtaFZDSk9rZGxlYWVjMEJnWFY0LVFiUVM0S2J1T0ExVTJMcFY4QjJ1ZDgwNVVrVEpENFpJMHVrRkpoVXJvSTktOE9fMU94dnpLR1UxWWlSTFVHallWRG1DTDBhNXJobzJpek5UeTk3dUFRZl9QMnJhaGo1OXo3TUhSeEg0LTVQeHZiZ0NuZw?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T21:54:11+09:00",
+     "dup_count": 0,
+     "summary": "7% 급락했던 Meta 주가가 프리마켓서 낙폭 축소."
+    }
+   ]
+  },
+  {
+   "title": "마이크론 1만 달러 투자 가치 전망",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Could a $10,000 Investment in Micron Set You Up for Life?",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNM0VGLVprb1ZMR0NrQk9GaE53UHFCYVJkSkR1M2ttWkZHQy1QbEFFdVBENnpMQktON3RSOGpySHA2bnpJTTdVMlExQ2dha256RW9vRy1YYjJKbWMxVWtjMTJBVmdEYVFkWHNpSHY0NW5adVc4Vy1zaGZhOHdja0dJSDFCYWxQY1hudFRKUHRCR01XRktoN09tTDR3MA?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T21:33:00+09:00",
+     "dup_count": 0,
+     "summary": "Micron에 대한 1만 달러 투자의 성장성 주목."
+    }
+   ]
+  },
+  {
+   "title": "마이크론 주식 분할 가능성 분석",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Stock Split Watch: Is Micron Next?",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNEJqTE9aVU8yN2w5QTJOUWtqc1JPQ184V2VVTUQtenJ0MlJaOGN3S2lYUTNHaEk1VGhmUGFOVHhrTkpFb0lwd1JnUkZZMFFfN2pVdHNaem1zcnNNblVlaHRkOVI3dGZFVUlwaUJFYzRISWtnZUJLcjNxbGE2T1RkVTB1WHM5b0l5Sk91eTFoU3BhYjYxR3lfcXZ3?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T21:22:02+09:00",
+     "dup_count": 0,
+     "summary": "Micron이 다음 주식 분할 후보로 거론된다."
+    }
+   ]
+  },
+  {
+   "title": "크라운 캐슬 스페이스X 협력설로 급등 등 장전 주요 움직임",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Premarket movers: Crown Castle jumps 7.5% on SpaceX talks; Autoliv slides",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORUwwX1VnbndDTGZyUWpOSzFrSTR2TllJUDVsSE9PMFNSYjQ4Vzhrd1BPRm80NHlWQm50eWxXU1RRQ0w4N0tGMXE3Ni1NNVI3Nk1DYWdKeU1zNGxraU5YdEVXc1JkWWdGT0QxM0p6eTVwM0xXOUNfSDRQeGx4M1gzTlQ2bTM1YkQ2RU1Id0xSRFNING14NG1PQ1p4VXZSTy1VSWc?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T21:17:20+09:00",
+     "dup_count": 0,
+     "summary": "Crown Castle은 7.5% 급등, Autoliv는 하락."
+    }
+   ]
+  },
+  {
+   "title": "AI 랠리와 연준 정책의 충돌",
+   "sources": [
+    "Reuters"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "AI trade meets the Fed",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOWlIdzFDR0xNQ01RZzhsaXVtMXYtbWU3U3RvejE4NzV3TFZPXzI5SUpGTG9jLUxxbEhiNGFVMTZyUU84MVhTZGJaWkxtZ2cwaG9OTlJiYmFLTzFLLXZFQURzNUE5M05Lcjc5UXQ4Q1RIaVNWOFZlSlA2MTBLUFYtSVdLcGI3V3lCN216QQ?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-23T21:11:56+09:00",
+     "dup_count": 0,
+     "summary": "AI 랠리가 Fed의 통화정책 변수와 맞닥뜨렸다."
+    }
+   ]
+  },
+  {
+   "title": "부즈앨런 수익 증가로 연간 실적 전망 상향",
+   "sources": [
+    "WSJ"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Booz Allen Lifts Earnings Outlook as Profit Climbs",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYUktNllHN21CQUFFLXpDSWNwbG8tYzhna0huNXdBZEVLSHYzd1JNRUxLTXhfc1gxZTlqdm9sd2hfSi1aSkxyMlk4aXU4dGJKZW84ZFFOTHQ0UnZhUTBybFctbHE0aTEtM3paeWc4VzVQTlJPUkVGUFZ6QVZjeTRpWFdYWi1BRXRxOEhwOXpnYjVZSEk1M3BDWkdURnpMUQ?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-23T20:37:27+09:00",
+     "dup_count": 1,
+     "summary": "Booz Allen이 순익 증가로 실적 전망치를 상향했다."
+    }
+   ]
+  },
+  {
+   "title": "실적 폭풍과 연준 회의 앞둔 AI 랠리 시험대",
+   "sources": [
+    "Reuters"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Wall St Week Ahead Earnings flood, Fed meeting pose pivotal tests for rickety AI market rally",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPR3FjeUJFd2Z6ZFBxOEFlLUx4anZlN1BqeFkxQ1pFcTdXTENYc0tMdW9RbjJ1Vk91Y2tmSXVoRDFCTmZoQ2cxN3BaSlFfTXplZUNZTFIzVmR3OTVmUVYzWnBXVkxRNXAtOEpBSUpIVjlBMnJ6cVViYnFSSHZoaC1CbkR5TnBzZndWNEo5aFlkWTVKY0hSYzRuOTlzUjYwcGlrcFJKQXhlbmFOMHNWLTRiRHZaM21fWEF1SDl1Mg?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-23T19:07:44+09:00",
+     "dup_count": 0,
+     "summary": "실적 발표와 Fed 회의가 AI 랠리의 시험대가 됐다."
+    }
+   ]
+  },
+  {
+   "title": "월가 안전 종목의 팬데믹 이후 최대 일일 상승 기록",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Wall Street's safest stock just had its biggest day since the pandemic crash: Chart of the Day",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNa1pwblRiamZfUGJVbzZDQlFqa3lmZ190MGtjcHhwbUpxWEhwVGp2VW9sMU5nQ29QNEhrYXAxZlZsMHQ4MTd1Z01TVHR3NGlYYUh3RnVLd243RGU4REFjLVlSY2VVM3BrWWpWdlcydHdtbjdwdnNydDJUR0VYZHBtZWlEaVh6WVV4aG9fbS14dWJpbVcwZWx5ZzI2c0NXVzBhVGQwd0NLekpXT1VJeEdoVnhUcUk2U0xKTVROeDI1MUdpNGV4QWlkUkNqaUs5WDRzd2ZoaDZRX0hUNFNCblpnQVhYOA?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T19:00:00+09:00",
+     "dup_count": 0,
+     "summary": "월가 최고 안전주가 팬데믹 이후 최대 상승폭 기록."
+    }
+   ]
+  },
+  {
+   "title": "유례없이 혼란스러운 경제 상황에 직면한 연준",
+   "sources": [
+    "Bloomberg.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "The Fed Faces Its Most Confusing Economy Yet",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTWtTcnB5VzZ4eWIwQV9sRU5BWmxDNXU3a1MyYm9MNEdvSXM4cjA0THVHMWVfT29lTnp2RDdXSG5JOERnci1iNjZCRWp2MkhYV1N4LXB3b0pILVVGc1c1d3RJWUNDSzFnS0dDRURUNTNCX3VmTWQ0djBYXy0wV0IwQ0xIVFByRGtJSUtSSDdPWkNBckhtTm1GbXktcmx6X3ZZY1dYbzlCTHZFcW9iMVM1dGlLWmpva3lzWUhTUHJqNC1fallTRzJZ?oc=5",
+     "source": "Bloomberg.com",
+     "published": "2026-10-23T16:00:11+09:00",
+     "dup_count": 0,
+     "summary": "Fed가 역사상 가장 혼란스러운 경제 상황에 직면했다."
+    }
+   ]
+  },
+  {
+   "title": "PER 27배 이하 저평가 AI 종목 3선",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "3 AI Stocks Under 27x P E",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVGsxTmF6OVdVOTFIYVh5RVFjcGlHSGpjR2JkbFA4ZkVwZll1RkpobEhwNlJkYTNVenM2ZmZBcTliR0pQNE9KWk1zb0NFc04zT2Zfck4zVW1aZE1DTHppWHg4VmNGWEdxZ05wazhzYV8yZUFUWTY5dnU0RklKdWNKem9yZmh4ZFFtNm44Y1ZB?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T12:17:00+09:00",
+     "dup_count": 0,
+     "summary": "PER 27배 미만인 저평가 AI 유망주 3곳."
+    }
+   ]
+  },
+  {
+   "title": "반도체주 급락 후 나스닥 선물 반등 및 혼조세 개장",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Nasdaq Futures Rise After Chip Selloff While S&P 500, Dow Track Mixed Open: SLV, GLD, SOXL, BE In Focus",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZmEydE1RYUllMnZsQ05JS2c2eDFxYzhNckdZa0ItYmFzSklxUE01dC1leW9uWGk0dHZzcFBkTlZ4U1pXb09NN2lNb2dPTkQwM1BIczZkelhJVnVUSHltN1pXNU1fUUl1MDVGM3gxYTE1dV9QdmdCNEhQRGVXVWFBc3RHVjFKOGdIS1FhVHAzWVBrbnhndE02MFVoWW1YUQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T11:59:00+09:00",
+     "dup_count": 0,
+     "summary": "반도체 매도세 후 Nasdaq 선물 반등, 혼조세 출발."
+    }
+   ]
+  },
+  {
+   "title": "안전자산 선호로 미 10년물 국채금리 1개월래 최저치 급락",
+   "sources": [
+    "Investing.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "U.S. Treasury yields crater, 10-yr closes at one-month low on safe-haven demand",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSWh3MktMQ3pNNzZDblpKTXI2Umpzd2taclphRDQxX0d6a0dia19HVzhjcUxxbGgtNG5yRjNXaHYyWGQ4SktXUlYwZTRqWmVBVVhHcjltVFNQQlNWSHFiSy0zZGFJWFpacWJPY1U0T3RPOFgwYmJsT0NfendTZlhXZ2wzSndqN2Y5QTRFSjNtZk9jQk9OaWhwOWhJRTdrNTJxdzhkS0FGODBqLWpmWHhHMnVNSDBvQ0VQaFgzOU0tOA?oc=5",
+     "source": "Investing.com",
+     "published": "2026-10-23T09:25:53+09:00",
+     "dup_count": 0,
+     "summary": "10년물 미 국채금리가 안전자산 수요로 1개월래 최저."
+    }
+   ]
+  },
+  {
+   "title": "메타 실적의 문제점 분석 및 전망",
+   "sources": [
+    "Barron's"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Review & Preview: The Problem With Meta’s Earnings",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOOGZyc2RLb3c2OXdaeXFLQjlNZVRPbkROemVDMXlLamRtYkpzTEFjaVl0VHRWeGl4NHVPUXU4ZnkzY3MzN0JNREl5NEhNU2NCRUREc1BTT3M2QzJXSUVSelp4bHhBbEdfNkJPWDVRZUt4WnRuSWQ1dG9lRjRuOE9DLWdnY1hlU0dxZTRmd0xqQ1JJcGpndHg1Y3Z3SGQzTXV3?oc=5",
+     "source": "Barron's",
+     "published": "2026-10-23T08:55:00+09:00",
+     "dup_count": 0,
+     "summary": "비용 증가 문제가 Meta의 실적 복병으로 부각됐다."
+    }
+   ]
+  },
+  {
+   "title": "실적 호조에 따른 TTM 테크놀로지 주가 전망",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Earnings Beat Might Change The Case For TTM Technologies Stock",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVU0xVktPVi1TUE8wcXpzTVl0S3d0MVBaT1Q5TTg4LWl5ZUNuOG1xNnBENm9HcENma0RwT1NSWGdTLXJqMHpwaWo1XzBpSTF6Y1psdHNTLTJtcEVvdW9WWnFXWFFsZVBQeVFFVkpWQ1ctWU9PUzRsR25zbDdVTFNiUTFQZEZRT0lxM19fcUVyaGFXdnFHWW1GSXZldTQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T08:13:19+09:00",
+     "dup_count": 1,
+     "summary": "TTM Technologies 실적 호조가 주가 반등 이끌까."
+    }
+   ]
+  },
+  {
+   "title": "인텔 주가 하락 원인 분석",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Why Intel Stock Fell Today",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZ2JIR3FuTVVCRl8zeW91T1lMTG1CaWlETUJraXYwUDFXMDZsOWhtbGllYlVva1p3UlpISi1mZXFCTXFsTkxvVGY2SlJPbWNQTHVfaWh2MVF6VWVtQ3lzcW9MeWdJNXdpTk1pVTRMU2I3S00zSE9oVGZodDlIUGZZa3VTXzRFaVQ4VnhPRVk4TEQyNURyanc?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T07:56:01+09:00",
+     "dup_count": 1,
+     "summary": "실적 부진 우려 속 Intel 주가가 하락세를 나타냈다."
+    }
+   ]
+  },
+  {
+   "title": "스페이스X 기지국 확보 통한 제4 통신사 도전 보도와 통신주 하락",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "SpaceX Reportedly Eyes 80,000 Cell Sites In Push To Become Fourth US Wireless Carrier: T, TMUS, VZ Stocks Slip After-Hours",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRFFzSjNMNHQ1TC1LV21HZmg0S0xhZ0U1R0huaFE3TW5Zd0NuNU1GMGZKWTlnNWJKQ3g2LWdyU3piaTRaZEMydXNPbjR5SDd6VjE2bWVISko3c1VZNVNrbzdWVTM0NDNDenEzTEpmcWtBVEVMLUVDaTRZa0VpQmNqejIzZzNYZWZGQkJXS2V0Q1g3cWpvMWFGVml3?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T07:47:20+09:00",
+     "dup_count": 0,
+     "summary": "SpaceX 통신망 확장 소식에 기존 통신 3사 주가 하락."
+    }
+   ]
+  },
+  {
+   "title": "55% 폭락한 오라클 주가 저평가 분석",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Oracle (ORCL) Stock Looks Cheap As Shares Fell 55%",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORHVsQncySUxOR0N1U1dxNUd2R1llZGNDWm56VmcwX09sLWhSYnNOZDZKdklLOVZ3c3VSSVRmVUJDQVBqdHlJekhfdDByanhpdndYWTFEUUxGM3dLcnFXa2FMeDByVFFBdENNcW1SNTZ5dkZ2anp5UFlpUFd0VDdGOFVPVzFTUzA0X3BNT3lCZ3FQM2Zkd1pCRG1R?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T07:11:49+09:00",
+     "dup_count": 0,
+     "summary": "주가가 55% 급락한 Oracle이 저평가 영역에 진입."
+    }
+   ]
+  },
+  {
+   "title": "데커스 할인 신발 수요 증가로 매출 전망 하향",
+   "sources": [
+    "WSJ"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Deckers Cuts Sales Outlook as Shoppers Seek Out Discounted Shoes",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVmZtdTZPTUxOZEVXTU1nWVFjbFJoNURtX2VsNi1QOVdMTWk5R0p6V01XTnhnWnNweUhjZWNsaVN4bGtlQ3JCNFJYT2tSV1VER012TC1qcWFha3B1US1xcGhGczJJbHlaNWxsbkxDV1NrTU8ycDQ4RTZaT1FCUHd3a2lsNXNQVWc3eWd4N05OVGVTNmxJTUFLYjVEWW1lR2NaMkM0?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-23T07:04:00+09:00",
+     "dup_count": 0,
+     "summary": "소비 위축으로 Deckers가 연간 매출 전망을 낮췄다."
+    }
+   ]
+  },
+  {
+   "title": "AI주에서 국채로의 자금 이동 및 유가 급등 속 미 증시 혼조",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Update: US Equity Indexes Mixed as Investors Rotate From AI Trade to Government Bonds; Crude Oil Surges",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcWVSY09xMExXamxaTWh5SURValVZM1R4QkNKbGxKczJyVGpNY3F6MHFVa3dQeXpRQ04zb1RfdnRjQ05PYU1mak9HLU9BRDNrMDN2bTIwQTlQWW5yTnBhMXBEeE9RU2JFZndsV1Y0RkJvMkFadldZbG9JaTIwQUpoNXlVYUJFcE5xZmV0YXNlVWZSSmtZRDliZGxfT3ZyalE?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T06:18:33+09:00",
+     "dup_count": 0,
+     "summary": "AI주서 국채로 자금 이동하며 미 주요 지수 혼조 마감."
+    }
+   ]
+  },
+  {
+   "title": "비스트라 코퍼레이션 시장 대비 큰 폭 하락 원인",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Why Vistra Corp. (VST) Dipped More Than Broader Market Today",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdzZjblZJZ09PSXB4NjJiS0tVeV9kcWhrSXJKWFh5aU5IVjN2cEJUdDNUY2JMTnVSRmRfZlpBcFhDOTlHZVg5R0NnTEc0SGVtVEdFZXBvOFNXQk1DdDFTQUcwTV9XbVNHZUVyU0VwQUFfQ3lTanY5VXZ0UU5feHoyaGZxbHdBbUNCMWVVMTVtNktPRW9oNFE?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-10-23T05:45:03+09:00",
+     "dup_count": 1,
+     "summary": "차익 실현 매물 출회로 Vistra Corp. 급락."
+    }
+   ]
+  }
+ ],
  "items": [
+  {
+   "title": "Wall St dips after AI-led selloff; SpaceX worries hit telecoms",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQR01KeXBjdXBubVRzTlJfWWJTMHctb2hFS2pVT21ydWtZNzBaMldxd1c2ZUJGNWhIeGV6MUxvQVZvSl9GdFh5QThQbFpuT0IwYi02Y3JGM19YSWJ3LXMtb29RbS1WZUljdGtsS2dockxHVm5SWnBSMzJpM0Y4RFItdW5SMzFsdXg2LWtrYWE1SC1TQlkxOERJZHNtQVREdw?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-23T23:16:52+09:00",
+   "dup_count": 0,
+   "summary": "AI 매도세와 SpaceX 우려에 미 증시와 통신주 하락."
+  },
+  {
+   "title": "Moderna, Meta, SpaceX, Bloom Energy, AT&T, and More Stocks That Explain Today’s Market",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1rLXV3T1ZiM0NSaTBxNEh1Yk95cWZidlhldU5PNENBMlM5RDJ3V3dmTXR5TnQ4Y210MU5wZndISi1aWk05ZjRJTXVvNWFiZGZ1cko5MGNXaWdLZGRnaDJsaWFHQ2c?oc=5",
+   "source": "Barron's",
+   "published": "2026-10-23T23:00:00+09:00",
+   "dup_count": 0,
+   "summary": "Meta·SpaceX 등 주요 종목이 시장 흐름 주도."
+  },
+  {
+   "title": "Tech Rout Eases With Oil Strength Capping Relief: Markets Wrap",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZGVVVVZBVjRRcTNYSXJlNS0tV0E5MkEwOVlGcTh3anZ1eC16ZEdSYmp5ODRIcUo1T3BkU01vNkpTTmJxOUFELVFUUG9SS0o2SDNSWHQ5bE9PVGp3a29vLUROenZwc2FBTnhMQ3VOR1B4SVJiZjFvaDV6TjMwUlg3dUlQcmlkdUJXZU5PbXE2YWtrZXN1?oc=5",
+   "source": "Bloomberg.com",
+   "published": "2026-10-23T22:48:47+09:00",
+   "dup_count": 0,
+   "summary": "유가 상승 속에 기술주 폭락세가 다소 진정됐다."
+  },
+  {
+   "title": "Stocks extend declines, 10-year Treasury holds below 5%: AlphaCheck",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUE9EQkJ3MmRvbnNvNXdyS1pDR011RlBLY3ZRMHJ1WVpHLUZyQi14bGFKVENMcWd2TTBTTElQNHlOY0c1WjVOcGt4MFY4S3ZJOERPSGNxZlBoLTJqS09PejBYc3ZHTGNvNmd4amhndnYzVC0yNWhMREVkeGNya1hKLVRCMEdsT000R2VXcmUzOThscWtQQkhNN2xYZWlXZDg1SEVZVWhld0dzYnRXcV9scnVDaHZMdWhJV3BZ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-23T22:42:24+09:00",
+   "dup_count": 0,
+   "summary": "미 증시 하락세 지속 속 10년물 국채금리 5% 밑돌아."
+  },
+  {
+   "title": "American Express to Cut 5% of Global Workforce",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONmpaSkFKXzhJclpJSlJYeTlsZlFMQmd6Tmo5UG53V05tREY5cWNxY2h5T1VYd0x3SnpxNUpmbDlHbk5KV0NSZlBLVDdZemU3VTNWTENFMW5PMVd1TmwybGs5VXBqSm1udHV4dktCUVFLb1BId29QclFDajI0TEp6UU55ckhBQ3JTbG9yRWQ0SWU4LW5kd2NXMGNLN3F0VndnTnhhbDExcEpWQVR2N3ZOWE9fUkM?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-23T22:31:00+09:00",
+   "dup_count": 0,
+   "summary": "American Express가 전 세계 인력 5%를 감원한다."
+  },
+  {
+   "title": "Meta stock pares losses in pre-market trading following yesterday's 7% decline",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNOVBsWC1HZmNiRnJHT3RIbzlmcmZLZVpRVVlibk5sMFhyLUJfSHVtZlhxNzBLWkJ6RkgtWWprZnl2ZUVCeVBzb3NOVzlJQkYwbjBvVzQtaFZDSk9rZGxlYWVjMEJnWFY0LVFiUVM0S2J1T0ExVTJMcFY4QjJ1ZDgwNVVrVEpENFpJMHVrRkpoVXJvSTktOE9fMU94dnpLR1UxWWlSTFVHallWRG1DTDBhNXJobzJpek5UeTk3dUFRZl9QMnJhaGo1OXo3TUhSeEg0LTVQeHZiZ0NuZw?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-23T21:54:11+09:00",
+   "dup_count": 0,
+   "summary": "7% 급락했던 Meta 주가가 프리마켓서 낙폭 축소."
+  },
+  {
+   "title": "Could a $10,000 Investment in Micron Set You Up for Life?",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNM0VGLVprb1ZMR0NrQk9GaE53UHFCYVJkSkR1M2ttWkZHQy1QbEFFdVBENnpMQktON3RSOGpySHA2bnpJTTdVMlExQ2dha256RW9vRy1YYjJKbWMxVWtjMTJBVmdEYVFkWHNpSHY0NW5adVc4Vy1zaGZhOHdja0dJSDFCYWxQY1hudFRKUHRCR01XRktoN09tTDR3MA?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-23T21:33:00+09:00",
+   "dup_count": 0,
+   "summary": "Micron에 대한 1만 달러 투자의 성장성 주목."
+  },
+  {
+   "title": "Stock Split Watch: Is Micron Next?",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNEJqTE9aVU8yN2w5QTJOUWtqc1JPQ184V2VVTUQtenJ0MlJaOGN3S2lYUTNHaEk1VGhmUGFOVHhrTkpFb0lwd1JnUkZZMFFfN2pVdHNaem1zcnNNblVlaHRkOVI3dGZFVUlwaUJFYzRISWtnZUJLcjNxbGE2T1RkVTB1WHM5b0l5Sk91eTFoU3BhYjYxR3lfcXZ3?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-23T21:22:02+09:00",
+   "dup_count": 0,
+   "summary": "Micron이 다음 주식 분할 후보로 거론된다."
+  },
+  {
+   "title": "Premarket movers: Crown Castle jumps 7.5% on SpaceX talks; Autoliv slides",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORUwwX1VnbndDTGZyUWpOSzFrSTR2TllJUDVsSE9PMFNSYjQ4Vzhrd1BPRm80NHlWQm50eWxXU1RRQ0w4N0tGMXE3Ni1NNVI3Nk1DYWdKeU1zNGxraU5YdEVXc1JkWWdGT0QxM0p6eTVwM0xXOUNfSDRQeGx4M1gzTlQ2bTM1YkQ2RU1Id0xSRFNING14NG1PQ1p4VXZSTy1VSWc?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-23T21:17:20+09:00",
+   "dup_count": 0,
+   "summary": "Crown Castle은 7.5% 급등, Autoliv는 하락."
+  },
+  {
+   "title": "AI trade meets the Fed",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOWlIdzFDR0xNQ01RZzhsaXVtMXYtbWU3U3RvejE4NzV3TFZPXzI5SUpGTG9jLUxxbEhiNGFVMTZyUU84MVhTZGJaWkxtZ2cwaG9OTlJiYmFLTzFLLXZFQURzNUE5M05Lcjc5UXQ4Q1RIaVNWOFZlSlA2MTBLUFYtSVdLcGI3V3lCN216QQ?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-23T21:11:56+09:00",
+   "dup_count": 0,
+   "summary": "AI 랠리가 Fed의 통화정책 변수와 맞닥뜨렸다."
+  },
+  {
+   "title": "Booz Allen Lifts Earnings Outlook as Profit Climbs",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYUktNllHN21CQUFFLXpDSWNwbG8tYzhna0huNXdBZEVLSHYzd1JNRUxLTXhfc1gxZTlqdm9sd2hfSi1aSkxyMlk4aXU4dGJKZW84ZFFOTHQ0UnZhUTBybFctbHE0aTEtM3paeWc4VzVQTlJPUkVGUFZ6QVZjeTRpWFdYWi1BRXRxOEhwOXpnYjVZSEk1M3BDWkdURnpMUQ?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-23T20:37:27+09:00",
+   "dup_count": 1,
+   "summary": "Booz Allen이 순익 증가로 실적 전망치를 상향했다."
+  },
+  {
+   "title": "Wall St Week Ahead Earnings flood, Fed meeting pose pivotal tests for rickety AI market rally",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPR3FjeUJFd2Z6ZFBxOEFlLUx4anZlN1BqeFkxQ1pFcTdXTENYc0tMdW9RbjJ1Vk91Y2tmSXVoRDFCTmZoQ2cxN3BaSlFfTXplZUNZTFIzVmR3OTVmUVYzWnBXVkxRNXAtOEpBSUpIVjlBMnJ6cVViYnFSSHZoaC1CbkR5TnBzZndWNEo5aFlkWTVKY0hSYzRuOTlzUjYwcGlrcFJKQXhlbmFOMHNWLTRiRHZaM21fWEF1SDl1Mg?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-23T19:07:44+09:00",
+   "dup_count": 0,
+   "summary": "실적 발표와 Fed 회의가 AI 랠리의 시험대가 됐다."
+  },
+  {
+   "title": "Wall Street's safest stock just had its biggest day since the pandemic crash: Chart of the Day",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNa1pwblRiamZfUGJVbzZDQlFqa3lmZ190MGtjcHhwbUpxWEhwVGp2VW9sMU5nQ29QNEhrYXAxZlZsMHQ4MTd1Z01TVHR3NGlYYUh3RnVLd243RGU4REFjLVlSY2VVM3BrWWpWdlcydHdtbjdwdnNydDJUR0VYZHBtZWlEaVh6WVV4aG9fbS14dWJpbVcwZWx5ZzI2c0NXVzBhVGQwd0NLekpXT1VJeEdoVnhUcUk2U0xKTVROeDI1MUdpNGV4QWlkUkNqaUs5WDRzd2ZoaDZRX0hUNFNCblpnQVhYOA?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-23T19:00:00+09:00",
+   "dup_count": 0,
+   "summary": "월가 최고 안전주가 팬데믹 이후 최대 상승폭 기록."
+  },
+  {
+   "title": "Gold Falls as Energy Prices Rise Higher",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPLVpKUTYybGVMb1hPclJUSE5SNlRqaG5Lc19SRFRwajJiSUg0ejdvYy1MdXduNEhjdFNGc1JUcmxrVjBvVG9HTzRWcVQ1YUNKTHlha09qYXM5Mm1mMjREdngzTUtjbThaX21CVFh2dkJaZTZrMkt3NFVtSWpOMTZLd2hSTG9RMnVDWUJ3MUlVcUxJZzZITTk3a3RlQm1QeVpLdWhpeTdsYw?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-23T16:36:29+09:00",
+   "dup_count": 0,
+   "summary": "에너지 가격 상승 속에 금 가격이 하락세를 보였다."
+  },
+  {
+   "title": "The Fed Faces Its Most Confusing Economy Yet",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTWtTcnB5VzZ4eWIwQV9sRU5BWmxDNXU3a1MyYm9MNEdvSXM4cjA0THVHMWVfT29lTnp2RDdXSG5JOERnci1iNjZCRWp2MkhYV1N4LXB3b0pILVVGc1c1d3RJWUNDSzFnS0dDRURUNTNCX3VmTWQ0djBYXy0wV0IwQ0xIVFByRGtJSUtSSDdPWkNBckhtTm1GbXktcmx6X3ZZY1dYbzlCTHZFcW9iMVM1dGlLWmpva3lzWUhTUHJqNC1fallTRzJZ?oc=5",
+   "source": "Bloomberg.com",
+   "published": "2026-10-23T16:00:11+09:00",
+   "dup_count": 0,
+   "summary": "Fed가 역사상 가장 혼란스러운 경제 상황에 직면했다."
+  },
+  {
+   "title": "Gold off three-month lows as oil rally fans inflation worries",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS0x2VHNBWkt6RWNETndlR0p1eDd4UnhlZFFFbWpaYWdocUl2MnRCQm16RFpYbHQ3dF9jOEtLMENKOHUySjNmaW03YkhFRmR3WXRnbWtIaGZwbVVQNHJMMC11aklCdlBNcjMySDZsOU16WVBaZl8zR2ttZkgxMXVVWldnY25RRjJzbks3WFJwZWpnUE9maFdseVAwcmlmRHFJYUxCTEJ4RmN5QdIBrwFBVV95cUxNUEhSek0wcnlJbXhsZ0NkYmVoNEJmSUF5NEdCRElnZUVtNEcyY1hJSUloNEVtV3RRcDNXazdBUzc5a0V5OS1JXzFZMkROWVU2VHE3dUZmUExCMzdiRkNXZ0ZTY3pwUEJXR2RGaWY2QXVJOEtxV3lCWmV6OGdkZEE2NmJxcGZpSUYzZUhFNnRCVkotekVpY3BrWEVudnJkckF6dmVVZl9qNUtwN193MVV3?oc=5",
+   "source": "CNBC",
+   "published": "2026-10-23T13:29:38+09:00",
+   "dup_count": 0,
+   "summary": "유가 급등발 인플레 우려에 금값이 3개월 저점 벗어나."
+  },
+  {
+   "title": "Gold set for second weekly loss as oil-fuelled inflation concerns bolster Fed hike outlook",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWE1LcUgzRWRwVDZmX3FEaWszVHF0cFQ1ekt6M1pyQ0lfc05PQm9DekdZcXprdm1vQk00SlNEZjEwQllCd1VwMUJySnIxcF9ZblFaRHFsV3BzSU52SlJSSi1TeWxoTmdYc1h6UHhPQTFQYU41ZEdQTFRNY3l0N1Q2bnRDV2x1MjlveGtxTk1oQWlGd3ExcUZEd2QzdF9TUkVKcXotUlIycUgtb1RrZjJ3?oc=5",
+   "source": "Reuters",
+   "published": "2026-10-23T13:14:00+09:00",
+   "dup_count": 0,
+   "summary": "유가발 인플레로 금값은 2주 연속 하락세를 기록했다."
+  },
+  {
+   "title": "3 AI Stocks Under 27x P E",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVGsxTmF6OVdVOTFIYVh5RVFjcGlHSGpjR2JkbFA4ZkVwZll1RkpobEhwNlJkYTNVenM2ZmZBcTliR0pQNE9KWk1zb0NFc04zT2Zfck4zVW1aZE1DTHppWHg4VmNGWEdxZ05wazhzYV8yZUFUWTY5dnU0RklKdWNKem9yZmh4ZFFtNm44Y1ZB?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-23T12:17:00+09:00",
+   "dup_count": 0,
+   "summary": "PER 27배 미만인 저평가 AI 유망주 3곳."
+  },
+  {
+   "title": "Nasdaq Futures Rise After Chip Selloff While S&P 500, Dow Track Mixed Open: SLV, GLD, SOXL, BE In Focus",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZmEydE1RYUllMnZsQ05JS2c2eDFxYzhNckdZa0ItYmFzSklxUE01dC1leW9uWGk0dHZzcFBkTlZ4U1pXb09NN2lNb2dPTkQwM1BIczZkelhJVnVUSHltN1pXNU1fUUl1MDVGM3gxYTE1dV9QdmdCNEhQRGVXVWFBc3RHVjFKOGdIS1FhVHAzWVBrbnhndE02MFVoWW1YUQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-23T11:59:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체 매도세 후 Nasdaq 선물 반등, 혼조세 출발."
+  },
+  {
+   "title": "Why Moderna (MRNA) stock is trading lower today",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUzVzR1B3MDBHWG1JVVR5XzZ6QWdGVFZ3MjZfZXRuaTB1RTdOMGdmSjBKb3VQZ1R5bmZ4T1QwaFI0Vk9laWh2cncyRW4tSHdEbU5iWUZCUXJEMUpNemRjQTBrVFlNcmlwX0ZSdEJReWtrbDM1Qzk2Mnk2TmgzQU13MkFLdk9WYWFYRE1yazFNakpmRkhDdGpISWoxcw?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-23T11:05:00+09:00",
+   "dup_count": 0,
+   "summary": "Moderna 주가가 임상 우려 등 악재로 하락했다."
+  },
   {
    "title": "U.S. Treasury yields crater, 10-yr closes at one-month low on safe-haven demand",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSWh3MktMQ3pNNzZDblpKTXI2Umpzd2taclphRDQxX0d6a0dia19HVzhjcUxxbGgtNG5yRjNXaHYyWGQ4SktXUlYwZTRqWmVBVVhHcjltVFNQQlNWSHFiSy0zZGFJWFpacWJPY1U0T3RPOFgwYmJsT0NfendTZlhXZ2wzSndqN2Y5QTRFSjNtZk9jQk9OaWhwOWhJRTdrNTJxdzhkS0FGODBqLWpmWHhHMnVNSDBvQ0VQaFgzOU0tOA?oc=5",
    "source": "Investing.com",
-   "published": "2026-10-23T09:22:30+09:00",
+   "published": "2026-10-23T09:25:53+09:00",
    "dup_count": 0,
-   "summary": ""
+   "summary": "10년물 미 국채금리가 안전자산 수요로 1개월래 최저."
+  },
+  {
+   "title": "Review & Preview: The Problem With Meta’s Earnings",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOOGZyc2RLb3c2OXdaeXFLQjlNZVRPbkROemVDMXlLamRtYkpzTEFjaVl0VHRWeGl4NHVPUXU4ZnkzY3MzN0JNREl5NEhNU2NCRUREc1BTT3M2QzJXSUVSelp4bHhBbEdfNkJPWDVRZUt4WnRuSWQ1dG9lRjRuOE9DLWdnY1hlU0dxZTRmd0xqQ1JJcGpndHg1Y3Z3SGQzTXV3?oc=5",
+   "source": "Barron's",
+   "published": "2026-10-23T08:55:00+09:00",
+   "dup_count": 0,
+   "summary": "비용 증가 문제가 Meta의 실적 복병으로 부각됐다."
   },
   {
    "title": "S&P 500, Nasdaq end sharply lower as revived AI doubts ignite tech selloff",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTWxDZDg5X0padGNvb2k2V2ZkX2tEWW9YWkdjeVdMZHNUTlg1MXY4TmUyTDZHdUhNTHFRNWRPRjc2VFlEN3RXTDhNSjhDYmRfTWZGXzdKYXdLejRHNGgwRVdNbmZRUkFhSm9GakxMek56UUZ2OUtqajd6NVkzRkR1VzBNWlo5VWp5NUFkX2phUjlSSFlndUlNNGxvUXlHSm1wMlpTbkRR?oc=5",
    "source": "Reuters",
    "published": "2026-10-23T08:54:52+09:00",
-   "dup_count": 4,
-   "summary": ""
+   "dup_count": 3,
+   "summary": "AI 회의론 부각에 S&P 500과 Nasdaq 급락."
   },
   {
    "title": "Nasdaq 100 Clocks Worst Day In Four Months As Investors Grow Weary Of Capex, Elevated Debt — META, SPCX, BE, MRNA In Focus",
@@ -28,31 +742,31 @@
    "source": "Yahoo Finance",
    "published": "2026-10-23T08:44:48+09:00",
    "dup_count": 0,
-   "summary": ""
+   "summary": "투자 부담 우려로 Nasdaq 100 지수 4개월래 최악."
+  },
+  {
+   "title": "Earnings Beat Might Change The Case For TTM Technologies Stock",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVU0xVktPVi1TUE8wcXpzTVl0S3d0MVBaT1Q5TTg4LWl5ZUNuOG1xNnBENm9HcENma0RwT1NSWGdTLXJqMHpwaWo1XzBpSTF6Y1psdHNTLTJtcEVvdW9WWnFXWFFsZVBQeVFFVkpWQ1ctWU9PUzRsR25zbDdVTFNiUTFQZEZRT0lxM19fcUVyaGFXdnFHWW1GSXZldTQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-23T08:13:19+09:00",
+   "dup_count": 1,
+   "summary": "TTM Technologies 실적 호조가 주가 반등 이끌까."
   },
   {
    "title": "Why Intel Stock Fell Today",
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZ2JIR3FuTVVCRl8zeW91T1lMTG1CaWlETUJraXYwUDFXMDZsOWhtbGllYlVva1p3UlpISi1mZXFCTXFsTkxvVGY2SlJPbWNQTHVfaWh2MVF6VWVtQ3lzcW9MeWdJNXdpTk1pVTRMU2I3S00zSE9oVGZodDlIUGZZa3VTXzRFaVQ4VnhPRVk4TEQyNURyanc?oc=5",
    "source": "Yahoo Finance",
    "published": "2026-10-23T07:56:01+09:00",
-   "dup_count": 0,
-   "summary": ""
+   "dup_count": 1,
+   "summary": "실적 부진 우려 속 Intel 주가가 하락세를 나타냈다."
   },
   {
-   "title": "Why Micron Stock Dropped on Thursday",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNUJTTHZMRXZtaXhGU3pzdjhvek43SkFTb3VGVjhfMVhpV3ZXdDdkZTZ0LUFnUWRXQXRlYTNEb1RNSlc2R2ozNmw5ZkZoWGt4bkNwSldmTlg5R0NHVl9faWlPTkFCYklrTDh4WHpPQnRJOHlCQkNXczN1R2Z2ejNLRmstTWVZbWlTbU10RHlwelcwZW9RNUxmUDZ3cFJCNEE?oc=5",
+   "title": "SpaceX Reportedly Eyes 80,000 Cell Sites In Push To Become Fourth US Wireless Carrier: T, TMUS, VZ Stocks Slip After-Hours",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRFFzSjNMNHQ1TC1LV21HZmg0S0xhZ0U1R0huaFE3TW5Zd0NuNU1GMGZKWTlnNWJKQ3g2LWdyU3piaTRaZEMydXNPbjR5SDd6VjE2bWVISko3c1VZNVNrbzdWVTM0NDNDenEzTEpmcWtBVEVMLUVDaTRZa0VpQmNqejIzZzNYZWZGQkJXS2V0Q1g3cWpvMWFGVml3?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-10-23T07:49:01+09:00",
+   "published": "2026-10-23T07:47:20+09:00",
    "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "SpaceX in talks for 80,000 cell sites to build nationwide wireless network -report",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUFhfUHp4OHcyazRRXzR1aC02bmF6Z1hNeHF6TkFIdG00V2ZYQXNBc0VLOXNSUDJPODJtS0FJNU1lWWxVaGZXZnJjblpoMVRWRUFiOXVFQVlpS2RIYmRvRTJsVXpheVdfY0I1YjVWV0ZmN0F6UU5BZmRyLWFIdjRXRjRYTmlkOTlaS1BVcjhB?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T07:20:51+09:00",
-   "dup_count": 0,
-   "summary": ""
+   "summary": "SpaceX 통신망 확장 소식에 기존 통신 3사 주가 하락."
   },
   {
    "title": "Oracle (ORCL) Stock Looks Cheap As Shares Fell 55%",
@@ -60,7 +774,7 @@
    "source": "Yahoo Finance",
    "published": "2026-10-23T07:11:49+09:00",
    "dup_count": 0,
-   "summary": ""
+   "summary": "주가가 55% 급락한 Oracle이 저평가 영역에 진입."
   },
   {
    "title": "Deckers Cuts Sales Outlook as Shoppers Seek Out Discounted Shoes",
@@ -68,23 +782,23 @@
    "source": "WSJ",
    "published": "2026-10-23T07:04:00+09:00",
    "dup_count": 0,
-   "summary": ""
+   "summary": "소비 위축으로 Deckers가 연간 매출 전망을 낮췄다."
   },
   {
    "title": "BE Stock Drops After-Hours: Bloom Energy Q4 Guidance Comes Above Estimates, But Negative Cash Flows In Q3 Dampen Sentiment",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeThaR0tjNm1LUFRXaVpIb2VUQ21SRXJmRk4wWUlmQjBPRXNfUzNSUmJybm5tb1VYRmt3dFNBWGFfWnhyN1hsT0hGM19rSkh1bHZBZFZVU2k2ZHlmZ3JHS0VUblVUcHdxTTQ1a2x3S0pRUVVWcmtCMGplbkRqWXF1V2RWOTkwbW5fdEhkcUVFVlN5YjRNYXVlWTJqUQ?oc=5",
    "source": "Yahoo Finance",
    "published": "2026-10-23T06:47:33+09:00",
-   "dup_count": 1,
-   "summary": ""
+   "dup_count": 0,
+   "summary": "현금흐름 악화에 Bloom Energy 시간외 급락."
   },
   {
-   "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
-   "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTFBBTy1pM1poaEROWTVTNDVTYVdvTDZEWmM1VDhGdlUzWW1OUXNvQ3RmZTVZQ3BGVlhvbTlWNFNhUQ?oc=5",
+   "title": "Update: US Equity Indexes Mixed as Investors Rotate From AI Trade to Government Bonds; Crude Oil Surges",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcWVSY09xMExXamxaTWh5SURValVZM1R4QkNKbGxKczJyVGpNY3F6MHFVa3dQeXpRQ04zb1RfdnRjQ05PYU1mak9HLU9BRDNrMDN2bTIwQTlQWW5yTnBhMXBEeE9RU2JFZndsV1Y0RkJvMkFadldZbG9JaTIwQUpoNXlVYUJFcE5xZmV0YXNlVWZSSmtZRDliZGxfT3ZyalE?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-10-23T06:23:50+09:00",
+   "published": "2026-10-23T06:18:33+09:00",
    "dup_count": 0,
-   "summary": ""
+   "summary": "AI주서 국채로 자금 이동하며 미 주요 지수 혼조 마감."
   },
   {
    "title": "Stock Market Today, Oct. 22: Moderna Stock Plummets 18% on Melanoma Vaccine Data Leak Reports",
@@ -92,15 +806,23 @@
    "source": "Yahoo Finance",
    "published": "2026-10-23T06:05:59+09:00",
    "dup_count": 0,
-   "summary": ""
+   "summary": "Moderna, 백신 데이터 유출설에 18% 폭락."
   },
   {
-   "title": "Western Digital shares slide as cost pressures, higher capex overshadow earnings",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQmV5a0FvTGhLREZuTkpWRmJvd2wzYThyTDYtSllHM1BxdnBIV2ltVXdPem9naGktbmY1WmVrbWdEOEMxU1B1a2ctTEl1dHg0Z3JhUlhnaG5tYmYyTlVXMFFHRFJEVDBlQUZOVEZuZlBDRjdxYmRTNm9fbkxNc09CSndLNFhFSmhObzdVNWxzRmZtY2wzakJSQ2RCX0d4Y3dkaTdvYWpHcXo?oc=5",
+   "title": "Update: Nasdaq Marks Worst Day Since June as AI Spending Worries Resurface",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaHg2WE9GR3QyaGFoczlnbVEycTlHem1ZczBTdFQxRElOc1F4M2l3T3ZSaGVmVDJrYVdvLWZhamhNbnd1VnJacVZFcmxUSGlqWGlBaDVEcDlGRlNrN0lDTHJwVEVmQXNVNERrQXVOREhSYzBudXJHUjg1a0hhQTdmZ2RVSnJIWXZrcC0zaDRyeHRlcTBqSnY2eQ?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-10-23T05:39:41+09:00",
+   "published": "2026-10-23T05:45:14+09:00",
    "dup_count": 0,
-   "summary": ""
+   "summary": "AI 지출 우려 재점화로 Nasdaq 지수 6월래 최악."
+  },
+  {
+   "title": "Why Vistra Corp. (VST) Dipped More Than Broader Market Today",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdzZjblZJZ09PSXB4NjJiS0tVeV9kcWhrSXJKWFh5aU5IVjN2cEJUdDNUY2JMTnVSRmRfZlpBcFhDOTlHZVg5R0NnTEc0SGVtVEdFZXBvOFNXQk1DdDFTQUcwTV9XbVNHZUVyU0VwQUFfQ3lTanY5VXZ0UU5feHoyaGZxbHdBbUNCMWVVMTVtNktPRW9oNFE?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-23T05:45:03+09:00",
+   "dup_count": 1,
+   "summary": "차익 실현 매물 출회로 Vistra Corp. 급락."
   },
   {
    "title": "Bloom Energy Lifts Outlook, Logs Higher Profit",
@@ -108,183 +830,7 @@
    "source": "WSJ",
    "published": "2026-10-23T05:33:00+09:00",
    "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Chip stocks break a bear trap after a $3 trillion rout — here are the levels bulls need to hold",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNdy0wY0VMdkFpaWc0Yk1sRFdWVUNRYWpJNGxSaXhyQmRlTk0zTmlfRXNNak01QUF4bE8tS0FnZ0h1TDRmU1hkeWlTTDN6T1J0cDhnWFJqTFE3S2J2cTdtNnh6WW4xVnNPUTNZMXNZOUFKZkczNlFtcWNRajFOcGRtcGpXVDRUTWFQd2ljWk1EWFNFVHEwcHZmOHVvblBzQXItQW1fNFVweUFTdEFxeFhUV1V2Z3JiSU5fXzlHbmd4RExiVHB0d2JXUkdpTGNBdExHaGZndnBuWXFVVGJ0eTNxdVRlcHQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T05:30:49+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Bloom Energy: Q3 Earnings Snapshot",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPczNNdHB1UFBib2pWbVNRdFdhdjU1S29GSzNranE5R3RHOXE2TlJWZVdLNzdvUngyQWpMczJGb2J1YUpXYllFVEF2OGZlMkNFWk9mU2tqbmhENEc3cEkwdUlTTVRFa0FnVnJnWGNzVE03QlRWeTdNaFFZb01vckJlZEZaRk13d2Q5WkQyWGpDdlV1Vlo2UXlKR1NRUXQxOWs?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T05:16:50+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "US Futures Slip as Risk-Off Sentiment Dominates With Oil Rising",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZ2dLXzhzUEpFakpsZkVRZ2JoUTFsZlpQN0czcDlqc3lRYWFSTzRBMmFhckdpNU04MDBGOHJ5NHo3SThQSElMNXp6ZGwzRUswYmlxSl9wRmxpRTdqbWxXT0hCa1BseE5wZGszY1h3aU9JNHRQVmtFcjVYUlcwcU1FdG5yZU5CMVlfWkdxSEJlMXNjaVBmYmtldFZra2tSeTVabExPOHg2VDFHM3V1T0RDSjdoTm4?oc=5",
-   "source": "Bloomberg.com",
-   "published": "2026-10-23T05:16:12+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Chip stocks fall as equipment maker Lam Research cites 'supply chain constraints'",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNTFRUEdPVXNMUm5MbFhpU0ltTkZDam0wSXU0R292ZDBvVGhlT3hlOWxJbk1jZjBJeFhZUWNXbmgtemF0TTFrak1fRnNxOFlsaGJJa0xMWEUtZUZ3LTEtcHh6OXl4d1hPaVlPcjJlbDl1NlQwZC1CN2VIcmQyOVlQczVpdVotR2pjZGI5MWJyWk1pVFdjLURHS1ZmeFY0VGd6ajMtRGxWTkRkY2xUVS04cnRSZ1ltQl9UMnRCOWpBTGpIbVJBX0pnZ29jRlp3NUhXdmc?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T05:05:03+09:00",
-   "dup_count": 2,
-   "summary": ""
-  },
-  {
-   "title": "WD Reports Fiscal First Quarter 2027 Financial Results",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQY0JXRGVmSHlGcXNTY1hWYXU4VlNSTEdlTHNjNGwzWlliRUl3SG5tT0pRZUtrdk9pOEdXQlRMblM3b1paUWRGUG1iNGRmMUJZblBNRmhUMGp0dW1acDFTb3p3R3ZjSm1oUzYxMHRLbHdiZlUwUWRhWXBsamt6ZDlwaEVKMWlVZkVtRE5pY0MwV01mMmZ4a3RRUmtkSG0?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T05:01:00+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "This level-headed Tesla bull still expects 5 million Cybercabs by 2040",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQT19XMjY2cXQ3RHFwS3JJUTVIVjhtbEZkeVlHTXBIOXg2cUJIWkFnNEhDZ2JxSzZJVXZ2RndXT1N6Y3dQSFZMSGU3ck5mdXg4d0Y3RlFiekJUZUJvd0ZjTUFJYmlBX1ZwNnB0d0RoQ2x6RVUzNkdsUTkwSVJvVTFDWVR1MHpWLVBxd3RJRTR0NW1MUDlSUE1SempMU19KQjc2aTFvQzQ2OUVpQXdLeW5wQ0QyWmFRcEdGOXY2czUydTNkUXJWQlE?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T04:36:23+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Moderna, Merck shares fall on eagerly anticipated cancer vaccine results",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNzROT2hPc3hDZktUWTJMS2tZem14XzczejVqTkV0NS1zMUFDS3FxbzFPN0RxX1dITFQzdk9mTThxMlVoblB2bmJEY0xsYWQ5dURsallZbkhELTkxN0p0WWo2a0hvVERaLTRqREhpVnZ2X0x3OTlGenk1UTktSERQVHlhZmZRNXpFYWtjYmY2WFQtME00N25HUm1n?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T04:27:00+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "SpaceX stock slides as tech trade tumbles",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaEhZTkppcGxpamZTaFI3TlVMQWlway1YOEJUdXY4blR6S084Mk1uWWJqcGtkZ0JpVFpQU1RPamI5VGQtT1JSNW5JOHJzeldnU2lxeTMxUkdzejNSQkU5VjZrOVBuWlIwY3ZFcE9sMDdJTzBQRlBONFA4MXNqMkQxREFJSWtNVFR3TXFPd1JfM19kWnhId3A4OGxIQnYwLVBQLTFNYVZBcUo?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T04:20:13+09:00",
-   "dup_count": 1,
-   "summary": ""
-  },
-  {
-   "title": "The Stock Market Sounds an Alarm for the First Time in Nearly 27 Years. Here Is What History Says the S&P 500 Will Do Next.",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMkUyMVRhLXlTVkVnYi0xRC04MHRhWG9qa1Y1MHppMHZGZ081bzJkNjdBUWUxUDlMblB1UTNrdTl0LVRhdjIxQ2NVTWJ3TDU0a3V6U1U2V3NSYXdCWlppMlYtellKaDhTbW1qYzM4Y1NSanhiNzVwMWhkS1V6d21nalppaFdqRExrS1dmb2NGVURGelo2RjJiaXB2dGo?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T04:20:00+09:00",
-   "dup_count": 2,
-   "summary": ""
-  },
-  {
-   "title": "Forgent to Report Fiscal First Quarter 2027 Results; Revenues and Adjusted EBITDA Will Exceed High End of Guidance",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa1plczhvVEZQRzhGek9VbVZLRERIT1FqR2pLZ3ZRNmtMR3JkUlMxeHlpX01obmRkdUNIdlpfUTlzcnZNbHlOUm9kOWFZUWl3Nkx3ekVaX1VtWjZZV01kUFB5aHUtY1hwdkRlam8zUVI1YUR2Sm13SzZ5QjNyZXlULVVHTXBPQUtmS3A1c0pCNFc1TWRFQkV4NEpRRU0wWVhxaXc?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T04:15:00+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Meta Creates Non-Voting Stock to Fund AI Buildout, Keeping Zuckerberg in Control",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRy1rYVBrbG9LVmptaThEa005RXdpN2REUW9LdFl0TDc5YmkwVENMR0NXMFUwLVZpN1lzYzhnejY1dkRTMTFtZE1GS0VOTmFQY3F1aFhBM2pmbjVlM2dHbnhlN2h2VWhfWnc2WGUzdnJUYVViRjFtZGEtTjRUSDlUSlpORnB6c0c2VFlHVENvWXVZbndPem9lYzVn?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T04:06:02+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Meta's new nonvoting shares create an overhang — and Wall Street wants it gone",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZVNpWjBTNHNYeEllV1pjUDVEV0otck9RUUxSWjJrUHBhTXJCR3pCa21PY1ZxdmtUSTlaejJ6YVVmWnhIZkZyQlJrZ2tOTFpfalRQQ2pDYVI2QldWMm9wVUxMS250M08xZHprS0twNDQtS2lTWGhQRG5RX3RUUEs4N1RHdlJmRTJjUUFHa1pqRlRFVVNNSjcxSng5NklSeTNFdXhoc20ycjltYmdfcXZPUGpBVzFoNWE5eGsyOUJNTVI1dEZCSmNEZlNVUXBzeF9pZmNKdHBEVQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T03:59:41+09:00",
-   "dup_count": 1,
-   "summary": ""
-  },
-  {
-   "title": "Why is GE Vernova stock tumbling today?",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaDNwOFlURGE4STBGZzVBU1h3YTVQT3RmVzBFYUd5OVBETHNndGJCTy1LVk1jaW5JZFZxS1FRTXNFNVNJaV9pbnJxTTZOWUo4dlprd2YzXzhhYVU4eEFVUUR2di1CTEZKZkZBWExCMWItcWR4UWVEOFJzYTlYWXotYmtqWkdnX3Uxejl3QUU1ZU9tYVgzQzJjQlpSY2J2UmV0cGc?oc=5",
-   "source": "Investing.com",
-   "published": "2026-10-23T03:44:21+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Why QuantumScape Stock Soared as Much as 13.3% Today",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdWdmUUtwQmFaamlfRlczTmdHY1g1UmczcUs5cW5rS3hYZjJMcE5RNkhQa1J3Q09SU04zbXQxQnRGOUpGX1FHUk9acDZWV0NzRzMwRjI2RTBUWlc5NktxSUc3Y2hqQTFUaWEyYnU2aWpTX05TQ2ZlckRvLWxxWkpzR3o5SDVZUlVxSk0yUHBCeG1hbHF1aXl6M3JrZUdvbV9U?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T03:32:31+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Why is JetBlue Airways stock sliding today?",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVy00SXRYRGU0Z2hMOUgzdUE0NDZYMGs4Mlk5QjRva1lkY2FXbUpIMEg3R3NPZnVIejdiMGdqLWljam81Z2I4NlVvcEN4Z242QlZOWmVJRnBMbTZ4X1JldmFnQ0lGcmNJMHcwWW1xeVEwbWEydEFjZVRDcU9vMFExWEJlUHBJZjBPWmtrVml0TGt2a3dxMFhHTzlvSG5EQllIX3JoMC0tUQ?oc=5",
-   "source": "Investing.com",
-   "published": "2026-10-23T03:16:39+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Bond traders are backing off Fed rate hike bets — here's what it means for mortgage rates",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQ0V6MC1Sekt2RU45WGJNTzQ1MDRObjdidVAtOEl0azB3NDZTeUtESUVMNkhVWHk4UU9jekxqSTQtY2FxSDlMV1hYdWdqWE1NbjEteEdjOXBVeFVqTHZNcTlEQnd0b3pkRXZKaVgyMEE5QzA3RVYyN010TGRoMDRlM3ZaOU1hd1liTzZFMkthRDBRZEpvZmc2Qy1maDkyeFVXS0l5aGw4eng1cmh0M1dIYTk2dFdycWlLQktMMmNaM1J0dFpGVXJQOEZfcTlnNnJEb21vY1hIN2hwbHVi?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T03:05:07+09:00",
-   "dup_count": 1,
-   "summary": ""
-  },
-  {
-   "title": "Why is Moderna stock plunging today?",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQUZaYnowd2xyVk9UQ2QtbTJCcHdsa01DMkZOaldMRDBxZ3dMdjhtX05IdzFsWjFTdUZrLUtsRnJfWGI3TnFRLWxzQVlFR2Q0dG1RWkdvNG5Sekl2MWs4MFVIWXRlaS1ESzFQbnJwLXF2d1NJakNTUmxjT2s0djVHTDUzRk0tdE52TlNNNU04eVZDTFhyaVR5WEszQlJxQQ?oc=5",
-   "source": "Investing.com",
-   "published": "2026-10-23T02:54:21+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Why Meta Platforms Stock Took a Hit Today",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNVBQMTBnV2UxVENmTm5GN2wtTFVRYmE0NHFLRGhMcGYxRWlnSHdMQ2hOT3BFdTlpaklWem9oMHFTTkEyVVhhSzBMU1pzc2xKS3ZGRjR3c0hCeTZwSUF4eHR6Z25hR0FiVUd4Q3VMVTlUZnhhcE1sUGVqYUJTX0p2cFNQbGRnMkFGZUpKRlItNjJhRENzQU4xaEln?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T02:48:41+09:00",
-   "dup_count": 1,
-   "summary": ""
-  },
-  {
-   "title": "Update: US Equity Indexes Drop as AI Trade Loses Shine After Meta's Results While Crude Oil Jumps as Iran Warns of Invasion",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONmZQS2xlU1U0dFpOVDhydElhZ3JBeEpmSldFcHg0aXFycDQ2N1Z4c0hyU08zRG53MlFfX1FUeUl4dEhlY0Flcjh5blFlSlFkOEZtV2x4NWJTdW5xOWFTRTZPSk9Bb0RZSGJ2dzNPSFhLNXJweDlwaDVSaEZMcXRDbjlfOVRkNGh3UUVoN1Z3eV8xQUlU?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T02:41:30+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Sector Update: Tech Stocks Fall Thursday Afternoon",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNamtBbmNLZXJlb3QtVE81cUNsMV9KY3VtQXFXSWVEVld0ZDR5ZEJ5VUdlSXdjbXhRNjFjYjdqaWJBc3lFMDY5cVY2dWhvTDcwVHFtaUhSMlBmSkxzcGtndmxWS29xU3BUUU9yWjdGMjdOR0N0REQweGpSei13VE9xWjQ4UDU1RjlHVFp6a2F3NTZOWjFUeXNGbDJoNlQyQQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T02:37:20+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Oil Climbs Above $111 as AI Stocks Slide, Dragging the S&P 500 and Global Markets With Them",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQXRtMVZJY21Hb3pINUQ3TXdLb1VRYXlTMGktRGU3LXh1RUdtYjRva3QyTmNfam5OenRaV3hiVGlMTEFDcFM3TnhjNjZRY0t3LWphb1JGenNkUS1JeW5qalZEMjNhR2FhVXdrc19mWHpVbE1aWV93d0thVTJ3YThSSjI5T2dPNjIz?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T02:33:38+09:00",
-   "dup_count": 0,
-   "summary": ""
-  },
-  {
-   "title": "Moderna, Merck Shares Fall After Possible Melanoma Data Leak",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVlg4S2ZhZGVaZWlhM0FtZV9pazdqSzNWME9YU1l2aHZlY29aVkN0MWpObnM1b0xMNGpUMk1QamZobnA3dTJFNFU4Sm10d21FeXpOdEd5TEljQVFmN3YwZWYtcUhETnY3ZC1ROVhIcDJkQ1M3RUJNeEFSOFp1TldCS004d3VqN0EzOTBHNmYtWmQyTHNuWlJuOFNiWQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-10-23T02:24:54+09:00",
-   "dup_count": 0,
-   "summary": ""
+   "summary": "Bloom Energy가 수익 증가에 힘입어 가이던스 상향."
   }
  ]
 }
