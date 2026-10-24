@@ -1,747 +1,814 @@
 {
- "updated_at": "2026-10-24T10:05:05.714663+09:00",
+ "updated_at": "2026-10-24T22:11:31.136460+09:00",
  "event_notes": {
-  "why": "글로벌 시장의 AI 수익성 및 투자 거품 우려가 부각되면서 대형주인 삼성전자와 SK하이닉스가 크게 흔들렸고, 그 여파로 코스피와 코스닥 지수가 각각 3% 넘게 급락한 것으로 보인다. 이에 따라 반도체와 2차전지 등 주요 성장주 업종이 약세를 면치 못한 반면, 상대적으로 지수 하락의 직접적 타격을 덜 받은 건설 업종은 소폭 상승하며 방어력을 보였다.",
-  "watch": "AI 과열론에 따른 글로벌 신용위험 확산세가 진정될지 여부와 함께, 다음 주 발표 예정인 3분기 경제성장률 및 9월 산업동향 지표가 증시 방향성에 영향을 줄 것으로 보인다."
+  "why": "중동 확전 우려로 인한 유가 상승 및 뉴욕 증시 부진과 국내 매수세 실종 우려가 맞물리며 2차전지, 에너지화학, 철강 등 경기 민감 업종 전반이 크게 하락한 것으로 보인다. 반면 코스피 과매도 인식에 따른 저가 매수세 유입과 재정 확대 관련 언급 속에 최근 부진했던 건설 업종이 반등하며 지수 하방을 지지한 것으로 풀이된다. 반도체는 AI 변수 및 개별 기업 이슈 속에서도 3분기 깜짝 성장 기대감이 함께 작용해 낙폭을 소폭에 그치며 코스피의 강보합 마감을 뒷받침한 것으로 보인다.",
+  "watch": "반도체 훈풍이 실제 숫자로 확인될 27일 3분기 GDP 발표와 30일 9월 산업활동동향 지표를 통해 경기 회복세가 입증되는지 확인해야 한다. 아울러 중동 정세 불안에 따른 유가 추이와 물가 압력 속에서 11월 W자 반등을 이끌 매수세가 살아날 수 있을지 지켜볼 필요가 있다."
  },
  "clusters": [
   {
-   "title": "금리 및 물가 정책 전망",
+   "title": "한은 3분기 GDP 성장률 등 주요 경제지표 발표 주목",
    "sources": [
-    "daejonilbo.com",
-    "news.einfomax.co.kr",
-    "newsian.co.kr",
-    "newsis.com",
-    "newsworks.co.kr",
-    "tfmedia.co.kr"
-   ],
-   "count": 6,
-   "items": [
-    {
-     "title": "\"수출호황·확장재정에 수요측 물가압력 상승...긴축 장기화 가능성\"",
-     "url": "https://www.tfmedia.co.kr/news/article.html?no=208324",
-     "source": "tfmedia.co.kr",
-     "published": "2026-10-24T09:50:00+09:00",
-     "dup_count": 1,
-     "summary": "반도체 호황과 수출 증가가 기업 실적 개선과 설비투자 확대로 이어지고, 고용과 소득 개선을 통해 가계 소비와 기업 투자를 자극할 수 있다는 것이다. 재정지출 확대"
-    },
-    {
-     "title": "\"반도체 호황·정부 지출 확대까지...물가 상승 압력 커질 듯\"",
-     "url": "https://www.daejonilbo.com/news/articleView.html?idxno=2309030",
-     "source": "daejonilbo.com",
-     "published": "2026-10-24T09:44:00+09:00",
-     "dup_count": 0,
-     "summary": "반도체 호황과 정부 지출 확대가 소비와 투자 수요를 자극해 물가 상승 압력을 키울 전망이다."
-    },
-    {
-     "title": "한은 11월 인상 재개 '무게'...최종금리 3.25~3.75% 전망",
-     "url": "http://www.newsian.co.kr/news/articleView.html?idxno=97677",
-     "source": "newsian.co.kr",
-     "published": "2026-10-24T08:52:00+09:00",
-     "dup_count": 0,
-     "summary": "한은의 11월 기준금리 인상 재개 가능성이 대두되며 최종금리 전망은 연 3.50% 거론된다."
-    },
-    {
-     "title": "금리 0.5%p 오르면...대출이자 얼마 더 내나[긴축 청구서1]",
-     "url": "https://www.newsis.com/view/NISX20261023_0003838242",
-     "source": "newsis.com",
-     "published": "2026-10-24T08:00:00+09:00",
-     "dup_count": 0,
-     "summary": "기준금리가 추가 인상될 경우 변동금리 대출 차주들의 이자 상환 부담이 더욱 가중될 전망이다."
-    },
-    {
-     "title": "韓 이어 美·歐·日도 '동결' 유력...연말 '인상' 불씨 여전",
-     "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=900519",
-     "source": "newsworks.co.kr",
-     "published": "2026-10-24T08:00:00+09:00",
-     "dup_count": 0,
-     "summary": "한국에 이어 미국, 유럽, 일본 등 주요국 중앙은행도 이번에는 금리를 동결할 가능성이 높다."
-    },
-    {
-     "title": "옥스퍼드 \"원화 약세 땐 한은 인상 앞당겨...주가 급락은 긴축 제동\"",
-     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440936",
-     "source": "news.einfomax.co.kr",
-     "published": "2026-10-24T07:22:00+09:00",
-     "dup_count": 0,
-     "summary": "원화 가치가 하락하면 한은의 금리 인상이 빨라질 수 있으나 주가 급락은 긴축에 제동을 건다."
-    }
-   ]
-  },
-  {
-   "title": "AI 과열 및 증시 하락",
-   "sources": [
-    "thepublic.kr",
-    "thescoop.co.kr",
-    "topstarnews.net",
-    "view.asiae.co.kr"
-   ],
-   "count": 4,
-   "items": [
-    {
-     "title": "삼전닉스마저 4~5% 출렁, AI 수익성 우려에 흔들린 국장 [주간 증시해설...",
-     "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=312043",
-     "source": "thescoop.co.kr",
-     "published": "2026-10-24T09:55:00+09:00",
-     "dup_count": 4,
-     "summary": "코스피는 AI 수익성 우려로 흔들렸으나 SK하이닉스 등 반도체주 덕분에 상승 마감했다."
-    },
-    {
-     "title": "미국증시 다우 652포인트 급락...유가 급등에도 반도체 반등, SK하이닉스...",
-     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16256458",
-     "source": "topstarnews.net",
-     "published": "2026-10-24T08:14:00+09:00",
-     "dup_count": 1,
-     "summary": "미국 증시는 다우 지수 급락과 유가 상승을 겪었으나 반도체주는 반등을 모색했다."
-    },
-    {
-     "title": "같은 AI 과열론에도 엇갈린 한·대만 증시...반도체 구조가 갈랐다",
-     "url": "https://www.thepublic.kr/news/articleView.html?idxno=323527",
-     "source": "thepublic.kr",
-     "published": "2026-10-24T09:30:00+09:00",
-     "dup_count": 0,
-     "summary": "AI 과열론 속에서도 반도체 산업 구조와 종목 집중도에 따라 한국과 대만 증시가 엇갈렸다."
-    },
-    {
-     "title": "AI 투자 거품 우려에 글로벌 회사채 신용위험 17개월 만에 최고",
-     "url": "https://view.asiae.co.kr/article/2026102409164238837",
-     "source": "view.asiae.co.kr",
-     "published": "2026-10-24T09:16:00+09:00",
-     "dup_count": 0,
-     "summary": "신용스프레드는 회사채와 국채 등 기준 채권 사이의 금리 차이를 뜻한다. 투자자가 기업의 채무불이행... 시장 불안이 확산하면서 한국수출입은행은 엔화 표시 채권 발"
-    }
-   ]
-  },
-  {
-   "title": "환율 및 외환 동향",
-   "sources": [
-    "news.einfomax.co.kr",
-    "segyebiz.com",
-    "view.asiae.co.kr"
-   ],
-   "count": 4,
-   "items": [
-    {
-     "title": "반도체 수출 달러에 힘받는 원화...환율 2년 만에 최저 수준",
-     "url": "http://www.segyebiz.com/newsView/20261024502778?OutUrl=naver",
-     "source": "segyebiz.com",
-     "published": "2026-10-24T09:06:00+09:00",
-     "dup_count": 1,
-     "summary": "반도체 수출 호조에 힘입어 원·달러 환율이 2년 만에 최저 수준에 머물렀다."
-    },
-    {
-     "title": "외국인 38조 던졌는데도 내리는 환율, 여기까지 떨어진다고?[주末머니]",
-     "url": "https://view.asiae.co.kr/article/2026102209431363666",
-     "source": "view.asiae.co.kr",
-     "published": "2026-10-24T08:47:00+09:00",
-     "dup_count": 0,
-     "summary": "반도체 수출 호재에 따른 대규모 경상흑자 전망에도 외국인 투자자들의 매도세가 이어졌다."
-    },
-    {
-     "title": "NDF, 1,322.10/1,322.50원...1.20원↓",
-     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440951",
-     "source": "news.einfomax.co.kr",
-     "published": "2026-10-24T08:38:00+09:00",
-     "dup_count": 0,
-     "summary": "뉴욕 NDF 시장에서 달러-원 1개월물은 유가 급등과 미국 증시 약세로 소폭 하락했다."
-    },
-    {
-     "title": "[외환] 중동 긴장·달러 반등에 1,320원대 중반 상승",
-     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440948",
-     "source": "news.einfomax.co.kr",
-     "published": "2026-10-24T08:14:00+09:00",
-     "dup_count": 0,
-     "summary": "중동 긴장에 따른 국제유가 급등과 달러 강세로 달러-원 환율이 1,320원대 중반으로 올랐다."
-    }
-   ]
-  },
-  {
-   "title": "SK하이닉스 관련 소식",
-   "sources": [
-    "hankyung.com",
-    "news.sbs.co.kr",
-    "opinionnews.co.kr"
-   ],
-   "count": 3,
-   "items": [
-    {
-     "title": "[위클리 PICK 3] 10월 수출 '616억 달러' 돌파부터 SK하이닉스 솔리다임...",
-     "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=146105",
-     "source": "opinionnews.co.kr",
-     "published": "2026-10-24T09:00:00+09:00",
-     "dup_count": 1,
-     "summary": "한국은행 금융통화위원회는 10월 기준금리를 연 3.00%로 만장일치 동결했다."
-    },
-    {
-     "title": "\"최태원 회장 큰 결단\"...속타던 SK하이닉스 개미들 '환호' [강경주의 테...",
-     "url": "https://www.hankyung.com/article/2026102314556",
-     "source": "hankyung.com",
-     "published": "2026-10-24T09:31:00+09:00",
-     "dup_count": 0,
-     "summary": "SK하이닉스의 솔리다임 미국 상장 중단 결정으로 주주 이익 보호 기대감이 커졌다."
-    },
-    {
-     "title": "\"솔리다임 미국 상장 중단\"...하이닉스 4%대 상승",
-     "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008812748&plink=ORI&cooper=NAVER",
-     "source": "news.sbs.co.kr",
-     "published": "2026-10-24T07:17:00+09:00",
-     "dup_count": 0,
-     "summary": "SK하이닉스의 솔리다임 미국 상장 중단 소식에 힘입어 코스피가 반등 마감했다."
-    }
-   ]
-  },
-  {
-   "title": "종목별 주가 동향 (LG이노텍, HLB, 알테오젠)",
-   "sources": [
-    "cbci.co.kr"
-   ],
-   "count": 3,
-   "items": [
-    {
-     "title": "LG이노텍 주가 38만원선 내줬다...새주장 반등 여부 '관건'",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=618760",
-     "source": "cbci.co.kr",
-     "published": "2026-10-24T09:46:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피가 소폭 상승한 것과 달리 LG이노텍은 4%대 하락하며 부진한 흐름을 보였다."
-    },
-    {
-     "title": "HLB 주가, 코스닥 하락에도 강보합...약세장 속 선방, 새주장 흐름은?",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=618740",
-     "source": "cbci.co.kr",
-     "published": "2026-10-24T08:20:00+09:00",
-     "dup_count": 0,
-     "summary": "코스닥 시장의 전반적인 하방 압력 속에서도 HLB는 강보합세로 선방했다."
-    },
-    {
-     "title": "알테오젠 연속 약세에 23만원선 아래로...새주 반등 여부 '관건'",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=618739",
-     "source": "cbci.co.kr",
-     "published": "2026-10-24T08:06:00+09:00",
-     "dup_count": 0,
-     "summary": "코스닥 하락세 속에서 시총 1위 알테오젠이 23만 원선을 밑돌며 반등 여부가 주목된다."
-    }
-   ]
-  },
-  {
-   "title": "가상자산 시장 동향",
-   "sources": [
-    "coinreaders.com",
-    "topstarnews.net"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "가상자산 거래대금 52.5% 급증...아이리스 265% 폭등, 리플XRP 약세",
-     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16256464",
-     "source": "topstarnews.net",
-     "published": "2026-10-24T08:26:00+09:00",
-     "dup_count": 0,
-     "summary": "미국 증시 하락 속에서 가상자산 거래대금이 급증하고 아이리스가 폭등세를 기록했다."
-    },
-    {
-     "title": "비트코인 88% 추가 폭락 경고...블룸버그 전문가 \"ETF 대중화가 오히려 약...",
-     "url": "http://coinreaders.com/264984",
-     "source": "coinreaders.com",
-     "published": "2026-10-24T07:36:00+09:00",
-     "dup_count": 0,
-     "summary": "블룸버그 전문가는 미국 증시 20% 하락을 전제로 비트코인의 극단적인 폭락 가능성을 경고했다."
-    }
-   ]
-  },
-  {
-   "title": "코스피 수급 방파제 및 전망",
-   "sources": [
-    "ajunews.com",
-    "news.einfomax.co.kr"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "55조원 매수 끝낸 삼전·닉스...코스피 다음 '수급 방파제' 누구",
-     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440947",
-     "source": "news.einfomax.co.kr",
-     "published": "2026-10-24T08:12:00+09:00",
-     "dup_count": 1,
-     "summary": "삼성전자와 SK하이닉스의 자사주 매입이 종료된 가운데 다음 수급 주체에 관심이 쏠린다."
-    },
-    {
-     "title": "[주간증시전망] 반도체 실적·주주환원에 쏠린 눈...코스피 반등 시험대",
-     "url": "https://www.ajunews.com/view/20261023150407373",
-     "source": "ajunews.com",
-     "published": "2026-10-24T08:02:00+09:00",
-     "dup_count": 0,
-     "summary": "주간 증시는 반도체 실적과 주주환원책을 비롯해 미국 FOMC와 국제유가에 주목하고 있다."
-    }
-   ]
-  },
-  {
-   "title": "이건희 회장 6주기",
-   "sources": [
-    "seoultimes.news"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[이건희 6주기] 2컴퓨터·소프트웨어·로봇에 주목한 이건희의 미래 구...",
-     "url": "https://www.seoultimes.news/news/article.html?no=2000101312",
-     "source": "seoultimes.news",
-     "published": "2026-10-24T10:02:00+09:00",
-     "dup_count": 0,
-     "summary": "이건희 선대회장은 일찍부터 반도체 외에 컴퓨터와 소프트웨어, 로봇에도 주목했다."
-    }
-   ]
-  },
-  {
-   "title": "충남·대전·세종 경제 동향",
-   "sources": [
-    "ccdailynews.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "충남 수출 급증 속 대전 감소...세종은 성장 속 적자",
-     "url": "https://www.ccdailynews.com/news/articleView.html?idxno=2447848",
-     "source": "ccdailynews.com",
-     "published": "2026-10-24T09:54:00+09:00",
-     "dup_count": 0,
-     "summary": "대전은 시스템반도체와 자동차부품 부진에 인공위성 수출 공백이 겹쳐 수출이 감소했다."
-    }
-   ]
-  },
-  {
-   "title": "일본 대형 택배회사 해킹 사건",
-   "sources": [
-    "pointe.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[오늘 일본은] 日 대형 택배회사 해킹...고객 개인정보 최대 5323만 건 유...",
-     "url": "https://www.pointe.co.kr/news/articleView.html?idxno=86564",
-     "source": "pointe.co.kr",
-     "published": "2026-10-24T09:46:00+09:00",
-     "dup_count": 2,
-     "summary": "일본의 대형 택배회사 해킹으로 최대 5,323만 건의 고객 개인정보가 유출됐다."
-    }
-   ]
-  },
-  {
-   "title": "여당 대변인 코스피 발언",
-   "sources": [
-    "thepublic.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "코스피 3주 만에 20% 빠졌는데...與 조계원 대변인 \"내년 1만피 기대\"",
-     "url": "https://www.thepublic.kr/news/articleView.html?idxno=323501",
-     "source": "thepublic.kr",
-     "published": "2026-10-24T09:30:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피가 3주 만에 20% 폭락한 가운데 여당 대변인이 내년 1만피 기대를 언급했다."
-    }
-   ]
-  },
-  {
-   "title": "국내 증시 자금 이탈",
-   "sources": [
-    "sedaily.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "‘국장 못 믿겠다’...4개월만 증시 대기자금 51조 원 감소",
-     "url": "https://www.sedaily.com/article/20105605?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-10-24T09:17:00+09:00",
-     "dup_count": 1,
-     "summary": "외국인 매도세와 증시 불안으로 4개월 만에 증시 대기자금이 51조 원 감소했다."
-    }
-   ]
-  },
-  {
-   "title": "정치인(이재명) 관련 지지율 및 주식",
-   "sources": [
-    "imaeil.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "주식 아니라 지지율이 \"조정 불가피\"?...4조원 날린 李 핵심지지층 '흔들...",
-     "url": "https://www.imaeil.com/page/view/2026102223404707248",
-     "source": "imaeil.com",
-     "published": "2026-10-24T08:17:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피 폭락과 증시 부진으로 인해 이재명 대표의 핵심 지지층이 크게 흔들리고 있다."
-    }
-   ]
-  },
-  {
-   "title": "저PBR 개선계획 공시",
-   "sources": [
-    "sentv.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "'저PBR 딱지' 피하자...유예 시한 앞두고 개선계획 공시 '막차' 몰려",
-     "url": "https://www.sentv.co.kr/article/view/sentv202610230158",
-     "source": "sentv.co.kr",
-     "published": "2026-10-24T08:02:00+09:00",
-     "dup_count": 1,
-     "summary": "저PBR 기업들이 유예 시한을 앞두고 잇따라 가치 제고 계획 공시 막차를 탔다."
-    }
-   ]
-  },
-  {
-   "title": "실리콘밸리 자소서와 AI",
-   "sources": [
-    "news.kbs.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[KBS 열린토론] “요즘 실리콘밸리 자소서? AI보다 뛰어난 것 증명하라”",
-     "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8694220&ref=A",
-     "source": "news.kbs.co.kr",
-     "published": "2026-10-24T08:00:00+09:00",
-     "dup_count": 0,
-     "summary": "실리콘밸리에서는 AI 기술의 실질적 가치와 이를 증명할 수 있는 능력이 중요해지고 있다."
-    }
-   ]
-  },
-  {
-   "title": "젠슨 황의 중국 반도체 경고",
-   "sources": [
-    "jemin.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "젠슨 황, 중국 반도체 경쟁력 경고...미국 인공지능 주도권 시험대",
-     "url": "https://www.jemin.com/news/articleView.html?idxno=845179",
-     "source": "jemin.com",
-     "published": "2026-10-24T07:54:00+09:00",
-     "dup_count": 0,
-     "summary": "젠슨 황은 첨단 반도체 대중 수출 제한이 중국의 경쟁력과 미국의 AI 주도권에 미칠 영향을 경고했다."
-    }
-   ]
-  },
-  {
-   "title": "외국인 주간 거래소 동향",
-   "sources": [
+    "betanews.net",
+    "g-enews.com",
+    "jnilbo.com",
+    "newscj.com",
     "pinpointnews.co.kr"
    ],
-   "count": 1,
+   "count": 5,
    "items": [
     {
-     "title": "[주간 거래소 외국인] 삼성전자 순매수 1위, SK하이닉스 순매도 1위",
-     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=498082",
-     "source": "pinpointnews.co.kr",
-     "published": "2026-10-24T07:24:00+09:00",
+     "title": "3분기 韓 경제 성장 방향성은?...9월 주요 지표 차주 잇따라 공개",
+     "url": "https://www.g-enews.com/view.php?ud=20261024123305871923c501012_1",
+     "source": "g-enews.com",
+     "published": "2026-10-24T12:42:00+09:00",
+     "dup_count": 1,
+     "summary": "한은은 27일 3분기 GDP를, 데이터처는 30일 산업동향을 공개한다."
+    },
+    {
+     "title": "반도체 훈풍에 3분기 성장률 주목...27일 GDP·30일 산업활동동향 발표",
+     "url": "https://www.betanews.net/article/view/beta202610240088",
+     "source": "betanews.net",
+     "published": "2026-10-24T22:04:00+09:00",
      "dup_count": 0,
-     "summary": "한주간 거래소 외국인은 삼성전자를 순매수하고 SK하이닉스는 순매도하는 등 엇갈린 행보를 보였다."
+     "summary": "한은이 27일 3분기 GDP와 30일 산업동향을 발표한다."
+    },
+    {
+     "title": "\"깜짝 성장 나올까\"... 한은 3분기 GDP 발표에 쏠린 눈",
+     "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000076333",
+     "source": "jnilbo.com",
+     "published": "2026-10-24T17:32:00+09:00",
+     "dup_count": 0,
+     "summary": "신현송 총재는 3분기 GDP 확인 후 11월 기준금리를 결정한다."
+    },
+    {
+     "title": "다음 주 3분기 성장률 발표... 9월 산업생산 회복할까",
+     "url": "https://www.newscj.com/news/articleView.html?idxno=3442787",
+     "source": "newscj.com",
+     "published": "2026-10-24T15:44:00+09:00",
+     "dup_count": 0,
+     "summary": "한은이 27일 3분기 GDP 발표 후 11월 기준금리 조정을 검토한다."
+    },
+    {
+     "title": "반도체 수출 호조, 성장률 얼마나 끌어올렸나...한은 27일 GDP 발표",
+     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=498111",
+     "source": "pinpointnews.co.kr",
+     "published": "2026-10-24T13:08:00+09:00",
+     "dup_count": 0,
+     "summary": "한은 신현송 총재는 27일 3분기 GDP 확인 뒤 11월 금리를 정한다."
     }
    ]
   },
   {
-   "title": "다음주 경제 지표 주목",
+   "title": "금융연구원 \"수출·재정 확대에 물가 압력 커져\"",
    "sources": [
-    "yna.co.kr"
+    "ebn.co.kr",
+    "etnews.com",
+    "imaeil.com",
+    "jasm.co.kr",
+    "pinpointnews.co.kr"
+   ],
+   "count": 5,
+   "items": [
+    {
+     "title": "수출 호황이 되레 금리 발목 잡나...내년 '수요발 인플레' 경계",
+     "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1729024",
+     "source": "ebn.co.kr",
+     "published": "2026-10-24T13:36:00+09:00",
+     "dup_count": 1,
+     "summary": "금융연구원은 24일 수출 호황 발 물가로 한은의 추가 긴축을 전망했다."
+    },
+    {
+     "title": "한국금융연구원 \"반도체 호황·확장재정, 수요 물가 압력 키운다\"",
+     "url": "https://www.imaeil.com/page/view/2026102411532476775",
+     "source": "imaeil.com",
+     "published": "2026-10-24T11:57:00+09:00",
+     "dup_count": 1,
+     "summary": "한국금융연구원은 반도체 호황에 한은의 추가 기준금리 인상을 전망했다."
+    },
+    {
+     "title": "“수출·재정 확대가 수요 측 물가 압력 키워...건전성 관리 유의해야”",
+     "url": "https://www.etnews.com/20261024000037",
+     "source": "etnews.com",
+     "published": "2026-10-24T21:40:00+09:00",
+     "dup_count": 0,
+     "summary": "수출 증가가 기업 실적 개선과 설비투자 확대로 이어져 가계 소비를 자극할 수 있어서다. 정부 소비와 공공투자, 취약계층 지원 등 재정지출 확대 역시 지역 소비와 "
+    },
+    {
+     "title": "재정 확대·수출 호조의 역설...물가 상승에 긴축 부담 커지나",
+     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=498123",
+     "source": "pinpointnews.co.kr",
+     "published": "2026-10-24T14:18:00+09:00",
+     "dup_count": 0,
+     "summary": "수출 호조와 재정 확대로 물가가 올라 긴축 및 금리 부담이 커졌다."
+    },
+    {
+     "title": "금융연구원 \"물가상승, 수요 측 압력 커져...고금리 길어진다\"",
+     "url": "https://www.jasm.co.kr/news/view/322786/?sc=Naver",
+     "source": "jasm.co.kr",
+     "published": "2026-10-24T12:08:00+09:00",
+     "dup_count": 0,
+     "summary": "한은이 7·8월 금리를 0.25%p씩 인상해 고금리가 길어지고 있다."
+    }
+   ]
+  },
+  {
+   "title": "투자자예탁금 4개월 만에 51조원 증발",
+   "sources": [
+    "dailysportshankook.co.kr",
+    "ebn.co.kr"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "4개월 만에 51조 증발...투자자예탁금 연초 수준 '후퇴'",
+     "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=434783",
+     "source": "dailysportshankook.co.kr",
+     "published": "2026-10-24T12:40:00+09:00",
+     "dup_count": 0,
+     "summary": "투자자예탁금이 4개월 만에 51조원 줄며 증시 수급 부담이 커졌다."
+    },
+    {
+     "title": "투자자예탁금 4개월 만에 51조원 증발...88조원대로 연중 최저 수준",
+     "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1729021",
+     "source": "ebn.co.kr",
+     "published": "2026-10-24T11:50:00+09:00",
+     "dup_count": 0,
+     "summary": "이 같은 개인 투자자들의 순매수 규모를 고려하면, 감소한 예탁금 상당 부분이 은행 등 다른 금융기관으로... 외국인의 매도 물량을 흡수하며 증시를 지탱했다. 하지"
+    }
+   ]
+  },
+  {
+   "title": "기준금리 동결과 물가 안정 칼럼",
+   "sources": [
+    "mhns.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "[다음주 경제] 3분기 성장률은...9월 산업동향도 주목",
-     "url": "https://www.yna.co.kr/view/AKR20261023183500002?input=1195m",
-     "source": "yna.co.kr",
-     "published": "2026-10-24T09:21:00+09:00",
+     "title": "[박근종 칼럼] 예상된 기준금리 동결, 물가 안정과 구조개혁을 위한 골...",
+     "url": "https://www.mhns.co.kr/news/articleView.html?idxno=765753",
+     "source": "mhns.co.kr",
+     "published": "2026-10-24T20:58:00+09:00",
      "dup_count": 0,
-     "summary": "다음 주 한국은행은 3분기 GDP 등 데이터를 바탕으로 11월 기준금리 조정 여부를 고심한다."
+     "summary": "한은 금통위가 10월 22일 기준금리를 연 3.00%로 동결했다."
+    }
+   ]
+  },
+  {
+   "title": "코스피 상승 속 개인 투자자 체감 손실",
+   "sources": [
+    "fnnews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "\"코스피 올랐다는데 내 주식만 왜?\"...개미 10명 중 8명이 폭망 한 기막힌...",
+     "url": "https://www.fnnews.com/news/202610241657373440",
+     "source": "fnnews.com",
+     "published": "2026-10-24T19:00:00+09:00",
+     "dup_count": 0,
+     "summary": "시총 가중 방식으로 700여 종목 하락에도 코스피가 상승 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "중동 확전 우려에 따른 국제유가·증시 영향",
+   "sources": [
+    "ytn.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "중동 확전 우려에 유가↑·뉴욕 증시↓...우리 경제는?",
+     "url": "https://www.ytn.co.kr/_ln/0102_202610241840334217",
+     "source": "ytn.co.kr",
+     "published": "2026-10-24T18:40:00+09:00",
+     "dup_count": 1,
+     "summary": "중동 확전 속에 한은 신현송 총재는 22일 금리 동결을 발표했다."
+    }
+   ]
+  },
+  {
+   "title": "코스피 하락세와 11월 반등 전망",
+   "sources": [
+    "mk.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "9100→5500까지 하락한 코스피...“11월은 W자 반등에 주목”",
+     "url": "https://www.mk.co.kr/article/12184843",
+     "source": "mk.co.kr",
+     "published": "2026-10-24T17:07:00+09:00",
+     "dup_count": 0,
+     "summary": "5500선까지 급락한 코스피에 대해 김 연구원은 W자 반등을 전망했다."
+    }
+   ]
+  },
+  {
+   "title": "국내 증시 매수세 실종 동향",
+   "sources": [
+    "enewstoday.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[증시 동향] 매수세 실종된 국내 증시",
+     "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2484102",
+     "source": "enewstoday.co.kr",
+     "published": "2026-10-24T16:32:00+09:00",
+     "dup_count": 2,
+     "summary": "이번 주 코스피는 5550.30, 코스닥은 751.69로 하락 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "차기 증시 주도주 및 시총 3위 전망",
+   "sources": [
+    "ebn.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "\"내년 증시 주도주 바뀐다\"...삼성전자·SK하이닉스 이을 시총 3위는?",
+     "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1729030",
+     "source": "ebn.co.kr",
+     "published": "2026-10-24T16:08:00+09:00",
+     "dup_count": 0,
+     "summary": "내년 증시는 이익 증가율 높은 저평가 기업이 주도주로 부각된다."
+    }
+   ]
+  },
+  {
+   "title": "최태원 회장 반도체 사업 및 솔리다임 후폭풍",
+   "sources": [
+    "pennmike.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[재계핫이슈] 최태원의 호남반도체 속도전, 제동 걸리나...솔리다임 후폭...",
+     "url": "https://www.pennmike.com/news/articleView.html?idxno=130212",
+     "source": "pennmike.com",
+     "published": "2026-10-24T16:04:00+09:00",
+     "dup_count": 0,
+     "summary": "최태원 회장의 반도체 속도전이 88조원 현금 속 난관에 부딪혔다."
+    }
+   ]
+  },
+  {
+   "title": "삼성전자·SK하이닉스 등 AI 반도체 주가 급등락 원인",
+   "sources": [
+    "topstarnews.net"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "삼성전자·SK하이닉스 주가 왜 급등락하나...AI 반도체 호황 속 5가지 변...",
+     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16256658",
+     "source": "topstarnews.net",
+     "published": "2026-10-24T16:02:00+09:00",
+     "dup_count": 0,
+     "summary": "23일 코스피는 SK하이닉스 등 반등으로 5550.30에 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "집권여당 내부 권력 투쟁 비판",
+   "sources": [
+    "newdaily.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "민생 뒷전 집권여당, 미래 권력 투쟁 골몰 ... 집권 2년차 레임덕 자초 [...",
+     "url": "https://www.newdaily.co.kr/site/data/html/2026/10/23/2026102300305.html",
+     "source": "newdaily.co.kr",
+     "published": "2026-10-24T15:02:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피가 롤러코스터 장세 끝에 23일 5550.30으로 상승 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "국내 증시 추가 하락 우려에 떠는 개미들",
+   "sources": [
+    "hankyung.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "\"월요일 또 줄줄 흐르게 생겼다\"...개미들 벌벌 떠는 이유",
+     "url": "https://www.hankyung.com/article/2026102424447",
+     "source": "hankyung.com",
+     "published": "2026-10-24T14:45:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피가 하루 단위 등락 끝에 주간 2.08% 하락 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "코스피 과매도 국면 속 저가매수 주목",
+   "sources": [
+    "ebn.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "\"코스피 과매도 국면\"...AI 투자 불안에도 월가선 저가매수 주목",
+     "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1729026",
+     "source": "ebn.co.kr",
+     "published": "2026-10-24T14:26:00+09:00",
+     "dup_count": 3,
+     "summary": "23일 외국인의 1조1000억원 매도에도 코스피는 0.3% 올랐다."
+    }
+   ]
+  },
+  {
+   "title": "한은 매파적 금리동결과 긴축기조 지속",
+   "sources": [
+    "ddaily.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[이호연의 D톡스] 한은, 매파적 동결...‘반도체 호황’ 긴축기조 지속",
+     "url": "https://www.ddaily.co.kr/page/view/2026102318072608156",
+     "source": "ddaily.co.kr",
+     "published": "2026-10-24T14:00:00+09:00",
+     "dup_count": 0,
+     "summary": "한은이 기준금리를 동결했으나 반도체 호황 속 긴축 기조는 이어진다."
+    }
+   ]
+  },
+  {
+   "title": "코스피200 ETF·ETN 거래 집중 현상",
+   "sources": [
+    "kjdaily.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "코스피200 ETF·ETN 거래대금 47조원...상위 50개 중 절반 넘어",
+     "url": "http://www.kjdaily.com/article.php?aid=1792816277690087276",
+     "source": "kjdaily.com",
+     "published": "2026-10-24T13:34:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피200은 지난 19일 1.50% 오른 891.30으로 마감했지만 20일에는 3.65% 급락한 858.78로 내려앉았다. 21일에는 3.76% 반등하며 891"
+    }
+   ]
+  },
+  {
+   "title": "대한전선 주가 동향",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "10월 3주차 대한전선 주가, 2만1천원대 하락 마감",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=557925",
+     "source": "joongangenews.com",
+     "published": "2026-10-24T13:34:00+09:00",
+     "dup_count": 0,
+     "summary": "23일 대한전선 주가가 4.09% 내린 2만1100원에 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "삼천당제약 최근 주가 흐름",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "최근 5거래일 삼천당제약 주가 흐름",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=557923",
+     "source": "joongangenews.com",
+     "published": "2026-10-24T13:32:00+09:00",
+     "dup_count": 0,
+     "summary": "23일 코스닥에서 삼천당제약 주가가 19만8000원에 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "LS ELECTRIC 최근 주가 흐름",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "LS ELECTRIC 주가 최근 5거래일간 변동성 확대",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=557912",
+     "source": "joongangenews.com",
+     "published": "2026-10-24T12:30:00+09:00",
+     "dup_count": 0,
+     "summary": "LS ELECTRIC 주가가 1897억원 거래대금 속 하락 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "스페코 최근 주가 흐름",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "스페코 주가 최근 5거래일간 1,400원대서 2,000원대 진입",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=557913",
+     "source": "joongangenews.com",
+     "published": "2026-10-24T12:30:00+09:00",
+     "dup_count": 0,
+     "summary": "10월 23일 코스닥에서 스페코 주가가 상한가인 2055원에 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "주가 급등 종목 및 삼성E&A 거래대금",
+   "sources": [
+    "kjdaily.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "주가 30% 이상 오른 종목 22개...삼성E&A 거래대금 1.6조",
+     "url": "http://www.kjdaily.com/article.php?aid=1792811831690086276",
+     "source": "kjdaily.com",
+     "published": "2026-10-24T12:18:00+09:00",
+     "dup_count": 1,
+     "summary": "삼성E&A가 1.6조원 거래대금 속 5만9800원에 상승 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "미국 반도체주 급락 및 증시 변동성",
+   "sources": [
+    "greened.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "美반도체 6.7% 급락 뒤 0.4% 반등 그쳐...유가 116달러·외국인 1조 매도,...",
+     "url": "https://www.greened.kr/news/articleView.html?idxno=352922",
+     "source": "greened.kr",
+     "published": "2026-10-24T12:15:00+09:00",
+     "dup_count": 2,
+     "summary": "외국인 1조 매도에도 코스피가 반등해 5550.30으로 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "10월 넷째 주 세계경제동향 브리핑",
+   "sources": [
+    "kihoilbo.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[10월 넷째 주 세계경제동향 브리핑] 한미 금리 내려도 증시는 약세...유...",
+     "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3038663",
+     "source": "kihoilbo.co.kr",
+     "published": "2026-10-24T12:14:00+09:00",
+     "dup_count": 2,
+     "summary": "23일 코스피는 5550.30, 코스닥은 751.69로 하락 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "에코프로비엠 주가 동향",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "10월 3주차 에코프로비엠 주가 9만원대 하락 마감",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=557903",
+     "source": "joongangenews.com",
+     "published": "2026-10-24T11:58:00+09:00",
+     "dup_count": 0,
+     "summary": "10월 23일 코스닥서 에코프로비엠이 6.1% 내린 9만2800원에 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "지투지바이오 최근 주가 흐름",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "지투지바이오 주가 최근 5거래일 변동폭 확대 마감",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=557902",
+     "source": "joongangenews.com",
+     "published": "2026-10-24T11:56:00+09:00",
+     "dup_count": 0,
+     "summary": "23일 코스닥서 지투지바이오가 업종 등락률 2.26%를 웃돌며 급등했다."
+    }
+   ]
+  },
+  {
+   "title": "엘리스 주가 동향",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "엘리스 주가 신고가 달성 후 조정",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=557901",
+     "source": "joongangenews.com",
+     "published": "2026-10-24T11:54:00+09:00",
+     "dup_count": 0,
+     "summary": "23일 코스닥에서 엘리스가 2.78% 떨어진 9만1000원에 마감했다."
     }
    ]
   }
  ],
  "items": [
   {
-   "title": "[이건희 6주기] 2컴퓨터·소프트웨어·로봇에 주목한 이건희의 미래 구...",
-   "url": "https://www.seoultimes.news/news/article.html?no=2000101312",
-   "source": "seoultimes.news",
-   "published": "2026-10-24T10:02:00+09:00",
+   "title": "반도체 훈풍에 3분기 성장률 주목...27일 GDP·30일 산업활동동향 발표",
+   "url": "https://www.betanews.net/article/view/beta202610240088",
+   "source": "betanews.net",
+   "published": "2026-10-24T22:04:00+09:00",
    "dup_count": 0,
-   "summary": "이건희 선대회장은 일찍부터 반도체 외에 컴퓨터와 소프트웨어, 로봇에도 주목했다."
+   "summary": "한은이 27일 3분기 GDP와 30일 산업동향을 발표한다."
   },
   {
-   "title": "삼전닉스마저 4~5% 출렁, AI 수익성 우려에 흔들린 국장 [주간 증시해설...",
-   "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=312043",
-   "source": "thescoop.co.kr",
-   "published": "2026-10-24T09:55:00+09:00",
-   "dup_count": 4,
-   "summary": "코스피는 AI 수익성 우려로 흔들렸으나 SK하이닉스 등 반도체주 덕분에 상승 마감했다."
-  },
-  {
-   "title": "충남 수출 급증 속 대전 감소...세종은 성장 속 적자",
-   "url": "https://www.ccdailynews.com/news/articleView.html?idxno=2447848",
-   "source": "ccdailynews.com",
-   "published": "2026-10-24T09:54:00+09:00",
+   "title": "“수출·재정 확대가 수요 측 물가 압력 키워...건전성 관리 유의해야”",
+   "url": "https://www.etnews.com/20261024000037",
+   "source": "etnews.com",
+   "published": "2026-10-24T21:40:00+09:00",
    "dup_count": 0,
-   "summary": "대전은 시스템반도체와 자동차부품 부진에 인공위성 수출 공백이 겹쳐 수출이 감소했다."
+   "summary": "수출 증가가 기업 실적 개선과 설비투자 확대로 이어져 가계 소비를 자극할 수 있어서다. 정부 소비와 공공투자, 취약계층 지원 등 재정지출 확대 역시 지역 소비와 "
   },
   {
-   "title": "\"수출호황·확장재정에 수요측 물가압력 상승...긴축 장기화 가능성\"",
-   "url": "https://www.tfmedia.co.kr/news/article.html?no=208324",
-   "source": "tfmedia.co.kr",
-   "published": "2026-10-24T09:50:00+09:00",
+   "title": "[박근종 칼럼] 예상된 기준금리 동결, 물가 안정과 구조개혁을 위한 골...",
+   "url": "https://www.mhns.co.kr/news/articleView.html?idxno=765753",
+   "source": "mhns.co.kr",
+   "published": "2026-10-24T20:58:00+09:00",
+   "dup_count": 0,
+   "summary": "한은 금통위가 10월 22일 기준금리를 연 3.00%로 동결했다."
+  },
+  {
+   "title": "\"코스피 올랐다는데 내 주식만 왜?\"...개미 10명 중 8명이 폭망 한 기막힌...",
+   "url": "https://www.fnnews.com/news/202610241657373440",
+   "source": "fnnews.com",
+   "published": "2026-10-24T19:00:00+09:00",
+   "dup_count": 0,
+   "summary": "시총 가중 방식으로 700여 종목 하락에도 코스피가 상승 마감했다."
+  },
+  {
+   "title": "중동 확전 우려에 유가↑·뉴욕 증시↓...우리 경제는?",
+   "url": "https://www.ytn.co.kr/_ln/0102_202610241840334217",
+   "source": "ytn.co.kr",
+   "published": "2026-10-24T18:40:00+09:00",
    "dup_count": 1,
-   "summary": "반도체 호황과 수출 증가가 기업 실적 개선과 설비투자 확대로 이어지고, 고용과 소득 개선을 통해 가계 소비와 기업 투자를 자극할 수 있다는 것이다. 재정지출 확대"
+   "summary": "중동 확전 속에 한은 신현송 총재는 22일 금리 동결을 발표했다."
   },
   {
-   "title": "LG이노텍 주가 38만원선 내줬다...새주장 반등 여부 '관건'",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=618760",
-   "source": "cbci.co.kr",
-   "published": "2026-10-24T09:46:00+09:00",
+   "title": "\"깜짝 성장 나올까\"... 한은 3분기 GDP 발표에 쏠린 눈",
+   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000076333",
+   "source": "jnilbo.com",
+   "published": "2026-10-24T17:32:00+09:00",
    "dup_count": 0,
-   "summary": "코스피가 소폭 상승한 것과 달리 LG이노텍은 4%대 하락하며 부진한 흐름을 보였다."
+   "summary": "신현송 총재는 3분기 GDP 확인 후 11월 기준금리를 결정한다."
   },
   {
-   "title": "[오늘 일본은] 日 대형 택배회사 해킹...고객 개인정보 최대 5323만 건 유...",
-   "url": "https://www.pointe.co.kr/news/articleView.html?idxno=86564",
-   "source": "pointe.co.kr",
-   "published": "2026-10-24T09:46:00+09:00",
+   "title": "9100→5500까지 하락한 코스피...“11월은 W자 반등에 주목”",
+   "url": "https://www.mk.co.kr/article/12184843",
+   "source": "mk.co.kr",
+   "published": "2026-10-24T17:07:00+09:00",
+   "dup_count": 0,
+   "summary": "5500선까지 급락한 코스피에 대해 김 연구원은 W자 반등을 전망했다."
+  },
+  {
+   "title": "[증시 동향] 매수세 실종된 국내 증시",
+   "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2484102",
+   "source": "enewstoday.co.kr",
+   "published": "2026-10-24T16:32:00+09:00",
    "dup_count": 2,
-   "summary": "일본의 대형 택배회사 해킹으로 최대 5,323만 건의 고객 개인정보가 유출됐다."
+   "summary": "이번 주 코스피는 5550.30, 코스닥은 751.69로 하락 마감했다."
   },
   {
-   "title": "\"반도체 호황·정부 지출 확대까지...물가 상승 압력 커질 듯\"",
-   "url": "https://www.daejonilbo.com/news/articleView.html?idxno=2309030",
-   "source": "daejonilbo.com",
-   "published": "2026-10-24T09:44:00+09:00",
+   "title": "\"내년 증시 주도주 바뀐다\"...삼성전자·SK하이닉스 이을 시총 3위는?",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1729030",
+   "source": "ebn.co.kr",
+   "published": "2026-10-24T16:08:00+09:00",
    "dup_count": 0,
-   "summary": "반도체 호황과 정부 지출 확대가 소비와 투자 수요를 자극해 물가 상승 압력을 키울 전망이다."
+   "summary": "내년 증시는 이익 증가율 높은 저평가 기업이 주도주로 부각된다."
   },
   {
-   "title": "\"최태원 회장 큰 결단\"...속타던 SK하이닉스 개미들 '환호' [강경주의 테...",
-   "url": "https://www.hankyung.com/article/2026102314556",
+   "title": "[재계핫이슈] 최태원의 호남반도체 속도전, 제동 걸리나...솔리다임 후폭...",
+   "url": "https://www.pennmike.com/news/articleView.html?idxno=130212",
+   "source": "pennmike.com",
+   "published": "2026-10-24T16:04:00+09:00",
+   "dup_count": 0,
+   "summary": "최태원 회장의 반도체 속도전이 88조원 현금 속 난관에 부딪혔다."
+  },
+  {
+   "title": "삼성전자·SK하이닉스 주가 왜 급등락하나...AI 반도체 호황 속 5가지 변...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16256658",
+   "source": "topstarnews.net",
+   "published": "2026-10-24T16:02:00+09:00",
+   "dup_count": 0,
+   "summary": "23일 코스피는 SK하이닉스 등 반등으로 5550.30에 마감했다."
+  },
+  {
+   "title": "다음 주 3분기 성장률 발표... 9월 산업생산 회복할까",
+   "url": "https://www.newscj.com/news/articleView.html?idxno=3442787",
+   "source": "newscj.com",
+   "published": "2026-10-24T15:44:00+09:00",
+   "dup_count": 0,
+   "summary": "한은이 27일 3분기 GDP 발표 후 11월 기준금리 조정을 검토한다."
+  },
+  {
+   "title": "민생 뒷전 집권여당, 미래 권력 투쟁 골몰 ... 집권 2년차 레임덕 자초 [...",
+   "url": "https://www.newdaily.co.kr/site/data/html/2026/10/23/2026102300305.html",
+   "source": "newdaily.co.kr",
+   "published": "2026-10-24T15:02:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피가 롤러코스터 장세 끝에 23일 5550.30으로 상승 마감했다."
+  },
+  {
+   "title": "\"월요일 또 줄줄 흐르게 생겼다\"...개미들 벌벌 떠는 이유",
+   "url": "https://www.hankyung.com/article/2026102424447",
    "source": "hankyung.com",
-   "published": "2026-10-24T09:31:00+09:00",
+   "published": "2026-10-24T14:45:00+09:00",
    "dup_count": 0,
-   "summary": "SK하이닉스의 솔리다임 미국 상장 중단 결정으로 주주 이익 보호 기대감이 커졌다."
+   "summary": "코스피가 하루 단위 등락 끝에 주간 2.08% 하락 마감했다."
   },
   {
-   "title": "같은 AI 과열론에도 엇갈린 한·대만 증시...반도체 구조가 갈랐다",
-   "url": "https://www.thepublic.kr/news/articleView.html?idxno=323527",
-   "source": "thepublic.kr",
-   "published": "2026-10-24T09:30:00+09:00",
-   "dup_count": 0,
-   "summary": "AI 과열론 속에서도 반도체 산업 구조와 종목 집중도에 따라 한국과 대만 증시가 엇갈렸다."
+   "title": "\"코스피 과매도 국면\"...AI 투자 불안에도 월가선 저가매수 주목",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1729026",
+   "source": "ebn.co.kr",
+   "published": "2026-10-24T14:26:00+09:00",
+   "dup_count": 3,
+   "summary": "23일 외국인의 1조1000억원 매도에도 코스피는 0.3% 올랐다."
   },
   {
-   "title": "코스피 3주 만에 20% 빠졌는데...與 조계원 대변인 \"내년 1만피 기대\"",
-   "url": "https://www.thepublic.kr/news/articleView.html?idxno=323501",
-   "source": "thepublic.kr",
-   "published": "2026-10-24T09:30:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피가 3주 만에 20% 폭락한 가운데 여당 대변인이 내년 1만피 기대를 언급했다."
-  },
-  {
-   "title": "[다음주 경제] 3분기 성장률은...9월 산업동향도 주목",
-   "url": "https://www.yna.co.kr/view/AKR20261023183500002?input=1195m",
-   "source": "yna.co.kr",
-   "published": "2026-10-24T09:21:00+09:00",
-   "dup_count": 0,
-   "summary": "다음 주 한국은행은 3분기 GDP 등 데이터를 바탕으로 11월 기준금리 조정 여부를 고심한다."
-  },
-  {
-   "title": "‘국장 못 믿겠다’...4개월만 증시 대기자금 51조 원 감소",
-   "url": "https://www.sedaily.com/article/20105605?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-10-24T09:17:00+09:00",
-   "dup_count": 1,
-   "summary": "외국인 매도세와 증시 불안으로 4개월 만에 증시 대기자금이 51조 원 감소했다."
-  },
-  {
-   "title": "AI 투자 거품 우려에 글로벌 회사채 신용위험 17개월 만에 최고",
-   "url": "https://view.asiae.co.kr/article/2026102409164238837",
-   "source": "view.asiae.co.kr",
-   "published": "2026-10-24T09:16:00+09:00",
-   "dup_count": 0,
-   "summary": "신용스프레드는 회사채와 국채 등 기준 채권 사이의 금리 차이를 뜻한다. 투자자가 기업의 채무불이행... 시장 불안이 확산하면서 한국수출입은행은 엔화 표시 채권 발"
-  },
-  {
-   "title": "반도체 수출 달러에 힘받는 원화...환율 2년 만에 최저 수준",
-   "url": "http://www.segyebiz.com/newsView/20261024502778?OutUrl=naver",
-   "source": "segyebiz.com",
-   "published": "2026-10-24T09:06:00+09:00",
-   "dup_count": 1,
-   "summary": "반도체 수출 호조에 힘입어 원·달러 환율이 2년 만에 최저 수준에 머물렀다."
-  },
-  {
-   "title": "[위클리 PICK 3] 10월 수출 '616억 달러' 돌파부터 SK하이닉스 솔리다임...",
-   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=146105",
-   "source": "opinionnews.co.kr",
-   "published": "2026-10-24T09:00:00+09:00",
-   "dup_count": 1,
-   "summary": "한국은행 금융통화위원회는 10월 기준금리를 연 3.00%로 만장일치 동결했다."
-  },
-  {
-   "title": "한은 11월 인상 재개 '무게'...최종금리 3.25~3.75% 전망",
-   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=97677",
-   "source": "newsian.co.kr",
-   "published": "2026-10-24T08:52:00+09:00",
-   "dup_count": 0,
-   "summary": "한은의 11월 기준금리 인상 재개 가능성이 대두되며 최종금리 전망은 연 3.50% 거론된다."
-  },
-  {
-   "title": "외국인 38조 던졌는데도 내리는 환율, 여기까지 떨어진다고?[주末머니]",
-   "url": "https://view.asiae.co.kr/article/2026102209431363666",
-   "source": "view.asiae.co.kr",
-   "published": "2026-10-24T08:47:00+09:00",
-   "dup_count": 0,
-   "summary": "반도체 수출 호재에 따른 대규모 경상흑자 전망에도 외국인 투자자들의 매도세가 이어졌다."
-  },
-  {
-   "title": "NDF, 1,322.10/1,322.50원...1.20원↓",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440951",
-   "source": "news.einfomax.co.kr",
-   "published": "2026-10-24T08:38:00+09:00",
-   "dup_count": 0,
-   "summary": "뉴욕 NDF 시장에서 달러-원 1개월물은 유가 급등과 미국 증시 약세로 소폭 하락했다."
-  },
-  {
-   "title": "가상자산 거래대금 52.5% 급증...아이리스 265% 폭등, 리플XRP 약세",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16256464",
-   "source": "topstarnews.net",
-   "published": "2026-10-24T08:26:00+09:00",
-   "dup_count": 0,
-   "summary": "미국 증시 하락 속에서 가상자산 거래대금이 급증하고 아이리스가 폭등세를 기록했다."
-  },
-  {
-   "title": "HLB 주가, 코스닥 하락에도 강보합...약세장 속 선방, 새주장 흐름은?",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=618740",
-   "source": "cbci.co.kr",
-   "published": "2026-10-24T08:20:00+09:00",
-   "dup_count": 0,
-   "summary": "코스닥 시장의 전반적인 하방 압력 속에서도 HLB는 강보합세로 선방했다."
-  },
-  {
-   "title": "주식 아니라 지지율이 \"조정 불가피\"?...4조원 날린 李 핵심지지층 '흔들...",
-   "url": "https://www.imaeil.com/page/view/2026102223404707248",
-   "source": "imaeil.com",
-   "published": "2026-10-24T08:17:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피 폭락과 증시 부진으로 인해 이재명 대표의 핵심 지지층이 크게 흔들리고 있다."
-  },
-  {
-   "title": "미국증시 다우 652포인트 급락...유가 급등에도 반도체 반등, SK하이닉스...",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16256458",
-   "source": "topstarnews.net",
-   "published": "2026-10-24T08:14:00+09:00",
-   "dup_count": 1,
-   "summary": "미국 증시는 다우 지수 급락과 유가 상승을 겪었으나 반도체주는 반등을 모색했다."
-  },
-  {
-   "title": "[외환] 중동 긴장·달러 반등에 1,320원대 중반 상승",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440948",
-   "source": "news.einfomax.co.kr",
-   "published": "2026-10-24T08:14:00+09:00",
-   "dup_count": 0,
-   "summary": "중동 긴장에 따른 국제유가 급등과 달러 강세로 달러-원 환율이 1,320원대 중반으로 올랐다."
-  },
-  {
-   "title": "55조원 매수 끝낸 삼전·닉스...코스피 다음 '수급 방파제' 누구",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440947",
-   "source": "news.einfomax.co.kr",
-   "published": "2026-10-24T08:12:00+09:00",
-   "dup_count": 1,
-   "summary": "삼성전자와 SK하이닉스의 자사주 매입이 종료된 가운데 다음 수급 주체에 관심이 쏠린다."
-  },
-  {
-   "title": "알테오젠 연속 약세에 23만원선 아래로...새주 반등 여부 '관건'",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=618739",
-   "source": "cbci.co.kr",
-   "published": "2026-10-24T08:06:00+09:00",
-   "dup_count": 0,
-   "summary": "코스닥 하락세 속에서 시총 1위 알테오젠이 23만 원선을 밑돌며 반등 여부가 주목된다."
-  },
-  {
-   "title": "'저PBR 딱지' 피하자...유예 시한 앞두고 개선계획 공시 '막차' 몰려",
-   "url": "https://www.sentv.co.kr/article/view/sentv202610230158",
-   "source": "sentv.co.kr",
-   "published": "2026-10-24T08:02:00+09:00",
-   "dup_count": 1,
-   "summary": "저PBR 기업들이 유예 시한을 앞두고 잇따라 가치 제고 계획 공시 막차를 탔다."
-  },
-  {
-   "title": "[주간증시전망] 반도체 실적·주주환원에 쏠린 눈...코스피 반등 시험대",
-   "url": "https://www.ajunews.com/view/20261023150407373",
-   "source": "ajunews.com",
-   "published": "2026-10-24T08:02:00+09:00",
-   "dup_count": 0,
-   "summary": "주간 증시는 반도체 실적과 주주환원책을 비롯해 미국 FOMC와 국제유가에 주목하고 있다."
-  },
-  {
-   "title": "금리 0.5%p 오르면...대출이자 얼마 더 내나[긴축 청구서1]",
-   "url": "https://www.newsis.com/view/NISX20261023_0003838242",
-   "source": "newsis.com",
-   "published": "2026-10-24T08:00:00+09:00",
-   "dup_count": 0,
-   "summary": "기준금리가 추가 인상될 경우 변동금리 대출 차주들의 이자 상환 부담이 더욱 가중될 전망이다."
-  },
-  {
-   "title": "韓 이어 美·歐·日도 '동결' 유력...연말 '인상' 불씨 여전",
-   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=900519",
-   "source": "newsworks.co.kr",
-   "published": "2026-10-24T08:00:00+09:00",
-   "dup_count": 0,
-   "summary": "한국에 이어 미국, 유럽, 일본 등 주요국 중앙은행도 이번에는 금리를 동결할 가능성이 높다."
-  },
-  {
-   "title": "[KBS 열린토론] “요즘 실리콘밸리 자소서? AI보다 뛰어난 것 증명하라”",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8694220&ref=A",
-   "source": "news.kbs.co.kr",
-   "published": "2026-10-24T08:00:00+09:00",
-   "dup_count": 0,
-   "summary": "실리콘밸리에서는 AI 기술의 실질적 가치와 이를 증명할 수 있는 능력이 중요해지고 있다."
-  },
-  {
-   "title": "젠슨 황, 중국 반도체 경쟁력 경고...미국 인공지능 주도권 시험대",
-   "url": "https://www.jemin.com/news/articleView.html?idxno=845179",
-   "source": "jemin.com",
-   "published": "2026-10-24T07:54:00+09:00",
-   "dup_count": 0,
-   "summary": "젠슨 황은 첨단 반도체 대중 수출 제한이 중국의 경쟁력과 미국의 AI 주도권에 미칠 영향을 경고했다."
-  },
-  {
-   "title": "비트코인 88% 추가 폭락 경고...블룸버그 전문가 \"ETF 대중화가 오히려 약...",
-   "url": "http://coinreaders.com/264984",
-   "source": "coinreaders.com",
-   "published": "2026-10-24T07:36:00+09:00",
-   "dup_count": 0,
-   "summary": "블룸버그 전문가는 미국 증시 20% 하락을 전제로 비트코인의 극단적인 폭락 가능성을 경고했다."
-  },
-  {
-   "title": "[주간 거래소 외국인] 삼성전자 순매수 1위, SK하이닉스 순매도 1위",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=498082",
+   "title": "재정 확대·수출 호조의 역설...물가 상승에 긴축 부담 커지나",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=498123",
    "source": "pinpointnews.co.kr",
-   "published": "2026-10-24T07:24:00+09:00",
+   "published": "2026-10-24T14:18:00+09:00",
    "dup_count": 0,
-   "summary": "한주간 거래소 외국인은 삼성전자를 순매수하고 SK하이닉스는 순매도하는 등 엇갈린 행보를 보였다."
+   "summary": "수출 호조와 재정 확대로 물가가 올라 긴축 및 금리 부담이 커졌다."
   },
   {
-   "title": "옥스퍼드 \"원화 약세 땐 한은 인상 앞당겨...주가 급락은 긴축 제동\"",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440936",
-   "source": "news.einfomax.co.kr",
-   "published": "2026-10-24T07:22:00+09:00",
+   "title": "[이호연의 D톡스] 한은, 매파적 동결...‘반도체 호황’ 긴축기조 지속",
+   "url": "https://www.ddaily.co.kr/page/view/2026102318072608156",
+   "source": "ddaily.co.kr",
+   "published": "2026-10-24T14:00:00+09:00",
    "dup_count": 0,
-   "summary": "원화 가치가 하락하면 한은의 금리 인상이 빨라질 수 있으나 주가 급락은 긴축에 제동을 건다."
+   "summary": "한은이 기준금리를 동결했으나 반도체 호황 속 긴축 기조는 이어진다."
   },
   {
-   "title": "\"솔리다임 미국 상장 중단\"...하이닉스 4%대 상승",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008812748&plink=ORI&cooper=NAVER",
-   "source": "news.sbs.co.kr",
-   "published": "2026-10-24T07:17:00+09:00",
+   "title": "수출 호황이 되레 금리 발목 잡나...내년 '수요발 인플레' 경계",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1729024",
+   "source": "ebn.co.kr",
+   "published": "2026-10-24T13:36:00+09:00",
+   "dup_count": 1,
+   "summary": "금융연구원은 24일 수출 호황 발 물가로 한은의 추가 긴축을 전망했다."
+  },
+  {
+   "title": "코스피200 ETF·ETN 거래대금 47조원...상위 50개 중 절반 넘어",
+   "url": "http://www.kjdaily.com/article.php?aid=1792816277690087276",
+   "source": "kjdaily.com",
+   "published": "2026-10-24T13:34:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피200은 지난 19일 1.50% 오른 891.30으로 마감했지만 20일에는 3.65% 급락한 858.78로 내려앉았다. 21일에는 3.76% 반등하며 891"
+  },
+  {
+   "title": "10월 3주차 대한전선 주가, 2만1천원대 하락 마감",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=557925",
+   "source": "joongangenews.com",
+   "published": "2026-10-24T13:34:00+09:00",
    "dup_count": 0,
-   "summary": "SK하이닉스의 솔리다임 미국 상장 중단 소식에 힘입어 코스피가 반등 마감했다."
+   "summary": "23일 대한전선 주가가 4.09% 내린 2만1100원에 마감했다."
+  },
+  {
+   "title": "최근 5거래일 삼천당제약 주가 흐름",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=557923",
+   "source": "joongangenews.com",
+   "published": "2026-10-24T13:32:00+09:00",
+   "dup_count": 0,
+   "summary": "23일 코스닥에서 삼천당제약 주가가 19만8000원에 마감했다."
+  },
+  {
+   "title": "반도체 수출 호조, 성장률 얼마나 끌어올렸나...한은 27일 GDP 발표",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=498111",
+   "source": "pinpointnews.co.kr",
+   "published": "2026-10-24T13:08:00+09:00",
+   "dup_count": 0,
+   "summary": "한은 신현송 총재는 27일 3분기 GDP 확인 뒤 11월 금리를 정한다."
+  },
+  {
+   "title": "3분기 韓 경제 성장 방향성은?...9월 주요 지표 차주 잇따라 공개",
+   "url": "https://www.g-enews.com/view.php?ud=20261024123305871923c501012_1",
+   "source": "g-enews.com",
+   "published": "2026-10-24T12:42:00+09:00",
+   "dup_count": 1,
+   "summary": "한은은 27일 3분기 GDP를, 데이터처는 30일 산업동향을 공개한다."
+  },
+  {
+   "title": "4개월 만에 51조 증발...투자자예탁금 연초 수준 '후퇴'",
+   "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=434783",
+   "source": "dailysportshankook.co.kr",
+   "published": "2026-10-24T12:40:00+09:00",
+   "dup_count": 0,
+   "summary": "투자자예탁금이 4개월 만에 51조원 줄며 증시 수급 부담이 커졌다."
+  },
+  {
+   "title": "LS ELECTRIC 주가 최근 5거래일간 변동성 확대",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=557912",
+   "source": "joongangenews.com",
+   "published": "2026-10-24T12:30:00+09:00",
+   "dup_count": 0,
+   "summary": "LS ELECTRIC 주가가 1897억원 거래대금 속 하락 마감했다."
+  },
+  {
+   "title": "스페코 주가 최근 5거래일간 1,400원대서 2,000원대 진입",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=557913",
+   "source": "joongangenews.com",
+   "published": "2026-10-24T12:30:00+09:00",
+   "dup_count": 0,
+   "summary": "10월 23일 코스닥에서 스페코 주가가 상한가인 2055원에 마감했다."
+  },
+  {
+   "title": "주가 30% 이상 오른 종목 22개...삼성E&A 거래대금 1.6조",
+   "url": "http://www.kjdaily.com/article.php?aid=1792811831690086276",
+   "source": "kjdaily.com",
+   "published": "2026-10-24T12:18:00+09:00",
+   "dup_count": 1,
+   "summary": "삼성E&A가 1.6조원 거래대금 속 5만9800원에 상승 마감했다."
+  },
+  {
+   "title": "美반도체 6.7% 급락 뒤 0.4% 반등 그쳐...유가 116달러·외국인 1조 매도,...",
+   "url": "https://www.greened.kr/news/articleView.html?idxno=352922",
+   "source": "greened.kr",
+   "published": "2026-10-24T12:15:00+09:00",
+   "dup_count": 2,
+   "summary": "외국인 1조 매도에도 코스피가 반등해 5550.30으로 마감했다."
+  },
+  {
+   "title": "[10월 넷째 주 세계경제동향 브리핑] 한미 금리 내려도 증시는 약세...유...",
+   "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3038663",
+   "source": "kihoilbo.co.kr",
+   "published": "2026-10-24T12:14:00+09:00",
+   "dup_count": 2,
+   "summary": "23일 코스피는 5550.30, 코스닥은 751.69로 하락 마감했다."
+  },
+  {
+   "title": "금융연구원 \"물가상승, 수요 측 압력 커져...고금리 길어진다\"",
+   "url": "https://www.jasm.co.kr/news/view/322786/?sc=Naver",
+   "source": "jasm.co.kr",
+   "published": "2026-10-24T12:08:00+09:00",
+   "dup_count": 0,
+   "summary": "한은이 7·8월 금리를 0.25%p씩 인상해 고금리가 길어지고 있다."
+  },
+  {
+   "title": "10월 3주차 에코프로비엠 주가 9만원대 하락 마감",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=557903",
+   "source": "joongangenews.com",
+   "published": "2026-10-24T11:58:00+09:00",
+   "dup_count": 0,
+   "summary": "10월 23일 코스닥서 에코프로비엠이 6.1% 내린 9만2800원에 마감했다."
+  },
+  {
+   "title": "한국금융연구원 \"반도체 호황·확장재정, 수요 물가 압력 키운다\"",
+   "url": "https://www.imaeil.com/page/view/2026102411532476775",
+   "source": "imaeil.com",
+   "published": "2026-10-24T11:57:00+09:00",
+   "dup_count": 1,
+   "summary": "한국금융연구원은 반도체 호황에 한은의 추가 기준금리 인상을 전망했다."
+  },
+  {
+   "title": "지투지바이오 주가 최근 5거래일 변동폭 확대 마감",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=557902",
+   "source": "joongangenews.com",
+   "published": "2026-10-24T11:56:00+09:00",
+   "dup_count": 0,
+   "summary": "23일 코스닥서 지투지바이오가 업종 등락률 2.26%를 웃돌며 급등했다."
+  },
+  {
+   "title": "엘리스 주가 신고가 달성 후 조정",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=557901",
+   "source": "joongangenews.com",
+   "published": "2026-10-24T11:54:00+09:00",
+   "dup_count": 0,
+   "summary": "23일 코스닥에서 엘리스가 2.78% 떨어진 9만1000원에 마감했다."
+  },
+  {
+   "title": "투자자예탁금 4개월 만에 51조원 증발...88조원대로 연중 최저 수준",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1729021",
+   "source": "ebn.co.kr",
+   "published": "2026-10-24T11:50:00+09:00",
+   "dup_count": 0,
+   "summary": "이 같은 개인 투자자들의 순매수 규모를 고려하면, 감소한 예탁금 상당 부분이 은행 등 다른 금융기관으로... 외국인의 매도 물량을 흡수하며 증시를 지탱했다. 하지"
   }
  ]
 }
