@@ -1,290 +1,706 @@
 {
- "updated_at": "2026-10-27T10:38:54.926880+09:00",
+ "updated_at": "2026-10-28T00:20:11.874111+09:00",
  "event_notes": {
-  "why": "",
-  "watch": ""
+  "why": "오늘 한국 증시는 앤트로픽 IPO 추진과 미국 AI 투자심리 회복 소식에 힘입어 SK하이닉스 등 반도체 관련주가 강세를 보였으나, 코스피 지수가 1.46%, 코스닥이 3.26% 하락 마감하며 업종 전반의 약세를 면치 못했다. 다만 뉴스 헤드라인에서 언급된 HD현대와 LS 등 K일렉트릭 관련 실적 호조와 반도체 수출 및 정부지출에 힘입은 3분기 1% 성장 발표에도 불구하고, 철강(-4.01%), 반도체(-4.18%), 은행(-3.38%) 등 주요 업종은 일제히 하락세를 기록했다.",
+  "watch": "이러한 증시 변동성 속에서 향후 흐름이 이어지거나 바뀔지는 미 FOMC의 금리 결정 경계감에 따른 원달러 환율의 움직임과 미국 금리 정책 변화를 지켜봐야 할 것으로 보인다."
  },
- "clusters": [],
+ "clusters": [
+  {
+   "title": "앤트로픽 상장(IPO) 호재에 따른 코스피 급등 및 반도체주 강세",
+   "sources": [
+    "betanews.net",
+    "cbci.co.kr",
+    "idaegu.co.kr",
+    "imnews.imbc.com",
+    "news.kbs.co.kr",
+    "news.sbs.co.kr",
+    "obsnews.co.kr",
+    "seoul.co.kr",
+    "topstarnews.net",
+    "yonhapnewstv.co.kr"
+   ],
+   "count": 11,
+   "items": [
+    {
+     "title": "앤트로픽발 훈풍에 코스피 반등...5,600선 회복",
+     "url": "http://www.yonhapnewstv.co.kr/news/MYH20261027205904Bl1",
+     "source": "yonhapnewstv.co.kr",
+     "published": "2026-10-27T20:59:00+09:00",
+     "dup_count": 6,
+     "summary": "앤트로픽 훈풍에 코스피가 반등해 5600선을 회복했고 환율은 1,323원을 기록했다."
+    },
+    {
+     "title": "[증시 반등] 코스피, 앤트로픽 IPO 호재에 3% 급반등... 5,638 마감",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=619957",
+     "source": "cbci.co.kr",
+     "published": "2026-10-28T00:00:00+09:00",
+     "dup_count": 3,
+     "summary": "앤트로픽 IPO 호재에 힘입어 코스피가 3% 넘게 급등하며 5,638선으로 마감했다."
+    },
+    {
+     "title": "코스피도 모처럼 온기...반도체주 5% 안팎 상승",
+     "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8696764&ref=A",
+     "source": "news.kbs.co.kr",
+     "published": "2026-10-27T21:11:00+09:00",
+     "dup_count": 3,
+     "summary": "코스피가 매수 사이드카 발동 속 반도체주 강세로 3% 넘게 상승 마감했다."
+    },
+    {
+     "title": "‘앤트로픽 훈풍’ 코스피 5600 회복... 삼전닉스 120조원 환원 기대감도",
+     "url": "https://www.seoul.co.kr/news/economy/securities/2026/10/28/20261028031002?wlog_tag3=naver",
+     "source": "seoul.co.kr",
+     "published": "2026-10-27T20:59:00+09:00",
+     "dup_count": 2,
+     "summary": "앤트로픽 상장 호재로 코스피가 5600선을 회복하고 프로그램 매수 사이드카도 발동됐다."
+    },
+    {
+     "title": "코스피, 엔트로픽 IPO 신청에 3% 올라...5600선 회복",
+     "url": "https://www.betanews.net/article/view/beta202610270163",
+     "source": "betanews.net",
+     "published": "2026-10-27T20:22:00+09:00",
+     "dup_count": 2,
+     "summary": "앤트로픽 상장 신청 소식으로 반도체 투자심리가 개선되며 코스피가 3% 올랐다."
+    },
+    {
+     "title": "앤트로픽 IPO 추진에 반도체주 급등",
+     "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=563584",
+     "source": "idaegu.co.kr",
+     "published": "2026-10-27T21:24:00+09:00",
+     "dup_count": 1,
+     "summary": "앤트로픽의 기업공개(IPO) 추진 소식에 힘입어 국내 반도체주가 급등했다."
+    },
+    {
+     "title": "앤트로픽 IPO 공식화...나스닥도 코스피도 들썩",
+     "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1541840",
+     "source": "obsnews.co.kr",
+     "published": "2026-10-27T20:16:00+09:00",
+     "dup_count": 1,
+     "summary": "앤트로픽 IPO 공식화에 힘입어 나스닥과 코스피가 동반 상승 마감했다."
+    },
+    {
+     "title": "미국발 '앤트로픽 훈풍'에 '국장'도 들썩...5,600선 회복",
+     "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008817653&plink=ORI&cooper=NAVER",
+     "source": "news.sbs.co.kr",
+     "published": "2026-10-27T20:07:00+09:00",
+     "dup_count": 1,
+     "summary": "미국발 앤트로픽 훈풍에 힘입어 코스피가 하루 만에 5,600선을 회복했다."
+    },
+    {
+     "title": "미국증시, AI 투자심리 회복에 나스닥 상승...브로드컴·SK하이닉스 강세",
+     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16259860",
+     "source": "topstarnews.net",
+     "published": "2026-10-27T22:44:00+09:00",
+     "dup_count": 0,
+     "summary": "미국 반도체주 투자심리를 보여주는 필라델피아 반도체지수(SOX)는 직전 거래일인 26일 11,083.47로 마감하... 원·달러 환율도 변수다. 27일 제시된 환"
+    },
+    {
+     "title": "앤트로픽 IPO에 한국 반도체주 급등...삼성·SK텔레콤 영향은?",
+     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16259784",
+     "source": "topstarnews.net",
+     "published": "2026-10-27T20:38:00+09:00",
+     "dup_count": 0,
+     "summary": "앤트로픽 IPO가 국내 반도체주에 미칠 영향과 최종 공모가격에 관심이 집중됐다."
+    },
+    {
+     "title": "앤트로픽 상장 추진에 반도체주 급등..주주환원책이 이어갈까",
+     "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6861147_37004.html",
+     "source": "imnews.imbc.com",
+     "published": "2026-10-27T20:05:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피는 장중 4%까지 오르며 매수 사이드카가 발동됐고, 3% 오른 채 마감했습니다. 그동안 반도체 주가를 짓누른 건 AI에 쏟아붓는 돈이 수익으로 돌아올 수 있"
+    }
+   ]
+  },
+  {
+   "title": "코스피 3% 급등 및 증시 반등·종목 동향",
+   "sources": [
+    "econonews.co.kr",
+    "kjdaily.com"
+   ],
+   "count": 5,
+   "items": [
+    {
+     "title": "멜콘·나무가·이지트로닉스 상한가...반도체·로봇주 강세",
+     "url": "http://www.kjdaily.com/article.php?aid=1793102881690492276",
+     "source": "kjdaily.com",
+     "published": "2026-10-27T21:10:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피가 3% 이상 급등하며 5,600선을 회복했고 반도체와 로봇주가 강세를 보였다."
+    },
+    {
+     "title": "코스피 3% 급등에도 국고채 금리 일제히 하락",
+     "url": "http://www.kjdaily.com/article.php?aid=1793113940690449276",
+     "source": "kjdaily.com",
+     "published": "2026-10-28T00:14:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피 3%대 급등에도 3년 만기 국고채 금리는 5개월여 만에 최저치로 하락했다."
+    },
+    {
+     "title": "코스피, 3%대 상승에 5600선 회복...SK스퀘어, 삼성전기 등 상승",
+     "url": "http://www.econonews.co.kr/news/articleView.html?idxno=446300",
+     "source": "econonews.co.kr",
+     "published": "2026-10-27T21:30:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피가 3%대 상승하며 5,600선을 회복했고 삼성전자와 SK하이닉스도 올랐다."
+    },
+    {
+     "title": "코스닥, 2%대 상승에 740선 회복...에코프로, 심텍 등 상승",
+     "url": "http://www.econonews.co.kr/news/articleView.html?idxno=446301",
+     "source": "econonews.co.kr",
+     "published": "2026-10-27T21:30:00+09:00",
+     "dup_count": 0,
+     "summary": "코스닥은 외국인과 기관의 순매수에 힘입어 4거래일 만에 2%대 상승 마감했다."
+    },
+    {
+     "title": "[상한가 종목] 멜콘-나무가 이어 캠시스 등 마감",
+     "url": "http://www.econonews.co.kr/news/articleView.html?idxno=446299",
+     "source": "econonews.co.kr",
+     "published": "2026-10-27T21:30:00+09:00",
+     "dup_count": 0,
+     "summary": "코스닥 시장에서 멜콘과 나무가 등 일부 종목이 상한가를 기록하며 장을 마쳤다."
+    }
+   ]
+  },
+  {
+   "title": "원/달러 환율 및 미 FOMC·금리 경계감",
+   "sources": [
+    "betanews.net",
+    "cbci.co.kr",
+    "g-enews.com",
+    "topstarnews.net"
+   ],
+   "count": 4,
+   "items": [
+    {
+     "title": "'미 금리 결정 경계감'...원·달러 환율 1,320원대 보합 마감",
+     "url": "https://www.betanews.net/article/view/beta202610270162",
+     "source": "betanews.net",
+     "published": "2026-10-27T21:50:00+09:00",
+     "dup_count": 3,
+     "summary": "코스피는 전 거래일보다 168.87포인트(3.09%) 오른 5,638.34에 마감했으며, 외국인은 유가증권시장에서 약 6,000억원을 순매수했다. 코스닥은 16."
+    },
+    {
+     "title": "[외환 동향] 원/달러 환율, 미 FOMC 경계감 속 1,320원대 보합권",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=619959",
+     "source": "cbci.co.kr",
+     "published": "2026-10-28T00:00:00+09:00",
+     "dup_count": 2,
+     "summary": "증시에서는 코스피가 전장보다 168.87포인트(3.09%) 오른 5,638.34로 마감했다. 장 초반 5,658.65까지 급등하며 5분간 프로그램 매수호가 효력이"
+    },
+    {
+     "title": "미국증시 선물 상승...나스닥 반등, FOMC·빅테크 실적 시험대",
+     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16259787",
+     "source": "topstarnews.net",
+     "published": "2026-10-27T20:40:00+09:00",
+     "dup_count": 1,
+     "summary": "미국 나스닥이 반등한 가운데 FOMC와 빅테크 실적이 주요 시험대에 올랐다."
+    },
+    {
+     "title": "美 연준 '10월 숨고르기 후 12월 금리 인상' 유력...전문가 93% 동결 전망",
+     "url": "https://www.g-enews.com/view.php?ud=202610272032587071e250e8e188_1",
+     "source": "g-enews.com",
+     "published": "2026-10-27T20:38:00+09:00",
+     "dup_count": 0,
+     "summary": "전문가들은 미 연준이 10월 숨고르기를 거쳐 12월에 금리를 인상할 것으로 전망했다."
+    }
+   ]
+  },
+  {
+   "title": "반도체 톱2(삼성전자·SK하이닉스) 수급 및 주가 분석",
+   "sources": [
+    "hankyung.com",
+    "kjdaily.com",
+    "thefairnews.co.kr"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "삼성전자·SK하이닉스 거래대금 7.4조원...하루 새 26% 급증",
+     "url": "http://www.kjdaily.com/article.php?aid=1793100880690490276",
+     "source": "kjdaily.com",
+     "published": "2026-10-27T20:36:00+09:00",
+     "dup_count": 1,
+     "summary": "이날 정규장 주가는 전 거래일보다 6만6천원(5.18%) 오른 134만1천원에 마감했다. 전날 0.16% 하락했던... 거래대금 상위 50개 종목을 시장별로 보면"
+    },
+    {
+     "title": "[증시 프리즘] 1개월간 널뛰기 장세 펼친 반도체 톱2...외인·기관 수급 ...",
+     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=92080",
+     "source": "thefairnews.co.kr",
+     "published": "2026-10-28T00:00:00+09:00",
+     "dup_count": 0,
+     "summary": "외국인과 기관의 저가 매수세가 유입되며 반도체 대형주들이 널뛰기 장세를 보였다."
+    },
+    {
+     "title": "삼성전자, HBM 매출 하이닉스 첫 추월 가능성...\"주가 재평가\" [분석+]",
+     "url": "https://www.hankyung.com/article/2026102790476",
+     "source": "hankyung.com",
+     "published": "2026-10-27T22:16:00+09:00",
+     "dup_count": 0,
+     "summary": "삼성전자의 하반기 HBM 매출이 SK하이닉스를 추월할 가능성이 제기됐다."
+    }
+   ]
+  },
+  {
+   "title": "대구 물산업 활성화 정책 및 지원책",
+   "sources": [
+    "newspim.com",
+    "yeongnam.com"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "[대구 물산업 활성화] 공공수요 확대하고 기회발전특구 지정 추진...물산...",
+     "url": "https://www.yeongnam.com/web/view.php?key=20261027029177252",
+     "source": "yeongnam.com",
+     "published": "2026-10-27T20:18:00+09:00",
+     "dup_count": 0,
+     "summary": "대구시는 물산업 활성화를 위해 공공수요를 확대하고 기회발전특구를 지정할 계획이다."
+    },
+    {
+     "title": "대구시, '물산업' 지원책 무얼 담았나",
+     "url": "https://www.newspim.com/news/view/20261027001472",
+     "source": "newspim.com",
+     "published": "2026-10-27T20:10:00+09:00",
+     "dup_count": 0,
+     "summary": "대구시는 국가산업단지 내 첨단 기업의 대규모 투자를 유치하기 위해 지원책을 추진한다."
+    }
+   ]
+  },
+  {
+   "title": "3분기 한국 경제 성장률 및 한은 전망 관련",
+   "sources": [
+    "khan.co.kr",
+    "ulsanpress.net"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "반도체 수출·설비투자·정부지출 업고 3분기 韓 경제 1% 성장...소비는...",
+     "url": "https://www.ulsanpress.net/news/articleView.html?idxno=585549",
+     "source": "ulsanpress.net",
+     "published": "2026-10-27T21:42:00+09:00",
+     "dup_count": 0,
+     "summary": "3분기 한국 경제는 반도체 수출과 설비투자에 힘입어 전분기 대비 1% 성장했다."
+    },
+    {
+     "title": "[기자메모]성장률 예측 또 실패...한은 어떻게 믿나",
+     "url": "https://www.khan.co.kr/article/202610272057005",
+     "source": "khan.co.kr",
+     "published": "2026-10-27T20:57:00+09:00",
+     "dup_count": 0,
+     "summary": "한국은행이 발표한 3분기 실질 GDP 성장률 속보치는 직전 분기 대비 1.0%였다."
+    }
+   ]
+  },
+  {
+   "title": "AI 모멘텀 반영 주간 증시 전망 및 코스피 진단",
+   "sources": [
+    "khan.co.kr",
+    "kjdaily.com"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "[주간 증시 전망]한국 경제 AI 모멘텀발 차별화 주식시장 반영",
+     "url": "http://www.kjdaily.com/article.php?aid=1793103210690499004",
+     "source": "kjdaily.com",
+     "published": "2026-10-27T21:18:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피는 기관이, 코스닥은 개인이 순매수하며 AI 모멘텀발 장세를 보였다."
+    },
+    {
+     "title": "[논설위원의 단도직입]“코스피 5000대, 저평가 수준이지만...여전한 변...",
+     "url": "https://www.khan.co.kr/article/202610272016005",
+     "source": "khan.co.kr",
+     "published": "2026-10-27T20:16:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피 5000대는 저평가 수준이나 외국인 매물을 받아줄 매수 주체가 약하다는 분석이다."
+    }
+   ]
+  },
+  {
+   "title": "HD현대 및 LS 실적 발표",
+   "sources": [
+    "joongang.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "진격의 K일렉트릭...HD현대 1.2조 벌고, LS 100분기 연속 흑자",
+     "url": "https://www.joongang.co.kr/article/25473389",
+     "source": "joongang.co.kr",
+     "published": "2026-10-28T00:02:00+09:00",
+     "dup_count": 0,
+     "summary": "HD현대와 LS 등 국내 전력기기 업체들이 해외 수요 증가에 힘입어 호실적을 기록했다."
+    }
+   ]
+  },
+  {
+   "title": "기준금리 인상에 따른 주택담보대출 이자 부담",
+   "sources": [
+    "ziksir.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "기준금리 0.5%p 뛸 때 주담대 1%p 급등...\"5억 빌리면 이자만 연 480만원 ...",
+     "url": "https://www.ziksir.com/news/articleView.html?idxno=150904",
+     "source": "ziksir.com",
+     "published": "2026-10-28T00:00:00+09:00",
+     "dup_count": 0,
+     "summary": "한국은행 기준금리 인상 속도보다 주택담보대출 금리가 더 가파르게 상승했다."
+    }
+   ]
+  },
+  {
+   "title": "10월 4주 주요 제조업 전망",
+   "sources": [
+    "laborplus.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "10월 4주 주요 제조업 전망",
+     "url": "https://www.laborplus.co.kr/news/articleView.html?idxno=41703",
+     "source": "laborplus.co.kr",
+     "published": "2026-10-27T23:28:00+09:00",
+     "dup_count": 1,
+     "summary": "10월 제조업은 원·달러 환율 하락 등에도 OLED 고부가가치 비중을 확대했다."
+    }
+   ]
+  },
+  {
+   "title": "주식 회전율 상위종목 거래대금 증가",
+   "sources": [
+    "kjdaily.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "주식 회전율 상위 50종목 거래대금 2.3조원...전날보다 38.5% 증가",
+     "url": "http://www.kjdaily.com/article.php?aid=1793102164690491276",
+     "source": "kjdaily.com",
+     "published": "2026-10-27T20:58:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피 종목은 CJ씨푸드1우, 서울식품우, 대양금속, 금호전기, 인디에프 등 5개다. 전날 코스닥 41개... 회전율 1위 에스케이증권제14호스팩은 공모가보다 2"
+    }
+   ]
+  },
+  {
+   "title": "국제유가 전망 및 중동 종전 협상 변수",
+   "sources": [
+    "topstarnews.net"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "국제유가 전망, 브렌트유 115달러 안팎...중동 종전 협상 변수",
+     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16259786",
+     "source": "topstarnews.net",
+     "published": "2026-10-27T20:40:00+09:00",
+     "dup_count": 0,
+     "summary": "브렌트유가 배럴당 115달러 안팎을 기록한 가운데 중동 종전 협상이 변수로 작용했다."
+    }
+   ]
+  },
+  {
+   "title": "삼전닉스 주주환원 정책 및 기대감",
+   "sources": [
+    "segye.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "삼전닉스 주주환원 보따리 증시 반등 ‘키’될까",
+     "url": "https://www.segye.com/newsView/20261027516224?OutUrl=naver",
+     "source": "segye.com",
+     "published": "2026-10-27T20:13:00+09:00",
+     "dup_count": 2,
+     "summary": "앤트로픽 IPO와 반도체 투자심리 회복으로 코스피가 3.09% 상승 마감했다."
+    }
+   ]
+  }
+ ],
  "items": [
   {
-   "title": "[MD포커스] 한국 성장률 1.0% ‘깜짝 반등’...민간소비는 15분기 만에 뒷...",
-   "url": "https://www.mydaily.co.kr/page/view/2026102710230962185",
-   "source": "mydaily.co.kr",
-   "published": "2026-10-27T10:37:00+09:00",
-   "dup_count": 0,
-   "summary": "반도체 수출과 설비투자가 호조를 보인 데다 정부 소비와 투자가 성장에 힘을 보탰다. 다만 민간소비는... 다만 이번 수치는 속보치로, 분기 마지막 달의 실적 자료"
-  },
-  {
-   "title": "한화시스템 주가, 10월 27일 장중 67,900원 6.59% 상승",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16259172",
-   "source": "topstarnews.net",
-   "published": "2026-10-27T10:36:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피 시장에 속한 한화시스템의 주가는 동일업종 등락률이 4.10% 상승한 것과 비교할 때... 지난 거래일 한화시스템의 주가는 62,900원에 마감했다. 지난 "
-  },
-  {
-   "title": "코스피, 4%대 급등에 '매수 사이드카'...4거래일 만에 재발동",
-   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=97820",
-   "source": "newsian.co.kr",
-   "published": "2026-10-27T10:36:00+09:00",
-   "dup_count": 0,
-   "summary": "유가증권시장에서 외국인은 4449억원, 기관은 2701억원을 각각 순매수하고 있다. 개인은 7431억원을... 반도체주로 매수세가 유입된 것으로 풀이된다. 앞서 "
-  },
-  {
-   "title": "SK하이닉스 주가 장중 6%대 올라, 앤트로픽 훈풍에 실적발표 기대감까지",
-   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=450367",
-   "source": "businesspost.co.kr",
-   "published": "2026-10-27T10:34:00+09:00",
-   "dup_count": 0,
-   "summary": "27일 오전 9시42분 기준 코스피 시장에서 SK하이닉스 주식은 전날 정규거래 종가 127만5천 원보다 6.51%(8만3천... 전날 미국 뉴욕증시에서도 필라델피"
-  },
-  {
-   "title": "코스피, 4% 급등에 '매수 사이드카'...삼전·하이닉스 동반 강세",
-   "url": "http://www.newsprime.co.kr/news/article.html?no=752508",
-   "source": "newsprime.co.kr",
-   "published": "2026-10-27T10:34:00+09:00",
-   "dup_count": 0,
-   "summary": "투자자별로는 외국인과 기관이 각각 768억원, 784억원을 순매수했으며 개인은 1531억원을 순매도했다.... 이날 증시 강세는 AI 챗봇 '클로드' 개발사 앤트"
-  },
-  {
-   "title": "금시세(금값) 반등",
-   "url": "http://www.kjdaily.com/article.php?aid=1793064678690417227",
+   "title": "코스피 3% 급등에도 국고채 금리 일제히 하락",
+   "url": "http://www.kjdaily.com/article.php?aid=1793113940690449276",
    "source": "kjdaily.com",
-   "published": "2026-10-27T10:32:00+09:00",
+   "published": "2026-10-28T00:14:00+09:00",
    "dup_count": 0,
-   "summary": "40달러 마감...국제유가 하락에 0.8% 반등 -원·달러 환율 1천325.70원...연준 금리 결정·미국 물가지표 주목 국내 금값이 지난주 급락 이후 반등 움직"
+   "summary": "코스피 3%대 급등에도 3년 만기 국고채 금리는 5개월여 만에 최저치로 하락했다."
   },
   {
-   "title": "[인사이트 뉴스] 민간소비는 뒷걸음치는데 3분기 1% 깜짝 성장은 왜? 추...",
-   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=7704",
-   "source": "moneystorm.kr",
-   "published": "2026-10-27T10:32:00+09:00",
-   "dup_count": 1,
-   "summary": "이런 상황에서 높은 성장률을 금리인상으로 대응하겠다는 신현송 한국은행 총재의 발언을 고려하면 10월 기준 금리를 동결했던 한국은행이 추가 금리 인상에 나설 것이라"
-  },
-  {
-   "title": "[이재용 취임 4년]위기 딛고 반도체 초호황...기술로 되찾은 삼성의 저력",
-   "url": "https://view.asiae.co.kr/article/2026102708421168439",
-   "source": "view.asiae.co.kr",
-   "published": "2026-10-27T10:31:00+09:00",
+   "title": "진격의 K일렉트릭...HD현대 1.2조 벌고, LS 100분기 연속 흑자",
+   "url": "https://www.joongang.co.kr/article/25473389",
+   "source": "joongang.co.kr",
+   "published": "2026-10-28T00:02:00+09:00",
    "dup_count": 0,
-   "summary": "더 실적이 잘 나오면 최고의 기업으로 거듭날 수 있을 것\"이라고 평가했다. 취임 5년 차, 초격차 굳히고... 삼성 반도체의 성장은 수많은 협력사와 일자리, 한국"
+   "summary": "HD현대와 LS 등 국내 전력기기 업체들이 해외 수요 증가에 힘입어 호실적을 기록했다."
   },
   {
-   "title": "코스피, 앤트로픽·경제성장률에 장중 5,700선 회복",
-   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261027102920R3X",
-   "source": "yonhapnewstv.co.kr",
-   "published": "2026-10-27T10:30:00+09:00",
-   "dup_count": 3,
-   "summary": "오늘 코스피가 4%대 급등하면서 매수 사이드카가 발동했습니다. 코스닥 지수도 4% 넘게 오르고 있는데요.... 간밤 뉴욕증시 3대 지수는 일제히 상승 마감했고, "
-  },
-  {
-   "title": "코리아써키트 주가, 10월 27일 장중 75,000원 12.95% 상승",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16259165",
-   "source": "topstarnews.net",
-   "published": "2026-10-27T10:30:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피 시장에 상장된 코리아써키트의 현재 시가총액은 1조 7,987억 원이며, 외국인소진율은 4.52%다.... 고가와 63,100원의 저가를 기록한 뒤 67,7"
-  },
-  {
-   "title": "로보티즈 주가, 10월 27일 장중 251,000원 1.83% 상승",
-   "url": "https://www.joongangenews.com/news/articleView.html?idxno=558581",
-   "source": "joongangenews.com",
-   "published": "2026-10-27T10:30:00+09:00",
-   "dup_count": 0,
-   "summary": "시가총액은 3조 6,824억 원으로 코스닥 시장에서 형성됐다. 외국인소진율은 6.76%를 나타냈다.... 시작하여 고가 256,000원, 저가 232,500원을 "
-  },
-  {
-   "title": "코스피 4%대 급등하며 5700선 돌파 시도...AI 훈풍에 반도체주 강세",
-   "url": "https://www.m-economynews.com/news/article.html?no=72157",
-   "source": "m-economynews.com",
-   "published": "2026-10-27T10:30:00+09:00",
-   "dup_count": 0,
-   "summary": "외국인은 4234억원, 기관은 1681억원을 각각 순매수한 반면 개인은 6103억원을 순매도하며 차익 실현에 나선 모습이다. 이날 국내 증시 강세는 미국 AI 기"
-  },
-  {
-   "title": "[현장너머]\"4500억달러도 넘는다\" 본 적 없는 숫자를 대하는 자세",
-   "url": "https://view.asiae.co.kr/article/2026102622411603482",
-   "source": "view.asiae.co.kr",
-   "published": "2026-10-27T10:30:00+09:00",
-   "dup_count": 0,
-   "summary": "\"올해 경상수지 흑자는 지난 8월 전망치인 4500억달러를 넘어설 것으로 예상됩니다.\" 기준금리 결정이 있었던 지난 22일 신현송 한국은행 총재가 경상흑자 전망치"
-  },
-  {
-   "title": "10월 소비심리 한 달 만에 후퇴... 주택지수 내렸지만 여전히 높아",
-   "url": "https://www.khan.co.kr/article/202610271029001",
-   "source": "khan.co.kr",
-   "published": "2026-10-27T10:29:00+09:00",
-   "dup_count": 0,
-   "summary": "금리 상승 등 흐름에 비관적 경기 전망이 늘면서 10월 소비심리가 9월보다 소폭 나빠졌다. 한국은행이... 서울 강남권을 제외하고 수도권 아파트 가격의 상승세가 "
-  },
-  {
-   "title": "앤트로픽 매출 1300%↑...코스피 4% 급등에 매수 사이드카",
-   "url": "https://www.hani.co.kr/arti/economy/finance/1284321.html",
-   "source": "hani.co.kr",
-   "published": "2026-10-27T10:28:00+09:00",
-   "dup_count": 0,
-   "summary": "개인은 7천억원 순매도하며 차익 실현에 나선 반면, 외국인과 기관이 각각 4천억원, 2천억원 순매수하고... 이에 미국 증시의 주요 3대 지수가 일제히 상승했고,"
-  },
-  {
-   "title": "금리 인상에도 집값 상승...추가 인상·공급 확대 변수",
-   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=876548",
-   "source": "hansbiz.co.kr",
-   "published": "2026-10-27T10:28:00+09:00",
-   "dup_count": 0,
-   "summary": "한국은행이 올해 두 차례 기준금리를 인상했지만 서울 아파트값은 89주 연속 상승세를 이어가고 있다. 연합뉴스 | 서울=한스경제 이나라 기자 | 한국은행이 올해 두"
-  },
-  {
-   "title": "코스피 4% 급등에 '매수 사이드카' 발동",
-   "url": "https://www.wikitree.co.kr/articles/1169455",
-   "source": "wikitree.co.kr",
-   "published": "2026-10-27T10:22:00+09:00",
-   "dup_count": 0,
-   "summary": "국내 증시가 외국인과 기관의 동반 매수세에 힘입어 가파르게 반등하며 유가증권시장 사이드카(프로그램 매수호가 일시효력정지) 요건에 도달하는 급등세를 연출했다. 20"
-  },
-  {
-   "title": "10월 소비심리 한 달 만에 후퇴...집값 상승 기대도 소폭 하락",
-   "url": "http://tbs.seoul.kr/news/newsView.do?typ_800=1&idx_800=3538604&seq_800=20531505",
-   "source": "tbs.seoul.kr",
-   "published": "2026-10-27T10:22:00+09:00",
-   "dup_count": 0,
-   "summary": "한국은행이 발표한 `소비자동향조사` 결과에 따르면 10월 소비자심리지수(CCSI)는 105.4로 전월(106.6)보다 1.2포인트(p) 하락했습니다. 박용민 한은"
-  },
-  {
-   "title": "인천 소비자심리 다시 위축...주가 하락·금리 인상 영향",
-   "url": "https://www.joongboo.com/news/articleView.html?idxno=363740543",
-   "source": "joongboo.com",
-   "published": "2026-10-27T10:22:00+09:00",
-   "dup_count": 0,
-   "summary": "한국은행 측은 최근 반도체 수출 호조 등이 소비자 심리 개선 요인으로 작용하고 있지만, 주가 하락이나 중동전쟁 지속, 기준금리 인상 등 부정적 요인의 영향이 더 "
-  },
-  {
-   "title": "한국은행, 3분기 성장률 2분기보다 1.0% 성장",
-   "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38245",
-   "source": "junggi.co.kr",
-   "published": "2026-10-27T10:22:00+09:00",
-   "dup_count": 0,
-   "summary": "달 실적 자료를 모두 이용하지 못해 잠정치와 차이가 있을 수 있다고 밝혔다. 잠정치는 분기 종료 후 70일 이내에 공표된다. 3분기 성장률은 한은 전망을 웃돌았지"
-  },
-  {
-   "title": "[오늘의 증시] 2026년 10월 27일 코스피 5700선 돌파...코스닥도 4%대 급등",
-   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=234645",
-   "source": "job-post.co.kr",
-   "published": "2026-10-27T10:20:00+09:00",
-   "dup_count": 0,
-   "summary": "시장에서는 외국인과 기관의 매수세가 장중 지수 상승을 뒷받침하고 있다는 점에 주목할 필요가 있다. 다만 이날 상승을 이끈 구체적인 업종과 종목, 대외 변수별 영향"
-  },
-  {
-   "title": "중소기업 덮친 ‘이자 부담’...기업은행 연체율, 15년 만에 최고",
-   "url": "https://www.ekn.kr/web/view.php?key=20261027024391563",
-   "source": "ekn.kr",
-   "published": "2026-10-27T10:20:00+09:00",
-   "dup_count": 0,
-   "summary": "한국은행 금융통화위원회는 지난 7월과 8월 기준금리를 두 차례 연속 인상해 연 3.00%로 높였다. 이후 지난 22일 열린 통화정책방향 결정회의에서는 기준금리를 "
-  },
-  {
-   "title": "“금값 37% 폭락했는데 사야 하나”...4000달러 반등에 ‘김치프리미엄’...",
-   "url": "https://www.kmib.co.kr/article/20261027500165",
-   "source": "kmib.co.kr",
-   "published": "2026-10-27T10:19:00+09:00",
-   "dup_count": 0,
-   "summary": "한국은행의 금 매입 움직임도 주목된다. 한국은행은 이르면 오는 12월 국내에서 생산된 금 약 1t을... 연준은 오는 28일(현지시간) 연방공개시장위원회(FOMC"
-  },
-  {
-   "title": "3분기 경제성장률 1%...반도체 호황에 올해 3.3% 넘을 듯",
-   "url": "https://www.womennews.co.kr/news/articleView.html?idxno=283745",
-   "source": "womennews.co.kr",
-   "published": "2026-10-27T10:19:00+09:00",
-   "dup_count": 0,
-   "summary": "3분기 실적이 기대보다 높게 나오면서 연간 성자률이 한은 전망치를 웃돌 것으로 보인다. 분기... 수출은 반도체, 기계 및 전기장비 등을 중심으로 2.3% 늘었고"
-  },
-  {
-   "title": "'앤트로픽'발 AI 훈풍에...삼성전자·하이닉스 급등",
-   "url": "https://www.ytn.co.kr/_ln/0102_202610271017057655",
-   "source": "ytn.co.kr",
-   "published": "2026-10-27T10:17:00+09:00",
-   "dup_count": 3,
-   "summary": "코스피 상승세는 뉴욕 증시 3대 지수가 일제히 상승 마감한 영향입니다. 특히 마이크론과 엔비디아 등 미국 반도체주식 강세로 필라델피아 반도체지수는 3% 가까이 급"
-  },
-  {
-   "title": "“경제는 1% 성장했다는데”... 가계 소비는 3년 9개월 만에 뒷걸음",
-   "url": "https://www.jibs.co.kr/news/articles/articlesDetail/66960?feed=na",
-   "source": "jibs.co.kr",
-   "published": "2026-10-27T10:15:00+09:00",
-   "dup_count": 0,
-   "summary": "반도체 수출과 설비투자가 확대되고 정부 지출도 늘어난 반면, 가계 소비와 도소매·숙박음식업은... 제조업 생산이 늘고 수출 실적이 개선됐지만, 소비와 밀접한 업종"
-  },
-  {
-   "title": "브릴스, 8%대 급등하며 2거래일 연속 상승...코스피·코스닥 동반 호조",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=619684",
+   "title": "[증시 반등] 코스피, 앤트로픽 IPO 호재에 3% 급반등... 5,638 마감",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=619957",
    "source": "cbci.co.kr",
-   "published": "2026-10-27T10:14:00+09:00",
+   "published": "2026-10-28T00:00:00+09:00",
+   "dup_count": 3,
+   "summary": "앤트로픽 IPO 호재에 힘입어 코스피가 3% 넘게 급등하며 5,638선으로 마감했다."
+  },
+  {
+   "title": "[외환 동향] 원/달러 환율, 미 FOMC 경계감 속 1,320원대 보합권",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=619959",
+   "source": "cbci.co.kr",
+   "published": "2026-10-28T00:00:00+09:00",
+   "dup_count": 2,
+   "summary": "증시에서는 코스피가 전장보다 168.87포인트(3.09%) 오른 5,638.34로 마감했다. 장 초반 5,658.65까지 급등하며 5분간 프로그램 매수호가 효력이"
+  },
+  {
+   "title": "[증시 프리즘] 1개월간 널뛰기 장세 펼친 반도체 톱2...외인·기관 수급 ...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=92080",
+   "source": "thefairnews.co.kr",
+   "published": "2026-10-28T00:00:00+09:00",
+   "dup_count": 0,
+   "summary": "외국인과 기관의 저가 매수세가 유입되며 반도체 대형주들이 널뛰기 장세를 보였다."
+  },
+  {
+   "title": "기준금리 0.5%p 뛸 때 주담대 1%p 급등...\"5억 빌리면 이자만 연 480만원 ...",
+   "url": "https://www.ziksir.com/news/articleView.html?idxno=150904",
+   "source": "ziksir.com",
+   "published": "2026-10-28T00:00:00+09:00",
+   "dup_count": 0,
+   "summary": "한국은행 기준금리 인상 속도보다 주택담보대출 금리가 더 가파르게 상승했다."
+  },
+  {
+   "title": "10월 4주 주요 제조업 전망",
+   "url": "https://www.laborplus.co.kr/news/articleView.html?idxno=41703",
+   "source": "laborplus.co.kr",
+   "published": "2026-10-27T23:28:00+09:00",
    "dup_count": 1,
-   "summary": "코스피와 코스닥 시장이 동반 호조를 보이는 가운데 브릴스도 강한 상승 흐름을 나타내고 있다. 27일 오전... 다만 장중 주가는 매수·매도 움직임에 따라 달라질 "
+   "summary": "10월 제조업은 원·달러 환율 하락 등에도 OLED 고부가가치 비중을 확대했다."
   },
   {
-   "title": "코스피,美 '앤트로픽 IPO' 훈풍에 4%대↑ 5,700선 공방...삼전닉스 5~7%대...",
-   "url": "http://www.seouleconews.com/news/articleView.html?idxno=94590",
-   "source": "seouleconews.com",
-   "published": "2026-10-27T10:14:00+09:00",
+   "title": "미국증시, AI 투자심리 회복에 나스닥 상승...브로드컴·SK하이닉스 강세",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16259860",
+   "source": "topstarnews.net",
+   "published": "2026-10-27T22:44:00+09:00",
    "dup_count": 0,
-   "summary": "현실화할시 미 증시 데뷔 역대 최대 규모가 된다. 이에 기술주 중심 나스닥 종합지수는 0.83% 올랐고... 외국인이 610억원, 기관이 13억원 순매수 중인 가"
+   "summary": "미국 반도체주 투자심리를 보여주는 필라델피아 반도체지수(SOX)는 직전 거래일인 26일 11,083.47로 마감하... 원·달러 환율도 변수다. 27일 제시된 환"
   },
   {
-   "title": "실질소득 증가율 49년 만에 최고...민간소비는 15분기 만에 감소",
-   "url": "https://www.raonnews.com/news/article.html?no=62232",
-   "source": "raonnews.com",
-   "published": "2026-10-27T10:14:00+09:00",
+   "title": "삼성전자, HBM 매출 하이닉스 첫 추월 가능성...\"주가 재평가\" [분석+]",
+   "url": "https://www.hankyung.com/article/2026102790476",
+   "source": "hankyung.com",
+   "published": "2026-10-27T22:16:00+09:00",
    "dup_count": 0,
-   "summary": "수출은 반도체, 기계 및 전기장비를 중심으로 2.3% 증가했다. 한은은 반도체를 포함한 컴퓨터·전자... 이번 수치는 속보치로, 분기 마지막 달의 실적 자료를 모"
+   "summary": "삼성전자의 하반기 HBM 매출이 SK하이닉스를 추월할 가능성이 제기됐다."
   },
   {
-   "title": "美 증시 훈풍에 코스피·코스닥 4%대 급등...외국인·기관 ‘쌍끌이’ 매...",
-   "url": "https://www.segye.com/newsView/20261027505898?OutUrl=naver",
+   "title": "'미 금리 결정 경계감'...원·달러 환율 1,320원대 보합 마감",
+   "url": "https://www.betanews.net/article/view/beta202610270162",
+   "source": "betanews.net",
+   "published": "2026-10-27T21:50:00+09:00",
+   "dup_count": 3,
+   "summary": "코스피는 전 거래일보다 168.87포인트(3.09%) 오른 5,638.34에 마감했으며, 외국인은 유가증권시장에서 약 6,000억원을 순매수했다. 코스닥은 16."
+  },
+  {
+   "title": "반도체 수출·설비투자·정부지출 업고 3분기 韓 경제 1% 성장...소비는...",
+   "url": "https://www.ulsanpress.net/news/articleView.html?idxno=585549",
+   "source": "ulsanpress.net",
+   "published": "2026-10-27T21:42:00+09:00",
+   "dup_count": 0,
+   "summary": "3분기 한국 경제는 반도체 수출과 설비투자에 힘입어 전분기 대비 1% 성장했다."
+  },
+  {
+   "title": "코스피, 3%대 상승에 5600선 회복...SK스퀘어, 삼성전기 등 상승",
+   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=446300",
+   "source": "econonews.co.kr",
+   "published": "2026-10-27T21:30:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피가 3%대 상승하며 5,600선을 회복했고 삼성전자와 SK하이닉스도 올랐다."
+  },
+  {
+   "title": "코스닥, 2%대 상승에 740선 회복...에코프로, 심텍 등 상승",
+   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=446301",
+   "source": "econonews.co.kr",
+   "published": "2026-10-27T21:30:00+09:00",
+   "dup_count": 0,
+   "summary": "코스닥은 외국인과 기관의 순매수에 힘입어 4거래일 만에 2%대 상승 마감했다."
+  },
+  {
+   "title": "[상한가 종목] 멜콘-나무가 이어 캠시스 등 마감",
+   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=446299",
+   "source": "econonews.co.kr",
+   "published": "2026-10-27T21:30:00+09:00",
+   "dup_count": 0,
+   "summary": "코스닥 시장에서 멜콘과 나무가 등 일부 종목이 상한가를 기록하며 장을 마쳤다."
+  },
+  {
+   "title": "앤트로픽 IPO 추진에 반도체주 급등",
+   "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=563584",
+   "source": "idaegu.co.kr",
+   "published": "2026-10-27T21:24:00+09:00",
+   "dup_count": 1,
+   "summary": "앤트로픽의 기업공개(IPO) 추진 소식에 힘입어 국내 반도체주가 급등했다."
+  },
+  {
+   "title": "[주간 증시 전망]한국 경제 AI 모멘텀발 차별화 주식시장 반영",
+   "url": "http://www.kjdaily.com/article.php?aid=1793103210690499004",
+   "source": "kjdaily.com",
+   "published": "2026-10-27T21:18:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피는 기관이, 코스닥은 개인이 순매수하며 AI 모멘텀발 장세를 보였다."
+  },
+  {
+   "title": "코스피도 모처럼 온기...반도체주 5% 안팎 상승",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8696764&ref=A",
+   "source": "news.kbs.co.kr",
+   "published": "2026-10-27T21:11:00+09:00",
+   "dup_count": 3,
+   "summary": "코스피가 매수 사이드카 발동 속 반도체주 강세로 3% 넘게 상승 마감했다."
+  },
+  {
+   "title": "멜콘·나무가·이지트로닉스 상한가...반도체·로봇주 강세",
+   "url": "http://www.kjdaily.com/article.php?aid=1793102881690492276",
+   "source": "kjdaily.com",
+   "published": "2026-10-27T21:10:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피가 3% 이상 급등하며 5,600선을 회복했고 반도체와 로봇주가 강세를 보였다."
+  },
+  {
+   "title": "앤트로픽발 훈풍에 코스피 반등...5,600선 회복",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261027205904Bl1",
+   "source": "yonhapnewstv.co.kr",
+   "published": "2026-10-27T20:59:00+09:00",
+   "dup_count": 6,
+   "summary": "앤트로픽 훈풍에 코스피가 반등해 5600선을 회복했고 환율은 1,323원을 기록했다."
+  },
+  {
+   "title": "‘앤트로픽 훈풍’ 코스피 5600 회복... 삼전닉스 120조원 환원 기대감도",
+   "url": "https://www.seoul.co.kr/news/economy/securities/2026/10/28/20261028031002?wlog_tag3=naver",
+   "source": "seoul.co.kr",
+   "published": "2026-10-27T20:59:00+09:00",
+   "dup_count": 2,
+   "summary": "앤트로픽 상장 호재로 코스피가 5600선을 회복하고 프로그램 매수 사이드카도 발동됐다."
+  },
+  {
+   "title": "주식 회전율 상위 50종목 거래대금 2.3조원...전날보다 38.5% 증가",
+   "url": "http://www.kjdaily.com/article.php?aid=1793102164690491276",
+   "source": "kjdaily.com",
+   "published": "2026-10-27T20:58:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피 종목은 CJ씨푸드1우, 서울식품우, 대양금속, 금호전기, 인디에프 등 5개다. 전날 코스닥 41개... 회전율 1위 에스케이증권제14호스팩은 공모가보다 2"
+  },
+  {
+   "title": "[기자메모]성장률 예측 또 실패...한은 어떻게 믿나",
+   "url": "https://www.khan.co.kr/article/202610272057005",
+   "source": "khan.co.kr",
+   "published": "2026-10-27T20:57:00+09:00",
+   "dup_count": 0,
+   "summary": "한국은행이 발표한 3분기 실질 GDP 성장률 속보치는 직전 분기 대비 1.0%였다."
+  },
+  {
+   "title": "국제유가 전망, 브렌트유 115달러 안팎...중동 종전 협상 변수",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16259786",
+   "source": "topstarnews.net",
+   "published": "2026-10-27T20:40:00+09:00",
+   "dup_count": 0,
+   "summary": "브렌트유가 배럴당 115달러 안팎을 기록한 가운데 중동 종전 협상이 변수로 작용했다."
+  },
+  {
+   "title": "미국증시 선물 상승...나스닥 반등, FOMC·빅테크 실적 시험대",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16259787",
+   "source": "topstarnews.net",
+   "published": "2026-10-27T20:40:00+09:00",
+   "dup_count": 1,
+   "summary": "미국 나스닥이 반등한 가운데 FOMC와 빅테크 실적이 주요 시험대에 올랐다."
+  },
+  {
+   "title": "美 연준 '10월 숨고르기 후 12월 금리 인상' 유력...전문가 93% 동결 전망",
+   "url": "https://www.g-enews.com/view.php?ud=202610272032587071e250e8e188_1",
+   "source": "g-enews.com",
+   "published": "2026-10-27T20:38:00+09:00",
+   "dup_count": 0,
+   "summary": "전문가들은 미 연준이 10월 숨고르기를 거쳐 12월에 금리를 인상할 것으로 전망했다."
+  },
+  {
+   "title": "앤트로픽 IPO에 한국 반도체주 급등...삼성·SK텔레콤 영향은?",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16259784",
+   "source": "topstarnews.net",
+   "published": "2026-10-27T20:38:00+09:00",
+   "dup_count": 0,
+   "summary": "앤트로픽 IPO가 국내 반도체주에 미칠 영향과 최종 공모가격에 관심이 집중됐다."
+  },
+  {
+   "title": "삼성전자·SK하이닉스 거래대금 7.4조원...하루 새 26% 급증",
+   "url": "http://www.kjdaily.com/article.php?aid=1793100880690490276",
+   "source": "kjdaily.com",
+   "published": "2026-10-27T20:36:00+09:00",
+   "dup_count": 1,
+   "summary": "이날 정규장 주가는 전 거래일보다 6만6천원(5.18%) 오른 134만1천원에 마감했다. 전날 0.16% 하락했던... 거래대금 상위 50개 종목을 시장별로 보면"
+  },
+  {
+   "title": "코스피, 엔트로픽 IPO 신청에 3% 올라...5600선 회복",
+   "url": "https://www.betanews.net/article/view/beta202610270163",
+   "source": "betanews.net",
+   "published": "2026-10-27T20:22:00+09:00",
+   "dup_count": 2,
+   "summary": "앤트로픽 상장 신청 소식으로 반도체 투자심리가 개선되며 코스피가 3% 올랐다."
+  },
+  {
+   "title": "[대구 물산업 활성화] 공공수요 확대하고 기회발전특구 지정 추진...물산...",
+   "url": "https://www.yeongnam.com/web/view.php?key=20261027029177252",
+   "source": "yeongnam.com",
+   "published": "2026-10-27T20:18:00+09:00",
+   "dup_count": 0,
+   "summary": "대구시는 물산업 활성화를 위해 공공수요를 확대하고 기회발전특구를 지정할 계획이다."
+  },
+  {
+   "title": "앤트로픽 IPO 공식화...나스닥도 코스피도 들썩",
+   "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1541840",
+   "source": "obsnews.co.kr",
+   "published": "2026-10-27T20:16:00+09:00",
+   "dup_count": 1,
+   "summary": "앤트로픽 IPO 공식화에 힘입어 나스닥과 코스피가 동반 상승 마감했다."
+  },
+  {
+   "title": "[논설위원의 단도직입]“코스피 5000대, 저평가 수준이지만...여전한 변...",
+   "url": "https://www.khan.co.kr/article/202610272016005",
+   "source": "khan.co.kr",
+   "published": "2026-10-27T20:16:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피 5000대는 저평가 수준이나 외국인 매물을 받아줄 매수 주체가 약하다는 분석이다."
+  },
+  {
+   "title": "삼전닉스 주주환원 보따리 증시 반등 ‘키’될까",
+   "url": "https://www.segye.com/newsView/20261027516224?OutUrl=naver",
    "source": "segye.com",
-   "published": "2026-10-27T10:12:00+09:00",
+   "published": "2026-10-27T20:13:00+09:00",
+   "dup_count": 2,
+   "summary": "앤트로픽 IPO와 반도체 투자심리 회복으로 코스피가 3.09% 상승 마감했다."
+  },
+  {
+   "title": "대구시, '물산업' 지원책 무얼 담았나",
+   "url": "https://www.newspim.com/news/view/20261027001472",
+   "source": "newspim.com",
+   "published": "2026-10-27T20:10:00+09:00",
+   "dup_count": 0,
+   "summary": "대구시는 국가산업단지 내 첨단 기업의 대규모 투자를 유치하기 위해 지원책을 추진한다."
+  },
+  {
+   "title": "미국발 '앤트로픽 훈풍'에 '국장'도 들썩...5,600선 회복",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008817653&plink=ORI&cooper=NAVER",
+   "source": "news.sbs.co.kr",
+   "published": "2026-10-27T20:07:00+09:00",
    "dup_count": 1,
-   "summary": "미 증시 역대 최대 규모가 될 전망이다. 뉴욕증시는 간밤 기술주 중심의 나스닥 지수는 0.83% 올랐고... 코스닥 시장에서도 외국인과 기관이 각각 1051억원,"
+   "summary": "미국발 앤트로픽 훈풍에 힘입어 코스피가 하루 만에 5,600선을 회복했다."
   },
   {
-   "title": "9월 회사채 발행 78% 급증...은행·카드사가 주도",
-   "url": "https://www.busan.com/view/busan/view.php?code=2026102710112791545",
-   "source": "busan.com",
-   "published": "2026-10-27T10:12:00+09:00",
+   "title": "앤트로픽 상장 추진에 반도체주 급등..주주환원책이 이어갈까",
+   "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6861147_37004.html",
+   "source": "imnews.imbc.com",
+   "published": "2026-10-27T20:05:00+09:00",
    "dup_count": 0,
-   "summary": "한국은행이 7·8월 연속으로 기준금리를 올린 데 이어 9월 시장금리까지 큰 폭으로 뛰자, 기업들이 회사채를 새로 찍는 대신 은행 대출로 자금을 마련했다. 실제 9"
-  },
-  {
-   "title": "코스피, 앤트로픽 IPO 추진에 4%대 강세 [시황]",
-   "url": "https://www.dailian.co.kr/news/view/1706551/?sc=Naver",
-   "source": "dailian.co.kr",
-   "published": "2026-10-27T10:10:00+09:00",
-   "dup_count": 0,
-   "summary": "있으나 외국인과 기관이 각각 4073억원, 2125억원 순매수하며 지수 상승을 이끌고 있다. 코스피... 이가 현실화되면 역대 최대 규모의 미국 증시 데뷔가 된다"
-  },
-  {
-   "title": "기업은행 연체율 15년만에 최고 고금리에 中企 금융비용 부담↑",
-   "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=365224",
-   "source": "smedaily.co.kr",
-   "published": "2026-10-27T10:10:00+09:00",
-   "dup_count": 0,
-   "summary": "연체율 상승의 배경에는 한국은행의 기준금리 상승에 따른 금융비용 부담 증가가 자리하고 있다. 한국은행 금융통화위원회는 7·8월 기준금리를 두 차례 연속 인상해 연"
-  },
-  {
-   "title": "코스피, 앤트로픽 IPO 소식에 4% 가까이 급등...삼전닉스 4~6%↑",
-   "url": "http://www.beyondpost.co.kr/view.php?ud=20261027100140195be44c0aacd_30",
-   "source": "beyondpost.co.kr",
-   "published": "2026-10-27T10:08:00+09:00",
-   "dup_count": 1,
-   "summary": "코스피가 장초반 4% 가까이 급등하며 5600선을 회복했다. 미국 생성형 인공지능(AI) 챗봇 클로드... 간밤 미국 뉴욕증시 3대 지수는 모두 상승 마감했다. "
-  },
-  {
-   "title": "환율 1323원대 마감...국제유가 하락, 원자재 혼조세",
-   "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38244",
-   "source": "junggi.co.kr",
-   "published": "2026-10-27T10:08:00+09:00",
-   "dup_count": 0,
-   "summary": "26일 서울 외환시장에서 원달러 환율은 엔화 강세와 월말 수출업체 매도 물량에 밀려 하락했다.... 뉴욕상업거래소에서 서부텍사스산원유 12월 인도분은 전장 대비 "
+   "summary": "코스피는 장중 4%까지 오르며 매수 사이드카가 발동됐고, 3% 오른 채 마감했습니다. 그동안 반도체 주가를 짓누른 건 AI에 쏟아붓는 돈이 수익으로 돌아올 수 있"
   }
  ]
 }
