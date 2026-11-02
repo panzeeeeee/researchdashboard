@@ -1,766 +1,716 @@
 {
- "updated_at": "2026-11-02T10:49:04.378035+09:00",
+ "updated_at": "2026-11-03T04:13:36.662061+09:00",
  "event_notes": {
-  "why": "미국의 반도체 쇼크와 인텔 쇼크 여파로 반도체 업종이 6.49% 급락하고 코스피와 코스닥 지수도 각각 3.48%와 3.83% 하락했다. 다만 SK하이닉스가 자사주 카드 활용과 기관 매수세 유입에 힘입어 장중 반등을 시도했고 방위산업 등 일부 업종은 글로벌 수출 모멘텀 부각으로 방어력을 보였다.",
-  "watch": "AI 관련 투자 펀더멘탈에 대한 시장의 신뢰 회복 여부와 함께 외국인 투자자의 매수세가 다시 돌아올지가 향후 지수 반등의 관건이 될 것으로 보인다."
+  "why": "미국 나스닥 반등과 유가 급락 등의 대외 여건 호조에 힘입어 코스피는 예상과 달리 기관의 매수세가 유입되며 반등했고, 저PBR주 밸류업 기대감에 힘입어 철강 업종이 큰 폭으로 올랐다. SK스퀘어의 대규모 주주환원 계획 발표와 주도 3인방으로 꼽힌 반도체, 조선 업종 등이 상승세를 이끌었으나, 지수 전체의 낙폭을 완전히 만회하지는 못한 것으로 보인다.",
+  "watch": "지속적인 상승세를 이어가기 위해서는 외국인 투자자의 수급 변화와 함께 대외 경제 변수 및 2028년 주식 결제 주기 단축에 따른 외국인 환전 과제 등의 제도적 변화를 지켜봐야 한다."
  },
  "clusters": [
   {
-   "title": "미국 반도체·기술주 쇼크와 코스피 증시 동향",
+   "title": "코스피 반등 및 증시 동향",
    "sources": [
-    "biz.heraldcorp.com",
-    "fntoday.co.kr",
-    "kukinews.com",
-    "news.bizwatch.co.kr",
-    "news1.kr",
-    "news2day.co.kr",
-    "ppss.kr",
-    "segye.com",
-    "seouleconews.com",
-    "startuptoday.co.kr"
+    "cbci.co.kr",
+    "chosun.com",
+    "greened.kr",
+    "imnews.imbc.com",
+    "joongang.co.kr",
+    "mt.co.kr",
+    "startuptoday.co.kr",
+    "thefairnews.co.kr",
+    "ytn.co.kr"
    ],
    "count": 10,
    "items": [
     {
-     "title": "[오늘증시] '美반도체 쇼크'에도 코스피 5800선 탈환...외인 매도는 여전",
-     "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=817777",
-     "source": "startuptoday.co.kr",
-     "published": "2026-11-02T10:44:00+09:00",
-     "dup_count": 2,
-     "summary": "코스피가 외인 매도 속 美 반도체 쇼크를 딛고 5800선을 탈환했다."
-    },
-    {
-     "title": "삼성전자 3%·SK하이닉스 1%대 하락...미국 반도체주 급락 여파",
-     "url": "https://www.ppss.kr/news/articleView.html?idxno=318453",
-     "source": "ppss.kr",
-     "published": "2026-11-02T10:18:00+09:00",
-     "dup_count": 2,
-     "summary": "미국 반도체주 급락 여파로 삼성전자와 SK하이닉스가 장 초반 하락했다."
-    },
-    {
-     "title": "'인텔 쇼크' 딛고 코스피 1%대 상승 전환...SK하닉 3%↑[장중시황]",
-     "url": "https://www.news1.kr/finance/market-exr/6339573",
-     "source": "news1.kr",
-     "published": "2026-11-02T10:39:00+09:00",
-     "dup_count": 1,
-     "summary": "인텔 쇼크에도 기관·개인 매수로 코스피가 상승하고 SK하이닉스가 올랐다."
-    },
-    {
-     "title": "'인텔 쇼크'에도 버티는 코스피...SK하이닉스 2% 상승",
-     "url": "https://news.bizwatch.co.kr/article/market/2026/11/02/0010",
-     "source": "news.bizwatch.co.kr",
-     "published": "2026-11-02T10:30:00+09:00",
-     "dup_count": 1,
-     "summary": "인텔 급락 충격에도 코스피와 SK하이닉스가 2% 상승 전환했다."
-    },
-    {
-     "title": "美 기술주 쇼크에도 버티는 코스피...기관 매수에 ‘상승 전환’",
-     "url": "https://www.kukinews.com/article/view/kuk202611020043",
-     "source": "kukinews.com",
-     "published": "2026-11-02T10:46:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피는 미국 기술주 급락에도 기관 매수세로 상승 전환했다."
-    },
-    {
-     "title": "코스피, 美 반도체 충격 딛고 5,790선 회복...기관 매수에 1%대 상승",
-     "url": "https://www.news2day.co.kr/article/20261102500090",
-     "source": "news2day.co.kr",
-     "published": "2026-11-02T10:28:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피가 기관 4493억 원 순매수에 힘입어 5790선을 회복했다."
-    },
-    {
-     "title": "코스피, 장초반 하락 뒤 1%대 상승 5,800선...SK닉스 2%대 상승",
-     "url": "http://www.seouleconews.com/news/articleView.html?idxno=94713",
-     "source": "seouleconews.com",
-     "published": "2026-11-02T10:20:00+09:00",
-     "dup_count": 0,
-     "summary": "기관의 1634억 순매수로 코스피가 1%대 올라 5800선에 안착했다."
-    },
-    {
-     "title": "‘美 반도체 쇼크’에도 코스피 상승 전환...기관 매수세에 낙폭 만회 [...",
-     "url": "https://biz.heraldcorp.com/article/10922392?ref=naver",
-     "source": "biz.heraldcorp.com",
-     "published": "2026-11-02T10:19:00+09:00",
-     "dup_count": 0,
-     "summary": "미국 반도체 급락에도 기관이 4217억 원을 사들여 코스피가 상승했다."
-    },
-    {
-     "title": "美 기술주 급락에도 코스피 ‘선방’...1% 하락 뒤집고 상승전환",
-     "url": "https://www.segye.com/newsView/20261102505142?OutUrl=naver",
-     "source": "segye.com",
-     "published": "2026-11-02T10:14:00+09:00",
-     "dup_count": 0,
-     "summary": "인텔 급락에도 기관이 4159억 원 순매수해 코스피가 상승 반전했다."
-    },
-    {
-     "title": "\"미 반도체 한파에 주춤\"... 코스피, 하락 출발 후 낙폭 줄이며 5,650선 공...",
-     "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=396764",
-     "source": "fntoday.co.kr",
-     "published": "2026-11-02T10:08:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피는 미국 기술주 부진 속 외인과 기관 매수로 낙폭을 줄였다."
-    }
-   ]
-  },
-  {
-   "title": "원·달러 환율 및 외환 시장 동향",
-   "sources": [
-    "etoday.co.kr",
-    "junggi.co.kr",
-    "news.einfomax.co.kr"
-   ],
-   "count": 3,
-   "items": [
-    {
-     "title": "원달러 환율 1330원대 상승...국제유가는 하락",
-     "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38317",
-     "source": "junggi.co.kr",
-     "published": "2026-11-02T10:38:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피는 5730.74로 올랐으나 나스닥과 국제유가는 하락했다."
-    },
-    {
-     "title": "원화 실효환율 상승률 두달 연속 세계 ‘1위’",
-     "url": "https://www.etoday.co.kr/news/view/2642915",
-     "source": "etoday.co.kr",
-     "published": "2026-11-02T10:32:00+09:00",
-     "dup_count": 0,
-     "summary": "신현송 한국은행 총재가 원화 실효환율 상승률 세계 1위를 언급했다."
-    },
-    {
-     "title": "반도체 네고 꾸준하지만...환전 시점 눈치 보는 부울경 수출업체들",
-     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4442476",
-     "source": "news.einfomax.co.kr",
-     "published": "2026-11-02T10:28:00+09:00",
-     "dup_count": 0,
-     "summary": "신한은행은 11월 달러-원 환율을 1,315~1,355원으로 전망했다."
-    }
-   ]
-  },
-  {
-   "title": "한국 수출 현황과 반도체 쏠림 현상",
-   "sources": [
-    "news.bbsi.co.kr",
-    "polinews.co.kr",
-    "tfmedia.co.kr"
-   ],
-   "count": 3,
-   "items": [
-    {
-     "title": "'1조 달러' 시대 앞둔 한국 수출의 명암...반도체 쏠림은 과제",
-     "url": "https://www.polinews.co.kr/news/articleView.html?idxno=747421",
-     "source": "polinews.co.kr",
-     "published": "2026-11-02T10:31:00+09:00",
-     "dup_count": 0,
-     "summary": "1조 달러 수출을 앞두고 한국 경제의 반도체 쏠림 우려가 커졌다."
-    },
-    {
-     "title": "수출 1조 달러 문턱, 반도체가 절반 끌었다...에너지 수입 부담도 확대",
-     "url": "https://www.tfmedia.co.kr/news/article.html?no=208561",
-     "source": "tfmedia.co.kr",
-     "published": "2026-11-02T10:16:00+09:00",
-     "dup_count": 0,
-     "summary": "10월 누적 수출이 9300억 달러에 육박하며 반도체가 절반을 이끌었다."
-    },
-    {
-     "title": "수출 1조 달러 눈앞에 둔 한국...'일자리·근로 실질소득·시장 다변화'...",
-     "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4116088",
-     "source": "news.bbsi.co.kr",
-     "published": "2026-11-02T10:14:00+09:00",
-     "dup_count": 0,
-     "summary": "대미 무역흑자가 1000억 달러를 돌파하며 통상 압박 우려가 커졌다."
-    }
-   ]
-  },
-  {
-   "title": "미국 중간선거 및 빅테크 실적 앞둔 증시 변동성",
-   "sources": [
-    "biz.newdaily.co.kr",
-    "imaeil.com",
-    "polinews.co.kr"
-   ],
-   "count": 3,
-   "items": [
-    {
-     "title": "미국發 기술주 쇼크에 중간선거까지...코스피 변동성 주의보",
-     "url": "https://www.imaeil.com/page/view/2026110210022565493",
-     "source": "imaeil.com",
-     "published": "2026-11-02T10:16:00+09:00",
+     "title": "美나스닥 반등·유가 6% 급락...코스피 2.24% 상승에도 외국인 '삼전닉스...",
+     "url": "https://www.greened.kr/news/articleView.html?idxno=353679",
+     "source": "greened.kr",
+     "published": "2026-11-03T00:03:00+09:00",
      "dup_count": 3,
-     "summary": "미국 기술주 조정과 중간선거 불확실성으로 코스닥이 724.38로 내렸다."
+     "summary": "외국인의 매도에도 기관 매수로 코스피가 2.24% 상승 마감했다."
     },
     {
-     "title": "美 중간선거·빅테크 실적 몰려온다 ... 코스피 변동성 주의보",
-     "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/02/2026110200084.html",
-     "source": "biz.newdaily.co.kr",
-     "published": "2026-11-02T10:18:00+09:00",
-     "dup_count": 1,
-     "summary": "미국 중간선거와 퀄컴·엔비디아 실적 발표로 코스피 변동성이 커졌다."
+     "title": "[코스피 반등 마감] SK하이닉스 3.8%·삼성전자 1.8% 상승...기관 매수세...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=622286",
+     "source": "cbci.co.kr",
+     "published": "2026-11-02T22:10:00+09:00",
+     "dup_count": 3,
+     "summary": "기관 매수세에 힘입어 SK하이닉스와 삼성전자가 상승 마감했다."
     },
     {
-     "title": "[경제, 알고 보면] 미국 중간선거에 세계 금융시장이 주목하는 이유",
-     "url": "https://www.polinews.co.kr/news/articleView.html?idxno=747418",
-     "source": "polinews.co.kr",
-     "published": "2026-11-02T10:08:00+09:00",
+     "title": "외풍에도 꿋꿋... 코스피 올린 '기관의 힘'",
+     "url": "https://www.mt.co.kr/stock/2026/11/03/2026110219552994953",
+     "source": "mt.co.kr",
+     "published": "2026-11-03T03:58:00+09:00",
+     "dup_count": 2,
+     "summary": "기관 매수세에 힘입어 코스피가 2%대 상승 마감했다."
+    },
+    {
+     "title": "'인텔 쇼크' 딛고 반등...코스피 5,800선 회복",
+     "url": "https://www.ytn.co.kr/_ln/0102_202611022256264064",
+     "source": "ytn.co.kr",
+     "published": "2026-11-02T22:56:00+09:00",
+     "dup_count": 2,
+     "summary": "코스피가 장 초반 낙폭을 딛고 5,800선을 회복했다."
+    },
+    {
+     "title": "[원달러 환율 상승] 코스피 2%대 반등 속 원/달러 환율 9.5원 오른 1,343....",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=622288",
+     "source": "cbci.co.kr",
+     "published": "2026-11-02T22:30:00+09:00",
+     "dup_count": 2,
+     "summary": "코스피가 2%대 반등한 가운데 원/달러 환율은 9.5원 올랐다."
+    },
+    {
+     "title": "'인텔 쇼크' 떨었는데 2% 반등..상승세 이어가나",
+     "url": "https://imnews.imbc.com/replay/2026/nw2500/article/6862652_36989.html",
+     "source": "imnews.imbc.com",
+     "published": "2026-11-03T00:17:00+09:00",
      "dup_count": 1,
-     "summary": "미국 중간선거 투표가 3일 마감되며 달러와 국제 금융시장이 주목한다."
-    }
-   ]
-  },
-  {
-   "title": "저PBR 기업들의 밸류업 프로그램 및 151곳 계획 제출 현황",
-   "sources": [
-    "breaknews.com"
-   ],
-   "count": 1,
-   "items": [
+     "summary": "인텔 쇼크 우려를 딛고 코스피가 2% 넘게 상승 마감했다."
+    },
     {
-     "title": "망신주기인가, 주가 견인인가...저PBR 151곳, 계획 내고도 남은 15곳",
-     "url": "http://www.breaknews.com/1247440",
-     "source": "breaknews.com",
-     "published": "2026-11-02T10:46:00+09:00",
+     "title": "[사진] 코스피·코스닥 동반 상승",
+     "url": "https://www.joongang.co.kr/article/25475125",
+     "source": "joongang.co.kr",
+     "published": "2026-11-03T00:01:00+09:00",
      "dup_count": 1,
-     "summary": "저PBR 151곳 중 15곳 남아, 평균 PBR은 0.25배를 기록했다."
-    }
-   ]
-  },
-  {
-   "title": "방위산업 및 해양 함정 관련주 강세",
-   "sources": [
-    "pinpointnews.co.kr"
-   ],
-   "count": 1,
-   "items": [
+     "summary": "코스피와 코스닥 지수가 동반 상승하며 정규장을 마감했다."
+    },
     {
-     "title": "글로벌 무기 체계 수출 모멘텀 부각... 방위산업·해양 함정 관련주 '왕...",
-     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=500484",
-     "source": "pinpointnews.co.kr",
-     "published": "2026-11-02T10:42:00+09:00",
+     "title": "‘검은 월요일’ 없었다... 코스피, 예상 뒤집고 반등",
+     "url": "https://www.chosun.com/economy/money/2026/11/03/VHNQPO3SBRD73PAQCQWCINZUDM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+     "source": "chosun.com",
+     "published": "2026-11-03T00:32:00+09:00",
      "dup_count": 0,
-     "summary": "RFHIC, 풍산 등 방산주가 해외 무기 수출 호조로 부각됐다."
-    }
-   ]
-  },
-  {
-   "title": "국립인천해양박물관 '이달의 해양유물' 선정",
-   "sources": [
-    "incheontoday.com"
-   ],
-   "count": 1,
-   "items": [
+     "summary": "코스피가 악재를 딛고 2.24% 오른 5859.08로 반등 마감했다."
+    },
     {
-     "title": "국립인천해양박물관, 11월 '이달의 해양유물'로 '김 제작 도구' 선정",
-     "url": "https://www.incheontoday.com/news/articleView.html?idxno=325761",
-     "source": "incheontoday.com",
-     "published": "2026-11-02T10:40:00+09:00",
+     "title": "[증시 프리즘] 변동성 파고속 '상저하고' 시험대...증권가, 4분기 코스피...",
+     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=92776",
+     "source": "thefairnews.co.kr",
+     "published": "2026-11-03T00:02:00+09:00",
      "dup_count": 0,
-     "summary": "'검은 반도체' 김, 수산식품 수출 1위 이 같은 전통 생산 과정을 거쳐 온 김은 오늘날 '검은 반도체'로 불릴 만큼 한국 대표 수출 식품으로 성장했다. 해양수산"
-    }
-   ]
-  },
-  {
-   "title": "에코프로 주가 움직임",
-   "sources": [
-    "topstarnews.net"
-   ],
-   "count": 1,
-   "items": [
+     "summary": "증권가들은 4분기 코스피가 실적 방어력을 바탕으로 등락할 것으로 예상했다."
+    },
     {
-     "title": "에코프로 주가, 11월 2일 장중 72,800원 0.83% 상승",
-     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16265951",
-     "source": "topstarnews.net",
-     "published": "2026-11-02T10:34:00+09:00",
+     "title": "[심층] '10월 두자릿수 하락' 코스피 반등?...운명의 11월 '연말 랠리' 분...",
+     "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=817891",
+     "source": "startuptoday.co.kr",
+     "published": "2026-11-02T22:00:00+09:00",
      "dup_count": 0,
-     "summary": "에코프로 주가는 11월 2일 0.83% 상승한 72,800원에 마감했다."
+     "summary": "11월 증시는 정치 불확실성 완화와 반도체 실적에 따라 회복될 전망이다."
     }
    ]
   },
   {
-   "title": "AI 및 기술주 투자 심리 관련 전문가 진단",
+   "title": "저PBR주 강세",
    "sources": [
-    "news2day.co.kr"
+    "biz.heraldcorp.com",
+    "cbci.co.kr",
+    "kjdaily.com",
+    "koreareport.co.kr",
+    "newsquest.co.kr"
    ],
-   "count": 1,
+   "count": 5,
    "items": [
     {
-     "title": "\"AI발 공포에도 투자 펀더멘탈 견조...투자심리 회복 관건\"<iM證>",
-     "url": "https://www.news2day.co.kr/article/20261102500081",
-     "source": "news2day.co.kr",
-     "published": "2026-11-02T10:34:00+09:00",
+     "title": "저PBR주 151개 중 115개 상승...현대제철 11.61% 급등",
+     "url": "http://www.kjdaily.com/article.php?aid=1793633756691080276",
+     "source": "kjdaily.com",
+     "published": "2026-11-03T00:38:00+09:00",
+     "dup_count": 1,
+     "summary": "한국거래소의 저PBR주 명단 공개 후 현대제철 등 주가가 급등했다."
+    },
+    {
+     "title": "[저PBR주 강세 마감] 현대제철 11%·롯데쇼핑 9% 급등...낮은 밸류에이션...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=622294",
+     "source": "cbci.co.kr",
+     "published": "2026-11-02T23:40:00+09:00",
+     "dup_count": 1,
+     "summary": "저PBR주로 지정된 151개 종목 중 76%가 상승 마감했다."
+    },
+    {
+     "title": "저PBR 기업 공개하자 151곳 중 115곳 올랐다...현대제철 11.6% 급등",
+     "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=304043",
+     "source": "newsquest.co.kr",
+     "published": "2026-11-02T23:10:00+09:00",
+     "dup_count": 1,
+     "summary": "저PBR 기업 명단 공개 후 현대제철 등 115개 종목이 상승했다."
+    },
+    {
+     "title": "‘저PBR’ 낙인이 오히려 호재?...주가 ‘11%’ 깜짝 급등, 알짜 기업들 ...",
+     "url": "https://biz.heraldcorp.com/article/10922975?ref=naver",
+     "source": "biz.heraldcorp.com",
+     "published": "2026-11-02T22:41:00+09:00",
+     "dup_count": 1,
+     "summary": "저PBR 낙인 효과로 현대제철 등 알짜 기업 주가가 급등했다."
+    },
+    {
+     "title": "저PBR 기업 76% 주가 상승...현대제철 11.6% 급등",
+     "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=54213",
+     "source": "koreareport.co.kr",
+     "published": "2026-11-02T22:18:00+09:00",
+     "dup_count": 1,
+     "summary": "저PBR 기업으로 공표된 151개 종목 중 115개 종목의 주가가 상승했다."
+    }
+   ]
+  },
+  {
+   "title": "증권가 전망 및 반도체 관련 칼럼",
+   "sources": [
+    "newsis.com",
+    "segye.com",
+    "thefairnews.co.kr"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "[더페어 돋보기] 4분기 증시 구원투수 '주도 3인방'...반도체·조선·바이...",
+     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=92777",
+     "source": "thefairnews.co.kr",
+     "published": "2026-11-03T00:02:00+09:00",
      "dup_count": 0,
-     "summary": "AI 공포에도 펀더멘털은 견조하며 10월 한국 반도체 수출은 호조였다."
+     "summary": "4분기 증시 주도 업종으로 반도체, 조선, 바이오가 꼽혔다."
+    },
+    {
+     "title": "\"올해는 인내의 시간...내년 증시, HBM 실적 레벨업으로 재평가\"",
+     "url": "https://www.newsis.com/view/NISX20261102_0003850759",
+     "source": "newsis.com",
+     "published": "2026-11-03T00:00:00+09:00",
+     "dup_count": 0,
+     "summary": "전문가들은 내년 증시가 HBM 실적 레벨업으로 재평가될 것으로 전망했다."
+    },
+    {
+     "title": "[주춘렬 칼럼] 반도체 돈벼락, 재앙의 불씨 될 수도",
+     "url": "https://www.segye.com/newsView/20261102515909?OutUrl=naver",
+     "source": "segye.com",
+     "published": "2026-11-02T22:57:00+09:00",
+     "dup_count": 0,
+     "summary": "삼성전자와 SK하이닉스의 호실적 속 메모리 정점과 AI 거품 우려도 제기됐다."
     }
    ]
   },
   {
-   "title": "주식 결제주기 T+1 전환 추진",
+   "title": "뉴욕증시 및 반도체주 반등",
    "sources": [
-    "hankyung.com"
+    "cbci.co.kr",
+    "hankyung.com",
+    "newspim.com"
    ],
-   "count": 1,
+   "count": 3,
    "items": [
     {
-     "title": "주식 판 돈 다음날 입금...'결제주기 T+1' 2028년 전환 추진",
-     "url": "https://www.hankyung.com/article/2026110296136",
+     "title": "\"반도체 끝났나\" 했는데...'삼전닉스' 급반등하자 나온 전망 [종목+]",
+     "url": "https://www.hankyung.com/article/2026110208686",
      "source": "hankyung.com",
-     "published": "2026-11-02T10:31:00+09:00",
+     "published": "2026-11-02T22:01:00+09:00",
+     "dup_count": 1,
+     "summary": "기관과 기타법인의 순매수로 삼성전자와 SK하이닉스가 반등했다."
+    },
+    {
+     "title": "[빅테크 부진 충격 선반영] 삼성전자·SK하이닉스, 장 초반 약세 딛고 상...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=622283",
+     "source": "cbci.co.kr",
+     "published": "2026-11-02T22:00:00+09:00",
+     "dup_count": 1,
+     "summary": "삼성전자는 전 거래일 대비 1.78% 오른 22만9천원에, SK하이닉스는 3.81% 상승한 147만2천원에 각각 마감했다.... 지난주 금요일 코스피가 3.48%"
+    },
+    {
+     "title": "뉴욕증시 프리뷰, 주가 선물 상승...AI 기술주 반등·유가 급락에 투자심...",
+     "url": "https://www.newspim.com/news/view/20261102001629",
+     "source": "newspim.com",
+     "published": "2026-11-02T22:12:00+09:00",
      "dup_count": 0,
-     "summary": "주식 결제주기가 2028년 T+1로 전환돼 매도 다음 날 입금된다."
+     "summary": "코스피는 상승 마감한 반면 일본 닛케이225지수는 하락 마감했다."
     }
    ]
   },
   {
-   "title": "국채금리 하락과 주가 조정 관련 분석",
+   "title": "가계대출 및 은행 동향",
    "sources": [
-    "yna.co.kr"
+    "gukjenews.com",
+    "news.tf.co.kr"
    ],
-   "count": 1,
+   "count": 2,
    "items": [
     {
-     "title": "인상 사이클인데 국채금리 너무 내렸나...\"주가조정 과잉반영\"",
-     "url": "https://www.yna.co.kr/view/AKR20261102053800008?input=1195m",
-     "source": "yna.co.kr",
-     "published": "2026-11-02T10:31:00+09:00",
+     "title": "5대 은행 가계대출 2조7천억↑...한 달 만에 반등",
+     "url": "https://www.gukjenews.com/news/articleView.html?idxno=3740272",
+     "source": "gukjenews.com",
+     "published": "2026-11-03T00:42:00+09:00",
      "dup_count": 0,
-     "summary": "한국은행 금리 인하 기대로 국고채 10년물 금리가 39.9bp 내렸다."
+     "summary": "5대 은행 가계대출이 금리 인상과 예금금리 상승으로 반등했다."
+    },
+    {
+     "title": "금리 올라도 NIM은 뒷걸음...4대 은행 '조달비용 전쟁' 전망",
+     "url": "https://news.tf.co.kr/read/economy/2383580.htm",
+     "source": "news.tf.co.kr",
+     "published": "2026-11-03T00:01:00+09:00",
+     "dup_count": 0,
+     "summary": "기준금리 인상에도 4대 은행의 조달비용 증가로 NIM은 뒷걸음질 쳤다."
     }
    ]
   },
   {
-   "title": "LG그룹 로봇 및 차량용 반도체 경쟁력",
+   "title": "지자체 성과 및 정책",
    "sources": [
-    "techholic.co.kr"
+    "greened.kr",
+    "kado.net"
    ],
-   "count": 1,
+   "count": 2,
    "items": [
     {
-     "title": "LG그룹, LG전자 앞세워 로봇, 차량용 반도체까지 글로벌 경쟁력 톱티어...",
-     "url": "http://www.techholic.co.kr/news/articleView.html?idxno=223484",
-     "source": "techholic.co.kr",
-     "published": "2026-11-02T10:28:00+09:00",
+     "title": "박수현 지사 '5382억 투자 성과'...\"국비 13조 사수·AI 수도 구축 속도\"",
+     "url": "https://www.greened.kr/news/articleView.html?idxno=353672",
+     "source": "greened.kr",
+     "published": "2026-11-03T00:39:00+09:00",
      "dup_count": 0,
-     "summary": "LG전자는 2027년 로봇 직접 제조와 차량용 반도체 진출을 노린다."
+     "summary": "박수현 지사가 5382억 원 규모의 글로벌 투자협약을 체결했다."
+    },
+    {
+     "title": "원주 수출 실적 5년 연속 10억달러 돌파",
+     "url": "https://www.kado.net/news/articleView.html?idxno=2082227",
+     "source": "kado.net",
+     "published": "2026-11-03T00:08:00+09:00",
+     "dup_count": 0,
+     "summary": "원주 수출 실적이 의료기기와 반도체에 힘입어 5년 연속 10억달러를 돌파했다."
     }
    ]
   },
   {
-   "title": "국내 금 시세 동향",
+   "title": "섹터별 ETF 및 레버리지 강세",
+   "sources": [
+    "hansbiz.co.kr",
+    "kjdaily.com"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "조선 ETF 15%·전력 ETN 16% 급등...레버리지 강세",
+     "url": "http://www.kjdaily.com/article.php?aid=1793632261690990276",
+     "source": "kjdaily.com",
+     "published": "2026-11-03T00:14:00+09:00",
+     "dup_count": 1,
+     "summary": "미국 반도체주 급락에도 조선 ETF와 전력 ETN이 급등했다."
+    },
+    {
+     "title": "급락장에도 개미들의 '레버리지 매수'는 통했다",
+     "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=879060",
+     "source": "hansbiz.co.kr",
+     "published": "2026-11-02T21:56:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피 급락장에서도 개인의 레버리지 매수세가 유입되었다."
+    }
+   ]
+  },
+  {
+   "title": "삼성전자우 및 종목 손바뀜",
+   "sources": [
+    "kjdaily.com"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "삼성전자우 주가 1.67% 상승...외국인 950억원 순매도",
+     "url": "http://www.kjdaily.com/article.php?aid=1793632055691077276",
+     "source": "kjdaily.com",
+     "published": "2026-11-03T00:10:00+09:00",
+     "dup_count": 1,
+     "summary": "기관 매수세에 힘입어 삼성전자우 등 코스피가 상승 마감했다."
+    },
+    {
+     "title": "주식 회전율 50% 이상 6개...급등·급락 종목 손바뀜 활발",
+     "url": "http://www.kjdaily.com/article.php?aid=1793631902691075276",
+     "source": "kjdaily.com",
+     "published": "2026-11-03T00:08:00+09:00",
+     "dup_count": 1,
+     "summary": "증시 변동성 속 일부 종목에서 활발한 손바뀜이 나타났다."
+    }
+   ]
+  },
+  {
+   "title": "SK스퀘어 주주환원",
    "sources": [
     "kjdaily.com"
    ],
    "count": 1,
    "items": [
     {
-     "title": "금시세(금값) 혼조",
-     "url": "http://www.kjdaily.com/article.php?aid=1793582452690962227",
+     "title": "SK스퀘어 주가 5.91% 상승...4조3천억원 주주환원 계획 발표",
+     "url": "http://www.kjdaily.com/article.php?aid=1793634605691078276",
      "source": "kjdaily.com",
-     "published": "2026-11-02T10:26:00+09:00",
-     "dup_count": 0,
-     "summary": "국제 금값은 온스당 3,898.90달러로 3.29% 내렸다."
+     "published": "2026-11-03T00:52:00+09:00",
+     "dup_count": 1,
+     "summary": "이미지=아이클릭아트-2일 95만원 마감...시가총액 125조3천278억원·코스피 4위 -외국인 255억원·기관 343억원 순매수...개인 591억원 순매도 -기관"
     }
    ]
   },
   {
-   "title": "증시 불안에 따른 은행 예·적금 자금 유입",
+   "title": "두산에너빌리티 주가",
    "sources": [
-    "ddaily.co.kr"
+    "cbci.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "주식 출렁이자 은행으로...예·적금 한 달 새 25.7조↑",
-     "url": "https://www.ddaily.co.kr/page/view/2026110210234153380",
-     "source": "ddaily.co.kr",
-     "published": "2026-11-02T10:24:00+09:00",
+     "title": "두산에너빌리티 주가, 11월 첫 거래일 웃었다...대외 변수도 주목",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=622206",
+     "source": "cbci.co.kr",
+     "published": "2026-11-03T00:16:00+09:00",
      "dup_count": 0,
-     "summary": "한은 금리 인상에 예·적금이 한 달 새 25.7조 원 급증했다."
+     "summary": "두산에너빌리티가 1.82% 오른 55800원에 첫 거래일을 마감했다."
     }
    ]
   },
   {
-   "title": "WGBI 편입과 외국인 국고채 매수",
+   "title": "주식 결제 제도 개선",
    "sources": [
-    "news.einfomax.co.kr"
+    "kmib.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "8개월 WGBI 편입 마침표...외국인 국고채 매수, 그다음은",
-     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4442465",
-     "source": "news.einfomax.co.kr",
-     "published": "2026-11-02T10:22:00+09:00",
-     "dup_count": 0,
-     "summary": "WGBI 편입 8개월 만에 마무리되며 국고채 매수 효과가 주목된다."
+     "title": "2028년부터 주식 결제 하루 단축... 외국인 새벽환전 과제",
+     "url": "https://www.kmib.co.kr/article/20261102502040",
+     "source": "kmib.co.kr",
+     "published": "2026-11-03T00:15:00+09:00",
+     "dup_count": 2,
+     "summary": "이날 코스피는 전 거래일보다 128.34포인트(2.24%) 오른 5859.08에 마감했다. 일본 낸드플래시 업체 키옥시아가 실적 전망에 대한 실망감으로 15.78"
     }
    ]
   },
   {
-   "title": "보험주 증시 방어력 및 금리·배당 영향",
+   "title": "세계 경제 및 환율 칼럼",
    "sources": [
-    "imaeil.com"
+    "polinews.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "증시 흔들려도 버틴 보험株...금리·배당이 살렸다",
-     "url": "https://www.imaeil.com/page/view/2026110210134678782",
-     "source": "imaeil.com",
-     "published": "2026-11-02T10:18:00+09:00",
+     "title": "[전규열의 경제포커스] 세계 2위 경상흑자, 환호하기엔 이르다",
+     "url": "https://www.polinews.co.kr/news/articleView.html?idxno=747512",
+     "source": "polinews.co.kr",
+     "published": "2026-11-03T00:00:00+09:00",
      "dup_count": 0,
-     "summary": "변동성 장세에서 기관이 2164억 원 순매수하며 보험주가 선방했다."
+     "summary": "한국의 수출 실적이 반도체와 대미 흑자에 더욱 쏠리고 있다."
     }
    ]
   },
   {
-   "title": "모건스탠리의 미국 증시 전망",
+   "title": "증권가 소식",
    "sources": [
-    "ppss.kr"
+    "hansbiz.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "미국 증시 9% 조정 온다? 모건스탠리 '엄청난 기회'",
-     "url": "https://www.ppss.kr/news/articleView.html?idxno=318452",
-     "source": "ppss.kr",
-     "published": "2026-11-02T10:18:00+09:00",
+     "title": "[증권가H] 딜로이트, 파트너 직급 개편/김승연 넥스트증권 대표 연임 등",
+     "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=879067",
+     "source": "hansbiz.co.kr",
+     "published": "2026-11-02T23:12:00+09:00",
      "dup_count": 0,
-     "summary": "모건스탠리는 미국 중간선거 이후 증시가 강세를 보일 것으로 전망했다."
+     "summary": "산업은행 자회사 산은인프라자산운용이 전주사무소를 열었다."
     }
    ]
   },
   {
-   "title": "코스닥 시장 동향",
+   "title": "미국 선거 관련",
    "sources": [
-    "seoul.co.kr"
+    "mk.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "[서울데이터랩] 코스닥, 장 초반 낙폭 만회하며 725.45...외국인·기관 순...",
-     "url": "https://www.seoul.co.kr/news/economy/securities/2026/11/02/20261102500043?wlog_tag3=naver",
-     "source": "seoul.co.kr",
-     "published": "2026-11-02T10:15:00+09:00",
+     "title": "운명의 美 중간선거 ‘카운트다운’...트럼프 2기 후반전 방향 갈린다 [...",
+     "url": "https://www.mk.co.kr/article/12194001",
+     "source": "mk.co.kr",
+     "published": "2026-11-02T22:35:00+09:00",
      "dup_count": 0,
-     "summary": "코스닥은 외인과 기관 매수로 낙폭을 줄여 725.45로 마감했다."
-    }
-   ]
-  },
-  {
-   "title": "동원파츠 공모주 청약",
-   "sources": [
-    "wikitree.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "치킨값 벌어보자...'동원파츠' 청약 시작",
-     "url": "https://www.wikitree.co.kr/articles/1170975",
-     "source": "wikitree.co.kr",
-     "published": "2026-11-02T10:10:00+09:00",
-     "dup_count": 0,
-     "summary": "동원파츠는 11월 3일 일반 공모 청약을 마감하고 코스닥에 상장한다."
-    }
-   ]
-  },
-  {
-   "title": "삼전·닉스 자사주 카드로 하락 방어... 외국인 매수세 돌아올까",
-   "sources": [
-    "fntoday.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "삼전·닉스 자사주 카드로 하락 방어... 외국인 매수세 돌아올까",
-     "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=396778",
-     "source": "fntoday.co.kr",
-     "published": "2026-11-02T10:36:00+09:00",
-     "dup_count": 0,
-     "summary": "삼성전자와 SK하이닉스가 자사주 46조 5천억 원을 사며 하락을 방어했다."
+     "summary": "미국 중간선거 결과에 따라 국내 자동차, 배터리, 반도체 기업이 영향을 받을 전망이다."
     }
    ]
   }
  ],
  "items": [
   {
-   "title": "망신주기인가, 주가 견인인가...저PBR 151곳, 계획 내고도 남은 15곳",
-   "url": "http://www.breaknews.com/1247440",
-   "source": "breaknews.com",
-   "published": "2026-11-02T10:46:00+09:00",
-   "dup_count": 1,
-   "summary": "저PBR 151곳 중 15곳 남아, 평균 PBR은 0.25배를 기록했다."
-  },
-  {
-   "title": "美 기술주 쇼크에도 버티는 코스피...기관 매수에 ‘상승 전환’",
-   "url": "https://www.kukinews.com/article/view/kuk202611020043",
-   "source": "kukinews.com",
-   "published": "2026-11-02T10:46:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피는 미국 기술주 급락에도 기관 매수세로 상승 전환했다."
-  },
-  {
-   "title": "[오늘증시] '美반도체 쇼크'에도 코스피 5800선 탈환...외인 매도는 여전",
-   "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=817777",
-   "source": "startuptoday.co.kr",
-   "published": "2026-11-02T10:44:00+09:00",
+   "title": "외풍에도 꿋꿋... 코스피 올린 '기관의 힘'",
+   "url": "https://www.mt.co.kr/stock/2026/11/03/2026110219552994953",
+   "source": "mt.co.kr",
+   "published": "2026-11-03T03:58:00+09:00",
    "dup_count": 2,
-   "summary": "코스피가 외인 매도 속 美 반도체 쇼크를 딛고 5800선을 탈환했다."
+   "summary": "기관 매수세에 힘입어 코스피가 2%대 상승 마감했다."
   },
   {
-   "title": "글로벌 무기 체계 수출 모멘텀 부각... 방위산업·해양 함정 관련주 '왕...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=500484",
-   "source": "pinpointnews.co.kr",
-   "published": "2026-11-02T10:42:00+09:00",
-   "dup_count": 0,
-   "summary": "RFHIC, 풍산 등 방산주가 해외 무기 수출 호조로 부각됐다."
-  },
-  {
-   "title": "국립인천해양박물관, 11월 '이달의 해양유물'로 '김 제작 도구' 선정",
-   "url": "https://www.incheontoday.com/news/articleView.html?idxno=325761",
-   "source": "incheontoday.com",
-   "published": "2026-11-02T10:40:00+09:00",
-   "dup_count": 0,
-   "summary": "'검은 반도체' 김, 수산식품 수출 1위 이 같은 전통 생산 과정을 거쳐 온 김은 오늘날 '검은 반도체'로 불릴 만큼 한국 대표 수출 식품으로 성장했다. 해양수산"
-  },
-  {
-   "title": "'인텔 쇼크' 딛고 코스피 1%대 상승 전환...SK하닉 3%↑[장중시황]",
-   "url": "https://www.news1.kr/finance/market-exr/6339573",
-   "source": "news1.kr",
-   "published": "2026-11-02T10:39:00+09:00",
-   "dup_count": 1,
-   "summary": "인텔 쇼크에도 기관·개인 매수로 코스피가 상승하고 SK하이닉스가 올랐다."
-  },
-  {
-   "title": "원달러 환율 1330원대 상승...국제유가는 하락",
-   "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38317",
-   "source": "junggi.co.kr",
-   "published": "2026-11-02T10:38:00+09:00",
-   "dup_count": 1,
-   "summary": "코스피는 5730.74로 올랐으나 나스닥과 국제유가는 하락했다."
-  },
-  {
-   "title": "삼전·닉스 자사주 카드로 하락 방어... 외국인 매수세 돌아올까",
-   "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=396778",
-   "source": "fntoday.co.kr",
-   "published": "2026-11-02T10:36:00+09:00",
-   "dup_count": 0,
-   "summary": "삼성전자와 SK하이닉스가 자사주 46조 5천억 원을 사며 하락을 방어했다."
-  },
-  {
-   "title": "에코프로 주가, 11월 2일 장중 72,800원 0.83% 상승",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16265951",
-   "source": "topstarnews.net",
-   "published": "2026-11-02T10:34:00+09:00",
-   "dup_count": 0,
-   "summary": "에코프로 주가는 11월 2일 0.83% 상승한 72,800원에 마감했다."
-  },
-  {
-   "title": "\"AI발 공포에도 투자 펀더멘탈 견조...투자심리 회복 관건\"<iM證>",
-   "url": "https://www.news2day.co.kr/article/20261102500081",
-   "source": "news2day.co.kr",
-   "published": "2026-11-02T10:34:00+09:00",
-   "dup_count": 0,
-   "summary": "AI 공포에도 펀더멘털은 견조하며 10월 한국 반도체 수출은 호조였다."
-  },
-  {
-   "title": "원화 실효환율 상승률 두달 연속 세계 ‘1위’",
-   "url": "https://www.etoday.co.kr/news/view/2642915",
-   "source": "etoday.co.kr",
-   "published": "2026-11-02T10:32:00+09:00",
-   "dup_count": 0,
-   "summary": "신현송 한국은행 총재가 원화 실효환율 상승률 세계 1위를 언급했다."
-  },
-  {
-   "title": "주식 판 돈 다음날 입금...'결제주기 T+1' 2028년 전환 추진",
-   "url": "https://www.hankyung.com/article/2026110296136",
-   "source": "hankyung.com",
-   "published": "2026-11-02T10:31:00+09:00",
-   "dup_count": 0,
-   "summary": "주식 결제주기가 2028년 T+1로 전환돼 매도 다음 날 입금된다."
-  },
-  {
-   "title": "인상 사이클인데 국채금리 너무 내렸나...\"주가조정 과잉반영\"",
-   "url": "https://www.yna.co.kr/view/AKR20261102053800008?input=1195m",
-   "source": "yna.co.kr",
-   "published": "2026-11-02T10:31:00+09:00",
-   "dup_count": 0,
-   "summary": "한국은행 금리 인하 기대로 국고채 10년물 금리가 39.9bp 내렸다."
-  },
-  {
-   "title": "'1조 달러' 시대 앞둔 한국 수출의 명암...반도체 쏠림은 과제",
-   "url": "https://www.polinews.co.kr/news/articleView.html?idxno=747421",
-   "source": "polinews.co.kr",
-   "published": "2026-11-02T10:31:00+09:00",
-   "dup_count": 0,
-   "summary": "1조 달러 수출을 앞두고 한국 경제의 반도체 쏠림 우려가 커졌다."
-  },
-  {
-   "title": "'인텔 쇼크'에도 버티는 코스피...SK하이닉스 2% 상승",
-   "url": "https://news.bizwatch.co.kr/article/market/2026/11/02/0010",
-   "source": "news.bizwatch.co.kr",
-   "published": "2026-11-02T10:30:00+09:00",
-   "dup_count": 1,
-   "summary": "인텔 급락 충격에도 코스피와 SK하이닉스가 2% 상승 전환했다."
-  },
-  {
-   "title": "코스피, 美 반도체 충격 딛고 5,790선 회복...기관 매수에 1%대 상승",
-   "url": "https://www.news2day.co.kr/article/20261102500090",
-   "source": "news2day.co.kr",
-   "published": "2026-11-02T10:28:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피가 기관 4493억 원 순매수에 힘입어 5790선을 회복했다."
-  },
-  {
-   "title": "LG그룹, LG전자 앞세워 로봇, 차량용 반도체까지 글로벌 경쟁력 톱티어...",
-   "url": "http://www.techholic.co.kr/news/articleView.html?idxno=223484",
-   "source": "techholic.co.kr",
-   "published": "2026-11-02T10:28:00+09:00",
-   "dup_count": 0,
-   "summary": "LG전자는 2027년 로봇 직접 제조와 차량용 반도체 진출을 노린다."
-  },
-  {
-   "title": "반도체 네고 꾸준하지만...환전 시점 눈치 보는 부울경 수출업체들",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4442476",
-   "source": "news.einfomax.co.kr",
-   "published": "2026-11-02T10:28:00+09:00",
-   "dup_count": 0,
-   "summary": "신한은행은 11월 달러-원 환율을 1,315~1,355원으로 전망했다."
-  },
-  {
-   "title": "금시세(금값) 혼조",
-   "url": "http://www.kjdaily.com/article.php?aid=1793582452690962227",
+   "title": "SK스퀘어 주가 5.91% 상승...4조3천억원 주주환원 계획 발표",
+   "url": "http://www.kjdaily.com/article.php?aid=1793634605691078276",
    "source": "kjdaily.com",
-   "published": "2026-11-02T10:26:00+09:00",
-   "dup_count": 0,
-   "summary": "국제 금값은 온스당 3,898.90달러로 3.29% 내렸다."
-  },
-  {
-   "title": "주식 출렁이자 은행으로...예·적금 한 달 새 25.7조↑",
-   "url": "https://www.ddaily.co.kr/page/view/2026110210234153380",
-   "source": "ddaily.co.kr",
-   "published": "2026-11-02T10:24:00+09:00",
-   "dup_count": 0,
-   "summary": "한은 금리 인상에 예·적금이 한 달 새 25.7조 원 급증했다."
-  },
-  {
-   "title": "8개월 WGBI 편입 마침표...외국인 국고채 매수, 그다음은",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4442465",
-   "source": "news.einfomax.co.kr",
-   "published": "2026-11-02T10:22:00+09:00",
-   "dup_count": 0,
-   "summary": "WGBI 편입 8개월 만에 마무리되며 국고채 매수 효과가 주목된다."
-  },
-  {
-   "title": "코스피, 장초반 하락 뒤 1%대 상승 5,800선...SK닉스 2%대 상승",
-   "url": "http://www.seouleconews.com/news/articleView.html?idxno=94713",
-   "source": "seouleconews.com",
-   "published": "2026-11-02T10:20:00+09:00",
-   "dup_count": 0,
-   "summary": "기관의 1634억 순매수로 코스피가 1%대 올라 5800선에 안착했다."
-  },
-  {
-   "title": "‘美 반도체 쇼크’에도 코스피 상승 전환...기관 매수세에 낙폭 만회 [...",
-   "url": "https://biz.heraldcorp.com/article/10922392?ref=naver",
-   "source": "biz.heraldcorp.com",
-   "published": "2026-11-02T10:19:00+09:00",
-   "dup_count": 0,
-   "summary": "미국 반도체 급락에도 기관이 4217억 원을 사들여 코스피가 상승했다."
-  },
-  {
-   "title": "美 중간선거·빅테크 실적 몰려온다 ... 코스피 변동성 주의보",
-   "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/02/2026110200084.html",
-   "source": "biz.newdaily.co.kr",
-   "published": "2026-11-02T10:18:00+09:00",
+   "published": "2026-11-03T00:52:00+09:00",
    "dup_count": 1,
-   "summary": "미국 중간선거와 퀄컴·엔비디아 실적 발표로 코스피 변동성이 커졌다."
+   "summary": "이미지=아이클릭아트-2일 95만원 마감...시가총액 125조3천278억원·코스피 4위 -외국인 255억원·기관 343억원 순매수...개인 591억원 순매도 -기관"
   },
   {
-   "title": "삼성전자 3%·SK하이닉스 1%대 하락...미국 반도체주 급락 여파",
-   "url": "https://www.ppss.kr/news/articleView.html?idxno=318453",
-   "source": "ppss.kr",
-   "published": "2026-11-02T10:18:00+09:00",
+   "title": "5대 은행 가계대출 2조7천억↑...한 달 만에 반등",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3740272",
+   "source": "gukjenews.com",
+   "published": "2026-11-03T00:42:00+09:00",
+   "dup_count": 0,
+   "summary": "5대 은행 가계대출이 금리 인상과 예금금리 상승으로 반등했다."
+  },
+  {
+   "title": "박수현 지사 '5382억 투자 성과'...\"국비 13조 사수·AI 수도 구축 속도\"",
+   "url": "https://www.greened.kr/news/articleView.html?idxno=353672",
+   "source": "greened.kr",
+   "published": "2026-11-03T00:39:00+09:00",
+   "dup_count": 0,
+   "summary": "박수현 지사가 5382억 원 규모의 글로벌 투자협약을 체결했다."
+  },
+  {
+   "title": "저PBR주 151개 중 115개 상승...현대제철 11.61% 급등",
+   "url": "http://www.kjdaily.com/article.php?aid=1793633756691080276",
+   "source": "kjdaily.com",
+   "published": "2026-11-03T00:38:00+09:00",
+   "dup_count": 1,
+   "summary": "한국거래소의 저PBR주 명단 공개 후 현대제철 등 주가가 급등했다."
+  },
+  {
+   "title": "‘검은 월요일’ 없었다... 코스피, 예상 뒤집고 반등",
+   "url": "https://www.chosun.com/economy/money/2026/11/03/VHNQPO3SBRD73PAQCQWCINZUDM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "source": "chosun.com",
+   "published": "2026-11-03T00:32:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피가 악재를 딛고 2.24% 오른 5859.08로 반등 마감했다."
+  },
+  {
+   "title": "'인텔 쇼크' 떨었는데 2% 반등..상승세 이어가나",
+   "url": "https://imnews.imbc.com/replay/2026/nw2500/article/6862652_36989.html",
+   "source": "imnews.imbc.com",
+   "published": "2026-11-03T00:17:00+09:00",
+   "dup_count": 1,
+   "summary": "인텔 쇼크 우려를 딛고 코스피가 2% 넘게 상승 마감했다."
+  },
+  {
+   "title": "두산에너빌리티 주가, 11월 첫 거래일 웃었다...대외 변수도 주목",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=622206",
+   "source": "cbci.co.kr",
+   "published": "2026-11-03T00:16:00+09:00",
+   "dup_count": 0,
+   "summary": "두산에너빌리티가 1.82% 오른 55800원에 첫 거래일을 마감했다."
+  },
+  {
+   "title": "2028년부터 주식 결제 하루 단축... 외국인 새벽환전 과제",
+   "url": "https://www.kmib.co.kr/article/20261102502040",
+   "source": "kmib.co.kr",
+   "published": "2026-11-03T00:15:00+09:00",
    "dup_count": 2,
-   "summary": "미국 반도체주 급락 여파로 삼성전자와 SK하이닉스가 장 초반 하락했다."
+   "summary": "이날 코스피는 전 거래일보다 128.34포인트(2.24%) 오른 5859.08에 마감했다. 일본 낸드플래시 업체 키옥시아가 실적 전망에 대한 실망감으로 15.78"
   },
   {
-   "title": "증시 흔들려도 버틴 보험株...금리·배당이 살렸다",
-   "url": "https://www.imaeil.com/page/view/2026110210134678782",
-   "source": "imaeil.com",
-   "published": "2026-11-02T10:18:00+09:00",
-   "dup_count": 0,
-   "summary": "변동성 장세에서 기관이 2164억 원 순매수하며 보험주가 선방했다."
-  },
-  {
-   "title": "미국 증시 9% 조정 온다? 모건스탠리 '엄청난 기회'",
-   "url": "https://www.ppss.kr/news/articleView.html?idxno=318452",
-   "source": "ppss.kr",
-   "published": "2026-11-02T10:18:00+09:00",
-   "dup_count": 0,
-   "summary": "모건스탠리는 미국 중간선거 이후 증시가 강세를 보일 것으로 전망했다."
-  },
-  {
-   "title": "미국發 기술주 쇼크에 중간선거까지...코스피 변동성 주의보",
-   "url": "https://www.imaeil.com/page/view/2026110210022565493",
-   "source": "imaeil.com",
-   "published": "2026-11-02T10:16:00+09:00",
-   "dup_count": 3,
-   "summary": "미국 기술주 조정과 중간선거 불확실성으로 코스닥이 724.38로 내렸다."
-  },
-  {
-   "title": "수출 1조 달러 문턱, 반도체가 절반 끌었다...에너지 수입 부담도 확대",
-   "url": "https://www.tfmedia.co.kr/news/article.html?no=208561",
-   "source": "tfmedia.co.kr",
-   "published": "2026-11-02T10:16:00+09:00",
-   "dup_count": 0,
-   "summary": "10월 누적 수출이 9300억 달러에 육박하며 반도체가 절반을 이끌었다."
-  },
-  {
-   "title": "[서울데이터랩] 코스닥, 장 초반 낙폭 만회하며 725.45...외국인·기관 순...",
-   "url": "https://www.seoul.co.kr/news/economy/securities/2026/11/02/20261102500043?wlog_tag3=naver",
-   "source": "seoul.co.kr",
-   "published": "2026-11-02T10:15:00+09:00",
-   "dup_count": 0,
-   "summary": "코스닥은 외인과 기관 매수로 낙폭을 줄여 725.45로 마감했다."
-  },
-  {
-   "title": "美 기술주 급락에도 코스피 ‘선방’...1% 하락 뒤집고 상승전환",
-   "url": "https://www.segye.com/newsView/20261102505142?OutUrl=naver",
-   "source": "segye.com",
-   "published": "2026-11-02T10:14:00+09:00",
-   "dup_count": 0,
-   "summary": "인텔 급락에도 기관이 4159억 원 순매수해 코스피가 상승 반전했다."
-  },
-  {
-   "title": "수출 1조 달러 눈앞에 둔 한국...'일자리·근로 실질소득·시장 다변화'...",
-   "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4116088",
-   "source": "news.bbsi.co.kr",
-   "published": "2026-11-02T10:14:00+09:00",
-   "dup_count": 0,
-   "summary": "대미 무역흑자가 1000억 달러를 돌파하며 통상 압박 우려가 커졌다."
-  },
-  {
-   "title": "치킨값 벌어보자...'동원파츠' 청약 시작",
-   "url": "https://www.wikitree.co.kr/articles/1170975",
-   "source": "wikitree.co.kr",
-   "published": "2026-11-02T10:10:00+09:00",
-   "dup_count": 0,
-   "summary": "동원파츠는 11월 3일 일반 공모 청약을 마감하고 코스닥에 상장한다."
-  },
-  {
-   "title": "\"미 반도체 한파에 주춤\"... 코스피, 하락 출발 후 낙폭 줄이며 5,650선 공...",
-   "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=396764",
-   "source": "fntoday.co.kr",
-   "published": "2026-11-02T10:08:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피는 미국 기술주 부진 속 외인과 기관 매수로 낙폭을 줄였다."
-  },
-  {
-   "title": "[경제, 알고 보면] 미국 중간선거에 세계 금융시장이 주목하는 이유",
-   "url": "https://www.polinews.co.kr/news/articleView.html?idxno=747418",
-   "source": "polinews.co.kr",
-   "published": "2026-11-02T10:08:00+09:00",
+   "title": "조선 ETF 15%·전력 ETN 16% 급등...레버리지 강세",
+   "url": "http://www.kjdaily.com/article.php?aid=1793632261690990276",
+   "source": "kjdaily.com",
+   "published": "2026-11-03T00:14:00+09:00",
    "dup_count": 1,
-   "summary": "미국 중간선거 투표가 3일 마감되며 달러와 국제 금융시장이 주목한다."
+   "summary": "미국 반도체주 급락에도 조선 ETF와 전력 ETN이 급등했다."
+  },
+  {
+   "title": "삼성전자우 주가 1.67% 상승...외국인 950억원 순매도",
+   "url": "http://www.kjdaily.com/article.php?aid=1793632055691077276",
+   "source": "kjdaily.com",
+   "published": "2026-11-03T00:10:00+09:00",
+   "dup_count": 1,
+   "summary": "기관 매수세에 힘입어 삼성전자우 등 코스피가 상승 마감했다."
+  },
+  {
+   "title": "주식 회전율 50% 이상 6개...급등·급락 종목 손바뀜 활발",
+   "url": "http://www.kjdaily.com/article.php?aid=1793631902691075276",
+   "source": "kjdaily.com",
+   "published": "2026-11-03T00:08:00+09:00",
+   "dup_count": 1,
+   "summary": "증시 변동성 속 일부 종목에서 활발한 손바뀜이 나타났다."
+  },
+  {
+   "title": "원주 수출 실적 5년 연속 10억달러 돌파",
+   "url": "https://www.kado.net/news/articleView.html?idxno=2082227",
+   "source": "kado.net",
+   "published": "2026-11-03T00:08:00+09:00",
+   "dup_count": 0,
+   "summary": "원주 수출 실적이 의료기기와 반도체에 힘입어 5년 연속 10억달러를 돌파했다."
+  },
+  {
+   "title": "美나스닥 반등·유가 6% 급락...코스피 2.24% 상승에도 외국인 '삼전닉스...",
+   "url": "https://www.greened.kr/news/articleView.html?idxno=353679",
+   "source": "greened.kr",
+   "published": "2026-11-03T00:03:00+09:00",
+   "dup_count": 3,
+   "summary": "외국인의 매도에도 기관 매수로 코스피가 2.24% 상승 마감했다."
+  },
+  {
+   "title": "[더페어 돋보기] 4분기 증시 구원투수 '주도 3인방'...반도체·조선·바이...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=92777",
+   "source": "thefairnews.co.kr",
+   "published": "2026-11-03T00:02:00+09:00",
+   "dup_count": 0,
+   "summary": "4분기 증시 주도 업종으로 반도체, 조선, 바이오가 꼽혔다."
+  },
+  {
+   "title": "[증시 프리즘] 변동성 파고속 '상저하고' 시험대...증권가, 4분기 코스피...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=92776",
+   "source": "thefairnews.co.kr",
+   "published": "2026-11-03T00:02:00+09:00",
+   "dup_count": 0,
+   "summary": "증권가들은 4분기 코스피가 실적 방어력을 바탕으로 등락할 것으로 예상했다."
+  },
+  {
+   "title": "[사진] 코스피·코스닥 동반 상승",
+   "url": "https://www.joongang.co.kr/article/25475125",
+   "source": "joongang.co.kr",
+   "published": "2026-11-03T00:01:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피와 코스닥 지수가 동반 상승하며 정규장을 마감했다."
+  },
+  {
+   "title": "금리 올라도 NIM은 뒷걸음...4대 은행 '조달비용 전쟁' 전망",
+   "url": "https://news.tf.co.kr/read/economy/2383580.htm",
+   "source": "news.tf.co.kr",
+   "published": "2026-11-03T00:01:00+09:00",
+   "dup_count": 0,
+   "summary": "기준금리 인상에도 4대 은행의 조달비용 증가로 NIM은 뒷걸음질 쳤다."
+  },
+  {
+   "title": "[전규열의 경제포커스] 세계 2위 경상흑자, 환호하기엔 이르다",
+   "url": "https://www.polinews.co.kr/news/articleView.html?idxno=747512",
+   "source": "polinews.co.kr",
+   "published": "2026-11-03T00:00:00+09:00",
+   "dup_count": 0,
+   "summary": "한국의 수출 실적이 반도체와 대미 흑자에 더욱 쏠리고 있다."
+  },
+  {
+   "title": "\"올해는 인내의 시간...내년 증시, HBM 실적 레벨업으로 재평가\"",
+   "url": "https://www.newsis.com/view/NISX20261102_0003850759",
+   "source": "newsis.com",
+   "published": "2026-11-03T00:00:00+09:00",
+   "dup_count": 0,
+   "summary": "전문가들은 내년 증시가 HBM 실적 레벨업으로 재평가될 것으로 전망했다."
+  },
+  {
+   "title": "[저PBR주 강세 마감] 현대제철 11%·롯데쇼핑 9% 급등...낮은 밸류에이션...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=622294",
+   "source": "cbci.co.kr",
+   "published": "2026-11-02T23:40:00+09:00",
+   "dup_count": 1,
+   "summary": "저PBR주로 지정된 151개 종목 중 76%가 상승 마감했다."
+  },
+  {
+   "title": "[증권가H] 딜로이트, 파트너 직급 개편/김승연 넥스트증권 대표 연임 등",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=879067",
+   "source": "hansbiz.co.kr",
+   "published": "2026-11-02T23:12:00+09:00",
+   "dup_count": 0,
+   "summary": "산업은행 자회사 산은인프라자산운용이 전주사무소를 열었다."
+  },
+  {
+   "title": "저PBR 기업 공개하자 151곳 중 115곳 올랐다...현대제철 11.6% 급등",
+   "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=304043",
+   "source": "newsquest.co.kr",
+   "published": "2026-11-02T23:10:00+09:00",
+   "dup_count": 1,
+   "summary": "저PBR 기업 명단 공개 후 현대제철 등 115개 종목이 상승했다."
+  },
+  {
+   "title": "[주춘렬 칼럼] 반도체 돈벼락, 재앙의 불씨 될 수도",
+   "url": "https://www.segye.com/newsView/20261102515909?OutUrl=naver",
+   "source": "segye.com",
+   "published": "2026-11-02T22:57:00+09:00",
+   "dup_count": 0,
+   "summary": "삼성전자와 SK하이닉스의 호실적 속 메모리 정점과 AI 거품 우려도 제기됐다."
+  },
+  {
+   "title": "'인텔 쇼크' 딛고 반등...코스피 5,800선 회복",
+   "url": "https://www.ytn.co.kr/_ln/0102_202611022256264064",
+   "source": "ytn.co.kr",
+   "published": "2026-11-02T22:56:00+09:00",
+   "dup_count": 2,
+   "summary": "코스피가 장 초반 낙폭을 딛고 5,800선을 회복했다."
+  },
+  {
+   "title": "‘저PBR’ 낙인이 오히려 호재?...주가 ‘11%’ 깜짝 급등, 알짜 기업들 ...",
+   "url": "https://biz.heraldcorp.com/article/10922975?ref=naver",
+   "source": "biz.heraldcorp.com",
+   "published": "2026-11-02T22:41:00+09:00",
+   "dup_count": 1,
+   "summary": "저PBR 낙인 효과로 현대제철 등 알짜 기업 주가가 급등했다."
+  },
+  {
+   "title": "운명의 美 중간선거 ‘카운트다운’...트럼프 2기 후반전 방향 갈린다 [...",
+   "url": "https://www.mk.co.kr/article/12194001",
+   "source": "mk.co.kr",
+   "published": "2026-11-02T22:35:00+09:00",
+   "dup_count": 0,
+   "summary": "미국 중간선거 결과에 따라 국내 자동차, 배터리, 반도체 기업이 영향을 받을 전망이다."
+  },
+  {
+   "title": "[원달러 환율 상승] 코스피 2%대 반등 속 원/달러 환율 9.5원 오른 1,343....",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=622288",
+   "source": "cbci.co.kr",
+   "published": "2026-11-02T22:30:00+09:00",
+   "dup_count": 2,
+   "summary": "코스피가 2%대 반등한 가운데 원/달러 환율은 9.5원 올랐다."
+  },
+  {
+   "title": "저PBR 기업 76% 주가 상승...현대제철 11.6% 급등",
+   "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=54213",
+   "source": "koreareport.co.kr",
+   "published": "2026-11-02T22:18:00+09:00",
+   "dup_count": 1,
+   "summary": "저PBR 기업으로 공표된 151개 종목 중 115개 종목의 주가가 상승했다."
+  },
+  {
+   "title": "뉴욕증시 프리뷰, 주가 선물 상승...AI 기술주 반등·유가 급락에 투자심...",
+   "url": "https://www.newspim.com/news/view/20261102001629",
+   "source": "newspim.com",
+   "published": "2026-11-02T22:12:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피는 상승 마감한 반면 일본 닛케이225지수는 하락 마감했다."
+  },
+  {
+   "title": "[코스피 반등 마감] SK하이닉스 3.8%·삼성전자 1.8% 상승...기관 매수세...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=622286",
+   "source": "cbci.co.kr",
+   "published": "2026-11-02T22:10:00+09:00",
+   "dup_count": 3,
+   "summary": "기관 매수세에 힘입어 SK하이닉스와 삼성전자가 상승 마감했다."
+  },
+  {
+   "title": "\"반도체 끝났나\" 했는데...'삼전닉스' 급반등하자 나온 전망 [종목+]",
+   "url": "https://www.hankyung.com/article/2026110208686",
+   "source": "hankyung.com",
+   "published": "2026-11-02T22:01:00+09:00",
+   "dup_count": 1,
+   "summary": "기관과 기타법인의 순매수로 삼성전자와 SK하이닉스가 반등했다."
+  },
+  {
+   "title": "[빅테크 부진 충격 선반영] 삼성전자·SK하이닉스, 장 초반 약세 딛고 상...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=622283",
+   "source": "cbci.co.kr",
+   "published": "2026-11-02T22:00:00+09:00",
+   "dup_count": 1,
+   "summary": "삼성전자는 전 거래일 대비 1.78% 오른 22만9천원에, SK하이닉스는 3.81% 상승한 147만2천원에 각각 마감했다.... 지난주 금요일 코스피가 3.48%"
+  },
+  {
+   "title": "[심층] '10월 두자릿수 하락' 코스피 반등?...운명의 11월 '연말 랠리' 분...",
+   "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=817891",
+   "source": "startuptoday.co.kr",
+   "published": "2026-11-02T22:00:00+09:00",
+   "dup_count": 0,
+   "summary": "11월 증시는 정치 불확실성 완화와 반도체 실적에 따라 회복될 전망이다."
+  },
+  {
+   "title": "급락장에도 개미들의 '레버리지 매수'는 통했다",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=879060",
+   "source": "hansbiz.co.kr",
+   "published": "2026-11-02T21:56:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피 급락장에서도 개인의 레버리지 매수세가 유입되었다."
   }
  ]
 }
