@@ -1,749 +1,645 @@
 {
- "updated_at": "2026-11-04T11:42:15.365121+09:00",
+ "updated_at": "2026-11-05T02:01:33.540028+09:00",
  "event_notes": {
-  "why": "미국 중간선거를 앞두고 위험회피 심리가 확산된 가운데 외국인 투자자들이 1조원대 순매도를 기록하면서 코스피는 3.59%, 코스닥은 4.08% 급락했다. 애플과 AMD의 지원사격에도 불구하고 반도체 투심 회복이 역부족이었던 영향으로 반도체(-6.16%)와 2차전지(-6.6%) 등 주요 성장주 업종의 낙폭이 컸다. 또한 AI 투자 기대 흔들림과 추가 금리 인상 우려 등이 겹치면서 증시 전반의 변동성이 확대된 것으로 보인다.",
-  "watch": "미국 중간선거 결과에 따른 정치적 불확실성 해소 여부와 함께 외국인 수급 동향 및 IMF와 BIS 등이 경고한 글로벌 금융 불안 경로를 주시해야 한다. 또한 신현송이 지목한 성장과 물가 지표에 따른 추가 금리 인상 가능성도 계속 지켜봐야 할 요인이다."
+  "why": "미국 중간선거에서 민주당 의회 장악과 블루쓰나미 우려로 투자 심리가 위축되면서 코스피와 코스닥 지수가 각각 3.59%와 4.08% 급락하는 등 장중 큰 변동성을 겪었다. 다만 선거 영향이 단기적일 것이라는 분석과 함께 미 중간선거 충격을 극복하려는 저가 매수세가 유입되면서 코스피는 마감 동향 기준으로 0.62% 반등 마감했다. 업종별로는 태양광과 ESS, 이차전지 ETF 등이 14%대 급등세를 보이고 2차전지 업종이 7.81% 상승한 반면, 의회 권력 재편과 AI 규제 그늘 및 외국인 순매도가 겹친 반도체와 일부 종목은 장중 급등락 끝에 약세를 보인 것으로 보인다.",
+  "watch": "중간선거 이후 관세 정책과 AI 규제 등 미국의 향후 정책 변화가 증시에 미칠 파장을 주시해야 한다. 또한 환율 움직임과 외국인 수급 추이가 지속될지 확인해야 한다."
  },
  "clusters": [
   {
-   "title": "미국 중간선거와 외국인 매도에 따른 코스피 급락",
+   "title": "미국 중간선거와 증시 영향",
    "sources": [
-    "ajunews.com",
-    "biz.newdaily.co.kr",
-    "biz.sbs.co.kr",
-    "hankyung.com",
-    "it.chosun.com",
-    "moneystorm.kr",
-    "namdonews.com",
-    "news1.kr",
+    "cbci.co.kr",
+    "edaily.co.kr",
+    "joongang.co.kr",
+    "kjdaily.com",
+    "newskr.kr",
+    "obsnews.co.kr",
     "ppss.kr",
-    "sedaily.com",
-    "sisajournal.com",
-    "startuptoday.co.kr",
-    "viewsnnews.com"
+    "thefairnews.co.kr",
+    "thescoop.co.kr",
+    "topstarnews.net",
+    "vegannews.co.kr",
+    "ytn.co.kr"
    ],
-   "count": 14,
+   "count": 15,
    "items": [
     {
-     "title": "코스피, 상승 반납하고 하락 전환...외국인 1.2조 '팔자'",
-     "url": "https://www.hankyung.com/article/2026110451136",
-     "source": "hankyung.com",
-     "published": "2026-11-04T11:08:00+09:00",
+     "title": "중간선거 경계에 증시 '출렁'...\"영향 단기적일 듯\"",
+     "url": "https://www.ytn.co.kr/_ln/0102_202611050105056253",
+     "source": "ytn.co.kr",
+     "published": "2026-11-05T01:05:00+09:00",
      "dup_count": 2,
-     "summary": "코스피가 장초반 2%대 상승을 반납하고 외인 1.2조원 매도에 하락 마감했다."
+     "summary": "중간선거 여파로 코스피가 큰 폭으로 출렁였으나 0.6% 상승 마감했다."
     },
     {
-     "title": "[오늘증시] 코스피 반등 무산...美반도체 훈풍에도 5600선 턱걸이",
-     "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=818034",
-     "source": "startuptoday.co.kr",
-     "published": "2026-11-04T10:50:00+09:00",
+     "title": "의회는 뒤집혔지만 관세 칼자루는 그대로...반도체엔 'AI 규제' 그늘",
+     "url": "http://www.newskr.kr/news/articleView.html?idxno=107714",
+     "source": "newskr.kr",
+     "published": "2026-11-05T00:22:00+09:00",
      "dup_count": 2,
-     "summary": "AI 투자 수익성 우려가 재부각되면서 반도체 업종 중심의 코스피 반등이 무산됐다."
+     "summary": "미 의회 구도 변화 속에서도 반도체엔 AI 규제 그늘이 드리워졌다."
     },
     {
-     "title": "[장중시황] 코스피 5500선까지 밀려...코스닥 700선 붕괴",
-     "url": "https://www.ajunews.com/view/20261104104842545",
-     "source": "ajunews.com",
-     "published": "2026-11-04T10:50:00+09:00",
+     "title": "[코스피 마감 동향] 미 중간선거 충격 극복하고 0.62% 반등 마감...외인...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=623225",
+     "source": "cbci.co.kr",
+     "published": "2026-11-05T00:16:00+09:00",
      "dup_count": 2,
-     "summary": "외국인과 기관의 매도 공세에 코스닥지수가 하루 만에 700선 아래로 붕괴됐다."
+     "summary": "코스닥은 미 중간선거 충격을 극복하고 1.50% 상승 마감했다."
     },
     {
-     "title": "삼전·닉스, 美 중간선거 불확실성에 장중 하락 전환",
-     "url": "https://it.chosun.com/news/articleView.html?idxno=3000000000213",
-     "source": "it.chosun.com",
-     "published": "2026-11-04T11:08:00+09:00",
-     "dup_count": 1,
-     "summary": "미 중간선거 불확실성으로 삼성전자와 SK하이닉스가 장중 하락세로 전환했다."
+     "title": "[환율 마감] 원/달러 환율 1,341.5원 마감...미 중간선거 민주당 의회 장...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=623220",
+     "source": "cbci.co.kr",
+     "published": "2026-11-05T00:10:00+09:00",
+     "dup_count": 2,
+     "summary": "원·달러 환율은 미 중간선거 여파로 1,341.5원에 마감했다."
     },
     {
-     "title": "코스피 이틀째 하락...5500선도 위태",
-     "url": "https://biz.sbs.co.kr/article_hub/20000344151?division=NAVER",
-     "source": "biz.sbs.co.kr",
-     "published": "2026-11-04T11:37:00+09:00",
-     "dup_count": 0,
-     "summary": "외국인의 1조원대 순매도에 코스피가 이틀째 하락하며 5500선이 위태롭다."
+     "title": "‘블루쓰나미’ 앞 AI 데이터센터...아시아 증시 혼란",
+     "url": "https://www.joongang.co.kr/article/25475857",
+     "source": "joongang.co.kr",
+     "published": "2026-11-05T00:02:00+09:00",
+     "dup_count": 2,
+     "summary": "AI 데이터센터 규제 우려로 아시아 증시가 큰 혼란을 겪었다."
     },
     {
-     "title": "美 중간선거 '블루웨이브' 공포에 코스피 급락 반전 ... 반도체·바이오...",
-     "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/04/2026110400170.html",
-     "source": "biz.newdaily.co.kr",
-     "published": "2026-11-04T11:32:00+09:00",
-     "dup_count": 0,
-     "summary": "미국 중간선거 공포에 외국인 매도가 쏟아지며 코스피가 급락 반전했다."
-    },
-    {
-     "title": "[食전食후] 코스피 5500선 위태...외국인 1조원대 매도에 양대 지수 급락",
-     "url": "https://www.ajunews.com/view/20261104112516702",
-     "source": "ajunews.com",
-     "published": "2026-11-04T11:32:00+09:00",
-     "dup_count": 0,
-     "summary": "외국인 1조원대 매도세로 코스피 5500선이 위협받으며 양대 지수가 급락했다."
-    },
-    {
-     "title": "[시황] 코스피, 외국인 1조원대 매도에 하락 전환...5,550선",
-     "url": "https://www.namdonews.com/news/articleView.html?idxno=928134",
-     "source": "namdonews.com",
-     "published": "2026-11-04T11:28:00+09:00",
-     "dup_count": 0,
-     "summary": "미국 정치 상황과 글로벌 변동성으로 코스피가 1조원대 외인 매도에 하락했다."
-    },
-    {
-     "title": "美 선거 '위험회피' 외인 1조 '팔자'...코스피 5500선까지 밀려[장중시황...",
-     "url": "https://www.news1.kr/finance/market-exr/6342593",
-     "source": "news1.kr",
-     "published": "2026-11-04T11:24:00+09:00",
-     "dup_count": 0,
-     "summary": "미 중간선거 개표 결과의 영향으로 외국인 1조원 매도가 코스피를 밀어내렸다."
-    },
-    {
-     "title": "코스피, 3%대 급등 후 상승폭 축소...외국인 매도에 5700선 등락",
-     "url": "https://www.ppss.kr/news/articleView.html?idxno=318985",
+     "title": "코스피, 장중 400포인트 넘게 출렁...외국인 2조5000억 매도에도 상승 마...",
+     "url": "https://www.ppss.kr/news/articleView.html?idxno=319144",
      "source": "ppss.kr",
-     "published": "2026-11-04T11:10:00+09:00",
-     "dup_count": 0,
-     "summary": "코스닥시장에서는 외국인과 기관이 각각 470억원, 158억원을 순매도한 반면 개인은 787억원을 순매수했다. 한편 최근 국내 증시는 미국 기술주 움직임과 외국인 "
+     "published": "2026-11-04T22:32:00+09:00",
+     "dup_count": 2,
+     "summary": "코스피가 장중 400포인트 넘게 흔들렸으나 개인과 기관이 방어했다."
     },
     {
-     "title": "[증시 프리즘] 코스피, 2%대 급락 전환...외국인 8천억원대 매도에 상승...",
-     "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8037",
-     "source": "moneystorm.kr",
-     "published": "2026-11-04T10:57:00+09:00",
-     "dup_count": 0,
-     "summary": "저가 매수세로 강세 출발했던 코스피가 외국인과 기관의 매도에 2%대 급락했다."
+     "title": "[美중간선거] 격동의 팍스 아메리카나...트럼프 '일방통행' 제동, 세계질...",
+     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16268510",
+     "source": "topstarnews.net",
+     "published": "2026-11-04T21:02:00+09:00",
+     "dup_count": 1,
+     "summary": "미 중간선거 결과 확인 후 한국 금융시장이 급격한 변동을 보였다."
     },
     {
-     "title": "3% 급등하더니 하락 반전...美 중간선거에 코스피 '롤러코스터'",
-     "url": "https://www.sisajournal.com/news/articleView.html?idxno=392781",
-     "source": "sisajournal.com",
-     "published": "2026-11-04T10:56:00+09:00",
+     "title": "코스피 하루 변동률 7.23%...3개월 만에 최고",
+     "url": "http://www.kjdaily.com/article.php?aid=1793806591691236276",
+     "source": "kjdaily.com",
+     "published": "2026-11-05T00:38:00+09:00",
      "dup_count": 0,
-     "summary": "미 중간선거 개표 속 민주당 우세에 코스피가 3% 급등 후 5525선으로 밀렸다."
+     "summary": "'한국형 공포지수'로 불리는 코스피200 변동성지수(VKOSPI)도 상승했다. 이날 VKOSPI는 전 거래일보다 1.96포인트(3.62%) 오른 56.04로 마감"
     },
     {
-     "title": "美 중간선거 경계감에 ‘출렁’...코스피, 5600선 아래로 [마켓시그널]",
-     "url": "https://www.sedaily.com/article/20110037?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-11-04T10:51:00+09:00",
+     "title": "5000달러 준대도 안 통했다...미국 선거 휩쓴 먹사니즘",
+     "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=312173",
+     "source": "thescoop.co.kr",
+     "published": "2026-11-05T00:25:00+09:00",
      "dup_count": 0,
-     "summary": "미국 반도체주 강세에도 중간선거 경계감에 코스피가 5600선 아래로 밀려났다."
+     "summary": "AI 호황에도 서민 살림살이가 나아지지 않는 경제적 모순이 지적됐다."
     },
     {
-     "title": "외국인 '팔자'로 돌아서자 코스피 5,500대로 폭삭",
-     "url": "https://www.viewsnnews.com/article?q=239476",
-     "source": "viewsnnews.com",
-     "published": "2026-11-04T10:48:00+09:00",
+     "title": "[더페어 돋보기] 미 중간선거·실적 반등 모멘텀 접목...K-증시, 불확실성...",
+     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=93057",
+     "source": "thefairnews.co.kr",
+     "published": "2026-11-05T00:00:00+09:00",
      "dup_count": 0,
-     "summary": "외국인이 '팔자'로 돌아서며 장중 코스피지수가 5500대까지 급락했다."
+     "summary": "K-증시가 미 중간선거와 실적 반등 모멘텀으로 불확실성을 소화했다."
+    },
+    {
+     "title": "코스피 2.43% 상승 출발...급락 뒤 5683.80 마감",
+     "url": "https://www.vegannews.co.kr/news/article.html?no=400615",
+     "source": "vegannews.co.kr",
+     "published": "2026-11-04T23:36:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피는 4일 137.34포인트(2.43%) 오른 5786.13으로 출발했지만 장중 급락한 뒤 상승 마감했다. 삼성전자와 SK하이닉스도 장 초반 각각 3%대와 5"
+    },
+    {
+     "title": "[국제유가 전망] 美민주당 상·하원 장악에 이란전쟁 종식 기대...브렌트...",
+     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16268560",
+     "source": "topstarnews.net",
+     "published": "2026-11-04T21:56:00+09:00",
+     "dup_count": 0,
+     "summary": "미 민주당 상하원 장악과 이란전쟁 종식 기대가 유가에 영향을 미쳤다."
+    },
+    {
+     "title": "미국 뉴욕증시 전망, 민주당 상·하원 장악에 선물 급락 후 반등...나스...",
+     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16268553",
+     "source": "topstarnews.net",
+     "published": "2026-11-04T21:42:00+09:00",
+     "dup_count": 0,
+     "summary": "뉴욕증시는 선거 불확실성 해소와 AI 규제 우려가 충돌했다."
+    },
+    {
+     "title": "美 중간선거 여파에 일본 증시도 하락...닛케이 1.4%↓",
+     "url": "https://www.edaily.co.kr/News/Read?newsId=06671526645642440&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+     "source": "edaily.co.kr",
+     "published": "2026-11-04T21:26:00+09:00",
+     "dup_count": 0,
+     "summary": "미 중간선거 여파로 일본 닛케이지수도 1.4% 하락 마감했다."
+    },
+    {
+     "title": "미 민주당 약진, AI 투자 우려에 '아시아 증시 출렁'",
+     "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1542704",
+     "source": "obsnews.co.kr",
+     "published": "2026-11-04T20:52:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피는 한때 3.2% 올랐다가 오후들어 3.8% 급락하는 롤러코스터 장세를 펼친 끝에 0.62% 상승하며 장을 마감했습니다. 일본 닛케이225지수도 장중 한때 "
     }
    ]
   },
   {
-   "title": "반도체 투자 심리 및 업황",
+   "title": "신재생에너지 및 이차전지 관련주 급등",
    "sources": [
-    "dailypop.kr",
-    "economist.co.kr"
+    "econonews.co.kr",
+    "kjdaily.com",
+    "vegannews.co.kr"
+   ],
+   "count": 6,
+   "items": [
+    {
+     "title": "이차전지 ETF·ETN 14%대 급등...태양광·ESS도 두 자릿수↑",
+     "url": "http://www.kjdaily.com/article.php?aid=1793806808691241276",
+     "source": "kjdaily.com",
+     "published": "2026-11-05T00:42:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피 변동 속 이차전지와 태양광 등 관련 ETF가 14%대 급등했다."
+    },
+    {
+     "title": "삼성SDI 주가 11.57% 급등...외국인·기관 1천340억 순매수",
+     "url": "http://www.kjdaily.com/article.php?aid=1793804724691333276",
+     "source": "kjdaily.com",
+     "published": "2026-11-05T00:24:00+09:00",
+     "dup_count": 1,
+     "summary": "삼성SDI 주가가 이차전지 강세로 11.57% 급등 마감했다."
+    },
+    {
+     "title": "코스피·코스닥 동반 상승...LG엔솔 5%·에코프로 9%↑",
+     "url": "https://www.vegannews.co.kr/news/article.html?no=400619",
+     "source": "vegannews.co.kr",
+     "published": "2026-11-04T23:46:00+09:00",
+     "dup_count": 1,
+     "summary": "코스닥은 10.56포인트(1.50%) 상승한 714.95로 장을 마감했다. 코스피 시장에서 LG에너지솔루션은 전 거래일보다 5.03% 오른 35만5000원에 마감"
+    },
+    {
+     "title": "한화솔루션 주가 18.64% 급등...거래대금 7.9배·시총 9,895억 증가",
+     "url": "http://www.kjdaily.com/article.php?aid=1793807875691334276",
+     "source": "kjdaily.com",
+     "published": "2026-11-05T01:00:00+09:00",
+     "dup_count": 0,
+     "summary": "한화솔루션 주가가 태양광 강세에 힘입어 18.64% 급등했다."
+    },
+    {
+     "title": "코스피, 강보합에 5600선 유지...LG에너지솔루션, 삼성바이오로직스 등...",
+     "url": "http://www.econonews.co.kr/news/articleView.html?idxno=446723",
+     "source": "econonews.co.kr",
+     "published": "2026-11-04T21:30:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피는 외인 순매도에도 개인과 기관의 매수로 5600선을 유지했다."
+    },
+    {
+     "title": "코스닥, 1%대 상승에 710선 회복...에코프로비엠, 에코프로 등 상승",
+     "url": "http://www.econonews.co.kr/news/articleView.html?idxno=446724",
+     "source": "econonews.co.kr",
+     "published": "2026-11-04T21:30:00+09:00",
+     "dup_count": 0,
+     "summary": "코스닥은 에코프로비엠 등의 상승으로 710선을 회복했다."
+    }
+   ]
+  },
+  {
+   "title": "개별 종목 및 스팩 주가 급등락",
+   "sources": [
+    "biz.heraldcorp.com",
+    "econonews.co.kr",
+    "kjdaily.com",
+    "vegannews.co.kr"
+   ],
+   "count": 6,
+   "items": [
+    {
+     "title": "아이엠스팩1호 회전율 1,376%...한진칼우도 220% 돌파",
+     "url": "http://www.kjdaily.com/article.php?aid=1793804861691331276",
+     "source": "kjdaily.com",
+     "published": "2026-11-05T00:10:00+09:00",
+     "dup_count": 1,
+     "summary": "아이엠스팩1호가 높은 회전율을 기록하며 공모가 아래로 마감했다."
+    },
+    {
+     "title": "[상한가 종목] 대명에너지-아리바이오홀딩스 이어 케이엔알시스템 등 마...",
+     "url": "http://www.econonews.co.kr/news/articleView.html?idxno=446721",
+     "source": "econonews.co.kr",
+     "published": "2026-11-04T21:30:00+09:00",
+     "dup_count": 1,
+     "summary": "케이엔알시스템과 대명에너지 등이 상한가를 기록하며 마감했다."
+    },
+    {
+     "title": "아리바이오홀딩스·대명에너지 등 5개 종목 29%대 급등",
+     "url": "http://www.kjdaily.com/article.php?aid=1793794387691330276",
+     "source": "kjdaily.com",
+     "published": "2026-11-04T21:14:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피가 4% 넘게 급락 후 반등한 가운데 태양광과 배터리가 급등했다."
+    },
+    {
+     "title": "삼성전기 주가 10만9천원 출렁...외국인 1천183억 순매도",
+     "url": "http://www.kjdaily.com/article.php?aid=1793806405691332276",
+     "source": "kjdaily.com",
+     "published": "2026-11-05T00:36:00+09:00",
+     "dup_count": 0,
+     "summary": "삼성전기 주가가 장중 10만9천원 폭을 보이며 소폭 상승 마감했다."
+    },
+    {
+     "title": "이에스티, 코스닥 첫날 공모가 밑돌며 20% 하락",
+     "url": "https://www.vegannews.co.kr/news/article.html?no=400616",
+     "source": "vegannews.co.kr",
+     "published": "2026-11-04T23:38:00+09:00",
+     "dup_count": 0,
+     "summary": "장중 66.94% 상승 뒤 9890원에 마감 이에스티(495910)가 코스닥 상장 첫날인 4일 공모가 1만2400원보다 20.24% 낮은 9890원에 거래를 마쳤"
+    },
+    {
+     "title": "“하루만에 26% 폭락할 수” 한진칼 주식 투자, ‘널뛰기’ 주의해야 [투...",
+     "url": "https://biz.heraldcorp.com/article/10925769?ref=naver",
+     "source": "biz.heraldcorp.com",
+     "published": "2026-11-04T21:41:00+09:00",
+     "dup_count": 0,
+     "summary": "한진칼 주가가 호반그룹 인수 이슈 등으로 널뛰기를 보여 주의가 요구된다."
+    }
+   ]
+  },
+  {
+   "title": "삼성전자·SK하이닉스 등 반도체 종목 동향",
+   "sources": [
+    "cbci.co.kr",
+    "hankyung.com",
+    "kjdaily.com"
+   ],
+   "count": 4,
+   "items": [
+    {
+     "title": "코스피·코스닥 동반 상승...삼성전자·SK하이닉스 강세 HLB는 털썩, 미국...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=623293",
+     "source": "cbci.co.kr",
+     "published": "2026-11-05T00:26:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피와 코스닥이 장중 큰 변동성 끝에 동반 상승으로 마감했다."
+    },
+    {
+     "title": "[삼성전자·하닉 마감] 삼성전자·SK하이닉스, 장중 급등락 반복 끝에 약...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=623212",
+     "source": "cbci.co.kr",
+     "published": "2026-11-05T00:00:00+09:00",
+     "dup_count": 1,
+     "summary": "반도체株 장중 급등락...삼성전자·SK하이닉스 하락 마감 미국 증시에서 메모리 반도체 기업들의 강세와... 삼성전자와 SK하이닉스가 포함된 코스피 전기·전자 업종"
+    },
+    {
+     "title": "삼성전자·SK하이닉스 거래대금 80% 급증...외국인 1.9조 순매도",
+     "url": "http://www.kjdaily.com/article.php?aid=1793793011691326276",
+     "source": "kjdaily.com",
+     "published": "2026-11-04T20:52:00+09:00",
+     "dup_count": 1,
+     "summary": "삼성전자와 SK하이닉스는 장중 급등락 속 거래대금이 크게 늘었다."
+    },
+    {
+     "title": "또 '232조 돈방석' 예고 떴는데...삼전닉스 결국 뒤집힌 이유 [분석+]",
+     "url": "https://www.hankyung.com/article/2026110461576",
+     "source": "hankyung.com",
+     "published": "2026-11-04T22:01:00+09:00",
+     "dup_count": 0,
+     "summary": "미 반도체 실적 기대감에 힘입어 코스피가 5683.80에 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "풍산 주가 변동 및 분석",
+   "sources": [
+    "edaily.co.kr",
+    "hellot.net"
    ],
    "count": 2,
    "items": [
     {
-     "title": "[오늘의 삼전닉스] 애플·AMD '지원사격'에도 반도체 투심 회복 역부족",
-     "url": "https://economist.co.kr/article/view/ecn202611040017",
-     "source": "economist.co.kr",
-     "published": "2026-11-04T11:30:00+09:00",
-     "dup_count": 0,
-     "summary": "외국인 매도세로 돌아선 삼전닉스가 미국 증시 반등에도 이틀 연속 약세를 보였다."
+     "title": "[헬로스톡] 11/4 주목할 종목 : LG생활건강·풍산·비에이치·한국항공우...",
+     "url": "https://www.hellot.net/news/article.html?no=116041",
+     "source": "hellot.net",
+     "published": "2026-11-04T20:38:00+09:00",
+     "dup_count": 3,
+     "summary": "코스피는 미 중간선거에 따른 AI 투자 둔화 우려 속에도 상승했다."
     },
     {
-     "title": "반도체 호황에 기업 이익 급증...노동 보수 비중은 16년 만에 최저",
-     "url": "http://www.dailypop.kr/news/articleView.html?idxno=104078",
-     "source": "dailypop.kr",
-     "published": "2026-11-04T11:26:00+09:00",
+     "title": "\"113% 올랐었는데\"...15만원→5만원대 된 풍산, 매수해도 될까 [종목e슈]",
+     "url": "https://www.edaily.co.kr/News/Read?newsId=01082406645642768&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+     "source": "edaily.co.kr",
+     "published": "2026-11-05T00:02:00+09:00",
      "dup_count": 0,
-     "summary": "반도체 가격 급등으로 수출 디플레이터가 상승하며 기업 이익이 급증했다."
+     "summary": "풍산 주가가 하락세를 보이며 7년 만에 연간 하락을 기록할 전망이다."
     }
    ]
   },
   {
-   "title": "한국은행 기준금리 인상 및 물가·성장 전망",
+   "title": "기타 증시 전망 및 전문가 조언",
    "sources": [
-    "mediapen.com",
+    "kfenews.co.kr",
     "newsis.com"
    ],
    "count": 2,
    "items": [
     {
-     "title": "신현송이 지목한 성장·물가 나왔다...추가 금리 인상할까",
-     "url": "https://www.newsis.com/view/NISX20261104_0003854326",
+     "title": "\"현금 쥐고 기다려라...내년 상반기 기회 온다\" 김영익 교수의 조언",
+     "url": "https://www.newsis.com/view/NISX20261104_0003853968",
      "source": "newsis.com",
-     "published": "2026-11-04T11:30:00+09:00",
+     "published": "2026-11-05T00:00:00+09:00",
      "dup_count": 0,
-     "summary": "한은 금융통화위원회는 양호한 성장·물가 지표를 바탕으로 추가 금리를 고심한다."
+     "summary": "김영익 교수는 내년 상반기까지 현금을 쥐고 기회를 기다리라 조언했다."
     },
     {
-     "title": "물가·성장 모두 상방 압력...한은, 연말 금리 인상 카드 꺼내나",
-     "url": "https://www.mediapen.com/news/view/1135026",
-     "source": "mediapen.com",
-     "published": "2026-11-04T10:56:00+09:00",
+     "title": "[2026 국감 파이널] 재계, 신사업 투자부터 내부통제까지 '숙제'",
+     "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=667553",
+     "source": "kfenews.co.kr",
+     "published": "2026-11-04T20:40:00+09:00",
      "dup_count": 0,
-     "summary": "한은 금통위가 기준금리를 3.00%에서 3.25%로 인상할지 시장의 관심이 쏠린다."
-    }
-   ]
-  },
-  {
-   "title": "기후 목표 및 기후 거버넌스",
-   "sources": [
-    "esgeconomy.com",
-    "impacton.net"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "[COP31] 새 기후목표 다 지켜도 2035년 감축 6%...'1.5°C까지 필요한 감축...",
-     "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17148",
-     "source": "esgeconomy.com",
-     "published": "2026-11-04T11:26:00+09:00",
-     "dup_count": 0,
-     "summary": "제조업 비중이 높은 한국은 2035년 기후목표 달성을 위해 탈탄소화가 시급하다."
-    },
-    {
-     "title": "【인터뷰】메리엄 오미 아크 대표, \"한국 기업, 기후 거버넌스는 갖췄지...",
-     "url": "https://www.impacton.net/news/articleView.html?idxno=30520",
-     "source": "impacton.net",
-     "published": "2026-11-04T11:10:00+09:00",
-     "dup_count": 0,
-     "summary": "철강·화학·반도체 제조업 비중이 큰 한국은 기후 거버넌스와 재생에너지 제약이 크다."
-    }
-   ]
-  },
-  {
-   "title": "증시 변동성 및 미국 선거 이후 전망",
-   "sources": [
-    "ajunews.com",
-    "biz.heraldcorp.com"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "증시 변동성 확대...美 선거 뒤도 ‘롤러코스피’",
-     "url": "https://biz.heraldcorp.com/article/10925427?ref=naver",
-     "source": "biz.heraldcorp.com",
-     "published": "2026-11-04T11:22:00+09:00",
-     "dup_count": 0,
-     "summary": "미 중간선거에 따른 블루웨이브 전망과 정치적 불확실성이 증시 변동성을 키웠다."
-    },
-    {
-     "title": "[인문자의 미국 중간선거 이야기 | 인간·문화·자연] 중간선거 이후 미...",
-     "url": "https://www.ajunews.com/view/20261104105302567",
-     "source": "ajunews.com",
-     "published": "2026-11-04T11:02:00+09:00",
-     "dup_count": 0,
-     "summary": "AI 데이터센터 투자 확대는 삼성전자와 SK하이닉스의 HBM 수요를 증가시킨다."
-    }
-   ]
-  },
-  {
-   "title": "한진칼 지분 확보전과 주가 변동성",
-   "sources": [
-    "biz.heraldcorp.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "지분 확보전에 주가 연일 요동...변동성 확대 추격매수 주의보 [한진칼 ...",
-     "url": "https://biz.heraldcorp.com/article/10925484?ref=naver",
-     "source": "biz.heraldcorp.com",
-     "published": "2026-11-04T11:37:00+09:00",
-     "dup_count": 0,
-     "summary": "지분 확보전으로 한진칼 주가가 급등하며 개인 순매수 상위권에 올랐다."
-    }
-   ]
-  },
-  {
-   "title": "외국인·기관의 종목별 순매수 특징주",
-   "sources": [
-    "newstnt.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[특징주] 외국인 'HLB제약·한국전력', 기관 '래블업·삼성전자·한화솔...",
-     "url": "https://www.newstnt.com/news/articleView.html?idxno=726649",
-     "source": "newstnt.com",
-     "published": "2026-11-04T11:34:00+09:00",
-     "dup_count": 0,
-     "summary": "한국전력은 외인·기관이 모두 매수했고 삼성전자는 매매 방향이 엇갈렸다."
-    }
-   ]
-  },
-  {
-   "title": "AI 투자 기대감과 글로벌 금융 불안 위험 경로",
-   "sources": [
-    "dailyt.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "AI 투자 기대 흔들리면 금융불안 커질까...IMF·BIS가 짚은 위험 경로",
-     "url": "https://www.dailyt.co.kr/newsView/dlt202611040011",
-     "source": "dailyt.co.kr",
-     "published": "2026-11-04T11:34:00+09:00",
-     "dup_count": 0,
-     "summary": "글로벌 AI 설비투자 둔화가 국내 수출과 금융시장에 위험 요인으로 꼽힌다."
-    }
-   ]
-  },
-  {
-   "title": "환율 및 외국인 수급 동향",
-   "sources": [
-    "edaily.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "외국인 22조 팔고 개인은 해외로...수급 뚫은 원화 강세",
-     "url": "https://www.edaily.co.kr/News/Read?newsId=04031126645642440&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-     "source": "edaily.co.kr",
-     "published": "2026-11-04T11:32:00+09:00",
-     "dup_count": 0,
-     "summary": "반도체 수출 호조와 채권 자금 유입으로 원화 강세 흐름이 나타났다."
-    }
-   ]
-  },
-  {
-   "title": "전기차 생산세액공제 혜택",
-   "sources": [
-    "biz.heraldcorp.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "“전기차 생산세액공제 혜택, 국내 생산기반 강화에 큰 도움”",
-     "url": "https://biz.heraldcorp.com/article/10925450?ref=naver",
-     "source": "biz.heraldcorp.com",
-     "published": "2026-11-04T11:27:00+09:00",
-     "dup_count": 0,
-     "summary": "정부 세제개편안은 완성 전기차를 제외하고 이차전지·반도체 등을 포함했다."
-    }
-   ]
-  },
-  {
-   "title": "쿠팡 실적 및 투자 확대",
-   "sources": [
-    "busan.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "3년 간 번 돈, 9개월 만에 날린 쿠팡...대만·물류·상품 투자 늘린다",
-     "url": "https://www.busan.com/view/busan/view.php?code=2026110411223603990",
-     "source": "busan.com",
-     "published": "2026-11-04T11:25:00+09:00",
-     "dup_count": 0,
-     "summary": "쿠팡Inc의 3분기 영업손실이 6423억 원을 기록하며 대만 투자를 늘렸다."
-    }
-   ]
-  },
-  {
-   "title": "풍산 4분기 및 내년 실적 전망",
-   "sources": [
-    "ilovepc.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "풍산, 방산 부진 언제까지... 4분기도, 내년도 '마이너스 전망'",
-     "url": "https://www.ilovepc.co.kr/news/articleView.html?idxno=61191",
-     "source": "ilovepc.co.kr",
-     "published": "2026-11-04T11:22:00+09:00",
-     "dup_count": 0,
-     "summary": "풍산의 방산 부진 여파가 이어지며 4분기와 내년 실적 전망이 마이너스를 기록했다."
-    }
-   ]
-  },
-  {
-   "title": "금 시세 정보",
-   "sources": [
-    "gametoc.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[금시세] 18K는 얼마?",
-     "url": "https://www.gametoc.co.kr/news/articleView.html?idxno=112742",
-     "source": "gametoc.co.kr",
-     "published": "2026-11-04T11:18:00+09:00",
-     "dup_count": 0,
-     "summary": "한국거래소 금시장에서 순도 99.99% 금 1g은 16만8,970원에 마감했다."
-    }
-   ]
-  },
-  {
-   "title": "안철수 의원 주식 투자 차익",
-   "sources": [
-    "edaily.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "주가 바닥에 베팅한 안철수, 넉달 만에 88억 잭팟",
-     "url": "https://www.edaily.co.kr/News/Read?newsId=03978646645642440&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-     "source": "edaily.co.kr",
-     "published": "2026-11-04T11:16:00+09:00",
-     "dup_count": 0,
-     "summary": "안랩 주가 바닥에 베팅한 안철수의 지분이 넉달 만에 큰 평가이익을 기록했다."
-    }
-   ]
-  },
-  {
-   "title": "한국금융지주 실적 부진 및 목표주가 하향",
-   "sources": [
-    "ilovepc.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "한국금융지주 '우수수' ... 외환손실 -2000억, 순익 -48%, 목표주가 -30%",
-     "url": "https://www.ilovepc.co.kr/news/articleView.html?idxno=61196",
-     "source": "ilovepc.co.kr",
-     "published": "2026-11-04T11:16:00+09:00",
-     "dup_count": 0,
-     "summary": "반도체 수출 호조에 따른 환율 하락으로 한국금융지주 실적에 적신호가 켜졌다."
-    }
-   ]
-  },
-  {
-   "title": "미·중 AI 수출 및 제조업 혁신",
-   "sources": [
-    "mediapen.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[미디어펜 창간 15주년 특별기획9]美 AI 수출, 中 제조업 혁신...한국은...",
-     "url": "https://www.mediapen.com/news/view/1135036",
-     "source": "mediapen.com",
-     "published": "2026-11-04T11:08:00+09:00",
-     "dup_count": 0,
-     "summary": "중국 정부의 제조업 혁신 정책 속에서 한국의 AI 반도체 수출 전략이 주목받는다."
-    }
-   ]
-  },
-  {
-   "title": "코스피 장 초반 급등세",
-   "sources": [
-    "businesskorea.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[개장 시황] 코스피, 외국인·기관 순매수 속 장 초반 3% 이상 급등세 연...",
-     "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280413",
-     "source": "businesskorea.co.kr",
-     "published": "2026-11-04T11:06:00+09:00",
-     "dup_count": 4,
-     "summary": "지수 3%대 상승 폭을 지켜낼 수 있을지 여부가 오늘 장의 관전 포인트가 될 것\"*이라고 조언했다. 오늘 남은 장중 동안 탄탄한 수급을 바탕으로 코스피가 강세 마"
-    }
-   ]
-  },
-  {
-   "title": "NH투자증권 3분기 실적 및 배당 전망",
-   "sources": [
-    "economytalk.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[Q4 전망] '운용·IB·WM↑의 Q3' NH투자증권...\"배당수익률 8% 기대\"",
-     "url": "http://www.economytalk.kr/news/articleView.html?idxno=425075",
-     "source": "economytalk.kr",
-     "published": "2026-11-04T11:06:00+09:00",
-     "dup_count": 0,
-     "summary": "NH투자증권은 금리 인상 악조건 속에서도 보수적 채권 운용으로 손실을 최소화했다."
+     "summary": "재계는 신사업 투자와 함께 전력망 및 변전설비 확충 숙제를 안았다."
     }
    ]
   }
  ],
  "items": [
   {
-   "title": "지분 확보전에 주가 연일 요동...변동성 확대 추격매수 주의보 [한진칼 ...",
-   "url": "https://biz.heraldcorp.com/article/10925484?ref=naver",
-   "source": "biz.heraldcorp.com",
-   "published": "2026-11-04T11:37:00+09:00",
-   "dup_count": 0,
-   "summary": "지분 확보전으로 한진칼 주가가 급등하며 개인 순매수 상위권에 올랐다."
+   "title": "중간선거 경계에 증시 '출렁'...\"영향 단기적일 듯\"",
+   "url": "https://www.ytn.co.kr/_ln/0102_202611050105056253",
+   "source": "ytn.co.kr",
+   "published": "2026-11-05T01:05:00+09:00",
+   "dup_count": 2,
+   "summary": "중간선거 여파로 코스피가 큰 폭으로 출렁였으나 0.6% 상승 마감했다."
   },
   {
-   "title": "코스피 이틀째 하락...5500선도 위태",
-   "url": "https://biz.sbs.co.kr/article_hub/20000344151?division=NAVER",
-   "source": "biz.sbs.co.kr",
-   "published": "2026-11-04T11:37:00+09:00",
+   "title": "한화솔루션 주가 18.64% 급등...거래대금 7.9배·시총 9,895억 증가",
+   "url": "http://www.kjdaily.com/article.php?aid=1793807875691334276",
+   "source": "kjdaily.com",
+   "published": "2026-11-05T01:00:00+09:00",
    "dup_count": 0,
-   "summary": "외국인의 1조원대 순매도에 코스피가 이틀째 하락하며 5500선이 위태롭다."
+   "summary": "한화솔루션 주가가 태양광 강세에 힘입어 18.64% 급등했다."
   },
   {
-   "title": "[특징주] 외국인 'HLB제약·한국전력', 기관 '래블업·삼성전자·한화솔...",
-   "url": "https://www.newstnt.com/news/articleView.html?idxno=726649",
-   "source": "newstnt.com",
-   "published": "2026-11-04T11:34:00+09:00",
-   "dup_count": 0,
-   "summary": "한국전력은 외인·기관이 모두 매수했고 삼성전자는 매매 방향이 엇갈렸다."
-  },
-  {
-   "title": "AI 투자 기대 흔들리면 금융불안 커질까...IMF·BIS가 짚은 위험 경로",
-   "url": "https://www.dailyt.co.kr/newsView/dlt202611040011",
-   "source": "dailyt.co.kr",
-   "published": "2026-11-04T11:34:00+09:00",
-   "dup_count": 0,
-   "summary": "글로벌 AI 설비투자 둔화가 국내 수출과 금융시장에 위험 요인으로 꼽힌다."
-  },
-  {
-   "title": "美 중간선거 '블루웨이브' 공포에 코스피 급락 반전 ... 반도체·바이오...",
-   "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/04/2026110400170.html",
-   "source": "biz.newdaily.co.kr",
-   "published": "2026-11-04T11:32:00+09:00",
-   "dup_count": 0,
-   "summary": "미국 중간선거 공포에 외국인 매도가 쏟아지며 코스피가 급락 반전했다."
-  },
-  {
-   "title": "[食전食후] 코스피 5500선 위태...외국인 1조원대 매도에 양대 지수 급락",
-   "url": "https://www.ajunews.com/view/20261104112516702",
-   "source": "ajunews.com",
-   "published": "2026-11-04T11:32:00+09:00",
-   "dup_count": 0,
-   "summary": "외국인 1조원대 매도세로 코스피 5500선이 위협받으며 양대 지수가 급락했다."
-  },
-  {
-   "title": "외국인 22조 팔고 개인은 해외로...수급 뚫은 원화 강세",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=04031126645642440&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "source": "edaily.co.kr",
-   "published": "2026-11-04T11:32:00+09:00",
-   "dup_count": 0,
-   "summary": "반도체 수출 호조와 채권 자금 유입으로 원화 강세 흐름이 나타났다."
-  },
-  {
-   "title": "[오늘의 삼전닉스] 애플·AMD '지원사격'에도 반도체 투심 회복 역부족",
-   "url": "https://economist.co.kr/article/view/ecn202611040017",
-   "source": "economist.co.kr",
-   "published": "2026-11-04T11:30:00+09:00",
-   "dup_count": 0,
-   "summary": "외국인 매도세로 돌아선 삼전닉스가 미국 증시 반등에도 이틀 연속 약세를 보였다."
-  },
-  {
-   "title": "신현송이 지목한 성장·물가 나왔다...추가 금리 인상할까",
-   "url": "https://www.newsis.com/view/NISX20261104_0003854326",
-   "source": "newsis.com",
-   "published": "2026-11-04T11:30:00+09:00",
-   "dup_count": 0,
-   "summary": "한은 금융통화위원회는 양호한 성장·물가 지표를 바탕으로 추가 금리를 고심한다."
-  },
-  {
-   "title": "[시황] 코스피, 외국인 1조원대 매도에 하락 전환...5,550선",
-   "url": "https://www.namdonews.com/news/articleView.html?idxno=928134",
-   "source": "namdonews.com",
-   "published": "2026-11-04T11:28:00+09:00",
-   "dup_count": 0,
-   "summary": "미국 정치 상황과 글로벌 변동성으로 코스피가 1조원대 외인 매도에 하락했다."
-  },
-  {
-   "title": "“전기차 생산세액공제 혜택, 국내 생산기반 강화에 큰 도움”",
-   "url": "https://biz.heraldcorp.com/article/10925450?ref=naver",
-   "source": "biz.heraldcorp.com",
-   "published": "2026-11-04T11:27:00+09:00",
-   "dup_count": 0,
-   "summary": "정부 세제개편안은 완성 전기차를 제외하고 이차전지·반도체 등을 포함했다."
-  },
-  {
-   "title": "[COP31] 새 기후목표 다 지켜도 2035년 감축 6%...'1.5°C까지 필요한 감축...",
-   "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17148",
-   "source": "esgeconomy.com",
-   "published": "2026-11-04T11:26:00+09:00",
-   "dup_count": 0,
-   "summary": "제조업 비중이 높은 한국은 2035년 기후목표 달성을 위해 탈탄소화가 시급하다."
-  },
-  {
-   "title": "반도체 호황에 기업 이익 급증...노동 보수 비중은 16년 만에 최저",
-   "url": "http://www.dailypop.kr/news/articleView.html?idxno=104078",
-   "source": "dailypop.kr",
-   "published": "2026-11-04T11:26:00+09:00",
-   "dup_count": 0,
-   "summary": "반도체 가격 급등으로 수출 디플레이터가 상승하며 기업 이익이 급증했다."
-  },
-  {
-   "title": "3년 간 번 돈, 9개월 만에 날린 쿠팡...대만·물류·상품 투자 늘린다",
-   "url": "https://www.busan.com/view/busan/view.php?code=2026110411223603990",
-   "source": "busan.com",
-   "published": "2026-11-04T11:25:00+09:00",
-   "dup_count": 0,
-   "summary": "쿠팡Inc의 3분기 영업손실이 6423억 원을 기록하며 대만 투자를 늘렸다."
-  },
-  {
-   "title": "美 선거 '위험회피' 외인 1조 '팔자'...코스피 5500선까지 밀려[장중시황...",
-   "url": "https://www.news1.kr/finance/market-exr/6342593",
-   "source": "news1.kr",
-   "published": "2026-11-04T11:24:00+09:00",
-   "dup_count": 0,
-   "summary": "미 중간선거 개표 결과의 영향으로 외국인 1조원 매도가 코스피를 밀어내렸다."
-  },
-  {
-   "title": "풍산, 방산 부진 언제까지... 4분기도, 내년도 '마이너스 전망'",
-   "url": "https://www.ilovepc.co.kr/news/articleView.html?idxno=61191",
-   "source": "ilovepc.co.kr",
-   "published": "2026-11-04T11:22:00+09:00",
-   "dup_count": 0,
-   "summary": "풍산의 방산 부진 여파가 이어지며 4분기와 내년 실적 전망이 마이너스를 기록했다."
-  },
-  {
-   "title": "증시 변동성 확대...美 선거 뒤도 ‘롤러코스피’",
-   "url": "https://biz.heraldcorp.com/article/10925427?ref=naver",
-   "source": "biz.heraldcorp.com",
-   "published": "2026-11-04T11:22:00+09:00",
-   "dup_count": 0,
-   "summary": "미 중간선거에 따른 블루웨이브 전망과 정치적 불확실성이 증시 변동성을 키웠다."
-  },
-  {
-   "title": "[금시세] 18K는 얼마?",
-   "url": "https://www.gametoc.co.kr/news/articleView.html?idxno=112742",
-   "source": "gametoc.co.kr",
-   "published": "2026-11-04T11:18:00+09:00",
-   "dup_count": 0,
-   "summary": "한국거래소 금시장에서 순도 99.99% 금 1g은 16만8,970원에 마감했다."
-  },
-  {
-   "title": "주가 바닥에 베팅한 안철수, 넉달 만에 88억 잭팟",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=03978646645642440&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "source": "edaily.co.kr",
-   "published": "2026-11-04T11:16:00+09:00",
-   "dup_count": 0,
-   "summary": "안랩 주가 바닥에 베팅한 안철수의 지분이 넉달 만에 큰 평가이익을 기록했다."
-  },
-  {
-   "title": "한국금융지주 '우수수' ... 외환손실 -2000억, 순익 -48%, 목표주가 -30%",
-   "url": "https://www.ilovepc.co.kr/news/articleView.html?idxno=61196",
-   "source": "ilovepc.co.kr",
-   "published": "2026-11-04T11:16:00+09:00",
-   "dup_count": 0,
-   "summary": "반도체 수출 호조에 따른 환율 하락으로 한국금융지주 실적에 적신호가 켜졌다."
-  },
-  {
-   "title": "코스피, 3%대 급등 후 상승폭 축소...외국인 매도에 5700선 등락",
-   "url": "https://www.ppss.kr/news/articleView.html?idxno=318985",
-   "source": "ppss.kr",
-   "published": "2026-11-04T11:10:00+09:00",
-   "dup_count": 0,
-   "summary": "코스닥시장에서는 외국인과 기관이 각각 470억원, 158억원을 순매도한 반면 개인은 787억원을 순매수했다. 한편 최근 국내 증시는 미국 기술주 움직임과 외국인 "
-  },
-  {
-   "title": "【인터뷰】메리엄 오미 아크 대표, \"한국 기업, 기후 거버넌스는 갖췄지...",
-   "url": "https://www.impacton.net/news/articleView.html?idxno=30520",
-   "source": "impacton.net",
-   "published": "2026-11-04T11:10:00+09:00",
-   "dup_count": 0,
-   "summary": "철강·화학·반도체 제조업 비중이 큰 한국은 기후 거버넌스와 재생에너지 제약이 크다."
-  },
-  {
-   "title": "삼전·닉스, 美 중간선거 불확실성에 장중 하락 전환",
-   "url": "https://it.chosun.com/news/articleView.html?idxno=3000000000213",
-   "source": "it.chosun.com",
-   "published": "2026-11-04T11:08:00+09:00",
+   "title": "이차전지 ETF·ETN 14%대 급등...태양광·ESS도 두 자릿수↑",
+   "url": "http://www.kjdaily.com/article.php?aid=1793806808691241276",
+   "source": "kjdaily.com",
+   "published": "2026-11-05T00:42:00+09:00",
    "dup_count": 1,
-   "summary": "미 중간선거 불확실성으로 삼성전자와 SK하이닉스가 장중 하락세로 전환했다."
+   "summary": "코스피 변동 속 이차전지와 태양광 등 관련 ETF가 14%대 급등했다."
   },
   {
-   "title": "코스피, 상승 반납하고 하락 전환...외국인 1.2조 '팔자'",
-   "url": "https://www.hankyung.com/article/2026110451136",
+   "title": "코스피 하루 변동률 7.23%...3개월 만에 최고",
+   "url": "http://www.kjdaily.com/article.php?aid=1793806591691236276",
+   "source": "kjdaily.com",
+   "published": "2026-11-05T00:38:00+09:00",
+   "dup_count": 0,
+   "summary": "'한국형 공포지수'로 불리는 코스피200 변동성지수(VKOSPI)도 상승했다. 이날 VKOSPI는 전 거래일보다 1.96포인트(3.62%) 오른 56.04로 마감"
+  },
+  {
+   "title": "삼성전기 주가 10만9천원 출렁...외국인 1천183억 순매도",
+   "url": "http://www.kjdaily.com/article.php?aid=1793806405691332276",
+   "source": "kjdaily.com",
+   "published": "2026-11-05T00:36:00+09:00",
+   "dup_count": 0,
+   "summary": "삼성전기 주가가 장중 10만9천원 폭을 보이며 소폭 상승 마감했다."
+  },
+  {
+   "title": "코스피·코스닥 동반 상승...삼성전자·SK하이닉스 강세 HLB는 털썩, 미국...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=623293",
+   "source": "cbci.co.kr",
+   "published": "2026-11-05T00:26:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피와 코스닥이 장중 큰 변동성 끝에 동반 상승으로 마감했다."
+  },
+  {
+   "title": "5000달러 준대도 안 통했다...미국 선거 휩쓴 먹사니즘",
+   "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=312173",
+   "source": "thescoop.co.kr",
+   "published": "2026-11-05T00:25:00+09:00",
+   "dup_count": 0,
+   "summary": "AI 호황에도 서민 살림살이가 나아지지 않는 경제적 모순이 지적됐다."
+  },
+  {
+   "title": "삼성SDI 주가 11.57% 급등...외국인·기관 1천340억 순매수",
+   "url": "http://www.kjdaily.com/article.php?aid=1793804724691333276",
+   "source": "kjdaily.com",
+   "published": "2026-11-05T00:24:00+09:00",
+   "dup_count": 1,
+   "summary": "삼성SDI 주가가 이차전지 강세로 11.57% 급등 마감했다."
+  },
+  {
+   "title": "의회는 뒤집혔지만 관세 칼자루는 그대로...반도체엔 'AI 규제' 그늘",
+   "url": "http://www.newskr.kr/news/articleView.html?idxno=107714",
+   "source": "newskr.kr",
+   "published": "2026-11-05T00:22:00+09:00",
+   "dup_count": 2,
+   "summary": "미 의회 구도 변화 속에서도 반도체엔 AI 규제 그늘이 드리워졌다."
+  },
+  {
+   "title": "[코스피 마감 동향] 미 중간선거 충격 극복하고 0.62% 반등 마감...외인...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=623225",
+   "source": "cbci.co.kr",
+   "published": "2026-11-05T00:16:00+09:00",
+   "dup_count": 2,
+   "summary": "코스닥은 미 중간선거 충격을 극복하고 1.50% 상승 마감했다."
+  },
+  {
+   "title": "아이엠스팩1호 회전율 1,376%...한진칼우도 220% 돌파",
+   "url": "http://www.kjdaily.com/article.php?aid=1793804861691331276",
+   "source": "kjdaily.com",
+   "published": "2026-11-05T00:10:00+09:00",
+   "dup_count": 1,
+   "summary": "아이엠스팩1호가 높은 회전율을 기록하며 공모가 아래로 마감했다."
+  },
+  {
+   "title": "[환율 마감] 원/달러 환율 1,341.5원 마감...미 중간선거 민주당 의회 장...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=623220",
+   "source": "cbci.co.kr",
+   "published": "2026-11-05T00:10:00+09:00",
+   "dup_count": 2,
+   "summary": "원·달러 환율은 미 중간선거 여파로 1,341.5원에 마감했다."
+  },
+  {
+   "title": "‘블루쓰나미’ 앞 AI 데이터센터...아시아 증시 혼란",
+   "url": "https://www.joongang.co.kr/article/25475857",
+   "source": "joongang.co.kr",
+   "published": "2026-11-05T00:02:00+09:00",
+   "dup_count": 2,
+   "summary": "AI 데이터센터 규제 우려로 아시아 증시가 큰 혼란을 겪었다."
+  },
+  {
+   "title": "\"113% 올랐었는데\"...15만원→5만원대 된 풍산, 매수해도 될까 [종목e슈]",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01082406645642768&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "source": "edaily.co.kr",
+   "published": "2026-11-05T00:02:00+09:00",
+   "dup_count": 0,
+   "summary": "풍산 주가가 하락세를 보이며 7년 만에 연간 하락을 기록할 전망이다."
+  },
+  {
+   "title": "[삼성전자·하닉 마감] 삼성전자·SK하이닉스, 장중 급등락 반복 끝에 약...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=623212",
+   "source": "cbci.co.kr",
+   "published": "2026-11-05T00:00:00+09:00",
+   "dup_count": 1,
+   "summary": "반도체株 장중 급등락...삼성전자·SK하이닉스 하락 마감 미국 증시에서 메모리 반도체 기업들의 강세와... 삼성전자와 SK하이닉스가 포함된 코스피 전기·전자 업종"
+  },
+  {
+   "title": "[더페어 돋보기] 미 중간선거·실적 반등 모멘텀 접목...K-증시, 불확실성...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=93057",
+   "source": "thefairnews.co.kr",
+   "published": "2026-11-05T00:00:00+09:00",
+   "dup_count": 0,
+   "summary": "K-증시가 미 중간선거와 실적 반등 모멘텀으로 불확실성을 소화했다."
+  },
+  {
+   "title": "\"현금 쥐고 기다려라...내년 상반기 기회 온다\" 김영익 교수의 조언",
+   "url": "https://www.newsis.com/view/NISX20261104_0003853968",
+   "source": "newsis.com",
+   "published": "2026-11-05T00:00:00+09:00",
+   "dup_count": 0,
+   "summary": "김영익 교수는 내년 상반기까지 현금을 쥐고 기회를 기다리라 조언했다."
+  },
+  {
+   "title": "코스피·코스닥 동반 상승...LG엔솔 5%·에코프로 9%↑",
+   "url": "https://www.vegannews.co.kr/news/article.html?no=400619",
+   "source": "vegannews.co.kr",
+   "published": "2026-11-04T23:46:00+09:00",
+   "dup_count": 1,
+   "summary": "코스닥은 10.56포인트(1.50%) 상승한 714.95로 장을 마감했다. 코스피 시장에서 LG에너지솔루션은 전 거래일보다 5.03% 오른 35만5000원에 마감"
+  },
+  {
+   "title": "이에스티, 코스닥 첫날 공모가 밑돌며 20% 하락",
+   "url": "https://www.vegannews.co.kr/news/article.html?no=400616",
+   "source": "vegannews.co.kr",
+   "published": "2026-11-04T23:38:00+09:00",
+   "dup_count": 0,
+   "summary": "장중 66.94% 상승 뒤 9890원에 마감 이에스티(495910)가 코스닥 상장 첫날인 4일 공모가 1만2400원보다 20.24% 낮은 9890원에 거래를 마쳤"
+  },
+  {
+   "title": "코스피 2.43% 상승 출발...급락 뒤 5683.80 마감",
+   "url": "https://www.vegannews.co.kr/news/article.html?no=400615",
+   "source": "vegannews.co.kr",
+   "published": "2026-11-04T23:36:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피는 4일 137.34포인트(2.43%) 오른 5786.13으로 출발했지만 장중 급락한 뒤 상승 마감했다. 삼성전자와 SK하이닉스도 장 초반 각각 3%대와 5"
+  },
+  {
+   "title": "코스피, 장중 400포인트 넘게 출렁...외국인 2조5000억 매도에도 상승 마...",
+   "url": "https://www.ppss.kr/news/articleView.html?idxno=319144",
+   "source": "ppss.kr",
+   "published": "2026-11-04T22:32:00+09:00",
+   "dup_count": 2,
+   "summary": "코스피가 장중 400포인트 넘게 흔들렸으나 개인과 기관이 방어했다."
+  },
+  {
+   "title": "또 '232조 돈방석' 예고 떴는데...삼전닉스 결국 뒤집힌 이유 [분석+]",
+   "url": "https://www.hankyung.com/article/2026110461576",
    "source": "hankyung.com",
-   "published": "2026-11-04T11:08:00+09:00",
-   "dup_count": 2,
-   "summary": "코스피가 장초반 2%대 상승을 반납하고 외인 1.2조원 매도에 하락 마감했다."
-  },
-  {
-   "title": "[미디어펜 창간 15주년 특별기획9]美 AI 수출, 中 제조업 혁신...한국은...",
-   "url": "https://www.mediapen.com/news/view/1135036",
-   "source": "mediapen.com",
-   "published": "2026-11-04T11:08:00+09:00",
+   "published": "2026-11-04T22:01:00+09:00",
    "dup_count": 0,
-   "summary": "중국 정부의 제조업 혁신 정책 속에서 한국의 AI 반도체 수출 전략이 주목받는다."
+   "summary": "미 반도체 실적 기대감에 힘입어 코스피가 5683.80에 마감했다."
   },
   {
-   "title": "[개장 시황] 코스피, 외국인·기관 순매수 속 장 초반 3% 이상 급등세 연...",
-   "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280413",
-   "source": "businesskorea.co.kr",
-   "published": "2026-11-04T11:06:00+09:00",
-   "dup_count": 4,
-   "summary": "지수 3%대 상승 폭을 지켜낼 수 있을지 여부가 오늘 장의 관전 포인트가 될 것\"*이라고 조언했다. 오늘 남은 장중 동안 탄탄한 수급을 바탕으로 코스피가 강세 마"
-  },
-  {
-   "title": "[Q4 전망] '운용·IB·WM↑의 Q3' NH투자증권...\"배당수익률 8% 기대\"",
-   "url": "http://www.economytalk.kr/news/articleView.html?idxno=425075",
-   "source": "economytalk.kr",
-   "published": "2026-11-04T11:06:00+09:00",
+   "title": "[국제유가 전망] 美민주당 상·하원 장악에 이란전쟁 종식 기대...브렌트...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16268560",
+   "source": "topstarnews.net",
+   "published": "2026-11-04T21:56:00+09:00",
    "dup_count": 0,
-   "summary": "NH투자증권은 금리 인상 악조건 속에서도 보수적 채권 운용으로 손실을 최소화했다."
+   "summary": "미 민주당 상하원 장악과 이란전쟁 종식 기대가 유가에 영향을 미쳤다."
   },
   {
-   "title": "[인문자의 미국 중간선거 이야기 | 인간·문화·자연] 중간선거 이후 미...",
-   "url": "https://www.ajunews.com/view/20261104105302567",
-   "source": "ajunews.com",
-   "published": "2026-11-04T11:02:00+09:00",
+   "title": "미국 뉴욕증시 전망, 민주당 상·하원 장악에 선물 급락 후 반등...나스...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16268553",
+   "source": "topstarnews.net",
+   "published": "2026-11-04T21:42:00+09:00",
    "dup_count": 0,
-   "summary": "AI 데이터센터 투자 확대는 삼성전자와 SK하이닉스의 HBM 수요를 증가시킨다."
+   "summary": "뉴욕증시는 선거 불확실성 해소와 AI 규제 우려가 충돌했다."
   },
   {
-   "title": "[증시 프리즘] 코스피, 2%대 급락 전환...외국인 8천억원대 매도에 상승...",
-   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8037",
-   "source": "moneystorm.kr",
-   "published": "2026-11-04T10:57:00+09:00",
+   "title": "“하루만에 26% 폭락할 수” 한진칼 주식 투자, ‘널뛰기’ 주의해야 [투...",
+   "url": "https://biz.heraldcorp.com/article/10925769?ref=naver",
+   "source": "biz.heraldcorp.com",
+   "published": "2026-11-04T21:41:00+09:00",
    "dup_count": 0,
-   "summary": "저가 매수세로 강세 출발했던 코스피가 외국인과 기관의 매도에 2%대 급락했다."
+   "summary": "한진칼 주가가 호반그룹 인수 이슈 등으로 널뛰기를 보여 주의가 요구된다."
   },
   {
-   "title": "3% 급등하더니 하락 반전...美 중간선거에 코스피 '롤러코스터'",
-   "url": "https://www.sisajournal.com/news/articleView.html?idxno=392781",
-   "source": "sisajournal.com",
-   "published": "2026-11-04T10:56:00+09:00",
+   "title": "코스피, 강보합에 5600선 유지...LG에너지솔루션, 삼성바이오로직스 등...",
+   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=446723",
+   "source": "econonews.co.kr",
+   "published": "2026-11-04T21:30:00+09:00",
    "dup_count": 0,
-   "summary": "미 중간선거 개표 속 민주당 우세에 코스피가 3% 급등 후 5525선으로 밀렸다."
+   "summary": "코스피는 외인 순매도에도 개인과 기관의 매수로 5600선을 유지했다."
   },
   {
-   "title": "물가·성장 모두 상방 압력...한은, 연말 금리 인상 카드 꺼내나",
-   "url": "https://www.mediapen.com/news/view/1135026",
-   "source": "mediapen.com",
-   "published": "2026-11-04T10:56:00+09:00",
+   "title": "[상한가 종목] 대명에너지-아리바이오홀딩스 이어 케이엔알시스템 등 마...",
+   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=446721",
+   "source": "econonews.co.kr",
+   "published": "2026-11-04T21:30:00+09:00",
+   "dup_count": 1,
+   "summary": "케이엔알시스템과 대명에너지 등이 상한가를 기록하며 마감했다."
+  },
+  {
+   "title": "코스닥, 1%대 상승에 710선 회복...에코프로비엠, 에코프로 등 상승",
+   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=446724",
+   "source": "econonews.co.kr",
+   "published": "2026-11-04T21:30:00+09:00",
    "dup_count": 0,
-   "summary": "한은 금통위가 기준금리를 3.00%에서 3.25%로 인상할지 시장의 관심이 쏠린다."
+   "summary": "코스닥은 에코프로비엠 등의 상승으로 710선을 회복했다."
   },
   {
-   "title": "美 중간선거 경계감에 ‘출렁’...코스피, 5600선 아래로 [마켓시그널]",
-   "url": "https://www.sedaily.com/article/20110037?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-11-04T10:51:00+09:00",
+   "title": "美 중간선거 여파에 일본 증시도 하락...닛케이 1.4%↓",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=06671526645642440&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "source": "edaily.co.kr",
+   "published": "2026-11-04T21:26:00+09:00",
    "dup_count": 0,
-   "summary": "미국 반도체주 강세에도 중간선거 경계감에 코스피가 5600선 아래로 밀려났다."
+   "summary": "미 중간선거 여파로 일본 닛케이지수도 1.4% 하락 마감했다."
   },
   {
-   "title": "[오늘증시] 코스피 반등 무산...美반도체 훈풍에도 5600선 턱걸이",
-   "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=818034",
-   "source": "startuptoday.co.kr",
-   "published": "2026-11-04T10:50:00+09:00",
-   "dup_count": 2,
-   "summary": "AI 투자 수익성 우려가 재부각되면서 반도체 업종 중심의 코스피 반등이 무산됐다."
+   "title": "아리바이오홀딩스·대명에너지 등 5개 종목 29%대 급등",
+   "url": "http://www.kjdaily.com/article.php?aid=1793794387691330276",
+   "source": "kjdaily.com",
+   "published": "2026-11-04T21:14:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피가 4% 넘게 급락 후 반등한 가운데 태양광과 배터리가 급등했다."
   },
   {
-   "title": "[장중시황] 코스피 5500선까지 밀려...코스닥 700선 붕괴",
-   "url": "https://www.ajunews.com/view/20261104104842545",
-   "source": "ajunews.com",
-   "published": "2026-11-04T10:50:00+09:00",
-   "dup_count": 2,
-   "summary": "외국인과 기관의 매도 공세에 코스닥지수가 하루 만에 700선 아래로 붕괴됐다."
+   "title": "[美중간선거] 격동의 팍스 아메리카나...트럼프 '일방통행' 제동, 세계질...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16268510",
+   "source": "topstarnews.net",
+   "published": "2026-11-04T21:02:00+09:00",
+   "dup_count": 1,
+   "summary": "미 중간선거 결과 확인 후 한국 금융시장이 급격한 변동을 보였다."
   },
   {
-   "title": "외국인 '팔자'로 돌아서자 코스피 5,500대로 폭삭",
-   "url": "https://www.viewsnnews.com/article?q=239476",
-   "source": "viewsnnews.com",
-   "published": "2026-11-04T10:48:00+09:00",
+   "title": "미 민주당 약진, AI 투자 우려에 '아시아 증시 출렁'",
+   "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1542704",
+   "source": "obsnews.co.kr",
+   "published": "2026-11-04T20:52:00+09:00",
    "dup_count": 0,
-   "summary": "외국인이 '팔자'로 돌아서며 장중 코스피지수가 5500대까지 급락했다."
+   "summary": "코스피는 한때 3.2% 올랐다가 오후들어 3.8% 급락하는 롤러코스터 장세를 펼친 끝에 0.62% 상승하며 장을 마감했습니다. 일본 닛케이225지수도 장중 한때 "
+  },
+  {
+   "title": "삼성전자·SK하이닉스 거래대금 80% 급증...외국인 1.9조 순매도",
+   "url": "http://www.kjdaily.com/article.php?aid=1793793011691326276",
+   "source": "kjdaily.com",
+   "published": "2026-11-04T20:52:00+09:00",
+   "dup_count": 1,
+   "summary": "삼성전자와 SK하이닉스는 장중 급등락 속 거래대금이 크게 늘었다."
+  },
+  {
+   "title": "[2026 국감 파이널] 재계, 신사업 투자부터 내부통제까지 '숙제'",
+   "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=667553",
+   "source": "kfenews.co.kr",
+   "published": "2026-11-04T20:40:00+09:00",
+   "dup_count": 0,
+   "summary": "재계는 신사업 투자와 함께 전력망 및 변전설비 확충 숙제를 안았다."
+  },
+  {
+   "title": "[헬로스톡] 11/4 주목할 종목 : LG생활건강·풍산·비에이치·한국항공우...",
+   "url": "https://www.hellot.net/news/article.html?no=116041",
+   "source": "hellot.net",
+   "published": "2026-11-04T20:38:00+09:00",
+   "dup_count": 3,
+   "summary": "코스피는 미 중간선거에 따른 AI 투자 둔화 우려 속에도 상승했다."
   }
  ]
 }
