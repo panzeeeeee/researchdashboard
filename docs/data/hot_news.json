@@ -1,781 +1,852 @@
 {
- "updated_at": "2026-11-04T11:58:43.340463+09:00",
+ "updated_at": "2026-11-09T11:24:55.526323+09:00",
  "event_notes": {
-  "why": "미국 중간선거 개표를 앞둔 경계감 속에서도 메타, 애플, AMD 등 주요 기술주가 AI 관련주 매도세에서 벗어나 반등하면서 기술 섹터가 1.31% 상승했고 통신서비스 섹터도 동반 강세를 보였다. 반면 AMD의 호실적과 데이터센터 매출 급증 소식이 전해졌으나, 필수소비재와 소재 섹터는 각각 2.07%와 2.01% 하락하며 약세를 면치 못했다. 또한 CVS헬스가 2028년까지 두 개의 상장사로 분할한다는 소식이 전해진 가운데 헬스케어 섹터는 0.31% 하락 마감했다.",
-  "watch": "미국 중간선거의 최종 결과와 이에 따른 정책 변화 방향이 시장의 향방을 가를 주요 변수가 될 것으로 보인다. 아울러 기업들의 실적 발표와 AI 관련주를 둘러싼 시장의 심리가 계속해서 증시 전반에 영향을 미칠지 주목된다."
+  "why": "엔비디아 CEO 젠슨 황의 스캔들과 중국 스파이 연루 의혹에 대한 이사회 조사 및 의회 조사 착수 뉴스가 연이어 보도되면서 시장 전반에 하방 압력이 가해졌으나, 기술 섹터는 1.45% 상승하며 선방한 반면 필수소비재는 1.28% 하락하는 등 혼조세를 보였다. 특히 트래저리 랠리와 선거 여파로 AI 관련 거래가 타격을 입었다는 보도가 나온 가운데, 기술주 내에서도 개별 종목 이슈와 수급에 따라 섹터별 차별화가 나타난 것으로 보인다.",
+  "watch": "엔비디아 경영진 관련 조사와 중국 스파이 연루 의혹이 실제 실적이나 AI 칩 공급망에 미치는 파장과 함께, 케빈 워시의 금리 인상 전망 및 연방준비제도의 통화정책 관련 발언들을 계속 주시해야 한다."
  },
  "clusters": [
   {
-   "title": "미국 중간선거와 증시",
+   "title": "엔비디아 CEO 젠슨 황 조사 및 스캔들",
    "sources": [
-    "Bloomberg.com",
+    "CNBC",
+    "Investing.com",
     "Yahoo Finance"
    ],
-   "count": 7,
+   "count": 5,
    "items": [
     {
-     "title": "US stocks end mostly up as markets await election results",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUE1tNzlfeUhTaGExV2pybWtVakVVUUExd1FCOVFicnlfLXBFbHFUUmdCMlZiajh5aU5wYWtYdmNrVXlCUTVNU0FyQXF1anl0ZVdhcGZNc1pmZXB3Q3JuTHJ0aU5yMGtWY1JVNEpBOHVtdVBXTGNyRUplNTM1TnRqa3lyaTNhNUhaVGoySkdHa2E4TlgtcnFzMC1hWQ?oc=5",
+     "title": "Nvidia’s Board Just Opened an Investigation Into Jensen Huang. Here’s What History Says Comes Next for the Stock",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSUJLMHNZczFqNlVVRmNmV0hLQ0JvWldBMUltXy1rSlpVMlkyY0xLb1ROd21GQUpmQjJJc04wLU80UmpCSll0dHdRSWYxSGFSWlJJeFNiY0ZDZ3UxQ2taRl9vZjZkRHM1LVF1dHFFUnZlWHJiaERta0FtUGFxb2FjX01VQTNIdXZLSDlpdFNqM1pES3JhMUtpSGRqSjFrZVZaSWo3cF9B?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-11-04T06:26:07+09:00",
+     "published": "2026-11-09T10:14:23+09:00",
      "dup_count": 1,
-     "summary": "미국 증시, 선거 결과 대기하며 대부분 상승 마감"
+     "summary": "Nvidia 이사회가 젠슨 황 조사를 시작해 주가 향방이 주목된다."
     },
     {
-     "title": "S&P 500, Nasdaq rise as tech stocks gain ahead of midterm results",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWE5VTWlqMWhWQjhVTU1PYTc2M2w3ZWJlUWl1UUMzbThRNGVvQkc1YXBxOUdyVDIwYzVHRG9WR3J0VkhxSnhGdlAzNk9WZXduZHBXdkRackxJVmZPLTZZLTFuQnFQMzZWTVF4U28xV3VrNERlV3hwOGFiYWR2SUVmcUtjOXZNeE0yeHRBTkZkZjI2bDdraXdDYg?oc=5",
+     "title": "Nvidia's Jensen Huang admits to affair after allegations of romance with Chinese spy: Report",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNYU5fTUZfS2drVGlTTk43X0NHYU9EMWZJQ0pmN1IyMDlWRFJLUjdpamR6QmlYN2pLR2FYaGw2RHJPbHl6VTdXOTRDaTlMSEJEWUZLYXlSNkw0VWlRSmlTNGl6WjFmVU5rRkRVeng2alFRSjdRR2lVTEpvSWM3THFmc1dQNk5SVG9pcm93WW1IQjFLV0xSOTBZd0RoQnU4SWJJRWhMcHZWMFpWcHRvSU1TQWVsTXR6NzdBcFFRRURMdUlCZ0hnSnNzZkV6eGZ6clp6dGVhcEZUMTkwRHpwSGhibg?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-11-04T02:17:52+09:00",
+     "published": "2026-11-09T06:02:55+09:00",
      "dup_count": 1,
-     "summary": "중간선거 앞두고 기술주 강세로 S&P500과 나스닥 상승"
+     "summary": "Nvidia CEO 젠슨 황이 중국 스파이 연루 의혹과 스캔들을 시인했다."
     },
     {
-     "title": "Stock Futures Rise on AI Recovery as US Votes: Markets Wrap",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPLVc2azZiNTdEZEJUM0RFOERmNk1QaTRQOGdkbE5EOUM5YVE5M2pqVTFkYmJsTC13MnpKaVRSd2ZLYmowSlhpOE5VcjdJNnJleWZsTDJ2SGN2b3JTOE9pdkZLMmdCblZhSE5ucGoyd2k2SEJwOFpVZVp1aWk1aWJYSHdvQ3VTMGtGa3FXa3NYUWxiWEsz?oc=5",
-     "source": "Bloomberg.com",
-     "published": "2026-11-04T10:42:00+09:00",
-     "dup_count": 0,
-     "summary": "미국 선거 속 AI 반등으로 주가지수 선물 상승"
-    },
-    {
-     "title": "US Equity Futures Inch Higher as Investors Await Midterm Results",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVzJXWTQ2RjFoeU9maDJNSE53U3o3WmdfeUFyUktDbzRuZGswVE44M1doYjh6d21BZEdGemVBVU4wclliR3ZST0hnZWMtcm9yTnhqUmRtc0NjNnB2NVdjSTBmRlFQbU44NlRYVVZZc1NlSklhci1PRjhSb1F2MWR5LXBULUNWSnpqN1NyZUh1RjBfdm1BajdjWGphYTIwMmpoUzQtcy1LN0Y1d0RuWjE2RG1GeUhSUQ?oc=5",
-     "source": "Bloomberg.com",
-     "published": "2026-11-04T10:19:00+09:00",
-     "dup_count": 0,
-     "summary": "중간선거 앞두고 미국 주가지수 선물 소폭 상승"
-    },
-    {
-     "title": "S&P 500, Nasdaq Recover From AI Rout On US Midterm Election Day — META, AAPL, AMD, SKHY In Focus",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdlBxV25yZXl0SEhYREV6S1N4UEhMOGFlb0Y2N3YzNXBFNWVoSWZ2TFdjc2dtZUt3VUFKUE94RmRYd0dweW9GTEFxc3hCWTJoazNxVF9Ka29BWS1HcWRkSU5Nak9qVGpSM21xRDNMVER5QkdCenNrR01TRklPZXZiSFJQRFJIVEJmWEwwNVF4aXhnQQ?oc=5",
+     "title": "Nvidia CEO Jensen Huang's image tarnished by board investigation and affair, analysts say",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONm55SVFwTGtmVmRIM0JHVU9XZVFsTWJQaExJQ1I1am53NTdQbkwtU1hzSURxTXFKVjkwcU9kR3J2Vl9lYWhxY2wtWjJ2Z3FVck5peWNkMTdsSEtFNGxFdWt4RFFRV2dOQWE3NFhtUWNCRno5ZklKUFNaWUNZNjhTUkdVakdnYTdXdDVlOXlTbmRRUnZEbnc?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-11-04T08:29:55+09:00",
+     "published": "2026-11-09T09:26:45+09:00",
      "dup_count": 0,
-     "summary": "미 중간선거일, AI 폭락 딛고 S&P500과 나스닥 회복"
+     "summary": "이사회 조사와 스캔들로 Nvidia 젠슨 황의 이미지가 타격을 입었다."
     },
     {
-     "title": "Update: Wall Street Closes Mixed Ahead of Midterm Election Results",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNazZsLWFCSGtxYmJ3cF9rRlRIQWhWTHJlWUVoSVlmZE5PTUN4ODNiQm8xa3hOam03Yk1pbHNCcVdKaGtENmptTlZlMnRhQzhiVEVhU2dFSnl0anBPYlZOS2tHV1lvcmlHaEVkZVhTaWhYMW91b2VjdWxGVENTMGZMeERYY2d2YVk5TFR4ckI5R0lpMWZ6UFZ5bEl4aw?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T06:32:29+09:00",
+     "title": "Nvidia CEO Huang admits to affair, apologizes to employees as probe launched",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQOVRsMnNFSmh0Uldhb2VaLTlCUllNVG8wckxnSTlHRGFqb0NkR1VtNlRjaEEtWW9aOTJvQmV0aWNRVjlOSVNOUVZEOFp4c2JITkVxUlRGVzNFZjFTRmRmcEpOcG1MU0lnT3hqWmlhRi1lSDRxTHpfWEQ1b1ZDb284Ri1LaTNmWHgtbTEzYXlkMXd0M1FnOHNBczV3UW1HZnl1ODN4RHA4TExCT2pKOW5NOWlzU0RfNDdqa3BGQjNTZEE1cFFHeUhXT2ttb3A1THM?oc=5",
+     "source": "Investing.com",
+     "published": "2026-11-09T08:48:45+09:00",
      "dup_count": 0,
-     "summary": "월가, 중간선거 결과 앞두고 혼조세로 마감"
+     "summary": "Nvidia CEO 젠슨 황이 스캔들을 인정하고 직원들에게 사과했다."
     },
     {
-     "title": "US Stocks Waver as Election, AI Bubble Risks Weigh on Outlook",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaXNvOEhtNW1UdEtjYzJoMFR3SnFsT0JUMzg4dmR0OW80bmZVUHFDQmhjUWNrQUxvSXBLbjNWR3A2STNwa1BGMHdSbDBWVVRaYTZKVVNKaUl4Y3V4UjRGMFRWZ3EtanM2QkJsb1EwU1U5V0tXSDFKVTVCUUxBYjd6bmRLdHNwa1RIcDhRTURNbTVlN2FJamFYZ29EMDVpRjdPdjA0eVZETjJmeXVyMk1OUw?oc=5",
-     "source": "Bloomberg.com",
-     "published": "2026-11-04T06:21:46+09:00",
+     "title": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTlFBMTZ4RFd1bzZnam9ka1FLSTYwWFBVYmt2aHpxZlJ4YnlpWGJabUZMVEt1cENPOU84VnhRLVJWM3YyaFlMeFNxNWExLUNqWk8wQ1NoTmdUZVY0ckpyUlJlVHc5aHZ0V1RtUmFib1J2Rl8waXBiLVZyNzZoNWU5Nw?oc=5",
+     "source": "CNBC",
+     "published": "2026-11-09T03:06:12+09:00",
      "dup_count": 0,
-     "summary": "선거와 AI 버블 우려로 미국 증시 변동성 확대"
+     "summary": "Nvidia CEO 젠슨 황이 중국 스파이 연루 의혹으로 의회의 조사를 받는다."
     }
    ]
   },
   {
-   "title": "AMD 실적 및 전망",
+   "title": "Asian Markets at Risk of Pressure on Nvidia Probe: Markets Wrap",
    "sources": [
-    "Bloomberg.com",
-    "Yahoo Finance"
+    "Bloomberg"
    ],
-   "count": 4,
+   "count": 1,
    "items": [
     {
-     "title": "AMD's Lisa Su: Q3 was 'largest and most profitable in our history'",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaXNqZGtkNHM5bDJENldMbmY3bDRMOWZTWDhhN01EdW5KYWpwTW44S0szZEozVUVpSXA4VjhTYmMycmVadjg3M0t6T19xakgxWllOVGtvRnFTLVNxa1hGZFNhZkR6RjNWOVVBa0NwZlFnTWl5c0h4WkJZNmxOdmhKWUlKTGVMM3Y4eTZWZ1B3am9WeTAxVnlQTlN2dmpab3liczVFYWZzdkxEeTlRNnc?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T07:27:18+09:00",
+     "title": "Asian Markets at Risk of Pressure on Nvidia Probe: Markets Wrap",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR1JWME4tcFN3Vlh6UlhVeEN3c2FlRUFkUWRrczJ6OUZ1QWRkRndtMy1nZFhBaU5Lc0dzaXU2ZjJnNUtwN2RSa3dyLXlwUV9QanZmaC1Wb2xhbUVZekZhaXdXZkpSazFDVnJqZWIweWtvdGczQi0xTnB1aEhiSy00aVFsMWdYaE1sRkN3NlU2YmVJdzhv?oc=5",
+     "source": "Bloomberg",
+     "published": "2026-11-09T10:44:00+09:00",
      "dup_count": 0,
-     "summary": "AMD 리사 수, 3분기 사상 최대 실적 및 수익 기록"
-    },
-    {
-     "title": "AMD data center revenue nearly doubles as Q4 outlook beats expectations",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORXdhTXZuLVo0elFUcHM2WWpSWWdOM1BHTTZUZktFSHViVnl2eS0xbkVSSTF4N19tZ1p5MW1hUkVTTUswdjk5dllMbWVyT0xaU1BHWjlsLVNnLWdWRzlFeTZWQVJVSUt6S3hRWlQ0UWZ4YzFySzFhZDkwcnY3Wk1mSE5idFVVVnV4LURCRDlTeFdLaVpadVBKSkRpUQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T06:36:00+09:00",
-     "dup_count": 0,
-     "summary": "AMD, 데이터센터 매출 거의 두 배 증가 및 긍정적 4분기 전망"
-    },
-    {
-     "title": "AMD Needs a Huge Outlook to Avoid Intel’s Fate as AI Fears Rise",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRW9XeVZ4N0oxZjlNajFBS0ZXT2RDTE02dktLYXJad082NXU5NWctVkQ2aE1iZ01uLWt4WlZXUW51ZUk0ZzRHUWtYd0dGblRReV94empxQlVBMEJjNHBLcExfQWV4aGxIWktWaG04S0tydDdJb1NGSExIN0hGX1hVa04tYlRuQzk3V0kwQ1JSMFRUNkUzRFczU3cwZ1RObTctVUNlUVFrczVpLW9TVTA1NkxGMUI?oc=5",
-     "source": "Bloomberg.com",
-     "published": "2026-11-04T03:49:41+09:00",
-     "dup_count": 0,
-     "summary": "AI 우려 속 인텔의 전철을 밟지 않으려는 AMD의 강력한 전망 필요"
-    },
-    {
-     "title": "Here’s How Much Traders Expect AMD Stock to Move After Earnings",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOempKS2tHYWVyTWZtX3JwdkRTNVFjd1h2d2RMNDFMTjdfaWVoRGJ4eVZnLTlNWUtVaVdtUjE2WHVCLTdSN2NSakFSWHVJQnZXZkpKRGtEM0dxWHNPb1dIRkFaclZWdXQtNGY2aGdNS0hhNHFwMWpGQ1RzczZyQ3JTQktQeWZVVmlGazltQk14bUJNdXhJRXZZSWVR?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T01:53:32+09:00",
-     "dup_count": 0,
-     "summary": "트레이더들이 예상하는 실적 발표 후 AMD 주가 변동 폭"
+     "summary": "Nvidia 조사 여파로 아시아 증시가 하방 압력에 직면했다."
     }
    ]
   },
   {
-   "title": "Super Micro(SMCI) 실적 및 주가",
-   "sources": [
-    "Barron's",
-    "Yahoo Finance"
-   ],
-   "count": 3,
-   "items": [
-    {
-     "title": "SMCI earnings preview: margins and guidance in focus as pre-announced revenue tops old targets",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTS1ia0tpeFVuaktVWVROdllycC0xdGQ5Q2JSWFhwa19jbHUzVm5CMFUtUGJMcy1Xa0hVWldMQTlCazVES3JsU1Z5bkMwc3VyT1VnUFBmdUZHTDdsalUxS2ZWUnAzSXpfV1NwUkNzRUZHUkdYSmxVb2ZsdVZWMVFKMHdwbklvdXZ6Njd6SGo3c01tYVU1ZTBVSW5lUmZyZ0d6X3g4VU93?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T06:22:13+09:00",
-     "dup_count": 1,
-     "summary": "SMCI, 호실적 예상 속 마진과 가이드라인에 관심 집중"
-    },
-    {
-     "title": "Super Micro Reports Strong Earnings Beat. The Stock Pops.",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPazZPSGJNbEpFdFVPN0dic3ZfZWdDUUw1eTFLRHRoOUl6UUtmUDdXQzlwTE5fVUpFQXhSazVyc3JoYmdudjh5Y2o3cFcwYkhrQ2dGN2doTW00aWFTN2pGSGxLX1N2RFdEVC1JdkJOSUlyUmJOck13SXUxX05VbWx1SEtEMA?oc=5",
-     "source": "Barron's",
-     "published": "2026-11-04T06:51:00+09:00",
-     "dup_count": 0,
-     "summary": "슈퍼마이크로, 호실적 기록하며 주가 급등"
-    },
-    {
-     "title": "Super Micro tops Q1 estimates, offers strong Q2 outlook",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTmxBdFZFcWhOWEw2YXI0X0NtOGJSMG9aaXZ2d1FNLV9UZmJYa1BXWWljNkZEMHR2bUtiYmttcFllV2ZlM01mLXBSb0I0QkFxRHQtNnhEd2M2cjNaUTJmeVJNRkdldE5YeXV4bHZDbkRHWlRGSld5b0dQVmJZRmdzUUIxRlBYR0VOMTd4Znh2YWxDN1ZnSjJ0c0JzSmNBNHpjM1lkY3VacVdpSFVzdEp4UHQ1Um8?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T06:16:56+09:00",
-     "dup_count": 0,
-     "summary": "슈퍼마이크로, 1분기 예상치 상회 및 긍정적 2분기 전망 제시"
-    }
-   ]
-  },
-  {
-   "title": "팔란티어 실적 및 전망",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "Palantir beats Q3 earnings estimates, stock falls over worries of slowing revenue growth",
-     "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQU0VfNkpxZHpZUWR6SGR6ZXcwNzR3emdHQ251V1k0Zy13TGxyOE9NRjlHOHdNZ1NRM18tNTQzNmFSZ1BuRWlxN1Y4SXhjOEJqVF93bG9DdTZ6eHVKMk1SOXIweWRIUTdsbWFmeUlsZVk3LWZJcTNnajFlN09VM3hTSXpRMXlldHZmMmJuUEluM0dnMjhHbUVzazAzaGdmdGV0REpianNYdF9QQ3hTMWdQRE5mWjFSMm5Qc19rVUFLMWJMeEQtR3puckVWZFhDRWNqblhyTG9SeVF1eGNDaEFkZklLdkxUbm40SjVvUFB1UkowN1pyb05GN3VlczVUWHNreFM1QnZCVEpPcWpyUEg0RDZiOFFzckJ5WGhlLQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T04:16:23+09:00",
-     "dup_count": 0,
-     "summary": "팔란티어, 3분기 실적 호조에도 매출 성장 둔화 우려로 하락"
-    },
-    {
-     "title": "Palantir AI Boom Just Got a Big Vote of Confidence From UBS",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUS1vUHhsYzJNZ1VmVVp0YjZSdk1PdmNQWktIeGtjQktlWUtRNkpvY1o2bDFLa1RIajVyTWEyVk45WmRoaG1fblYtYk1mODM0UXdSNjVTVC1sYl8xU2hjZFltbDAzeTJwRFpwYmFZSW1rNThRNGVEU1hHS2Q5NjRVZTVjU0szeDJYQTdndGFudDIwYkU0?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T02:28:24+09:00",
-     "dup_count": 0,
-     "summary": "UBS, 팔란티어 AI 붐에 강력한 신뢰 표명"
-    }
-   ]
-  },
-  {
-   "title": "CVS 분할 계획",
+   "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
    "sources": [
     "Yahoo Finance"
    ],
    "count": 1,
    "items": [
     {
-     "title": "CVS Health to split into two publicly traded companies by 2028, FT reports",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRFNVZFl3YWE5bzBEN2RSd3NSdVByMnY5a2I5WkhCYnJMWkgzc1RIeFVEaW9Ielc0dnk5b0paUDVQTXB0MmxqSUZvUHZHaHBfRDJsZ3BaYUdrT1FVdjN4WnpSb2lPUFR5LU0xaW5pU0JGdE1ncUVkUXd0b080VzVKTkRabE1VTURFVzVMSlU5S0xnNFBn?oc=5",
+     "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+     "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTFBBTy1pM1poaEROWTVTNDVTYVdvTDZEWmM1VDhGdlUzWW1OUXNvQ3RmZTVZQ3BGVlhvbTlWNFNhUQ?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-11-04T10:33:45+09:00",
-     "dup_count": 0,
-     "summary": "CVS Health, 2028년까지 두 개 회사로 분할 예정"
+     "published": "2026-11-09T08:26:32+09:00",
+     "dup_count": 1,
+     "summary": "Yahoo Finance에서 실시간 주가와 금융 뉴스를 제공한다."
     }
    ]
   },
   {
-   "title": "영국 중앙은행(BOE) 금리 인상 전망",
+   "title": "AMD or Nvidia: Which AI Chip Stock Would I Buy With $1,000 Today?",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "AMD or Nvidia: Which AI Chip Stock Would I Buy With $1,000 Today?",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUGktUVY2UXh1NXJCZk9LRHhRbVlPZlZoYjlkcl9GbXRaWW1vSW5MNFY2MTFXcE5JQUlvMzU2dGg3TmlqcjhEZ21FVml2X1pwenNIT0x4WVZHdW5aenRJMGlhZUZkekNDSHVucmdrV25IMmhoSzNCUlc0NDVaMHZPaHEzNUczVHkzbEdvU3ZIMGhFQQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-09T08:05:00+09:00",
+     "dup_count": 0,
+     "summary": "1000달러로 AMD와 Nvidia 중 어떤 AI 반도체 주식을 살까?"
+    }
+   ]
+  },
+  {
+   "title": "Why Are Billionaires Investing In AST SpaceMobile, Inc. (ASTS)?",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Why Are Billionaires Investing In AST SpaceMobile, Inc. (ASTS)?",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOWZiX3g5UjBldjdRMDdmT0IwSnJDYklubmZkcjNjRzlDLUN6d19OQ2MtSkRvSG53a3JtcVhmNjVIVnRic3NOSjBIREtQZE9ncDVxbTVSZnRGWXdiMndiVGJmX3NnN3ZyYlVkY0xKa29xWHZQdkhfZ2R4ZXNDVmJpa0JEbE12OEM2X3ZLa3ZZUVIxelR6Uk1haVQydEZVaklRZG9QeHdPS0I1UVE?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-09T06:22:42+09:00",
+     "dup_count": 0,
+     "summary": "억만장자들이 AST SpaceMobile에 투자하는 이유를 분석했다."
+    }
+   ]
+  },
+  {
+   "title": "Why Nov. 9 Could Be a Huge Day for Rocket Lab Investors",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Why Nov. 9 Could Be a Huge Day for Rocket Lab Investors",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdDV6WkVZMm1aaVNRUjZnNktzdFNUS3I3T05wNzlhWWhsZDdYTmswbWo1WWVyMXFyZGM5Z3kxU2lldDgycW9pdFZvNC1WQXh1VDRZTHM5R3ZqWDNwc2dLQTNEaldiR1hreUxKQ1k5b2x2WFIzVllFelE4elg0dF84bGlnakxOR3lQTFNfYV9n?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-09T06:05:00+09:00",
+     "dup_count": 1,
+     "summary": "11월 9일이 Rocket Lab 투자자들에게 중요한 날인 이유."
+    }
+   ]
+  },
+  {
+   "title": "Kevin Warsh’s Expected Rate Hike Is a Warning to Retirees That the Fed Won’t Rescue Stocks",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Kevin Warsh’s Expected Rate Hike Is a Warning to Retirees That the Fed Won’t Rescue Stocks",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWjJ2QkhCZ3JEcDZoWko4QzFfaVJzZTMwMlRjcnVsRGJ4bDRCTzBGWk80LW1TR1BCS3JhbXh3ZW1LRjkyYVlSTDhTNnpfQkNMelRjSC1abmVMbzF4d1hTNm5XTGVxdlRRN3A2LUh0QlBGQ2phX3VXdmRBNDlySnlYWS0zN3gtbVVYM1pma0g4WUwwUDZ3U00wcFlvSQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-09T05:41:00+09:00",
+     "dup_count": 0,
+     "summary": "Kevin Warsh의 금리 인상 전망은 은퇴자들에게 연준이 주식을 구하지 않을 경고다."
+    }
+   ]
+  },
+  {
+   "title": "A Popular New Bet Hailing From Cryptoland Sets Off a Wall Street Turf War",
    "sources": [
     "WSJ"
    ],
    "count": 1,
    "items": [
     {
-     "title": "BOE Expected to Join Peers in Raising Key Rate",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSUhEZEpVdlkxUG5nVXB4SGZYRlFWMV9SZkVUNFdzM25uRk43UUY5NEVLWlJyUlZKOVdHYmNIVk5zcmZHY2tYNDJtaGtUREFSeEVxRmxoTDdhMVlDOGh0eGtiekpLY1phLWl3M0JRZHFYbGpNRFR1R2hMYnk2bEF4bHJsY1lVMlYxNFV5ZnNDSG1hUm43cU5xZzBoT0lia0o4?oc=5",
+     "title": "A Popular New Bet Hailing From Cryptoland Sets Off a Wall Street Turf War",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcnd3TzZDN1pPNVZHQzNVa044OG9iaHVuSWRwRTZhWTlYSG9qVXVCU09jYkFOXzVWcFhyOHVKOXBjTUNlM1JzTGhqT2J2QzZtNTczSjU2QlFiVkJYYV8tOXBOUFdQanRhQnhJX3BuXy0wU0llcXM5ZHJlOUktUXZ6MXdhZU8yenlDdzdtNWl3ZWZTOV9DM1F3Z0RZOEFTTWlnZnNwWFpRVWh3ekZDSWU5Rmx6OV9NMC00WWExbW1R?oc=5",
      "source": "WSJ",
-     "published": "2026-11-04T10:29:50+09:00",
+     "published": "2026-11-09T05:00:00+09:00",
      "dup_count": 0,
-     "summary": "BOE도 다른 중앙은행들처럼 기준금리 인상 전망"
+     "summary": "크립토랜드에서 온 새로운 베팅이 월스트리트 영토 분쟁을 촉발했다."
     }
    ]
   },
   {
-   "title": "Shopify 실적 및 주가 하락",
+   "title": "Treasury Rally Gets New Boost as Election Hammers the AI Trade",
+   "sources": [
+    "Bloomberg"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Treasury Rally Gets New Boost as Election Hammers the AI Trade",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPelZPY0tQazFGWWxNRjFac00xRWFpVE1vdVpHenVSMDNVS3c0WFpZMXk4Rkk5d2xFYU9wUVdtcGZIYWlvVU41eFZaV1RGdDU4bGE3Z1ppeVlMdTZleU13RVRRbDNVS0pDQzdQbjB5TkFjOWF0NDRxNXA3azY0UGRtM2M5SFU2cDFkUHhZMVVpSVpRM2JjeldzMzU1QnMxZDNCd1ZVcnV1eE5ROWtwZjF2Y1E1UQ?oc=5",
+     "source": "Bloomberg",
+     "published": "2026-11-09T05:00:00+09:00",
+     "dup_count": 1,
+     "summary": "선거가 AI 주식을 강타한 가운데 미 국채 랠리가 힘을 얻었다."
+    }
+   ]
+  },
+  {
+   "title": "A 61-Year-Old Turned Down a $725,000 Annuity and Bought Dividends Instead. Here’s What Happened to Her $3,700 Monthly Paycheck",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "A 61-Year-Old Turned Down a $725,000 Annuity and Bought Dividends Instead. Here’s What Happened to Her $3,700 Monthly Paycheck",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbGtnVGZ2MEJTR2o5S0JzYkFBQkRkMGtLbjd5MHlBNnVERHlrR2VFdG9vM0JmeUZYTTBydFR0dVZmcHIzSk5ZYjZISUJmOF9COTUtU0Q0NHpsSlpTYVpfY1lLUWJqQW9oTGlieGt1RnZJVEJtOHQtU01HR1FPTzdGLVJxenJ1TnFDYWdmT2gweUs?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-09T04:33:58+09:00",
+     "dup_count": 0,
+     "summary": "61세 여성이 72만5천 달러 연금을 거절하고 배당주에 투자한 결과."
+    }
+   ]
+  },
+  {
+   "title": "Why Nvidia Stock Looks Like a Bargain Right Now",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Why Nvidia Stock Looks Like a Bargain Right Now",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZ0NBcUNnaGtIbGthQ2hxZnpYaFFYdElrV3BrLUNHTkp0N0UteEE5bTFsZFNUVmhfMHVCMDFEUEVNSDhfRFpBUEdCZml0VHIwZ3FDSy1aa3NGYUJPblplN2hicUU2S01fZUtLdjgySEhJZlBvb3dBV3BVRHk5R18zanFobWY2Z25rVXVnZDh0YTlpM2JyM2o2RGQybw?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-09T02:10:00+09:00",
+     "dup_count": 0,
+     "summary": "지금 Nvidia 주식이 매력적인 저가 매수 기회로 보이는 이유."
+    }
+   ]
+  },
+  {
+   "title": "2 big AI narratives wrestle with each other: What to watch this week",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "2 big AI narratives wrestle with each other: What to watch this week",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYldSd05JT1pVcURiUGxaUjNENkRtS3loNUR0ZnRERGpaM21GUnJVYlM2YlJFWjBLdEV0aDdDUHNlczNWZV9MNFNmNEtodW1RSjV3Q1FJV2x3YzU2WVFFZ1VPazk4dnhwWmxFeHROV0Z4R1puX01oTE0xWVFyeERCOHg2NVZDd3cyUWpidVlLRW5pR3lzeXNzTm1DdGVnUlZhT2p0TklTTmFuWkh1WDVsQkUwdFRyQUl3Tm9CU3VydC0yQQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-09T02:00:00+09:00",
+     "dup_count": 1,
+     "summary": "두 가지 거대한 AI 내러티브가 충돌하는 이번 주의 관전 포인트."
+    }
+   ]
+  },
+  {
+   "title": "Intel Stock Has Gone Nowhere in 8 Years. Why This Time Could Be Different",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Intel Stock Has Gone Nowhere in 8 Years. Why This Time Could Be Different",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbVRVeXBzNmxuTUxjMTM3S1lMdTFRWE9UQVdOZGdmTWtNd1VkWWRkUnBYSUdRMlRTcUJ4LTJyRklYY3ctRkR0UGdHd3A4emZOUlNpWGZIaldRZUNzSGNVejd1UjFDN1JPQzlMS1VGVDRjZ3BSaHJGeG1HZmREQ2ZwTV9vZzNURF9iRTV5UVJjbEMyckFFUkE?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-09T01:29:58+09:00",
+     "dup_count": 0,
+     "summary": "8년 동안 정체된 Intel 주식이 이번에 달라질 수 있는 이유."
+    }
+   ]
+  },
+  {
+   "title": "Top 5 stocks to watch this week",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Top 5 stocks to watch this week",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPakF3LVBBdVhLNnFsaXBNQWk0YUFXOXVKZ19YZjdac240Q0Q2VjZrUU5hUnhyc3FLcFhuNW1fRTZwaURhYi15Q2dLNzBMWW1fc2hGWnRBMThYZnltMHVlTzMxdnBleXRucnJKTl92ekcxQU42SVZvVXo0NDlMSlFMbm5jQVc2QnloNDRWbGNURHNRUQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-09T01:20:25+09:00",
+     "dup_count": 1,
+     "summary": "이번 주 주목해야 할 상위 5개 주식 종목."
+    }
+   ]
+  },
+  {
+   "title": "Why Nvidia at 13 Times Expected Earnings Still Isn’t Cheap",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Why Nvidia at 13 Times Expected Earnings Still Isn’t Cheap",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSEhJbGo5Z213RFlZOGstMFRLUW52OVk0NmF1NVl6TlJVbHlzay0tZm4zLVIySnNnSjM2SFduV2psMzk2M1YxVEtSWmpyZ3JCcVQ5MXZFX2ZrdlJkM0t0UDc2a1JvMi03R2xpbVJTeU9PcG5jNTlWVUR3Zi1YVlF6dXhDa2wzM0lOazh5anRyRmlJaTBodFcxUA?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-09T01:08:00+09:00",
+     "dup_count": 1,
+     "summary": "예상 실적의 13배인 Nvidia가 여전히 싸지 않은 이유."
+    }
+   ]
+  },
+  {
+   "title": "Verizon Yields 6.2%. Is This Dividend Stock a Trap or a Retirement Bargain?",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Verizon Yields 6.2%. Is This Dividend Stock a Trap or a Retirement Bargain?",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdTVBcXJfS3N6cWxvcHh4c2xEYjJCM0Nzd05vOFVKY0p2Y25SeXFLbU85VkhNaFgwazhSY1NyTXhCWVIwcnU1eGpLVDd0M24xRnJyYTg0UFdrR0ZUcXJ4M1FyUXRsaXpHVktoYzJOSW5TcnNmM0dOZGh6ZWZSZjZodjIyLWszN2xWQUt0bTE5QUdRZVJlYUxj?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-09T01:07:22+09:00",
+     "dup_count": 0,
+     "summary": "6.2% 배당수익률의 Verizon은 은퇴자용 함정인가, 할인 상품인가?"
+    }
+   ]
+  },
+  {
+   "title": "Democrats Win Midterms: 5 Best Healthcare and Insurance Stocks To Buy",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Democrats Win Midterms: 5 Best Healthcare and Insurance Stocks To Buy",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNnR1T3MxZ0FsWWJRY2d5SElzMFpEWFRGUDU3eHVGVmxoZ1g1RHFseE9CdHhlN2xDbkNhSVZEcFFXZzRaNmFSWG5lSEplNFN5VDdRcXB0WUtKM1JNMHFFMTc4RXZGOE5nSDdnc095QS1JWno3Ynh6aEQwTm5Mc3dfSlJRel8yWGxKMVNQZE5WMDFTcVBh?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-09T00:42:04+09:00",
+     "dup_count": 0,
+     "summary": "민주당의 중간선거 승리에 따른 5대 헬스케어 및 보험 주식."
+    }
+   ]
+  },
+  {
+   "title": "Wall Street hiring helps lift finance jobs in October",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Wall Street hiring helps lift finance jobs in October",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ1BNdDdOenpuaDk3NWVUS0w2ZGZCcURKanNZdmhXdFRCLWI2ak91cVFjMFJ4WFVGcFpkTU1CLUEzbjlkWEVmandtWE1QcUkzUkhCRUdUejc3U2FYbjVYd1JEcXhPSEZRMlVHeUE3WlBwSXhJTnJvN2RJTEh0aTNSMW9QbGdRZ29Jc1EydnZ2eVo1ZHF3NzVVcG8zWG44UGhyUW5FbTU1a2pTYTFQcGdn?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-08T23:52:37+09:00",
+     "dup_count": 0,
+     "summary": "10월 월스트리트의 채용 증가로 금융권 일자리가 늘어났다."
+    }
+   ]
+  },
+  {
+   "title": "How to Play SpaceX Stock after Democrats Sweep Midterm Elections",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "How to Play SpaceX Stock after Democrats Sweep Midterm Elections",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOb253N0tGWENIeHVVamJuM1JKVWRIMllCb0xYWWEzTW9zUV9LZ1gtNXFLTlJ4VXk5a3JNeVR6allHT2FhRGdYcE9aZFN3OGdrcWs1d2twMlRvY0s3Q0pJV0VRa0tZcEhKQUNsanBvLWhZR2N0aGR4TjEtRmdEUjZOQ3JhNDR6ckpHVzJvRVJMYTBIVS1TdDdqWU4zQnc5Ujg?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-08T23:20:59+09:00",
+     "dup_count": 0,
+     "summary": "민주당의 중간선거 압승 이후 SpaceX 주식 투자 전략."
+    }
+   ]
+  },
+  {
+   "title": "Is a Market Crash Coming? Warren Buffett's Warning Is Ringing Loud and Clear.",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Is a Market Crash Coming? Warren Buffett's Warning Is Ringing Loud and Clear.",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNb3g4SklKVjFSZmppYlVTU2dyd2ZpWkVnaWNmdUw0TE5haW05S1lxWlpZYlJJR3RjT0JBbUp2TkMxTURuVjJrZDBwcUx2Mi05SW9EcjBEaUhfMDE1Sm85ZDM1T3N2VU00VEFJbXo0ZmtPd1M0UXZEOVJocWhXUnAzaGxwZFZHUU5hTEtoU2wwVEFIQTNDbzYyc1NHUjFZeEV0OEE?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-08T23:09:00+09:00",
+     "dup_count": 0,
+     "summary": "시장 붕괴가 오는가? 워런 버핏의 경고가 강력하게 울리고 있다."
+    }
+   ]
+  },
+  {
+   "title": "'There's no question about it': Warren Buffett and Bill Gates reveal the same 1-word secret to success",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "'There's no question about it': Warren Buffett and Bill Gates reveal the same 1-word secret to success",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRG0zZTVJWkJvNG5NN25TbTVZSmZwUFE2ZVF1SlA2c0ZVT3hBUWp5aHBOYU16NEg3VTRFT0pKXzRYcWJUZ3NCekFTaEJvM2p4VXVZODk2Y01vcUFFU25IOUtMalE4MzQwQm14aHdyLXd6YWJvYkdQVVV0YW9mZEVEZFhhZ2twbTc3QVdfWHhERmpWTkk5QW9MSjlB?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-08T21:45:00+09:00",
+     "dup_count": 0,
+     "summary": "워런 버핏과 빌 게이츠가 밝힌 성공을 위한 한 단어 비결."
+    }
+   ]
+  },
+  {
+   "title": "3 Reasons Why Ultra High Yield Realty Income Is a Buy After Its Latest Earnings Report",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "3 Reasons Why Ultra High Yield Realty Income Is a Buy After Its Latest Earnings Report",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ2ZhU2ZpTmpzc2Z6S0I5X1dvbjVUaDhmRjlCZHFBZ2pWZHVOQTVJM0tYblBpSVBDX05pMGh2SXE0YWdFNVVnWjFUYUdZWjVZdXBZRGljWU9nNThveTM2RnFpM3Y4VDMxdHhsdS1BTkxFX2hQSU1HRHVYbHdLZ0dZZExDd0VsZGxCRVJYTTVCMA?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-08T21:35:00+09:00",
+     "dup_count": 0,
+     "summary": "Realty Income이 최신 실적 발표 후 매수해야 할 3가지 이유."
+    }
+   ]
+  },
+  {
+   "title": "Fidelity, Vanguard issue the same sobering 10-year outlook — and US retirees stand to suffer most. Protect your nest egg",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Fidelity, Vanguard issue the same sobering 10-year outlook — and US retirees stand to suffer most. Protect your nest egg",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMkRTYjRSMFNsY1FhR0dpb1lqNTg3cnB2ZmU0MTdtRTZiUXBYX0FtNDgyVTZZVEF4bUJmbUVBYWJwczYwUDR0dWpXX3VldmpxUjFfNkNUMkNpcDAybF9oeUwtNTlMQ3pNNS1QNnk0LVVqTlU1ZTYwWmRDcXdWb0NlV0pLaE0wRk9MZFd1RkxDQWNFa1dXQW5MSkhORUQ1SUJPRlJGcg?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-08T21:15:00+09:00",
+     "dup_count": 0,
+     "summary": "피델리티와 뱅가드가 경고한 10년 전망과 미 은퇴자들의 위기."
+    }
+   ]
+  },
+  {
+   "title": "Opinion: This market signal called the tech selloff. Now it’s sending another warning.",
    "sources": [
     "MarketWatch"
    ],
    "count": 1,
    "items": [
     {
-     "title": "Shopify’s stock slides after earnings. This is what’s worrying Wall Street.",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYnpsaVNUOHllTG5Gb0U4U0ZsQ0dxckhadVA0ZkhzYjhLRkZfQWh0eEpkNlhQSERQX3dqRXo1ZjBVWDlqclozWFVUaWMxZTIxS2lVLXA4YXlGRGoyVkpvTGtaZDZBZ3hhZUZyVm5HS0ZsSE0zTzZRLWh6WnQ0UUI0WGlqMTNvS3FoVU15VDhUS05UM04yVjlIQXVzR3h4bGkwMHlEbkQxaHVtX1RfNG96VEhaSkE?oc=5",
+     "title": "Opinion: This market signal called the tech selloff. Now it’s sending another warning.",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNeWhIbWU5Y2VUbTZLLXl5TUJwVEpsSlMtTXI2S2hSQ0dxX1U4bndRQWNjRU9HNkFncWo4eXdRMXRLdU43RlpVVVlJbFN6X3BjTlplMWN6Um1TUnU4Sy14cGM5dUx4WkhKbXIxRkhaSXlBWGgwYnJPVHVrOVEyUlpBYVF2b18wU0owR1JMTjVyWC02bnpjTW92MlgxM2ViczZzdGxJNHg0cEhTWEJibHNMTjRwUnVyejhG?oc=5",
      "source": "MarketWatch",
-     "published": "2026-11-04T07:45:00+09:00",
+     "published": "2026-11-08T21:00:00+09:00",
      "dup_count": 0,
-     "summary": "쇼피파이, 실적 발표 후 주가 하락하며 월가 우려 고조"
+     "summary": "기술주 매도세를 맞춘 시장 시그널이 또 다른 경고를 보낸다."
     }
    ]
   },
   {
-   "title": "아메리칸 파이낸셜 실적",
+   "title": "Wall Street's Biggest Bubble Looks Ready to Burst, and I Don't Mean AI or Quantum Computing",
    "sources": [
     "Yahoo Finance"
    ],
    "count": 1,
    "items": [
     {
-     "title": "American Financial: Q3 Earnings Snapshot",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVUx1RWtjYlJZMWRCNHJBQTAwRVBVTEJabldPLWc3UFJ5dFBrcUdNSzEwVUd1SURpTzB2U1M4RGx5enVpQ3E1M0U5NTZYbWRWMjZZcG9aUlNSSl8wOE5XVVZRVXZaMWZrdFhpNHc2eW05QzI4ak9nSjE4OVJpRjVOZzFKcEkzVXJFYTlGbC02TndXWFpEbW9jbXMzaU9pR2N2dTNDcW9ycw?oc=5",
+     "title": "Wall Street's Biggest Bubble Looks Ready to Burst, and I Don't Mean AI or Quantum Computing",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNM1U4U3ZRY09jWXdYZzUwUk11LW42RG8yRk9Rb0NQSzdRa2VRU1FJM2dUTmhzakZvRlhVSzVHemlHTnpaczd2NFk4U0hmcTltNHpPbTAzSjFwclBKdHozSW5CMGM3bEJOdTE4QUtOLVNfamNydmVuanRUelVLU250WlRQNl9GbUpROVhuR1RJSm9jZGxkNzlJZmxORXVMa0E?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-11-04T07:11:01+09:00",
-     "dup_count": 0,
-     "summary": "아메리칸 파이낸셜, 3분기 실적 보고서 발표"
+     "published": "2026-11-08T20:56:02+09:00",
+     "dup_count": 1,
+     "summary": "AI나 양자 컴퓨팅이 아닌 월스트리트의 최대 거품이 터질 조짐이다."
     }
    ]
   },
   {
-   "title": "스페이스X 가치 전망",
+   "title": "EXCLUSIVE: Democrats Took Congress. But AI's Spending Binge Isn't Going Anywhere, This CEO Says",
    "sources": [
     "Yahoo Finance"
    ],
    "count": 1,
    "items": [
     {
-     "title": "Here's What SpaceX Stock Will Be Worth by 2027 if Elon Musk's $1 Trillion Revenue Call Is Correct",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNak82Rk9uWHNGdlk1N3pmQXpBdzFBUTNMOGJIaEYtYS1uVGtqTkpCS1daRGtnNF9xd0xLSktFQk9tek55UFNRMXl2VHpFWXZpVWVIMVBYaWdub2ZOWW44cThlX01CdndMcmpub1ZrYXltSk1WYUxSYWFBT2tuTVpHLVJPWTlYLTU4OUJTOWE0YjdjWDhud0lReUNB?oc=5",
+     "title": "EXCLUSIVE: Democrats Took Congress. But AI's Spending Binge Isn't Going Anywhere, This CEO Says",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVEI2TUtKbF91NjNPSl9acHpveEVJNnIzS29MOUxqX1JRMG94blJLZGpIVUl0bU4wc0w1S3Q1em9WM2l0NkhfMm5VSEVFMmZMVXBsY1NJTkJtRFQyMDFJWDRjV25iVE9KYzd2Q3ZkRF9YZ3B4OHU5bDdtY3lFUWZ6ZjBpaFR3TDFDSC1OZ0k3RkEtQ3pSX2gteGJraFFUVFlmTUM4?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-11-04T06:38:00+09:00",
+     "published": "2026-11-08T20:45:06+09:00",
      "dup_count": 0,
-     "summary": "일론 머스크의 1조 달러 매출 공약 시 2027년 SpaceX 가치"
+     "summary": "민주당이 의회를 장악해도 AI 지출 랠리는 계속될 것이라고 CEO가 말했다."
     }
    ]
   },
   {
-   "title": "아리스타 네트워크 실적",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Arista Networks, Inc. Reports Third Quarter 2026 Financial Results",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQb3BnQUZZYkE4bU5qdmZHeEhBX3REcEtabFVXNnF1Z2FqRmY0Q094YnlkcnZaVmlkLXBTWWZrMVo3XzExdm4tenlFVGVHLVc3MTRLQ2NxbDdSQm5LTnA4ODJBOE9naExqU2NmdEJhTFhsZ2c0QWZYY19TcXlOTWMycnVqSVFVckhNM2NDVmNRaHJ5ZTFVT1hlVTcybFlodFE?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T06:05:00+09:00",
-     "dup_count": 0,
-     "summary": "아리스타 네트웍스, 2026년 3분기 재무 실적 발표"
-    }
-   ]
-  },
-  {
-   "title": "미국 천연가스 선물 가격 상승",
-   "sources": [
-    "WSJ"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "U.S. Natural Gas Futures Pick Up on Cooler Weather Outlook",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOFQtdDhST2FsRVE0eGl3NzhTalRraXpndGlGd0RZRmxidE1tV1lCNkhoRHlNTUZfVURHWUhYbTNuOWpmRWxjdHVwVURoRnAyMmlZUHRDQXEwRUpybDc2SzJRYmY5dXRLX2dWTTlnWFNnbmJzZUxqRGFYeGxnVm1uQkRoLXBIdzhrM09PSE1yNnExblhxa05NampSSDhJako5RDI0?oc=5",
-     "source": "WSJ",
-     "published": "2026-11-04T05:58:00+09:00",
-     "dup_count": 0,
-     "summary": "서늘한 날씨 예보에 미국 천연가스 선물 가격 상승"
-    }
-   ]
-  },
-  {
-   "title": "IonQ 주가 하락 및 전망",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "IonQ Just Dropped 32% In a Month: Is IONQ Stock Hopeless or Ready for a Rebound?",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTHY1U3ZjX0Y3NEtqemlVQ0owV0FJbWdlQmdLWWRLU3A4cTFsUFl4Um1fcUQ5X2V5Q2JUa3NVVkNmWURsQlFyTVhfTWdESDJZYUxfVEM5ejhWX1FfckVaZnZsdVNUVmNxSHY4Y2FCYTE0UzI5cXd2SzFpVm9HNFdBX042cVNFN0FLNEliY2lCT2J6aTRrclE?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T05:05:34+09:00",
-     "dup_count": 0,
-     "summary": "한 달간 32% 하락한 IonQ, 반등 가능할까"
-    }
-   ]
-  },
-  {
-   "title": "크라우드스트라이크 AI 킬 스위치",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "CrowdStrike announces 'kill switch' for AI agents that go rogue",
-     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPUTdqbkFGU1h0REtEWFNfdEpGcFBRd1BhNUYya2FNb1M4VTN0V1piYjlldnBPUTgxZG85SWlwYnFMc3lLUHNBNmk2YXpDXzM5UlJ0SGtIMTQ3T1VpYWw0M0xtWmtBVjRXUUs3V1BqNkRQUEwtYnE0NG5MYy1SYi1BWDJldmZhLS1qaG5YZjFqWjN6UTZ3U2s5YWJwZE5GdEU1VlNOckFEUENHN2o1d3FlOFplbVdVeTZ1UnhzOGVBcDNwSG1LOVVSYWZCZmRaOHlmT25NRVlSZ2U1UVRRbnl2MEZ6VmR3T2pfVktQbA?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T04:55:38+09:00",
-     "dup_count": 0,
-     "summary": "크라우드스트라이크, 폭주하는 AI 에이전트용 킬 스위치 발표"
-    }
-   ]
-  },
-  {
-   "title": "빌 애크먼 시장 발언 및 종목 추천",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Ackman calls stock market \"broken\" but touts Visa, MasterCard and Netflix",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRUVQekMwVDh0SVZ5ZXpfVG5BeW1EZ3JmV1psRUI3Z2lRWjd1eU11RWluN1N1V1B4RjBHUlI4bjk1elNUQUZERFUweGhVak9xZ2w0T1RtQ2x0VGtVdG9NX3dlNy1rTkNXSklfT0prNVJMSjhXZFhPemp1ZW9ia0FaaXplSmNuT1lyR0o1dE5ZWjBjZDdTTm51S1lrUl9IQQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T04:01:09+09:00",
-     "dup_count": 0,
-     "summary": "액먼, 증시 비판하면서도 비자·마스터카드·넷플릭스 추천"
-    }
-   ]
-  },
-  {
-   "title": "태양광 관련주 반등",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Enphase Surges 9%, Sunrun Climbs 7%, SolarEdge Rallies 6% as Solar Rebound Extends Into Earnings",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMXplVWhubUNvcmc0dE9keVVOcGotZzFRSnVRUWxKUXNRMmVMMElMbV9xSEljalI5RUVzTzN0NzdIdVNjV3NKdGNpYS1kbVBYcVJMUURUN0tlU2JPNE9adXo5amFwV3JQdkc4cmIyWDRaa0x5V1dkcGV0cG9SOVFLeEc3bGVVdG9ia2hDYnZTc3p5U3NSWVAyTVdQUQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T03:50:53+09:00",
-     "dup_count": 0,
-     "summary": "실적 시즌 태양광 반등으로 엔페이즈 등 관련 주가 급등"
-    }
-   ]
-  },
-  {
-   "title": "미국 고용 데이터와 달러화 전망",
-   "sources": [
-    "WSJ"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Dollar Could Gain if Jobs Data Boosts December Rate-Rise Bets",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxON19qdE9BN1BGODdBQV9yaWZ3UC1hbGpKN25JMkRaaGd1QkJnZkd1VXZvUUU2UGo3SDRaX1hpcXcwOTZtTXV3NEd4RklOYllvV2k5UW5XbG43b0szMmRleUhKY2tEeW1OX1RtSk44ZmFNcHE4RUw0LW05SXQ3TXVvOWVqdjk4Snl1ZllGNE5DNXZwZUY2dW56QWFBVVRtYmFFM3phQmNJZDRmUUU?oc=5",
-     "source": "WSJ",
-     "published": "2026-11-04T03:40:00+09:00",
-     "dup_count": 0,
-     "summary": "12월 금리 인상 기대 시 달러화 강세 가능성"
-    }
-   ]
-  },
-  {
-   "title": "반도체주(마이크론, 엔비디아, AMD) 반등",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Micron, Nvidia, and AMD lead chip stocks' rebound",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOR241WmdKTExjbmZJcndhY3BOVG91eVFPT29xVzBLcVQ4NGQtUExYVDlray1hM1c5dENLekg3bkxyaHFramhTTVEwclZnci1uLWdvbi0zc21pbUMzazNZOFlRUEduSDF5al9jRjMxUG5FOGlTaTdTQVVKZVNRTWplRzh4UjdiYnNhZzBpTHlzS0Q4NzZLZmpfcjJLM1p3TlI3?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T03:38:16+09:00",
-     "dup_count": 0,
-     "summary": "마이크론, 엔비디아, AMD가 반도체주 반등 주도"
-    }
-   ]
-  },
-  {
-   "title": "캐나다 중앙은행(BOC) 금리 인상 신중 입장",
-   "sources": [
-    "WSJ"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Bank of Canada Gov. Macklem Pledges to Proceed Carefully on Further Rate Increases",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOXFIN1hXNGpRRHBPc2pNQU5qNnZUQkdZQV95NzhCcTR2anNDcERhLVBXbU93REhqZHdfU1ZjSnB3dU5wRHBsVmhWNlBJaHN6Tms3ZnJQenBCS1FTX3Q2ZVE5U0RRb2lwRE95YU5CbWtzRE9SSWVZeWpKaDdCTWxGdU0zR1pRaWduZGFUUGxERUkzUW82dEd4Y3k0WE5PMUt1RzlmNlFzR0ZuT1Vtd2lYSmdRZVpyS0k1YWxwUDB1TXlHN00?oc=5",
-     "source": "WSJ",
-     "published": "2026-11-04T03:37:00+09:00",
-     "dup_count": 0,
-     "summary": "맥클렘 캐나다 중앙은행 총재, 신중한 추가 금리 인상 시사"
-    }
-   ]
-  },
-  {
-   "title": "이튼 실적 분석",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Eaton earnings analysis: questions answered and next catalysts",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWnM1ZnNRZ2hSQ1NCYldPaTl4eTNGMC1sNURjY0EwYk9QalBLX0ZjaVBUQzNnQUlMTVdzUnU5aE56ZGdIdDhfMVR6cEtfeUJlWEQ0UjBoRHY1M2FVWGx4bldMNU1KTXdlM2FERldTNmRWb0hNOHU5dXg1N2h1UXZzck1FYndQeXRLMkx1Nzczc3AtVXhabDI2UlBla1JrWUlFTWxaaVFVMXdnMTA?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T03:29:35+09:00",
-     "dup_count": 0,
-     "summary": "이턴 실적 분석과 향후 주가 촉매제 점검"
-    }
-   ]
-  },
-  {
-   "title": "AEIS 3분기 실적 호조",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "AEIS Q3 Earnings Beat on Semiconductor and Data Center Strength",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaGJBSTAtU3N2OGRsS19KV082REtSb1FobTdHQm4zSk8wcUhMQXFwNW9meDJRcGxYQmZuQW5Hc2swSGtNdFpTT21SMUpyNnlueWJIbThvcVFLS1JWRFNLNFByR2QyVV9DX3FfOTVjdFlYWHZHdG1ocXNNTG9ha0NUemVMQUxBSHFuNjJLOE9NLW1vV0lFaHVfNDlEeUwxSksybWc?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T02:26:00+09:00",
-     "dup_count": 0,
-     "summary": "AEIS, 반도체 및 데이터센터 호조로 3분기 실적 호조"
-    }
-   ]
-  },
-  {
-   "title": "워런 버핏의 배당주 투자",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "Meet the Dividend Stock That Warren Buffett Backed for Decades. Here's Why Greg Abel Is Still Holding.",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZlB2c2RzM0s0TmRWcEgwV0JMZENYWDJQRFN4emZvVmx5UWdNaUxZRUphZXA1eDBTZXVSTzRGTURUdUxMNUtzOGNKczhVQjRqSVlNcUJTNmIwdENqSGRHVHpUeU1La2JtYWVGalpiVU9hMGZPREppYlF3cGxQRl95OEVQNlZlZlNSYWx1clBWVzRTS29jT1pZaVVQY3lXX2kx?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T02:05:00+09:00",
-     "dup_count": 0,
-     "summary": "워런 버핏이 수십 년간 지지한 배당주와 그렉 아벨의 보유 이유"
-    }
-   ]
-  },
-  {
-   "title": "I 채권(I bonds) 금리 매력도",
-   "sources": [
-    "Yahoo Finance"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "I bonds are back: Why the new 5.51% rate is so attractive",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPckVIRFpRMkNuTmZYQlJwbmpDTElpb1owNEozWFI2Tm0yOElXcEdGYktGVVBZZFB3OEowbi1FNW1YRVFVOGI4Ym1nd1JsNTkydjBMQmJNT1N6SHFWVmZKOFFjd0cwU0VxRm5QbFh2TERZRTJ1X0ZZY1FtLVdXLWQyR0paREtJSnV2ZVdJYUZDdVFzM0xHNFNacWloaFJDYzA2UWNRQTJ2LWtJa005bzFHOA?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-04T01:32:19+09:00",
-     "dup_count": 0,
-     "summary": "연 5.51% 금리로 매력 높아진 I 본드 재등장"
-    }
-   ]
-  },
-  {
-   "title": "Apple, Palantir, Pfizer, Marvell, AMD, Bloom Energy, Gartner, and More Stocks That Explain Today’s Market",
+   "title": "Housing vs. Stocks: Lowest Share of Home Buyers Since 2006 Say Real Estate Beats Equities",
    "sources": [
     "Barron's"
    ],
    "count": 1,
    "items": [
     {
-     "title": "Apple, Palantir, Pfizer, Marvell, AMD, Bloom Energy, Gartner, and More Stocks That Explain Today’s Market",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE43RWNvbkRVVzdUX0dYdVBwSWRQbHZfTmp1WHpuYkRyTjNLNlZFQWlxLUpQOWtiQnRoMVJQaks5QXdWNVo1WTVKLXdVQUlGVVduT0JPOGVqZE5GQmp5QTF4TF9XS04?oc=5",
+     "title": "Housing vs. Stocks: Lowest Share of Home Buyers Since 2006 Say Real Estate Beats Equities",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOXzN5dlRiWU9lV2dyYW8wSXAzT0VCbjh4Smh4b29TbDBKSi1Jd0JBTmxFWUk5cEhlNVo3SDBHMThSeWsxR3oyQ0hXQ3NncVdMZXlSM203bzNIZjhkdzI0RWZYZDRDcFl3ZXRsZ2s1bmNobjJlQzV2bldMUDZVSmNkWGZ5MFNfQ0tDVTVaZzRadTlQUFowYXhxaw?oc=5",
      "source": "Barron's",
-     "published": "2026-11-04T06:16:00+09:00",
+     "published": "2026-11-08T20:00:00+09:00",
      "dup_count": 0,
-     "summary": "애플·팔란티어·AMD 등 오늘날 시장을 설명하는 주요 주식들"
+     "summary": "2006년 이후 가장 적은 주택 구매자가 부동산이 주식보다 낫다고 답했다."
+    }
+   ]
+  },
+  {
+   "title": "AI stocks like Nvidia, Micron, and Sandisk have been blown up, but keep this in mind",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "AI stocks like Nvidia, Micron, and Sandisk have been blown up, but keep this in mind",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNnFBSnpqTnBzMkpXOXVzbFI0ZDdIRWowYXU2SWtGMDJJN2wxUDFDQk5NcGZxMFBtSW9ycURoZXNhRnBRTHJZOWx0OFJYU20xWEVwUXJ3NzAyYUYzTFdDdUFvbTJsSjdfcmJIQVpSdXFnNFVYVGZLUDh6UWpDN2hTUXBpX3A4bDl6WmVoMlJWeWdnaFdpTmhubUlWNzEtX2RIMVBHeV81M3RFa0lmS3RDZGtJSmIyckRjYlNPUzFRZk9TRzhSQzJTWWpkaXIzX1lEbE4zZg?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-08T20:00:00+09:00",
+     "dup_count": 1,
+     "summary": "Nvidia, Micron, Sanisk 등 AI 주식 하락 속 유의할 점."
+    }
+   ]
+  },
+  {
+   "title": "What To Expect In Markets This Week: CRWV, CSCO, NBIS, LUNR, ONDS, CBRS Earnings, CPI, Fed Speeches And More",
+   "sources": [
+    "Yahoo Finance"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "What To Expect In Markets This Week: CRWV, CSCO, NBIS, LUNR, ONDS, CBRS Earnings, CPI, Fed Speeches And More",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQVc4elBJWVpjR1BYUm53UWxXeng1LUpVdm1yM1FPcFExenB1TkJqSU1SQkU1LXJ0NkUyc19VMHFsWm5nc2xXSVQxUGRvbVMyZmkxS1BXMHNrbEhMdndwQnBZTUpmWHhRZ3VKbEJ0Z3ZDdlFXSEtZdFEwdG5HaWh3dlpDZFl0UGlwYmtoRnpuNi1jcEFDRmZjNWdR?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-08T19:59:42+09:00",
+     "dup_count": 0,
+     "summary": "이번 주 시장 예상: 실적 발표, CPI, 연준 발언 등 주요 일정."
+    }
+   ]
+  },
+  {
+   "title": "Indian shares consolidate in Diwali session after seven-day rally",
+   "sources": [
+    "Reuters"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "Indian shares consolidate in Diwali session after seven-day rally",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSURhQVo2bnpTNGJqSFRaSk5Tc1ZFcmxGcTU0MXNiVkR4b2tQekR0VXlhVktMZzYwMWdHUnpkWWdyM1lGTUowOXhLR19tMl9wd1BpS3J4MWpvNnJxaUpUSXg5M2pyTUtCaUFaRy16dTdKRDBGekI1czdXSGcwMjR4MnJDVGxLbDdPREdyMms4cFlpbTl6U3FxeHY5NXI4NHQ4VVR3VTQyT2cyU2wwa2Iw?oc=5",
+     "source": "Reuters",
+     "published": "2026-11-08T19:43:43+09:00",
+     "dup_count": 0,
+     "summary": "인도 증시는 7일간의 랠리 후 디왈리 세션에서 조세를 거치고 있다."
+    }
+   ]
+  },
+  {
+   "title": "For Trump’s Fed Ambitions, a Democratic Senate Poses the Biggest Hurdle Yet",
+   "sources": [
+    "WSJ"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "For Trump’s Fed Ambitions, a Democratic Senate Poses the Biggest Hurdle Yet",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOEN2SVIzQmppcXREV0sxNE0tejFxYkt4VGpxemtVbVV4R0ZPTVFyVWV0azNTLUxCSkxUQWxxN1plZEpfZ1ZCRHUwNGhJV0k3c2owTWVRaEpfb3JMN09jV01jTkNJcmNidl9FTFhid1JsUmw4ZnVXSjVDRXZzWlM0NnRmRnEybjc5MG1Hb09KQXRsM1lFR0FVUThGVUZjdTZLd2lUZDl2WTB0UQ?oc=5",
+     "source": "WSJ",
+     "published": "2026-11-08T19:30:00+09:00",
+     "dup_count": 0,
+     "summary": "트럼프의 연준 야망에 민주당 상원이 가장 큰 걸림돌이 되고 있다."
     }
    ]
   }
  ],
  "items": [
   {
-   "title": "Stock Futures Rise on AI Recovery as US Votes: Markets Wrap",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPLVc2azZiNTdEZEJUM0RFOERmNk1QaTRQOGdkbE5EOUM5YVE5M2pqVTFkYmJsTC13MnpKaVRSd2ZLYmowSlhpOE5VcjdJNnJleWZsTDJ2SGN2b3JTOE9pdkZLMmdCblZhSE5ucGoyd2k2SEJwOFpVZVp1aWk1aWJYSHdvQ3VTMGtGa3FXa3NYUWxiWEsz?oc=5",
-   "source": "Bloomberg.com",
-   "published": "2026-11-04T10:42:00+09:00",
+   "title": "Asian Markets at Risk of Pressure on Nvidia Probe: Markets Wrap",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR1JWME4tcFN3Vlh6UlhVeEN3c2FlRUFkUWRrczJ6OUZ1QWRkRndtMy1nZFhBaU5Lc0dzaXU2ZjJnNUtwN2RSa3dyLXlwUV9QanZmaC1Wb2xhbUVZekZhaXdXZkpSazFDVnJqZWIweWtvdGczQi0xTnB1aEhiSy00aVFsMWdYaE1sRkN3NlU2YmVJdzhv?oc=5",
+   "source": "Bloomberg",
+   "published": "2026-11-09T10:44:00+09:00",
    "dup_count": 0,
-   "summary": "미국 선거 속 AI 반등으로 주가지수 선물 상승"
+   "summary": "Nvidia 조사 여파로 아시아 증시가 하방 압력에 직면했다."
   },
   {
-   "title": "CVS Health to split into two publicly traded companies by 2028, FT reports",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRFNVZFl3YWE5bzBEN2RSd3NSdVByMnY5a2I5WkhCYnJMWkgzc1RIeFVEaW9Ielc0dnk5b0paUDVQTXB0MmxqSUZvUHZHaHBfRDJsZ3BaYUdrT1FVdjN4WnpSb2lPUFR5LU0xaW5pU0JGdE1ncUVkUXd0b080VzVKTkRabE1VTURFVzVMSlU5S0xnNFBn?oc=5",
+   "title": "Nvidia’s Board Just Opened an Investigation Into Jensen Huang. Here’s What History Says Comes Next for the Stock",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSUJLMHNZczFqNlVVRmNmV0hLQ0JvWldBMUltXy1rSlpVMlkyY0xLb1ROd21GQUpmQjJJc04wLU80UmpCSll0dHdRSWYxSGFSWlJJeFNiY0ZDZ3UxQ2taRl9vZjZkRHM1LVF1dHFFUnZlWHJiaERta0FtUGFxb2FjX01VQTNIdXZLSDlpdFNqM1pES3JhMUtpSGRqSjFrZVZaSWo3cF9B?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-11-04T10:33:45+09:00",
-   "dup_count": 0,
-   "summary": "CVS Health, 2028년까지 두 개 회사로 분할 예정"
+   "published": "2026-11-09T10:14:23+09:00",
+   "dup_count": 1,
+   "summary": "Nvidia 이사회가 젠슨 황 조사를 시작해 주가 향방이 주목된다."
   },
   {
-   "title": "BOE Expected to Join Peers in Raising Key Rate",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSUhEZEpVdlkxUG5nVXB4SGZYRlFWMV9SZkVUNFdzM25uRk43UUY5NEVLWlJyUlZKOVdHYmNIVk5zcmZHY2tYNDJtaGtUREFSeEVxRmxoTDdhMVlDOGh0eGtiekpLY1phLWl3M0JRZHFYbGpNRFR1R2hMYnk2bEF4bHJsY1lVMlYxNFV5ZnNDSG1hUm43cU5xZzBoT0lia0o4?oc=5",
+   "title": "Nvidia CEO Jensen Huang's image tarnished by board investigation and affair, analysts say",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONm55SVFwTGtmVmRIM0JHVU9XZVFsTWJQaExJQ1I1am53NTdQbkwtU1hzSURxTXFKVjkwcU9kR3J2Vl9lYWhxY2wtWjJ2Z3FVck5peWNkMTdsSEtFNGxFdWt4RFFRV2dOQWE3NFhtUWNCRno5ZklKUFNaWUNZNjhTUkdVakdnYTdXdDVlOXlTbmRRUnZEbnc?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T09:26:45+09:00",
+   "dup_count": 0,
+   "summary": "이사회 조사와 스캔들로 Nvidia 젠슨 황의 이미지가 타격을 입었다."
+  },
+  {
+   "title": "Nvidia CEO Huang admits to affair, apologizes to employees as probe launched",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQOVRsMnNFSmh0Uldhb2VaLTlCUllNVG8wckxnSTlHRGFqb0NkR1VtNlRjaEEtWW9aOTJvQmV0aWNRVjlOSVNOUVZEOFp4c2JITkVxUlRGVzNFZjFTRmRmcEpOcG1MU0lnT3hqWmlhRi1lSDRxTHpfWEQ1b1ZDb284Ri1LaTNmWHgtbTEzYXlkMXd0M1FnOHNBczV3UW1HZnl1ODN4RHA4TExCT2pKOW5NOWlzU0RfNDdqa3BGQjNTZEE1cFFHeUhXT2ttb3A1THM?oc=5",
+   "source": "Investing.com",
+   "published": "2026-11-09T08:48:45+09:00",
+   "dup_count": 0,
+   "summary": "Nvidia CEO 젠슨 황이 스캔들을 인정하고 직원들에게 사과했다."
+  },
+  {
+   "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+   "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTFBBTy1pM1poaEROWTVTNDVTYVdvTDZEWmM1VDhGdlUzWW1OUXNvQ3RmZTVZQ3BGVlhvbTlWNFNhUQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T08:26:32+09:00",
+   "dup_count": 1,
+   "summary": "Yahoo Finance에서 실시간 주가와 금융 뉴스를 제공한다."
+  },
+  {
+   "title": "AMD or Nvidia: Which AI Chip Stock Would I Buy With $1,000 Today?",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUGktUVY2UXh1NXJCZk9LRHhRbVlPZlZoYjlkcl9GbXRaWW1vSW5MNFY2MTFXcE5JQUlvMzU2dGg3TmlqcjhEZ21FVml2X1pwenNIT0x4WVZHdW5aenRJMGlhZUZkekNDSHVucmdrV25IMmhoSzNCUlc0NDVaMHZPaHEzNUczVHkzbEdvU3ZIMGhFQQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T08:05:00+09:00",
+   "dup_count": 0,
+   "summary": "1000달러로 AMD와 Nvidia 중 어떤 AI 반도체 주식을 살까?"
+  },
+  {
+   "title": "Why Are Billionaires Investing In AST SpaceMobile, Inc. (ASTS)?",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOWZiX3g5UjBldjdRMDdmT0IwSnJDYklubmZkcjNjRzlDLUN6d19OQ2MtSkRvSG53a3JtcVhmNjVIVnRic3NOSjBIREtQZE9ncDVxbTVSZnRGWXdiMndiVGJmX3NnN3ZyYlVkY0xKa29xWHZQdkhfZ2R4ZXNDVmJpa0JEbE12OEM2X3ZLa3ZZUVIxelR6Uk1haVQydEZVaklRZG9QeHdPS0I1UVE?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T06:22:42+09:00",
+   "dup_count": 0,
+   "summary": "억만장자들이 AST SpaceMobile에 투자하는 이유를 분석했다."
+  },
+  {
+   "title": "Why Nov. 9 Could Be a Huge Day for Rocket Lab Investors",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdDV6WkVZMm1aaVNRUjZnNktzdFNUS3I3T05wNzlhWWhsZDdYTmswbWo1WWVyMXFyZGM5Z3kxU2lldDgycW9pdFZvNC1WQXh1VDRZTHM5R3ZqWDNwc2dLQTNEaldiR1hreUxKQ1k5b2x2WFIzVllFelE4elg0dF84bGlnakxOR3lQTFNfYV9n?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T06:05:00+09:00",
+   "dup_count": 1,
+   "summary": "11월 9일이 Rocket Lab 투자자들에게 중요한 날인 이유."
+  },
+  {
+   "title": "Nvidia's Jensen Huang admits to affair after allegations of romance with Chinese spy: Report",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNYU5fTUZfS2drVGlTTk43X0NHYU9EMWZJQ0pmN1IyMDlWRFJLUjdpamR6QmlYN2pLR2FYaGw2RHJPbHl6VTdXOTRDaTlMSEJEWUZLYXlSNkw0VWlRSmlTNGl6WjFmVU5rRkRVeng2alFRSjdRR2lVTEpvSWM3THFmc1dQNk5SVG9pcm93WW1IQjFLV0xSOTBZd0RoQnU4SWJJRWhMcHZWMFpWcHRvSU1TQWVsTXR6NzdBcFFRRURMdUlCZ0hnSnNzZkV6eGZ6clp6dGVhcEZUMTkwRHpwSGhibg?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T06:02:55+09:00",
+   "dup_count": 1,
+   "summary": "Nvidia CEO 젠슨 황이 중국 스파이 연루 의혹과 스캔들을 시인했다."
+  },
+  {
+   "title": "Kevin Warsh’s Expected Rate Hike Is a Warning to Retirees That the Fed Won’t Rescue Stocks",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWjJ2QkhCZ3JEcDZoWko4QzFfaVJzZTMwMlRjcnVsRGJ4bDRCTzBGWk80LW1TR1BCS3JhbXh3ZW1LRjkyYVlSTDhTNnpfQkNMelRjSC1abmVMbzF4d1hTNm5XTGVxdlRRN3A2LUh0QlBGQ2phX3VXdmRBNDlySnlYWS0zN3gtbVVYM1pma0g4WUwwUDZ3U00wcFlvSQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T05:41:00+09:00",
+   "dup_count": 0,
+   "summary": "Kevin Warsh의 금리 인상 전망은 은퇴자들에게 연준이 주식을 구하지 않을 경고다."
+  },
+  {
+   "title": "A Popular New Bet Hailing From Cryptoland Sets Off a Wall Street Turf War",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcnd3TzZDN1pPNVZHQzNVa044OG9iaHVuSWRwRTZhWTlYSG9qVXVCU09jYkFOXzVWcFhyOHVKOXBjTUNlM1JzTGhqT2J2QzZtNTczSjU2QlFiVkJYYV8tOXBOUFdQanRhQnhJX3BuXy0wU0llcXM5ZHJlOUktUXZ6MXdhZU8yenlDdzdtNWl3ZWZTOV9DM1F3Z0RZOEFTTWlnZnNwWFpRVWh3ekZDSWU5Rmx6OV9NMC00WWExbW1R?oc=5",
    "source": "WSJ",
-   "published": "2026-11-04T10:29:50+09:00",
+   "published": "2026-11-09T05:00:00+09:00",
    "dup_count": 0,
-   "summary": "BOE도 다른 중앙은행들처럼 기준금리 인상 전망"
+   "summary": "크립토랜드에서 온 새로운 베팅이 월스트리트 영토 분쟁을 촉발했다."
   },
   {
-   "title": "US Equity Futures Inch Higher as Investors Await Midterm Results",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVzJXWTQ2RjFoeU9maDJNSE53U3o3WmdfeUFyUktDbzRuZGswVE44M1doYjh6d21BZEdGemVBVU4wclliR3ZST0hnZWMtcm9yTnhqUmRtc0NjNnB2NVdjSTBmRlFQbU44NlRYVVZZc1NlSklhci1PRjhSb1F2MWR5LXBULUNWSnpqN1NyZUh1RjBfdm1BajdjWGphYTIwMmpoUzQtcy1LN0Y1d0RuWjE2RG1GeUhSUQ?oc=5",
-   "source": "Bloomberg.com",
-   "published": "2026-11-04T10:19:00+09:00",
-   "dup_count": 0,
-   "summary": "중간선거 앞두고 미국 주가지수 선물 소폭 상승"
+   "title": "Treasury Rally Gets New Boost as Election Hammers the AI Trade",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPelZPY0tQazFGWWxNRjFac00xRWFpVE1vdVpHenVSMDNVS3c0WFpZMXk4Rkk5d2xFYU9wUVdtcGZIYWlvVU41eFZaV1RGdDU4bGE3Z1ppeVlMdTZleU13RVRRbDNVS0pDQzdQbjB5TkFjOWF0NDRxNXA3azY0UGRtM2M5SFU2cDFkUHhZMVVpSVpRM2JjeldzMzU1QnMxZDNCd1ZVcnV1eE5ROWtwZjF2Y1E1UQ?oc=5",
+   "source": "Bloomberg",
+   "published": "2026-11-09T05:00:00+09:00",
+   "dup_count": 1,
+   "summary": "선거가 AI 주식을 강타한 가운데 미 국채 랠리가 힘을 얻었다."
   },
   {
-   "title": "S&P 500, Nasdaq Recover From AI Rout On US Midterm Election Day — META, AAPL, AMD, SKHY In Focus",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdlBxV25yZXl0SEhYREV6S1N4UEhMOGFlb0Y2N3YzNXBFNWVoSWZ2TFdjc2dtZUt3VUFKUE94RmRYd0dweW9GTEFxc3hCWTJoazNxVF9Ka29BWS1HcWRkSU5Nak9qVGpSM21xRDNMVER5QkdCenNrR01TRklPZXZiSFJQRFJIVEJmWEwwNVF4aXhnQQ?oc=5",
+   "title": "A 61-Year-Old Turned Down a $725,000 Annuity and Bought Dividends Instead. Here’s What Happened to Her $3,700 Monthly Paycheck",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbGtnVGZ2MEJTR2o5S0JzYkFBQkRkMGtLbjd5MHlBNnVERHlrR2VFdG9vM0JmeUZYTTBydFR0dVZmcHIzSk5ZYjZISUJmOF9COTUtU0Q0NHpsSlpTYVpfY1lLUWJqQW9oTGlieGt1RnZJVEJtOHQtU01HR1FPTzdGLVJxenJ1TnFDYWdmT2gweUs?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-11-04T08:29:55+09:00",
+   "published": "2026-11-09T04:33:58+09:00",
    "dup_count": 0,
-   "summary": "미 중간선거일, AI 폭락 딛고 S&P500과 나스닥 회복"
+   "summary": "61세 여성이 72만5천 달러 연금을 거절하고 배당주에 투자한 결과."
   },
   {
-   "title": "Shopify’s stock slides after earnings. This is what’s worrying Wall Street.",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYnpsaVNUOHllTG5Gb0U4U0ZsQ0dxckhadVA0ZkhzYjhLRkZfQWh0eEpkNlhQSERQX3dqRXo1ZjBVWDlqclozWFVUaWMxZTIxS2lVLXA4YXlGRGoyVkpvTGtaZDZBZ3hhZUZyVm5HS0ZsSE0zTzZRLWh6WnQ0UUI0WGlqMTNvS3FoVU15VDhUS05UM04yVjlIQXVzR3h4bGkwMHlEbkQxaHVtX1RfNG96VEhaSkE?oc=5",
+   "title": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTlFBMTZ4RFd1bzZnam9ka1FLSTYwWFBVYmt2aHpxZlJ4YnlpWGJabUZMVEt1cENPOU84VnhRLVJWM3YyaFlMeFNxNWExLUNqWk8wQ1NoTmdUZVY0ckpyUlJlVHc5aHZ0V1RtUmFib1J2Rl8waXBiLVZyNzZoNWU5Nw?oc=5",
+   "source": "CNBC",
+   "published": "2026-11-09T03:06:12+09:00",
+   "dup_count": 0,
+   "summary": "Nvidia CEO 젠슨 황이 중국 스파이 연루 의혹으로 의회의 조사를 받는다."
+  },
+  {
+   "title": "Why Nvidia Stock Looks Like a Bargain Right Now",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZ0NBcUNnaGtIbGthQ2hxZnpYaFFYdElrV3BrLUNHTkp0N0UteEE5bTFsZFNUVmhfMHVCMDFEUEVNSDhfRFpBUEdCZml0VHIwZ3FDSy1aa3NGYUJPblplN2hicUU2S01fZUtLdjgySEhJZlBvb3dBV3BVRHk5R18zanFobWY2Z25rVXVnZDh0YTlpM2JyM2o2RGQybw?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T02:10:00+09:00",
+   "dup_count": 0,
+   "summary": "지금 Nvidia 주식이 매력적인 저가 매수 기회로 보이는 이유."
+  },
+  {
+   "title": "2 big AI narratives wrestle with each other: What to watch this week",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYldSd05JT1pVcURiUGxaUjNENkRtS3loNUR0ZnRERGpaM21GUnJVYlM2YlJFWjBLdEV0aDdDUHNlczNWZV9MNFNmNEtodW1RSjV3Q1FJV2x3YzU2WVFFZ1VPazk4dnhwWmxFeHROV0Z4R1puX01oTE0xWVFyeERCOHg2NVZDd3cyUWpidVlLRW5pR3lzeXNzTm1DdGVnUlZhT2p0TklTTmFuWkh1WDVsQkUwdFRyQUl3Tm9CU3VydC0yQQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T02:00:00+09:00",
+   "dup_count": 1,
+   "summary": "두 가지 거대한 AI 내러티브가 충돌하는 이번 주의 관전 포인트."
+  },
+  {
+   "title": "Intel Stock Has Gone Nowhere in 8 Years. Why This Time Could Be Different",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbVRVeXBzNmxuTUxjMTM3S1lMdTFRWE9UQVdOZGdmTWtNd1VkWWRkUnBYSUdRMlRTcUJ4LTJyRklYY3ctRkR0UGdHd3A4emZOUlNpWGZIaldRZUNzSGNVejd1UjFDN1JPQzlMS1VGVDRjZ3BSaHJGeG1HZmREQ2ZwTV9vZzNURF9iRTV5UVJjbEMyckFFUkE?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T01:29:58+09:00",
+   "dup_count": 0,
+   "summary": "8년 동안 정체된 Intel 주식이 이번에 달라질 수 있는 이유."
+  },
+  {
+   "title": "Top 5 stocks to watch this week",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPakF3LVBBdVhLNnFsaXBNQWk0YUFXOXVKZ19YZjdac240Q0Q2VjZrUU5hUnhyc3FLcFhuNW1fRTZwaURhYi15Q2dLNzBMWW1fc2hGWnRBMThYZnltMHVlTzMxdnBleXRucnJKTl92ekcxQU42SVZvVXo0NDlMSlFMbm5jQVc2QnloNDRWbGNURHNRUQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T01:20:25+09:00",
+   "dup_count": 1,
+   "summary": "이번 주 주목해야 할 상위 5개 주식 종목."
+  },
+  {
+   "title": "Why Nvidia at 13 Times Expected Earnings Still Isn’t Cheap",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSEhJbGo5Z213RFlZOGstMFRLUW52OVk0NmF1NVl6TlJVbHlzay0tZm4zLVIySnNnSjM2SFduV2psMzk2M1YxVEtSWmpyZ3JCcVQ5MXZFX2ZrdlJkM0t0UDc2a1JvMi03R2xpbVJTeU9PcG5jNTlWVUR3Zi1YVlF6dXhDa2wzM0lOazh5anRyRmlJaTBodFcxUA?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T01:08:00+09:00",
+   "dup_count": 1,
+   "summary": "예상 실적의 13배인 Nvidia가 여전히 싸지 않은 이유."
+  },
+  {
+   "title": "Verizon Yields 6.2%. Is This Dividend Stock a Trap or a Retirement Bargain?",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdTVBcXJfS3N6cWxvcHh4c2xEYjJCM0Nzd05vOFVKY0p2Y25SeXFLbU85VkhNaFgwazhSY1NyTXhCWVIwcnU1eGpLVDd0M24xRnJyYTg0UFdrR0ZUcXJ4M1FyUXRsaXpHVktoYzJOSW5TcnNmM0dOZGh6ZWZSZjZodjIyLWszN2xWQUt0bTE5QUdRZVJlYUxj?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T01:07:22+09:00",
+   "dup_count": 0,
+   "summary": "6.2% 배당수익률의 Verizon은 은퇴자용 함정인가, 할인 상품인가?"
+  },
+  {
+   "title": "Democrats Win Midterms: 5 Best Healthcare and Insurance Stocks To Buy",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNnR1T3MxZ0FsWWJRY2d5SElzMFpEWFRGUDU3eHVGVmxoZ1g1RHFseE9CdHhlN2xDbkNhSVZEcFFXZzRaNmFSWG5lSEplNFN5VDdRcXB0WUtKM1JNMHFFMTc4RXZGOE5nSDdnc095QS1JWno3Ynh6aEQwTm5Mc3dfSlJRel8yWGxKMVNQZE5WMDFTcVBh?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-09T00:42:04+09:00",
+   "dup_count": 0,
+   "summary": "민주당의 중간선거 승리에 따른 5대 헬스케어 및 보험 주식."
+  },
+  {
+   "title": "Wall Street hiring helps lift finance jobs in October",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ1BNdDdOenpuaDk3NWVUS0w2ZGZCcURKanNZdmhXdFRCLWI2ak91cVFjMFJ4WFVGcFpkTU1CLUEzbjlkWEVmandtWE1QcUkzUkhCRUdUejc3U2FYbjVYd1JEcXhPSEZRMlVHeUE3WlBwSXhJTnJvN2RJTEh0aTNSMW9QbGdRZ29Jc1EydnZ2eVo1ZHF3NzVVcG8zWG44UGhyUW5FbTU1a2pTYTFQcGdn?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-08T23:52:37+09:00",
+   "dup_count": 0,
+   "summary": "10월 월스트리트의 채용 증가로 금융권 일자리가 늘어났다."
+  },
+  {
+   "title": "How to Play SpaceX Stock after Democrats Sweep Midterm Elections",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOb253N0tGWENIeHVVamJuM1JKVWRIMllCb0xYWWEzTW9zUV9LZ1gtNXFLTlJ4VXk5a3JNeVR6allHT2FhRGdYcE9aZFN3OGdrcWs1d2twMlRvY0s3Q0pJV0VRa0tZcEhKQUNsanBvLWhZR2N0aGR4TjEtRmdEUjZOQ3JhNDR6ckpHVzJvRVJMYTBIVS1TdDdqWU4zQnc5Ujg?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-08T23:20:59+09:00",
+   "dup_count": 0,
+   "summary": "민주당의 중간선거 압승 이후 SpaceX 주식 투자 전략."
+  },
+  {
+   "title": "Is a Market Crash Coming? Warren Buffett's Warning Is Ringing Loud and Clear.",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNb3g4SklKVjFSZmppYlVTU2dyd2ZpWkVnaWNmdUw0TE5haW05S1lxWlpZYlJJR3RjT0JBbUp2TkMxTURuVjJrZDBwcUx2Mi05SW9EcjBEaUhfMDE1Sm85ZDM1T3N2VU00VEFJbXo0ZmtPd1M0UXZEOVJocWhXUnAzaGxwZFZHUU5hTEtoU2wwVEFIQTNDbzYyc1NHUjFZeEV0OEE?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-08T23:09:00+09:00",
+   "dup_count": 0,
+   "summary": "시장 붕괴가 오는가? 워런 버핏의 경고가 강력하게 울리고 있다."
+  },
+  {
+   "title": "'There's no question about it': Warren Buffett and Bill Gates reveal the same 1-word secret to success",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRG0zZTVJWkJvNG5NN25TbTVZSmZwUFE2ZVF1SlA2c0ZVT3hBUWp5aHBOYU16NEg3VTRFT0pKXzRYcWJUZ3NCekFTaEJvM2p4VXVZODk2Y01vcUFFU25IOUtMalE4MzQwQm14aHdyLXd6YWJvYkdQVVV0YW9mZEVEZFhhZ2twbTc3QVdfWHhERmpWTkk5QW9MSjlB?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-08T21:45:00+09:00",
+   "dup_count": 0,
+   "summary": "워런 버핏과 빌 게이츠가 밝힌 성공을 위한 한 단어 비결."
+  },
+  {
+   "title": "3 Reasons Why Ultra High Yield Realty Income Is a Buy After Its Latest Earnings Report",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ2ZhU2ZpTmpzc2Z6S0I5X1dvbjVUaDhmRjlCZHFBZ2pWZHVOQTVJM0tYblBpSVBDX05pMGh2SXE0YWdFNVVnWjFUYUdZWjVZdXBZRGljWU9nNThveTM2RnFpM3Y4VDMxdHhsdS1BTkxFX2hQSU1HRHVYbHdLZ0dZZExDd0VsZGxCRVJYTTVCMA?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-08T21:35:00+09:00",
+   "dup_count": 0,
+   "summary": "Realty Income이 최신 실적 발표 후 매수해야 할 3가지 이유."
+  },
+  {
+   "title": "Fidelity, Vanguard issue the same sobering 10-year outlook — and US retirees stand to suffer most. Protect your nest egg",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMkRTYjRSMFNsY1FhR0dpb1lqNTg3cnB2ZmU0MTdtRTZiUXBYX0FtNDgyVTZZVEF4bUJmbUVBYWJwczYwUDR0dWpXX3VldmpxUjFfNkNUMkNpcDAybF9oeUwtNTlMQ3pNNS1QNnk0LVVqTlU1ZTYwWmRDcXdWb0NlV0pLaE0wRk9MZFd1RkxDQWNFa1dXQW5MSkhORUQ1SUJPRlJGcg?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-11-08T21:15:00+09:00",
+   "dup_count": 0,
+   "summary": "피델리티와 뱅가드가 경고한 10년 전망과 미 은퇴자들의 위기."
+  },
+  {
+   "title": "Opinion: This market signal called the tech selloff. Now it’s sending another warning.",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNeWhIbWU5Y2VUbTZLLXl5TUJwVEpsSlMtTXI2S2hSQ0dxX1U4bndRQWNjRU9HNkFncWo4eXdRMXRLdU43RlpVVVlJbFN6X3BjTlplMWN6Um1TUnU4Sy14cGM5dUx4WkhKbXIxRkhaSXlBWGgwYnJPVHVrOVEyUlpBYVF2b18wU0owR1JMTjVyWC02bnpjTW92MlgxM2ViczZzdGxJNHg0cEhTWEJibHNMTjRwUnVyejhG?oc=5",
    "source": "MarketWatch",
-   "published": "2026-11-04T07:45:00+09:00",
+   "published": "2026-11-08T21:00:00+09:00",
    "dup_count": 0,
-   "summary": "쇼피파이, 실적 발표 후 주가 하락하며 월가 우려 고조"
+   "summary": "기술주 매도세를 맞춘 시장 시그널이 또 다른 경고를 보낸다."
   },
   {
-   "title": "AMD's Lisa Su: Q3 was 'largest and most profitable in our history'",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaXNqZGtkNHM5bDJENldMbmY3bDRMOWZTWDhhN01EdW5KYWpwTW44S0szZEozVUVpSXA4VjhTYmMycmVadjg3M0t6T19xakgxWllOVGtvRnFTLVNxa1hGZFNhZkR6RjNWOVVBa0NwZlFnTWl5c0h4WkJZNmxOdmhKWUlKTGVMM3Y4eTZWZ1B3am9WeTAxVnlQTlN2dmpab3liczVFYWZzdkxEeTlRNnc?oc=5",
+   "title": "Wall Street's Biggest Bubble Looks Ready to Burst, and I Don't Mean AI or Quantum Computing",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNM1U4U3ZRY09jWXdYZzUwUk11LW42RG8yRk9Rb0NQSzdRa2VRU1FJM2dUTmhzakZvRlhVSzVHemlHTnpaczd2NFk4U0hmcTltNHpPbTAzSjFwclBKdHozSW5CMGM3bEJOdTE4QUtOLVNfamNydmVuanRUelVLU250WlRQNl9GbUpROVhuR1RJSm9jZGxkNzlJZmxORXVMa0E?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-11-04T07:27:18+09:00",
-   "dup_count": 0,
-   "summary": "AMD 리사 수, 3분기 사상 최대 실적 및 수익 기록"
+   "published": "2026-11-08T20:56:02+09:00",
+   "dup_count": 1,
+   "summary": "AI나 양자 컴퓨팅이 아닌 월스트리트의 최대 거품이 터질 조짐이다."
   },
   {
-   "title": "American Financial: Q3 Earnings Snapshot",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVUx1RWtjYlJZMWRCNHJBQTAwRVBVTEJabldPLWc3UFJ5dFBrcUdNSzEwVUd1SURpTzB2U1M4RGx5enVpQ3E1M0U5NTZYbWRWMjZZcG9aUlNSSl8wOE5XVVZRVXZaMWZrdFhpNHc2eW05QzI4ak9nSjE4OVJpRjVOZzFKcEkzVXJFYTlGbC02TndXWFpEbW9jbXMzaU9pR2N2dTNDcW9ycw?oc=5",
+   "title": "EXCLUSIVE: Democrats Took Congress. But AI's Spending Binge Isn't Going Anywhere, This CEO Says",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVEI2TUtKbF91NjNPSl9acHpveEVJNnIzS29MOUxqX1JRMG94blJLZGpIVUl0bU4wc0w1S3Q1em9WM2l0NkhfMm5VSEVFMmZMVXBsY1NJTkJtRFQyMDFJWDRjV25iVE9KYzd2Q3ZkRF9YZ3B4OHU5bDdtY3lFUWZ6ZjBpaFR3TDFDSC1OZ0k3RkEtQ3pSX2gteGJraFFUVFlmTUM4?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-11-04T07:11:01+09:00",
+   "published": "2026-11-08T20:45:06+09:00",
    "dup_count": 0,
-   "summary": "아메리칸 파이낸셜, 3분기 실적 보고서 발표"
+   "summary": "민주당이 의회를 장악해도 AI 지출 랠리는 계속될 것이라고 CEO가 말했다."
   },
   {
-   "title": "Super Micro Reports Strong Earnings Beat. The Stock Pops.",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPazZPSGJNbEpFdFVPN0dic3ZfZWdDUUw1eTFLRHRoOUl6UUtmUDdXQzlwTE5fVUpFQXhSazVyc3JoYmdudjh5Y2o3cFcwYkhrQ2dGN2doTW00aWFTN2pGSGxLX1N2RFdEVC1JdkJOSUlyUmJOck13SXUxX05VbWx1SEtEMA?oc=5",
+   "title": "Housing vs. Stocks: Lowest Share of Home Buyers Since 2006 Say Real Estate Beats Equities",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOXzN5dlRiWU9lV2dyYW8wSXAzT0VCbjh4Smh4b29TbDBKSi1Jd0JBTmxFWUk5cEhlNVo3SDBHMThSeWsxR3oyQ0hXQ3NncVdMZXlSM203bzNIZjhkdzI0RWZYZDRDcFl3ZXRsZ2s1bmNobjJlQzV2bldMUDZVSmNkWGZ5MFNfQ0tDVTVaZzRadTlQUFowYXhxaw?oc=5",
    "source": "Barron's",
-   "published": "2026-11-04T06:51:00+09:00",
+   "published": "2026-11-08T20:00:00+09:00",
    "dup_count": 0,
-   "summary": "슈퍼마이크로, 호실적 기록하며 주가 급등"
+   "summary": "2006년 이후 가장 적은 주택 구매자가 부동산이 주식보다 낫다고 답했다."
   },
   {
-   "title": "Here's What SpaceX Stock Will Be Worth by 2027 if Elon Musk's $1 Trillion Revenue Call Is Correct",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNak82Rk9uWHNGdlk1N3pmQXpBdzFBUTNMOGJIaEYtYS1uVGtqTkpCS1daRGtnNF9xd0xLSktFQk9tek55UFNRMXl2VHpFWXZpVWVIMVBYaWdub2ZOWW44cThlX01CdndMcmpub1ZrYXltSk1WYUxSYWFBT2tuTVpHLVJPWTlYLTU4OUJTOWE0YjdjWDhud0lReUNB?oc=5",
+   "title": "AI stocks like Nvidia, Micron, and Sandisk have been blown up, but keep this in mind",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNnFBSnpqTnBzMkpXOXVzbFI0ZDdIRWowYXU2SWtGMDJJN2wxUDFDQk5NcGZxMFBtSW9ycURoZXNhRnBRTHJZOWx0OFJYU20xWEVwUXJ3NzAyYUYzTFdDdUFvbTJsSjdfcmJIQVpSdXFnNFVYVGZLUDh6UWpDN2hTUXBpX3A4bDl6WmVoMlJWeWdnaFdpTmhubUlWNzEtX2RIMVBHeV81M3RFa0lmS3RDZGtJSmIyckRjYlNPUzFRZk9TRzhSQzJTWWpkaXIzX1lEbE4zZg?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-11-04T06:38:00+09:00",
-   "dup_count": 0,
-   "summary": "일론 머스크의 1조 달러 매출 공약 시 2027년 SpaceX 가치"
-  },
-  {
-   "title": "AMD data center revenue nearly doubles as Q4 outlook beats expectations",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORXdhTXZuLVo0elFUcHM2WWpSWWdOM1BHTTZUZktFSHViVnl2eS0xbkVSSTF4N19tZ1p5MW1hUkVTTUswdjk5dllMbWVyT0xaU1BHWjlsLVNnLWdWRzlFeTZWQVJVSUt6S3hRWlQ0UWZ4YzFySzFhZDkwcnY3Wk1mSE5idFVVVnV4LURCRDlTeFdLaVpadVBKSkRpUQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T06:36:00+09:00",
-   "dup_count": 0,
-   "summary": "AMD, 데이터센터 매출 거의 두 배 증가 및 긍정적 4분기 전망"
-  },
-  {
-   "title": "Update: Wall Street Closes Mixed Ahead of Midterm Election Results",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNazZsLWFCSGtxYmJ3cF9rRlRIQWhWTHJlWUVoSVlmZE5PTUN4ODNiQm8xa3hOam03Yk1pbHNCcVdKaGtENmptTlZlMnRhQzhiVEVhU2dFSnl0anBPYlZOS2tHV1lvcmlHaEVkZVhTaWhYMW91b2VjdWxGVENTMGZMeERYY2d2YVk5TFR4ckI5R0lpMWZ6UFZ5bEl4aw?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T06:32:29+09:00",
-   "dup_count": 0,
-   "summary": "월가, 중간선거 결과 앞두고 혼조세로 마감"
-  },
-  {
-   "title": "US stocks end mostly up as markets await election results",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUE1tNzlfeUhTaGExV2pybWtVakVVUUExd1FCOVFicnlfLXBFbHFUUmdCMlZiajh5aU5wYWtYdmNrVXlCUTVNU0FyQXF1anl0ZVdhcGZNc1pmZXB3Q3JuTHJ0aU5yMGtWY1JVNEpBOHVtdVBXTGNyRUplNTM1TnRqa3lyaTNhNUhaVGoySkdHa2E4TlgtcnFzMC1hWQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T06:26:07+09:00",
+   "published": "2026-11-08T20:00:00+09:00",
    "dup_count": 1,
-   "summary": "미국 증시, 선거 결과 대기하며 대부분 상승 마감"
+   "summary": "Nvidia, Micron, Sanisk 등 AI 주식 하락 속 유의할 점."
   },
   {
-   "title": "SMCI earnings preview: margins and guidance in focus as pre-announced revenue tops old targets",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTS1ia0tpeFVuaktVWVROdllycC0xdGQ5Q2JSWFhwa19jbHUzVm5CMFUtUGJMcy1Xa0hVWldMQTlCazVES3JsU1Z5bkMwc3VyT1VnUFBmdUZHTDdsalUxS2ZWUnAzSXpfV1NwUkNzRUZHUkdYSmxVb2ZsdVZWMVFKMHdwbklvdXZ6Njd6SGo3c01tYVU1ZTBVSW5lUmZyZ0d6X3g4VU93?oc=5",
+   "title": "What To Expect In Markets This Week: CRWV, CSCO, NBIS, LUNR, ONDS, CBRS Earnings, CPI, Fed Speeches And More",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQVc4elBJWVpjR1BYUm53UWxXeng1LUpVdm1yM1FPcFExenB1TkJqSU1SQkU1LXJ0NkUyc19VMHFsWm5nc2xXSVQxUGRvbVMyZmkxS1BXMHNrbEhMdndwQnBZTUpmWHhRZ3VKbEJ0Z3ZDdlFXSEtZdFEwdG5HaWh3dlpDZFl0UGlwYmtoRnpuNi1jcEFDRmZjNWdR?oc=5",
    "source": "Yahoo Finance",
-   "published": "2026-11-04T06:22:13+09:00",
-   "dup_count": 1,
-   "summary": "SMCI, 호실적 예상 속 마진과 가이드라인에 관심 집중"
-  },
-  {
-   "title": "US Stocks Waver as Election, AI Bubble Risks Weigh on Outlook",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaXNvOEhtNW1UdEtjYzJoMFR3SnFsT0JUMzg4dmR0OW80bmZVUHFDQmhjUWNrQUxvSXBLbjNWR3A2STNwa1BGMHdSbDBWVVRaYTZKVVNKaUl4Y3V4UjRGMFRWZ3EtanM2QkJsb1EwU1U5V0tXSDFKVTVCUUxBYjd6bmRLdHNwa1RIcDhRTURNbTVlN2FJamFYZ29EMDVpRjdPdjA0eVZETjJmeXVyMk1OUw?oc=5",
-   "source": "Bloomberg.com",
-   "published": "2026-11-04T06:21:46+09:00",
+   "published": "2026-11-08T19:59:42+09:00",
    "dup_count": 0,
-   "summary": "선거와 AI 버블 우려로 미국 증시 변동성 확대"
+   "summary": "이번 주 시장 예상: 실적 발표, CPI, 연준 발언 등 주요 일정."
   },
   {
-   "title": "Super Micro tops Q1 estimates, offers strong Q2 outlook",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTmxBdFZFcWhOWEw2YXI0X0NtOGJSMG9aaXZ2d1FNLV9UZmJYa1BXWWljNkZEMHR2bUtiYmttcFllV2ZlM01mLXBSb0I0QkFxRHQtNnhEd2M2cjNaUTJmeVJNRkdldE5YeXV4bHZDbkRHWlRGSld5b0dQVmJZRmdzUUIxRlBYR0VOMTd4Znh2YWxDN1ZnSjJ0c0JzSmNBNHpjM1lkY3VacVdpSFVzdEp4UHQ1Um8?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T06:16:56+09:00",
+   "title": "Indian shares consolidate in Diwali session after seven-day rally",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSURhQVo2bnpTNGJqSFRaSk5Tc1ZFcmxGcTU0MXNiVkR4b2tQekR0VXlhVktMZzYwMWdHUnpkWWdyM1lGTUowOXhLR19tMl9wd1BpS3J4MWpvNnJxaUpUSXg5M2pyTUtCaUFaRy16dTdKRDBGekI1czdXSGcwMjR4MnJDVGxLbDdPREdyMms4cFlpbTl6U3FxeHY5NXI4NHQ4VVR3VTQyT2cyU2wwa2Iw?oc=5",
+   "source": "Reuters",
+   "published": "2026-11-08T19:43:43+09:00",
    "dup_count": 0,
-   "summary": "슈퍼마이크로, 1분기 예상치 상회 및 긍정적 2분기 전망 제시"
+   "summary": "인도 증시는 7일간의 랠리 후 디왈리 세션에서 조세를 거치고 있다."
   },
   {
-   "title": "Apple, Palantir, Pfizer, Marvell, AMD, Bloom Energy, Gartner, and More Stocks That Explain Today’s Market",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE43RWNvbkRVVzdUX0dYdVBwSWRQbHZfTmp1WHpuYkRyTjNLNlZFQWlxLUpQOWtiQnRoMVJQaks5QXdWNVo1WTVKLXdVQUlGVVduT0JPOGVqZE5GQmp5QTF4TF9XS04?oc=5",
-   "source": "Barron's",
-   "published": "2026-11-04T06:16:00+09:00",
-   "dup_count": 0,
-   "summary": "애플·팔란티어·AMD 등 오늘날 시장을 설명하는 주요 주식들"
-  },
-  {
-   "title": "Arista Networks, Inc. Reports Third Quarter 2026 Financial Results",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQb3BnQUZZYkE4bU5qdmZHeEhBX3REcEtabFVXNnF1Z2FqRmY0Q094YnlkcnZaVmlkLXBTWWZrMVo3XzExdm4tenlFVGVHLVc3MTRLQ2NxbDdSQm5LTnA4ODJBOE9naExqU2NmdEJhTFhsZ2c0QWZYY19TcXlOTWMycnVqSVFVckhNM2NDVmNRaHJ5ZTFVT1hlVTcybFlodFE?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T06:05:00+09:00",
-   "dup_count": 0,
-   "summary": "아리스타 네트웍스, 2026년 3분기 재무 실적 발표"
-  },
-  {
-   "title": "U.S. Natural Gas Futures Pick Up on Cooler Weather Outlook",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOFQtdDhST2FsRVE0eGl3NzhTalRraXpndGlGd0RZRmxidE1tV1lCNkhoRHlNTUZfVURHWUhYbTNuOWpmRWxjdHVwVURoRnAyMmlZUHRDQXEwRUpybDc2SzJRYmY5dXRLX2dWTTlnWFNnbmJzZUxqRGFYeGxnVm1uQkRoLXBIdzhrM09PSE1yNnExblhxa05NampSSDhJako5RDI0?oc=5",
+   "title": "For Trump’s Fed Ambitions, a Democratic Senate Poses the Biggest Hurdle Yet",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOEN2SVIzQmppcXREV0sxNE0tejFxYkt4VGpxemtVbVV4R0ZPTVFyVWV0azNTLUxCSkxUQWxxN1plZEpfZ1ZCRHUwNGhJV0k3c2owTWVRaEpfb3JMN09jV01jTkNJcmNidl9FTFhid1JsUmw4ZnVXSjVDRXZzWlM0NnRmRnEybjc5MG1Hb09KQXRsM1lFR0FVUThGVUZjdTZLd2lUZDl2WTB0UQ?oc=5",
    "source": "WSJ",
-   "published": "2026-11-04T05:58:00+09:00",
+   "published": "2026-11-08T19:30:00+09:00",
    "dup_count": 0,
-   "summary": "서늘한 날씨 예보에 미국 천연가스 선물 가격 상승"
-  },
-  {
-   "title": "IonQ Just Dropped 32% In a Month: Is IONQ Stock Hopeless or Ready for a Rebound?",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTHY1U3ZjX0Y3NEtqemlVQ0owV0FJbWdlQmdLWWRLU3A4cTFsUFl4Um1fcUQ5X2V5Q2JUa3NVVkNmWURsQlFyTVhfTWdESDJZYUxfVEM5ejhWX1FfckVaZnZsdVNUVmNxSHY4Y2FCYTE0UzI5cXd2SzFpVm9HNFdBX042cVNFN0FLNEliY2lCT2J6aTRrclE?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T05:05:34+09:00",
-   "dup_count": 0,
-   "summary": "한 달간 32% 하락한 IonQ, 반등 가능할까"
-  },
-  {
-   "title": "CrowdStrike announces 'kill switch' for AI agents that go rogue",
-   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPUTdqbkFGU1h0REtEWFNfdEpGcFBRd1BhNUYya2FNb1M4VTN0V1piYjlldnBPUTgxZG85SWlwYnFMc3lLUHNBNmk2YXpDXzM5UlJ0SGtIMTQ3T1VpYWw0M0xtWmtBVjRXUUs3V1BqNkRQUEwtYnE0NG5MYy1SYi1BWDJldmZhLS1qaG5YZjFqWjN6UTZ3U2s5YWJwZE5GdEU1VlNOckFEUENHN2o1d3FlOFplbVdVeTZ1UnhzOGVBcDNwSG1LOVVSYWZCZmRaOHlmT25NRVlSZ2U1UVRRbnl2MEZ6VmR3T2pfVktQbA?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T04:55:38+09:00",
-   "dup_count": 0,
-   "summary": "크라우드스트라이크, 폭주하는 AI 에이전트용 킬 스위치 발표"
-  },
-  {
-   "title": "Palantir beats Q3 earnings estimates, stock falls over worries of slowing revenue growth",
-   "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQU0VfNkpxZHpZUWR6SGR6ZXcwNzR3emdHQ251V1k0Zy13TGxyOE9NRjlHOHdNZ1NRM18tNTQzNmFSZ1BuRWlxN1Y4SXhjOEJqVF93bG9DdTZ6eHVKMk1SOXIweWRIUTdsbWFmeUlsZVk3LWZJcTNnajFlN09VM3hTSXpRMXlldHZmMmJuUEluM0dnMjhHbUVzazAzaGdmdGV0REpianNYdF9QQ3hTMWdQRE5mWjFSMm5Qc19rVUFLMWJMeEQtR3puckVWZFhDRWNqblhyTG9SeVF1eGNDaEFkZklLdkxUbm40SjVvUFB1UkowN1pyb05GN3VlczVUWHNreFM1QnZCVEpPcWpyUEg0RDZiOFFzckJ5WGhlLQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T04:16:23+09:00",
-   "dup_count": 0,
-   "summary": "팔란티어, 3분기 실적 호조에도 매출 성장 둔화 우려로 하락"
-  },
-  {
-   "title": "Ackman calls stock market \"broken\" but touts Visa, MasterCard and Netflix",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRUVQekMwVDh0SVZ5ZXpfVG5BeW1EZ3JmV1psRUI3Z2lRWjd1eU11RWluN1N1V1B4RjBHUlI4bjk1elNUQUZERFUweGhVak9xZ2w0T1RtQ2x0VGtVdG9NX3dlNy1rTkNXSklfT0prNVJMSjhXZFhPemp1ZW9ia0FaaXplSmNuT1lyR0o1dE5ZWjBjZDdTTm51S1lrUl9IQQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T04:01:09+09:00",
-   "dup_count": 0,
-   "summary": "액먼, 증시 비판하면서도 비자·마스터카드·넷플릭스 추천"
-  },
-  {
-   "title": "Enphase Surges 9%, Sunrun Climbs 7%, SolarEdge Rallies 6% as Solar Rebound Extends Into Earnings",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMXplVWhubUNvcmc0dE9keVVOcGotZzFRSnVRUWxKUXNRMmVMMElMbV9xSEljalI5RUVzTzN0NzdIdVNjV3NKdGNpYS1kbVBYcVJMUURUN0tlU2JPNE9adXo5amFwV3JQdkc4cmIyWDRaa0x5V1dkcGV0cG9SOVFLeEc3bGVVdG9ia2hDYnZTc3p5U3NSWVAyTVdQUQ?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T03:50:53+09:00",
-   "dup_count": 0,
-   "summary": "실적 시즌 태양광 반등으로 엔페이즈 등 관련 주가 급등"
-  },
-  {
-   "title": "AMD Needs a Huge Outlook to Avoid Intel’s Fate as AI Fears Rise",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRW9XeVZ4N0oxZjlNajFBS0ZXT2RDTE02dktLYXJad082NXU5NWctVkQ2aE1iZ01uLWt4WlZXUW51ZUk0ZzRHUWtYd0dGblRReV94empxQlVBMEJjNHBLcExfQWV4aGxIWktWaG04S0tydDdJb1NGSExIN0hGX1hVa04tYlRuQzk3V0kwQ1JSMFRUNkUzRFczU3cwZ1RObTctVUNlUVFrczVpLW9TVTA1NkxGMUI?oc=5",
-   "source": "Bloomberg.com",
-   "published": "2026-11-04T03:49:41+09:00",
-   "dup_count": 0,
-   "summary": "AI 우려 속 인텔의 전철을 밟지 않으려는 AMD의 강력한 전망 필요"
-  },
-  {
-   "title": "Dollar Could Gain if Jobs Data Boosts December Rate-Rise Bets",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxON19qdE9BN1BGODdBQV9yaWZ3UC1hbGpKN25JMkRaaGd1QkJnZkd1VXZvUUU2UGo3SDRaX1hpcXcwOTZtTXV3NEd4RklOYllvV2k5UW5XbG43b0szMmRleUhKY2tEeW1OX1RtSk44ZmFNcHE4RUw0LW05SXQ3TXVvOWVqdjk4Snl1ZllGNE5DNXZwZUY2dW56QWFBVVRtYmFFM3phQmNJZDRmUUU?oc=5",
-   "source": "WSJ",
-   "published": "2026-11-04T03:40:00+09:00",
-   "dup_count": 0,
-   "summary": "12월 금리 인상 기대 시 달러화 강세 가능성"
-  },
-  {
-   "title": "Micron, Nvidia, and AMD lead chip stocks' rebound",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOR241WmdKTExjbmZJcndhY3BOVG91eVFPT29xVzBLcVQ4NGQtUExYVDlray1hM1c5dENLekg3bkxyaHFramhTTVEwclZnci1uLWdvbi0zc21pbUMzazNZOFlRUEduSDF5al9jRjMxUG5FOGlTaTdTQVVKZVNRTWplRzh4UjdiYnNhZzBpTHlzS0Q4NzZLZmpfcjJLM1p3TlI3?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T03:38:16+09:00",
-   "dup_count": 0,
-   "summary": "마이크론, 엔비디아, AMD가 반도체주 반등 주도"
-  },
-  {
-   "title": "Bank of Canada Gov. Macklem Pledges to Proceed Carefully on Further Rate Increases",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOXFIN1hXNGpRRHBPc2pNQU5qNnZUQkdZQV95NzhCcTR2anNDcERhLVBXbU93REhqZHdfU1ZjSnB3dU5wRHBsVmhWNlBJaHN6Tms3ZnJQenBCS1FTX3Q2ZVE5U0RRb2lwRE95YU5CbWtzRE9SSWVZeWpKaDdCTWxGdU0zR1pRaWduZGFUUGxERUkzUW82dEd4Y3k0WE5PMUt1RzlmNlFzR0ZuT1Vtd2lYSmdRZVpyS0k1YWxwUDB1TXlHN00?oc=5",
-   "source": "WSJ",
-   "published": "2026-11-04T03:37:00+09:00",
-   "dup_count": 0,
-   "summary": "맥클렘 캐나다 중앙은행 총재, 신중한 추가 금리 인상 시사"
-  },
-  {
-   "title": "Eaton earnings analysis: questions answered and next catalysts",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWnM1ZnNRZ2hSQ1NCYldPaTl4eTNGMC1sNURjY0EwYk9QalBLX0ZjaVBUQzNnQUlMTVdzUnU5aE56ZGdIdDhfMVR6cEtfeUJlWEQ0UjBoRHY1M2FVWGx4bldMNU1KTXdlM2FERldTNmRWb0hNOHU5dXg1N2h1UXZzck1FYndQeXRLMkx1Nzczc3AtVXhabDI2UlBla1JrWUlFTWxaaVFVMXdnMTA?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T03:29:35+09:00",
-   "dup_count": 0,
-   "summary": "이턴 실적 분석과 향후 주가 촉매제 점검"
-  },
-  {
-   "title": "Palantir AI Boom Just Got a Big Vote of Confidence From UBS",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUS1vUHhsYzJNZ1VmVVp0YjZSdk1PdmNQWktIeGtjQktlWUtRNkpvY1o2bDFLa1RIajVyTWEyVk45WmRoaG1fblYtYk1mODM0UXdSNjVTVC1sYl8xU2hjZFltbDAzeTJwRFpwYmFZSW1rNThRNGVEU1hHS2Q5NjRVZTVjU0szeDJYQTdndGFudDIwYkU0?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T02:28:24+09:00",
-   "dup_count": 0,
-   "summary": "UBS, 팔란티어 AI 붐에 강력한 신뢰 표명"
-  },
-  {
-   "title": "AEIS Q3 Earnings Beat on Semiconductor and Data Center Strength",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaGJBSTAtU3N2OGRsS19KV082REtSb1FobTdHQm4zSk8wcUhMQXFwNW9meDJRcGxYQmZuQW5Hc2swSGtNdFpTT21SMUpyNnlueWJIbThvcVFLS1JWRFNLNFByR2QyVV9DX3FfOTVjdFlYWHZHdG1ocXNNTG9ha0NUemVMQUxBSHFuNjJLOE9NLW1vV0lFaHVfNDlEeUwxSksybWc?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T02:26:00+09:00",
-   "dup_count": 0,
-   "summary": "AEIS, 반도체 및 데이터센터 호조로 3분기 실적 호조"
-  },
-  {
-   "title": "S&P 500, Nasdaq rise as tech stocks gain ahead of midterm results",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWE5VTWlqMWhWQjhVTU1PYTc2M2w3ZWJlUWl1UUMzbThRNGVvQkc1YXBxOUdyVDIwYzVHRG9WR3J0VkhxSnhGdlAzNk9WZXduZHBXdkRackxJVmZPLTZZLTFuQnFQMzZWTVF4U28xV3VrNERlV3hwOGFiYWR2SUVmcUtjOXZNeE0yeHRBTkZkZjI2bDdraXdDYg?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T02:17:52+09:00",
-   "dup_count": 1,
-   "summary": "중간선거 앞두고 기술주 강세로 S&P500과 나스닥 상승"
-  },
-  {
-   "title": "Meet the Dividend Stock That Warren Buffett Backed for Decades. Here's Why Greg Abel Is Still Holding.",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZlB2c2RzM0s0TmRWcEgwV0JMZENYWDJQRFN4emZvVmx5UWdNaUxZRUphZXA1eDBTZXVSTzRGTURUdUxMNUtzOGNKczhVQjRqSVlNcUJTNmIwdENqSGRHVHpUeU1La2JtYWVGalpiVU9hMGZPREppYlF3cGxQRl95OEVQNlZlZlNSYWx1clBWVzRTS29jT1pZaVVQY3lXX2kx?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T02:05:00+09:00",
-   "dup_count": 0,
-   "summary": "워런 버핏이 수십 년간 지지한 배당주와 그렉 아벨의 보유 이유"
-  },
-  {
-   "title": "Here’s How Much Traders Expect AMD Stock to Move After Earnings",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOempKS2tHYWVyTWZtX3JwdkRTNVFjd1h2d2RMNDFMTjdfaWVoRGJ4eVZnLTlNWUtVaVdtUjE2WHVCLTdSN2NSakFSWHVJQnZXZkpKRGtEM0dxWHNPb1dIRkFaclZWdXQtNGY2aGdNS0hhNHFwMWpGQ1RzczZyQ3JTQktQeWZVVmlGazltQk14bUJNdXhJRXZZSWVR?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T01:53:32+09:00",
-   "dup_count": 0,
-   "summary": "트레이더들이 예상하는 실적 발표 후 AMD 주가 변동 폭"
-  },
-  {
-   "title": "I bonds are back: Why the new 5.51% rate is so attractive",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPckVIRFpRMkNuTmZYQlJwbmpDTElpb1owNEozWFI2Tm0yOElXcEdGYktGVVBZZFB3OEowbi1FNW1YRVFVOGI4Ym1nd1JsNTkydjBMQmJNT1N6SHFWVmZKOFFjd0cwU0VxRm5QbFh2TERZRTJ1X0ZZY1FtLVdXLWQyR0paREtJSnV2ZVdJYUZDdVFzM0xHNFNacWloaFJDYzA2UWNRQTJ2LWtJa005bzFHOA?oc=5",
-   "source": "Yahoo Finance",
-   "published": "2026-11-04T01:32:19+09:00",
-   "dup_count": 0,
-   "summary": "연 5.51% 금리로 매력 높아진 I 본드 재등장"
+   "summary": "트럼프의 연준 야망에 민주당 상원이 가장 큰 걸림돌이 되고 있다."
   }
  ]
 }
