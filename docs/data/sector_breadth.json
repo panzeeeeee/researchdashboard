@@ -1,723 +1,707 @@
 {
- "updated_at": "2026-11-12T12:29:25.641535+09:00",
+ "updated_at": "2026-11-14T02:24:16.184849+09:00",
  "universe": "S&P500",
  "sectors": [
   {
-   "name": "기술",
-   "count": 76,
-   "up": 65,
-   "down": 11,
-   "vol_mult": 0.31,
-   "top": [
-    {
-     "ticker": "SNDK",
-     "chg": 15.96
-    },
-    {
-     "ticker": "LITE",
-     "chg": 15.03
-    },
-    {
-     "ticker": "DELL",
-     "chg": 14.29
-    }
-   ],
-   "bottom": [
-    {
-     "ticker": "ACN",
-     "chg": -2.45
-    },
-    {
-     "ticker": "MSFT",
-     "chg": -2.24
-    },
-    {
-     "ticker": "ADSK",
-     "chg": -1.21
-    }
-   ],
-   "news": [
-    {
-     "title": "ASX Midday Sector Update: Information Technology Shares Extend Rally, Miners Decline",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSTdKSTd6ejYtQnB1S19ZQ2NxbGhUM24xekFXOE05VU1xZkJuUF9oS0JzVEd6THVmeDA1cFItdFFwVmRJNkNHZi00UnZpSmJIYWlxVFRZMW5HSE9LRkV2eG15ajNVeTVzSV92bDdDWnctME9QdHlxTXFCNDBOZmZJeFA3SEp5R090R0kwdXNFdmFPVEk?oc=5",
-     "source": "Yahoo Finance Australia",
-     "published": "2026-11-12T10:43:00+09:00",
-     "dup_count": 0,
-     "summary": "ASX에서 IT 주는 상승하고 광업주는 하락함."
-    },
-    {
-     "title": "The Nasdaq Just Entered Correction Territory. 2 ETFs to Buy on the Dip.",
-     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNjA0T0w1a3Rac19TS0JnblVueTVDdl9KX2RQQ2ZlazQ1cXQ1ZXBIdU5HaktzSU5yZUdFRU00R0dUdTg1c0Fqb095RXRwMjg0WXdMSVRaRm9hUlg1MFdSaTNlVDFHRWJqVXVMS2xoV0owZ0FuOURyTGNBc25UZ3V2LVNGU3k5M1k1N01nUkgxTGdTNXdiNWJhYUI4SFFVaFZkWjF5X3hSXzliTFNkeC1qeks5Qnl2M2ZoVDQ2S0hPVVFVX0U2VVVQZGJDeUIxT0FqUmZ1Y0d1R21pSDNISkhBRzZLMnc0ZUtSdWc?oc=5",
-     "source": "The Globe and Mail",
-     "published": "2026-11-12T00:27:44+09:00",
-     "dup_count": 0,
-     "summary": "나스닥이 조정 국면에 진입해 저가 매수 ETF가 주목됨."
-    },
-    {
-     "title": "Wall Street's Most Accurate Analysts Spotlight On 3 Tech Stocks Delivering High-Dividend Yields",
-     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQeHNGNnlaZ2x3bTVLWkl6N2l2R1A4cmNVX3M2Z0daR3FXVDBBTUJjekhweVdlV0pVc1ZRQks3ZUZodXBLbEgtMEl0VkdVSkZuRXZkTXpwRk1ZSVRxVktxY2VSOTBWOWxxQkZaMklQQnlpSlV0aF9nMmc2c1dpVENLQS1yTnM5c1hZNEdXMFFfLTh3UXEzV0hiUmFocDlreTlSV0xaRnBqZDRiVnpTUkFlUWJEdEZjYjJXcFNyc1N4TG9MVGtVQkZCd0J6RlVkNUJNQ2lTMXB3MHNKVW8wTTAyaWh4RVY0MlVfaUl2SUU2M0FwYTA?oc=5",
-     "source": "Benzinga",
-     "published": "2026-11-11T21:20:44+09:00",
-     "dup_count": 0,
-     "summary": "월스트리트 전문가들이 고배당 3대 기술주를 주목함."
-    },
-    {
-     "title": "Information technology stocks retain bullish Quant ratings despite steep YTD losses (VGT:NYSEARCA)",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZU5jVDhGR1VDM1ZfXzZEWERONkp2T0R3cENmNTVBTlVBVjl0TGthdFh3S0hKT2pWYkRPU0FjLWNySExmRUNxQm03dGVVMjNsdFFVY09xOURJTzNFTGxoTXVzaTZJd3kwSlhNQ3ZTMy0xSkZ1VXNIVEdzT0dSdmFpMWpqTTZLWXNJY0xEdEY0OWZwaVItU21za29pczJqTktGc2tpTmFXc0tHeVpuSWx6RG5ZcFZUNTlxcGgxOV93?oc=5",
-     "source": "Seeking Alpha",
-     "published": "2026-11-11T20:55:36+09:00",
-     "dup_count": 0,
-     "summary": "IT 주는 YTD 급락에도 퀀트 매수 의견을 유지함."
-    }
-   ]
-  },
-  {
-   "name": "산업재",
-   "count": 83,
-   "up": 57,
-   "down": 26,
-   "vol_mult": 0.18,
-   "top": [
-    {
-     "ticker": "BE",
-     "chg": 16.35
-    },
-    {
-     "ticker": "VRT",
-     "chg": 8.46
-    },
-    {
-     "ticker": "GNRC",
-     "chg": 6.54
-    }
-   ],
-   "bottom": [
-    {
-     "ticker": "LDOS",
-     "chg": -2.91
-    },
-    {
-     "ticker": "XYL",
-     "chg": -1.99
-    },
-    {
-     "ticker": "OTIS",
-     "chg": -1.37
-    }
-   ],
-   "news": [
-    {
-     "title": "State Street Industrial Select Sector SPDR (XLI) Adds GE and CAT on Nov. 9",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRWd5N3NqU3RwUTdyQzdwbm15eWtiYXMxQll1emtIaHZualA2TDhBVmlscFZlZGt3NEFmcmFtbzc1WEpZQkx1cWhBaFc2dl9aSXZ5eUotZXZ4ZFFjTVhwWlFpX2JCQ3lscVpiUlZCWHZpamtQQmEzUHNhLV9naG40NlV2WFJOZ0lrOGNxVjVDMWNtM2RSV2hxckhnOGZOaGVZSTdCMA?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-11T20:04:10+09:00",
-     "dup_count": 0,
-     "summary": "XLI는 11월 9일 GE와 CAT를 편입했다."
-    },
-    {
-     "title": "ASX Sector Performance: Industrials and Property Lead as All Major Sectors Advance",
-     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVzRrbF9OTnV1SkpSZ25jUWJVdXhNcFdiTGtQNFN4Q1h4QV9IQ0dweTc1alVpVHA5LVhPQlY3UDNEYzBfaF92ajVPY24xeTFSaHJLRmY5b1lCR1laLTlaRGJZNzB6RDA5cW1TMGtYa3h5WkFfeEkxRlVGTlN6Vmg5V1d5eXVoWmRsS1hJTjR6R0pQcEgyRU9YTUU4TUhFOEJOTFg2ZkNrWjhlcXVZRm5qdHd5dlM5RjNh?oc=5",
-     "source": "Kalkine",
-     "published": "2026-11-11T09:21:00+09:00",
-     "dup_count": 0,
-     "summary": "ASX에서 산업재와 부동산 섹터가 상승세를 주도했다."
-    },
-    {
-     "title": "Wall Street's Most Accurate Analysts Spotlight On 3 Industrials Stocks Delivering High-Dividend Yields",
-     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQc0lsLWE0UGxseVVPN3dBb0lPUDJXcjh1eWZ5emUzZnFMRVhXWkVwMUdwa3ZUTnhSSnlUZzNoM2xKWlFSampySlhvSWlGVU5STDVPZF9JUTlvY0w1VGs0NnBNSzFCZF9mNm5uZ3B5aXVULVJlQVBFUzQ1WjlFWUxic3BJdWNWN2RpN2I0R2xiaTRReDBtZ2cyMU9MTTM3eFZCUnNjWTJLdlAyV3ZLZEQ3aE50M2FYNEVISjBmVW5lTXZWaDZWcnJvLXZPVTdfQTgtS0FhWDhQV2pxUTRNc2x2ME5XOFlHN2NQbHhvT2JBbDFRV0lfSW1waEFkdkQ?oc=5",
-     "source": "Benzinga",
-     "published": "2026-11-10T21:28:06+09:00",
-     "dup_count": 0,
-     "summary": "월가 분석가들이 고배당 산업재 주식 3선을 조명했다."
-    },
-    {
-     "title": "Engineered components and systems stocks Q3 teardown: Gates Industrial Corporation (NYSE:GTES) vs the rest",
-     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOaXVSa0hTOGp4V2tsRnZVQW5aa3FFeV80bjJxVldjQ2h3Y2lobk5BdTlCN0txQ0pTellTOFpYY1ludlhTTlJaWTFtT0lnbkRjRnE1SVV2SFZ5SW15QUJlQy1TSnYydnFPOW9ZUk90bFlHX3hPRTZ3ZE9ZOVZiTUJLc3NUTkU2OGpqTWdBTklXRmdXaWdsWXNDbFBVMjFmNEhkN05SOHVXY1lRWUEtTzNVZ1hKd0lKT0pNNDZBT21rUy1NS1NvRzVoTGNONFgwVHlTcVBwYmxaQkQwUzVCY1l0N0xGeXI1NXltclc0b2ppV0U?oc=5",
-     "source": "StockStory",
-     "published": "2026-11-10T17:00:00+09:00",
-     "dup_count": 0,
-     "summary": "GTES와 타사들의 3분기 실적이 비교 분석됐다."
-    }
-   ]
-  },
-  {
-   "name": "에너지",
-   "count": 21,
-   "up": 21,
-   "down": 0,
-   "vol_mult": 0.21,
-   "top": [
-    {
-     "ticker": "BKR",
-     "chg": 4.35
-    },
-    {
-     "ticker": "HAL",
-     "chg": 3.12
-    },
-    {
-     "ticker": "APA",
-     "chg": 2.84
-    }
-   ],
-   "bottom": [
-    {
-     "ticker": "OXY",
-     "chg": 0.07
-    },
-    {
-     "ticker": "EXE",
-     "chg": 0.43
-    },
-    {
-     "ticker": "CVX",
-     "chg": 0.46
-    }
-   ],
-   "news": [
-    {
-     "title": "Why We're Adding to an Integrated Oil, Fuels and Chemicals Giant With 44 Straight Years of Dividend Raises",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNkdhRnRhNFZJSHFMLXgyeksxcEhjTDNlWDBpbms3WjhqdG9yc25Fam5ZNXJEN0l2c2lMakFvaElsamVBS3VaNndSV3pyZVNXRjdJeWc1c0dBak5ZelhpejF5d2Jzd1luY1hvZUQ2dndURWdkTlJfXzY4dFhIMXk2T1FHZFRrbm12VWhyV1d6QW5qdzNiYnB3NVZEUXgybEVnWEZnby1Ea3BPVGZGeTBr?oc=5",
-     "source": "Dividend.com",
-     "published": "2026-11-12T09:54:56+09:00",
-     "dup_count": 0,
-     "summary": "44년 연속 배당을 늘린 종합 에너지 기업에 투자하는 이유."
-    },
-    {
-     "title": "Energy Stocks Rose As Oil Prices Firmed Late Wednesday",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcEdha0s4ZUZMSmtxQXNCVHIxM0dxQ096RVktRVdRNzJpbWVBUng3clZmSjNxVFVHUVdGTDRDcjVCZmxVNmtQS1oya2ZMLWpxa2tQY21MYzVyakJ6V25PMndmYUJPa0dsSWItMzNKVmVRSkx3Q014LUc3VElkdVBhY3BEaHowOXQ2UWt3?oc=5",
-     "source": "Finimize",
-     "published": "2026-11-12T06:07:30+09:00",
-     "dup_count": 0,
-     "summary": "수요일 장 막판 유가 상승으로 에너지 관련 주가가 올랐다."
-    },
-    {
-     "title": "Is Baytex Energy (BTE) Outperforming Other Oils-Energy Stocks This Year?",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQOWtCNHZ3SkdBTG1fMFl3eFlXZWtsekNlX1pqX25rSElBQnJaVll5Q01PZ0J1bUFIUmZhX2hGb19pZGxSazZ1bjR4S3RLRUxYWXdmbnd5V2ZKRkh1UllWMlE0VnVycGpoMGZYU0YyOG5jdWpzOGVfNmdVWHN5ZnBFZjdYTXp1eGxKN2pJTzl0VlViMkxxWDlhVXZYb0NyM2FkVy1wUQ?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-12T05:07:10+09:00",
-     "dup_count": 0,
-     "summary": "베이트엑스 에너지는 올해 다른 에너지 주식보다 성과가 좋을까?"
-    },
-    {
-     "title": "Refiners dominate energy stocks with longest-running Strong Buy Quant ratings",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPMm5QOERrcTFPWFpvTl9qeTVkZENkVGRnSXg5TklvanZIcGJCOTNtR21GcW1JTWktR3ZTdXdyR2JQSXFVdURaWEJUam9FMHBIZ2VGWU1mU3ZGVW5UaENmMjFqeW1xbXMzRnhmako3QU9jeGw2SUZsRVdDbjFVbDVGbDNmMGM4OHpUbF9LRGZnNmdKc2VvWFZtUHhwS0FXTzgyUmVEc3B2M1JrUUNkaU1yTXhlS21sT0FXUGdUX2g5R240LU9XaGNsSmdMbWFzNG1RTDlmd1JJRQ?oc=5",
-     "source": "TradingView",
-     "published": "2026-11-11T23:57:58+09:00",
-     "dup_count": 0,
-     "summary": "정유주들이 최장기 강력 매수 등급을 받으며 에너지를 주도한다."
-    }
-   ]
-  },
-  {
-   "name": "통신서비스",
-   "count": 22,
-   "up": 15,
-   "down": 7,
-   "vol_mult": 0.27,
-   "top": [
-    {
-     "ticker": "RDDT",
-     "chg": 6.68
-    },
-    {
-     "ticker": "TTWO",
-     "chg": 5.53
-    },
-    {
-     "ticker": "GOOGL",
-     "chg": 2.19
-    }
-   ],
-   "bottom": [
-    {
-     "ticker": "SKYD",
-     "chg": -1.93
-    },
-    {
-     "ticker": "ECHO",
-     "chg": -0.56
-    },
-    {
-     "ticker": "TMUS",
-     "chg": -0.52
-    }
-   ],
-   "news": [
-    {
-     "title": "These communication services stocks slump YTD, but Quant ratings stay positive",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPa2hZUHNzNzVhd1ZNUFJhX3hvZU9uWk9ZRkZMNFhWOVRlRkYwOGJvcE04MlZ3OXNWMEQ5NEpra0dCMGwwQnRiV1hWRWRya0FTODg1TUVOUTdWalFQQ0JHVjJkQXdqUEFEV1VKNzJfQnNZVjY0WHBNeXQ5V2pOWkVnX0pUU2RSYS1VZTg1R0Rpb0syQUVJMmIycG9aamRMbkVJdm82YzBDZFotSXRQMl95aGdOaEVjU1I2cngxVDNTdUhweU1ydDl5WDdoMEdlRGhxRWVFM0JGNA?oc=5",
-     "source": "TradingView",
-     "published": "2026-11-11T21:31:30+09:00",
-     "dup_count": 0,
-     "summary": "통신주들의 연초 이후 부진에도 퀀트 평점은 긍정적이다."
-    },
-    {
-     "title": "2 Vanguard Index Funds to Buy Now to Beat the S&P 500 in the Next Year, According to Wall Street",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcTdSSkRIdUszd0NrTVFRRzQwWGJEN3NITVBPSEpWQmlkbnRQQ2NOV0FvVmhJdHJfREQweUt0b3RMMHVTbklTYmk0NHVaNXlyUlAtUnhaeEFrNmxRWXdkQ2VhNXBTbVloeHBtODhKOE9Vbi1DZHBRNFpNVDBLVzZSYW5GQkNQMVBpYUQ1T0I0Z0h6TllYNmdNbjJJX0I?oc=5",
-     "source": "The Motley Fool",
-     "published": "2026-11-10T18:12:00+09:00",
-     "dup_count": 0,
-     "summary": "월가에 따르면 내년 S&P 500을 이길 뱅가드 인덱스 펀드 2개다."
-    }
-   ]
-  },
-  {
    "name": "금융",
    "count": 76,
-   "up": 37,
-   "down": 39,
-   "vol_mult": 0.2,
+   "up": 59,
+   "down": 17,
+   "vol_mult": 0.19,
    "top": [
     {
-     "ticker": "IBKR",
-     "chg": 7.84
+     "ticker": "GPN",
+     "chg": 3.89
     },
     {
-     "ticker": "FIS",
-     "chg": 5.69
+     "ticker": "FISV",
+     "chg": 3.46
     },
     {
-     "ticker": "HOOD",
-     "chg": 5.02
+     "ticker": "XYZ",
+     "chg": 2.98
     }
    ],
    "bottom": [
     {
-     "ticker": "HIG",
-     "chg": -1.77
+     "ticker": "HOOD",
+     "chg": -4.4
     },
     {
-     "ticker": "AJG",
-     "chg": -1.51
+     "ticker": "COIN",
+     "chg": -2.4
     },
     {
-     "ticker": "BRO",
-     "chg": -1.48
+     "ticker": "STT",
+     "chg": -0.93
     }
    ],
    "news": [
     {
-     "title": "Financial stocks retain strong Quant ratings despite YTD declines",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWGlhVl91WEtid0xQdzRrRVplU2RYX0RvZzVCejFGOEl2cS1Ea1hHOE9XdWo5aWoxemNUcWpWTXNHdV9rdWlqMVhJQU9ULUthNFIzeUw0bXowLVF2cVpYWUhkcVFTNGlZZkJnNWFFdG1UZVZqWUcxTmx5QWFYSm5IZW9UU0lqSmIyR2VlOTJFY01SNExPTU1lZG9XLWpQLWVaZEV4c3RXT0dUMzlXNjlxaldsTTNiS3FJX3RsUk1taE9TdkJnNVVV?oc=5",
-     "source": "TradingView",
-     "published": "2026-11-11T20:38:19+09:00",
+     "title": "Top 3 Financial Stocks That May Crash This Quarter",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQUV9TM1BoakFHSzJSeTFBMFQyQS1WalhZS0VqZUV4SnJZcHo2M3J4WWxqUks2NXdramxSSHNJa211YnRIcnEydVNkMTNwMmlFd3o2YS1waFlkRGZwbFBOUUEtWnJNNl83b05fY0Jta0o2T1lMSDVBcmM2d3p2TWFrNVQ2cXFpQnFHX3NFTTlIWmJSV0E4WF8zQmNTZEN4YldOVFhPV0Z5a0h4cWR6RGRydVluQlBkT3lua0E?oc=5",
+     "source": "Benzinga",
+     "published": "2026-11-13T22:40:06+09:00",
      "dup_count": 0,
-     "summary": "금융주들은 연초 이후 하락에도 강한 퀀트 등급을 유지한다."
+     "summary": "이번 분기 하락이 우려되는 상위 3개 금융주가 주목받고 있다."
     },
     {
-     "title": "Financial Select Sector SPDR (XLF) Buys $26.7 Million More Berkshire on Nov. 9",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRGtpX203WnJJaTROX3ZYcGQtTEJjMFd2TndEdHJLOHVxNmxTMnBYcXZjV25kMEhXd2ZrcERRMzQ0LV9aaHNFenllYWxCNVNrdFN1SENHSGRrM28tX0tqU29aQ2JtQTBMZzRpUFhMVVE4aHhNaURPU1VJSGJiYlM2LVpGVVh6TEtWTDF2Z0VTTExKemwtS1Vfc2o5OGpHdw?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-11T20:04:24+09:00",
-     "dup_count": 0,
-     "summary": "XLF는 11월 9일 버크셔 해서웨이 주식을 2,670만 달러어치 매입했다."
-    },
-    {
-     "title": "Moat Stocks Rebound As Tech Retreats",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPOV8yUnYyNmpBLWY4VklpZktWSE5mYVpOZW5rcEg0WkppZ2J0OXdueldUaGEzR3FxdXE2cGV4TV9MWXJTTFktOV9CYUFBOFpOYnlnRG1LMnFnWHZZbkF3ZExBN3FQME1ydXZ4eHNCaHVwQjJkTm4zbUZBNXFzTGQybU5CNA?oc=5",
+     "title": "Lazard, Piper Sandler lead financial stocks with longest Sell streaks (XLF:NYSEARCA)",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRXh0Zm9pcEp6c295UnlEOWxFbHdjbE1CS2p1bVNSTmgxdHViTmlQNUJfVFJvZG82Ukw3VGV3V3RISEVfQ2RadmxDOElYZXNYNlJKM0tkeU1JRk9MODA5dktsbjl6Vjk1YzhqdmoyTkl1cURMb1NJOWVVOTltSnduOGxBdTlPWElQeTNqYndJN3FqMFl0RFBuN2VCenh6b1BuZ2RBTVdMQ1BQdw?oc=5",
      "source": "Seeking Alpha",
-     "published": "2026-11-11T14:45:00+09:00",
+     "published": "2026-11-13T21:45:28+09:00",
      "dup_count": 0,
-     "summary": "기술주가 주춤한 사이 해자 주식들이 반등세를 보였다."
+     "summary": "라자드와 파이퍼샌들러가 금융주 중 가장 긴 매도세를 기록했다."
     },
     {
      "title": "Banks And Financial Stocks: Latest News And Analysis",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQS3Zid3lDUlRoeXNZWWU5cTBlUUtRTG1UbjBLWENDWGo0SC00cHB4NzVKZnhnd2lUYVBSWUdoZy11VFFfVXZrcmNIM3IzUm1nWm5sMTRUMmhXOUhobjJIZEFsX2dYeVN4ckZQNF9faUdmcnk4X2QzRGtxN2huaFhJS1pZbDlrWjM3MERBOXFkeElCdDV1WDZibFY4d2t0ZUJnbVNUTjg3OFZLTnlCcDJPa2JXOHQ?oc=5",
      "source": "Investor's Business Daily",
-     "published": "2026-11-11T02:07:00+09:00",
+     "published": "2026-11-13T02:57:00+09:00",
      "dup_count": 0,
-     "summary": "은행 및 금융주 관련 최신 뉴스 분석이 지속되고 있다."
-    }
-   ]
-  },
-  {
-   "name": "소재",
-   "count": 24,
-   "up": 9,
-   "down": 13,
-   "vol_mult": 0.18,
-   "top": [
-    {
-     "ticker": "FCX",
-     "chg": 3.56
+     "summary": "은행 및 금융주의 최신 동향과 심층 분석이 보도되었다."
     },
     {
-     "ticker": "DOW",
-     "chg": 3.32
-    },
-    {
-     "ticker": "LYB",
-     "chg": 3.1
-    }
-   ],
-   "bottom": [
-    {
-     "ticker": "BALL",
-     "chg": -2.23
-    },
-    {
-     "ticker": "MOS",
-     "chg": -1.96
-    },
-    {
-     "ticker": "AMCR",
-     "chg": -1.78
-    }
-   ],
-   "news": [
-    {
-     "title": "ASX Midday Sector Update: Information Technology Shares Extend Rally, Miners Decline",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSTdKSTd6ejYtQnB1S19ZQ2NxbGhUM24xekFXOE05VU1xZkJuUF9oS0JzVEd6THVmeDA1cFItdFFwVmRJNkNHZi00UnZpSmJIYWlxVFRZMW5HSE9LRkV2eG15ajNVeTVzSV92bDdDWnctME9QdHlxTXFCNDBOZmZJeFA3SEp5R090R0kwdXNFdmFPVEk?oc=5",
-     "source": "Yahoo Finance Australia",
-     "published": "2026-11-12T10:43:00+09:00",
+     "title": "Why Sector Investing Can Be a Bad Idea: The Risks of Concentrating in Tech, Healthcare, and Financial Stocks",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUkkyY3Rmbl9nXzNON05DVUdkUGNQQnFqa3pua3MzaXNsbWUxeGkwWUFNeWZNeU05eE1TVXcyN0NrazFnUUpqd3pBTlVHeHFUNGxMcFhIc2VQTDdqWFVSSVBNYjAzWWFRSF9nZHZMZWdzSkRtckFPLU0ySlp6d2ZtRThjY2pwTndmbFUyMmJVMDB1R29mbkRydVQwOGdZWnZxOWgyZ0FzRTRON2h1YnVQcjZTeHlUQkU3MDV4d3gwUl9aMEJGR3FKZ182RQ?oc=5",
+     "source": "Serving Those Who Serve",
+     "published": "2026-11-13T00:06:25+09:00",
      "dup_count": 0,
-     "summary": "ASX에서 IT 주는 상승하고 광산 주는 하락했다."
-    },
-    {
-     "title": "Is Element Solutions (ESI) Stock Outpacing Its Basic Materials Peers This Year?",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ1FWY1hOZ0dBMTFSU0c1eGRsWDdZbmthUnFVN3VyLVFjV183eTJ3TThkb1A1eU9lakQ1cmloYno4aDZBcnFDby12VlMwdDVJUjctck9TalQ0bElhWUdCZ0p3T1ZuMG5uUk5xaWxqdFY5aDNNWmdWLU44bEFfbjA2dDZIUkp2V1BWY0NSSjdKTWl4WDdScDVnejI4WE81SnllSmYwSA?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-12T05:07:11+09:00",
-     "dup_count": 1,
-     "summary": "Element Solutions 주가가 기초소재 동종사들을 앞서는지 분석했다."
-    },
-    {
-     "title": "ASX Midday Sector Update: Information Technology Stocks Rise, Miners Struggle",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdGM5bXNVTkdQRnNEQmpsT1p2RThkVXZrRlM5ZXhwUjA3WG01dkR2bHgwOVpIQk5YU3Q4VndxZkw4cEtkeW0waVJrMjdWYk5MQzNMMDdWRnBGYTFNMHRTX04yNVVlSVdPakZ0aS1HRGl5VlJtc2xnRURrNXA4MlhaTGkxLWwweDByN3l0VURGWG9QNXM?oc=5",
-     "source": "Yahoo Finance Australia",
-     "published": "2026-11-11T10:32:00+09:00",
-     "dup_count": 0,
-     "summary": "ASX에서 IT 주는 오르고 광산 주는 부진을 면치 못했다."
-    },
-    {
-     "title": "Top 3 Materials Stocks Which Could Rescue Your Portfolio In November",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRkFFVG1xVjlrSXE5RUxxSkZJdktkeDBUbHhBbERBXzJfbE5oV21PMTA5RG1KSlZ0ckhLVVlHWnFBVkgwV1lJM294aE9HN1VUeDZuVy04dV8xbmtsYzRaMHRsZF9JTnNEU2pJMTZZbjNtVTBUMVAtR3RfaHozQ2xqRG44Qjc5SDhzcm5QVDFENzZOSVVvSlhJVF9va1FNWWtISGRsUWZEcW4wQ3FOWVhTUVpnM0dyT05KSnpLZnJ4S1NuY0U2NnZQNU1CMlVvdw?oc=5",
-     "source": "Benzinga",
-     "published": "2026-11-10T20:10:06+09:00",
-     "dup_count": 0,
-     "summary": "11월 포트폴리오를 구할 수 있는 소재 주식 Top 3를 선정했다."
+     "summary": "테크·헬스케어·금융주 집중 투자는 위험할 수 있다."
     }
    ]
   },
   {
    "name": "필수소비재",
    "count": 33,
-   "up": 10,
-   "down": 23,
-   "vol_mult": 0.24,
+   "up": 31,
+   "down": 2,
+   "vol_mult": 0.25,
    "top": [
     {
-     "ticker": "COST",
-     "chg": 1.27
-    },
-    {
-     "ticker": "ADM",
-     "chg": 1.04
+     "ticker": "BF-B",
+     "chg": 2.43
     },
     {
      "ticker": "KDP",
-     "chg": 0.94
-    }
-   ],
-   "bottom": [
-    {
-     "ticker": "CLX",
-     "chg": -3.56
-    },
-    {
-     "ticker": "BF-B",
-     "chg": -3.18
+     "chg": 2.4
     },
     {
      "ticker": "GIS",
-     "chg": -2.55
-    }
-   ],
-   "news": [
-    {
-     "title": "ASX Midday Sector Update: Information Technology Shares Extend Rally, Miners Decline",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSTdKSTd6ejYtQnB1S19ZQ2NxbGhUM24xekFXOE05VU1xZkJuUF9oS0JzVEd6THVmeDA1cFItdFFwVmRJNkNHZi00UnZpSmJIYWlxVFRZMW5HSE9LRkV2eG15ajNVeTVzSV92bDdDWnctME9QdHlxTXFCNDBOZmZJeFA3SEp5R090R0kwdXNFdmFPVEk?oc=5",
-     "source": "Yahoo Finance Australia",
-     "published": "2026-11-12T10:43:00+09:00",
-     "dup_count": 0,
-     "summary": "호주 증시에서 IT 주는 상승세를 이어간 반면 광산주는 하락했다."
-    },
-    {
-     "title": "RSPS: Consumer Staples ETF Reduces Company Risk (NYSEARCA:RSPS)",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQ1NNRDRfdlduM25QSElsVkdMLWpjcThLN1Vmd1ZTYkdIODU5b1NDSUdPcGhhRGhQSDFCOGMtaWw1RGZRc2R4WFYzd0w3ODYycWViWkZCaDRqY1otaGZ2SWdXNFhVNjY1R3FJOUFtTUlUbUxyYU1sazg2V1lqcHFja0RjVUlfSk9GS0VxaG04RGk?oc=5",
-     "source": "Seeking Alpha",
-     "published": "2026-11-12T06:34:02+09:00",
-     "dup_count": 0,
-     "summary": "RSPS 소비재 ETF는 투자 포트폴리오의 기업 위험을 줄여준다."
-    },
-    {
-     "title": "These consumer staples stocks are down YTD yet carry 'Buy' Quant ratings (XLP:NYSEARCA)",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZHR6QTZIVDZXVTlnUTRrVzRkWnp1b1RGd2RJbHp0YnNtX0kwUU1mZm5wMHpndGZNM3lHZ1kxTklwejVTU2ZLTlU0M3JUQjhNTkxsOXBteHM5cC1paFZkOVNmOHRMamdLU3dxTFBfSUhOYlU1c1ZaN3BCMzFqcEdLcXhHUUFTNk00OHp4a0RZdlA4VjNhMEJyQjEteWlvMmZTM2JDY0VzQ0hWd29M?oc=5",
-     "source": "Seeking Alpha",
-     "published": "2026-11-11T00:56:00+09:00",
-     "dup_count": 0,
-     "summary": "연초 대비 하락한 일부 소비재 주식들이 매수 등급을 유지하고 있다."
-    }
-   ]
-  },
-  {
-   "name": "헬스케어",
-   "count": 60,
-   "up": 21,
-   "down": 39,
-   "vol_mult": 0.21,
-   "top": [
-    {
-     "ticker": "ILMN",
-     "chg": 1.75
-    },
-    {
-     "ticker": "BSX",
-     "chg": 1.53
-    },
-    {
-     "ticker": "HUM",
-     "chg": 1.46
+     "chg": 2.13
     }
    ],
    "bottom": [
     {
-     "ticker": "ALGN",
-     "chg": -2.09
+     "ticker": "DLTR",
+     "chg": -1.28
     },
     {
-     "ticker": "CI",
-     "chg": -2.06
+     "ticker": "TGT",
+     "chg": -0.1
     },
     {
-     "ticker": "MRNA",
-     "chg": -2.03
+     "ticker": "DG",
+     "chg": 0.17
     }
    ],
    "news": [
     {
-     "title": "Healthcare Just Hit a Record Lead Over Tech. 3 Things Could Shrink It",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1JMURkZkRfbjktSjJpSHZ6Qk1hMmJ0b2lJbkRwTXdNTXdCdlZITEtYdjlVR0xsaVA5MzN0QXJhTG91TDV6bV9sa3VMSmtPYlM3TXJLSWszMURsLUVtMTZhcXg2WGtCNTMtNHY2MW10SQ?oc=5",
-     "source": "BeInCrypto",
-     "published": "2026-11-12T07:38:37+09:00",
+     "title": "Consumer Staples Leads Sectors As Technology Trails",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMmlZZ1UzUnMwamNUcERjWHluRllNLVdqRmFwVnppWmJZSU9wRVJHMXhnMi1wVm9yOV9fdEhIVjk0bFZiWkUzR0pqQWF0Z3VHZGhBTWh3S2lDanI1dmJURU4zaVJpSWdvdFlORWV2c21KY3MyWld3cWZQaTZ2TDdlWjdmNzMyNjVsQWVwVkRJMnVnVXdCM0NWcHc3U21nTXVSQ01EYTZpY1J5c0o0?oc=5",
+     "source": "Benzinga",
+     "published": "2026-11-14T01:00:18+09:00",
      "dup_count": 0,
-     "summary": "헬스케어의 테크주 우세가 역대 최고치를 기록한 가운데 이를 줄일 3가지 요인이 있다."
+     "summary": "기술주가 부진한 가운데 필수소비재 섹터가 상승세를 주도했다."
     },
     {
-     "title": "Is Invesco S&P 500 Equal Weight Health Care ETF (RSPH) a Strong ETF Right Now?",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQakppNE9fVm95RFR2WFlLTGZrS0VxV3ZzQWtraFRYWXJGNlExUDY2WkhZRzQwMTZVb3hTNW9oSUJmdHdpY0Z5UWlaMHFXWF9aNnJwNjdhTnMyNWVZbm0tTHRqY3R3U3RwOTV4Z0l5TUdVZEV3cHpqdVZKeHI3S0FsYXNXakZzZmkxWENVeEpMZ0ZNYWxwLXc?oc=5",
+     "title": "Has Armanino Foods of Distinction (AMNF) Outpaced Other Consumer Staples Stocks This Year?",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRmhnS2ZTbUlfakpJdjdvZ0ctY1RfR3dtVjFxblFfQnppYkdVa3AxWUtWVVVWUXNWMDh4akhYLWpYblJ3TlV6a2FvazhnYnpHZDFZakNLOHlFZFRTcjJZWTM0cFdraUJxWGpOMHNfaERGV3BGNjhBN0U4aXZxal9peUo5dFdSVFRaTFk2NDBjc19UcC04ZTYwTVJCOWZkY2Z4LXhwazdob1VoLVhKTGFVR2Iyb09IUQ?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-11-12T05:39:50+09:00",
+     "published": "2026-11-13T22:40:03+09:00",
      "dup_count": 0,
-     "summary": ""
+     "summary": "AMNF가 올해 다른 필수소비재 주식들의 성과를 앞질렀는지 주목된다."
     },
     {
-     "title": "State Street Health Care SPDR (XLV) Sells Eli Lilly and J&J on Nov. 9",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTUFNTGVoSWJTck5aQ21SUFdPZkM4bFB5VlowSHdnOEI2aV9WT1UzY1BCSFFqNi14Q2Z2NzE3NUV2SFd3cU04NFozbTNSbGdIcF84bW1EX0VPRGRnMXdsTHVlSXQwRVNHa2pKQWZqa2NIMnJwaExvbzVjSGp4VXRLdmRvX3VidWF4dzdhai1jQlJ1cVlfTEllNXNn?oc=5",
+     "title": "3 Low-Beta Consumer Staple Stocks to Buy as Inflation Stays Elevated",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaDAyM1BkUzkzMC1lYzU1NGNDQ3hOVHJ3b1NoOFcyMHZSOFFFNmFYUXNqcnBQaEJOM1BjYTFvSzdGWEUweUtLaE1NMXlBZTF6LXJoN3hxbXpFRXhyYjlBaEQwZ0owNlJ3VHF2ZXBwY25LcUdDT0VDOXZSSkFUM3pBYmlOV1NlVFNKN0NkZGxnc3JRSlM0ZHc?oc=5",
      "source": "Yahoo Finance",
-     "published": "2026-11-11T20:04:02+09:00",
+     "published": "2026-11-13T01:24:00+09:00",
      "dup_count": 0,
-     "summary": "State Street의 Health Care SPDR(XLV)이 11월 9일 일라이릴리와 J&J를 매각했다."
+     "summary": "인플레이션이 지속되는 가운데 저베타 필수소비재 주식 3선이 주목받는다."
     },
     {
-     "title": "Moat Stocks Rebound As Tech Retreats",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPOV8yUnYyNmpBLWY4VklpZktWSE5mYVpOZW5rcEg0WkppZ2J0OXdueldUaGEzR3FxdXE2cGV4TV9MWXJTTFktOV9CYUFBOFpOYnlnRG1LMnFnWHZZbkF3ZExBN3FQME1ydXZ4eHNCaHVwQjJkTm4zbUZBNXFzTGQybU5CNA?oc=5",
-     "source": "Seeking Alpha",
-     "published": "2026-11-11T14:45:00+09:00",
+     "title": "4 Consumer Staples Stocks to Watch Amid Industry Headwinds",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLWVFcXZPU3lsRXZDZVJEU1drdEwzVnpoMVBrQnI4UE9HMF9faEl6aHV4LUIxckw1dWNRQV83T3lMbUFFUGpOTmdGRy1tbmNxNDVqX2IyOU4tMEFCX19oYXp6YzVfV24weWF0b1VoUm51M3FUTzhETjh0c2NfcFc3eVJ6RTN5djN4ODNRN0MwY3I4Q2YyRUdMcmd6UTk?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-12T23:15:00+09:00",
      "dup_count": 0,
-     "summary": "테크주가 주춤한 사이 해자(Moat) 주식들이 반등세를 보이고 있다."
+     "summary": "업계 역풍 속에서 주목해야 할 4개의 필수소비재 주식이 공개됐다."
     }
    ]
   },
   {
    "name": "유틸리티",
    "count": 31,
-   "up": 6,
-   "down": 25,
-   "vol_mult": 0.21,
+   "up": 25,
+   "down": 6,
+   "vol_mult": 0.18,
    "top": [
     {
-     "ticker": "VST",
-     "chg": 3.68
+     "ticker": "SO",
+     "chg": 1.98
     },
     {
-     "ticker": "CEG",
-     "chg": 2.91
+     "ticker": "CMS",
+     "chg": 1.61
     },
     {
-     "ticker": "NRG",
-     "chg": 2.7
+     "ticker": "ED",
+     "chg": 1.35
     }
    ],
    "bottom": [
     {
-     "ticker": "PCG",
-     "chg": -1.28
+     "ticker": "VST",
+     "chg": -2.63
     },
     {
-     "ticker": "AWK",
-     "chg": -1.18
+     "ticker": "CEG",
+     "chg": -1.98
     },
     {
-     "ticker": "ED",
-     "chg": -1.17
+     "ticker": "NRG",
+     "chg": -1.69
     }
    ],
    "news": [
     {
-     "title": "Are Utilities Stocks Lagging Consolidated Edison (ED) This Year?",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRng4b3lSdkd2VS02LUtlMXZkWTJ5U2FvbXBsSXpjTXppVFdIVkY3T3gta0R1VXZZU3k3R3lEMmhhWFJPazhoaG5XUVRUV3hTUmhpR3IxMGQ5dkdwd3M0M0VJcFVRMjZOSFRsSENlQ1NmVVJ1WHNJRjZMV2p4OV9TU1FyY3BlbEdmbFUzZzU0Uk8yWnBSazZqOGQzcjlZakdTa2w3LV9qWnpsa1h2LXc?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-12T05:07:11+09:00",
+     "title": "ASX Midday Sector Update: Utilities Rise, Real Estate Struggles",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQc3Z1Y0NtSVZxQnMtMF93bThNRE9LcFN6YklPbmNpMlJMOE5GRWRqekxhTTBZcXhQSWZtT3YxZTBiUmdtOEZhbHN0dHZGdXkydVh3YUVWcWlSaHJwVUh5ck52Zml3UFdrR1NjNGg4RE16VU9Idm5PaERaT2VBVTRsQWoxV3Z6NHYz?oc=5",
+     "source": "Yahoo Finance Australia",
+     "published": "2026-11-13T10:39:00+09:00",
      "dup_count": 0,
-     "summary": "유틸리티주가 올해 Consolidated Edison(ED)보다 부진한 흐름을 보이고 있다."
+     "summary": "ASX에서 유틸리티주는 상승하고 부동산주는 부진하다."
     },
     {
-     "title": "Analysts Offer Insights on Utilities Companies: Brookfield Infrastructure (BIP) and Algonquin Power & Utilities (AQN)",
-     "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxOOXItUEU5aHhLNXBsampRemJ5QW8xTWRSSEIyMXA1bEltd1p1UTRNdmxzMEp6VjI0bzFjOFo0SDRGZXNZRFhCVHVOT240dk9HMjExTTFRakF4Q3JEbW9lMnJBV29oWUYyd0s5QkFEVG1RX0UwU3QycW9sWEV3dmsya3d0WnN2RmdKOGlVMk8yOTFEekxCSXZubVQzT1RCU05rb0Y3R3hwVFlsWWJlbGR1d3duQ3Q5N2ctT1VWMWx3bl91LVZSRkc4bjRnTmotYzRtRmpveUdqMWM5TktUa3piQk4wQ0g4cEFweUNzX1dJUDItbzkzc0VCdzhydldNTWtLaGRPc05xQzZQQ3pjaXdRS05BWWVsTUlVcUwzSDIzYw?oc=5",
-     "source": "The Globe and Mail",
-     "published": "2026-11-11T00:31:20+09:00",
+     "title": "Are Utilities Stocks Lagging Entergy (ETR) This Year?",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPM3RoTWo0UUJOWktxenI4NWdFdDVQWUc3S2xlQ0hBM0FrLW12VmZZS2d5UTlheUtnZ0pwaXhzaGtYRjg3SDRVRlE0U1piX3hZUzVlZy11dkpDTUlXRVRnQWM4RzJGLWZiejdncGFGemlWQzJwRUQzZHhJSDl6LTZMSzNEbGU1RUdYZ1RWRVNFM3NHc2ZxSkZ4V1lNQllzQnB5OVNB?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-12T22:40:03+09:00",
      "dup_count": 0,
-     "summary": "애널리스트들이 Brookfield Infrastructure(BIP)와 Algonquin Power(AQN)에 대한 전망을 제시했다."
+     "summary": "유틸리티주들이 올해 Entergy(ETR) 성과를 밑돌고 있다."
+    },
+    {
+     "title": "What Utilities Select Sector SPDR ETF (XLU) Sold: NextEra Leads on Nov. 10",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOOG55N1pKblFKZTBNM3NFZmloUEZVOGo5Y29OSTJ2Vkk5VjFPNzlCU2lkdTBJM1FjcEdMZUVhbXd6NHZSdUF0bnpQNFY0NEFWOTh2bUJCUnlobWs5ektvM2s1RHAwNFFBSXFWVDg0WUZoN1ZsdFBTNkUyYXJyNDhVbnNDZFhxT3VBR3VJQWZtWU5TdnBFTENpOTI4VHJSQQ?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-12T20:04:33+09:00",
+     "dup_count": 0,
+     "summary": "11월 10일 XLU 매도세에서 NextEra가 선두를 차지했다."
+    },
+    {
+     "title": "Top 3 Utilities Stocks You'll Regret Missing In November",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVEJNaEJ3UjRUQjBLVHBUWjR6MzFrQXNyT3ltWUQ3U3RPSWFIcmY1ZTlZdWlqOUN5VlJWMlc2MzV1MEM3Q0E2aGkwQ0tpSEI5LW9TMDBnLXlROTdMNHo0LUJhdjlSQ005NFhOeVJURWwtdG40V1Jtb205RHJobE50ZGNLUG9PMzl2NVJ4Q2Q4bTZUczNYc0JKb3RtRkhaVlVBVXNaQnp6Y2otZ0FMMW40TEVEdEZCWG9YeS1tTQ?oc=5",
+     "source": "Benzinga",
+     "published": "2026-11-12T20:02:05+09:00",
+     "dup_count": 0,
+     "summary": "11월에 놓치면 후회할 유틸리티 주식 Top 3를 소개한다."
     }
    ]
   },
   {
    "name": "부동산",
    "count": 30,
-   "up": 4,
-   "down": 26,
+   "up": 20,
+   "down": 10,
    "vol_mult": 0.17,
    "top": [
     {
-     "ticker": "IRM",
-     "chg": 2.44
+     "ticker": "CSGP",
+     "chg": 1.66
     },
     {
-     "ticker": "EQIX",
-     "chg": 2.29
+     "ticker": "MAA",
+     "chg": 0.97
     },
     {
-     "ticker": "DLR",
-     "chg": 0.82
+     "ticker": "WY",
+     "chg": 0.86
     }
    ],
    "bottom": [
     {
-     "ticker": "VMRK",
-     "chg": -1.76
+     "ticker": "DLR",
+     "chg": -2.23
     },
     {
-     "ticker": "CPT",
-     "chg": -1.52
+     "ticker": "IRM",
+     "chg": -2.16
     },
     {
-     "ticker": "REG",
-     "chg": -1.44
+     "ticker": "ARE",
+     "chg": -2.04
     }
    ],
    "news": [
     {
-     "title": "Australian Stock Market Today: ASX Futures Dip On Housing Credit Slump And RBA Watch",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOEwtbk1kUFkybXFEbXZmM3Baa0ZieUIzV1BoZ0p3U1o4VVdYeWRNMUFXdzZ1N3E3LWkyYzlSM2ZFUzAwdmNEVkFheG9JTElRV1BqQ0tPRFNyOTI2X2VTemV3TVVRaEtOR0l0Y1luemNjTFpZclR5am1BUVdHVUtuOVltNXd1THVuemVnc2FjTmhIVjU0N1BHd1BwNmE5RDg?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-12T06:12:36+09:00",
-     "dup_count": 0,
-     "summary": "주택 신용 침체와 RBA 주시 속 호주 ASX 선물 지수 하락."
-    },
-    {
-     "title": "Top 3 Real Estate Stocks That Could Blast Off In Q4 - Global Net Lease (NYSE:GNL)",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORVZDVW9wTl91NnRvWTlrRm1mYmtDOWE5M0ljX3E2TS1YMGdBbHZCNUhVZzJIdlZVXzFjd0hrdWVRZnBPNkhuRy12andjYzBFWERaRmRiMWpmNVBJRXJQYTZIZGxPU0Vyc0twOEcxaEx5QmNDQ3dId3pWZW5ia1lJaUppVUl2Q0xnVnNrR3ZVMEtYdF9SMkJrZ0tfcUxZODZKVGFOUlQ1YXBXN3d0dXFuUEJYeDhVQjA?oc=5",
+     "title": "Wall Street's Most Accurate Analysts Spotlight On 3 Real Estate Stocks Delivering High-Dividend Yields",
+     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQZTlUc2RXSlZpcWhEYUk2Y2Nzc0trSkdrbld5UnhCTnJ6ZGc4aGs1SEZHeW5oZWNZSm9hTW5kWW1XbUZ2OThqZnM4cVE0eTNxOGxQSVhiMDN5ZFFNSHliUXdILTBrNGFmUUdXaGRubkNvbmxVR01PTU5RN3BpM3FZYktKZUNKeTZoNFl3XzRiY1pIblRjZElhamtoTkZkMnY3eVZOR05FOGxoWHQyRWxVUXc2QjVlVjhTZlc3QVFrUWxzV19XUEk3VHdJUXZHYi0wNER2WFJ3cDVNZzA1alU3YTctdlNNcm9UU0xaMkkxWEplVzZLdmV0bjZKMFo?oc=5",
      "source": "Benzinga",
-     "published": "2026-11-11T20:08:05+09:00",
+     "published": "2026-11-13T20:48:05+09:00",
      "dup_count": 0,
-     "summary": "4분기 상승 기대되는 글로벌 넷 리스 등 유망 부동산주 선정."
+     "summary": "월스트리트 전문가들이 고배당을 제공하는 3개의 부동산 주식을 주목했다."
     },
     {
-     "title": "Housing Market Predictions For 2026: When Will Home Prices Drop?",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSU9xYzQ3cnBpZ2NDSTBMeXJXUmoyWkNGX1NNLUpHQUhzdTVONG5CcGVxWW5KUDhBN1ZnME9XNDczZjZtZzc5aF9uQ0xDS3NfMUI3b2hPSDV5Sk5ZUWpyc2JGcjJDVnhqOE16cnppVlpmMHBQT21sXzdYMEU5TlhSOFRERGRydmc?oc=5",
-     "source": "Forbes",
-     "published": "2026-11-11T07:11:00+09:00",
+     "title": "Consumer discretionary - real estate services stocks Q3 highlights: Compass",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPYklSbDRXcXo2c1BVeVNqM3VzaTF5SkZlNy1XeU5SX2dna2gtWWZKQnVfWXo4cTRBbjVFdk5LU19qbVhvRGhWanJHZnNqaDNOZUZoSGVsTkEwZTVlaVJpZ1ZOd3Q2WFF5Vy1SQ0dRUzh4TGhFalNRUV95QjJhbk1YR0RWVHhOWl92cHJ6YTNwRzJXOWg1ejE4T1RPS2swYVpncENrSmVaWHZFNElhcnh6ei1wNDNsb0h5aGJ3RlJyenROWEFwTGMza0ppa3U1UQ?oc=5",
+     "source": "TradingView",
+     "published": "2026-11-13T12:36:00+09:00",
      "dup_count": 0,
-     "summary": "2026년 주택 시장 전망과 주택 가격 하락 시점에 대한 분석."
+     "summary": "컴패스를 포함한 임의소비재 및 부동산 서비스 주식의 3분기 실적이 공개됐다."
     },
     {
-     "title": "Stock Market Today, Nov. 10: Opendoor Shares Fall on CPI Data Despite Revenue Above $1 Billion",
-     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOVW5aMlNhMmNmN1YxaG80VmxjOEdOVVNSOW1ITXNoVG1rUlkyVk01NkxtZTZ1Mlp0TDNmaTNUdkxmekNoWnMxdHdaR1QyQzBaT0VHMUhadmYtNlF5X3ZPSDlhb3pDOTlqMUxSVVYtX3RsdlNhVzE0UXgwYjJFV3hYUTg1VEZhN2V1cS1zNGRIdzcyei1NRFRscTZYcEV1OXhITG1NVDl5VDl4N3lzd1YwVXRKZ19DUVRjbW5zS1QzRmR0bFkwUWJ6UDNhYl9pV3p5N3dxcjVleVlIUkw1QVJyek5FRml4UGNYMWc?oc=5",
-     "source": "The Motley Fool",
-     "published": "2026-11-11T07:04:00+09:00",
+     "title": "Homebuilder Stocks To Watch And Housing Market & Real Estate News",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdEF2eFJQdC1NYjRHYllFWnNPSXczQ3hxSnRZTWU5em1iT2pJNC1hVFIxQklJRlN6Z3NJdzZZOTZCcF9ybHJRTkxIc244MGc0aTlaQXU1NWF2ZnlfQ3l6SVFfX1pSUFFna1dkRHFGQVNjaFAwSGhaczJZbjZFRmFadENGMTVZcGE3WW95djRGdUdJbmR0SWZ0dHBNbw?oc=5",
+     "source": "Investor's Business Daily",
+     "published": "2026-11-13T02:57:00+09:00",
      "dup_count": 0,
-     "summary": "10억 달러 매출에도 CPI 여파로 하락한 오펀도어 주가."
+     "summary": "주요 주택건설업체 주식과 함께 주택 시장 및 부동산 뉴스가 주목받고 있다."
+    }
+   ]
+  },
+  {
+   "name": "에너지",
+   "count": 21,
+   "up": 14,
+   "down": 7,
+   "vol_mult": 0.22,
+   "top": [
+    {
+     "ticker": "TPL",
+     "chg": 4.1
+    },
+    {
+     "ticker": "HAL",
+     "chg": 1.83
+    },
+    {
+     "ticker": "APA",
+     "chg": 1.36
+    }
+   ],
+   "bottom": [
+    {
+     "ticker": "PSX",
+     "chg": -1.1
+    },
+    {
+     "ticker": "MPC",
+     "chg": -0.9
+    },
+    {
+     "ticker": "VLO",
+     "chg": -0.46
+    }
+   ],
+   "news": [
+    {
+     "title": "These five energy stocks remain under pressure with persistent Sell ratings",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUmM3UzFfT1V4Qml3cGd5ajBYU2k2bmt0Q1RnVnF0UXc2dGUxODBLeVluTHB0Q0xCcnpFdG42OWt6aFdIQ0VvRFpRdmkya21ZdGN2MmFjUlc2VXNOcGxDWlZNczAwU3FsX1pTTTJqeVAtbG1WUjM4VlVaQUxILTlXTk1CUEQzY0JaallPckdKQ0NieFpQOTh3YmN5M1prQmxBa2NMZUNubS11Z19pVVhQY1g2LU9oNnRGdi14aVUtVEZ6ckM5aXJFclBWWDlMU09NekMwSg?oc=5",
+     "source": "TradingView",
+     "published": "2026-11-13T20:45:01+09:00",
+     "dup_count": 0,
+     "summary": "5개 에너지 주식들이 지속적인 매도 의견으로 압박을 받고 있다."
+    },
+    {
+     "title": "Goldman Sachs lifts 12-month target for European stocks on energy price relief",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVEFZaWhrZG9oUDB4eTJGaEktRU9wekRsV0NWa19qOUpVMkhDMmEyOFVqZmRPTThXNHdWV21EZGJjb0d1aXZzbjNiQndQVUd4VHhFUHJYdFFNWk5LeHhpZ0UwMXk2aXVEN2NoMVJ5NzZJaURNVTZic21nQ0ktbWZ6R3pCSmx4djE5aTRSNkxIYW40RHZNYmo3dE9nRFRlVDBFNG8yNmxDX3hZZmhQdWhkRUVHZ3lCR1BSRjZLX3pEcW9NZw?oc=5",
+     "source": "Reuters",
+     "published": "2026-11-13T17:09:43+09:00",
+     "dup_count": 0,
+     "summary": "골드만삭스가 에너지 가격 안정을 이유로 유럽 주식 목표가를 상향했다."
+    },
+    {
+     "title": "Energy products and services stocks Q3 earnings review: Quanta shines",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQaXlLZEl3UDlOd1czQVNIRkNraTFoaHFlVHY4ZUhXYlNIZ3pBakFwNHBUblRIRUhSTkJONDVsaDhicDhhRVRGMklZcFZsTjdZdVlkV0FyYlhvZHRJVkR2bnlfdEx4ZVhKZUdBTTVxZGVkcE80aklqQlpYMHZ3SjhZS3gtdFlFYTctcVpfel9HOVUwdHFHUmtTdGhTajNnQnR3OEZUbFRzMkw1UGlmMTgwYWJ3Y0FRd3FTX1BRNXFLYXVzUXp2UHdSQg?oc=5",
+     "source": "TradingView",
+     "published": "2026-11-13T12:32:33+09:00",
+     "dup_count": 0,
+     "summary": "3분기 에너지 제품 및 서비스 부문에서 콴타가 두각을 나타냈다."
+    },
+    {
+     "title": "Energy Stocks Rose As Trump Talked Tough On Iran",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaFFJUTRjRklLNW1tZ3U3QTVadzVxWTNEMmZ5SHlYRGdGMzlPZUJ6X2lSaS1IeWhLLVVpVUJUR0hRZWpMV205d3pra2JjS0dSM21MUkpBUVBqZkdTaG40ZzZXQTJGVHNPeVVEM01YYzdMbFNINVlkRXE4ZnA3eG9VNmRPMA?oc=5",
+     "source": "Finimize",
+     "published": "2026-11-13T09:32:43+09:00",
+     "dup_count": 0,
+     "summary": "트럼프의 대이란 강경 발언으로 에너지 주가가 상승했다."
     }
    ]
   },
   {
    "name": "경기소비재",
    "count": 47,
-   "up": 12,
-   "down": 35,
-   "vol_mult": 0.23,
+   "up": 25,
+   "down": 20,
+   "vol_mult": 0.21,
    "top": [
     {
-     "ticker": "TSLA",
-     "chg": 3.57
+     "ticker": "DPZ",
+     "chg": 3.19
     },
     {
-     "ticker": "GRMN",
-     "chg": 2.27
+     "ticker": "ABNB",
+     "chg": 2.84
     },
     {
-     "ticker": "HAS",
-     "chg": 1.64
+     "ticker": "LVS",
+     "chg": 2.16
     }
    ],
    "bottom": [
     {
-     "ticker": "LULU",
-     "chg": -3.68
+     "ticker": "ROST",
+     "chg": -1.84
     },
     {
-     "ticker": "TSCO",
-     "chg": -3.12
+     "ticker": "TSLA",
+     "chg": -1.73
     },
     {
-     "ticker": "ABNB",
-     "chg": -2.87
+     "ticker": "TJX",
+     "chg": -1.1
     }
    ],
    "news": [
+    {
+     "title": "Consumer Staples Leads Sectors As Technology Trails",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMmlZZ1UzUnMwamNUcERjWHluRllNLVdqRmFwVnppWmJZSU9wRVJHMXhnMi1wVm9yOV9fdEhIVjk0bFZiWkUzR0pqQWF0Z3VHZGhBTWh3S2lDanI1dmJURU4zaVJpSWdvdFlORWV2c21KY3MyWld3cWZQaTZ2TDdlWjdmNzMyNjVsQWVwVkRJMnVnVXdCM0NWcHc3U21nTXVSQ01EYTZpY1J5c0o0?oc=5",
+     "source": "Benzinga",
+     "published": "2026-11-14T01:00:18+09:00",
+     "dup_count": 0,
+     "summary": "필수소비재 섹터가 상승을 주도한 반면 기술주는 부진했다."
+    },
+    {
+     "title": "Unpacking Q3 earnings: Sirius XM in the context of other consumer discretionary - wireless, cable and satellite stocks",
+     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNRWg2UGotSGQySU5HQXdHSGFDbUU5b2dBR3VzUVQwM0ZHdUFEXzJJME0xUUlTTHQ1MExRR0xPRDdZNWdHcThRdW1pS1drWHBVdVBpeTZiWnlCaWJFWHZJNHp3bVFvWmI3dXFlQmRFdHNaTjBIeXNkNDJWcnhZNEpXeC1xN1JkcFdTSHl0N2twQ3h3Z3M0NlF1ZWRKc09lNkRPNVRNQlJLbFpkTThvOURiS3hZbWFCZ2tFLWpTc2VTU2FaaVo1OXlPYzljd1kwOW9BZ0h1WGlxVzBaX0dXeHZtYUo0VnFuRVVSLVBzdVY2TzNtVlVuamI2RUEtZXBJcC1tNS1N?oc=5",
+     "source": "StockStory",
+     "published": "2026-11-13T23:20:53+09:00",
+     "dup_count": 0,
+     "summary": "시리우스 XM 등 3분기 실적과 관련 미디어·통신주 동향을 분석했다."
+    },
+    {
+     "title": "Consumer discretionary - education services stocks Q3 highlights: Bright Horizons",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNbGNnQ1pBeXZHX3V6VmgxYnR2bVF3WWhBY1A0WEhnRzBKaGQzdS0wQ0tqOEpIUVpHZlAtZlZXaG1VcVNXMnUzdGk3VmdnSUg5d1Y0aWpQY2tUSzZ6SnJQOXJtZkhYdU5ZYWNvS0VSVGtlazc2Y0w1Yl81eHRVcjRnT3AyYl9YcVBPWmZuelI0bmVYc2JKNmtndkM4YU5DU3B3MTZieDZ3WDRFTDNPeUV5d2t4UXdIbW43OWsxRWVEOXhXR3Rsb2VfSEJnbjJEZDROeDJqb3Jn?oc=5",
+     "source": "TradingView",
+     "published": "2026-11-13T23:05:04+09:00",
+     "dup_count": 0,
+     "summary": "브라이트 호라이즌스를 포함한 3분기 교육 서비스주 실적 하이라이트."
+    },
+    {
+     "title": "Are Consumer Discretionary Stocks Lagging Escalade (ESCA) This Year?",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPb2lNQ1hqdDlBODhsZDhnWHlMOVZiVlFGWjNUcHk0em1tUUQzYlhjVmx4TVIzb2tHMkJzRld3NklsWHFRTFJBVnRzWDJ1Y0l1a0VEVnQwVk1IcUJhNUZSRnYzeU80alpVRFV4bGdHUTUtQ2tWcUZOUFNEbnFEU1RLVVpGOU5Nc0ZQYS1TcDRrVXJ2TGxCODA0R3p2T1Fsa0VLem9jUVZ2eE1FVWtmT1J0VA?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-13T22:40:04+09:00",
+     "dup_count": 0,
+     "summary": "에스칼레이드(ESCA)와 경기소비재 주식들의 올해 성과를 비교했다."
+    }
+   ]
+  },
+  {
+   "name": "통신서비스",
+   "count": 22,
+   "up": 13,
+   "down": 9,
+   "vol_mult": 0.24,
+   "top": [
+    {
+     "ticker": "CHTR",
+     "chg": 4.21
+    },
+    {
+     "ticker": "APP",
+     "chg": 3.76
+    },
+    {
+     "ticker": "FOXA",
+     "chg": 2.14
+    }
+   ],
+   "bottom": [
+    {
+     "ticker": "GOOGL",
+     "chg": -1.32
+    },
+    {
+     "ticker": "GOOG",
+     "chg": -1.26
+    },
+    {
+     "ticker": "SKYD",
+     "chg": -0.86
+    }
+   ],
+   "news": [
+    {
+     "title": "Top 3 Tech And Telecom Stocks Which Could Rescue Your Portfolio In November",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUEhRbE1XMksyeHhHNUJrbzJJU1pHRDNaRzZkcGRqeUNEaDc2NjN5bEJsVVJaZWhuWXQzaEEyVW05dWpNSHRGOXY2V1RqQ1dPbjhKR2I0RHNUQlVKcFp3SEo2M3YwdllOakQ5Qzk1cFVGSG1LQ3JjS0pKUjFSbGowbWE0cDJPWjNhY2NFcC1ReF96YjRaQTg5RUxuV1NFTlEybm8wVE44MEQ1Z3hRT3lMemZpNE94dkx2Q2lVTjNqNVg3QnNsazVxTnp2UWNNNGl5Mk1MVnR4Ymx0UQ?oc=5",
+     "source": "Benzinga",
+     "published": "2026-11-13T20:04:05+09:00",
+     "dup_count": 0,
+     "summary": "벤징가는 포트폴리오를 구할 11월 유망 테크 및 통신주 3개를 선정했다."
+    },
+    {
+     "title": "These four communication services stocks have stayed Strong Buys for weeks (XLC:NYSEARCA)",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPN3d6WmV6Q184ZzhIdUF5SEtVT3V5eUlBZzAzUjdxT1RIaFBSUVlRUkdiQzd6dXBveHhwYXVXN3ZPdnNfc1lPaVpqcFMtTGc4UDBkblY3YzV4WVZZbTRXRHFSTW44cXRuVmg1YzA2a1EzNm53UVRPNmFMbk5VdHZRSXEzVU9qM2RTd0JxWldaTU5mSjUza1g3SHhFWUxqVHhqVS1Ea19hRmw1VktPWEIzZVh3?oc=5",
+     "source": "Seeking Alpha",
+     "published": "2026-11-13T02:52:32+09:00",
+     "dup_count": 0,
+     "summary": "뉴욕증시에서 4개의 커뮤니케이션 서비스 주식이 수주째 강력 매수 상태를 유지했다."
+    }
+   ]
+  },
+  {
+   "name": "소재",
+   "count": 24,
+   "up": 12,
+   "down": 12,
+   "vol_mult": 0.17,
+   "top": [
+    {
+     "ticker": "ECL",
+     "chg": 1.34
+    },
+    {
+     "ticker": "NEM",
+     "chg": 0.51
+    },
+    {
+     "ticker": "AVY",
+     "chg": 0.49
+    }
+   ],
+   "bottom": [
+    {
+     "ticker": "STLD",
+     "chg": -3.0
+    },
+    {
+     "ticker": "NUE",
+     "chg": -2.84
+    },
+    {
+     "ticker": "FCX",
+     "chg": -1.97
+    }
+   ],
+   "news": [
+    {
+     "title": "Why Is MP Materials Stock Gaining Friday?",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTHdHLXpLQTc2UFNHS3VqWnhXWHNiQzBUVENKVnVQR3ZzU1R4YW12eFVGSmQ4NWZldXRMYVpQbG9hUDBjUDF1bG5wZzlmWnczV1kteG5DRlFFcnR1NFFJWWQwNTg2ems2bTByblBWNGNVWU1NbGJlM0lNWExNX05qbzJqRU5iOWtNRW9tNUF1d0dLWUpqY252a0d5ZUIwWEd6VV9F?oc=5",
+     "source": "Benzinga",
+     "published": "2026-11-14T01:19:47+09:00",
+     "dup_count": 0,
+     "summary": "MP Materials 주가는 금요일 상승세를 기록했다."
+    },
+    {
+     "title": "Materials sector rebounds strongly with 21 of 2...",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNd2JlTnREaXQ3YXB2UVRGQkVNaVBNMWYzRXRYaTFBdGdBRjJmRTJVemQ4MXFNd3JkT1J6VTdscU9GR1h0YUZaMzZmRjR6NzI5OFFzdGJhblMzZU5mTllTSG1oNUZTZHMzeW9Wc0FHN2NGSXVSaXI0d2FhQ1QxcEZOLTJKbjRYZUFmSVE5ZllUME8xVk0?oc=5",
+     "source": "Pluang",
+     "published": "2026-11-13T04:45:13+09:00",
+     "dup_count": 0,
+     "summary": "소재 섹터는 종목 대다수가 반등하며 강세를 보였다."
+    },
+    {
+     "title": "Nucor leads as just two materials stocks sustain Strong Buy ratings",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaFZLemJxczluSHBtM05XTWhmMllLWW1SREVhcXlUX29RMDhJeE1LNE1zRng0Zmx4N09PWXVrMGdTb1dQeVk5allmTGFFZ3hfNFRJY2RoYXUyU24wTnBLSmo5czBrTW5waVl4Ykh6V3gzcGNDOFo2N3pBTS1HYjdTd096MXdQdzlSd0JTVHlkQTNKNFJPZFpzbnQ5SDhyM2V4OTBaR2hYdWJQenNJbFZsemZycF9ZMWYyN25Wby1fcS1qRVdQcnpwLVF3?oc=5",
+     "source": "TradingView",
+     "published": "2026-11-13T03:06:49+09:00",
+     "dup_count": 0,
+     "summary": "Nucor가 강력 매수 등급을 유지하며 소재주를 주도했다."
+    },
+    {
+     "title": "Wall Street's Most Accurate Analysts Give Their Take On 3 Materials Stocks Delivering High-Dividend Yield",
+     "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQYzZLR0VrRjdENDN6TWlKbHhlSE1GTXNFbWRuVE84Q0txNTVJYjlFQ0ctdkhNZ1d1SkUwc3M1ay1seVFPX28xcGpFRlg0eFkzZlRxQmQ2U0tKS0gtTjdZV2FxeFptTHo5NzFoUlFaRk9zYm1RU0pzY3huTkdUT1JwLWRXWDl3UkJnNENPcVA5ZFJnWUEwRUVxQlZ2VzlCTmtpSzg3OWdlWjEwRzBTN2tlTHQzd1BYNlZ0Tk01QnowYlMtMG9lOGNzdFFsZkJnVkhHZ01FQU1ZLXN6d24zd29ZcTVWLVBEeTByOGoySExRcVRKS0dNZVNTeEJwV3o2Q09XbXc?oc=5",
+     "source": "Benzinga",
+     "published": "2026-11-12T21:29:05+09:00",
+     "dup_count": 0,
+     "summary": "월가 분석가들이 고배당 소재주 3개 종목에 대한 견해를 밝혔다."
+    }
+   ]
+  },
+  {
+   "name": "헬스케어",
+   "count": 60,
+   "up": 24,
+   "down": 36,
+   "vol_mult": 0.19,
+   "top": [
+    {
+     "ticker": "STE",
+     "chg": 3.62
+    },
+    {
+     "ticker": "MDT",
+     "chg": 1.96
+    },
+    {
+     "ticker": "ALGN",
+     "chg": 1.89
+    }
+   ],
+   "bottom": [
+    {
+     "ticker": "MRNA",
+     "chg": -2.59
+    },
+    {
+     "ticker": "IQV",
+     "chg": -2.45
+    },
+    {
+     "ticker": "ILMN",
+     "chg": -2.45
+    }
+   ],
+   "news": [
+    {
+     "title": "Six Healthcare Tech Stocks We Like",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9BV2tieGMxN0tETFNCTHJUYkFjTEplMmdDbnFvZkdCYjZvTkEtNTRselprOXhvdzFXQnlXV19qZUpRNk9tcGtXMklqQlZpRXZzbHZBcGRCbU9aZzAzSTh6V0lsakpCbm1XcWxxSUFiQ2FRYVBsSTZz?oc=5",
+     "source": "Nanalyze",
+     "published": "2026-11-14T00:03:05+09:00",
+     "dup_count": 0,
+     "summary": "나날라이즈가 주목할 만한 헬스케어 테크 주식 6선을 선정했다."
+    },
+    {
+     "title": "While AI hogged the headlines, 1 overlooked sector beat the S&P 500 — and its top stock is up 700%+ this year",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaWRwZGNFSV9xVkRuWnB2N3pPY0ZhVlZkY012dHQ5YzFfNDBVTmRvMTg1d2RyVDV6enREQWxZcS1lT2pudm80QkxQUDl4UHF3bXdxeF8yTjZUc2FuLXdDVzRtN01OYndUQjA1N0RQRXNxTnFIUVR3NVQ3RWZrZDZCRHQ5aFZfbG8xWHNvQUFvVkNudw?oc=5",
+     "source": "Yahoo Finance",
+     "published": "2026-11-13T21:00:00+09:00",
+     "dup_count": 0,
+     "summary": "AI 외에 S&P 500을 앞서며 700% 이상 급등한 소외 섹터가 주목받았다."
+    },
+    {
+     "title": "This ETF Has Gained 23% This Year. Is It Still Worth Buying in 2026?",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeW9Zc2NSOWZsSmpUTVhJeHZUTmtYSTZ6YXFBUGt5QUNKdldaQlB4NFNQSEJkTnRLOElMWlFNSEVteEJaaURVQVhCVk5MbUVUTmVYM1RFNHZ2SUozOEdEcUhpb29ZNHNvdkdWd0pVVUZ6VmxTclpSY0ViQnlKLW9keUhzcUF1WjBQbGNrcU1YVmU5eHY0ZXR4Qg?oc=5",
+     "source": "The Motley Fool",
+     "published": "2026-11-13T20:37:00+09:00",
+     "dup_count": 0,
+     "summary": "올해 23% 상승한 이 ETF가 2026년에도 매수 가치가 있는지 분석했다."
+    },
+    {
+     "title": "Why Did Medline Stock Drop?",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOckdDR2hVdHdBY1MtMXZyNWhjcXVFWnV4eVd5UUdDMUkxT2ZlWVg3bURqWGlSbzQtaE9YTWxLNHl2dGRER1paTFFGQkpEYk1ubElpSUZHNDZMRDcxSHVaWGJyRkJNY1U2M09vRkdDN1J6NmRVWnRWVjFMVzhYbTE4WHoyc3ZPZDFxS3VJX0JfbGE?oc=5",
+     "source": "Trefis",
+     "published": "2026-11-13T18:01:57+09:00",
+     "dup_count": 0,
+     "summary": "메들라인 주식이 하락한 원인을 분석했다."
+    }
+   ]
+  },
+  {
+   "name": "산업재",
+   "count": 83,
+   "up": 34,
+   "down": 48,
+   "vol_mult": 0.16,
+   "top": [
+    {
+     "ticker": "VRSK",
+     "chg": 1.81
+    },
+    {
+     "ticker": "ROL",
+     "chg": 1.74
+    },
+    {
+     "ticker": "LII",
+     "chg": 1.67
+    }
+   ],
+   "bottom": [
+    {
+     "ticker": "BE",
+     "chg": -6.07
+    },
+    {
+     "ticker": "VRT",
+     "chg": -4.58
+    },
+    {
+     "ticker": "GEV",
+     "chg": -3.18
+    }
+   ],
+   "news": [
+    {
+     "title": "4 Industrials Stocks With Whale Alerts In Today’s Session",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRGtVSERTdUFlZEtaMHhwY1lnZUV0Q1gtSjJKZXA0dllrSElNVnpLak1CS0lEbFIyNUJiaHN4Z1M2MEg1YlFFcXR5SXUta2lST1ozSjA3UGFlb20zdnMxTnEzWHc2UmYxWEhqTkJ0dGF4NnRoNnl6dGlPRFpacTRRQ2V3cDZWMjQ2NWwzZWxkaDZMLUU4MkJPajFaSEdMYngwUVlSVFhISV8?oc=5",
+     "source": "Benzinga",
+     "published": "2026-11-13T02:35:09+09:00",
+     "dup_count": 0,
+     "summary": "벤징가는 오늘 세션에서 대량 매매 포착된 4개의 산업재 주식을 공개했다."
+    }
+   ]
+  },
+  {
+   "name": "기술",
+   "count": 76,
+   "up": 17,
+   "down": 59,
+   "vol_mult": 0.26,
+   "top": [
+    {
+     "ticker": "ADSK",
+     "chg": 1.94
+    },
+    {
+     "ticker": "WDAY",
+     "chg": 1.79
+    },
+    {
+     "ticker": "ADBE",
+     "chg": 1.1
+    }
+   ],
+   "bottom": [
+    {
+     "ticker": "AMD",
+     "chg": -10.6
+    },
+    {
+     "ticker": "DELL",
+     "chg": -9.49
+    },
+    {
+     "ticker": "COHR",
+     "chg": -8.66
+    }
+   ],
+   "news": [
+    {
+     "title": "BigBear.ai, ADTRAN lead tech stocks with longest Strong Sell streaks (VGT:NYSEARCA)",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORFNXbExlRDAwUlBSTmdzZ0hGcjVqMDlkd3gxQzB6OWpSalhGNTUtTlNGX3FxOEZwT25YRXB3QnJOZm5NUFpyeUg1QW1JanpmMmtwMXMzRWJkWUxfbFNLdkV1clcxOXR2b3dJOWhLMzNxTUI1MWQtd2VldklEc0JQSTVpQ19vclBNZ2ptdGsxMEF2bVZqQU9pNGNIVmpTV0hNeDdwR3otQQ?oc=5",
+     "source": "Seeking Alpha",
+     "published": "2026-11-14T00:58:26+09:00",
+     "dup_count": 0,
+     "summary": "BigBear.ai와 ADTRAN이 최장기 강력 매도 종목으로 꼽혔다."
+    },
+    {
+     "title": "10 Information Technology Stocks Whale Activity In Today’s Session",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVVlQTnk4MkttOFpfeksxZG9DWHZyNHI2cUVPQnVHbHpVVmVZWFR2X2Q1TkZlRFd0UXY1alUxSzBEMTRmempkRkE0cldUQ2UzNUFNMFJ6WFhtTzZmWThLcS1XaW5TaTFpOTdNaVZnRXllTHk4ZFBsbmFkZTlGVXhfYllRRzVHY3BtV1BIcE55Q0k0c21HN3F0SXQycDRwU0FNbUt1bkRJV19aVTVmcFFob2FEWDI5TDVjdUQ4?oc=5",
+     "source": "Benzinga",
+     "published": "2026-11-13T02:35:09+09:00",
+     "dup_count": 0,
+     "summary": "오늘 세션에서 10개 IT 주식에 대한 고래들의 대규모 거래가 포착됐다."
+    },
     {
      "title": "ASX Midday Sector Update: Information Technology Shares Extend Rally, Miners Decline",
      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSTdKSTd6ejYtQnB1S19ZQ2NxbGhUM24xekFXOE05VU1xZkJuUF9oS0JzVEd6THVmeDA1cFItdFFwVmRJNkNHZi00UnZpSmJIYWlxVFRZMW5HSE9LRkV2eG15ajNVeTVzSV92bDdDWnctME9QdHlxTXFCNDBOZmZJeFA3SEp5R090R0kwdXNFdmFPVEk?oc=5",
      "source": "Yahoo Finance Australia",
      "published": "2026-11-12T10:43:00+09:00",
      "dup_count": 0,
-     "summary": "ASX에서 IT 주는 강세를 보인 반면 광업 주는 하락했다."
-    },
-    {
-     "title": "Are Consumer Discretionary Stocks Lagging Airbnb (ABNB) This Year?",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPeDNfTXpmVlFWUDNNdlJ5UGc3cUFlWFZmYndjeVFXVEpkOFF3TnFlaXhxQ0VON1Q2OV9IMTNMcEEybjl3UC1XSF9PQlRTNy13T3c0UG4wZC1EaVdoLWthdUU1ZGx3OFJYakx2d19zWXlEVUdxcEJrWGlyaGJ1WXdDU3hGc0pmRk1tcFkzZzg4Z3JwV2ItZjF0TlN1VnJLampXTEVPamVxdE85enBpUklYZFdIcXFXYW5udy1j?oc=5",
-     "source": "Yahoo Finance",
-     "published": "2026-11-12T05:07:11+09:00",
-     "dup_count": 0,
-     "summary": "경기소비재 주식들이 올해 Airbnb(ABNB) 성과를 밑돌고 있다."
-    },
-    {
-     "title": "These ten consumer discretionary stocks have held Strong Buy ratings for weeks (XLY:NYSEARCA)",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUDItOHhUb1hSaTFERVVkSjNWWGZEQVg1VGVuUmFOdEpXOWxOVFhKY0pieXZSRjM5V2tEeTFGcWNjY1hQYnIxLWlTTElEQlpjWXo3elpWbUhkRG5yX01lSlhDWFhlRVNVSHNrblhvSjkzdTd3YmVISHFXd2dxcHRuTEdRWmt1Q2FmNHFkaUtDTzJTZElFYVJnakM0N0FTT3p4ZGFRWVV4b2x5SWd6WkNFODZyYktTb0E?oc=5",
-     "source": "Seeking Alpha",
-     "published": "2026-11-12T03:49:19+09:00",
-     "dup_count": 0,
-     "summary": "10개의 경기소비재 주식이 수주째 Strong Buy 등급을 유지 중이다."
-    },
-    {
-     "title": "4 Consumer Discretionary Stocks With Whale Alerts In Today’s Session",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWVVJUmIzZWFiMGJ4eVBqNU8yT0I2OVhOSzJiWllGaW5OVUo1aVVQUE82ZHZEb2J1TzJkb2s4YTJ4MFFETTVfSU95WGYyUXlSUFJqT192REpGemdXQkhLVzk5Qjg5RlQ3VWE5OTdRRUdJN19jUEw2aWlNTnh0aHF1T2JuOGM2RlVqckluMERvbHNnZHRlZ1h2SnZYRjdzalNJUy1Xckt0WlA3U0htMExfb2FXX0JKWW8?oc=5",
-     "source": "Benzinga",
-     "published": "2026-11-11T02:35:08+09:00",
-     "dup_count": 0,
-     "summary": "오늘 세션에서 경기소비재 주식 4개에 웨일 얼럿이 포착됐다."
+     "summary": "ASX에서 IT 주는 랠리를 이어간 반면 광업 주는 하락했다."
     }
    ]
   }
