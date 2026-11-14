@@ -1,644 +1,772 @@
 {
- "updated_at": "2026-11-14T02:04:59.998705+09:00",
+ "updated_at": "2026-11-14T11:45:02.998828+09:00",
  "event_notes": {
-  "why": "엔비디아의 주가 고점 대비 30퍼센트 하락과 젠슨 황 관련 불확실성, 그리고 미국 의회의 대중국 칩 규제 3법 가속화 우려가 겹치면서 반도체 업종이 0.84퍼센트 내리는 등 코스피와 코스닥 지수가 각각 0.61퍼센트, 1.22퍼센트 하락 마감했다. 다만 개별 이슈에 따라 삼성SDI와 삼성E&A 등이 상승하며 일부 종목은 방어력을 보였고 은행과 증권, 건설 업종은 상대적으로 강세를 나타냈다.",
-  "watch": "엔비디아의 향후 주가 반등 여부와 젠슨 황 부재에 따른 글로벌 인공지능 동맹의 변화를 확인해야 하며, 미국의 대중국 반도체 규제 법안의 구체화 과정과 국내 기업의 중국 공장에 미칠 실질적 영향도 계속 지켜봐야 한다."
+  "why": "미국의 수출 규제에도 불구하고 중국의 엔비디아 칩 의존 AI 프로젝트 규모가 4조 6천억 원을 넘었다는 소식과 반도체가 밀어올린 한국 수출 호조 뉴스에도 불구하고, 반도체(-0.84%)와 바이오(-1.23%) 업종은 약세를 보이며 코스피(-0.98%) 하락을 주도했다. 반면 코스닥(+0.45%)은 새내기주 등판 기대감 등에 힘입어 상승 마감했고, 개별 종목 뉴스에 언급된 에코프로와 셀트리온 등의 주가 변동성도 시장에 혼조세를 더한 것으로 보인다. 서울 토허제 등 규제지역 해제 여부가 12월 중 결론 난다는 소식이 전해지면서 건설(+1.88%)을 비롯한 일부 내수 업종은 상승 흐름을 보였다.",
+  "watch": "미국의 대중국 반도체 수출 규제 강화가 국내 반도체 및 관련 수출 전선에 미치는 실질적인 파장을 계속 주시해야 한다. 아울러 12월 중 발표될 정부의 서울 부동산 규제 완화 최종 결론과 코스닥 신규 상장 종목들의 주가 흐름이 관련 업종의 투자 심리에 영향을 줄 것으로 보인다."
  },
  "clusters": [
   {
-   "title": "젠슨 황 사임 및 엔비디아 리더십 이슈에 따른 증시 하락",
+   "title": "중국 내 엔비디아 AI칩 의존 프로젝트 규모",
    "sources": [
-    "cbci.co.kr",
-    "chosun.com",
-    "dailysportshankook.co.kr",
-    "donga.com",
+    "biz.heraldcorp.com",
+    "biz.sbs.co.kr",
     "hankyung.com",
-    "issuenbiz.com",
-    "joongang.co.kr",
-    "kfenews.co.kr",
-    "news.kbs.co.kr"
+    "jnilbo.com",
+    "sentv.co.kr"
    ],
-   "count": 12,
+   "count": 5,
    "items": [
     {
-     "title": "젠슨 황, 떠나기 전 임원과 갈등?...\"주주들은 오히려 좋을수도\"[박신영...",
-     "url": "https://www.hankyung.com/article/202611146106i",
+     "title": "로이터 \"'엔비디아칩 의존' 中 AI프로젝트 규모 4조6천억 이상\"",
+     "url": "https://biz.sbs.co.kr/article_hub/20000346404?division=NAVER",
+     "source": "biz.sbs.co.kr",
+     "published": "2026-11-14T11:41:00+09:00",
+     "dup_count": 3,
+     "summary": "이유로 실적 전망에서 중국 데이터센터 컴퓨팅 매출을 제외하기도 했습니다. 로이터는 미 의회가 대중국 반도체 수출 통제 강화를 압박하는 만큼, 진행 중인 프로젝트는"
+    },
+    {
+     "title": "美 수출 규제에도 中 엔비디아 칩 관련 AI 사업 4.6조원",
+     "url": "https://www.sentv.co.kr/article/view/sentv202611140020",
+     "source": "sentv.co.kr",
+     "published": "2026-11-14T11:28:00+09:00",
+     "dup_count": 0,
+     "summary": "규제 불확실성을 이유로 실적 전망에서도 중국 데이터센터 컴퓨팅 매출을 제외했다. 미국 의회에서는 대중국 반도체 수출 통제 강화를 요구하고 있어 관련 프로젝트의 반"
+    },
+    {
+     "title": "中 엔비디아 AI칩 의존 프로젝트 4조6천억원...수출 규제에도 기술 수요...",
+     "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000082605",
+     "source": "jnilbo.com",
+     "published": "2026-11-14T11:27:00+09:00",
+     "dup_count": 0,
+     "summary": "중국의 엔비디아 AI칩 의존 프로젝트 규모가 4조 6천억 원에 달했다."
+    },
+    {
+     "title": "분명 수출 통제했는데...중국, 엔비디아 칩 의존 '4조6000억' 이상",
+     "url": "https://www.hankyung.com/article/2026111463697",
      "source": "hankyung.com",
-     "published": "2026-11-14T01:29:00+09:00",
-     "dup_count": 1,
-     "summary": "젠슨 황 사임 후 새로운 경영 체제와 수출통제 위반 가능성이 주가 변수로 꼽힌다."
-    },
-    {
-     "title": "[증시마감] SK하이닉스 3%·삼성전자 1% 하락 마감... 젠슨 황 스캔들·중...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626771",
-     "source": "cbci.co.kr",
-     "published": "2026-11-14T00:16:00+09:00",
-     "dup_count": 1,
-     "summary": "젠슨 황 스캔들과 대중 규제 여파로 SK하이닉스와 삼성전자가 하락 마감했다."
-    },
-    {
-     "title": "[증시마감] 코스피, 장중 5,500선 터치 후 하락 반전... 0.98% 내려 5,290선...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626678",
-     "source": "cbci.co.kr",
-     "published": "2026-11-14T00:06:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피, 장 초반 3.03% 급등 뒤 0.98% 하락 마감...코스닥 0.45%↑ 코스피 지수는 13일 한때 5,500선을 돌파하며 3% 이상 급등했으나, 이후 "
-    },
-    {
-     "title": "‘젠슨 황’ 불확실성에... 코스피 1% 하락 마감",
-     "url": "https://www.donga.com/news/Economy/article/all/20261113/135023326/2",
-     "source": "donga.com",
-     "published": "2026-11-14T01:41:00+09:00",
+     "published": "2026-11-14T11:21:00+09:00",
      "dup_count": 0,
-     "summary": "젠슨 황 전 엔비디아 CEO 퇴진 여파로 코스피가 1% 하락했다."
+     "summary": "미국의 통제에도 중국은 4조 6천억 원 규모의 엔비디아 칩을 의존한다."
     },
     {
-     "title": "젠슨 황의 ‘성공 공식’ 이젠 숙제로 남아...“난 쓰레기” 자책",
-     "url": "https://www.joongang.co.kr/article/25478554",
-     "source": "joongang.co.kr",
-     "published": "2026-11-14T01:40:00+09:00",
+     "title": "美 수출규제에도 中 AI사업에 엔비디아칩...규모만 4조6000억원 이상 [비...",
+     "url": "https://biz.heraldcorp.com/article/10936950?ref=naver",
+     "source": "biz.heraldcorp.com",
+     "published": "2026-11-14T11:09:00+09:00",
      "dup_count": 0,
-     "summary": "젠슨 황의 과거 성공 공식이 숙제로 남았으며 미국 대중 수출통제 비판도 나왔다."
-    },
-    {
-     "title": "[뉴스이슈&비즈] 젠슨 황 없는 엔비디아...한국과 AI 동맹 이상 없나",
-     "url": "http://www.issuenbiz.com/news/articleView.html?idxno=81594",
-     "source": "issuenbiz.com",
-     "published": "2026-11-14T01:30:00+09:00",
-     "dup_count": 0,
-     "summary": "하이트진로가 참이슬과 테라 등을 중심으로 해외 주류 유통망을 확대하고 있다."
-    },
-    {
-     "title": "[기자수첩] 젠슨 황의 퇴장, 한국 AI의 불안한 미래",
-     "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=668120",
-     "source": "kfenews.co.kr",
-     "published": "2026-11-14T00:54:00+09:00",
-     "dup_count": 0,
-     "summary": "엔비디아 경영진 교체와 미국 수출정책 변화에 따라 국내 반도체 산업의 미래가 주목된다."
-    },
-    {
-     "title": "엔비디아 주가 고점 대비 30% 빠져... 코스피도 하락",
-     "url": "https://www.chosun.com/economy/stock-finance/2026/11/14/HMJHA7YYGJAZDNSTCFTHEX2FPA/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-     "source": "chosun.com",
-     "published": "2026-11-14T00:40:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피는 젠슨 황 사임 충격으로 오전 상승분을 반납하고 0.98% 하락 마감했다."
-    },
-    {
-     "title": "[기업家] 엔비디아 10ᅵ 젠슨 황 없는 엔비디아...리더십 공백에 AI 패권...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626726",
-     "source": "cbci.co.kr",
-     "published": "2026-11-14T00:00:00+09:00",
-     "dup_count": 0,
-     "summary": "젠슨 황 없는 엔비디아의 리더십 공백과 대중 반도체 수출 통제 우려가 커졌다."
-    },
-    {
-     "title": "젠슨 황 사퇴에 ‘출렁’...코스피, 5290선 하락 마감",
-     "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8712688&ref=A",
-     "source": "news.kbs.co.kr",
-     "published": "2026-11-13T23:07:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피는 젠슨 황 리스크를 이기지 못하고 사흘 만에 5300선 아래로 떨어졌다."
-    },
-    {
-     "title": "젠슨 황 사임 여파...증권가 \"후임 인선 속도·美 대중 수출 규제가 변수...",
-     "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=435490",
-     "source": "dailysportshankook.co.kr",
-     "published": "2026-11-13T22:26:00+09:00",
-     "dup_count": 0,
-     "summary": "증권가는 젠슨 황 사임 후 후임 인선과 미국의 대중 수출 규제를 주요 변수로 꼽았다."
-    },
-    {
-     "title": "\"땡큐 젠슨 황\"...공포의 폭락장서 '매수 버튼' 광클한 개미들 [분석+]",
-     "url": "https://www.hankyung.com/article/2026111347546",
-     "source": "hankyung.com",
-     "published": "2026-11-13T22:01:00+09:00",
-     "dup_count": 0,
-     "summary": "서학개미들은 엔비디아의 AI 반도체 성장성을 믿고 저가 매수에 나섰다."
+     "summary": "美 수출규제에도 중국 내 엔비디아 칩 AI 사업이 4조 6천억 원을 넘었다."
     }
    ]
   },
   {
-   "title": "개별 종목 주가 등락 및 특징주 동향 (삼성SDI, 삼성E&A, 효성중공업 등)",
+   "title": "엔비디아 경영진 및 조직 동향",
    "sources": [
-    "cbci.co.kr",
-    "kjdaily.com",
-    "okfashion.co.kr"
-   ],
-   "count": 10,
-   "items": [
-    {
-     "title": "AI반도체소부장 ETF 6.48% 상승 1위...SK하이닉스 인버스도 강세",
-     "url": "http://www.kjdaily.com/article.php?aid=1794584550692176276",
-     "source": "kjdaily.com",
-     "published": "2026-11-14T00:44:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피 하락 마감 속 지수 하락에 투자하는 상품과 금융 ETF가 상승했다."
-    },
-    {
-     "title": "가온칩스 29.92% 급등...반도체 설계주 상승률 상위권",
-     "url": "http://www.kjdaily.com/article.php?aid=1794574281692178276",
-     "source": "kjdaily.com",
-     "published": "2026-11-13T22:04:00+09:00",
-     "dup_count": 1,
-     "summary": "이미지=아이클릭아트-13일 전체시장 주가등락률 상위 50종목...코스닥 37개·코스피 8개·코넥스 5개... 가온칩스의 상승률은 오전장 28.74%에서 정규장 마"
-    },
-    {
-     "title": "삼성SDI 주가 1.06% 상승...외국인 매수 전환",
-     "url": "http://www.kjdaily.com/article.php?aid=1794584432692184276",
-     "source": "kjdaily.com",
-     "published": "2026-11-14T00:42:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피 하락세에도 삼성SDI는 외국인 순매수에 힘입어 1.06% 상승했다."
-    },
-    {
-     "title": "삼성E&A 주가 4.24% 상승...기관·기타법인 동반 순매수",
-     "url": "http://www.kjdaily.com/article.php?aid=1794584134692191276",
-     "source": "kjdaily.com",
-     "published": "2026-11-14T00:38:00+09:00",
-     "dup_count": 0,
-     "summary": "삼성E&A는 기관과 기타법인의 동반 순매수로 4.24% 상승했다."
-    },
-    {
-     "title": "삼성전자우 주가 1.31% 상승...보통주 하락에도 5거래일 연속 강세",
-     "url": "http://www.kjdaily.com/article.php?aid=1794583386692180276",
-     "source": "kjdaily.com",
-     "published": "2026-11-14T00:26:00+09:00",
-     "dup_count": 0,
-     "summary": "삼성전자우는 보통주 하락 속에서도 외국인 매도 우위 속에 5거래일 연속 상승했다."
-    },
-    {
-     "title": "삼성물산 주가 0.18% 상승...기관 71억원 순매수",
-     "url": "http://www.kjdaily.com/article.php?aid=1794583335692190276",
-     "source": "kjdaily.com",
-     "published": "2026-11-14T00:24:00+09:00",
-     "dup_count": 0,
-     "summary": "삼성물산 주가는 코스피 하락 장세에도 기관 순매수로 4거래일 연속 올랐다."
-    },
-    {
-     "title": "효성중공업 주가 1.63% 하락...외국인 순매도 전환",
-     "url": "http://www.kjdaily.com/article.php?aid=1794583259692188276",
-     "source": "kjdaily.com",
-     "published": "2026-11-14T00:22:00+09:00",
-     "dup_count": 0,
-     "summary": "효성중공업은 외국인의 순매도 전환으로 장중 상승을 지키지 못하고 하락했다."
-    },
-    {
-     "title": "주성엔지니어링 주가 0.29% 상승...외국인·기관 순매도",
-     "url": "http://www.kjdaily.com/article.php?aid=1794582498692189276",
-     "source": "kjdaily.com",
-     "published": "2026-11-14T00:10:00+09:00",
-     "dup_count": 0,
-     "summary": "주성엔지니어링은 장중 7% 넘게 올랐으나 외국인과 기관 순매도로 오름폭이 축소됐다."
-    },
-    {
-     "title": "두산에너빌리티 주가, 장초반 강세 지키지 못하고 하락...주말 이후 흐름...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626652",
-     "source": "cbci.co.kr",
-     "published": "2026-11-14T00:06:00+09:00",
-     "dup_count": 0,
-     "summary": "두산에너빌리티는 장초반 강세를 지키지 못하고 코스피 약세와 함께 하락했다."
-    },
-    {
-     "title": "패션주 코오롱인더 강세, 섬유·화학주 종목별 혼조",
-     "url": "http://okfashion.co.kr/detail.php?number=64385&thread=62r04",
-     "source": "okfashion.co.kr",
-     "published": "2026-11-13T22:44:00+09:00",
-     "dup_count": 0,
-     "summary": "코오롱인더스트리 등 패션주가 강세를 보인 가운데 섬유·화학주는 혼조세를 보였다."
-    }
-   ]
-  },
-  {
-   "title": "미국의 대중국 반도체 규제 및 관련 영향",
-   "sources": [
-    "donga.com",
-    "kjdaily.com",
-    "kmib.co.kr",
-    "newsis.com",
-    "tokenpost.kr",
-    "topstarnews.net"
-   ],
-   "count": 6,
-   "items": [
-    {
-     "title": "미국증시, 물가 둔화에도 나스닥 하락...엔비디아·SK하이닉스 약세, 다...",
-     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16276154",
-     "source": "topstarnews.net",
-     "published": "2026-11-13T23:44:00+09:00",
-     "dup_count": 1,
-     "summary": "미국 증시에서 엔비디아와 SK하이닉스가 약세를 보이며 반도체 업종이 부진했다."
-    },
-    {
-     "title": "삼성전자·SK하이닉스 거래대금 29.5% 감소...외국인 매도 확대",
-     "url": "http://www.kjdaily.com/article.php?aid=1794573555692177276",
-     "source": "kjdaily.com",
-     "published": "2026-11-13T21:40:00+09:00",
-     "dup_count": 1,
-     "summary": "외국인의 매도세가"
-    },
-    {
-     "title": "美의회 ‘對中 칩 규제 3법’ 가속... 국내기업 中공장 불똥 우려",
-     "url": "https://www.donga.com/news/Economy/article/all/20261113/135023330/2",
-     "source": "donga.com",
-     "published": "2026-11-14T01:41:00+09:00",
-     "dup_count": 0,
-     "summary": "미국의 대중 반도체 장비 수출 제한 확대로 국내 기업 공장 타격이 우려된다."
-    },
-    {
-     "title": "엔비디아($NVDA) 목표가 49.7% 낮춰...트루이스트 '보유'",
-     "url": "https://www.tokenpost.kr/news/market/437971",
-     "source": "tokenpost.kr",
-     "published": "2026-11-14T00:46:00+09:00",
-     "dup_count": 0,
-     "summary": "트루이스트는 중국향 AI 반도체 수출 제한을 이유로 엔비디아 목표가를 낮췄다."
-    },
-    {
-     "title": "\"엔비디아 쇼크에도 외국인은 샀다\"...전문가가 짚은 증시 향방",
-     "url": "https://www.newsis.com/view/NISX20261113_0003866798",
-     "source": "newsis.com",
-     "published": "2026-11-14T00:00:00+09:00",
-     "dup_count": 0,
-     "summary": "엔비디아 쇼크에 국내 기관이 매도한 물량을 외국인들이 순매수하며 받아냈다."
-    },
-    {
-     "title": "반도체주 불확실성 확대... 외국인, SK하이닉스 4700억 매도",
-     "url": "https://www.kmib.co.kr/article/20261113500657",
-     "source": "kmib.co.kr",
-     "published": "2026-11-13T23:52:00+09:00",
-     "dup_count": 0,
-     "summary": "젠슨 황 사임 다음날 외국인의 SK하이닉스 매도 등 반도체주 불확실성이 커졌다."
-    }
-   ]
-  },
-  {
-   "title": "환율 마감 및 매크로 경제 동향",
-   "sources": [
-    "cbci.co.kr",
-    "newspim.com",
-    "thefairnews.co.kr",
-    "topstarnews.net"
+    "ajunews.com",
+    "sedaily.com",
+    "thescoop.co.kr",
+    "ytn.co.kr"
    ],
    "count": 4,
    "items": [
     {
-     "title": "[환율마감] 원/달러 환율, 5거래일 만에 6.0원 오른 1,336.7원 마감... 달...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626775",
-     "source": "cbci.co.kr",
-     "published": "2026-11-14T00:06:00+09:00",
-     "dup_count": 3,
-     "summary": "가능성을 유지하고 있는 점이 복합적으로 작용했다. 한편, 이날 코스피는 전 거래일 대비 52.20포인트(0.98%) 하락한 5,290.53에, 코스닥은 3.13포"
+     "title": "젠슨 황 불륜 스캔들에 출렁...삼전닉스 '아슬아슬한 버티기' [주간 증시...",
+     "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=312292",
+     "source": "thescoop.co.kr",
+     "published": "2026-11-14T09:58:00+09:00",
+     "dup_count": 2,
+     "summary": "젠슨 황 스캔들과 외국인 매도세로 코스피지수는 5290.53으로 하락 마감했다."
     },
     {
-     "title": "[심층분석] 하반기 증시, 매크로 변곡점 맞아...실적 차별화 장세 주목",
-     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=94105",
-     "source": "thefairnews.co.kr",
-     "published": "2026-11-14T00:00:00+09:00",
+     "title": "엔비디아, 크레스 임시 CEO 체제로 조직 안정화...18일 전사 회의",
+     "url": "https://www.sedaily.com/article/20114299?ref=naver",
+     "source": "sedaily.com",
+     "published": "2026-11-14T10:48:00+09:00",
      "dup_count": 0,
-     "summary": "하반기 증시는 실적 개선세와 수출 모멘텀에 따라 차별화된 흐름을 보이고 있다."
+     "summary": "▶기사 바로가기: 원·달러 환율, 5거래일 만에 반등...1336.7원 마감 ▶기사 바로가기: 李 “욕먹어도 파이 키우는 쪽으로”...의무공개매수 ‘50%+1주’"
     },
     {
-     "title": "[미국 특징주] \"기술주 조정은 기회\"...골드만, S&P500 목표치 8700 제시",
-     "url": "https://www.newspim.com/news/view/20261113001452",
-     "source": "newspim.com",
-     "published": "2026-11-13T22:46:00+09:00",
+     "title": "미 항공기 운항 전면 중단...젠슨 황 사임 후폭풍",
+     "url": "https://www.ytn.co.kr/_ln/0104_202611141043001555",
+     "source": "ytn.co.kr",
+     "published": "2026-11-14T10:43:00+09:00",
      "dup_count": 0,
-     "summary": "골드만삭스는 대형 기술주 조정을 기회로 보며 S&P500 목표치를 8700으로 제시했다."
+     "summary": "젠슨 황 사임 여파로 미국 항공기 운항이 전면 중단되는 혼란이 발생했다."
     },
     {
-     "title": "국제 금시세 전망, 3900달러 반등...미 국채금리 5%에 금값 불안",
-     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16276115",
-     "source": "topstarnews.net",
-     "published": "2026-11-13T21:40:00+09:00",
+     "title": "[인문자의 젠슨 황 가죽재킷 이야기 | 인간·문화·자연] AI 황제의 가죽...",
+     "url": "https://www.ajunews.com/view/20261114101854069",
+     "source": "ajunews.com",
+     "published": "2026-11-14T10:28:00+09:00",
      "dup_count": 0,
-     "summary": "12일 브렌트유는 3.3% 급등해 배럴당 95.82달러에 마감했다. 같은 날 금값은 큰 폭으로 하락했다. 전쟁으로... 국내 실물 금값에는 국제 금 가격뿐 아니라"
+     "summary": "젠슨 황의 가죽재킷 이야기와 함께 첨단 반도체 기술안보 문제가 조명됐다."
     }
    ]
   },
   {
-   "title": "코스피 장마감 및 지수 변동 시황",
+   "title": "환율 및 국제유가·달러 동향",
    "sources": [
-    "industrynews.co.kr",
-    "ytn.co.kr"
+    "news.einfomax.co.kr",
+    "sedaily.com"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "국제유가 상승에 달러 강세...달러인덱스 19개월 만에 최고",
+     "url": "https://www.sedaily.com/article/20114301?ref=naver",
+     "source": "sedaily.com",
+     "published": "2026-11-14T10:48:00+09:00",
+     "dup_count": 1,
+     "summary": "국제유가 상승과 달러 강세로 원·달러 환율이 1336.7원에 마감했다."
+    },
+    {
+     "title": "[외환] 끈적한 美 PPI에 달러화 강세...1,330원 후반대 거래",
+     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444775",
+     "source": "news.einfomax.co.kr",
+     "published": "2026-11-14T10:08:00+09:00",
+     "dup_count": 1,
+     "summary": "미국의 끈적한 PPI 여파로 달러화가 강세를 보이며 1,330원 후반대를 기록했다."
+    },
+    {
+     "title": "NDF, 1,335.70/ 1,336.10원...0.20원↑",
+     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444776",
+     "source": "news.einfomax.co.kr",
+     "published": "2026-11-14T10:08:00+09:00",
+     "dup_count": 0,
+     "summary": "뉴욕 NDF 시장에서 달러-원 1개월물은 소폭 상승한 1,335원대에 거래됐다."
+    }
+   ]
+  },
+  {
+   "title": "엔비디아 관련주 및 증시 수혜주",
+   "sources": [
+    "cbci.co.kr",
+    "sedaily.com",
+    "thepublic.kr"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "코스피 하락...삼성전자·현대차 강세 삼성전기 약세, 엔비디아 경영 불...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626787",
+     "source": "cbci.co.kr",
+     "published": "2026-11-14T09:56:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피가 1% 가까이 하락한 가운데 삼성전자는 상승하고 SK하이닉스는 약세를 보였다."
+    },
+    {
+     "title": "“엔비디아 빠질 때 30% 급등”...나 홀로 웃은 ‘뜻밖의 수혜주’ 보니",
+     "url": "https://www.sedaily.com/article/20114291?ref=naver",
+     "source": "sedaily.com",
+     "published": "2026-11-14T09:43:00+09:00",
+     "dup_count": 0,
+     "summary": "엔비디아 하락세 속에서 30% 급등한 뜻밖의 수혜주와 규제 위반 의혹이 주목받았다."
+    },
+    {
+     "title": "[집중분석] '삼전닉스'만 골라 판 외국인...국내 증시에 언제 돌아올까?",
+     "url": "https://www.thepublic.kr/news/articleView.html?idxno=326676",
+     "source": "thepublic.kr",
+     "published": "2026-11-14T09:40:00+09:00",
+     "dup_count": 0,
+     "summary": "외국인 투자자들이 삼전닉스 위주로 매도세를 보인 가운데 향후 재유입 시점이 주목된다."
+    }
+   ]
+  },
+  {
+   "title": "레인보우로보틱스 주가 변동",
+   "sources": [
+    "cbci.co.kr",
+    "joongangenews.com"
    ],
    "count": 2,
    "items": [
     {
-     "title": "'전강후약' 코스피 5,300 붕괴...코스닥 700 하회",
-     "url": "https://www.ytn.co.kr/_ln/0102_202611132301583819",
-     "source": "ytn.co.kr",
-     "published": "2026-11-13T23:01:00+09:00",
-     "dup_count": 4,
-     "summary": "젠슨 황 관련 악재와 외국인 매도 속 코스피 5300선이 붕괴됐다."
+     "title": "11월 2주차 레인보우로보틱스 주가 37만원대 강세 마감",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=563837",
+     "source": "joongangenews.com",
+     "published": "2026-11-14T11:26:00+09:00",
+     "dup_count": 0,
+     "summary": "레인보우로보틱스는 11월 2주차에 37만 원대로 강세 마감했다."
     },
     {
-     "title": "코스피 5500선 터치 후 0.98% 하락 마감...외국인 '팔자'에 상승분 반납",
-     "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=89521",
-     "source": "industrynews.co.kr",
-     "published": "2026-11-13T22:14:00+09:00",
-     "dup_count": 3,
-     "summary": "코스피는 장초반 5500선을 돌파했으나 외국인 '팔자'에 1% 가까이 하락 마감했다."
+     "title": "코스닥 700선에 '바짝'...레인보우로보틱스 9%대 껑충·에코프로비엠 강...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626788",
+     "source": "cbci.co.kr",
+     "published": "2026-11-14T10:10:00+09:00",
+     "dup_count": 0,
+     "summary": "코스닥은 레인보우로보틱스 급등 등에 힘입어 700선에 바짝 다가섰다."
     }
    ]
   },
   {
-   "title": "도서 및 문화 소식",
+   "title": "유통주식 10% 미만 상장사 퇴출 검토 및 관련 정치권 반응",
    "sources": [
-    "chosun.com"
+    "dt.co.kr",
+    "sedaily.com"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "李 대통령 “유통주식 10% 미만 상장사 퇴출 검토”",
+     "url": "https://www.sedaily.com/article/20114305?ref=naver",
+     "source": "sedaily.com",
+     "published": "2026-11-14T10:52:00+09:00",
+     "dup_count": 0,
+     "summary": "▶기사 바로가기: 원·달러 환율, 5거래일 만에 반등...1336.7원 마감 ▶기사 바로가기: 李 “욕먹어도 파이 키우는 쪽으로”...의무공개매수 ‘50%+1주’"
+    },
+    {
+     "title": "“李, 치적 위해 주식시장 개입...개미 손실에는 한가한 관전평”[국힘]",
+     "url": "https://www.dt.co.kr/article/12095081?ref=naver",
+     "source": "dt.co.kr",
+     "published": "2026-11-14T10:30:00+09:00",
+     "dup_count": 0,
+     "summary": "국민의힘은 이 대통령의 주식시장 개입과 개미 손실 방관을 비판했다."
+    }
+   ]
+  },
+  {
+   "title": "삼성전자 모딘 인수 추진",
+   "sources": [
+    "sedaily.com"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "삼성전자, 美 데이터센터 냉각업체 모딘 인수 협상",
+     "url": "https://www.sedaily.com/article/20114300?ref=naver",
+     "source": "sedaily.com",
+     "published": "2026-11-14T10:48:00+09:00",
+     "dup_count": 0,
+     "summary": "▶기사 바로가기: 원·달러 환율, 5거래일 만에 반등...1336.7원 마감 ▶기사 바로가기: 李 “욕먹어도 파이 키우는 쪽으로”...의무공개매수 ‘50%+1주’"
+    },
+    {
+     "title": "삼성전자, 최대 10조에 美 냉각장비 업체 ‘모딘’ 인수 추진",
+     "url": "https://www.sedaily.com/article/20114297?ref=naver",
+     "source": "sedaily.com",
+     "published": "2026-11-14T10:42:00+09:00",
+     "dup_count": 0,
+     "summary": "▶기사 바로가기: 원·달러 환율, 5거래일 만에 반등...1336.7원 마감 ▶기사 바로가기: 李 “욕먹어도 파이 키우는 쪽으로”...의무공개매수 ‘50%+1주’"
+    }
+   ]
+  },
+  {
+   "title": "현대바이오 주가 변동",
+   "sources": [
+    "joongangenews.com"
    ],
    "count": 1,
    "items": [
     {
-     "title": "[요즘 서점가] ‘가짜 돈 진짜 부’ 예스24 종합 2위",
-     "url": "https://www.chosun.com/culture-life/book/2026/11/14/VAAAWCNPZ5AMVEBXSUYI7IAYHQ/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-     "source": "chosun.com",
-     "published": "2026-11-14T00:34:00+09:00",
+     "title": "11월 2주차 현대바이오 주가 변동 현황",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=563845",
+     "source": "joongangenews.com",
+     "published": "2026-11-14T11:40:00+09:00",
      "dup_count": 0,
-     "summary": "전직 기자 출신 저자의 화폐와 금리 경제 도서가 예스24 종합 2위에 올랐다."
+     "summary": "현대바이오는 11월 2주차에 주춤하다 6천 원대에 진입했다."
+    }
+   ]
+  },
+  {
+   "title": "한국 수출 실적 및 반도체 영향",
+   "sources": [
+    "the-today.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "반도체가 밀어올린 한국 수출...1조달러 초읽기",
+     "url": "https://www.the-today.com/news/articleView.html?idxno=93558",
+     "source": "the-today.com",
+     "published": "2026-11-14T11:36:00+09:00",
+     "dup_count": 0,
+     "summary": "반도체 수출 증가에 힘입어 한국 수출이 1조 달러 초읽기에 들어갔다."
+    }
+   ]
+  },
+  {
+   "title": "에코프로 주가 변동",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "최근 5거래일 에코프로 주가 급변동 속 주가 7만원대 유지",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=563835",
+     "source": "joongangenews.com",
+     "published": "2026-11-14T11:24:00+09:00",
+     "dup_count": 0,
+     "summary": "에코프로는 5거래일간 급변동을 겪으며 7만 원대를 유지했다."
+    }
+   ]
+  },
+  {
+   "title": "지니언스 주가 변동",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "11월 2주차 지니언스 주가 가파른 상승세 마감",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=563834",
+     "source": "joongangenews.com",
+     "published": "2026-11-14T11:22:00+09:00",
+     "dup_count": 0,
+     "summary": "지니언스는 11월 2주차에 주가가 42.8% 가파르게 상승했다."
+    }
+   ]
+  },
+  {
+   "title": "셀트리온 주가 변동",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "11월 2주차 셀트리온 주가, 주중 하락 딛고 회복세",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=563822",
+     "source": "joongangenews.com",
+     "published": "2026-11-14T11:10:00+09:00",
+     "dup_count": 0,
+     "summary": "셀트리온은 주중 하락세를 딛고 21만 3천500원으로 회복했다."
+    }
+   ]
+  },
+  {
+   "title": "삼성·SK 등 중국 진출 기업 및 반도체 공급망 영향",
+   "sources": [
+    "the-today.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[젠슨 황의 두 얼굴, 그 후(2부)] 중국에 공장 둔 삼성·SK도 사정권... ...",
+     "url": "https://www.the-today.com/news/articleView.html?idxno=93552",
+     "source": "the-today.com",
+     "published": "2026-11-14T10:58:00+09:00",
+     "dup_count": 0,
+     "summary": "삼성과 SK 등 중국에 공장을 둔 기업들도 미·중 반도체 규제 사정권에 들었다."
+    }
+   ]
+  },
+  {
+   "title": "네이처셀 주가 변동",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "11월 2주차 네이처셀 주가 상승 마감",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=563819",
+     "source": "joongangenews.com",
+     "published": "2026-11-14T10:54:00+09:00",
+     "dup_count": 0,
+     "summary": "네이처셀은 코스닥 시장에서 시총 1조 4천억 원대를 기록하며 상승 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "코스닥 신규 상장 및 새내기주 동향",
+   "sources": [
+    "fnnews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "코스닥 16~18일 사흘 연속 새내기주 등판...영광와이케이엠씨 첫 거래",
+     "url": "https://www.fnnews.com/news/202611141042412280",
+     "source": "fnnews.com",
+     "published": "2026-11-14T10:52:00+09:00",
+     "dup_count": 0,
+     "summary": "코스닥시장에 영광와이케이엠씨 등 새내기주들이 사흘 연속 상장한다."
+    }
+   ]
+  },
+  {
+   "title": "서울 토지거래허가구역 및 부동산 규제",
+   "sources": [
+    "sedaily.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "서울 토허제·규제지역 풀리나...정부 “12월 중 최종 결론”",
+     "url": "https://www.sedaily.com/article/20114304?ref=naver",
+     "source": "sedaily.com",
+     "published": "2026-11-14T10:52:00+09:00",
+     "dup_count": 0,
+     "summary": "▶기사 바로가기: 원·달러 환율, 5거래일 만에 반등...1336.7원 마감 ▶기사 바로가기: 李 “욕먹어도 파이 키우는 쪽으로”...의무공개매수 ‘50%+1주’"
+    }
+   ]
+  },
+  {
+   "title": "구다이글로벌 코스피 상장 예비심사 신청",
+   "sources": [
+    "sedaily.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "구다이글로벌, 코스피 상장 예비심사 신청...내년 상반기 IPO 목표",
+     "url": "https://www.sedaily.com/article/20114302?ref=naver",
+     "source": "sedaily.com",
+     "published": "2026-11-14T10:49:00+09:00",
+     "dup_count": 1,
+     "summary": "구다이글로벌, 코스피 IPO 예비심사 청구...내년 상반기 상장 목표 - 핵심 요약: 구다이글로벌이 13일... ▶기사 바로가기: 원·달러 환율, 5거래일 만에 "
+    }
+   ]
+  },
+  {
+   "title": "삼성전자 제7노조 탄생",
+   "sources": [
+    "sedaily.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "삼성전자 ‘제7노조’ 탄생...뒤에 숨은 사업부 갈등",
+     "url": "https://www.sedaily.com/article/20114303?ref=naver",
+     "source": "sedaily.com",
+     "published": "2026-11-14T10:49:00+09:00",
+     "dup_count": 0,
+     "summary": "삼성전자에 사업부 갈등을 배경으로 한 제7노조가 탄생했다."
+    }
+   ]
+  },
+  {
+   "title": "SK하이닉스 주가 변동",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "11월 2주차 SK하이닉스 주가 131만원 터치 후 하락 마감",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=563813",
+     "source": "joongangenews.com",
+     "published": "2026-11-14T10:46:00+09:00",
+     "dup_count": 0,
+     "summary": "SK하이닉스는 11월 2주차에 131만 원을 터치한 뒤 하락 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "세계경제동향 및 주간 증시",
+   "sources": [
+    "kihoilbo.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[11월 둘째 주 세계경제동향 브리핑] 코스피 5,200선 회복...한미 증시 동...",
+     "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3040901",
+     "source": "kihoilbo.co.kr",
+     "published": "2026-11-14T10:40:00+09:00",
+     "dup_count": 2,
+     "summary": "코스피는 11월 둘째 주에 5,200선을 회복하며 상승 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "금시세 하락",
+   "sources": [
+    "kjdaily.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "금시세(금값) 나흘째 하락",
+     "url": "http://www.kjdaily.com/article.php?aid=1794619032692198227",
+     "source": "kjdaily.com",
+     "published": "2026-11-14T10:20:00+09:00",
+     "dup_count": 0,
+     "summary": "국제 금값과 온스당 금 현물 마감가격이 환율 영향 등으로 나흘째 하락했다."
     }
    ]
   }
  ],
  "items": [
   {
-   "title": "‘젠슨 황’ 불확실성에... 코스피 1% 하락 마감",
-   "url": "https://www.donga.com/news/Economy/article/all/20261113/135023326/2",
-   "source": "donga.com",
-   "published": "2026-11-14T01:41:00+09:00",
-   "dup_count": 0,
-   "summary": "젠슨 황 전 엔비디아 CEO 퇴진 여파로 코스피가 1% 하락했다."
-  },
-  {
-   "title": "美의회 ‘對中 칩 규제 3법’ 가속... 국내기업 中공장 불똥 우려",
-   "url": "https://www.donga.com/news/Economy/article/all/20261113/135023330/2",
-   "source": "donga.com",
-   "published": "2026-11-14T01:41:00+09:00",
-   "dup_count": 0,
-   "summary": "미국의 대중 반도체 장비 수출 제한 확대로 국내 기업 공장 타격이 우려된다."
-  },
-  {
-   "title": "젠슨 황의 ‘성공 공식’ 이젠 숙제로 남아...“난 쓰레기” 자책",
-   "url": "https://www.joongang.co.kr/article/25478554",
-   "source": "joongang.co.kr",
-   "published": "2026-11-14T01:40:00+09:00",
-   "dup_count": 0,
-   "summary": "젠슨 황의 과거 성공 공식이 숙제로 남았으며 미국 대중 수출통제 비판도 나왔다."
-  },
-  {
-   "title": "[뉴스이슈&비즈] 젠슨 황 없는 엔비디아...한국과 AI 동맹 이상 없나",
-   "url": "http://www.issuenbiz.com/news/articleView.html?idxno=81594",
-   "source": "issuenbiz.com",
-   "published": "2026-11-14T01:30:00+09:00",
-   "dup_count": 0,
-   "summary": "하이트진로가 참이슬과 테라 등을 중심으로 해외 주류 유통망을 확대하고 있다."
-  },
-  {
-   "title": "젠슨 황, 떠나기 전 임원과 갈등?...\"주주들은 오히려 좋을수도\"[박신영...",
-   "url": "https://www.hankyung.com/article/202611146106i",
-   "source": "hankyung.com",
-   "published": "2026-11-14T01:29:00+09:00",
-   "dup_count": 1,
-   "summary": "젠슨 황 사임 후 새로운 경영 체제와 수출통제 위반 가능성이 주가 변수로 꼽힌다."
-  },
-  {
-   "title": "[기자수첩] 젠슨 황의 퇴장, 한국 AI의 불안한 미래",
-   "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=668120",
-   "source": "kfenews.co.kr",
-   "published": "2026-11-14T00:54:00+09:00",
-   "dup_count": 0,
-   "summary": "엔비디아 경영진 교체와 미국 수출정책 변화에 따라 국내 반도체 산업의 미래가 주목된다."
-  },
-  {
-   "title": "엔비디아($NVDA) 목표가 49.7% 낮춰...트루이스트 '보유'",
-   "url": "https://www.tokenpost.kr/news/market/437971",
-   "source": "tokenpost.kr",
-   "published": "2026-11-14T00:46:00+09:00",
-   "dup_count": 0,
-   "summary": "트루이스트는 중국향 AI 반도체 수출 제한을 이유로 엔비디아 목표가를 낮췄다."
-  },
-  {
-   "title": "AI반도체소부장 ETF 6.48% 상승 1위...SK하이닉스 인버스도 강세",
-   "url": "http://www.kjdaily.com/article.php?aid=1794584550692176276",
-   "source": "kjdaily.com",
-   "published": "2026-11-14T00:44:00+09:00",
-   "dup_count": 1,
-   "summary": "코스피 하락 마감 속 지수 하락에 투자하는 상품과 금융 ETF가 상승했다."
-  },
-  {
-   "title": "삼성SDI 주가 1.06% 상승...외국인 매수 전환",
-   "url": "http://www.kjdaily.com/article.php?aid=1794584432692184276",
-   "source": "kjdaily.com",
-   "published": "2026-11-14T00:42:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피 하락세에도 삼성SDI는 외국인 순매수에 힘입어 1.06% 상승했다."
-  },
-  {
-   "title": "엔비디아 주가 고점 대비 30% 빠져... 코스피도 하락",
-   "url": "https://www.chosun.com/economy/stock-finance/2026/11/14/HMJHA7YYGJAZDNSTCFTHEX2FPA/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "source": "chosun.com",
-   "published": "2026-11-14T00:40:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피는 젠슨 황 사임 충격으로 오전 상승분을 반납하고 0.98% 하락 마감했다."
-  },
-  {
-   "title": "삼성E&A 주가 4.24% 상승...기관·기타법인 동반 순매수",
-   "url": "http://www.kjdaily.com/article.php?aid=1794584134692191276",
-   "source": "kjdaily.com",
-   "published": "2026-11-14T00:38:00+09:00",
-   "dup_count": 0,
-   "summary": "삼성E&A는 기관과 기타법인의 동반 순매수로 4.24% 상승했다."
-  },
-  {
-   "title": "[요즘 서점가] ‘가짜 돈 진짜 부’ 예스24 종합 2위",
-   "url": "https://www.chosun.com/culture-life/book/2026/11/14/VAAAWCNPZ5AMVEBXSUYI7IAYHQ/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "source": "chosun.com",
-   "published": "2026-11-14T00:34:00+09:00",
-   "dup_count": 0,
-   "summary": "전직 기자 출신 저자의 화폐와 금리 경제 도서가 예스24 종합 2위에 올랐다."
-  },
-  {
-   "title": "삼성전자우 주가 1.31% 상승...보통주 하락에도 5거래일 연속 강세",
-   "url": "http://www.kjdaily.com/article.php?aid=1794583386692180276",
-   "source": "kjdaily.com",
-   "published": "2026-11-14T00:26:00+09:00",
-   "dup_count": 0,
-   "summary": "삼성전자우는 보통주 하락 속에서도 외국인 매도 우위 속에 5거래일 연속 상승했다."
-  },
-  {
-   "title": "삼성물산 주가 0.18% 상승...기관 71억원 순매수",
-   "url": "http://www.kjdaily.com/article.php?aid=1794583335692190276",
-   "source": "kjdaily.com",
-   "published": "2026-11-14T00:24:00+09:00",
-   "dup_count": 0,
-   "summary": "삼성물산 주가는 코스피 하락 장세에도 기관 순매수로 4거래일 연속 올랐다."
-  },
-  {
-   "title": "효성중공업 주가 1.63% 하락...외국인 순매도 전환",
-   "url": "http://www.kjdaily.com/article.php?aid=1794583259692188276",
-   "source": "kjdaily.com",
-   "published": "2026-11-14T00:22:00+09:00",
-   "dup_count": 0,
-   "summary": "효성중공업은 외국인의 순매도 전환으로 장중 상승을 지키지 못하고 하락했다."
-  },
-  {
-   "title": "[증시마감] SK하이닉스 3%·삼성전자 1% 하락 마감... 젠슨 황 스캔들·중...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626771",
-   "source": "cbci.co.kr",
-   "published": "2026-11-14T00:16:00+09:00",
-   "dup_count": 1,
-   "summary": "젠슨 황 스캔들과 대중 규제 여파로 SK하이닉스와 삼성전자가 하락 마감했다."
-  },
-  {
-   "title": "주성엔지니어링 주가 0.29% 상승...외국인·기관 순매도",
-   "url": "http://www.kjdaily.com/article.php?aid=1794582498692189276",
-   "source": "kjdaily.com",
-   "published": "2026-11-14T00:10:00+09:00",
-   "dup_count": 0,
-   "summary": "주성엔지니어링은 장중 7% 넘게 올랐으나 외국인과 기관 순매도로 오름폭이 축소됐다."
-  },
-  {
-   "title": "[환율마감] 원/달러 환율, 5거래일 만에 6.0원 오른 1,336.7원 마감... 달...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626775",
-   "source": "cbci.co.kr",
-   "published": "2026-11-14T00:06:00+09:00",
+   "title": "로이터 \"'엔비디아칩 의존' 中 AI프로젝트 규모 4조6천억 이상\"",
+   "url": "https://biz.sbs.co.kr/article_hub/20000346404?division=NAVER",
+   "source": "biz.sbs.co.kr",
+   "published": "2026-11-14T11:41:00+09:00",
    "dup_count": 3,
-   "summary": "가능성을 유지하고 있는 점이 복합적으로 작용했다. 한편, 이날 코스피는 전 거래일 대비 52.20포인트(0.98%) 하락한 5,290.53에, 코스닥은 3.13포"
+   "summary": "이유로 실적 전망에서 중국 데이터센터 컴퓨팅 매출을 제외하기도 했습니다. 로이터는 미 의회가 대중국 반도체 수출 통제 강화를 압박하는 만큼, 진행 중인 프로젝트는"
   },
   {
-   "title": "두산에너빌리티 주가, 장초반 강세 지키지 못하고 하락...주말 이후 흐름...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626652",
-   "source": "cbci.co.kr",
-   "published": "2026-11-14T00:06:00+09:00",
+   "title": "11월 2주차 현대바이오 주가 변동 현황",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=563845",
+   "source": "joongangenews.com",
+   "published": "2026-11-14T11:40:00+09:00",
    "dup_count": 0,
-   "summary": "두산에너빌리티는 장초반 강세를 지키지 못하고 코스피 약세와 함께 하락했다."
+   "summary": "현대바이오는 11월 2주차에 주춤하다 6천 원대에 진입했다."
   },
   {
-   "title": "[증시마감] 코스피, 장중 5,500선 터치 후 하락 반전... 0.98% 내려 5,290선...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626678",
-   "source": "cbci.co.kr",
-   "published": "2026-11-14T00:06:00+09:00",
+   "title": "반도체가 밀어올린 한국 수출...1조달러 초읽기",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=93558",
+   "source": "the-today.com",
+   "published": "2026-11-14T11:36:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체 수출 증가에 힘입어 한국 수출이 1조 달러 초읽기에 들어갔다."
+  },
+  {
+   "title": "美 수출 규제에도 中 엔비디아 칩 관련 AI 사업 4.6조원",
+   "url": "https://www.sentv.co.kr/article/view/sentv202611140020",
+   "source": "sentv.co.kr",
+   "published": "2026-11-14T11:28:00+09:00",
+   "dup_count": 0,
+   "summary": "규제 불확실성을 이유로 실적 전망에서도 중국 데이터센터 컴퓨팅 매출을 제외했다. 미국 의회에서는 대중국 반도체 수출 통제 강화를 요구하고 있어 관련 프로젝트의 반"
+  },
+  {
+   "title": "中 엔비디아 AI칩 의존 프로젝트 4조6천억원...수출 규제에도 기술 수요...",
+   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000082605",
+   "source": "jnilbo.com",
+   "published": "2026-11-14T11:27:00+09:00",
+   "dup_count": 0,
+   "summary": "중국의 엔비디아 AI칩 의존 프로젝트 규모가 4조 6천억 원에 달했다."
+  },
+  {
+   "title": "11월 2주차 레인보우로보틱스 주가 37만원대 강세 마감",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=563837",
+   "source": "joongangenews.com",
+   "published": "2026-11-14T11:26:00+09:00",
+   "dup_count": 0,
+   "summary": "레인보우로보틱스는 11월 2주차에 37만 원대로 강세 마감했다."
+  },
+  {
+   "title": "최근 5거래일 에코프로 주가 급변동 속 주가 7만원대 유지",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=563835",
+   "source": "joongangenews.com",
+   "published": "2026-11-14T11:24:00+09:00",
+   "dup_count": 0,
+   "summary": "에코프로는 5거래일간 급변동을 겪으며 7만 원대를 유지했다."
+  },
+  {
+   "title": "11월 2주차 지니언스 주가 가파른 상승세 마감",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=563834",
+   "source": "joongangenews.com",
+   "published": "2026-11-14T11:22:00+09:00",
+   "dup_count": 0,
+   "summary": "지니언스는 11월 2주차에 주가가 42.8% 가파르게 상승했다."
+  },
+  {
+   "title": "분명 수출 통제했는데...중국, 엔비디아 칩 의존 '4조6000억' 이상",
+   "url": "https://www.hankyung.com/article/2026111463697",
+   "source": "hankyung.com",
+   "published": "2026-11-14T11:21:00+09:00",
+   "dup_count": 0,
+   "summary": "미국의 통제에도 중국은 4조 6천억 원 규모의 엔비디아 칩을 의존한다."
+  },
+  {
+   "title": "11월 2주차 셀트리온 주가, 주중 하락 딛고 회복세",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=563822",
+   "source": "joongangenews.com",
+   "published": "2026-11-14T11:10:00+09:00",
+   "dup_count": 0,
+   "summary": "셀트리온은 주중 하락세를 딛고 21만 3천500원으로 회복했다."
+  },
+  {
+   "title": "美 수출규제에도 中 AI사업에 엔비디아칩...규모만 4조6000억원 이상 [비...",
+   "url": "https://biz.heraldcorp.com/article/10936950?ref=naver",
+   "source": "biz.heraldcorp.com",
+   "published": "2026-11-14T11:09:00+09:00",
+   "dup_count": 0,
+   "summary": "美 수출규제에도 중국 내 엔비디아 칩 AI 사업이 4조 6천억 원을 넘었다."
+  },
+  {
+   "title": "[젠슨 황의 두 얼굴, 그 후(2부)] 중국에 공장 둔 삼성·SK도 사정권... ...",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=93552",
+   "source": "the-today.com",
+   "published": "2026-11-14T10:58:00+09:00",
+   "dup_count": 0,
+   "summary": "삼성과 SK 등 중국에 공장을 둔 기업들도 미·중 반도체 규제 사정권에 들었다."
+  },
+  {
+   "title": "11월 2주차 네이처셀 주가 상승 마감",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=563819",
+   "source": "joongangenews.com",
+   "published": "2026-11-14T10:54:00+09:00",
+   "dup_count": 0,
+   "summary": "네이처셀은 코스닥 시장에서 시총 1조 4천억 원대를 기록하며 상승 마감했다."
+  },
+  {
+   "title": "코스닥 16~18일 사흘 연속 새내기주 등판...영광와이케이엠씨 첫 거래",
+   "url": "https://www.fnnews.com/news/202611141042412280",
+   "source": "fnnews.com",
+   "published": "2026-11-14T10:52:00+09:00",
+   "dup_count": 0,
+   "summary": "코스닥시장에 영광와이케이엠씨 등 새내기주들이 사흘 연속 상장한다."
+  },
+  {
+   "title": "서울 토허제·규제지역 풀리나...정부 “12월 중 최종 결론”",
+   "url": "https://www.sedaily.com/article/20114304?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-14T10:52:00+09:00",
+   "dup_count": 0,
+   "summary": "▶기사 바로가기: 원·달러 환율, 5거래일 만에 반등...1336.7원 마감 ▶기사 바로가기: 李 “욕먹어도 파이 키우는 쪽으로”...의무공개매수 ‘50%+1주’"
+  },
+  {
+   "title": "李 대통령 “유통주식 10% 미만 상장사 퇴출 검토”",
+   "url": "https://www.sedaily.com/article/20114305?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-14T10:52:00+09:00",
+   "dup_count": 0,
+   "summary": "▶기사 바로가기: 원·달러 환율, 5거래일 만에 반등...1336.7원 마감 ▶기사 바로가기: 李 “욕먹어도 파이 키우는 쪽으로”...의무공개매수 ‘50%+1주’"
+  },
+  {
+   "title": "구다이글로벌, 코스피 상장 예비심사 신청...내년 상반기 IPO 목표",
+   "url": "https://www.sedaily.com/article/20114302?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-14T10:49:00+09:00",
    "dup_count": 1,
-   "summary": "코스피, 장 초반 3.03% 급등 뒤 0.98% 하락 마감...코스닥 0.45%↑ 코스피 지수는 13일 한때 5,500선을 돌파하며 3% 이상 급등했으나, 이후 "
+   "summary": "구다이글로벌, 코스피 IPO 예비심사 청구...내년 상반기 상장 목표 - 핵심 요약: 구다이글로벌이 13일... ▶기사 바로가기: 원·달러 환율, 5거래일 만에 "
   },
   {
-   "title": "\"엔비디아 쇼크에도 외국인은 샀다\"...전문가가 짚은 증시 향방",
-   "url": "https://www.newsis.com/view/NISX20261113_0003866798",
-   "source": "newsis.com",
-   "published": "2026-11-14T00:00:00+09:00",
+   "title": "삼성전자 ‘제7노조’ 탄생...뒤에 숨은 사업부 갈등",
+   "url": "https://www.sedaily.com/article/20114303?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-14T10:49:00+09:00",
    "dup_count": 0,
-   "summary": "엔비디아 쇼크에 국내 기관이 매도한 물량을 외국인들이 순매수하며 받아냈다."
+   "summary": "삼성전자에 사업부 갈등을 배경으로 한 제7노조가 탄생했다."
   },
   {
-   "title": "[심층분석] 하반기 증시, 매크로 변곡점 맞아...실적 차별화 장세 주목",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=94105",
-   "source": "thefairnews.co.kr",
-   "published": "2026-11-14T00:00:00+09:00",
+   "title": "엔비디아, 크레스 임시 CEO 체제로 조직 안정화...18일 전사 회의",
+   "url": "https://www.sedaily.com/article/20114299?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-14T10:48:00+09:00",
    "dup_count": 0,
-   "summary": "하반기 증시는 실적 개선세와 수출 모멘텀에 따라 차별화된 흐름을 보이고 있다."
+   "summary": "▶기사 바로가기: 원·달러 환율, 5거래일 만에 반등...1336.7원 마감 ▶기사 바로가기: 李 “욕먹어도 파이 키우는 쪽으로”...의무공개매수 ‘50%+1주’"
   },
   {
-   "title": "[기업家] 엔비디아 10ᅵ 젠슨 황 없는 엔비디아...리더십 공백에 AI 패권...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626726",
-   "source": "cbci.co.kr",
-   "published": "2026-11-14T00:00:00+09:00",
-   "dup_count": 0,
-   "summary": "젠슨 황 없는 엔비디아의 리더십 공백과 대중 반도체 수출 통제 우려가 커졌다."
-  },
-  {
-   "title": "반도체주 불확실성 확대... 외국인, SK하이닉스 4700억 매도",
-   "url": "https://www.kmib.co.kr/article/20261113500657",
-   "source": "kmib.co.kr",
-   "published": "2026-11-13T23:52:00+09:00",
-   "dup_count": 0,
-   "summary": "젠슨 황 사임 다음날 외국인의 SK하이닉스 매도 등 반도체주 불확실성이 커졌다."
-  },
-  {
-   "title": "미국증시, 물가 둔화에도 나스닥 하락...엔비디아·SK하이닉스 약세, 다...",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16276154",
-   "source": "topstarnews.net",
-   "published": "2026-11-13T23:44:00+09:00",
+   "title": "국제유가 상승에 달러 강세...달러인덱스 19개월 만에 최고",
+   "url": "https://www.sedaily.com/article/20114301?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-14T10:48:00+09:00",
    "dup_count": 1,
-   "summary": "미국 증시에서 엔비디아와 SK하이닉스가 약세를 보이며 반도체 업종이 부진했다."
+   "summary": "국제유가 상승과 달러 강세로 원·달러 환율이 1336.7원에 마감했다."
   },
   {
-   "title": "젠슨 황 사퇴에 ‘출렁’...코스피, 5290선 하락 마감",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8712688&ref=A",
-   "source": "news.kbs.co.kr",
-   "published": "2026-11-13T23:07:00+09:00",
+   "title": "삼성전자, 美 데이터센터 냉각업체 모딘 인수 협상",
+   "url": "https://www.sedaily.com/article/20114300?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-14T10:48:00+09:00",
    "dup_count": 0,
-   "summary": "코스피는 젠슨 황 리스크를 이기지 못하고 사흘 만에 5300선 아래로 떨어졌다."
+   "summary": "▶기사 바로가기: 원·달러 환율, 5거래일 만에 반등...1336.7원 마감 ▶기사 바로가기: 李 “욕먹어도 파이 키우는 쪽으로”...의무공개매수 ‘50%+1주’"
   },
   {
-   "title": "'전강후약' 코스피 5,300 붕괴...코스닥 700 하회",
-   "url": "https://www.ytn.co.kr/_ln/0102_202611132301583819",
+   "title": "11월 2주차 SK하이닉스 주가 131만원 터치 후 하락 마감",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=563813",
+   "source": "joongangenews.com",
+   "published": "2026-11-14T10:46:00+09:00",
+   "dup_count": 0,
+   "summary": "SK하이닉스는 11월 2주차에 131만 원을 터치한 뒤 하락 마감했다."
+  },
+  {
+   "title": "미 항공기 운항 전면 중단...젠슨 황 사임 후폭풍",
+   "url": "https://www.ytn.co.kr/_ln/0104_202611141043001555",
    "source": "ytn.co.kr",
-   "published": "2026-11-13T23:01:00+09:00",
-   "dup_count": 4,
-   "summary": "젠슨 황 관련 악재와 외국인 매도 속 코스피 5300선이 붕괴됐다."
-  },
-  {
-   "title": "[미국 특징주] \"기술주 조정은 기회\"...골드만, S&P500 목표치 8700 제시",
-   "url": "https://www.newspim.com/news/view/20261113001452",
-   "source": "newspim.com",
-   "published": "2026-11-13T22:46:00+09:00",
+   "published": "2026-11-14T10:43:00+09:00",
    "dup_count": 0,
-   "summary": "골드만삭스는 대형 기술주 조정을 기회로 보며 S&P500 목표치를 8700으로 제시했다."
+   "summary": "젠슨 황 사임 여파로 미국 항공기 운항이 전면 중단되는 혼란이 발생했다."
   },
   {
-   "title": "패션주 코오롱인더 강세, 섬유·화학주 종목별 혼조",
-   "url": "http://okfashion.co.kr/detail.php?number=64385&thread=62r04",
-   "source": "okfashion.co.kr",
-   "published": "2026-11-13T22:44:00+09:00",
+   "title": "삼성전자, 최대 10조에 美 냉각장비 업체 ‘모딘’ 인수 추진",
+   "url": "https://www.sedaily.com/article/20114297?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-14T10:42:00+09:00",
    "dup_count": 0,
-   "summary": "코오롱인더스트리 등 패션주가 강세를 보인 가운데 섬유·화학주는 혼조세를 보였다."
+   "summary": "▶기사 바로가기: 원·달러 환율, 5거래일 만에 반등...1336.7원 마감 ▶기사 바로가기: 李 “욕먹어도 파이 키우는 쪽으로”...의무공개매수 ‘50%+1주’"
   },
   {
-   "title": "젠슨 황 사임 여파...증권가 \"후임 인선 속도·美 대중 수출 규제가 변수...",
-   "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=435490",
-   "source": "dailysportshankook.co.kr",
-   "published": "2026-11-13T22:26:00+09:00",
+   "title": "[11월 둘째 주 세계경제동향 브리핑] 코스피 5,200선 회복...한미 증시 동...",
+   "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3040901",
+   "source": "kihoilbo.co.kr",
+   "published": "2026-11-14T10:40:00+09:00",
+   "dup_count": 2,
+   "summary": "코스피는 11월 둘째 주에 5,200선을 회복하며 상승 마감했다."
+  },
+  {
+   "title": "“李, 치적 위해 주식시장 개입...개미 손실에는 한가한 관전평”[국힘]",
+   "url": "https://www.dt.co.kr/article/12095081?ref=naver",
+   "source": "dt.co.kr",
+   "published": "2026-11-14T10:30:00+09:00",
    "dup_count": 0,
-   "summary": "증권가는 젠슨 황 사임 후 후임 인선과 미국의 대중 수출 규제를 주요 변수로 꼽았다."
+   "summary": "국민의힘은 이 대통령의 주식시장 개입과 개미 손실 방관을 비판했다."
   },
   {
-   "title": "코스피 5500선 터치 후 0.98% 하락 마감...외국인 '팔자'에 상승분 반납",
-   "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=89521",
-   "source": "industrynews.co.kr",
-   "published": "2026-11-13T22:14:00+09:00",
-   "dup_count": 3,
-   "summary": "코스피는 장초반 5500선을 돌파했으나 외국인 '팔자'에 1% 가까이 하락 마감했다."
+   "title": "[인문자의 젠슨 황 가죽재킷 이야기 | 인간·문화·자연] AI 황제의 가죽...",
+   "url": "https://www.ajunews.com/view/20261114101854069",
+   "source": "ajunews.com",
+   "published": "2026-11-14T10:28:00+09:00",
+   "dup_count": 0,
+   "summary": "젠슨 황의 가죽재킷 이야기와 함께 첨단 반도체 기술안보 문제가 조명됐다."
   },
   {
-   "title": "가온칩스 29.92% 급등...반도체 설계주 상승률 상위권",
-   "url": "http://www.kjdaily.com/article.php?aid=1794574281692178276",
+   "title": "금시세(금값) 나흘째 하락",
+   "url": "http://www.kjdaily.com/article.php?aid=1794619032692198227",
    "source": "kjdaily.com",
-   "published": "2026-11-13T22:04:00+09:00",
-   "dup_count": 1,
-   "summary": "이미지=아이클릭아트-13일 전체시장 주가등락률 상위 50종목...코스닥 37개·코스피 8개·코넥스 5개... 가온칩스의 상승률은 오전장 28.74%에서 정규장 마"
-  },
-  {
-   "title": "\"땡큐 젠슨 황\"...공포의 폭락장서 '매수 버튼' 광클한 개미들 [분석+]",
-   "url": "https://www.hankyung.com/article/2026111347546",
-   "source": "hankyung.com",
-   "published": "2026-11-13T22:01:00+09:00",
+   "published": "2026-11-14T10:20:00+09:00",
    "dup_count": 0,
-   "summary": "서학개미들은 엔비디아의 AI 반도체 성장성을 믿고 저가 매수에 나섰다."
+   "summary": "국제 금값과 온스당 금 현물 마감가격이 환율 영향 등으로 나흘째 하락했다."
   },
   {
-   "title": "삼성전자·SK하이닉스 거래대금 29.5% 감소...외국인 매도 확대",
-   "url": "http://www.kjdaily.com/article.php?aid=1794573555692177276",
-   "source": "kjdaily.com",
-   "published": "2026-11-13T21:40:00+09:00",
-   "dup_count": 1,
-   "summary": "외국인의 매도세가"
-  },
-  {
-   "title": "국제 금시세 전망, 3900달러 반등...미 국채금리 5%에 금값 불안",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16276115",
-   "source": "topstarnews.net",
-   "published": "2026-11-13T21:40:00+09:00",
+   "title": "코스닥 700선에 '바짝'...레인보우로보틱스 9%대 껑충·에코프로비엠 강...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626788",
+   "source": "cbci.co.kr",
+   "published": "2026-11-14T10:10:00+09:00",
    "dup_count": 0,
-   "summary": "12일 브렌트유는 3.3% 급등해 배럴당 95.82달러에 마감했다. 같은 날 금값은 큰 폭으로 하락했다. 전쟁으로... 국내 실물 금값에는 국제 금 가격뿐 아니라"
+   "summary": "코스닥은 레인보우로보틱스 급등 등에 힘입어 700선에 바짝 다가섰다."
+  },
+  {
+   "title": "[외환] 끈적한 美 PPI에 달러화 강세...1,330원 후반대 거래",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444775",
+   "source": "news.einfomax.co.kr",
+   "published": "2026-11-14T10:08:00+09:00",
+   "dup_count": 1,
+   "summary": "미국의 끈적한 PPI 여파로 달러화가 강세를 보이며 1,330원 후반대를 기록했다."
+  },
+  {
+   "title": "NDF, 1,335.70/ 1,336.10원...0.20원↑",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444776",
+   "source": "news.einfomax.co.kr",
+   "published": "2026-11-14T10:08:00+09:00",
+   "dup_count": 0,
+   "summary": "뉴욕 NDF 시장에서 달러-원 1개월물은 소폭 상승한 1,335원대에 거래됐다."
+  },
+  {
+   "title": "젠슨 황 불륜 스캔들에 출렁...삼전닉스 '아슬아슬한 버티기' [주간 증시...",
+   "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=312292",
+   "source": "thescoop.co.kr",
+   "published": "2026-11-14T09:58:00+09:00",
+   "dup_count": 2,
+   "summary": "젠슨 황 스캔들과 외국인 매도세로 코스피지수는 5290.53으로 하락 마감했다."
+  },
+  {
+   "title": "코스피 하락...삼성전자·현대차 강세 삼성전기 약세, 엔비디아 경영 불...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626787",
+   "source": "cbci.co.kr",
+   "published": "2026-11-14T09:56:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피가 1% 가까이 하락한 가운데 삼성전자는 상승하고 SK하이닉스는 약세를 보였다."
+  },
+  {
+   "title": "“엔비디아 빠질 때 30% 급등”...나 홀로 웃은 ‘뜻밖의 수혜주’ 보니",
+   "url": "https://www.sedaily.com/article/20114291?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-14T09:43:00+09:00",
+   "dup_count": 0,
+   "summary": "엔비디아 하락세 속에서 30% 급등한 뜻밖의 수혜주와 규제 위반 의혹이 주목받았다."
+  },
+  {
+   "title": "[집중분석] '삼전닉스'만 골라 판 외국인...국내 증시에 언제 돌아올까?",
+   "url": "https://www.thepublic.kr/news/articleView.html?idxno=326676",
+   "source": "thepublic.kr",
+   "published": "2026-11-14T09:40:00+09:00",
+   "dup_count": 0,
+   "summary": "외국인 투자자들이 삼전닉스 위주로 매도세를 보인 가운데 향후 재유입 시점이 주목된다."
   }
  ]
 }
