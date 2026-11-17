@@ -1,9 +1,82 @@
 {
- "updated_at": "2026-11-17T05:01:17.080880+09:00",
+ "updated_at": "2026-11-18T03:58:14.673299+09:00",
  "stocks": [
   {
+   "ticker": "GOOGL",
+   "inst_pct": 80.7,
+   "shares_short": 87622276,
+   "short_pct_float": 1.49,
+   "short_chg": 9.0,
+   "insider_recent": [
+    {
+     "insider": "SHRIRAM KAVITARK RAM",
+     "position": "Director",
+     "text": "Stock Gift at price 0.00 per share.",
+     "shares": 396700,
+     "value": 0.0,
+     "date": "2026-10-13 00:00:00"
+    },
+    {
+     "insider": "SERGEY BRIN",
+     "position": "Director and Beneficial Owner of more than 10% of a Class of Security",
+     "text": "Stock Gift at price 0.00 per share.",
+     "shares": 673200,
+     "value": 0.0,
+     "date": "2026-08-07 00:00:00"
+    },
+    {
+     "insider": "SERGEY BRIN",
+     "position": "Director and Beneficial Owner of more than 10% of a Class of Security",
+     "text": "",
+     "shares": 673200,
+     "value": null,
+     "date": "2026-08-07 00:00:00"
+    },
+    {
+     "insider": "SERGEY BRIN",
+     "position": "Director and Beneficial Owner of more than 10% of a Class of Security",
+     "text": "Stock Gift at price 0.00 per share.",
+     "shares": 437500,
+     "value": 0.0,
+     "date": "2026-02-19 00:00:00"
+    },
+    {
+     "insider": "HENNESSY JOHN L",
+     "position": "Director",
+     "text": "Sale at price 306.11 - 307.77 per share.",
+     "shares": 600,
+     "value": 184037.0,
+     "date": "2026-02-13 00:00:00"
+    },
+    {
+     "insider": "HENNESSY JOHN L",
+     "position": "Director",
+     "text": "Sale at price 335.13 - 339.75 per share.",
+     "shares": 600,
+     "value": 202514.0,
+     "date": "2026-01-13 00:00:00"
+    },
+    {
+     "insider": "SHRIRAM KAVITARK RAM",
+     "position": "Director",
+     "text": "Stock Gift at price 0.00 per share.",
+     "shares": 39200,
+     "value": 0.0,
+     "date": "2025-12-09 00:00:00"
+    },
+    {
+     "insider": "SHRIRAM KAVITARK RAM",
+     "position": "Director",
+     "text": "Stock Gift at price 0.00 per share.",
+     "shares": 243508,
+     "value": 0.0,
+     "date": "2025-09-25 00:00:00"
+    }
+   ]
+  },
+  {
    "ticker": "MSFT",
-   "inst_pct": 76.4,
+   "inst_pct": 76.8,
    "shares_short": 60941334,
    "short_pct_float": 0.82,
    "short_chg": -0.3,
@@ -76,7 +149,7 @@
   },
   {
    "ticker": "META",
-   "inst_pct": 78.0,
+   "inst_pct": 78.5,
    "shares_short": 75483549,
    "short_pct_float": 3.41,
    "short_chg": 124.8,
@@ -149,7 +222,7 @@
   },
   {
    "ticker": "AMZN",
-   "inst_pct": 68.9,
+   "inst_pct": 69.0,
    "shares_short": 94358323,
    "short_pct_float": 0.96,
    "short_chg": 8.9,
@@ -195,19 +268,19 @@
      "date": "2026-08-24 00:00:00"
     },
     {
-     "insider": "GARMAN MATTHEW S",
-     "position": "Officer",
-     "text": "Sale at price 257.60 - 260.34 per share.",
-     "shares": 14541,
-     "value": 3766920.0,
-     "date": "2026-08-21 00:00:00"
-    },
-    {
      "insider": "HERRINGTON DOUGLAS J",
      "position": "Officer",
      "text": "Sale at price 257.77 - 260.33 per share.",
      "shares": 6362,
      "value": 1647810.0,
+     "date": "2026-08-21 00:00:00"
+    },
+    {
+     "insider": "GARMAN MATTHEW S",
+     "position": "Officer",
+     "text": "Sale at price 257.60 - 260.34 per share.",
+     "shares": 14541,
+     "value": 3766920.0,
      "date": "2026-08-21 00:00:00"
     },
     {
@@ -222,7 +295,7 @@
   },
   {
    "ticker": "CRM",
-   "inst_pct": 82.2,
+   "inst_pct": 83.6,
    "shares_short": 26242468,
    "short_pct_float": 3.68,
    "short_chg": -20.2,
@@ -303,7 +376,7 @@
   },
   {
    "ticker": "NKE",
-   "inst_pct": 83.7,
+   "inst_pct": 82.2,
    "shares_short": 92915888,
    "short_pct_float": 9.72,
    "short_chg": -6.4,
@@ -315,6 +388,14 @@
      "shares": 5171,
      "value": 0.0,
      "date": "2026-09-15 00:00:00"
+    },
+    {
+     "insider": "LEINWAND ROBERT",
+     "position": "Officer",
+     "text": "Sale at price 37.59 per share.",
+     "shares": 3646,
+     "value": 137053.0,
+     "date": "2026-09-09 00:00:00"
     },
     {
      "insider": "MCCARTNEY PHILIP",
@@ -330,14 +411,6 @@
      "text": "Sale at price 37.59 per share.",
      "shares": 3671,
      "value": 137993.0,
-     "date": "2026-09-09 00:00:00"
-    },
-    {
-     "insider": "LEINWAND ROBERT",
-     "position": "Officer",
-     "text": "Sale at price 37.59 per share.",
-     "shares": 3646,
-     "value": 137053.0,
      "date": "2026-09-09 00:00:00"
     },
     {
@@ -376,7 +449,7 @@
   },
   {
    "ticker": "DEA",
-   "inst_pct": 80.8,
+   "inst_pct": 79.3,
    "shares_short": 1847723,
    "short_pct_float": 5.64,
    "short_chg": -13.6,
@@ -449,7 +522,7 @@
   },
   {
    "ticker": "PFE",
-   "inst_pct": 69.3,
+   "inst_pct": 69.7,
    "shares_short": 134422620,
    "short_pct_float": 2.36,
    "short_chg": -10.5,
@@ -522,7 +595,7 @@
   },
   {
    "ticker": "CPNG",
-   "inst_pct": 83.7,
+   "inst_pct": 83.6,
    "shares_short": 79349369,
    "short_pct_float": 6.2,
    "short_chg": 0.3,
@@ -595,7 +668,7 @@
   },
   {
    "ticker": "ENPH",
-   "inst_pct": 92.0,
+   "inst_pct": 92.6,
    "shares_short": 27337300,
    "short_pct_float": 24.85,
    "short_chg": -2.8,
@@ -668,7 +741,7 @@
   },
   {
    "ticker": "FSLR",
-   "inst_pct": 104.3,
+   "inst_pct": 106.7,
    "shares_short": 11230097,
    "short_pct_float": 13.66,
    "short_chg": 0.9,
