@@ -1,738 +1,694 @@
 {
- "updated_at": "2026-11-18T03:37:31.799356+09:00",
+ "updated_at": "2026-11-18T12:53:01.912925+09:00",
  "event_notes": {
-  "why": "엔비디아 급락과 중국에 대한 칩 공급 제한 뉴스 등 젠슨 황 쇼크의 영향으로 뉴욕증시가 하락하면서, 코스피가 9개월 만에 5천 선이 붕괴되는 등 코스피와 코스닥이 각각 -3.59%와 -4.86%로 크게 무너졌다. 여기에 젠슨 황, 앤트로픽, 금리 삼중고와 외국인의 1조 4천억 원 넘는 순매도가 겹치면서 반도체 -2.34%, 2차전지 -3.86%, 에너지화학 -3.81% 등 주요 업종이 전반적인 약세를 기록한 것으로 보인다. 다만 바이오 업종은 0.5% 상승하며 상대적으로 선방했으나, 시장 전체를 방어하기에는 역부족이었던 흐름을 보였다.",
-  "watch": "이번 하락의 주요 원인이 된 엔비디아의 11월 실적 발표 내용과 중국 관련 칩 공급 제한 조치의 전개 양상을 면밀히 지켜봐야 한다. 또한 원달러 환율의 1,330원 선 안착 여부와 외국인 수급의 방향성도 향후 증시 흐름을 좌우할 주요 지표로 보인다."
+  "why": "엔비디아가 3분기 역대 최대 매출을 기록했음에도 불구하고 젠슨 황의 부재 관련 소식 등이 겹치면서 코스피와 코스닥은 각각 2.59%와 2.34% 하락했다. 반도체주는 엔비디아의 실적 호조에 기대감을 가졌으나 지수 전반의 하락 흐름 속에서 상승 폭이 둔화하며 2.34% 내렸다. 수출 1조 달러 달성 소식과 KDI의 내년 한국 성장률 3.9% 전망에도 불구하고, 2차전지 마이너스 3.86%, 에너지화학 마이너스 3.81% 등 대다수 업종이 부진을 면치 못했다.",
+  "watch": "엔비디아의 경영 공백 우려를 잠재울 후속 소식과 함께 2030조원을 돌파한 가계빚 증가세가 금융시장과 은행 업종에 미치는 영향을 주시해야 한다. 또한 KDI가 제시한 내년 성장률 전망치 달성을 뒷받침할 실제 수출 및 지역 소비 회복 지표들을 지속적으로 확인해야 한다."
  },
  "clusters": [
   {
-   "title": "코스피 5000선 붕괴 및 증시 급락",
+   "title": "엔비디아 3분기 실적과 젠슨 황 관련 이슈",
    "sources": [
+    "asiatime.co.kr",
     "asiatoday.co.kr",
-    "cbci.co.kr",
-    "chosun.com",
-    "dailysportshankook.co.kr",
-    "imnews.imbc.com",
-    "issuenbiz.com",
-    "joongang.co.kr",
-    "kjdaily.com",
-    "kmib.co.kr",
-    "news.sbs.co.kr",
-    "radiokorea.com",
-    "thefairnews.co.kr"
+    "datasom.co.kr",
+    "dealsite.co.kr",
+    "hankyung.com",
+    "kukinews.com",
+    "munhwa.com",
+    "yonhapnewstv.co.kr"
    ],
-   "count": 16,
+   "count": 8,
    "items": [
     {
-     "title": "[뉴스이슈&비즈] 젠슨황·앤트로픽·금리 '삼중고'에 코스피 9개월만에...",
-     "url": "http://www.issuenbiz.com/news/articleView.html?idxno=81700",
-     "source": "issuenbiz.com",
-     "published": "2026-11-18T01:30:00+09:00",
-     "dup_count": 3,
-     "summary": "젠슨 황 사태 등 삼중고를 겪은 코스피가 9개월 만에 5000선을 내줬다."
+     "title": "젠슨 황 없는 엔비디아, 올해 3Q 매출 '103%↑'...역대 최대",
+     "url": "https://www.asiatime.co.kr/article/20261118500172",
+     "source": "asiatime.co.kr",
+     "published": "2026-11-18T12:44:00+09:00",
+     "dup_count": 0,
+     "summary": "엔비디아, 3분기 매출 103% 증가하며 역대 최대 실적 기록."
     },
     {
-     "title": "삼성전자·SK하이닉스 동반 하락...SK그룹 시총 1천조원 붕괴",
-     "url": "http://www.kjdaily.com/article.php?aid=1794928506692719276",
-     "source": "kjdaily.com",
-     "published": "2026-11-18T00:18:00+09:00",
-     "dup_count": 2,
-     "summary": "삼성전자도 3.30% 하락한 19만300원에 마감했다. 반도체 대형주의 약세 속에 코스피는 전 거래일보다 132.02포인트(2.59%) 떨어진 4,968.48로 "
+     "title": "젠슨 황 떠난 엔비디아, AI 수요는 여전...경영 공백 우려 잠재울까",
+     "url": "https://www.kukinews.com/article/view/kuk202611180114",
+     "source": "kukinews.com",
+     "published": "2026-11-18T12:14:00+09:00",
+     "dup_count": 0,
+     "summary": "엔비디아, 중국 수출 규제에도 AI 반도체 수요로 성장세 지속 자신."
     },
     {
-     "title": "[오천피붕괴] '5천피'마저 내준 코스피와 1천조원 깨진 SK그룹... 증시 뒤...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627807",
-     "source": "cbci.co.kr",
-     "published": "2026-11-18T00:06:00+09:00",
-     "dup_count": 2,
-     "summary": "이날 코스피 지수는 4,968.48로 마감해 약 9개월 만에 5,000선 아래로 내려갔다. 삼성전자와 SK하이닉스 등 반도체주가 하락하면서 지수 하락을 이끌었다."
+     "title": "엔비디아 3분기 매출 두 배 뛰었다...삼성·SK하이닉스에 쏠리는 기대",
+     "url": "https://dealsite.co.kr/articles/173043",
+     "source": "dealsite.co.kr",
+     "published": "2026-11-18T12:12:00+09:00",
+     "dup_count": 0,
+     "summary": "엔비디아 3분기 매출 두 배 증가, 새 경영진의 대중국 전략 주목."
     },
     {
-     "title": "국고채 금리 혼조 마감...코스피 5,000선 붕괴에 중단기물 하락",
-     "url": "http://www.kjdaily.com/article.php?aid=1794929615692614276",
-     "source": "kjdaily.com",
-     "published": "2026-11-18T00:36:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피는 이날 전 거래일보다 132.02포인트(2.59%) 하락한 4,968.48에 마감했다. 종가 기준 5,000선을 밑돈 것은 지난 2월 2일 이후 9개월여 "
-    },
-    {
-     "title": "외국인, 1.4조 넘게 던졌다... 9개월 만에 다시 ‘4천피’",
-     "url": "https://www.chosun.com/economy/stock-finance/2026/11/18/MNLJDAELCBB7RISG3FJKIKDDQM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-     "source": "chosun.com",
-     "published": "2026-11-18T00:32:00+09:00",
-     "dup_count": 1,
-     "summary": "6월 고점 대비 거의 반토막 수준 3줄 요약 ᆞ외국인 3거래일 연속 순매도에 4968 마감 ᆞ엔비디아 CEO 사임과 대중 수출 규제 여파 ᆞ삼성전자 SK하이닉스 "
-    },
-    {
-     "title": "코스피 5천선 붕괴에도...개미들 레버리지 ETF 집중 매수",
-     "url": "http://www.kjdaily.com/article.php?aid=1794929067692613276",
-     "source": "kjdaily.com",
-     "published": "2026-11-18T00:26:00+09:00",
-     "dup_count": 1,
-     "summary": "이미지=아이클릭아트-16~17일 코스닥150레버리지 1천663억원 순매수 -KODEX 레버리지 1천46억원...ETF 전체 2위 -반도체·SK하이닉스 레버리지 상"
-    },
-    {
-     "title": "코스피 5000도 무너졌다...막 내린 ‘묻지마 AI 투자’ 시대",
-     "url": "https://www.joongang.co.kr/article/25479584",
-     "source": "joongang.co.kr",
-     "published": "2026-11-18T00:02:00+09:00",
-     "dup_count": 1,
-     "summary": "17일 코스피는 전 거래일 대비 132.02포인트(2.59%) 내린 4968.48에 마감했다. 코스피가 5000선 아래에서 마감한 것은 지난 2월 2일(4949."
-    },
-    {
-     "title": "[증시 프리즘] '5천피' 후퇴에 코스닥도 직격탄...시총 상위주 줄줄이 급...",
-     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=94557",
-     "source": "thefairnews.co.kr",
-     "published": "2026-11-18T00:02:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피가 5,000선을 내어주며 급락세를 보인 여파로 코스닥 시장 역시 시가총액 상위 종목들이 일제히... 2차전지, 바이오, 반도체 소부장 등 코스닥 주도주 대"
-    },
-    {
-     "title": "[사설] 코스피 5000 붕괴, '역(逆)자산효과' 대책 있나",
-     "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261117010006666",
+     "title": "엔비디아, 3분기 매출 1158억달러...시간 외 5% 급등·이사회 \"황 복직 안...",
+     "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261118010006974",
      "source": "asiatoday.co.kr",
-     "published": "2026-11-18T00:02:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피는 17일 전장보다 132.02포인트 내린 4968.48로 마감했다. 젠슨 황 전 엔비디아 최고경영자(CEO) 사태와 미국 정부의 대중(對中) 인공지능(AI"
-    },
-    {
-     "title": "[환율마감] '5천피' 붕괴와 맞물린 달러 독주... 위험 회피 심리가 불러...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627842",
-     "source": "cbci.co.kr",
-     "published": "2026-11-18T00:00:00+09:00",
-     "dup_count": 1,
-     "summary": "이날 코스피는 2.59% 하락한 4,968.48로 마감하며 5,000선 아래로 내려갔다. 외국인 투자자들은 유가증권시장에서 1조4천460억원을 순매도했다. 한편 "
-    },
-    {
-     "title": "코스피, 9개월 만에 종가 5,000선 붕괴... 'AI 흔들·수급 공백·고금리' ...",
-     "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=435637",
-     "source": "dailysportshankook.co.kr",
-     "published": "2026-11-18T00:00:00+09:00",
-     "dup_count": 1,
-     "summary": "17일 한국거래소와 연합인포맥스에 따르면 이날 코스피는 4,968.48로 장을 마감했다. 코스피가 4,000대에서 마감한 것은 지난 2월 2일(4,949.67) "
-    },
-    {
-     "title": "엔비디아 급락에 뉴욕증시 동반 하락",
-     "url": "https://www.radiokorea.com/news/article.php?uid=509814",
-     "source": "radiokorea.com",
-     "published": "2026-11-18T01:46:00+09:00",
+     "published": "2026-11-18T12:04:00+09:00",
      "dup_count": 0,
-     "summary": "여기에 AI 기업들의 주가 거품 우려와 미국 정부의 첨단 반도체 수출 규제 강화까지 겹치면서 투자... 배럴당 92달러 44센트를 기록했다. 투자자들은 17일 장"
+     "summary": "▲ 엔비디아는 3분기 실적이 시장 전망을 웃돌자, 2028 회계연도 매출 증가율 전망을 75%로 높였다.... 연산용 반도체 매출을 반영하지 않았다. 크레스 임시"
     },
     {
-     "title": "9달 만에 5천선 붕괴...이젠 AI가 악재됐다",
-     "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008850644&plink=ORI&cooper=NAVER",
-     "source": "news.sbs.co.kr",
-     "published": "2026-11-18T00:55:00+09:00",
+     "title": "[편집국장의 시선] 젠슨 황의 '오만과 정치'",
+     "url": "https://www.datasom.co.kr/news/articleView.html?idxno=210856",
+     "source": "datasom.co.kr",
+     "published": "2026-11-18T12:00:00+09:00",
      "dup_count": 0,
-     "summary": "AI 관련 악재와 원화 강세가 겹치며 국내 증시가 큰 폭으로 하락했다."
+     "summary": "젠슨 황의 대중국 반도체 수출 제한 완화 시도와 정치적 한계 지적."
     },
     {
-     "title": "'젠슨 황 쇼크'에 5천피 무너져..어디가 바닥인가",
-     "url": "https://imnews.imbc.com/replay/2026/nw2500/article/6866437_36989.html",
-     "source": "imnews.imbc.com",
-     "published": "2026-11-18T00:48:00+09:00",
+     "title": "‘中연루 의혹’ 계속 나오는데...젠슨황 “복귀한다면 영광”",
+     "url": "https://www.munhwa.com/article/11632231?ref=naver",
+     "source": "munhwa.com",
+     "published": "2026-11-18T11:57:00+09:00",
      "dup_count": 0,
-     "summary": "◀ 리포트 ▶ 코스피는 4,968.48로 마감했습니다. 종가 기준 5천 선이 무너진 건 2월 2일 이후 9개월 여 만입니다. SK하이닉스는 109만 8천 원으로,"
+     "summary": "젠슨 황 복귀 의사에도 엔비디아 이사회는 선을 긋고 안보 감독위 신설."
     },
     {
-     "title": "반도체주 추풍낙엽... 연초로 돌아간 코스피, 5000 무너졌다",
-     "url": "https://www.kmib.co.kr/article/20261117501957",
-     "source": "kmib.co.kr",
-     "published": "2026-11-18T00:21:00+09:00",
+     "title": "돌아오려는 젠슨황...엔비디아 이사회는 '퇴짜'",
+     "url": "http://www.yonhapnewstv.co.kr/news/MYH20261118115512nl2",
+     "source": "yonhapnewstv.co.kr",
+     "published": "2026-11-18T11:56:00+09:00",
      "dup_count": 0,
-     "summary": "미국의 반도체 수출 규제 강화와 인공지능(AI) 반도체 출하 전망치 하향 조정이 투자심리를 짓눌렀다. 다만 전문가들은 엔비디아의 3분기 실적 발표와 앤트로픽의 기"
+     "summary": "엔비디아 이사회, 젠슨 황 복귀 거부하고 대중국 수출 통제 위원회 신설."
     },
     {
-     "title": "[오천피추락] 코로나 때보다 더 매섭은 하락세... 7개월 연속 팔아치운 ...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627876",
-     "source": "cbci.co.kr",
-     "published": "2026-11-18T00:10:00+09:00",
+     "title": "젠슨 황 \"복귀 원해\" vs 이사회 \"고려 안해\"...엔비디아 실적은 서프라이...",
+     "url": "https://www.hankyung.com/article/202611184351i",
+     "source": "hankyung.com",
+     "published": "2026-11-18T11:39:00+09:00",
      "dup_count": 0,
-     "summary": "한때 '1만피'를 바라봤던 코스피는 이날 5천선 아래로 내려가며 지난 2월 수준으로 되돌아갔다. 종목별로 보면 SK하이닉스는 1.96% 하락해 109만8천원에 마"
+     "summary": "젠슨 황 복귀 불발 속 엔비디아 3분기 실적 서프라이즈와 수출통제 주목."
     }
    ]
   },
   {
-   "title": "엔비디아 실적 발표 및 관련 규제",
+   "title": "삼성전자·SK하이닉스 등 반도체주 실적 및 증시 영향",
    "sources": [
-    "bntnews.co.kr",
     "g-enews.com",
-    "newspim.com"
+    "kjdaily.com",
+    "mstoday.co.kr",
+    "newsis.com",
+    "slist.kr",
+    "ytn.co.kr"
+   ],
+   "count": 6,
+   "items": [
+    {
+     "title": "엔비디아 깜짝 실적에도 코스피 5000선 재이탈...왜?",
+     "url": "https://www.mstoday.co.kr/news/articleView.html?idxno=200507",
+     "source": "mstoday.co.kr",
+     "published": "2026-11-18T12:04:00+09:00",
+     "dup_count": 5,
+     "summary": "전날 코스피는 2.59% 하락한 4968.48로 마감하며 5000선 아래로 내려왔다. 이날 장 초반 5000선을 회복했지만 다시 하락 전환하면서 반등세가 이어지지"
+    },
+    {
+     "title": "코스피, 다시 장중 4천 선...반도체주 상승 폭 둔화",
+     "url": "https://www.ytn.co.kr/_ln/0102_202611181214007808",
+     "source": "ytn.co.kr",
+     "published": "2026-11-18T12:14:00+09:00",
+     "dup_count": 2,
+     "summary": "코스피 4000선 회복 후 엔비디아 실적 경계감에 반도체주 상승 둔화."
+    },
+    {
+     "title": "코스피, 장중 3%대 급등 뒤 보합권...반도체주 상승폭 축소",
+     "url": "https://www.slist.kr/news/articleView.html?idxno=782796",
+     "source": "slist.kr",
+     "published": "2026-11-18T11:52:00+09:00",
+     "dup_count": 2,
+     "summary": "엔비디아 호실적에도 장 초반 급등한 코스피는 보합권으로 내려와."
+    },
+    {
+     "title": "삼성전자·SK하이닉스 거래 8.3% 증가...비중은↓",
+     "url": "http://www.kjdaily.com/article.php?aid=1794973156692733276",
+     "source": "kjdaily.com",
+     "published": "2026-11-18T12:42:00+09:00",
+     "dup_count": 0,
+     "summary": "엔비디아 호실적에 삼성전자·SK하이닉스 거래 증가 및 증시 반등."
+    },
+    {
+     "title": "역대급 실적에도 주가 디커플링...전문가들 \"매수 기회\" vs \"고금리·AI 의...",
+     "url": "https://www.newsis.com/view/NISX20261118_0003872982",
+     "source": "newsis.com",
+     "published": "2026-11-18T12:02:00+09:00",
+     "dup_count": 0,
+     "summary": "반도체 역대급 실적에도 주가 디커플링, 환율 영향으로 매수 기회 의견."
+    },
+    {
+     "title": "삼전·닉스, 코스피 전체 수익성 견인...3분기 단일 실적은 '주춤'",
+     "url": "https://www.g-enews.com/view.php?ud=202611181110305960923c501012_1",
+     "source": "g-enews.com",
+     "published": "2026-11-18T12:00:00+09:00",
+     "dup_count": 0,
+     "summary": "삼전·닉스 등 대형 반도체주가 코스피 전체 수익성과 기술주 견인."
+    }
+   ]
+  },
+  {
+   "title": "수출 호조와 대비되는 내수 부진 및 경제 양극화",
+   "sources": [
+    "dailian.co.kr",
+    "edaily.co.kr",
+    "jnilbo.com",
+    "munhwa.com",
+    "pressman.kr",
+    "widedaily.com"
+   ],
+   "count": 6,
+   "items": [
+    {
+     "title": "수출 1조 달러 달성과 코스피 5000 붕괴, 한국 경제 두 얼굴[사설]",
+     "url": "https://www.munhwa.com/article/11632261?ref=naver",
+     "source": "munhwa.com",
+     "published": "2026-11-18T12:06:00+09:00",
+     "dup_count": 0,
+     "summary": "한국 수출 1조 달러 달성, 반도체 중심 성장에 IMF도 주목."
+    },
+    {
+     "title": "수출은 사상 최대인데 경제는 역성장...일본 경제의 두 얼굴",
+     "url": "https://www.pressman.kr/news/articleView.html?idxno=104533",
+     "source": "pressman.kr",
+     "published": "2026-11-18T12:04:00+09:00",
+     "dup_count": 0,
+     "summary": "일본 10월 반도체·자동차 수출 사상 최대이나 수입 증가로 고민."
+    },
+    {
+     "title": "3분기 지역경제 '희비'...소비 부진 지역 8→13곳 확산",
+     "url": "https://www.edaily.co.kr/News/Read?newsId=02965126645647032&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+     "source": "edaily.co.kr",
+     "published": "2026-11-18T12:03:00+09:00",
+     "dup_count": 0,
+     "summary": "반도체 호황으로 3분기 전국 수출액 3186억달러 역대 최대 기록."
+    },
+    {
+     "title": "반도체 호황에도 온기 돌지 않는 지역경제...16개 시도 중 13곳 소매판매...",
+     "url": "https://www.dailian.co.kr/news/view/1716553/?sc=Naver",
+     "source": "dailian.co.kr",
+     "published": "2026-11-18T12:01:00+09:00",
+     "dup_count": 0,
+     "summary": "반도체 수출 호황에도 16개 시도 중 13곳 소매판매 부진으로 시름."
+    },
+    {
+     "title": "K-소비재 호황 탄 전남광주...'검은 반도체' 업고 판 키운다",
+     "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000083887",
+     "source": "jnilbo.com",
+     "published": "2026-11-18T12:00:00+09:00",
+     "dup_count": 0,
+     "summary": "10월 반도체 제외 전국 수출 34% 증가, 화장품과 바이오헬스 선전."
+    },
+    {
+     "title": "반도체 호황에도 차가운 내수...음식업 사업자 5년 4개월 만에 최저",
+     "url": "https://www.widedaily.com/news/articleView.html?idxno=304004",
+     "source": "widedaily.com",
+     "published": "2026-11-18T11:40:00+09:00",
+     "dup_count": 0,
+     "summary": "AI 호황과 반도체 수출 최대 실적에도 음식업 사업자 최저 등 내수 냉각."
+    }
+   ]
+  },
+  {
+   "title": "KDI 한국 경제 성장률 전망",
+   "sources": [
+    "ajunews.com",
+    "view.asiae.co.kr",
+    "youthdaily.co.kr"
    ],
    "count": 3,
    "items": [
     {
-     "title": "11월 엔비디아 실적발표일 한국시간은",
-     "url": "https://www.bntnews.co.kr/article/view/bnt202611180002",
-     "source": "bntnews.co.kr",
-     "published": "2026-11-18T03:36:00+09:00",
-     "dup_count": 4,
-     "summary": "엔비디아의 18일 실적발표를 앞두고 시장의 긴장감이 고조되고 있다."
+     "title": "KDI, 내년 한국 성장률 3.9% 전망...IMF·한은 웃도는 '최고치' 제시",
+     "url": "https://www.youthdaily.co.kr/news/article.html?no=230007",
+     "source": "youthdaily.co.kr",
+     "published": "2026-11-18T12:12:00+09:00",
+     "dup_count": 0,
+     "summary": "KDI, 반도체 호조 반영해 내년 한국 경제 성장률 3.9%로 상향."
     },
     {
-     "title": "유럽증시, 기술주가 하락 주도하면서 1.75% 하락... 엔비디아 실적 발표...",
-     "url": "https://www.newspim.com/news/view/20261118000023",
-     "source": "newspim.com",
-     "published": "2026-11-18T03:12:00+09:00",
+     "title": "[성장판 넓히는 韓 경제] 올해보다 내년 더 뛴다...KDI, 성장률 3.8%→3.9%...",
+     "url": "https://www.ajunews.com/view/20261118110333658",
+     "source": "ajunews.com",
+     "published": "2026-11-18T12:02:00+09:00",
      "dup_count": 0,
-     "summary": "엔비디아 실적 발표를 앞둔 경계감에 유럽증시가 기술주 중심로 하락했다."
+     "summary": "반도체 수출 호조에 KDI 내년 성장률 전망 3.9%로 상향 조정."
     },
     {
-     "title": "엔비디아, 中에 GPU 과반 임대하는 업체 칩 공급 제한",
-     "url": "https://www.g-enews.com/view.php?ud=2026111718511770489a1f309431_1",
-     "source": "g-enews.com",
-     "published": "2026-11-18T02:00:00+09:00",
+     "title": "\"연간 4%도 넘본다\" 반도체가 바꾼 성장률...내수와 괴리 커",
+     "url": "https://view.asiae.co.kr/article/2026111811534264996",
+     "source": "view.asiae.co.kr",
+     "published": "2026-11-18T11:59:00+09:00",
      "dup_count": 0,
-     "summary": "엔비디아가 중국의 클라우드 서비스 업체를 향한 칩 공급 제한에 나섰다."
+     "summary": "반도체 사상 최대 수출이 한국 경제 성장 견인, 수출-내수 괴리 심화."
     }
    ]
   },
   {
-   "title": "IMF 한국 성장률 전망 상향",
+   "title": "가계부채 및 은행 대출 동향",
    "sources": [
-    "donga.com",
-    "joongang.co.kr"
+    "edaily.co.kr",
+    "newspim.com",
+    "newsway.co.kr"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "가계빚 증가폭 1년 반 만에 최소...’빚투' 줄고 '영끌'은 계속",
+     "url": "https://www.edaily.co.kr/News/Read?newsId=02961846645647032&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+     "source": "edaily.co.kr",
+     "published": "2026-11-18T12:03:00+09:00",
+     "dup_count": 0,
+     "summary": "금리 인상과 규제 속 가계빚 증가폭 1년 반 만에 최저 수준 기록."
+    },
+    {
+     "title": "가계빚 2030조원 돌파...은행 주택 관련 대출 확대",
+     "url": "https://www.newsway.co.kr/news/view?ud=2026111810474105247",
+     "source": "newsway.co.kr",
+     "published": "2026-11-18T12:02:00+09:00",
+     "dup_count": 0,
+     "summary": "가계빚 2030조원 돌파했으나 증시 조정으로 증권사 신용공여 감소."
+    },
+    {
+     "title": "가계빚 2030조원 '역대 최대'...증시 조정에 '빚투' 줄며 증가세 주춤",
+     "url": "https://www.newspim.com/news/view/20261118000562",
+     "source": "newspim.com",
+     "published": "2026-11-18T12:00:00+09:00",
+     "dup_count": 0,
+     "summary": "증시 조정과 빚투 감소로 가계빚 증가세 주춤, 한은이 주요 원인 분석."
+    }
+   ]
+  },
+  {
+   "title": "대신증권 글로벌 증시전망 세미나 개최",
+   "sources": [
+    "econonews.co.kr",
+    "job-post.co.kr",
+    "updownnews.co.kr"
+   ],
+   "count": 3,
+   "items": [
+    {
+     "title": "대신증권, 26일 '2027년 글로벌 증시전망' 세미나...한·미·일·대만 투자...",
+     "url": "https://www.job-post.co.kr/news/articleView.html?idxno=239215",
+     "source": "job-post.co.kr",
+     "published": "2026-11-18T12:02:00+09:00",
+     "dup_count": 3,
+     "summary": "대신증권은 오는 26일 오후 4시 공식 유튜브 채널 '대신TV'를 통해 '2027년 글로벌 증시전망' 라이브 세미나를 진행한다고 18일 밝혔다. 이번 강연은 총 "
+    },
+    {
+     "title": "대신증권, 26일 '2027년 글로벌 증시전망' 온라인 세미나 개최",
+     "url": "http://www.econonews.co.kr/news/articleView.html?idxno=447341",
+     "source": "econonews.co.kr",
+     "published": "2026-11-18T11:42:00+09:00",
+     "dup_count": 3,
+     "summary": "대신증권, 오는 26일 유튜브 '대신TV' 통해 글로벌 증시전망 세미나 진행."
+    },
+    {
+     "title": "대신증권, 내년 상반기 글로벌 증시전망 세미나...한·미·일·대만 시장...",
+     "url": "https://www.updownnews.co.kr/news/articleView.html?idxno=319633",
+     "source": "updownnews.co.kr",
+     "published": "2026-11-18T12:02:00+09:00",
+     "dup_count": 1,
+     "summary": "대신증권, 26일 유튜브 채널 '대신TV'서 글로벌 증시전망 세미나 개최."
+    }
+   ]
+  },
+  {
+   "title": "은행 부실대출 및 무수익여신 증가",
+   "sources": [
+    "polinews.co.kr",
+    "thepublic.kr"
    ],
    "count": 2,
    "items": [
     {
-     "title": "IMF, 올해 한국 성장률 3.9%로 상향 조정",
-     "url": "https://www.joongang.co.kr/article/25479573",
-     "source": "joongang.co.kr",
-     "published": "2026-11-18T00:02:00+09:00",
-     "dup_count": 1,
-     "summary": "코린 들레샤 IMF 한국 미션단장은 이날 브리핑에서 “반도체 수출과 공공 투자 등 예상보다 좋은 실적이 나온 3분기 실적을 반영한 결과, 상향 전망을 내놓는 것이"
+     "title": "4대 은행 무수익여신 5조원 돌파...기업 부실대출 44% 급증",
+     "url": "https://www.polinews.co.kr/news/articleView.html?idxno=748633",
+     "source": "polinews.co.kr",
+     "published": "2026-11-18T12:00:00+09:00",
+     "dup_count": 0,
+     "summary": "반도체는 호황이나 4대 은행 기업 부실대출은 44% 급증해 대조."
     },
     {
-     "title": "IMF, 올해 韓성장률 3.9% 전망... 반도체 호황에 한달새 0.6%P 올려",
-     "url": "https://www.donga.com/news/Economy/article/all/20261117/135041930/2",
-     "source": "donga.com",
-     "published": "2026-11-18T00:31:00+09:00",
+     "title": "이자도 못 갚는 '깡통대출' 5조원 돌파...증가액 93%가 기업대출",
+     "url": "https://www.thepublic.kr/news/articleView.html?idxno=327290",
+     "source": "thepublic.kr",
+     "published": "2026-11-18T11:58:00+09:00",
      "dup_count": 0,
-     "summary": "반도체 초호황으로 사상 첫 1조 달러 달성을 눈앞에 둔 수출 실적이 한국 경제에 성장 동력을 제공한 결과라고 분석했다. IMF 협의단은 17일 한국과 연례협의를 "
+     "summary": "반도체 호황과 달리 중소기업 중심 부실대출 5조원 돌파하며 악화."
     }
    ]
   },
   {
-   "title": "수능 날 은행 영업시간 및 일정",
+   "title": "아델 윤승용 대표 인터뷰 및 오버행 우려",
    "sources": [
-    "wikitree.co.kr"
+    "newspost.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "수능날 은행 문 왜 안 열지?...19일 전국적으로 달라지는 것들",
-     "url": "https://www.wikitree.co.kr/articles/1174912",
-     "source": "wikitree.co.kr",
-     "published": "2026-11-18T03:00:00+09:00",
-     "dup_count": 1,
-     "summary": "19일 수능일을 맞아 국내 주요 금융상품들의 개장 시간이 늦춰진다."
-    }
-   ]
-  },
-  {
-   "title": "NH투자증권 내년 코스피 전망",
-   "sources": [
-    "webeconomy.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[NH투자증권] 내년 코스피 목표 9,200 제시...신규 고객에 최고 연 5.05% 발...",
-     "url": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2378293",
-     "source": "webeconomy.co.kr",
-     "published": "2026-11-18T01:06:00+09:00",
+     "title": "[현장] 윤승용 아델 대표 \"2027년 ADEL-Y04 기술이전, 오버행 제한적\"",
+     "url": "https://www.newspost.kr/news/articleView.html?idxno=227539",
+     "source": "newspost.kr",
+     "published": "2026-11-18T12:24:00+09:00",
      "dup_count": 0,
-     "summary": "NH투자증권이 2027년 코스피 연간 목표치로 9,200포인트를 제시했다."
+     "summary": "아델, 2027년 ADEL-Y04 기술이전 목표로 12월 2일 코스닥 상장."
     }
    ]
   },
   {
-   "title": "원·달러 환율 및 외환시장 마감",
+   "title": "코스피 시황 및 증시 관련 뉴스",
    "sources": [
-    "cbci.co.kr"
+    "junggi.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "[외국환시세 마감] 1,330원 선 안착한 원·달러 환율... 주요국 통화별 오...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627834",
-     "source": "cbci.co.kr",
-     "published": "2026-11-18T01:00:00+09:00",
+     "title": "[오전시황] 코스피,5000선 지키나...예선테크 상한가, 하한가는 비츠로시...",
+     "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38544",
+     "source": "junggi.co.kr",
+     "published": "2026-11-18T12:16:00+09:00",
      "dup_count": 0,
-     "summary": "17일 서울 외환시장에서 원·달러 환율이 1,330원 선에 안착했다."
+     "summary": "코스피 5000선 공방 속 예선테크 상한가, 수능일 개장 한 시간 지연."
     }
    ]
   },
   {
-   "title": "삼성전자 인버스 ETF 상승",
+   "title": "IMF 한국 경제 성장률 전망 및 금리 정책",
    "sources": [
-    "kjdaily.com"
+    "mdtoday.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "삼성전자 인버스 ETF 5.99%·원유 인버스 ETN 10.02% 상승",
-     "url": "http://www.kjdaily.com/article.php?aid=1794930625692616276",
-     "source": "kjdaily.com",
-     "published": "2026-11-18T00:52:00+09:00",
-     "dup_count": 2,
-     "summary": "코스피 4거래일 연속 하락과 외국인 순매도에 인버스 상품"
-    }
-   ]
-  },
-  {
-   "title": "트럼프·민주당 정책과 달러 패권",
-   "sources": [
-    "chosun.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[뉴스 저격] “트럼프·민주당 돈 풀기 경쟁... 달러 패권, 미국 스스로 ...",
-     "url": "https://www.chosun.com/economy/economy_general/2026/11/18/MYSWFIXLINBPLCVXUOAHCQEDDE/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-     "source": "chosun.com",
-     "published": "2026-11-18T00:51:00+09:00",
+     "title": "[분석] IMF, 한국 성장률 3.9%로 상향 및 긴축 권고...\"금리 인상에 무게...",
+     "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=625984",
+     "source": "mdtoday.co.kr",
+     "published": "2026-11-18T11:50:00+09:00",
      "dup_count": 0,
-     "summary": "중앙은행은 정말 중요하다. 정치권의 요구에 휘둘리지 않는, 오로지 물가 하나에만 집중하는 연준 말이다. 나는 지금 상황이라면 연준이 6개월, 늦어도 1년 안에 두"
+     "summary": "IMF 한국 성장률 3.9% 상향에 한은 추가 기준금리 인상 무게 실려."
     }
    ]
   },
   {
-   "title": "에너지 정책 관련 칼럼",
+   "title": "증시 조정에 따른 가계 주식가치 하락과 소비 타격",
    "sources": [
-    "chosun.com"
+    "munhwa.com"
    ],
    "count": 1,
    "items": [
     {
-     "title": "“한은이 금리 정하듯, 에너지 정책도 이념서 분리해야”",
-     "url": "https://www.chosun.com/international/international_general/2026/11/18/H6CRY6NX65CANPIF4WG4AOM76Q/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-     "source": "chosun.com",
-     "published": "2026-11-18T00:41:00+09:00",
+     "title": "가계 보유 주식가치 721조 허공으로... 소비 타격받나",
+     "url": "https://www.munhwa.com/article/11632205?ref=naver",
+     "source": "munhwa.com",
+     "published": "2026-11-18T11:45:00+09:00",
      "dup_count": 0,
-     "summary": "그는 “삭스 교수는 ‘미국의 번영 원인을 중앙은행의 독립성에 있다’면서 에너지 정책도 똑같은 이치라고 했다”며 “한국은행이 독립적으로 기준금리를 결정하듯 에너지 "
-    }
-   ]
-  },
-  {
-   "title": "옵토닉스 코스닥 상장 첫날 동향",
-   "sources": [
-    "cbci.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[따블열풍] 장 초반 '따블' 넘었다가 주춤... 코스닥 입성 첫날 옵토닉스...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627918",
-     "source": "cbci.co.kr",
-     "published": "2026-11-18T00:30:00+09:00",
-     "dup_count": 0,
-     "summary": "옵토닉스, 코스닥 상장 첫날 51.42% 상승 마감...1만8천170원 [옵토닉스 제공. 재판매 및 DB 금지] 방산 및 항공우주 산업에 사용되는 초정밀 광학부품"
-    }
-   ]
-  },
-  {
-   "title": "한샘 공매도 비중",
-   "sources": [
-    "kjdaily.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "한샘 공매도 비중 40.54% 코스피 1위",
-     "url": "http://www.kjdaily.com/article.php?aid=1794929020692716276",
-     "source": "kjdaily.com",
-     "published": "2026-11-18T00:26:00+09:00",
-     "dup_count": 2,
-     "summary": "이날 코스피는 전 거래일보다 132.02포인트(2.59%) 내린 4,968.48로 마감했다. 지난 12일부터 4거래일 연속 하락했으며 종가 기준 5,000선 아래"
-    }
-   ]
-  },
-  {
-   "title": "두산에너빌리티 주가 하락",
-   "sources": [
-    "cbci.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "두산에너빌리티 주가 4만3000원선 하회, 52주 최저가까지...양대지수 약...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627746",
-     "source": "cbci.co.kr",
-     "published": "2026-11-18T00:16:00+09:00",
-     "dup_count": 1,
-     "summary": "이날 코스피는 2.59% 하락해 4968.48에 마감했으며 코스닥 역시 2.34% 내린 650.06에 마쳤다. 양대지수가 나란히 약세를 나타내면서 개별 종목들의 "
-    }
-   ]
-  },
-  {
-   "title": "삼성전자·SK하이닉스 주가",
-   "sources": [
-    "m.skyedaily.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[스카이View] 코스피의 불안한 두 기둥, 삼전·하닉",
-     "url": "https://m.skyedaily.com/news_view.html?ID=314726",
-     "source": "m.skyedaily.com",
-     "published": "2026-11-18T00:04:00+09:00",
-     "dup_count": 1,
-     "summary": "장 마감 지수를 확인할 때면 ‘한국 증시에는 삼성전자와 SK하이닉스만 있나’ 하는 생각이 들 정도다. 자동차와 조선, 금융, 바이오 등 다양한 기업이 있지만 코스"
-    }
-   ]
-  },
-  {
-   "title": "공매도 금지 종목",
-   "sources": [
-    "kjdaily.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "지니틱스·삼영 등 18종목 18일 공매도 금지",
-     "url": "http://www.kjdaily.com/article.php?aid=1794927666692717276",
-     "source": "kjdaily.com",
-     "published": "2026-11-18T00:04:00+09:00",
-     "dup_count": 1,
-     "summary": "이날 코스피는 전 거래일보다 132.02포인트(2.59%) 내린 4,968.48로 마감했다. 지난 12일부터 4거래일 연속 하락했으며 종가 기준 5,000선 아래"
-    }
-   ]
-  },
-  {
-   "title": "전기차 시장 관련 칼럼",
-   "sources": [
-    "dailycar.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[김필수 칼럼] 국내 전기차 시장의 마지막 보루..중고가 전기차만 남았...",
-     "url": "https://www.dailycar.co.kr/content/news.html?type=view&autoId=63163",
-     "source": "dailycar.co.kr",
-     "published": "2026-11-18T00:04:00+09:00",
-     "dup_count": 0,
-     "summary": "우선 정부도 현재의 자동차 산업의 위기를 심각하게 느끼지 못하고 반도체 등 극히 일부 만의 실적으로만 포장하고 있는 형국이다. 글로벌 네 번째 1조 달러 수출 달"
-    }
-   ]
-  },
-  {
-   "title": "성장률 상향과 5000선 붕괴 관련 사설",
-   "sources": [
-    "sedaily.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[사설]성장률 올린 날 5000선 붕괴...나랏돈 허투루 쓸 때 아니다",
-     "url": "https://www.sedaily.com/article/20115620?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-11-18T00:02:00+09:00",
-     "dup_count": 0,
-     "summary": "이처럼 우리 경제에 대한 낙관론이 커지는 가운데 코스피는 이날 전장보다 2.59% 내린 4968.48로 마감했다. 종가 기준으로 5000선이 붕괴되기는 지난 2월"
-    }
-   ]
-  },
-  {
-   "title": "에이엘로봇 코스닥 상장",
-   "sources": [
-    "cbci.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[공모주 HOT] 에이엘로봇 공모주 18일 코스닥 상장...토크센서와 융합 제...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627776",
-     "source": "cbci.co.kr",
-     "published": "2026-11-18T00:00:00+09:00",
-     "dup_count": 0,
-     "summary": "에이엘로봇(471800)이 오는 18일 코스닥 시장에 입성한다. 일반 공모주 청약에서 약 4조4100억원의 증거금을... 지난 9일 마감된 일반 청약에는 17만8"
+     "summary": "반도체 수출은 호조이나 증시 조정 장기화로 자산 가치 하락과 내수 우려."
     }
    ]
   }
  ],
  "items": [
   {
-   "title": "11월 엔비디아 실적발표일 한국시간은",
-   "url": "https://www.bntnews.co.kr/article/view/bnt202611180002",
-   "source": "bntnews.co.kr",
-   "published": "2026-11-18T03:36:00+09:00",
-   "dup_count": 4,
-   "summary": "엔비디아의 18일 실적발표를 앞두고 시장의 긴장감이 고조되고 있다."
-  },
-  {
-   "title": "유럽증시, 기술주가 하락 주도하면서 1.75% 하락... 엔비디아 실적 발표...",
-   "url": "https://www.newspim.com/news/view/20261118000023",
-   "source": "newspim.com",
-   "published": "2026-11-18T03:12:00+09:00",
+   "title": "젠슨 황 없는 엔비디아, 올해 3Q 매출 '103%↑'...역대 최대",
+   "url": "https://www.asiatime.co.kr/article/20261118500172",
+   "source": "asiatime.co.kr",
+   "published": "2026-11-18T12:44:00+09:00",
    "dup_count": 0,
-   "summary": "엔비디아 실적 발표를 앞둔 경계감에 유럽증시가 기술주 중심로 하락했다."
+   "summary": "엔비디아, 3분기 매출 103% 증가하며 역대 최대 실적 기록."
   },
   {
-   "title": "수능날 은행 문 왜 안 열지?...19일 전국적으로 달라지는 것들",
-   "url": "https://www.wikitree.co.kr/articles/1174912",
-   "source": "wikitree.co.kr",
-   "published": "2026-11-18T03:00:00+09:00",
-   "dup_count": 1,
-   "summary": "19일 수능일을 맞아 국내 주요 금융상품들의 개장 시간이 늦춰진다."
-  },
-  {
-   "title": "엔비디아, 中에 GPU 과반 임대하는 업체 칩 공급 제한",
-   "url": "https://www.g-enews.com/view.php?ud=2026111718511770489a1f309431_1",
-   "source": "g-enews.com",
-   "published": "2026-11-18T02:00:00+09:00",
-   "dup_count": 0,
-   "summary": "엔비디아가 중국의 클라우드 서비스 업체를 향한 칩 공급 제한에 나섰다."
-  },
-  {
-   "title": "엔비디아 급락에 뉴욕증시 동반 하락",
-   "url": "https://www.radiokorea.com/news/article.php?uid=509814",
-   "source": "radiokorea.com",
-   "published": "2026-11-18T01:46:00+09:00",
-   "dup_count": 0,
-   "summary": "여기에 AI 기업들의 주가 거품 우려와 미국 정부의 첨단 반도체 수출 규제 강화까지 겹치면서 투자... 배럴당 92달러 44센트를 기록했다. 투자자들은 17일 장"
-  },
-  {
-   "title": "[뉴스이슈&비즈] 젠슨황·앤트로픽·금리 '삼중고'에 코스피 9개월만에...",
-   "url": "http://www.issuenbiz.com/news/articleView.html?idxno=81700",
-   "source": "issuenbiz.com",
-   "published": "2026-11-18T01:30:00+09:00",
-   "dup_count": 3,
-   "summary": "젠슨 황 사태 등 삼중고를 겪은 코스피가 9개월 만에 5000선을 내줬다."
-  },
-  {
-   "title": "[NH투자증권] 내년 코스피 목표 9,200 제시...신규 고객에 최고 연 5.05% 발...",
-   "url": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2378293",
-   "source": "webeconomy.co.kr",
-   "published": "2026-11-18T01:06:00+09:00",
-   "dup_count": 0,
-   "summary": "NH투자증권이 2027년 코스피 연간 목표치로 9,200포인트를 제시했다."
-  },
-  {
-   "title": "[외국환시세 마감] 1,330원 선 안착한 원·달러 환율... 주요국 통화별 오...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627834",
-   "source": "cbci.co.kr",
-   "published": "2026-11-18T01:00:00+09:00",
-   "dup_count": 0,
-   "summary": "17일 서울 외환시장에서 원·달러 환율이 1,330원 선에 안착했다."
-  },
-  {
-   "title": "9달 만에 5천선 붕괴...이젠 AI가 악재됐다",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008850644&plink=ORI&cooper=NAVER",
-   "source": "news.sbs.co.kr",
-   "published": "2026-11-18T00:55:00+09:00",
-   "dup_count": 0,
-   "summary": "AI 관련 악재와 원화 강세가 겹치며 국내 증시가 큰 폭으로 하락했다."
-  },
-  {
-   "title": "삼성전자 인버스 ETF 5.99%·원유 인버스 ETN 10.02% 상승",
-   "url": "http://www.kjdaily.com/article.php?aid=1794930625692616276",
+   "title": "삼성전자·SK하이닉스 거래 8.3% 증가...비중은↓",
+   "url": "http://www.kjdaily.com/article.php?aid=1794973156692733276",
    "source": "kjdaily.com",
-   "published": "2026-11-18T00:52:00+09:00",
+   "published": "2026-11-18T12:42:00+09:00",
+   "dup_count": 0,
+   "summary": "엔비디아 호실적에 삼성전자·SK하이닉스 거래 증가 및 증시 반등."
+  },
+  {
+   "title": "[현장] 윤승용 아델 대표 \"2027년 ADEL-Y04 기술이전, 오버행 제한적\"",
+   "url": "https://www.newspost.kr/news/articleView.html?idxno=227539",
+   "source": "newspost.kr",
+   "published": "2026-11-18T12:24:00+09:00",
+   "dup_count": 0,
+   "summary": "아델, 2027년 ADEL-Y04 기술이전 목표로 12월 2일 코스닥 상장."
+  },
+  {
+   "title": "[오전시황] 코스피,5000선 지키나...예선테크 상한가, 하한가는 비츠로시...",
+   "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38544",
+   "source": "junggi.co.kr",
+   "published": "2026-11-18T12:16:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피 5000선 공방 속 예선테크 상한가, 수능일 개장 한 시간 지연."
+  },
+  {
+   "title": "코스피, 다시 장중 4천 선...반도체주 상승 폭 둔화",
+   "url": "https://www.ytn.co.kr/_ln/0102_202611181214007808",
+   "source": "ytn.co.kr",
+   "published": "2026-11-18T12:14:00+09:00",
    "dup_count": 2,
-   "summary": "코스피 4거래일 연속 하락과 외국인 순매도에 인버스 상품"
+   "summary": "코스피 4000선 회복 후 엔비디아 실적 경계감에 반도체주 상승 둔화."
   },
   {
-   "title": "[뉴스 저격] “트럼프·민주당 돈 풀기 경쟁... 달러 패권, 미국 스스로 ...",
-   "url": "https://www.chosun.com/economy/economy_general/2026/11/18/MYSWFIXLINBPLCVXUOAHCQEDDE/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "source": "chosun.com",
-   "published": "2026-11-18T00:51:00+09:00",
+   "title": "젠슨 황 떠난 엔비디아, AI 수요는 여전...경영 공백 우려 잠재울까",
+   "url": "https://www.kukinews.com/article/view/kuk202611180114",
+   "source": "kukinews.com",
+   "published": "2026-11-18T12:14:00+09:00",
    "dup_count": 0,
-   "summary": "중앙은행은 정말 중요하다. 정치권의 요구에 휘둘리지 않는, 오로지 물가 하나에만 집중하는 연준 말이다. 나는 지금 상황이라면 연준이 6개월, 늦어도 1년 안에 두"
+   "summary": "엔비디아, 중국 수출 규제에도 AI 반도체 수요로 성장세 지속 자신."
   },
   {
-   "title": "'젠슨 황 쇼크'에 5천피 무너져..어디가 바닥인가",
-   "url": "https://imnews.imbc.com/replay/2026/nw2500/article/6866437_36989.html",
-   "source": "imnews.imbc.com",
-   "published": "2026-11-18T00:48:00+09:00",
+   "title": "엔비디아 3분기 매출 두 배 뛰었다...삼성·SK하이닉스에 쏠리는 기대",
+   "url": "https://dealsite.co.kr/articles/173043",
+   "source": "dealsite.co.kr",
+   "published": "2026-11-18T12:12:00+09:00",
    "dup_count": 0,
-   "summary": "◀ 리포트 ▶ 코스피는 4,968.48로 마감했습니다. 종가 기준 5천 선이 무너진 건 2월 2일 이후 9개월 여 만입니다. SK하이닉스는 109만 8천 원으로,"
+   "summary": "엔비디아 3분기 매출 두 배 증가, 새 경영진의 대중국 전략 주목."
   },
   {
-   "title": "“한은이 금리 정하듯, 에너지 정책도 이념서 분리해야”",
-   "url": "https://www.chosun.com/international/international_general/2026/11/18/H6CRY6NX65CANPIF4WG4AOM76Q/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "source": "chosun.com",
-   "published": "2026-11-18T00:41:00+09:00",
+   "title": "KDI, 내년 한국 성장률 3.9% 전망...IMF·한은 웃도는 '최고치' 제시",
+   "url": "https://www.youthdaily.co.kr/news/article.html?no=230007",
+   "source": "youthdaily.co.kr",
+   "published": "2026-11-18T12:12:00+09:00",
    "dup_count": 0,
-   "summary": "그는 “삭스 교수는 ‘미국의 번영 원인을 중앙은행의 독립성에 있다’면서 에너지 정책도 똑같은 이치라고 했다”며 “한국은행이 독립적으로 기준금리를 결정하듯 에너지 "
+   "summary": "KDI, 반도체 호조 반영해 내년 한국 경제 성장률 3.9%로 상향."
   },
   {
-   "title": "국고채 금리 혼조 마감...코스피 5,000선 붕괴에 중단기물 하락",
-   "url": "http://www.kjdaily.com/article.php?aid=1794929615692614276",
-   "source": "kjdaily.com",
-   "published": "2026-11-18T00:36:00+09:00",
-   "dup_count": 1,
-   "summary": "코스피는 이날 전 거래일보다 132.02포인트(2.59%) 하락한 4,968.48에 마감했다. 종가 기준 5,000선을 밑돈 것은 지난 2월 2일 이후 9개월여 "
-  },
-  {
-   "title": "외국인, 1.4조 넘게 던졌다... 9개월 만에 다시 ‘4천피’",
-   "url": "https://www.chosun.com/economy/stock-finance/2026/11/18/MNLJDAELCBB7RISG3FJKIKDDQM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "source": "chosun.com",
-   "published": "2026-11-18T00:32:00+09:00",
-   "dup_count": 1,
-   "summary": "6월 고점 대비 거의 반토막 수준 3줄 요약 ᆞ외국인 3거래일 연속 순매도에 4968 마감 ᆞ엔비디아 CEO 사임과 대중 수출 규제 여파 ᆞ삼성전자 SK하이닉스 "
-  },
-  {
-   "title": "IMF, 올해 韓성장률 3.9% 전망... 반도체 호황에 한달새 0.6%P 올려",
-   "url": "https://www.donga.com/news/Economy/article/all/20261117/135041930/2",
-   "source": "donga.com",
-   "published": "2026-11-18T00:31:00+09:00",
+   "title": "수출 1조 달러 달성과 코스피 5000 붕괴, 한국 경제 두 얼굴[사설]",
+   "url": "https://www.munhwa.com/article/11632261?ref=naver",
+   "source": "munhwa.com",
+   "published": "2026-11-18T12:06:00+09:00",
    "dup_count": 0,
-   "summary": "반도체 초호황으로 사상 첫 1조 달러 달성을 눈앞에 둔 수출 실적이 한국 경제에 성장 동력을 제공한 결과라고 분석했다. IMF 협의단은 17일 한국과 연례협의를 "
+   "summary": "한국 수출 1조 달러 달성, 반도체 중심 성장에 IMF도 주목."
   },
   {
-   "title": "[따블열풍] 장 초반 '따블' 넘었다가 주춤... 코스닥 입성 첫날 옵토닉스...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627918",
-   "source": "cbci.co.kr",
-   "published": "2026-11-18T00:30:00+09:00",
-   "dup_count": 0,
-   "summary": "옵토닉스, 코스닥 상장 첫날 51.42% 상승 마감...1만8천170원 [옵토닉스 제공. 재판매 및 DB 금지] 방산 및 항공우주 산업에 사용되는 초정밀 광학부품"
+   "title": "엔비디아 깜짝 실적에도 코스피 5000선 재이탈...왜?",
+   "url": "https://www.mstoday.co.kr/news/articleView.html?idxno=200507",
+   "source": "mstoday.co.kr",
+   "published": "2026-11-18T12:04:00+09:00",
+   "dup_count": 5,
+   "summary": "전날 코스피는 2.59% 하락한 4968.48로 마감하며 5000선 아래로 내려왔다. 이날 장 초반 5000선을 회복했지만 다시 하락 전환하면서 반등세가 이어지지"
   },
   {
-   "title": "코스피 5천선 붕괴에도...개미들 레버리지 ETF 집중 매수",
-   "url": "http://www.kjdaily.com/article.php?aid=1794929067692613276",
-   "source": "kjdaily.com",
-   "published": "2026-11-18T00:26:00+09:00",
-   "dup_count": 1,
-   "summary": "이미지=아이클릭아트-16~17일 코스닥150레버리지 1천663억원 순매수 -KODEX 레버리지 1천46억원...ETF 전체 2위 -반도체·SK하이닉스 레버리지 상"
-  },
-  {
-   "title": "한샘 공매도 비중 40.54% 코스피 1위",
-   "url": "http://www.kjdaily.com/article.php?aid=1794929020692716276",
-   "source": "kjdaily.com",
-   "published": "2026-11-18T00:26:00+09:00",
-   "dup_count": 2,
-   "summary": "이날 코스피는 전 거래일보다 132.02포인트(2.59%) 내린 4,968.48로 마감했다. 지난 12일부터 4거래일 연속 하락했으며 종가 기준 5,000선 아래"
-  },
-  {
-   "title": "반도체주 추풍낙엽... 연초로 돌아간 코스피, 5000 무너졌다",
-   "url": "https://www.kmib.co.kr/article/20261117501957",
-   "source": "kmib.co.kr",
-   "published": "2026-11-18T00:21:00+09:00",
-   "dup_count": 0,
-   "summary": "미국의 반도체 수출 규제 강화와 인공지능(AI) 반도체 출하 전망치 하향 조정이 투자심리를 짓눌렀다. 다만 전문가들은 엔비디아의 3분기 실적 발표와 앤트로픽의 기"
-  },
-  {
-   "title": "삼성전자·SK하이닉스 동반 하락...SK그룹 시총 1천조원 붕괴",
-   "url": "http://www.kjdaily.com/article.php?aid=1794928506692719276",
-   "source": "kjdaily.com",
-   "published": "2026-11-18T00:18:00+09:00",
-   "dup_count": 2,
-   "summary": "삼성전자도 3.30% 하락한 19만300원에 마감했다. 반도체 대형주의 약세 속에 코스피는 전 거래일보다 132.02포인트(2.59%) 떨어진 4,968.48로 "
-  },
-  {
-   "title": "두산에너빌리티 주가 4만3000원선 하회, 52주 최저가까지...양대지수 약...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627746",
-   "source": "cbci.co.kr",
-   "published": "2026-11-18T00:16:00+09:00",
-   "dup_count": 1,
-   "summary": "이날 코스피는 2.59% 하락해 4968.48에 마감했으며 코스닥 역시 2.34% 내린 650.06에 마쳤다. 양대지수가 나란히 약세를 나타내면서 개별 종목들의 "
-  },
-  {
-   "title": "[오천피추락] 코로나 때보다 더 매섭은 하락세... 7개월 연속 팔아치운 ...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627876",
-   "source": "cbci.co.kr",
-   "published": "2026-11-18T00:10:00+09:00",
-   "dup_count": 0,
-   "summary": "한때 '1만피'를 바라봤던 코스피는 이날 5천선 아래로 내려가며 지난 2월 수준으로 되돌아갔다. 종목별로 보면 SK하이닉스는 1.96% 하락해 109만8천원에 마"
-  },
-  {
-   "title": "[오천피붕괴] '5천피'마저 내준 코스피와 1천조원 깨진 SK그룹... 증시 뒤...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627807",
-   "source": "cbci.co.kr",
-   "published": "2026-11-18T00:06:00+09:00",
-   "dup_count": 2,
-   "summary": "이날 코스피 지수는 4,968.48로 마감해 약 9개월 만에 5,000선 아래로 내려갔다. 삼성전자와 SK하이닉스 등 반도체주가 하락하면서 지수 하락을 이끌었다."
-  },
-  {
-   "title": "[스카이View] 코스피의 불안한 두 기둥, 삼전·하닉",
-   "url": "https://m.skyedaily.com/news_view.html?ID=314726",
-   "source": "m.skyedaily.com",
-   "published": "2026-11-18T00:04:00+09:00",
-   "dup_count": 1,
-   "summary": "장 마감 지수를 확인할 때면 ‘한국 증시에는 삼성전자와 SK하이닉스만 있나’ 하는 생각이 들 정도다. 자동차와 조선, 금융, 바이오 등 다양한 기업이 있지만 코스"
-  },
-  {
-   "title": "지니틱스·삼영 등 18종목 18일 공매도 금지",
-   "url": "http://www.kjdaily.com/article.php?aid=1794927666692717276",
-   "source": "kjdaily.com",
-   "published": "2026-11-18T00:04:00+09:00",
-   "dup_count": 1,
-   "summary": "이날 코스피는 전 거래일보다 132.02포인트(2.59%) 내린 4,968.48로 마감했다. 지난 12일부터 4거래일 연속 하락했으며 종가 기준 5,000선 아래"
-  },
-  {
-   "title": "[김필수 칼럼] 국내 전기차 시장의 마지막 보루..중고가 전기차만 남았...",
-   "url": "https://www.dailycar.co.kr/content/news.html?type=view&autoId=63163",
-   "source": "dailycar.co.kr",
-   "published": "2026-11-18T00:04:00+09:00",
-   "dup_count": 0,
-   "summary": "우선 정부도 현재의 자동차 산업의 위기를 심각하게 느끼지 못하고 반도체 등 극히 일부 만의 실적으로만 포장하고 있는 형국이다. 글로벌 네 번째 1조 달러 수출 달"
-  },
-  {
-   "title": "코스피 5000도 무너졌다...막 내린 ‘묻지마 AI 투자’ 시대",
-   "url": "https://www.joongang.co.kr/article/25479584",
-   "source": "joongang.co.kr",
-   "published": "2026-11-18T00:02:00+09:00",
-   "dup_count": 1,
-   "summary": "17일 코스피는 전 거래일 대비 132.02포인트(2.59%) 내린 4968.48에 마감했다. 코스피가 5000선 아래에서 마감한 것은 지난 2월 2일(4949."
-  },
-  {
-   "title": "[사설]성장률 올린 날 5000선 붕괴...나랏돈 허투루 쓸 때 아니다",
-   "url": "https://www.sedaily.com/article/20115620?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-11-18T00:02:00+09:00",
-   "dup_count": 0,
-   "summary": "이처럼 우리 경제에 대한 낙관론이 커지는 가운데 코스피는 이날 전장보다 2.59% 내린 4968.48로 마감했다. 종가 기준으로 5000선이 붕괴되기는 지난 2월"
-  },
-  {
-   "title": "[증시 프리즘] '5천피' 후퇴에 코스닥도 직격탄...시총 상위주 줄줄이 급...",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=94557",
-   "source": "thefairnews.co.kr",
-   "published": "2026-11-18T00:02:00+09:00",
-   "dup_count": 1,
-   "summary": "코스피가 5,000선을 내어주며 급락세를 보인 여파로 코스닥 시장 역시 시가총액 상위 종목들이 일제히... 2차전지, 바이오, 반도체 소부장 등 코스닥 주도주 대"
-  },
-  {
-   "title": "[사설] 코스피 5000 붕괴, '역(逆)자산효과' 대책 있나",
-   "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261117010006666",
+   "title": "엔비디아, 3분기 매출 1158억달러...시간 외 5% 급등·이사회 \"황 복직 안...",
+   "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261118010006974",
    "source": "asiatoday.co.kr",
-   "published": "2026-11-18T00:02:00+09:00",
-   "dup_count": 1,
-   "summary": "코스피는 17일 전장보다 132.02포인트 내린 4968.48로 마감했다. 젠슨 황 전 엔비디아 최고경영자(CEO) 사태와 미국 정부의 대중(對中) 인공지능(AI"
-  },
-  {
-   "title": "IMF, 올해 한국 성장률 3.9%로 상향 조정",
-   "url": "https://www.joongang.co.kr/article/25479573",
-   "source": "joongang.co.kr",
-   "published": "2026-11-18T00:02:00+09:00",
-   "dup_count": 1,
-   "summary": "코린 들레샤 IMF 한국 미션단장은 이날 브리핑에서 “반도체 수출과 공공 투자 등 예상보다 좋은 실적이 나온 3분기 실적을 반영한 결과, 상향 전망을 내놓는 것이"
-  },
-  {
-   "title": "[환율마감] '5천피' 붕괴와 맞물린 달러 독주... 위험 회피 심리가 불러...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627842",
-   "source": "cbci.co.kr",
-   "published": "2026-11-18T00:00:00+09:00",
-   "dup_count": 1,
-   "summary": "이날 코스피는 2.59% 하락한 4,968.48로 마감하며 5,000선 아래로 내려갔다. 외국인 투자자들은 유가증권시장에서 1조4천460억원을 순매도했다. 한편 "
-  },
-  {
-   "title": "코스피, 9개월 만에 종가 5,000선 붕괴... 'AI 흔들·수급 공백·고금리' ...",
-   "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=435637",
-   "source": "dailysportshankook.co.kr",
-   "published": "2026-11-18T00:00:00+09:00",
-   "dup_count": 1,
-   "summary": "17일 한국거래소와 연합인포맥스에 따르면 이날 코스피는 4,968.48로 장을 마감했다. 코스피가 4,000대에서 마감한 것은 지난 2월 2일(4,949.67) "
-  },
-  {
-   "title": "[공모주 HOT] 에이엘로봇 공모주 18일 코스닥 상장...토크센서와 융합 제...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627776",
-   "source": "cbci.co.kr",
-   "published": "2026-11-18T00:00:00+09:00",
+   "published": "2026-11-18T12:04:00+09:00",
    "dup_count": 0,
-   "summary": "에이엘로봇(471800)이 오는 18일 코스닥 시장에 입성한다. 일반 공모주 청약에서 약 4조4100억원의 증거금을... 지난 9일 마감된 일반 청약에는 17만8"
+   "summary": "▲ 엔비디아는 3분기 실적이 시장 전망을 웃돌자, 2028 회계연도 매출 증가율 전망을 75%로 높였다.... 연산용 반도체 매출을 반영하지 않았다. 크레스 임시"
+  },
+  {
+   "title": "수출은 사상 최대인데 경제는 역성장...일본 경제의 두 얼굴",
+   "url": "https://www.pressman.kr/news/articleView.html?idxno=104533",
+   "source": "pressman.kr",
+   "published": "2026-11-18T12:04:00+09:00",
+   "dup_count": 0,
+   "summary": "일본 10월 반도체·자동차 수출 사상 최대이나 수입 증가로 고민."
+  },
+  {
+   "title": "가계빚 증가폭 1년 반 만에 최소...’빚투' 줄고 '영끌'은 계속",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02961846645647032&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "source": "edaily.co.kr",
+   "published": "2026-11-18T12:03:00+09:00",
+   "dup_count": 0,
+   "summary": "금리 인상과 규제 속 가계빚 증가폭 1년 반 만에 최저 수준 기록."
+  },
+  {
+   "title": "3분기 지역경제 '희비'...소비 부진 지역 8→13곳 확산",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02965126645647032&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "source": "edaily.co.kr",
+   "published": "2026-11-18T12:03:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체 호황으로 3분기 전국 수출액 3186억달러 역대 최대 기록."
+  },
+  {
+   "title": "가계빚 2030조원 돌파...은행 주택 관련 대출 확대",
+   "url": "https://www.newsway.co.kr/news/view?ud=2026111810474105247",
+   "source": "newsway.co.kr",
+   "published": "2026-11-18T12:02:00+09:00",
+   "dup_count": 0,
+   "summary": "가계빚 2030조원 돌파했으나 증시 조정으로 증권사 신용공여 감소."
+  },
+  {
+   "title": "[성장판 넓히는 韓 경제] 올해보다 내년 더 뛴다...KDI, 성장률 3.8%→3.9%...",
+   "url": "https://www.ajunews.com/view/20261118110333658",
+   "source": "ajunews.com",
+   "published": "2026-11-18T12:02:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체 수출 호조에 KDI 내년 성장률 전망 3.9%로 상향 조정."
+  },
+  {
+   "title": "역대급 실적에도 주가 디커플링...전문가들 \"매수 기회\" vs \"고금리·AI 의...",
+   "url": "https://www.newsis.com/view/NISX20261118_0003872982",
+   "source": "newsis.com",
+   "published": "2026-11-18T12:02:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체 역대급 실적에도 주가 디커플링, 환율 영향으로 매수 기회 의견."
+  },
+  {
+   "title": "대신증권, 내년 상반기 글로벌 증시전망 세미나...한·미·일·대만 시장...",
+   "url": "https://www.updownnews.co.kr/news/articleView.html?idxno=319633",
+   "source": "updownnews.co.kr",
+   "published": "2026-11-18T12:02:00+09:00",
+   "dup_count": 1,
+   "summary": "대신증권, 26일 유튜브 채널 '대신TV'서 글로벌 증시전망 세미나 개최."
+  },
+  {
+   "title": "대신증권, 26일 '2027년 글로벌 증시전망' 세미나...한·미·일·대만 투자...",
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=239215",
+   "source": "job-post.co.kr",
+   "published": "2026-11-18T12:02:00+09:00",
+   "dup_count": 3,
+   "summary": "대신증권은 오는 26일 오후 4시 공식 유튜브 채널 '대신TV'를 통해 '2027년 글로벌 증시전망' 라이브 세미나를 진행한다고 18일 밝혔다. 이번 강연은 총 "
+  },
+  {
+   "title": "반도체 호황에도 온기 돌지 않는 지역경제...16개 시도 중 13곳 소매판매...",
+   "url": "https://www.dailian.co.kr/news/view/1716553/?sc=Naver",
+   "source": "dailian.co.kr",
+   "published": "2026-11-18T12:01:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체 수출 호황에도 16개 시도 중 13곳 소매판매 부진으로 시름."
+  },
+  {
+   "title": "가계빚 2030조원 '역대 최대'...증시 조정에 '빚투' 줄며 증가세 주춤",
+   "url": "https://www.newspim.com/news/view/20261118000562",
+   "source": "newspim.com",
+   "published": "2026-11-18T12:00:00+09:00",
+   "dup_count": 0,
+   "summary": "증시 조정과 빚투 감소로 가계빚 증가세 주춤, 한은이 주요 원인 분석."
+  },
+  {
+   "title": "삼전·닉스, 코스피 전체 수익성 견인...3분기 단일 실적은 '주춤'",
+   "url": "https://www.g-enews.com/view.php?ud=202611181110305960923c501012_1",
+   "source": "g-enews.com",
+   "published": "2026-11-18T12:00:00+09:00",
+   "dup_count": 0,
+   "summary": "삼전·닉스 등 대형 반도체주가 코스피 전체 수익성과 기술주 견인."
+  },
+  {
+   "title": "K-소비재 호황 탄 전남광주...'검은 반도체' 업고 판 키운다",
+   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000083887",
+   "source": "jnilbo.com",
+   "published": "2026-11-18T12:00:00+09:00",
+   "dup_count": 0,
+   "summary": "10월 반도체 제외 전국 수출 34% 증가, 화장품과 바이오헬스 선전."
+  },
+  {
+   "title": "[편집국장의 시선] 젠슨 황의 '오만과 정치'",
+   "url": "https://www.datasom.co.kr/news/articleView.html?idxno=210856",
+   "source": "datasom.co.kr",
+   "published": "2026-11-18T12:00:00+09:00",
+   "dup_count": 0,
+   "summary": "젠슨 황의 대중국 반도체 수출 제한 완화 시도와 정치적 한계 지적."
+  },
+  {
+   "title": "4대 은행 무수익여신 5조원 돌파...기업 부실대출 44% 급증",
+   "url": "https://www.polinews.co.kr/news/articleView.html?idxno=748633",
+   "source": "polinews.co.kr",
+   "published": "2026-11-18T12:00:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체는 호황이나 4대 은행 기업 부실대출은 44% 급증해 대조."
+  },
+  {
+   "title": "\"연간 4%도 넘본다\" 반도체가 바꾼 성장률...내수와 괴리 커",
+   "url": "https://view.asiae.co.kr/article/2026111811534264996",
+   "source": "view.asiae.co.kr",
+   "published": "2026-11-18T11:59:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체 사상 최대 수출이 한국 경제 성장 견인, 수출-내수 괴리 심화."
+  },
+  {
+   "title": "이자도 못 갚는 '깡통대출' 5조원 돌파...증가액 93%가 기업대출",
+   "url": "https://www.thepublic.kr/news/articleView.html?idxno=327290",
+   "source": "thepublic.kr",
+   "published": "2026-11-18T11:58:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체 호황과 달리 중소기업 중심 부실대출 5조원 돌파하며 악화."
+  },
+  {
+   "title": "‘中연루 의혹’ 계속 나오는데...젠슨황 “복귀한다면 영광”",
+   "url": "https://www.munhwa.com/article/11632231?ref=naver",
+   "source": "munhwa.com",
+   "published": "2026-11-18T11:57:00+09:00",
+   "dup_count": 0,
+   "summary": "젠슨 황 복귀 의사에도 엔비디아 이사회는 선을 긋고 안보 감독위 신설."
+  },
+  {
+   "title": "돌아오려는 젠슨황...엔비디아 이사회는 '퇴짜'",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261118115512nl2",
+   "source": "yonhapnewstv.co.kr",
+   "published": "2026-11-18T11:56:00+09:00",
+   "dup_count": 0,
+   "summary": "엔비디아 이사회, 젠슨 황 복귀 거부하고 대중국 수출 통제 위원회 신설."
+  },
+  {
+   "title": "코스피, 장중 3%대 급등 뒤 보합권...반도체주 상승폭 축소",
+   "url": "https://www.slist.kr/news/articleView.html?idxno=782796",
+   "source": "slist.kr",
+   "published": "2026-11-18T11:52:00+09:00",
+   "dup_count": 2,
+   "summary": "엔비디아 호실적에도 장 초반 급등한 코스피는 보합권으로 내려와."
+  },
+  {
+   "title": "[분석] IMF, 한국 성장률 3.9%로 상향 및 긴축 권고...\"금리 인상에 무게...",
+   "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=625984",
+   "source": "mdtoday.co.kr",
+   "published": "2026-11-18T11:50:00+09:00",
+   "dup_count": 0,
+   "summary": "IMF 한국 성장률 3.9% 상향에 한은 추가 기준금리 인상 무게 실려."
+  },
+  {
+   "title": "가계 보유 주식가치 721조 허공으로... 소비 타격받나",
+   "url": "https://www.munhwa.com/article/11632205?ref=naver",
+   "source": "munhwa.com",
+   "published": "2026-11-18T11:45:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체 수출은 호조이나 증시 조정 장기화로 자산 가치 하락과 내수 우려."
+  },
+  {
+   "title": "대신증권, 26일 '2027년 글로벌 증시전망' 온라인 세미나 개최",
+   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=447341",
+   "source": "econonews.co.kr",
+   "published": "2026-11-18T11:42:00+09:00",
+   "dup_count": 3,
+   "summary": "대신증권, 오는 26일 유튜브 '대신TV' 통해 글로벌 증시전망 세미나 진행."
+  },
+  {
+   "title": "반도체 호황에도 차가운 내수...음식업 사업자 5년 4개월 만에 최저",
+   "url": "https://www.widedaily.com/news/articleView.html?idxno=304004",
+   "source": "widedaily.com",
+   "published": "2026-11-18T11:40:00+09:00",
+   "dup_count": 0,
+   "summary": "AI 호황과 반도체 수출 최대 실적에도 음식업 사업자 최저 등 내수 냉각."
+  },
+  {
+   "title": "젠슨 황 \"복귀 원해\" vs 이사회 \"고려 안해\"...엔비디아 실적은 서프라이...",
+   "url": "https://www.hankyung.com/article/202611184351i",
+   "source": "hankyung.com",
+   "published": "2026-11-18T11:39:00+09:00",
+   "dup_count": 0,
+   "summary": "젠슨 황 복귀 불발 속 엔비디아 3분기 실적 서프라이즈와 수출통제 주목."
   }
  ]
 }
