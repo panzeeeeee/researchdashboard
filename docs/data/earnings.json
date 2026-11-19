@@ -166,7 +166,21 @@
    "react_status": "대기",
    "sic": "8200",
    "industry": "Services-Educational Services",
-   "sector": "산업재"
+   "sector": "산업재",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 235.883,
+    "revenue_prior": 222.442,
+    "eps_gaap": 0.32,
+    "eps_gaap_prior": 0.34,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q4 FY2026",
+    "guidance": "첫 제시",
+    "summary": "학생 수와 매출은 증가했으나 전략적 성장 비용으로 순이익은 소폭 감소했다.",
+    "revenue_yoy": 6.0
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1261654/000126165426000021/exhibit991-q42026earningsp.htm"
   },
   {
    "accession": "0001474432-26-000110",
@@ -520,7 +534,8 @@
    "spy_pct": -0.3,
    "rel_pct": 24.4,
    "react_from": "2026-11-17",
-   "react_to": "2026-11-18"
+   "react_to": "2026-11-18",
+   "num_tries": 1
   },
   {
    "accession": "0000027419-26-000051",
@@ -738,7 +753,21 @@
    "spy_pct": -0.3,
    "rel_pct": 3.9,
    "react_from": "2026-11-17",
-   "react_to": "2026-11-18"
+   "react_to": "2026-11-18",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 526057.0,
+    "revenue_prior": 522480.0,
+    "eps_gaap": 0.45,
+    "eps_gaap_prior": 0.7,
+    "eps_adj": 0.53,
+    "eps_adj_prior": 0.71,
+    "period": "Q2 FY2027",
+    "guidance": "없음",
+    "summary": "소매 및 도매 부문 호조로 매출은 증가했으나 공급망 투자 비용 등으로 이익은 감소했다.",
+    "revenue_yoy": 0.7
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/57131/000005713126000042/fy27q2pressrelease.htm"
   },
   {
    "accession": "0001493152-26-052840",
@@ -6310,7 +6339,8 @@
    "spy_pct": -0.4,
    "rel_pct": 0.4,
    "react_from": "2026-11-12",
-   "react_to": "2026-11-13"
+   "react_to": "2026-11-13",
+   "num_tries": 1
   },
   {
    "accession": "0001104659-26-126274",
@@ -8030,7 +8060,21 @@
    "react_to": "2026-11-13",
    "sic": "6153",
    "industry": "Short-Term Business Credit Institutions",
-   "sector": "금융"
+   "sector": "금융",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 185.514,
+    "revenue_prior": 150.842,
+    "eps_gaap": 0.76,
+    "eps_gaap_prior": 0.59,
+    "eps_adj": 0.83,
+    "eps_adj_prior": null,
+    "period": "Q3 2026",
+    "guidance": "없음",
+    "summary": "추심과 자산 투자가 크게 늘어 매출과 순이익이 증가함.",
+    "revenue_yoy": 23.0
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/2046042/000110465926126213/jcap-ex99d1.htm"
   },
   {
    "accession": "0001437749-26-036556",
@@ -8608,7 +8652,21 @@
    "react_to": "2026-11-13",
    "sic": "7389",
    "industry": "Services-Business Services, NEC",
-   "sector": "산업재"
+   "sector": "산업재",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 337.318,
+    "revenue_prior": 284.288,
+    "eps_gaap": null,
+    "eps_gaap_prior": null,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "첫 제시",
+    "summary": "인수합병과 유기적 성장에 힘입어 매출이 증가했으나 순이익은 감소했다.",
+    "revenue_yoy": 18.7
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/2065708/000206570826000008/nov_12x2026xex991.htm"
   },
   {
    "accession": "0001437749-26-036547",
@@ -9472,7 +9530,8 @@
    "react_to": "2026-11-12",
    "sic": "2834",
    "industry": "Pharmaceutical Preparations",
-   "sector": "헬스케어"
+   "sector": "헬스케어",
+   "num_tries": 1
   },
   {
    "accession": "0001193125-26-457059",
@@ -9510,7 +9569,8 @@
    "react_to": "2026-11-12",
    "sic": "2834",
    "industry": "Pharmaceutical Preparations",
-   "sector": "헬스케어"
+   "sector": "헬스케어",
+   "num_tries": 1
   },
   {
    "accession": "0001104659-26-125910",
@@ -9862,7 +9922,7 @@
    "sic": "2836",
    "industry": "Biological Products, (No Diagnostic Substances)",
    "sector": "헬스케어",
-   "num_tries": 1
+   "num_tries": 2
   },
   {
    "accession": "0001193125-26-456965",
@@ -10114,7 +10174,7 @@
    "sic": "2834",
    "industry": "Pharmaceutical Preparations",
    "sector": "헬스케어",
-   "num_tries": 1
+   "num_tries": 2
   },
   {
    "accession": "0001104659-26-125825",
@@ -10490,7 +10550,8 @@
    "react_to": "2026-11-12",
    "sic": "2834",
    "industry": "Pharmaceutical Preparations",
-   "sector": "헬스케어"
+   "sector": "헬스케어",
+   "num_tries": 1
   },
   {
    "accession": "0001372514-26-000093",
@@ -13533,7 +13594,21 @@
    "react_to": "2026-11-11",
    "sic": "5411",
    "industry": "Retail-Grocery Stores",
-   "sector": "필수소비재"
+   "sector": "필수소비재",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 1182.88,
+    "revenue_prior": 1168.153,
+    "eps_gaap": 0.13,
+    "eps_gaap_prior": 0.12,
+    "eps_adj": 0.16,
+    "eps_adj_prior": 0.21,
+    "period": "Q3 FY2026",
+    "guidance": "상향",
+    "summary": "매출과 동일점포 매출이 증가하고 순이익이 개선되었으나 조정 EPS와 마진은 감소했다.",
+    "revenue_yoy": 1.3
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1771515/000177151526000073/a2026q3exhibit991.htm"
   },
   {
    "accession": "0001437749-26-036154",
@@ -13961,7 +14036,7 @@
    "sic": "2834",
    "industry": "Pharmaceutical Preparations",
    "sector": "헬스케어",
-   "num_tries": 1
+   "num_tries": 2
   },
   {
    "accession": "0001193125-26-454473",
@@ -16125,7 +16200,8 @@
    "spy_pct": -0.4,
    "rel_pct": 0.3,
    "react_from": "2026-11-09",
-   "react_to": "2026-11-10"
+   "react_to": "2026-11-10",
+   "num_tries": 1
   },
   {
    "accession": "0000911177-26-000057",
@@ -16756,7 +16832,21 @@
    "spy_pct": -0.4,
    "rel_pct": -7.8,
    "react_from": "2026-11-09",
-   "react_to": "2026-11-10"
+   "react_to": "2026-11-10",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 9.5,
+    "revenue_prior": 0.384,
+    "eps_gaap": -0.07,
+    "eps_gaap_prior": 0.01,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "없음",
+    "summary": "인수합병 효과로 매출이 크게 늘었으나 영업비용 증가로 순손실을 기록했다.",
+    "revenue_yoy": 2374.0
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1758009/000162828026072163/q3-26earningspressreleasex.htm"
   },
   {
    "accession": "0000824142-26-000083",
@@ -16827,7 +16917,21 @@
    "react_to": "2026-11-10",
    "sic": "1700",
    "industry": "Construction - Special Trade Contractors",
-   "sector": "산업재"
+   "sector": "산업재",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 580.315,
+    "revenue_prior": 525.987,
+    "eps_gaap": 0.59,
+    "eps_gaap_prior": 1.39,
+    "eps_adj": 0.88,
+    "eps_adj_prior": 1.45,
+    "period": "Q3 FY2026",
+    "guidance": "유지",
+    "summary": "주요 사업부의 강력한 성장과 마진 개선으로 매출이 증가했으나 회계 방식 변경 등으로 순이익은 감소했다.",
+    "revenue_yoy": 10.3
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1488139/000162828026072159/amrc_20260930x8-kxexx991.htm"
   },
   {
    "accession": "0001116463-26-000061",
@@ -16969,7 +17073,21 @@
    "spy_pct": -0.4,
    "rel_pct": 5.1,
    "react_from": "2026-11-09",
-   "react_to": "2026-11-10"
+   "react_to": "2026-11-10",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 350.319,
+    "revenue_prior": 336.58,
+    "eps_gaap": -2.74,
+    "eps_gaap_prior": -3.31,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "없음",
+    "summary": "매출이 전년 동기 대비 증가하고 현금 소모가 줄었으나 여전히 순손실을 기록했다.",
+    "revenue_yoy": 4.1
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1811210/000162828026072158/q3fy26ex991earnings.htm"
   },
   {
    "accession": "0001422930-26-000036",
@@ -17007,7 +17125,21 @@
    "react_to": "2026-11-10",
    "sic": "7370",
    "industry": "Services-Computer Programming, Data Processing, Etc.",
-   "sector": "IT"
+   "sector": "IT",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 3.0,
+    "revenue_prior": 1.0,
+    "eps_gaap": null,
+    "eps_gaap_prior": null,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "없음",
+    "summary": "구독 매출 증가로 매출이 상승하고 법률 비용이 감소했으나 조정 EBITDA 손실을 기록했다.",
+    "revenue_yoy": 200.0
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1849635/000143774926035886/ex_1007154.htm"
   },
   {
    "accession": "0001628280-26-072155",
@@ -18864,7 +18996,7 @@
    "sic": "2834",
    "industry": "Pharmaceutical Preparations",
    "sector": "헬스케어",
-   "num_tries": 1
+   "num_tries": 2
   },
   {
    "accession": "0001193125-26-452624",
@@ -19356,7 +19488,21 @@
    "react_to": "2026-11-09",
    "sic": "7000",
    "industry": "Hotels, Rooming Houses, Camps & Other Lodging Places",
-   "sector": "경기소비재"
+   "sector": "경기소비재",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 129.063,
+    "revenue_prior": 99.355,
+    "eps_gaap": -0.09,
+    "eps_gaap_prior": -0.01,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "유지",
+    "summary": "워크포스 부문 성장에 힘입어 매출이 증가했으나 순손실은 확대되었다.",
+    "revenue_yoy": 29.9
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1712189/000110465926124138/th-ex99d1.htm"
   },
   {
    "accession": "0002011641-26-000042",
@@ -84573,5 +84719,5 @@
    "sector": "커뮤니케이션"
   }
  ],
- "updated_at": "2026-11-19T12:49:52.579744+09:00"
+ "updated_at": "2026-11-20T03:03:01.192306+09:00"
 }
