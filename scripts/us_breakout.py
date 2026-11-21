@@ -369,7 +369,7 @@ def fetch_prices(tickers, full_refresh=False, verbose=True):
             need_full.append(t)
             continue
         ld = _last_date(cache[t])
-        if ld >= mkt_last:
+        if ld > mkt_last:
             continue
         if (mkt_last - ld).days > CFG["FULL_REDL_GAP"]:
             need_full.append(t)
