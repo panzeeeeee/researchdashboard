@@ -1,734 +1,728 @@
 {
- "updated_at": "2026-11-21T12:27:15.907397+09:00",
+ "updated_at": "2026-11-22T01:39:31.010054+09:00",
  "event_notes": {
-  "why": "나스닥이 5.28% 급락하고 비트코인 6만달러가 붕괴되는 등 위험자산 투매가 발생한 가운데, 트럼프가 중국에 구형 AI 반도체만 판매하고 해외 데이터센터도 허가하겠다고 밝힌 여파로 반도체 업종이 9.52% 폭락하며 코스피가 5.21%, 코스닥이 5.71% 급락했다. 삼성전자와 SK하이닉스 등 반도체 주가가 급락하고 건설, 철강, 에너지화학 등 전 업종이 동반 약세를 보인 반면, 은행 업종은 상대적으로 낙폭이 제한되었다.",
-  "watch": "다음주 예정된 미국의 물가 지표와 한국은행 금통위 결과가 시장의 향방을 가를 주요 변수로 작용할 것으로 보인다."
+  "why": "글로벌 시장의 AI 주가 급락 여파와 외국인의 매도 공세가 삼성전자 등 대형주에 집중되면서 반도체 업종이 9.52% 급락해 코스피(-5.21%)와 코스닥(-5.71%) 지수의 폭락을 이끈 것으로 보인다. 이에 따라 건설(-6.09%), 철강(-4.52%), 자동차(-3.61%) 등 주요 업종 전반이 약세를 보이고 두산에너빌리티 주가가 급락한 반면, 삼성전자 인버스 등 인버스 ETF 및 ETN 상품은 급등했다. 다만 외국인과 기관의 순매수가 유입된 하이브, 한진칼, 셀트리온, 우리금융 등 일부 종목과 은행 업종(-0.31%)은 상대적으로 하락 폭을 줄이며 방어하는 모습을 보였다.",
+  "watch": "뉴욕증시의 AI 급락 여파 속에서 향후 발표될 미국의 PCE(개인소비지출) 및 소비지표가 증시 심리 회복에 영향을 줄 것으로 보인다. 아울러 반도체 대형주와 소부장 종목을 향한 외국인 매도세의 이탈 지속 여부와 수급 전환 가능성을 지켜볼 필요가 있다."
  },
  "clusters": [
   {
-   "title": "미국 증시 폭락 및 코스피 '검은 금요일' 폭락 사태",
+   "title": "외국인·기관 수급 및 종목별 주가 동향",
    "sources": [
-    "biz.newdaily.co.kr",
-    "etnews.com",
-    "greened.kr",
-    "kihoilbo.co.kr",
-    "sedaily.com",
-    "the-today.com",
-    "topstarnews.net",
-    "ytn.co.kr"
-   ],
-   "count": 8,
-   "items": [
-    {
-     "title": "4,900선 무너진 코스피...다음주 미국 물가·한은 금통위 '주목'",
-     "url": "https://www.ytn.co.kr/_ln/0102_202611211116080371",
-     "source": "ytn.co.kr",
-     "published": "2026-11-21T11:16:00+09:00",
-     "dup_count": 5,
-     "summary": "코스피와 코스닥이 5%대 하락하며 4900선이 무너졌다."
-    },
-    {
-     "title": "나스닥 주간 10% 폭락·SOXL 32% 추락...삼성전자·SK하이닉스 '월요일 공...",
-     "url": "https://www.greened.kr/news/articleView.html?idxno=355237",
-     "source": "greened.kr",
-     "published": "2026-11-21T10:44:00+09:00",
-     "dup_count": 4,
-     "summary": "나스닥 폭락과 외국인 매도 속 코스피와 코스닥이 동반 급락했다."
-    },
-    {
-     "title": "[11월 셋째 주 세계경제동향 브리핑] 코스피 4,800선 추락...나스닥 10% 폭...",
-     "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3041600",
-     "source": "kihoilbo.co.kr",
-     "published": "2026-11-21T10:38:00+09:00",
-     "dup_count": 3,
-     "summary": "코스피가 일주일 새 7.95% 급락해 4800선으로 추락했다."
-    },
-    {
-     "title": "[NZSI INDEX] 2026년 11월 20일... 코스피 5.21% 폭락, 버핏지수 130%·코스...",
-     "url": "https://www.the-today.com/news/articleView.html?idxno=93900",
-     "source": "the-today.com",
-     "published": "2026-11-21T11:48:00+09:00",
-     "dup_count": 2,
-     "summary": "코스피가 5.21% 폭락하며 4869.96으로 장을 마감했다."
-    },
-    {
-     "title": "미국 주식 폭락에 \"계좌에 핵 한 방\"...나스닥 5.28% 급락, 월요일 삼성전...",
-     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16282062",
-     "source": "topstarnews.net",
-     "published": "2026-11-21T11:40:00+09:00",
-     "dup_count": 2,
-     "summary": "미국 주식시장 폭락 여파로 월요일 국내 반도체주 타격이 우려된다."
-    },
-    {
-     "title": "\"금요일에 2조 샀는데\" ... '검은 금요일' 버틴 개미, 美반도체 폭락에 '...",
-     "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/21/2026112150025.html",
-     "source": "biz.newdaily.co.kr",
-     "published": "2026-11-21T11:28:00+09:00",
-     "dup_count": 2,
-     "summary": "개인투자자들이 저가 매수에 나선 가운데 미국 반도체주가 폭락했다."
-    },
-    {
-     "title": "9000→4900 추락, 다음은...코스피, 바닥은 있나? 반전은 있나?",
-     "url": "https://www.etnews.com/20261121000019",
-     "source": "etnews.com",
-     "published": "2026-11-21T11:41:00+09:00",
-     "dup_count": 1,
-     "summary": "외국인과 기관의 대규모 매도로 코스피가 4900선 아래로 추락했다."
-    },
-    {
-     "title": "삼전닉스 30%대 추락...‘불장’ 끝난 코스피에 개미 563조 손실",
-     "url": "https://www.sedaily.com/article/20117199?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-11-21T10:35:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피 폭락으로 개미 투자자들이 563조원의 손실을 입었다."
-    }
-   ]
-  },
-  {
-   "title": "트럼프의 대중국 반도체 수출 규제와 국내 반도체주 영향",
-   "sources": [
-    "biz.sbs.co.kr",
-    "news.sbs.co.kr",
-    "newsworks.co.kr",
-    "sedaily.com",
-    "topstarnews.net",
-    "youthdaily.co.kr"
+    "kjdaily.com",
+    "thefairnews.co.kr"
    ],
    "count": 6,
    "items": [
     {
-     "title": "트럼프 \"중국에 구형 칩만 판매...안 팔면 중국 스스로 만들 것\"",
-     "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008856834&plink=ORI&cooper=NAVER",
-     "source": "news.sbs.co.kr",
-     "published": "2026-11-21T11:07:00+09:00",
-     "dup_count": 1,
-     "summary": "트럼프는 중국이 반도체를 자체 개발하기 전에 구형 칩만 판매하겠다고 했다."
+     "title": "외국인·기관 동반 매수...하이브·한진칼 주가 급등",
+     "url": "http://www.kjdaily.com/article.php?aid=1795275334693031276",
+     "source": "kjdaily.com",
+     "published": "2026-11-22T00:38:00+09:00",
+     "dup_count": 2,
+     "summary": "코스피 급락 속에도 외국인과 기관 매수로 하이브와 한진칼 주가가 급등했다."
     },
     {
-     "title": "美 반도체 수출규제 전면 확대...삼성, 中 AI칩 출하 중단",
-     "url": "https://www.sedaily.com/article/20117201?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-11-21T10:36:00+09:00",
-     "dup_count": 1,
-     "summary": "미국의 반도체 수출 규제 확대 여파로 삼성전자는 중국 AI칩 출하를 중단했다."
-    },
-    {
-     "title": "트럼프 \"구형 AI 반도체만 중국에 판매\"...해외 데이터센터도 허가 대상",
-     "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=903918",
-     "source": "newsworks.co.kr",
-     "published": "2026-11-21T12:14:00+09:00",
+     "title": "우리금융·레인보우로보틱스 기관 순매수...외국인·개인은 매도",
+     "url": "http://www.kjdaily.com/article.php?aid=1795275207693033276",
+     "source": "kjdaily.com",
+     "published": "2026-11-22T00:36:00+09:00",
      "dup_count": 0,
-     "summary": "트럼프는 구형 AI 반도체만 중국에 판매할 것이라고 밝혔다."
+     "summary": "코스피 7.95% 급락 속 기관이 우리금융과 레인보우로보틱스를 순매수했다."
     },
     {
-     "title": "트럼프 \"중국엔 구형 칩만\"...삼성전자·SK하이닉스 주가 급락, 추가 악재...",
-     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16282127",
-     "source": "topstarnews.net",
-     "published": "2026-11-21T12:12:00+09:00",
+     "title": "외국인 매수 줄었다...셀트리온·대한항공 순매수 상위권",
+     "url": "http://www.kjdaily.com/article.php?aid=1795274857693030276",
+     "source": "kjdaily.com",
+     "published": "2026-11-22T00:30:00+09:00",
      "dup_count": 0,
-     "summary": "트럼프의 대중국 반도체 규제 발언에 삼성전자와 SK하이닉스 주가가 급락했다."
+     "summary": "코스피 급락 속 외국인의 셀트리온과 대한항공 순매수 상위권 유지가 눈에 띈다."
     },
     {
-     "title": "트럼프 \"中엔 구형 칩만 판매\"...美, 반도체 수출 '상한선' 지키고 우회로...",
-     "url": "https://www.youthdaily.co.kr/news/article.html?no=230169",
-     "source": "youthdaily.co.kr",
-     "published": "2026-11-21T10:32:00+09:00",
+     "title": "이수페타시스·심텍 외국인·기관 동반 매도...46종목 주가 하락",
+     "url": "http://www.kjdaily.com/article.php?aid=1795273991693032276",
+     "source": "kjdaily.com",
+     "published": "2026-11-22T00:16:00+09:00",
      "dup_count": 0,
-     "summary": "트럼프는 중국과 포괄적 합의를 논의 중이며 구형 칩만 판매하겠다고 밝혔다."
+     "summary": "코스피 7.95% 급락 속 외국인과 기관이 이수페타시스와 심텍을 동반 매도했다."
     },
     {
-     "title": "美, 엔비디아 칩 중국 원격접속도 차단...베선트 \"수출 통제 강화\"",
-     "url": "https://biz.sbs.co.kr/article_hub/20000347965?division=NAVER",
-     "source": "biz.sbs.co.kr",
-     "published": "2026-11-21T10:25:00+09:00",
+     "title": "[더페어 돋보기] 외인 매도 이탈속 삼전닉스와 소부장의 엇갈린 수급 결...",
+     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=94970",
+     "source": "thefairnews.co.kr",
+     "published": "2026-11-22T00:00:00+09:00",
      "dup_count": 0,
-     "summary": "베선트 장관은 H200보다 낮은 등급의 반도체도 수출 허용 대상에 포함된다고 설명했습니다. 엔비디아가 최근 실적 발표에서 중국에 대한 H200 출하가 중단됐다고 "
+     "summary": "외국인 매도 속에 반도체 대형주와 소부장 종목 간 수급 차별화가 심화되었다."
+    },
+    {
+     "title": "[증시 프리즘] 외인 매도 공세에 흔들린 코스피 대형주...반도체·자동차...",
+     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=94968",
+     "source": "thefairnews.co.kr",
+     "published": "2026-11-22T00:00:00+09:00",
+     "dup_count": 0,
+     "summary": "미국의 대중 AI 반도체 수출 통제 강화로 코스피 대형주가 외인 매도에 흔들렸다."
     }
    ]
   },
   {
-   "title": "대중 무역흑자 및 수출 실적",
+   "title": "미국 기술주 폭락 및 뉴욕증시 하락",
    "sources": [
-    "jeonmae.co.kr",
-    "mbnmoney.mbn.co.kr",
-    "newsq.co.kr",
-    "nongmin.com",
-    "viva100.com"
+    "gokorea.kr",
+    "imnews.imbc.com",
+    "thefairnews.co.kr",
+    "weekly.chosun.com",
+    "wolyo.co.kr"
    ],
    "count": 5,
    "items": [
     {
-     "title": "대중 무역흑자 433억달러...반도체 빼면 적자 더 커졌다",
-     "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1314268",
-     "source": "jeonmae.co.kr",
-     "published": "2026-11-21T12:12:00+09:00",
+     "title": "뉴욕증시 AI 거품 우려에 폭락...국내 증시도 '검은 월요일' 우려",
+     "url": "https://www.gokorea.kr/news/articleView.html?idxno=886724",
+     "source": "gokorea.kr",
+     "published": "2026-11-21T20:32:00+09:00",
+     "dup_count": 2,
+     "summary": "AI 거품 우려로 필라델피아 반도체지수가 10.73% 급락하며 뉴욕증시가 폭락했다."
+    },
+    {
+     "title": "[글로벌 주간 브리핑] AI에 돈은 몰렸지만 주가는 무너졌다...흔들리는 ...",
+     "url": "https://www.wolyo.co.kr/news/articleView.html?idxno=320858",
+     "source": "wolyo.co.kr",
+     "published": "2026-11-22T01:24:00+09:00",
      "dup_count": 1,
-     "summary": "다만 반도체 호황이 꺾일 경우 대중 수출 실적이 급격히 악화할 수 있어 다른 품목의 수출 기반을 강화해야 한다는 분석이다. 박 연구위원은 \"중국은 이제 산업이 고"
+     "summary": "20일 코스피가 5.21% 하락한 4869.96으로 마감하며 외국인 순매도가 이어졌다."
     },
     {
-     "title": "4년 만에 대중 무역흑자 전환에도...반도체 빼면 오히려 적자폭 확대",
-     "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005963837",
-     "source": "mbnmoney.mbn.co.kr",
-     "published": "2026-11-21T11:04:00+09:00",
+     "title": "[뉴욕증시 전망] AI 급락 여파 속 PCE·소비지표 주목",
+     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95045",
+     "source": "thefairnews.co.kr",
+     "published": "2026-11-22T00:00:00+09:00",
      "dup_count": 0,
-     "summary": "반도체 수출 호조로 4년 만에 대중 무역흑자로 전환했다."
+     "summary": "AI 고평가 우려로 뉴욕증시가 급락한 가운데 시장은 PCE 등 소비지표에 주목한다."
     },
     {
-     "title": "대중 무역흑자 433억달러...반도체 빼면 415억달러 적자",
-     "url": "https://www.viva100.com/article/20261121500038",
-     "source": "viva100.com",
-     "published": "2026-11-21T11:04:00+09:00",
+     "title": "나스닥 5.3% 폭락, 올해 상승분 다 날렸다...월요일이 두려운 개미들",
+     "url": "http://weekly.chosun.com/news/articleView.html?idxno=57350",
+     "source": "weekly.chosun.com",
+     "published": "2026-11-21T23:41:00+09:00",
      "dup_count": 0,
-     "summary": "반도체 수출이 전체 교역 실적을 끌어올린 반면 자동차와 이차전지 등에서는 적자가 확대되면서 산업 전반의 경쟁력 회복으로 평가하기 어렵다는 분석이 나온다. 21일 "
+     "summary": "나스닥이 5.3% 폭락하고 필라델피아 반도체지수가 급락해 올해 상승분을 반납했다."
     },
     {
-     "title": "수출 연 1조달러 돌파...K-푸드도 역대최고 실적",
-     "url": "https://www.nongmin.com/article/20261120500630",
-     "source": "nongmin.com",
-     "published": "2026-11-21T11:00:00+09:00",
+     "title": "나스닥 5.3% 폭락 '검은 금요일'..올해 상승분 모두 반납",
+     "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6867504_37004.html",
+     "source": "imnews.imbc.com",
+     "published": "2026-11-21T20:07:00+09:00",
      "dup_count": 0,
-     "summary": "실제 1∼10월 한국의 반도체 수출액은 지난해 같은 기간보다 193.1% 급증한 3968억달러였다. 이는 전체... 포도는 올 11월 신선농산물 최초로 1억달러 "
-    },
-    {
-     "title": "'수출 1조달러' 한국, 반도체 끌고 이 산업이 밀었다 [뉴스Q]",
-     "url": "https://www.newsq.co.kr/news/articleView.html?idxno=500983",
-     "source": "newsq.co.kr",
-     "published": "2026-11-21T10:26:00+09:00",
-     "dup_count": 0,
-     "summary": "반도체와 컴퓨터 수출의 급증이 한국의 수출 1조달러 돌파를 이끌었다."
+     "summary": "리사 쿡 연준 이사의 금리 인상 전망과 AI 우려로 나스닥이 5.3% 폭락했다."
     }
    ]
   },
   {
-   "title": "주식 폭락 관련 정치권(나경원) 규탄 및 정부 책임 공방",
+   "title": "국내 증시 급락 및 인버스 상품 상승",
    "sources": [
-    "dailian.co.kr",
-    "fnnews.com",
-    "mk.co.kr",
-    "sisajournal.com"
+    "econovill.com",
+    "kjdaily.com"
    ],
    "count": 4,
    "items": [
     {
-     "title": "나경원 \"국민 자산 무너진 날 李대통령은 대장동 변호...무책임 바닥 없...",
-     "url": "https://www.dailian.co.kr/news/view/1717983/?sc=Naver",
-     "source": "dailian.co.kr",
-     "published": "2026-11-21T10:54:00+09:00",
-     "dup_count": 1,
-     "summary": "나경원 의원은 코스피 폭락 속에서 이 대통령의 대장동 변호를 강하게 비판했다."
+     "title": "美 기술주 급락에 코스피 4900선 이탈...다음주 금리 변수에 촉각",
+     "url": "https://www.econovill.com/news/articleView.html?idxno=758068",
+     "source": "econovill.com",
+     "published": "2026-11-21T22:50:00+09:00",
+     "dup_count": 5,
+     "summary": "미국 기술주 급락 여파로 코스피가 4900선을 밑돌고 코스닥도 645.68로 하락했다."
     },
     {
-     "title": "나경원 \"주식 폭락, 결혼·은퇴자금 반토막...李정권, 국민 돈 물어내라...",
-     "url": "https://www.fnnews.com/news/202611211013306194",
-     "source": "fnnews.com",
-     "published": "2026-11-21T10:40:00+09:00",
+     "title": "인버스 ETF·ETN 급등...삼성전자 인버스 22%↑",
+     "url": "http://www.kjdaily.com/article.php?aid=1795275323693021276",
+     "source": "kjdaily.com",
+     "published": "2026-11-22T00:38:00+09:00",
      "dup_count": 1,
-     "summary": "나경원은 주식 폭락으로 국민 자산이 무너졌다며 이정권을 규탄했다."
+     "summary": "코스피 변동성에 삼성전자 인버스 등 인버스 ETF·ETN이 급등했다."
     },
     {
-     "title": "코스피 5% 폭락...나경원 “결혼자금 반토막, 은퇴자금 녹아내려”",
-     "url": "https://www.mk.co.kr/article/12215191",
-     "source": "mk.co.kr",
-     "published": "2026-11-21T10:26:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피 5% 폭락에 나경원은 결혼과 은퇴자금이 반토막 났다고 비판했다."
+     "title": "코스피·코스닥 급락...한국화장품 25%·지슨 73%↑",
+     "url": "http://www.kjdaily.com/article.php?aid=1795274258693028276",
+     "source": "kjdaily.com",
+     "published": "2026-11-22T00:22:00+09:00",
+     "dup_count": 0,
+     "summary": "삼성전자와 SK하이닉스 급락 속에 한국화장품 주가는 25% 상승했다."
     },
     {
-     "title": "코스피 4900선 붕괴에...나경원 \"李정권, 국민 돈 물어내라\"",
-     "url": "https://www.sisajournal.com/news/articleView.html?idxno=394864",
-     "source": "sisajournal.com",
-     "published": "2026-11-21T10:49:00+09:00",
+     "title": "삼성전자·삼성전자우·삼성전기 급락...외국인 팔고 개미 샀다",
+     "url": "http://www.kjdaily.com/article.php?aid=1795273632693029276",
+     "source": "kjdaily.com",
+     "published": "2026-11-22T00:10:00+09:00",
      "dup_count": 0,
-     "summary": "코스피 4900선 붕괴에 나경원 의원은 이정권에 책임을 촉구했다."
+     "summary": "코스피가 7.95% 급락하자 외국인은 삼성전자를 팔고 개인은 순매수했다."
     }
    ]
   },
   {
-   "title": "리츠 소액 부동산 투자",
+   "title": "무디스의 AI 반도체 호황 전망과 삼성전자·SK하이닉스",
    "sources": [
-    "jnilbo.com"
+    "biz.heraldcorp.com",
+    "kbmaeil.com",
+    "wowtv.co.kr"
    ],
-   "count": 1,
+   "count": 3,
    "items": [
     {
-     "title": "커피값으로 '건물주' 된다... 리츠, 소액 부동산 투자 길 열어",
-     "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000085138",
-     "source": "jnilbo.com",
-     "published": "2026-11-21T12:07:00+09:00",
+     "title": "“삼성전자·SK하이닉스 내년에도 웃는다고?”...무디스, 2027 AI반도체 호...",
+     "url": "https://www.kbmaeil.com/article/20261121500209",
+     "source": "kbmaeil.com",
+     "published": "2026-11-21T23:24:00+09:00",
      "dup_count": 0,
-     "summary": "리츠를 통해 소액으로 부동산에 투자하는 길이 열리고 있다."
-    }
-   ]
-  },
-  {
-   "title": "HLB 주가 변동성",
-   "sources": [
-    "topstarnews.net"
-   ],
-   "count": 1,
-   "items": [
+     "summary": "무디스는 AI 수요 지속으로 삼성전자와 SK하이닉스의 호실적이 이어질 것으로 봤다."
+    },
     {
-     "title": "최근 5거래일 HLB 주가, 2만원대 후반 변동성 확대",
-     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16282113",
-     "source": "topstarnews.net",
-     "published": "2026-11-21T12:04:00+09:00",
+     "title": "“삼성·하이닉스 내년에도 웃는다”...무디스가 전망한 AI 반도체 호황",
+     "url": "https://biz.heraldcorp.com/article/10944835?ref=naver",
+     "source": "biz.heraldcorp.com",
+     "published": "2026-11-21T23:01:00+09:00",
      "dup_count": 0,
-     "summary": "HLB 주가가 2만원대 후반으로 떨어지며 52주 최저가에 근접했다."
-    }
-   ]
-  },
-  {
-   "title": "비트코인 6만달러 붕괴 및 위험자산 투매",
-   "sources": [
-    "the-today.com"
-   ],
-   "count": 1,
-   "items": [
+     "summary": "무디스는 AI 투자 수혜가 반도체를 넘어 데이터센터 등 인프라로 확대된다고 전망했다."
+    },
     {
-     "title": "비트코인 6만달러 붕괴...한국 증시까지 덮친 '위험자산 투매'",
-     "url": "https://www.the-today.com/news/articleView.html?idxno=93899",
-     "source": "the-today.com",
-     "published": "2026-11-21T11:38:00+09:00",
-     "dup_count": 2,
-     "summary": "비트코인 6만달러 붕괴와 함께 코스피와 코스닥에 매도 사이드카가 발동됐다."
-    }
-   ]
-  },
-  {
-   "title": "채권 투자 전략",
-   "sources": [
-    "newsis.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "\"2027년, 채권에 관심 가져야\"...경제 전문가가 제시한 투자 전략",
-     "url": "https://www.newsis.com/view/NISX20261121_0003877587",
-     "source": "newsis.com",
-     "published": "2026-11-21T11:30:00+09:00",
+     "title": "\"삼전닉스, 반전은 온다\"...무디스 전망에 개미들 '반색'",
+     "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611210035&t=NN",
+     "source": "wowtv.co.kr",
+     "published": "2026-11-21T18:52:00+09:00",
      "dup_count": 0,
-     "summary": "경제 전문가들은 내년 경제 성장률 둔화로 채권 투자를 조언했다."
+     "summary": "무디스는 AI 인프라 투자 확대로 한국 기업들의 수출과 실적이 개선될 것으로 분석했다."
     }
    ]
   },
   {
-   "title": "기아 주가 하락세",
+   "title": "나경원 의원의 주가 폭락 관련 정부 비판 발언",
    "sources": [
-    "joongangenews.com"
+    "cjb.co.kr",
+    "inews24.com",
+    "mediatoday.co.kr"
    ],
-   "count": 1,
+   "count": 3,
    "items": [
     {
-     "title": "최근 5거래일 기아 주가 하락세 이어 8만원대로",
-     "url": "https://www.joongangenews.com/news/articleView.html?idxno=565614",
-     "source": "joongangenews.com",
-     "published": "2026-11-21T11:22:00+09:00",
-     "dup_count": 0,
-     "summary": "기아 주가가 4.5% 하락하며 8만원대로 내려앉았다."
-    }
-   ]
-  },
-  {
-   "title": "AI 시대 균형 칼럼",
-   "sources": [
-    "okfashion.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "칼럼-AI 시대, 지나침보다 균형이 중요하다",
-     "url": "http://okfashion.co.kr/detail.php?number=64412&thread=81r01r13",
-     "source": "okfashion.co.kr",
-     "published": "2026-11-21T11:14:00+09:00",
-     "dup_count": 0,
-     "summary": "AI 시대에 기술 성과뿐만 아니라 민생과의 균형이 중요하다는 지적이다."
-    }
-   ]
-  },
-  {
-   "title": "마이너스통장 44조 돌파 경고",
-   "sources": [
-    "insight.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "\"12일 만에 6682억원 늘었다\"... 마이너스통장 44조 돌파에 전문가 경고",
-     "url": "https://www.insight.co.kr/news/583006",
-     "source": "insight.co.kr",
-     "published": "2026-11-21T11:10:00+09:00",
-     "dup_count": 0,
-     "summary": "마이너스통장 대출이 44조원을 돌파해 가계부채 우려가 커졌다."
-    }
-   ]
-  },
-  {
-   "title": "'7만전자·20만닉스' 증권가 전망",
-   "sources": [
-    "economist.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "'7만전자·20만닉스' 여기서 더 떨어진다?...증권가 전망은",
-     "url": "https://economist.co.kr/article/view/ecn202611210004",
-     "source": "economist.co.kr",
-     "published": "2026-11-21T11:02:00+09:00",
+     "title": "이 대통령 \"공익환수가 배임인가\" 나경원 \"주가 바닥을 치고 있어\"",
+     "url": "https://www.mediatoday.co.kr/news/articleView.html?idxno=338617",
+     "source": "mediatoday.co.kr",
+     "published": "2026-11-21T22:07:00+09:00",
      "dup_count": 1,
-     "summary": "뉴욕증시 AI 회의론과 반도체 규제로 국내 반도체주 추가 하락이 우려된다."
+     "summary": "나경원 의원은 코스피가 4869.96으로 폭락하고 사이드카가 발동되었다고 비판했다."
+    },
+    {
+     "title": "나경원 \"주가 폭락인데...李 정권은 '대장동 사건' 변호\"",
+     "url": "https://www.cjb.co.kr/home/sub.php?menukey=61&mod=view&P_NO=261121506&PRO_CODE=99",
+     "source": "cjb.co.kr",
+     "published": "2026-11-21T19:17:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피 4869.96 마감 등 양 시장 매도 사이드카 발동을 나경원 의원이 지적했다."
+    },
+    {
+     "title": "나경원 \"주가 반토막, 李 정부 책임져야⋯결혼·은퇴자금 사라져\"",
+     "url": "http://www.inews24.com/view/2028907",
+     "source": "inews24.com",
+     "published": "2026-11-21T19:28:00+09:00",
+     "dup_count": 0,
+     "summary": "코스피가 4869.96으로 떨어져 3460조 원이 증발했다고 나경원 의원이 밝혔다."
     }
    ]
   },
   {
-   "title": "가계 주식 평가손실 563조와 소비 위축 우려",
+   "title": "서학개미의 엔비디아 순매수 및 평가액 감소",
    "sources": [
-    "sedaily.com"
+    "kjdaily.com",
+    "thefairnews.co.kr"
    ],
-   "count": 1,
+   "count": 2,
    "items": [
     {
-     "title": "씨티 “韓 가계 주식 평가손실 563조”...소비 위축 우려",
-     "url": "https://www.sedaily.com/article/20117203?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-11-21T10:37:00+09:00",
-     "dup_count": 0,
-     "summary": "씨티는 한국 가계의 주식 평가손실이 563조원에 달한다고 분석했다."
+     "title": "엔비디아 8천억 원 사들인 서학개미, 보유 평가액은 6조 원 줄었다",
+     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95048",
+     "source": "thefairnews.co.kr",
+     "published": "2026-11-22T01:02:00+09:00",
+     "dup_count": 1,
+     "summary": "서학개미가 엔비디아를 8천억 원 순매수했으나 보유 평가액은 6조 원 줄었다."
+    },
+    {
+     "title": "서학개미, 엔비디아 8천억대 순매수...보유평가액 6조 감소",
+     "url": "http://www.kjdaily.com/article.php?aid=1795275285693016276",
+     "source": "kjdaily.com",
+     "published": "2026-11-22T00:36:00+09:00",
+     "dup_count": 1,
+     "summary": "엔비디아가 14.01% 급락한 125.53달러로 마감해 서학개미 평가액이 급감했다."
     }
    ]
   },
   {
-   "title": "삼성전자 임원 인사 (메모리·MX사업부장 교체)",
+   "title": "비트코인 급락 및 대규모 청산",
    "sources": [
-    "sedaily.com"
+    "coinreaders.com",
+    "wikitree.co.kr"
    ],
-   "count": 1,
+   "count": 2,
    "items": [
     {
-     "title": "삼성전자, 메모리·MX사업부장 교체...황상준·최원준 선임",
-     "url": "https://www.sedaily.com/article/20117202?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-11-21T10:36:00+09:00",
+     "title": "비트코인, 나스닥 5% 급락에 하루 15억 달러 청산...롱 포지션이 14억 달...",
+     "url": "https://www.wikitree.co.kr/articles/1176604",
+     "source": "wikitree.co.kr",
+     "published": "2026-11-21T23:26:00+09:00",
      "dup_count": 0,
-     "summary": "칩 수출을 신청해 그중 87만 9868개가 승인됐으며, 텐센트 계열사(15만 개)·알리바바(7만 5000개)·바이두(4만 3000개) 등이 수혜를 입었다. 알리바"
+     "summary": "나스닥과 코스피 급락 여파로 비트코인이 하루 만에 15억 달러 청산되었다."
+    },
+    {
+     "title": "비트코인 5.5만 달러 턱밑...24억 달러 ‘청산 폭탄’",
+     "url": "http://coinreaders.com/272284",
+     "source": "coinreaders.com",
+     "published": "2026-11-21T20:58:00+09:00",
+     "dup_count": 0,
+     "summary": "나스닥과 코스피 급락에 비트코인이 5.5만 달러 선으로 내려서며 청산이 폭증했다."
     }
    ]
   },
   {
-   "title": "코스닥 및 반도체 소부장 종목 급락",
+   "title": "코스피 전망 및 금통위·미국 물가 주목",
+   "sources": [
+    "etoday.co.kr",
+    "ytn.co.kr"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "코스피 5,000선 회복할까...미국 물가·금통위 주목",
+     "url": "https://www.ytn.co.kr/_ln/0102_202611212233584589",
+     "source": "ytn.co.kr",
+     "published": "2026-11-21T22:33:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피 4900선 이탈 속 미국 물가 발표와 한국은행 금통위 결정이 분수령이 된다."
+    },
+    {
+     "title": "[김남현의 채권썰] 조정장 진입한 주가 vs 인상 예고된 금통위",
+     "url": "https://www.etoday.co.kr/news/view/2651239",
+     "source": "etoday.co.kr",
+     "published": "2026-11-21T22:52:00+09:00",
+     "dup_count": 0,
+     "summary": "국고채 3년물과 10년물 금리차가 최저치를 기록하며 장단기 스프레드가 축소되었다."
+    }
+   ]
+  },
+  {
+   "title": "[반도체 착시] 4년 만에 433억 달러 대중 무역흑자 달성했지만... 반도체...",
    "sources": [
     "cbci.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "코스닥 5%대 '털썩'...리노공업·이오테크닉스 두자릿수 하락률, 알테오...",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=629219",
+     "title": "[반도체 착시] 4년 만에 433억 달러 대중 무역흑자 달성했지만... 반도체...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=629451",
      "source": "cbci.co.kr",
-     "published": "2026-11-21T10:30:00+09:00",
+     "published": "2026-11-22T01:06:00+09:00",
      "dup_count": 0,
-     "summary": "코스닥 시장에서 에코프로와 에코프로비엠 등 주요 종목들이 일제히 하락했다."
+     "summary": "반도체 호황 둔화에 대비해 첨단장비 등 대중 수출 품목 다변화가 필요하다."
     }
    ]
   },
   {
-   "title": "젠슨 황 스캔들 관련",
+   "title": "두산에너빌리티 주가 8%대 급락...원전주 애프터마켓 '희비', 한국전력·...",
    "sources": [
-    "h21.hani.co.kr"
+    "cbci.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "젠슨 황, 스캔들에서 게이트로... 이제 시작이다",
-     "url": "https://h21.hani.co.kr/arti/world/world_general/60212.html",
-     "source": "h21.hani.co.kr",
-     "published": "2026-11-21T12:16:00+09:00",
+     "title": "두산에너빌리티 주가 8%대 급락...원전주 애프터마켓 '희비', 한국전력·...",
+     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=629223",
+     "source": "cbci.co.kr",
+     "published": "2026-11-22T00:16:00+09:00",
+     "dup_count": 1,
+     "summary": "코스피가 4869.96으로 급락하면서 두산에너빌리티 등 원전주도 큰 폭 하락했다."
+    }
+   ]
+  },
+  {
+   "title": "[전규열의 경제포커스] 2027년 경제전망 ···반도체 호황, 성장 과실의...",
+   "sources": [
+    "polinews.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[전규열의 경제포커스] 2027년 경제전망 ···반도체 호황, 성장 과실의...",
+     "url": "https://www.polinews.co.kr/news/articleView.html?idxno=748936",
+     "source": "polinews.co.kr",
+     "published": "2026-11-21T23:37:00+09:00",
      "dup_count": 0,
-     "summary": "젠슨 황의 호실적 발표에도 엔비디아 주가는 하락했다."
+     "summary": "글로벌 AI 투자 확대에 따른 반도체 호황이 2027년 경제 성장을 이끌 전망이다."
+    }
+   ]
+  },
+  {
+   "title": "대구 100억·경북 450억 달러···수출 동반 회복 청신호",
+   "sources": [
+    "dgmbc.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "대구 100억·경북 450억 달러···수출 동반 회복 청신호",
+     "url": "https://dgmbc.com/NewsArticle/874583",
+     "source": "dgmbc.com",
+     "published": "2026-11-21T20:32:00+09:00",
+     "dup_count": 0,
+     "summary": "대구와 경북이 AI·반도체 수출 회복으로 각각 100억·450억 달러 달성을 노린다."
+    }
+   ]
+  },
+  {
+   "title": "[시선+]반도체 호황이 가린 것들...한국 산업은 무엇을 잃고 있나",
+   "sources": [
+    "businessplus.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[시선+]반도체 호황이 가린 것들...한국 산업은 무엇을 잃고 있나",
+     "url": "https://www.businessplus.kr/news/articleView.html?idxno=120249",
+     "source": "businessplus.kr",
+     "published": "2026-11-21T18:56:00+09:00",
+     "dup_count": 0,
+     "summary": "반도체 가격 변동성이 국가 전체 수출 실적을 크게 흔드는 위험요인으로 지적된다."
+    }
+   ]
+  },
+  {
+   "title": "앤트로픽 상장 이후, 한국 AI 기업의 몸값은 무엇으로 증명하나",
+   "sources": [
+    "koreaittimes.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "앤트로픽 상장 이후, 한국 AI 기업의 몸값은 무엇으로 증명하나",
+     "url": "https://www.koreaittimes.com/news/articleView.html?idxno=159344",
+     "source": "koreaittimes.com",
+     "published": "2026-11-21T18:52:00+09:00",
+     "dup_count": 0,
+     "summary": "한국 AI 기업은 자금 조달 후 반도체 기술의 상용화와 수출 실적 증명이 중요해졌다."
+    }
+   ]
+  },
+  {
+   "title": "삼전닉스 떠나고 삼기엘렉 온다?...'왕좌 교체' 시나리오 봤더니[주末머...",
+   "sources": [
+    "view.asiae.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "삼전닉스 떠나고 삼기엘렉 온다?...'왕좌 교체' 시나리오 봤더니[주末머...",
+     "url": "https://view.asiae.co.kr/article/2026111916125816241",
+     "source": "view.asiae.co.kr",
+     "published": "2026-11-21T18:45:00+09:00",
+     "dup_count": 0,
+     "summary": "외국인이 코스피에서 219조 5000억 원을 순매도하며 주도주 교체 가능성이 나온다."
+    }
+   ]
+  },
+  {
+   "title": "골드만삭스, 미국 증시 반등 전망...S&P500 내년 8,700선 제시",
+   "sources": [
+    "jemin.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "골드만삭스, 미국 증시 반등 전망...S&P500 내년 8,700선 제시",
+     "url": "https://www.jemin.com/news/articleView.html?idxno=847998",
+     "source": "jemin.com",
+     "published": "2026-11-21T18:20:00+09:00",
+     "dup_count": 0,
+     "summary": "골드만삭스는 증시 조정에도 내년 S&P500 지수가 8700선까지 오를 것이라 전망했다."
     }
    ]
   }
  ],
  "items": [
   {
-   "title": "젠슨 황, 스캔들에서 게이트로... 이제 시작이다",
-   "url": "https://h21.hani.co.kr/arti/world/world_general/60212.html",
-   "source": "h21.hani.co.kr",
-   "published": "2026-11-21T12:16:00+09:00",
-   "dup_count": 0,
-   "summary": "젠슨 황의 호실적 발표에도 엔비디아 주가는 하락했다."
-  },
-  {
-   "title": "트럼프 \"구형 AI 반도체만 중국에 판매\"...해외 데이터센터도 허가 대상",
-   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=903918",
-   "source": "newsworks.co.kr",
-   "published": "2026-11-21T12:14:00+09:00",
-   "dup_count": 0,
-   "summary": "트럼프는 구형 AI 반도체만 중국에 판매할 것이라고 밝혔다."
-  },
-  {
-   "title": "트럼프 \"중국엔 구형 칩만\"...삼성전자·SK하이닉스 주가 급락, 추가 악재...",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16282127",
-   "source": "topstarnews.net",
-   "published": "2026-11-21T12:12:00+09:00",
-   "dup_count": 0,
-   "summary": "트럼프의 대중국 반도체 규제 발언에 삼성전자와 SK하이닉스 주가가 급락했다."
-  },
-  {
-   "title": "대중 무역흑자 433억달러...반도체 빼면 적자 더 커졌다",
-   "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1314268",
-   "source": "jeonmae.co.kr",
-   "published": "2026-11-21T12:12:00+09:00",
+   "title": "[글로벌 주간 브리핑] AI에 돈은 몰렸지만 주가는 무너졌다...흔들리는 ...",
+   "url": "https://www.wolyo.co.kr/news/articleView.html?idxno=320858",
+   "source": "wolyo.co.kr",
+   "published": "2026-11-22T01:24:00+09:00",
    "dup_count": 1,
-   "summary": "다만 반도체 호황이 꺾일 경우 대중 수출 실적이 급격히 악화할 수 있어 다른 품목의 수출 기반을 강화해야 한다는 분석이다. 박 연구위원은 \"중국은 이제 산업이 고"
+   "summary": "20일 코스피가 5.21% 하락한 4869.96으로 마감하며 외국인 순매도가 이어졌다."
   },
   {
-   "title": "커피값으로 '건물주' 된다... 리츠, 소액 부동산 투자 길 열어",
-   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000085138",
-   "source": "jnilbo.com",
-   "published": "2026-11-21T12:07:00+09:00",
-   "dup_count": 0,
-   "summary": "리츠를 통해 소액으로 부동산에 투자하는 길이 열리고 있다."
-  },
-  {
-   "title": "최근 5거래일 HLB 주가, 2만원대 후반 변동성 확대",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16282113",
-   "source": "topstarnews.net",
-   "published": "2026-11-21T12:04:00+09:00",
-   "dup_count": 0,
-   "summary": "HLB 주가가 2만원대 후반으로 떨어지며 52주 최저가에 근접했다."
-  },
-  {
-   "title": "[NZSI INDEX] 2026년 11월 20일... 코스피 5.21% 폭락, 버핏지수 130%·코스...",
-   "url": "https://www.the-today.com/news/articleView.html?idxno=93900",
-   "source": "the-today.com",
-   "published": "2026-11-21T11:48:00+09:00",
-   "dup_count": 2,
-   "summary": "코스피가 5.21% 폭락하며 4869.96으로 장을 마감했다."
-  },
-  {
-   "title": "9000→4900 추락, 다음은...코스피, 바닥은 있나? 반전은 있나?",
-   "url": "https://www.etnews.com/20261121000019",
-   "source": "etnews.com",
-   "published": "2026-11-21T11:41:00+09:00",
-   "dup_count": 1,
-   "summary": "외국인과 기관의 대규모 매도로 코스피가 4900선 아래로 추락했다."
-  },
-  {
-   "title": "미국 주식 폭락에 \"계좌에 핵 한 방\"...나스닥 5.28% 급락, 월요일 삼성전...",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16282062",
-   "source": "topstarnews.net",
-   "published": "2026-11-21T11:40:00+09:00",
-   "dup_count": 2,
-   "summary": "미국 주식시장 폭락 여파로 월요일 국내 반도체주 타격이 우려된다."
-  },
-  {
-   "title": "비트코인 6만달러 붕괴...한국 증시까지 덮친 '위험자산 투매'",
-   "url": "https://www.the-today.com/news/articleView.html?idxno=93899",
-   "source": "the-today.com",
-   "published": "2026-11-21T11:38:00+09:00",
-   "dup_count": 2,
-   "summary": "비트코인 6만달러 붕괴와 함께 코스피와 코스닥에 매도 사이드카가 발동됐다."
-  },
-  {
-   "title": "\"2027년, 채권에 관심 가져야\"...경제 전문가가 제시한 투자 전략",
-   "url": "https://www.newsis.com/view/NISX20261121_0003877587",
-   "source": "newsis.com",
-   "published": "2026-11-21T11:30:00+09:00",
-   "dup_count": 0,
-   "summary": "경제 전문가들은 내년 경제 성장률 둔화로 채권 투자를 조언했다."
-  },
-  {
-   "title": "\"금요일에 2조 샀는데\" ... '검은 금요일' 버틴 개미, 美반도체 폭락에 '...",
-   "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/21/2026112150025.html",
-   "source": "biz.newdaily.co.kr",
-   "published": "2026-11-21T11:28:00+09:00",
-   "dup_count": 2,
-   "summary": "개인투자자들이 저가 매수에 나선 가운데 미국 반도체주가 폭락했다."
-  },
-  {
-   "title": "최근 5거래일 기아 주가 하락세 이어 8만원대로",
-   "url": "https://www.joongangenews.com/news/articleView.html?idxno=565614",
-   "source": "joongangenews.com",
-   "published": "2026-11-21T11:22:00+09:00",
-   "dup_count": 0,
-   "summary": "기아 주가가 4.5% 하락하며 8만원대로 내려앉았다."
-  },
-  {
-   "title": "4,900선 무너진 코스피...다음주 미국 물가·한은 금통위 '주목'",
-   "url": "https://www.ytn.co.kr/_ln/0102_202611211116080371",
-   "source": "ytn.co.kr",
-   "published": "2026-11-21T11:16:00+09:00",
-   "dup_count": 5,
-   "summary": "코스피와 코스닥이 5%대 하락하며 4900선이 무너졌다."
-  },
-  {
-   "title": "칼럼-AI 시대, 지나침보다 균형이 중요하다",
-   "url": "http://okfashion.co.kr/detail.php?number=64412&thread=81r01r13",
-   "source": "okfashion.co.kr",
-   "published": "2026-11-21T11:14:00+09:00",
-   "dup_count": 0,
-   "summary": "AI 시대에 기술 성과뿐만 아니라 민생과의 균형이 중요하다는 지적이다."
-  },
-  {
-   "title": "\"12일 만에 6682억원 늘었다\"... 마이너스통장 44조 돌파에 전문가 경고",
-   "url": "https://www.insight.co.kr/news/583006",
-   "source": "insight.co.kr",
-   "published": "2026-11-21T11:10:00+09:00",
-   "dup_count": 0,
-   "summary": "마이너스통장 대출이 44조원을 돌파해 가계부채 우려가 커졌다."
-  },
-  {
-   "title": "트럼프 \"중국에 구형 칩만 판매...안 팔면 중국 스스로 만들 것\"",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008856834&plink=ORI&cooper=NAVER",
-   "source": "news.sbs.co.kr",
-   "published": "2026-11-21T11:07:00+09:00",
-   "dup_count": 1,
-   "summary": "트럼프는 중국이 반도체를 자체 개발하기 전에 구형 칩만 판매하겠다고 했다."
-  },
-  {
-   "title": "4년 만에 대중 무역흑자 전환에도...반도체 빼면 오히려 적자폭 확대",
-   "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005963837",
-   "source": "mbnmoney.mbn.co.kr",
-   "published": "2026-11-21T11:04:00+09:00",
-   "dup_count": 0,
-   "summary": "반도체 수출 호조로 4년 만에 대중 무역흑자로 전환했다."
-  },
-  {
-   "title": "대중 무역흑자 433억달러...반도체 빼면 415억달러 적자",
-   "url": "https://www.viva100.com/article/20261121500038",
-   "source": "viva100.com",
-   "published": "2026-11-21T11:04:00+09:00",
-   "dup_count": 0,
-   "summary": "반도체 수출이 전체 교역 실적을 끌어올린 반면 자동차와 이차전지 등에서는 적자가 확대되면서 산업 전반의 경쟁력 회복으로 평가하기 어렵다는 분석이 나온다. 21일 "
-  },
-  {
-   "title": "'7만전자·20만닉스' 여기서 더 떨어진다?...증권가 전망은",
-   "url": "https://economist.co.kr/article/view/ecn202611210004",
-   "source": "economist.co.kr",
-   "published": "2026-11-21T11:02:00+09:00",
-   "dup_count": 1,
-   "summary": "뉴욕증시 AI 회의론과 반도체 규제로 국내 반도체주 추가 하락이 우려된다."
-  },
-  {
-   "title": "수출 연 1조달러 돌파...K-푸드도 역대최고 실적",
-   "url": "https://www.nongmin.com/article/20261120500630",
-   "source": "nongmin.com",
-   "published": "2026-11-21T11:00:00+09:00",
-   "dup_count": 0,
-   "summary": "실제 1∼10월 한국의 반도체 수출액은 지난해 같은 기간보다 193.1% 급증한 3968억달러였다. 이는 전체... 포도는 올 11월 신선농산물 최초로 1억달러 "
-  },
-  {
-   "title": "나경원 \"국민 자산 무너진 날 李대통령은 대장동 변호...무책임 바닥 없...",
-   "url": "https://www.dailian.co.kr/news/view/1717983/?sc=Naver",
-   "source": "dailian.co.kr",
-   "published": "2026-11-21T10:54:00+09:00",
-   "dup_count": 1,
-   "summary": "나경원 의원은 코스피 폭락 속에서 이 대통령의 대장동 변호를 강하게 비판했다."
-  },
-  {
-   "title": "코스피 4900선 붕괴에...나경원 \"李정권, 국민 돈 물어내라\"",
-   "url": "https://www.sisajournal.com/news/articleView.html?idxno=394864",
-   "source": "sisajournal.com",
-   "published": "2026-11-21T10:49:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피 4900선 붕괴에 나경원 의원은 이정권에 책임을 촉구했다."
-  },
-  {
-   "title": "나스닥 주간 10% 폭락·SOXL 32% 추락...삼성전자·SK하이닉스 '월요일 공...",
-   "url": "https://www.greened.kr/news/articleView.html?idxno=355237",
-   "source": "greened.kr",
-   "published": "2026-11-21T10:44:00+09:00",
-   "dup_count": 4,
-   "summary": "나스닥 폭락과 외국인 매도 속 코스피와 코스닥이 동반 급락했다."
-  },
-  {
-   "title": "나경원 \"주식 폭락, 결혼·은퇴자금 반토막...李정권, 국민 돈 물어내라...",
-   "url": "https://www.fnnews.com/news/202611211013306194",
-   "source": "fnnews.com",
-   "published": "2026-11-21T10:40:00+09:00",
-   "dup_count": 1,
-   "summary": "나경원은 주식 폭락으로 국민 자산이 무너졌다며 이정권을 규탄했다."
-  },
-  {
-   "title": "[11월 셋째 주 세계경제동향 브리핑] 코스피 4,800선 추락...나스닥 10% 폭...",
-   "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3041600",
-   "source": "kihoilbo.co.kr",
-   "published": "2026-11-21T10:38:00+09:00",
-   "dup_count": 3,
-   "summary": "코스피가 일주일 새 7.95% 급락해 4800선으로 추락했다."
-  },
-  {
-   "title": "씨티 “韓 가계 주식 평가손실 563조”...소비 위축 우려",
-   "url": "https://www.sedaily.com/article/20117203?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-11-21T10:37:00+09:00",
-   "dup_count": 0,
-   "summary": "씨티는 한국 가계의 주식 평가손실이 563조원에 달한다고 분석했다."
-  },
-  {
-   "title": "美 반도체 수출규제 전면 확대...삼성, 中 AI칩 출하 중단",
-   "url": "https://www.sedaily.com/article/20117201?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-11-21T10:36:00+09:00",
-   "dup_count": 1,
-   "summary": "미국의 반도체 수출 규제 확대 여파로 삼성전자는 중국 AI칩 출하를 중단했다."
-  },
-  {
-   "title": "삼성전자, 메모리·MX사업부장 교체...황상준·최원준 선임",
-   "url": "https://www.sedaily.com/article/20117202?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-11-21T10:36:00+09:00",
-   "dup_count": 0,
-   "summary": "칩 수출을 신청해 그중 87만 9868개가 승인됐으며, 텐센트 계열사(15만 개)·알리바바(7만 5000개)·바이두(4만 3000개) 등이 수혜를 입었다. 알리바"
-  },
-  {
-   "title": "삼전닉스 30%대 추락...‘불장’ 끝난 코스피에 개미 563조 손실",
-   "url": "https://www.sedaily.com/article/20117199?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-11-21T10:35:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피 폭락으로 개미 투자자들이 563조원의 손실을 입었다."
-  },
-  {
-   "title": "트럼프 \"中엔 구형 칩만 판매\"...美, 반도체 수출 '상한선' 지키고 우회로...",
-   "url": "https://www.youthdaily.co.kr/news/article.html?no=230169",
-   "source": "youthdaily.co.kr",
-   "published": "2026-11-21T10:32:00+09:00",
-   "dup_count": 0,
-   "summary": "트럼프는 중국과 포괄적 합의를 논의 중이며 구형 칩만 판매하겠다고 밝혔다."
-  },
-  {
-   "title": "코스닥 5%대 '털썩'...리노공업·이오테크닉스 두자릿수 하락률, 알테오...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=629219",
+   "title": "[반도체 착시] 4년 만에 433억 달러 대중 무역흑자 달성했지만... 반도체...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=629451",
    "source": "cbci.co.kr",
-   "published": "2026-11-21T10:30:00+09:00",
+   "published": "2026-11-22T01:06:00+09:00",
    "dup_count": 0,
-   "summary": "코스닥 시장에서 에코프로와 에코프로비엠 등 주요 종목들이 일제히 하락했다."
+   "summary": "반도체 호황 둔화에 대비해 첨단장비 등 대중 수출 품목 다변화가 필요하다."
   },
   {
-   "title": "코스피 5% 폭락...나경원 “결혼자금 반토막, 은퇴자금 녹아내려”",
-   "url": "https://www.mk.co.kr/article/12215191",
-   "source": "mk.co.kr",
-   "published": "2026-11-21T10:26:00+09:00",
+   "title": "엔비디아 8천억 원 사들인 서학개미, 보유 평가액은 6조 원 줄었다",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95048",
+   "source": "thefairnews.co.kr",
+   "published": "2026-11-22T01:02:00+09:00",
    "dup_count": 1,
-   "summary": "코스피 5% 폭락에 나경원은 결혼과 은퇴자금이 반토막 났다고 비판했다."
+   "summary": "서학개미가 엔비디아를 8천억 원 순매수했으나 보유 평가액은 6조 원 줄었다."
   },
   {
-   "title": "'수출 1조달러' 한국, 반도체 끌고 이 산업이 밀었다 [뉴스Q]",
-   "url": "https://www.newsq.co.kr/news/articleView.html?idxno=500983",
-   "source": "newsq.co.kr",
-   "published": "2026-11-21T10:26:00+09:00",
-   "dup_count": 0,
-   "summary": "반도체와 컴퓨터 수출의 급증이 한국의 수출 1조달러 돌파를 이끌었다."
+   "title": "외국인·기관 동반 매수...하이브·한진칼 주가 급등",
+   "url": "http://www.kjdaily.com/article.php?aid=1795275334693031276",
+   "source": "kjdaily.com",
+   "published": "2026-11-22T00:38:00+09:00",
+   "dup_count": 2,
+   "summary": "코스피 급락 속에도 외국인과 기관 매수로 하이브와 한진칼 주가가 급등했다."
   },
   {
-   "title": "美, 엔비디아 칩 중국 원격접속도 차단...베선트 \"수출 통제 강화\"",
-   "url": "https://biz.sbs.co.kr/article_hub/20000347965?division=NAVER",
-   "source": "biz.sbs.co.kr",
-   "published": "2026-11-21T10:25:00+09:00",
+   "title": "인버스 ETF·ETN 급등...삼성전자 인버스 22%↑",
+   "url": "http://www.kjdaily.com/article.php?aid=1795275323693021276",
+   "source": "kjdaily.com",
+   "published": "2026-11-22T00:38:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피 변동성에 삼성전자 인버스 등 인버스 ETF·ETN이 급등했다."
+  },
+  {
+   "title": "서학개미, 엔비디아 8천억대 순매수...보유평가액 6조 감소",
+   "url": "http://www.kjdaily.com/article.php?aid=1795275285693016276",
+   "source": "kjdaily.com",
+   "published": "2026-11-22T00:36:00+09:00",
+   "dup_count": 1,
+   "summary": "엔비디아가 14.01% 급락한 125.53달러로 마감해 서학개미 평가액이 급감했다."
+  },
+  {
+   "title": "우리금융·레인보우로보틱스 기관 순매수...외국인·개인은 매도",
+   "url": "http://www.kjdaily.com/article.php?aid=1795275207693033276",
+   "source": "kjdaily.com",
+   "published": "2026-11-22T00:36:00+09:00",
    "dup_count": 0,
-   "summary": "베선트 장관은 H200보다 낮은 등급의 반도체도 수출 허용 대상에 포함된다고 설명했습니다. 엔비디아가 최근 실적 발표에서 중국에 대한 H200 출하가 중단됐다고 "
+   "summary": "코스피 7.95% 급락 속 기관이 우리금융과 레인보우로보틱스를 순매수했다."
+  },
+  {
+   "title": "외국인 매수 줄었다...셀트리온·대한항공 순매수 상위권",
+   "url": "http://www.kjdaily.com/article.php?aid=1795274857693030276",
+   "source": "kjdaily.com",
+   "published": "2026-11-22T00:30:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피 급락 속 외국인의 셀트리온과 대한항공 순매수 상위권 유지가 눈에 띈다."
+  },
+  {
+   "title": "코스피·코스닥 급락...한국화장품 25%·지슨 73%↑",
+   "url": "http://www.kjdaily.com/article.php?aid=1795274258693028276",
+   "source": "kjdaily.com",
+   "published": "2026-11-22T00:22:00+09:00",
+   "dup_count": 0,
+   "summary": "삼성전자와 SK하이닉스 급락 속에 한국화장품 주가는 25% 상승했다."
+  },
+  {
+   "title": "두산에너빌리티 주가 8%대 급락...원전주 애프터마켓 '희비', 한국전력·...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=629223",
+   "source": "cbci.co.kr",
+   "published": "2026-11-22T00:16:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피가 4869.96으로 급락하면서 두산에너빌리티 등 원전주도 큰 폭 하락했다."
+  },
+  {
+   "title": "이수페타시스·심텍 외국인·기관 동반 매도...46종목 주가 하락",
+   "url": "http://www.kjdaily.com/article.php?aid=1795273991693032276",
+   "source": "kjdaily.com",
+   "published": "2026-11-22T00:16:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피 7.95% 급락 속 외국인과 기관이 이수페타시스와 심텍을 동반 매도했다."
+  },
+  {
+   "title": "삼성전자·삼성전자우·삼성전기 급락...외국인 팔고 개미 샀다",
+   "url": "http://www.kjdaily.com/article.php?aid=1795273632693029276",
+   "source": "kjdaily.com",
+   "published": "2026-11-22T00:10:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피가 7.95% 급락하자 외국인은 삼성전자를 팔고 개인은 순매수했다."
+  },
+  {
+   "title": "[더페어 돋보기] 외인 매도 이탈속 삼전닉스와 소부장의 엇갈린 수급 결...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=94970",
+   "source": "thefairnews.co.kr",
+   "published": "2026-11-22T00:00:00+09:00",
+   "dup_count": 0,
+   "summary": "외국인 매도 속에 반도체 대형주와 소부장 종목 간 수급 차별화가 심화되었다."
+  },
+  {
+   "title": "[증시 프리즘] 외인 매도 공세에 흔들린 코스피 대형주...반도체·자동차...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=94968",
+   "source": "thefairnews.co.kr",
+   "published": "2026-11-22T00:00:00+09:00",
+   "dup_count": 0,
+   "summary": "미국의 대중 AI 반도체 수출 통제 강화로 코스피 대형주가 외인 매도에 흔들렸다."
+  },
+  {
+   "title": "[뉴욕증시 전망] AI 급락 여파 속 PCE·소비지표 주목",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95045",
+   "source": "thefairnews.co.kr",
+   "published": "2026-11-22T00:00:00+09:00",
+   "dup_count": 0,
+   "summary": "AI 고평가 우려로 뉴욕증시가 급락한 가운데 시장은 PCE 등 소비지표에 주목한다."
+  },
+  {
+   "title": "나스닥 5.3% 폭락, 올해 상승분 다 날렸다...월요일이 두려운 개미들",
+   "url": "http://weekly.chosun.com/news/articleView.html?idxno=57350",
+   "source": "weekly.chosun.com",
+   "published": "2026-11-21T23:41:00+09:00",
+   "dup_count": 0,
+   "summary": "나스닥이 5.3% 폭락하고 필라델피아 반도체지수가 급락해 올해 상승분을 반납했다."
+  },
+  {
+   "title": "[전규열의 경제포커스] 2027년 경제전망 ···반도체 호황, 성장 과실의...",
+   "url": "https://www.polinews.co.kr/news/articleView.html?idxno=748936",
+   "source": "polinews.co.kr",
+   "published": "2026-11-21T23:37:00+09:00",
+   "dup_count": 0,
+   "summary": "글로벌 AI 투자 확대에 따른 반도체 호황이 2027년 경제 성장을 이끌 전망이다."
+  },
+  {
+   "title": "비트코인, 나스닥 5% 급락에 하루 15억 달러 청산...롱 포지션이 14억 달...",
+   "url": "https://www.wikitree.co.kr/articles/1176604",
+   "source": "wikitree.co.kr",
+   "published": "2026-11-21T23:26:00+09:00",
+   "dup_count": 0,
+   "summary": "나스닥과 코스피 급락 여파로 비트코인이 하루 만에 15억 달러 청산되었다."
+  },
+  {
+   "title": "“삼성전자·SK하이닉스 내년에도 웃는다고?”...무디스, 2027 AI반도체 호...",
+   "url": "https://www.kbmaeil.com/article/20261121500209",
+   "source": "kbmaeil.com",
+   "published": "2026-11-21T23:24:00+09:00",
+   "dup_count": 0,
+   "summary": "무디스는 AI 수요 지속으로 삼성전자와 SK하이닉스의 호실적이 이어질 것으로 봤다."
+  },
+  {
+   "title": "“삼성·하이닉스 내년에도 웃는다”...무디스가 전망한 AI 반도체 호황",
+   "url": "https://biz.heraldcorp.com/article/10944835?ref=naver",
+   "source": "biz.heraldcorp.com",
+   "published": "2026-11-21T23:01:00+09:00",
+   "dup_count": 0,
+   "summary": "무디스는 AI 투자 수혜가 반도체를 넘어 데이터센터 등 인프라로 확대된다고 전망했다."
+  },
+  {
+   "title": "[김남현의 채권썰] 조정장 진입한 주가 vs 인상 예고된 금통위",
+   "url": "https://www.etoday.co.kr/news/view/2651239",
+   "source": "etoday.co.kr",
+   "published": "2026-11-21T22:52:00+09:00",
+   "dup_count": 0,
+   "summary": "국고채 3년물과 10년물 금리차가 최저치를 기록하며 장단기 스프레드가 축소되었다."
+  },
+  {
+   "title": "美 기술주 급락에 코스피 4900선 이탈...다음주 금리 변수에 촉각",
+   "url": "https://www.econovill.com/news/articleView.html?idxno=758068",
+   "source": "econovill.com",
+   "published": "2026-11-21T22:50:00+09:00",
+   "dup_count": 5,
+   "summary": "미국 기술주 급락 여파로 코스피가 4900선을 밑돌고 코스닥도 645.68로 하락했다."
+  },
+  {
+   "title": "코스피 5,000선 회복할까...미국 물가·금통위 주목",
+   "url": "https://www.ytn.co.kr/_ln/0102_202611212233584589",
+   "source": "ytn.co.kr",
+   "published": "2026-11-21T22:33:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피 4900선 이탈 속 미국 물가 발표와 한국은행 금통위 결정이 분수령이 된다."
+  },
+  {
+   "title": "이 대통령 \"공익환수가 배임인가\" 나경원 \"주가 바닥을 치고 있어\"",
+   "url": "https://www.mediatoday.co.kr/news/articleView.html?idxno=338617",
+   "source": "mediatoday.co.kr",
+   "published": "2026-11-21T22:07:00+09:00",
+   "dup_count": 1,
+   "summary": "나경원 의원은 코스피가 4869.96으로 폭락하고 사이드카가 발동되었다고 비판했다."
+  },
+  {
+   "title": "비트코인 5.5만 달러 턱밑...24억 달러 ‘청산 폭탄’",
+   "url": "http://coinreaders.com/272284",
+   "source": "coinreaders.com",
+   "published": "2026-11-21T20:58:00+09:00",
+   "dup_count": 0,
+   "summary": "나스닥과 코스피 급락에 비트코인이 5.5만 달러 선으로 내려서며 청산이 폭증했다."
+  },
+  {
+   "title": "뉴욕증시 AI 거품 우려에 폭락...국내 증시도 '검은 월요일' 우려",
+   "url": "https://www.gokorea.kr/news/articleView.html?idxno=886724",
+   "source": "gokorea.kr",
+   "published": "2026-11-21T20:32:00+09:00",
+   "dup_count": 2,
+   "summary": "AI 거품 우려로 필라델피아 반도체지수가 10.73% 급락하며 뉴욕증시가 폭락했다."
+  },
+  {
+   "title": "대구 100억·경북 450억 달러···수출 동반 회복 청신호",
+   "url": "https://dgmbc.com/NewsArticle/874583",
+   "source": "dgmbc.com",
+   "published": "2026-11-21T20:32:00+09:00",
+   "dup_count": 0,
+   "summary": "대구와 경북이 AI·반도체 수출 회복으로 각각 100억·450억 달러 달성을 노린다."
+  },
+  {
+   "title": "나스닥 5.3% 폭락 '검은 금요일'..올해 상승분 모두 반납",
+   "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6867504_37004.html",
+   "source": "imnews.imbc.com",
+   "published": "2026-11-21T20:07:00+09:00",
+   "dup_count": 0,
+   "summary": "리사 쿡 연준 이사의 금리 인상 전망과 AI 우려로 나스닥이 5.3% 폭락했다."
+  },
+  {
+   "title": "나경원 \"주가 반토막, 李 정부 책임져야⋯결혼·은퇴자금 사라져\"",
+   "url": "http://www.inews24.com/view/2028907",
+   "source": "inews24.com",
+   "published": "2026-11-21T19:28:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피가 4869.96으로 떨어져 3460조 원이 증발했다고 나경원 의원이 밝혔다."
+  },
+  {
+   "title": "나경원 \"주가 폭락인데...李 정권은 '대장동 사건' 변호\"",
+   "url": "https://www.cjb.co.kr/home/sub.php?menukey=61&mod=view&P_NO=261121506&PRO_CODE=99",
+   "source": "cjb.co.kr",
+   "published": "2026-11-21T19:17:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피 4869.96 마감 등 양 시장 매도 사이드카 발동을 나경원 의원이 지적했다."
+  },
+  {
+   "title": "[시선+]반도체 호황이 가린 것들...한국 산업은 무엇을 잃고 있나",
+   "url": "https://www.businessplus.kr/news/articleView.html?idxno=120249",
+   "source": "businessplus.kr",
+   "published": "2026-11-21T18:56:00+09:00",
+   "dup_count": 0,
+   "summary": "반도체 가격 변동성이 국가 전체 수출 실적을 크게 흔드는 위험요인으로 지적된다."
+  },
+  {
+   "title": "앤트로픽 상장 이후, 한국 AI 기업의 몸값은 무엇으로 증명하나",
+   "url": "https://www.koreaittimes.com/news/articleView.html?idxno=159344",
+   "source": "koreaittimes.com",
+   "published": "2026-11-21T18:52:00+09:00",
+   "dup_count": 0,
+   "summary": "한국 AI 기업은 자금 조달 후 반도체 기술의 상용화와 수출 실적 증명이 중요해졌다."
+  },
+  {
+   "title": "\"삼전닉스, 반전은 온다\"...무디스 전망에 개미들 '반색'",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611210035&t=NN",
+   "source": "wowtv.co.kr",
+   "published": "2026-11-21T18:52:00+09:00",
+   "dup_count": 0,
+   "summary": "무디스는 AI 인프라 투자 확대로 한국 기업들의 수출과 실적이 개선될 것으로 분석했다."
+  },
+  {
+   "title": "삼전닉스 떠나고 삼기엘렉 온다?...'왕좌 교체' 시나리오 봤더니[주末머...",
+   "url": "https://view.asiae.co.kr/article/2026111916125816241",
+   "source": "view.asiae.co.kr",
+   "published": "2026-11-21T18:45:00+09:00",
+   "dup_count": 0,
+   "summary": "외국인이 코스피에서 219조 5000억 원을 순매도하며 주도주 교체 가능성이 나온다."
+  },
+  {
+   "title": "골드만삭스, 미국 증시 반등 전망...S&P500 내년 8,700선 제시",
+   "url": "https://www.jemin.com/news/articleView.html?idxno=847998",
+   "source": "jemin.com",
+   "published": "2026-11-21T18:20:00+09:00",
+   "dup_count": 0,
+   "summary": "골드만삭스는 증시 조정에도 내년 S&P500 지수가 8700선까지 오를 것이라 전망했다."
   }
  ]
 }
