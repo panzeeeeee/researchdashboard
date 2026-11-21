@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T03:08:03.628401+09:00",
+ "updated_at": "2026-11-21T23:21:41.738891+09:00",
  "picks": [
   {
    "code": "BOX",
@@ -52,7 +52,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.881,
+   "score": 0.885,
    "note": "F6",
    "source": "딥밸류"
   },
@@ -63,7 +63,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.806,
+   "score": 0.8,
    "note": "F8",
    "source": "딥밸류"
   },
@@ -74,7 +74,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.779,
+   "score": 0.78,
    "note": "F8",
    "source": "딥밸류"
   }
@@ -252,7 +252,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.881,
+   "score": 0.885,
    "note": "F6",
    "rank": 1
   },
@@ -263,7 +263,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.806,
+   "score": 0.8,
    "note": "F8",
    "rank": 2
   },
@@ -274,7 +274,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.779,
+   "score": 0.78,
    "note": "F8",
    "rank": 3
   },
@@ -285,7 +285,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Financial Services",
-   "score": 0.746,
+   "score": 0.745,
    "note": "F6",
    "rank": 4
   },
@@ -296,7 +296,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Technology",
-   "score": 0.724,
+   "score": 0.723,
    "note": "F8",
    "rank": 5
   },
@@ -307,7 +307,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.696,
+   "score": 0.7,
    "note": "F6",
    "rank": 6
   },
@@ -329,7 +329,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.686,
+   "score": 0.685,
    "note": "F7",
    "rank": 8
   },
@@ -340,20 +340,9 @@
    "strategy": "딥밸류",
    "universe": "NDX",
    "sector": "Communication Services",
-   "score": 0.681,
+   "score": 0.682,
    "note": "F9",
    "rank": 9
-  },
-  {
-   "code": "CLB",
-   "name": "Core Laboratories Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Energy",
-   "score": 0.673,
-   "note": "F7",
-   "rank": 10
   },
   {
    "code": "ZTS",
@@ -362,20 +351,20 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Healthcare",
-   "score": 0.669,
+   "score": 0.682,
    "note": "F8",
-   "rank": 11
+   "rank": 10
   },
   {
-   "code": "STRA",
-   "name": "Strategic Education, Inc.",
+   "code": "CLB",
+   "name": "Core Laboratories Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.662,
-   "note": "F8",
-   "rank": 12
+   "sector": "Energy",
+   "score": 0.666,
+   "note": "F7",
+   "rank": 11
   },
   {
    "code": "INTU",
@@ -384,8 +373,19 @@
    "strategy": "딥밸류",
    "universe": "NDX",
    "sector": "Technology",
-   "score": 0.653,
+   "score": 0.662,
    "note": "F7",
+   "rank": 12
+  },
+  {
+   "code": "STRA",
+   "name": "Strategic Education, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Consumer Defensive",
+   "score": 0.66,
+   "note": "F8",
    "rank": 13
   },
   {
@@ -395,20 +395,9 @@
    "strategy": "딥밸류",
    "universe": "NDX",
    "sector": "Communication Services",
-   "score": 0.637,
+   "score": 0.647,
    "note": "F7",
    "rank": 14
-  },
-  {
-   "code": "ICFI",
-   "name": "ICF International, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.634,
-   "note": "F7",
-   "rank": 15
   },
   {
    "code": "MNTN",
@@ -417,9 +406,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.629,
+   "score": 0.631,
    "note": "F7",
-   "rank": 16
+   "rank": 15
   },
   {
    "code": "FISV",
@@ -428,8 +417,19 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Unknown",
-   "score": 0.624,
+   "score": 0.629,
    "note": "F6",
+   "rank": 16
+  },
+  {
+   "code": "ICFI",
+   "name": "ICF International, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.627,
+   "note": "F7",
    "rank": 17
   },
   {
@@ -439,18 +439,18 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.619,
+   "score": 0.617,
    "note": "F6",
    "rank": 18
   },
   {
-   "code": "APOG",
-   "name": "Apogee Enterprises, Inc.",
+   "code": "ROOT",
+   "name": "Root, Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.611,
+   "sector": "Financial Services",
+   "score": 0.608,
    "note": "F6",
    "rank": 19
   },
@@ -461,18 +461,18 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.608,
+   "score": 0.607,
    "note": "F6",
    "rank": 20
   },
   {
-   "code": "ROOT",
-   "name": "Root, Inc.",
+   "code": "APOG",
+   "name": "Apogee Enterprises, Inc.",
    "market": "us",
    "strategy": "딥밸류",
    "universe": "R2K",
-   "sector": "Financial Services",
-   "score": 0.604,
+   "sector": "Industrials",
+   "score": 0.605,
    "note": "F6",
    "rank": 21
   },
@@ -483,9 +483,20 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.591,
+   "score": 0.586,
    "note": "F6",
    "rank": 22
+  },
+  {
+   "code": "DXC",
+   "name": "DXC Technology Company",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.585,
+   "note": "F6",
+   "rank": 23
   },
   {
    "code": "FRSH",
@@ -494,9 +505,20 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.587,
+   "score": 0.582,
    "note": "F7",
-   "rank": 23
+   "rank": 24
+  },
+  {
+   "code": "ALG",
+   "name": "Alamo Group, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.58,
+   "note": "F6",
+   "rank": 25
   },
   {
    "code": "BBW",
@@ -505,9 +527,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.583,
+   "score": 0.58,
    "note": "F6",
-   "rank": 24
+   "rank": 26
   },
   {
    "code": "TPB",
@@ -516,9 +538,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.579,
+   "score": 0.574,
    "note": "F7",
-   "rank": 25
+   "rank": 27
   },
   {
    "code": "BL",
@@ -527,30 +549,8 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.576,
+   "score": 0.572,
    "note": "F7",
-   "rank": 26
-  },
-  {
-   "code": "SHOE",
-   "name": "Shoe Station Group, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Consumer Cyclical",
-   "score": 0.571,
-   "note": "F6",
-   "rank": 27
-  },
-  {
-   "code": "LMB",
-   "name": "Limbach Holdings, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.564,
-   "note": "F6",
    "rank": 28
   },
   {
@@ -560,33 +560,33 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Healthcare",
-   "score": 0.55,
+   "score": 0.571,
    "note": "F7",
    "rank": 29
   },
   {
-   "code": "INTU",
-   "name": "Intuit Inc.",
+   "code": "DASH",
+   "name": "DoorDash, Inc.",
    "market": "us",
    "strategy": "딥밸류",
-   "universe": "SPX",
-   "sector": "Technology",
-   "score": 0.546,
-   "note": "F7",
+   "universe": "NDX",
+   "sector": "Consumer Cyclical",
+   "score": 0.57,
+   "note": "F6",
    "rank": 30
   }
  ],
  "sectors": [
   {
    "name": "Technology",
-   "count": 16,
+   "count": 17,
    "tickers": [
     "BOX",
     "FSLR",
     "INTU",
     "MNTN",
-    "FRSH",
-    "BL"
+    "DXC",
+    "FRSH"
    ],
    "strategies": [
     "딥밸류",
@@ -626,15 +626,15 @@
    ]
   },
   {
-   "name": "Industrials",
-   "count": 9,
+   "name": "Consumer Cyclical",
+   "count": 11,
    "tickers": [
-    "ENR",
-    "EXPO",
-    "ICFI",
-    "APOG",
-    "JBI",
-    "PSIX"
+    "HZO",
+    "APTV",
+    "TRIP",
+    "BBW",
+    "DASH",
+    "SHOE"
    ],
    "strategies": [
     "딥밸류",
@@ -642,15 +642,15 @@
    ]
   },
   {
-   "name": "Consumer Cyclical",
-   "count": 9,
+   "name": "Industrials",
+   "count": 10,
    "tickers": [
-    "HZO",
-    "APTV",
-    "TRIP",
-    "BBW",
-    "SHOE",
-    "NKE"
+    "ENR",
+    "EXPO",
+    "ICFI",
+    "JBI",
+    "APOG",
+    "PSIX"
    ],
    "strategies": [
     "딥밸류",
