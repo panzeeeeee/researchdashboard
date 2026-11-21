@@ -1,37 +1,15 @@
 {
- "updated_at": "2026-11-21T23:21:41.738891+09:00",
+ "updated_at": "2026-11-22T00:23:54.864737+09:00",
  "picks": [
   {
-   "code": "BOX",
-   "name": "BOX INC CLASS A",
+   "code": "IPAR",
+   "name": "INTERPARFUMS INC",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.631,
-   "note": "G1",
-   "source": "신고가·물극필반"
-  },
-  {
-   "code": "SIGI",
-   "name": "SELECTIVE INSURANCE GROUP",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Financial Services",
-   "score": 0.527,
-   "note": "G1",
-   "source": "신고가·물극필반"
-  },
-  {
-   "code": "WRB",
-   "name": "W. R. Berkley Corporation",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Financial Services",
-   "score": 0.475,
-   "note": "G1",
+   "sector": "Consumer Defensive",
+   "score": 0.645,
+   "note": "G2",
    "source": "신고가·물극필반"
   },
   {
@@ -41,8 +19,30 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.472,
+   "score": 0.615,
    "note": "G2",
+   "source": "신고가·물극필반"
+  },
+  {
+   "code": "CRAI",
+   "name": "CRA INTERNATIONAL INC",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.56,
+   "note": "G1",
+   "source": "신고가·물극필반"
+  },
+  {
+   "code": "ENR",
+   "name": "ENERGIZER HOLDINGS",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.557,
+   "note": "G1",
    "source": "신고가·물극필반"
   },
   {
@@ -81,37 +81,15 @@
  ],
  "table": [
   {
-   "code": "BOX",
-   "name": "BOX INC CLASS A",
+   "code": "IPAR",
+   "name": "INTERPARFUMS INC",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.631,
-   "note": "G1",
+   "sector": "Consumer Defensive",
+   "score": 0.645,
+   "note": "G2",
    "rank": 1
-  },
-  {
-   "code": "SIGI",
-   "name": "SELECTIVE INSURANCE GROUP",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Financial Services",
-   "score": 0.527,
-   "note": "G1",
-   "rank": 2
-  },
-  {
-   "code": "WRB",
-   "name": "W. R. Berkley Corporation",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Financial Services",
-   "score": 0.475,
-   "note": "G1",
-   "rank": 3
   },
   {
    "code": "PLMR",
@@ -120,20 +98,20 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.472,
+   "score": 0.615,
    "note": "G2",
-   "rank": 4
+   "rank": 2
   },
   {
-   "code": "IPAR",
-   "name": "INTERPARFUMS INC",
+   "code": "CRAI",
+   "name": "CRA INTERNATIONAL INC",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.433,
-   "note": "G2",
-   "rank": 5
+   "sector": "Industrials",
+   "score": 0.56,
+   "note": "G1",
+   "rank": 3
   },
   {
    "code": "ENR",
@@ -142,9 +120,9 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.41,
+   "score": 0.557,
    "note": "G1",
-   "rank": 6
+   "rank": 4
   },
   {
    "code": "ITGR",
@@ -153,31 +131,9 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.405,
+   "score": 0.427,
    "note": "G2",
-   "rank": 7
-  },
-  {
-   "code": "EXPO",
-   "name": "EXPONENT",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.395,
-   "note": "G1",
-   "rank": 8
-  },
-  {
-   "code": "COST",
-   "name": "Costco",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Consumer Defensive",
-   "score": 0.375,
-   "note": "G1",
-   "rank": 9
+   "rank": 5
   },
   {
    "code": "HZO",
@@ -186,9 +142,20 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.365,
+   "score": 0.35,
    "note": "G1",
-   "rank": 10
+   "rank": 6
+  },
+  {
+   "code": "EXPO",
+   "name": "EXPONENT",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.27,
+   "note": "G1",
+   "rank": 7
   },
   {
    "code": "DV",
@@ -197,31 +164,9 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.275,
+   "score": 0.25,
    "note": "G1",
-   "rank": 11
-  },
-  {
-   "code": "WEC",
-   "name": "WEC Energy Group",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Utilities",
-   "score": 0.252,
-   "note": "G1",
-   "rank": 12
-  },
-  {
-   "code": "FIZZ",
-   "name": "NATIONAL BEVERAGE",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.213,
-   "note": "G2",
-   "rank": 13
+   "rank": 8
   },
   {
    "code": "SAFT",
@@ -230,20 +175,9 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.094,
+   "score": 0.121,
    "note": "G1",
-   "rank": 14
-  },
-  {
-   "code": "COST",
-   "name": "Costco Wholesale Corporation Common Stock",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "NDX",
-   "sector": "Consumer Defensive",
-   "score": 0.0,
-   "note": "G1",
-   "rank": 15
+   "rank": 9
   },
   {
    "code": "KROS",
@@ -579,30 +513,29 @@
  "sectors": [
   {
    "name": "Technology",
-   "count": 17,
+   "count": 16,
    "tickers": [
-    "BOX",
     "FSLR",
     "INTU",
     "MNTN",
     "DXC",
-    "FRSH"
+    "FRSH",
+    "BL"
    ],
    "strategies": [
-    "딥밸류",
-    "신고가·물극필반"
+    "딥밸류"
    ]
   },
   {
-   "name": "Consumer Defensive",
+   "name": "Industrials",
    "count": 11,
    "tickers": [
-    "IPAR",
-    "COST",
-    "FIZZ",
-    "COST",
-    "LRN",
-    "STRA"
+    "CRAI",
+    "ENR",
+    "EXPO",
+    "ICFI",
+    "JBI",
+    "APOG"
    ],
    "strategies": [
     "딥밸류",
@@ -642,15 +575,15 @@
    ]
   },
   {
-   "name": "Industrials",
-   "count": 10,
+   "name": "Consumer Defensive",
+   "count": 8,
    "tickers": [
-    "ENR",
-    "EXPO",
-    "ICFI",
-    "JBI",
-    "APOG",
-    "PSIX"
+    "IPAR",
+    "LRN",
+    "STRA",
+    "ODD",
+    "TPB",
+    "NGVC"
    ],
    "strategies": [
     "딥밸류",
