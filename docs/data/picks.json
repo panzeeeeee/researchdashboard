@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22T00:23:54.864737+09:00",
+ "updated_at": "2026-11-23T12:27:19.091383+09:00",
  "picks": [
   {
    "code": "IPAR",
@@ -19,7 +19,7 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.615,
+   "score": 0.614,
    "note": "G2",
    "source": "신고가·물극필반"
   },
@@ -30,7 +30,7 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.56,
+   "score": 0.557,
    "note": "G1",
    "source": "신고가·물극필반"
   },
@@ -41,7 +41,7 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.557,
+   "score": 0.545,
    "note": "G1",
    "source": "신고가·물극필반"
   },
@@ -98,7 +98,7 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.615,
+   "score": 0.614,
    "note": "G2",
    "rank": 2
   },
@@ -109,7 +109,7 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.56,
+   "score": 0.557,
    "note": "G1",
    "rank": 3
   },
@@ -120,20 +120,9 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.557,
+   "score": 0.545,
    "note": "G1",
    "rank": 4
-  },
-  {
-   "code": "ITGR",
-   "name": "INTEGER HOLDINGS CORP",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.427,
-   "note": "G2",
-   "rank": 5
   },
   {
    "code": "HZO",
@@ -142,9 +131,9 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.35,
+   "score": 0.331,
    "note": "G1",
-   "rank": 6
+   "rank": 5
   },
   {
    "code": "EXPO",
@@ -153,9 +142,9 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.27,
+   "score": 0.258,
    "note": "G1",
-   "rank": 7
+   "rank": 6
   },
   {
    "code": "DV",
@@ -166,7 +155,7 @@
    "sector": "Communication Services",
    "score": 0.25,
    "note": "G1",
-   "rank": 8
+   "rank": 7
   },
   {
    "code": "SAFT",
@@ -175,9 +164,9 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.121,
+   "score": 0.11,
    "note": "G1",
-   "rank": 9
+   "rank": 8
   },
   {
    "code": "KROS",
@@ -543,22 +532,6 @@
    ]
   },
   {
-   "name": "Healthcare",
-   "count": 11,
-   "tickers": [
-    "ITGR",
-    "KROS",
-    "COLL",
-    "ZTS",
-    "PODD",
-    "ACAD"
-   ],
-   "strategies": [
-    "딥밸류",
-    "신고가·물극필반"
-   ]
-  },
-  {
    "name": "Consumer Cyclical",
    "count": 11,
    "tickers": [
@@ -572,6 +545,21 @@
    "strategies": [
     "딥밸류",
     "신고가·물극필반"
+   ]
+  },
+  {
+   "name": "Healthcare",
+   "count": 10,
+   "tickers": [
+    "KROS",
+    "COLL",
+    "ZTS",
+    "PODD",
+    "ACAD",
+    "INSP"
+   ],
+   "strategies": [
+    "딥밸류"
    ]
   },
   {
