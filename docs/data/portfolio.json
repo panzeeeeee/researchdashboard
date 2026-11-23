@@ -1,120 +1,120 @@
 {
- "updated_at": "2026-11-23T12:28:05.762580+09:00",
+ "updated_at": "2026-11-24T06:44:33.723881+09:00",
  "benchmark": "SPY",
- "benchmark_dd": -11.46,
+ "benchmark_dd": -7.29,
  "ladder": [
   {
    "level": -10,
-   "hit": true,
-   "gap": 0
+   "hit": false,
+   "gap": 2.71
   },
   {
    "level": -15,
    "hit": false,
-   "gap": 3.54
+   "gap": 7.71
   },
   {
    "level": -20,
    "hit": false,
-   "gap": 8.54
+   "gap": 12.71
   }
  ],
  "holdings": [
   {
    "ticker": "ENPH",
-   "price": 19.63,
-   "d1": -10.69,
-   "m1": -37.38,
-   "from_high": -72.86,
-   "pos52": 0
+   "price": 20.87,
+   "d1": 6.32,
+   "m1": -33.96,
+   "from_high": -71.15,
+   "pos52": 2
   },
   {
    "ticker": "FSLR",
-   "price": 137.59,
-   "d1": -9.45,
-   "m1": -19.66,
-   "from_high": -56.77,
-   "pos52": 0
+   "price": 146.53,
+   "d1": 6.5,
+   "m1": -14.8,
+   "from_high": -53.96,
+   "pos52": 5
   },
   {
    "ticker": "NKE",
-   "price": 32.92,
-   "d1": -4.11,
-   "m1": -14.09,
-   "from_high": -51.43,
-   "pos52": 0
+   "price": 33.76,
+   "d1": 2.55,
+   "m1": -9.49,
+   "from_high": -50.19,
+   "pos52": 2
   },
   {
    "ticker": "CPNG",
-   "price": 14.27,
-   "d1": 1.49,
-   "m1": 2.0,
-   "from_high": -49.33,
-   "pos52": 4
-  },
-  {
-   "ticker": "GOOGL",
-   "price": 265.29,
-   "d1": -2.7,
-   "m1": -18.18,
-   "from_high": -34.11,
-   "pos52": 0
+   "price": 14.74,
+   "d1": 3.29,
+   "m1": 6.04,
+   "from_high": -47.66,
+   "pos52": 7
   },
   {
    "ticker": "CRM",
-   "price": 180.62,
-   "d1": -1.47,
-   "m1": -27.84,
-   "from_high": -32.16,
-   "pos52": 26
+   "price": 185.46,
+   "d1": 2.68,
+   "m1": -25.39,
+   "from_high": -30.34,
+   "pos52": 30
+  },
+  {
+   "ticker": "GOOGL",
+   "price": 282.1,
+   "d1": 6.34,
+   "m1": -11.9,
+   "from_high": -29.93,
+   "pos52": 12
   },
   {
    "ticker": "META",
-   "price": 560.84,
-   "d1": -5.93,
-   "m1": -13.56,
-   "from_high": -27.87,
-   "pos52": 14
+   "price": 597.6,
+   "d1": 6.55,
+   "m1": -7.01,
+   "from_high": -23.15,
+   "pos52": 29
   },
   {
    "ticker": "DEA",
-   "price": 21.29,
-   "d1": -0.93,
-   "m1": -5.67,
-   "from_high": -16.93,
-   "pos52": 6
-  },
-  {
-   "ticker": "AMZN",
-   "price": 246.82,
-   "d1": -4.1,
-   "m1": -1.42,
-   "from_high": -13.1,
-   "pos52": 56
+   "price": 21.49,
+   "d1": 0.94,
+   "m1": -5.21,
+   "from_high": -16.15,
+   "pos52": 10
   },
   {
    "ticker": "MSFT",
-   "price": 484.52,
-   "d1": -2.77,
-   "m1": -7.02,
-   "from_high": -12.82,
-   "pos52": 65
-  },
-  {
-   "ticker": "SPY",
-   "price": 689.81,
-   "d1": -3.64,
-   "m1": -9.71,
-   "from_high": -11.46,
-   "pos52": 39
+   "price": 492.5,
+   "d1": 1.65,
+   "m1": -6.1,
+   "from_high": -11.39,
+   "pos52": 69
   },
   {
    "ticker": "PFE",
    "price": 27.4,
-   "d1": -0.51,
-   "m1": -9.93,
+   "d1": 0.0,
+   "m1": -8.76,
    "from_high": -11.01,
    "pos52": 52
+  },
+  {
+   "ticker": "AMZN",
+   "price": 255.39,
+   "d1": 3.47,
+   "m1": 2.98,
+   "from_high": -10.08,
+   "pos52": 66
+  },
+  {
+   "ticker": "SPY",
+   "price": 722.29,
+   "d1": 4.71,
+   "m1": -4.96,
+   "from_high": -7.29,
+   "pos52": 61
   }
  ]
 }
