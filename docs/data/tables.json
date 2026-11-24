@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-11-24T06:49:06.829848+09:00",
+ "updated_at": "2026-11-24T15:43:09.954769+09:00",
  "breakout": [
   {
    "code": "CBRL",
    "name": "CRACKER BARREL OLD COUNTRY STORE I",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.697,
+   "score": 0.696,
    "gates": 2,
    "missing": "G3바닥횡보, T거래량",
    "missing_n": 2,
@@ -45,7 +45,7 @@
    "name": "CRA INTERNATIONAL INC",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.603,
+   "score": 0.605,
    "gates": 1,
    "missing": "G1신고가나이, G2하락이력, T거래량, TRS",
    "missing_n": 4,
@@ -106,6 +106,19 @@
    "final": false
   },
   {
+   "code": "XERS",
+   "name": "XERIS BIOPHARMA HOLDINGS",
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.539,
+   "gates": 1,
+   "missing": "G1신고가나이, G2하락이력, T거래량, T신선도",
+   "missing_n": 4,
+   "drawdown": 0.0,
+   "buyable": false,
+   "final": false
+  },
+  {
    "code": "GKOS",
    "name": "GLAUKOS",
    "universe": "R2K",
@@ -114,19 +127,6 @@
    "gates": 1,
    "missing": "G1신고가나이, G2하락이력, T거래량",
    "missing_n": 3,
-   "drawdown": 0.0,
-   "buyable": false,
-   "final": false
-  },
-  {
-   "code": "XERS",
-   "name": "XERIS BIOPHARMA HOLDINGS",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.517,
-   "gates": 1,
-   "missing": "G1신고가나이, G2하락이력, T거래량, T신선도",
-   "missing_n": 4,
    "drawdown": 0.0,
    "buyable": false,
    "final": false
@@ -149,7 +149,7 @@
    "name": "CYTEK BIOSCIENCES",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.428,
+   "score": 0.436,
    "gates": 1,
    "missing": "G1신고가나이, G3바닥횡보, T거래량, TRS, T신선도",
    "missing_n": 5,
@@ -253,7 +253,7 @@
    "name": "EXPONENT",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.331,
+   "score": 0.335,
    "gates": 1,
    "missing": "G1신고가나이, G3바닥횡보, T거래량, TRS, T신선도",
    "missing_n": 5,
@@ -276,7 +276,7 @@
    "below200": 189,
    "earn_yld": 43052.7,
    "triggered": true,
-   "why": "임상 및 파이프라인 관련 불확실성 반영"
+   "why": ""
   },
   {
    "code": "APTV",
@@ -291,7 +291,7 @@
    "below200": 187,
    "earn_yld": 10.8,
    "triggered": true,
-   "why": "전방 전기차 수요 둔화 및 공급망 우려"
+   "why": ""
   },
   {
    "code": "NRDS",
@@ -306,7 +306,7 @@
    "below200": 188,
    "earn_yld": 2.2,
    "triggered": true,
-   "why": "고금리에 따른 대출 및 금융 플랫폼 부진"
+   "why": ""
   },
   {
    "code": "FSLR",
@@ -321,7 +321,7 @@
    "below200": 150,
    "earn_yld": 11.5,
    "triggered": true,
-   "why": "태양광 정책 변화 및 경쟁 심화 우려"
+   "why": ""
   },
   {
    "code": "COLL",
@@ -336,7 +336,7 @@
    "below200": 183,
    "earn_yld": 16.2,
    "triggered": true,
-   "why": "오피오이드 소송 및 특허 만료 우려"
+   "why": ""
   },
   {
    "code": "ZTS",
@@ -351,7 +351,7 @@
    "below200": 252,
    "earn_yld": 8.4,
    "triggered": true,
-   "why": "반려동물 의약품 성장 둔화 및 경쟁 심화"
+   "why": ""
   },
   {
    "code": "LRN",
@@ -366,7 +366,7 @@
    "below200": 219,
    "earn_yld": 13.4,
    "triggered": true,
-   "why": "온라인 교육 수요 변동성 및 규제 리스크"
+   "why": ""
   },
   {
    "code": "APP",
@@ -381,7 +381,7 @@
    "below200": 191,
    "earn_yld": 2.1,
    "triggered": true,
-   "why": "확인 필요"
+   "why": ""
   },
   {
    "code": "FISV",
@@ -396,7 +396,7 @@
    "below200": 237,
    "earn_yld": 9.2,
    "triggered": true,
-   "why": "확인 필요"
+   "why": ""
   },
   {
    "code": "INTU",
@@ -411,7 +411,7 @@
    "below200": 250,
    "earn_yld": 6.3,
    "triggered": true,
-   "why": "확인 필요"
+   "why": ""
   },
   {
    "code": "CLB",
@@ -426,7 +426,7 @@
    "below200": 144,
    "earn_yld": 11.0,
    "triggered": true,
-   "why": "전통 에너지 시추 활동 감소 영향"
+   "why": ""
   },
   {
    "code": "NFLX",
@@ -441,7 +441,7 @@
    "below200": 250,
    "earn_yld": 4.3,
    "triggered": true,
-   "why": "가입자 성장 둔화 및 경쟁 심화 우려"
+   "why": ""
   },
   {
    "code": "ICFI",
@@ -456,7 +456,7 @@
    "below200": 140,
    "earn_yld": 6.9,
    "triggered": true,
-   "why": "정부 예산 축소에 따른 컨설팅 수요 둔화"
+   "why": ""
   },
   {
    "code": "MNTN",
@@ -471,7 +471,7 @@
    "below200": 136,
    "earn_yld": 25.1,
    "triggered": true,
-   "why": "확인 필요"
+   "why": ""
   },
   {
    "code": "ODD",
@@ -486,7 +486,7 @@
    "below200": 223,
    "earn_yld": 13.7,
    "triggered": true,
-   "why": "신규 상장 이후 성장성 둔화 우려"
+   "why": ""
   },
   {
    "code": "ADNT",
@@ -501,7 +501,7 @@
    "below200": 180,
    "earn_yld": 13.9,
    "triggered": true,
-   "why": "자동차 생산량 부진 및 원가 상승 영향"
+   "why": ""
   },
   {
    "code": "ROOT",
@@ -516,7 +516,7 @@
    "below200": 250,
    "earn_yld": 55.3,
    "triggered": true,
-   "why": "자동차 보험 손해율 악화 및 적자 이력"
+   "why": ""
   },
   {
    "code": "APOG",
@@ -531,7 +531,7 @@
    "below200": 131,
    "earn_yld": 10.3,
    "triggered": true,
-   "why": "건설 경기 둔화에 따른 수요 감소"
+   "why": ""
   },
   {
    "code": "PSIX",
@@ -546,7 +546,7 @@
    "below200": 195,
    "earn_yld": 10.9,
    "triggered": true,
-   "why": "엔진 수요 변동성 및 공급망 영향"
+   "why": ""
   },
   {
    "code": "JBI",
@@ -561,7 +561,7 @@
    "below200": 252,
    "earn_yld": 18.0,
    "triggered": true,
-   "why": "창고 및 자재 보관 시설 수요 둔화"
+   "why": ""
   }
  ],
  "funnel": {
@@ -615,7 +615,7 @@
  "rejects": [
   [
    "not_drawn_down_enough",
-   1508
+   1509
   ],
   [
    "price_too_low",
@@ -623,7 +623,7 @@
   ],
   [
    "not_neglected_long_enough",
-   195
+   194
   ],
   [
    "illiquid",
