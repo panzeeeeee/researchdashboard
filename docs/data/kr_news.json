@@ -1,734 +1,290 @@
 {
- "updated_at": "2026-11-25T14:03:36.089633+09:00",
+ "updated_at": "2026-11-26T04:04:04.824639+09:00",
  "event_notes": {
-  "why": "뉴스 헤드라인에서 반도체 투매와 삼전닉스 8퍼센트대 하락, AI 거품 공포에 따른 아시아 증시 급락 소식이 전해졌음에도 불구하고, 실제 지수는",
-  "watch": ""
+  "why": "코스피가 6.32퍼센트, 코스닥이 4.79퍼센트로 급등했으나 반도체 업종은 엔비디아 고성능 칩의 중국 우회 접속 차단과 월가의 AI 과의존 우려 재확산 등의 영향으로 마이너스 9.27퍼센트를 기록하며 크게 부진했다. 바이오 업종은 2.84퍼센트 상승한 반면 2차전지, 증권, 건설 등 다수 업종은 하락세를 보였다. 한은의 기준금리 3.25퍼센트 유력 시사와 나라빚 6592조원 사상 최대 소식 및 주식 팔아 집 산 돈 10조 돌파 같은 거시경제 부담 요인들도 증시 전반에 혼조세를 더한 것으로 보인다.",
+  "watch": "한은의 최종금리 눈높이와 12월 금리 인상 가능성 및 미국의 AI 서버업체 실적과 젠슨 황 관련 소식들이 증시 방향성에 미칠 영향을 계속 지켜봐야 한다."
  },
- "clusters": [
-  {
-   "title": "코스피 급락 및 반도체·AI 증시 동향",
-   "sources": [
-    "ajunews.com",
-    "biz.sbs.co.kr",
-    "edaily.co.kr",
-    "hankyung.com",
-    "namdonews.com",
-    "newsis.com",
-    "seouleconews.com"
-   ],
-   "count": 7,
-   "items": [
-    {
-     "title": "[시황] 또다시 검은 날...코스피 5.7% 급락, 삼전닉스 9%대↓",
-     "url": "https://www.namdonews.com/news/articleView.html?idxno=930404",
-     "source": "namdonews.com",
-     "published": "2026-11-25T13:46:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피가 5.7% 급락하고 삼성전자와 SK하이닉스가 9%대 하락하며 검은 수요일을 맞았다."
-    },
-    {
-     "title": "코스피, 반도체 투매 속 5%대 급락...매도→매수→매도 사이드카",
-     "url": "https://www.edaily.co.kr/News/Read?newsId=02879846645649328&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-     "source": "edaily.co.kr",
-     "published": "2026-11-25T14:02:00+09:00",
-     "dup_count": 0,
-     "summary": "외국인이 874억원을 순매도한 반면 개인과 기관은 각각 405억원, 431억원을 순매수했다. 상승 종목이 455개로 하락 종목(1230개)보다는 적지만 코스피 대"
-    },
-    {
-     "title": "코스피,美한풍에 장중 5%대 급락세 지속...삼전닉스 8%대 하락",
-     "url": "http://www.seouleconews.com/news/articleView.html?idxno=95246",
-     "source": "seouleconews.com",
-     "published": "2026-11-25T13:54:00+09:00",
-     "dup_count": 0,
-     "summary": "코스피가 미국 여파로 장중 5%대 급락세를 지속하고 삼성전자와 SK하이닉스가 8%대 하락했다."
-    },
-    {
-     "title": "'젠슨 황 랠리' 하루 천하...亞 증시, AI 거품 공포에 다시 급락",
-     "url": "https://www.newsis.com/view/NISX20261125_0003882669",
-     "source": "newsis.com",
-     "published": "2026-11-25T13:52:00+09:00",
-     "dup_count": 0,
-     "summary": "AI 거품 공포로 아시아 증시가 급락하고 코스피는 장중 5.6% 하락했다."
-    },
-    {
-     "title": "[직설] '젠슨 황 효과', 벌써 끝났나?",
-     "url": "https://biz.sbs.co.kr/article_hub/20000348709?division=NAVER",
-     "source": "biz.sbs.co.kr",
-     "published": "2026-11-25T13:38:00+09:00",
-     "dup_count": 0,
-     "summary": "젠슨 황 효과가 단기에 그친 가운데 한국은행의 금리 인상과 내년 성장률 전망에 관심이 쏠린다."
-    },
-    {
-     "title": "\"겁먹고 주식 팔았는데 어쩌나\"...코스피 '바닥 신호' 나왔다 [한경우의...",
-     "url": "https://www.hankyung.com/article/2026112589076",
-     "source": "hankyung.com",
-     "published": "2026-11-25T13:31:00+09:00",
-     "dup_count": 0,
-     "summary": "CBOE VIX가 정점을 찍고 하락하면서 코스피의 바닥 신호라는 분석이 제기됐다."
-    },
-    {
-     "title": "[食전食후] 코스피, 장중 4700선 붕괴...외인 1.6조원 '팔자'에 반도체株...",
-     "url": "https://www.ajunews.com/view/20261125132414270",
-     "source": "ajunews.com",
-     "published": "2026-11-25T13:30:00+09:00",
-     "dup_count": 0,
-     "summary": "외국인의 대규모 매도 속에서 코스피 장중 4700선이 붕괴됐다."
-    }
-   ]
-  },
-  {
-   "title": "가계대출 및 주담대 금리 상승",
-   "sources": [
-    "delighti.co.kr",
-    "dnews.co.kr",
-    "issuenbiz.com",
-    "job-post.co.kr",
-    "news.sbs.co.kr",
-    "news2day.co.kr",
-    "newsworks.co.kr"
-   ],
-   "count": 7,
-   "items": [
-    {
-     "title": "10월 가계대출 금리 5% 돌파...주담대 14년 7개월 만에 최고",
-     "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008862826&plink=ORI&cooper=NAVER",
-     "source": "news.sbs.co.kr",
-     "published": "2026-11-25T13:56:00+09:00",
-     "dup_count": 1,
-     "summary": "일반신용대출 금리는 5개월 만에 하락했습니다. 한국은행이 25일 발표한 '금융기관 가중평균금리... 은행 신규 취급액 기준 대출 금리와 수신 금리의 차이, 즉 예"
-    },
-    {
-     "title": "주담대 금리 5% 눈앞...14년 7개월 만에 최고치",
-     "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=904359",
-     "source": "newsworks.co.kr",
-     "published": "2026-11-25T13:32:00+09:00",
-     "dup_count": 1,
-     "summary": "10월 신규취급액 기준 가계대출 금리가 연 5.02%로 14년 7개월 만에 최고를 기록했다."
-    },
-    {
-     "title": "주담대 금리 14년 7개월 만에 최고...가계대출도 5% 넘어",
-     "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611251324175070571",
-     "source": "dnews.co.kr",
-     "published": "2026-11-25T14:02:00+09:00",
-     "dup_count": 0,
-     "summary": "예금은행의 10월 가계대출 금리가 연 5.02%를 기록하며 14년 7개월 만에 최고치를 기록했다."
-    },
-    {
-     "title": "주담대 금리, 15년 만에 최고...가계대출 금리 5% 넘어서",
-     "url": "https://www.delighti.co.kr/news/articleView.html?idxno=125593",
-     "source": "delighti.co.kr",
-     "published": "2026-11-25T13:52:00+09:00",
-     "dup_count": 0,
-     "summary": "가계대출 금리가 연 5.02%를 기록하며 주담대 금리가 15년 만에 최고치를 경신했다."
-    },
-    {
-     "title": "은행권 주담대 금리 연 4.98%...14년 7개월 만에 최고치",
-     "url": "https://www.job-post.co.kr/news/articleView.html?idxno=240814",
-     "source": "job-post.co.kr",
-     "published": "2026-11-25T13:50:00+09:00",
-     "dup_count": 0,
-     "summary": "한국은행에 따르면 10월 주택담보대출 평균 금리가 연 4.98%로 14년 7개월 만에 최고치를 기록했다."
-    },
-    {
-     "title": "주담대 금리 5% 눈앞...가계 이자 부담 커진다",
-     "url": "http://www.issuenbiz.com/news/articleView.html?idxno=82010",
-     "source": "issuenbiz.com",
-     "published": "2026-11-25T13:46:00+09:00",
-     "dup_count": 0,
-     "summary": "가계대출 금리가 5%를 넘어선 것은 2023년 11월 이후 처음으로 이자 부담이 커졌다."
-    },
-    {
-     "title": "은행권 주담대 5% 턱밑까지...14년7개월만 최고 수준",
-     "url": "https://www.news2day.co.kr/article/20261125500202",
-     "source": "news2day.co.kr",
-     "published": "2026-11-25T13:24:00+09:00",
-     "dup_count": 0,
-     "summary": "은행권 주담대 금리가 5%에 육박하며 14년 7개월 만에 최고 수준을 기록했다."
-    }
-   ]
-  },
-  {
-   "title": "전북 및 중견기업 수출 증가",
-   "sources": [
-    "fnnews.com",
-    "hankyung.com",
-    "jeonmin.co.kr",
-    "yna.co.kr"
-   ],
-   "count": 4,
-   "items": [
-    {
-     "title": "전북 수출 10개월 연속 증가...\"이달 중 지난해 연간 실적 돌파\"",
-     "url": "http://www.jeonmin.co.kr/news/articleView.html?idxno=451032",
-     "source": "jeonmin.co.kr",
-     "published": "2026-11-25T13:56:00+09:00",
-     "dup_count": 0,
-     "summary": "전북 수출이 지난해 연간 실적의 99.8%까지 올라서면서 이달 중 작년 수준을 넘어설 전망이다. 24일... 지난 19일 우리나라 연간 누계 수출이 반도체 호황에"
-    },
-    {
-     "title": "중견기업 수출 3분기 연속 증가...바이오헬스 1년 새 두 배로",
-     "url": "https://www.hankyung.com/article/202611259307i",
-     "source": "hankyung.com",
-     "published": "2026-11-25T13:46:00+09:00",
-     "dup_count": 0,
-     "summary": "김현철 중견련 상근부회장은 \"반도체 분야가 최대 수출 실적을 기록한 것은 물론, 전년 동기 대비 두 배 이상 증가한 바이오헬스 등 다양한 업종의 중견기업이 현저한"
-    },
-    {
-     "title": "중견기업 3분기 수출 368억달러...2개 분기 연속 역대 최고",
-     "url": "https://www.yna.co.kr/view/AKR20261125102600003?input=1195m",
-     "source": "yna.co.kr",
-     "published": "2026-11-25T13:42:00+09:00",
-     "dup_count": 0,
-     "summary": "김현철 연합회 상근부회장은 \"반도체 분야가 최대 수출 실적을 기록한 것은 물론, 전년 동기 대비 두 배 이상 증가한 바이오헬스 등 다양한 업종의 중견기업이 현저한"
-    },
-    {
-     "title": "중견기업 수출, 반도체·바이오 호조에 2개 분기 연속 역대 최대",
-     "url": "https://www.fnnews.com/news/202611251145167019",
-     "source": "fnnews.com",
-     "published": "2026-11-25T13:36:00+09:00",
-     "dup_count": 0,
-     "summary": "김현철 중견련 상근부회장은 \"반도체 분야가 최대 수출 실적을 기록한 것은 물론 전년 동기 대비 두 배 이상 증가한 바이오헬스 등 다양한 업종의 중견기업이 성과 개"
-    }
-   ]
-  },
-  {
-   "title": "파킹형 ETF(KODEX 머니마켓액티브) 개인 순매수",
-   "sources": [
-    "newsis.com",
-    "pinpointnews.co.kr",
-    "socialvalue.kr"
-   ],
-   "count": 3,
-   "items": [
-    {
-     "title": "'KODEX 머니마켓액티브' 이달 개인 1296억 순매수...파킹형 1위",
-     "url": "https://www.newsis.com/view/NISX20261125_0003882780",
-     "source": "newsis.com",
-     "published": "2026-11-25T14:01:00+09:00",
-     "dup_count": 0,
-     "summary": "KODEX 머니마켓액티브가 이달 파킹형 ETF 중 개인 순매수 1위를 기록했다."
-    },
-    {
-     "title": "삼성자산운용, '머니마켓액티브 ETF' 11월 개인 순매수 1000억 돌파",
-     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=507889",
-     "source": "pinpointnews.co.kr",
-     "published": "2026-11-25T14:00:00+09:00",
-     "dup_count": 0,
-     "summary": "한국은행 기준금리가 연 3.00%인 상황에서 삼성자산운용은 일반 MMF보다 높은 수익률을 추구하는 상품 구조도 자금 유입에 영향을 미친 것으로 분석했다. 확정기여"
-    },
-    {
-     "title": "삼성 KODEX 머니마켓액티브, 이달 파킹형 ETF 개인 순매수 선두",
-     "url": "https://www.socialvalue.kr/news/view/1065587067668777",
-     "source": "socialvalue.kr",
-     "published": "2026-11-25T13:26:00+09:00",
-     "dup_count": 0,
-     "summary": "한국은행의 기준금리가 연 3.00%인 가운데 일반 MMF보다 높은 수익률을 추구할 수 있다는 점도 투자 수요를 이끄는 요인으로 꼽힌다. 개인형퇴직연금(IRP)과 "
-    }
-   ]
-  },
-  {
-   "title": "특허 및 데이터 연계 경제적 기여도 분석",
-   "sources": [
-    "ajunews.com",
-    "newspim.com"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "특허·상표 정보에 수출·고용 데이터 연결...지식재산 경제적 기여도 분...",
-     "url": "https://www.ajunews.com/view/20261125134658325",
-     "source": "ajunews.com",
-     "published": "2026-11-25T14:02:00+09:00",
-     "dup_count": 0,
-     "summary": "국가데이터처와 지식재산처가 특허 데이터와 수출·고용 실적을 연계해 정책 지표 개발에 나선다."
-    },
-    {
-     "title": "특허에 수출·고용 데이터 잇는다...데이터처·지재처, 기업 혁신 성과...",
-     "url": "https://www.newspim.com/news/view/20261125000492",
-     "source": "newspim.com",
-     "published": "2026-11-25T14:00:00+09:00",
-     "dup_count": 0,
-     "summary": "정부가 반도체·AI 기업의 특허 활동과 수출·고용 실적의 데이터 연계를 추진한다."
-    }
-   ]
-  },
-  {
-   "title": "바이오헬스 수출 및 관련 기업 성장",
-   "sources": [
-    "newsfreezone.co.kr",
-    "pinpointnews.co.kr"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "바이오헬스 수출 125% 급증...삼성바이오로직스·셀트리온 성장 탄력받나",
-     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=507940",
-     "source": "pinpointnews.co.kr",
-     "published": "2026-11-25T13:52:00+09:00",
-     "dup_count": 1,
-     "summary": "미국과 중국 등 주요 시장에서의 성장세가 이어질지, 신규 시장으로 수출 기반을 넓힐 수 있을지가 향후 실적의 변수가 될 전망이다. 증시 수혜주, 반도체·바이오·조"
-    },
-    {
-     "title": "\"바이오헬스 내년 수출 12% 성장\"···바이오시밀러·CDMO가 견인",
-     "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=721285",
-     "source": "newsfreezone.co.kr",
-     "published": "2026-11-25T13:26:00+09:00",
-     "dup_count": 0,
-     "summary": "바이오시밀러와 CDMO가 견인하며 내년 바이오헬스 수출이 12% 성장할 것으로 전망됐다."
-    }
-   ]
-  },
-  {
-   "title": "한진칼우 지분 경쟁",
-   "sources": [
-    "sedaily.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "한진칼우 장중 16% 급등...조원태·호반 지분 경쟁에 [이런국장 저런주식...",
-     "url": "https://www.sedaily.com/article/20118784?ref=naver",
-     "source": "sedaily.com",
-     "published": "2026-11-25T14:00:00+09:00",
-     "dup_count": 1,
-     "summary": "조원태와 호반의 지분 경쟁 속에서 한진칼우가 장중 16% 급등했다."
-    }
-   ]
-  },
-  {
-   "title": "대기업 임원 노하우 활용 중소기업 수출 증가",
-   "sources": [
-    "m-i.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "대기업 출신 임원 노하우에 中企 수출 39% 증가...신사업·해외 진출 성과",
-     "url": "https://www.m-i.kr/news/articleView.html?idxno=2022977",
-     "source": "m-i.kr",
-     "published": "2026-11-25T14:00:00+09:00",
-     "dup_count": 0,
-     "summary": "대기업 출신 임원의 노하우로 중소기업의 수출이 39% 증가하고 신사업 성과를 거뒀다."
-    }
-   ]
-  },
-  {
-   "title": "환율 전망",
-   "sources": [
-    "ekn.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "“킹달러도 못 막는다”...삼전닉스가 이끄는 ‘환율 1200원 시대’ 오나...",
-     "url": "https://www.ekn.kr/web/view.php?key=20261125027134438",
-     "source": "ekn.kr",
-     "published": "2026-11-25T13:54:00+09:00",
-     "dup_count": 0,
-     "summary": "킹달러 속에서도 삼성전자와 SK하이닉스가 이끄는 환율 1200원 시대 가능성이 제기된다."
-    }
-   ]
-  },
-  {
-   "title": "미중 AI 인재 전쟁",
-   "sources": [
-    "digitaltoday.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "천재 뺏길 순 없다...젠슨 황 복귀가 드러낸 미중 AI 인재 전쟁",
-     "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=718029",
-     "source": "digitaltoday.co.kr",
-     "published": "2026-11-25T13:52:00+09:00",
-     "dup_count": 0,
-     "summary": "미중 AI 인재 전쟁 속에서 미국이 첨단 반도체 우회 수출 통제를 강화했다."
-    }
-   ]
-  },
-  {
-   "title": "IPO 철회 및 벤처캐피털 회수",
-   "sources": [
-    "topdaily.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "IPO 기대주 잇단 공모철회...벤처캐피털 회수 셈법 변경 불가피",
-     "url": "https://www.topdaily.kr/articles/113099",
-     "source": "topdaily.kr",
-     "published": "2026-11-25T13:46:00+09:00",
-     "dup_count": 0,
-     "summary": "12일 코스닥에 상장한 바이오벤처 넥스아이는 희망공모가 밴드 하단을 밑도는 가격에 공모가를 확정했지만, 상장 이후에도 주가 하락세를 면치 못하고 있다. 상장 이후"
-    }
-   ]
-  },
-  {
-   "title": "라온시큐어 보안주 급등",
-   "sources": [
-    "widedaily.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[특징주] 라온시큐어, 美 정보기관 해킹발 보안주 1위 랠리에 22%대 급등",
-     "url": "https://www.widedaily.com/news/articleView.html?idxno=304742",
-     "source": "widedaily.com",
-     "published": "2026-11-25T13:44:00+09:00",
-     "dup_count": 0,
-     "summary": "라온시큐어가 미국 정보기관의 해킹 방어 랠리에 힘입어 22%대 급등했다."
-    }
-   ]
-  },
-  {
-   "title": "한국화장품제조 수혜 기대감",
-   "sources": [
-    "widedaily.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[특징주] 한국화장품제조, 연말 성수기·한중 FTA 수혜 기대감에 12%대 급...",
-     "url": "https://www.widedaily.com/news/articleView.html?idxno=304741",
-     "source": "widedaily.com",
-     "published": "2026-11-25T13:44:00+09:00",
-     "dup_count": 0,
-     "summary": "전 거래일 2.88% 상승 마감한 데 이어 이틀 연속 오름세를 이어갔다. 같은 시각 거래량은 310만8,861주... 최근 원·달러 환율 하락(원화가치 상승)에 "
-    }
-   ]
-  },
-  {
-   "title": "우리은행 공급망 금융지원",
-   "sources": [
-    "upkoreanews.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "우리은행, 조선·반도체·방산 금융지원 확대...1조원대 공급망 금융으로...",
-     "url": "https://www.upkoreanews.kr/news/articleView.html?idxno=101358",
-     "source": "upkoreanews.kr",
-     "published": "2026-11-25T13:39:00+09:00",
-     "dup_count": 0,
-     "summary": "우리은행이 조선·반도체에 이어 방산까지 금융지원을 확대하며 3분기 최대 실적을 거뒀다."
-    }
-   ]
-  },
-  {
-   "title": "월가 애널리스트 투자법",
-   "sources": [
-    "edaily.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "롤러코스터 장세...월가의 맹인 애널리스트가 들려주는 투자법",
-     "url": "https://www.edaily.co.kr/News/Read?newsId=02771606645649328&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-     "source": "edaily.co.kr",
-     "published": "2026-11-25T13:28:00+09:00",
-     "dup_count": 0,
-     "summary": "한국은행과 연준의 금리 인상 가능성이 제기되는 가운데 롤러코스터 장세가 이어지고 있다."
-    }
-   ]
-  },
-  {
-   "title": "한국은행 점도표와 채권시장",
-   "sources": [
-    "etoday.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "한은 점도표에 3.75%가 찍힌다면...채권시장 흔들 개수는",
-     "url": "https://www.etoday.co.kr/news/view/2652797",
-     "source": "etoday.co.kr",
-     "published": "2026-11-25T13:26:00+09:00",
-     "dup_count": 0,
-     "summary": "한국은행 금융통화위의 기준금리 결정과 향후 금리 전망을 담은 점도표에 채권시장의 이목이 쏠린다."
-    }
-   ]
-  }
- ],
+ "clusters": [],
  "items": [
   {
-   "title": "코스피, 반도체 투매 속 5%대 급락...매도→매수→매도 사이드카",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=02879846645649328&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "source": "edaily.co.kr",
-   "published": "2026-11-25T14:02:00+09:00",
+   "title": "한은, 이달 기준금리 3.25% 유력...최종금리 눈높이 촉각",
+   "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=327368",
+   "source": "pointdaily.co.kr",
+   "published": "2026-11-26T04:00:00+09:00",
    "dup_count": 0,
-   "summary": "외국인이 874억원을 순매도한 반면 개인과 기관은 각각 405억원, 431억원을 순매수했다. 상승 종목이 455개로 하락 종목(1230개)보다는 적지만 코스피 대"
+   "summary": "사진=연합뉴스, 사진공동취재단 한국은행 금융통화위원회가 26일 올해 마지막 통화정책방향 결정회의에서 기준금리를 인상할 것이란 전망이 지배적이다. 금융시장의 시선은"
   },
   {
-   "title": "주담대 금리 14년 7개월 만에 최고...가계대출도 5% 넘어",
-   "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611251324175070571",
-   "source": "dnews.co.kr",
-   "published": "2026-11-25T14:02:00+09:00",
-   "dup_count": 0,
-   "summary": "예금은행의 10월 가계대출 금리가 연 5.02%를 기록하며 14년 7개월 만에 최고치를 기록했다."
-  },
-  {
-   "title": "특허·상표 정보에 수출·고용 데이터 연결...지식재산 경제적 기여도 분...",
-   "url": "https://www.ajunews.com/view/20261125134658325",
-   "source": "ajunews.com",
-   "published": "2026-11-25T14:02:00+09:00",
-   "dup_count": 0,
-   "summary": "국가데이터처와 지식재산처가 특허 데이터와 수출·고용 실적을 연계해 정책 지표 개발에 나선다."
-  },
-  {
-   "title": "'KODEX 머니마켓액티브' 이달 개인 1296억 순매수...파킹형 1위",
-   "url": "https://www.newsis.com/view/NISX20261125_0003882780",
-   "source": "newsis.com",
-   "published": "2026-11-25T14:01:00+09:00",
-   "dup_count": 0,
-   "summary": "KODEX 머니마켓액티브가 이달 파킹형 ETF 중 개인 순매수 1위를 기록했다."
-  },
-  {
-   "title": "한진칼우 장중 16% 급등...조원태·호반 지분 경쟁에 [이런국장 저런주식...",
-   "url": "https://www.sedaily.com/article/20118784?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-11-25T14:00:00+09:00",
-   "dup_count": 1,
-   "summary": "조원태와 호반의 지분 경쟁 속에서 한진칼우가 장중 16% 급등했다."
-  },
-  {
-   "title": "삼성자산운용, '머니마켓액티브 ETF' 11월 개인 순매수 1000억 돌파",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=507889",
-   "source": "pinpointnews.co.kr",
-   "published": "2026-11-25T14:00:00+09:00",
-   "dup_count": 0,
-   "summary": "한국은행 기준금리가 연 3.00%인 상황에서 삼성자산운용은 일반 MMF보다 높은 수익률을 추구하는 상품 구조도 자금 유입에 영향을 미친 것으로 분석했다. 확정기여"
-  },
-  {
-   "title": "특허에 수출·고용 데이터 잇는다...데이터처·지재처, 기업 혁신 성과...",
-   "url": "https://www.newspim.com/news/view/20261125000492",
-   "source": "newspim.com",
-   "published": "2026-11-25T14:00:00+09:00",
-   "dup_count": 0,
-   "summary": "정부가 반도체·AI 기업의 특허 활동과 수출·고용 실적의 데이터 연계를 추진한다."
-  },
-  {
-   "title": "대기업 출신 임원 노하우에 中企 수출 39% 증가...신사업·해외 진출 성과",
-   "url": "https://www.m-i.kr/news/articleView.html?idxno=2022977",
-   "source": "m-i.kr",
-   "published": "2026-11-25T14:00:00+09:00",
-   "dup_count": 0,
-   "summary": "대기업 출신 임원의 노하우로 중소기업의 수출이 39% 증가하고 신사업 성과를 거뒀다."
-  },
-  {
-   "title": "10월 가계대출 금리 5% 돌파...주담대 14년 7개월 만에 최고",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008862826&plink=ORI&cooper=NAVER",
-   "source": "news.sbs.co.kr",
-   "published": "2026-11-25T13:56:00+09:00",
-   "dup_count": 1,
-   "summary": "일반신용대출 금리는 5개월 만에 하락했습니다. 한국은행이 25일 발표한 '금융기관 가중평균금리... 은행 신규 취급액 기준 대출 금리와 수신 금리의 차이, 즉 예"
-  },
-  {
-   "title": "전북 수출 10개월 연속 증가...\"이달 중 지난해 연간 실적 돌파\"",
-   "url": "http://www.jeonmin.co.kr/news/articleView.html?idxno=451032",
-   "source": "jeonmin.co.kr",
-   "published": "2026-11-25T13:56:00+09:00",
-   "dup_count": 0,
-   "summary": "전북 수출이 지난해 연간 실적의 99.8%까지 올라서면서 이달 중 작년 수준을 넘어설 전망이다. 24일... 지난 19일 우리나라 연간 누계 수출이 반도체 호황에"
-  },
-  {
-   "title": "코스피,美한풍에 장중 5%대 급락세 지속...삼전닉스 8%대 하락",
-   "url": "http://www.seouleconews.com/news/articleView.html?idxno=95246",
-   "source": "seouleconews.com",
-   "published": "2026-11-25T13:54:00+09:00",
-   "dup_count": 0,
-   "summary": "코스피가 미국 여파로 장중 5%대 급락세를 지속하고 삼성전자와 SK하이닉스가 8%대 하락했다."
-  },
-  {
-   "title": "“킹달러도 못 막는다”...삼전닉스가 이끄는 ‘환율 1200원 시대’ 오나...",
-   "url": "https://www.ekn.kr/web/view.php?key=20261125027134438",
-   "source": "ekn.kr",
-   "published": "2026-11-25T13:54:00+09:00",
-   "dup_count": 0,
-   "summary": "킹달러 속에서도 삼성전자와 SK하이닉스가 이끄는 환율 1200원 시대 가능성이 제기된다."
-  },
-  {
-   "title": "'젠슨 황 랠리' 하루 천하...亞 증시, AI 거품 공포에 다시 급락",
-   "url": "https://www.newsis.com/view/NISX20261125_0003882669",
-   "source": "newsis.com",
-   "published": "2026-11-25T13:52:00+09:00",
-   "dup_count": 0,
-   "summary": "AI 거품 공포로 아시아 증시가 급락하고 코스피는 장중 5.6% 하락했다."
-  },
-  {
-   "title": "주담대 금리, 15년 만에 최고...가계대출 금리 5% 넘어서",
-   "url": "https://www.delighti.co.kr/news/articleView.html?idxno=125593",
-   "source": "delighti.co.kr",
-   "published": "2026-11-25T13:52:00+09:00",
-   "dup_count": 0,
-   "summary": "가계대출 금리가 연 5.02%를 기록하며 주담대 금리가 15년 만에 최고치를 경신했다."
-  },
-  {
-   "title": "바이오헬스 수출 125% 급증...삼성바이오로직스·셀트리온 성장 탄력받나",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=507940",
-   "source": "pinpointnews.co.kr",
-   "published": "2026-11-25T13:52:00+09:00",
-   "dup_count": 1,
-   "summary": "미국과 중국 등 주요 시장에서의 성장세가 이어질지, 신규 시장으로 수출 기반을 넓힐 수 있을지가 향후 실적의 변수가 될 전망이다. 증시 수혜주, 반도체·바이오·조"
-  },
-  {
-   "title": "천재 뺏길 순 없다...젠슨 황 복귀가 드러낸 미중 AI 인재 전쟁",
-   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=718029",
-   "source": "digitaltoday.co.kr",
-   "published": "2026-11-25T13:52:00+09:00",
-   "dup_count": 0,
-   "summary": "미중 AI 인재 전쟁 속에서 미국이 첨단 반도체 우회 수출 통제를 강화했다."
-  },
-  {
-   "title": "은행권 주담대 금리 연 4.98%...14년 7개월 만에 최고치",
-   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=240814",
-   "source": "job-post.co.kr",
-   "published": "2026-11-25T13:50:00+09:00",
-   "dup_count": 0,
-   "summary": "한국은행에 따르면 10월 주택담보대출 평균 금리가 연 4.98%로 14년 7개월 만에 최고치를 기록했다."
-  },
-  {
-   "title": "[시황] 또다시 검은 날...코스피 5.7% 급락, 삼전닉스 9%대↓",
-   "url": "https://www.namdonews.com/news/articleView.html?idxno=930404",
-   "source": "namdonews.com",
-   "published": "2026-11-25T13:46:00+09:00",
-   "dup_count": 1,
-   "summary": "코스피가 5.7% 급락하고 삼성전자와 SK하이닉스가 9%대 하락하며 검은 수요일을 맞았다."
-  },
-  {
-   "title": "IPO 기대주 잇단 공모철회...벤처캐피털 회수 셈법 변경 불가피",
-   "url": "https://www.topdaily.kr/articles/113099",
-   "source": "topdaily.kr",
-   "published": "2026-11-25T13:46:00+09:00",
-   "dup_count": 0,
-   "summary": "12일 코스닥에 상장한 바이오벤처 넥스아이는 희망공모가 밴드 하단을 밑도는 가격에 공모가를 확정했지만, 상장 이후에도 주가 하락세를 면치 못하고 있다. 상장 이후"
-  },
-  {
-   "title": "주담대 금리 5% 눈앞...가계 이자 부담 커진다",
-   "url": "http://www.issuenbiz.com/news/articleView.html?idxno=82010",
-   "source": "issuenbiz.com",
-   "published": "2026-11-25T13:46:00+09:00",
-   "dup_count": 0,
-   "summary": "가계대출 금리가 5%를 넘어선 것은 2023년 11월 이후 처음으로 이자 부담이 커졌다."
-  },
-  {
-   "title": "중견기업 수출 3분기 연속 증가...바이오헬스 1년 새 두 배로",
-   "url": "https://www.hankyung.com/article/202611259307i",
-   "source": "hankyung.com",
-   "published": "2026-11-25T13:46:00+09:00",
-   "dup_count": 0,
-   "summary": "김현철 중견련 상근부회장은 \"반도체 분야가 최대 수출 실적을 기록한 것은 물론, 전년 동기 대비 두 배 이상 증가한 바이오헬스 등 다양한 업종의 중견기업이 현저한"
-  },
-  {
-   "title": "[특징주] 라온시큐어, 美 정보기관 해킹발 보안주 1위 랠리에 22%대 급등",
-   "url": "https://www.widedaily.com/news/articleView.html?idxno=304742",
-   "source": "widedaily.com",
-   "published": "2026-11-25T13:44:00+09:00",
-   "dup_count": 0,
-   "summary": "라온시큐어가 미국 정보기관의 해킹 방어 랠리에 힘입어 22%대 급등했다."
-  },
-  {
-   "title": "[특징주] 한국화장품제조, 연말 성수기·한중 FTA 수혜 기대감에 12%대 급...",
-   "url": "https://www.widedaily.com/news/articleView.html?idxno=304741",
-   "source": "widedaily.com",
-   "published": "2026-11-25T13:44:00+09:00",
-   "dup_count": 0,
-   "summary": "전 거래일 2.88% 상승 마감한 데 이어 이틀 연속 오름세를 이어갔다. 같은 시각 거래량은 310만8,861주... 최근 원·달러 환율 하락(원화가치 상승)에 "
-  },
-  {
-   "title": "중견기업 3분기 수출 368억달러...2개 분기 연속 역대 최고",
-   "url": "https://www.yna.co.kr/view/AKR20261125102600003?input=1195m",
-   "source": "yna.co.kr",
-   "published": "2026-11-25T13:42:00+09:00",
-   "dup_count": 0,
-   "summary": "김현철 연합회 상근부회장은 \"반도체 분야가 최대 수출 실적을 기록한 것은 물론, 전년 동기 대비 두 배 이상 증가한 바이오헬스 등 다양한 업종의 중견기업이 현저한"
-  },
-  {
-   "title": "우리은행, 조선·반도체·방산 금융지원 확대...1조원대 공급망 금융으로...",
-   "url": "https://www.upkoreanews.kr/news/articleView.html?idxno=101358",
-   "source": "upkoreanews.kr",
-   "published": "2026-11-25T13:39:00+09:00",
-   "dup_count": 0,
-   "summary": "우리은행이 조선·반도체에 이어 방산까지 금융지원을 확대하며 3분기 최대 실적을 거뒀다."
-  },
-  {
-   "title": "[직설] '젠슨 황 효과', 벌써 끝났나?",
-   "url": "https://biz.sbs.co.kr/article_hub/20000348709?division=NAVER",
-   "source": "biz.sbs.co.kr",
-   "published": "2026-11-25T13:38:00+09:00",
-   "dup_count": 0,
-   "summary": "젠슨 황 효과가 단기에 그친 가운데 한국은행의 금리 인상과 내년 성장률 전망에 관심이 쏠린다."
-  },
-  {
-   "title": "중견기업 수출, 반도체·바이오 호조에 2개 분기 연속 역대 최대",
-   "url": "https://www.fnnews.com/news/202611251145167019",
+   "title": "\"엔비디아 고성능 칩 매물 급증\"...中 우회 접속 차단이 결정적",
+   "url": "https://www.fnnews.com/news/202611260306473924",
    "source": "fnnews.com",
-   "published": "2026-11-25T13:36:00+09:00",
+   "published": "2026-11-26T03:42:00+09:00",
    "dup_count": 0,
-   "summary": "김현철 중견련 상근부회장은 \"반도체 분야가 최대 수출 실적을 기록한 것은 물론 전년 동기 대비 두 배 이상 증가한 바이오헬스 등 다양한 업종의 중견기업이 성과 개"
+   "summary": "황 CEO 대신 임시 CEO를 맡았던 콜레트 크레스 최고재무책임자(CFO)는 지난 17일 실적 발표에서 규제 영향을 검토 중이라면서도 \"칩 수요가 공급을 훨씬 웃"
   },
   {
-   "title": "주담대 금리 5% 눈앞...14년 7개월 만에 최고치",
-   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=904359",
-   "source": "newsworks.co.kr",
-   "published": "2026-11-25T13:32:00+09:00",
-   "dup_count": 1,
-   "summary": "10월 신규취급액 기준 가계대출 금리가 연 5.02%로 14년 7개월 만에 최고를 기록했다."
+   "title": "비트코인, 성장률 4.3% 호조에 5만 7,500달러 급락...12월 금리 인상 94% 반...",
+   "url": "https://www.wikitree.co.kr/articles/1177827",
+   "source": "wikitree.co.kr",
+   "published": "2026-11-26T03:12:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피는 6.16% 하락 마감했고 금 현물은 2% 내린 온스당 3,483.59달러였다(로이터 인용).ETF 순유출 49억 달러...레버리지가 떠받친 시장ETF 트"
   },
   {
-   "title": "\"겁먹고 주식 팔았는데 어쩌나\"...코스피 '바닥 신호' 나왔다 [한경우의...",
-   "url": "https://www.hankyung.com/article/2026112589076",
+   "title": "[박근종 칼럼] 젠슨 황 귀환에 춤추는 증시, 'AI 과의존' 깨고 자본시장...",
+   "url": "https://www.mhns.co.kr/news/articleView.html?idxno=770704",
+   "source": "mhns.co.kr",
+   "published": "2026-11-26T03:00:00+09:00",
+   "dup_count": 0,
+   "summary": "설상가상으로 한국은행 금융통화위원회의 기준금리 인상 가능성까지 커지며 증시 자금의 예·적금 이탈 우려도 짙어지고 있다. \"썰물이 빠져나가야 누가 발가벗고 수영하고"
+  },
+  {
+   "title": "미 서버업체 델, 3분기 매출 103%↑·사상 최대...연간 전망 2,020억 달러...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95530",
+   "source": "thefairnews.co.kr",
+   "published": "2026-11-26T01:54:00+09:00",
+   "dup_count": 0,
+   "summary": "델은 24일(현지시간) 장 마감 뒤(한국 시간 25일 오전) 2027회계연도 3분기(8~10월) 매출이 549억3,700만... ※ 원화 환산은 11월 24일 원"
+  },
+  {
+   "title": "삼전 반토막 났다고? 존리의 반문...\"망할 것 같나? 반값이면 찬스 아닌...",
+   "url": "https://weekly.chosun.com/news/articleView.html?idxno=60099",
+   "source": "weekly.chosun.com",
+   "published": "2026-11-26T01:48:00+09:00",
+   "dup_count": 0,
+   "summary": "존리 대표는 \"우리가 가장 속기 쉬운 게 타이밍을 맞추는 것\"이라며 \"불과 6개월 전만 해도 코스피가 1만... 만에 상승분을 모두 반납했다. 삼성전자는 9.87"
+  },
+  {
+   "title": "월가, AI 우려 재확산....\"젠슨 황 말고 달라진게 없다\"[박신영의 개장전...",
+   "url": "https://www.hankyung.com/article/202611260726i",
    "source": "hankyung.com",
-   "published": "2026-11-25T13:31:00+09:00",
+   "published": "2026-11-26T01:46:00+09:00",
    "dup_count": 0,
-   "summary": "CBOE VIX가 정점을 찍고 하락하면서 코스피의 바닥 신호라는 분석이 제기됐다."
+   "summary": "이런 가운데 월가 주요 투자은행들은 내년도 증시 전망을 잇달아 내놓고 있습니다. JP모건은 AI 수요가 여전히 과소평가돼 있다고 분석했습니다. 뱅크오브아메리카(B"
   },
   {
-   "title": "[食전食후] 코스피, 장중 4700선 붕괴...외인 1.6조원 '팔자'에 반도체株...",
-   "url": "https://www.ajunews.com/view/20261125132414270",
-   "source": "ajunews.com",
-   "published": "2026-11-25T13:30:00+09:00",
+   "title": "한은 오늘(26일) 기준 금리 결정...연 3.25%로 올릴까",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8722792&ref=A",
+   "source": "news.kbs.co.kr",
+   "published": "2026-11-26T01:00:00+09:00",
    "dup_count": 0,
-   "summary": "외국인의 대규모 매도 속에서 코스피 장중 4700선이 붕괴됐다."
+   "summary": "한국은행이 오늘(26일) 올해 마지막 금융통화위원회 통화정책방향 회의를 열고 기준금리를 결정합니다. 시장에서는 한은이 기준금리를 현재 연 3%에서 3.25%로 0"
   },
   {
-   "title": "롤러코스터 장세...월가의 맹인 애널리스트가 들려주는 투자법",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=02771606645649328&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "title": "중기부, 명문장수기업 12개사에 확인서 수여",
+   "url": "https://zdnet.co.kr/view/?no=20261126005620",
+   "source": "zdnet.co.kr",
+   "published": "2026-11-26T00:59:00+09:00",
+   "dup_count": 0,
+   "summary": "298억원)의 수출 실적을 올렸다. 동화엔텍은 업력 46년으로 세계일류상품 6개를 보유했고, 고압... 제이피아이헬스케어는 업력 47년으로 세계 최초로 탄소흑연 "
+  },
+  {
+   "title": "하루만에 ‘말짱 황’",
+   "url": "https://www.chosun.com/economy/economy_general/2026/11/26/LXLEOYODTRFXJDGEDLEQXTWY2Q/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "source": "chosun.com",
+   "published": "2026-11-26T00:55:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피, 6% 떨어져 4700선 붕괴 삼전 9.9% 하이닉스 11% 폭락 젠슨 황 복귀 상승분 바로 반납 “AI 산업 거품 공포 해소 안 돼\" 3줄 요약 ᆞ코스피"
+  },
+  {
+   "title": "나라빚 6592조원 사상 최대... 몸집 불어나는 부채공화국",
+   "url": "https://www.kmib.co.kr/article/20261125502022",
+   "source": "kmib.co.kr",
+   "published": "2026-11-26T00:43:00+09:00",
+   "dup_count": 0,
+   "summary": "한국은행이 발표한 ‘금융기관 가중평균금리’에 따르면 10월 예금은행의 가계대출 금리(신규취급액 기준)는 연 5.02%로 전월보다 0.06% 포인트 상승했다. 주택"
+  },
+  {
+   "title": "美 지수 ETF 거래대금 23%↑...코스피200 ETF 9%↓",
+   "url": "http://www.kjdaily.com/article.php?aid=1795620962693486276",
+   "source": "kjdaily.com",
+   "published": "2026-11-26T00:38:00+09:00",
+   "dup_count": 2,
+   "summary": "25일 코스피는 전 거래일보다 308.52포인트(6.16%) 하락한 4,697.51로 마감했다. 전날 6.32% 상승하며 회복했던 5,000선을 하루 만에 다시 "
+  },
+  {
+   "title": "삼전닉스 ELS의 배신... 원금 손실 구간 진입 상품도",
+   "url": "https://www.chosun.com/economy/stock-finance/2026/11/26/X3EHRAZNWJBXXMV3U53E7SQEEI/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "source": "chosun.com",
+   "published": "2026-11-26T00:36:00+09:00",
+   "dup_count": 0,
+   "summary": "이후 반도체주 급락으로 코스피가 24일 5006.03으로 마감하는 등 고점 대비 45.1% 하락했기 때문이다. 미래에셋증권이 7월 발행한 ‘제37899회 ELS’"
+  },
+  {
+   "title": "한싹·라온시큐어 회전율 68%·58%...손바뀜 활발",
+   "url": "http://www.kjdaily.com/article.php?aid=1795620678693596276",
+   "source": "kjdaily.com",
+   "published": "2026-11-26T00:34:00+09:00",
+   "dup_count": 1,
+   "summary": "코스닥지수도 전 거래일보다 15.24포인트(2.29%) 하락한 650.64에 마감했다. 이날 회전율 상위 50종목 가운데 주가 상승 종목은 35개, 하락 종목은 "
+  },
+  {
+   "title": "주식 팔아 집 산 돈 10조 돌파",
+   "url": "https://www.joongang.co.kr/article/25482040",
+   "source": "joongang.co.kr",
+   "published": "2026-11-26T00:33:00+09:00",
+   "dup_count": 0,
+   "summary": "이날 코스피는 6% 넘게 내리며 4697.51에 마감했다. 6월 기록한 역대 최고치(9114.55)의 반 토막 수준이다. 증시 활황기를 거치며 부동산 시장의 금융"
+  },
+  {
+   "title": "은행 가계대출 금리 5% 돌파",
+   "url": "https://www.chosun.com/economy/economy_general/2026/11/26/ZZEVBLFWQFAILDVONLYJO7ULXY/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "source": "chosun.com",
+   "published": "2026-11-26T00:33:00+09:00",
+   "dup_count": 0,
+   "summary": "지난달 평균 5.02%, 3년 만에 넘어 주담대 금리 14년7개월 만에 최고 한국은행 기준 금리와 함께 시중 채권 금리가 함께 오르면서 가계 대출 금리가 동반 상"
+  },
+  {
+   "title": "주담대 금리 4.98% 15년만에 최고... 가계대출은 5% 넘었다",
+   "url": "https://www.donga.com/news/Economy/article/all/20261125/135091191/2",
+   "source": "donga.com",
+   "published": "2026-11-26T00:31:00+09:00",
+   "dup_count": 0,
+   "summary": "한국씨티은행 등은 이번에 기준금리가 연 3.0%에서 연 3.25%로 0.25%포인트 오를 것으로 전망했다. 금융권에 따르면 5대 은행(KB국민·신한·하나·우리·N"
+  },
+  {
+   "title": "반도체 인버스 ETF 22%↑...화장품 ETF도 강세",
+   "url": "http://www.kjdaily.com/article.php?aid=1795620384693488276",
+   "source": "kjdaily.com",
+   "published": "2026-11-26T00:30:00+09:00",
+   "dup_count": 1,
+   "summary": "25일 코스피는 전 거래일보다 308.52포인트(6.16%) 하락한 4,697.51로 마감했다. 전날 6.32% 상승하며 회복했던 5,000선을 하루 만에 다시 "
+  },
+  {
+   "title": "국고채 금리 일제히 하락...3년물 6개월 만에 최저",
+   "url": "http://www.kjdaily.com/article.php?aid=1795620390693482276",
+   "source": "kjdaily.com",
+   "published": "2026-11-26T00:28:00+09:00",
+   "dup_count": 1,
+   "summary": "이날 코스피는 전 거래일보다 6.16% 내린 4,697.51에 마감했다. 전날 회복했던 5,000선을 하루 만에 내주며 상승분을 모두 반납했다. 증권사 채권 운용"
+  },
+  {
+   "title": "[뉴욕증시 개장] AI주 매도세 다시 거세져...나스닥 3%·S&P500 2% 급락",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95526",
+   "source": "thefairnews.co.kr",
+   "published": "2026-11-26T00:28:00+09:00",
+   "dup_count": 0,
+   "summary": "앞서 마감한 한국 증시에서는 코스피가 6.16% 내린 4,697.51에 마감했다. 삼성전자는 9.87% 내린 17만700원, SK하이닉스는 11.05% 내린 10"
+  },
+  {
+   "title": "코스피 6.16% 급락 4,697...삼성전자·SK하이닉스·삼성전기 등 10% 안팎 하...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=630725",
+   "source": "cbci.co.kr",
+   "published": "2026-11-26T00:26:00+09:00",
+   "dup_count": 2,
+   "summary": "이날 코스피는 전 거래일보다 308.52포인트(6.16%) 내린 4,697.51에 정규장을 마감했다. 지수는 4,809.00에 출발해 장중 4,823.36까지 올"
+  },
+  {
+   "title": "다올투자증권 주가 25.94%↑...뷰노도 22% 급등",
+   "url": "http://www.kjdaily.com/article.php?aid=1795620124693595276",
+   "source": "kjdaily.com",
+   "published": "2026-11-26T00:24:00+09:00",
+   "dup_count": 2,
+   "summary": "코스피는 장중 4,700선 아래로 밀린 끝에 전 거래일보다 308.52포인트(6.16%) 하락한 4,697.51로 마감했다. 전날 6.32% 급등하며 회복했던 5"
+  },
+  {
+   "title": "[사설] 본토에서 흔들리는 ‘AI 낙관론’, 반도체만 믿는 재정 괜찮나",
+   "url": "https://www.chosun.com/opinion/editorial/2026/11/26/ZGXFAZWOSZCXLIFLYL7RK6N4AA/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "source": "chosun.com",
+   "published": "2026-11-26T00:21:00+09:00",
+   "dup_count": 1,
+   "summary": "엔비디아 젠슨 황 CEO의 복귀에 환호하며 5000선을 되찾았던 코스피가 하루 만에 주저앉았다. 25일 6.2% 급락한 4697.51로 마감해 10개월여 만의 최"
+  },
+  {
+   "title": "하루 만에 식은 '젠슨 황 효과'..코스피 또 급락",
+   "url": "https://imnews.imbc.com/replay/2026/nw2500/article/6868606_36989.html",
+   "source": "imnews.imbc.com",
+   "published": "2026-11-26T00:19:00+09:00",
+   "dup_count": 0,
+   "summary": "코스피는 개장 8분만에 '매도 사이드카'가 걸렸고, 낙폭을 키우다 6.16% 내린 4,697로 마감했습니다. 6% 넘게 올랐던 상승분을 고스란히 반납한 겁니다. "
+  },
+  {
+   "title": "두산로보틱스·KH바텍 등 3종목 26일 공매도 금지",
+   "url": "http://www.kjdaily.com/article.php?aid=1795619817693599276",
+   "source": "kjdaily.com",
+   "published": "2026-11-26T00:18:00+09:00",
+   "dup_count": 1,
+   "summary": "60% 급락...유형2 선정 -코스피 6.16% 급락...장 초반 매도 사이드카 발동 지난 25일 국내 증시에서... 코스닥지수도 전 거래일보다 15.24포인트("
+  },
+  {
+   "title": "일장‘황’몽 코스피...미 반도체 기침하자 증시가 녹았다",
+   "url": "https://www.joongang.co.kr/article/25482023",
+   "source": "joongang.co.kr",
+   "published": "2026-11-26T00:16:00+09:00",
+   "dup_count": 0,
+   "summary": "한국거래소에 따르면 이날 코스피는 전 거래일보다 6.16% 내린 4697.51에 장을 마치며 전날 상승분을 반납했다. 삼성전자는 9.87% 하락한 17만700원,"
+  },
+  {
+   "title": "HD현대마린 공매도 비중 40%...한미반도체 298억원",
+   "url": "http://www.kjdaily.com/article.php?aid=1795619104693598276",
+   "source": "kjdaily.com",
+   "published": "2026-11-26T00:08:00+09:00",
+   "dup_count": 1,
+   "summary": "코스피는 전 거래일보다 308.52포인트(6.16%) 하락한 4,697.51로 마감했다. 전날 6.32% 반등하며 회복했던 5,000선을 하루 만에 다시 내줬다."
+  },
+  {
+   "title": "한은 올해 마지막 금통위...기준금리 3.25%로 오를까",
+   "url": "https://www.ytn.co.kr/_ln/0102_202611260008127929",
+   "source": "ytn.co.kr",
+   "published": "2026-11-26T00:08:00+09:00",
+   "dup_count": 0,
+   "summary": "한국은행이 오늘(25일) 올해 마지막 금융통화위원회 회의를 열고 기준금리를 결정합니다. 금통위는 앞서 지난달 22일 위원 7명 만장일치로 연 3% 금리 동결을 결"
+  },
+  {
+   "title": "하루만에 6% 급락...코스피 4700선 또 붕괴",
+   "url": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1073615",
+   "source": "ksilbo.co.kr",
+   "published": "2026-11-26T00:04:00+09:00",
+   "dup_count": 1,
+   "summary": "이날 코스피 지수는 전장보다 308.52p(6.16%) 내린 4697.51에 마감해 지난 1월13일(4692.64) 이후 약 10개월 만에 최저치를 기록했다. 젠"
+  },
+  {
+   "title": "“올랐다가 폭삭”...삼전닉스 개미들 멘붕, 증권가도 의견 ‘분분’ [종...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01079126645649656&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "source": "edaily.co.kr",
-   "published": "2026-11-25T13:28:00+09:00",
+   "published": "2026-11-26T00:02:00+09:00",
    "dup_count": 0,
-   "summary": "한국은행과 연준의 금리 인상 가능성이 제기되는 가운데 롤러코스터 장세가 이어지고 있다."
+   "summary": "SK하이닉스는 12만 8000원(11.05%) 급락한 103만원에 장을 마감했다. 황 CEO 복귀 소식이 전해진 전날만 해도... 둔화, 코스피의 글로벌 증시 중"
   },
   {
-   "title": "한은 점도표에 3.75%가 찍힌다면...채권시장 흔들 개수는",
-   "url": "https://www.etoday.co.kr/news/view/2652797",
-   "source": "etoday.co.kr",
-   "published": "2026-11-25T13:26:00+09:00",
+   "title": "[프리즘] 우표 한 장의 꿈, 수출 1조 달러가 되다",
+   "url": "https://www.joongang.co.kr/article/25481998",
+   "source": "joongang.co.kr",
+   "published": "2026-11-26T00:02:00+09:00",
    "dup_count": 0,
-   "summary": "한국은행 금융통화위의 기준금리 결정과 향후 금리 전망을 담은 점도표에 채권시장의 이목이 쏠린다."
+   "summary": "이제는 반도체·배터리·바이오부터 화장품·식품 같은 소비재까지 세계시장을 누빈다. 지구촌 곳곳에서 ‘메이드 인 코리아’ 제품을 찾는 일은 어렵지 않다. 그러나 잊지"
   },
   {
-   "title": "삼성 KODEX 머니마켓액티브, 이달 파킹형 ETF 개인 순매수 선두",
-   "url": "https://www.socialvalue.kr/news/view/1065587067668777",
-   "source": "socialvalue.kr",
-   "published": "2026-11-25T13:26:00+09:00",
-   "dup_count": 0,
-   "summary": "한국은행의 기준금리가 연 3.00%인 가운데 일반 MMF보다 높은 수익률을 추구할 수 있다는 점도 투자 수요를 이끄는 요인으로 꼽힌다. 개인형퇴직연금(IRP)과 "
+   "title": "[금융 직썰] 코스피 12% 급락 속 4대 금융 '선방'...기관 4747억 사들였다",
+   "url": "https://www.ziksir.com/news/articleView.html?idxno=154629",
+   "source": "ziksir.com",
+   "published": "2026-11-26T00:00:00+09:00",
+   "dup_count": 1,
+   "summary": "하나금융(2.16%)과 우리금융(1.79%)은 오히려 상승 마감했다. 4대 금융의 평균 수익률은 -0.51%로 코스피를 12.14%포인트 웃돌았다. 정준섭 NH투"
   },
   {
-   "title": "\"바이오헬스 내년 수출 12% 성장\"···바이오시밀러·CDMO가 견인",
-   "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=721285",
-   "source": "newsfreezone.co.kr",
-   "published": "2026-11-25T13:26:00+09:00",
-   "dup_count": 0,
-   "summary": "바이오시밀러와 CDMO가 견인하며 내년 바이오헬스 수출이 12% 성장할 것으로 전망됐다."
+   "title": "[더페어 돋보기] 코스피 4700~5000선 급등락의 분수령...미국 PCE·한은 금...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95473",
+   "source": "thefairnews.co.kr",
+   "published": "2026-11-26T00:00:00+09:00",
+   "dup_count": 2,
+   "summary": "이어 26일 열리는 한국은행 금융통화위원회의 기준금리 결정과 수정 경제전망 발표 역시 국내 증시와 외환시장의 단기 변곡점으로 꼽힌다. 원·달러 환율 변동성이 확대"
   },
   {
-   "title": "은행권 주담대 5% 턱밑까지...14년7개월만 최고 수준",
-   "url": "https://www.news2day.co.kr/article/20261125500202",
-   "source": "news2day.co.kr",
-   "published": "2026-11-25T13:24:00+09:00",
+   "title": "[심층분석] 코스피 4700~5000선 롤러코스터 장세...수급 주체별 엇갈린 업...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95471",
+   "source": "thefairnews.co.kr",
+   "published": "2026-11-26T00:00:00+09:00",
    "dup_count": 0,
-   "summary": "은행권 주담대 금리가 5%에 육박하며 14년 7개월 만에 최고 수준을 기록했다."
+   "summary": "국내에서는 한국은행 금융통화위원회의 기준금리 결정과 통화정책 방향이 외국인 수급 복귀의 열쇠가 될 전망이다. 아울러 금융당국이 준비 중인 증시안정펀드 가동 여부와"
+  },
+  {
+   "title": "[김대호 인물] 라이칭더(賴清德) 대만총통... 전국민 AI보너스 81만원",
+   "url": "https://www.g-enews.com/view.php?ud=202611231727365856906806b77b_1",
+   "source": "g-enews.com",
+   "published": "2026-11-25T23:56:00+09:00",
+   "dup_count": 0,
+   "summary": "TSMC를 필두로 한 반도체와 AI 서버 공급망이 전 세계적인 AI 붐을 타고 사상 최대의 실적을 갈아치우고 있다. 수출이 급증하고 기업들의 법인세 납부액이 늘어"
   }
  ]
 }

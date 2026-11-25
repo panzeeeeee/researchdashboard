@@ -1,6 +1,49 @@
 {
  "items": [
   {
+   "accession": "0001437749-26-038232",
+   "ticker": "IMKTA",
+   "company": "INGLES MARKETS INC",
+   "cik": "0000050493",
+   "accepted_et": "2026-11-25 07:35",
+   "date_et": "2026-11-25",
+   "session": "장전",
+   "url": "https://www.sec.gov/Archives/edgar/data/50493/000143774926038232/0001437749-26-038232-index.htm",
+   "react_status": "대기",
+   "sic": "5411",
+   "industry": "Retail-Grocery Stores",
+   "sector": "필수소비재",
+   "num_tries": 1
+  },
+  {
+   "accession": "0001104659-26-131741",
+   "ticker": "DE",
+   "company": "DEERE & CO",
+   "cik": "0000315189",
+   "accepted_et": "2026-11-25 06:00",
+   "date_et": "2026-11-25",
+   "session": "장전",
+   "url": "https://www.sec.gov/Archives/edgar/data/315189/000110465926131741/0001104659-26-131741-index.htm",
+   "react_status": "대기",
+   "sic": "3523",
+   "industry": "Farm Machinery & Equipment",
+   "sector": "산업재",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 12115.0,
+    "revenue_prior": 12394.0,
+    "eps_gaap": 3.89,
+    "eps_gaap_prior": 3.93,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q4 FY2026",
+    "guidance": "첫 제시",
+    "summary": "대형 농기계 부문 개선 조짐이 있으나 4분기 매출과 순이익은 전년 동기 대비 감소함.",
+    "revenue_yoy": -2.3
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/315189/000110465926131741/de-ex99d1.htm"
+  },
+  {
    "accession": "0001062993-26-006263",
    "ticker": "DSNY",
    "company": "DESTINY MEDIA TECHNOLOGIES INC",
@@ -152,7 +195,21 @@
    "react_status": "대기",
    "sic": "1389",
    "industry": "Oil & Gas Field Services, NEC",
-   "sector": "에너지"
+   "sector": "에너지",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 186.0,
+    "revenue_prior": 167.0,
+    "eps_gaap": null,
+    "eps_gaap_prior": null,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 2026",
+    "guidance": "첫 제시",
+    "summary": "매출이 증가하고 전년 대비 실적이 개선되었으나 순이익은 적자를 기록함.",
+    "revenue_yoy": 11.4
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1738827/000173882726000089/klxcompanypresentationq3.htm"
   },
   {
    "accession": "0001571996-26-000050",
@@ -765,7 +822,20 @@
    "rel_pct": -17.9,
    "react_from": "2026-11-23",
    "react_to": "2026-11-24",
-   "num_tries": 1
+   "num_tries": 2,
+   "numbers": {
+    "revenue": 280.0,
+    "revenue_prior": 297.2,
+    "eps_gaap": -0.46,
+    "eps_gaap_prior": 0.53,
+    "eps_adj": 0.05,
+    "eps_adj_prior": 0.53,
+    "period": "Q3 FY2026",
+    "guidance": "하향",
+    "summary": "프로모션 증가와 수요 둔화로 매출과 이익이 감소하며 가이던스를 하향 조정했다.",
+    "revenue_yoy": -5.8
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/895447/000119312526473085/shoe-ex99_1.htm"
   },
   {
    "accession": "0001493152-26-053845",
@@ -1798,7 +1868,21 @@
    "spy_pct": -3.6,
    "rel_pct": -18.8,
    "react_from": "2026-11-19",
-   "react_to": "2026-11-20"
+   "react_to": "2026-11-20",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": null,
+    "revenue_prior": null,
+    "eps_gaap": 0.09,
+    "eps_gaap_prior": 0.33,
+    "eps_adj": 0.17,
+    "eps_adj_prior": 0.15,
+    "period": "Q2 FY2027",
+    "guidance": "없음",
+    "summary": "순이자소득 증가와 신용 헤지 이익으로 GAAP 순이익을 기록했으나 이자율 헤지 손실 등이 부정적이었다.",
+    "revenue_yoy": null
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1560672/000162828026075131/earnearningsrelease-septem.htm"
   },
   {
    "accession": "0001437749-26-037760",
@@ -2886,7 +2970,21 @@
    "spy_pct": -2.0,
    "rel_pct": -19.0,
    "react_from": "2026-11-18",
-   "react_to": "2026-11-19"
+   "react_to": "2026-11-19",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 232.098,
+    "revenue_prior": 265.128,
+    "eps_gaap": -1.12,
+    "eps_gaap_prior": -1.03,
+    "eps_adj": -0.54,
+    "eps_adj_prior": -0.7,
+    "period": "Q3 FY2026",
+    "guidance": "유지",
+    "summary": "동일점포 매출 증가로 영업 실적은 개선되었으나 순손실이 지속됨.",
+    "revenue_yoy": -12.5
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1171759/000162828026074799/exhibit991q3-2026.htm"
   },
   {
    "accession": "0001261654-26-000021",
@@ -3056,7 +3154,8 @@
    "spy_pct": -2.0,
    "rel_pct": -1.1,
    "react_from": "2026-11-18",
-   "react_to": "2026-11-19"
+   "react_to": "2026-11-19",
+   "num_tries": 1
   },
   {
    "accession": "0001517767-26-000045",
@@ -4008,7 +4107,21 @@
    "spy_pct": -1.0,
    "rel_pct": 17.5,
    "react_from": "2026-11-16",
-   "react_to": "2026-11-17"
+   "react_to": "2026-11-17",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 426.033,
+    "revenue_prior": 460.135,
+    "eps_gaap": 0.03,
+    "eps_gaap_prior": -6.9,
+    "eps_adj": 0.13,
+    "eps_adj_prior": 0.0,
+    "period": "Q4 FY2026",
+    "guidance": "첫 제시",
+    "summary": "매출은 감소했으나 수익성 개선과 효율적 비용 관리로 이익이 증가함.",
+    "revenue_yoy": -7.4
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1772921/000177292126000057/onew-q426earningsreleasexe.htm"
   },
   {
    "accession": "0001493152-26-052703",
@@ -4027,7 +4140,21 @@
    "spy_pct": -1.0,
    "rel_pct": -6.0,
    "react_from": "2026-11-16",
-   "react_to": "2026-11-17"
+   "react_to": "2026-11-17",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 1503.109,
+    "revenue_prior": 1107.719,
+    "eps_gaap": -0.44,
+    "eps_gaap_prior": null,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q4 FY2026",
+    "guidance": "없음",
+    "summary": "광고 매출 성장에 힘입어 매출은 증가했으나 순손실은 확대되었다.",
+    "revenue_yoy": 35.7
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1484769/000149315226052703/ex99-1.htm"
   },
   {
    "accession": "0001193125-26-464751",
@@ -5012,7 +5139,8 @@
    "spy_pct": -1.0,
    "rel_pct": -5.0,
    "react_from": "2026-11-16",
-   "react_to": "2026-11-17"
+   "react_to": "2026-11-17",
+   "num_tries": 1
   },
   {
    "accession": "0001437749-26-037176",
@@ -5471,7 +5599,21 @@
    "spy_pct": -1.0,
    "rel_pct": 0.9,
    "react_from": "2026-11-16",
-   "react_to": "2026-11-17"
+   "react_to": "2026-11-17",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 96.201,
+    "revenue_prior": 162.918,
+    "eps_gaap": -0.44,
+    "eps_gaap_prior": -0.17,
+    "eps_adj": -0.24,
+    "eps_adj_prior": -0.09,
+    "period": "Q3 FY2026",
+    "guidance": "없음",
+    "summary": "구독 및 서비스 매출은 성장했으나 하드웨어 매출 급감으로 순손실이 확대되었습니다.",
+    "revenue_yoy": -41.0
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1500435/000150043526000075/gpro2026-9x30ex991xer.htm"
   },
   {
    "accession": "0001193125-26-463483",
@@ -5542,7 +5684,21 @@
    "spy_pct": -1.0,
    "rel_pct": 12.3,
    "react_from": "2026-11-16",
-   "react_to": "2026-11-17"
+   "react_to": "2026-11-17",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 22.8,
+    "revenue_prior": 21.5,
+    "eps_gaap": 0.56,
+    "eps_gaap_prior": 0.54,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "없음",
+    "summary": "매출과 순이익이 증가하고 수주 잔고가 사상 최대를 기록했으나 제품 판매 일부 부문은 감소했다.",
+    "revenue_yoy": 6.0
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/924719/000165495426009852/smid_ex991.htm"
   },
   {
    "accession": "0001628280-26-074168",
@@ -5694,7 +5850,21 @@
    "spy_pct": -1.0,
    "rel_pct": -9.9,
    "react_from": "2026-11-16",
-   "react_to": "2026-11-17"
+   "react_to": "2026-11-17",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 15.147,
+    "revenue_prior": 8.415,
+    "eps_gaap": -0.17,
+    "eps_gaap_prior": -1.14,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "없음",
+    "summary": "매출은 증가했으나 터빈 수리비 등으로 순손실과 조정 EBITDA 적자가 확대되었다.",
+    "revenue_yoy": 80.0
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/64463/000149315226052332/ex99-1.htm"
   },
   {
    "accession": "0001072613-26-000900",
@@ -5713,7 +5883,8 @@
    "spy_pct": -1.0,
    "rel_pct": 15.6,
    "react_from": "2026-11-16",
-   "react_to": "2026-11-17"
+   "react_to": "2026-11-17",
+   "num_tries": 1
   },
   {
    "accession": "0001493152-26-052323",
@@ -5846,7 +6017,8 @@
    "spy_pct": -1.9,
    "rel_pct": 6.1,
    "react_from": "2026-11-13",
-   "react_to": "2026-11-16"
+   "react_to": "2026-11-16",
+   "num_tries": 1
   },
   {
    "accession": "0001193125-26-462345",
@@ -6026,7 +6198,21 @@
    "spy_pct": -1.9,
    "rel_pct": -2.2,
    "react_from": "2026-11-13",
-   "react_to": "2026-11-16"
+   "react_to": "2026-11-16",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 3.051232,
+    "revenue_prior": null,
+    "eps_gaap": -0.16,
+    "eps_gaap_prior": null,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 2026",
+    "guidance": "없음",
+    "summary": "슈퍼 밸리데이터와 LaaS 운영으로 매출이 증가하고 첫 긍정적 Adjusted EBITDA를 기록했으나, 순손실이 발생했다.",
+    "revenue_yoy": null
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1861657/000149315226052058/ex99-1.htm"
   },
   {
    "accession": "0001213900-26-120186",
@@ -6235,7 +6421,8 @@
    "spy_pct": -1.9,
    "rel_pct": -1.9,
    "react_from": "2026-11-13",
-   "react_to": "2026-11-16"
+   "react_to": "2026-11-16",
+   "num_tries": 1
   },
   {
    "accession": "0001193125-26-462184",
@@ -6474,7 +6661,21 @@
    "spy_pct": -1.9,
    "rel_pct": 24.6,
    "react_from": "2026-11-13",
-   "react_to": "2026-11-16"
+   "react_to": "2026-11-16",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 50192.0,
+    "revenue_prior": 45258.0,
+    "eps_gaap": 0.01,
+    "eps_gaap_prior": 0.04,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "유지",
+    "summary": "매출은 증가했으나 순이익과 조정 EBITDA는 감소함.",
+    "revenue_yoy": 10.9
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1826600/000119312526462117/mntk-ex99_1.htm"
   },
   {
    "accession": "0001437749-26-037013",
@@ -6695,7 +6896,21 @@
    "spy_pct": -1.9,
    "rel_pct": -5.6,
    "react_from": "2026-11-13",
-   "react_to": "2026-11-16"
+   "react_to": "2026-11-16",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": 15.449,
+    "revenue_prior": 13.129,
+    "eps_gaap": -0.1,
+    "eps_gaap_prior": -0.06,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "없음",
+    "summary": "PEMGARDA 매출 성장으로 매출은 증가했으나 연구개발 및 판매관리비용 증가로 순손실이 확대되었습니다.",
+    "revenue_yoy": 17.7
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1832038/000119312526462025/ivvd-ex99_1.htm"
   },
   {
    "accession": "0001104659-26-127625",
@@ -6766,7 +6981,21 @@
    "spy_pct": -1.9,
    "rel_pct": -3.2,
    "react_from": "2026-11-13",
-   "react_to": "2026-11-16"
+   "react_to": "2026-11-16",
+   "num_tries": 1,
+   "numbers": {
+    "revenue": null,
+    "revenue_prior": null,
+    "eps_gaap": -0.27,
+    "eps_gaap_prior": -0.07,
+    "eps_adj": null,
+    "eps_adj_prior": null,
+    "period": "Q3 FY2026",
+    "guidance": "첫 제시",
+    "summary": "비트싱크 인수를 완료하고 2027년 전망을 제시했으나, 순손실은 확대되었다.",
+    "revenue_yoy": null
+   },
+   "pr_url": "https://www.sec.gov/Archives/edgar/data/1855474/000185547426000003/airj-ex99_1.htm"
   },
   {
    "accession": "0001193125-26-462017",
@@ -88420,5 +88649,5 @@
    "sector": "커뮤니케이션"
   }
  ],
- "updated_at": "2026-11-25T14:02:59.370848+09:00"
+ "updated_at": "2026-11-26T04:01:21.561157+09:00"
 }
