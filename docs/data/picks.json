@@ -1,15 +1,37 @@
 {
- "updated_at": "2026-11-27T13:45:17.616594+09:00",
+ "updated_at": "2026-11-28T04:17:08.078367+09:00",
  "picks": [
   {
-   "code": "ANF",
-   "name": "ABERCROMBIE AND FITCH CLASS A",
+   "code": "DIS",
+   "name": "Walt Disney Company (The)",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Communication Services",
+   "score": 0.828,
+   "note": "G2",
+   "source": "신고가·물극필반"
+  },
+  {
+   "code": "ACCO",
+   "name": "ACCO BRANDS CORP",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
-   "sector": "Consumer Cyclical",
-   "score": 0.729,
+   "sector": "Industrials",
+   "score": 0.667,
    "note": "G2",
+   "source": "신고가·물극필반"
+  },
+  {
+   "code": "APPN",
+   "name": "APPIAN CORP CLASS A",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.663,
+   "note": "G1",
    "source": "신고가·물극필반"
   },
   {
@@ -19,30 +41,8 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.689,
+   "score": 0.657,
    "note": "G2",
-   "source": "신고가·물극필반"
-  },
-  {
-   "code": "DIS",
-   "name": "Walt Disney Company (The)",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Communication Services",
-   "score": 0.667,
-   "note": "G2",
-   "source": "신고가·물극필반"
-  },
-  {
-   "code": "MSI",
-   "name": "Motorola Solutions",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Technology",
-   "score": 0.653,
-   "note": "G1",
    "source": "신고가·물극필반"
   },
   {
@@ -52,7 +52,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.881,
+   "score": 0.884,
    "note": "F6",
    "source": "딥밸류"
   },
@@ -63,7 +63,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.806,
+   "score": 0.818,
    "note": "F8",
    "source": "딥밸류"
   },
@@ -74,22 +74,44 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.785,
+   "score": 0.786,
    "note": "F8",
    "source": "딥밸류"
   }
  ],
  "table": [
   {
-   "code": "ANF",
-   "name": "ABERCROMBIE AND FITCH CLASS A",
+   "code": "DIS",
+   "name": "Walt Disney Company (The)",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Communication Services",
+   "score": 0.828,
+   "note": "G2",
+   "rank": 1
+  },
+  {
+   "code": "ACCO",
+   "name": "ACCO BRANDS CORP",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
-   "sector": "Consumer Cyclical",
-   "score": 0.729,
+   "sector": "Industrials",
+   "score": 0.667,
    "note": "G2",
-   "rank": 1
+   "rank": 2
+  },
+  {
+   "code": "APPN",
+   "name": "APPIAN CORP CLASS A",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.663,
+   "note": "G1",
+   "rank": 3
   },
   {
    "code": "KSS",
@@ -98,30 +120,8 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.689,
+   "score": 0.657,
    "note": "G2",
-   "rank": 2
-  },
-  {
-   "code": "DIS",
-   "name": "Walt Disney Company (The)",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Communication Services",
-   "score": 0.667,
-   "note": "G2",
-   "rank": 3
-  },
-  {
-   "code": "MSI",
-   "name": "Motorola Solutions",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Technology",
-   "score": 0.653,
-   "note": "G1",
    "rank": 4
   },
   {
@@ -131,42 +131,20 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.648,
+   "score": 0.639,
    "note": "G2",
    "rank": 5
   },
   {
-   "code": "AWK",
-   "name": "American Water Works",
+   "code": "MSI",
+   "name": "Motorola Solutions",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "SPX",
-   "sector": "Utilities",
-   "score": 0.627,
+   "sector": "Technology",
+   "score": 0.634,
    "note": "G1",
    "rank": 6
-  },
-  {
-   "code": "MAS",
-   "name": "Masco",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Industrials",
-   "score": 0.626,
-   "note": "G1",
-   "rank": 7
-  },
-  {
-   "code": "CRAI",
-   "name": "CRA INTERNATIONAL INC",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.621,
-   "note": "G1",
-   "rank": 8
   },
   {
    "code": "CBRL",
@@ -175,31 +153,97 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.616,
+   "score": 0.631,
    "note": "G2",
-   "rank": 9
+   "rank": 7
   },
   {
-   "code": "EG",
-   "name": "Everest Group",
+   "code": "ANF",
+   "name": "ABERCROMBIE AND FITCH CLASS A",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Consumer Cyclical",
+   "score": 0.63,
+   "note": "G2",
+   "rank": 8
+  },
+  {
+   "code": "AWK",
+   "name": "American Water Works",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "SPX",
-   "sector": "Financial Services",
-   "score": 0.611,
+   "sector": "Utilities",
+   "score": 0.604,
    "note": "G1",
+   "rank": 9
+  },
+  {
+   "code": "REGN",
+   "name": "Regeneron Pharmaceuticals, Inc. Common Stock",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "NDX",
+   "sector": "Healthcare",
+   "score": 0.599,
+   "note": "G2",
    "rank": 10
   },
   {
-   "code": "MDLZ",
-   "name": "Mondelez International, Inc. Class A Common Stock",
+   "code": "COST",
+   "name": "Costco Wholesale Corporation Common Stock",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "NDX",
    "sector": "Consumer Defensive",
-   "score": 0.608,
+   "score": 0.596,
    "note": "G1",
    "rank": 11
+  },
+  {
+   "code": "CLMB",
+   "name": "CLIMB GLOBAL SOLUTIONS INC",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.59,
+   "note": "G1",
+   "rank": 12
+  },
+  {
+   "code": "MAS",
+   "name": "Masco",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Industrials",
+   "score": 0.589,
+   "note": "G1",
+   "rank": 13
+  },
+  {
+   "code": "REGN",
+   "name": "Regeneron Pharmaceuticals",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.584,
+   "note": "G2",
+   "rank": 14
+  },
+  {
+   "code": "CRAI",
+   "name": "CRA INTERNATIONAL INC",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.562,
+   "note": "G1",
+   "rank": 15
   },
   {
    "code": "VRDN",
@@ -208,20 +252,42 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.605,
+   "score": 0.549,
    "note": "G1",
-   "rank": 12
+   "rank": 16
   },
   {
-   "code": "BOX",
-   "name": "BOX INC CLASS A",
+   "code": "HOG",
+   "name": "HARLEY DAVIDSON",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.595,
+   "sector": "Consumer Cyclical",
+   "score": 0.549,
+   "note": "G2",
+   "rank": 17
+  },
+  {
+   "code": "COST",
+   "name": "Costco",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Consumer Defensive",
+   "score": 0.54,
    "note": "G1",
-   "rank": 13
+   "rank": 18
+  },
+  {
+   "code": "EG",
+   "name": "Everest Group",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Financial Services",
+   "score": 0.538,
+   "note": "G1",
+   "rank": 19
   },
   {
    "code": "WTW",
@@ -230,75 +296,31 @@
    "strategy": "신고가·물극필반",
    "universe": "SPX",
    "sector": "Financial Services",
-   "score": 0.576,
+   "score": 0.538,
    "note": "G1",
-   "rank": 14
-  },
-  {
-   "code": "ASO",
-   "name": "ACADEMY SPORTS AND OUTDOORS",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Consumer Cyclical",
-   "score": 0.539,
-   "note": "G1",
-   "rank": 15
-  },
-  {
-   "code": "WM",
-   "name": "Waste Management",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Industrials",
-   "score": 0.529,
-   "note": "G1",
-   "rank": 16
-  },
-  {
-   "code": "BDX",
-   "name": "Becton Dickinson",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Healthcare",
-   "score": 0.519,
-   "note": "G1",
-   "rank": 17
-  },
-  {
-   "code": "ADP",
-   "name": "Automatic Data Processing, Inc. Common Stock",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "NDX",
-   "sector": "Technology",
-   "score": 0.504,
-   "note": "G1",
-   "rank": 18
-  },
-  {
-   "code": "GKOS",
-   "name": "GLAUKOS",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Healthcare",
-   "score": 0.499,
-   "note": "G1",
-   "rank": 19
-  },
-  {
-   "code": "AJG",
-   "name": "Arthur J. Gallagher & Co.",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Financial Services",
-   "score": 0.499,
-   "note": "G2",
    "rank": 20
+  },
+  {
+   "code": "GTN",
+   "name": "GRAY MEDIA INC",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Communication Services",
+   "score": 0.535,
+   "note": "G2",
+   "rank": 21
+  },
+  {
+   "code": "BOX",
+   "name": "BOX INC CLASS A",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "R2K",
+   "sector": "Technology",
+   "score": 0.533,
+   "note": "G1",
+   "rank": 22
   },
   {
    "code": "FLYW",
@@ -307,40 +329,18 @@
    "strategy": "신고가·물극필반",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.493,
-   "note": "G1",
-   "rank": 21
-  },
-  {
-   "code": "ADP",
-   "name": "Automatic Data Processing",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Technology",
-   "score": 0.485,
-   "note": "G1",
-   "rank": 22
-  },
-  {
-   "code": "GDYN",
-   "name": "GRID DYNAMICS HOLDINGS CLASS A",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.466,
-   "note": "G1",
+   "score": 0.522,
+   "note": "G2",
    "rank": 23
   },
   {
-   "code": "IBEX",
-   "name": "IBEX LTD",
+   "code": "KNTK",
+   "name": "KINETIK HOLDINGS CLASS A",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
-   "sector": "Technology",
-   "score": 0.466,
+   "sector": "Energy",
+   "score": 0.508,
    "note": "G1",
    "rank": 24
   },
@@ -351,63 +351,63 @@
    "strategy": "신고가·물극필반",
    "universe": "SPX",
    "sector": "Technology",
-   "score": 0.464,
+   "score": 0.498,
    "note": "G1",
    "rank": 25
   },
   {
-   "code": "WRB",
-   "name": "W. R. Berkley Corporation",
+   "code": "ASO",
+   "name": "ACADEMY SPORTS AND OUTDOORS",
    "market": "us",
    "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Financial Services",
-   "score": 0.462,
+   "universe": "R2K",
+   "sector": "Consumer Cyclical",
+   "score": 0.491,
    "note": "G1",
    "rank": 26
   },
   {
-   "code": "AIZ",
-   "name": "Assurant",
+   "code": "ADP",
+   "name": "Automatic Data Processing",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "SPX",
-   "sector": "Financial Services",
-   "score": 0.457,
+   "sector": "Technology",
+   "score": 0.48,
    "note": "G1",
    "rank": 27
   },
   {
-   "code": "DRI",
-   "name": "Darden Restaurants",
+   "code": "GKOS",
+   "name": "GLAUKOS",
    "market": "us",
    "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Consumer Cyclical",
-   "score": 0.447,
+   "universe": "R2K",
+   "sector": "Healthcare",
+   "score": 0.478,
    "note": "G1",
    "rank": 28
   },
   {
-   "code": "MRSH",
-   "name": "Marsh McLennan",
-   "market": "us",
-   "strategy": "신고가·물극필반",
-   "universe": "SPX",
-   "sector": "Financial Services",
-   "score": 0.44,
-   "note": "G1",
-   "rank": 29
-  },
-  {
-   "code": "NPK",
-   "name": "NATIONAL PRESTO INDUSTRIES INC",
+   "code": "WWW",
+   "name": "WOLVERINE WORLD WIDE",
    "market": "us",
    "strategy": "신고가·물극필반",
    "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.42,
-   "note": "G1",
+   "sector": "Consumer Cyclical",
+   "score": 0.478,
+   "note": "G2",
+   "rank": 29
+  },
+  {
+   "code": "TECH",
+   "name": "Bio-Techne",
+   "market": "us",
+   "strategy": "신고가·물극필반",
+   "universe": "SPX",
+   "sector": "Healthcare",
+   "score": 0.477,
+   "note": "G2",
    "rank": 30
   },
   {
@@ -417,7 +417,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Healthcare",
-   "score": 0.881,
+   "score": 0.884,
    "note": "F6",
    "rank": 1
   },
@@ -428,7 +428,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.806,
+   "score": 0.818,
    "note": "F8",
    "rank": 2
   },
@@ -439,7 +439,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Communication Services",
-   "score": 0.785,
+   "score": 0.786,
    "note": "F8",
    "rank": 3
   },
@@ -450,7 +450,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Technology",
-   "score": 0.74,
+   "score": 0.724,
    "note": "F8",
    "rank": 4
   },
@@ -461,7 +461,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Healthcare",
-   "score": 0.701,
+   "score": 0.696,
    "note": "F8",
    "rank": 5
   },
@@ -488,17 +488,6 @@
    "rank": 7
   },
   {
-   "code": "FISV",
-   "name": "Fiserv, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "SPX",
-   "sector": "Unknown",
-   "score": 0.656,
-   "note": "F6",
-   "rank": 8
-  },
-  {
    "code": "INTU",
    "name": "Intuit Inc.",
    "market": "us",
@@ -507,18 +496,18 @@
    "sector": "Technology",
    "score": 0.653,
    "note": "F7",
-   "rank": 9
+   "rank": 8
   },
   {
-   "code": "LRN",
-   "name": "Stride, Inc.",
+   "code": "FISV",
+   "name": "Fiserv, Inc.",
    "market": "us",
    "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Consumer Defensive",
-   "score": 0.642,
+   "universe": "SPX",
+   "sector": "Unknown",
+   "score": 0.649,
    "note": "F6",
-   "rank": 10
+   "rank": 9
   },
   {
    "code": "NFLX",
@@ -529,6 +518,17 @@
    "sector": "Communication Services",
    "score": 0.637,
    "note": "F7",
+   "rank": 10
+  },
+  {
+   "code": "LRN",
+   "name": "Stride, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Consumer Defensive",
+   "score": 0.635,
+   "note": "F6",
    "rank": 11
   },
   {
@@ -538,7 +538,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Energy",
-   "score": 0.631,
+   "score": 0.629,
    "note": "F7",
    "rank": 12
   },
@@ -549,7 +549,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.616,
+   "score": 0.623,
    "note": "F7",
    "rank": 13
   },
@@ -560,20 +560,9 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Technology",
-   "score": 0.615,
+   "score": 0.606,
    "note": "F7",
    "rank": 14
-  },
-  {
-   "code": "ICFI",
-   "name": "ICF International, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.604,
-   "note": "F7",
-   "rank": 15
   },
   {
    "code": "ADNT",
@@ -584,7 +573,7 @@
    "sector": "Consumer Cyclical",
    "score": 0.602,
    "note": "F6",
-   "rank": 16
+   "rank": 15
   },
   {
    "code": "ROOT",
@@ -593,8 +582,19 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Financial Services",
-   "score": 0.598,
+   "score": 0.601,
    "note": "F6",
+   "rank": 16
+  },
+  {
+   "code": "ICFI",
+   "name": "ICF International, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.6,
+   "note": "F7",
    "rank": 17
   },
   {
@@ -604,7 +604,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Defensive",
-   "score": 0.596,
+   "score": 0.588,
    "note": "F6",
    "rank": 18
   },
@@ -615,31 +615,9 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.585,
+   "score": 0.584,
    "note": "F6",
    "rank": 19
-  },
-  {
-   "code": "HUBG",
-   "name": "Hub Group, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.575,
-   "note": "F6",
-   "rank": 20
-  },
-  {
-   "code": "PSIX",
-   "name": "Power Solutions International,",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.574,
-   "note": "F6",
-   "rank": 21
   },
   {
    "code": "SHOE",
@@ -648,9 +626,20 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.572,
+   "score": 0.573,
    "note": "F6",
-   "rank": 22
+   "rank": 20
+  },
+  {
+   "code": "HUBG",
+   "name": "Hub Group, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.571,
+   "note": "F6",
+   "rank": 21
   },
   {
    "code": "FRSH",
@@ -659,8 +648,19 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.569,
+   "score": 0.563,
    "note": "F7",
+   "rank": 22
+  },
+  {
+   "code": "PSIX",
+   "name": "Power Solutions International,",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.56,
+   "note": "F6",
    "rank": 23
   },
   {
@@ -670,7 +670,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Technology",
-   "score": 0.559,
+   "score": 0.558,
    "note": "F7",
    "rank": 24
   },
@@ -681,7 +681,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Consumer Cyclical",
-   "score": 0.558,
+   "score": 0.554,
    "note": "F6",
    "rank": 25
   },
@@ -692,7 +692,7 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Healthcare",
-   "score": 0.553,
+   "score": 0.55,
    "note": "F7",
    "rank": 26
   },
@@ -703,20 +703,9 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Consumer Cyclical",
-   "score": 0.544,
+   "score": 0.539,
    "note": "F7",
    "rank": 27
-  },
-  {
-   "code": "LMB",
-   "name": "Limbach Holdings, Inc.",
-   "market": "us",
-   "strategy": "딥밸류",
-   "universe": "R2K",
-   "sector": "Industrials",
-   "score": 0.533,
-   "note": "F6",
-   "rank": 28
   },
   {
    "code": "NFLX",
@@ -725,8 +714,19 @@
    "strategy": "딥밸류",
    "universe": "SPX",
    "sector": "Communication Services",
-   "score": 0.527,
+   "score": 0.531,
    "note": "F7",
+   "rank": 28
+  },
+  {
+   "code": "LMB",
+   "name": "Limbach Holdings, Inc.",
+   "market": "us",
+   "strategy": "딥밸류",
+   "universe": "R2K",
+   "sector": "Industrials",
+   "score": 0.52,
+   "note": "F6",
    "rank": 29
   },
   {
@@ -736,7 +736,7 @@
    "strategy": "딥밸류",
    "universe": "R2K",
    "sector": "Industrials",
-   "score": 0.519,
+   "score": 0.52,
    "note": "F7",
    "rank": 30
   }
@@ -744,30 +744,14 @@
  "sectors": [
   {
    "name": "Technology",
-   "count": 25,
+   "count": 31,
    "tickers": [
-    "MSI",
+    "APPN",
     "TLS",
+    "MSI",
+    "CLMB",
     "BOX",
-    "ADP",
-    "FLYW",
-    "ADP"
-   ],
-   "strategies": [
-    "딥밸류",
-    "신고가·물극필반"
-   ]
-  },
-  {
-   "name": "Industrials",
-   "count": 17,
-   "tickers": [
-    "MAS",
-    "CRAI",
-    "WM",
-    "NPK",
-    "CODI",
-    "GFF"
+    "FLYW"
    ],
    "strategies": [
     "딥밸류",
@@ -776,14 +760,30 @@
   },
   {
    "name": "Healthcare",
-   "count": 17,
+   "count": 24,
    "tickers": [
+    "REGN",
+    "REGN",
     "VRDN",
-    "BDX",
     "GKOS",
-    "RYTM",
-    "ZBH",
-    "KYMR"
+    "TECH",
+    "XERS"
+   ],
+   "strategies": [
+    "딥밸류",
+    "신고가·물극필반"
+   ]
+  },
+  {
+   "name": "Industrials",
+   "count": 21,
+   "tickers": [
+    "ACCO",
+    "MAS",
+    "CRAI",
+    "NPK",
+    "CODI",
+    "EXPO"
    ],
    "strategies": [
     "딥밸류",
@@ -792,14 +792,14 @@
   },
   {
    "name": "Consumer Cyclical",
-   "count": 15,
+   "count": 18,
    "tickers": [
-    "ANF",
     "KSS",
     "CBRL",
+    "ANF",
+    "HOG",
     "ASO",
-    "DRI",
-    "YUM"
+    "WWW"
    ],
    "strategies": [
     "딥밸류",
@@ -808,14 +808,14 @@
   },
   {
    "name": "Financial Services",
-   "count": 13,
+   "count": 16,
    "tickers": [
     "EG",
     "WTW",
-    "AJG",
-    "WRB",
+    "TRUP",
     "AIZ",
-    "MRSH"
+    "MRSH",
+    "PRCH"
    ],
    "strategies": [
     "딥밸류",
