@@ -1,762 +1,813 @@
 {
- "updated_at": "2026-11-28T03:45:39.900372+09:00",
+ "updated_at": "2026-11-28T13:11:53.986377+09:00",
  "event_notes": {
-  "why": "나스닥 지수 2.3퍼센트 상승과 미 국채가 약세에 따른 위험선호 회복, 그리고 증안펀드 투입 기대감 등이 맞물리면서 코스피와 코스닥이 상승했다. 뉴스에서 반도체 레버리지 ETF가 16퍼센트 오르고 SK하이닉스와 삼성전자가 강세를 보인 것과 일치하게 반도체 업종이 7.86퍼센트 상승했다. 바이오 업종은 7.99퍼센트 올랐는데, 삼천당제약 등 개별 종목의 급등 뉴스가 이러한 상승을 뒷받침한 것으로 보인다.",
-  "watch": "미국의 블랙프라이데이 소비 결과와 가계대출 금리 상승 및 통화긴축 기조가 실물 경제에 미치는 영향을 계속 지켜봐야 한다. 또한 청와대가 언급한 통화긴축과 확장재정의 조합이 국내 채권금리와 증시에 어떤 추가적인 변화를 가져올지 주목해야 한다."
+  "why": "코스피가 4% 급등하는 과정에서 증안펀드 투입 기대감이 작용했고, 증권업종이 12.08% 급등하며 시장을 견인한 것으로 보인다. 휴머노이드 기대감에 레인보우로보틱스 등 로봇주가 상승세를 탔고 펩트론과 제주반도체도 반등하며 바이오와 반도체 업종이 각각 7.99%, 7.86% 오르는 등 전반적인 강세를 보였다. 반면 은행업종은 금리 관련 불확실성과 연말 자금 및 대출 환경 변화 등의 여파로 0.57% 하락하며 약세를 보인 것으로 보인다.",
+  "watch": "증안펀드의 실제 투입 시기와 규모, 그리고 연준의 금리 정책 방향에 따른 AI 및 반도체 업황의 지속 여부를 지켜봐야 한다. 수출 지표와 마이크론 및 트렌드포스의 엇갈린 D램 전망 속에서 메모리 호황이 이어질지도 주요 변수다."
  },
  "clusters": [
   {
-   "title": "국내외 증시 급등 및 반도체·AI주 반등",
+   "title": "AI 거품론에 따른 코스피 급락과 증안펀드 투입 논란",
    "sources": [
-    "cbci.co.kr",
-    "edaily.co.kr",
-    "kjdaily.com",
-    "news.einfomax.co.kr",
-    "newsian.co.kr",
-    "newsis.com",
-    "newspim.com",
-    "thefairnews.co.kr"
-   ],
-   "count": 11,
-   "items": [
-    {
-     "title": "반도체 레버리지 ETF 16%↑...SK하이닉스도 강세",
-     "url": "http://www.kjdaily.com/article.php?aid=1795793599693752276",
-     "source": "kjdaily.com",
-     "published": "2026-11-28T00:38:00+09:00",
-     "dup_count": 2,
-     "summary": "외국인과 기관의 순매수에 힘입어 코스피는 4.34% 오른 4915.68을 기록하며 3거래일 만에 4900선을 회복했다."
-    },
-    {
-     "title": "코스피 4.34% 급등 4,915...삼성전자우 6.2%·삼천당제약 15.0% 상승",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=631503",
-     "source": "cbci.co.kr",
-     "published": "2026-11-28T00:34:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피는 4.34% 급등한 4915.68로 마감했고 삼성전자우와 삼천당제약 등도 큰 폭으로 상승했다."
-    },
-    {
-     "title": "[뉴욕증시 개장] 한국서 5.4% 올라 111만원 SK하이닉스, 미국 ADR도 2%↑......",
-     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95834",
-     "source": "thefairnews.co.kr",
-     "published": "2026-11-28T00:30:00+09:00",
-     "dup_count": 1,
-     "summary": "국내 증시에서 코스피와 SK하이닉스가 급등 마감한 가운데 뉴욕증시에서 SK하이닉스 ADR도 2% 상승했다."
-    },
-    {
-     "title": "두산에너빌리티 주가 8%대 상승 마감...코스피 급등에 원전주 동반 강세",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=631497",
-     "source": "cbci.co.kr",
-     "published": "2026-11-28T00:10:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피 급등과 체코 원전 논의 속에서 두산에너빌리티 등 원전 관련주가 동반 강세를 보였다."
-    },
-    {
-     "title": "'AI 투매' 진정되나...뉴욕증시 상승 출발, 나스닥 0.7%↑",
-     "url": "https://www.newsian.co.kr/news/articleView.html?idxno=102183",
-     "source": "newsian.co.kr",
-     "published": "2026-11-28T00:10:00+09:00",
-     "dup_count": 1,
-     "summary": "뉴욕증시가 나스닥 0.7% 상승 등 상승 출발하며 AI 투매 우려가 진정되는 모습을 보였다."
-    },
-    {
-     "title": "[뉴욕증시 개장전] SK하이닉스 111만원·코스피 4.3%↑ 이어...나스닥 선...",
-     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95833",
-     "source": "thefairnews.co.kr",
-     "published": "2026-11-27T22:20:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피와 SK하이닉스 등 국내 증시의 급등세에 이어 뉴욕증시 나스닥 선물도 상승세를 기록했다."
-    },
-    {
-     "title": "\"증시도 블프다\" 저가매수 나선 월가...나스닥 2.3%↑[월스트리트in]",
-     "url": "https://www.edaily.co.kr/News/Read?newsId=01190646645650312&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-     "source": "edaily.co.kr",
-     "published": "2026-11-28T03:42:00+09:00",
-     "dup_count": 0,
-     "summary": "월가와 국내 증시가 저가 매수세 유입으로 나스닥과 코스피 등 주요 지수가 일제히 급등했다."
-    },
-    {
-     "title": "미 국채가 약세...AI주 반등 속 위험선호 회복",
-     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4447022",
-     "source": "news.einfomax.co.kr",
-     "published": "2026-11-28T00:44:00+09:00",
-     "dup_count": 0,
-     "summary": "AI주 반등과 코스피 급등 등 위험선호 심리가 회복되면서 미 국채가는 약세를 보였다."
-    },
-    {
-     "title": "\"반도체·AI 진짜 바닥은 내년 2월 실적 시즌 이후\"...진단 배경은",
-     "url": "https://www.newsis.com/view/NISX20261127_0003886235",
-     "source": "newsis.com",
-     "published": "2026-11-28T00:20:00+09:00",
-     "dup_count": 0,
-     "summary": "전문가들은 반도체와 AI의 진짜 바닥이 내년 2분기 실적 시즌 이후에 형성될 것으로 진단했다."
-    },
-    {
-     "title": "미 달러화 강세...AI주 투심 개선·美 국채 금리 상승",
-     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4447020",
-     "source": "news.einfomax.co.kr",
-     "published": "2026-11-28T00:00:00+09:00",
-     "dup_count": 0,
-     "summary": "미 달러화가 강세를 보인 가운데 삼성전자와 SK하이닉스 주도의 AI주 투심 개선으로 코스피가 급등했다."
-    },
-    {
-     "title": "[AI MY 뉴스] 뉴욕증시 반도체주 프리뷰...저가 매수 속 일제 강세·샌디...",
-     "url": "https://www.newspim.com/news/view/20261127001387",
-     "source": "newspim.com",
-     "published": "2026-11-27T22:53:00+09:00",
-     "dup_count": 0,
-     "summary": "델의 호실적 발표와 황 CEO의 복귀에도 대중국 반도체 수출통제 등 불확실성은 여전히 남아 있다."
-    }
-   ]
-  },
-  {
-   "title": "증안펀드 기대감 및 코스피·코스닥 급등",
-   "sources": [
-    "chosun.com",
-    "thefairnews.co.kr",
-    "ytn.co.kr"
+    "biz.newdaily.co.kr",
+    "ddaily.co.kr",
+    "pinpointnews.co.kr"
    ],
    "count": 3,
    "items": [
     {
-     "title": "배당금·증권시장안전펀드 투입 기대감에 불기둥 올린 증시",
-     "url": "https://www.ytn.co.kr/_ln/0102_202611272305034782",
-     "source": "ytn.co.kr",
-     "published": "2026-11-27T23:05:00+09:00",
+     "title": "“4% 급등에도 고점 대비 반토막”...코스피 구할 증안펀드 언제 투입되...",
+     "url": "https://www.ddaily.co.kr/page/view/2026112809201727871",
+     "source": "ddaily.co.kr",
+     "published": "2026-11-28T11:12:00+09:00",
      "dup_count": 3,
-     "summary": "배당금 지급과 증안펀드 투입 기대감으로 삼성전자와 SK하이닉스가 급등하고 코스닥 시장에는 매수 사이드카가 발동됐다."
+     "summary": "28일 코스피가 외국인 순매수에 힘입어 4.34% 오른 4915.68에 거래를 마쳤다."
     },
     {
-     "title": "증안펀드 투입 기대감에, 코스피 4% 코스닥 8% 올라",
-     "url": "https://www.chosun.com/economy/money/2026/11/28/JM24JZKUANGITKK2IUBUGELKXI/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-     "source": "chosun.com",
-     "published": "2026-11-28T00:35:00+09:00",
+     "title": "AI 거품론에 무너진 코스피 ... 증안펀드 40조로 막을 수 있나",
+     "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/28/2026112850024.html",
+     "source": "biz.newdaily.co.kr",
+     "published": "2026-11-28T12:06:00+09:00",
      "dup_count": 2,
-     "summary": "증안펀드 투입 기대감에 코스피가 4%, 코스닥이 8% 오르며 삼성전자와 SK하이닉스가 동반 상승했다."
+     "summary": "증안펀드 기대감 등에 힘입어 27일 코스피와 코스닥이 동반 급등 마감했다."
     },
     {
-     "title": "[증시 프리즘] 2020년·2022년 급락기 증시안정 대책 복기해 보니...외국...",
-     "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95799",
-     "source": "thefairnews.co.kr",
-     "published": "2026-11-28T00:00:00+09:00",
+     "title": "증시 급락에 금융당국 움직인다...증안펀드 가동 임박, 증권주 반등할까",
+     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=509115",
+     "source": "pinpointnews.co.kr",
+     "published": "2026-11-28T10:28:00+09:00",
      "dup_count": 0,
-     "summary": "과거 급등락기 시장안정화 조치를 복기한 결과 정책 패키지가 개인 반대매매 공포 완화 등에 기여한 것으로 나타났다."
+     "summary": "증시 급락에 대응해 금융당국의 증안펀드 가동 가능성이 제기되며 시장이 주목하고 있다."
     }
    ]
   },
   {
-   "title": "국고채 금리 상승 및 채권 시장 동향",
+   "title": "국내 주식투자자 현황 및 심리",
    "sources": [
-    "cbci.co.kr",
-    "kjdaily.com"
+    "edaily.co.kr",
+    "sedaily.com",
+    "view.asiae.co.kr"
    ],
-   "count": 2,
+   "count": 3,
    "items": [
     {
-     "title": "국고채 금리, 증시 급등에 중단기물 중심 상승...3년물 연 3.685%",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=631438",
-     "source": "cbci.co.kr",
-     "published": "2026-11-28T01:20:00+09:00",
-     "dup_count": 2,
-     "summary": "코스피 급등과 매수 사이드카 발동 등 위험선호 심리 확대로 국고채 3년물 금리가 연 3.685%로 상승했다."
-    },
-    {
-     "title": "국고채 금리 중단기물 상승...증시 급등에 채권 약세",
-     "url": "http://www.kjdaily.com/article.php?aid=1795792357693753276",
-     "source": "kjdaily.com",
-     "published": "2026-11-28T00:14:00+09:00",
-     "dup_count": 2,
-     "summary": "증시가 급등하고 매수 사이드카가 발동되는 등 위험자산에 매수세가 몰리며 채권 시장은 약세를 보였다."
-    }
-   ]
-  },
-  {
-   "title": "로봇 관련주 강세 및 종목 손바뀜",
-   "sources": [
-    "kjdaily.com"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "코스모로보틱스·클로봇 30% 안팎 급등...로봇주 강세",
-     "url": "http://www.kjdaily.com/article.php?aid=1795793240693756276",
-     "source": "kjdaily.com",
-     "published": "2026-11-28T00:30:00+09:00",
-     "dup_count": 2,
-     "summary": "코스피가 4.34% 반등하며 4900선을 회복한 가운데 코스모로보틱스와 클로봇 등 로봇주가 급등했다."
-    },
-    {
-     "title": "에이엘로봇·하나에어로 회전율 80% 안팎...손바뀜 활발",
-     "url": "http://www.kjdaily.com/article.php?aid=1795793435693757276",
-     "source": "kjdaily.com",
-     "published": "2026-11-28T00:32:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피가 4900선을 회복한 가운데 에이엘로봇과 하나에어로 등의 종목에서 활발한 손바뀜이 나타났다."
-    }
-   ]
-  },
-  {
-   "title": "대만 AI 특수 및 경제성장률 상향",
-   "sources": [
-    "fnnews.com",
-    "newsis.com"
-   ],
-   "count": 2,
-   "items": [
-    {
-     "title": "'AI 특수' 대만, 올해 성장률 전망 13.28%로 대폭 상향...48년 만에 최고",
-     "url": "https://www.fnnews.com/news/202611272353383361",
-     "source": "fnnews.com",
-     "published": "2026-11-27T23:58:00+09:00",
+     "title": "“나만 주식으로 돈 못 벌었나” 이런 사람 많은데...국내 투자자 69%가 ...",
+     "url": "https://www.sedaily.com/article/20120119?ref=naver",
+     "source": "sedaily.com",
+     "published": "2026-11-28T11:24:00+09:00",
      "dup_count": 0,
-     "summary": "대만은 AI 특수에 힘입어 올해 경제성장률 전망치를 13.28%로 상향 조정하며 48년 만의 최고치를 기록했다."
+     "summary": "국내 주식 투자자 69%가 손실을 입었으나 향후 코스피 전망은 긍정론이 우세했다."
     },
     {
-     "title": "[올댓차이나] 대만 올해 성장률 전망 11.05%→13.28% 상향...\"AI 반도체·서...",
-     "url": "https://www.newsis.com/view/NISX20261127_0003886925",
-     "source": "newsis.com",
-     "published": "2026-11-27T23:16:00+09:00",
+     "title": "생방송 눈물, 이유 밝힌 주식 전문가 \"추가 하락 경고해야 하는 부담 때...",
+     "url": "https://view.asiae.co.kr/article/2026112809541631331",
+     "source": "view.asiae.co.kr",
+     "published": "2026-11-28T10:07:00+09:00",
      "dup_count": 0,
-     "summary": "대만은 AI 반도체와 서버 수출 증가에 힘입어 2026년 경제성장률 전망치를 13.28%로 대폭 상향 조정했다."
-    }
-   ]
-  },
-  {
-   "title": "미국 블랙프라이데이 소비 동향",
-   "sources": [
-    "edaily.co.kr"
-   ],
-   "count": 1,
-   "items": [
+     "summary": "미 기술주 약세와 AI 투자 우려 등으로 코스피가 급락하며 시장에 충격을 줬다."
+    },
     {
-     "title": "\"맥치킨 값도 올랐다\"...美 블프 할인에도 지갑 열기 망설인다",
-     "url": "https://www.edaily.co.kr/News/Read?newsId=01157846645650312&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+     "title": "롤러코스터 증시에 셈법 복잡해진 개미...빚투 줄이고 반등엔 베팅",
+     "url": "https://www.edaily.co.kr/News/Read?newsId=01508806645650312&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
      "source": "edaily.co.kr",
-     "published": "2026-11-28T02:57:00+09:00",
+     "published": "2026-11-28T09:46:00+09:00",
      "dup_count": 0,
-     "summary": "UBS는 증시 조정과 AI 거품 우려로 인해 연말 블프 할인에도 부유층의 자산효과가 약화될 수 있다고 분석했다."
+     "summary": "롤러코스터 증시 속에서 개인투자자들이 빚투를 줄이고 반등 종목 매수에 나섰다."
     }
    ]
   },
   {
-   "title": "가계대출 금리 상승",
+   "title": "휴머노이드 및 로봇주 강세",
    "sources": [
-    "donga.com"
+    "hansbiz.co.kr",
+    "topstarnews.net"
    ],
-   "count": 1,
+   "count": 2,
    "items": [
     {
-     "title": "주담대 5% - 마통 7%... 가계 덮친 ‘눈덩이 금리’",
-     "url": "https://www.donga.com/news/Economy/article/all/20261127/135106378/2",
-     "source": "donga.com",
-     "published": "2026-11-28T01:45:00+09:00",
+     "title": "[마켓H] 휴머노이드 기대에 로봇주 질주",
+     "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=888154",
+     "source": "hansbiz.co.kr",
+     "published": "2026-11-28T12:04:00+09:00",
      "dup_count": 0,
-     "summary": "한은의 잇따른 기준금리 인상으로 은행권 주담대 평균 금리가 5%, 마통 상단이 7%를 넘어섰다."
+     "summary": "휴머노이드 로봇에 대한 기대감으로 현대오토에버와 로보티즈 등 로봇주가 급등했다."
+    },
+    {
+     "title": "11월 4주차 레인보우로보틱스 주가 가파른 상승세 지속",
+     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16288308",
+     "source": "topstarnews.net",
+     "published": "2026-11-28T11:34:00+09:00",
+     "dup_count": 0,
+     "summary": "레인보우로보틱스 주가가 강세를 지속하며 코스닥 시장에서 시총 상위권을 유지했다."
     }
    ]
   },
   {
-   "title": "통화긴축과 확장재정 정책 기조 논란",
+   "title": "미국 금리와 반도체·현대차 주가 영향",
    "sources": [
-    "donga.com"
+    "pinpointnews.co.kr"
    ],
-   "count": 1,
+   "count": 2,
    "items": [
     {
-     "title": "‘통화긴축-확장재정 충돌’ 지적에... 靑 “엇박자 아닌 정교한 조합”",
-     "url": "https://www.donga.com/news/Politics/article/all/20261127/135106503/2",
-     "source": "donga.com",
-     "published": "2026-11-28T01:44:00+09:00",
-     "dup_count": 0,
-     "summary": "청와대는 한은의 통화 긴축과 정부의 확장 재정 정책 충돌 지적에 대해 엇박자가 아닌 정교한 조합이라고 밝혔다."
+     "title": "대신증권 \"미국 추가 긴축이냐 금리 안정이냐...현대차·기아까지 움직일...",
+     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=509123",
+     "source": "pinpointnews.co.kr",
+     "published": "2026-11-28T11:00:00+09:00",
+     "dup_count": 1,
+     "summary": "한은의 기준금리 인상으로 긴축 부담이 커지며 현대차와 기아 등 기업들도 주시하고 있다."
+    },
+    {
+     "title": "대신증권 \"중국 화웨이까지 HBM 개발 속도전...한국 반도체 투톱에 드리...",
+     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=509122",
+     "source": "pinpointnews.co.kr",
+     "published": "2026-11-28T10:56:00+09:00",
+     "dup_count": 1,
+     "summary": "화웨이의 HBM 개발 등 불확실성 속에서 한국 반도체 투톱의 주가 흐름이 주목받고 있다."
     }
    ]
   },
   {
-   "title": "정치권 소식 (민주당 내홍)",
+   "title": "코스닥 및 한미 증시 동반 급등",
    "sources": [
-    "dailian.co.kr"
+    "kihoilbo.co.kr",
+    "the-today.com"
    ],
-   "count": 1,
+   "count": 2,
    "items": [
     {
-     "title": "[데일리안 주간 포토] 최민희 징계에 민주당 내홍 격화 조짐! 주말 김민...",
-     "url": "https://www.dailian.co.kr/news/view/1720640/?sc=Naver",
-     "source": "dailian.co.kr",
-     "published": "2026-11-28T01:00:00+09:00",
-     "dup_count": 0,
-     "summary": "한은이 기준금리를 3.25%로 인상한 가운데 정치권 내홍과 장관 후보자 청문회 준비 소식이 이어졌다."
-    }
-   ]
-  },
-  {
-   "title": "레버리지 및 인버스 ETF 거래 동향",
-   "sources": [
-    "kjdaily.com"
-   ],
-   "count": 1,
-   "items": [
+     "title": "[NZSI INDEX] 2026년 11월 27일... 코스피 4.34%·코스닥 8.13% 급등, 외국...",
+     "url": "https://www.the-today.com/news/articleView.html?idxno=94217",
+     "source": "the-today.com",
+     "published": "2026-11-28T09:40:00+09:00",
+     "dup_count": 3,
+     "summary": "27일 국내 증시 급등으로 하루 만에 시가총액이 200조 원 이상 급증했다."
+    },
     {
-     "title": "코스피200 레버리지 거래 35%↑...인버스2X 14%↓",
-     "url": "http://www.kjdaily.com/article.php?aid=1795792945693751276",
-     "source": "kjdaily.com",
-     "published": "2026-11-28T00:24:00+09:00",
+     "title": "[11월 넷째 주 세계경제동향 브리핑] 코스닥 9.8% 급등...한미 증시 동반...",
+     "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3042393",
+     "source": "kihoilbo.co.kr",
+     "published": "2026-11-28T10:34:00+09:00",
      "dup_count": 2,
-     "summary": "코스피가 4.34% 상승해 4900선을 회복한 가운데 코스피200 레버리지 거래는 35% 증가했다."
+     "summary": "11월 넷째 주 코스피와 코스닥이 동반 상승하며 국내 증시가 회복세를 보였다."
     }
    ]
   },
   {
-   "title": "삼성전자 배당금 지급 및 주가 상승",
+   "title": "영끌족 이자 부담과 주택담보대출 고통",
    "sources": [
-    "cbci.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "삼성전자 배당금 약 30조원 지급...주가도 4.55% 올라",
-     "url": "https://www.cbci.co.kr/news/articleView.html?idxno=631470",
-     "source": "cbci.co.kr",
-     "published": "2026-11-28T00:20:00+09:00",
-     "dup_count": 0,
-     "summary": "삼성전자가 약 30조원의 배당금을 지급하기로 한 가운데 외국인 매수세 유입으로 주가가 4.55% 상승했다."
-    }
-   ]
-  },
-  {
-   "title": "공매도 현황",
-   "sources": [
-    "kjdaily.com"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "한미반도체 공매도 233억...티씨케이 비중 37%",
-     "url": "http://www.kjdaily.com/article.php?aid=1795792029693760276",
-     "source": "kjdaily.com",
-     "published": "2026-11-28T00:10:00+09:00",
-     "dup_count": 2,
-     "summary": "코스피가 4900선을 회복하며 상승한 가운데 한미반도체와 티씨케이 등의 공매도 및 비중 현황이 주목받았다."
-    }
-   ]
-  },
-  {
-   "title": "한국 경제 및 수출·소비 우려 사설",
-   "sources": [
+    "ddaily.co.kr",
     "sedaily.com"
    ],
-   "count": 1,
+   "count": 2,
    "items": [
     {
-     "title": "[사설] 수출은 가격 착시, 소비는 해외 유출...‘속 빈 성장’ 경계를",
-     "url": "https://www.sedaily.com/article/20120050?ref=naver",
+     "title": "내 집 마련의 꿈 이뤘는데 “더는 못 버텨”...이자폭탄에 무너진 ‘영끌...",
+     "url": "https://www.sedaily.com/article/20120108?ref=naver",
      "source": "sedaily.com",
-     "published": "2026-11-28T00:03:00+09:00",
+     "published": "2026-11-28T10:05:00+09:00",
      "dup_count": 0,
-     "summary": "반도체 가격 의존도가 높은 한국은 수출 착시와 해외 소비 유출 등으로 '속 빈 성장'을 경계해야 한다는 지적이다."
+     "summary": "한국은행의 잇따른 기준금리 인상으로 변동금리 차주들의 이자 부담이 가중되고 있다."
+    },
+    {
+     "title": "[이호연의 D톡스] 점도표에 등장한 3.75%...차주들은 ‘한숨’",
+     "url": "https://www.ddaily.co.kr/page/view/2026112717450183570",
+     "source": "ddaily.co.kr",
+     "published": "2026-11-28T10:01:00+09:00",
+     "dup_count": 0,
+     "summary": "한국은행 점도표에 연 3.75% 금리 전망이 등장하자 대출 차주들의 한숨이 깊어지고 있다."
     }
    ]
   },
   {
-   "title": "서울 전세가 최고가 경행",
+   "title": "엔비디아 젠슨 황 복귀 및 반도체 이슈",
    "sources": [
-    "joongang.co.kr"
+    "breaknews.com",
+    "opinionnews.co.kr"
+   ],
+   "count": 2,
+   "items": [
+    {
+     "title": "[위클리 PICK 3] 젠슨 황 엔비디아 CEO 복귀부터 美, 한국에 과잉생산 관...",
+     "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=147571",
+     "source": "opinionnews.co.kr",
+     "published": "2026-11-28T10:00:00+09:00",
+     "dup_count": 0,
+     "summary": "엔비디아 젠슨 황의 복귀와 미국의 대중국 반도체 통제가 증시의 주요 변수로 작용했다."
+    },
+    {
+     "title": "[명리예언] 경주 도사(道士) 단원(丹垣)...\"젠슨 황, 복귀 서둘렀다...20...",
+     "url": "http://www.breaknews.com/1254965",
+     "source": "breaknews.com",
+     "published": "2026-11-28T09:38:00+09:00",
+     "dup_count": 0,
+     "summary": "젠슨 황 효과로 5000선을 회복했던 코스피가 하루 만에 급락하는 등 변동성을 겪었다."
+    }
+   ]
+  },
+  {
+   "title": "기업 주주환원 강화",
+   "sources": [
+    "enewstoday.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "10개월 새 3.5억 뛰었다, 서울 전세 잇단 최고가...“내년이 더 문제”",
-     "url": "https://www.joongang.co.kr/article/25482665",
-     "source": "joongang.co.kr",
-     "published": "2026-11-28T00:02:00+09:00",
+     "title": "[공기男] 기업들 곳간 열었다···주주환원에 속도",
+     "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2498241",
+     "source": "enewstoday.co.kr",
+     "published": "2026-11-28T13:00:00+09:00",
      "dup_count": 0,
-     "summary": "서울 아파트 전세가가 10개월 새 3.5억 뛰며 최고가를 경신한 가운데 보유세와 금리 인상이 부담으로 작용하고 있다."
+     "summary": "SK하이닉스와 삼성전자 등 반도체 대형주들이 대규모 주주환원에 속도를 내고 있다."
     }
    ]
   },
   {
-   "title": "증권가의 삼성전자·SK하이닉스 저가 매수 경고",
+   "title": "수출 1조 달러와 서민 경제",
    "sources": [
-    "theguru.co.kr"
+    "news-s.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "\"싸다고 줍줍은 위험\"...삼전닉스 폭락에도 증권가 저가 매수 경고하는 ...",
-     "url": "https://www.theguru.co.kr/news/article.html?no=110097",
-     "source": "theguru.co.kr",
-     "published": "2026-11-28T00:02:00+09:00",
+     "title": "[경제 시평] ‘수출 1조 달러’의 축포 뒤에 가려진 서민의 한숨",
+     "url": "https://news-s.kr/view.html?id=L26112812380861e1",
+     "source": "news-s.kr",
+     "published": "2026-11-28T12:44:00+09:00",
      "dup_count": 0,
-     "summary": "증권가는 삼성전자와 SK하이닉스의 폭락 속에서도 무분별한 저가 매수에 나서지 말라고 경고했다."
+     "summary": "한국은행이 기준금리를 연 3.25%로 인상한 가운데 추가 인상 가능성도 제기됐다."
     }
    ]
   },
   {
-   "title": "개인 투자자 투자 성공담",
+   "title": "금리 인상 우려와 AI 주가 불안",
    "sources": [
-    "newsis.com"
+    "ekn.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "'실화일까'...2000만원→100억 불린 95년생 전업투자자",
-     "url": "https://www.newsis.com/view/NISX20261127_0003885634",
-     "source": "newsis.com",
-     "published": "2026-11-28T00:00:00+09:00",
+     "title": "“이래도 금리 올릴 거야?”...불안한 AI株, ‘연준 풋’ 나올까 [머니+]",
+     "url": "https://www.ekn.kr/web/view.php?key=20261128021575584",
+     "source": "ekn.kr",
+     "published": "2026-11-28T12:24:00+09:00",
      "dup_count": 0,
-     "summary": "2000만 원을 100억 원으로 불린 95년생 전업투자자는 AI 섹터의 실제 실적 증명이 중요하다고 신중론을 펴다."
+     "summary": "금융시장 안정을 위해 연준이 긴축 속도를 조절해야 한다는 목소리가 커지고 있다."
     }
    ]
   },
   {
-   "title": "코스피 폭락에 대한 전문가 반응",
+   "title": "연말 특판예금과 대출 금리",
    "sources": [
-    "wowtv.co.kr"
+    "news.bizwatch.co.kr"
    ],
    "count": 1,
    "items": [
     {
-     "title": "\"잘 버텨내자\" 전문가도 울린 롤러코스피...반토막 난 코스피에 '충격'",
-     "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611270156&t=NN",
-     "source": "wowtv.co.kr",
-     "published": "2026-11-27T23:35:00+09:00",
-     "dup_count": 1,
-     "summary": "코스피가 사상 최고점 대비 반토막 수준까지 밀려나는 롤러코스터 장세를 보이며 시장에 큰 충격을 주었다."
-    }
-   ]
-  },
-  {
-   "title": "나이스평가정보 분석",
-   "sources": [
-    "hansbiz.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "나이스평가정보, DYP 다각화 분석",
-     "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=888153",
-     "source": "hansbiz.co.kr",
-     "published": "2026-11-27T23:18:00+09:00",
+     "title": "[돈MORE]연말 특판예금 기대...대출은 금리·한도 따져봐야",
+     "url": "https://news.bizwatch.co.kr/article/finance/2026/11/27/0027",
+     "source": "news.bizwatch.co.kr",
+     "published": "2026-11-28T12:00:00+09:00",
      "dup_count": 0,
-     "summary": "나이스평가정보는 DYP의 올해 실적 성장세가 이어져 2026년 매출액이 5040억원을 기록할 것으로 전망했다."
+     "summary": "한국은행의 기준금리 연 3.25% 인상으로 연말 특판예금과 대출 금리에 관심이 쏠린다."
     }
    ]
   },
   {
-   "title": "K자 양극화 및 민생 경제 칼럼",
-   "sources": [
-    "mhns.co.kr"
-   ],
-   "count": 1,
-   "items": [
-    {
-     "title": "[박근종 칼럼] 'K자 양극화'에 역자산효과까지 습격, 민생 안전판 구축...",
-     "url": "https://www.mhns.co.kr/news/articleView.html?idxno=770965",
-     "source": "mhns.co.kr",
-     "published": "2026-11-27T23:16:00+09:00",
-     "dup_count": 0,
-     "summary": "한은이 기준금리를 연 3.25%로 인상한 가운데 가계신용이 2,030조 원을 돌파하며 K자 양극화 우려가 커지고 있다."
-    }
-   ]
-  },
-  {
-   "title": "기준금리 인상과 반도체 호황",
+   "title": "안랩 주가 상승",
    "sources": [
     "topstarnews.net"
    ],
    "count": 1,
    "items": [
     {
-     "title": "기준금리 인상 끝? 반도체 호황의 역설",
-     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16288133",
+     "title": "11월 넷째주 안랩 주가 11만원대에서 17만원대로 가파른 상승",
+     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16288315",
      "source": "topstarnews.net",
-     "published": "2026-11-27T22:24:00+09:00",
+     "published": "2026-11-28T11:40:00+09:00",
      "dup_count": 0,
-     "summary": "노무라증권은 한은의 추가 금리 인상 가능성이 낮다며 최종금리 전망치를 3.25%로 하향 조정했다."
+     "summary": "안랩 주가가 11월 넷째 주 가파른 상승세를 보이며 17만 원대에 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "펩트론 주가 반등",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "펩트론 주가 11월 27일 최근 5거래일 하락 끊고 반등",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=567325",
+     "source": "joongangenews.com",
+     "published": "2026-11-28T11:24:00+09:00",
+     "dup_count": 0,
+     "summary": "펩트론 주가가 최근 5거래일간의 하락세를 끊고 반등에 성공했다."
+    }
+   ]
+  },
+  {
+   "title": "제주반도체 주가 반등",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "제주반도체 주가 5거래일간 변동성 속 강한 반등",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=567323",
+     "source": "joongangenews.com",
+     "published": "2026-11-28T11:22:00+09:00",
+     "dup_count": 0,
+     "summary": "제주반도체가 변동성 속에서 강한 반등을 보이며 5만2100원에 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "일본 날씨와 교통 차질",
+   "sources": [
+    "pointe.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[오늘 일본은] 도쿄는 낮 20도, 북부는 밤부터 눈...일본 교통 차질·정전...",
+     "url": "https://www.pointe.co.kr/news/articleView.html?idxno=88586",
+     "source": "pointe.co.kr",
+     "published": "2026-11-28T11:08:00+09:00",
+     "dup_count": 1,
+     "summary": "뉴욕증시가 블프 저가 매수세에 힘입어 S&P500과 나스닥 모두 상승 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "메모리 반도체 업황 전망",
+   "sources": [
+    "jemin.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "마이크론·트렌드포스, D램 업황 전망 엇갈려...메모리 호황 지속 여부 ...",
+     "url": "https://www.jemin.com/news/articleView.html?idxno=848727",
+     "source": "jemin.com",
+     "published": "2026-11-28T11:06:00+09:00",
+     "dup_count": 0,
+     "summary": "주요 고객사들이 안정적인 반도체 조달을 위해 장기 공급계약을 추진하면서 제조기업의 실적 가시성도... 중국 클라우드 서비스 기업들의 서버용 메모리 구매 움직임과 "
+    }
+   ]
+  },
+  {
+   "title": "이재명 부동산 정책 비판",
+   "sources": [
+    "pennmike.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "[심양섭의 정론직격] 이재명 부동산 정책, 어디서부터 잘못되었나",
+     "url": "https://www.pennmike.com/news/articleView.html?idxno=132986",
+     "source": "pennmike.com",
+     "published": "2026-11-28T10:54:00+09:00",
+     "dup_count": 0,
+     "summary": "금리 인상과 증시 변동성 속에서 청년들의 내 집 마련과 주식 투자가 난관을 맞았다."
+    }
+   ]
+  },
+  {
+   "title": "클로봇 주가 급등",
+   "sources": [
+    "joongangenews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "최근 5거래일 클로봇 주가 급등세 23650원 마감",
+     "url": "https://www.joongangenews.com/news/articleView.html?idxno=567308",
+     "source": "joongangenews.com",
+     "published": "2026-11-28T10:52:00+09:00",
+     "dup_count": 0,
+     "summary": "클로봇 주가가 최근 5거래일간 상승세를 보이며 2만3650원에 마감했다."
+    }
+   ]
+  },
+  {
+   "title": "대출 금리 및 신용점수 논란",
+   "sources": [
+    "sedaily.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "빚 꼬박꼬박 갚아 신용점수 높였는데 “이자 더 내라니”...요즘 은행권...",
+     "url": "https://www.sedaily.com/article/20120111?ref=naver",
+     "source": "sedaily.com",
+     "published": "2026-11-28T10:43:00+09:00",
+     "dup_count": 0,
+     "summary": "기준금리 인상 여파로 시중은행의 일반신용대출 금리가 전반적으로 상승했다."
+    }
+   ]
+  },
+  {
+   "title": "현대차 주가 하락과 로봇 이슈",
+   "sources": [
+    "todayeconomic.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "현대차 주가 5개월 새 70% 증발...로봇이 올린 주가, 본업이 끌어내렸다",
+     "url": "https://www.todayeconomic.com/news/article.html?no=33034",
+     "source": "todayeconomic.com",
+     "published": "2026-11-28T10:40:00+09:00",
+     "dup_count": 0,
+     "summary": "현대차는 판매 목표를 낮추며 본업 부진과 로봇 사업 사이에서 주가 변동을 겪었다."
+    }
+   ]
+  },
+  {
+   "title": "삼성전자·SK하이닉스 주간 증시 전망",
+   "sources": [
+    "thescoop.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "막판에 살아난 삼전닉스...12월 첫째주 '반전 드라마' 쓸까 [주간 증시해...",
+     "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=312457",
+     "source": "thescoop.co.kr",
+     "published": "2026-11-28T10:15:00+09:00",
+     "dup_count": 5,
+     "summary": "삼성전자와 SK하이닉스가 반등하며 코스닥도 12거래일 만에 700선을 회복했다."
+    }
+   ]
+  },
+  {
+   "title": "연말 IPO 공모주 동향",
+   "sources": [
+    "fnnews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "공모주 냉기 속 이어지는 연말 IPO...다음 주 8곳 기관 평가",
+     "url": "https://www.fnnews.com/news/202611281001389053",
+     "source": "fnnews.com",
+     "published": "2026-11-28T10:07:00+09:00",
+     "dup_count": 0,
+     "summary": "공모주 시장의 냉각 속에서도 연말 IPO 기업들의 기관 평가가 이어지고 있다."
+    }
+   ]
+  },
+  {
+   "title": "대기업 중복 상장 규제의 명암",
+   "sources": [
+    "sedaily.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "LG·현대차는 웃고 SK·LS는 울고...중복 상장 규제의 명암 [갭 월드]",
+     "url": "https://www.sedaily.com/article/20120102?ref=naver",
+     "source": "sedaily.com",
+     "published": "2026-11-28T10:00:00+09:00",
+     "dup_count": 0,
+     "summary": "기준금리 인상과 회사채 금리 상승으로 기업들의 이자 비용 부담이 커지고 있다."
+    }
+   ]
+  },
+  {
+   "title": "국민의힘 정점식 원내대표 규탄 발언",
+   "sources": [
+    "breaknews.com"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "정점식 국민의힘 원내대표 \" '공소취소 열차' 종착역은 교도소“ 규탄",
+     "url": "http://www.breaknews.com/1254966",
+     "source": "breaknews.com",
+     "published": "2026-11-28T09:38:00+09:00",
+     "dup_count": 0,
+     "summary": "한국은행의 기준금리 3.25% 인상으로 취약계층과 영세 자영업자의 고통이 가중되고 있다."
+    }
+   ]
+  },
+  {
+   "title": "한국은행 통화정책 토론회",
+   "sources": [
+    "ifs.or.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "한국은행 통화정책의 기조는 옳은가?-남덕우기념사업회 17차 토론회",
+     "url": "http://www.ifs.or.kr/bbs/board.php?bo_table=research&wr_id=11407",
+     "source": "ifs.or.kr",
+     "published": "2026-11-28T09:36:00+09:00",
+     "dup_count": 1,
+     "summary": "한미 금리 격차와 물가 상승 압력에 따른 한국은행의 통화정책 기조를 두고 토론이 이어졌다."
+    }
+   ]
+  },
+  {
+   "title": "뉴욕증시 블랙프라이데이 저가 매수 반등",
+   "sources": [
+    "megaeconomy.co.kr"
+   ],
+   "count": 1,
+   "items": [
+    {
+     "title": "뉴욕증시, 블프 저가매수에 일제히 반등...나스닥 2.31%·필라델피아 반...",
+     "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065572874083005",
+     "source": "megaeconomy.co.kr",
+     "published": "2026-11-28T09:34:00+09:00",
+     "dup_count": 2,
+     "summary": "뉴욕증시 반등과 외국인 순매수에 힘입어 삼성전자와 SK하이닉스가 코스피 상승을 견인했다."
     }
    ]
   }
  ],
  "items": [
   {
-   "title": "\"증시도 블프다\" 저가매수 나선 월가...나스닥 2.3%↑[월스트리트in]",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=01190646645650312&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "source": "edaily.co.kr",
-   "published": "2026-11-28T03:42:00+09:00",
+   "title": "[공기男] 기업들 곳간 열었다···주주환원에 속도",
+   "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2498241",
+   "source": "enewstoday.co.kr",
+   "published": "2026-11-28T13:00:00+09:00",
    "dup_count": 0,
-   "summary": "월가와 국내 증시가 저가 매수세 유입으로 나스닥과 코스피 등 주요 지수가 일제히 급등했다."
+   "summary": "SK하이닉스와 삼성전자 등 반도체 대형주들이 대규모 주주환원에 속도를 내고 있다."
   },
   {
-   "title": "\"맥치킨 값도 올랐다\"...美 블프 할인에도 지갑 열기 망설인다",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=01157846645650312&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "source": "edaily.co.kr",
-   "published": "2026-11-28T02:57:00+09:00",
+   "title": "[경제 시평] ‘수출 1조 달러’의 축포 뒤에 가려진 서민의 한숨",
+   "url": "https://news-s.kr/view.html?id=L26112812380861e1",
+   "source": "news-s.kr",
+   "published": "2026-11-28T12:44:00+09:00",
    "dup_count": 0,
-   "summary": "UBS는 증시 조정과 AI 거품 우려로 인해 연말 블프 할인에도 부유층의 자산효과가 약화될 수 있다고 분석했다."
+   "summary": "한국은행이 기준금리를 연 3.25%로 인상한 가운데 추가 인상 가능성도 제기됐다."
   },
   {
-   "title": "주담대 5% - 마통 7%... 가계 덮친 ‘눈덩이 금리’",
-   "url": "https://www.donga.com/news/Economy/article/all/20261127/135106378/2",
-   "source": "donga.com",
-   "published": "2026-11-28T01:45:00+09:00",
+   "title": "“이래도 금리 올릴 거야?”...불안한 AI株, ‘연준 풋’ 나올까 [머니+]",
+   "url": "https://www.ekn.kr/web/view.php?key=20261128021575584",
+   "source": "ekn.kr",
+   "published": "2026-11-28T12:24:00+09:00",
    "dup_count": 0,
-   "summary": "한은의 잇따른 기준금리 인상으로 은행권 주담대 평균 금리가 5%, 마통 상단이 7%를 넘어섰다."
+   "summary": "금융시장 안정을 위해 연준이 긴축 속도를 조절해야 한다는 목소리가 커지고 있다."
   },
   {
-   "title": "‘통화긴축-확장재정 충돌’ 지적에... 靑 “엇박자 아닌 정교한 조합”",
-   "url": "https://www.donga.com/news/Politics/article/all/20261127/135106503/2",
-   "source": "donga.com",
-   "published": "2026-11-28T01:44:00+09:00",
-   "dup_count": 0,
-   "summary": "청와대는 한은의 통화 긴축과 정부의 확장 재정 정책 충돌 지적에 대해 엇박자가 아닌 정교한 조합이라고 밝혔다."
-  },
-  {
-   "title": "국고채 금리, 증시 급등에 중단기물 중심 상승...3년물 연 3.685%",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=631438",
-   "source": "cbci.co.kr",
-   "published": "2026-11-28T01:20:00+09:00",
+   "title": "AI 거품론에 무너진 코스피 ... 증안펀드 40조로 막을 수 있나",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/28/2026112850024.html",
+   "source": "biz.newdaily.co.kr",
+   "published": "2026-11-28T12:06:00+09:00",
    "dup_count": 2,
-   "summary": "코스피 급등과 매수 사이드카 발동 등 위험선호 심리 확대로 국고채 3년물 금리가 연 3.685%로 상승했다."
+   "summary": "증안펀드 기대감 등에 힘입어 27일 코스피와 코스닥이 동반 급등 마감했다."
   },
   {
-   "title": "[데일리안 주간 포토] 최민희 징계에 민주당 내홍 격화 조짐! 주말 김민...",
-   "url": "https://www.dailian.co.kr/news/view/1720640/?sc=Naver",
-   "source": "dailian.co.kr",
-   "published": "2026-11-28T01:00:00+09:00",
-   "dup_count": 0,
-   "summary": "한은이 기준금리를 3.25%로 인상한 가운데 정치권 내홍과 장관 후보자 청문회 준비 소식이 이어졌다."
-  },
-  {
-   "title": "미 국채가 약세...AI주 반등 속 위험선호 회복",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4447022",
-   "source": "news.einfomax.co.kr",
-   "published": "2026-11-28T00:44:00+09:00",
-   "dup_count": 0,
-   "summary": "AI주 반등과 코스피 급등 등 위험선호 심리가 회복되면서 미 국채가는 약세를 보였다."
-  },
-  {
-   "title": "반도체 레버리지 ETF 16%↑...SK하이닉스도 강세",
-   "url": "http://www.kjdaily.com/article.php?aid=1795793599693752276",
-   "source": "kjdaily.com",
-   "published": "2026-11-28T00:38:00+09:00",
-   "dup_count": 2,
-   "summary": "외국인과 기관의 순매수에 힘입어 코스피는 4.34% 오른 4915.68을 기록하며 3거래일 만에 4900선을 회복했다."
-  },
-  {
-   "title": "증안펀드 투입 기대감에, 코스피 4% 코스닥 8% 올라",
-   "url": "https://www.chosun.com/economy/money/2026/11/28/JM24JZKUANGITKK2IUBUGELKXI/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "source": "chosun.com",
-   "published": "2026-11-28T00:35:00+09:00",
-   "dup_count": 2,
-   "summary": "증안펀드 투입 기대감에 코스피가 4%, 코스닥이 8% 오르며 삼성전자와 SK하이닉스가 동반 상승했다."
-  },
-  {
-   "title": "코스피 4.34% 급등 4,915...삼성전자우 6.2%·삼천당제약 15.0% 상승",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=631503",
-   "source": "cbci.co.kr",
-   "published": "2026-11-28T00:34:00+09:00",
-   "dup_count": 1,
-   "summary": "코스피는 4.34% 급등한 4915.68로 마감했고 삼성전자우와 삼천당제약 등도 큰 폭으로 상승했다."
-  },
-  {
-   "title": "에이엘로봇·하나에어로 회전율 80% 안팎...손바뀜 활발",
-   "url": "http://www.kjdaily.com/article.php?aid=1795793435693757276",
-   "source": "kjdaily.com",
-   "published": "2026-11-28T00:32:00+09:00",
-   "dup_count": 1,
-   "summary": "코스피가 4900선을 회복한 가운데 에이엘로봇과 하나에어로 등의 종목에서 활발한 손바뀜이 나타났다."
-  },
-  {
-   "title": "코스모로보틱스·클로봇 30% 안팎 급등...로봇주 강세",
-   "url": "http://www.kjdaily.com/article.php?aid=1795793240693756276",
-   "source": "kjdaily.com",
-   "published": "2026-11-28T00:30:00+09:00",
-   "dup_count": 2,
-   "summary": "코스피가 4.34% 반등하며 4900선을 회복한 가운데 코스모로보틱스와 클로봇 등 로봇주가 급등했다."
-  },
-  {
-   "title": "[뉴욕증시 개장] 한국서 5.4% 올라 111만원 SK하이닉스, 미국 ADR도 2%↑......",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95834",
-   "source": "thefairnews.co.kr",
-   "published": "2026-11-28T00:30:00+09:00",
-   "dup_count": 1,
-   "summary": "국내 증시에서 코스피와 SK하이닉스가 급등 마감한 가운데 뉴욕증시에서 SK하이닉스 ADR도 2% 상승했다."
-  },
-  {
-   "title": "코스피200 레버리지 거래 35%↑...인버스2X 14%↓",
-   "url": "http://www.kjdaily.com/article.php?aid=1795792945693751276",
-   "source": "kjdaily.com",
-   "published": "2026-11-28T00:24:00+09:00",
-   "dup_count": 2,
-   "summary": "코스피가 4.34% 상승해 4900선을 회복한 가운데 코스피200 레버리지 거래는 35% 증가했다."
-  },
-  {
-   "title": "삼성전자 배당금 약 30조원 지급...주가도 4.55% 올라",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=631470",
-   "source": "cbci.co.kr",
-   "published": "2026-11-28T00:20:00+09:00",
-   "dup_count": 0,
-   "summary": "삼성전자가 약 30조원의 배당금을 지급하기로 한 가운데 외국인 매수세 유입으로 주가가 4.55% 상승했다."
-  },
-  {
-   "title": "\"반도체·AI 진짜 바닥은 내년 2월 실적 시즌 이후\"...진단 배경은",
-   "url": "https://www.newsis.com/view/NISX20261127_0003886235",
-   "source": "newsis.com",
-   "published": "2026-11-28T00:20:00+09:00",
-   "dup_count": 0,
-   "summary": "전문가들은 반도체와 AI의 진짜 바닥이 내년 2분기 실적 시즌 이후에 형성될 것으로 진단했다."
-  },
-  {
-   "title": "국고채 금리 중단기물 상승...증시 급등에 채권 약세",
-   "url": "http://www.kjdaily.com/article.php?aid=1795792357693753276",
-   "source": "kjdaily.com",
-   "published": "2026-11-28T00:14:00+09:00",
-   "dup_count": 2,
-   "summary": "증시가 급등하고 매수 사이드카가 발동되는 등 위험자산에 매수세가 몰리며 채권 시장은 약세를 보였다."
-  },
-  {
-   "title": "두산에너빌리티 주가 8%대 상승 마감...코스피 급등에 원전주 동반 강세",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=631497",
-   "source": "cbci.co.kr",
-   "published": "2026-11-28T00:10:00+09:00",
-   "dup_count": 1,
-   "summary": "코스피 급등과 체코 원전 논의 속에서 두산에너빌리티 등 원전 관련주가 동반 강세를 보였다."
-  },
-  {
-   "title": "한미반도체 공매도 233억...티씨케이 비중 37%",
-   "url": "http://www.kjdaily.com/article.php?aid=1795792029693760276",
-   "source": "kjdaily.com",
-   "published": "2026-11-28T00:10:00+09:00",
-   "dup_count": 2,
-   "summary": "코스피가 4900선을 회복하며 상승한 가운데 한미반도체와 티씨케이 등의 공매도 및 비중 현황이 주목받았다."
-  },
-  {
-   "title": "'AI 투매' 진정되나...뉴욕증시 상승 출발, 나스닥 0.7%↑",
-   "url": "https://www.newsian.co.kr/news/articleView.html?idxno=102183",
-   "source": "newsian.co.kr",
-   "published": "2026-11-28T00:10:00+09:00",
-   "dup_count": 1,
-   "summary": "뉴욕증시가 나스닥 0.7% 상승 등 상승 출발하며 AI 투매 우려가 진정되는 모습을 보였다."
-  },
-  {
-   "title": "[사설] 수출은 가격 착시, 소비는 해외 유출...‘속 빈 성장’ 경계를",
-   "url": "https://www.sedaily.com/article/20120050?ref=naver",
-   "source": "sedaily.com",
-   "published": "2026-11-28T00:03:00+09:00",
-   "dup_count": 0,
-   "summary": "반도체 가격 의존도가 높은 한국은 수출 착시와 해외 소비 유출 등으로 '속 빈 성장'을 경계해야 한다는 지적이다."
-  },
-  {
-   "title": "10개월 새 3.5억 뛰었다, 서울 전세 잇단 최고가...“내년이 더 문제”",
-   "url": "https://www.joongang.co.kr/article/25482665",
-   "source": "joongang.co.kr",
-   "published": "2026-11-28T00:02:00+09:00",
-   "dup_count": 0,
-   "summary": "서울 아파트 전세가가 10개월 새 3.5억 뛰며 최고가를 경신한 가운데 보유세와 금리 인상이 부담으로 작용하고 있다."
-  },
-  {
-   "title": "\"싸다고 줍줍은 위험\"...삼전닉스 폭락에도 증권가 저가 매수 경고하는 ...",
-   "url": "https://www.theguru.co.kr/news/article.html?no=110097",
-   "source": "theguru.co.kr",
-   "published": "2026-11-28T00:02:00+09:00",
-   "dup_count": 0,
-   "summary": "증권가는 삼성전자와 SK하이닉스의 폭락 속에서도 무분별한 저가 매수에 나서지 말라고 경고했다."
-  },
-  {
-   "title": "미 달러화 강세...AI주 투심 개선·美 국채 금리 상승",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4447020",
-   "source": "news.einfomax.co.kr",
-   "published": "2026-11-28T00:00:00+09:00",
-   "dup_count": 0,
-   "summary": "미 달러화가 강세를 보인 가운데 삼성전자와 SK하이닉스 주도의 AI주 투심 개선으로 코스피가 급등했다."
-  },
-  {
-   "title": "[증시 프리즘] 2020년·2022년 급락기 증시안정 대책 복기해 보니...외국...",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95799",
-   "source": "thefairnews.co.kr",
-   "published": "2026-11-28T00:00:00+09:00",
-   "dup_count": 0,
-   "summary": "과거 급등락기 시장안정화 조치를 복기한 결과 정책 패키지가 개인 반대매매 공포 완화 등에 기여한 것으로 나타났다."
-  },
-  {
-   "title": "'실화일까'...2000만원→100억 불린 95년생 전업투자자",
-   "url": "https://www.newsis.com/view/NISX20261127_0003885634",
-   "source": "newsis.com",
-   "published": "2026-11-28T00:00:00+09:00",
-   "dup_count": 0,
-   "summary": "2000만 원을 100억 원으로 불린 95년생 전업투자자는 AI 섹터의 실제 실적 증명이 중요하다고 신중론을 펴다."
-  },
-  {
-   "title": "'AI 특수' 대만, 올해 성장률 전망 13.28%로 대폭 상향...48년 만에 최고",
-   "url": "https://www.fnnews.com/news/202611272353383361",
-   "source": "fnnews.com",
-   "published": "2026-11-27T23:58:00+09:00",
-   "dup_count": 0,
-   "summary": "대만은 AI 특수에 힘입어 올해 경제성장률 전망치를 13.28%로 상향 조정하며 48년 만의 최고치를 기록했다."
-  },
-  {
-   "title": "\"잘 버텨내자\" 전문가도 울린 롤러코스피...반토막 난 코스피에 '충격'",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611270156&t=NN",
-   "source": "wowtv.co.kr",
-   "published": "2026-11-27T23:35:00+09:00",
-   "dup_count": 1,
-   "summary": "코스피가 사상 최고점 대비 반토막 수준까지 밀려나는 롤러코스터 장세를 보이며 시장에 큰 충격을 주었다."
-  },
-  {
-   "title": "나이스평가정보, DYP 다각화 분석",
-   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=888153",
+   "title": "[마켓H] 휴머노이드 기대에 로봇주 질주",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=888154",
    "source": "hansbiz.co.kr",
-   "published": "2026-11-27T23:18:00+09:00",
+   "published": "2026-11-28T12:04:00+09:00",
    "dup_count": 0,
-   "summary": "나이스평가정보는 DYP의 올해 실적 성장세가 이어져 2026년 매출액이 5040억원을 기록할 것으로 전망했다."
+   "summary": "휴머노이드 로봇에 대한 기대감으로 현대오토에버와 로보티즈 등 로봇주가 급등했다."
   },
   {
-   "title": "[박근종 칼럼] 'K자 양극화'에 역자산효과까지 습격, 민생 안전판 구축...",
-   "url": "https://www.mhns.co.kr/news/articleView.html?idxno=770965",
-   "source": "mhns.co.kr",
-   "published": "2026-11-27T23:16:00+09:00",
+   "title": "[돈MORE]연말 특판예금 기대...대출은 금리·한도 따져봐야",
+   "url": "https://news.bizwatch.co.kr/article/finance/2026/11/27/0027",
+   "source": "news.bizwatch.co.kr",
+   "published": "2026-11-28T12:00:00+09:00",
    "dup_count": 0,
-   "summary": "한은이 기준금리를 연 3.25%로 인상한 가운데 가계신용이 2,030조 원을 돌파하며 K자 양극화 우려가 커지고 있다."
+   "summary": "한국은행의 기준금리 연 3.25% 인상으로 연말 특판예금과 대출 금리에 관심이 쏠린다."
   },
   {
-   "title": "[올댓차이나] 대만 올해 성장률 전망 11.05%→13.28% 상향...\"AI 반도체·서...",
-   "url": "https://www.newsis.com/view/NISX20261127_0003886925",
-   "source": "newsis.com",
-   "published": "2026-11-27T23:16:00+09:00",
-   "dup_count": 0,
-   "summary": "대만은 AI 반도체와 서버 수출 증가에 힘입어 2026년 경제성장률 전망치를 13.28%로 대폭 상향 조정했다."
-  },
-  {
-   "title": "배당금·증권시장안전펀드 투입 기대감에 불기둥 올린 증시",
-   "url": "https://www.ytn.co.kr/_ln/0102_202611272305034782",
-   "source": "ytn.co.kr",
-   "published": "2026-11-27T23:05:00+09:00",
-   "dup_count": 3,
-   "summary": "배당금 지급과 증안펀드 투입 기대감으로 삼성전자와 SK하이닉스가 급등하고 코스닥 시장에는 매수 사이드카가 발동됐다."
-  },
-  {
-   "title": "[AI MY 뉴스] 뉴욕증시 반도체주 프리뷰...저가 매수 속 일제 강세·샌디...",
-   "url": "https://www.newspim.com/news/view/20261127001387",
-   "source": "newspim.com",
-   "published": "2026-11-27T22:53:00+09:00",
-   "dup_count": 0,
-   "summary": "델의 호실적 발표와 황 CEO의 복귀에도 대중국 반도체 수출통제 등 불확실성은 여전히 남아 있다."
-  },
-  {
-   "title": "기준금리 인상 끝? 반도체 호황의 역설",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16288133",
+   "title": "11월 넷째주 안랩 주가 11만원대에서 17만원대로 가파른 상승",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16288315",
    "source": "topstarnews.net",
-   "published": "2026-11-27T22:24:00+09:00",
+   "published": "2026-11-28T11:40:00+09:00",
    "dup_count": 0,
-   "summary": "노무라증권은 한은의 추가 금리 인상 가능성이 낮다며 최종금리 전망치를 3.25%로 하향 조정했다."
+   "summary": "안랩 주가가 11월 넷째 주 가파른 상승세를 보이며 17만 원대에 마감했다."
   },
   {
-   "title": "[뉴욕증시 개장전] SK하이닉스 111만원·코스피 4.3%↑ 이어...나스닥 선...",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95833",
-   "source": "thefairnews.co.kr",
-   "published": "2026-11-27T22:20:00+09:00",
+   "title": "11월 4주차 레인보우로보틱스 주가 가파른 상승세 지속",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16288308",
+   "source": "topstarnews.net",
+   "published": "2026-11-28T11:34:00+09:00",
+   "dup_count": 0,
+   "summary": "레인보우로보틱스 주가가 강세를 지속하며 코스닥 시장에서 시총 상위권을 유지했다."
+  },
+  {
+   "title": "펩트론 주가 11월 27일 최근 5거래일 하락 끊고 반등",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=567325",
+   "source": "joongangenews.com",
+   "published": "2026-11-28T11:24:00+09:00",
+   "dup_count": 0,
+   "summary": "펩트론 주가가 최근 5거래일간의 하락세를 끊고 반등에 성공했다."
+  },
+  {
+   "title": "“나만 주식으로 돈 못 벌었나” 이런 사람 많은데...국내 투자자 69%가 ...",
+   "url": "https://www.sedaily.com/article/20120119?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-28T11:24:00+09:00",
+   "dup_count": 0,
+   "summary": "국내 주식 투자자 69%가 손실을 입었으나 향후 코스피 전망은 긍정론이 우세했다."
+  },
+  {
+   "title": "제주반도체 주가 5거래일간 변동성 속 강한 반등",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=567323",
+   "source": "joongangenews.com",
+   "published": "2026-11-28T11:22:00+09:00",
+   "dup_count": 0,
+   "summary": "제주반도체가 변동성 속에서 강한 반등을 보이며 5만2100원에 마감했다."
+  },
+  {
+   "title": "“4% 급등에도 고점 대비 반토막”...코스피 구할 증안펀드 언제 투입되...",
+   "url": "https://www.ddaily.co.kr/page/view/2026112809201727871",
+   "source": "ddaily.co.kr",
+   "published": "2026-11-28T11:12:00+09:00",
+   "dup_count": 3,
+   "summary": "28일 코스피가 외국인 순매수에 힘입어 4.34% 오른 4915.68에 거래를 마쳤다."
+  },
+  {
+   "title": "[오늘 일본은] 도쿄는 낮 20도, 북부는 밤부터 눈...일본 교통 차질·정전...",
+   "url": "https://www.pointe.co.kr/news/articleView.html?idxno=88586",
+   "source": "pointe.co.kr",
+   "published": "2026-11-28T11:08:00+09:00",
    "dup_count": 1,
-   "summary": "코스피와 SK하이닉스 등 국내 증시의 급등세에 이어 뉴욕증시 나스닥 선물도 상승세를 기록했다."
+   "summary": "뉴욕증시가 블프 저가 매수세에 힘입어 S&P500과 나스닥 모두 상승 마감했다."
+  },
+  {
+   "title": "마이크론·트렌드포스, D램 업황 전망 엇갈려...메모리 호황 지속 여부 ...",
+   "url": "https://www.jemin.com/news/articleView.html?idxno=848727",
+   "source": "jemin.com",
+   "published": "2026-11-28T11:06:00+09:00",
+   "dup_count": 0,
+   "summary": "주요 고객사들이 안정적인 반도체 조달을 위해 장기 공급계약을 추진하면서 제조기업의 실적 가시성도... 중국 클라우드 서비스 기업들의 서버용 메모리 구매 움직임과 "
+  },
+  {
+   "title": "대신증권 \"미국 추가 긴축이냐 금리 안정이냐...현대차·기아까지 움직일...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=509123",
+   "source": "pinpointnews.co.kr",
+   "published": "2026-11-28T11:00:00+09:00",
+   "dup_count": 1,
+   "summary": "한은의 기준금리 인상으로 긴축 부담이 커지며 현대차와 기아 등 기업들도 주시하고 있다."
+  },
+  {
+   "title": "대신증권 \"중국 화웨이까지 HBM 개발 속도전...한국 반도체 투톱에 드리...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=509122",
+   "source": "pinpointnews.co.kr",
+   "published": "2026-11-28T10:56:00+09:00",
+   "dup_count": 1,
+   "summary": "화웨이의 HBM 개발 등 불확실성 속에서 한국 반도체 투톱의 주가 흐름이 주목받고 있다."
+  },
+  {
+   "title": "[심양섭의 정론직격] 이재명 부동산 정책, 어디서부터 잘못되었나",
+   "url": "https://www.pennmike.com/news/articleView.html?idxno=132986",
+   "source": "pennmike.com",
+   "published": "2026-11-28T10:54:00+09:00",
+   "dup_count": 0,
+   "summary": "금리 인상과 증시 변동성 속에서 청년들의 내 집 마련과 주식 투자가 난관을 맞았다."
+  },
+  {
+   "title": "최근 5거래일 클로봇 주가 급등세 23650원 마감",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=567308",
+   "source": "joongangenews.com",
+   "published": "2026-11-28T10:52:00+09:00",
+   "dup_count": 0,
+   "summary": "클로봇 주가가 최근 5거래일간 상승세를 보이며 2만3650원에 마감했다."
+  },
+  {
+   "title": "빚 꼬박꼬박 갚아 신용점수 높였는데 “이자 더 내라니”...요즘 은행권...",
+   "url": "https://www.sedaily.com/article/20120111?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-28T10:43:00+09:00",
+   "dup_count": 0,
+   "summary": "기준금리 인상 여파로 시중은행의 일반신용대출 금리가 전반적으로 상승했다."
+  },
+  {
+   "title": "현대차 주가 5개월 새 70% 증발...로봇이 올린 주가, 본업이 끌어내렸다",
+   "url": "https://www.todayeconomic.com/news/article.html?no=33034",
+   "source": "todayeconomic.com",
+   "published": "2026-11-28T10:40:00+09:00",
+   "dup_count": 0,
+   "summary": "현대차는 판매 목표를 낮추며 본업 부진과 로봇 사업 사이에서 주가 변동을 겪었다."
+  },
+  {
+   "title": "[11월 넷째 주 세계경제동향 브리핑] 코스닥 9.8% 급등...한미 증시 동반...",
+   "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3042393",
+   "source": "kihoilbo.co.kr",
+   "published": "2026-11-28T10:34:00+09:00",
+   "dup_count": 2,
+   "summary": "11월 넷째 주 코스피와 코스닥이 동반 상승하며 국내 증시가 회복세를 보였다."
+  },
+  {
+   "title": "증시 급락에 금융당국 움직인다...증안펀드 가동 임박, 증권주 반등할까",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=509115",
+   "source": "pinpointnews.co.kr",
+   "published": "2026-11-28T10:28:00+09:00",
+   "dup_count": 0,
+   "summary": "증시 급락에 대응해 금융당국의 증안펀드 가동 가능성이 제기되며 시장이 주목하고 있다."
+  },
+  {
+   "title": "막판에 살아난 삼전닉스...12월 첫째주 '반전 드라마' 쓸까 [주간 증시해...",
+   "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=312457",
+   "source": "thescoop.co.kr",
+   "published": "2026-11-28T10:15:00+09:00",
+   "dup_count": 5,
+   "summary": "삼성전자와 SK하이닉스가 반등하며 코스닥도 12거래일 만에 700선을 회복했다."
+  },
+  {
+   "title": "생방송 눈물, 이유 밝힌 주식 전문가 \"추가 하락 경고해야 하는 부담 때...",
+   "url": "https://view.asiae.co.kr/article/2026112809541631331",
+   "source": "view.asiae.co.kr",
+   "published": "2026-11-28T10:07:00+09:00",
+   "dup_count": 0,
+   "summary": "미 기술주 약세와 AI 투자 우려 등으로 코스피가 급락하며 시장에 충격을 줬다."
+  },
+  {
+   "title": "공모주 냉기 속 이어지는 연말 IPO...다음 주 8곳 기관 평가",
+   "url": "https://www.fnnews.com/news/202611281001389053",
+   "source": "fnnews.com",
+   "published": "2026-11-28T10:07:00+09:00",
+   "dup_count": 0,
+   "summary": "공모주 시장의 냉각 속에서도 연말 IPO 기업들의 기관 평가가 이어지고 있다."
+  },
+  {
+   "title": "내 집 마련의 꿈 이뤘는데 “더는 못 버텨”...이자폭탄에 무너진 ‘영끌...",
+   "url": "https://www.sedaily.com/article/20120108?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-28T10:05:00+09:00",
+   "dup_count": 0,
+   "summary": "한국은행의 잇따른 기준금리 인상으로 변동금리 차주들의 이자 부담이 가중되고 있다."
+  },
+  {
+   "title": "[이호연의 D톡스] 점도표에 등장한 3.75%...차주들은 ‘한숨’",
+   "url": "https://www.ddaily.co.kr/page/view/2026112717450183570",
+   "source": "ddaily.co.kr",
+   "published": "2026-11-28T10:01:00+09:00",
+   "dup_count": 0,
+   "summary": "한국은행 점도표에 연 3.75% 금리 전망이 등장하자 대출 차주들의 한숨이 깊어지고 있다."
+  },
+  {
+   "title": "LG·현대차는 웃고 SK·LS는 울고...중복 상장 규제의 명암 [갭 월드]",
+   "url": "https://www.sedaily.com/article/20120102?ref=naver",
+   "source": "sedaily.com",
+   "published": "2026-11-28T10:00:00+09:00",
+   "dup_count": 0,
+   "summary": "기준금리 인상과 회사채 금리 상승으로 기업들의 이자 비용 부담이 커지고 있다."
+  },
+  {
+   "title": "[위클리 PICK 3] 젠슨 황 엔비디아 CEO 복귀부터 美, 한국에 과잉생산 관...",
+   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=147571",
+   "source": "opinionnews.co.kr",
+   "published": "2026-11-28T10:00:00+09:00",
+   "dup_count": 0,
+   "summary": "엔비디아 젠슨 황의 복귀와 미국의 대중국 반도체 통제가 증시의 주요 변수로 작용했다."
+  },
+  {
+   "title": "롤러코스터 증시에 셈법 복잡해진 개미...빚투 줄이고 반등엔 베팅",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01508806645650312&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "source": "edaily.co.kr",
+   "published": "2026-11-28T09:46:00+09:00",
+   "dup_count": 0,
+   "summary": "롤러코스터 증시 속에서 개인투자자들이 빚투를 줄이고 반등 종목 매수에 나섰다."
+  },
+  {
+   "title": "[NZSI INDEX] 2026년 11월 27일... 코스피 4.34%·코스닥 8.13% 급등, 외국...",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=94217",
+   "source": "the-today.com",
+   "published": "2026-11-28T09:40:00+09:00",
+   "dup_count": 3,
+   "summary": "27일 국내 증시 급등으로 하루 만에 시가총액이 200조 원 이상 급증했다."
+  },
+  {
+   "title": "[명리예언] 경주 도사(道士) 단원(丹垣)...\"젠슨 황, 복귀 서둘렀다...20...",
+   "url": "http://www.breaknews.com/1254965",
+   "source": "breaknews.com",
+   "published": "2026-11-28T09:38:00+09:00",
+   "dup_count": 0,
+   "summary": "젠슨 황 효과로 5000선을 회복했던 코스피가 하루 만에 급락하는 등 변동성을 겪었다."
+  },
+  {
+   "title": "정점식 국민의힘 원내대표 \" '공소취소 열차' 종착역은 교도소“ 규탄",
+   "url": "http://www.breaknews.com/1254966",
+   "source": "breaknews.com",
+   "published": "2026-11-28T09:38:00+09:00",
+   "dup_count": 0,
+   "summary": "한국은행의 기준금리 3.25% 인상으로 취약계층과 영세 자영업자의 고통이 가중되고 있다."
+  },
+  {
+   "title": "한국은행 통화정책의 기조는 옳은가?-남덕우기념사업회 17차 토론회",
+   "url": "http://www.ifs.or.kr/bbs/board.php?bo_table=research&wr_id=11407",
+   "source": "ifs.or.kr",
+   "published": "2026-11-28T09:36:00+09:00",
+   "dup_count": 1,
+   "summary": "한미 금리 격차와 물가 상승 압력에 따른 한국은행의 통화정책 기조를 두고 토론이 이어졌다."
+  },
+  {
+   "title": "뉴욕증시, 블프 저가매수에 일제히 반등...나스닥 2.31%·필라델피아 반...",
+   "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065572874083005",
+   "source": "megaeconomy.co.kr",
+   "published": "2026-11-28T09:34:00+09:00",
+   "dup_count": 2,
+   "summary": "뉴욕증시 반등과 외국인 순매수에 힘입어 삼성전자와 SK하이닉스가 코스피 상승을 견인했다."
   }
  ]
 }
